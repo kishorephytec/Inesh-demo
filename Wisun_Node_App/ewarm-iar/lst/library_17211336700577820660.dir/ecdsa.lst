@@ -1,0 +1,1524 @@
+###############################################################################
+#
+# IAR ANSI C/C++ Compiler V9.50.2.385/W64 for ARM         29/Mar/2025  15:53:45
+# Copyright 1999-2024 IAR Systems AB.
+#
+#    Cpu mode                     =  thumb
+#    Endian                       =  little
+#    Source file                  =
+#        D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\util\third_party\mbedtls\library\ecdsa.c
+#    Command line                 =
+#        -f "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\ewarm-iar\obj\library_17211336700577820660.dir\ecdsa.o.rsp"
+#        ("D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\util\third_party\mbedtls\library\ecdsa.c"
+#        -D DEBUG_EFM=1 -D EFR32FG28B322F1024IM48=1 -D
+#        configNUM_SDK_THREAD_LOCAL_STORAGE_POINTERS=2 -D
+#        SL_COMPONENT_CATALOG_PRESENT=1 -D
+#        MBEDTLS_CONFIG_FILE=<sl_mbedtls_config.h> -D
+#        MBEDTLS_PSA_CRYPTO_CONFIG_FILE=<psa_crypto_config.h> -D
+#        SL_RAIL_LIB_MULTIPROTOCOL_SUPPORT=0 -D
+#        SL_RAIL_UTIL_PA_CONFIG_HEADER=<sl_rail_util_pa_config.h> -D
+#        RTT_USE_ASM=0 -lC "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\ewarm-iar\lst\library_17211336700577820660.dir"
+#        --diag_suppress Pa050 -o "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\ewarm-iar\obj\library_17211336700577820660.dir"
+#        --no_cse --no_unroll --no_inline --no_code_motion --no_tbaa
+#        --no_clustering --no_scheduling --debug --endian=little
+#        --cpu=Cortex-M33 --cmse --cmse -e --fpu=VFPv5_sp --dlib_config
+#        "C:\Program Files\IAR Systems\Embedded Workbench
+#        9.2\arm\inc\c\DLib_Config_Normal.h" -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\util\third_party\mbedtls\library\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App 1\Wisun_Node_App\config\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App 1\Wisun_Node_App\config\rail\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App 1\Wisun_Node_App\config\wisun\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App 1\Wisun_Node_App\.\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\Device\SiliconLabs\EFR32FG28\Include\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\app\wisun\component\app_project_info\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\common\inc\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\service\cli\inc\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\service\cli\src\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\CMSIS\Core\Include\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\CMSIS\RTOS2\Include\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\service\device_init\inc\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\emdrv\common\inc\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\emlib\inc\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\service\iostream\inc\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\security\sl_component\sl_mbedtls_support\config\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\security\sl_component\sl_mbedtls_support\config\preset\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\security\sl_component\sl_mbedtls_support\inc\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\util\third_party\mbedtls\include\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\util\third_party\mbedtls\library\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\micrium_os\common\source\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\micrium_os\common\include\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\micrium_os\cpu\include\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\micrium_os\ports\source\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\micrium_os\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\micrium_os\kernel\source\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\micrium_os\kernel\include\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\emdrv\nvm3\inc\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\peripheral\inc\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\util\third_party\printf\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\util\third_party\printf\inc\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\security\sl_component\sl_psa_driver\inc\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\radio\rail_lib\common\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\radio\rail_lib\protocol\ble\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\radio\rail_lib\protocol\ieee802154\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\radio\rail_lib\protocol\wmbus\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\radio\rail_lib\protocol\zwave\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\radio\rail_lib\chip\efr32\efr32xg2x\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\radio\rail_lib\protocol\sidewalk\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\radio\rail_lib\plugin\pa-conversions\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\radio\rail_lib\plugin\pa-conversions\efr32xg28\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\radio\rail_lib\plugin\rail_util_pti\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\security\sl_component\se_manager\inc\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\security\sl_component\se_manager\src\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\util\third_party\segger\systemview\SEGGER\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\util\silicon_labs\silabs_core\memory_manager\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\common\toolchain\inc\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\service\system\inc\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\app\wisun\component\app_core\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\app\wisun\component\app_setting\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\app\wisun\component\cli_util\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\app\wisun\component\event_manager\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\app\wisun\component\ns_list\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\app\wisun\component\ping\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\app\wisun\component\trace_util\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\app\wisun\component\trace_util\nanostack\nanostack-libservice\mbed-client-libservice\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\app\wisun\component\udp_client\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\service\sleeptimer\inc\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\protocol\wisun\plugin\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\protocol\wisun\stack\inc\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\protocol\wisun\stack\inc\socket\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App 1\Wisun_Node_App\autogen\\" -On
+#        --use_c++_inline) --dependencies=n "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\ewarm-iar\obj\library_17211336700577820660.dir\ecdsa.o.iar_deps"
+#    Locale                       =  C
+#    List file                    =
+#        D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\ewarm-iar\lst\library_17211336700577820660.dir\ecdsa.lst
+#    Object file                  =
+#        D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\ewarm-iar\obj\library_17211336700577820660.dir\ecdsa.o
+#    Runtime model:                  
+#      __CPP_Runtime              =  1
+#      __SystemLibrary            =  DLib
+#      __dlib_file_descriptor     =  0
+#      __dlib_full_locale_support =  0
+#      __dlib_version             =  6
+#
+###############################################################################
+
+D:\Inesh_wisun\Wisun_Node_App 1\Wisun_Node_App\gecko_sdk_4.4.5\util\third_party\mbedtls\library\ecdsa.c
+      1          /*
+      2           *  Elliptic curve DSA
+      3           *
+      4           *  Copyright The Mbed TLS Contributors
+      5           *  SPDX-License-Identifier: Apache-2.0
+      6           *
+      7           *  Licensed under the Apache License, Version 2.0 (the "License"); you may
+      8           *  not use this file except in compliance with the License.
+      9           *  You may obtain a copy of the License at
+     10           *
+     11           *  http://www.apache.org/licenses/LICENSE-2.0
+     12           *
+     13           *  Unless required by applicable law or agreed to in writing, software
+     14           *  distributed under the License is distributed on an "AS IS" BASIS, WITHOUT
+     15           *  WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     16           *  See the License for the specific language governing permissions and
+     17           *  limitations under the License.
+     18           */
+     19          
+     20          /*
+     21           * References:
+     22           *
+     23           * SEC1 https://www.secg.org/sec1-v2.pdf
+     24           */
+     25          
+     26          #include "common.h"
+     27          
+     28          #if defined(MBEDTLS_ECDSA_C)
+     29          
+     30          #include "mbedtls/ecdsa.h"
+     31          #include "mbedtls/asn1write.h"
+     32          
+     33          #include <string.h>
+     34          
+     35          #if defined(MBEDTLS_ECDSA_DETERMINISTIC)
+     36          #include "mbedtls/hmac_drbg.h"
+     37          #endif
+     38          
+     39          #include "mbedtls/platform.h"
+     40          
+     41          #include "mbedtls/platform_util.h"
+     42          #include "mbedtls/error.h"
+
+   \                                 In section .text, align 2, keep-with-next
+   \   static __vfp int mbedtls_error_add(int, int, char const *, int)
+   \                     mbedtls_error_add: (+1)
+   \        0x0   0x1808             ADDS     R0,R1,R0
+   \        0x2   0x4770             BX       LR
+     43          
+     44          #if defined(MBEDTLS_ECP_RESTARTABLE)
+     45          
+     46          /*
+     47           * Sub-context for ecdsa_verify()
+     48           */
+     49          struct mbedtls_ecdsa_restart_ver {
+     50              mbedtls_mpi u1, u2;     /* intermediate values  */
+     51              enum {                  /* what to do next?     */
+     52                  ecdsa_ver_init = 0, /* getting started      */
+     53                  ecdsa_ver_muladd,   /* muladd step          */
+     54              } state;
+     55          };
+     56          
+     57          /*
+     58           * Init verify restart sub-context
+     59           */
+     60          static void ecdsa_restart_ver_init(mbedtls_ecdsa_restart_ver_ctx *ctx)
+     61          {
+     62              mbedtls_mpi_init(&ctx->u1);
+     63              mbedtls_mpi_init(&ctx->u2);
+     64              ctx->state = ecdsa_ver_init;
+     65          }
+     66          
+     67          /*
+     68           * Free the components of a verify restart sub-context
+     69           */
+     70          static void ecdsa_restart_ver_free(mbedtls_ecdsa_restart_ver_ctx *ctx)
+     71          {
+     72              if (ctx == NULL) {
+     73                  return;
+     74              }
+     75          
+     76              mbedtls_mpi_free(&ctx->u1);
+     77              mbedtls_mpi_free(&ctx->u2);
+     78          
+     79              ecdsa_restart_ver_init(ctx);
+     80          }
+     81          
+     82          /*
+     83           * Sub-context for ecdsa_sign()
+     84           */
+     85          struct mbedtls_ecdsa_restart_sig {
+     86              int sign_tries;
+     87              int key_tries;
+     88              mbedtls_mpi k;          /* per-signature random */
+     89              mbedtls_mpi r;          /* r value              */
+     90              enum {                  /* what to do next?     */
+     91                  ecdsa_sig_init = 0, /* getting started      */
+     92                  ecdsa_sig_mul,      /* doing ecp_mul()      */
+     93                  ecdsa_sig_modn,     /* mod N computations   */
+     94              } state;
+     95          };
+     96          
+     97          /*
+     98           * Init verify sign sub-context
+     99           */
+    100          static void ecdsa_restart_sig_init(mbedtls_ecdsa_restart_sig_ctx *ctx)
+    101          {
+    102              ctx->sign_tries = 0;
+    103              ctx->key_tries = 0;
+    104              mbedtls_mpi_init(&ctx->k);
+    105              mbedtls_mpi_init(&ctx->r);
+    106              ctx->state = ecdsa_sig_init;
+    107          }
+    108          
+    109          /*
+    110           * Free the components of a sign restart sub-context
+    111           */
+    112          static void ecdsa_restart_sig_free(mbedtls_ecdsa_restart_sig_ctx *ctx)
+    113          {
+    114              if (ctx == NULL) {
+    115                  return;
+    116              }
+    117          
+    118              mbedtls_mpi_free(&ctx->k);
+    119              mbedtls_mpi_free(&ctx->r);
+    120          }
+    121          
+    122          #if defined(MBEDTLS_ECDSA_DETERMINISTIC)
+    123          /*
+    124           * Sub-context for ecdsa_sign_det()
+    125           */
+    126          struct mbedtls_ecdsa_restart_det {
+    127              mbedtls_hmac_drbg_context rng_ctx;  /* DRBG state   */
+    128              enum {                      /* what to do next?     */
+    129                  ecdsa_det_init = 0,     /* getting started      */
+    130                  ecdsa_det_sign,         /* make signature       */
+    131              } state;
+    132          };
+    133          
+    134          /*
+    135           * Init verify sign_det sub-context
+    136           */
+    137          static void ecdsa_restart_det_init(mbedtls_ecdsa_restart_det_ctx *ctx)
+    138          {
+    139              mbedtls_hmac_drbg_init(&ctx->rng_ctx);
+    140              ctx->state = ecdsa_det_init;
+    141          }
+    142          
+    143          /*
+    144           * Free the components of a sign_det restart sub-context
+    145           */
+    146          static void ecdsa_restart_det_free(mbedtls_ecdsa_restart_det_ctx *ctx)
+    147          {
+    148              if (ctx == NULL) {
+    149                  return;
+    150              }
+    151          
+    152              mbedtls_hmac_drbg_free(&ctx->rng_ctx);
+    153          
+    154              ecdsa_restart_det_init(ctx);
+    155          }
+    156          #endif /* MBEDTLS_ECDSA_DETERMINISTIC */
+    157          
+    158          #define ECDSA_RS_ECP    (rs_ctx == NULL ? NULL : &rs_ctx->ecp)
+    159          
+    160          /* Utility macro for checking and updating ops budget */
+    161          #define ECDSA_BUDGET(ops)   \
+    162              MBEDTLS_MPI_CHK(mbedtls_ecp_check_budget(grp, ECDSA_RS_ECP, ops));
+    163          
+    164          /* Call this when entering a function that needs its own sub-context */
+    165          #define ECDSA_RS_ENTER(SUB)   do {                                 \
+    166                  /* reset ops count for this call if top-level */                 \
+    167                  if (rs_ctx != NULL && rs_ctx->ecp.depth++ == 0)                 \
+    168                  rs_ctx->ecp.ops_done = 0;                                    \
+    169                                                                               \
+    170                  /* set up our own sub-context if needed */                       \
+    171                  if (mbedtls_ecp_restart_is_enabled() &&                          \
+    172                      rs_ctx != NULL && rs_ctx->SUB == NULL)                      \
+    173                  {                                                                \
+    174                      rs_ctx->SUB = mbedtls_calloc(1, sizeof(*rs_ctx->SUB));   \
+    175                      if (rs_ctx->SUB == NULL)                                    \
+    176                      return MBEDTLS_ERR_ECP_ALLOC_FAILED;                  \
+    177                                                                             \
+    178                      ecdsa_restart_## SUB ##_init(rs_ctx->SUB);                 \
+    179                  }                                                                \
+    180          } while (0)
+    181          
+    182          /* Call this when leaving a function that needs its own sub-context */
+    183          #define ECDSA_RS_LEAVE(SUB)   do {                                 \
+    184                  /* clear our sub-context when not in progress (done or error) */ \
+    185                  if (rs_ctx != NULL && rs_ctx->SUB != NULL &&                     \
+    186                      ret != MBEDTLS_ERR_ECP_IN_PROGRESS)                         \
+    187                  {                                                                \
+    188                      ecdsa_restart_## SUB ##_free(rs_ctx->SUB);                 \
+    189                      mbedtls_free(rs_ctx->SUB);                                 \
+    190                      rs_ctx->SUB = NULL;                                          \
+    191                  }                                                                \
+    192                                                                               \
+    193                  if (rs_ctx != NULL)                                             \
+    194                  rs_ctx->ecp.depth--;                                         \
+    195          } while (0)
+    196          
+    197          #else /* MBEDTLS_ECP_RESTARTABLE */
+    198          
+    199          #define ECDSA_RS_ECP    NULL
+    200          
+    201          #define ECDSA_BUDGET(ops)     /* no-op; for compatibility */
+    202          
+    203          #define ECDSA_RS_ENTER(SUB)   (void) rs_ctx
+    204          #define ECDSA_RS_LEAVE(SUB)   (void) rs_ctx
+    205          
+    206          #endif /* MBEDTLS_ECP_RESTARTABLE */
+    207          
+    208          #if defined(MBEDTLS_ECDSA_DETERMINISTIC) || \
+    209              !defined(MBEDTLS_ECDSA_SIGN_ALT)     || \
+    210              !defined(MBEDTLS_ECDSA_VERIFY_ALT)
+    211          /*
+    212           * Derive a suitable integer for group grp from a buffer of length len
+    213           * SEC1 4.1.3 step 5 aka SEC1 4.1.4 step 3
+    214           */
+    215          static int derive_mpi(const mbedtls_ecp_group *grp, mbedtls_mpi *x,
+    216                                const unsigned char *buf, size_t blen)
+    217          {
+    218              int ret = MBEDTLS_ERR_ERROR_CORRUPTION_DETECTED;
+    219              size_t n_size = (grp->nbits + 7) / 8;
+    220              size_t use_size = blen > n_size ? n_size : blen;
+    221          
+    222              MBEDTLS_MPI_CHK(mbedtls_mpi_read_binary(x, buf, use_size));
+    223              if (use_size * 8 > grp->nbits) {
+    224                  MBEDTLS_MPI_CHK(mbedtls_mpi_shift_r(x, use_size * 8 - grp->nbits));
+    225              }
+    226          
+    227              /* While at it, reduce modulo N */
+    228              if (mbedtls_mpi_cmp_mpi(x, &grp->N) >= 0) {
+    229                  MBEDTLS_MPI_CHK(mbedtls_mpi_sub_mpi(x, x, &grp->N));
+    230              }
+    231          
+    232          cleanup:
+    233              return ret;
+    234          }
+    235          #endif /* ECDSA_DETERMINISTIC || !ECDSA_SIGN_ALT || !ECDSA_VERIFY_ALT */
+    236          
+
+   \                                 In section .text, align 2, keep-with-next
+    237          int mbedtls_ecdsa_can_do(mbedtls_ecp_group_id gid)
+    238          {
+   \                     mbedtls_ecdsa_can_do: (+1)
+   \        0x0   0x0001             MOVS     R1,R0
+    239              switch (gid) {
+    240          #ifdef MBEDTLS_ECP_DP_CURVE25519_ENABLED
+    241                  case MBEDTLS_ECP_DP_CURVE25519: return 0;
+    242          #endif
+    243          #ifdef MBEDTLS_ECP_DP_CURVE448_ENABLED
+    244                  case MBEDTLS_ECP_DP_CURVE448: return 0;
+    245          #endif
+    246                  default: return 1;
+   \        0x2   0x2001             MOVS     R0,#+1
+   \        0x4   0x4770             BX       LR
+    247              }
+    248          }
+    249          
+    250          #if !defined(MBEDTLS_ECDSA_SIGN_ALT)
+    251          /*
+    252           * Compute ECDSA signature of a hashed message (SEC1 4.1.3)
+    253           * Obviously, compared to SEC1 4.1.3, we skip step 4 (hash message)
+    254           */
+    255          int mbedtls_ecdsa_sign_restartable(mbedtls_ecp_group *grp,
+    256                                             mbedtls_mpi *r, mbedtls_mpi *s,
+    257                                             const mbedtls_mpi *d, const unsigned char *buf, size_t blen,
+    258                                             int (*f_rng)(void *, unsigned char *, size_t), void *p_rng,
+    259                                             int (*f_rng_blind)(void *, unsigned char *, size_t),
+    260                                             void *p_rng_blind,
+    261                                             mbedtls_ecdsa_restart_ctx *rs_ctx)
+    262          {
+    263              int ret, key_tries, sign_tries;
+    264              int *p_sign_tries = &sign_tries, *p_key_tries = &key_tries;
+    265              mbedtls_ecp_point R;
+    266              mbedtls_mpi k, e, t;
+    267              mbedtls_mpi *pk = &k, *pr = r;
+    268          
+    269              /* Fail cleanly on curves such as Curve25519 that can't be used for ECDSA */
+    270              if (!mbedtls_ecdsa_can_do(grp->id) || grp->N.p == NULL) {
+    271                  return MBEDTLS_ERR_ECP_BAD_INPUT_DATA;
+    272              }
+    273          
+    274              /* Make sure d is in range 1..n-1 */
+    275              if (mbedtls_mpi_cmp_int(d, 1) < 0 || mbedtls_mpi_cmp_mpi(d, &grp->N) >= 0) {
+    276                  return MBEDTLS_ERR_ECP_INVALID_KEY;
+    277              }
+    278          
+    279              mbedtls_ecp_point_init(&R);
+    280              mbedtls_mpi_init(&k); mbedtls_mpi_init(&e); mbedtls_mpi_init(&t);
+    281          
+    282              ECDSA_RS_ENTER(sig);
+    283          
+    284          #if defined(MBEDTLS_ECP_RESTARTABLE)
+    285              if (rs_ctx != NULL && rs_ctx->sig != NULL) {
+    286                  /* redirect to our context */
+    287                  p_sign_tries = &rs_ctx->sig->sign_tries;
+    288                  p_key_tries = &rs_ctx->sig->key_tries;
+    289                  pk = &rs_ctx->sig->k;
+    290                  pr = &rs_ctx->sig->r;
+    291          
+    292                  /* jump to current step */
+    293                  if (rs_ctx->sig->state == ecdsa_sig_mul) {
+    294                      goto mul;
+    295                  }
+    296                  if (rs_ctx->sig->state == ecdsa_sig_modn) {
+    297                      goto modn;
+    298                  }
+    299              }
+    300          #endif /* MBEDTLS_ECP_RESTARTABLE */
+    301          
+    302              *p_sign_tries = 0;
+    303              do {
+    304                  if ((*p_sign_tries)++ > 10) {
+    305                      ret = MBEDTLS_ERR_ECP_RANDOM_FAILED;
+    306                      goto cleanup;
+    307                  }
+    308          
+    309                  /*
+    310                   * Steps 1-3: generate a suitable ephemeral keypair
+    311                   * and set r = xR mod n
+    312                   */
+    313                  *p_key_tries = 0;
+    314                  do {
+    315                      if ((*p_key_tries)++ > 10) {
+    316                          ret = MBEDTLS_ERR_ECP_RANDOM_FAILED;
+    317                          goto cleanup;
+    318                      }
+    319          
+    320                      MBEDTLS_MPI_CHK(mbedtls_ecp_gen_privkey(grp, pk, f_rng, p_rng));
+    321          
+    322          #if defined(MBEDTLS_ECP_RESTARTABLE)
+    323                      if (rs_ctx != NULL && rs_ctx->sig != NULL) {
+    324                          rs_ctx->sig->state = ecdsa_sig_mul;
+    325                      }
+    326          
+    327          mul:
+    328          #endif
+    329                      MBEDTLS_MPI_CHK(mbedtls_ecp_mul_restartable(grp, &R, pk, &grp->G,
+    330                                                                  f_rng_blind,
+    331                                                                  p_rng_blind,
+    332                                                                  ECDSA_RS_ECP));
+    333                      MBEDTLS_MPI_CHK(mbedtls_mpi_mod_mpi(pr, &R.X, &grp->N));
+    334                  } while (mbedtls_mpi_cmp_int(pr, 0) == 0);
+    335          
+    336          #if defined(MBEDTLS_ECP_RESTARTABLE)
+    337                  if (rs_ctx != NULL && rs_ctx->sig != NULL) {
+    338                      rs_ctx->sig->state = ecdsa_sig_modn;
+    339                  }
+    340          
+    341          modn:
+    342          #endif
+    343                  /*
+    344                   * Accounting for everything up to the end of the loop
+    345                   * (step 6, but checking now avoids saving e and t)
+    346                   */
+    347                  ECDSA_BUDGET(MBEDTLS_ECP_OPS_INV + 4);
+    348          
+    349                  /*
+    350                   * Step 5: derive MPI from hashed message
+    351                   */
+    352                  MBEDTLS_MPI_CHK(derive_mpi(grp, &e, buf, blen));
+    353          
+    354                  /*
+    355                   * Generate a random value to blind inv_mod in next step,
+    356                   * avoiding a potential timing leak.
+    357                   */
+    358                  MBEDTLS_MPI_CHK(mbedtls_ecp_gen_privkey(grp, &t, f_rng_blind,
+    359                                                          p_rng_blind));
+    360          
+    361                  /*
+    362                   * Step 6: compute s = (e + r * d) / k = t (e + rd) / (kt) mod n
+    363                   */
+    364                  MBEDTLS_MPI_CHK(mbedtls_mpi_mul_mpi(s, pr, d));
+    365                  MBEDTLS_MPI_CHK(mbedtls_mpi_add_mpi(&e, &e, s));
+    366                  MBEDTLS_MPI_CHK(mbedtls_mpi_mul_mpi(&e, &e, &t));
+    367                  MBEDTLS_MPI_CHK(mbedtls_mpi_mul_mpi(pk, pk, &t));
+    368                  MBEDTLS_MPI_CHK(mbedtls_mpi_mod_mpi(pk, pk, &grp->N));
+    369                  MBEDTLS_MPI_CHK(mbedtls_mpi_inv_mod(s, pk, &grp->N));
+    370                  MBEDTLS_MPI_CHK(mbedtls_mpi_mul_mpi(s, s, &e));
+    371                  MBEDTLS_MPI_CHK(mbedtls_mpi_mod_mpi(s, s, &grp->N));
+    372              } while (mbedtls_mpi_cmp_int(s, 0) == 0);
+    373          
+    374          #if defined(MBEDTLS_ECP_RESTARTABLE)
+    375              if (rs_ctx != NULL && rs_ctx->sig != NULL) {
+    376                  MBEDTLS_MPI_CHK(mbedtls_mpi_copy(r, pr));
+    377              }
+    378          #endif
+    379          
+    380          cleanup:
+    381              mbedtls_ecp_point_free(&R);
+    382              mbedtls_mpi_free(&k); mbedtls_mpi_free(&e); mbedtls_mpi_free(&t);
+    383          
+    384              ECDSA_RS_LEAVE(sig);
+    385          
+    386              return ret;
+    387          }
+    388          
+    389          /*
+    390           * Compute ECDSA signature of a hashed message
+    391           */
+    392          int mbedtls_ecdsa_sign(mbedtls_ecp_group *grp, mbedtls_mpi *r, mbedtls_mpi *s,
+    393                                 const mbedtls_mpi *d, const unsigned char *buf, size_t blen,
+    394                                 int (*f_rng)(void *, unsigned char *, size_t), void *p_rng)
+    395          {
+    396              /* Use the same RNG for both blinding and ephemeral key generation */
+    397              return mbedtls_ecdsa_sign_restartable(grp, r, s, d, buf, blen,
+    398                                                    f_rng, p_rng, f_rng, p_rng, NULL);
+    399          }
+    400          #endif /* !MBEDTLS_ECDSA_SIGN_ALT */
+    401          
+    402          #if defined(MBEDTLS_ECDSA_DETERMINISTIC)
+    403          /*
+    404           * Deterministic signature wrapper
+    405           *
+    406           * note:    The f_rng_blind parameter must not be NULL.
+    407           *
+    408           */
+    409          int mbedtls_ecdsa_sign_det_restartable(mbedtls_ecp_group *grp,
+    410                                                 mbedtls_mpi *r, mbedtls_mpi *s,
+    411                                                 const mbedtls_mpi *d, const unsigned char *buf, size_t blen,
+    412                                                 mbedtls_md_type_t md_alg,
+    413                                                 int (*f_rng_blind)(void *, unsigned char *, size_t),
+    414                                                 void *p_rng_blind,
+    415                                                 mbedtls_ecdsa_restart_ctx *rs_ctx)
+    416          {
+    417              int ret = MBEDTLS_ERR_ERROR_CORRUPTION_DETECTED;
+    418              mbedtls_hmac_drbg_context rng_ctx;
+    419              mbedtls_hmac_drbg_context *p_rng = &rng_ctx;
+    420              unsigned char data[2 * MBEDTLS_ECP_MAX_BYTES];
+    421              size_t grp_len = (grp->nbits + 7) / 8;
+    422              const mbedtls_md_info_t *md_info;
+    423              mbedtls_mpi h;
+    424          
+    425              if ((md_info = mbedtls_md_info_from_type(md_alg)) == NULL) {
+    426                  return MBEDTLS_ERR_ECP_BAD_INPUT_DATA;
+    427              }
+    428          
+    429              mbedtls_mpi_init(&h);
+    430              mbedtls_hmac_drbg_init(&rng_ctx);
+    431          
+    432              ECDSA_RS_ENTER(det);
+    433          
+    434          #if defined(MBEDTLS_ECP_RESTARTABLE)
+    435              if (rs_ctx != NULL && rs_ctx->det != NULL) {
+    436                  /* redirect to our context */
+    437                  p_rng = &rs_ctx->det->rng_ctx;
+    438          
+    439                  /* jump to current step */
+    440                  if (rs_ctx->det->state == ecdsa_det_sign) {
+    441                      goto sign;
+    442                  }
+    443              }
+    444          #endif /* MBEDTLS_ECP_RESTARTABLE */
+    445          
+    446              /* Use private key and message hash (reduced) to initialize HMAC_DRBG */
+    447              MBEDTLS_MPI_CHK(mbedtls_mpi_write_binary(d, data, grp_len));
+    448              MBEDTLS_MPI_CHK(derive_mpi(grp, &h, buf, blen));
+    449              MBEDTLS_MPI_CHK(mbedtls_mpi_write_binary(&h, data + grp_len, grp_len));
+    450              MBEDTLS_MPI_CHK(mbedtls_hmac_drbg_seed_buf(p_rng, md_info, data, 2 * grp_len));
+    451          
+    452          #if defined(MBEDTLS_ECP_RESTARTABLE)
+    453              if (rs_ctx != NULL && rs_ctx->det != NULL) {
+    454                  rs_ctx->det->state = ecdsa_det_sign;
+    455              }
+    456          
+    457          sign:
+    458          #endif
+    459          #if defined(MBEDTLS_ECDSA_SIGN_ALT)
+    460              (void) f_rng_blind;
+    461              (void) p_rng_blind;
+    462              ret = mbedtls_ecdsa_sign(grp, r, s, d, buf, blen,
+    463                                       mbedtls_hmac_drbg_random, p_rng);
+    464          #else
+    465              ret = mbedtls_ecdsa_sign_restartable(grp, r, s, d, buf, blen,
+    466                                                   mbedtls_hmac_drbg_random, p_rng,
+    467                                                   f_rng_blind, p_rng_blind, rs_ctx);
+    468          #endif /* MBEDTLS_ECDSA_SIGN_ALT */
+    469          
+    470          cleanup:
+    471              mbedtls_hmac_drbg_free(&rng_ctx);
+    472              mbedtls_mpi_free(&h);
+    473          
+    474              ECDSA_RS_LEAVE(det);
+    475          
+    476              return ret;
+    477          }
+    478          
+    479          /*
+    480           * Deterministic signature wrapper
+    481           */
+    482          int mbedtls_ecdsa_sign_det_ext(mbedtls_ecp_group *grp, mbedtls_mpi *r,
+    483                                         mbedtls_mpi *s, const mbedtls_mpi *d,
+    484                                         const unsigned char *buf, size_t blen,
+    485                                         mbedtls_md_type_t md_alg,
+    486                                         int (*f_rng_blind)(void *, unsigned char *,
+    487                                                            size_t),
+    488                                         void *p_rng_blind)
+    489          {
+    490              return mbedtls_ecdsa_sign_det_restartable(grp, r, s, d, buf, blen, md_alg,
+    491                                                        f_rng_blind, p_rng_blind, NULL);
+    492          }
+    493          #endif /* MBEDTLS_ECDSA_DETERMINISTIC */
+    494          
+    495          #if !defined(MBEDTLS_ECDSA_VERIFY_ALT)
+    496          /*
+    497           * Verify ECDSA signature of hashed message (SEC1 4.1.4)
+    498           * Obviously, compared to SEC1 4.1.3, we skip step 2 (hash message)
+    499           */
+    500          int mbedtls_ecdsa_verify_restartable(mbedtls_ecp_group *grp,
+    501                                               const unsigned char *buf, size_t blen,
+    502                                               const mbedtls_ecp_point *Q,
+    503                                               const mbedtls_mpi *r,
+    504                                               const mbedtls_mpi *s,
+    505                                               mbedtls_ecdsa_restart_ctx *rs_ctx)
+    506          {
+    507              int ret = MBEDTLS_ERR_ERROR_CORRUPTION_DETECTED;
+    508              mbedtls_mpi e, s_inv, u1, u2;
+    509              mbedtls_ecp_point R;
+    510              mbedtls_mpi *pu1 = &u1, *pu2 = &u2;
+    511          
+    512              mbedtls_ecp_point_init(&R);
+    513              mbedtls_mpi_init(&e); mbedtls_mpi_init(&s_inv);
+    514              mbedtls_mpi_init(&u1); mbedtls_mpi_init(&u2);
+    515          
+    516              /* Fail cleanly on curves such as Curve25519 that can't be used for ECDSA */
+    517              if (!mbedtls_ecdsa_can_do(grp->id) || grp->N.p == NULL) {
+    518                  return MBEDTLS_ERR_ECP_BAD_INPUT_DATA;
+    519              }
+    520          
+    521              ECDSA_RS_ENTER(ver);
+    522          
+    523          #if defined(MBEDTLS_ECP_RESTARTABLE)
+    524              if (rs_ctx != NULL && rs_ctx->ver != NULL) {
+    525                  /* redirect to our context */
+    526                  pu1 = &rs_ctx->ver->u1;
+    527                  pu2 = &rs_ctx->ver->u2;
+    528          
+    529                  /* jump to current step */
+    530                  if (rs_ctx->ver->state == ecdsa_ver_muladd) {
+    531                      goto muladd;
+    532                  }
+    533              }
+    534          #endif /* MBEDTLS_ECP_RESTARTABLE */
+    535          
+    536              /*
+    537               * Step 1: make sure r and s are in range 1..n-1
+    538               */
+    539              if (mbedtls_mpi_cmp_int(r, 1) < 0 || mbedtls_mpi_cmp_mpi(r, &grp->N) >= 0 ||
+    540                  mbedtls_mpi_cmp_int(s, 1) < 0 || mbedtls_mpi_cmp_mpi(s, &grp->N) >= 0) {
+    541                  ret = MBEDTLS_ERR_ECP_VERIFY_FAILED;
+    542                  goto cleanup;
+    543              }
+    544          
+    545              /*
+    546               * Step 3: derive MPI from hashed message
+    547               */
+    548              MBEDTLS_MPI_CHK(derive_mpi(grp, &e, buf, blen));
+    549          
+    550              /*
+    551               * Step 4: u1 = e / s mod n, u2 = r / s mod n
+    552               */
+    553              ECDSA_BUDGET(MBEDTLS_ECP_OPS_CHK + MBEDTLS_ECP_OPS_INV + 2);
+    554          
+    555              MBEDTLS_MPI_CHK(mbedtls_mpi_inv_mod(&s_inv, s, &grp->N));
+    556          
+    557              MBEDTLS_MPI_CHK(mbedtls_mpi_mul_mpi(pu1, &e, &s_inv));
+    558              MBEDTLS_MPI_CHK(mbedtls_mpi_mod_mpi(pu1, pu1, &grp->N));
+    559          
+    560              MBEDTLS_MPI_CHK(mbedtls_mpi_mul_mpi(pu2, r, &s_inv));
+    561              MBEDTLS_MPI_CHK(mbedtls_mpi_mod_mpi(pu2, pu2, &grp->N));
+    562          
+    563          #if defined(MBEDTLS_ECP_RESTARTABLE)
+    564              if (rs_ctx != NULL && rs_ctx->ver != NULL) {
+    565                  rs_ctx->ver->state = ecdsa_ver_muladd;
+    566              }
+    567          
+    568          muladd:
+    569          #endif
+    570              /*
+    571               * Step 5: R = u1 G + u2 Q
+    572               */
+    573              MBEDTLS_MPI_CHK(mbedtls_ecp_muladd_restartable(grp,
+    574                                                             &R, pu1, &grp->G, pu2, Q, ECDSA_RS_ECP));
+    575          
+    576              if (mbedtls_ecp_is_zero(&R)) {
+    577                  ret = MBEDTLS_ERR_ECP_VERIFY_FAILED;
+    578                  goto cleanup;
+    579              }
+    580          
+    581              /*
+    582               * Step 6: convert xR to an integer (no-op)
+    583               * Step 7: reduce xR mod n (gives v)
+    584               */
+    585              MBEDTLS_MPI_CHK(mbedtls_mpi_mod_mpi(&R.X, &R.X, &grp->N));
+    586          
+    587              /*
+    588               * Step 8: check if v (that is, R.X) is equal to r
+    589               */
+    590              if (mbedtls_mpi_cmp_mpi(&R.X, r) != 0) {
+    591                  ret = MBEDTLS_ERR_ECP_VERIFY_FAILED;
+    592                  goto cleanup;
+    593              }
+    594          
+    595          cleanup:
+    596              mbedtls_ecp_point_free(&R);
+    597              mbedtls_mpi_free(&e); mbedtls_mpi_free(&s_inv);
+    598              mbedtls_mpi_free(&u1); mbedtls_mpi_free(&u2);
+    599          
+    600              ECDSA_RS_LEAVE(ver);
+    601          
+    602              return ret;
+    603          }
+    604          
+    605          /*
+    606           * Verify ECDSA signature of hashed message
+    607           */
+    608          int mbedtls_ecdsa_verify(mbedtls_ecp_group *grp,
+    609                                   const unsigned char *buf, size_t blen,
+    610                                   const mbedtls_ecp_point *Q,
+    611                                   const mbedtls_mpi *r,
+    612                                   const mbedtls_mpi *s)
+    613          {
+    614              return mbedtls_ecdsa_verify_restartable(grp, buf, blen, Q, r, s, NULL);
+    615          }
+    616          #endif /* !MBEDTLS_ECDSA_VERIFY_ALT */
+    617          
+    618          /*
+    619           * Convert a signature (given by context) to ASN.1
+    620           */
+
+   \                                 In section .text, align 2, keep-with-next
+    621          static int ecdsa_signature_to_asn1(const mbedtls_mpi *r, const mbedtls_mpi *s,
+    622                                             unsigned char *sig, size_t sig_size,
+    623                                             size_t *slen)
+    624          {
+   \                     ecdsa_signature_to_asn1: (+1)
+   \        0x0   0xE92D 0x4FF0      PUSH     {R4-R11,LR}
+   \        0x4   0xB095             SUB      SP,SP,#+84
+   \        0x6   0x4682             MOV      R10,R0
+   \        0x8   0x000D             MOVS     R5,R1
+   \        0xA   0x0016             MOVS     R6,R2
+   \        0xC   0x001F             MOVS     R7,R3
+   \        0xE   0xF8DD 0x8078      LDR      R8,[SP, #+120]
+    625              int ret = MBEDTLS_ERR_ERROR_CORRUPTION_DETECTED;
+   \       0x12   0xF07F 0x096D      MVNS     R9,#+109
+   \       0x16   0x2148             MOVS     R1,#+72
+   \       0x18   0x2200             MOVS     R2,#+0
+   \       0x1A   0xAC03             ADD      R4,SP,#+12
+   \       0x1C   0x0020             MOVS     R0,R4
+   \       0x1E   0x.... 0x....      BL       __aeabi_memset
+    626              unsigned char buf[MBEDTLS_ECDSA_MAX_LEN] = { 0 };
+    627              unsigned char *p = buf + sizeof(buf);
+   \       0x22   0xA815             ADD      R0,SP,#+84
+   \       0x24   0x9000             STR      R0,[SP, #+0]
+    628              size_t len = 0;
+   \       0x26   0x2400             MOVS     R4,#+0
+    629          
+    630              MBEDTLS_ASN1_CHK_ADD(len, mbedtls_asn1_write_mpi(&p, buf, s));
+   \       0x28   0x002A             MOVS     R2,R5
+   \       0x2A   0xA903             ADD      R1,SP,#+12
+   \       0x2C   0x4668             MOV      R0,SP
+   \       0x2E   0x.... 0x....      BL       mbedtls_asn1_write_mpi
+   \       0x32   0x4683             MOV      R11,R0
+   \       0x34   0x2800             CMP      R0,#+0
+   \       0x36   0xD501             BPL.N    ??ecdsa_signature_to_asn1_0
+   \       0x38   0x4658             MOV      R0,R11
+   \       0x3A   0xE035             B.N      ??ecdsa_signature_to_asn1_1
+   \                     ??ecdsa_signature_to_asn1_0: (+1)
+   \       0x3C   0xEB1B 0x0404      ADDS     R4,R11,R4
+    631              MBEDTLS_ASN1_CHK_ADD(len, mbedtls_asn1_write_mpi(&p, buf, r));
+   \       0x40   0x4652             MOV      R2,R10
+   \       0x42   0xA903             ADD      R1,SP,#+12
+   \       0x44   0x4668             MOV      R0,SP
+   \       0x46   0x.... 0x....      BL       mbedtls_asn1_write_mpi
+   \       0x4A   0x4681             MOV      R9,R0
+   \       0x4C   0x2800             CMP      R0,#+0
+   \       0x4E   0xD501             BPL.N    ??ecdsa_signature_to_asn1_2
+   \       0x50   0x4648             MOV      R0,R9
+   \       0x52   0xE029             B.N      ??ecdsa_signature_to_asn1_1
+   \                     ??ecdsa_signature_to_asn1_2: (+1)
+   \       0x54   0xEB19 0x0404      ADDS     R4,R9,R4
+    632          
+    633              MBEDTLS_ASN1_CHK_ADD(len, mbedtls_asn1_write_len(&p, buf, len));
+   \       0x58   0x0022             MOVS     R2,R4
+   \       0x5A   0xA903             ADD      R1,SP,#+12
+   \       0x5C   0x4668             MOV      R0,SP
+   \       0x5E   0x.... 0x....      BL       mbedtls_asn1_write_len
+   \       0x62   0x4683             MOV      R11,R0
+   \       0x64   0x2800             CMP      R0,#+0
+   \       0x66   0xD501             BPL.N    ??ecdsa_signature_to_asn1_3
+   \       0x68   0x4658             MOV      R0,R11
+   \       0x6A   0xE01D             B.N      ??ecdsa_signature_to_asn1_1
+   \                     ??ecdsa_signature_to_asn1_3: (+1)
+   \       0x6C   0xEB1B 0x0404      ADDS     R4,R11,R4
+    634              MBEDTLS_ASN1_CHK_ADD(len, mbedtls_asn1_write_tag(&p, buf,
+    635                                                               MBEDTLS_ASN1_CONSTRUCTED |
+    636                                                               MBEDTLS_ASN1_SEQUENCE));
+   \       0x70   0x2230             MOVS     R2,#+48
+   \       0x72   0xA903             ADD      R1,SP,#+12
+   \       0x74   0x4668             MOV      R0,SP
+   \       0x76   0x.... 0x....      BL       mbedtls_asn1_write_tag
+   \       0x7A   0x4681             MOV      R9,R0
+   \       0x7C   0x2800             CMP      R0,#+0
+   \       0x7E   0xD501             BPL.N    ??ecdsa_signature_to_asn1_4
+   \       0x80   0x4648             MOV      R0,R9
+   \       0x82   0xE011             B.N      ??ecdsa_signature_to_asn1_1
+   \                     ??ecdsa_signature_to_asn1_4: (+1)
+   \       0x84   0xEB19 0x0404      ADDS     R4,R9,R4
+    637          
+    638              if (len > sig_size) {
+   \       0x88   0x42A7             CMP      R7,R4
+   \       0x8A   0xD201             BCS.N    ??ecdsa_signature_to_asn1_5
+    639                  return MBEDTLS_ERR_ECP_BUFFER_TOO_SMALL;
+   \       0x8C   0x....             LDR.N    R0,??DataTable3
+   \       0x8E   0xE00B             B.N      ??ecdsa_signature_to_asn1_1
+    640              }
+    641          
+    642              memcpy(sig, p, len);
+   \                     ??ecdsa_signature_to_asn1_5: (+1)
+   \       0x90   0x9402             STR      R4,[SP, #+8]
+   \       0x92   0x9800             LDR      R0,[SP, #+0]
+   \       0x94   0x9001             STR      R0,[SP, #+4]
+   \       0x96   0x46B3             MOV      R11,R6
+   \       0x98   0x9A02             LDR      R2,[SP, #+8]
+   \       0x9A   0x9901             LDR      R1,[SP, #+4]
+   \       0x9C   0x4658             MOV      R0,R11
+   \       0x9E   0x.... 0x....      BL       __aeabi_memcpy
+    643              *slen = len;
+   \       0xA2   0xF8C8 0x4000      STR      R4,[R8, #+0]
+    644          
+    645              return 0;
+   \       0xA6   0x2000             MOVS     R0,#+0
+   \                     ??ecdsa_signature_to_asn1_1: (+1)
+   \       0xA8   0xB015             ADD      SP,SP,#+84
+   \       0xAA   0xE8BD 0x8FF0      POP      {R4-R11,PC}
+    646          }
+    647          
+    648          /*
+    649           * Compute and write signature
+    650           */
+
+   \                                 In section .text, align 2, keep-with-next
+    651          int mbedtls_ecdsa_write_signature_restartable(mbedtls_ecdsa_context *ctx,
+    652                                                        mbedtls_md_type_t md_alg,
+    653                                                        const unsigned char *hash, size_t hlen,
+    654                                                        unsigned char *sig, size_t sig_size, size_t *slen,
+    655                                                        int (*f_rng)(void *, unsigned char *, size_t),
+    656                                                        void *p_rng,
+    657                                                        mbedtls_ecdsa_restart_ctx *rs_ctx)
+    658          {
+   \                     mbedtls_ecdsa_write_signature_restartable: (+1)
+   \        0x0   0xE92D 0x4FF8      PUSH     {R3-R11,LR}
+   \        0x4   0xB088             SUB      SP,SP,#+32
+   \        0x6   0x4683             MOV      R11,R0
+   \        0x8   0x000C             MOVS     R4,R1
+   \        0xA   0x0015             MOVS     R5,R2
+   \        0xC   0x001E             MOVS     R6,R3
+   \        0xE   0x9F12             LDR      R7,[SP, #+72]
+   \       0x10   0xF8DD 0x804C      LDR      R8,[SP, #+76]
+   \       0x14   0xF8DD 0x9054      LDR      R9,[SP, #+84]
+    659              int ret = MBEDTLS_ERR_ERROR_CORRUPTION_DETECTED;
+   \       0x18   0xF07F 0x0A6D      MVNS     R10,#+109
+    660              mbedtls_mpi r, s;
+    661              if (f_rng == NULL) {
+   \       0x1C   0x4648             MOV      R0,R9
+   \       0x1E   0x2800             CMP      R0,#+0
+   \       0x20   0xD101             BNE.N    ??mbedtls_ecdsa_write_signature_restartable_0
+    662                  return MBEDTLS_ERR_ECP_BAD_INPUT_DATA;
+   \       0x22   0x....             LDR.N    R0,??DataTable3_1
+   \       0x24   0xE027             B.N      ??mbedtls_ecdsa_write_signature_restartable_1
+    663              }
+    664          
+    665              mbedtls_mpi_init(&r);
+   \                     ??mbedtls_ecdsa_write_signature_restartable_0: (+1)
+   \       0x26   0xA806             ADD      R0,SP,#+24
+   \       0x28   0x.... 0x....      BL       mbedtls_mpi_init
+    666              mbedtls_mpi_init(&s);
+   \       0x2C   0xA804             ADD      R0,SP,#+16
+   \       0x2E   0x.... 0x....      BL       mbedtls_mpi_init
+    667          
+    668          #if defined(MBEDTLS_ECDSA_DETERMINISTIC)
+    669              MBEDTLS_MPI_CHK(mbedtls_ecdsa_sign_det_restartable(&ctx->grp, &r, &s, &ctx->d,
+    670                                                                 hash, hlen, md_alg, f_rng,
+    671                                                                 p_rng, rs_ctx));
+    672          #else
+    673              (void) md_alg;
+    674          
+    675          #if defined(MBEDTLS_ECDSA_SIGN_ALT)
+    676              (void) rs_ctx;
+    677          
+    678              MBEDTLS_MPI_CHK(mbedtls_ecdsa_sign(&ctx->grp, &r, &s, &ctx->d,
+    679                                                 hash, hlen, f_rng, p_rng));
+   \       0x32   0x9816             LDR      R0,[SP, #+88]
+   \       0x34   0x9003             STR      R0,[SP, #+12]
+   \       0x36   0xF8CD 0x9008      STR      R9,[SP, #+8]
+   \       0x3A   0x9601             STR      R6,[SP, #+4]
+   \       0x3C   0x9500             STR      R5,[SP, #+0]
+   \       0x3E   0xF11B 0x0360      ADDS     R3,R11,#+96
+   \       0x42   0xAA04             ADD      R2,SP,#+16
+   \       0x44   0xA906             ADD      R1,SP,#+24
+   \       0x46   0x4658             MOV      R0,R11
+   \       0x48   0x.... 0x....      BL       mbedtls_ecdsa_sign
+   \       0x4C   0x9001             STR      R0,[SP, #+4]
+   \       0x4E   0x2800             CMP      R0,#+0
+   \       0x50   0xD10A             BNE.N    ??mbedtls_ecdsa_write_signature_restartable_2
+    680          #else
+    681              /* Use the same RNG for both blinding and ephemeral key generation */
+    682              MBEDTLS_MPI_CHK(mbedtls_ecdsa_sign_restartable(&ctx->grp, &r, &s, &ctx->d,
+    683                                                             hash, hlen, f_rng, p_rng, f_rng,
+    684                                                             p_rng, rs_ctx));
+    685          #endif /* MBEDTLS_ECDSA_SIGN_ALT */
+    686          #endif /* MBEDTLS_ECDSA_DETERMINISTIC */
+    687          
+    688              MBEDTLS_MPI_CHK(ecdsa_signature_to_asn1(&r, &s, sig, sig_size, slen));
+   \                     ??mbedtls_ecdsa_write_signature_restartable_3: (+1)
+   \       0x52   0x9814             LDR      R0,[SP, #+80]
+   \       0x54   0x9000             STR      R0,[SP, #+0]
+   \       0x56   0x4643             MOV      R3,R8
+   \       0x58   0x003A             MOVS     R2,R7
+   \       0x5A   0xA904             ADD      R1,SP,#+16
+   \       0x5C   0xA806             ADD      R0,SP,#+24
+   \       0x5E   0x.... 0x....      BL       ecdsa_signature_to_asn1
+   \       0x62   0x9001             STR      R0,[SP, #+4]
+   \       0x64   0x2800             CMP      R0,#+0
+   \       0x66   0xD1FF             BNE.N    ??mbedtls_ecdsa_write_signature_restartable_2
+    689          
+    690          cleanup:
+    691              mbedtls_mpi_free(&r);
+   \                     ??mbedtls_ecdsa_write_signature_restartable_4: (+1)
+   \                     ??mbedtls_ecdsa_write_signature_restartable_2: (+1)
+   \       0x68   0xA806             ADD      R0,SP,#+24
+   \       0x6A   0x.... 0x....      BL       mbedtls_mpi_free
+    692              mbedtls_mpi_free(&s);
+   \       0x6E   0xA804             ADD      R0,SP,#+16
+   \       0x70   0x.... 0x....      BL       mbedtls_mpi_free
+    693          
+    694              return ret;
+   \       0x74   0x9801             LDR      R0,[SP, #+4]
+   \                     ??mbedtls_ecdsa_write_signature_restartable_1: (+1)
+   \       0x76   0xB009             ADD      SP,SP,#+36
+   \       0x78   0xE8BD 0x8FF0      POP      {R4-R11,PC}
+    695          }
+    696          
+    697          /*
+    698           * Compute and write signature
+    699           */
+
+   \                                 In section .text, align 2, keep-with-next
+    700          int mbedtls_ecdsa_write_signature(mbedtls_ecdsa_context *ctx,
+    701                                            mbedtls_md_type_t md_alg,
+    702                                            const unsigned char *hash, size_t hlen,
+    703                                            unsigned char *sig, size_t sig_size, size_t *slen,
+    704                                            int (*f_rng)(void *, unsigned char *, size_t),
+    705                                            void *p_rng)
+    706          {
+   \                     mbedtls_ecdsa_write_signature: (+1)
+   \        0x0   0xB5F8             PUSH     {R3-R7,LR}
+   \        0x2   0xB086             SUB      SP,SP,#+24
+   \        0x4   0x0004             MOVS     R4,R0
+   \        0x6   0x000D             MOVS     R5,R1
+   \        0x8   0x0016             MOVS     R6,R2
+   \        0xA   0x001F             MOVS     R7,R3
+    707              return mbedtls_ecdsa_write_signature_restartable(
+    708                  ctx, md_alg, hash, hlen, sig, sig_size, slen,
+    709                  f_rng, p_rng, NULL);
+   \        0xC   0x2000             MOVS     R0,#+0
+   \        0xE   0x9005             STR      R0,[SP, #+20]
+   \       0x10   0x9810             LDR      R0,[SP, #+64]
+   \       0x12   0x9004             STR      R0,[SP, #+16]
+   \       0x14   0x980F             LDR      R0,[SP, #+60]
+   \       0x16   0x9003             STR      R0,[SP, #+12]
+   \       0x18   0x980E             LDR      R0,[SP, #+56]
+   \       0x1A   0x9002             STR      R0,[SP, #+8]
+   \       0x1C   0x980D             LDR      R0,[SP, #+52]
+   \       0x1E   0x9001             STR      R0,[SP, #+4]
+   \       0x20   0x980C             LDR      R0,[SP, #+48]
+   \       0x22   0x9000             STR      R0,[SP, #+0]
+   \       0x24   0x003B             MOVS     R3,R7
+   \       0x26   0x0032             MOVS     R2,R6
+   \       0x28   0x0029             MOVS     R1,R5
+   \       0x2A   0xB2C9             UXTB     R1,R1
+   \       0x2C   0x0020             MOVS     R0,R4
+   \       0x2E   0x.... 0x....      BL       mbedtls_ecdsa_write_signature_restartable
+   \       0x32   0xB007             ADD      SP,SP,#+28
+   \       0x34   0xBDF0             POP      {R4-R7,PC}
+    710          }
+    711          
+    712          /*
+    713           * Read and check signature
+    714           */
+
+   \                                 In section .text, align 2, keep-with-next
+    715          int mbedtls_ecdsa_read_signature(mbedtls_ecdsa_context *ctx,
+    716                                           const unsigned char *hash, size_t hlen,
+    717                                           const unsigned char *sig, size_t slen)
+    718          {
+   \                     mbedtls_ecdsa_read_signature: (+1)
+   \        0x0   0xB5FE             PUSH     {R1-R7,LR}
+   \        0x2   0x0004             MOVS     R4,R0
+   \        0x4   0x000D             MOVS     R5,R1
+   \        0x6   0x0016             MOVS     R6,R2
+   \        0x8   0x001F             MOVS     R7,R3
+    719              return mbedtls_ecdsa_read_signature_restartable(
+    720                  ctx, hash, hlen, sig, slen, NULL);
+   \        0xA   0x2000             MOVS     R0,#+0
+   \        0xC   0x9001             STR      R0,[SP, #+4]
+   \        0xE   0x9808             LDR      R0,[SP, #+32]
+   \       0x10   0x9000             STR      R0,[SP, #+0]
+   \       0x12   0x003B             MOVS     R3,R7
+   \       0x14   0x0032             MOVS     R2,R6
+   \       0x16   0x0029             MOVS     R1,R5
+   \       0x18   0x0020             MOVS     R0,R4
+   \       0x1A   0x.... 0x....      BL       mbedtls_ecdsa_read_signature_restartable
+   \       0x1E   0xBDFE             POP      {R1-R7,PC}
+    721          }
+    722          
+    723          /*
+    724           * Restartable read and check signature
+    725           */
+
+   \                                 In section .text, align 2, keep-with-next
+    726          int mbedtls_ecdsa_read_signature_restartable(mbedtls_ecdsa_context *ctx,
+    727                                                       const unsigned char *hash, size_t hlen,
+    728                                                       const unsigned char *sig, size_t slen,
+    729                                                       mbedtls_ecdsa_restart_ctx *rs_ctx)
+    730          {
+   \                     mbedtls_ecdsa_read_signature_restartable: (+1)
+   \        0x0   0xE92D 0x4FF0      PUSH     {R4-R11,LR}
+   \        0x4   0xB089             SUB      SP,SP,#+36
+   \        0x6   0x4683             MOV      R11,R0
+   \        0x8   0x000C             MOVS     R4,R1
+   \        0xA   0x0015             MOVS     R5,R2
+   \        0xC   0x001E             MOVS     R6,R3
+   \        0xE   0x9F12             LDR      R7,[SP, #+72]
+    731              int ret = MBEDTLS_ERR_ERROR_CORRUPTION_DETECTED;
+   \       0x10   0xF07F 0x086D      MVNS     R8,#+109
+    732              unsigned char *p = (unsigned char *) sig;
+   \       0x14   0x9602             STR      R6,[SP, #+8]
+    733              const unsigned char *end = sig + slen;
+   \       0x16   0xEB06 0x0907      ADD      R9,R6,R7
+    734              size_t len;
+    735              mbedtls_mpi r, s;
+    736              mbedtls_mpi_init(&r);
+   \       0x1A   0xA807             ADD      R0,SP,#+28
+   \       0x1C   0x.... 0x....      BL       mbedtls_mpi_init
+    737              mbedtls_mpi_init(&s);
+   \       0x20   0xA805             ADD      R0,SP,#+20
+   \       0x22   0x.... 0x....      BL       mbedtls_mpi_init
+    738          
+    739              if ((ret = mbedtls_asn1_get_tag(&p, end, &len,
+    740                                              MBEDTLS_ASN1_CONSTRUCTED | MBEDTLS_ASN1_SEQUENCE)) != 0) {
+   \       0x26   0x2330             MOVS     R3,#+48
+   \       0x28   0xAA03             ADD      R2,SP,#+12
+   \       0x2A   0x4649             MOV      R1,R9
+   \       0x2C   0xA802             ADD      R0,SP,#+8
+   \       0x2E   0x.... 0x....      BL       mbedtls_asn1_get_tag
+   \       0x32   0x4682             MOV      R10,R0
+   \       0x34   0x2800             CMP      R0,#+0
+   \       0x36   0xD003             BEQ.N    ??mbedtls_ecdsa_read_signature_restartable_0
+    741                  ret += MBEDTLS_ERR_ECP_BAD_INPUT_DATA;
+   \       0x38   0xF5BA 0x4A9F      SUBS     R10,R10,#+20352
+   \       0x3C   0x46D0             MOV      R8,R10
+    742                  goto cleanup;
+   \       0x3E   0xE036             B.N      ??mbedtls_ecdsa_read_signature_restartable_1
+    743              }
+    744          
+    745              if (p + len != end) {
+   \                     ??mbedtls_ecdsa_read_signature_restartable_0: (+1)
+   \       0x40   0x9902             LDR      R1,[SP, #+8]
+   \       0x42   0x9803             LDR      R0,[SP, #+12]
+   \       0x44   0x4408             ADD      R0,R1,R0
+   \       0x46   0x4548             CMP      R0,R9
+   \       0x48   0xD009             BEQ.N    ??mbedtls_ecdsa_read_signature_restartable_2
+    746                  ret = MBEDTLS_ERROR_ADD(MBEDTLS_ERR_ECP_BAD_INPUT_DATA,
+    747                                          MBEDTLS_ERR_ASN1_LENGTH_MISMATCH);
+   \       0x4A   0xF240 0x23EB      MOVW     R3,#+747
+   \       0x4E   0x....             LDR.N    R2,??DataTable3_2
+   \       0x50   0xF07F 0x0165      MVNS     R1,#+101
+   \       0x54   0x....             LDR.N    R0,??DataTable3_1
+   \       0x56   0x.... 0x....      BL       mbedtls_error_add
+   \       0x5A   0x4680             MOV      R8,R0
+    748                  goto cleanup;
+   \       0x5C   0xE027             B.N      ??mbedtls_ecdsa_read_signature_restartable_1
+    749              }
+    750          
+    751              if ((ret = mbedtls_asn1_get_mpi(&p, end, &r)) != 0 ||
+    752                  (ret = mbedtls_asn1_get_mpi(&p, end, &s)) != 0) {
+   \                     ??mbedtls_ecdsa_read_signature_restartable_2: (+1)
+   \       0x5E   0xAA07             ADD      R2,SP,#+28
+   \       0x60   0x4649             MOV      R1,R9
+   \       0x62   0xA802             ADD      R0,SP,#+8
+   \       0x64   0x.... 0x....      BL       mbedtls_asn1_get_mpi
+   \       0x68   0x9004             STR      R0,[SP, #+16]
+   \       0x6A   0x2800             CMP      R0,#+0
+   \       0x6C   0xD107             BNE.N    ??mbedtls_ecdsa_read_signature_restartable_3
+   \       0x6E   0xAA05             ADD      R2,SP,#+20
+   \       0x70   0x4649             MOV      R1,R9
+   \       0x72   0xA802             ADD      R0,SP,#+8
+   \       0x74   0x.... 0x....      BL       mbedtls_asn1_get_mpi
+   \       0x78   0x9004             STR      R0,[SP, #+16]
+   \       0x7A   0x2800             CMP      R0,#+0
+   \       0x7C   0xD004             BEQ.N    ??mbedtls_ecdsa_read_signature_restartable_4
+    753                  ret += MBEDTLS_ERR_ECP_BAD_INPUT_DATA;
+   \                     ??mbedtls_ecdsa_read_signature_restartable_3: (+1)
+   \       0x7E   0xF8DD 0x8010      LDR      R8,[SP, #+16]
+   \       0x82   0xF5B8 0x489F      SUBS     R8,R8,#+20352
+    754                  goto cleanup;
+   \       0x86   0xE012             B.N      ??mbedtls_ecdsa_read_signature_restartable_1
+    755              }
+    756          #if defined(MBEDTLS_ECDSA_VERIFY_ALT)
+    757              (void) rs_ctx;
+    758          
+    759              if ((ret = mbedtls_ecdsa_verify(&ctx->grp, hash, hlen,
+    760                                              &ctx->Q, &r, &s)) != 0) {
+   \                     ??mbedtls_ecdsa_read_signature_restartable_4: (+1)
+   \       0x88   0xA805             ADD      R0,SP,#+20
+   \       0x8A   0x9001             STR      R0,[SP, #+4]
+   \       0x8C   0xA807             ADD      R0,SP,#+28
+   \       0x8E   0x9000             STR      R0,[SP, #+0]
+   \       0x90   0xF11B 0x0368      ADDS     R3,R11,#+104
+   \       0x94   0x002A             MOVS     R2,R5
+   \       0x96   0x0021             MOVS     R1,R4
+   \       0x98   0x4658             MOV      R0,R11
+   \       0x9A   0x.... 0x....      BL       mbedtls_ecdsa_verify
+   \       0x9E   0x4680             MOV      R8,R0
+   \       0xA0   0x2800             CMP      R0,#+0
+   \       0xA2   0xD104             BNE.N    ??mbedtls_ecdsa_read_signature_restartable_1
+    761                  goto cleanup;
+    762              }
+    763          #else
+    764              if ((ret = mbedtls_ecdsa_verify_restartable(&ctx->grp, hash, hlen,
+    765                                                          &ctx->Q, &r, &s, rs_ctx)) != 0) {
+    766                  goto cleanup;
+    767              }
+    768          #endif /* MBEDTLS_ECDSA_VERIFY_ALT */
+    769          
+    770              /* At this point we know that the buffer starts with a valid signature.
+    771               * Return 0 if the buffer just contains the signature, and a specific
+    772               * error code if the valid signature is followed by more data. */
+    773              if (p != end) {
+   \                     ??mbedtls_ecdsa_read_signature_restartable_5: (+1)
+   \       0xA4   0x9802             LDR      R0,[SP, #+8]
+   \       0xA6   0x4548             CMP      R0,R9
+   \       0xA8   0xD001             BEQ.N    ??mbedtls_ecdsa_read_signature_restartable_1
+    774                  ret = MBEDTLS_ERR_ECP_SIG_LEN_MISMATCH;
+   \       0xAA   0x....             LDR.N    R0,??DataTable3_3
+   \       0xAC   0x4680             MOV      R8,R0
+    775              }
+    776          
+    777          cleanup:
+    778              mbedtls_mpi_free(&r);
+   \                     ??mbedtls_ecdsa_read_signature_restartable_1: (+1)
+   \       0xAE   0xA807             ADD      R0,SP,#+28
+   \       0xB0   0x.... 0x....      BL       mbedtls_mpi_free
+    779              mbedtls_mpi_free(&s);
+   \       0xB4   0xA805             ADD      R0,SP,#+20
+   \       0xB6   0x.... 0x....      BL       mbedtls_mpi_free
+    780          
+    781              return ret;
+   \       0xBA   0x4640             MOV      R0,R8
+   \       0xBC   0xB009             ADD      SP,SP,#+36
+   \       0xBE   0xE8BD 0x8FF0      POP      {R4-R11,PC}
+    782          }
+    783          
+    784          #if !defined(MBEDTLS_ECDSA_GENKEY_ALT)
+    785          /*
+    786           * Generate key pair
+    787           */
+    788          int mbedtls_ecdsa_genkey(mbedtls_ecdsa_context *ctx, mbedtls_ecp_group_id gid,
+    789                                   int (*f_rng)(void *, unsigned char *, size_t), void *p_rng)
+    790          {
+    791              int ret = 0;
+    792              ret = mbedtls_ecp_group_load(&ctx->grp, gid);
+    793              if (ret != 0) {
+    794                  return ret;
+    795              }
+    796          
+    797              return mbedtls_ecp_gen_keypair(&ctx->grp, &ctx->d,
+    798                                             &ctx->Q, f_rng, p_rng);
+    799          }
+    800          #endif /* !MBEDTLS_ECDSA_GENKEY_ALT */
+    801          
+    802          /*
+    803           * Set context from an mbedtls_ecp_keypair
+    804           */
+
+   \                                 In section .text, align 2, keep-with-next
+    805          int mbedtls_ecdsa_from_keypair(mbedtls_ecdsa_context *ctx, const mbedtls_ecp_keypair *key)
+    806          {
+   \                     mbedtls_ecdsa_from_keypair: (+1)
+   \        0x0   0xB5F8             PUSH     {R3-R7,LR}
+   \        0x2   0x0004             MOVS     R4,R0
+   \        0x4   0x000D             MOVS     R5,R1
+    807              int ret = MBEDTLS_ERR_ERROR_CORRUPTION_DETECTED;
+   \        0x6   0xF07F 0x076D      MVNS     R7,#+109
+    808              if ((ret = mbedtls_ecp_group_copy(&ctx->grp, &key->grp)) != 0 ||
+    809                  (ret = mbedtls_mpi_copy(&ctx->d, &key->d)) != 0 ||
+    810                  (ret = mbedtls_ecp_copy(&ctx->Q, &key->Q)) != 0) {
+   \        0xA   0x0029             MOVS     R1,R5
+   \        0xC   0x0020             MOVS     R0,R4
+   \        0xE   0x.... 0x....      BL       mbedtls_ecp_group_copy
+   \       0x12   0x0006             MOVS     R6,R0
+   \       0x14   0x2800             CMP      R0,#+0
+   \       0x16   0xD111             BNE.N    ??mbedtls_ecdsa_from_keypair_0
+   \       0x18   0xF115 0x0160      ADDS     R1,R5,#+96
+   \       0x1C   0xF114 0x0060      ADDS     R0,R4,#+96
+   \       0x20   0x.... 0x....      BL       mbedtls_mpi_copy
+   \       0x24   0x0006             MOVS     R6,R0
+   \       0x26   0x2800             CMP      R0,#+0
+   \       0x28   0xD108             BNE.N    ??mbedtls_ecdsa_from_keypair_0
+   \       0x2A   0xF115 0x0168      ADDS     R1,R5,#+104
+   \       0x2E   0xF114 0x0068      ADDS     R0,R4,#+104
+   \       0x32   0x.... 0x....      BL       mbedtls_ecp_copy
+   \       0x36   0x0006             MOVS     R6,R0
+   \       0x38   0x2800             CMP      R0,#+0
+   \       0x3A   0xD002             BEQ.N    ??mbedtls_ecdsa_from_keypair_1
+    811                  mbedtls_ecdsa_free(ctx);
+   \                     ??mbedtls_ecdsa_from_keypair_0: (+1)
+   \       0x3C   0x0020             MOVS     R0,R4
+   \       0x3E   0x.... 0x....      BL       mbedtls_ecdsa_free
+    812              }
+    813          
+    814              return ret;
+   \                     ??mbedtls_ecdsa_from_keypair_1: (+1)
+   \       0x42   0x0030             MOVS     R0,R6
+   \       0x44   0xBDF2             POP      {R1,R4-R7,PC}
+    815          }
+    816          
+    817          /*
+    818           * Initialize context
+    819           */
+
+   \                                 In section .text, align 2, keep-with-next
+    820          void mbedtls_ecdsa_init(mbedtls_ecdsa_context *ctx)
+    821          {
+   \                     mbedtls_ecdsa_init: (+1)
+   \        0x0   0xB510             PUSH     {R4,LR}
+   \        0x2   0x0004             MOVS     R4,R0
+    822              mbedtls_ecp_keypair_init(ctx);
+   \        0x4   0x0020             MOVS     R0,R4
+   \        0x6   0x.... 0x....      BL       mbedtls_ecp_keypair_init
+    823          }
+   \        0xA   0xBD10             POP      {R4,PC}
+    824          
+    825          /*
+    826           * Free context
+    827           */
+
+   \                                 In section .text, align 2, keep-with-next
+    828          void mbedtls_ecdsa_free(mbedtls_ecdsa_context *ctx)
+    829          {
+   \                     mbedtls_ecdsa_free: (+1)
+   \        0x0   0xB510             PUSH     {R4,LR}
+   \        0x2   0x0004             MOVS     R4,R0
+    830              if (ctx == NULL) {
+   \        0x4   0x2C00             CMP      R4,#+0
+   \        0x6   0xD002             BEQ.N    ??mbedtls_ecdsa_free_0
+    831                  return;
+    832              }
+    833          
+    834              mbedtls_ecp_keypair_free(ctx);
+   \                     ??mbedtls_ecdsa_free_1: (+1)
+   \        0x8   0x0020             MOVS     R0,R4
+   \        0xA   0x.... 0x....      BL       mbedtls_ecp_keypair_free
+    835          }
+   \                     ??mbedtls_ecdsa_free_0: (+1)
+   \        0xE   0xBD10             POP      {R4,PC}
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable3:
+   \        0x0   0xFFFF'B100        DC32     0xffffb100
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable3_1:
+   \        0x0   0xFFFF'B080        DC32     0xffffb080
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable3_2:
+   \        0x0   0x....'....        DC32     ?_0
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable3_3:
+   \        0x0   0xFFFF'B400        DC32     0xffffb400
+
+   \                                 In section .rodata, align 4
+   \                     ?_0:
+   \        0x0   0x44 0x3A          DC8 0x44, 0x3A, 0x5C, 0x49, 0x6E, 0x65, 0x73, 0x68
+   \              0x5C 0x49    
+   \              0x6E 0x65    
+   \              0x73 0x68
+   \        0x8   0x5F 0x77          DC8 0x5F, 0x77, 0x69, 0x73, 0x75, 0x6E, 0x5C, 0x57
+   \              0x69 0x73    
+   \              0x75 0x6E    
+   \              0x5C 0x57
+   \       0x10   0x69 0x73          DC8 0x69, 0x73, 0x75, 0x6E, 0x5F, 0x4E, 0x6F, 0x64
+   \              0x75 0x6E    
+   \              0x5F 0x4E    
+   \              0x6F 0x64
+   \       0x18   0x65 0x5F          DC8 0x65, 0x5F, 0x41, 0x70, 0x70, 0x20, 0x31, 0x5C
+   \              0x41 0x70    
+   \              0x70 0x20    
+   \              0x31 0x5C
+   \       0x20   0x57 0x69          DC8 0x57, 0x69, 0x73, 0x75, 0x6E, 0x5F, 0x4E, 0x6F
+   \              0x73 0x75    
+   \              0x6E 0x5F    
+   \              0x4E 0x6F
+   \       0x28   0x64 0x65          DC8 0x64, 0x65, 0x5F, 0x41, 0x70, 0x70, 0x5C, 0x67
+   \              0x5F 0x41    
+   \              0x70 0x70    
+   \              0x5C 0x67
+   \       0x30   0x65 0x63          DC8 0x65, 0x63, 0x6B, 0x6F, 0x5F, 0x73, 0x64, 0x6B
+   \              0x6B 0x6F    
+   \              0x5F 0x73    
+   \              0x64 0x6B
+   \       0x38   0x5F 0x34          DC8 0x5F, 0x34, 0x2E, 0x34, 0x2E, 0x35, 0x5C, 0x75
+   \              0x2E 0x34    
+   \              0x2E 0x35    
+   \              0x5C 0x75
+   \       0x40   0x74 0x69          DC8 0x74, 0x69, 0x6C, 0x5C, 0x74, 0x68, 0x69, 0x72
+   \              0x6C 0x5C    
+   \              0x74 0x68    
+   \              0x69 0x72
+   \       0x48   0x64 0x5F          DC8 0x64, 0x5F, 0x70, 0x61, 0x72, 0x74, 0x79, 0x5C
+   \              0x70 0x61    
+   \              0x72 0x74    
+   \              0x79 0x5C
+   \       0x50   0x6D 0x62          DC8 0x6D, 0x62, 0x65, 0x64, 0x74, 0x6C, 0x73, 0x5C
+   \              0x65 0x64    
+   \              0x74 0x6C    
+   \              0x73 0x5C
+   \       0x58   0x6C 0x69          DC8 0x6C, 0x69, 0x62, 0x72, 0x61, 0x72, 0x79, 0x5C
+   \              0x62 0x72    
+   \              0x61 0x72    
+   \              0x79 0x5C
+   \       0x60   0x65 0x63          DC8 0x65, 0x63, 0x64, 0x73, 0x61, 0x2E, 0x63, 0
+   \              0x64 0x73    
+   \              0x61 0x2E    
+   \              0x63 0x00
+    836          
+    837          #if defined(MBEDTLS_ECP_RESTARTABLE)
+    838          /*
+    839           * Initialize a restart context
+    840           */
+    841          void mbedtls_ecdsa_restart_init(mbedtls_ecdsa_restart_ctx *ctx)
+    842          {
+    843              mbedtls_ecp_restart_init(&ctx->ecp);
+    844          
+    845              ctx->ver = NULL;
+    846              ctx->sig = NULL;
+    847          #if defined(MBEDTLS_ECDSA_DETERMINISTIC)
+    848              ctx->det = NULL;
+    849          #endif
+    850          }
+    851          
+    852          /*
+    853           * Free the components of a restart context
+    854           */
+    855          void mbedtls_ecdsa_restart_free(mbedtls_ecdsa_restart_ctx *ctx)
+    856          {
+    857              if (ctx == NULL) {
+    858                  return;
+    859              }
+    860          
+    861              mbedtls_ecp_restart_free(&ctx->ecp);
+    862          
+    863              ecdsa_restart_ver_free(ctx->ver);
+    864              mbedtls_free(ctx->ver);
+    865              ctx->ver = NULL;
+    866          
+    867              ecdsa_restart_sig_free(ctx->sig);
+    868              mbedtls_free(ctx->sig);
+    869              ctx->sig = NULL;
+    870          
+    871          #if defined(MBEDTLS_ECDSA_DETERMINISTIC)
+    872              ecdsa_restart_det_free(ctx->det);
+    873              mbedtls_free(ctx->det);
+    874              ctx->det = NULL;
+    875          #endif
+    876          }
+    877          #endif /* MBEDTLS_ECP_RESTARTABLE */
+    878          
+    879          #endif /* MBEDTLS_ECDSA_C */
+
+   Maximum stack usage in bytes:
+
+   .cstack Function
+   ------- --------
+     120   ecdsa_signature_to_asn1
+       120   -> __aeabi_memcpy
+       120   -> __aeabi_memset
+       120   -> mbedtls_asn1_write_len
+       120   -> mbedtls_asn1_write_mpi
+       120   -> mbedtls_asn1_write_tag
+       0   mbedtls_ecdsa_can_do
+       8   mbedtls_ecdsa_free
+         8   -> mbedtls_ecp_keypair_free
+      24   mbedtls_ecdsa_from_keypair
+        24   -> mbedtls_ecdsa_free
+        24   -> mbedtls_ecp_copy
+        24   -> mbedtls_ecp_group_copy
+        24   -> mbedtls_mpi_copy
+       8   mbedtls_ecdsa_init
+         8   -> mbedtls_ecp_keypair_init
+      32   mbedtls_ecdsa_read_signature
+        32   -> mbedtls_ecdsa_read_signature_restartable
+      72   mbedtls_ecdsa_read_signature_restartable
+        72   -> mbedtls_asn1_get_mpi
+        72   -> mbedtls_asn1_get_tag
+        72   -> mbedtls_ecdsa_verify
+        72   -> mbedtls_error_add
+        72   -> mbedtls_mpi_free
+        72   -> mbedtls_mpi_init
+      48   mbedtls_ecdsa_write_signature
+        48   -> mbedtls_ecdsa_write_signature_restartable
+      72   mbedtls_ecdsa_write_signature_restartable
+        72   -> ecdsa_signature_to_asn1
+        72   -> mbedtls_ecdsa_sign
+        72   -> mbedtls_mpi_free
+        72   -> mbedtls_mpi_init
+       0   mbedtls_error_add
+
+
+   Section sizes:
+
+   Bytes  Function/Label
+   -----  --------------
+       4  ??DataTable3
+       4  ??DataTable3_1
+       4  ??DataTable3_2
+       4  ??DataTable3_3
+     104  ?_0
+     174  ecdsa_signature_to_asn1
+       6  mbedtls_ecdsa_can_do
+      16  mbedtls_ecdsa_free
+      70  mbedtls_ecdsa_from_keypair
+      12  mbedtls_ecdsa_init
+      32  mbedtls_ecdsa_read_signature
+     194  mbedtls_ecdsa_read_signature_restartable
+      54  mbedtls_ecdsa_write_signature
+     124  mbedtls_ecdsa_write_signature_restartable
+       4  mbedtls_error_add
+
+ 
+ 104 bytes in section .rodata
+ 702 bytes in section .text
+ 
+ 702 bytes of CODE  memory
+ 104 bytes of CONST memory
+
+Errors: none
+Warnings: none

@@ -1,0 +1,1753 @@
+###############################################################################
+#
+# IAR ANSI C/C++ Compiler V9.50.2.385/W64 for ARM         27/Nov/2024  12:16:59
+# Copyright 1999-2024 IAR Systems AB.
+#
+#    Cpu mode          =  thumb
+#    Endian            =  little
+#    Source file       =
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\security\sl_component\se_manager\src\sl_se_manager_hash.c
+#    Command line      =
+#        -f
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\ewarm-iar\obj\src_10660899288376800039.dir\sl_se_manager_hash.o.rsp
+#        (C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\security\sl_component\se_manager\src\sl_se_manager_hash.c
+#        -D EFR32FG28B322F1024IM48=1 -D
+#        configNUM_SDK_THREAD_LOCAL_STORAGE_POINTERS=2 -D
+#        SL_COMPONENT_CATALOG_PRESENT=1 -D
+#        MBEDTLS_CONFIG_FILE=<sl_mbedtls_config.h> -D
+#        MBEDTLS_PSA_CRYPTO_CONFIG_FILE=<psa_crypto_config.h> -D
+#        SL_RAIL_LIB_MULTIPROTOCOL_SUPPORT=0 -D
+#        SL_RAIL_UTIL_PA_CONFIG_HEADER=<sl_rail_util_pa_config.h> -D
+#        RTT_USE_ASM=0 -D MBED_CONF_MBED_TRACE_ENABLE=1 -D
+#        MBED_CONF_NANOSTACK_CONFIGURATION=ws_router -D
+#        MBED_TRACE_MAX_LEVEL=TRACE_ACTIVE_LEVEL_ALL -D DEBUG_EFM_USER=1 -D
+#        HAVE_LFN=1 -D HAVE_LFN_PARENT=1 -lC
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\ewarm-iar\lst\src_10660899288376800039.dir
+#        --diag_suppress Pa050 -o
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\ewarm-iar\obj\src_10660899288376800039.dir
+#        --debug --endian=little --cpu=Cortex-M33 --cmse --cmse -e
+#        --fpu=VFPv5_sp --dlib_config "C:\Program Files\IAR Systems\Embedded
+#        Workbench 9.2\arm\inc\c\DLib_Config_Normal.h" -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\security\sl_component\se_manager\src\
+#        -I C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\autogen\ -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\config\ -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\config\rail\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\Device\SiliconLabs\EFR32FG28\Include\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\common\inc\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\CMSIS\Core\Include\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\CMSIS\RTOS2\Include\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\service\device_init\inc\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\emdrv\dmadrv\inc\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\emdrv\common\inc\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\emlib\inc\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\util\third_party\freertos\cmsis\Include\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\util\third_party\freertos\kernel\include\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\util\third_party\freertos\kernel\portable\IAR\ARM_CM33_NTZ\non_secure\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\service\iostream\inc\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\security\sl_component\sl_mbedtls_support\config\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\security\sl_component\sl_mbedtls_support\config\preset\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\security\sl_component\sl_mbedtls_support\inc\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\util\third_party\mbedtls\include\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\util\third_party\mbedtls\library\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\emdrv\nvm3\inc\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\peripheral\inc\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\security\sl_component\sl_psa_driver\inc\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\radio\rail_lib\common\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\radio\rail_lib\protocol\ble\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\radio\rail_lib\protocol\ieee802154\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\radio\rail_lib\protocol\wmbus\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\radio\rail_lib\protocol\zwave\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\radio\rail_lib\chip\efr32\efr32xg2x\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\radio\rail_lib\protocol\sidewalk\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\radio\rail_lib\plugin\pa-conversions\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\radio\rail_lib\plugin\pa-conversions\efr32xg28\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\radio\rail_lib\plugin\rail_util_pti\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\security\sl_component\se_manager\inc\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\security\sl_component\se_manager\src\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\util\third_party\segger\systemview\SEGGER\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\util\silicon_labs\silabs_core\memory_manager\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\common\toolchain\inc\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\service\system\inc\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\app\wisun\component\ns_list\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\app\wisun\component\trace_util\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\app\wisun\component\trace_util\nanostack\nanostack-libservice\mbed-client-libservice\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\service\sleeptimer\inc\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\protocol\wisun\stack\inc\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\protocol\wisun\app\wisun_rcp\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\protocol\wisun\stack\inc\socket\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\protocol\wisun\stack\src\
+#        -Ohz --use_c++_inline) --dependencies=n
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\ewarm-iar\obj\src_10660899288376800039.dir\sl_se_manager_hash.o.iar_deps
+#    Locale            =  C
+#    List file         =
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\ewarm-iar\lst\src_10660899288376800039.dir\sl_se_manager_hash.lst
+#    Object file       =
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\ewarm-iar\obj\src_10660899288376800039.dir\sl_se_manager_hash.o
+#    Runtime model:       
+#      __CPP_Runtime   =  1
+#      __SystemLibrary =  DLib
+#      __dlib_version  =  6
+#
+###############################################################################
+
+C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\security\sl_component\se_manager\src\sl_se_manager_hash.c
+      1          /***************************************************************************//**
+      2           * @file
+      3           * @brief Silicon Labs Secure Engine Manager API.
+      4           *******************************************************************************
+      5           * # License
+      6           * <b>Copyright 2020 Silicon Laboratories Inc. www.silabs.com</b>
+      7           *******************************************************************************
+      8           *
+      9           * SPDX-License-Identifier: Zlib
+     10           *
+     11           * The licensor of this software is Silicon Laboratories Inc.
+     12           *
+     13           * This software is provided 'as-is', without any express or implied
+     14           * warranty. In no event will the authors be held liable for any damages
+     15           * arising from the use of this software.
+     16           *
+     17           * Permission is granted to anyone to use this software for any purpose,
+     18           * including commercial applications, and to alter it and redistribute it
+     19           * freely, subject to the following restrictions:
+     20           *
+     21           * 1. The origin of this software must not be misrepresented; you must not
+     22           *    claim that you wrote the original software. If you use this software
+     23           *    in a product, an acknowledgment in the product documentation would be
+     24           *    appreciated but is not required.
+     25           * 2. Altered source versions must be plainly marked as such, and must not be
+     26           *    misrepresented as being the original software.
+     27           * 3. This notice may not be removed or altered from any source distribution.
+     28           *
+     29           ******************************************************************************/
+     30          
+     31          #include "sl_se_manager.h"
+     32          
+     33          #if defined(SLI_MAILBOX_COMMAND_SUPPORTED)
+     34          
+     35          #include "sli_se_manager_internal.h"
+     36          #include "em_se.h"
+     37          #include "sl_assert.h"
+     38          #include <string.h>
+     39          
+     40          /***************************************************************************//**
+     41           * \addtogroup sl_se Secure Engine Manager API
+     42           * @{
+     43           ******************************************************************************/
+     44          
+     45          // -----------------------------------------------------------------------------
+     46          // Global functions
+     47          
+     48          /***************************************************************************//**
+     49           * Start a SHA1 stream operation.
+     50           ******************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+     51          sl_status_t sl_se_hash_sha1_multipart_starts(sl_se_sha1_multipart_context_t *sha1_ctx,
+     52                                                       sl_se_command_context_t *cmd_ctx)
+     53          {
+   \                     sl_se_hash_sha1_multipart_starts: (+1)
+   \        0x0   0xB510             PUSH     {R4,LR}
+   \        0x2   0x4604             MOV      R4,R0
+     54            static const uint8_t init_state_sha1[32] = {
+     55              0x67, 0x45, 0x23, 0x01,
+     56              0xEF, 0xCD, 0xAB, 0x89,
+     57              0x98, 0xBA, 0xDC, 0xFE,
+     58              0x10, 0x32, 0x54, 0x76,
+     59              0xC3, 0xD2, 0xE1, 0xF0,
+     60              0x00, 0x00, 0x00, 0x00,
+     61              0x00, 0x00, 0x00, 0x00,
+     62              0x00, 0x00, 0x00, 0x00
+     63            };
+     64          
+     65            if (cmd_ctx == NULL || sha1_ctx == NULL) {
+   \        0x4   0x2900             CMP      R1,#+0
+   \        0x6   0xBF18             IT       NE
+   \        0x8   0x2C00             CMPNE    R4,#+0
+   \        0xA   0xD101             BNE.N    ??sl_se_hash_sha1_multipart_starts_0
+     66              return SL_STATUS_INVALID_PARAMETER;
+   \        0xC   0x2021             MOVS     R0,#+33
+   \        0xE   0xBD10             POP      {R4,PC}
+     67            }
+     68          
+     69            sha1_ctx->total[0] = 0;
+   \                     ??sl_se_hash_sha1_multipart_starts_0: (+1)
+   \       0x10   0x.... 0x....      BL       ?Subroutine2
+   \                     ??CrossCallReturnLabel_3: (+1)
+   \       0x14   0x.... 0x....      ADR.W    R1,`sl_se_hash_sha1_multipart_starts::init_state_sha1`
+   \       0x18   0x.... 0x....      BL       ?Subroutine1
+     70            sha1_ctx->total[1] = 0;
+     71            memcpy(sha1_ctx->state, init_state_sha1, sizeof(sha1_ctx->state));
+     72          
+     73            sha1_ctx->hash_type = SL_SE_HASH_SHA1;
+   \                     ??CrossCallReturnLabel_0: (+1)
+   \       0x1C   0x2001             MOVS     R0,#+1
+   \       0x1E   0x....             B.N      ?Subroutine0
+     74          
+     75            return SL_STATUS_OK;
+     76          }
+
+   \                                 In section .text, align 2, keep-with-next
+   \                     ?Subroutine0: (+1)
+   \        0x0   0x7020             STRB     R0,[R4, #+0]
+   \        0x2   0x2000             MOVS     R0,#+0
+   \        0x4   0xBD10             POP      {R4,PC}
+
+   \                                 In section .text, align 2, keep-with-next
+   \                     ?Subroutine2: (+1)
+   \        0x0   0x2100             MOVS     R1,#+0
+   \        0x2   0x6061             STR      R1,[R4, #+4]
+   \        0x4   0x60A1             STR      R1,[R4, #+8]
+   \        0x6   0x2220             MOVS     R2,#+32
+   \        0x8   0x4770             BX       LR
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     `sl_se_hash_sha1_multipart_starts::init_state_sha1`:
+   \        0x0   0x67 0x45          DC8 103, 69, 35, 1, 239, 205, 171, 137, 152, 186, 220, 254, 16, 50, 84
+   \              0x23 0x01    
+   \              0xEF 0xCD    
+   \              0xAB 0x89    
+   \              0x98 0xBA    
+   \              0xDC 0xFE    
+   \              0x10 0x32    
+   \              0x54
+   \        0xF   0x76 0xC3          DC8 118, 195, 210, 225, 240, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
+   \              0xD2 0xE1    
+   \              0xF0 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00
+     77          
+     78          /***************************************************************************//**
+     79           * Start a SHA224 stream operation.
+     80           ******************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+     81          sl_status_t
+     82          sl_se_hash_sha224_multipart_starts(sl_se_sha224_multipart_context_t *sha224_ctx,
+     83                                             sl_se_command_context_t *cmd_ctx)
+     84          {
+   \                     sl_se_hash_sha224_multipart_starts: (+1)
+   \        0x0   0xB510             PUSH     {R4,LR}
+   \        0x2   0x4604             MOV      R4,R0
+     85            static const uint8_t init_state_sha224[32] = {
+     86              0xC1, 0x05, 0x9E, 0xD8,
+     87              0x36, 0x7C, 0xD5, 0x07,
+     88              0x30, 0x70, 0xDD, 0x17,
+     89              0xF7, 0x0E, 0x59, 0x39,
+     90              0xFF, 0xC0, 0x0B, 0x31,
+     91              0x68, 0x58, 0x15, 0x11,
+     92              0x64, 0xF9, 0x8F, 0xA7,
+     93              0xBE, 0xFA, 0x4F, 0xA4
+     94            };
+     95          
+     96            if (cmd_ctx == NULL || sha224_ctx == NULL) {
+   \        0x4   0x2900             CMP      R1,#+0
+   \        0x6   0xBF18             IT       NE
+   \        0x8   0x2C00             CMPNE    R4,#+0
+   \        0xA   0xD101             BNE.N    ??sl_se_hash_sha224_multipart_starts_0
+     97              return SL_STATUS_INVALID_PARAMETER;
+   \        0xC   0x2021             MOVS     R0,#+33
+   \        0xE   0xBD10             POP      {R4,PC}
+     98            }
+     99          
+    100            sha224_ctx->total[0] = 0;
+   \                     ??sl_se_hash_sha224_multipart_starts_0: (+1)
+   \       0x10   0x.... 0x....      BL       ?Subroutine2
+   \                     ??CrossCallReturnLabel_4: (+1)
+   \       0x14   0x.... 0x....      ADR.W    R1,`sl_se_hash_sha224_multipart_starts::init_state_sha224`
+   \       0x18   0x.... 0x....      BL       ?Subroutine1
+    101            sha224_ctx->total[1] = 0;
+    102            memcpy(sha224_ctx->state, init_state_sha224, sizeof(sha224_ctx->state));
+    103          
+    104            sha224_ctx->hash_type = SL_SE_HASH_SHA224;
+   \                     ??CrossCallReturnLabel_1: (+1)
+   \       0x1C   0x2002             MOVS     R0,#+2
+   \       0x1E                      REQUIRE ?Subroutine0
+   \       0x1E                      ;; // Fall through to label ?Subroutine0
+    105          
+    106            return SL_STATUS_OK;
+    107          }
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     `sl_se_hash_sha224_multipart_starts::init_state_sha224`:
+   \        0x0   0xC1 0x05          DC8 193, 5, 158, 216, 54, 124, 213, 7, 48, 112, 221, 23, 247, 14, 89
+   \              0x9E 0xD8    
+   \              0x36 0x7C    
+   \              0xD5 0x07    
+   \              0x30 0x70    
+   \              0xDD 0x17    
+   \              0xF7 0x0E    
+   \              0x59
+   \        0xF   0x39 0xFF          DC8 57, 255, 192, 11, 49, 104, 88, 21, 17, 100, 249, 143, 167, 190, 250
+   \              0xC0 0x0B    
+   \              0x31 0x68    
+   \              0x58 0x15    
+   \              0x11 0x64    
+   \              0xF9 0x8F    
+   \              0xA7 0xBE    
+   \              0xFA
+   \       0x1E   0x4F 0xA4          DC8 79, 164
+    108          
+    109          /***************************************************************************//**
+    110           * Start a SHA256 stream operation.
+    111           ******************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+    112          sl_status_t
+    113          sl_se_hash_sha256_multipart_starts(sl_se_sha256_multipart_context_t *sha256_ctx,
+    114                                             sl_se_command_context_t *cmd_ctx)
+    115          {
+   \                     sl_se_hash_sha256_multipart_starts: (+1)
+   \        0x0   0xB510             PUSH     {R4,LR}
+   \        0x2   0x4604             MOV      R4,R0
+    116            static const uint8_t init_state_sha256[32] = {
+    117              0x6A, 0x09, 0xE6, 0x67,
+    118              0xBB, 0x67, 0xAE, 0x85,
+    119              0x3C, 0x6E, 0xF3, 0x72,
+    120              0xA5, 0x4F, 0xF5, 0x3A,
+    121              0x51, 0x0E, 0x52, 0x7F,
+    122              0x9B, 0x05, 0x68, 0x8C,
+    123              0x1F, 0x83, 0xD9, 0xAB,
+    124              0x5B, 0xE0, 0xCD, 0x19
+    125            };
+    126          
+    127            if (cmd_ctx == NULL || sha256_ctx == NULL) {
+   \        0x4   0x2900             CMP      R1,#+0
+   \        0x6   0xBF18             IT       NE
+   \        0x8   0x2C00             CMPNE    R4,#+0
+   \        0xA   0xD101             BNE.N    ??sl_se_hash_sha256_multipart_starts_0
+    128              return SL_STATUS_INVALID_PARAMETER;
+   \        0xC   0x2021             MOVS     R0,#+33
+   \        0xE   0xBD10             POP      {R4,PC}
+    129            }
+    130          
+    131            sha256_ctx->total[0] = 0;
+   \                     ??sl_se_hash_sha256_multipart_starts_0: (+1)
+   \       0x10   0x.... 0x....      BL       ?Subroutine2
+   \                     ??CrossCallReturnLabel_5: (+1)
+   \       0x14   0x.... 0x....      ADR.W    R1,`sl_se_hash_sha256_multipart_starts::init_state_sha256`
+   \       0x18   0x.... 0x....      BL       ?Subroutine1
+    132            sha256_ctx->total[1] = 0;
+    133            memcpy(sha256_ctx->state, init_state_sha256, sizeof(sha256_ctx->state));
+    134          
+    135            sha256_ctx->hash_type = SL_SE_HASH_SHA256;
+   \                     ??CrossCallReturnLabel_2: (+1)
+   \       0x1C   0x2003             MOVS     R0,#+3
+   \       0x1E   0x....             B.N      ?Subroutine0
+    136          
+    137            return SL_STATUS_OK;
+    138          }
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     `sl_se_hash_sha256_multipart_starts::init_state_sha256`:
+   \        0x0   0x6A 0x09          DC8 106, 9, 230, 103, 187, 103, 174, 133, 60, 110, 243, 114, 165, 79
+   \              0xE6 0x67    
+   \              0xBB 0x67    
+   \              0xAE 0x85    
+   \              0x3C 0x6E    
+   \              0xF3 0x72    
+   \              0xA5 0x4F
+   \        0xE   0xF5 0x3A          DC8 245, 58, 81, 14, 82, 127, 155, 5, 104, 140, 31, 131, 217, 171, 91
+   \              0x51 0x0E    
+   \              0x52 0x7F    
+   \              0x9B 0x05    
+   \              0x68 0x8C    
+   \              0x1F 0x83    
+   \              0xD9 0xAB    
+   \              0x5B
+   \       0x1D   0xE0 0xCD          DC8 224, 205, 25
+   \              0x19
+    139          
+    140          #if (_SILICON_LABS_SECURITY_FEATURE == _SILICON_LABS_SECURITY_FEATURE_VAULT)
+    141          /***************************************************************************//**
+    142           * Start a SHA384 stream operation.
+    143           ******************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+    144          sl_status_t
+    145          sl_se_hash_sha384_multipart_starts(sl_se_sha384_multipart_context_t *sha384_ctx,
+    146                                             sl_se_command_context_t *cmd_ctx)
+    147          {
+   \                     sl_se_hash_sha384_multipart_starts: (+1)
+   \        0x0   0xB510             PUSH     {R4,LR}
+   \        0x2   0x4604             MOV      R4,R0
+    148            static const uint8_t init_state_sha384[64] = {
+    149              0xCB, 0xBB, 0x9D, 0x5D, 0xC1, 0x05, 0x9E, 0xD8,
+    150              0x62, 0x9A, 0x29, 0x2A, 0x36, 0x7C, 0xD5, 0x07,
+    151              0x91, 0x59, 0x01, 0x5A, 0x30, 0x70, 0xDD, 0x17,
+    152              0x15, 0x2F, 0xEC, 0xD8, 0xF7, 0x0E, 0x59, 0x39,
+    153              0x67, 0x33, 0x26, 0x67, 0xFF, 0xC0, 0x0B, 0x31,
+    154              0x8E, 0xB4, 0x4A, 0x87, 0x68, 0x58, 0x15, 0x11,
+    155              0xDB, 0x0C, 0x2E, 0x0D, 0x64, 0xF9, 0x8F, 0xA7,
+    156              0x47, 0xB5, 0x48, 0x1D, 0xBE, 0xFA, 0x4F, 0xA4
+    157            };
+    158          
+    159            if (cmd_ctx == NULL || sha384_ctx == NULL) {
+   \        0x4   0x2900             CMP      R1,#+0
+   \        0x6   0xBF18             IT       NE
+   \        0x8   0x2C00             CMPNE    R4,#+0
+   \        0xA   0xD101             BNE.N    ??sl_se_hash_sha384_multipart_starts_0
+    160              return SL_STATUS_INVALID_PARAMETER;
+   \        0xC   0x2021             MOVS     R0,#+33
+   \        0xE   0xBD10             POP      {R4,PC}
+    161            }
+    162          
+    163            sha384_ctx->total[0] = 0;
+   \                     ??sl_se_hash_sha384_multipart_starts_0: (+1)
+   \       0x10   0x.... 0x....      BL       ?Subroutine3
+   \                     ??CrossCallReturnLabel_6: (+1)
+   \       0x14   0x.... 0x....      LDR.W    R1,??DataTable16
+   \       0x18   0xF104 0x0014      ADD      R0,R4,#+20
+   \       0x1C   0x.... 0x....      BL       __aeabi_memcpy4
+    164            sha384_ctx->total[1] = 0;
+    165            sha384_ctx->total[2] = 0;
+    166            sha384_ctx->total[3] = 0;
+    167            memcpy(sha384_ctx->state, init_state_sha384, sizeof(sha384_ctx->state));
+    168          
+    169            sha384_ctx->hash_type = SL_SE_HASH_SHA384;
+   \       0x20   0x2004             MOVS     R0,#+4
+   \       0x22   0x....             B.N      ?Subroutine0
+    170          
+    171            return SL_STATUS_OK;
+    172          }
+
+   \                                 In section .text, align 2, keep-with-next
+   \                     ?Subroutine3: (+1)
+   \        0x0   0x2100             MOVS     R1,#+0
+   \        0x2   0x6061             STR      R1,[R4, #+4]
+   \        0x4   0x60A1             STR      R1,[R4, #+8]
+   \        0x6   0x60E1             STR      R1,[R4, #+12]
+   \        0x8   0x6121             STR      R1,[R4, #+16]
+   \        0xA   0x2240             MOVS     R2,#+64
+   \        0xC   0x4770             BX       LR
+
+   \                                 In section .rodata, align 4
+   \                     `sl_se_hash_sha384_multipart_starts::init_state_sha384`:
+   \        0x0   0xCB 0xBB          DC8 203, 187, 157, 93, 193, 5, 158, 216, 98, 154, 41, 42, 54, 124, 213
+   \              0x9D 0x5D    
+   \              0xC1 0x05    
+   \              0x9E 0xD8    
+   \              0x62 0x9A    
+   \              0x29 0x2A    
+   \              0x36 0x7C    
+   \              0xD5
+   \        0xF   0x07 0x91          DC8 7, 145, 89, 1, 90, 48, 112, 221, 23, 21, 47, 236, 216, 247, 14, 89
+   \              0x59 0x01    
+   \              0x5A 0x30    
+   \              0x70 0xDD    
+   \              0x17 0x15    
+   \              0x2F 0xEC    
+   \              0xD8 0xF7    
+   \              0x0E 0x59
+   \       0x1F   0x39 0x67          DC8 57, 103, 51, 38, 103, 255, 192, 11, 49, 142, 180, 74, 135, 104, 88
+   \              0x33 0x26    
+   \              0x67 0xFF    
+   \              0xC0 0x0B    
+   \              0x31 0x8E    
+   \              0xB4 0x4A    
+   \              0x87 0x68    
+   \              0x58
+   \       0x2E   0x15 0x11          DC8 21, 17, 219, 12, 46, 13, 100, 249, 143, 167, 71, 181, 72, 29, 190
+   \              0xDB 0x0C    
+   \              0x2E 0x0D    
+   \              0x64 0xF9    
+   \              0x8F 0xA7    
+   \              0x47 0xB5    
+   \              0x48 0x1D    
+   \              0xBE
+   \       0x3D   0xFA 0x4F          DC8 250, 79, 164
+   \              0xA4
+    173          
+    174          /***************************************************************************//**
+    175           * Start a SHA512 stream operation.
+    176           ******************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+    177          sl_status_t
+    178          sl_se_hash_sha512_multipart_starts(sl_se_sha512_multipart_context_t *sha512_ctx, sl_se_command_context_t *cmd_ctx)
+    179          {
+   \                     sl_se_hash_sha512_multipart_starts: (+1)
+   \        0x0   0xB510             PUSH     {R4,LR}
+   \        0x2   0x4604             MOV      R4,R0
+    180            static const uint8_t init_state_sha512[64] = {
+    181              0x6A, 0x09, 0xE6, 0x67, 0xF3, 0xBC, 0xC9, 0x08,
+    182              0xBB, 0x67, 0xAE, 0x85, 0x84, 0xCA, 0xA7, 0x3B,
+    183              0x3C, 0x6E, 0xF3, 0x72, 0xFE, 0x94, 0xF8, 0x2B,
+    184              0xA5, 0x4F, 0xF5, 0x3A, 0x5F, 0x1D, 0x36, 0xF1,
+    185              0x51, 0x0E, 0x52, 0x7F, 0xAD, 0xE6, 0x82, 0xD1,
+    186              0x9B, 0x05, 0x68, 0x8C, 0x2B, 0x3E, 0x6C, 0x1F,
+    187              0x1F, 0x83, 0xD9, 0xAB, 0xFB, 0x41, 0xBD, 0x6B,
+    188              0x5B, 0xE0, 0xCD, 0x19, 0x13, 0x7E, 0x21, 0x79
+    189            };
+    190          
+    191            if (cmd_ctx == NULL || sha512_ctx == NULL) {
+   \        0x4   0x2900             CMP      R1,#+0
+   \        0x6   0xBF18             IT       NE
+   \        0x8   0x2C00             CMPNE    R4,#+0
+   \        0xA   0xD101             BNE.N    ??sl_se_hash_sha512_multipart_starts_0
+    192              return SL_STATUS_INVALID_PARAMETER;
+   \        0xC   0x2021             MOVS     R0,#+33
+   \        0xE   0xBD10             POP      {R4,PC}
+    193            }
+    194          
+    195            sha512_ctx->total[0] = 0;
+   \                     ??sl_se_hash_sha512_multipart_starts_0: (+1)
+   \       0x10   0x.... 0x....      BL       ?Subroutine3
+   \                     ??CrossCallReturnLabel_7: (+1)
+   \       0x14   0x.... 0x....      LDR.W    R1,??DataTable16_1
+   \       0x18   0xF104 0x0014      ADD      R0,R4,#+20
+   \       0x1C   0x.... 0x....      BL       __aeabi_memcpy4
+    196            sha512_ctx->total[1] = 0;
+    197            sha512_ctx->total[2] = 0;
+    198            sha512_ctx->total[3] = 0;
+    199            memcpy(sha512_ctx->state, init_state_sha512, sizeof(sha512_ctx->state));
+    200          
+    201            sha512_ctx->hash_type = SL_SE_HASH_SHA512;
+   \       0x20   0x2005             MOVS     R0,#+5
+   \       0x22   0x....             B.N      ?Subroutine0
+    202          
+    203            return SL_STATUS_OK;
+    204          }
+
+   \                                 In section .rodata, align 4
+   \                     `sl_se_hash_sha512_multipart_starts::init_state_sha512`:
+   \        0x0   0x6A 0x09          DC8 106, 9, 230, 103, 243, 188, 201, 8, 187, 103, 174, 133, 132, 202
+   \              0xE6 0x67    
+   \              0xF3 0xBC    
+   \              0xC9 0x08    
+   \              0xBB 0x67    
+   \              0xAE 0x85    
+   \              0x84 0xCA
+   \        0xE   0xA7 0x3B          DC8 167, 59, 60, 110, 243, 114, 254, 148, 248, 43, 165, 79, 245, 58, 95
+   \              0x3C 0x6E    
+   \              0xF3 0x72    
+   \              0xFE 0x94    
+   \              0xF8 0x2B    
+   \              0xA5 0x4F    
+   \              0xF5 0x3A    
+   \              0x5F
+   \       0x1D   0x1D 0x36          DC8 29, 54, 241, 81, 14, 82, 127, 173, 230, 130, 209, 155, 5, 104, 140
+   \              0xF1 0x51    
+   \              0x0E 0x52    
+   \              0x7F 0xAD    
+   \              0xE6 0x82    
+   \              0xD1 0x9B    
+   \              0x05 0x68    
+   \              0x8C
+   \       0x2C   0x2B 0x3E          DC8 43, 62, 108, 31, 31, 131, 217, 171, 251, 65, 189, 107, 91, 224, 205
+   \              0x6C 0x1F    
+   \              0x1F 0x83    
+   \              0xD9 0xAB    
+   \              0xFB 0x41    
+   \              0xBD 0x6B    
+   \              0x5B 0xE0    
+   \              0xCD
+   \       0x3B   0x19 0x13          DC8 25, 19, 126, 33, 121
+   \              0x7E 0x21    
+   \              0x79
+    205          
+    206          #endif
+    207          
+    208          /***************************************************************************//**
+    209           * Start a hash stream operation.
+    210           ******************************************************************************/
+
+   \                                 In section .text, align 4, keep-with-next
+    211          sl_status_t sl_se_hash_multipart_starts(void *hash_type_ctx,
+    212                                                  sl_se_command_context_t *cmd_ctx,
+    213                                                  sl_se_hash_type_t hash_type)
+    214          {
+    215            if (cmd_ctx == NULL || hash_type_ctx == NULL) {
+   \                     sl_se_hash_multipart_starts: (+1)
+   \        0x0   0x2900             CMP      R1,#+0
+   \        0x2   0xBF18             IT       NE
+   \        0x4   0x2800             CMPNE    R0,#+0
+   \        0x6   0xD00C             BEQ.N    ??sl_se_hash_multipart_starts_1
+    216              return SL_STATUS_INVALID_PARAMETER;
+    217            }
+    218          
+    219            switch (hash_type) {
+   \        0x8   0x1E52             SUBS     R2,R2,#+1
+   \        0xA   0x2A04             CMP      R2,#+4
+   \        0xC   0xD809             BHI.N    ??sl_se_hash_multipart_starts_1
+   \        0xE   0xE8DF 0xF002      TBB      [PC, R2]
+   \                     ??sl_se_hash_multipart_starts_0:
+   \       0x12   0x03 0x04          DC8      0x3,0x4,0x5,0x6
+   \              0x05 0x06
+   \       0x16   0x07 0x00          DC8      0x7,0x0
+    220              case SL_SE_HASH_SHA1:
+    221                return sl_se_hash_sha1_multipart_starts((sl_se_sha1_multipart_context_t*)
+    222                                                        hash_type_ctx, cmd_ctx);
+   \                     ??sl_se_hash_multipart_starts_2: (+1)
+   \       0x18   0x....             B.N      sl_se_hash_sha1_multipart_starts
+    223          
+    224              case SL_SE_HASH_SHA224:
+    225                return sl_se_hash_sha224_multipart_starts((sl_se_sha224_multipart_context_t*)
+    226                                                          hash_type_ctx, cmd_ctx);
+   \                     ??sl_se_hash_multipart_starts_3: (+1)
+   \       0x1A   0x....             B.N      sl_se_hash_sha224_multipart_starts
+    227          
+    228              case SL_SE_HASH_SHA256:
+    229                return sl_se_hash_sha256_multipart_starts((sl_se_sha256_multipart_context_t*)
+    230                                                          hash_type_ctx, cmd_ctx);
+   \                     ??sl_se_hash_multipart_starts_4: (+1)
+   \       0x1C   0x....             B.N      sl_se_hash_sha256_multipart_starts
+    231          
+    232          #if (_SILICON_LABS_SECURITY_FEATURE == _SILICON_LABS_SECURITY_FEATURE_VAULT)
+    233              case SL_SE_HASH_SHA384:
+    234                return sl_se_hash_sha384_multipart_starts((sl_se_sha384_multipart_context_t*)
+    235                                                          hash_type_ctx,
+    236                                                          cmd_ctx);
+   \                     ??sl_se_hash_multipart_starts_5: (+1)
+   \       0x1E   0x....             B.N      sl_se_hash_sha384_multipart_starts
+    237          
+    238              case SL_SE_HASH_SHA512:
+    239                return sl_se_hash_sha512_multipart_starts((sl_se_sha512_multipart_context_t*)
+    240                                                          hash_type_ctx, cmd_ctx);
+   \                     ??sl_se_hash_multipart_starts_6: (+1)
+   \       0x20   0x....             B.N      sl_se_hash_sha512_multipart_starts
+    241          #endif
+    242          
+    243              default:
+    244                return SL_STATUS_INVALID_PARAMETER;
+   \                     ??sl_se_hash_multipart_starts_1: (+1)
+   \       0x22   0x2021             MOVS     R0,#+33
+   \       0x24   0x4770             BX       LR
+    245            }
+    246          }
+    247          
+    248          /***************************************************************************//**
+    249           *   Feeds an input block into an ongoing hash computation.
+    250           ******************************************************************************/
+
+   \                                 In section .text, align 4, keep-with-next
+    251          static sl_status_t se_cmd_hash_multipart_update(void *hash_type_ctx,
+    252                                                          sl_se_command_context_t *cmd_ctx,
+    253                                                          const uint8_t *input,
+    254                                                          uint32_t num_blocks)
+    255          {
+   \                     se_cmd_hash_multipart_update: (+1)
+   \        0x0   0xE92D 0x41F8      PUSH     {R3-R8,LR}
+   \        0x4   0xB089             SUB      SP,SP,#+36
+   \        0x6   0x4617             MOV      R7,R2
+    256            SE_Command_t *se_cmd = &cmd_ctx->command;
+    257            uint8_t *state;
+    258            uint32_t command_word = SLI_SE_COMMAND_HASHUPDATE;
+    259            size_t state_len, blocksize;
+    260          
+    261            switch (((sl_se_sha1_multipart_context_t*)hash_type_ctx)->hash_type) {
+   \        0x8   0x7802             LDRB     R2,[R0, #+0]
+   \        0xA   0x460D             MOV      R5,R1
+   \        0xC   0x461C             MOV      R4,R3
+   \        0xE   0x1E52             SUBS     R2,R2,#+1
+   \       0x10   0x.... 0x....      LDR.W    R6,??DataTable16_2
+   \       0x14   0x.... 0x....      LDR.W    R1,??DataTable16_3
+   \       0x18   0x2A04             CMP      R2,#+4
+   \       0x1A   0xD858             BHI.N    ??se_cmd_hash_multipart_update_1
+   \       0x1C   0xE8DF 0xF002      TBB      [PC, R2]
+   \                     ??se_cmd_hash_multipart_update_0:
+   \       0x20   0x03 0x45          DC8      0x3,0x45,0x49,0x4D
+   \              0x49 0x4D
+   \       0x24   0x53 0x00          DC8      0x53,0x0
+    262              case SL_SE_HASH_SHA1:
+    263                state = ((sl_se_sha1_multipart_context_t*)hash_type_ctx)->state;
+   \                     ??se_cmd_hash_multipart_update_2: (+1)
+   \       0x26   0xF100 0x080C      ADD      R8,R0,#+12
+    264                command_word |= SLI_SE_COMMAND_OPTION_HASH_SHA1;
+   \       0x2A   0x.... 0x....      LDR.W    R0,??DataTable16_4
+    265                state_len = 20;
+   \       0x2E   0x.... 0x....      LDR.W    R6,??DataTable16_5
+    266                blocksize = 64;
+   \                     ??se_cmd_hash_multipart_update_3: (+1)
+   \       0x32   0x2140             MOVS     R1,#+64
+    267                break;
+    268              case SL_SE_HASH_SHA224:
+    269                state = ((sl_se_sha224_multipart_context_t*)hash_type_ctx)->state;
+    270                command_word |= SLI_SE_COMMAND_OPTION_HASH_SHA224;
+    271                state_len = 32;
+    272                blocksize = 64;
+    273                break;
+    274              case SL_SE_HASH_SHA256:
+    275                state = ((sl_se_sha256_multipart_context_t*)hash_type_ctx)->state;
+    276                command_word |= SLI_SE_COMMAND_OPTION_HASH_SHA256;
+    277                state_len = 32;
+    278                blocksize = 64;
+    279                break;
+    280          
+    281          #if (_SILICON_LABS_SECURITY_FEATURE == _SILICON_LABS_SECURITY_FEATURE_VAULT)
+    282              case SL_SE_HASH_SHA384:
+    283                state = ((sl_se_sha384_multipart_context_t*)hash_type_ctx)->state;
+    284                command_word |= SLI_SE_COMMAND_OPTION_HASH_SHA384;
+    285                state_len = 64;
+    286                blocksize = 128;
+    287                break;
+    288              case SL_SE_HASH_SHA512:
+    289                state = ((sl_se_sha512_multipart_context_t*)hash_type_ctx)->state;
+    290                command_word |= SLI_SE_COMMAND_OPTION_HASH_SHA512;
+    291                state_len = 64;
+    292                blocksize = 128;
+    293                break;
+    294          #endif
+    295          
+    296              default:
+    297                return SL_STATUS_INVALID_PARAMETER;
+    298            }
+    299          
+    300            sli_se_command_init(cmd_ctx, command_word);
+   \                     ??se_cmd_hash_multipart_update_4: (+1)
+   \       0x34   0x6028             STR      R0,[R5, #+0]
+    301          
+    302            size_t ilen = blocksize * num_blocks;
+   \       0x36   0x434C             MULS     R4,R4,R1
+   \       0x38   0x2000             MOVS     R0,#+0
+   \       0x3A   0x6068             STR      R0,[R5, #+4]
+   \       0x3C   0x60A8             STR      R0,[R5, #+8]
+   \       0x3E   0x61E8             STR      R0,[R5, #+28]
+    303            SE_addParameter(se_cmd, ilen);
+   \       0x40   0x4621             MOV      R1,R4
+   \       0x42   0x4628             MOV      R0,R5
+   \       0x44   0x.... 0x....      BL       SE_addParameter
+    304          
+    305            SE_DataTransfer_t data_in = SE_DATATRANSFER_DEFAULT(input, ilen);
+   \       0x48   0x.... 0x....      ADR.W    R0,?_0
+   \       0x4C   0xE890 0x4006      LDM      R0,{R1,R2,LR}
+   \       0x50   0xAB06             ADD      R3,SP,#+24
+   \       0x52   0xF044 0x5400      ORR      R4,R4,#0x20000000
+   \       0x56   0xE883 0x4006      STM      R3,{R1,R2,LR}
+   \       0x5A   0x9706             STR      R7,[SP, #+24]
+   \       0x5C   0x9408             STR      R4,[SP, #+32]
+    306            SE_DataTransfer_t iv_in = SE_DATATRANSFER_DEFAULT(state, state_len);
+   \       0x5E   0x.... 0x....      ADR.W    R1,?_1
+   \       0x62   0xE891 0x001C      LDM      R1,{R2-R4}
+   \       0x66   0xAF03             ADD      R7,SP,#+12
+    307            SE_DataTransfer_t iv_out = SE_DATATRANSFER_DEFAULT(state, state_len);
+   \       0x68   0x.... 0x....      ADR.W    R1,?_2
+   \       0x6C   0xE887 0x001C      STM      R7,{R2-R4}
+   \       0x70   0xF8CD 0x800C      STR      R8,[SP, #+12]
+   \       0x74   0x9605             STR      R6,[SP, #+20]
+   \       0x76   0xE891 0x001C      LDM      R1,{R2-R4}
+   \       0x7A   0x466F             MOV      R7,SP
+    308          
+    309            SE_addDataInput(se_cmd, &iv_in);
+   \       0x7C   0xA903             ADD      R1,SP,#+12
+   \       0x7E   0xE887 0x001C      STM      R7,{R2-R4}
+   \       0x82   0xF8CD 0x8000      STR      R8,[SP, #+0]
+   \       0x86   0x9602             STR      R6,[SP, #+8]
+   \       0x88   0x4628             MOV      R0,R5
+   \       0x8A   0x.... 0x....      BL       SE_addDataInput
+    310            SE_addDataInput(se_cmd, &data_in);
+   \       0x8E   0xA906             ADD      R1,SP,#+24
+   \       0x90   0x4628             MOV      R0,R5
+   \       0x92   0x.... 0x....      BL       SE_addDataInput
+    311            SE_addDataOutput(se_cmd, &iv_out);
+   \       0x96   0x4669             MOV      R1,SP
+   \       0x98   0x4628             MOV      R0,R5
+   \       0x9A   0x.... 0x....      BL       SE_addDataOutput
+    312          
+    313            // Execute and wait
+    314            return sli_se_execute_and_wait(cmd_ctx);
+   \       0x9E   0x4628             MOV      R0,R5
+   \       0xA0   0x.... 0x....      BL       sli_se_execute_and_wait
+   \                     ??se_cmd_hash_multipart_update_5: (+1)
+   \       0xA4   0xB00A             ADD      SP,SP,#+40
+   \       0xA6   0xE8BD 0x81F0      POP      {R4-R8,PC}
+   \                     ??se_cmd_hash_multipart_update_6: (+1)
+   \       0xAA   0xF100 0x080C      ADD      R8,R0,#+12
+   \       0xAE   0x....             LDR.N    R0,??DataTable16_6
+   \       0xB0   0xE7BF             B.N      ??se_cmd_hash_multipart_update_3
+   \                     ??se_cmd_hash_multipart_update_7: (+1)
+   \       0xB2   0xF100 0x080C      ADD      R8,R0,#+12
+   \       0xB6   0x....             LDR.N    R0,??DataTable16_7
+   \       0xB8   0xE7BB             B.N      ??se_cmd_hash_multipart_update_3
+   \                     ??se_cmd_hash_multipart_update_8: (+1)
+   \       0xBA   0xF100 0x0814      ADD      R8,R0,#+20
+   \       0xBE   0x....             LDR.N    R0,??DataTable16_8
+   \                     ??se_cmd_hash_multipart_update_9: (+1)
+   \       0xC0   0x460E             MOV      R6,R1
+   \       0xC2   0x2180             MOVS     R1,#+128
+   \       0xC4   0xE7B6             B.N      ??se_cmd_hash_multipart_update_4
+   \                     ??se_cmd_hash_multipart_update_10: (+1)
+   \       0xC6   0xF100 0x0814      ADD      R8,R0,#+20
+   \       0xCA   0x....             LDR.N    R0,??DataTable16_9
+   \       0xCC   0xE7F8             B.N      ??se_cmd_hash_multipart_update_9
+   \                     ??se_cmd_hash_multipart_update_1: (+1)
+   \       0xCE   0x2021             MOVS     R0,#+33
+   \       0xD0   0xE7E8             B.N      ??se_cmd_hash_multipart_update_5
+    315          }
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ?_0:
+   \        0x0   0x0000'0000        DC32 0x0, 0x1, 0
+   \              0x0000'0001  
+   \              0x0000'0000
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ?_1:
+   \        0x0   0x0000'0000        DC32 0x0, 0x1, 0
+   \              0x0000'0001  
+   \              0x0000'0000
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ?_2:
+   \        0x0   0x0000'0000        DC32 0x0, 0x1, 0
+   \              0x0000'0001  
+   \              0x0000'0000
+    316          
+    317          /***************************************************************************//**
+    318           *   Feeds an input buffer into an ongoing hash computation.
+    319           ******************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+    320          sl_status_t sl_se_hash_multipart_update(void *hash_type_ctx,
+    321                                                  sl_se_command_context_t *cmd_ctx,
+    322                                                  const uint8_t *input,
+    323                                                  size_t input_len)
+    324          {
+   \                     sl_se_hash_multipart_update: (+1)
+   \        0x0   0xE92D 0x4FF8      PUSH     {R3-R11,LR}
+   \        0x4   0x001C             MOVS     R4,R3
+    325            size_t blocks, fill, left, blocksize, countersize;
+    326            sl_status_t status;
+    327            uint8_t *buffer;
+    328            uint32_t *counter;
+    329          
+    330            if ( input_len == 0 ) {
+   \        0x6   0xD065             BEQ.N    ??CrossCallReturnLabel_12
+   \        0x8   0xEA5F 0x0800      MOVS     R8,R0
+    331              return SL_STATUS_OK;
+    332            }
+    333          
+    334            if (hash_type_ctx == NULL || cmd_ctx == NULL || input == NULL) {
+   \        0xC   0xBF1C             ITT      NE
+   \        0xE   0xEA5F 0x0901      MOVSNE   R9,R1
+   \       0x12   0xEA5F 0x0A02      MOVSNE   R10,R2
+   \       0x16   0xD01F             BEQ.N    ??sl_se_hash_multipart_update_0
+    335              return SL_STATUS_INVALID_PARAMETER;
+    336            }
+    337          
+    338            switch (((sl_se_sha1_multipart_context_t*)hash_type_ctx)->hash_type) {
+   \       0x18   0xF898 0x1000      LDRB     R1,[R8, #+0]
+   \       0x1C   0xF108 0x0204      ADD      R2,R8,#+4
+   \       0x20   0x1E49             SUBS     R1,R1,#+1
+   \       0x22   0x2902             CMP      R1,#+2
+   \       0x24   0xD903             BLS.N    ??sl_se_hash_multipart_update_1
+   \       0x26   0x1EC9             SUBS     R1,R1,#+3
+   \       0x28   0x2901             CMP      R1,#+1
+   \       0x2A   0xD911             BLS.N    ??sl_se_hash_multipart_update_2
+   \       0x2C   0xE014             B.N      ??sl_se_hash_multipart_update_0
+    339              case SL_SE_HASH_SHA1:
+    340                counter = ((sl_se_sha1_multipart_context_t*)hash_type_ctx)->total;
+    341                buffer = ((sl_se_sha1_multipart_context_t*)hash_type_ctx)->buffer;
+    342                blocksize = 64;
+    343                break;
+    344              case SL_SE_HASH_SHA224:
+    345                counter = ((sl_se_sha224_multipart_context_t*)hash_type_ctx)->total;
+    346                buffer = ((sl_se_sha224_multipart_context_t*)hash_type_ctx)->buffer;
+    347                blocksize = 64;
+    348                break;
+    349              case SL_SE_HASH_SHA256:
+    350                counter = ((sl_se_sha256_multipart_context_t*)hash_type_ctx)->total;
+    351                buffer = ((sl_se_sha256_multipart_context_t*)hash_type_ctx)->buffer;
+   \                     ??sl_se_hash_multipart_update_1: (+1)
+   \       0x2E   0xF108 0x0B2C      ADD      R11,R8,#+44
+    352                blocksize = 64;
+   \       0x32   0x2640             MOVS     R6,#+64
+    353                break;
+    354          
+    355          #if (_SILICON_LABS_SECURITY_FEATURE == _SILICON_LABS_SECURITY_FEATURE_VAULT)
+    356              case SL_SE_HASH_SHA384:
+    357                counter = ((sl_se_sha384_multipart_context_t*)hash_type_ctx)->total;
+    358                buffer = ((sl_se_sha384_multipart_context_t*)hash_type_ctx)->buffer;
+    359                blocksize = 128;
+    360                break;
+    361              case SL_SE_HASH_SHA512:
+    362                counter = ((sl_se_sha512_multipart_context_t*)hash_type_ctx)->total;
+    363                buffer = ((sl_se_sha512_multipart_context_t*)hash_type_ctx)->buffer;
+    364                blocksize = 128;
+    365                break;
+    366          #endif
+    367          
+    368              default:
+    369                return SL_STATUS_INVALID_PARAMETER;
+    370            }
+    371          
+    372            countersize = blocksize / 32;
+    373            left = (counter[0] & (blocksize - 1));
+   \                     ??sl_se_hash_multipart_update_3: (+1)
+   \       0x34   0x6810             LDR      R0,[R2, #+0]
+   \       0x36   0x1E75             SUBS     R5,R6,#+1
+   \       0x38   0x0971             LSRS     R1,R6,#+5
+   \       0x3A   0x4005             ANDS     R5,R5,R0
+    374            fill = blocksize - left;
+   \       0x3C   0x1B77             SUBS     R7,R6,R5
+    375          
+    376            counter[0] += input_len;
+   \       0x3E   0x1820             ADDS     R0,R4,R0
+   \       0x40   0x6010             STR      R0,[R2, #+0]
+    377          
+    378            // ripple counter
+    379            if ( counter[0] < input_len ) {
+   \       0x42   0x42A0             CMP      R0,R4
+   \       0x44   0xD219             BCS.N    ??sl_se_hash_multipart_update_4
+    380              counter[1] += 1;
+   \       0x46   0x6850             LDR      R0,[R2, #+4]
+    381          #if (_SILICON_LABS_SECURITY_FEATURE == _SILICON_LABS_SECURITY_FEATURE_VAULT)
+    382              for (size_t i = 1; i < (countersize - 1); i++) {
+   \       0x48   0x2301             MOVS     R3,#+1
+   \       0x4A   0x1C40             ADDS     R0,R0,#+1
+   \       0x4C   0x6050             STR      R0,[R2, #+4]
+   \       0x4E   0xE011             B.N      ??sl_se_hash_multipart_update_5
+   \                     ??sl_se_hash_multipart_update_2: (+1)
+   \       0x50   0xF108 0x0B54      ADD      R11,R8,#+84
+   \       0x54   0x2680             MOVS     R6,#+128
+   \       0x56   0xE7ED             B.N      ??sl_se_hash_multipart_update_3
+   \                     ??sl_se_hash_multipart_update_0: (+1)
+   \       0x58   0x2021             MOVS     R0,#+33
+   \       0x5A   0xE03C             B.N      ??sl_se_hash_multipart_update_6
+    383                if ( counter[i] == 0 ) {
+   \                     ??sl_se_hash_multipart_update_7: (+1)
+   \       0x5C   0xF852 0x0023      LDR      R0,[R2, R3, LSL #+2]
+   \       0x60   0xB938             CBNZ.N   R0,??sl_se_hash_multipart_update_8
+    384                  counter[i + 1]++;
+   \       0x62   0x1D10             ADDS     R0,R2,#+4
+   \       0x64   0xF850 0x0023      LDR      R0,[R0, R3, LSL #+2]
+   \       0x68   0xF100 0x0C01      ADD      R12,R0,#+1
+   \       0x6C   0x1D10             ADDS     R0,R2,#+4
+   \       0x6E   0xF840 0xC023      STR      R12,[R0, R3, LSL #+2]
+    385                }
+    386              }
+   \                     ??sl_se_hash_multipart_update_8: (+1)
+   \       0x72   0x1C5B             ADDS     R3,R3,#+1
+   \                     ??sl_se_hash_multipart_update_5: (+1)
+   \       0x74   0x1E48             SUBS     R0,R1,#+1
+   \       0x76   0x4283             CMP      R3,R0
+   \       0x78   0xD3F0             BCC.N    ??sl_se_hash_multipart_update_7
+    387          #else
+    388              (void)countersize;
+    389          #endif
+    390            }
+    391          
+    392            // We only support hashing up to 4 GB data
+    393            // so if anything but counter[0] is set, return NOT_SUPPORTED
+    394          #if defined(SLI_SE_MAJOR_VERSION_TWO)
+    395            for (size_t i = 1; i < countersize; i++) {
+   \                     ??sl_se_hash_multipart_update_4: (+1)
+   \       0x7A   0x2301             MOVS     R3,#+1
+   \       0x7C   0xE000             B.N      ??sl_se_hash_multipart_update_9
+   \                     ??sl_se_hash_multipart_update_10: (+1)
+   \       0x7E   0x1C5B             ADDS     R3,R3,#+1
+   \                     ??sl_se_hash_multipart_update_9: (+1)
+   \       0x80   0x428B             CMP      R3,R1
+   \       0x82   0xD205             BCS.N    ??sl_se_hash_multipart_update_11
+    396              if (counter[i] != 0) {
+   \       0x84   0xF852 0x0023      LDR      R0,[R2, R3, LSL #+2]
+   \       0x88   0x2800             CMP      R0,#+0
+   \       0x8A   0xD0F8             BEQ.N    ??sl_se_hash_multipart_update_10
+    397                return SL_STATUS_NOT_SUPPORTED;
+   \       0x8C   0x200F             MOVS     R0,#+15
+   \       0x8E   0xE022             B.N      ??sl_se_hash_multipart_update_6
+    398              }
+    399            }
+    400          #endif
+    401          
+    402            if ( (left > 0) && (input_len >= fill) ) {
+   \                     ??sl_se_hash_multipart_update_11: (+1)
+   \       0x90   0xB175             CBZ.N    R5,??sl_se_hash_multipart_update_12
+   \       0x92   0x42BC             CMP      R4,R7
+   \       0x94   0xD30C             BCC.N    ??sl_se_hash_multipart_update_12
+    403              memcpy( (void *) (buffer + left), input, fill);
+   \       0x96   0x463A             MOV      R2,R7
+   \       0x98   0x.... 0x....      BL       ?Subroutine5
+    404              status = se_cmd_hash_multipart_update(hash_type_ctx, cmd_ctx, buffer, 1);
+   \                     ??CrossCallReturnLabel_11: (+1)
+   \       0x9C   0x2301             MOVS     R3,#+1
+   \       0x9E   0x465A             MOV      R2,R11
+   \       0xA0   0x4649             MOV      R1,R9
+   \       0xA2   0x4640             MOV      R0,R8
+   \       0xA4   0x.... 0x....      BL       se_cmd_hash_multipart_update
+    405              if (status != SL_STATUS_OK) {
+   \       0xA8   0xB9A8             CBNZ.N   R0,??sl_se_hash_multipart_update_6
+    406                return status;
+    407              }
+    408              input += fill;
+   \       0xAA   0x44BA             ADD      R10,R10,R7
+    409              input_len -= fill;
+   \       0xAC   0x1BE4             SUBS     R4,R4,R7
+    410              left = 0;
+   \       0xAE   0x2500             MOVS     R5,#+0
+    411            }
+    412          
+    413            if ( input_len >= blocksize ) {
+   \                     ??sl_se_hash_multipart_update_12: (+1)
+   \       0xB0   0x42B4             CMP      R4,R6
+   \       0xB2   0xD30B             BCC.N    ??sl_se_hash_multipart_update_13
+    414              blocks = input_len / blocksize;
+   \       0xB4   0xFBB4 0xF7F6      UDIV     R7,R4,R6
+    415              status = se_cmd_hash_multipart_update(hash_type_ctx, cmd_ctx, input, blocks);
+   \       0xB8   0x4652             MOV      R2,R10
+   \       0xBA   0x4649             MOV      R1,R9
+   \       0xBC   0x463B             MOV      R3,R7
+   \       0xBE   0x4640             MOV      R0,R8
+   \       0xC0   0x.... 0x....      BL       se_cmd_hash_multipart_update
+    416              if (status != SL_STATUS_OK) {
+   \       0xC4   0xB938             CBNZ.N   R0,??sl_se_hash_multipart_update_6
+    417                return status;
+    418              }
+    419              input += blocksize * blocks;
+   \       0xC6   0x437E             MULS     R6,R6,R7
+   \       0xC8   0x44B2             ADD      R10,R10,R6
+    420              input_len -= blocksize * blocks;
+   \       0xCA   0x1BA4             SUBS     R4,R4,R6
+    421            }
+    422          
+    423            if ( input_len > 0 ) {
+   \                     ??sl_se_hash_multipart_update_13: (+1)
+   \       0xCC   0xB114             CBZ.N    R4,??CrossCallReturnLabel_12
+    424              memcpy( (void *) (buffer + left), input, input_len);
+   \       0xCE   0x4622             MOV      R2,R4
+   \       0xD0   0x.... 0x....      BL       ?Subroutine5
+    425            }
+    426          
+    427            return SL_STATUS_OK;
+   \                     ??CrossCallReturnLabel_12: (+1)
+   \       0xD4   0x2000             MOVS     R0,#+0
+   \                     ??sl_se_hash_multipart_update_6: (+1)
+   \       0xD6   0xE8BD 0x8FF2      POP      {R1,R4-R11,PC}
+    428          }
+    429          
+    430          /***************************************************************************//**
+    431           *   Finish an ongoing hash streaming computation.
+    432           ******************************************************************************/
+
+   \                                 In section .text, align 4, keep-with-next
+    433          sl_status_t sl_se_hash_multipart_finish(void *hash_type_ctx,
+    434                                                  sl_se_command_context_t *cmd_ctx,
+    435                                                  uint8_t *digest_out,
+    436                                                  size_t   digest_len)
+    437          {
+   \                     sl_se_hash_multipart_finish: (+1)
+   \        0x0   0xE92D 0x4FF0      PUSH     {R4-R11,LR}
+   \        0x4   0xB089             SUB      SP,SP,#+36
+    438            sl_status_t status;
+    439            size_t countersize, blocksize, outputsize;
+    440            uint8_t *state;
+    441            uint32_t *counter;
+    442          #if defined(SLI_SE_MAJOR_VERSION_TWO)
+    443            uint32_t command_word = SLI_SE_COMMAND_HASHFINISH;
+    444            uint8_t *buffer;
+    445            size_t state_len;
+    446          #else
+    447            size_t last_data_byte, num_pad_bytes;
+    448            uint8_t msglen[16];
+    449            // Define padding as largest padding we might need
+    450            #if (_SILICON_LABS_SECURITY_FEATURE == _SILICON_LABS_SECURITY_FEATURE_VAULT)
+    451            static const unsigned char sha_padding[128] = {
+    452              0x80, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+    453              0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+    454              0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+    455              0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+    456              0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+    457              0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+    458              0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+    459              0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
+    460            };
+    461            #else
+    462            static const unsigned char sha_padding[64] = {
+    463              0x80, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+    464              0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+    465              0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+    466              0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
+    467            };
+    468            #endif
+    469          #endif
+    470            if (hash_type_ctx == NULL || cmd_ctx == NULL || digest_out == NULL) {
+   \        0x6   0x2800             CMP      R0,#+0
+   \        0x8   0xBF1C             ITT      NE
+   \        0xA   0x2900             CMPNE    R1,#+0
+   \        0xC   0x2A00             CMPNE    R2,#+0
+   \        0xE   0xD044             BEQ.N    ??sl_se_hash_multipart_finish_1
+    471              return SL_STATUS_INVALID_PARAMETER;
+    472            }
+    473          
+    474            switch (((sl_se_sha1_multipart_context_t*)hash_type_ctx)->hash_type) {
+   \       0x10   0x7805             LDRB     R5,[R0, #+0]
+   \       0x12   0x....             LDR.N    R6,??DataTable16_2
+   \       0x14   0x....             LDR.N    R4,??DataTable16_3
+   \       0x16   0x1E6D             SUBS     R5,R5,#+1
+   \       0x18   0x2D04             CMP      R5,#+4
+   \       0x1A   0xD83E             BHI.N    ??sl_se_hash_multipart_finish_1
+   \       0x1C   0xE8DF 0xF005      TBB      [PC, R5]
+   \                     ??sl_se_hash_multipart_finish_0:
+   \       0x20   0x03 0x0E          DC8      0x3,0xE,0x18,0x24
+   \              0x18 0x24
+   \       0x24   0x2F 0x00          DC8      0x2F,0x0
+    475              case SL_SE_HASH_SHA1:
+    476                state = ((sl_se_sha1_multipart_context_t*)hash_type_ctx)->state;
+   \                     ??sl_se_hash_multipart_finish_2: (+1)
+   \       0x26   0xF100 0x090C      ADD      R9,R0,#+12
+    477                counter = ((sl_se_sha1_multipart_context_t*)hash_type_ctx)->total;
+   \       0x2A   0x1D07             ADDS     R7,R0,#+4
+    478                outputsize = 20;
+   \       0x2C   0xF04F 0x0814      MOV      R8,#+20
+    479                blocksize = 64;
+   \       0x30   0xF04F 0x0E40      MOV      LR,#+64
+    480              #if defined(SLI_SE_MAJOR_VERSION_TWO)
+    481                state_len = 20;
+   \       0x34   0x....             LDR.N    R6,??DataTable16_5
+    482                command_word |= SLI_SE_COMMAND_OPTION_HASH_SHA1;
+   \       0x36   0x.... 0x....      LDR.W    R12,??DataTable16_10
+    483                buffer = ((sl_se_sha1_multipart_context_t*)hash_type_ctx)->buffer;
+   \       0x3A   0xE012             B.N      ??sl_se_hash_multipart_finish_3
+    484              #endif
+    485                break;
+    486              case SL_SE_HASH_SHA224:
+    487                state = ((sl_se_sha224_multipart_context_t*)hash_type_ctx)->state;
+   \                     ??sl_se_hash_multipart_finish_4: (+1)
+   \       0x3C   0xF100 0x090C      ADD      R9,R0,#+12
+    488                counter = ((sl_se_sha224_multipart_context_t*)hash_type_ctx)->total;
+   \       0x40   0x1D07             ADDS     R7,R0,#+4
+    489                outputsize = 28;
+   \       0x42   0xF04F 0x081C      MOV      R8,#+28
+    490                blocksize = 64;
+   \       0x46   0xF04F 0x0E40      MOV      LR,#+64
+    491              #if defined(SLI_SE_MAJOR_VERSION_TWO)
+    492                state_len = 32;
+    493                command_word |= SLI_SE_COMMAND_OPTION_HASH_SHA224;
+   \       0x4A   0x.... 0x....      LDR.W    R12,??DataTable16_11
+    494                buffer = ((sl_se_sha224_multipart_context_t*)hash_type_ctx)->buffer;
+   \       0x4E   0xE008             B.N      ??sl_se_hash_multipart_finish_3
+    495              #endif
+    496                break;
+    497              case SL_SE_HASH_SHA256:
+    498                state = ((sl_se_sha256_multipart_context_t*)hash_type_ctx)->state;
+   \                     ??sl_se_hash_multipart_finish_5: (+1)
+   \       0x50   0xF100 0x090C      ADD      R9,R0,#+12
+    499                counter = ((sl_se_sha256_multipart_context_t*)hash_type_ctx)->total;
+   \       0x54   0x1D07             ADDS     R7,R0,#+4
+    500                outputsize = 32;
+   \       0x56   0xF04F 0x0820      MOV      R8,#+32
+    501                blocksize = 64;
+   \       0x5A   0xF04F 0x0E40      MOV      LR,#+64
+    502              #if defined(SLI_SE_MAJOR_VERSION_TWO)
+    503                state_len = 32;
+    504                command_word |= SLI_SE_COMMAND_OPTION_HASH_SHA256;
+   \       0x5E   0x.... 0x....      LDR.W    R12,??DataTable16_12
+    505                buffer = ((sl_se_sha256_multipart_context_t*)hash_type_ctx)->buffer;
+   \                     ??sl_se_hash_multipart_finish_3: (+1)
+   \       0x62   0xF100 0x0A2C      ADD      R10,R0,#+44
+    506              #endif
+    507                break;
+   \       0x66   0xE016             B.N      ??sl_se_hash_multipart_finish_6
+    508          
+    509          #if (_SILICON_LABS_SECURITY_FEATURE == _SILICON_LABS_SECURITY_FEATURE_VAULT)
+    510              case SL_SE_HASH_SHA384:
+    511                state = ((sl_se_sha384_multipart_context_t*)hash_type_ctx)->state;
+   \                     ??sl_se_hash_multipart_finish_7: (+1)
+   \       0x68   0xF100 0x0914      ADD      R9,R0,#+20
+    512                counter = ((sl_se_sha384_multipart_context_t*)hash_type_ctx)->total;
+   \       0x6C   0x1D07             ADDS     R7,R0,#+4
+    513                outputsize = 48;
+   \       0x6E   0xF04F 0x0830      MOV      R8,#+48
+    514                blocksize = 128;
+   \       0x72   0xF04F 0x0E80      MOV      LR,#+128
+    515              #if defined(SLI_SE_MAJOR_VERSION_TWO)
+    516                state_len = 64;
+   \       0x76   0x4626             MOV      R6,R4
+    517                command_word |= SLI_SE_COMMAND_OPTION_HASH_SHA384;
+   \       0x78   0x.... 0x....      LDR.W    R12,??DataTable16_13
+    518                buffer = ((sl_se_sha384_multipart_context_t*)hash_type_ctx)->buffer;
+   \       0x7C   0xE009             B.N      ??sl_se_hash_multipart_finish_8
+    519              #endif
+    520                break;
+    521              case SL_SE_HASH_SHA512:
+    522                state = ((sl_se_sha512_multipart_context_t*)hash_type_ctx)->state;
+   \                     ??sl_se_hash_multipart_finish_9: (+1)
+   \       0x7E   0xF100 0x0914      ADD      R9,R0,#+20
+    523                counter = ((sl_se_sha512_multipart_context_t*)hash_type_ctx)->total;
+   \       0x82   0x1D07             ADDS     R7,R0,#+4
+    524                outputsize = 64;
+   \       0x84   0xF04F 0x0840      MOV      R8,#+64
+    525                blocksize = 128;
+   \       0x88   0xF04F 0x0E80      MOV      LR,#+128
+    526              #if defined(SLI_SE_MAJOR_VERSION_TWO)
+    527                state_len = 64;
+   \       0x8C   0x4626             MOV      R6,R4
+    528                command_word |= SLI_SE_COMMAND_OPTION_HASH_SHA512;
+   \       0x8E   0x.... 0x....      LDR.W    R12,??DataTable16_14
+    529                buffer = ((sl_se_sha512_multipart_context_t*)hash_type_ctx)->buffer;
+   \                     ??sl_se_hash_multipart_finish_8: (+1)
+   \       0x92   0xF100 0x0A54      ADD      R10,R0,#+84
+    530              #endif
+    531                break;
+    532          #endif
+    533          
+    534              default:
+    535                return SL_STATUS_INVALID_PARAMETER;
+    536            }
+    537          
+    538            if ( digest_len < outputsize ) {
+   \                     ??sl_se_hash_multipart_finish_6: (+1)
+   \       0x96   0x4543             CMP      R3,R8
+   \       0x98   0xD203             BCS.N    ??sl_se_hash_multipart_finish_10
+    539              return SL_STATUS_INVALID_PARAMETER;
+   \                     ??sl_se_hash_multipart_finish_1: (+1)
+   \       0x9A   0x2021             MOVS     R0,#+33
+   \                     ??sl_se_hash_multipart_finish_11: (+1)
+   \       0x9C   0xB009             ADD      SP,SP,#+36
+   \       0x9E   0xE8BD 0x8FF0      POP      {R4-R11,PC}
+    540            }
+    541          
+    542            countersize = blocksize / 32;
+    543          #if defined(SLI_SE_MAJOR_VERSION_TWO)
+    544          
+    545            // We only support hashing up to 4 GB data
+    546            // so if anything but counter[0] is set, return NOT_SUPPORTED
+    547            for (size_t i = 1; i < countersize; i++) {
+   \                     ??sl_se_hash_multipart_finish_10: (+1)
+   \       0xA2   0x2301             MOVS     R3,#+1
+   \       0xA4   0x460C             MOV      R4,R1
+   \       0xA6   0x4615             MOV      R5,R2
+   \       0xA8   0xE000             B.N      ??sl_se_hash_multipart_finish_12
+   \                     ??sl_se_hash_multipart_finish_13: (+1)
+   \       0xAA   0x1C5B             ADDS     R3,R3,#+1
+   \                     ??sl_se_hash_multipart_finish_12: (+1)
+   \       0xAC   0xEBB3 0x1F5E      CMP      R3,LR, LSR #+5
+   \       0xB0   0xD205             BCS.N    ??sl_se_hash_multipart_finish_14
+    548              if (counter[i] != 0) {
+   \       0xB2   0xF857 0x0023      LDR      R0,[R7, R3, LSL #+2]
+   \       0xB6   0x2800             CMP      R0,#+0
+   \       0xB8   0xD0F7             BEQ.N    ??sl_se_hash_multipart_finish_13
+    549                return SL_STATUS_NOT_SUPPORTED;
+   \       0xBA   0x200F             MOVS     R0,#+15
+   \       0xBC   0xE7EE             B.N      ??sl_se_hash_multipart_finish_11
+    550              }
+    551            }
+    552            // Remaining bytes in buffer
+    553            size_t rem_bytes = (counter[0] & (blocksize - 1));
+   \                     ??sl_se_hash_multipart_finish_14: (+1)
+   \       0xBE   0x6838             LDR      R0,[R7, #+0]
+   \       0xC0   0xF1AE 0x0101      SUB      R1,LR,#+1
+    554          
+    555            SE_Command_t *se_cmd = &cmd_ctx->command;
+    556          
+    557            sli_se_command_init(cmd_ctx, command_word);
+   \       0xC4   0xF8C4 0xC000      STR      R12,[R4, #+0]
+   \       0xC8   0xEA01 0x0B00      AND      R11,R1,R0
+   \       0xCC   0x2100             MOVS     R1,#+0
+   \       0xCE   0x6061             STR      R1,[R4, #+4]
+   \       0xD0   0x60A1             STR      R1,[R4, #+8]
+   \       0xD2   0x61E1             STR      R1,[R4, #+28]
+    558          
+    559            SE_addParameter(se_cmd, rem_bytes);
+   \       0xD4   0x4659             MOV      R1,R11
+   \       0xD6   0x4620             MOV      R0,R4
+   \       0xD8   0x.... 0x....      BL       SE_addParameter
+    560            SE_addParameter(se_cmd, counter[0]);
+   \       0xDC   0xF8D7 0x1000      LDR.W    R1,[R7, #+0]
+   \       0xE0   0x....             ADR.N    R7,?_3
+   \       0xE2   0x4620             MOV      R0,R4
+   \       0xE4   0x.... 0x....      BL       SE_addParameter
+    561          
+    562            SE_DataTransfer_t in_0 = SE_DATATRANSFER_DEFAULT(state, state_len);
+   \       0xE8   0xE897 0x000E      LDM      R7,{R1-R3}
+   \       0xEC   0xF10D 0x0018      ADD.W    R0,SP,#+24
+    563            SE_DataTransfer_t in_1 = SE_DATATRANSFER_DEFAULT(buffer, rem_bytes);
+   \       0xF0   0xF04B 0x5B00      ORR      R11,R11,#0x20000000
+   \       0xF4   0xE880 0x000E      STM      R0,{R1-R3}
+   \       0xF8   0x....             ADR.N    R1,?_4
+   \       0xFA   0xF8CD 0x9018      STR      R9,[SP, #+24]
+   \       0xFE   0x9608             STR      R6,[SP, #+32]
+   \      0x100   0xE891 0x008C      LDM      R1,{R2,R3,R7}
+   \      0x104   0xAE03             ADD      R6,SP,#+12
+    564            SE_DataTransfer_t out = SE_DATATRANSFER_DEFAULT(digest_out, outputsize);
+   \      0x106   0xBF00             Nop
+   \      0x108   0x....             ADR.N    R1,?_5
+   \      0x10A   0xE886 0x008C      STM      R6,{R2,R3,R7}
+   \      0x10E   0xF8CD 0xA00C      STR      R10,[SP, #+12]
+   \      0x112   0xF8CD 0xB014      STR      R11,[SP, #+20]
+   \      0x116   0xE891 0x004C      LDM      R1,{R2,R3,R6}
+   \      0x11A   0x466F             MOV      R7,SP
+   \      0x11C   0xF048 0x5800      ORR      R8,R8,#0x20000000
+   \      0x120   0xE887 0x004C      STM      R7,{R2,R3,R6}
+   \      0x124   0x9500             STR      R5,[SP, #+0]
+   \      0x126   0xF8CD 0x8008      STR      R8,[SP, #+8]
+    565          
+    566            SE_addDataInput(se_cmd, &in_0);
+   \      0x12A   0xA906             ADD      R1,SP,#+24
+   \      0x12C   0x.... 0x....      BL       ??Subroutine4_0
+    567            SE_addDataInput(se_cmd, &in_1);
+   \                     ??CrossCallReturnLabel_8: (+1)
+   \      0x130   0x.... 0x....      BL       ?Subroutine4
+    568            SE_addDataOutput(se_cmd, &out);
+   \                     ??CrossCallReturnLabel_10: (+1)
+   \      0x134   0x4669             MOV      R1,SP
+   \      0x136   0x4620             MOV      R0,R4
+   \      0x138   0x.... 0x....      BL       SE_addDataOutput
+    569          
+    570            // Execute and wait
+    571            status = sli_se_execute_and_wait(cmd_ctx);
+    572          #else
+    573          
+    574            /* Convert counter value to bits, and put in big-endian array */
+    575            uint8_t residual = 0;
+    576            for (size_t i = 0; i < countersize; i++) {
+    577              size_t msglen_index = ( (countersize - i) * sizeof(uint32_t) ) - 1;
+    578          
+    579              msglen[msglen_index - 0] = ((counter[i] << 3) + residual) & 0xFF;
+    580              msglen[msglen_index - 1] = (counter[i] >> 5) & 0xFF;
+    581              msglen[msglen_index - 2] = (counter[i] >> 13) & 0xFF;
+    582              msglen[msglen_index - 3] = (counter[i] >> 21) & 0xFF;
+    583          
+    584              residual = (counter[i] >> 29) & 0xFF;
+    585            }
+    586          
+    587            last_data_byte = (counter[0] & (blocksize - 1) );
+    588            num_pad_bytes = (last_data_byte < (blocksize - (countersize * 4)) )
+    589                            ? ( (blocksize - (countersize * 4)) - last_data_byte)
+    590                            : ( ((2 * blocksize) - (countersize * 4)) - last_data_byte);
+    591          
+    592            status = sl_se_hash_multipart_update(hash_type_ctx, cmd_ctx, sha_padding, num_pad_bytes);
+    593          
+    594            if (status == SL_STATUS_OK) {
+    595              status = sl_se_hash_multipart_update(hash_type_ctx, cmd_ctx, msglen, countersize * 4);
+    596            }
+    597          
+    598            if (status == SL_STATUS_OK) {
+    599              memcpy(digest_out, state, outputsize);
+    600            }
+    601          #endif // SLI_SE_MAJOR_VERSION_TWO
+    602            return status;
+   \      0x13C   0x4620             MOV      R0,R4
+   \      0x13E   0x.... 0x....      BL       sli_se_execute_and_wait
+   \      0x142   0xE7AB             B.N      ??sl_se_hash_multipart_finish_11
+    603          }
+
+   \                                 In section .text, align 2, keep-with-next
+   \                     ?Subroutine4: (+1)
+   \        0x0   0xA903             ADD      R1,SP,#+12
+   \                     ??Subroutine4_0: (+1)
+   \        0x2   0x4620             MOV      R0,R4
+   \        0x4   0x.... 0x....      B.W      SE_addDataInput
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ?_3:
+   \        0x0   0x0000'0000        DC32 0x0, 0x1, 0
+   \              0x0000'0001  
+   \              0x0000'0000
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ?_4:
+   \        0x0   0x0000'0000        DC32 0x0, 0x1, 0
+   \              0x0000'0001  
+   \              0x0000'0000
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ?_5:
+   \        0x0   0x0000'0000        DC32 0x0, 0x1, 0
+   \              0x0000'0001  
+   \              0x0000'0000
+    604          
+    605          /***************************************************************************//**
+    606           *   Produce a message digest (a hash block) using the input data.
+    607           ******************************************************************************/
+
+   \                                 In section .text, align 4, keep-with-next
+    608          sl_status_t sl_se_hash(sl_se_command_context_t *cmd_ctx,
+    609                                 sl_se_hash_type_t hash_type,
+    610                                 const uint8_t *message,
+    611                                 unsigned int message_size,
+    612                                 uint8_t* digest,
+    613                                 size_t digest_len)
+    614          {
+   \                     sl_se_hash: (+1)
+   \        0x0   0xE92D 0x41F0      PUSH     {R4-R8,LR}
+   \        0x4   0xB086             SUB      SP,SP,#+24
+   \        0x6   0x0004             MOVS     R4,R0
+   \        0x8   0x4615             MOV      R5,R2
+   \        0xA   0x461E             MOV      R6,R3
+    615            if (cmd_ctx == NULL
+    616                || digest == NULL
+    617                || (message == NULL
+    618                    && message_size != 0)) {
+   \        0xC   0xBF1C             ITT      NE
+   \        0xE   0x9F0C             LDRNE    R7,[SP, #+48]
+   \       0x10   0x2F00             CMPNE    R7,#+0
+   \       0x12   0xD021             BEQ.N    ??sl_se_hash_1
+   \       0x14   0xB905             CBNZ.N   R5,??sl_se_hash_2
+   \       0x16   0xB9FE             CBNZ.N   R6,??sl_se_hash_1
+    619              return SL_STATUS_INVALID_PARAMETER;
+    620            }
+    621          
+    622            SE_Command_t *se_cmd = &cmd_ctx->command;
+    623            uint32_t command_word = SLI_SE_COMMAND_HASH;
+    624            uint32_t digest_size = 0;
+    625          
+    626            switch (hash_type) {
+   \                     ??sl_se_hash_2: (+1)
+   \       0x18   0x1E49             SUBS     R1,R1,#+1
+   \       0x1A   0x2904             CMP      R1,#+4
+   \       0x1C   0xD81C             BHI.N    ??sl_se_hash_1
+   \       0x1E   0xE8DF 0xF001      TBB      [PC, R1]
+   \                     ??sl_se_hash_0:
+   \       0x22   0x03 0x0A          DC8      0x3,0xA,0xF,0x13
+   \              0x0F 0x13
+   \       0x26   0x17 0x00          DC8      0x17,0x0
+    627              case SL_SE_HASH_SHA1:
+    628                command_word |= SLI_SE_COMMAND_OPTION_HASH_SHA1;
+   \                     ??sl_se_hash_3: (+1)
+   \       0x28   0x....             LDR.N    R0,??DataTable16_15
+    629                digest_size = 20;
+   \       0x2A   0xF04F 0x0814      MOV      R8,#+20
+    630                break;
+   \                     ??sl_se_hash_4: (+1)
+   \       0x2E   0x990D             LDR      R1,[SP, #+52]
+    631              case SL_SE_HASH_SHA224:
+    632                command_word |= SLI_SE_COMMAND_OPTION_HASH_SHA224;
+    633                digest_size = 28;
+    634                break;
+    635              case SL_SE_HASH_SHA256:
+    636                command_word |= SLI_SE_COMMAND_OPTION_HASH_SHA256;
+    637                digest_size = 32;
+    638                break;
+    639          #if (_SILICON_LABS_SECURITY_FEATURE == _SILICON_LABS_SECURITY_FEATURE_VAULT)
+    640              case SL_SE_HASH_SHA384:
+    641                command_word |= SLI_SE_COMMAND_OPTION_HASH_SHA384;
+    642                digest_size = 48;
+    643                break;
+    644              case SL_SE_HASH_SHA512:
+    645                digest_size = 64;
+    646                command_word |= SLI_SE_COMMAND_OPTION_HASH_SHA512;
+    647                break;
+    648          #endif
+    649              default:
+    650                return SL_STATUS_INVALID_PARAMETER;
+    651            }
+    652          
+    653            if ( digest_len < digest_size ) {
+   \       0x30   0x4541             CMP      R1,R8
+   \       0x32   0xD213             BCS.N    ??sl_se_hash_5
+    654              return SL_STATUS_INVALID_PARAMETER;
+   \       0x34   0xE010             B.N      ??sl_se_hash_1
+    655            }
+   \                     ??sl_se_hash_6: (+1)
+   \       0x36   0xF04F 0x2003      MOV      R0,#+50332416
+   \       0x3A   0xF04F 0x081C      MOV      R8,#+28
+   \       0x3E   0xE7F6             B.N      ??sl_se_hash_4
+   \                     ??sl_se_hash_7: (+1)
+   \       0x40   0x....             LDR.N    R0,??DataTable16_16
+   \       0x42   0xF04F 0x0820      MOV      R8,#+32
+   \       0x46   0xE7F2             B.N      ??sl_se_hash_4
+   \                     ??sl_se_hash_8: (+1)
+   \       0x48   0x....             LDR.N    R0,??DataTable16_17
+   \       0x4A   0xF04F 0x0830      MOV      R8,#+48
+   \       0x4E   0xE7EE             B.N      ??sl_se_hash_4
+   \                     ??sl_se_hash_9: (+1)
+   \       0x50   0xF04F 0x0840      MOV      R8,#+64
+   \       0x54   0x....             LDR.N    R0,??DataTable16_18
+   \       0x56   0xE7EA             B.N      ??sl_se_hash_4
+   \                     ??sl_se_hash_1: (+1)
+   \       0x58   0x2021             MOVS     R0,#+33
+   \       0x5A   0xE029             B.N      ??sl_se_hash_10
+    656          
+    657            sli_se_command_init(cmd_ctx, command_word);
+   \                     ??sl_se_hash_5: (+1)
+   \       0x5C   0x6020             STR      R0,[R4, #+0]
+   \       0x5E   0x2000             MOVS     R0,#+0
+   \       0x60   0x6060             STR      R0,[R4, #+4]
+   \       0x62   0x60A0             STR      R0,[R4, #+8]
+   \       0x64   0x61E0             STR      R0,[R4, #+28]
+    658          
+    659            SE_addParameter(se_cmd, message_size);
+   \       0x66   0x4631             MOV      R1,R6
+   \       0x68   0x4620             MOV      R0,R4
+   \       0x6A   0x.... 0x....      BL       SE_addParameter
+    660          
+    661            SE_DataTransfer_t data_in = SE_DATATRANSFER_DEFAULT(message, message_size);
+   \       0x6E   0xBF00             Nop
+   \       0x70   0x....             ADR.N    R0,?_6
+   \       0x72   0xE890 0x000E      LDM      R0,{R1-R3}
+   \       0x76   0xF10D 0x0E0C      ADD      LR,SP,#+12
+   \       0x7A   0xF046 0x5600      ORR      R6,R6,#0x20000000
+   \       0x7E   0xE88E 0x000E      STM      LR,{R1-R3}
+    662            SE_DataTransfer_t data_out = SE_DATATRANSFER_DEFAULT(digest, digest_size);
+   \       0x82   0xBF00             Nop
+   \       0x84   0x....             ADR.N    R1,?_7
+   \       0x86   0x9503             STR      R5,[SP, #+12]
+   \       0x88   0x9605             STR      R6,[SP, #+20]
+   \       0x8A   0xE891 0x002C      LDM      R1,{R2,R3,R5}
+   \       0x8E   0x466E             MOV      R6,SP
+   \       0x90   0xF048 0x5800      ORR      R8,R8,#0x20000000
+   \       0x94   0xE886 0x002C      STM      R6,{R2,R3,R5}
+   \       0x98   0x9700             STR      R7,[SP, #+0]
+   \       0x9A   0xF8CD 0x8008      STR      R8,[SP, #+8]
+    663          
+    664            SE_addDataInput(se_cmd, &data_in);
+   \       0x9E   0x.... 0x....      BL       ?Subroutine4
+    665            SE_addDataOutput(se_cmd, &data_out);
+   \                     ??CrossCallReturnLabel_9: (+1)
+   \       0xA2   0x4669             MOV      R1,SP
+   \       0xA4   0x4620             MOV      R0,R4
+   \       0xA6   0x.... 0x....      BL       SE_addDataOutput
+    666          
+    667            // Execute and wait
+    668            return sli_se_execute_and_wait(cmd_ctx);
+   \       0xAA   0x4620             MOV      R0,R4
+   \       0xAC   0x.... 0x....      BL       sli_se_execute_and_wait
+   \                     ??sl_se_hash_10: (+1)
+   \       0xB0   0xB006             ADD      SP,SP,#+24
+   \       0xB2   0xE8BD 0x81F0      POP      {R4-R8,PC}
+    669          }
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ?_6:
+   \        0x0   0x0000'0000        DC32 0x0, 0x1, 0
+   \              0x0000'0001  
+   \              0x0000'0000
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ?_7:
+   \        0x0   0x0000'0000        DC32 0x0, 0x1, 0
+   \              0x0000'0001  
+   \              0x0000'0000
+
+   \                                 In section .text, align 2, keep-with-next
+   \                     ?Subroutine1: (+1)
+   \        0x0   0xF104 0x000C      ADD      R0,R4,#+12
+   \        0x4   0x.... 0x....      B.W      __aeabi_memcpy4
+
+   \                                 In section .text, align 2, keep-with-next
+   \                     ?Subroutine5: (+1)
+   \        0x0   0x4651             MOV      R1,R10
+   \        0x2   0xEB0B 0x0005      ADD      R0,R11,R5
+   \        0x6   0x.... 0x....      B.W      __aeabi_memcpy
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable16:
+   \        0x0   0x....'....        DC32     `sl_se_hash_sha384_multipart_starts::init_state_sha384`
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable16_1:
+   \        0x0   0x....'....        DC32     `sl_se_hash_sha512_multipart_starts::init_state_sha512`
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable16_2:
+   \        0x0   0x2000'0020        DC32     0x20000020
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable16_3:
+   \        0x0   0x2000'0040        DC32     0x20000040
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable16_4:
+   \        0x0   0x0301'0200        DC32     0x3010200
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable16_5:
+   \        0x0   0x2000'0014        DC32     0x20000014
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable16_6:
+   \        0x0   0x0301'0300        DC32     0x3010300
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable16_7:
+   \        0x0   0x0301'0400        DC32     0x3010400
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable16_8:
+   \        0x0   0x0301'0500        DC32     0x3010500
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable16_9:
+   \        0x0   0x0301'0600        DC32     0x3010600
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable16_10:
+   \        0x0   0x0303'0200        DC32     0x3030200
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable16_11:
+   \        0x0   0x0303'0300        DC32     0x3030300
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable16_12:
+   \        0x0   0x0303'0400        DC32     0x3030400
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable16_13:
+   \        0x0   0x0303'0500        DC32     0x3030500
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable16_14:
+   \        0x0   0x0303'0600        DC32     0x3030600
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable16_15:
+   \        0x0   0x0300'0200        DC32     0x3000200
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable16_16:
+   \        0x0   0x0300'0400        DC32     0x3000400
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable16_17:
+   \        0x0   0x0300'0500        DC32     0x3000500
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable16_18:
+   \        0x0   0x0300'0600        DC32     0x3000600
+    670          
+    671          /** @} (end addtogroup sl_se) */
+    672          
+    673          #endif // defined(SLI_MAILBOX_COMMAND_SUPPORTED)
+
+   Maximum stack usage in bytes:
+
+   .cstack Function
+   ------- --------
+      64   se_cmd_hash_multipart_update
+        64   -> SE_addDataInput
+        64   -> SE_addDataOutput
+        64   -> SE_addParameter
+        64   -> sli_se_execute_and_wait
+      48   sl_se_hash
+        48   -> SE_addDataInput
+        48   -> SE_addDataOutput
+        48   -> SE_addParameter
+        48   -> sli_se_execute_and_wait
+      72   sl_se_hash_multipart_finish
+        72   -> SE_addDataInput
+        72   -> SE_addDataOutput
+        72   -> SE_addParameter
+        72   -> sli_se_execute_and_wait
+       0   sl_se_hash_multipart_starts
+         0   -> sl_se_hash_sha1_multipart_starts
+         0   -> sl_se_hash_sha224_multipart_starts
+         0   -> sl_se_hash_sha256_multipart_starts
+         0   -> sl_se_hash_sha384_multipart_starts
+         0   -> sl_se_hash_sha512_multipart_starts
+      40   sl_se_hash_multipart_update
+        40   -> __aeabi_memcpy
+        40   -> se_cmd_hash_multipart_update
+       8   sl_se_hash_sha1_multipart_starts
+         8   -> __aeabi_memcpy4
+       8   sl_se_hash_sha224_multipart_starts
+         8   -> __aeabi_memcpy4
+       8   sl_se_hash_sha256_multipart_starts
+         8   -> __aeabi_memcpy4
+       8   sl_se_hash_sha384_multipart_starts
+         8   -> __aeabi_memcpy4
+       8   sl_se_hash_sha512_multipart_starts
+         8   -> __aeabi_memcpy4
+
+
+   Section sizes:
+
+   Bytes  Function/Label
+   -----  --------------
+       4  ??DataTable16
+       4  ??DataTable16_1
+       4  ??DataTable16_10
+       4  ??DataTable16_11
+       4  ??DataTable16_12
+       4  ??DataTable16_13
+       4  ??DataTable16_14
+       4  ??DataTable16_15
+       4  ??DataTable16_16
+       4  ??DataTable16_17
+       4  ??DataTable16_18
+       4  ??DataTable16_2
+       4  ??DataTable16_3
+       4  ??DataTable16_4
+       4  ??DataTable16_5
+       4  ??DataTable16_6
+       4  ??DataTable16_7
+       4  ??DataTable16_8
+       4  ??DataTable16_9
+       6  ?Subroutine0
+       8  ?Subroutine1
+      10  ?Subroutine2
+      14  ?Subroutine3
+       8  ?Subroutine4
+      10  ?Subroutine5
+      12  ?_0
+      12  ?_1
+      12  ?_2
+      12  ?_3
+      12  ?_4
+      12  ?_5
+      12  ?_6
+      12  ?_7
+      32  init_state_sha1
+      32  init_state_sha224
+      32  init_state_sha256
+      64  init_state_sha384
+      64  init_state_sha512
+     210  se_cmd_hash_multipart_update
+     182  sl_se_hash
+     324  sl_se_hash_multipart_finish
+      38  sl_se_hash_multipart_starts
+     218  sl_se_hash_multipart_update
+      32  sl_se_hash_sha1_multipart_starts
+      30  sl_se_hash_sha224_multipart_starts
+      32  sl_se_hash_sha256_multipart_starts
+      36  sl_se_hash_sha384_multipart_starts
+      36  sl_se_hash_sha512_multipart_starts
+
+ 
+   128 bytes in section .rodata
+ 1'462 bytes in section .text
+ 
+ 1'462 bytes of CODE  memory
+   128 bytes of CONST memory
+
+Errors: none
+Warnings: none

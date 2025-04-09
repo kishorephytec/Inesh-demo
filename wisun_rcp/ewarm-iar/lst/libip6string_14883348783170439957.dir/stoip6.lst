@@ -1,0 +1,532 @@
+###############################################################################
+#
+# IAR ANSI C/C++ Compiler V9.50.2.385/W64 for ARM         27/Nov/2024  12:17:50
+# Copyright 1999-2024 IAR Systems AB.
+#
+#    Cpu mode                     =  thumb
+#    Endian                       =  little
+#    Source file                  =
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\app\wisun\component\trace_util\nanostack\nanostack-libservice\source\libip6string\stoip6.c
+#    Command line                 =
+#        -f
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\ewarm-iar\obj\libip6string_14883348783170439957.dir\stoip6.o.rsp
+#        (C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\app\wisun\component\trace_util\nanostack\nanostack-libservice\source\libip6string\stoip6.c
+#        -D EFR32FG28B322F1024IM48=1 -D
+#        configNUM_SDK_THREAD_LOCAL_STORAGE_POINTERS=2 -D
+#        SL_COMPONENT_CATALOG_PRESENT=1 -D
+#        MBEDTLS_CONFIG_FILE=<sl_mbedtls_config.h> -D
+#        MBEDTLS_PSA_CRYPTO_CONFIG_FILE=<psa_crypto_config.h> -D
+#        SL_RAIL_LIB_MULTIPROTOCOL_SUPPORT=0 -D
+#        SL_RAIL_UTIL_PA_CONFIG_HEADER=<sl_rail_util_pa_config.h> -D
+#        RTT_USE_ASM=0 -D MBED_CONF_MBED_TRACE_ENABLE=1 -D
+#        MBED_CONF_NANOSTACK_CONFIGURATION=ws_router -D
+#        MBED_TRACE_MAX_LEVEL=TRACE_ACTIVE_LEVEL_ALL -D DEBUG_EFM_USER=1 -D
+#        HAVE_LFN=1 -D HAVE_LFN_PARENT=1 -lC
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\ewarm-iar\lst\libip6string_14883348783170439957.dir
+#        --diag_suppress Pa050 -o
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\ewarm-iar\obj\libip6string_14883348783170439957.dir
+#        --debug --endian=little --cpu=Cortex-M33 --cmse --cmse -e
+#        --fpu=VFPv5_sp --dlib_config "C:\Program Files\IAR Systems\Embedded
+#        Workbench 9.2\arm\inc\c\DLib_Config_Normal.h" -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\app\wisun\component\trace_util\nanostack\nanostack-libservice\source\libip6string\
+#        -I C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\autogen\ -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\config\ -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\config\rail\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\Device\SiliconLabs\EFR32FG28\Include\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\common\inc\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\CMSIS\Core\Include\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\CMSIS\RTOS2\Include\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\service\device_init\inc\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\emdrv\dmadrv\inc\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\emdrv\common\inc\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\emlib\inc\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\util\third_party\freertos\cmsis\Include\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\util\third_party\freertos\kernel\include\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\util\third_party\freertos\kernel\portable\IAR\ARM_CM33_NTZ\non_secure\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\service\iostream\inc\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\security\sl_component\sl_mbedtls_support\config\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\security\sl_component\sl_mbedtls_support\config\preset\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\security\sl_component\sl_mbedtls_support\inc\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\util\third_party\mbedtls\include\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\util\third_party\mbedtls\library\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\emdrv\nvm3\inc\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\peripheral\inc\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\security\sl_component\sl_psa_driver\inc\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\radio\rail_lib\common\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\radio\rail_lib\protocol\ble\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\radio\rail_lib\protocol\ieee802154\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\radio\rail_lib\protocol\wmbus\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\radio\rail_lib\protocol\zwave\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\radio\rail_lib\chip\efr32\efr32xg2x\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\radio\rail_lib\protocol\sidewalk\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\radio\rail_lib\plugin\pa-conversions\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\radio\rail_lib\plugin\pa-conversions\efr32xg28\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\radio\rail_lib\plugin\rail_util_pti\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\security\sl_component\se_manager\inc\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\security\sl_component\se_manager\src\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\util\third_party\segger\systemview\SEGGER\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\util\silicon_labs\silabs_core\memory_manager\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\common\toolchain\inc\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\service\system\inc\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\app\wisun\component\ns_list\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\app\wisun\component\trace_util\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\app\wisun\component\trace_util\nanostack\nanostack-libservice\mbed-client-libservice\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\service\sleeptimer\inc\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\protocol\wisun\stack\inc\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\protocol\wisun\app\wisun_rcp\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\protocol\wisun\stack\inc\socket\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\protocol\wisun\stack\src\
+#        -Ohz --use_c++_inline) --dependencies=n
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\ewarm-iar\obj\libip6string_14883348783170439957.dir\stoip6.o.iar_deps
+#    Locale                       =  C
+#    List file                    =
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\ewarm-iar\lst\libip6string_14883348783170439957.dir\stoip6.lst
+#    Object file                  =
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\ewarm-iar\obj\libip6string_14883348783170439957.dir\stoip6.o
+#    Runtime model:                  
+#      __CPP_Runtime              =  1
+#      __SystemLibrary            =  DLib
+#      __dlib_full_locale_support =  0
+#      __dlib_version             =  6
+#
+###############################################################################
+
+C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\app\wisun\component\trace_util\nanostack\nanostack-libservice\source\libip6string\stoip6.c
+      1          /*
+      2           * Copyright (c) 2014-2015 ARM Limited. All rights reserved.
+      3           * SPDX-License-Identifier: Apache-2.0
+      4           * Licensed under the Apache License, Version 2.0 (the License); you may
+      5           * not use this file except in compliance with the License.
+      6           * You may obtain a copy of the License at
+      7           *
+      8           * http://www.apache.org/licenses/LICENSE-2.0
+      9           *
+     10           * Unless required by applicable law or agreed to in writing, software
+     11           * distributed under the License is distributed on an AS IS BASIS, WITHOUT
+     12           * WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     13           * See the License for the specific language governing permissions and
+     14           * limitations under the License.
+     15           */
+     16          #include <string.h>
+     17          #include <stdlib.h>
+     18          #include <stdint.h>
+     19          #include "common_functions.h"
+     20          #include "common_inlined_functions.h"
+     21          #include "ip6string.h"
+     22          
+     23          static uint16_t hex(const char *p);
+     24          static bool is_hex(char c);
+     25          
+     26          /**
+     27           * Convert numeric IPv6 address string to a binary.
+     28           * IPv4 tunnelling addresses are not covered.
+     29           * \param ip6addr IPv6 address in string format.
+     30           * \param len Length of ipv6 string.
+     31           * \param dest buffer for address. MUST be 16 bytes.
+     32           * \return boolean set to true if conversion succeed, false if it didn't
+     33           */
+
+   \                                 In section .text, align 2, keep-with-next
+     34          bool stoip6(const char *ip6addr, size_t len, void *dest)
+     35          {
+   \                     stoip6: (+1)
+   \        0x0   0xE92D 0x43F8      PUSH     {R3-R9,LR}
+   \        0x4   0x460C             MOV      R4,R1
+   \        0x6   0x4690             MOV      R8,R2
+   \        0x8   0x4603             MOV      R3,R0
+     36            uint8_t *addr;
+     37            const char *p;
+     38            const char *q;
+     39            int_fast8_t field_no;
+     40            int_fast8_t coloncolon = -1;
+   \        0xA   0xF04F 0x35FF      MOV      R5,#+4294967295
+     41          
+     42            addr = dest;
+   \        0xE   0x4641             MOV      R1,R8
+     43          
+     44            if (len > 39) {   // Too long, not possible. We do not support IPv4-mapped IPv6 addresses
+   \       0x10   0x2C28             CMP      R4,#+40
+   \       0x12   0xD269             BCS.N    ??stoip6_0
+     45              goto error;
+     46            }
+     47          
+     48            // First go forward the string, until end, noting :: position if any
+     49            // We're decrementing `len` as we go forward, and stop when it reaches 0
+     50            for (field_no = 0, p = ip6addr; len && *p; p = q + 1) {
+   \       0x14   0x2600             MOVS     R6,#+0
+   \       0x16   0xE00E             B.N      ??stoip6_1
+     51              for (q = p; len && *q && (*q != ':'); len -= 1) {     // Seek for ':' or end
+     52                if (!is_hex(*q++)) {       // There must only be hex characters besides ':'
+     53                  goto error;
+     54                }
+     55              }
+     56          
+     57              if ((q - p) > 4) {     // We can't have more than 4 hex digits per segment
+     58                goto error;
+     59              }
+     60          
+     61              if (field_no == 8) {     // If the address goes farther than 8 segments
+     62                goto error;
+     63              }
+     64          
+     65              // Convert and write this part, (high-endian AKA network byte order)
+     66              addr = common_write_16_bit(hex(p), addr);
+     67              field_no++;
+     68          
+     69              // We handle the colons
+     70              if (len) {
+     71                // Check if we reached "::"
+     72                if (q[0] == ':' && q[1] == ':') {
+     73                  if (coloncolon != -1) {         // We are not supposed to see "::" more than once per address
+     74                    goto error;
+     75                  }
+     76                  coloncolon = field_no;
+     77                  q++;
+     78                  len -= 2;
+     79                } else {
+     80                  len -= 1;
+   \                     ??stoip6_2: (+1)
+   \       0x18   0x1E64             SUBS     R4,R4,#+1
+   \       0x1A   0xE00B             B.N      ??stoip6_3
+     81                }
+   \                     ??stoip6_4: (+1)
+   \       0x1C   0x7838             LDRB     R0,[R7, #+0]
+   \       0x1E   0x283A             CMP      R0,#+58
+   \       0x20   0xBF04             ITT      EQ
+   \       0x22   0x7878             LDRBEQ   R0,[R7, #+1]
+   \       0x24   0x283A             CMPEQ    R0,#+58
+   \       0x26   0xD1F7             BNE.N    ??stoip6_2
+   \       0x28   0xF115 0x0F01      CMN      R5,#+1
+   \       0x2C   0xD15C             BNE.N    ??stoip6_0
+   \       0x2E   0x4635             MOV      R5,R6
+   \       0x30   0x1C7F             ADDS     R7,R7,#+1
+   \       0x32   0x1EA4             SUBS     R4,R4,#+2
+     82              }
+   \                     ??stoip6_3: (+1)
+   \       0x34   0x1C7B             ADDS     R3,R7,#+1
+   \                     ??stoip6_1: (+1)
+   \       0x36   0x2C00             CMP      R4,#+0
+   \       0x38   0xBF1C             ITT      NE
+   \       0x3A   0x7818             LDRBNE   R0,[R3, #+0]
+   \       0x3C   0x2800             CMPNE    R0,#+0
+   \       0x3E   0xD039             BEQ.N    ??stoip6_5
+   \       0x40   0x461F             MOV      R7,R3
+   \                     ??stoip6_6: (+1)
+   \       0x42   0x7838             LDRB     R0,[R7, #+0]
+   \       0x44   0xB168             CBZ.N    R0,??stoip6_7
+   \       0x46   0x283A             CMP      R0,#+58
+   \       0x48   0xD00B             BEQ.N    ??stoip6_7
+   \       0x4A   0xF817 0x2B01      LDRB     R2,[R7], #+1
+   \       0x4E   0xF022 0x0020      BIC      R0,R2,#0x20
+   \       0x52   0x3841             SUBS     R0,R0,#+65
+   \       0x54   0x2806             CMP      R0,#+6
+   \       0x56   0xBF24             ITT      CS
+   \       0x58   0x3A30             SUBCS    R2,R2,#+48
+   \       0x5A   0x2A0A             CMPCS    R2,#+10
+   \       0x5C   0xD244             BCS.N    ??stoip6_0
+   \       0x5E   0x1E64             SUBS     R4,R4,#+1
+   \       0x60   0xD1EF             BNE.N    ??stoip6_6
+   \                     ??stoip6_7: (+1)
+   \       0x62   0x1AF8             SUBS     R0,R7,R3
+   \       0x64   0x2805             CMP      R0,#+5
+   \       0x66   0xDA3F             BGE.N    ??stoip6_0
+   \       0x68   0x2E08             CMP      R6,#+8
+   \       0x6A   0xD03D             BEQ.N    ??stoip6_0
+   \       0x6C   0x2000             MOVS     R0,#+0
+   \       0x6E   0xE002             B.N      ??stoip6_8
+   \                     ??stoip6_9: (+1)
+   \       0x70   0xF1AC 0x0030      SUB      R0,R12,#+48
+   \                     ??stoip6_10: (+1)
+   \       0x74   0x4310             ORRS     R0,R0,R2
+   \                     ??stoip6_8: (+1)
+   \       0x76   0xF813 0xCB01      LDRB     R12,[R3], #+1
+   \       0x7A   0x0102             LSLS     R2,R0,#+4
+   \       0x7C   0xF1AC 0x0930      SUB      R9,R12,#+48
+   \       0x80   0xF1B9 0x0F0A      CMP      R9,#+10
+   \       0x84   0xD3F4             BCC.N    ??stoip6_9
+   \       0x86   0xF1AC 0x0E41      SUB      LR,R12,#+65
+   \       0x8A   0xF1BE 0x0F06      CMP      LR,#+6
+   \       0x8E   0xBF38             IT       CC
+   \       0x90   0xF1AC 0x0037      SUBCC    R0,R12,#+55
+   \       0x94   0xD3EE             BCC.N    ??stoip6_10
+   \       0x96   0xF1AC 0x0E61      SUB      LR,R12,#+97
+   \       0x9A   0xF1BE 0x0F06      CMP      LR,#+6
+   \       0x9E   0xBF38             IT       CC
+   \       0xA0   0xF1AC 0x0057      SUBCC    R0,R12,#+87
+   \       0xA4   0xD3E6             BCC.N    ??stoip6_10
+   \       0xA6   0xB280             UXTH     R0,R0
+   \       0xA8   0x.... 0x....      BL       common_write_16_bit
+   \       0xAC   0x1C76             ADDS     R6,R6,#+1
+   \       0xAE   0x4601             MOV      R1,R0
+   \       0xB0   0x2C00             CMP      R4,#+0
+   \       0xB2   0xD1B3             BNE.N    ??stoip6_4
+     83            }
+     84          
+     85            if (coloncolon != -1) {
+   \                     ??stoip6_5: (+1)
+   \       0xB4   0xF115 0x0F01      CMN      R5,#+1
+   \       0xB8   0xD012             BEQ.N    ??stoip6_11
+     86              /* Insert zeros in the appropriate place */
+     87              uint_fast8_t head_size = 2 * coloncolon;
+   \       0xBA   0x006D             LSLS     R5,R5,#+1
+     88              uint_fast8_t inserted_size = 2 * (8 - field_no);
+     89              uint_fast8_t tail_size = 16 - head_size - inserted_size;
+     90              addr = dest;
+     91              memmove(addr + head_size + inserted_size, addr + head_size, tail_size);
+   \       0xBC   0xEB08 0x0405      ADD      R4,R8,R5
+   \       0xC0   0xF1C6 0x0608      RSB      R6,R6,#+8
+   \       0xC4   0xF1C5 0x0510      RSB      R5,R5,#+16
+   \       0xC8   0xEBA5 0x0246      SUB      R2,R5,R6, LSL #+1
+   \       0xCC   0x4621             MOV      R1,R4
+   \       0xCE   0xEB04 0x0046      ADD      R0,R4,R6, LSL #+1
+   \       0xD2   0x.... 0x....      BL       __aeabi_memmove
+     92              memset(addr + head_size, 0, inserted_size);
+   \       0xD6   0x0071             LSLS     R1,R6,#+1
+   \       0xD8   0x4620             MOV      R0,R4
+   \       0xDA   0x.... 0x....      BL       __aeabi_memclr
+     93            } else if (field_no != 8) {   // Report an error if we didn't get 8 fields
+   \       0xDE   0xE001             B.N      ??stoip6_12
+   \                     ??stoip6_11: (+1)
+   \       0xE0   0x2E08             CMP      R6,#+8
+   \       0xE2   0xD101             BNE.N    ??stoip6_0
+     94              goto error;
+     95            }
+     96            return true;
+   \                     ??stoip6_12: (+1)
+   \       0xE4   0x2001             MOVS     R0,#+1
+   \       0xE6   0xE004             B.N      ??stoip6_13
+     97          
+     98            error:
+     99            // Fill the output buffer with 0 so we stick to the old failure behavior.
+    100            // We are however more agressive and wipe the entire address, and do so more often.
+    101            memset(dest, 0, 16);
+   \                     ??stoip6_0: (+1)
+   \       0xE8   0x2110             MOVS     R1,#+16
+   \       0xEA   0x4640             MOV      R0,R8
+   \       0xEC   0x.... 0x....      BL       __aeabi_memclr
+    102            return false;
+   \       0xF0   0x2000             MOVS     R0,#+0
+   \                     ??stoip6_13: (+1)
+   \       0xF2   0xE8BD 0x83F2      POP      {R1,R4-R9,PC}
+    103          }
+    104          
+
+   \                                 In section .text, align 2, keep-with-next
+    105          unsigned char sipv6_prefixlength(const char *ip6addr)
+    106          {
+   \                     sipv6_prefixlength: (+1)
+   \        0x0   0xB580             PUSH     {R7,LR}
+    107            char *ptr = strchr(ip6addr, '/');
+   \        0x2   0x212F             MOVS     R1,#+47
+   \        0x4   0x.... 0x....      BL       strchr
+    108            if (ptr) {
+   \        0x8   0xB110             CBZ.N    R0,??sipv6_prefixlength_0
+    109              return (unsigned char)strtoul(ptr + 1, 0, 10);
+   \        0xA   0x.... 0x....      BL       ?Subroutine0
+    110            }
+   \                     ??CrossCallReturnLabel_1: (+1)
+   \        0xE   0xB2C0             UXTB     R0,R0
+    111            return 0;
+   \                     ??sipv6_prefixlength_0: (+1)
+   \       0x10   0xBD02             POP      {R1,PC}
+    112          }
+
+   \                                 In section .text, align 2, keep-with-next
+   \                     ?Subroutine0: (+1)
+   \        0x0   0x220A             MOVS     R2,#+10
+   \        0x2   0x2100             MOVS     R1,#+0
+   \        0x4   0x1C40             ADDS     R0,R0,#+1
+   \        0x6   0x.... 0x....      B.W      strtoul
+    113          
+
+   \                                 In section .text, align 2, keep-with-next
+    114          int stoip6_prefix(const char *ip6addr, void *dest, int_fast16_t *prefix_len_out)
+    115          {
+   \                     stoip6_prefix: (+1)
+   \        0x0   0xE92D 0x41F0      PUSH     {R4-R8,LR}
+   \        0x4   0x4607             MOV      R7,R0
+   \        0x6   0x4688             MOV      R8,R1
+   \        0x8   0x0014             MOVS     R4,R2
+    116            size_t addr_len;
+    117            size_t total_len;
+    118            int_fast16_t prefix_length;
+    119          
+    120            if (prefix_len_out) {
+   \        0xA   0xBF1C             ITT      NE
+   \        0xC   0xF04F 0x30FF      MOVNE    R0,#+4294967295
+   \       0x10   0x6020             STRNE    R0,[R4, #+0]
+    121              *prefix_len_out = -1;
+    122            }
+    123          
+    124            total_len = addr_len = strlen(ip6addr);
+   \       0x12   0x4638             MOV      R0,R7
+   \       0x14   0x.... 0x....      BL       strlen
+    125            const char *ptr = strchr(ip6addr, '/');
+   \       0x18   0x212F             MOVS     R1,#+47
+   \       0x1A   0x4605             MOV      R5,R0
+   \       0x1C   0x4638             MOV      R0,R7
+   \       0x1E   0x.... 0x....      BL       strchr
+   \       0x22   0x462E             MOV      R6,R5
+    126            if (ptr) {
+   \       0x24   0x2800             CMP      R0,#+0
+   \       0x26   0xBF1C             ITT      NE
+   \       0x28   0x1BC6             SUBNE    R6,R0,R7
+   \       0x2A   0x2C00             CMPNE    R4,#+0
+    127              addr_len = ptr - ip6addr;
+    128              if (prefix_len_out) {
+   \       0x2C   0xD007             BEQ.N    ??stoip6_prefix_0
+    129                if (total_len - addr_len > 3) {
+   \       0x2E   0x1BAD             SUBS     R5,R5,R6
+   \       0x30   0x2D04             CMP      R5,#+4
+   \       0x32   0xD20A             BCS.N    ??stoip6_prefix_1
+    130                  /* too many digits in prefix */
+    131                  return -1;
+    132                }
+    133          
+    134                prefix_length = strtoul(ptr + 1, 0, 10);
+   \       0x34   0x.... 0x....      BL       ?Subroutine0
+    135                if (prefix_length <  0 || prefix_length > 128) {
+   \                     ??CrossCallReturnLabel_0: (+1)
+   \       0x38   0x2881             CMP      R0,#+129
+   \       0x3A   0xD206             BCS.N    ??stoip6_prefix_1
+    136                  /* prefix value illegal */
+    137                  return -1;
+    138                }
+    139          
+    140                *prefix_len_out = prefix_length;
+   \       0x3C   0x6020             STR      R0,[R4, #+0]
+    141              }
+    142            }
+    143          
+    144            if (!stoip6(ip6addr, addr_len, dest)) {
+   \                     ??stoip6_prefix_0: (+1)
+   \       0x3E   0x4642             MOV      R2,R8
+   \       0x40   0x4631             MOV      R1,R6
+   \       0x42   0x4638             MOV      R0,R7
+   \       0x44   0x.... 0x....      BL       stoip6
+   \       0x48   0xB910             CBNZ.N   R0,??stoip6_prefix_2
+    145              /* parser failure */
+    146              return -1;
+   \                     ??stoip6_prefix_1: (+1)
+   \       0x4A   0xF04F 0x30FF      MOV      R0,#+4294967295
+   \       0x4E   0xE000             B.N      ??stoip6_prefix_3
+    147            }
+    148          
+    149            return 0;
+   \                     ??stoip6_prefix_2: (+1)
+   \       0x50   0x2000             MOVS     R0,#+0
+   \                     ??stoip6_prefix_3: (+1)
+   \       0x52   0xE8BD 0x81F0      POP      {R4-R8,PC}
+    150          }
+    151          
+    152          static bool is_hex(char c)
+    153          {
+    154            // 'A' (0x41) and 'a' (0x61) are mapped in the ASCII table in such a way that masking the 0x20 bit turn 'a' in 'A'
+    155            if ((c & ~0x20) >= 'A' && (c & ~0x20) <= 'F') {
+    156              return true;
+    157            }
+    158          
+    159            if (c >= '0' && c <= '9') {
+    160              return true;
+    161            }
+    162          
+    163            return false;
+    164          }
+    165          
+    166          static uint16_t hex(const char *p)
+    167          {
+    168            uint16_t val = 0;
+    169          
+    170            for (;; ) {
+    171              char c = *p++;
+    172              if ((c >= '0') && (c <= '9')) {
+    173                val = (val << 4) | (c - '0');
+    174              } else if ((c >= 'A') && (c <= 'F')) {
+    175                val = (val << 4) | (10 + (c - 'A'));
+    176              } else if ((c >= 'a') && (c <= 'f')) {
+    177                val = (val << 4) | (10 + (c - 'a'));
+    178              } else {
+    179                break;       // Non hex character
+    180              }
+    181            }
+    182            return val;
+    183          }
+
+   Maximum stack usage in bytes:
+
+   .cstack Function
+   ------- --------
+       8   sipv6_prefixlength
+         8   -> strchr
+         8   -> strtoul
+      32   stoip6
+        32   -> __aeabi_memclr
+        32   -> __aeabi_memmove
+        32   -> common_write_16_bit
+      24   stoip6_prefix
+        24   -> stoip6
+        24   -> strchr
+        24   -> strlen
+        24   -> strtoul
+
+
+   Section sizes:
+
+   Bytes  Function/Label
+   -----  --------------
+      10  ?Subroutine0
+      18  sipv6_prefixlength
+     246  stoip6
+      86  stoip6_prefix
+
+ 
+ 360 bytes in section .text
+ 
+ 360 bytes of CODE memory
+
+Errors: none
+Warnings: none

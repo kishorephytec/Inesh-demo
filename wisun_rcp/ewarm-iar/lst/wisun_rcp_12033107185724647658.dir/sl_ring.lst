@@ -1,0 +1,1546 @@
+###############################################################################
+#
+# IAR ANSI C/C++ Compiler V9.50.2.385/W64 for ARM         27/Nov/2024  12:17:16
+# Copyright 1999-2024 IAR Systems AB.
+#
+#    Cpu mode                     =  thumb
+#    Endian                       =  little
+#    Source file                  =
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\protocol\wisun\app\wisun_rcp\sl_ring.c
+#    Command line                 =
+#        -f
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\ewarm-iar\obj\wisun_rcp_12033107185724647658.dir\sl_ring.o.rsp
+#        (C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\protocol\wisun\app\wisun_rcp\sl_ring.c
+#        -D EFR32FG28B322F1024IM48=1 -D
+#        configNUM_SDK_THREAD_LOCAL_STORAGE_POINTERS=2 -D
+#        SL_COMPONENT_CATALOG_PRESENT=1 -D
+#        MBEDTLS_CONFIG_FILE=<sl_mbedtls_config.h> -D
+#        MBEDTLS_PSA_CRYPTO_CONFIG_FILE=<psa_crypto_config.h> -D
+#        SL_RAIL_LIB_MULTIPROTOCOL_SUPPORT=0 -D
+#        SL_RAIL_UTIL_PA_CONFIG_HEADER=<sl_rail_util_pa_config.h> -D
+#        RTT_USE_ASM=0 -D MBED_CONF_MBED_TRACE_ENABLE=1 -D
+#        MBED_CONF_NANOSTACK_CONFIGURATION=ws_router -D
+#        MBED_TRACE_MAX_LEVEL=TRACE_ACTIVE_LEVEL_ALL -D DEBUG_EFM_USER=1 -D
+#        HAVE_LFN=1 -D HAVE_LFN_PARENT=1 -lC
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\ewarm-iar\lst\wisun_rcp_12033107185724647658.dir
+#        --diag_suppress Pa050 -o
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\ewarm-iar\obj\wisun_rcp_12033107185724647658.dir
+#        --debug --endian=little --cpu=Cortex-M33 --cmse --cmse -e
+#        --fpu=VFPv5_sp --dlib_config "C:\Program Files\IAR Systems\Embedded
+#        Workbench 9.2\arm\inc\c\DLib_Config_Normal.h" -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\protocol\wisun\app\wisun_rcp\
+#        -I C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\autogen\ -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\config\ -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\config\rail\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\Device\SiliconLabs\EFR32FG28\Include\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\common\inc\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\CMSIS\Core\Include\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\CMSIS\RTOS2\Include\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\service\device_init\inc\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\emdrv\dmadrv\inc\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\emdrv\common\inc\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\emlib\inc\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\util\third_party\freertos\cmsis\Include\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\util\third_party\freertos\kernel\include\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\util\third_party\freertos\kernel\portable\IAR\ARM_CM33_NTZ\non_secure\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\service\iostream\inc\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\security\sl_component\sl_mbedtls_support\config\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\security\sl_component\sl_mbedtls_support\config\preset\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\security\sl_component\sl_mbedtls_support\inc\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\util\third_party\mbedtls\include\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\util\third_party\mbedtls\library\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\emdrv\nvm3\inc\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\peripheral\inc\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\security\sl_component\sl_psa_driver\inc\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\radio\rail_lib\common\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\radio\rail_lib\protocol\ble\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\radio\rail_lib\protocol\ieee802154\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\radio\rail_lib\protocol\wmbus\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\radio\rail_lib\protocol\zwave\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\radio\rail_lib\chip\efr32\efr32xg2x\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\radio\rail_lib\protocol\sidewalk\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\radio\rail_lib\plugin\pa-conversions\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\radio\rail_lib\plugin\pa-conversions\efr32xg28\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\radio\rail_lib\plugin\rail_util_pti\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\security\sl_component\se_manager\inc\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\security\sl_component\se_manager\src\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\util\third_party\segger\systemview\SEGGER\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\util\silicon_labs\silabs_core\memory_manager\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\common\toolchain\inc\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\service\system\inc\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\app\wisun\component\ns_list\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\app\wisun\component\trace_util\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\app\wisun\component\trace_util\nanostack\nanostack-libservice\mbed-client-libservice\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\service\sleeptimer\inc\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\protocol\wisun\stack\inc\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\protocol\wisun\app\wisun_rcp\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\protocol\wisun\stack\inc\socket\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\protocol\wisun\stack\src\
+#        -Ohz --use_c++_inline) --dependencies=n
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\ewarm-iar\obj\wisun_rcp_12033107185724647658.dir\sl_ring.o.iar_deps
+#    Locale                       =  C
+#    List file                    =
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\ewarm-iar\lst\wisun_rcp_12033107185724647658.dir\sl_ring.lst
+#    Object file                  =
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\ewarm-iar\obj\wisun_rcp_12033107185724647658.dir\sl_ring.o
+#    Runtime model:                  
+#      __CPP_Runtime              =  1
+#      __SystemLibrary            =  DLib
+#      __dlib_file_descriptor     =  0
+#      __dlib_full_locale_support =  0
+#      __dlib_version             =  6
+#      __iar_require _Printf         
+#
+###############################################################################
+
+C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\protocol\wisun\app\wisun_rcp\sl_ring.c
+      1          /***************************************************************************//**
+      2           * Copyright 2021 Silicon Laboratories Inc. www.silabs.com
+      3           *******************************************************************************
+      4           *
+      5           * The licensor of this software is Silicon Laboratories Inc. Your use of this
+      6           * software is governed by the terms of Silicon Labs Master Software License
+      7           * Agreement (MSLA) available here[1]. This software is distributed to you in
+      8           * Source Code format and is governed by the sections of the MSLA applicable to
+      9           * Source Code.
+     10           *
+     11           * [1] www.silabs.com/about-us/legal/master-software-license-agreement
+     12           *
+     13           ******************************************************************************/
+     14          
+     15          #include <stdbool.h>
+     16          #include <string.h>
+     17          
+     18          #include "sl_ring.h"
+     19          #include "sl_wsrcp_log.h"
+     20          
+
+   \                                 In section .text, align 4, keep-with-next
+     21          void ring_init(struct ring *ring, void *buf, size_t buf_size)
+     22          {
+   \                     ring_init: (+1)
+   \        0x0   0xE92D 0x47FC      PUSH     {R2-R10,LR}
+   \        0x4   0x4603             MOV      R3,R0
+     23              memset(ring, 0, sizeof(struct ring));
+   \        0x6   0x2600             MOVS     R6,#+0
+   \        0x8   0x2000             MOVS     R0,#+0
+   \        0xA   0x2400             MOVS     R4,#+0
+   \        0xC   0x2500             MOVS     R5,#+0
+   \        0xE   0xE883 0x0071      STM      R3,{R0,R4-R6}
+     24              ring->buf = buf;
+     25              ring->size_mask = buf_size - 1;
+   \       0x12   0x1E52             SUBS     R2,R2,#+1
+   \       0x14   0x60D9             STR      R1,[R3, #+12]
+     26              BUG_ON(!ring->buf);
+   \       0x16   0x68D9             LDR      R1,[R3, #+12]
+   \       0x18   0x609A             STR      R2,[R3, #+8]
+   \       0x1A   0x.... 0x....      BL       ??Subroutine3_0
+   \                     ??CrossCallReturnLabel_7: (+1)
+   \       0x1E   0x.... 0x....      ADR.W    R6,?_4
+   \       0x22   0x.... 0x....      LDR.W    R7,??DataTable24
+   \       0x26   0x.... 0x....      LDR.W    R8,??DataTable24_1
+   \       0x2A   0x.... 0x....      ADR.W    R5,?_3
+   \       0x2E   0x.... 0x....      ADR.W    R4,?_1
+   \       0x32   0x.... 0x....      ADR.W    R9,`ring_init::__func__`
+   \       0x36   0xB9D9             CBNZ.N   R1,??ring_init_0
+   \       0x38   0x.... 0x....      ADR.W    R10,?_2
+   \       0x3C   0x2800             CMP      R0,#+0
+   \       0x3E   0x4653             MOV      R3,R10
+   \       0x40   0xD003             BEQ.N    ??ring_init_1
+   \       0x42   0x221A             MOVS     R2,#+26
+   \       0x44   0x4649             MOV      R1,R9
+   \       0x46   0x4620             MOV      R0,R4
+   \       0x48   0xE002             B.N      ??ring_init_2
+   \                     ??ring_init_1: (+1)
+   \       0x4A   0x221A             MOVS     R2,#+26
+   \       0x4C   0x4649             MOV      R1,R9
+   \       0x4E   0x4628             MOV      R0,R5
+   \                     ??ring_init_2: (+1)
+   \       0x50   0x.... 0x....      BL       printf
+   \       0x54   0xF898 0x0000      LDRB     R0,[R8, #+0]
+   \       0x58   0xB940             CBNZ.N   R0,??ring_init_3
+   \       0x5A   0x683C             LDR      R4,[R7, #+0]
+   \       0x5C   0xB134             CBZ.N    R4,??ring_init_3
+   \       0x5E   0x.... 0x....      BL       ?Subroutine7
+   \                     ??CrossCallReturnLabel_35: (+1)
+   \       0x62   0x231A             MOVS     R3,#+26
+   \       0x64   0x464A             MOV      R2,R9
+   \       0x66   0x4631             MOV      R1,R6
+   \       0x68   0x2000             MOVS     R0,#+0
+   \       0x6A   0x47A0             BLX      R4
+   \                     ??ring_init_3: (+1)
+   \       0x6C   0xBE00             BKPT     #0x0
+   \                     ??ring_init_4: (+1)
+   \       0x6E   0xE7FE             B.N      ??ring_init_4
+     27              BUG_ON((ring->size_mask + 1) & ring->size_mask);
+   \                     ??ring_init_0: (+1)
+   \       0x70   0x1C51             ADDS     R1,R2,#+1
+   \       0x72   0x4211             TST      R1,R2
+   \       0x74   0xD01B             BEQ.N    ??ring_init_5
+   \       0x76   0x.... 0x....      LDR.W    R10,??DataTable24_2
+   \       0x7A   0x2800             CMP      R0,#+0
+   \       0x7C   0x4653             MOV      R3,R10
+   \       0x7E   0xD003             BEQ.N    ??ring_init_6
+   \       0x80   0x221B             MOVS     R2,#+27
+   \       0x82   0x4649             MOV      R1,R9
+   \       0x84   0x4620             MOV      R0,R4
+   \       0x86   0xE002             B.N      ??ring_init_7
+   \                     ??ring_init_6: (+1)
+   \       0x88   0x221B             MOVS     R2,#+27
+   \       0x8A   0x4649             MOV      R1,R9
+   \       0x8C   0x4628             MOV      R0,R5
+   \                     ??ring_init_7: (+1)
+   \       0x8E   0x.... 0x....      BL       printf
+   \       0x92   0xF898 0x0000      LDRB     R0,[R8, #+0]
+   \       0x96   0xB940             CBNZ.N   R0,??ring_init_8
+   \       0x98   0x683C             LDR      R4,[R7, #+0]
+   \       0x9A   0xB134             CBZ.N    R4,??ring_init_8
+   \       0x9C   0x.... 0x....      BL       ?Subroutine7
+   \                     ??CrossCallReturnLabel_36: (+1)
+   \       0xA0   0x231B             MOVS     R3,#+27
+   \       0xA2   0x464A             MOV      R2,R9
+   \       0xA4   0x4631             MOV      R1,R6
+   \       0xA6   0x2000             MOVS     R0,#+0
+   \       0xA8   0x47A0             BLX      R4
+   \                     ??ring_init_8: (+1)
+   \       0xAA   0xBE00             BKPT     #0x0
+   \                     ??ring_init_9: (+1)
+   \       0xAC   0xE7FE             B.N      ??ring_init_9
+     28          }
+   \                     ??ring_init_5: (+1)
+   \       0xAE   0xE8BD 0x87F3      POP      {R0,R1,R4-R10,PC}
+
+   \                                 In section .text, align 2, keep-with-next
+   \                     ?Subroutine7: (+1)
+   \        0x0   0x2001             MOVS     R0,#+1
+   \        0x2   0xF888 0x0000      STRB     R0,[R8, #+0]
+   \        0x6   0xF8CD 0xA000      STR      R10,[SP, #+0]
+   \        0xA   0x4770             BX       LR
+
+   \                                 In section .text, align 2, keep-with-next
+   \                     ?Subroutine3: (+1)
+   \        0x0   0x4605             MOV      R5,R0
+   \        0x2   0x68E9             LDR      R1,[R5, #+12]
+   \                     ??Subroutine3_0: (+1)
+   \        0x4   0x.... 0x....      LDR.W    R0,??DataTable24_3
+   \        0x8   0x7800             LDRB     R0,[R0, #+0]
+   \        0xA   0x4770             BX       LR
+     29          
+
+   \                                 In section .text, align 4, keep-with-next
+     30          int ring_push(struct ring *ring, uint8_t data)
+     31          {
+   \                     ring_push: (+1)
+   \        0x0   0xE92D 0x47FC      PUSH     {R2-R10,LR}
+   \        0x4   0x4688             MOV      R8,R1
+   \        0x6   0x.... 0x....      BL       ?Subroutine3
+     32              BUG_ON(!ring->buf);
+   \                     ??CrossCallReturnLabel_5: (+1)
+   \        0xA   0x.... 0x....      ADR.W    R10,?_4
+   \        0xE   0x.... 0x....      BL       ?Subroutine2
+   \                     ??CrossCallReturnLabel_3: (+1)
+   \       0x12   0x.... 0x....      ADR.W    R9,`ring_push::__func__`
+   \       0x16   0xB9B1             CBNZ.N   R1,??ring_push_0
+   \       0x18   0x.... 0x....      BL       ?Subroutine8
+   \                     ??CrossCallReturnLabel_37: (+1)
+   \       0x1C   0xD003             BEQ.N    ??ring_push_1
+   \       0x1E   0x2220             MOVS     R2,#+32
+   \       0x20   0x4649             MOV      R1,R9
+   \       0x22   0x4620             MOV      R0,R4
+   \       0x24   0xE002             B.N      ??ring_push_2
+   \                     ??ring_push_1: (+1)
+   \       0x26   0x2220             MOVS     R2,#+32
+   \       0x28   0x4649             MOV      R1,R9
+   \       0x2A   0x4660             MOV      R0,R12
+   \                     ??ring_push_2: (+1)
+   \       0x2C   0x.... 0x....      BL       printf
+   \       0x30   0x7830             LDRB     R0,[R6, #+0]
+   \       0x32   0xB930             CBNZ.N   R0,??CrossCallReturnLabel_34
+   \       0x34   0x683C             LDR      R4,[R7, #+0]
+   \       0x36   0xB124             CBZ.N    R4,??CrossCallReturnLabel_34
+   \       0x38   0x.... 0x....      BL       ?Subroutine5
+   \                     ??CrossCallReturnLabel_18: (+1)
+   \       0x3C   0x2320             MOVS     R3,#+32
+   \       0x3E   0x.... 0x....      BL       ?Subroutine6
+   \                     ??CrossCallReturnLabel_34: (+1)
+   \       0x42   0xBE00             BKPT     #0x0
+   \                     ??ring_push_3: (+1)
+   \       0x44   0xE7FE             B.N      ??ring_push_3
+     33              BUG_ON((ring->size_mask + 1) & ring->size_mask);
+   \                     ??ring_push_0: (+1)
+   \       0x46   0x68AA             LDR      R2,[R5, #+8]
+   \       0x48   0x1C51             ADDS     R1,R2,#+1
+   \       0x4A   0x4211             TST      R1,R2
+   \       0x4C   0xD016             BEQ.N    ??ring_push_4
+   \       0x4E   0x.... 0x....      BL       ?Subroutine9
+   \                     ??CrossCallReturnLabel_43: (+1)
+   \       0x52   0xD003             BEQ.N    ??ring_push_5
+   \       0x54   0x2221             MOVS     R2,#+33
+   \       0x56   0x4649             MOV      R1,R9
+   \       0x58   0x4620             MOV      R0,R4
+   \       0x5A   0xE002             B.N      ??ring_push_6
+   \                     ??ring_push_5: (+1)
+   \       0x5C   0x2221             MOVS     R2,#+33
+   \       0x5E   0x4649             MOV      R1,R9
+   \       0x60   0x4660             MOV      R0,R12
+   \                     ??ring_push_6: (+1)
+   \       0x62   0x.... 0x....      BL       printf
+   \       0x66   0x7830             LDRB     R0,[R6, #+0]
+   \       0x68   0xB930             CBNZ.N   R0,??CrossCallReturnLabel_33
+   \       0x6A   0x683C             LDR      R4,[R7, #+0]
+   \       0x6C   0xB124             CBZ.N    R4,??CrossCallReturnLabel_33
+   \       0x6E   0x.... 0x....      BL       ?Subroutine5
+   \                     ??CrossCallReturnLabel_19: (+1)
+   \       0x72   0x2321             MOVS     R3,#+33
+   \       0x74   0x.... 0x....      BL       ?Subroutine6
+   \                     ??CrossCallReturnLabel_33: (+1)
+   \       0x78   0xBE00             BKPT     #0x0
+   \                     ??ring_push_7: (+1)
+   \       0x7A   0xE7FE             B.N      ??ring_push_7
+     34              if (ring_data_len(ring) + 1 > ring_buffer_size(ring))
+   \                     ??ring_push_4: (+1)
+   \       0x7C   0x4628             MOV      R0,R5
+   \       0x7E   0x.... 0x....      BL       ring_buffer_size
+   \       0x82   0x4604             MOV      R4,R0
+   \       0x84   0x4628             MOV      R0,R5
+   \       0x86   0x.... 0x....      BL       ring_data_len
+   \       0x8A   0x1C40             ADDS     R0,R0,#+1
+   \       0x8C   0x4284             CMP      R4,R0
+   \       0x8E   0xBF38             IT       CC
+   \       0x90   0xF04F 0x30FF      MOVCC    R0,#+4294967295
+     35                  return -1; // Full
+   \       0x94   0xD308             BCC.N    ??ring_push_8
+     36              ring->buf[ring->count_wr++ & ring->size_mask] = data;
+   \       0x96   0x6869             LDR      R1,[R5, #+4]
+   \       0x98   0x1C48             ADDS     R0,R1,#+1
+   \       0x9A   0x6068             STR      R0,[R5, #+4]
+   \       0x9C   0x68A8             LDR      R0,[R5, #+8]
+   \       0x9E   0x68EA             LDR      R2,[R5, #+12]
+   \       0xA0   0x4001             ANDS     R1,R0,R1
+     37              return 0;
+   \       0xA2   0x2000             MOVS     R0,#+0
+   \       0xA4   0xF802 0x8001      STRB     R8,[R2, R1]
+   \                     ??ring_push_8: (+1)
+   \       0xA8   0xE8BD 0x87F6      POP      {R1,R2,R4-R10,PC}
+     38          }
+
+   \                                 In section .text, align 2, keep-with-next
+   \                     ?Subroutine6: (+1)
+   \        0x0   0x464A             MOV      R2,R9
+   \        0x2   0x4651             MOV      R1,R10
+   \        0x4   0x2000             MOVS     R0,#+0
+   \        0x6   0x4720             BX       R4
+
+   \                                 In section .text, align 2, keep-with-next
+   \                     ?Subroutine2: (+1)
+   \        0x0   0x....             LDR.N    R7,??DataTable24
+   \        0x2   0x....             LDR.N    R6,??DataTable24_1
+   \        0x4   0x.... 0x....      ADR.W    R12,?_3
+   \        0x8   0x.... 0x....      ADR.W    R4,?_1
+   \        0xC   0x4770             BX       LR
+
+   \                                 In section .text, align 2, keep-with-next
+   \                     ?Subroutine9: (+1)
+   \        0x0   0x....             LDR.N    R5,??DataTable24_2
+   \        0x2   0x2800             CMP      R0,#+0
+   \        0x4   0x462B             MOV      R3,R5
+   \        0x6   0x4770             BX       LR
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ?Subroutine8: (+1)
+   \        0x0   0x....             ADR.N    R5,?_2
+   \        0x2   0x2800             CMP      R0,#+0
+   \        0x4   0x462B             MOV      R3,R5
+   \        0x6   0x4770             BX       LR
+
+   \                                 In section .text, align 2, keep-with-next
+   \                     ?Subroutine5: (+1)
+   \        0x0   0x2001             MOVS     R0,#+1
+   \        0x2   0x7030             STRB     R0,[R6, #+0]
+   \        0x4   0x9500             STR      R5,[SP, #+0]
+   \        0x6   0x4770             BX       LR
+     39          
+
+   \                                 In section .text, align 4, keep-with-next
+     40          int ring_push_buf(struct ring *ring, const uint8_t *data, size_t len)
+     41          {
+   \                     ring_push_buf: (+1)
+   \        0x0   0xE92D 0x47FC      PUSH     {R2-R10,LR}
+   \        0x4   0x4606             MOV      R6,R0
+   \        0x6   0x4688             MOV      R8,R1
+     42              size_t remaining;
+     43              unsigned int count_wr;
+     44          
+     45              BUG_ON(!ring->buf);
+   \        0x8   0x.... 0x....      LDR.W    R0,??DataTable24_3
+   \        0xC   0x68F3             LDR      R3,[R6, #+12]
+   \        0xE   0x.... 0x....      BL       ?Subroutine11
+   \                     ??CrossCallReturnLabel_52: (+1)
+   \       0x12   0x.... 0x....      LDR.W    R5,??DataTable24_1
+   \       0x16   0x.... 0x....      ADR.W    R0,?_3
+   \       0x1A   0x.... 0x....      ADR.W    R4,?_1
+   \       0x1E   0x.... 0x....      ADR.W    R9,`ring_push_buf::__func__`
+   \       0x22   0xB9C3             CBNZ.N   R3,??ring_push_buf_0
+   \       0x24   0x.... 0x....      ADR.W    R6,?_2
+   \       0x28   0x2900             CMP      R1,#+0
+   \       0x2A   0x4633             MOV      R3,R6
+   \       0x2C   0xD003             BEQ.N    ??ring_push_buf_1
+   \       0x2E   0x222D             MOVS     R2,#+45
+   \       0x30   0x4649             MOV      R1,R9
+   \       0x32   0x4620             MOV      R0,R4
+   \       0x34   0xE001             B.N      ??ring_push_buf_2
+   \                     ??ring_push_buf_1: (+1)
+   \       0x36   0x222D             MOVS     R2,#+45
+   \       0x38   0x4649             MOV      R1,R9
+   \                     ??ring_push_buf_2: (+1)
+   \       0x3A   0x.... 0x....      BL       printf
+   \       0x3E   0x7828             LDRB     R0,[R5, #+0]
+   \       0x40   0xB938             CBNZ.N   R0,??CrossCallReturnLabel_32
+   \       0x42   0x683C             LDR      R4,[R7, #+0]
+   \       0x44   0xB12C             CBZ.N    R4,??CrossCallReturnLabel_32
+   \       0x46   0x2001             MOVS     R0,#+1
+   \       0x48   0x7028             STRB     R0,[R5, #+0]
+   \       0x4A   0x9600             STR      R6,[SP, #+0]
+   \       0x4C   0x232D             MOVS     R3,#+45
+   \       0x4E   0x.... 0x....      BL       ?Subroutine6
+   \                     ??CrossCallReturnLabel_32: (+1)
+   \       0x52   0xBE00             BKPT     #0x0
+   \                     ??ring_push_buf_3: (+1)
+   \       0x54   0xE7FE             B.N      ??ring_push_buf_3
+     46              BUG_ON((ring->size_mask + 1) & ring->size_mask);
+   \                     ??ring_push_buf_0: (+1)
+   \       0x56   0xF8D6 0xC008      LDR      R12,[R6, #+8]
+   \       0x5A   0xF10C 0x0301      ADD      R3,R12,#+1
+   \       0x5E   0xEA13 0x0F0C      TST      R3,R12
+   \       0x62   0xD018             BEQ.N    ??ring_push_buf_4
+   \       0x64   0x.... 0x....      LDR.W    R6,??DataTable24_2
+   \       0x68   0x2900             CMP      R1,#+0
+   \       0x6A   0x4633             MOV      R3,R6
+   \       0x6C   0xD003             BEQ.N    ??ring_push_buf_5
+   \       0x6E   0x222E             MOVS     R2,#+46
+   \       0x70   0x4649             MOV      R1,R9
+   \       0x72   0x4620             MOV      R0,R4
+   \       0x74   0xE001             B.N      ??ring_push_buf_6
+   \                     ??ring_push_buf_5: (+1)
+   \       0x76   0x222E             MOVS     R2,#+46
+   \       0x78   0x4649             MOV      R1,R9
+   \                     ??ring_push_buf_6: (+1)
+   \       0x7A   0x.... 0x....      BL       printf
+   \       0x7E   0x7828             LDRB     R0,[R5, #+0]
+   \       0x80   0xB938             CBNZ.N   R0,??CrossCallReturnLabel_31
+   \       0x82   0x683C             LDR      R4,[R7, #+0]
+   \       0x84   0xB12C             CBZ.N    R4,??CrossCallReturnLabel_31
+   \       0x86   0x2001             MOVS     R0,#+1
+   \       0x88   0x7028             STRB     R0,[R5, #+0]
+   \       0x8A   0x9600             STR      R6,[SP, #+0]
+   \       0x8C   0x232E             MOVS     R3,#+46
+   \       0x8E   0x.... 0x....      BL       ?Subroutine6
+   \                     ??CrossCallReturnLabel_31: (+1)
+   \       0x92   0xBE00             BKPT     #0x0
+   \                     ??ring_push_buf_7: (+1)
+   \       0x94   0xE7FE             B.N      ??ring_push_buf_7
+   \                     ??ring_push_buf_4: (+1)
+   \       0x96   0x4614             MOV      R4,R2
+     47              if (ring_data_len(ring) + len > ring_buffer_size(ring))
+   \       0x98   0x.... 0x....      BL       ??Subroutine10_0
+   \                     ??CrossCallReturnLabel_49: (+1)
+   \       0x9C   0x4605             MOV      R5,R0
+   \       0x9E   0x4630             MOV      R0,R6
+   \       0xA0   0x.... 0x....      BL       ring_data_len
+   \       0xA4   0x1820             ADDS     R0,R4,R0
+   \       0xA6   0x4285             CMP      R5,R0
+   \       0xA8   0xBF38             IT       CC
+   \       0xAA   0xF04F 0x30FF      MOVCC    R0,#+4294967295
+     48                  return -1; // Full
+   \       0xAE   0xD318             BCC.N    ??ring_push_buf_8
+     49          
+     50              count_wr = ring->count_wr & ring->size_mask;
+   \       0xB0   0x6870             LDR      R0,[R6, #+4]
+   \       0xB2   0x.... 0x....      BL       ?Subroutine10
+     51              remaining = ring_buffer_size(ring) - count_wr;
+   \                     ??CrossCallReturnLabel_51: (+1)
+   \       0xB6   0x1BC5             SUBS     R5,R0,R7
+     52              if (len > remaining) {
+   \       0xB8   0x68F0             LDR      R0,[R6, #+12]
+   \       0xBA   0x42A5             CMP      R5,R4
+   \       0xBC   0x4438             ADD      R0,R0,R7
+   \       0xBE   0xD208             BCS.N    ??ring_push_buf_9
+     53                  memcpy(ring->buf + count_wr, data, remaining);
+   \       0xC0   0x462A             MOV      R2,R5
+   \       0xC2   0x4641             MOV      R1,R8
+   \       0xC4   0x.... 0x....      BL       __aeabi_memcpy
+     54                  memcpy(ring->buf, data + remaining, len - remaining);
+   \       0xC8   0x1B62             SUBS     R2,R4,R5
+   \       0xCA   0xEB08 0x0105      ADD      R1,R8,R5
+   \       0xCE   0x68F0             LDR      R0,[R6, #+12]
+   \       0xD0   0xE001             B.N      ??ring_push_buf_10
+     55              } else {
+     56                  memcpy(ring->buf + count_wr, data, len);
+   \                     ??ring_push_buf_9: (+1)
+   \       0xD2   0x4622             MOV      R2,R4
+   \       0xD4   0x4641             MOV      R1,R8
+   \                     ??ring_push_buf_10: (+1)
+   \       0xD6   0x.... 0x....      BL       __aeabi_memcpy
+     57              }
+     58              ring->count_wr += len;
+   \       0xDA   0x6870             LDR      R0,[R6, #+4]
+   \       0xDC   0x1824             ADDS     R4,R4,R0
+   \       0xDE   0x6074             STR      R4,[R6, #+4]
+     59              return 0;
+   \       0xE0   0x2000             MOVS     R0,#+0
+   \                     ??ring_push_buf_8: (+1)
+   \       0xE2   0xE8BD 0x87F6      POP      {R1,R2,R4-R10,PC}
+     60          }
+
+   \                                 In section .text, align 2, keep-with-next
+   \                     ?Subroutine11: (+1)
+   \        0x0   0x7801             LDRB     R1,[R0, #+0]
+   \        0x2   0x.... 0x....      ADR.W    R10,?_4
+   \        0x6   0x.... 0x....      LDR.W    R7,??DataTable24
+   \        0xA   0x4770             BX       LR
+
+   \                                 In section .text, align 2, keep-with-next
+   \                     ?Subroutine10: (+1)
+   \        0x0   0x68B7             LDR      R7,[R6, #+8]
+   \        0x2   0x4007             ANDS     R7,R7,R0
+   \                     ??Subroutine10_0: (+1)
+   \        0x4   0x4630             MOV      R0,R6
+   \        0x6   0x....             B.N      ring_buffer_size
+     61          
+
+   \                                 In section .text, align 4, keep-with-next
+     62          int ring_pop(struct ring *ring)
+     63          {
+   \                     ring_pop: (+1)
+   \        0x0   0xE92D 0x47FC      PUSH     {R2-R10,LR}
+   \        0x4   0x4605             MOV      R5,R0
+     64              BUG_ON(!ring->buf);
+   \        0x6   0x68E9             LDR      R1,[R5, #+12]
+   \        0x8   0x.... 0x....      BL       ??Subroutine1_0
+   \                     ??CrossCallReturnLabel_0: (+1)
+   \        0xC   0x.... 0x....      ADR.W    R10,`ring_pop::__func__`
+   \       0x10   0xB9B1             CBNZ.N   R1,??ring_pop_0
+   \       0x12   0x.... 0x....      BL       ?Subroutine8
+   \                     ??CrossCallReturnLabel_38: (+1)
+   \       0x16   0xD003             BEQ.N    ??ring_pop_1
+   \       0x18   0x2240             MOVS     R2,#+64
+   \       0x1A   0x4651             MOV      R1,R10
+   \       0x1C   0x4640             MOV      R0,R8
+   \       0x1E   0xE002             B.N      ??ring_pop_2
+   \                     ??ring_pop_1: (+1)
+   \       0x20   0x2240             MOVS     R2,#+64
+   \       0x22   0x4651             MOV      R1,R10
+   \       0x24   0x4620             MOV      R0,R4
+   \                     ??ring_pop_2: (+1)
+   \       0x26   0x.... 0x....      BL       printf
+   \       0x2A   0x7830             LDRB     R0,[R6, #+0]
+   \       0x2C   0xB930             CBNZ.N   R0,??CrossCallReturnLabel_17
+   \       0x2E   0x683C             LDR      R4,[R7, #+0]
+   \       0x30   0xB124             CBZ.N    R4,??CrossCallReturnLabel_17
+   \       0x32   0x.... 0x....      BL       ?Subroutine5
+   \                     ??CrossCallReturnLabel_20: (+1)
+   \       0x36   0x2340             MOVS     R3,#+64
+   \       0x38   0x.... 0x....      BL       ?Subroutine4
+   \                     ??CrossCallReturnLabel_17: (+1)
+   \       0x3C   0xBE00             BKPT     #0x0
+   \                     ??ring_pop_3: (+1)
+   \       0x3E   0xE7FE             B.N      ??ring_pop_3
+     65              BUG_ON((ring->size_mask + 1) & ring->size_mask);
+   \                     ??ring_pop_0: (+1)
+   \       0x40   0x68AA             LDR      R2,[R5, #+8]
+   \       0x42   0x1C51             ADDS     R1,R2,#+1
+   \       0x44   0x4211             TST      R1,R2
+   \       0x46   0xD016             BEQ.N    ??ring_pop_4
+   \       0x48   0x.... 0x....      BL       ?Subroutine9
+   \                     ??CrossCallReturnLabel_44: (+1)
+   \       0x4C   0xD003             BEQ.N    ??ring_pop_5
+   \       0x4E   0x2241             MOVS     R2,#+65
+   \       0x50   0x4651             MOV      R1,R10
+   \       0x52   0x4640             MOV      R0,R8
+   \       0x54   0xE002             B.N      ??ring_pop_6
+   \                     ??ring_pop_5: (+1)
+   \       0x56   0x2241             MOVS     R2,#+65
+   \       0x58   0x4651             MOV      R1,R10
+   \       0x5A   0x4620             MOV      R0,R4
+   \                     ??ring_pop_6: (+1)
+   \       0x5C   0x.... 0x....      BL       printf
+   \       0x60   0x7830             LDRB     R0,[R6, #+0]
+   \       0x62   0xB930             CBNZ.N   R0,??CrossCallReturnLabel_16
+   \       0x64   0x683C             LDR      R4,[R7, #+0]
+   \       0x66   0xB124             CBZ.N    R4,??CrossCallReturnLabel_16
+   \       0x68   0x.... 0x....      BL       ?Subroutine5
+   \                     ??CrossCallReturnLabel_21: (+1)
+   \       0x6C   0x2341             MOVS     R3,#+65
+   \       0x6E   0x.... 0x....      BL       ?Subroutine4
+   \                     ??CrossCallReturnLabel_16: (+1)
+   \       0x72   0xBE00             BKPT     #0x0
+   \                     ??ring_pop_7: (+1)
+   \       0x74   0xE7FE             B.N      ??ring_pop_7
+     66              if (ring_is_empty(ring))
+   \                     ??ring_pop_4: (+1)
+   \       0x76   0x4628             MOV      R0,R5
+   \       0x78   0x.... 0x....      BL       ring_is_empty
+   \       0x7C   0xB110             CBZ.N    R0,??ring_pop_8
+     67                  return -1; // Empty
+   \       0x7E   0xF04F 0x30FF      MOV      R0,#+4294967295
+   \       0x82   0xE006             B.N      ??ring_pop_9
+     68              return ring->buf[ring->count_rd++ & ring->size_mask];
+   \                     ??ring_pop_8: (+1)
+   \       0x84   0x6829             LDR      R1,[R5, #+0]
+   \       0x86   0x1C48             ADDS     R0,R1,#+1
+   \       0x88   0x6028             STR      R0,[R5, #+0]
+   \       0x8A   0x68A8             LDR      R0,[R5, #+8]
+   \       0x8C   0x68EA             LDR      R2,[R5, #+12]
+   \       0x8E   0x4001             ANDS     R1,R0,R1
+   \       0x90   0x5C50             LDRB     R0,[R2, R1]
+   \                     ??ring_pop_9: (+1)
+   \       0x92   0xE8BD 0x87F6      POP      {R1,R2,R4-R10,PC}
+     69          }
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ?Subroutine1: (+1)
+   \        0x0   0x68CA             LDR      R2,[R1, #+12]
+   \                     ??Subroutine1_0: (+1)
+   \        0x2   0x....             LDR.N    R0,??DataTable24_3
+   \        0x4   0x7800             LDRB     R0,[R0, #+0]
+   \        0x6   0x.... 0x....      ADR.W    R9,?_4
+   \        0xA   0x....             LDR.N    R7,??DataTable24
+   \        0xC   0x.... 0x....      LDR.W    R6,??DataTable24_1
+   \       0x10   0x....             ADR.N    R4,?_3
+   \       0x12   0x.... 0x....      ADR.W    R8,?_1
+   \       0x16   0x4770             BX       LR
+
+   \                                 In section .text, align 2, keep-with-next
+   \                     ?Subroutine4: (+1)
+   \        0x0   0x4652             MOV      R2,R10
+   \        0x2   0x4649             MOV      R1,R9
+   \        0x4   0x2000             MOVS     R0,#+0
+   \        0x6   0x4720             BX       R4
+     70          
+
+   \                                 In section .text, align 4, keep-with-next
+     71          int ring_pop_buf(struct ring *ring, uint8_t *data, size_t len)
+     72          {
+   \                     ring_pop_buf: (+1)
+   \        0x0   0xE92D 0x47FC      PUSH     {R2-R10,LR}
+   \        0x4   0x4606             MOV      R6,R0
+   \        0x6   0x4615             MOV      R5,R2
+   \        0x8   0x4688             MOV      R8,R1
+     73              size_t remaining;
+     74              unsigned int count_rd;
+     75          
+     76              BUG_ON(!ring->buf);
+   \        0xA   0x.... 0x....      LDR.W    R0,??DataTable24_3
+   \        0xE   0x68F2             LDR      R2,[R6, #+12]
+   \       0x10   0x.... 0x....      BL       ?Subroutine11
+   \                     ??CrossCallReturnLabel_53: (+1)
+   \       0x14   0x.... 0x....      LDR.W    R4,??DataTable24_1
+   \       0x18   0x.... 0x....      ADR.W    R0,?_3
+   \       0x1C   0x.... 0x....      ADR.W    R12,?_1
+   \       0x20   0x.... 0x....      ADR.W    R9,`ring_pop_buf::__func__`
+   \       0x24   0xB9D2             CBNZ.N   R2,??ring_pop_buf_0
+   \       0x26   0x.... 0x....      ADR.W    R6,?_2
+   \       0x2A   0x2900             CMP      R1,#+0
+   \       0x2C   0x4633             MOV      R3,R6
+   \       0x2E   0xD003             BEQ.N    ??ring_pop_buf_1
+   \       0x30   0x224C             MOVS     R2,#+76
+   \       0x32   0x4649             MOV      R1,R9
+   \       0x34   0x4660             MOV      R0,R12
+   \       0x36   0xE001             B.N      ??ring_pop_buf_2
+   \                     ??ring_pop_buf_1: (+1)
+   \       0x38   0x224C             MOVS     R2,#+76
+   \       0x3A   0x4649             MOV      R1,R9
+   \                     ??ring_pop_buf_2: (+1)
+   \       0x3C   0x.... 0x....      BL       printf
+   \       0x40   0x7820             LDRB     R0,[R4, #+0]
+   \       0x42   0xB948             CBNZ.N   R0,??ring_pop_buf_3
+   \       0x44   0x683D             LDR      R5,[R7, #+0]
+   \       0x46   0xB13D             CBZ.N    R5,??ring_pop_buf_3
+   \       0x48   0x2001             MOVS     R0,#+1
+   \       0x4A   0x7020             STRB     R0,[R4, #+0]
+   \       0x4C   0x9600             STR      R6,[SP, #+0]
+   \       0x4E   0x234C             MOVS     R3,#+76
+   \       0x50   0x464A             MOV      R2,R9
+   \       0x52   0x4651             MOV      R1,R10
+   \       0x54   0x2000             MOVS     R0,#+0
+   \       0x56   0x47A8             BLX      R5
+   \                     ??ring_pop_buf_3: (+1)
+   \       0x58   0xBE00             BKPT     #0x0
+   \                     ??ring_pop_buf_4: (+1)
+   \       0x5A   0xE7FE             B.N      ??ring_pop_buf_4
+     77              BUG_ON((ring->size_mask + 1) & ring->size_mask);
+   \                     ??ring_pop_buf_0: (+1)
+   \       0x5C   0x68B3             LDR      R3,[R6, #+8]
+   \       0x5E   0x1C5A             ADDS     R2,R3,#+1
+   \       0x60   0x421A             TST      R2,R3
+   \       0x62   0xD01A             BEQ.N    ??ring_pop_buf_5
+   \       0x64   0x.... 0x....      LDR.W    R6,??DataTable24_2
+   \       0x68   0x2900             CMP      R1,#+0
+   \       0x6A   0x4633             MOV      R3,R6
+   \       0x6C   0xD003             BEQ.N    ??ring_pop_buf_6
+   \       0x6E   0x224D             MOVS     R2,#+77
+   \       0x70   0x4649             MOV      R1,R9
+   \       0x72   0x4660             MOV      R0,R12
+   \       0x74   0xE001             B.N      ??ring_pop_buf_7
+   \                     ??ring_pop_buf_6: (+1)
+   \       0x76   0x224D             MOVS     R2,#+77
+   \       0x78   0x4649             MOV      R1,R9
+   \                     ??ring_pop_buf_7: (+1)
+   \       0x7A   0x.... 0x....      BL       printf
+   \       0x7E   0x7820             LDRB     R0,[R4, #+0]
+   \       0x80   0xB948             CBNZ.N   R0,??ring_pop_buf_8
+   \       0x82   0x683D             LDR      R5,[R7, #+0]
+   \       0x84   0xB13D             CBZ.N    R5,??ring_pop_buf_8
+   \       0x86   0x2001             MOVS     R0,#+1
+   \       0x88   0x7020             STRB     R0,[R4, #+0]
+   \       0x8A   0x9600             STR      R6,[SP, #+0]
+   \       0x8C   0x234D             MOVS     R3,#+77
+   \       0x8E   0x464A             MOV      R2,R9
+   \       0x90   0x4651             MOV      R1,R10
+   \       0x92   0x2000             MOVS     R0,#+0
+   \       0x94   0x47A8             BLX      R5
+   \                     ??ring_pop_buf_8: (+1)
+   \       0x96   0xBE00             BKPT     #0x0
+   \                     ??ring_pop_buf_9: (+1)
+   \       0x98   0xE7FE             B.N      ??ring_pop_buf_9
+     78              if (ring_is_empty(ring))
+   \                     ??ring_pop_buf_5: (+1)
+   \       0x9A   0x4630             MOV      R0,R6
+   \       0x9C   0x.... 0x....      BL       ring_is_empty
+   \       0xA0   0xB110             CBZ.N    R0,??ring_pop_buf_10
+     79                  return -1; // Empty
+   \       0xA2   0xF04F 0x30FF      MOV      R0,#+4294967295
+   \       0xA6   0xE024             B.N      ??ring_pop_buf_11
+     80          
+     81              if (len > ring_data_len(ring))
+   \                     ??ring_pop_buf_10: (+1)
+   \       0xA8   0x4630             MOV      R0,R6
+   \       0xAA   0x.... 0x....      BL       ring_data_len
+   \       0xAE   0x42A8             CMP      R0,R5
+   \       0xB0   0xD203             BCS.N    ??ring_pop_buf_12
+     82                  len = ring_data_len(ring);
+   \       0xB2   0x4630             MOV      R0,R6
+   \       0xB4   0x.... 0x....      BL       ring_data_len
+   \       0xB8   0x4605             MOV      R5,R0
+     83              count_rd = ring->count_rd & ring->size_mask;
+   \                     ??ring_pop_buf_12: (+1)
+   \       0xBA   0x6830             LDR      R0,[R6, #+0]
+   \       0xBC   0x.... 0x....      BL       ?Subroutine10
+     84              remaining = ring_buffer_size(ring) - count_rd;
+   \                     ??CrossCallReturnLabel_50: (+1)
+   \       0xC0   0x1BC4             SUBS     R4,R0,R7
+     85              if (data) {
+   \       0xC2   0xF1B8 0x0F00      CMP      R8,#+0
+   \       0xC6   0xD010             BEQ.N    ??ring_pop_buf_13
+     86                  if (len > remaining) {
+   \       0xC8   0x68F0             LDR      R0,[R6, #+12]
+   \       0xCA   0x19C1             ADDS     R1,R0,R7
+   \       0xCC   0x42AC             CMP      R4,R5
+   \       0xCE   0xD208             BCS.N    ??ring_pop_buf_14
+     87                      memcpy(data, ring->buf + count_rd, remaining);
+   \       0xD0   0x4622             MOV      R2,R4
+   \       0xD2   0x4640             MOV      R0,R8
+   \       0xD4   0x.... 0x....      BL       __aeabi_memcpy
+     88                      memcpy(data + remaining, ring->buf, len - remaining);
+   \       0xD8   0x1B2A             SUBS     R2,R5,R4
+   \       0xDA   0x68F1             LDR      R1,[R6, #+12]
+   \       0xDC   0xEB08 0x0004      ADD      R0,R8,R4
+   \       0xE0   0xE001             B.N      ??ring_pop_buf_15
+     89                  } else {
+     90                      memcpy(data, ring->buf + count_rd, len);
+   \                     ??ring_pop_buf_14: (+1)
+   \       0xE2   0x462A             MOV      R2,R5
+   \       0xE4   0x4640             MOV      R0,R8
+   \                     ??ring_pop_buf_15: (+1)
+   \       0xE6   0x.... 0x....      BL       __aeabi_memcpy
+     91                  }
+     92              }
+     93              ring->count_rd += len;
+   \                     ??ring_pop_buf_13: (+1)
+   \       0xEA   0x6830             LDR      R0,[R6, #+0]
+   \       0xEC   0x1828             ADDS     R0,R5,R0
+   \       0xEE   0x6030             STR      R0,[R6, #+0]
+     94              return len;
+   \       0xF0   0x4628             MOV      R0,R5
+   \                     ??ring_pop_buf_11: (+1)
+   \       0xF2   0xE8BD 0x87F6      POP      {R1,R2,R4-R10,PC}
+     95          }
+     96          
+
+   \                                 In section .text, align 4, keep-with-next
+     97          int ring_get(struct ring *ring, unsigned int index)
+     98          {
+   \                     ring_get: (+1)
+   \        0x0   0xE92D 0x47FC      PUSH     {R2-R10,LR}
+   \        0x4   0x468A             MOV      R10,R1
+   \        0x6   0x.... 0x....      BL       ?Subroutine3
+     99              BUG_ON(!ring->buf);
+   \                     ??CrossCallReturnLabel_6: (+1)
+   \        0xA   0x.... 0x....      ADR.W    R8,?_4
+   \        0xE   0x.... 0x....      BL       ?Subroutine2
+   \                     ??CrossCallReturnLabel_4: (+1)
+   \       0x12   0x.... 0x....      ADR.W    R9,`ring_get::__func__`
+   \       0x16   0xB9C1             CBNZ.N   R1,??ring_get_0
+   \       0x18   0x.... 0x....      BL       ?Subroutine8
+   \                     ??CrossCallReturnLabel_39: (+1)
+   \       0x1C   0xD003             BEQ.N    ??ring_get_1
+   \       0x1E   0x2263             MOVS     R2,#+99
+   \       0x20   0x4649             MOV      R1,R9
+   \       0x22   0x4620             MOV      R0,R4
+   \       0x24   0xE002             B.N      ??ring_get_2
+   \                     ??ring_get_1: (+1)
+   \       0x26   0x2263             MOVS     R2,#+99
+   \       0x28   0x4649             MOV      R1,R9
+   \       0x2A   0x4660             MOV      R0,R12
+   \                     ??ring_get_2: (+1)
+   \       0x2C   0x.... 0x....      BL       printf
+   \       0x30   0x7830             LDRB     R0,[R6, #+0]
+   \       0x32   0xB940             CBNZ.N   R0,??ring_get_3
+   \       0x34   0x683C             LDR      R4,[R7, #+0]
+   \       0x36   0xB134             CBZ.N    R4,??ring_get_3
+   \       0x38   0x.... 0x....      BL       ?Subroutine5
+   \                     ??CrossCallReturnLabel_22: (+1)
+   \       0x3C   0x2363             MOVS     R3,#+99
+   \       0x3E   0x464A             MOV      R2,R9
+   \       0x40   0x4641             MOV      R1,R8
+   \       0x42   0x2000             MOVS     R0,#+0
+   \       0x44   0x47A0             BLX      R4
+   \                     ??ring_get_3: (+1)
+   \       0x46   0xBE00             BKPT     #0x0
+   \                     ??ring_get_4: (+1)
+   \       0x48   0xE7FE             B.N      ??ring_get_4
+    100              BUG_ON((ring->size_mask + 1) & ring->size_mask);
+   \                     ??ring_get_0: (+1)
+   \       0x4A   0x68AA             LDR      R2,[R5, #+8]
+   \       0x4C   0x1C51             ADDS     R1,R2,#+1
+   \       0x4E   0x4211             TST      R1,R2
+   \       0x50   0xD018             BEQ.N    ??ring_get_5
+   \       0x52   0x.... 0x....      BL       ?Subroutine9
+   \                     ??CrossCallReturnLabel_45: (+1)
+   \       0x56   0xD003             BEQ.N    ??ring_get_6
+   \       0x58   0x2264             MOVS     R2,#+100
+   \       0x5A   0x4649             MOV      R1,R9
+   \       0x5C   0x4620             MOV      R0,R4
+   \       0x5E   0xE002             B.N      ??ring_get_7
+   \                     ??ring_get_6: (+1)
+   \       0x60   0x2264             MOVS     R2,#+100
+   \       0x62   0x4649             MOV      R1,R9
+   \       0x64   0x4660             MOV      R0,R12
+   \                     ??ring_get_7: (+1)
+   \       0x66   0x.... 0x....      BL       printf
+   \       0x6A   0x7830             LDRB     R0,[R6, #+0]
+   \       0x6C   0xB940             CBNZ.N   R0,??ring_get_8
+   \       0x6E   0x683C             LDR      R4,[R7, #+0]
+   \       0x70   0xB134             CBZ.N    R4,??ring_get_8
+   \       0x72   0x.... 0x....      BL       ?Subroutine5
+   \                     ??CrossCallReturnLabel_23: (+1)
+   \       0x76   0x2364             MOVS     R3,#+100
+   \       0x78   0x464A             MOV      R2,R9
+   \       0x7A   0x4641             MOV      R1,R8
+   \       0x7C   0x2000             MOVS     R0,#+0
+   \       0x7E   0x47A0             BLX      R4
+   \                     ??ring_get_8: (+1)
+   \       0x80   0xBE00             BKPT     #0x0
+   \                     ??ring_get_9: (+1)
+   \       0x82   0xE7FE             B.N      ??ring_get_9
+    101              if (index >= ring_data_len(ring))
+   \                     ??ring_get_5: (+1)
+   \       0x84   0x4628             MOV      R0,R5
+   \       0x86   0x.... 0x....      BL       ring_data_len
+   \       0x8A   0x4582             CMP      R10,R0
+   \       0x8C   0xBF28             IT       CS
+   \       0x8E   0xF04F 0x30FF      MOVCS    R0,#+4294967295
+    102                  return -1; // Out-of-range
+   \       0x92   0xD206             BCS.N    ??ring_get_10
+    103              return ring->buf[(ring->count_rd + index) & ring->size_mask];
+   \       0x94   0x68E9             LDR      R1,[R5, #+12]
+   \       0x96   0x682A             LDR      R2,[R5, #+0]
+   \       0x98   0x68A8             LDR      R0,[R5, #+8]
+   \       0x9A   0x4492             ADD      R10,R10,R2
+   \       0x9C   0xEA00 0x020A      AND      R2,R0,R10
+   \       0xA0   0x5C88             LDRB     R0,[R1, R2]
+   \                     ??ring_get_10: (+1)
+   \       0xA2   0xE8BD 0x87F6      POP      {R1,R2,R4-R10,PC}
+    104          }
+    105          
+
+   \                                 In section .text, align 4, keep-with-next
+    106          int ring_get_buf(struct ring *ring, unsigned int offset, uint8_t *data, size_t len)
+    107          {
+   \                     ring_get_buf: (+1)
+   \        0x0   0xE92D 0x4FF8      PUSH     {R3-R11,LR}
+   \        0x4   0x4607             MOV      R7,R0
+   \        0x6   0x4615             MOV      R5,R2
+   \        0x8   0x460C             MOV      R4,R1
+    108              size_t remaining;
+    109              unsigned int count_rd;
+    110          
+    111              BUG_ON(!ring->buf);
+   \        0xA   0x....             LDR.N    R0,??DataTable24_3
+   \        0xC   0x68FA             LDR      R2,[R7, #+12]
+   \        0xE   0x7801             LDRB     R1,[R0, #+0]
+   \       0x10   0x4699             MOV      R9,R3
+   \       0x12   0x.... 0x....      ADR.W    R11,?_4
+   \       0x16   0x.... 0x....      LDR.W    R8,??DataTable24
+   \       0x1A   0x....             LDR.N    R6,??DataTable24_1
+   \       0x1C   0x.... 0x....      ADR.W    R0,?_3
+   \       0x20   0x.... 0x....      ADR.W    R12,?_1
+   \       0x24   0x.... 0x....      ADR.W    R10,`ring_get_buf::__func__`
+   \       0x28   0xB9DA             CBNZ.N   R2,??ring_get_buf_0
+   \       0x2A   0x.... 0x....      ADR.W    R4,?_2
+   \       0x2E   0x2900             CMP      R1,#+0
+   \       0x30   0x4623             MOV      R3,R4
+   \       0x32   0xD003             BEQ.N    ??ring_get_buf_1
+   \       0x34   0x226F             MOVS     R2,#+111
+   \       0x36   0x4651             MOV      R1,R10
+   \       0x38   0x4660             MOV      R0,R12
+   \       0x3A   0xE001             B.N      ??ring_get_buf_2
+   \                     ??ring_get_buf_1: (+1)
+   \       0x3C   0x226F             MOVS     R2,#+111
+   \       0x3E   0x4651             MOV      R1,R10
+   \                     ??ring_get_buf_2: (+1)
+   \       0x40   0x.... 0x....      BL       printf
+   \       0x44   0x7830             LDRB     R0,[R6, #+0]
+   \       0x46   0xB950             CBNZ.N   R0,??ring_get_buf_3
+   \       0x48   0xF8D8 0x5000      LDR      R5,[R8, #+0]
+   \       0x4C   0xB13D             CBZ.N    R5,??ring_get_buf_3
+   \       0x4E   0x2001             MOVS     R0,#+1
+   \       0x50   0x7030             STRB     R0,[R6, #+0]
+   \       0x52   0x9400             STR      R4,[SP, #+0]
+   \       0x54   0x236F             MOVS     R3,#+111
+   \       0x56   0x4652             MOV      R2,R10
+   \       0x58   0x4659             MOV      R1,R11
+   \       0x5A   0x2000             MOVS     R0,#+0
+   \       0x5C   0x47A8             BLX      R5
+   \                     ??ring_get_buf_3: (+1)
+   \       0x5E   0xBE00             BKPT     #0x0
+   \                     ??ring_get_buf_4: (+1)
+   \       0x60   0xE7FE             B.N      ??ring_get_buf_4
+    112              BUG_ON((ring->size_mask + 1) & ring->size_mask);
+   \                     ??ring_get_buf_0: (+1)
+   \       0x62   0x68BB             LDR      R3,[R7, #+8]
+   \       0x64   0x1C5A             ADDS     R2,R3,#+1
+   \       0x66   0x421A             TST      R2,R3
+   \       0x68   0xD01A             BEQ.N    ??ring_get_buf_5
+   \       0x6A   0x....             LDR.N    R4,??DataTable24_2
+   \       0x6C   0x2900             CMP      R1,#+0
+   \       0x6E   0x4623             MOV      R3,R4
+   \       0x70   0xD003             BEQ.N    ??ring_get_buf_6
+   \       0x72   0x2270             MOVS     R2,#+112
+   \       0x74   0x4651             MOV      R1,R10
+   \       0x76   0x4660             MOV      R0,R12
+   \       0x78   0xE001             B.N      ??ring_get_buf_7
+   \                     ??ring_get_buf_6: (+1)
+   \       0x7A   0x2270             MOVS     R2,#+112
+   \       0x7C   0x4651             MOV      R1,R10
+   \                     ??ring_get_buf_7: (+1)
+   \       0x7E   0x.... 0x....      BL       printf
+   \       0x82   0x7830             LDRB     R0,[R6, #+0]
+   \       0x84   0xB950             CBNZ.N   R0,??ring_get_buf_8
+   \       0x86   0xF8D8 0x5000      LDR      R5,[R8, #+0]
+   \       0x8A   0xB13D             CBZ.N    R5,??ring_get_buf_8
+   \       0x8C   0x2001             MOVS     R0,#+1
+   \       0x8E   0x7030             STRB     R0,[R6, #+0]
+   \       0x90   0x9400             STR      R4,[SP, #+0]
+   \       0x92   0x2370             MOVS     R3,#+112
+   \       0x94   0x4652             MOV      R2,R10
+   \       0x96   0x4659             MOV      R1,R11
+   \       0x98   0x2000             MOVS     R0,#+0
+   \       0x9A   0x47A8             BLX      R5
+   \                     ??ring_get_buf_8: (+1)
+   \       0x9C   0xBE00             BKPT     #0x0
+   \                     ??ring_get_buf_9: (+1)
+   \       0x9E   0xE7FE             B.N      ??ring_get_buf_9
+    113              if (ring_is_empty(ring))
+   \                     ??ring_get_buf_5: (+1)
+   \       0xA0   0x4638             MOV      R0,R7
+   \       0xA2   0x.... 0x....      BL       ring_is_empty
+   \       0xA6   0xB110             CBZ.N    R0,??ring_get_buf_10
+    114                  return -1; // Empty
+   \       0xA8   0xF04F 0x30FF      MOV      R0,#+4294967295
+   \       0xAC   0xE025             B.N      ??ring_get_buf_11
+    115          
+    116              if (offset + len > ring_data_len(ring))
+   \                     ??ring_get_buf_10: (+1)
+   \       0xAE   0x4638             MOV      R0,R7
+   \       0xB0   0x.... 0x....      BL       ring_data_len
+   \       0xB4   0xEB09 0x0104      ADD      R1,R9,R4
+   \       0xB8   0x4288             CMP      R0,R1
+   \       0xBA   0xD204             BCS.N    ??ring_get_buf_12
+    117                  len = ring_data_len(ring) - offset;
+   \       0xBC   0x4638             MOV      R0,R7
+   \       0xBE   0x.... 0x....      BL       ring_data_len
+   \       0xC2   0xEBA0 0x0904      SUB      R9,R0,R4
+    118              count_rd = (ring->count_rd + offset) & ring->size_mask;
+   \                     ??ring_get_buf_12: (+1)
+   \       0xC6   0x6839             LDR      R1,[R7, #+0]
+   \       0xC8   0x68B8             LDR      R0,[R7, #+8]
+   \       0xCA   0x1864             ADDS     R4,R4,R1
+   \       0xCC   0x4004             ANDS     R4,R0,R4
+    119              remaining = ring_buffer_size(ring) - count_rd;
+   \       0xCE   0x4638             MOV      R0,R7
+   \       0xD0   0x.... 0x....      BL       ring_buffer_size
+   \       0xD4   0x1B06             SUBS     R6,R0,R4
+    120              if (len > remaining) {
+   \       0xD6   0x68F8             LDR      R0,[R7, #+12]
+   \       0xD8   0x1901             ADDS     R1,R0,R4
+   \       0xDA   0x454E             CMP      R6,R9
+   \       0xDC   0xD208             BCS.N    ??ring_get_buf_13
+    121                  memcpy(data, ring->buf + count_rd, remaining);
+   \       0xDE   0x4632             MOV      R2,R6
+   \       0xE0   0x4628             MOV      R0,R5
+   \       0xE2   0x.... 0x....      BL       __aeabi_memcpy
+    122                  memcpy(data + remaining, ring->buf, len - remaining);
+   \       0xE6   0xEBA9 0x0206      SUB      R2,R9,R6
+   \       0xEA   0x68F9             LDR      R1,[R7, #+12]
+   \       0xEC   0x19A8             ADDS     R0,R5,R6
+   \       0xEE   0xE001             B.N      ??ring_get_buf_14
+    123              } else {
+    124                  memcpy(data, ring->buf + count_rd, len);
+   \                     ??ring_get_buf_13: (+1)
+   \       0xF0   0x464A             MOV      R2,R9
+   \       0xF2   0x4628             MOV      R0,R5
+   \                     ??ring_get_buf_14: (+1)
+   \       0xF4   0x.... 0x....      BL       __aeabi_memcpy
+    125              }
+    126              return len;
+   \       0xF8   0x4648             MOV      R0,R9
+   \                     ??ring_get_buf_11: (+1)
+   \       0xFA   0xE8BD 0x8FF2      POP      {R1,R4-R11,PC}
+    127          }
+    128          
+
+   \                                 In section .text, align 4, keep-with-next
+    129          bool ring_is_empty(struct ring *ring)
+    130          {
+   \                     ring_is_empty: (+1)
+   \        0x0   0x4601             MOV      R1,R0
+   \        0x2   0xE92D 0x47FC      PUSH     {R2-R10,LR}
+    131              unsigned int count_rd, count_wr;
+    132              BUG_ON(!ring->buf);
+   \        0x6   0x.... 0x....      BL       ?Subroutine1
+   \                     ??CrossCallReturnLabel_1: (+1)
+   \        0xA   0x.... 0x....      ADR.W    R10,`ring_is_empty::__func__`
+   \        0xE   0xB9B2             CBNZ.N   R2,??ring_is_empty_0
+   \       0x10   0x.... 0x....      BL       ?Subroutine8
+   \                     ??CrossCallReturnLabel_40: (+1)
+   \       0x14   0xD003             BEQ.N    ??ring_is_empty_1
+   \       0x16   0x2284             MOVS     R2,#+132
+   \       0x18   0x4651             MOV      R1,R10
+   \       0x1A   0x4640             MOV      R0,R8
+   \       0x1C   0xE002             B.N      ??ring_is_empty_2
+   \                     ??ring_is_empty_1: (+1)
+   \       0x1E   0x2284             MOVS     R2,#+132
+   \       0x20   0x4651             MOV      R1,R10
+   \       0x22   0x4620             MOV      R0,R4
+   \                     ??ring_is_empty_2: (+1)
+   \       0x24   0x.... 0x....      BL       printf
+   \       0x28   0x7830             LDRB     R0,[R6, #+0]
+   \       0x2A   0xB930             CBNZ.N   R0,??CrossCallReturnLabel_15
+   \       0x2C   0x683C             LDR      R4,[R7, #+0]
+   \       0x2E   0xB124             CBZ.N    R4,??CrossCallReturnLabel_15
+   \       0x30   0x.... 0x....      BL       ?Subroutine5
+   \                     ??CrossCallReturnLabel_24: (+1)
+   \       0x34   0x2384             MOVS     R3,#+132
+   \       0x36   0x.... 0x....      BL       ?Subroutine4
+   \                     ??CrossCallReturnLabel_15: (+1)
+   \       0x3A   0xBE00             BKPT     #0x0
+   \                     ??ring_is_empty_3: (+1)
+   \       0x3C   0xE7FE             B.N      ??ring_is_empty_3
+    133              BUG_ON((ring->size_mask + 1) & ring->size_mask);
+   \                     ??ring_is_empty_0: (+1)
+   \       0x3E   0x688B             LDR      R3,[R1, #+8]
+   \       0x40   0x1C5A             ADDS     R2,R3,#+1
+   \       0x42   0x421A             TST      R2,R3
+   \       0x44   0xD016             BEQ.N    ??ring_is_empty_4
+   \       0x46   0x.... 0x....      BL       ?Subroutine9
+   \                     ??CrossCallReturnLabel_46: (+1)
+   \       0x4A   0xD003             BEQ.N    ??ring_is_empty_5
+   \       0x4C   0x2285             MOVS     R2,#+133
+   \       0x4E   0x4651             MOV      R1,R10
+   \       0x50   0x4640             MOV      R0,R8
+   \       0x52   0xE002             B.N      ??ring_is_empty_6
+   \                     ??ring_is_empty_5: (+1)
+   \       0x54   0x2285             MOVS     R2,#+133
+   \       0x56   0x4651             MOV      R1,R10
+   \       0x58   0x4620             MOV      R0,R4
+   \                     ??ring_is_empty_6: (+1)
+   \       0x5A   0x.... 0x....      BL       printf
+   \       0x5E   0x7830             LDRB     R0,[R6, #+0]
+   \       0x60   0xB930             CBNZ.N   R0,??CrossCallReturnLabel_14
+   \       0x62   0x683C             LDR      R4,[R7, #+0]
+   \       0x64   0xB124             CBZ.N    R4,??CrossCallReturnLabel_14
+   \       0x66   0x.... 0x....      BL       ?Subroutine5
+   \                     ??CrossCallReturnLabel_25: (+1)
+   \       0x6A   0x2385             MOVS     R3,#+133
+   \       0x6C   0x.... 0x....      BL       ?Subroutine4
+   \                     ??CrossCallReturnLabel_14: (+1)
+   \       0x70   0xBE00             BKPT     #0x0
+   \                     ??ring_is_empty_7: (+1)
+   \       0x72   0xE7FE             B.N      ??ring_is_empty_7
+    134              count_rd = ring->count_rd;
+   \                     ??ring_is_empty_4: (+1)
+   \       0x74   0x6808             LDR      R0,[R1, #+0]
+    135              count_wr = ring->count_wr;
+    136              return count_wr == count_rd;
+   \       0x76   0x6849             LDR      R1,[R1, #+4]
+   \       0x78   0x4281             CMP      R1,R0
+   \       0x7A   0xBF0C             ITE      EQ
+   \       0x7C   0x2001             MOVEQ    R0,#+1
+   \       0x7E   0x2000             MOVNE    R0,#+0
+   \       0x80   0xE8BD 0x87F6      POP      {R1,R2,R4-R10,PC}
+    137          }
+    138          
+
+   \                                 In section .text, align 4, keep-with-next
+    139          unsigned int ring_data_len(struct ring *ring)
+    140          {
+   \                     ring_data_len: (+1)
+   \        0x0   0x4601             MOV      R1,R0
+   \        0x2   0xE92D 0x47FC      PUSH     {R2-R10,LR}
+    141              unsigned int count_rd, count_wr, len;
+    142          
+    143              BUG_ON(!ring->buf);
+   \        0x6   0x68CA             LDR      R2,[R1, #+12]
+   \        0x8   0x.... 0x....      BL       ??Subroutine3_0
+   \                     ??CrossCallReturnLabel_8: (+1)
+   \        0xC   0x.... 0x....      ADR.W    R9,?_4
+   \       0x10   0x....             LDR.N    R7,??DataTable24
+   \       0x12   0x....             LDR.N    R6,??DataTable24_1
+   \       0x14   0x.... 0x....      ADR.W    R8,?_3
+   \       0x18   0x....             ADR.N    R4,?_1
+   \       0x1A   0x.... 0x....      ADR.W    R10,`ring_data_len::__func__`
+   \       0x1E   0xB9B2             CBNZ.N   R2,??ring_data_len_0
+   \       0x20   0x.... 0x....      BL       ?Subroutine8
+   \                     ??CrossCallReturnLabel_41: (+1)
+   \       0x24   0xD003             BEQ.N    ??ring_data_len_1
+   \       0x26   0x228F             MOVS     R2,#+143
+   \       0x28   0x4651             MOV      R1,R10
+   \       0x2A   0x4620             MOV      R0,R4
+   \       0x2C   0xE002             B.N      ??ring_data_len_2
+   \                     ??ring_data_len_1: (+1)
+   \       0x2E   0x228F             MOVS     R2,#+143
+   \       0x30   0x4651             MOV      R1,R10
+   \       0x32   0x4640             MOV      R0,R8
+   \                     ??ring_data_len_2: (+1)
+   \       0x34   0x.... 0x....      BL       printf
+   \       0x38   0x7830             LDRB     R0,[R6, #+0]
+   \       0x3A   0xB930             CBNZ.N   R0,??CrossCallReturnLabel_13
+   \       0x3C   0x683C             LDR      R4,[R7, #+0]
+   \       0x3E   0xB124             CBZ.N    R4,??CrossCallReturnLabel_13
+   \       0x40   0x.... 0x....      BL       ?Subroutine5
+   \                     ??CrossCallReturnLabel_26: (+1)
+   \       0x44   0x238F             MOVS     R3,#+143
+   \       0x46   0x.... 0x....      BL       ?Subroutine4
+   \                     ??CrossCallReturnLabel_13: (+1)
+   \       0x4A   0xBE00             BKPT     #0x0
+   \                     ??ring_data_len_3: (+1)
+   \       0x4C   0xE7FE             B.N      ??ring_data_len_3
+    144              BUG_ON((ring->size_mask + 1) & ring->size_mask);
+   \                     ??ring_data_len_0: (+1)
+   \       0x4E   0x688B             LDR      R3,[R1, #+8]
+   \       0x50   0x1C5A             ADDS     R2,R3,#+1
+   \       0x52   0x421A             TST      R2,R3
+   \       0x54   0xD016             BEQ.N    ??ring_data_len_4
+   \       0x56   0x.... 0x....      BL       ?Subroutine9
+   \                     ??CrossCallReturnLabel_47: (+1)
+   \       0x5A   0xD003             BEQ.N    ??ring_data_len_5
+   \       0x5C   0x2290             MOVS     R2,#+144
+   \       0x5E   0x4651             MOV      R1,R10
+   \       0x60   0x4620             MOV      R0,R4
+   \       0x62   0xE002             B.N      ??ring_data_len_6
+   \                     ??ring_data_len_5: (+1)
+   \       0x64   0x2290             MOVS     R2,#+144
+   \       0x66   0x4651             MOV      R1,R10
+   \       0x68   0x4640             MOV      R0,R8
+   \                     ??ring_data_len_6: (+1)
+   \       0x6A   0x.... 0x....      BL       printf
+   \       0x6E   0x7830             LDRB     R0,[R6, #+0]
+   \       0x70   0xB930             CBNZ.N   R0,??CrossCallReturnLabel_12
+   \       0x72   0x683C             LDR      R4,[R7, #+0]
+   \       0x74   0xB124             CBZ.N    R4,??CrossCallReturnLabel_12
+   \       0x76   0x.... 0x....      BL       ?Subroutine5
+   \                     ??CrossCallReturnLabel_27: (+1)
+   \       0x7A   0x2390             MOVS     R3,#+144
+   \       0x7C   0x.... 0x....      BL       ?Subroutine4
+   \                     ??CrossCallReturnLabel_12: (+1)
+   \       0x80   0xBE00             BKPT     #0x0
+   \                     ??ring_data_len_7: (+1)
+   \       0x82   0xE7FE             B.N      ??ring_data_len_7
+    145              count_rd = ring->count_rd;
+   \                     ??ring_data_len_4: (+1)
+   \       0x84   0x680B             LDR      R3,[R1, #+0]
+    146              count_wr = ring->count_wr;
+    147              // Note that when count_wr overlap, count_rd may be greater than count_wr.
+    148              // However, the math are still correct
+    149              len = count_wr - count_rd;
+   \       0x86   0x6849             LDR      R1,[R1, #+4]
+   \       0x88   0x1AC9             SUBS     R1,R1,R3
+    150              BUG_ON(len > ring->size_mask + 1);
+   \       0x8A   0x428A             CMP      R2,R1
+   \       0x8C   0xD218             BCS.N    ??ring_data_len_8
+   \       0x8E   0xBF00             Nop
+   \       0x90   0x....             ADR.N    R5,?_5
+   \       0x92   0x2800             CMP      R0,#+0
+   \       0x94   0x462B             MOV      R3,R5
+   \       0x96   0xD003             BEQ.N    ??ring_data_len_9
+   \       0x98   0x2296             MOVS     R2,#+150
+   \       0x9A   0x4651             MOV      R1,R10
+   \       0x9C   0x4620             MOV      R0,R4
+   \       0x9E   0xE002             B.N      ??ring_data_len_10
+   \                     ??ring_data_len_9: (+1)
+   \       0xA0   0x2296             MOVS     R2,#+150
+   \       0xA2   0x4651             MOV      R1,R10
+   \       0xA4   0x4640             MOV      R0,R8
+   \                     ??ring_data_len_10: (+1)
+   \       0xA6   0x.... 0x....      BL       printf
+   \       0xAA   0x7830             LDRB     R0,[R6, #+0]
+   \       0xAC   0xB930             CBNZ.N   R0,??CrossCallReturnLabel_11
+   \       0xAE   0x683C             LDR      R4,[R7, #+0]
+   \       0xB0   0xB124             CBZ.N    R4,??CrossCallReturnLabel_11
+   \       0xB2   0x.... 0x....      BL       ?Subroutine5
+   \                     ??CrossCallReturnLabel_28: (+1)
+   \       0xB6   0x2396             MOVS     R3,#+150
+   \       0xB8   0x.... 0x....      BL       ?Subroutine4
+   \                     ??CrossCallReturnLabel_11: (+1)
+   \       0xBC   0xBE00             BKPT     #0x0
+   \                     ??ring_data_len_11: (+1)
+   \       0xBE   0xE7FE             B.N      ??ring_data_len_11
+    151              return len;
+   \                     ??ring_data_len_8: (+1)
+   \       0xC0   0x....             B.N      ?Subroutine0
+    152          }
+
+   \                                 In section .text, align 2, keep-with-next
+   \                     ?Subroutine0: (+1)
+   \        0x0   0x4608             MOV      R0,R1
+   \        0x2   0xE8BD 0x87F6      POP      {R1,R2,R4-R10,PC}
+    153          
+
+   \                                 In section .text, align 4, keep-with-next
+    154          unsigned int ring_buffer_size(struct ring *ring)
+    155          {
+   \                     ring_buffer_size: (+1)
+   \        0x0   0x4601             MOV      R1,R0
+   \        0x2   0xE92D 0x47FC      PUSH     {R2-R10,LR}
+    156              BUG_ON(!ring->buf);
+   \        0x6   0x.... 0x....      BL       ?Subroutine1
+   \                     ??CrossCallReturnLabel_2: (+1)
+   \        0xA   0x.... 0x....      ADR.W    R10,`ring_buffer_size::__func__`
+   \        0xE   0xB9B2             CBNZ.N   R2,??ring_buffer_size_0
+   \       0x10   0x.... 0x....      BL       ?Subroutine8
+   \                     ??CrossCallReturnLabel_42: (+1)
+   \       0x14   0xD003             BEQ.N    ??ring_buffer_size_1
+   \       0x16   0x229C             MOVS     R2,#+156
+   \       0x18   0x4651             MOV      R1,R10
+   \       0x1A   0x4640             MOV      R0,R8
+   \       0x1C   0xE002             B.N      ??ring_buffer_size_2
+   \                     ??ring_buffer_size_1: (+1)
+   \       0x1E   0x229C             MOVS     R2,#+156
+   \       0x20   0x4651             MOV      R1,R10
+   \       0x22   0x4620             MOV      R0,R4
+   \                     ??ring_buffer_size_2: (+1)
+   \       0x24   0x.... 0x....      BL       printf
+   \       0x28   0x7830             LDRB     R0,[R6, #+0]
+   \       0x2A   0xB930             CBNZ.N   R0,??CrossCallReturnLabel_10
+   \       0x2C   0x683C             LDR      R4,[R7, #+0]
+   \       0x2E   0xB124             CBZ.N    R4,??CrossCallReturnLabel_10
+   \       0x30   0x.... 0x....      BL       ?Subroutine5
+   \                     ??CrossCallReturnLabel_29: (+1)
+   \       0x34   0x239C             MOVS     R3,#+156
+   \       0x36   0x.... 0x....      BL       ?Subroutine4
+   \                     ??CrossCallReturnLabel_10: (+1)
+   \       0x3A   0xBE00             BKPT     #0x0
+   \                     ??ring_buffer_size_3: (+1)
+   \       0x3C   0xE7FE             B.N      ??ring_buffer_size_3
+    157              BUG_ON((ring->size_mask + 1) & ring->size_mask);
+   \                     ??ring_buffer_size_0: (+1)
+   \       0x3E   0x688A             LDR      R2,[R1, #+8]
+   \       0x40   0x1C51             ADDS     R1,R2,#+1
+   \       0x42   0x4211             TST      R1,R2
+   \       0x44   0xD016             BEQ.N    ??ring_buffer_size_4
+   \       0x46   0x.... 0x....      BL       ?Subroutine9
+   \                     ??CrossCallReturnLabel_48: (+1)
+   \       0x4A   0xD003             BEQ.N    ??ring_buffer_size_5
+   \       0x4C   0x229D             MOVS     R2,#+157
+   \       0x4E   0x4651             MOV      R1,R10
+   \       0x50   0x4640             MOV      R0,R8
+   \       0x52   0xE002             B.N      ??ring_buffer_size_6
+   \                     ??ring_buffer_size_5: (+1)
+   \       0x54   0x229D             MOVS     R2,#+157
+   \       0x56   0x4651             MOV      R1,R10
+   \       0x58   0x4620             MOV      R0,R4
+   \                     ??ring_buffer_size_6: (+1)
+   \       0x5A   0x.... 0x....      BL       printf
+   \       0x5E   0x7830             LDRB     R0,[R6, #+0]
+   \       0x60   0xB930             CBNZ.N   R0,??CrossCallReturnLabel_9
+   \       0x62   0x683C             LDR      R4,[R7, #+0]
+   \       0x64   0xB124             CBZ.N    R4,??CrossCallReturnLabel_9
+   \       0x66   0x.... 0x....      BL       ?Subroutine5
+   \                     ??CrossCallReturnLabel_30: (+1)
+   \       0x6A   0x239D             MOVS     R3,#+157
+   \       0x6C   0x.... 0x....      BL       ?Subroutine4
+   \                     ??CrossCallReturnLabel_9: (+1)
+   \       0x70   0xBE00             BKPT     #0x0
+   \                     ??ring_buffer_size_7: (+1)
+   \       0x72   0xE7FE             B.N      ??ring_buffer_size_7
+    158              return ring->size_mask + 1;
+   \                     ??ring_buffer_size_4: (+1)
+   \       0x74                      REQUIRE ?Subroutine0
+   \       0x74                      ;; // Fall through to label ?Subroutine0
+    159          }
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable24:
+   \        0x0   0x....'....        DC32     g_on_err
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable24_1:
+   \        0x0   0x....'....        DC32     g_err_reentrancy
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable24_2:
+   \        0x0   0x....'....        DC32     ?_0
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable24_3:
+   \        0x0   0x....'....        DC32     g_enable_color_traces
+
+   \                                 In section .rodata, align 4
+   \                     ?_0:
+   \        0x0   0x28 0x72          DC8 "(ring->size_mask + 1) & ring->size_mask"
+   \              0x69 0x6E    
+   \              0x67 0x2D    
+   \              0x3E 0x73    
+   \              0x69 0x7A    
+   \              0x65 0x5F    
+   \              0x6D 0x61    
+   \              0x73 0x6B    
+   \              0x20 0x2B    
+   \              0x20 0x31    
+   \              0x29 0x20    
+   \              0x26 0x20    
+   \              0x72 0x69    
+   \              0x6E 0x67    
+   \              0x2D 0x3E    
+   \              0x73 0x69    
+   \              0x7A 0x65    
+   \              0x5F 0x6D    
+   \              0x61 0x73    
+   \              0x6B 0x00
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ?_1:
+   \        0x0   0x1B 0x5B          DC8 "\033[91m%s():%d: bug: \"%s\"\033[0m\012"
+   \              0x39 0x31    
+   \              0x6D 0x25    
+   \              0x73 0x28    
+   \              0x29 0x3A    
+   \              0x25 0x64    
+   \              0x3A 0x20    
+   \              0x62 0x75    
+   \              0x67 0x3A    
+   \              0x20 0x22    
+   \              0x25 0x73    
+   \              0x22 0x1B    
+   \              0x5B 0x30    
+   \              0x6D 0x0A    
+   \              0x00
+   \       0x1D                      DS8 3
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ?_2:
+   \        0x0   0x21 0x72          DC8 "!ring->buf"
+   \              0x69 0x6E    
+   \              0x67 0x2D    
+   \              0x3E 0x62    
+   \              0x75 0x66    
+   \              0x00
+   \        0xB                      DS8 1
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ?_3:
+   \        0x0   0x25 0x73          DC8 "%s():%d: bug: \"%s\"\012"
+   \              0x28 0x29    
+   \              0x3A 0x25    
+   \              0x64 0x3A    
+   \              0x20 0x62    
+   \              0x75 0x67    
+   \              0x3A 0x20    
+   \              0x22 0x25    
+   \              0x73 0x22    
+   \              0x0A 0x00
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ?_4:
+   \        0x0   0x25 0x73          DC8 "%s():%d: bug: \"%s\""
+   \              0x28 0x29    
+   \              0x3A 0x25    
+   \              0x64 0x3A    
+   \              0x20 0x62    
+   \              0x75 0x67    
+   \              0x3A 0x20    
+   \              0x22 0x25    
+   \              0x73 0x22    
+   \              0x00
+   \       0x13                      DS8 1
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ?_5:
+   \        0x0   0x6C 0x65          DC8 "len > ring->size_mask + 1"
+   \              0x6E 0x20    
+   \              0x3E 0x20    
+   \              0x72 0x69    
+   \              0x6E 0x67    
+   \              0x2D 0x3E    
+   \              0x73 0x69    
+   \              0x7A 0x65    
+   \              0x5F 0x6D    
+   \              0x61 0x73    
+   \              0x6B 0x20    
+   \              0x2B 0x20    
+   \              0x31 0x00
+   \       0x1A                      DS8 2
+
+   Maximum stack usage in bytes:
+
+   .cstack Function
+   ------- --------
+      40   ring_buffer_size
+        40   -- Indirect call
+        40   -> printf
+      40   ring_data_len
+        40   -- Indirect call
+        40   -> printf
+      40   ring_get
+        40   -- Indirect call
+        40   -> printf
+        40   -> ring_data_len
+      40   ring_get_buf
+        40   -- Indirect call
+        40   -> __aeabi_memcpy
+        40   -> printf
+        40   -> ring_buffer_size
+        40   -> ring_data_len
+        40   -> ring_is_empty
+      40   ring_init
+        40   -- Indirect call
+        40   -> printf
+      40   ring_is_empty
+        40   -- Indirect call
+        40   -> printf
+      40   ring_pop
+        40   -- Indirect call
+        40   -> printf
+        40   -> ring_is_empty
+      40   ring_pop_buf
+        40   -- Indirect call
+        40   -> __aeabi_memcpy
+        40   -> printf
+        40   -> ring_buffer_size
+        40   -> ring_data_len
+        40   -> ring_is_empty
+      40   ring_push
+        40   -- Indirect call
+        40   -> printf
+        40   -> ring_buffer_size
+        40   -> ring_data_len
+      40   ring_push_buf
+        40   -- Indirect call
+        40   -> __aeabi_memcpy
+        40   -> printf
+        40   -> ring_buffer_size
+        40   -> ring_data_len
+
+
+   Section sizes:
+
+   Bytes  Function/Label
+   -----  --------------
+       4  ??DataTable24
+       4  ??DataTable24_1
+       4  ??DataTable24_2
+       4  ??DataTable24_3
+       6  ?Subroutine0
+      24  ?Subroutine1
+       8  ?Subroutine10
+      12  ?Subroutine11
+      14  ?Subroutine2
+      12  ?Subroutine3
+       8  ?Subroutine4
+       8  ?Subroutine5
+       8  ?Subroutine6
+      12  ?Subroutine7
+       8  ?Subroutine8
+       8  ?Subroutine9
+      40  ?_0
+      32  ?_1
+      12  ?_2
+      20  ?_3
+      20  ?_4
+      28  ?_5
+     116  ring_buffer_size
+     194  ring_data_len
+     166  ring_get
+     254  ring_get_buf
+     178  ring_init
+     132  ring_is_empty
+     150  ring_pop
+     246  ring_pop_buf
+     172  ring_push
+     230  ring_push_buf
+     148  -- Other
+
+ 
+    40 bytes in section .rodata
+ 2'242 bytes in section .text
+ 
+ 2'242 bytes of CODE  memory
+    40 bytes of CONST memory
+
+Errors: none
+Warnings: none

@@ -1,0 +1,583 @@
+###############################################################################
+#
+# IAR ANSI C/C++ Compiler V9.50.2.385/W64 for ARM         29/Mar/2025  15:53:41
+# Copyright 1999-2024 IAR Systems AB.
+#
+#    Cpu mode                     =  thumb
+#    Endian                       =  little
+#    Source file                  =
+#        D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\util\third_party\mbedtls\library\bignum_mod.c
+#    Command line                 =
+#        -f "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\ewarm-iar\obj\library_17211336700577820660.dir\bignum_mod.o.rsp"
+#        ("D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\util\third_party\mbedtls\library\bignum_mod.c"
+#        -D DEBUG_EFM=1 -D EFR32FG28B322F1024IM48=1 -D
+#        configNUM_SDK_THREAD_LOCAL_STORAGE_POINTERS=2 -D
+#        SL_COMPONENT_CATALOG_PRESENT=1 -D
+#        MBEDTLS_CONFIG_FILE=<sl_mbedtls_config.h> -D
+#        MBEDTLS_PSA_CRYPTO_CONFIG_FILE=<psa_crypto_config.h> -D
+#        SL_RAIL_LIB_MULTIPROTOCOL_SUPPORT=0 -D
+#        SL_RAIL_UTIL_PA_CONFIG_HEADER=<sl_rail_util_pa_config.h> -D
+#        RTT_USE_ASM=0 -lC "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\ewarm-iar\lst\library_17211336700577820660.dir"
+#        --diag_suppress Pa050 -o "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\ewarm-iar\obj\library_17211336700577820660.dir"
+#        --no_cse --no_unroll --no_inline --no_code_motion --no_tbaa
+#        --no_clustering --no_scheduling --debug --endian=little
+#        --cpu=Cortex-M33 --cmse --cmse -e --fpu=VFPv5_sp --dlib_config
+#        "C:\Program Files\IAR Systems\Embedded Workbench
+#        9.2\arm\inc\c\DLib_Config_Normal.h" -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\util\third_party\mbedtls\library\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App 1\Wisun_Node_App\config\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App 1\Wisun_Node_App\config\rail\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App 1\Wisun_Node_App\config\wisun\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App 1\Wisun_Node_App\.\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\Device\SiliconLabs\EFR32FG28\Include\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\app\wisun\component\app_project_info\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\common\inc\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\service\cli\inc\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\service\cli\src\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\CMSIS\Core\Include\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\CMSIS\RTOS2\Include\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\service\device_init\inc\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\emdrv\common\inc\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\emlib\inc\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\service\iostream\inc\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\security\sl_component\sl_mbedtls_support\config\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\security\sl_component\sl_mbedtls_support\config\preset\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\security\sl_component\sl_mbedtls_support\inc\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\util\third_party\mbedtls\include\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\util\third_party\mbedtls\library\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\micrium_os\common\source\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\micrium_os\common\include\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\micrium_os\cpu\include\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\micrium_os\ports\source\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\micrium_os\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\micrium_os\kernel\source\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\micrium_os\kernel\include\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\emdrv\nvm3\inc\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\peripheral\inc\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\util\third_party\printf\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\util\third_party\printf\inc\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\security\sl_component\sl_psa_driver\inc\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\radio\rail_lib\common\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\radio\rail_lib\protocol\ble\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\radio\rail_lib\protocol\ieee802154\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\radio\rail_lib\protocol\wmbus\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\radio\rail_lib\protocol\zwave\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\radio\rail_lib\chip\efr32\efr32xg2x\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\radio\rail_lib\protocol\sidewalk\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\radio\rail_lib\plugin\pa-conversions\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\radio\rail_lib\plugin\pa-conversions\efr32xg28\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\radio\rail_lib\plugin\rail_util_pti\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\security\sl_component\se_manager\inc\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\security\sl_component\se_manager\src\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\util\third_party\segger\systemview\SEGGER\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\util\silicon_labs\silabs_core\memory_manager\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\common\toolchain\inc\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\service\system\inc\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\app\wisun\component\app_core\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\app\wisun\component\app_setting\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\app\wisun\component\cli_util\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\app\wisun\component\event_manager\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\app\wisun\component\ns_list\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\app\wisun\component\ping\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\app\wisun\component\trace_util\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\app\wisun\component\trace_util\nanostack\nanostack-libservice\mbed-client-libservice\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\app\wisun\component\udp_client\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\service\sleeptimer\inc\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\protocol\wisun\plugin\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\protocol\wisun\stack\inc\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\protocol\wisun\stack\inc\socket\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App 1\Wisun_Node_App\autogen\\" -On
+#        --use_c++_inline) --dependencies=n "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\ewarm-iar\obj\library_17211336700577820660.dir\bignum_mod.o.iar_deps"
+#    Locale                       =  C
+#    List file                    =
+#        D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\ewarm-iar\lst\library_17211336700577820660.dir\bignum_mod.lst
+#    Object file                  =
+#        D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\ewarm-iar\obj\library_17211336700577820660.dir\bignum_mod.o
+#    Runtime model:                  
+#      __CPP_Runtime              =  1
+#      __SystemLibrary            =  DLib
+#      __dlib_full_locale_support =  0
+#      __dlib_version             =  6
+#
+###############################################################################
+
+D:\Inesh_wisun\Wisun_Node_App 1\Wisun_Node_App\gecko_sdk_4.4.5\util\third_party\mbedtls\library\bignum_mod.c
+      1          /**
+      2           *  Modular bignum functions
+      3           *
+      4           *  Copyright The Mbed TLS Contributors
+      5           *  SPDX-License-Identifier: Apache-2.0
+      6           *
+      7           *  Licensed under the Apache License, Version 2.0 (the "License"); you may
+      8           *  not use this file except in compliance with the License.
+      9           *  You may obtain a copy of the License at
+     10           *
+     11           *  http://www.apache.org/licenses/LICENSE-2.0
+     12           *
+     13           *  Unless required by applicable law or agreed to in writing, software
+     14           *  distributed under the License is distributed on an "AS IS" BASIS, WITHOUT
+     15           *  WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     16           *  See the License for the specific language governing permissions and
+     17           *  limitations under the License.
+     18           */
+     19          
+     20          #include "common.h"
+     21          
+     22          #if defined(MBEDTLS_BIGNUM_C) && defined(MBEDTLS_ECP_WITH_MPI_UINT)
+     23          
+     24          #include <string.h>
+     25          
+     26          #include "mbedtls/platform_util.h"
+     27          #include "mbedtls/error.h"
+     28          #include "mbedtls/bignum.h"
+     29          
+     30          #include "mbedtls/platform.h"
+     31          
+     32          #include "bignum_core.h"
+     33          #include "bignum_mod.h"
+     34          #include "bignum_mod_raw.h"
+     35          #include "constant_time_internal.h"
+     36          
+     37          int mbedtls_mpi_mod_residue_setup(mbedtls_mpi_mod_residue *r,
+     38                                            const mbedtls_mpi_mod_modulus *N,
+     39                                            mbedtls_mpi_uint *p,
+     40                                            size_t p_limbs)
+     41          {
+     42              if (p_limbs != N->limbs || !mbedtls_mpi_core_lt_ct(p, N->p, N->limbs)) {
+     43                  return MBEDTLS_ERR_MPI_BAD_INPUT_DATA;
+     44              }
+     45          
+     46              r->limbs = N->limbs;
+     47              r->p = p;
+     48          
+     49              return 0;
+     50          }
+     51          
+     52          void mbedtls_mpi_mod_residue_release(mbedtls_mpi_mod_residue *r)
+     53          {
+     54              if (r == NULL) {
+     55                  return;
+     56              }
+     57          
+     58              r->limbs = 0;
+     59              r->p = NULL;
+     60          }
+     61          
+     62          void mbedtls_mpi_mod_modulus_init(mbedtls_mpi_mod_modulus *N)
+     63          {
+     64              if (N == NULL) {
+     65                  return;
+     66              }
+     67          
+     68              N->p = NULL;
+     69              N->limbs = 0;
+     70              N->bits = 0;
+     71              N->int_rep = MBEDTLS_MPI_MOD_REP_INVALID;
+     72          }
+     73          
+     74          void mbedtls_mpi_mod_modulus_free(mbedtls_mpi_mod_modulus *N)
+     75          {
+     76              if (N == NULL) {
+     77                  return;
+     78              }
+     79          
+     80              switch (N->int_rep) {
+     81                  case MBEDTLS_MPI_MOD_REP_MONTGOMERY:
+     82                      if (N->rep.mont.rr != NULL) {
+     83                          mbedtls_zeroize_and_free((mbedtls_mpi_uint *) N->rep.mont.rr,
+     84                                                   N->limbs * sizeof(mbedtls_mpi_uint));
+     85                          N->rep.mont.rr = NULL;
+     86                      }
+     87                      N->rep.mont.mm = 0;
+     88                      break;
+     89                  case MBEDTLS_MPI_MOD_REP_OPT_RED:
+     90                      N->rep.ored.modp = NULL;
+     91                      break;
+     92                  case MBEDTLS_MPI_MOD_REP_INVALID:
+     93                      break;
+     94              }
+     95          
+     96              N->p = NULL;
+     97              N->limbs = 0;
+     98              N->bits = 0;
+     99              N->int_rep = MBEDTLS_MPI_MOD_REP_INVALID;
+    100          }
+    101          
+    102          static int set_mont_const_square(const mbedtls_mpi_uint **X,
+    103                                           const mbedtls_mpi_uint *A,
+    104                                           size_t limbs)
+    105          {
+    106              int ret = MBEDTLS_ERR_ERROR_CORRUPTION_DETECTED;
+    107              mbedtls_mpi N;
+    108              mbedtls_mpi RR;
+    109              *X = NULL;
+    110          
+    111              mbedtls_mpi_init(&N);
+    112              mbedtls_mpi_init(&RR);
+    113          
+    114              if (A == NULL || limbs == 0 || limbs >= (MBEDTLS_MPI_MAX_LIMBS / 2) - 2) {
+    115                  goto cleanup;
+    116              }
+    117          
+    118              if (mbedtls_mpi_grow(&N, limbs)) {
+    119                  goto cleanup;
+    120              }
+    121          
+    122              memcpy(N.p, A, sizeof(mbedtls_mpi_uint) * limbs);
+    123          
+    124              ret = mbedtls_mpi_core_get_mont_r2_unsafe(&RR, &N);
+    125          
+    126              if (ret == 0) {
+    127                  *X = RR.p;
+    128                  RR.p = NULL;
+    129              }
+    130          
+    131          cleanup:
+    132              mbedtls_mpi_free(&N);
+    133              mbedtls_mpi_free(&RR);
+    134              ret = (ret != 0) ? MBEDTLS_ERR_ERROR_CORRUPTION_DETECTED : 0;
+    135              return ret;
+    136          }
+    137          
+    138          static inline void standard_modulus_setup(mbedtls_mpi_mod_modulus *N,
+    139                                                    const mbedtls_mpi_uint *p,
+    140                                                    size_t p_limbs,
+    141                                                    mbedtls_mpi_mod_rep_selector int_rep)
+    142          {
+    143              N->p = p;
+    144              N->limbs = p_limbs;
+    145              N->bits = mbedtls_mpi_core_bitlen(p, p_limbs);
+    146              N->int_rep = int_rep;
+    147          }
+    148          
+    149          int mbedtls_mpi_mod_modulus_setup(mbedtls_mpi_mod_modulus *N,
+    150                                            const mbedtls_mpi_uint *p,
+    151                                            size_t p_limbs)
+    152          {
+    153              int ret = 0;
+    154              standard_modulus_setup(N, p, p_limbs, MBEDTLS_MPI_MOD_REP_MONTGOMERY);
+    155              N->rep.mont.mm = mbedtls_mpi_core_montmul_init(N->p);
+    156              ret = set_mont_const_square(&N->rep.mont.rr, N->p, N->limbs);
+    157          
+    158              if (ret != 0) {
+    159                  mbedtls_mpi_mod_modulus_free(N);
+    160              }
+    161          
+    162              return ret;
+    163          }
+    164          
+    165          int mbedtls_mpi_mod_optred_modulus_setup(mbedtls_mpi_mod_modulus *N,
+    166                                                   const mbedtls_mpi_uint *p,
+    167                                                   size_t p_limbs,
+    168                                                   mbedtls_mpi_modp_fn modp)
+    169          {
+    170              standard_modulus_setup(N, p, p_limbs, MBEDTLS_MPI_MOD_REP_OPT_RED);
+    171              N->rep.ored.modp = modp;
+    172              return 0;
+    173          }
+    174          
+    175          int mbedtls_mpi_mod_mul(mbedtls_mpi_mod_residue *X,
+    176                                  const mbedtls_mpi_mod_residue *A,
+    177                                  const mbedtls_mpi_mod_residue *B,
+    178                                  const mbedtls_mpi_mod_modulus *N)
+    179          {
+    180              if (N->limbs == 0) {
+    181                  return MBEDTLS_ERR_MPI_BAD_INPUT_DATA;
+    182              }
+    183          
+    184              if (X->limbs != N->limbs || A->limbs != N->limbs || B->limbs != N->limbs) {
+    185                  return MBEDTLS_ERR_MPI_BAD_INPUT_DATA;
+    186              }
+    187          
+    188              mbedtls_mpi_uint *T = mbedtls_calloc(N->limbs * 2 + 1, ciL);
+    189              if (T == NULL) {
+    190                  return MBEDTLS_ERR_MPI_ALLOC_FAILED;
+    191              }
+    192          
+    193              mbedtls_mpi_mod_raw_mul(X->p, A->p, B->p, N, T);
+    194          
+    195              mbedtls_free(T);
+    196          
+    197              return 0;
+    198          }
+    199          
+    200          int mbedtls_mpi_mod_sub(mbedtls_mpi_mod_residue *X,
+    201                                  const mbedtls_mpi_mod_residue *A,
+    202                                  const mbedtls_mpi_mod_residue *B,
+    203                                  const mbedtls_mpi_mod_modulus *N)
+    204          {
+    205              if (X->limbs != N->limbs || A->limbs != N->limbs || B->limbs != N->limbs) {
+    206                  return MBEDTLS_ERR_MPI_BAD_INPUT_DATA;
+    207              }
+    208          
+    209              mbedtls_mpi_mod_raw_sub(X->p, A->p, B->p, N);
+    210          
+    211              return 0;
+    212          }
+    213          
+    214          static int mbedtls_mpi_mod_inv_mont(mbedtls_mpi_mod_residue *X,
+    215                                              const mbedtls_mpi_mod_residue *A,
+    216                                              const mbedtls_mpi_mod_modulus *N,
+    217                                              mbedtls_mpi_uint *working_memory)
+    218          {
+    219              /* Input already in Montgomery form, so there's little to do */
+    220              mbedtls_mpi_mod_raw_inv_prime(X->p, A->p,
+    221                                            N->p, N->limbs,
+    222                                            N->rep.mont.rr,
+    223                                            working_memory);
+    224              return 0;
+    225          }
+    226          
+    227          static int mbedtls_mpi_mod_inv_non_mont(mbedtls_mpi_mod_residue *X,
+    228                                                  const mbedtls_mpi_mod_residue *A,
+    229                                                  const mbedtls_mpi_mod_modulus *N,
+    230                                                  mbedtls_mpi_uint *working_memory)
+    231          {
+    232              /* Need to convert input into Montgomery form */
+    233          
+    234              int ret = MBEDTLS_ERR_ERROR_CORRUPTION_DETECTED;
+    235          
+    236              mbedtls_mpi_mod_modulus Nmont;
+    237              mbedtls_mpi_mod_modulus_init(&Nmont);
+    238          
+    239              MBEDTLS_MPI_CHK(mbedtls_mpi_mod_modulus_setup(&Nmont, N->p, N->limbs));
+    240          
+    241              /* We'll use X->p to hold the Montgomery form of the input A->p */
+    242              mbedtls_mpi_core_to_mont_rep(X->p, A->p, Nmont.p, Nmont.limbs,
+    243                                           Nmont.rep.mont.mm, Nmont.rep.mont.rr,
+    244                                           working_memory);
+    245          
+    246              mbedtls_mpi_mod_raw_inv_prime(X->p, X->p,
+    247                                            Nmont.p, Nmont.limbs,
+    248                                            Nmont.rep.mont.rr,
+    249                                            working_memory);
+    250          
+    251              /* And convert back from Montgomery form */
+    252          
+    253              mbedtls_mpi_core_from_mont_rep(X->p, X->p, Nmont.p, Nmont.limbs,
+    254                                             Nmont.rep.mont.mm, working_memory);
+    255          
+    256          cleanup:
+    257              mbedtls_mpi_mod_modulus_free(&Nmont);
+    258              return ret;
+    259          }
+    260          
+    261          int mbedtls_mpi_mod_inv(mbedtls_mpi_mod_residue *X,
+    262                                  const mbedtls_mpi_mod_residue *A,
+    263                                  const mbedtls_mpi_mod_modulus *N)
+    264          {
+    265              if (X->limbs != N->limbs || A->limbs != N->limbs) {
+    266                  return MBEDTLS_ERR_MPI_BAD_INPUT_DATA;
+    267              }
+    268          
+    269              /* Zero has the same value regardless of Montgomery form or not */
+    270              if (mbedtls_mpi_core_check_zero_ct(A->p, A->limbs) == 0) {
+    271                  return MBEDTLS_ERR_MPI_BAD_INPUT_DATA;
+    272              }
+    273          
+    274              size_t working_limbs =
+    275                  mbedtls_mpi_mod_raw_inv_prime_working_limbs(N->limbs);
+    276          
+    277              mbedtls_mpi_uint *working_memory = mbedtls_calloc(working_limbs,
+    278                                                                sizeof(mbedtls_mpi_uint));
+    279              if (working_memory == NULL) {
+    280                  return MBEDTLS_ERR_MPI_ALLOC_FAILED;
+    281              }
+    282          
+    283              int ret = MBEDTLS_ERR_ERROR_CORRUPTION_DETECTED;
+    284          
+    285              switch (N->int_rep) {
+    286                  case MBEDTLS_MPI_MOD_REP_MONTGOMERY:
+    287                      ret = mbedtls_mpi_mod_inv_mont(X, A, N, working_memory);
+    288                      break;
+    289                  case MBEDTLS_MPI_MOD_REP_OPT_RED:
+    290                      ret = mbedtls_mpi_mod_inv_non_mont(X, A, N, working_memory);
+    291                      break;
+    292                  default:
+    293                      ret = MBEDTLS_ERR_MPI_BAD_INPUT_DATA;
+    294                      break;
+    295              }
+    296          
+    297              mbedtls_zeroize_and_free(working_memory,
+    298                                       working_limbs * sizeof(mbedtls_mpi_uint));
+    299          
+    300              return ret;
+    301          }
+    302          
+    303          int mbedtls_mpi_mod_add(mbedtls_mpi_mod_residue *X,
+    304                                  const mbedtls_mpi_mod_residue *A,
+    305                                  const mbedtls_mpi_mod_residue *B,
+    306                                  const mbedtls_mpi_mod_modulus *N)
+    307          {
+    308              if (X->limbs != N->limbs || A->limbs != N->limbs || B->limbs != N->limbs) {
+    309                  return MBEDTLS_ERR_MPI_BAD_INPUT_DATA;
+    310              }
+    311          
+    312              mbedtls_mpi_mod_raw_add(X->p, A->p, B->p, N);
+    313          
+    314              return 0;
+    315          }
+    316          
+    317          int mbedtls_mpi_mod_random(mbedtls_mpi_mod_residue *X,
+    318                                     mbedtls_mpi_uint min,
+    319                                     const mbedtls_mpi_mod_modulus *N,
+    320                                     int (*f_rng)(void *, unsigned char *, size_t),
+    321                                     void *p_rng)
+    322          {
+    323              if (X->limbs != N->limbs) {
+    324                  return MBEDTLS_ERR_MPI_BAD_INPUT_DATA;
+    325              }
+    326              return mbedtls_mpi_mod_raw_random(X->p, min, N, f_rng, p_rng);
+    327          }
+    328          
+    329          int mbedtls_mpi_mod_read(mbedtls_mpi_mod_residue *r,
+    330                                   const mbedtls_mpi_mod_modulus *N,
+    331                                   const unsigned char *buf,
+    332                                   size_t buflen,
+    333                                   mbedtls_mpi_mod_ext_rep ext_rep)
+    334          {
+    335              int ret = MBEDTLS_ERR_MPI_BAD_INPUT_DATA;
+    336          
+    337              /* Do our best to check if r and m have been set up */
+    338              if (r->limbs == 0 || N->limbs == 0) {
+    339                  goto cleanup;
+    340              }
+    341              if (r->limbs != N->limbs) {
+    342                  goto cleanup;
+    343              }
+    344          
+    345              ret = mbedtls_mpi_mod_raw_read(r->p, N, buf, buflen, ext_rep);
+    346              if (ret != 0) {
+    347                  goto cleanup;
+    348              }
+    349          
+    350              r->limbs = N->limbs;
+    351          
+    352              ret = mbedtls_mpi_mod_raw_canonical_to_modulus_rep(r->p, N);
+    353          
+    354          cleanup:
+    355              return ret;
+    356          }
+    357          
+    358          int mbedtls_mpi_mod_write(const mbedtls_mpi_mod_residue *r,
+    359                                    const mbedtls_mpi_mod_modulus *N,
+    360                                    unsigned char *buf,
+    361                                    size_t buflen,
+    362                                    mbedtls_mpi_mod_ext_rep ext_rep)
+    363          {
+    364              /* Do our best to check if r and m have been set up */
+    365              if (r->limbs == 0 || N->limbs == 0) {
+    366                  return MBEDTLS_ERR_MPI_BAD_INPUT_DATA;
+    367              }
+    368              if (r->limbs != N->limbs) {
+    369                  return MBEDTLS_ERR_MPI_BAD_INPUT_DATA;
+    370              }
+    371          
+    372              int ret = MBEDTLS_ERR_ERROR_CORRUPTION_DETECTED;
+    373              mbedtls_mpi_uint *working_memory = r->p;
+    374              size_t working_memory_len = sizeof(mbedtls_mpi_uint) * r->limbs;
+    375          
+    376              if (N->int_rep == MBEDTLS_MPI_MOD_REP_MONTGOMERY) {
+    377          
+    378                  working_memory = mbedtls_calloc(r->limbs, sizeof(mbedtls_mpi_uint));
+    379          
+    380                  if (working_memory == NULL) {
+    381                      ret = MBEDTLS_ERR_MPI_ALLOC_FAILED;
+    382                      goto cleanup;
+    383                  }
+    384          
+    385                  memcpy(working_memory, r->p, working_memory_len);
+    386          
+    387                  ret = mbedtls_mpi_mod_raw_from_mont_rep(working_memory, N);
+    388                  if (ret != 0) {
+    389                      goto cleanup;
+    390                  }
+    391              }
+    392          
+    393              ret = mbedtls_mpi_mod_raw_write(working_memory, N, buf, buflen, ext_rep);
+    394          
+    395          cleanup:
+    396          
+    397              if (N->int_rep == MBEDTLS_MPI_MOD_REP_MONTGOMERY &&
+    398                  working_memory != NULL) {
+    399          
+    400                  mbedtls_zeroize_and_free(working_memory, working_memory_len);
+    401              }
+    402          
+    403              return ret;
+    404          }
+    405          
+    406          #endif /* MBEDTLS_BIGNUM_C && MBEDTLS_ECP_WITH_MPI_UINT */
+
+
+ 
+ 
+ 0 bytes of memory
+
+Errors: none
+Warnings: none

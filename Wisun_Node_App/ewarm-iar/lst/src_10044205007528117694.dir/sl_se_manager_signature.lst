@@ -1,0 +1,801 @@
+###############################################################################
+#
+# IAR ANSI C/C++ Compiler V9.50.2.385/W64 for ARM         29/Mar/2025  15:53:07
+# Copyright 1999-2024 IAR Systems AB.
+#
+#    Cpu mode          =  thumb
+#    Endian            =  little
+#    Source file       =
+#        D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\security\sl_component\se_manager\src\sl_se_manager_signature.c
+#    Command line      =
+#        -f "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\ewarm-iar\obj\src_10044205007528117694.dir\sl_se_manager_signature.o.rsp"
+#        ("D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\security\sl_component\se_manager\src\sl_se_manager_signature.c"
+#        -D DEBUG_EFM=1 -D EFR32FG28B322F1024IM48=1 -D
+#        configNUM_SDK_THREAD_LOCAL_STORAGE_POINTERS=2 -D
+#        SL_COMPONENT_CATALOG_PRESENT=1 -D
+#        MBEDTLS_CONFIG_FILE=<sl_mbedtls_config.h> -D
+#        MBEDTLS_PSA_CRYPTO_CONFIG_FILE=<psa_crypto_config.h> -D
+#        SL_RAIL_LIB_MULTIPROTOCOL_SUPPORT=0 -D
+#        SL_RAIL_UTIL_PA_CONFIG_HEADER=<sl_rail_util_pa_config.h> -D
+#        RTT_USE_ASM=0 -lC "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\ewarm-iar\lst\src_10044205007528117694.dir"
+#        --diag_suppress Pa050 -o "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\ewarm-iar\obj\src_10044205007528117694.dir" --no_cse
+#        --no_unroll --no_inline --no_code_motion --no_tbaa --no_clustering
+#        --no_scheduling --debug --endian=little --cpu=Cortex-M33 --cmse --cmse
+#        -e --fpu=VFPv5_sp --dlib_config "C:\Program Files\IAR Systems\Embedded
+#        Workbench 9.2\arm\inc\c\DLib_Config_Normal.h" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\security\sl_component\se_manager\src\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App 1\Wisun_Node_App\config\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App 1\Wisun_Node_App\config\rail\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App 1\Wisun_Node_App\config\wisun\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App 1\Wisun_Node_App\.\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\Device\SiliconLabs\EFR32FG28\Include\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\app\wisun\component\app_project_info\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\common\inc\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\service\cli\inc\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\service\cli\src\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\CMSIS\Core\Include\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\CMSIS\RTOS2\Include\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\service\device_init\inc\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\emdrv\common\inc\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\emlib\inc\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\service\iostream\inc\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\security\sl_component\sl_mbedtls_support\config\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\security\sl_component\sl_mbedtls_support\config\preset\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\security\sl_component\sl_mbedtls_support\inc\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\util\third_party\mbedtls\include\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\util\third_party\mbedtls\library\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\micrium_os\common\source\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\micrium_os\common\include\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\micrium_os\cpu\include\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\micrium_os\ports\source\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\micrium_os\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\micrium_os\kernel\source\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\micrium_os\kernel\include\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\emdrv\nvm3\inc\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\peripheral\inc\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\util\third_party\printf\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\util\third_party\printf\inc\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\security\sl_component\sl_psa_driver\inc\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\radio\rail_lib\common\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\radio\rail_lib\protocol\ble\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\radio\rail_lib\protocol\ieee802154\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\radio\rail_lib\protocol\wmbus\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\radio\rail_lib\protocol\zwave\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\radio\rail_lib\chip\efr32\efr32xg2x\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\radio\rail_lib\protocol\sidewalk\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\radio\rail_lib\plugin\pa-conversions\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\radio\rail_lib\plugin\pa-conversions\efr32xg28\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\radio\rail_lib\plugin\rail_util_pti\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\security\sl_component\se_manager\inc\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\security\sl_component\se_manager\src\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\util\third_party\segger\systemview\SEGGER\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\util\silicon_labs\silabs_core\memory_manager\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\common\toolchain\inc\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\service\system\inc\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\app\wisun\component\app_core\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\app\wisun\component\app_setting\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\app\wisun\component\cli_util\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\app\wisun\component\event_manager\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\app\wisun\component\ns_list\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\app\wisun\component\ping\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\app\wisun\component\trace_util\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\app\wisun\component\trace_util\nanostack\nanostack-libservice\mbed-client-libservice\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\app\wisun\component\udp_client\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\service\sleeptimer\inc\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\protocol\wisun\plugin\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\protocol\wisun\stack\inc\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\protocol\wisun\stack\inc\socket\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App 1\Wisun_Node_App\autogen\\" -On
+#        --use_c++_inline) --dependencies=n "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\ewarm-iar\obj\src_10044205007528117694.dir\sl_se_manager_signature.o.iar_deps"
+#    Locale            =  C
+#    List file         =
+#        D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\ewarm-iar\lst\src_10044205007528117694.dir\sl_se_manager_signature.lst
+#    Object file       =
+#        D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\ewarm-iar\obj\src_10044205007528117694.dir\sl_se_manager_signature.o
+#    Runtime model:       
+#      __CPP_Runtime   =  1
+#      __SystemLibrary =  DLib
+#      __dlib_version  =  6
+#
+###############################################################################
+
+D:\Inesh_wisun\Wisun_Node_App 1\Wisun_Node_App\gecko_sdk_4.4.5\platform\security\sl_component\se_manager\src\sl_se_manager_signature.c
+      1          /***************************************************************************//**
+      2           * @file
+      3           * @brief Silicon Labs Secure Engine Manager API.
+      4           *******************************************************************************
+      5           * # License
+      6           * <b>Copyright 2020 Silicon Laboratories Inc. www.silabs.com</b>
+      7           *******************************************************************************
+      8           *
+      9           * SPDX-License-Identifier: Zlib
+     10           *
+     11           * The licensor of this software is Silicon Laboratories Inc.
+     12           *
+     13           * This software is provided 'as-is', without any express or implied
+     14           * warranty. In no event will the authors be held liable for any damages
+     15           * arising from the use of this software.
+     16           *
+     17           * Permission is granted to anyone to use this software for any purpose,
+     18           * including commercial applications, and to alter it and redistribute it
+     19           * freely, subject to the following restrictions:
+     20           *
+     21           * 1. The origin of this software must not be misrepresented; you must not
+     22           *    claim that you wrote the original software. If you use this software
+     23           *    in a product, an acknowledgment in the product documentation would be
+     24           *    appreciated but is not required.
+     25           * 2. Altered source versions must be plainly marked as such, and must not be
+     26           *    misrepresented as being the original software.
+     27           * 3. This notice may not be removed or altered from any source distribution.
+     28           *
+     29           ******************************************************************************/
+     30          
+     31          #include "sl_se_manager.h"
+     32          
+     33          #if defined(SLI_MAILBOX_COMMAND_SUPPORTED)
+     34          
+     35          #include "sl_se_manager.h"
+     36          #include "sli_se_manager_internal.h"
+     37          #include "em_se.h"
+     38          #include <string.h>
+     39          
+     40          /// @addtogroup sl_se_manager
+     41          /// @{
+     42          
+     43          // -----------------------------------------------------------------------------
+     44          // Global Functions
+     45          
+     46          /***************************************************************************//**
+     47           * ECC signature generation.
+     48           ******************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+     49          sl_status_t sl_se_ecc_sign(sl_se_command_context_t *cmd_ctx,
+     50                                     const sl_se_key_descriptor_t *key,
+     51                                     sl_se_hash_type_t hash_alg,
+     52                                     bool hashed_message,
+     53                                     const unsigned char *message,
+     54                                     size_t message_len,
+     55                                     unsigned char *signature,
+     56                                     size_t signature_len)
+     57          {
+   \                     sl_se_ecc_sign: (+1)
+   \        0x0   0xE92D 0x4FFC      PUSH     {R2-R11,LR}
+   \        0x4   0xB091             SUB      SP,SP,#+68
+   \        0x6   0x0004             MOVS     R4,R0
+   \        0x8   0x000D             MOVS     R5,R1
+   \        0xA   0x9E1C             LDR      R6,[SP, #+112]
+   \        0xC   0xF8DD 0xB074      LDR      R11,[SP, #+116]
+   \       0x10   0x9F1E             LDR      R7,[SP, #+120]
+     58            if (cmd_ctx == NULL || key == NULL || message == NULL || signature == NULL) {
+   \       0x12   0x2C00             CMP      R4,#+0
+   \       0x14   0xD005             BEQ.N    ??sl_se_ecc_sign_0
+   \       0x16   0x2D00             CMP      R5,#+0
+   \       0x18   0xD003             BEQ.N    ??sl_se_ecc_sign_0
+   \       0x1A   0x2E00             CMP      R6,#+0
+   \       0x1C   0xD001             BEQ.N    ??sl_se_ecc_sign_0
+   \       0x1E   0x2F00             CMP      R7,#+0
+   \       0x20   0xD101             BNE.N    ??sl_se_ecc_sign_1
+     59              return SL_STATUS_INVALID_PARAMETER;
+   \                     ??sl_se_ecc_sign_0: (+1)
+   \       0x22   0x2021             MOVS     R0,#+33
+   \       0x24   0xE099             B.N      ??sl_se_ecc_sign_2
+     60            }
+     61          
+     62            SE_Command_t *se_cmd = &cmd_ctx->command;
+   \                     ??sl_se_ecc_sign_1: (+1)
+   \       0x26   0x9400             STR      R4,[SP, #+0]
+     63            sl_status_t status;
+     64            uint32_t command_word = SLI_SE_COMMAND_SIGNATURE_SIGN;
+   \       0x28   0xF05F 0x6AC0      MOVS     R10,#+100663296
+     65          
+     66            if ((key->type & SL_SE_KEY_TYPE_ALGORITHM_MASK)
+     67                == SL_SE_KEY_TYPE_ECC_EDDSA) {
+   \       0x2C   0x6828             LDR      R0,[R5, #+0]
+   \       0x2E   0xF010 0x4070      ANDS     R0,R0,#0xF0000000
+   \       0x32   0xF1B0 0x4F40      CMP      R0,#+3221225472
+   \       0x36   0xD102             BNE.N    ??sl_se_ecc_sign_3
+     68              command_word = SLI_SE_COMMAND_EDDSA_SIGN;
+   \       0x38   0x....             LDR.N    R0,??DataTable1
+   \       0x3A   0x4682             MOV      R10,R0
+   \       0x3C   0xE020             B.N      ??sl_se_ecc_sign_4
+     69            } else {
+     70              if (hashed_message == false) {
+   \                     ??sl_se_ecc_sign_3: (+1)
+   \       0x3E   0xF89D 0x0048      LDRB     R0,[SP, #+72]
+   \       0x42   0x2800             CMP      R0,#+0
+   \       0x44   0xD11C             BNE.N    ??sl_se_ecc_sign_4
+     71                switch (hash_alg) {
+   \       0x46   0xF89D 0x0044      LDRB     R0,[SP, #+68]
+   \       0x4A   0x2801             CMP      R0,#+1
+   \       0x4C   0xD007             BEQ.N    ??sl_se_ecc_sign_5
+   \       0x4E   0xD315             BCC.N    ??sl_se_ecc_sign_6
+   \       0x50   0x2803             CMP      R0,#+3
+   \       0x52   0xD00A             BEQ.N    ??sl_se_ecc_sign_7
+   \       0x54   0xD306             BCC.N    ??sl_se_ecc_sign_8
+   \       0x56   0x2805             CMP      R0,#+5
+   \       0x58   0xD00D             BEQ.N    ??sl_se_ecc_sign_9
+   \       0x5A   0xD309             BCC.N    ??sl_se_ecc_sign_10
+   \       0x5C   0xE00E             B.N      ??sl_se_ecc_sign_6
+     72                  case SL_SE_HASH_SHA1:
+     73                    command_word |= SLI_SE_COMMAND_OPTION_HASH_SHA1;
+   \                     ??sl_se_ecc_sign_5: (+1)
+   \       0x5E   0xF45A 0x7A00      ORRS     R10,R10,#0x200
+     74                    break;
+   \       0x62   0xE00D             B.N      ??sl_se_ecc_sign_4
+     75          
+     76                  case SL_SE_HASH_SHA224:
+     77                    command_word |= SLI_SE_COMMAND_OPTION_HASH_SHA224;
+   \                     ??sl_se_ecc_sign_8: (+1)
+   \       0x64   0xF45A 0x7A40      ORRS     R10,R10,#0x300
+     78                    break;
+   \       0x68   0xE00A             B.N      ??sl_se_ecc_sign_4
+     79          
+     80                  case SL_SE_HASH_SHA256:
+     81                    command_word |= SLI_SE_COMMAND_OPTION_HASH_SHA256;
+   \                     ??sl_se_ecc_sign_7: (+1)
+   \       0x6A   0xF45A 0x6A80      ORRS     R10,R10,#0x400
+     82                    break;
+   \       0x6E   0xE007             B.N      ??sl_se_ecc_sign_4
+     83          
+     84          #if (_SILICON_LABS_SECURITY_FEATURE == _SILICON_LABS_SECURITY_FEATURE_VAULT)
+     85                  case SL_SE_HASH_SHA384:
+     86                    command_word |= SLI_SE_COMMAND_OPTION_HASH_SHA384;
+   \                     ??sl_se_ecc_sign_10: (+1)
+   \       0x70   0xF45A 0x6AA0      ORRS     R10,R10,#0x500
+     87                    break;
+   \       0x74   0xE004             B.N      ??sl_se_ecc_sign_4
+     88          
+     89                  case SL_SE_HASH_SHA512:
+     90                    command_word |= SLI_SE_COMMAND_OPTION_HASH_SHA512;
+   \                     ??sl_se_ecc_sign_9: (+1)
+   \       0x76   0xF45A 0x6AC0      ORRS     R10,R10,#0x600
+     91                    break;
+   \       0x7A   0xE001             B.N      ??sl_se_ecc_sign_4
+     92          #endif
+     93                  default:
+     94                    return SL_STATUS_INVALID_PARAMETER;
+   \                     ??sl_se_ecc_sign_6: (+1)
+   \       0x7C   0x2021             MOVS     R0,#+33
+   \       0x7E   0xE06C             B.N      ??sl_se_ecc_sign_2
+     95                }
+     96              }
+     97            }
+     98          
+     99            // Setup SE command and parameters
+    100            sli_se_command_init(cmd_ctx, command_word);
+   \                     ??sl_se_ecc_sign_4: (+1)
+   \       0x80   0xF8C4 0xA000      STR      R10,[R4, #+0]
+   \       0x84   0x2000             MOVS     R0,#+0
+   \       0x86   0x6060             STR      R0,[R4, #+4]
+   \       0x88   0x2000             MOVS     R0,#+0
+   \       0x8A   0x60A0             STR      R0,[R4, #+8]
+   \       0x8C   0x2000             MOVS     R0,#+0
+   \       0x8E   0x61E0             STR      R0,[R4, #+28]
+    101            // Add key parameters to command
+    102            sli_add_key_parameters(cmd_ctx, key, status);
+   \       0x90   0xA901             ADD      R1,SP,#+4
+   \       0x92   0x0028             MOVS     R0,R5
+   \       0x94   0x.... 0x....      BL       sli_se_key_to_keyspec
+   \       0x98   0x4680             MOV      R8,R0
+   \       0x9A   0xF1B8 0x0F00      CMP      R8,#+0
+   \       0x9E   0xD001             BEQ.N    ??sl_se_ecc_sign_11
+   \       0xA0   0x4640             MOV      R0,R8
+   \       0xA2   0xE05A             B.N      ??sl_se_ecc_sign_2
+   \                     ??sl_se_ecc_sign_11: (+1)
+   \       0xA4   0x9901             LDR      R1,[SP, #+4]
+   \       0xA6   0x0020             MOVS     R0,R4
+   \       0xA8   0x.... 0x....      BL       SE_addParameter
+    103            // Message size (number of bytes)
+    104            SE_addParameter(se_cmd, message_len);
+   \       0xAC   0x4659             MOV      R1,R11
+   \       0xAE   0x9800             LDR      R0,[SP, #+0]
+   \       0xB0   0x.... 0x....      BL       SE_addParameter
+    105            // Add key metadata block to command
+    106            sli_add_key_metadata(cmd_ctx, key, status);
+   \       0xB4   0xA90E             ADD      R1,SP,#+56
+   \       0xB6   0x0028             MOVS     R0,R5
+   \       0xB8   0x.... 0x....      BL       sli_se_get_auth_buffer
+   \       0xBC   0x4681             MOV      R9,R0
+   \       0xBE   0xF1B9 0x0F00      CMP      R9,#+0
+   \       0xC2   0xD001             BEQ.N    ??sl_se_ecc_sign_12
+   \       0xC4   0x4648             MOV      R0,R9
+   \       0xC6   0xE048             B.N      ??sl_se_ecc_sign_2
+   \                     ??sl_se_ecc_sign_12: (+1)
+   \       0xC8   0xA90E             ADD      R1,SP,#+56
+   \       0xCA   0x0020             MOVS     R0,R4
+   \       0xCC   0x.... 0x....      BL       SE_addDataInput
+    107            // Add key input block to command
+    108            sli_add_key_input(cmd_ctx, key, status);
+   \       0xD0   0xA90B             ADD      R1,SP,#+44
+   \       0xD2   0x0028             MOVS     R0,R5
+   \       0xD4   0x.... 0x....      BL       sli_se_get_key_input_output
+   \       0xD8   0x4680             MOV      R8,R0
+   \       0xDA   0xF1B8 0x0F00      CMP      R8,#+0
+   \       0xDE   0xD001             BEQ.N    ??sl_se_ecc_sign_13
+   \       0xE0   0x4640             MOV      R0,R8
+   \       0xE2   0xE03A             B.N      ??sl_se_ecc_sign_2
+   \                     ??sl_se_ecc_sign_13: (+1)
+   \       0xE4   0xA90B             ADD      R1,SP,#+44
+   \       0xE6   0x0020             MOVS     R0,R4
+   \       0xE8   0x.... 0x....      BL       SE_addDataInput
+    109          
+    110            SE_DataTransfer_t message_buffer = SE_DATATRANSFER_DEFAULT(message, message_len);
+   \       0xEC   0xF10D 0x0C20      ADD      R12,SP,#+32
+   \       0xF0   0x....             LDR.N    R0,??DataTable1_1
+   \       0xF2   0xE890 0x000E      LDM      R0,{R1-R3}
+   \       0xF6   0xE88C 0x000E      STM      R12,{R1-R3}
+   \       0xFA   0x9608             STR      R6,[SP, #+32]
+   \       0xFC   0xF05B 0x5000      ORRS     R0,R11,#0x20000000
+   \      0x100   0x900A             STR      R0,[SP, #+40]
+    111            SE_addDataInput(se_cmd, &message_buffer);
+   \      0x102   0xA908             ADD      R1,SP,#+32
+   \      0x104   0x9800             LDR      R0,[SP, #+0]
+   \      0x106   0x.... 0x....      BL       SE_addDataInput
+    112          
+    113            // EdDSA requires the message twice
+    114            SE_DataTransfer_t repeated_message_buffer = SE_DATATRANSFER_DEFAULT(message, message_len);
+   \      0x10A   0xF10D 0x0C14      ADD      R12,SP,#+20
+   \      0x10E   0x....             LDR.N    R0,??DataTable1_2
+   \      0x110   0xE890 0x000E      LDM      R0,{R1-R3}
+   \      0x114   0xE88C 0x000E      STM      R12,{R1-R3}
+   \      0x118   0x9605             STR      R6,[SP, #+20]
+   \      0x11A   0xF05B 0x5000      ORRS     R0,R11,#0x20000000
+   \      0x11E   0x9007             STR      R0,[SP, #+28]
+    115            if ((key->type & SL_SE_KEY_TYPE_ALGORITHM_MASK) == SL_SE_KEY_TYPE_ECC_EDDSA) {
+   \      0x120   0x6828             LDR      R0,[R5, #+0]
+   \      0x122   0xF010 0x4070      ANDS     R0,R0,#0xF0000000
+   \      0x126   0xF1B0 0x4F40      CMP      R0,#+3221225472
+   \      0x12A   0xD103             BNE.N    ??sl_se_ecc_sign_14
+    116              SE_addDataInput(se_cmd, &repeated_message_buffer);
+   \      0x12C   0xA905             ADD      R1,SP,#+20
+   \      0x12E   0x9800             LDR      R0,[SP, #+0]
+   \      0x130   0x.... 0x....      BL       SE_addDataInput
+    117            }
+    118          
+    119            SE_DataTransfer_t signature_buffer = SE_DATATRANSFER_DEFAULT(signature, signature_len);
+   \                     ??sl_se_ecc_sign_14: (+1)
+   \      0x134   0xAB02             ADD      R3,SP,#+8
+   \      0x136   0x.... 0x....      LDR.W    R12,??DataTable1_3
+   \      0x13A   0xE89C 0x0007      LDM      R12,{R0-R2}
+   \      0x13E   0xE883 0x0007      STM      R3,{R0-R2}
+   \      0x142   0x9702             STR      R7,[SP, #+8]
+   \      0x144   0x981F             LDR      R0,[SP, #+124]
+   \      0x146   0xF050 0x5000      ORRS     R0,R0,#0x20000000
+   \      0x14A   0x9004             STR      R0,[SP, #+16]
+    120            SE_addDataOutput(se_cmd, &signature_buffer);
+   \      0x14C   0xA902             ADD      R1,SP,#+8
+   \      0x14E   0x9800             LDR      R0,[SP, #+0]
+   \      0x150   0x.... 0x....      BL       SE_addDataOutput
+    121          
+    122            return sli_se_execute_and_wait(cmd_ctx);
+   \      0x154   0x0020             MOVS     R0,R4
+   \      0x156   0x.... 0x....      BL       sli_se_execute_and_wait
+   \                     ??sl_se_ecc_sign_2: (+1)
+   \      0x15A   0xB013             ADD      SP,SP,#+76
+   \      0x15C   0xE8BD 0x8FF0      POP      {R4-R11,PC}
+    123          }
+
+   \                                 In section .rodata, align 4
+   \                     ?_0:
+   \        0x0   0x0000'0000        DC32 0x0, 0x1, 0
+   \              0x0000'0001  
+   \              0x0000'0000
+
+   \                                 In section .rodata, align 4
+   \                     ?_1:
+   \        0x0   0x0000'0000        DC32 0x0, 0x1, 0
+   \              0x0000'0001  
+   \              0x0000'0000
+
+   \                                 In section .rodata, align 4
+   \                     ?_2:
+   \        0x0   0x0000'0000        DC32 0x0, 0x1, 0
+   \              0x0000'0001  
+   \              0x0000'0000
+    124          
+    125          /***************************************************************************//**
+    126           * ECC signature verification.
+    127           ******************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+    128          sl_status_t sl_se_ecc_verify(sl_se_command_context_t *cmd_ctx,
+    129                                       const sl_se_key_descriptor_t *key,
+    130                                       sl_se_hash_type_t hash_alg,
+    131                                       bool hashed_message,
+    132                                       const unsigned char *message,
+    133                                       size_t message_len,
+    134                                       const unsigned char *signature,
+    135                                       size_t signature_len)
+    136          {
+   \                     sl_se_ecc_verify: (+1)
+   \        0x0   0xE92D 0x4FFE      PUSH     {R1-R11,LR}
+   \        0x4   0xB08E             SUB      SP,SP,#+56
+   \        0x6   0x0004             MOVS     R4,R0
+   \        0x8   0x000D             MOVS     R5,R1
+   \        0xA   0x9E1A             LDR      R6,[SP, #+104]
+   \        0xC   0xF8DD 0xB06C      LDR      R11,[SP, #+108]
+   \       0x10   0x9F1C             LDR      R7,[SP, #+112]
+    137            if (cmd_ctx == NULL || key == NULL || message == NULL || signature == NULL) {
+   \       0x12   0x2C00             CMP      R4,#+0
+   \       0x14   0xD005             BEQ.N    ??sl_se_ecc_verify_0
+   \       0x16   0x2D00             CMP      R5,#+0
+   \       0x18   0xD003             BEQ.N    ??sl_se_ecc_verify_0
+   \       0x1A   0x2E00             CMP      R6,#+0
+   \       0x1C   0xD001             BEQ.N    ??sl_se_ecc_verify_0
+   \       0x1E   0x2F00             CMP      R7,#+0
+   \       0x20   0xD101             BNE.N    ??sl_se_ecc_verify_1
+    138              return SL_STATUS_INVALID_PARAMETER;
+   \                     ??sl_se_ecc_verify_0: (+1)
+   \       0x22   0x2021             MOVS     R0,#+33
+   \       0x24   0xE098             B.N      ??sl_se_ecc_verify_2
+    139            }
+    140            // Key needs to contain public key in order to verify signatures
+    141            if (!(key->flags & SL_SE_KEY_FLAG_ASYMMETRIC_BUFFER_HAS_PUBLIC_KEY)) {
+   \                     ??sl_se_ecc_verify_1: (+1)
+   \       0x26   0x68A8             LDR      R0,[R5, #+8]
+   \       0x28   0x0480             LSLS     R0,R0,#+18
+   \       0x2A   0xD401             BMI.N    ??sl_se_ecc_verify_3
+    142              return SL_STATUS_INVALID_PARAMETER;
+   \       0x2C   0x2021             MOVS     R0,#+33
+   \       0x2E   0xE093             B.N      ??sl_se_ecc_verify_2
+    143            }
+    144          
+    145            SE_Command_t *se_cmd = &cmd_ctx->command;
+   \                     ??sl_se_ecc_verify_3: (+1)
+   \       0x30   0x9400             STR      R4,[SP, #+0]
+    146            sl_status_t status;
+    147            uint32_t command_word = SLI_SE_COMMAND_SIGNATURE_VERIFY;
+   \       0x32   0x.... 0x....      LDR.W    R10,??DataTable1_4
+    148          
+    149            if ((key->type & SL_SE_KEY_TYPE_ALGORITHM_MASK)
+    150                == SL_SE_KEY_TYPE_ECC_EDDSA) {
+   \       0x36   0x6828             LDR      R0,[R5, #+0]
+   \       0x38   0xF010 0x4070      ANDS     R0,R0,#0xF0000000
+   \       0x3C   0xF1B0 0x4F40      CMP      R0,#+3221225472
+   \       0x40   0xD102             BNE.N    ??sl_se_ecc_verify_4
+    151              command_word = SLI_SE_COMMAND_EDDSA_VERIFY;
+   \       0x42   0x....             LDR.N    R0,??DataTable1_5
+   \       0x44   0x4682             MOV      R10,R0
+   \       0x46   0xE020             B.N      ??sl_se_ecc_verify_5
+    152            } else {
+    153              if (hashed_message == false) {
+   \                     ??sl_se_ecc_verify_4: (+1)
+   \       0x48   0xF89D 0x0040      LDRB     R0,[SP, #+64]
+   \       0x4C   0x2800             CMP      R0,#+0
+   \       0x4E   0xD11C             BNE.N    ??sl_se_ecc_verify_5
+    154                switch (hash_alg) {
+   \       0x50   0xF89D 0x003C      LDRB     R0,[SP, #+60]
+   \       0x54   0x2801             CMP      R0,#+1
+   \       0x56   0xD007             BEQ.N    ??sl_se_ecc_verify_6
+   \       0x58   0xD315             BCC.N    ??sl_se_ecc_verify_7
+   \       0x5A   0x2803             CMP      R0,#+3
+   \       0x5C   0xD00A             BEQ.N    ??sl_se_ecc_verify_8
+   \       0x5E   0xD306             BCC.N    ??sl_se_ecc_verify_9
+   \       0x60   0x2805             CMP      R0,#+5
+   \       0x62   0xD00D             BEQ.N    ??sl_se_ecc_verify_10
+   \       0x64   0xD309             BCC.N    ??sl_se_ecc_verify_11
+   \       0x66   0xE00E             B.N      ??sl_se_ecc_verify_7
+    155                  case SL_SE_HASH_SHA1:
+    156                    command_word |= SLI_SE_COMMAND_OPTION_HASH_SHA1;
+   \                     ??sl_se_ecc_verify_6: (+1)
+   \       0x68   0xF45A 0x7A00      ORRS     R10,R10,#0x200
+    157                    break;
+   \       0x6C   0xE00D             B.N      ??sl_se_ecc_verify_5
+    158          
+    159                  case SL_SE_HASH_SHA224:
+    160                    command_word |= SLI_SE_COMMAND_OPTION_HASH_SHA224;
+   \                     ??sl_se_ecc_verify_9: (+1)
+   \       0x6E   0xF45A 0x7A40      ORRS     R10,R10,#0x300
+    161                    break;
+   \       0x72   0xE00A             B.N      ??sl_se_ecc_verify_5
+    162          
+    163                  case SL_SE_HASH_SHA256:
+    164                    command_word |= SLI_SE_COMMAND_OPTION_HASH_SHA256;
+   \                     ??sl_se_ecc_verify_8: (+1)
+   \       0x74   0xF45A 0x6A80      ORRS     R10,R10,#0x400
+    165                    break;
+   \       0x78   0xE007             B.N      ??sl_se_ecc_verify_5
+    166          
+    167          #if (_SILICON_LABS_SECURITY_FEATURE == _SILICON_LABS_SECURITY_FEATURE_VAULT)
+    168                  case SL_SE_HASH_SHA384:
+    169                    command_word |= SLI_SE_COMMAND_OPTION_HASH_SHA384;
+   \                     ??sl_se_ecc_verify_11: (+1)
+   \       0x7A   0xF45A 0x6AA0      ORRS     R10,R10,#0x500
+    170                    break;
+   \       0x7E   0xE004             B.N      ??sl_se_ecc_verify_5
+    171          
+    172                  case SL_SE_HASH_SHA512:
+    173                    command_word |= SLI_SE_COMMAND_OPTION_HASH_SHA512;
+   \                     ??sl_se_ecc_verify_10: (+1)
+   \       0x80   0xF45A 0x6AC0      ORRS     R10,R10,#0x600
+    174                    break;
+   \       0x84   0xE001             B.N      ??sl_se_ecc_verify_5
+    175          
+    176          #endif
+    177                  default:
+    178                    return SL_STATUS_INVALID_PARAMETER;
+   \                     ??sl_se_ecc_verify_7: (+1)
+   \       0x86   0x2021             MOVS     R0,#+33
+   \       0x88   0xE066             B.N      ??sl_se_ecc_verify_2
+    179                }
+    180              }
+    181            }
+    182          
+    183            // Setup SE command and parameters
+    184            sli_se_command_init(cmd_ctx, command_word);
+   \                     ??sl_se_ecc_verify_5: (+1)
+   \       0x8A   0xF8C4 0xA000      STR      R10,[R4, #+0]
+   \       0x8E   0x2000             MOVS     R0,#+0
+   \       0x90   0x6060             STR      R0,[R4, #+4]
+   \       0x92   0x2000             MOVS     R0,#+0
+   \       0x94   0x60A0             STR      R0,[R4, #+8]
+   \       0x96   0x2000             MOVS     R0,#+0
+   \       0x98   0x61E0             STR      R0,[R4, #+28]
+    185            // Add key parameters to command
+    186            sli_add_key_parameters(cmd_ctx, key, status);
+   \       0x9A   0xA901             ADD      R1,SP,#+4
+   \       0x9C   0x0028             MOVS     R0,R5
+   \       0x9E   0x.... 0x....      BL       sli_se_key_to_keyspec
+   \       0xA2   0x4680             MOV      R8,R0
+   \       0xA4   0xF1B8 0x0F00      CMP      R8,#+0
+   \       0xA8   0xD001             BEQ.N    ??sl_se_ecc_verify_12
+   \       0xAA   0x4640             MOV      R0,R8
+   \       0xAC   0xE054             B.N      ??sl_se_ecc_verify_2
+   \                     ??sl_se_ecc_verify_12: (+1)
+   \       0xAE   0x9901             LDR      R1,[SP, #+4]
+   \       0xB0   0x0020             MOVS     R0,R4
+   \       0xB2   0x.... 0x....      BL       SE_addParameter
+    187            // Message size (number of bytes)
+    188            SE_addParameter(se_cmd, message_len);
+   \       0xB6   0x4659             MOV      R1,R11
+   \       0xB8   0x9800             LDR      R0,[SP, #+0]
+   \       0xBA   0x.... 0x....      BL       SE_addParameter
+    189            // Add key metadata block to command
+    190            sli_add_key_metadata(cmd_ctx, key, status);
+   \       0xBE   0xA90B             ADD      R1,SP,#+44
+   \       0xC0   0x0028             MOVS     R0,R5
+   \       0xC2   0x.... 0x....      BL       sli_se_get_auth_buffer
+   \       0xC6   0x4681             MOV      R9,R0
+   \       0xC8   0xF1B9 0x0F00      CMP      R9,#+0
+   \       0xCC   0xD001             BEQ.N    ??sl_se_ecc_verify_13
+   \       0xCE   0x4648             MOV      R0,R9
+   \       0xD0   0xE042             B.N      ??sl_se_ecc_verify_2
+   \                     ??sl_se_ecc_verify_13: (+1)
+   \       0xD2   0xA90B             ADD      R1,SP,#+44
+   \       0xD4   0x0020             MOVS     R0,R4
+   \       0xD6   0x.... 0x....      BL       SE_addDataInput
+    191            // Add key input block to command
+    192            sli_add_key_input(cmd_ctx, key, status);
+   \       0xDA   0xA908             ADD      R1,SP,#+32
+   \       0xDC   0x0028             MOVS     R0,R5
+   \       0xDE   0x.... 0x....      BL       sli_se_get_key_input_output
+   \       0xE2   0x4680             MOV      R8,R0
+   \       0xE4   0xF1B8 0x0F00      CMP      R8,#+0
+   \       0xE8   0xD001             BEQ.N    ??sl_se_ecc_verify_14
+   \       0xEA   0x4640             MOV      R0,R8
+   \       0xEC   0xE034             B.N      ??sl_se_ecc_verify_2
+   \                     ??sl_se_ecc_verify_14: (+1)
+   \       0xEE   0xA908             ADD      R1,SP,#+32
+   \       0xF0   0x0020             MOVS     R0,R4
+   \       0xF2   0x.... 0x....      BL       SE_addDataInput
+    193          
+    194            SE_DataTransfer_t message_buffer = SE_DATATRANSFER_DEFAULT(message,
+    195                                                                       message_len);
+   \       0xF6   0xF10D 0x0C14      ADD      R12,SP,#+20
+   \       0xFA   0x....             LDR.N    R0,??DataTable1_6
+   \       0xFC   0xE890 0x000E      LDM      R0,{R1-R3}
+   \      0x100   0xE88C 0x000E      STM      R12,{R1-R3}
+   \      0x104   0x9605             STR      R6,[SP, #+20]
+   \      0x106   0xF05B 0x5000      ORRS     R0,R11,#0x20000000
+   \      0x10A   0x9007             STR      R0,[SP, #+28]
+    196            SE_DataTransfer_t signature_buffer = SE_DATATRANSFER_DEFAULT(signature,
+    197                                                                         signature_len);
+   \      0x10C   0xF10D 0x0C08      ADD      R12,SP,#+8
+   \      0x110   0x....             LDR.N    R0,??DataTable1_7
+   \      0x112   0xE890 0x000E      LDM      R0,{R1-R3}
+   \      0x116   0xE88C 0x000E      STM      R12,{R1-R3}
+   \      0x11A   0x9702             STR      R7,[SP, #+8]
+   \      0x11C   0x981D             LDR      R0,[SP, #+116]
+   \      0x11E   0xF050 0x5000      ORRS     R0,R0,#0x20000000
+   \      0x122   0x9004             STR      R0,[SP, #+16]
+    198          
+    199            if ((key->type & SL_SE_KEY_TYPE_ALGORITHM_MASK) == SL_SE_KEY_TYPE_ECC_EDDSA) {
+   \      0x124   0x6828             LDR      R0,[R5, #+0]
+   \      0x126   0xF010 0x4070      ANDS     R0,R0,#0xF0000000
+   \      0x12A   0xF1B0 0x4F40      CMP      R0,#+3221225472
+   \      0x12E   0xD108             BNE.N    ??sl_se_ecc_verify_15
+    200              SE_addDataInput(se_cmd, &signature_buffer);
+   \      0x130   0xA902             ADD      R1,SP,#+8
+   \      0x132   0x9800             LDR      R0,[SP, #+0]
+   \      0x134   0x.... 0x....      BL       SE_addDataInput
+    201              SE_addDataInput(se_cmd, &message_buffer);
+   \      0x138   0xA905             ADD      R1,SP,#+20
+   \      0x13A   0x9800             LDR      R0,[SP, #+0]
+   \      0x13C   0x.... 0x....      BL       SE_addDataInput
+   \      0x140   0xE007             B.N      ??sl_se_ecc_verify_16
+    202            } else {
+    203              SE_addDataInput(se_cmd, &message_buffer);
+   \                     ??sl_se_ecc_verify_15: (+1)
+   \      0x142   0xA905             ADD      R1,SP,#+20
+   \      0x144   0x9800             LDR      R0,[SP, #+0]
+   \      0x146   0x.... 0x....      BL       SE_addDataInput
+    204              SE_addDataInput(se_cmd, &signature_buffer);
+   \      0x14A   0xA902             ADD      R1,SP,#+8
+   \      0x14C   0x9800             LDR      R0,[SP, #+0]
+   \      0x14E   0x.... 0x....      BL       SE_addDataInput
+    205            }
+    206          
+    207            return sli_se_execute_and_wait(cmd_ctx);
+   \                     ??sl_se_ecc_verify_16: (+1)
+   \      0x152   0x0020             MOVS     R0,R4
+   \      0x154   0x.... 0x....      BL       sli_se_execute_and_wait
+   \                     ??sl_se_ecc_verify_2: (+1)
+   \      0x158   0xB011             ADD      SP,SP,#+68
+   \      0x15A   0xE8BD 0x8FF0      POP      {R4-R11,PC}
+    208          }
+
+   \                                 In section .rodata, align 4
+   \                     ?_3:
+   \        0x0   0x0000'0000        DC32 0x0, 0x1, 0
+   \              0x0000'0001  
+   \              0x0000'0000
+
+   \                                 In section .rodata, align 4
+   \                     ?_4:
+   \        0x0   0x0000'0000        DC32 0x0, 0x1, 0
+   \              0x0000'0001  
+   \              0x0000'0000
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable1:
+   \        0x0   0x0602'0000        DC32     0x6020000
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable1_1:
+   \        0x0   0x....'....        DC32     ?_0
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable1_2:
+   \        0x0   0x....'....        DC32     ?_1
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable1_3:
+   \        0x0   0x....'....        DC32     ?_2
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable1_4:
+   \        0x0   0x0601'0000        DC32     0x6010000
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable1_5:
+   \        0x0   0x0603'0000        DC32     0x6030000
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable1_6:
+   \        0x0   0x....'....        DC32     ?_3
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable1_7:
+   \        0x0   0x....'....        DC32     ?_4
+    209          
+    210          /** @} (end addtogroup sl_se) */
+    211          
+    212          #endif // defined(SLI_MAILBOX_COMMAND_SUPPORTED)
+
+   Maximum stack usage in bytes:
+
+   .cstack Function
+   ------- --------
+     112   sl_se_ecc_sign
+       112   -> SE_addDataInput
+       112   -> SE_addDataOutput
+       112   -> SE_addParameter
+       112   -> sli_se_execute_and_wait
+       112   -> sli_se_get_auth_buffer
+       112   -> sli_se_get_key_input_output
+       112   -> sli_se_key_to_keyspec
+     104   sl_se_ecc_verify
+       104   -> SE_addDataInput
+       104   -> SE_addParameter
+       104   -> sli_se_execute_and_wait
+       104   -> sli_se_get_auth_buffer
+       104   -> sli_se_get_key_input_output
+       104   -> sli_se_key_to_keyspec
+
+
+   Section sizes:
+
+   Bytes  Function/Label
+   -----  --------------
+       4  ??DataTable1
+       4  ??DataTable1_1
+       4  ??DataTable1_2
+       4  ??DataTable1_3
+       4  ??DataTable1_4
+       4  ??DataTable1_5
+       4  ??DataTable1_6
+       4  ??DataTable1_7
+      12  ?_0
+      12  ?_1
+      12  ?_2
+      12  ?_3
+      12  ?_4
+     352  sl_se_ecc_sign
+     350  sl_se_ecc_verify
+
+ 
+  60 bytes in section .rodata
+ 734 bytes in section .text
+ 
+ 734 bytes of CODE  memory
+  60 bytes of CONST memory
+
+Errors: none
+Warnings: none

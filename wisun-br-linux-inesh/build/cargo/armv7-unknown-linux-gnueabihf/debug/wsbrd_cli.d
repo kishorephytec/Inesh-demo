@@ -1,0 +1,1 @@
+/home/debian/wisun-br-linux-inesh/build/cargo/armv7-unknown-linux-gnueabihf/debug/wsbrd_cli: /home/debian/wisun-br-linux-inesh/tools/wsbrd_cli/wsbrd_cli.rs /home/debian/wisun-br-linux-inesh/tools/wsbrd_cli/wsbrddbusapi.rs

@@ -1,0 +1,470 @@
+###############################################################################
+#
+# IAR ANSI C/C++ Compiler V9.50.2.385/W64 for ARM         27/Nov/2024  12:17:15
+# Copyright 1999-2024 IAR Systems AB.
+#
+#    Cpu mode          =  thumb
+#    Endian            =  little
+#    Source file       =
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\service\sleeptimer\src\sl_sleeptimer_hal_burtc.c
+#    Command line      =
+#        -f
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\ewarm-iar\obj\src_8827520470567122158.dir\sl_sleeptimer_hal_burtc.o.rsp
+#        (C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\service\sleeptimer\src\sl_sleeptimer_hal_burtc.c
+#        -D EFR32FG28B322F1024IM48=1 -D
+#        configNUM_SDK_THREAD_LOCAL_STORAGE_POINTERS=2 -D
+#        SL_COMPONENT_CATALOG_PRESENT=1 -D
+#        MBEDTLS_CONFIG_FILE=<sl_mbedtls_config.h> -D
+#        MBEDTLS_PSA_CRYPTO_CONFIG_FILE=<psa_crypto_config.h> -D
+#        SL_RAIL_LIB_MULTIPROTOCOL_SUPPORT=0 -D
+#        SL_RAIL_UTIL_PA_CONFIG_HEADER=<sl_rail_util_pa_config.h> -D
+#        RTT_USE_ASM=0 -D MBED_CONF_MBED_TRACE_ENABLE=1 -D
+#        MBED_CONF_NANOSTACK_CONFIGURATION=ws_router -D
+#        MBED_TRACE_MAX_LEVEL=TRACE_ACTIVE_LEVEL_ALL -D DEBUG_EFM_USER=1 -D
+#        HAVE_LFN=1 -D HAVE_LFN_PARENT=1 -lC
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\ewarm-iar\lst\src_8827520470567122158.dir
+#        --diag_suppress Pa050 -o
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\ewarm-iar\obj\src_8827520470567122158.dir
+#        --debug --endian=little --cpu=Cortex-M33 --cmse --cmse -e
+#        --fpu=VFPv5_sp --dlib_config "C:\Program Files\IAR Systems\Embedded
+#        Workbench 9.2\arm\inc\c\DLib_Config_Normal.h" -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\service\sleeptimer\src\
+#        -I C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\autogen\ -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\config\ -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\config\rail\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\Device\SiliconLabs\EFR32FG28\Include\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\common\inc\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\CMSIS\Core\Include\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\CMSIS\RTOS2\Include\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\service\device_init\inc\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\emdrv\dmadrv\inc\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\emdrv\common\inc\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\emlib\inc\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\util\third_party\freertos\cmsis\Include\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\util\third_party\freertos\kernel\include\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\util\third_party\freertos\kernel\portable\IAR\ARM_CM33_NTZ\non_secure\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\service\iostream\inc\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\security\sl_component\sl_mbedtls_support\config\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\security\sl_component\sl_mbedtls_support\config\preset\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\security\sl_component\sl_mbedtls_support\inc\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\util\third_party\mbedtls\include\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\util\third_party\mbedtls\library\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\emdrv\nvm3\inc\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\peripheral\inc\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\security\sl_component\sl_psa_driver\inc\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\radio\rail_lib\common\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\radio\rail_lib\protocol\ble\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\radio\rail_lib\protocol\ieee802154\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\radio\rail_lib\protocol\wmbus\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\radio\rail_lib\protocol\zwave\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\radio\rail_lib\chip\efr32\efr32xg2x\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\radio\rail_lib\protocol\sidewalk\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\radio\rail_lib\plugin\pa-conversions\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\radio\rail_lib\plugin\pa-conversions\efr32xg28\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\radio\rail_lib\plugin\rail_util_pti\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\security\sl_component\se_manager\inc\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\security\sl_component\se_manager\src\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\util\third_party\segger\systemview\SEGGER\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\util\silicon_labs\silabs_core\memory_manager\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\common\toolchain\inc\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\service\system\inc\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\app\wisun\component\ns_list\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\app\wisun\component\trace_util\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\app\wisun\component\trace_util\nanostack\nanostack-libservice\mbed-client-libservice\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\service\sleeptimer\inc\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\protocol\wisun\stack\inc\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\protocol\wisun\app\wisun_rcp\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\protocol\wisun\stack\inc\socket\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\protocol\wisun\stack\src\
+#        -Ohz --use_c++_inline) --dependencies=n
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\ewarm-iar\obj\src_8827520470567122158.dir\sl_sleeptimer_hal_burtc.o.iar_deps
+#    Locale            =  C
+#    List file         =
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\ewarm-iar\lst\src_8827520470567122158.dir\sl_sleeptimer_hal_burtc.lst
+#    Object file       =
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\ewarm-iar\obj\src_8827520470567122158.dir\sl_sleeptimer_hal_burtc.o
+#    Runtime model:       
+#      __CPP_Runtime   =  1
+#      __SystemLibrary =  DLib
+#      __dlib_version  =  6
+#
+###############################################################################
+
+C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\service\sleeptimer\src\sl_sleeptimer_hal_burtc.c
+      1          /***************************************************************************//**
+      2           * @file
+      3           * @brief SLEEPTIMER Hardware abstraction implementation for BURTC.
+      4           *******************************************************************************
+      5           * # License
+      6           * <b>Copyright 2020 Silicon Laboratories Inc. www.silabs.com</b>
+      7           *******************************************************************************
+      8           *
+      9           * SPDX-License-Identifier: Zlib
+     10           *
+     11           * The licensor of this software is Silicon Laboratories Inc.
+     12           *
+     13           * This software is provided 'as-is', without any express or implied
+     14           * warranty. In no event will the authors be held liable for any damages
+     15           * arising from the use of this software.
+     16           *
+     17           * Permission is granted to anyone to use this software for any purpose,
+     18           * including commercial applications, and to alter it and redistribute it
+     19           * freely, subject to the following restrictions:
+     20           *
+     21           * 1. The origin of this software must not be misrepresented; you must not
+     22           *    claim that you wrote the original software. If you use this software
+     23           *    in a product, an acknowledgment in the product documentation would be
+     24           *    appreciated but is not required.
+     25           * 2. Altered source versions must be plainly marked as such, and must not be
+     26           *    misrepresented as being the original software.
+     27           * 3. This notice may not be removed or altered from any source distribution.
+     28           *
+     29           ******************************************************************************/
+     30          
+     31          #include "em_device.h"
+     32          #if defined(_SILICON_LABS_32B_SERIES_2)
+     33          
+     34          #include "sl_sleeptimer.h"
+     35          #include "sli_sleeptimer_hal.h"
+     36          #include "em_burtc.h"
+     37          #include "em_core.h"
+     38          #include "em_cmu.h"
+     39          
+     40          #if defined(SL_CATALOG_POWER_MANAGER_PRESENT)
+     41          #include "sl_power_manager.h"
+     42          #endif
+     43          
+     44          #if SL_SLEEPTIMER_PERIPHERAL == SL_SLEEPTIMER_PERIPHERAL_BURTC
+     45          
+     46          #if defined(_SILICON_LABS_32B_SERIES_0)
+     47          #error BURTC implementation of the sleeptimer not available on Series 0 chips
+     48          #endif
+     49          
+     50          // Minimum difference between current count value and what the comparator of the timer can be set to.
+     51          // 1 tick is added to the minimum diff for the algorithm of compensation for the IRQ handler that
+     52          // triggers when CNT == compare_value + 1. For more details refer to sleeptimer_hal_set_compare() function's header.
+     53          #if defined(_SILICON_LABS_32B_SERIES_2_CONFIG_8)
+     54          #define SLEEPTIMER_COMPARE_MIN_DIFF  (5 + 1)
+     55          #else
+     56          #define SLEEPTIMER_COMPARE_MIN_DIFF  (4 + 1)
+     57          #endif
+     58          
+     59          #define SLEEPTIMER_TMR_WIDTH (_BURTC_CNT_MASK)
+     60          
+     61          static uint32_t get_time_diff(uint32_t a, uint32_t b);
+     62          
+     63          /******************************************************************************
+     64           * Convert HAL interrupt flag BURTC-interrupt-enable bitmask
+     65           *****************************************************************************/
+     66          static uint32_t irqien_hal2burtc(uint8_t hal_flag)
+     67          {
+     68            uint32_t burtc_if = 0u;
+     69          
+     70            if (hal_flag & SLEEPTIMER_EVENT_OF) {
+     71              burtc_if |= BURTC_IEN_OF;
+     72            }
+     73          
+     74            if (hal_flag & SLEEPTIMER_EVENT_COMP) {
+     75              burtc_if |= BURTC_IEN_COMP;
+     76            }
+     77          
+     78            return burtc_if;
+     79          }
+     80          
+     81          /******************************************************************************
+     82           * Convert BURTC interrupt flags to HAL events
+     83           *****************************************************************************/
+     84          static uint8_t irqflags_burtc2hal(uint32_t burtc_flag)
+     85          {
+     86            uint8_t hal_if = 0u;
+     87          
+     88            if (burtc_flag & BURTC_IF_OF) {
+     89              hal_if |= SLEEPTIMER_EVENT_OF;
+     90            }
+     91          
+     92            if (burtc_flag & BURTC_IF_COMP) {
+     93              hal_if |= SLEEPTIMER_EVENT_COMP;
+     94            }
+     95          
+     96            return hal_if;
+     97          }
+     98          
+     99          /******************************************************************************
+    100           * Initializes BURTC sleep timer.
+    101           *****************************************************************************/
+    102          void sleeptimer_hal_init_timer()
+    103          {
+    104            BURTC_Init_TypeDef burtc_init = BURTC_INIT_DEFAULT;
+    105          
+    106            CMU_ClockEnable(cmuClock_BURTC, true);
+    107          
+    108            burtc_init.start  = false;
+    109            burtc_init.clkDiv = SL_SLEEPTIMER_FREQ_DIVIDER;
+    110          #if (SL_SLEEPTIMER_DEBUGRUN == 1)
+    111            burtc_init.debugRun = true;
+    112          #endif
+    113          
+    114            BURTC_Init(&burtc_init);
+    115            BURTC_IntDisable(_BURTC_IEN_MASK);
+    116            BURTC_IntClear(_BURTC_IF_MASK);
+    117            BURTC_CounterReset();
+    118          
+    119            BURTC_Start();
+    120            BURTC_SyncWait();
+    121          
+    122            // Setup BURTC interrupt
+    123            NVIC_ClearPendingIRQ(BURTC_IRQn);
+    124            NVIC_EnableIRQ(BURTC_IRQn);
+    125          }
+    126          
+    127          /******************************************************************************
+    128           * Gets BURTC counter.
+    129           *****************************************************************************/
+    130          uint32_t sleeptimer_hal_get_counter(void)
+    131          {
+    132            return BURTC_CounterGet();
+    133          }
+    134          
+    135          /******************************************************************************
+    136           * Gets BURTC compare value
+    137           *****************************************************************************/
+    138          uint32_t sleeptimer_hal_get_compare(void)
+    139          {
+    140            return BURTC_CompareGet(0U);
+    141          }
+    142          
+    143          /******************************************************************************
+    144           * Sets BURTC compare value
+    145           *
+    146           * @note Compare match value is set to the requested value - 1. This is done
+    147           * to compensate for the fact that the BURTC compare match interrupt always
+    148           * triggers at the end of the requested ticks and that the IRQ handler is
+    149           * executed when current tick count == compare_value + 1.
+    150           *****************************************************************************/
+    151          void sleeptimer_hal_set_compare(uint32_t value)
+    152          {
+    153            CORE_DECLARE_IRQ_STATE;
+    154            uint32_t counter;
+    155            uint32_t compare_current;
+    156            uint32_t compare_new = value;
+    157          
+    158            CORE_ENTER_CRITICAL();
+    159            counter = sleeptimer_hal_get_counter();
+    160            compare_current = sleeptimer_hal_get_compare();
+    161          
+    162            if (((BURTC_IntGet() & _BURTC_IF_COMP_MASK) != 0)
+    163                || get_time_diff(compare_current, counter) > SLEEPTIMER_COMPARE_MIN_DIFF
+    164                || compare_current == counter) {
+    165              // Add margin if necessary
+    166              if (get_time_diff(compare_new, counter) < SLEEPTIMER_COMPARE_MIN_DIFF) {
+    167                compare_new = counter + SLEEPTIMER_COMPARE_MIN_DIFF;
+    168              }
+    169          
+    170              // wrap around if necessary
+    171              compare_new %= SLEEPTIMER_TMR_WIDTH;
+    172          
+    173              BURTC_CompareSet(0U, compare_new - 1);
+    174              sleeptimer_hal_enable_int(SLEEPTIMER_EVENT_COMP);
+    175            }
+    176            CORE_EXIT_CRITICAL();
+    177          }
+    178          
+    179          /******************************************************************************
+    180           * Enables BURTC interrupts.
+    181           *****************************************************************************/
+    182          void sleeptimer_hal_enable_int(uint8_t local_flag)
+    183          {
+    184            BURTC_IntEnable(irqien_hal2burtc(local_flag));
+    185          }
+    186          
+    187          /******************************************************************************
+    188           * Disables BURTC interrupts.
+    189           *****************************************************************************/
+    190          void sleeptimer_hal_disable_int(uint8_t local_flag)
+    191          {
+    192            BURTC_IntDisable(irqien_hal2burtc(local_flag));
+    193          }
+    194          
+    195          /*******************************************************************************
+    196           * Hardware Abstraction Layer to set timer interrupts.
+    197           ******************************************************************************/
+    198          void sleeptimer_hal_set_int(uint8_t local_flag)
+    199          {
+    200            BURTC_IntSet(irqien_hal2burtc(local_flag));
+    201          }
+    202          
+    203          /******************************************************************************
+    204           * Gets status of specified interrupt.
+    205           *
+    206           * Note: This function must be called with interrupts disabled.
+    207           *****************************************************************************/
+    208          bool sli_sleeptimer_hal_is_int_status_set(uint8_t local_flag)
+    209          {
+    210            bool int_is_set = false;
+    211            uint32_t irq_flag = BURTC_IntGet();
+    212          
+    213            switch (local_flag) {
+    214              case SLEEPTIMER_EVENT_COMP:
+    215                int_is_set = (irq_flag & BURTC_IF_COMP);
+    216                break;
+    217          
+    218              case SLEEPTIMER_EVENT_OF:
+    219                int_is_set = (irq_flag & BURTC_IF_OF);
+    220                break;
+    221          
+    222              default:
+    223                break;
+    224            }
+    225          
+    226            return int_is_set;
+    227          }
+    228          
+    229          /*******************************************************************************
+    230           * Gets BURTC timer frequency.
+    231           ******************************************************************************/
+    232          uint32_t sleeptimer_hal_get_timer_frequency(void)
+    233          {
+    234            return (CMU_ClockFreqGet(cmuClock_BURTC) >> (CMU_PrescToLog2(SL_SLEEPTIMER_FREQ_DIVIDER - 1)));
+    235          }
+    236          
+    237          /*******************************************************************************
+    238           * BURTC interrupt handler.
+    239           ******************************************************************************/
+    240          void BURTC_IRQHandler(void)
+    241          {
+    242            CORE_DECLARE_IRQ_STATE;
+    243            uint8_t local_flag = 0;
+    244            uint32_t irq_flag;
+    245          
+    246            CORE_ENTER_ATOMIC();
+    247            irq_flag = BURTC_IntGet();
+    248            local_flag = irqflags_burtc2hal(irq_flag);
+    249          
+    250            BURTC_IntClear(irq_flag & (BURTC_IF_OF | BURTC_IF_COMP));
+    251          
+    252            process_timer_irq(local_flag);
+    253          
+    254            CORE_EXIT_ATOMIC();
+    255          }
+    256          
+    257          /*******************************************************************************
+    258           * Computes difference between two times taking into account timer wrap-around.
+    259           *
+    260           * @param a Time.
+    261           * @param b Time to substract from a.
+    262           *
+    263           * @return Time difference.
+    264           ******************************************************************************/
+    265          static uint32_t get_time_diff(uint32_t a, uint32_t b)
+    266          {
+    267            return (a - b);
+    268          }
+    269          
+    270          /*******************************************************************************
+    271           * @brief
+    272           *   Gets the precision (in PPM) of the sleeptimer's clock.
+    273           *
+    274           * @return
+    275           *   Clock accuracy, in PPM.
+    276           *
+    277           ******************************************************************************/
+    278          uint16_t sleeptimer_hal_get_clock_accuracy(void)
+    279          {
+    280            return CMU_LF_ClockPrecisionGet(cmuClock_BURTC);
+    281          }
+    282          
+    283          /*******************************************************************************
+    284           * Hardware Abstraction Layer to get the capture channel value.
+    285           ******************************************************************************/
+    286          uint32_t sleeptimer_hal_get_capture(void)
+    287          {
+    288            // Invalid for BURTC peripheral
+    289            EFM_ASSERT(0);
+    290            return 0;
+    291          }
+    292          
+    293          /*******************************************************************************
+    294           * Hardware Abstraction Layer to reset PRS signal triggered by the associated
+    295           * peripheral.
+    296           ******************************************************************************/
+    297          void sleeptimer_hal_reset_prs_signal(void)
+    298          {
+    299            // Invalid for BURTC peripheral
+    300            EFM_ASSERT(0);
+    301          }
+    302          
+    303          /***************************************************************************//**
+    304           * Set lowest energy mode based on a project's configurations and clock source
+    305           *
+    306           * @note If power_manager_no_deepsleep component is included in a project, the
+    307           *       lowest possible energy mode is EM1, else lowest energy mode is
+    308           *       determined by clock source.
+    309           ******************************************************************************/
+    310          #if defined(SL_CATALOG_POWER_MANAGER_PRESENT)
+    311          void sli_sleeptimer_set_pm_em_requirement(void)
+    312          {
+    313            switch (CMU->EM4GRPACLKCTRL & _CMU_EM4GRPACLKCTRL_CLKSEL_MASK) {
+    314              case CMU_EM4GRPACLKCTRL_CLKSEL_LFRCO:
+    315              case CMU_EM4GRPACLKCTRL_CLKSEL_LFXO:
+    316                sl_power_manager_add_em_requirement(SL_POWER_MANAGER_EM2);
+    317                break;
+    318              default:
+    319                break;
+    320            }
+    321          }
+    322          #endif
+    323          #endif
+    324          
+    325          #endif
+
+
+ 
+ 
+ 0 bytes of memory
+
+Errors: none
+Warnings: none

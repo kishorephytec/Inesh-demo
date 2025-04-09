@@ -1,0 +1,1067 @@
+###############################################################################
+#
+# IAR ANSI C/C++ Compiler V9.50.2.385/W64 for ARM         29/Mar/2025  15:53:33
+# Copyright 1999-2024 IAR Systems AB.
+#
+#    Cpu mode          =  thumb
+#    Endian            =  little
+#    Source file       =
+#        D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\security\sl_component\sl_psa_driver\src\sli_se_driver_key_derivation.c
+#    Command line      =
+#        -f "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\ewarm-iar\obj\src_1701372114642889758.dir\sli_se_driver_key_derivation.o.rsp"
+#        ("D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\security\sl_component\sl_psa_driver\src\sli_se_driver_key_derivation.c"
+#        -D DEBUG_EFM=1 -D EFR32FG28B322F1024IM48=1 -D
+#        configNUM_SDK_THREAD_LOCAL_STORAGE_POINTERS=2 -D
+#        SL_COMPONENT_CATALOG_PRESENT=1 -D
+#        MBEDTLS_CONFIG_FILE=<sl_mbedtls_config.h> -D
+#        MBEDTLS_PSA_CRYPTO_CONFIG_FILE=<psa_crypto_config.h> -D
+#        SL_RAIL_LIB_MULTIPROTOCOL_SUPPORT=0 -D
+#        SL_RAIL_UTIL_PA_CONFIG_HEADER=<sl_rail_util_pa_config.h> -D
+#        RTT_USE_ASM=0 -lC "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\ewarm-iar\lst\src_1701372114642889758.dir"
+#        --diag_suppress Pa050 -o "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\ewarm-iar\obj\src_1701372114642889758.dir" --no_cse
+#        --no_unroll --no_inline --no_code_motion --no_tbaa --no_clustering
+#        --no_scheduling --debug --endian=little --cpu=Cortex-M33 --cmse --cmse
+#        -e --fpu=VFPv5_sp --dlib_config "C:\Program Files\IAR Systems\Embedded
+#        Workbench 9.2\arm\inc\c\DLib_Config_Normal.h" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\security\sl_component\sl_psa_driver\src\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App 1\Wisun_Node_App\config\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App 1\Wisun_Node_App\config\rail\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App 1\Wisun_Node_App\config\wisun\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App 1\Wisun_Node_App\.\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\Device\SiliconLabs\EFR32FG28\Include\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\app\wisun\component\app_project_info\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\common\inc\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\service\cli\inc\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\service\cli\src\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\CMSIS\Core\Include\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\CMSIS\RTOS2\Include\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\service\device_init\inc\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\emdrv\common\inc\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\emlib\inc\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\service\iostream\inc\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\security\sl_component\sl_mbedtls_support\config\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\security\sl_component\sl_mbedtls_support\config\preset\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\security\sl_component\sl_mbedtls_support\inc\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\util\third_party\mbedtls\include\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\util\third_party\mbedtls\library\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\micrium_os\common\source\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\micrium_os\common\include\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\micrium_os\cpu\include\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\micrium_os\ports\source\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\micrium_os\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\micrium_os\kernel\source\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\micrium_os\kernel\include\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\emdrv\nvm3\inc\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\peripheral\inc\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\util\third_party\printf\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\util\third_party\printf\inc\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\security\sl_component\sl_psa_driver\inc\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\radio\rail_lib\common\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\radio\rail_lib\protocol\ble\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\radio\rail_lib\protocol\ieee802154\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\radio\rail_lib\protocol\wmbus\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\radio\rail_lib\protocol\zwave\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\radio\rail_lib\chip\efr32\efr32xg2x\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\radio\rail_lib\protocol\sidewalk\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\radio\rail_lib\plugin\pa-conversions\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\radio\rail_lib\plugin\pa-conversions\efr32xg28\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\radio\rail_lib\plugin\rail_util_pti\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\security\sl_component\se_manager\inc\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\security\sl_component\se_manager\src\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\util\third_party\segger\systemview\SEGGER\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\util\silicon_labs\silabs_core\memory_manager\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\common\toolchain\inc\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\service\system\inc\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\app\wisun\component\app_core\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\app\wisun\component\app_setting\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\app\wisun\component\cli_util\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\app\wisun\component\event_manager\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\app\wisun\component\ns_list\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\app\wisun\component\ping\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\app\wisun\component\trace_util\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\app\wisun\component\trace_util\nanostack\nanostack-libservice\mbed-client-libservice\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\app\wisun\component\udp_client\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\service\sleeptimer\inc\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\protocol\wisun\plugin\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\protocol\wisun\stack\inc\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\protocol\wisun\stack\inc\socket\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App 1\Wisun_Node_App\autogen\\" -On
+#        --use_c++_inline) --dependencies=n "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\ewarm-iar\obj\src_1701372114642889758.dir\sli_se_driver_key_derivation.o.iar_deps"
+#    Locale            =  C
+#    List file         =
+#        D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\ewarm-iar\lst\src_1701372114642889758.dir\sli_se_driver_key_derivation.lst
+#    Object file       =
+#        D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\ewarm-iar\obj\src_1701372114642889758.dir\sli_se_driver_key_derivation.o
+#    Runtime model:       
+#      __CPP_Runtime   =  1
+#      __SystemLibrary =  DLib
+#      __dlib_version  =  6
+#
+###############################################################################
+
+D:\Inesh_wisun\Wisun_Node_App 1\Wisun_Node_App\gecko_sdk_4.4.5\platform\security\sl_component\sl_psa_driver\src\sli_se_driver_key_derivation.c
+      1          /***************************************************************************//**
+      2           * @file
+      3           * @brief Silicon Labs PSA Crypto Driver Key Derivation functions.
+      4           *******************************************************************************
+      5           * # License
+      6           * <b>Copyright 2020 Silicon Laboratories Inc. www.silabs.com</b>
+      7           *******************************************************************************
+      8           *
+      9           * SPDX-License-Identifier: Zlib
+     10           *
+     11           * The licensor of this software is Silicon Laboratories Inc.
+     12           *
+     13           * This software is provided 'as-is', without any express or implied
+     14           * warranty. In no event will the authors be held liable for any damages
+     15           * arising from the use of this software.
+     16           *
+     17           * Permission is granted to anyone to use this software for any purpose,
+     18           * including commercial applications, and to alter it and redistribute it
+     19           * freely, subject to the following restrictions:
+     20           *
+     21           * 1. The origin of this software must not be misrepresented; you must not
+     22           *    claim that you wrote the original software. If you use this software
+     23           *    in a product, an acknowledgment in the product documentation would be
+     24           *    appreciated but is not required.
+     25           * 2. Altered source versions must be plainly marked as such, and must not be
+     26           *    misrepresented as being the original software.
+     27           * 3. This notice may not be removed or altered from any source distribution.
+     28           *
+     29           ******************************************************************************/
+     30          
+     31          #include "sli_psa_driver_features.h"
+     32          
+     33          #if defined(SLI_MBEDTLS_DEVICE_HSE)
+     34          
+     35          #include "sli_psa_driver_common.h"  // sli_psa_zeroize()
+
+   \                                 In section .text, align 2, keep-with-next
+   \   static __vfp uint16_t psa_get_key_type(psa_key_attributes_t const *)
+   \                     psa_get_key_type: (+1)
+   \        0x0   0x8800             LDRH     R0,[R0, #+0]
+   \        0x2   0x4770             BX       LR
+
+   \                                 In section .text, align 2, keep-with-next
+   \   static __vfp size_t psa_get_key_bits(psa_key_attributes_t const *)
+   \                     psa_get_key_bits: (+1)
+   \        0x0   0x8840             LDRH     R0,[R0, #+2]
+   \        0x2   0x4770             BX       LR
+
+   \                                 In section .text, align 2, keep-with-next
+   \   static __vfp int32_t sli_psa_zeroize(void *, size_t)
+   \                     sli_psa_zeroize: (+1)
+   \        0x0   0x0002             MOVS     R2,R0
+   \        0x2   0x2900             CMP      R1,#+0
+   \        0x4   0xD101             BNE.N    ??sli_psa_zeroize_0
+   \        0x6   0x2000             MOVS     R0,#+0
+   \        0x8   0xE009             B.N      ??sli_psa_zeroize_1
+   \                     ??sli_psa_zeroize_0: (+1)
+   \        0xA   0x0013             MOVS     R3,R2
+   \                     ??sli_psa_zeroize_2: (+1)
+   \        0xC   0x0008             MOVS     R0,R1
+   \        0xE   0x1E41             SUBS     R1,R0,#+1
+   \       0x10   0x2800             CMP      R0,#+0
+   \       0x12   0xD003             BEQ.N    ??sli_psa_zeroize_3
+   \       0x14   0x2000             MOVS     R0,#+0
+   \       0x16   0x7018             STRB     R0,[R3, #+0]
+   \       0x18   0x1C5B             ADDS     R3,R3,#+1
+   \       0x1A   0xE7F7             B.N      ??sli_psa_zeroize_2
+   \                     ??sli_psa_zeroize_3: (+1)
+   \       0x1C   0x2000             MOVS     R0,#+0
+   \                     ??sli_psa_zeroize_1: (+1)
+   \       0x1E   0x4770             BX       LR
+     36          #include "sli_se_opaque_functions.h"
+
+   \                                 In section .text, align 2, keep-with-next
+   \   static __vfp void sli_se_key_descriptor_set_plaintext(struct <unnamed>#128 *, uint8_t const *, size_t)
+   \                     sli_se_key_descriptor_set_plaintext: (+1)
+   \        0x0   0x2300             MOVS     R3,#+0
+   \        0x2   0x60C3             STR      R3,[R0, #+12]
+   \        0x4   0x6101             STR      R1,[R0, #+16]
+   \        0x6   0x1CD3             ADDS     R3,R2,#+3
+   \        0x8   0x089B             LSRS     R3,R3,#+2
+   \        0xA   0x009B             LSLS     R3,R3,#+2
+   \        0xC   0x6143             STR      R3,[R0, #+20]
+   \        0xE   0x4770             BX       LR
+     37          #include "sli_se_driver_key_management.h"
+     38          #include "sli_se_driver_key_derivation.h"
+     39          #include "sli_se_version_dependencies.h"
+     40          #include "psa/crypto.h"
+     41          
+     42          #include "sl_se_manager.h"
+     43          #include "sl_se_manager_key_derivation.h"
+     44          #include "sl_se_manager_util.h"
+     45          #include "sli_se_manager_internal.h"
+     46          
+     47          #include <string.h>
+     48          
+     49          // -----------------------------------------------------------------------------
+     50          // Custom SL PSA driver entry points
+     51          
+     52          #if defined(SLI_PSA_DRIVER_FEATURE_HKDF)
+     53          
+     54          psa_status_t sli_se_driver_single_shot_hkdf(
+     55            psa_algorithm_t alg,
+     56            const psa_key_attributes_t *key_in_attributes,
+     57            const uint8_t *key_in_buffer,
+     58            size_t key_in_buffer_size,
+     59            const uint8_t* info,
+     60            size_t info_length,
+     61            const uint8_t* salt,
+     62            size_t salt_length,
+     63            const psa_key_attributes_t *key_out_attributes,
+     64            uint8_t *key_out_buffer,
+     65            size_t key_out_buffer_size)
+     66          {
+     67            // This driver function will not be called unless alg is of HKDF type.
+     68            sl_se_hash_type_t sl_hash_alg = SL_SE_HASH_NONE;
+     69            psa_algorithm_t psa_hash_alg = PSA_ALG_HKDF_GET_HASH(alg);
+     70            switch (psa_hash_alg) {
+     71              case PSA_ALG_SHA_1:
+     72                sl_hash_alg = SL_SE_HASH_SHA1;
+     73                break;
+     74              case PSA_ALG_SHA_224:
+     75                sl_hash_alg = SL_SE_HASH_SHA224;
+     76                break;
+     77              case PSA_ALG_SHA_256:
+     78                sl_hash_alg = SL_SE_HASH_SHA256;
+     79                break;
+     80              case PSA_ALG_SHA_384:
+     81                sl_hash_alg = SL_SE_HASH_SHA384;
+     82                break;
+     83              case PSA_ALG_SHA_512:
+     84                sl_hash_alg = SL_SE_HASH_SHA512;
+     85                break;
+     86              default:
+     87                return PSA_ERROR_NOT_SUPPORTED;
+     88            }
+     89          
+     90            // Create input key descriptor.
+     91            sl_se_key_descriptor_t key_in_desc = { 0 };
+     92            psa_status_t psa_status = sli_se_key_desc_from_input(key_in_attributes,
+     93                                                                 key_in_buffer,
+     94                                                                 key_in_buffer_size,
+     95                                                                 &key_in_desc);
+     96            if (psa_status != PSA_SUCCESS) {
+     97              return psa_status;
+     98            }
+     99          
+    100            size_t key_out_size = PSA_BITS_TO_BYTES(psa_get_key_bits(key_out_attributes));
+    101          
+    102            // Check that we don't request more than 255 times the hash digest size.
+    103            // This limitation comes from RFC-5869.
+    104            if (key_out_size > 255 * PSA_HASH_LENGTH(psa_hash_alg)) {
+    105              return PSA_ERROR_INVALID_ARGUMENT;
+    106            }
+    107          
+    108            // Create output key descriptor.
+    109            sl_se_key_descriptor_t key_out_desc = { 0 };
+    110            psa_status = sli_se_key_desc_from_psa_attributes(
+    111              key_out_attributes,
+    112              key_out_size,
+    113              &key_out_desc);
+    114            if (psa_status != PSA_SUCCESS) {
+    115              return psa_status;
+    116            }
+    117          
+    118            psa_status = sli_se_set_key_desc_output(key_out_attributes,
+    119                                                    key_out_buffer,
+    120                                                    key_out_buffer_size,
+    121                                                    key_out_size,
+    122                                                    &key_out_desc);
+    123            if (psa_status != PSA_SUCCESS) {
+    124              return psa_status;
+    125            }
+    126          
+    127            // Prepare SE command context.
+    128            sl_se_command_context_t cmd_ctx = { 0 };
+    129            sl_status_t sl_status = sl_se_init_command_context(&cmd_ctx);
+    130            if (sl_status != SL_STATUS_OK) {
+    131              return PSA_ERROR_INVALID_ARGUMENT;
+    132            }
+    133          
+    134            // Execute the SE command.
+    135            sl_status = sl_se_derive_key_hkdf(&cmd_ctx,
+    136                                              &key_in_desc,
+    137                                              sl_hash_alg,
+    138                                              salt,
+    139                                              salt_length,
+    140                                              info,
+    141                                              info_length,
+    142                                              &key_out_desc);
+    143            if (sl_status != SL_STATUS_OK) {
+    144              return PSA_ERROR_HARDWARE_FAILURE;
+    145            } else {
+    146              psa_status = PSA_SUCCESS;
+    147            }
+    148          
+    149            if (PSA_KEY_LIFETIME_GET_LOCATION(psa_get_key_lifetime(key_out_attributes))
+    150                == PSA_KEY_LOCATION_SLI_SE_OPAQUE) {
+    151              // Add the key desc to the output array for opaque keys.
+    152              psa_status = store_key_desc_in_context(&key_out_desc,
+    153                                                     key_out_buffer,
+    154                                                     key_out_buffer_size);
+    155            }
+    156          
+    157            return psa_status;
+    158          }
+    159          
+    160          #endif // SLI_PSA_DRIVER_FEATURE_HKDF
+    161          
+    162          #if defined(SLI_PSA_DRIVER_FEATURE_PBKDF2)
+    163          
+    164          psa_status_t sli_se_driver_single_shot_pbkdf2(
+    165            psa_algorithm_t alg,
+    166            const psa_key_attributes_t *key_in_attributes,
+    167            const uint8_t *key_in_buffer,
+    168            size_t key_in_buffer_size,
+    169            const uint8_t* salt,
+    170            size_t salt_length,
+    171            const psa_key_attributes_t *key_out_attributes,
+    172            uint32_t iterations,
+    173            uint8_t *key_out_buffer,
+    174            size_t key_out_buffer_size)
+    175          {
+    176            sl_se_hash_type_t sl_prf = SL_SE_HASH_NONE;
+    177            psa_algorithm_t psa_hash_alg = PSA_ALG_GET_HASH(alg);
+    178          
+    179            switch (psa_hash_alg) {
+    180              case PSA_ALG_SHA_1:
+    181                sl_prf = SL_SE_PRF_HMAC_SHA1;
+    182                break;
+    183              case PSA_ALG_SHA_224:
+    184                sl_prf = SL_SE_PRF_HMAC_SHA224;
+    185                break;
+    186              case PSA_ALG_SHA_256:
+    187                sl_prf = SL_SE_PRF_HMAC_SHA256;
+    188                break;
+    189              case PSA_ALG_SHA_384:
+    190                sl_prf = SL_SE_PRF_HMAC_SHA384;
+    191                break;
+    192              case PSA_ALG_SHA_512:
+    193                sl_prf = SL_SE_PRF_HMAC_SHA512;
+    194                break;
+    195              default:
+    196                if (alg == PSA_ALG_PBKDF2_AES_CMAC_PRF_128) {
+    197                  sl_prf = SL_SE_PRF_AES_CMAC_128;
+    198                  break;
+    199                }
+    200                return PSA_ERROR_NOT_SUPPORTED;
+    201            }
+    202          
+    203            // Create input key descriptor.
+    204            sl_se_key_descriptor_t key_in_desc = { 0 };
+    205            psa_status_t psa_status = sli_se_key_desc_from_input(key_in_attributes,
+    206                                                                 key_in_buffer,
+    207                                                                 key_in_buffer_size,
+    208                                                                 &key_in_desc);
+    209            if (psa_status != PSA_SUCCESS) {
+    210              return psa_status;
+    211            }
+    212          
+    213            size_t key_out_size = PSA_BITS_TO_BYTES(psa_get_key_bits(key_out_attributes));
+    214          
+    215            if ( alg == PSA_ALG_PBKDF2_AES_CMAC_PRF_128 ) {
+    216              #define AES_CMAC_PRF_128_BLOCK_SIZE 128
+    217              // The out key length can atmost be 128 bits long.
+    218              if ( !key_out_size || (key_out_size > PSA_BITS_TO_BYTES(AES_CMAC_PRF_128_BLOCK_SIZE)) ) {
+    219                return PSA_ERROR_INVALID_ARGUMENT;
+    220              }
+    221            } else { // HMAC based
+    222              // In conformance with rfc 8018 (sec 5.2), max output length should not exceed
+    223              // 2 ^ 32 -1 * hlen.
+    224              // Our max key size is limited by type of key bits in attributes, so no further
+    225              // validation is necessary.Our key out size is narrower than the rfc specification.
+    226              if ( !key_out_size ) {
+    227                return PSA_ERROR_INVALID_ARGUMENT;
+    228              }
+    229            }
+    230          
+    231            if ( !iterations ) {
+    232              return PSA_ERROR_INVALID_ARGUMENT;
+    233            }
+    234          
+    235            // Create output key descriptor.
+    236            sl_se_key_descriptor_t key_out_desc = { 0 };
+    237            psa_status = sli_se_key_desc_from_psa_attributes(
+    238              key_out_attributes,
+    239              key_out_size,
+    240              &key_out_desc);
+    241            if (psa_status != PSA_SUCCESS) {
+    242              return psa_status;
+    243            }
+    244          
+    245            psa_status = sli_se_set_key_desc_output(key_out_attributes,
+    246                                                    key_out_buffer,
+    247                                                    key_out_buffer_size,
+    248                                                    key_out_size,
+    249                                                    &key_out_desc);
+    250            if (psa_status != PSA_SUCCESS) {
+    251              return psa_status;
+    252            }
+    253          
+    254            // Prepare SE command context.
+    255            sl_se_command_context_t cmd_ctx = { 0 };
+    256            sl_status_t sl_status = sl_se_init_command_context(&cmd_ctx);
+    257            if (sl_status != SL_STATUS_OK) {
+    258              return PSA_ERROR_INVALID_ARGUMENT;
+    259            }
+    260          
+    261            // Execute the SE command.
+    262            sl_status = sl_se_derive_key_pbkdf2(&cmd_ctx,
+    263                                                &key_in_desc,
+    264                                                sl_prf,
+    265                                                salt,
+    266                                                salt_length,
+    267                                                iterations,
+    268                                                &key_out_desc);
+    269            if (sl_status != SL_STATUS_OK) {
+    270              return PSA_ERROR_HARDWARE_FAILURE;
+    271            } else {
+    272              psa_status = PSA_SUCCESS;
+    273            }
+    274          
+    275            if (PSA_KEY_LIFETIME_GET_LOCATION(psa_get_key_lifetime(key_out_attributes))
+    276                == PSA_KEY_LOCATION_SLI_SE_OPAQUE) {
+    277              // Add the key desc to the output array for opaque keys.
+    278              psa_status = store_key_desc_in_context(&key_out_desc,
+    279                                                     key_out_buffer,
+    280                                                     key_out_buffer_size);
+    281            }
+    282          
+    283            return psa_status;
+    284          }
+    285          
+    286          #endif // SLI_PSA_DRIVER_FEATURE_PBKDF2
+    287          
+    288          // -----------------------------------------------------------------------------
+    289          // Driver entry points
+    290          
+
+   \                                 In section .text, align 2, keep-with-next
+    291          psa_status_t sli_se_driver_key_agreement(psa_algorithm_t alg,
+    292                                                   const psa_key_attributes_t *attributes,
+    293                                                   const uint8_t *key_buffer,
+    294                                                   size_t key_buffer_size,
+    295                                                   const uint8_t *peer_key,
+    296                                                   size_t peer_key_length,
+    297                                                   uint8_t *output,
+    298                                                   size_t output_size,
+    299                                                   size_t *output_length)
+    300          {
+   \                     sli_se_driver_key_agreement: (+1)
+   \        0x0   0xE92D 0x4FFD      PUSH     {R0,R2-R11,LR}
+   \        0x4   0xB0C4             SUB      SP,SP,#+272
+   \        0x6   0x000C             MOVS     R4,R1
+   \        0x8   0x9D54             LDR      R5,[SP, #+336]
+    301            #if defined(SLI_PSA_DRIVER_FEATURE_ECDH)
+    302          
+    303            sl_se_key_descriptor_t priv_desc = { 0 };
+   \        0xA   0xA811             ADD      R0,SP,#+68
+   \        0xC   0x2120             MOVS     R1,#+32
+   \        0xE   0x.... 0x....      BL       __aeabi_memclr4
+    304            sl_se_key_descriptor_t pub_desc = { 0 };
+   \       0x12   0xA801             ADD      R0,SP,#+4
+   \       0x14   0x2120             MOVS     R1,#+32
+   \       0x16   0x.... 0x....      BL       __aeabi_memclr4
+    305            sl_se_key_descriptor_t shared_desc = { 0 };
+   \       0x1A   0xA809             ADD      R0,SP,#+36
+   \       0x1C   0x2120             MOVS     R1,#+32
+   \       0x1E   0x.... 0x....      BL       __aeabi_memclr4
+    306            sl_se_command_context_t cmd_ctx = SL_SE_COMMAND_CONTEXT_INIT;
+   \       0x22   0xA819             ADD      R0,SP,#+100
+   \       0x24   0x2124             MOVS     R1,#+36
+   \       0x26   0x.... 0x....      BL       __aeabi_memclr4
+    307            sl_status_t sl_status = SL_STATUS_FAIL;
+   \       0x2A   0x2001             MOVS     R0,#+1
+   \       0x2C   0x9000             STR      R0,[SP, #+0]
+    308            psa_status_t psa_status = PSA_ERROR_CORRUPTION_DETECTED;
+   \       0x2E   0xF07F 0x0796      MVNS     R7,#+150
+   \       0x32   0x2184             MOVS     R1,#+132
+   \       0x34   0x2200             MOVS     R2,#+0
+   \       0x36   0xA822             ADD      R0,SP,#+136
+   \       0x38   0x.... 0x....      BL       __aeabi_memset
+    309          
+    310            #if defined(SLI_SE_KEY_PADDING_REQUIRED)
+    311            size_t padding_bytes = 0;
+    312            uint8_t tmp_output_buf[SLI_SE_MAX_PADDED_ECP_PUBLIC_KEY_SIZE] = { 0 };
+    313            #else
+    314            uint8_t tmp_output_buf[SLI_SE_MAX_ECP_PUBLIC_KEY_SIZE] = { 0 };
+    315            #endif // SLI_SE_KEY_PADDING_REQUIRED
+    316          
+    317            // Argument check.
+    318            if (attributes == NULL
+    319                || key_buffer == NULL
+    320                || peer_key == NULL
+    321                || output == NULL
+    322                || output_length == NULL) {
+   \       0x3C   0x2C00             CMP      R4,#+0
+   \       0x3E   0xD00A             BEQ.N    ??sli_se_driver_key_agreement_0
+   \       0x40   0x9845             LDR      R0,[SP, #+276]
+   \       0x42   0x2800             CMP      R0,#+0
+   \       0x44   0xD007             BEQ.N    ??sli_se_driver_key_agreement_0
+   \       0x46   0x9850             LDR      R0,[SP, #+320]
+   \       0x48   0x2800             CMP      R0,#+0
+   \       0x4A   0xD004             BEQ.N    ??sli_se_driver_key_agreement_0
+   \       0x4C   0x9852             LDR      R0,[SP, #+328]
+   \       0x4E   0x2800             CMP      R0,#+0
+   \       0x50   0xD001             BEQ.N    ??sli_se_driver_key_agreement_0
+   \       0x52   0x2D00             CMP      R5,#+0
+   \       0x54   0xD102             BNE.N    ??sli_se_driver_key_agreement_1
+    323              return PSA_ERROR_INVALID_ARGUMENT;
+   \                     ??sli_se_driver_key_agreement_0: (+1)
+   \       0x56   0xF07F 0x0086      MVNS     R0,#+134
+   \       0x5A   0xE09C             B.N      ??sli_se_driver_key_agreement_2
+    324            }
+    325          
+    326            psa_key_type_t key_type = psa_get_key_type(attributes);
+   \                     ??sli_se_driver_key_agreement_1: (+1)
+   \       0x5C   0x0020             MOVS     R0,R4
+   \       0x5E   0x.... 0x....      BL       psa_get_key_type
+   \       0x62   0x4683             MOV      R11,R0
+    327            size_t key_bits = psa_get_key_bits(attributes);
+   \       0x64   0x0020             MOVS     R0,R4
+   \       0x66   0x.... 0x....      BL       psa_get_key_bits
+   \       0x6A   0x4681             MOV      R9,R0
+    328          
+    329            // Check that key_buffer contains private key.
+    330            if (PSA_KEY_TYPE_IS_PUBLIC_KEY(key_type)) {
+   \       0x6C   0x4658             MOV      R0,R11
+   \       0x6E   0xB280             UXTH     R0,R0
+   \       0x70   0xF410 0x40E0      ANDS     R0,R0,#0x7000
+   \       0x74   0xF5B0 0x4F80      CMP      R0,#+16384
+   \       0x78   0xD102             BNE.N    ??sli_se_driver_key_agreement_3
+    331              return PSA_ERROR_INVALID_ARGUMENT;
+   \       0x7A   0xF07F 0x0086      MVNS     R0,#+134
+   \       0x7E   0xE08A             B.N      ??sli_se_driver_key_agreement_2
+    332            }
+    333          
+    334            // Only accelerate ECDH.
+    335            if (!PSA_ALG_IS_ECDH(alg)) {
+   \                     ??sli_se_driver_key_agreement_3: (+1)
+   \       0x80   0x9944             LDR      R1,[SP, #+272]
+   \       0x82   0x0C09             LSRS     R1,R1,#+16
+   \       0x84   0x0409             LSLS     R1,R1,#+16
+   \       0x86   0xF051 0x6110      ORRS     R1,R1,#0x9000000
+   \       0x8A   0x....             LDR.N    R0,??DataTable1
+   \       0x8C   0x4281             CMP      R1,R0
+   \       0x8E   0xD002             BEQ.N    ??sli_se_driver_key_agreement_4
+    336              return PSA_ERROR_NOT_SUPPORTED;
+   \       0x90   0xF07F 0x0085      MVNS     R0,#+133
+   \       0x94   0xE07F             B.N      ??sli_se_driver_key_agreement_2
+    337            }
+    338          
+    339            // Check private key buffer.
+    340            if (key_buffer_size < PSA_BITS_TO_BYTES(key_bits)) {
+   \                     ??sli_se_driver_key_agreement_4: (+1)
+   \       0x96   0x9946             LDR      R1,[SP, #+280]
+   \       0x98   0xF119 0x0007      ADDS     R0,R9,#+7
+   \       0x9C   0xEBB1 0x0FD0      CMP      R1,R0, LSR #+3
+   \       0xA0   0xD202             BCS.N    ??sli_se_driver_key_agreement_5
+    341              return PSA_ERROR_INVALID_ARGUMENT;
+   \       0xA2   0xF07F 0x0086      MVNS     R0,#+134
+   \       0xA6   0xE076             B.N      ??sli_se_driver_key_agreement_2
+    342            }
+    343          
+    344            // Check sufficient output buffer size.
+    345            if (output_size < PSA_BITS_TO_BYTES(key_bits)) {
+   \                     ??sli_se_driver_key_agreement_5: (+1)
+   \       0xA8   0x9853             LDR      R0,[SP, #+332]
+   \       0xAA   0xF119 0x0107      ADDS     R1,R9,#+7
+   \       0xAE   0xEBB0 0x0FD1      CMP      R0,R1, LSR #+3
+   \       0xB2   0xD202             BCS.N    ??sli_se_driver_key_agreement_6
+    346              return PSA_ERROR_BUFFER_TOO_SMALL;
+   \       0xB4   0xF07F 0x0089      MVNS     R0,#+137
+   \       0xB8   0xE06D             B.N      ??sli_se_driver_key_agreement_2
+    347            }
+    348          
+    349            #if defined(SLI_SE_VERSION_ECDH_PUBKEY_VALIDATION_UNCERTAIN)
+    350            sl_status = sl_se_init_command_context(&cmd_ctx);
+    351            if (sl_status != SL_STATUS_OK) {
+    352              return PSA_ERROR_HARDWARE_FAILURE;
+    353            }
+    354            uint32_t se_version = 0;
+    355            sl_status = sl_se_get_se_version(&cmd_ctx, &se_version);
+    356            if (sl_status != SL_STATUS_OK) {
+    357              return PSA_ERROR_HARDWARE_FAILURE;
+    358            }
+    359            se_version = SLI_VERSION_REMOVE_DIE_ID(se_version);
+    360          
+    361            // External public key validation is required for older versions of SE FW.
+    362            if (SLI_SE_VERSION_PUBKEY_VALIDATION_REQUIRED(se_version)) {
+    363              #if defined(MBEDTLS_ECP_C)       \
+    364              && defined(MBEDTLS_PSA_CRYPTO_C) \
+    365              && SL_SE_SUPPORT_FW_PRIOR_TO_1_2_2
+    366              psa_status = sli_se_driver_validate_pubkey_with_fallback(key_type,
+    367                                                                       key_bits,
+    368                                                                       peer_key,
+    369                                                                       peer_key_length);
+    370              if (psa_status != PSA_SUCCESS) {
+    371                return psa_status;
+    372              }
+    373              #else
+    374              // No fallback code is compiled in, cannot do public key validation.
+    375              return PSA_ERROR_NOT_SUPPORTED;
+    376              #endif
+    377            }
+    378            #endif   // SLI_SE_VERSION_ECDH_PUBKEY_VALIDATION_UNCERTAIN
+    379          
+    380            switch (key_type) {
+   \                     ??sli_se_driver_key_agreement_6: (+1)
+   \       0xBA   0xF247 0x1A12      MOVW     R10,#+28946
+   \       0xBE   0x4658             MOV      R0,R11
+   \       0xC0   0x4651             MOV      R1,R10
+   \       0xC2   0xB280             UXTH     R0,R0
+   \       0xC4   0x4288             CMP      R0,R1
+   \       0xC6   0xD126             BNE.N    ??sli_se_driver_key_agreement_7
+    381              #if defined(SLI_PSA_DRIVER_FEATURE_SECPR1)
+    382              case PSA_KEY_TYPE_ECC_KEY_PAIR(PSA_ECC_FAMILY_SECP_R1):
+    383                switch (key_bits) {
+   \       0xC8   0xF5B9 0x7F80      CMP      R9,#+256
+   \       0xCC   0xD105             BNE.N    ??sli_se_driver_key_agreement_8
+    384                  #if defined(SLI_PSA_DRIVER_FEATURE_P192R1)
+    385                  case 192:
+    386                    pub_desc.type = SL_SE_KEY_TYPE_ECC_P192;
+    387                    break;
+    388                  #endif     // SLI_PSA_DRIVER_FEATURE_P192R1
+    389          
+    390                  #if defined(SLI_PSA_DRIVER_FEATURE_P224R1)
+    391                  case 224:
+    392                    pub_desc.type = SL_SE_KEY_TYPE_ECC_P224;
+    393                    break;
+    394                  #endif     // SLI_PSA_DRIVER_FEATURE_P224R1
+    395          
+    396                  #if defined(SLI_PSA_DRIVER_FEATURE_P256R1)
+    397                  case 256:
+    398                    pub_desc.type = SL_SE_KEY_TYPE_ECC_P256;
+   \       0xCE   0x....             LDR.N    R0,??DataTable1_1
+   \       0xD0   0x9001             STR      R0,[SP, #+4]
+    399                    break;
+    400                  #endif     // SLI_PSA_DRIVER_FEATURE_P256R1
+    401          
+    402                  #if defined(SLI_PSA_DRIVER_FEATURE_P384R1)
+    403                  case 384:
+    404                    pub_desc.type = SL_SE_KEY_TYPE_ECC_P384;
+    405                    break;
+    406                  #endif     // SLI_PSA_DRIVER_FEATURE_P384R1
+    407          
+    408                  #if defined(SLI_PSA_DRIVER_FEATURE_P521R1)
+    409                  case 521:
+    410                    pub_desc.type = SL_SE_KEY_TYPE_ECC_P521;
+    411                    #if defined(SLI_SE_KEY_PADDING_REQUIRED)
+    412                    padding_bytes = SLI_SE_P521_PADDING_BYTES;
+    413                    #endif
+    414                    break;
+    415                  #endif     // SLI_PSA_DRIVER_FEATURE_P521R1
+    416          
+    417                  default:
+    418                    return PSA_ERROR_NOT_SUPPORTED;
+    419                }
+    420          
+    421                // Set key descriptor attributes.
+    422                // If padding is required, the descriptor will be set later as part of
+    423                // the padding. If padding is not required, set the descriptor here.
+    424                if (pub_desc.type != 0
+    425                    #if defined(SLI_SE_KEY_PADDING_REQUIRED)
+    426                    && padding_bytes == 0
+    427                    #endif
+    428                    ) {
+   \       0xD2   0x9801             LDR      R0,[SP, #+4]
+   \       0xD4   0x2800             CMP      R0,#+0
+   \       0xD6   0xD103             BNE.N    ??sli_se_driver_key_agreement_9
+   \       0xD8   0xE013             B.N      ??sli_se_driver_key_agreement_10
+   \                     ??sli_se_driver_key_agreement_8: (+1)
+   \       0xDA   0xF07F 0x0085      MVNS     R0,#+133
+   \       0xDE   0xE05A             B.N      ??sli_se_driver_key_agreement_2
+    429                  sli_se_key_descriptor_set_plaintext(&pub_desc,
+    430                                                      peer_key + 1,
+    431                                                      peer_key_length - 1);
+   \                     ??sli_se_driver_key_agreement_9: (+1)
+   \       0xE0   0x9A51             LDR      R2,[SP, #+324]
+   \       0xE2   0x1E52             SUBS     R2,R2,#+1
+   \       0xE4   0x9850             LDR      R0,[SP, #+320]
+   \       0xE6   0x1C41             ADDS     R1,R0,#+1
+   \       0xE8   0xA801             ADD      R0,SP,#+4
+   \       0xEA   0x.... 0x....      BL       sli_se_key_descriptor_set_plaintext
+    432                  sli_se_key_descriptor_set_plaintext(&shared_desc,
+    433                                                      tmp_output_buf,
+    434                                                      sizeof(tmp_output_buf));
+   \       0xEE   0x2284             MOVS     R2,#+132
+   \       0xF0   0xA922             ADD      R1,SP,#+136
+   \       0xF2   0xA809             ADD      R0,SP,#+36
+   \       0xF4   0x.... 0x....      BL       sli_se_key_descriptor_set_plaintext
+    435                  shared_desc.size = PSA_BITS_TO_BYTES(key_bits) * 2;
+   \       0xF8   0xF119 0x0007      ADDS     R0,R9,#+7
+   \       0xFC   0x08C0             LSRS     R0,R0,#+3
+   \       0xFE   0x0040             LSLS     R0,R0,#+1
+   \      0x100   0x900A             STR      R0,[SP, #+40]
+    436                }
+    437                break;
+    438              #endif   // SLI_PSA_DRIVER_FEATURE_SECPR1
+    439          
+    440              #if defined(SLI_PSA_DRIVER_FEATURE_MONTGOMERY)
+    441              case PSA_KEY_TYPE_ECC_KEY_PAIR(PSA_ECC_FAMILY_MONTGOMERY):
+    442          
+    443                // Check peer_key is of sufficient size.
+    444                if (peer_key_length < PSA_BITS_TO_BYTES(key_bits)) {
+    445                  return PSA_ERROR_INVALID_ARGUMENT;
+    446                }
+    447          
+    448                switch (key_bits) {
+    449                  #if defined(SLI_PSA_DRIVER_FEATURE_CURVE25519)
+    450                  case 255:
+    451                    pub_desc.type = SL_SE_KEY_TYPE_ECC_X25519;
+    452                    break;
+    453                  #endif     // SLI_PSA_DRIVER_FEATURE_CURVE25519
+    454          
+    455                  #if defined(SLI_PSA_DRIVER_FEATURE_CURVE448)
+    456                  case 448:
+    457                    pub_desc.type = SL_SE_KEY_TYPE_ECC_X448;
+    458                    break;
+    459                  #endif     // SLI_PSA_DRIVER_FEATURE_CURVE448
+    460          
+    461                  default:
+    462                    return PSA_ERROR_NOT_SUPPORTED;
+    463                }
+    464          
+    465                // Set key descriptor attributes.
+    466                sli_se_key_descriptor_set_plaintext(&pub_desc,
+    467                                                    peer_key,
+    468                                                    peer_key_length);
+    469                sli_se_key_descriptor_set_plaintext(&shared_desc,
+    470                                                    output,
+    471                                                    output_size);
+    472                shared_desc.size = PSA_BITS_TO_BYTES(key_bits);
+    473                break;
+    474              #endif   // SLI_PSA_DRIVER_FEATURE_MONTGOMERY
+    475          
+    476              default:
+    477                return PSA_ERROR_NOT_SUPPORTED;
+    478            }
+    479          
+    480            // Generate a key descriptor for private key.
+    481            psa_status = sli_se_key_desc_from_input(attributes,
+    482                                                    key_buffer,
+    483                                                    key_buffer_size,
+    484                                                    &priv_desc);
+   \                     ??sli_se_driver_key_agreement_10: (+1)
+   \      0x102   0xAB11             ADD      R3,SP,#+68
+   \      0x104   0x9A46             LDR      R2,[SP, #+280]
+   \      0x106   0x9945             LDR      R1,[SP, #+276]
+   \      0x108   0x0020             MOVS     R0,R4
+   \      0x10A   0x.... 0x....      BL       sli_se_key_desc_from_input
+   \      0x10E   0x0006             MOVS     R6,R0
+    485            if (psa_status != PSA_SUCCESS) {
+   \      0x110   0x2E00             CMP      R6,#+0
+   \      0x112   0xD103             BNE.N    ??sli_se_driver_key_agreement_11
+   \      0x114   0xE004             B.N      ??sli_se_driver_key_agreement_12
+   \                     ??sli_se_driver_key_agreement_7: (+1)
+   \      0x116   0xF07F 0x0085      MVNS     R0,#+133
+   \      0x11A   0xE03C             B.N      ??sli_se_driver_key_agreement_2
+    486              return psa_status;
+   \                     ??sli_se_driver_key_agreement_11: (+1)
+   \      0x11C   0x0030             MOVS     R0,R6
+   \      0x11E   0xE03A             B.N      ??sli_se_driver_key_agreement_2
+    487            }
+    488          
+    489            // Panther crypto engine requires alignment on word boundries instead of byte
+    490            // boundaries which is used in the PSA crypto API.
+    491            #if defined(SLI_SE_KEY_PADDING_REQUIRED)
+    492            uint8_t tmp_priv_padded_buf[SLI_SE_MAX_PADDED_ECP_PRIVATE_KEY_SIZE] = { 0 };
+    493            uint8_t tmp_pub_padded_buf[SLI_SE_MAX_PADDED_ECP_PUBLIC_KEY_SIZE] = { 0 };
+    494          
+    495            // Should currently only happen for curve P521.
+    496            if (padding_bytes > 0) {
+    497              // Can only do padding on non-wrapped keys.
+    498              if (PSA_KEY_LIFETIME_GET_LOCATION(psa_get_key_lifetime(attributes))
+    499                  == PSA_KEY_LOCATION_LOCAL_STORAGE) {
+    500                // Pad private key.
+    501                sli_se_pad_big_endian(tmp_priv_padded_buf, key_buffer,
+    502                                      PSA_BITS_TO_BYTES(key_bits));
+    503          
+    504                // Re-set key descriptor attributes.
+    505                sli_se_key_descriptor_set_plaintext(&priv_desc,
+    506                                                    tmp_priv_padded_buf,
+    507                                                    sizeof(tmp_priv_padded_buf));
+    508              }
+    509          
+    510              // Pad public key.
+    511              sli_se_pad_curve_point(tmp_pub_padded_buf, peer_key + 1,
+    512                                     PSA_BITS_TO_BYTES(key_bits));
+    513          
+    514              // Set key descriptor attributes.
+    515              sli_se_key_descriptor_set_plaintext(&pub_desc,
+    516                                                  tmp_pub_padded_buf,
+    517                                                  sizeof(tmp_pub_padded_buf));
+    518              sli_se_key_descriptor_set_plaintext(&shared_desc,
+    519                                                  tmp_output_buf,
+    520                                                  sizeof(tmp_output_buf));
+    521              shared_desc.size = (PSA_BITS_TO_BYTES(key_bits) + padding_bytes) * 2;
+    522            }
+    523            #endif   // SLI_SE_KEY_PADDING_REQUIRED
+    524          
+    525            // Set key descriptor attributes that are common to all supported curves.
+    526            pub_desc.flags |= SL_SE_KEY_FLAG_ASYMMETRIC_BUFFER_HAS_PUBLIC_KEY;
+   \                     ??sli_se_driver_key_agreement_12: (+1)
+   \      0x120   0x9803             LDR      R0,[SP, #+12]
+   \      0x122   0xF450 0x5000      ORRS     R0,R0,#0x2000
+   \      0x126   0x9003             STR      R0,[SP, #+12]
+    527            shared_desc.type = SL_SE_KEY_TYPE_SYMMETRIC;
+   \      0x128   0x2000             MOVS     R0,#+0
+   \      0x12A   0x9009             STR      R0,[SP, #+36]
+    528          
+    529            // Re-init SE command context.
+    530            sl_status = sl_se_init_command_context(&cmd_ctx);
+   \      0x12C   0xA819             ADD      R0,SP,#+100
+   \      0x12E   0x.... 0x....      BL       sl_se_init_command_context
+   \      0x132   0x0007             MOVS     R7,R0
+    531            if (sl_status != SL_STATUS_OK) {
+   \      0x134   0x2F00             CMP      R7,#+0
+   \      0x136   0xD002             BEQ.N    ??sli_se_driver_key_agreement_13
+    532              return PSA_ERROR_HARDWARE_FAILURE;
+   \      0x138   0xF07F 0x0092      MVNS     R0,#+146
+   \      0x13C   0xE02B             B.N      ??sli_se_driver_key_agreement_2
+    533            }
+    534          
+    535            // Perform key agreement algorithm (ECDH).
+    536            sl_status = sl_se_ecdh_compute_shared_secret(&cmd_ctx,
+    537                                                         &priv_desc,
+    538                                                         &pub_desc,
+    539                                                         &shared_desc);
+   \                     ??sli_se_driver_key_agreement_13: (+1)
+   \      0x13E   0xAB09             ADD      R3,SP,#+36
+   \      0x140   0xAA01             ADD      R2,SP,#+4
+   \      0x142   0xA911             ADD      R1,SP,#+68
+   \      0x144   0xA819             ADD      R0,SP,#+100
+   \      0x146   0x.... 0x....      BL       sl_se_ecdh_compute_shared_secret
+   \      0x14A   0x4680             MOV      R8,R0
+    540            if (sl_status != SL_STATUS_OK) {
+   \      0x14C   0xF1B8 0x0F00      CMP      R8,#+0
+   \      0x150   0xD008             BEQ.N    ??sli_se_driver_key_agreement_14
+    541              if (sl_status == SL_STATUS_COMMAND_IS_INVALID) {
+   \      0x152   0xF1B8 0x0F48      CMP      R8,#+72
+   \      0x156   0xD102             BNE.N    ??sli_se_driver_key_agreement_15
+    542                // This error will be returned if the key type isn't supported.
+    543                return PSA_ERROR_NOT_SUPPORTED;
+   \      0x158   0xF07F 0x0085      MVNS     R0,#+133
+   \      0x15C   0xE01B             B.N      ??sli_se_driver_key_agreement_2
+    544              } else {
+    545                // If the ECDH operation failed, this is most likely due to the peer key
+    546                // being an invalid elliptic curve point. Other sources for failure should
+    547                // hopefully have been caught during parameter validation.
+    548                return PSA_ERROR_INVALID_ARGUMENT;
+   \                     ??sli_se_driver_key_agreement_15: (+1)
+   \      0x15E   0xF07F 0x0086      MVNS     R0,#+134
+   \      0x162   0xE018             B.N      ??sli_se_driver_key_agreement_2
+    549              }
+    550            }
+    551          
+    552            #if defined(SLI_SE_KEY_PADDING_REQUIRED)
+    553            // Remove padding bytes and clean up temporary key storage.
+    554            if (padding_bytes > 0) {
+    555              sli_se_unpad_curve_point(tmp_output_buf,
+    556                                       tmp_output_buf,
+    557                                       PSA_BITS_TO_BYTES(key_bits));
+    558              sli_psa_zeroize(tmp_priv_padded_buf, sizeof(tmp_priv_padded_buf));
+    559            }
+    560            #endif // SLI_SE_KEY_PADDING_REQUIRED
+    561          
+    562            // Montgomery curve computations do not require the temporary buffer to store the y-coord.
+    563            if (key_type == PSA_KEY_TYPE_ECC_KEY_PAIR(PSA_ECC_FAMILY_SECP_R1)) {
+   \                     ??sli_se_driver_key_agreement_14: (+1)
+   \      0x164   0x4658             MOV      R0,R11
+   \      0x166   0xB280             UXTH     R0,R0
+   \      0x168   0x4550             CMP      R0,R10
+   \      0x16A   0xD10F             BNE.N    ??sli_se_driver_key_agreement_16
+    564              memcpy(output, tmp_output_buf, PSA_BITS_TO_BYTES(key_bits));
+   \      0x16C   0xF119 0x0707      ADDS     R7,R9,#+7
+   \      0x170   0x08FF             LSRS     R7,R7,#+3
+   \      0x172   0xA822             ADD      R0,SP,#+136
+   \      0x174   0x9000             STR      R0,[SP, #+0]
+   \      0x176   0xF8DD 0xA148      LDR      R10,[SP, #+328]
+   \      0x17A   0x003A             MOVS     R2,R7
+   \      0x17C   0x9900             LDR      R1,[SP, #+0]
+   \      0x17E   0x4650             MOV      R0,R10
+   \      0x180   0x.... 0x....      BL       __aeabi_memcpy
+    565              sli_psa_zeroize(tmp_output_buf, sizeof(tmp_output_buf));
+   \      0x184   0x2184             MOVS     R1,#+132
+   \      0x186   0xA822             ADD      R0,SP,#+136
+   \      0x188   0x.... 0x....      BL       sli_psa_zeroize
+    566            }
+    567          
+    568            *output_length = PSA_BITS_TO_BYTES(key_bits);
+   \                     ??sli_se_driver_key_agreement_16: (+1)
+   \      0x18C   0xF119 0x0007      ADDS     R0,R9,#+7
+   \      0x190   0x08C0             LSRS     R0,R0,#+3
+   \      0x192   0x6028             STR      R0,[R5, #+0]
+    569          
+    570            return PSA_SUCCESS;
+   \      0x194   0x2000             MOVS     R0,#+0
+   \                     ??sli_se_driver_key_agreement_2: (+1)
+   \      0x196   0xB047             ADD      SP,SP,#+284
+   \      0x198   0xE8BD 0x8FF0      POP      {R4-R11,PC}
+    571          
+    572            #else // SLI_PSA_DRIVER_FEATURE_ECDH
+    573          
+    574            (void) attributes;
+    575            (void) key_buffer;
+    576            (void) peer_key;
+    577            (void) output;
+    578            (void) output_length;
+    579            (void) alg;
+    580            (void) key_buffer_size;
+    581            (void) peer_key_length;
+    582            (void) output_size;
+    583          
+    584            return PSA_ERROR_NOT_SUPPORTED;
+    585          
+    586            #endif // SLI_PSA_DRIVER_FEATURE_ECDH
+    587          }
+
+   \                                 In section .rodata, align 4
+   \        0x0   0x0000'0000        DC32 0
+   \        0x4                      DS8 28
+
+   \                                 In section .rodata, align 4
+   \        0x0   0x0000'0000        DC32 0
+   \        0x4                      DS8 28
+
+   \                                 In section .rodata, align 4
+   \        0x0   0x0000'0000        DC32 0
+   \        0x4                      DS8 28
+
+   \                                 In section .rodata, align 4
+   \        0x0   0x0000'0000        DC32 0, 0x0, 0x0, 0, 0, 0, 0, 0
+   \              0x0000'0000  
+   \              0x0000'0000  
+   \              0x0000'0000  
+   \              0x0000'0000  
+   \              0x0000'0000  
+   \              0x0000'0000  
+   \              0x0000'0000
+   \       0x20   0x00               DC8 0
+   \       0x21                      DS8 3
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable1:
+   \        0x0   0x0902'0000        DC32     0x9020000
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable1_1:
+   \        0x0   0x8000'0020        DC32     0x80000020
+    588          
+    589          #endif // SLI_MBEDTLS_DEVICE_HSE
+
+   Maximum stack usage in bytes:
+
+   .cstack Function
+   ------- --------
+       0   psa_get_key_bits
+       0   psa_get_key_type
+       0   sli_psa_zeroize
+     320   sli_se_driver_key_agreement
+       320   -> __aeabi_memclr4
+       320   -> __aeabi_memcpy
+       320   -> __aeabi_memset
+       320   -> psa_get_key_bits
+       320   -> psa_get_key_type
+       320   -> sl_se_ecdh_compute_shared_secret
+       320   -> sl_se_init_command_context
+       320   -> sli_psa_zeroize
+       320   -> sli_se_key_desc_from_input
+       320   -> sli_se_key_descriptor_set_plaintext
+       0   sli_se_key_descriptor_set_plaintext
+
+
+   Section sizes:
+
+   Bytes  Function/Label
+   -----  --------------
+       4  ??DataTable1
+       4  ??DataTable1_1
+      32  ?_0
+      32  ?_1
+      32  ?_2
+      36  ?_3
+       4  psa_get_key_bits
+       4  psa_get_key_type
+      32  sli_psa_zeroize
+     412  sli_se_driver_key_agreement
+      16  sli_se_key_descriptor_set_plaintext
+
+ 
+ 132 bytes in section .rodata
+ 476 bytes in section .text
+ 
+ 476 bytes of CODE  memory
+ 132 bytes of CONST memory
+
+Errors: none
+Warnings: none

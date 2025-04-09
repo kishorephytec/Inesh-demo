@@ -1,0 +1,2806 @@
+###############################################################################
+#
+# IAR ANSI C/C++ Compiler V9.50.2.385/W64 for ARM         29/Mar/2025  15:53:48
+# Copyright 1999-2024 IAR Systems AB.
+#
+#    Cpu mode                     =  thumb
+#    Endian                       =  little
+#    Source file                  =
+#        D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\util\third_party\mbedtls\library\pk.c
+#    Command line                 =
+#        -f "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\ewarm-iar\obj\library_17211336700577820660.dir\pk.o.rsp"
+#        ("D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\util\third_party\mbedtls\library\pk.c"
+#        -D DEBUG_EFM=1 -D EFR32FG28B322F1024IM48=1 -D
+#        configNUM_SDK_THREAD_LOCAL_STORAGE_POINTERS=2 -D
+#        SL_COMPONENT_CATALOG_PRESENT=1 -D
+#        MBEDTLS_CONFIG_FILE=<sl_mbedtls_config.h> -D
+#        MBEDTLS_PSA_CRYPTO_CONFIG_FILE=<psa_crypto_config.h> -D
+#        SL_RAIL_LIB_MULTIPROTOCOL_SUPPORT=0 -D
+#        SL_RAIL_UTIL_PA_CONFIG_HEADER=<sl_rail_util_pa_config.h> -D
+#        RTT_USE_ASM=0 -lC "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\ewarm-iar\lst\library_17211336700577820660.dir"
+#        --diag_suppress Pa050 -o "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\ewarm-iar\obj\library_17211336700577820660.dir"
+#        --no_cse --no_unroll --no_inline --no_code_motion --no_tbaa
+#        --no_clustering --no_scheduling --debug --endian=little
+#        --cpu=Cortex-M33 --cmse --cmse -e --fpu=VFPv5_sp --dlib_config
+#        "C:\Program Files\IAR Systems\Embedded Workbench
+#        9.2\arm\inc\c\DLib_Config_Normal.h" -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\util\third_party\mbedtls\library\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App 1\Wisun_Node_App\config\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App 1\Wisun_Node_App\config\rail\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App 1\Wisun_Node_App\config\wisun\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App 1\Wisun_Node_App\.\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\Device\SiliconLabs\EFR32FG28\Include\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\app\wisun\component\app_project_info\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\common\inc\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\service\cli\inc\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\service\cli\src\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\CMSIS\Core\Include\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\CMSIS\RTOS2\Include\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\service\device_init\inc\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\emdrv\common\inc\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\emlib\inc\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\service\iostream\inc\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\security\sl_component\sl_mbedtls_support\config\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\security\sl_component\sl_mbedtls_support\config\preset\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\security\sl_component\sl_mbedtls_support\inc\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\util\third_party\mbedtls\include\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\util\third_party\mbedtls\library\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\micrium_os\common\source\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\micrium_os\common\include\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\micrium_os\cpu\include\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\micrium_os\ports\source\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\micrium_os\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\micrium_os\kernel\source\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\micrium_os\kernel\include\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\emdrv\nvm3\inc\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\peripheral\inc\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\util\third_party\printf\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\util\third_party\printf\inc\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\security\sl_component\sl_psa_driver\inc\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\radio\rail_lib\common\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\radio\rail_lib\protocol\ble\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\radio\rail_lib\protocol\ieee802154\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\radio\rail_lib\protocol\wmbus\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\radio\rail_lib\protocol\zwave\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\radio\rail_lib\chip\efr32\efr32xg2x\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\radio\rail_lib\protocol\sidewalk\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\radio\rail_lib\plugin\pa-conversions\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\radio\rail_lib\plugin\pa-conversions\efr32xg28\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\radio\rail_lib\plugin\rail_util_pti\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\security\sl_component\se_manager\inc\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\security\sl_component\se_manager\src\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\util\third_party\segger\systemview\SEGGER\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\util\silicon_labs\silabs_core\memory_manager\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\common\toolchain\inc\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\service\system\inc\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\app\wisun\component\app_core\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\app\wisun\component\app_setting\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\app\wisun\component\cli_util\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\app\wisun\component\event_manager\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\app\wisun\component\ns_list\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\app\wisun\component\ping\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\app\wisun\component\trace_util\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\app\wisun\component\trace_util\nanostack\nanostack-libservice\mbed-client-libservice\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\app\wisun\component\udp_client\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\service\sleeptimer\inc\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\protocol\wisun\plugin\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\protocol\wisun\stack\inc\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\protocol\wisun\stack\inc\socket\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App 1\Wisun_Node_App\autogen\\" -On
+#        --use_c++_inline) --dependencies=n "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\ewarm-iar\obj\library_17211336700577820660.dir\pk.o.iar_deps"
+#    Locale                       =  C
+#    List file                    =
+#        D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\ewarm-iar\lst\library_17211336700577820660.dir\pk.lst
+#    Object file                  =
+#        D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\ewarm-iar\obj\library_17211336700577820660.dir\pk.o
+#    Runtime model:                  
+#      __CPP_Runtime              =  1
+#      __SystemLibrary            =  DLib
+#      __dlib_full_locale_support =  0
+#      __dlib_version             =  6
+#
+###############################################################################
+
+D:\Inesh_wisun\Wisun_Node_App 1\Wisun_Node_App\gecko_sdk_4.4.5\util\third_party\mbedtls\library\pk.c
+      1          /*
+      2           *  Public Key abstraction layer
+      3           *
+      4           *  Copyright The Mbed TLS Contributors
+      5           *  SPDX-License-Identifier: Apache-2.0
+      6           *
+      7           *  Licensed under the Apache License, Version 2.0 (the "License"); you may
+      8           *  not use this file except in compliance with the License.
+      9           *  You may obtain a copy of the License at
+     10           *
+     11           *  http://www.apache.org/licenses/LICENSE-2.0
+     12           *
+     13           *  Unless required by applicable law or agreed to in writing, software
+     14           *  distributed under the License is distributed on an "AS IS" BASIS, WITHOUT
+     15           *  WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     16           *  See the License for the specific language governing permissions and
+     17           *  limitations under the License.
+     18           */
+     19          
+     20          #include "common.h"
+     21          
+     22          #if defined(MBEDTLS_PK_C)
+     23          #include "mbedtls/pk.h"
+
+   \                                 In section .text, align 2, keep-with-next
+   \   static __vfp unsigned char mbedtls_md_get_size_from_type(mbedtls_md_type_t)
+   \                     mbedtls_md_get_size_from_type: (+1)
+   \        0x0   0xB510             PUSH     {R4,LR}
+   \        0x2   0x0004             MOVS     R4,R0
+   \        0x4   0x0020             MOVS     R0,R4
+   \        0x6   0xB2C0             UXTB     R0,R0
+   \        0x8   0x.... 0x....      BL       mbedtls_md_info_from_type
+   \        0xC   0x.... 0x....      BL       mbedtls_md_get_size
+   \       0x10   0xBD10             POP      {R4,PC}
+
+   \                                 In section .text, align 2, keep-with-next
+   \   static __vfp void psa_extend_key_usage_flags(uint32_t *)
+   \                     psa_extend_key_usage_flags: (+1)
+   \        0x0   0x6801             LDR      R1,[R0, #+0]
+   \        0x2   0x04C9             LSLS     R1,R1,#+19
+   \        0x4   0xD503             BPL.N    ??psa_extend_key_usage_flags_0
+   \        0x6   0x6801             LDR      R1,[R0, #+0]
+   \        0x8   0xF451 0x6180      ORRS     R1,R1,#0x400
+   \        0xC   0x6001             STR      R1,[R0, #+0]
+   \                     ??psa_extend_key_usage_flags_0: (+1)
+   \        0xE   0x6801             LDR      R1,[R0, #+0]
+   \       0x10   0x0489             LSLS     R1,R1,#+18
+   \       0x12   0xD503             BPL.N    ??psa_extend_key_usage_flags_1
+   \       0x14   0x6801             LDR      R1,[R0, #+0]
+   \       0x16   0xF451 0x6100      ORRS     R1,R1,#0x800
+   \       0x1A   0x6001             STR      R1,[R0, #+0]
+   \                     ??psa_extend_key_usage_flags_1: (+1)
+   \       0x1C   0x4770             BX       LR
+
+   \                                 In section .text, align 2, keep-with-next
+   \   static __vfp void psa_set_key_usage_flags(psa_key_attributes_t *, uint32_t)
+   \                     psa_set_key_usage_flags: (+1)
+   \        0x0   0xB513             PUSH     {R0,R1,R4,LR}
+   \        0x2   0x0004             MOVS     R4,R0
+   \        0x4   0xA801             ADD      R0,SP,#+4
+   \        0x6   0x.... 0x....      BL       psa_extend_key_usage_flags
+   \        0xA   0x9801             LDR      R0,[SP, #+4]
+   \        0xC   0x60E0             STR      R0,[R4, #+12]
+   \        0xE   0xBD13             POP      {R0,R1,R4,PC}
+
+   \                                 In section .text, align 2, keep-with-next
+   \   static __vfp uint32_t psa_get_key_usage_flags(psa_key_attributes_t const *)
+   \                     psa_get_key_usage_flags: (+1)
+   \        0x0   0x68C0             LDR      R0,[R0, #+12]
+   \        0x2   0x4770             BX       LR
+
+   \                                 In section .text, align 2, keep-with-next
+   \   static __vfp void psa_set_key_algorithm(psa_key_attributes_t *, uint32_t)
+   \                     psa_set_key_algorithm: (+1)
+   \        0x0   0x6101             STR      R1,[R0, #+16]
+   \        0x2   0x4770             BX       LR
+
+   \                                 In section .text, align 2, keep-with-next
+   \   static __vfp uint32_t psa_get_key_algorithm(psa_key_attributes_t const *)
+   \                     psa_get_key_algorithm: (+1)
+   \        0x0   0x6900             LDR      R0,[R0, #+16]
+   \        0x2   0x4770             BX       LR
+
+   \                                 In section .text, align 2, keep-with-next
+   \   static __vfp void psa_set_key_type(psa_key_attributes_t *, uint16_t)
+   \                     psa_set_key_type: (+1)
+   \        0x0   0xB538             PUSH     {R3-R5,LR}
+   \        0x2   0x0005             MOVS     R5,R0
+   \        0x4   0x000C             MOVS     R4,R1
+   \        0x6   0x69E8             LDR      R0,[R5, #+28]
+   \        0x8   0x2800             CMP      R0,#+0
+   \        0xA   0xD101             BNE.N    ??psa_set_key_type_0
+   \        0xC   0x802C             STRH     R4,[R5, #+0]
+   \        0xE   0xE006             B.N      ??psa_set_key_type_1
+   \                     ??psa_set_key_type_0: (+1)
+   \       0x10   0x2300             MOVS     R3,#+0
+   \       0x12   0x2200             MOVS     R2,#+0
+   \       0x14   0x0021             MOVS     R1,R4
+   \       0x16   0xB289             UXTH     R1,R1
+   \       0x18   0x0028             MOVS     R0,R5
+   \       0x1A   0x.... 0x....      BL       psa_set_key_domain_parameters
+   \                     ??psa_set_key_type_1: (+1)
+   \       0x1E   0xBD31             POP      {R0,R4,R5,PC}
+
+   \                                 In section .text, align 2, keep-with-next
+   \   static __vfp uint16_t psa_get_key_type(psa_key_attributes_t const *)
+   \                     psa_get_key_type: (+1)
+   \        0x0   0x8800             LDRH     R0,[R0, #+0]
+   \        0x2   0x4770             BX       LR
+
+   \                                 In section .text, align 2, keep-with-next
+   \   static __vfp void psa_set_key_bits(psa_key_attributes_t *, size_t)
+   \                     psa_set_key_bits: (+1)
+   \        0x0   0xF64F 0x72F9      MOVW     R2,#+65529
+   \        0x4   0x4291             CMP      R1,R2
+   \        0x6   0xD303             BCC.N    ??psa_set_key_bits_0
+   \        0x8   0xF64F 0x72FF      MOVW     R2,#+65535
+   \        0xC   0x8042             STRH     R2,[R0, #+2]
+   \        0xE   0xE000             B.N      ??psa_set_key_bits_1
+   \                     ??psa_set_key_bits_0: (+1)
+   \       0x10   0x8041             STRH     R1,[R0, #+2]
+   \                     ??psa_set_key_bits_1: (+1)
+   \       0x12   0x4770             BX       LR
+
+   \                                 In section .text, align 2, keep-with-next
+   \   static __vfp void psa_set_key_enrollment_algorithm(psa_key_attributes_t *, uint32_t)
+   \                     psa_set_key_enrollment_algorithm: (+1)
+   \        0x0   0x6141             STR      R1,[R0, #+20]
+   \        0x2   0x4770             BX       LR
+
+   \                                 In section .text, align 2, keep-with-next
+   \   static __vfp uint32_t psa_get_key_enrollment_algorithm(psa_key_attributes_t const *)
+   \                     psa_get_key_enrollment_algorithm: (+1)
+   \        0x0   0x6940             LDR      R0,[R0, #+20]
+   \        0x2   0x4770             BX       LR
+     24          #include "pk_wrap.h"
+     25          #include "pkwrite.h"
+     26          #include "pk_internal.h"
+
+   \                                 In section .text, align 2, keep-with-next
+   \   static __vfp mbedtls_ecp_keypair *mbedtls_pk_ec_rw(mbedtls_pk_context const)
+   \                     mbedtls_pk_ec_rw: (+1)
+   \        0x0   0xB40F             PUSH     {R0-R3}
+   \        0x2   0xB580             PUSH     {R7,LR}
+   \        0x4   0xA802             ADD      R0,SP,#+8
+   \        0x6   0x.... 0x....      BL       mbedtls_pk_get_type
+   \        0xA   0x1E80             SUBS     R0,R0,#+2
+   \        0xC   0x2802             CMP      R0,#+2
+   \        0xE   0xD801             BHI.N    ??mbedtls_pk_ec_rw_0
+   \                     ??mbedtls_pk_ec_rw_1: (+1)
+   \       0x10   0x9803             LDR      R0,[SP, #+12]
+   \       0x12   0xE000             B.N      ??mbedtls_pk_ec_rw_2
+   \                     ??mbedtls_pk_ec_rw_0: (+1)
+   \       0x14   0x2000             MOVS     R0,#+0
+   \                     ??mbedtls_pk_ec_rw_2: (+1)
+   \       0x16   0xBC02             POP      {R1}
+   \       0x18   0xF85D 0xFB14      LDR      PC,[SP], #+20
+     27          
+     28          #include "mbedtls/platform_util.h"
+     29          #include "mbedtls/error.h"
+     30          
+     31          #if defined(MBEDTLS_RSA_C)
+     32          #include "mbedtls/rsa.h"
+     33          #endif
+     34          #if defined(MBEDTLS_PK_HAVE_ECC_KEYS)
+     35          #include "mbedtls/ecp.h"
+     36          #endif
+     37          #if defined(MBEDTLS_ECDSA_C)
+     38          #include "mbedtls/ecdsa.h"
+     39          #endif
+     40          
+     41          #if defined(MBEDTLS_PSA_CRYPTO_C)
+     42          #include "psa_util_internal.h"
+     43          #include "md_psa.h"
+     44          #endif
+     45          
+     46          #include <limits.h>
+     47          #include <stdint.h>
+     48          
+     49          /*
+     50           * Initialise a mbedtls_pk_context
+     51           */
+
+   \                                 In section .text, align 2, keep-with-next
+     52          void mbedtls_pk_init(mbedtls_pk_context *ctx)
+     53          {
+     54              ctx->pk_info = NULL;
+   \                     mbedtls_pk_init: (+1)
+   \        0x0   0x2100             MOVS     R1,#+0
+   \        0x2   0x6001             STR      R1,[R0, #+0]
+     55              ctx->pk_ctx = NULL;
+   \        0x4   0x2100             MOVS     R1,#+0
+   \        0x6   0x6041             STR      R1,[R0, #+4]
+     56          #if defined(MBEDTLS_PSA_CRYPTO_C)
+     57              ctx->priv_id = MBEDTLS_SVC_KEY_ID_INIT;
+   \        0x8   0x2100             MOVS     R1,#+0
+   \        0xA   0x6081             STR      R1,[R0, #+8]
+     58          #endif /* MBEDTLS_PSA_CRYPTO_C */
+     59          #if defined(MBEDTLS_PK_USE_PSA_EC_DATA)
+     60              memset(ctx->pub_raw, 0, sizeof(ctx->pub_raw));
+     61              ctx->pub_raw_len = 0;
+     62              ctx->ec_family = 0;
+     63              ctx->ec_bits = 0;
+     64          #endif /* MBEDTLS_PK_USE_PSA_EC_DATA */
+     65          }
+   \        0xC   0x4770             BX       LR
+     66          
+     67          /*
+     68           * Free (the components of) a mbedtls_pk_context
+     69           */
+
+   \                                 In section .text, align 2, keep-with-next
+     70          void mbedtls_pk_free(mbedtls_pk_context *ctx)
+     71          {
+   \                     mbedtls_pk_free: (+1)
+   \        0x0   0xB510             PUSH     {R4,LR}
+   \        0x2   0x0004             MOVS     R4,R0
+     72              if (ctx == NULL) {
+   \        0x4   0x2C00             CMP      R4,#+0
+   \        0x6   0xD00E             BEQ.N    ??mbedtls_pk_free_0
+     73                  return;
+     74              }
+     75          
+     76              if ((ctx->pk_info != NULL) && (ctx->pk_info->ctx_free_func != NULL)) {
+   \                     ??mbedtls_pk_free_1: (+1)
+   \        0x8   0x6820             LDR      R0,[R4, #+0]
+   \        0xA   0x2800             CMP      R0,#+0
+   \        0xC   0xD007             BEQ.N    ??mbedtls_pk_free_2
+   \        0xE   0x6820             LDR      R0,[R4, #+0]
+   \       0x10   0x6A80             LDR      R0,[R0, #+40]
+   \       0x12   0x2800             CMP      R0,#+0
+   \       0x14   0xD003             BEQ.N    ??mbedtls_pk_free_2
+     77                  ctx->pk_info->ctx_free_func(ctx->pk_ctx);
+   \       0x16   0x6860             LDR      R0,[R4, #+4]
+   \       0x18   0x6821             LDR      R1,[R4, #+0]
+   \       0x1A   0x6A89             LDR      R1,[R1, #+40]
+   \       0x1C   0x4788             BLX      R1
+     78              }
+     79          
+     80          #if defined(MBEDTLS_PK_USE_PSA_EC_DATA)
+     81              /* The ownership of the priv_id key for opaque keys is external of the PK
+     82               * module. It's the user responsibility to clear it after use. */
+     83              if ((ctx->pk_info != NULL) && (ctx->pk_info->type != MBEDTLS_PK_OPAQUE)) {
+     84                  psa_destroy_key(ctx->priv_id);
+     85              }
+     86          #endif /* MBEDTLS_PK_USE_PSA_EC_DATA */
+     87          
+     88              mbedtls_platform_zeroize(ctx, sizeof(mbedtls_pk_context));
+   \                     ??mbedtls_pk_free_2: (+1)
+   \       0x1E   0x21A0             MOVS     R1,#+160
+   \       0x20   0x0020             MOVS     R0,R4
+   \       0x22   0x.... 0x....      BL       mbedtls_platform_zeroize
+     89          }
+   \                     ??mbedtls_pk_free_0: (+1)
+   \       0x26   0xBD10             POP      {R4,PC}
+     90          
+     91          #if defined(MBEDTLS_ECDSA_C) && defined(MBEDTLS_ECP_RESTARTABLE)
+     92          /*
+     93           * Initialize a restart context
+     94           */
+     95          void mbedtls_pk_restart_init(mbedtls_pk_restart_ctx *ctx)
+     96          {
+     97              ctx->pk_info = NULL;
+     98              ctx->rs_ctx = NULL;
+     99          }
+    100          
+    101          /*
+    102           * Free the components of a restart context
+    103           */
+    104          void mbedtls_pk_restart_free(mbedtls_pk_restart_ctx *ctx)
+    105          {
+    106              if (ctx == NULL || ctx->pk_info == NULL ||
+    107                  ctx->pk_info->rs_free_func == NULL) {
+    108                  return;
+    109              }
+    110          
+    111              ctx->pk_info->rs_free_func(ctx->rs_ctx);
+    112          
+    113              ctx->pk_info = NULL;
+    114              ctx->rs_ctx = NULL;
+    115          }
+    116          #endif /* MBEDTLS_ECDSA_C && MBEDTLS_ECP_RESTARTABLE */
+    117          
+    118          /*
+    119           * Get pk_info structure from type
+    120           */
+
+   \                                 In section .text, align 2, keep-with-next
+    121          const mbedtls_pk_info_t *mbedtls_pk_info_from_type(mbedtls_pk_type_t pk_type)
+    122          {
+   \                     mbedtls_pk_info_from_type: (+1)
+   \        0x0   0x0001             MOVS     R1,R0
+    123              switch (pk_type) {
+   \        0x2   0x0008             MOVS     R0,R1
+   \        0x4   0xB2C0             UXTB     R0,R0
+   \        0x6   0x2802             CMP      R0,#+2
+   \        0x8   0xD004             BEQ.N    ??mbedtls_pk_info_from_type_0
+   \        0xA   0xD30C             BCC.N    ??mbedtls_pk_info_from_type_1
+   \        0xC   0x2804             CMP      R0,#+4
+   \        0xE   0xD007             BEQ.N    ??mbedtls_pk_info_from_type_2
+   \       0x10   0xD303             BCC.N    ??mbedtls_pk_info_from_type_3
+   \       0x12   0xE008             B.N      ??mbedtls_pk_info_from_type_1
+    124          #if defined(MBEDTLS_RSA_C)
+    125                  case MBEDTLS_PK_RSA:
+    126                      return &mbedtls_rsa_info;
+    127          #endif /* MBEDTLS_RSA_C */
+    128          #if defined(MBEDTLS_PK_HAVE_ECC_KEYS)
+    129                  case MBEDTLS_PK_ECKEY:
+    130                      return &mbedtls_eckey_info;
+   \                     ??mbedtls_pk_info_from_type_0: (+1)
+   \       0x14   0x.... 0x....      LDR.W    R0,??DataTable14
+   \       0x18   0xE006             B.N      ??mbedtls_pk_info_from_type_4
+    131                  case MBEDTLS_PK_ECKEY_DH:
+    132                      return &mbedtls_eckeydh_info;
+   \                     ??mbedtls_pk_info_from_type_3: (+1)
+   \       0x1A   0x.... 0x....      LDR.W    R0,??DataTable14_1
+   \       0x1E   0xE003             B.N      ??mbedtls_pk_info_from_type_4
+    133          #endif /* MBEDTLS_PK_HAVE_ECC_KEYS */
+    134          #if defined(MBEDTLS_PK_CAN_ECDSA_SOME)
+    135                  case MBEDTLS_PK_ECDSA:
+    136                      return &mbedtls_ecdsa_info;
+   \                     ??mbedtls_pk_info_from_type_2: (+1)
+   \       0x20   0x.... 0x....      LDR.W    R0,??DataTable14_2
+   \       0x24   0xE000             B.N      ??mbedtls_pk_info_from_type_4
+    137          #endif /* MBEDTLS_PK_CAN_ECDSA_SOME */
+    138                  /* MBEDTLS_PK_RSA_ALT omitted on purpose */
+    139                  default:
+    140                      return NULL;
+   \                     ??mbedtls_pk_info_from_type_1: (+1)
+   \       0x26   0x2000             MOVS     R0,#+0
+   \                     ??mbedtls_pk_info_from_type_4: (+1)
+   \       0x28   0x4770             BX       LR
+    141              }
+    142          }
+    143          
+    144          /*
+    145           * Initialise context
+    146           */
+
+   \                                 In section .text, align 2, keep-with-next
+    147          int mbedtls_pk_setup(mbedtls_pk_context *ctx, const mbedtls_pk_info_t *info)
+    148          {
+   \                     mbedtls_pk_setup: (+1)
+   \        0x0   0xB538             PUSH     {R3-R5,LR}
+   \        0x2   0x0005             MOVS     R5,R0
+   \        0x4   0x000C             MOVS     R4,R1
+    149              if (info == NULL || ctx->pk_info != NULL) {
+   \        0x6   0x2C00             CMP      R4,#+0
+   \        0x8   0xD002             BEQ.N    ??mbedtls_pk_setup_0
+   \        0xA   0x6828             LDR      R0,[R5, #+0]
+   \        0xC   0x2800             CMP      R0,#+0
+   \        0xE   0xD002             BEQ.N    ??mbedtls_pk_setup_1
+    150                  return MBEDTLS_ERR_PK_BAD_INPUT_DATA;
+   \                     ??mbedtls_pk_setup_0: (+1)
+   \       0x10   0x.... 0x....      LDR.W    R0,??DataTable14_3
+   \       0x14   0xE00C             B.N      ??mbedtls_pk_setup_2
+    151              }
+    152          
+    153              if ((info->ctx_alloc_func != NULL) &&
+    154                  ((ctx->pk_ctx = info->ctx_alloc_func()) == NULL)) {
+   \                     ??mbedtls_pk_setup_1: (+1)
+   \       0x16   0x6A60             LDR      R0,[R4, #+36]
+   \       0x18   0x2800             CMP      R0,#+0
+   \       0x1A   0xD007             BEQ.N    ??mbedtls_pk_setup_3
+   \       0x1C   0x6A60             LDR      R0,[R4, #+36]
+   \       0x1E   0x4780             BLX      R0
+   \       0x20   0x6068             STR      R0,[R5, #+4]
+   \       0x22   0x2800             CMP      R0,#+0
+   \       0x24   0xD102             BNE.N    ??mbedtls_pk_setup_3
+    155                  return MBEDTLS_ERR_PK_ALLOC_FAILED;
+   \       0x26   0x.... 0x....      LDR.W    R0,??DataTable14_4
+   \       0x2A   0xE001             B.N      ??mbedtls_pk_setup_2
+    156              }
+    157          
+    158              ctx->pk_info = info;
+   \                     ??mbedtls_pk_setup_3: (+1)
+   \       0x2C   0x602C             STR      R4,[R5, #+0]
+    159          
+    160              return 0;
+   \       0x2E   0x2000             MOVS     R0,#+0
+   \                     ??mbedtls_pk_setup_2: (+1)
+   \       0x30   0xBD32             POP      {R1,R4,R5,PC}
+    161          }
+    162          
+    163          #if defined(MBEDTLS_USE_PSA_CRYPTO)
+    164          /*
+    165           * Initialise a PSA-wrapping context
+    166           */
+
+   \                                 In section .text, align 2, keep-with-next
+    167          int mbedtls_pk_setup_opaque(mbedtls_pk_context *ctx,
+    168                                      const mbedtls_svc_key_id_t key)
+    169          {
+   \                     mbedtls_pk_setup_opaque: (+1)
+   \        0x0   0xB5F0             PUSH     {R4-R7,LR}
+   \        0x2   0xB089             SUB      SP,SP,#+36
+   \        0x4   0x0004             MOVS     R4,R0
+   \        0x6   0x000D             MOVS     R5,R1
+    170              const mbedtls_pk_info_t *info = NULL;
+   \        0x8   0x2600             MOVS     R6,#+0
+    171              psa_key_attributes_t attributes = PSA_KEY_ATTRIBUTES_INIT;
+   \        0xA   0x4668             MOV      R0,SP
+   \        0xC   0x2124             MOVS     R1,#+36
+   \        0xE   0x.... 0x....      BL       __aeabi_memclr4
+    172              psa_key_type_t type;
+    173          
+    174              if (ctx == NULL || ctx->pk_info != NULL) {
+   \       0x12   0x2C00             CMP      R4,#+0
+   \       0x14   0xD002             BEQ.N    ??mbedtls_pk_setup_opaque_0
+   \       0x16   0x6820             LDR      R0,[R4, #+0]
+   \       0x18   0x2800             CMP      R0,#+0
+   \       0x1A   0xD002             BEQ.N    ??mbedtls_pk_setup_opaque_1
+    175                  return MBEDTLS_ERR_PK_BAD_INPUT_DATA;
+   \                     ??mbedtls_pk_setup_opaque_0: (+1)
+   \       0x1C   0x.... 0x....      LDR.W    R0,??DataTable14_3
+   \       0x20   0xE028             B.N      ??mbedtls_pk_setup_opaque_2
+    176              }
+    177          
+    178              if (PSA_SUCCESS != psa_get_key_attributes(key, &attributes)) {
+   \                     ??mbedtls_pk_setup_opaque_1: (+1)
+   \       0x22   0x4669             MOV      R1,SP
+   \       0x24   0x0028             MOVS     R0,R5
+   \       0x26   0x.... 0x....      BL       psa_get_key_attributes
+   \       0x2A   0x2800             CMP      R0,#+0
+   \       0x2C   0xD002             BEQ.N    ??mbedtls_pk_setup_opaque_3
+    179                  return MBEDTLS_ERR_PK_BAD_INPUT_DATA;
+   \       0x2E   0x.... 0x....      LDR.W    R0,??DataTable14_3
+   \       0x32   0xE01F             B.N      ??mbedtls_pk_setup_opaque_2
+    180              }
+    181              type = psa_get_key_type(&attributes);
+   \                     ??mbedtls_pk_setup_opaque_3: (+1)
+   \       0x34   0x4668             MOV      R0,SP
+   \       0x36   0x.... 0x....      BL       psa_get_key_type
+   \       0x3A   0x0007             MOVS     R7,R0
+    182              psa_reset_key_attributes(&attributes);
+   \       0x3C   0x4668             MOV      R0,SP
+   \       0x3E   0x.... 0x....      BL       psa_reset_key_attributes
+    183          
+    184          #if defined(MBEDTLS_PK_HAVE_ECC_KEYS)
+    185              if (PSA_KEY_TYPE_IS_ECC_KEY_PAIR(type)) {
+   \       0x42   0x0038             MOVS     R0,R7
+   \       0x44   0xB280             UXTH     R0,R0
+   \       0x46   0xF030 0x00FF      BICS     R0,R0,#0xFF
+   \       0x4A   0xF5B0 0x4FE2      CMP      R0,#+28928
+   \       0x4E   0xD102             BNE.N    ??mbedtls_pk_setup_opaque_4
+    186                  info = &mbedtls_ecdsa_opaque_info;
+   \       0x50   0x.... 0x....      LDR.W    R1,??DataTable14_5
+   \       0x54   0xE00B             B.N      ??mbedtls_pk_setup_opaque_5
+    187              } else
+    188          #endif /* MBEDTLS_PK_HAVE_ECC_KEYS */
+    189              if (type == PSA_KEY_TYPE_RSA_KEY_PAIR) {
+   \                     ??mbedtls_pk_setup_opaque_4: (+1)
+   \       0x56   0x0039             MOVS     R1,R7
+   \       0x58   0xF247 0x0001      MOVW     R0,#+28673
+   \       0x5C   0xB289             UXTH     R1,R1
+   \       0x5E   0x4281             CMP      R1,R0
+   \       0x60   0xD102             BNE.N    ??mbedtls_pk_setup_opaque_6
+    190                  info = &mbedtls_rsa_opaque_info;
+   \       0x62   0x.... 0x....      LDR.W    R1,??DataTable14_6
+   \       0x66   0xE002             B.N      ??mbedtls_pk_setup_opaque_5
+    191              } else {
+    192                  return MBEDTLS_ERR_PK_FEATURE_UNAVAILABLE;
+   \                     ??mbedtls_pk_setup_opaque_6: (+1)
+   \       0x68   0x.... 0x....      LDR.W    R0,??DataTable14_7
+   \       0x6C   0xE002             B.N      ??mbedtls_pk_setup_opaque_2
+    193              }
+    194          
+    195              ctx->pk_info = info;
+   \                     ??mbedtls_pk_setup_opaque_5: (+1)
+   \       0x6E   0x6021             STR      R1,[R4, #+0]
+    196              ctx->priv_id = key;
+   \       0x70   0x60A5             STR      R5,[R4, #+8]
+    197          
+    198              return 0;
+   \       0x72   0x2000             MOVS     R0,#+0
+   \                     ??mbedtls_pk_setup_opaque_2: (+1)
+   \       0x74   0xB009             ADD      SP,SP,#+36
+   \       0x76   0xBDF0             POP      {R4-R7,PC}
+    199          }
+
+   \                                 In section .rodata, align 4
+   \        0x0   0x0000 0x0000      DC16 0, 0
+   \        0x4   0x0000'0000        DC32 0, 0, 0, 0, 0
+   \              0x0000'0000  
+   \              0x0000'0000  
+   \              0x0000'0000  
+   \              0x0000'0000
+   \       0x18   0x0000             DC16 0
+   \       0x1A                      DS8 2
+   \       0x1C   0x0000'0000        DC32 0x0, 0
+   \              0x0000'0000
+    200          #endif /* MBEDTLS_USE_PSA_CRYPTO */
+    201          
+    202          #if defined(MBEDTLS_PK_RSA_ALT_SUPPORT)
+    203          /*
+    204           * Initialize an RSA-alt context
+    205           */
+    206          int mbedtls_pk_setup_rsa_alt(mbedtls_pk_context *ctx, void *key,
+    207                                       mbedtls_pk_rsa_alt_decrypt_func decrypt_func,
+    208                                       mbedtls_pk_rsa_alt_sign_func sign_func,
+    209                                       mbedtls_pk_rsa_alt_key_len_func key_len_func)
+    210          {
+    211              mbedtls_rsa_alt_context *rsa_alt;
+    212              const mbedtls_pk_info_t *info = &mbedtls_rsa_alt_info;
+    213          
+    214              if (ctx->pk_info != NULL) {
+    215                  return MBEDTLS_ERR_PK_BAD_INPUT_DATA;
+    216              }
+    217          
+    218              if ((ctx->pk_ctx = info->ctx_alloc_func()) == NULL) {
+    219                  return MBEDTLS_ERR_PK_ALLOC_FAILED;
+    220              }
+    221          
+    222              ctx->pk_info = info;
+    223          
+    224              rsa_alt = (mbedtls_rsa_alt_context *) ctx->pk_ctx;
+    225          
+    226              rsa_alt->key = key;
+    227              rsa_alt->decrypt_func = decrypt_func;
+    228              rsa_alt->sign_func = sign_func;
+    229              rsa_alt->key_len_func = key_len_func;
+    230          
+    231              return 0;
+    232          }
+    233          #endif /* MBEDTLS_PK_RSA_ALT_SUPPORT */
+    234          
+    235          /*
+    236           * Tell if a PK can do the operations of the given type
+    237           */
+
+   \                                 In section .text, align 2, keep-with-next
+    238          int mbedtls_pk_can_do(const mbedtls_pk_context *ctx, mbedtls_pk_type_t type)
+    239          {
+   \                     mbedtls_pk_can_do: (+1)
+   \        0x0   0xB538             PUSH     {R3-R5,LR}
+   \        0x2   0x0004             MOVS     R4,R0
+   \        0x4   0x000D             MOVS     R5,R1
+    240              /* A context with null pk_info is not set up yet and can't do anything.
+    241               * For backward compatibility, also accept NULL instead of a context
+    242               * pointer. */
+    243              if (ctx == NULL || ctx->pk_info == NULL) {
+   \        0x6   0x2C00             CMP      R4,#+0
+   \        0x8   0xD002             BEQ.N    ??mbedtls_pk_can_do_0
+   \        0xA   0x6820             LDR      R0,[R4, #+0]
+   \        0xC   0x2800             CMP      R0,#+0
+   \        0xE   0xD101             BNE.N    ??mbedtls_pk_can_do_1
+    244                  return 0;
+   \                     ??mbedtls_pk_can_do_0: (+1)
+   \       0x10   0x2000             MOVS     R0,#+0
+   \       0x12   0xE004             B.N      ??mbedtls_pk_can_do_2
+    245              }
+    246          
+    247              return ctx->pk_info->can_do(type);
+   \                     ??mbedtls_pk_can_do_1: (+1)
+   \       0x14   0x0028             MOVS     R0,R5
+   \       0x16   0xB2C0             UXTB     R0,R0
+   \       0x18   0x6821             LDR      R1,[R4, #+0]
+   \       0x1A   0x68C9             LDR      R1,[R1, #+12]
+   \       0x1C   0x4788             BLX      R1
+   \                     ??mbedtls_pk_can_do_2: (+1)
+   \       0x1E   0xBD32             POP      {R1,R4,R5,PC}
+    248          }
+    249          
+    250          #if defined(MBEDTLS_USE_PSA_CRYPTO)
+    251          /*
+    252           * Tell if a PK can do the operations of the given PSA algorithm
+    253           */
+
+   \                                 In section .text, align 2, keep-with-next
+    254          int mbedtls_pk_can_do_ext(const mbedtls_pk_context *ctx, psa_algorithm_t alg,
+    255                                    psa_key_usage_t usage)
+    256          {
+   \                     mbedtls_pk_can_do_ext: (+1)
+   \        0x0   0xE92D 0x4FF0      PUSH     {R4-R11,LR}
+   \        0x4   0xB089             SUB      SP,SP,#+36
+   \        0x6   0x0004             MOVS     R4,R0
+   \        0x8   0x000F             MOVS     R7,R1
+   \        0xA   0x0015             MOVS     R5,R2
+    257              psa_key_usage_t key_usage;
+    258          
+    259              /* A context with null pk_info is not set up yet and can't do anything.
+    260               * For backward compatibility, also accept NULL instead of a context
+    261               * pointer. */
+    262              if (ctx == NULL || ctx->pk_info == NULL) {
+   \        0xC   0x2C00             CMP      R4,#+0
+   \        0xE   0xD002             BEQ.N    ??mbedtls_pk_can_do_ext_0
+   \       0x10   0x6820             LDR      R0,[R4, #+0]
+   \       0x12   0x2800             CMP      R0,#+0
+   \       0x14   0xD101             BNE.N    ??mbedtls_pk_can_do_ext_1
+    263                  return 0;
+   \                     ??mbedtls_pk_can_do_ext_0: (+1)
+   \       0x16   0x2000             MOVS     R0,#+0
+   \       0x18   0xE1E7             B.N      ??mbedtls_pk_can_do_ext_2
+    264              }
+    265          
+    266              /* Filter out non allowed algorithms */
+    267              if (PSA_ALG_IS_ECDSA(alg) == 0 &&
+    268                  PSA_ALG_IS_RSA_PKCS1V15_SIGN(alg) == 0 &&
+    269                  PSA_ALG_IS_RSA_PSS(alg) == 0 &&
+    270                  alg != PSA_ALG_RSA_PKCS1V15_CRYPT &&
+    271                  PSA_ALG_IS_ECDH(alg) == 0) {
+   \                     ??mbedtls_pk_can_do_ext_1: (+1)
+   \       0x1A   0x0A78             LSRS     R0,R7,#+9
+   \       0x1C   0x0240             LSLS     R0,R0,#+9
+   \       0x1E   0xF1B0 0x2F06      CMP      R0,#+100664832
+   \       0x22   0xD025             BEQ.N    ??mbedtls_pk_can_do_ext_3
+   \       0x24   0x0A39             LSRS     R1,R7,#+8
+   \       0x26   0x0209             LSLS     R1,R1,#+8
+   \       0x28   0x.... 0x....      LDR.W    R0,??DataTable14_8
+   \       0x2C   0x4281             CMP      R1,R0
+   \       0x2E   0xD01F             BEQ.N    ??mbedtls_pk_can_do_ext_3
+   \       0x30   0x0A39             LSRS     R1,R7,#+8
+   \       0x32   0x0209             LSLS     R1,R1,#+8
+   \       0x34   0x.... 0x....      LDR.W    R0,??DataTable14_9
+   \       0x38   0x4281             CMP      R1,R0
+   \       0x3A   0xD005             BEQ.N    ??mbedtls_pk_can_do_ext_4
+   \       0x3C   0x0A39             LSRS     R1,R7,#+8
+   \       0x3E   0x0209             LSLS     R1,R1,#+8
+   \       0x40   0x.... 0x....      LDR.W    R0,??DataTable14_10
+   \       0x44   0x4281             CMP      R1,R0
+   \       0x46   0xD101             BNE.N    ??mbedtls_pk_can_do_ext_5
+   \                     ??mbedtls_pk_can_do_ext_4: (+1)
+   \       0x48   0x2001             MOVS     R0,#+1
+   \       0x4A   0xE000             B.N      ??mbedtls_pk_can_do_ext_6
+   \                     ??mbedtls_pk_can_do_ext_5: (+1)
+   \       0x4C   0x2000             MOVS     R0,#+0
+   \                     ??mbedtls_pk_can_do_ext_6: (+1)
+   \       0x4E   0xB2C0             UXTB     R0,R0
+   \       0x50   0x2800             CMP      R0,#+0
+   \       0x52   0xD10D             BNE.N    ??mbedtls_pk_can_do_ext_3
+   \       0x54   0x.... 0x....      LDR.W    R0,??DataTable14_11
+   \       0x58   0x4287             CMP      R7,R0
+   \       0x5A   0xD009             BEQ.N    ??mbedtls_pk_can_do_ext_3
+   \       0x5C   0x0C39             LSRS     R1,R7,#+16
+   \       0x5E   0x0409             LSLS     R1,R1,#+16
+   \       0x60   0xF051 0x6110      ORRS     R1,R1,#0x9000000
+   \       0x64   0x.... 0x....      LDR.W    R0,??DataTable14_12
+   \       0x68   0x4281             CMP      R1,R0
+   \       0x6A   0xD001             BEQ.N    ??mbedtls_pk_can_do_ext_3
+    272                  return 0;
+   \       0x6C   0x2000             MOVS     R0,#+0
+   \       0x6E   0xE1BC             B.N      ??mbedtls_pk_can_do_ext_2
+    273              }
+    274          
+    275              /* Filter out non allowed usage flags */
+    276              if (usage == 0 ||
+    277                  (usage & ~(PSA_KEY_USAGE_SIGN_HASH |
+    278                             PSA_KEY_USAGE_DECRYPT |
+    279                             PSA_KEY_USAGE_DERIVE)) != 0) {
+   \                     ??mbedtls_pk_can_do_ext_3: (+1)
+   \       0x70   0x2D00             CMP      R5,#+0
+   \       0x72   0xD003             BEQ.N    ??mbedtls_pk_can_do_ext_7
+   \       0x74   0xF435 0x40A4      BICS     R0,R5,#0x5200
+   \       0x78   0x2800             CMP      R0,#+0
+   \       0x7A   0xD001             BEQ.N    ??mbedtls_pk_can_do_ext_8
+    280                  return 0;
+   \                     ??mbedtls_pk_can_do_ext_7: (+1)
+   \       0x7C   0x2000             MOVS     R0,#+0
+   \       0x7E   0xE1B4             B.N      ??mbedtls_pk_can_do_ext_2
+    281              }
+    282          
+    283              /* Wildcard hash is not allowed */
+    284              if (PSA_ALG_IS_SIGN_HASH(alg) &&
+    285                  PSA_ALG_SIGN_GET_HASH(alg) == PSA_ALG_ANY_HASH) {
+   \                     ??mbedtls_pk_can_do_ext_8: (+1)
+   \       0x80   0x.... 0x....      LDR.W    R8,??DataTable14_9
+   \       0x84   0x0A38             LSRS     R0,R7,#+8
+   \       0x86   0x0200             LSLS     R0,R0,#+8
+   \       0x88   0x4540             CMP      R0,R8
+   \       0x8A   0xD01C             BEQ.N    ??mbedtls_pk_can_do_ext_9
+   \       0x8C   0x0A39             LSRS     R1,R7,#+8
+   \       0x8E   0x0209             LSLS     R1,R1,#+8
+   \       0x90   0x.... 0x....      LDR.W    R0,??DataTable14_10
+   \       0x94   0x4281             CMP      R1,R0
+   \       0x96   0xD016             BEQ.N    ??mbedtls_pk_can_do_ext_9
+   \       0x98   0x0A39             LSRS     R1,R7,#+8
+   \       0x9A   0x0209             LSLS     R1,R1,#+8
+   \       0x9C   0x.... 0x....      LDR.W    R0,??DataTable14_8
+   \       0xA0   0x4281             CMP      R1,R0
+   \       0xA2   0xD010             BEQ.N    ??mbedtls_pk_can_do_ext_9
+   \       0xA4   0x0A78             LSRS     R0,R7,#+9
+   \       0xA6   0x0240             LSLS     R0,R0,#+9
+   \       0xA8   0xF1B0 0x2F06      CMP      R0,#+100664832
+   \       0xAC   0xD00B             BEQ.N    ??mbedtls_pk_can_do_ext_9
+   \       0xAE   0x0A39             LSRS     R1,R7,#+8
+   \       0xB0   0x0209             LSLS     R1,R1,#+8
+   \       0xB2   0x.... 0x....      LDR.W    R0,??DataTable14_13
+   \       0xB6   0x4281             CMP      R1,R0
+   \       0xB8   0xD005             BEQ.N    ??mbedtls_pk_can_do_ext_9
+   \       0xBA   0x0A79             LSRS     R1,R7,#+9
+   \       0xBC   0x0249             LSLS     R1,R1,#+9
+   \       0xBE   0x.... 0x....      LDR.W    R0,??DataTable14_14
+   \       0xC2   0x4281             CMP      R1,R0
+   \       0xC4   0xD12E             BNE.N    ??mbedtls_pk_can_do_ext_10
+   \                     ??mbedtls_pk_can_do_ext_9: (+1)
+   \       0xC6   0x0A38             LSRS     R0,R7,#+8
+   \       0xC8   0x0200             LSLS     R0,R0,#+8
+   \       0xCA   0x4540             CMP      R0,R8
+   \       0xCC   0xD01C             BEQ.N    ??mbedtls_pk_can_do_ext_11
+   \       0xCE   0x0A39             LSRS     R1,R7,#+8
+   \       0xD0   0x0209             LSLS     R1,R1,#+8
+   \       0xD2   0x.... 0x....      LDR.W    R0,??DataTable14_10
+   \       0xD6   0x4281             CMP      R1,R0
+   \       0xD8   0xD016             BEQ.N    ??mbedtls_pk_can_do_ext_11
+   \       0xDA   0x0A39             LSRS     R1,R7,#+8
+   \       0xDC   0x0209             LSLS     R1,R1,#+8
+   \       0xDE   0x.... 0x....      LDR.W    R0,??DataTable14_8
+   \       0xE2   0x4281             CMP      R1,R0
+   \       0xE4   0xD010             BEQ.N    ??mbedtls_pk_can_do_ext_11
+   \       0xE6   0x0A78             LSRS     R0,R7,#+9
+   \       0xE8   0x0240             LSLS     R0,R0,#+9
+   \       0xEA   0xF1B0 0x2F06      CMP      R0,#+100664832
+   \       0xEE   0xD00B             BEQ.N    ??mbedtls_pk_can_do_ext_11
+   \       0xF0   0x0A39             LSRS     R1,R7,#+8
+   \       0xF2   0x0209             LSLS     R1,R1,#+8
+   \       0xF4   0x.... 0x....      LDR.W    R0,??DataTable14_13
+   \       0xF8   0x4281             CMP      R1,R0
+   \       0xFA   0xD005             BEQ.N    ??mbedtls_pk_can_do_ext_11
+   \       0xFC   0x0A79             LSRS     R1,R7,#+9
+   \       0xFE   0x0249             LSLS     R1,R1,#+9
+   \      0x100   0x.... 0x....      LDR.W    R0,??DataTable14_14
+   \      0x104   0x4281             CMP      R1,R0
+   \      0x106   0xD106             BNE.N    ??mbedtls_pk_can_do_ext_12
+   \                     ??mbedtls_pk_can_do_ext_11: (+1)
+   \      0x108   0x0638             LSLS     R0,R7,#+24
+   \      0x10A   0xD004             BEQ.N    ??mbedtls_pk_can_do_ext_12
+   \      0x10C   0xF007 0x00FF      AND      R0,R7,#0xFF
+   \      0x110   0xF050 0x7000      ORRS     R0,R0,#0x2000000
+   \      0x114   0xE000             B.N      ??mbedtls_pk_can_do_ext_13
+   \                     ??mbedtls_pk_can_do_ext_12: (+1)
+   \      0x116   0x2000             MOVS     R0,#+0
+   \                     ??mbedtls_pk_can_do_ext_13: (+1)
+   \      0x118   0x.... 0x....      LDR.W    R1,??DataTable14_15
+   \      0x11C   0x4288             CMP      R0,R1
+   \      0x11E   0xD101             BNE.N    ??mbedtls_pk_can_do_ext_10
+    286                  return 0;
+   \      0x120   0x2000             MOVS     R0,#+0
+   \      0x122   0xE162             B.N      ??mbedtls_pk_can_do_ext_2
+    287              }
+    288          
+    289              if (mbedtls_pk_get_type(ctx) != MBEDTLS_PK_OPAQUE) {
+   \                     ??mbedtls_pk_can_do_ext_10: (+1)
+   \      0x124   0x0020             MOVS     R0,R4
+   \      0x126   0x.... 0x....      BL       mbedtls_pk_get_type
+   \      0x12A   0x2807             CMP      R0,#+7
+   \      0x12C   0xD04A             BEQ.N    ??mbedtls_pk_can_do_ext_14
+    290                  mbedtls_pk_type_t type;
+    291          
+    292                  if (PSA_ALG_IS_ECDSA(alg) || PSA_ALG_IS_ECDH(alg)) {
+   \      0x12E   0x0A78             LSRS     R0,R7,#+9
+   \      0x130   0x0240             LSLS     R0,R0,#+9
+   \      0x132   0xF1B0 0x2F06      CMP      R0,#+100664832
+   \      0x136   0xD007             BEQ.N    ??mbedtls_pk_can_do_ext_15
+   \      0x138   0x0C39             LSRS     R1,R7,#+16
+   \      0x13A   0x0409             LSLS     R1,R1,#+16
+   \      0x13C   0xF051 0x6110      ORRS     R1,R1,#0x9000000
+   \      0x140   0x.... 0x....      LDR.W    R0,??DataTable14_12
+   \      0x144   0x4281             CMP      R1,R0
+   \      0x146   0xD101             BNE.N    ??mbedtls_pk_can_do_ext_16
+    293                      type = MBEDTLS_PK_ECKEY;
+   \                     ??mbedtls_pk_can_do_ext_15: (+1)
+   \      0x148   0x2602             MOVS     R6,#+2
+   \      0x14A   0xE019             B.N      ??mbedtls_pk_can_do_ext_17
+    294                  } else if (PSA_ALG_IS_RSA_PKCS1V15_SIGN(alg) ||
+    295                             alg == PSA_ALG_RSA_PKCS1V15_CRYPT) {
+   \                     ??mbedtls_pk_can_do_ext_16: (+1)
+   \      0x14C   0x0A39             LSRS     R1,R7,#+8
+   \      0x14E   0x0209             LSLS     R1,R1,#+8
+   \      0x150   0x.... 0x....      LDR.W    R0,??DataTable14_8
+   \      0x154   0x4281             CMP      R1,R0
+   \      0x156   0xD003             BEQ.N    ??mbedtls_pk_can_do_ext_18
+   \      0x158   0x.... 0x....      LDR.W    R0,??DataTable14_11
+   \      0x15C   0x4287             CMP      R7,R0
+   \      0x15E   0xD101             BNE.N    ??mbedtls_pk_can_do_ext_19
+    296                      type = MBEDTLS_PK_RSA;
+   \                     ??mbedtls_pk_can_do_ext_18: (+1)
+   \      0x160   0x2601             MOVS     R6,#+1
+   \      0x162   0xE00D             B.N      ??mbedtls_pk_can_do_ext_17
+    297                  } else if (PSA_ALG_IS_RSA_PSS(alg)) {
+   \                     ??mbedtls_pk_can_do_ext_19: (+1)
+   \      0x164   0x0A38             LSRS     R0,R7,#+8
+   \      0x166   0x0200             LSLS     R0,R0,#+8
+   \      0x168   0x4540             CMP      R0,R8
+   \      0x16A   0xD005             BEQ.N    ??mbedtls_pk_can_do_ext_20
+   \      0x16C   0x0A39             LSRS     R1,R7,#+8
+   \      0x16E   0x0209             LSLS     R1,R1,#+8
+   \      0x170   0x.... 0x....      LDR.W    R0,??DataTable14_10
+   \      0x174   0x4281             CMP      R1,R0
+   \      0x176   0xD101             BNE.N    ??mbedtls_pk_can_do_ext_21
+    298                      type = MBEDTLS_PK_RSASSA_PSS;
+   \                     ??mbedtls_pk_can_do_ext_20: (+1)
+   \      0x178   0x2606             MOVS     R6,#+6
+   \      0x17A   0xE001             B.N      ??mbedtls_pk_can_do_ext_17
+    299                  } else {
+    300                      return 0;
+   \                     ??mbedtls_pk_can_do_ext_21: (+1)
+   \      0x17C   0x2000             MOVS     R0,#+0
+   \      0x17E   0xE134             B.N      ??mbedtls_pk_can_do_ext_2
+    301                  }
+    302          
+    303                  if (ctx->pk_info->can_do(type) == 0) {
+   \                     ??mbedtls_pk_can_do_ext_17: (+1)
+   \      0x180   0x0030             MOVS     R0,R6
+   \      0x182   0xB2C0             UXTB     R0,R0
+   \      0x184   0x6821             LDR      R1,[R4, #+0]
+   \      0x186   0x68C9             LDR      R1,[R1, #+12]
+   \      0x188   0x4788             BLX      R1
+   \      0x18A   0x2800             CMP      R0,#+0
+   \      0x18C   0xD101             BNE.N    ??mbedtls_pk_can_do_ext_22
+    304                      return 0;
+   \      0x18E   0x2000             MOVS     R0,#+0
+   \      0x190   0xE12B             B.N      ??mbedtls_pk_can_do_ext_2
+    305                  }
+    306          
+    307                  switch (type) {
+   \                     ??mbedtls_pk_can_do_ext_22: (+1)
+   \      0x192   0x0030             MOVS     R0,R6
+   \      0x194   0xB2C0             UXTB     R0,R0
+   \      0x196   0x2801             CMP      R0,#+1
+   \      0x198   0xD007             BEQ.N    ??mbedtls_pk_can_do_ext_23
+   \      0x19A   0x2802             CMP      R0,#+2
+   \      0x19C   0xD002             BEQ.N    ??mbedtls_pk_can_do_ext_24
+   \      0x19E   0x2806             CMP      R0,#+6
+   \      0x1A0   0xD003             BEQ.N    ??mbedtls_pk_can_do_ext_23
+   \      0x1A2   0xE005             B.N      ??mbedtls_pk_can_do_ext_25
+    308                      case MBEDTLS_PK_ECKEY:
+    309                          key_usage = PSA_KEY_USAGE_SIGN_HASH | PSA_KEY_USAGE_DERIVE;
+   \                     ??mbedtls_pk_can_do_ext_24: (+1)
+   \      0x1A4   0xF44F 0x40A0      MOV      R0,#+20480
+    310                          break;
+   \      0x1A8   0xE004             B.N      ??mbedtls_pk_can_do_ext_26
+    311                      case MBEDTLS_PK_RSA:
+    312                      case MBEDTLS_PK_RSASSA_PSS:
+    313                          key_usage = PSA_KEY_USAGE_SIGN_HASH |
+    314                                      PSA_KEY_USAGE_SIGN_MESSAGE |
+    315                                      PSA_KEY_USAGE_DECRYPT;
+   \                     ??mbedtls_pk_can_do_ext_23: (+1)
+   \      0x1AA   0xF44F 0x50B0      MOV      R0,#+5632
+    316                          break;
+   \      0x1AE   0xE001             B.N      ??mbedtls_pk_can_do_ext_26
+    317                      default:
+    318                          /* Should never happen */
+    319                          return 0;
+   \                     ??mbedtls_pk_can_do_ext_25: (+1)
+   \      0x1B0   0x2000             MOVS     R0,#+0
+   \      0x1B2   0xE11A             B.N      ??mbedtls_pk_can_do_ext_2
+    320                  }
+    321          
+    322                  return (key_usage & usage) == usage;
+   \                     ??mbedtls_pk_can_do_ext_26: (+1)
+   \      0x1B4   0x4028             ANDS     R0,R5,R0
+   \      0x1B6   0x42A8             CMP      R0,R5
+   \      0x1B8   0xD101             BNE.N    ??mbedtls_pk_can_do_ext_27
+   \      0x1BA   0x2001             MOVS     R0,#+1
+   \      0x1BC   0xE000             B.N      ??mbedtls_pk_can_do_ext_28
+   \                     ??mbedtls_pk_can_do_ext_27: (+1)
+   \      0x1BE   0x2000             MOVS     R0,#+0
+   \                     ??mbedtls_pk_can_do_ext_28: (+1)
+   \      0x1C0   0xB2C0             UXTB     R0,R0
+   \      0x1C2   0xE112             B.N      ??mbedtls_pk_can_do_ext_2
+    323              }
+    324          
+    325              psa_key_attributes_t attributes = PSA_KEY_ATTRIBUTES_INIT;
+   \                     ??mbedtls_pk_can_do_ext_14: (+1)
+   \      0x1C4   0x4668             MOV      R0,SP
+   \      0x1C6   0x2124             MOVS     R1,#+36
+   \      0x1C8   0x.... 0x....      BL       __aeabi_memclr4
+    326              psa_algorithm_t key_alg, key_alg2;
+    327              psa_status_t status;
+    328          
+    329              status = psa_get_key_attributes(ctx->priv_id, &attributes);
+   \      0x1CC   0x4669             MOV      R1,SP
+   \      0x1CE   0x68A0             LDR      R0,[R4, #+8]
+   \      0x1D0   0x.... 0x....      BL       psa_get_key_attributes
+   \      0x1D4   0x0006             MOVS     R6,R0
+    330              if (status != PSA_SUCCESS) {
+   \      0x1D6   0x2E00             CMP      R6,#+0
+   \      0x1D8   0xD001             BEQ.N    ??mbedtls_pk_can_do_ext_29
+    331                  return 0;
+   \      0x1DA   0x2000             MOVS     R0,#+0
+   \      0x1DC   0xE105             B.N      ??mbedtls_pk_can_do_ext_2
+    332              }
+    333          
+    334              key_alg = psa_get_key_algorithm(&attributes);
+   \                     ??mbedtls_pk_can_do_ext_29: (+1)
+   \      0x1DE   0x4668             MOV      R0,SP
+   \      0x1E0   0x.... 0x....      BL       psa_get_key_algorithm
+   \      0x1E4   0x4683             MOV      R11,R0
+    335              key_alg2 = psa_get_key_enrollment_algorithm(&attributes);
+   \      0x1E6   0x4668             MOV      R0,SP
+   \      0x1E8   0x.... 0x....      BL       psa_get_key_enrollment_algorithm
+   \      0x1EC   0x4681             MOV      R9,R0
+    336              key_usage = psa_get_key_usage_flags(&attributes);
+   \      0x1EE   0x4668             MOV      R0,SP
+   \      0x1F0   0x.... 0x....      BL       psa_get_key_usage_flags
+   \      0x1F4   0x4682             MOV      R10,R0
+    337              psa_reset_key_attributes(&attributes);
+   \      0x1F6   0x4668             MOV      R0,SP
+   \      0x1F8   0x.... 0x....      BL       psa_reset_key_attributes
+    338          
+    339              if ((key_usage & usage) != usage) {
+   \      0x1FC   0xEA15 0x000A      ANDS     R0,R5,R10
+   \      0x200   0x42A8             CMP      R0,R5
+   \      0x202   0xD001             BEQ.N    ??mbedtls_pk_can_do_ext_30
+    340                  return 0;
+   \      0x204   0x2000             MOVS     R0,#+0
+   \      0x206   0xE0F0             B.N      ??mbedtls_pk_can_do_ext_2
+    341              }
+    342          
+    343              /*
+    344               * Common case: the key alg or alg2 only allows alg.
+    345               * This will match PSA_ALG_RSA_PKCS1V15_CRYPT & PSA_ALG_IS_ECDH
+    346               * directly.
+    347               * This would also match ECDSA/RSA_PKCS1V15_SIGN/RSA_PSS with
+    348               * a fixed hash on key_alg/key_alg2.
+    349               */
+    350              if (alg == key_alg || alg == key_alg2) {
+   \                     ??mbedtls_pk_can_do_ext_30: (+1)
+   \      0x208   0x455F             CMP      R7,R11
+   \      0x20A   0xD001             BEQ.N    ??mbedtls_pk_can_do_ext_31
+   \      0x20C   0x454F             CMP      R7,R9
+   \      0x20E   0xD101             BNE.N    ??mbedtls_pk_can_do_ext_32
+    351                  return 1;
+   \                     ??mbedtls_pk_can_do_ext_31: (+1)
+   \      0x210   0x2001             MOVS     R0,#+1
+   \      0x212   0xE0EA             B.N      ??mbedtls_pk_can_do_ext_2
+    352              }
+    353          
+    354              /*
+    355               * If key_alg or key_alg2 is a hash-and-sign with a wildcard for the hash,
+    356               * and alg is the same hash-and-sign family with any hash,
+    357               * then alg is compliant with this key alg
+    358               */
+    359              if (PSA_ALG_IS_SIGN_HASH(alg)) {
+   \                     ??mbedtls_pk_can_do_ext_32: (+1)
+   \      0x214   0x0A38             LSRS     R0,R7,#+8
+   \      0x216   0x0200             LSLS     R0,R0,#+8
+   \      0x218   0x4540             CMP      R0,R8
+   \      0x21A   0xD01D             BEQ.N    ??mbedtls_pk_can_do_ext_33
+   \      0x21C   0x0A39             LSRS     R1,R7,#+8
+   \      0x21E   0x0209             LSLS     R1,R1,#+8
+   \      0x220   0x.... 0x....      LDR.W    R0,??DataTable14_10
+   \      0x224   0x4281             CMP      R1,R0
+   \      0x226   0xD017             BEQ.N    ??mbedtls_pk_can_do_ext_33
+   \      0x228   0x0A39             LSRS     R1,R7,#+8
+   \      0x22A   0x0209             LSLS     R1,R1,#+8
+   \      0x22C   0x.... 0x....      LDR.W    R0,??DataTable14_8
+   \      0x230   0x4281             CMP      R1,R0
+   \      0x232   0xD011             BEQ.N    ??mbedtls_pk_can_do_ext_33
+   \      0x234   0x0A78             LSRS     R0,R7,#+9
+   \      0x236   0x0240             LSLS     R0,R0,#+9
+   \      0x238   0xF1B0 0x2F06      CMP      R0,#+100664832
+   \      0x23C   0xD00C             BEQ.N    ??mbedtls_pk_can_do_ext_33
+   \      0x23E   0x0A39             LSRS     R1,R7,#+8
+   \      0x240   0x0209             LSLS     R1,R1,#+8
+   \      0x242   0x.... 0x....      LDR.W    R0,??DataTable14_13
+   \      0x246   0x4281             CMP      R1,R0
+   \      0x248   0xD006             BEQ.N    ??mbedtls_pk_can_do_ext_33
+   \      0x24A   0x0A79             LSRS     R1,R7,#+9
+   \      0x24C   0x0249             LSLS     R1,R1,#+9
+   \      0x24E   0x.... 0x....      LDR.W    R0,??DataTable14_14
+   \      0x252   0x4281             CMP      R1,R0
+   \      0x254   0xF040 0x80C8      BNE.W    ??mbedtls_pk_can_do_ext_34
+    360          
+    361                  if (PSA_ALG_IS_SIGN_HASH(key_alg) &&
+    362                      PSA_ALG_SIGN_GET_HASH(key_alg) == PSA_ALG_ANY_HASH &&
+    363                      (alg & ~PSA_ALG_HASH_MASK) == (key_alg & ~PSA_ALG_HASH_MASK)) {
+   \                     ??mbedtls_pk_can_do_ext_33: (+1)
+   \      0x258   0xEA5F 0x201B      LSRS     R0,R11,#+8
+   \      0x25C   0x0200             LSLS     R0,R0,#+8
+   \      0x25E   0x4540             CMP      R0,R8
+   \      0x260   0xD021             BEQ.N    ??mbedtls_pk_can_do_ext_35
+   \      0x262   0xEA5F 0x211B      LSRS     R1,R11,#+8
+   \      0x266   0x0209             LSLS     R1,R1,#+8
+   \      0x268   0x.... 0x....      LDR.W    R0,??DataTable14_10
+   \      0x26C   0x4281             CMP      R1,R0
+   \      0x26E   0xD01A             BEQ.N    ??mbedtls_pk_can_do_ext_35
+   \      0x270   0xEA5F 0x211B      LSRS     R1,R11,#+8
+   \      0x274   0x0209             LSLS     R1,R1,#+8
+   \      0x276   0x.... 0x....      LDR.W    R0,??DataTable14_8
+   \      0x27A   0x4281             CMP      R1,R0
+   \      0x27C   0xD013             BEQ.N    ??mbedtls_pk_can_do_ext_35
+   \      0x27E   0xEA5F 0x205B      LSRS     R0,R11,#+9
+   \      0x282   0x0240             LSLS     R0,R0,#+9
+   \      0x284   0xF1B0 0x2F06      CMP      R0,#+100664832
+   \      0x288   0xD00D             BEQ.N    ??mbedtls_pk_can_do_ext_35
+   \      0x28A   0xEA5F 0x211B      LSRS     R1,R11,#+8
+   \      0x28E   0x0209             LSLS     R1,R1,#+8
+   \      0x290   0x.... 0x....      LDR.W    R0,??DataTable14_13
+   \      0x294   0x4281             CMP      R1,R0
+   \      0x296   0xD006             BEQ.N    ??mbedtls_pk_can_do_ext_35
+   \      0x298   0xEA5F 0x215B      LSRS     R1,R11,#+9
+   \      0x29C   0x0249             LSLS     R1,R1,#+9
+   \      0x29E   0x.... 0x....      LDR.W    R0,??DataTable14_14
+   \      0x2A2   0x4281             CMP      R1,R0
+   \      0x2A4   0xD13C             BNE.N    ??mbedtls_pk_can_do_ext_36
+   \                     ??mbedtls_pk_can_do_ext_35: (+1)
+   \      0x2A6   0xEA5F 0x201B      LSRS     R0,R11,#+8
+   \      0x2AA   0x0200             LSLS     R0,R0,#+8
+   \      0x2AC   0x4540             CMP      R0,R8
+   \      0x2AE   0xD021             BEQ.N    ??mbedtls_pk_can_do_ext_37
+   \      0x2B0   0xEA5F 0x211B      LSRS     R1,R11,#+8
+   \      0x2B4   0x0209             LSLS     R1,R1,#+8
+   \      0x2B6   0x.... 0x....      LDR.W    R0,??DataTable14_10
+   \      0x2BA   0x4281             CMP      R1,R0
+   \      0x2BC   0xD01A             BEQ.N    ??mbedtls_pk_can_do_ext_37
+   \      0x2BE   0xEA5F 0x211B      LSRS     R1,R11,#+8
+   \      0x2C2   0x0209             LSLS     R1,R1,#+8
+   \      0x2C4   0x.... 0x....      LDR.W    R0,??DataTable14_8
+   \      0x2C8   0x4281             CMP      R1,R0
+   \      0x2CA   0xD013             BEQ.N    ??mbedtls_pk_can_do_ext_37
+   \      0x2CC   0xEA5F 0x205B      LSRS     R0,R11,#+9
+   \      0x2D0   0x0240             LSLS     R0,R0,#+9
+   \      0x2D2   0xF1B0 0x2F06      CMP      R0,#+100664832
+   \      0x2D6   0xD00D             BEQ.N    ??mbedtls_pk_can_do_ext_37
+   \      0x2D8   0xEA5F 0x211B      LSRS     R1,R11,#+8
+   \      0x2DC   0x0209             LSLS     R1,R1,#+8
+   \      0x2DE   0x.... 0x....      LDR.W    R0,??DataTable14_13
+   \      0x2E2   0x4281             CMP      R1,R0
+   \      0x2E4   0xD006             BEQ.N    ??mbedtls_pk_can_do_ext_37
+   \      0x2E6   0xEA5F 0x215B      LSRS     R1,R11,#+9
+   \      0x2EA   0x0249             LSLS     R1,R1,#+9
+   \      0x2EC   0x.... 0x....      LDR.W    R0,??DataTable14_14
+   \      0x2F0   0x4281             CMP      R1,R0
+   \      0x2F2   0xD107             BNE.N    ??mbedtls_pk_can_do_ext_38
+   \                     ??mbedtls_pk_can_do_ext_37: (+1)
+   \      0x2F4   0xEA5F 0x600B      LSLS     R0,R11,#+24
+   \      0x2F8   0xD004             BEQ.N    ??mbedtls_pk_can_do_ext_38
+   \      0x2FA   0xF00B 0x00FF      AND      R0,R11,#0xFF
+   \      0x2FE   0xF050 0x7000      ORRS     R0,R0,#0x2000000
+   \      0x302   0xE000             B.N      ??mbedtls_pk_can_do_ext_39
+   \                     ??mbedtls_pk_can_do_ext_38: (+1)
+   \      0x304   0x2000             MOVS     R0,#+0
+   \                     ??mbedtls_pk_can_do_ext_39: (+1)
+   \      0x306   0x.... 0x....      LDR.W    R1,??DataTable14_15
+   \      0x30A   0x4288             CMP      R0,R1
+   \      0x30C   0xD108             BNE.N    ??mbedtls_pk_can_do_ext_36
+   \      0x30E   0x0A39             LSRS     R1,R7,#+8
+   \      0x310   0x0209             LSLS     R1,R1,#+8
+   \      0x312   0xEA5F 0x201B      LSRS     R0,R11,#+8
+   \      0x316   0x0200             LSLS     R0,R0,#+8
+   \      0x318   0x4281             CMP      R1,R0
+   \      0x31A   0xD101             BNE.N    ??mbedtls_pk_can_do_ext_36
+    364                      return 1;
+   \      0x31C   0x2001             MOVS     R0,#+1
+   \      0x31E   0xE064             B.N      ??mbedtls_pk_can_do_ext_2
+    365                  }
+    366          
+    367                  if (PSA_ALG_IS_SIGN_HASH(key_alg2) &&
+    368                      PSA_ALG_SIGN_GET_HASH(key_alg2) == PSA_ALG_ANY_HASH &&
+    369                      (alg & ~PSA_ALG_HASH_MASK) == (key_alg2 & ~PSA_ALG_HASH_MASK)) {
+   \                     ??mbedtls_pk_can_do_ext_36: (+1)
+   \      0x320   0xEA5F 0x2019      LSRS     R0,R9,#+8
+   \      0x324   0x0200             LSLS     R0,R0,#+8
+   \      0x326   0x4540             CMP      R0,R8
+   \      0x328   0xD021             BEQ.N    ??mbedtls_pk_can_do_ext_40
+   \      0x32A   0xEA5F 0x2119      LSRS     R1,R9,#+8
+   \      0x32E   0x0209             LSLS     R1,R1,#+8
+   \      0x330   0x.... 0x....      LDR.W    R0,??DataTable14_10
+   \      0x334   0x4281             CMP      R1,R0
+   \      0x336   0xD01A             BEQ.N    ??mbedtls_pk_can_do_ext_40
+   \      0x338   0xEA5F 0x2119      LSRS     R1,R9,#+8
+   \      0x33C   0x0209             LSLS     R1,R1,#+8
+   \      0x33E   0x.... 0x....      LDR.W    R0,??DataTable14_8
+   \      0x342   0x4281             CMP      R1,R0
+   \      0x344   0xD013             BEQ.N    ??mbedtls_pk_can_do_ext_40
+   \      0x346   0xEA5F 0x2059      LSRS     R0,R9,#+9
+   \      0x34A   0x0240             LSLS     R0,R0,#+9
+   \      0x34C   0xF1B0 0x2F06      CMP      R0,#+100664832
+   \      0x350   0xD00D             BEQ.N    ??mbedtls_pk_can_do_ext_40
+   \      0x352   0xEA5F 0x2119      LSRS     R1,R9,#+8
+   \      0x356   0x0209             LSLS     R1,R1,#+8
+   \      0x358   0x.... 0x....      LDR.W    R0,??DataTable14_13
+   \      0x35C   0x4281             CMP      R1,R0
+   \      0x35E   0xD006             BEQ.N    ??mbedtls_pk_can_do_ext_40
+   \      0x360   0xEA5F 0x2159      LSRS     R1,R9,#+9
+   \      0x364   0x0249             LSLS     R1,R1,#+9
+   \      0x366   0x.... 0x....      LDR.W    R0,??DataTable14_14
+   \      0x36A   0x4281             CMP      R1,R0
+   \      0x36C   0xD13C             BNE.N    ??mbedtls_pk_can_do_ext_34
+   \                     ??mbedtls_pk_can_do_ext_40: (+1)
+   \      0x36E   0xEA5F 0x2019      LSRS     R0,R9,#+8
+   \      0x372   0x0200             LSLS     R0,R0,#+8
+   \      0x374   0x4540             CMP      R0,R8
+   \      0x376   0xD021             BEQ.N    ??mbedtls_pk_can_do_ext_41
+   \      0x378   0xEA5F 0x2119      LSRS     R1,R9,#+8
+   \      0x37C   0x0209             LSLS     R1,R1,#+8
+   \      0x37E   0x.... 0x....      LDR.W    R0,??DataTable14_10
+   \      0x382   0x4281             CMP      R1,R0
+   \      0x384   0xD01A             BEQ.N    ??mbedtls_pk_can_do_ext_41
+   \      0x386   0xEA5F 0x2119      LSRS     R1,R9,#+8
+   \      0x38A   0x0209             LSLS     R1,R1,#+8
+   \      0x38C   0x.... 0x....      LDR.W    R0,??DataTable14_8
+   \      0x390   0x4281             CMP      R1,R0
+   \      0x392   0xD013             BEQ.N    ??mbedtls_pk_can_do_ext_41
+   \      0x394   0xEA5F 0x2059      LSRS     R0,R9,#+9
+   \      0x398   0x0240             LSLS     R0,R0,#+9
+   \      0x39A   0xF1B0 0x2F06      CMP      R0,#+100664832
+   \      0x39E   0xD00D             BEQ.N    ??mbedtls_pk_can_do_ext_41
+   \      0x3A0   0xEA5F 0x2119      LSRS     R1,R9,#+8
+   \      0x3A4   0x0209             LSLS     R1,R1,#+8
+   \      0x3A6   0x.... 0x....      LDR.W    R0,??DataTable14_13
+   \      0x3AA   0x4281             CMP      R1,R0
+   \      0x3AC   0xD006             BEQ.N    ??mbedtls_pk_can_do_ext_41
+   \      0x3AE   0xEA5F 0x2159      LSRS     R1,R9,#+9
+   \      0x3B2   0x0249             LSLS     R1,R1,#+9
+   \      0x3B4   0x.... 0x....      LDR.W    R0,??DataTable14_14
+   \      0x3B8   0x4281             CMP      R1,R0
+   \      0x3BA   0xD107             BNE.N    ??mbedtls_pk_can_do_ext_42
+   \                     ??mbedtls_pk_can_do_ext_41: (+1)
+   \      0x3BC   0xEA5F 0x6009      LSLS     R0,R9,#+24
+   \      0x3C0   0xD004             BEQ.N    ??mbedtls_pk_can_do_ext_42
+   \      0x3C2   0xF009 0x01FF      AND      R1,R9,#0xFF
+   \      0x3C6   0xF051 0x7100      ORRS     R1,R1,#0x2000000
+   \      0x3CA   0xE000             B.N      ??mbedtls_pk_can_do_ext_43
+   \                     ??mbedtls_pk_can_do_ext_42: (+1)
+   \      0x3CC   0x2100             MOVS     R1,#+0
+   \                     ??mbedtls_pk_can_do_ext_43: (+1)
+   \      0x3CE   0x.... 0x....      LDR.W    R0,??DataTable14_15
+   \      0x3D2   0x4281             CMP      R1,R0
+   \      0x3D4   0xD108             BNE.N    ??mbedtls_pk_can_do_ext_34
+   \      0x3D6   0x0A38             LSRS     R0,R7,#+8
+   \      0x3D8   0x0200             LSLS     R0,R0,#+8
+   \      0x3DA   0xEA5F 0x2119      LSRS     R1,R9,#+8
+   \      0x3DE   0x0209             LSLS     R1,R1,#+8
+   \      0x3E0   0x4288             CMP      R0,R1
+   \      0x3E2   0xD101             BNE.N    ??mbedtls_pk_can_do_ext_34
+    370                      return 1;
+   \      0x3E4   0x2001             MOVS     R0,#+1
+   \      0x3E6   0xE000             B.N      ??mbedtls_pk_can_do_ext_2
+    371                  }
+    372              }
+    373          
+    374              return 0;
+   \                     ??mbedtls_pk_can_do_ext_34: (+1)
+   \      0x3E8   0x2000             MOVS     R0,#+0
+   \                     ??mbedtls_pk_can_do_ext_2: (+1)
+   \      0x3EA   0xB009             ADD      SP,SP,#+36
+   \      0x3EC   0xE8BD 0x8FF0      POP      {R4-R11,PC}
+    375          }
+
+   \                                 In section .rodata, align 4
+   \        0x0   0x0000 0x0000      DC16 0, 0
+   \        0x4   0x0000'0000        DC32 0, 0, 0, 0, 0
+   \              0x0000'0000  
+   \              0x0000'0000  
+   \              0x0000'0000  
+   \              0x0000'0000
+   \       0x18   0x0000             DC16 0
+   \       0x1A                      DS8 2
+   \       0x1C   0x0000'0000        DC32 0x0, 0
+   \              0x0000'0000
+    376          #endif /* MBEDTLS_USE_PSA_CRYPTO */
+    377          
+    378          /*
+    379           * Helper for mbedtls_pk_sign and mbedtls_pk_verify
+    380           */
+
+   \                                 In section .text, align 2, keep-with-next
+    381          static inline int pk_hashlen_helper(mbedtls_md_type_t md_alg, size_t *hash_len)
+    382          {
+   \                     pk_hashlen_helper: (+1)
+   \        0x0   0xB538             PUSH     {R3-R5,LR}
+   \        0x2   0x0005             MOVS     R5,R0
+   \        0x4   0x000C             MOVS     R4,R1
+    383              if (*hash_len != 0) {
+   \        0x6   0x6820             LDR      R0,[R4, #+0]
+   \        0x8   0x2800             CMP      R0,#+0
+   \        0xA   0xD001             BEQ.N    ??pk_hashlen_helper_0
+    384                  return 0;
+   \        0xC   0x2000             MOVS     R0,#+0
+   \        0xE   0xE00B             B.N      ??pk_hashlen_helper_1
+    385              }
+    386          
+    387              *hash_len = mbedtls_md_get_size_from_type(md_alg);
+   \                     ??pk_hashlen_helper_0: (+1)
+   \       0x10   0x0028             MOVS     R0,R5
+   \       0x12   0xB2C0             UXTB     R0,R0
+   \       0x14   0x.... 0x....      BL       mbedtls_md_get_size_from_type
+   \       0x18   0x6020             STR      R0,[R4, #+0]
+    388          
+    389              if (*hash_len == 0) {
+   \       0x1A   0x6820             LDR      R0,[R4, #+0]
+   \       0x1C   0x2800             CMP      R0,#+0
+   \       0x1E   0xD102             BNE.N    ??pk_hashlen_helper_2
+    390                  return -1;
+   \       0x20   0xF05F 0x30FF      MOVS     R0,#+4294967295
+   \       0x24   0xE000             B.N      ??pk_hashlen_helper_1
+    391              }
+    392          
+    393              return 0;
+   \                     ??pk_hashlen_helper_2: (+1)
+   \       0x26   0x2000             MOVS     R0,#+0
+   \                     ??pk_hashlen_helper_1: (+1)
+   \       0x28   0xBD32             POP      {R1,R4,R5,PC}
+    394          }
+    395          
+    396          #if defined(MBEDTLS_ECDSA_C) && defined(MBEDTLS_ECP_RESTARTABLE)
+    397          /*
+    398           * Helper to set up a restart context if needed
+    399           */
+    400          static int pk_restart_setup(mbedtls_pk_restart_ctx *ctx,
+    401                                      const mbedtls_pk_info_t *info)
+    402          {
+    403              /* Don't do anything if already set up or invalid */
+    404              if (ctx == NULL || ctx->pk_info != NULL) {
+    405                  return 0;
+    406              }
+    407          
+    408              /* Should never happen when we're called */
+    409              if (info->rs_alloc_func == NULL || info->rs_free_func == NULL) {
+    410                  return MBEDTLS_ERR_PK_BAD_INPUT_DATA;
+    411              }
+    412          
+    413              if ((ctx->rs_ctx = info->rs_alloc_func()) == NULL) {
+    414                  return MBEDTLS_ERR_PK_ALLOC_FAILED;
+    415              }
+    416          
+    417              ctx->pk_info = info;
+    418          
+    419              return 0;
+    420          }
+    421          #endif /* MBEDTLS_ECDSA_C && MBEDTLS_ECP_RESTARTABLE */
+    422          
+    423          /*
+    424           * Verify a signature (restartable)
+    425           */
+
+   \                                 In section .text, align 2, keep-with-next
+    426          int mbedtls_pk_verify_restartable(mbedtls_pk_context *ctx,
+    427                                            mbedtls_md_type_t md_alg,
+    428                                            const unsigned char *hash, size_t hash_len,
+    429                                            const unsigned char *sig, size_t sig_len,
+    430                                            mbedtls_pk_restart_ctx *rs_ctx)
+    431          {
+   \                     mbedtls_pk_verify_restartable: (+1)
+   \        0x0   0xB5FE             PUSH     {R1-R7,LR}
+   \        0x2   0x0005             MOVS     R5,R0
+   \        0x4   0x000E             MOVS     R6,R1
+   \        0x6   0x0014             MOVS     R4,R2
+    432              if ((md_alg != MBEDTLS_MD_NONE || hash_len != 0) && hash == NULL) {
+   \        0x8   0x0030             MOVS     R0,R6
+   \        0xA   0xB2C0             UXTB     R0,R0
+   \        0xC   0x2800             CMP      R0,#+0
+   \        0xE   0xD102             BNE.N    ??mbedtls_pk_verify_restartable_0
+   \       0x10   0x9802             LDR      R0,[SP, #+8]
+   \       0x12   0x2800             CMP      R0,#+0
+   \       0x14   0xD004             BEQ.N    ??mbedtls_pk_verify_restartable_1
+   \                     ??mbedtls_pk_verify_restartable_0: (+1)
+   \       0x16   0x2C00             CMP      R4,#+0
+   \       0x18   0xD102             BNE.N    ??mbedtls_pk_verify_restartable_1
+    433                  return MBEDTLS_ERR_PK_BAD_INPUT_DATA;
+   \       0x1A   0x.... 0x....      LDR.W    R0,??DataTable14_3
+   \       0x1E   0xE01F             B.N      ??mbedtls_pk_verify_restartable_2
+    434              }
+    435          
+    436              if (ctx->pk_info == NULL ||
+    437                  pk_hashlen_helper(md_alg, &hash_len) != 0) {
+   \                     ??mbedtls_pk_verify_restartable_1: (+1)
+   \       0x20   0x6828             LDR      R0,[R5, #+0]
+   \       0x22   0x2800             CMP      R0,#+0
+   \       0x24   0xD006             BEQ.N    ??mbedtls_pk_verify_restartable_3
+   \       0x26   0xA902             ADD      R1,SP,#+8
+   \       0x28   0x0030             MOVS     R0,R6
+   \       0x2A   0xB2C0             UXTB     R0,R0
+   \       0x2C   0x.... 0x....      BL       pk_hashlen_helper
+   \       0x30   0x2800             CMP      R0,#+0
+   \       0x32   0xD002             BEQ.N    ??mbedtls_pk_verify_restartable_4
+    438                  return MBEDTLS_ERR_PK_BAD_INPUT_DATA;
+   \                     ??mbedtls_pk_verify_restartable_3: (+1)
+   \       0x34   0x.... 0x....      LDR.W    R0,??DataTable14_3
+   \       0x38   0xE012             B.N      ??mbedtls_pk_verify_restartable_2
+    439              }
+    440          
+    441          #if defined(MBEDTLS_ECDSA_C) && defined(MBEDTLS_ECP_RESTARTABLE)
+    442              /* optimization: use non-restartable version if restart disabled */
+    443              if (rs_ctx != NULL &&
+    444                  mbedtls_ecp_restart_is_enabled() &&
+    445                  ctx->pk_info->verify_rs_func != NULL) {
+    446                  int ret = MBEDTLS_ERR_ERROR_CORRUPTION_DETECTED;
+    447          
+    448                  if ((ret = pk_restart_setup(rs_ctx, ctx->pk_info)) != 0) {
+    449                      return ret;
+    450                  }
+    451          
+    452                  ret = ctx->pk_info->verify_rs_func(ctx,
+    453                                                     md_alg, hash, hash_len, sig, sig_len, rs_ctx->rs_ctx);
+    454          
+    455                  if (ret != MBEDTLS_ERR_ECP_IN_PROGRESS) {
+    456                      mbedtls_pk_restart_free(rs_ctx);
+    457                  }
+    458          
+    459                  return ret;
+    460              }
+    461          #else /* MBEDTLS_ECDSA_C && MBEDTLS_ECP_RESTARTABLE */
+    462              (void) rs_ctx;
+    463          #endif /* MBEDTLS_ECDSA_C && MBEDTLS_ECP_RESTARTABLE */
+    464          
+    465              if (ctx->pk_info->verify_func == NULL) {
+   \                     ??mbedtls_pk_verify_restartable_4: (+1)
+   \       0x3A   0x6828             LDR      R0,[R5, #+0]
+   \       0x3C   0x6900             LDR      R0,[R0, #+16]
+   \       0x3E   0x2800             CMP      R0,#+0
+   \       0x40   0xD102             BNE.N    ??mbedtls_pk_verify_restartable_5
+    466                  return MBEDTLS_ERR_PK_TYPE_MISMATCH;
+   \       0x42   0x.... 0x....      LDR.W    R0,??DataTable14_16
+   \       0x46   0xE00B             B.N      ??mbedtls_pk_verify_restartable_2
+    467              }
+    468          
+    469              return ctx->pk_info->verify_func(ctx, md_alg, hash, hash_len,
+    470                                               sig, sig_len);
+   \                     ??mbedtls_pk_verify_restartable_5: (+1)
+   \       0x48   0x9809             LDR      R0,[SP, #+36]
+   \       0x4A   0x9001             STR      R0,[SP, #+4]
+   \       0x4C   0x9808             LDR      R0,[SP, #+32]
+   \       0x4E   0x9000             STR      R0,[SP, #+0]
+   \       0x50   0x9B02             LDR      R3,[SP, #+8]
+   \       0x52   0x0022             MOVS     R2,R4
+   \       0x54   0x0031             MOVS     R1,R6
+   \       0x56   0xB2C9             UXTB     R1,R1
+   \       0x58   0x0028             MOVS     R0,R5
+   \       0x5A   0x682F             LDR      R7,[R5, #+0]
+   \       0x5C   0x693F             LDR      R7,[R7, #+16]
+   \       0x5E   0x47B8             BLX      R7
+   \                     ??mbedtls_pk_verify_restartable_2: (+1)
+   \       0x60   0xBDFE             POP      {R1-R7,PC}
+    471          }
+    472          
+    473          /*
+    474           * Verify a signature
+    475           */
+
+   \                                 In section .text, align 2, keep-with-next
+    476          int mbedtls_pk_verify(mbedtls_pk_context *ctx, mbedtls_md_type_t md_alg,
+    477                                const unsigned char *hash, size_t hash_len,
+    478                                const unsigned char *sig, size_t sig_len)
+    479          {
+   \                     mbedtls_pk_verify: (+1)
+   \        0x0   0xB5FE             PUSH     {R1-R7,LR}
+   \        0x2   0x0004             MOVS     R4,R0
+   \        0x4   0x000D             MOVS     R5,R1
+   \        0x6   0x0016             MOVS     R6,R2
+   \        0x8   0x001F             MOVS     R7,R3
+    480              return mbedtls_pk_verify_restartable(ctx, md_alg, hash, hash_len,
+    481                                                   sig, sig_len, NULL);
+   \        0xA   0x2000             MOVS     R0,#+0
+   \        0xC   0x9002             STR      R0,[SP, #+8]
+   \        0xE   0x9809             LDR      R0,[SP, #+36]
+   \       0x10   0x9001             STR      R0,[SP, #+4]
+   \       0x12   0x9808             LDR      R0,[SP, #+32]
+   \       0x14   0x9000             STR      R0,[SP, #+0]
+   \       0x16   0x003B             MOVS     R3,R7
+   \       0x18   0x0032             MOVS     R2,R6
+   \       0x1A   0x0029             MOVS     R1,R5
+   \       0x1C   0xB2C9             UXTB     R1,R1
+   \       0x1E   0x0020             MOVS     R0,R4
+   \       0x20   0x.... 0x....      BL       mbedtls_pk_verify_restartable
+   \       0x24   0xBDFE             POP      {R1-R7,PC}
+    482          }
+    483          
+    484          /*
+    485           * Verify a signature with options
+    486           */
+
+   \                                 In section .text, align 2, keep-with-next
+    487          int mbedtls_pk_verify_ext(mbedtls_pk_type_t type, const void *options,
+    488                                    mbedtls_pk_context *ctx, mbedtls_md_type_t md_alg,
+    489                                    const unsigned char *hash, size_t hash_len,
+    490                                    const unsigned char *sig, size_t sig_len)
+    491          {
+   \                     mbedtls_pk_verify_ext: (+1)
+   \        0x0   0xE92D 0x43FE      PUSH     {R1-R9,LR}
+   \        0x4   0x0007             MOVS     R7,R0
+   \        0x6   0x000C             MOVS     R4,R1
+   \        0x8   0x4690             MOV      R8,R2
+   \        0xA   0x4699             MOV      R9,R3
+   \        0xC   0x9D0A             LDR      R5,[SP, #+40]
+   \        0xE   0x9E0B             LDR      R6,[SP, #+44]
+    492              if ((md_alg != MBEDTLS_MD_NONE || hash_len != 0) && hash == NULL) {
+   \       0x10   0x4648             MOV      R0,R9
+   \       0x12   0xB2C0             UXTB     R0,R0
+   \       0x14   0x2800             CMP      R0,#+0
+   \       0x16   0xD101             BNE.N    ??mbedtls_pk_verify_ext_0
+   \       0x18   0x2E00             CMP      R6,#+0
+   \       0x1A   0xD004             BEQ.N    ??mbedtls_pk_verify_ext_1
+   \                     ??mbedtls_pk_verify_ext_0: (+1)
+   \       0x1C   0x2D00             CMP      R5,#+0
+   \       0x1E   0xD102             BNE.N    ??mbedtls_pk_verify_ext_1
+    493                  return MBEDTLS_ERR_PK_BAD_INPUT_DATA;
+   \       0x20   0x.... 0x....      LDR.W    R0,??DataTable14_3
+   \       0x24   0xE027             B.N      ??mbedtls_pk_verify_ext_2
+    494              }
+    495          
+    496              if (ctx->pk_info == NULL) {
+   \                     ??mbedtls_pk_verify_ext_1: (+1)
+   \       0x26   0xF8D8 0x0000      LDR      R0,[R8, #+0]
+   \       0x2A   0x2800             CMP      R0,#+0
+   \       0x2C   0xD102             BNE.N    ??mbedtls_pk_verify_ext_3
+    497                  return MBEDTLS_ERR_PK_BAD_INPUT_DATA;
+   \       0x2E   0x.... 0x....      LDR.W    R0,??DataTable14_3
+   \       0x32   0xE020             B.N      ??mbedtls_pk_verify_ext_2
+    498              }
+    499          
+    500              if (!mbedtls_pk_can_do(ctx, type)) {
+   \                     ??mbedtls_pk_verify_ext_3: (+1)
+   \       0x34   0x0039             MOVS     R1,R7
+   \       0x36   0xB2C9             UXTB     R1,R1
+   \       0x38   0x4640             MOV      R0,R8
+   \       0x3A   0x.... 0x....      BL       mbedtls_pk_can_do
+   \       0x3E   0x2800             CMP      R0,#+0
+   \       0x40   0xD102             BNE.N    ??mbedtls_pk_verify_ext_4
+    501                  return MBEDTLS_ERR_PK_TYPE_MISMATCH;
+   \       0x42   0x.... 0x....      LDR.W    R0,??DataTable14_16
+   \       0x46   0xE016             B.N      ??mbedtls_pk_verify_ext_2
+    502              }
+    503          
+    504              if (type != MBEDTLS_PK_RSASSA_PSS) {
+   \                     ??mbedtls_pk_verify_ext_4: (+1)
+   \       0x48   0x0038             MOVS     R0,R7
+   \       0x4A   0xB2C0             UXTB     R0,R0
+   \       0x4C   0x2806             CMP      R0,#+6
+   \       0x4E   0xD010             BEQ.N    ??mbedtls_pk_verify_ext_5
+    505                  /* General case: no options */
+    506                  if (options != NULL) {
+   \       0x50   0x2C00             CMP      R4,#+0
+   \       0x52   0xD002             BEQ.N    ??mbedtls_pk_verify_ext_6
+    507                      return MBEDTLS_ERR_PK_BAD_INPUT_DATA;
+   \       0x54   0x.... 0x....      LDR.W    R0,??DataTable14_3
+   \       0x58   0xE00D             B.N      ??mbedtls_pk_verify_ext_2
+    508                  }
+    509          
+    510                  return mbedtls_pk_verify(ctx, md_alg, hash, hash_len, sig, sig_len);
+   \                     ??mbedtls_pk_verify_ext_6: (+1)
+   \       0x5A   0x980D             LDR      R0,[SP, #+52]
+   \       0x5C   0x9001             STR      R0,[SP, #+4]
+   \       0x5E   0x980C             LDR      R0,[SP, #+48]
+   \       0x60   0x9000             STR      R0,[SP, #+0]
+   \       0x62   0x0033             MOVS     R3,R6
+   \       0x64   0x002A             MOVS     R2,R5
+   \       0x66   0x4649             MOV      R1,R9
+   \       0x68   0xB2C9             UXTB     R1,R1
+   \       0x6A   0x4640             MOV      R0,R8
+   \       0x6C   0x.... 0x....      BL       mbedtls_pk_verify
+   \       0x70   0xE001             B.N      ??mbedtls_pk_verify_ext_2
+    511              }
+    512          
+    513          #if defined(MBEDTLS_RSA_C) && defined(MBEDTLS_PKCS1_V21)
+    514              int ret = MBEDTLS_ERR_ERROR_CORRUPTION_DETECTED;
+    515              const mbedtls_pk_rsassa_pss_options *pss_opts;
+    516          
+    517          #if SIZE_MAX > UINT_MAX
+    518              if (md_alg == MBEDTLS_MD_NONE && UINT_MAX < hash_len) {
+    519                  return MBEDTLS_ERR_PK_BAD_INPUT_DATA;
+    520              }
+    521          #endif
+    522          
+    523              if (options == NULL) {
+    524                  return MBEDTLS_ERR_PK_BAD_INPUT_DATA;
+    525              }
+    526          
+    527              pss_opts = (const mbedtls_pk_rsassa_pss_options *) options;
+    528          
+    529          #if defined(MBEDTLS_USE_PSA_CRYPTO)
+    530              if (pss_opts->mgf1_hash_id == md_alg) {
+    531                  unsigned char buf[MBEDTLS_PK_RSA_PUB_DER_MAX_BYTES];
+    532                  unsigned char *p;
+    533                  int key_len;
+    534                  size_t signature_length;
+    535                  psa_status_t status = PSA_ERROR_DATA_CORRUPT;
+    536                  psa_status_t destruction_status = PSA_ERROR_DATA_CORRUPT;
+    537          
+    538                  psa_algorithm_t psa_md_alg = mbedtls_md_psa_alg_from_type(md_alg);
+    539                  mbedtls_svc_key_id_t key_id = MBEDTLS_SVC_KEY_ID_INIT;
+    540                  psa_key_attributes_t attributes = PSA_KEY_ATTRIBUTES_INIT;
+    541                  psa_algorithm_t psa_sig_alg = PSA_ALG_RSA_PSS_ANY_SALT(psa_md_alg);
+    542                  p = buf + sizeof(buf);
+    543                  key_len = mbedtls_pk_write_pubkey(&p, buf, ctx);
+    544          
+    545                  if (key_len < 0) {
+    546                      return key_len;
+    547                  }
+    548          
+    549                  psa_set_key_type(&attributes, PSA_KEY_TYPE_RSA_PUBLIC_KEY);
+    550                  psa_set_key_usage_flags(&attributes, PSA_KEY_USAGE_VERIFY_HASH);
+    551                  psa_set_key_algorithm(&attributes, psa_sig_alg);
+    552          
+    553                  status = psa_import_key(&attributes,
+    554                                          buf + sizeof(buf) - key_len, key_len,
+    555                                          &key_id);
+    556                  if (status != PSA_SUCCESS) {
+    557                      psa_destroy_key(key_id);
+    558                      return PSA_PK_TO_MBEDTLS_ERR(status);
+    559                  }
+    560          
+    561                  /* This function requires returning MBEDTLS_ERR_PK_SIG_LEN_MISMATCH
+    562                   * on a valid signature with trailing data in a buffer, but
+    563                   * mbedtls_psa_rsa_verify_hash requires the sig_len to be exact,
+    564                   * so for this reason the passed sig_len is overwritten. Smaller
+    565                   * signature lengths should not be accepted for verification. */
+    566                  signature_length = sig_len > mbedtls_pk_get_len(ctx) ?
+    567                                     mbedtls_pk_get_len(ctx) : sig_len;
+    568                  status = psa_verify_hash(key_id, psa_sig_alg, hash,
+    569                                           hash_len, sig, signature_length);
+    570                  destruction_status = psa_destroy_key(key_id);
+    571          
+    572                  if (status == PSA_SUCCESS && sig_len > mbedtls_pk_get_len(ctx)) {
+    573                      return MBEDTLS_ERR_PK_SIG_LEN_MISMATCH;
+    574                  }
+    575          
+    576                  if (status == PSA_SUCCESS) {
+    577                      status = destruction_status;
+    578                  }
+    579          
+    580                  return PSA_PK_RSA_TO_MBEDTLS_ERR(status);
+    581              } else
+    582          #endif
+    583              {
+    584                  if (sig_len < mbedtls_pk_get_len(ctx)) {
+    585                      return MBEDTLS_ERR_RSA_VERIFY_FAILED;
+    586                  }
+    587          
+    588                  ret = mbedtls_rsa_rsassa_pss_verify_ext(mbedtls_pk_rsa(*ctx),
+    589                                                          md_alg, (unsigned int) hash_len, hash,
+    590                                                          pss_opts->mgf1_hash_id,
+    591                                                          pss_opts->expected_salt_len,
+    592                                                          sig);
+    593                  if (ret != 0) {
+    594                      return ret;
+    595                  }
+    596          
+    597                  if (sig_len > mbedtls_pk_get_len(ctx)) {
+    598                      return MBEDTLS_ERR_PK_SIG_LEN_MISMATCH;
+    599                  }
+    600          
+    601                  return 0;
+    602              }
+    603          #else
+    604              return MBEDTLS_ERR_PK_FEATURE_UNAVAILABLE;
+   \                     ??mbedtls_pk_verify_ext_5: (+1)
+   \       0x72   0x.... 0x....      LDR.W    R0,??DataTable14_7
+   \                     ??mbedtls_pk_verify_ext_2: (+1)
+   \       0x76   0xE8BD 0x83FE      POP      {R1-R9,PC}
+    605          #endif /* MBEDTLS_RSA_C && MBEDTLS_PKCS1_V21 */
+    606          }
+    607          
+    608          /*
+    609           * Make a signature (restartable)
+    610           */
+
+   \                                 In section .text, align 2, keep-with-next
+    611          int mbedtls_pk_sign_restartable(mbedtls_pk_context *ctx,
+    612                                          mbedtls_md_type_t md_alg,
+    613                                          const unsigned char *hash, size_t hash_len,
+    614                                          unsigned char *sig, size_t sig_size, size_t *sig_len,
+    615                                          int (*f_rng)(void *, unsigned char *, size_t), void *p_rng,
+    616                                          mbedtls_pk_restart_ctx *rs_ctx)
+    617          {
+   \                     mbedtls_pk_sign_restartable: (+1)
+   \        0x0   0xB5FC             PUSH     {R2-R7,LR}
+   \        0x2   0xB085             SUB      SP,SP,#+20
+   \        0x4   0x0005             MOVS     R5,R0
+   \        0x6   0x000E             MOVS     R6,R1
+   \        0x8   0x0014             MOVS     R4,R2
+    618              if ((md_alg != MBEDTLS_MD_NONE || hash_len != 0) && hash == NULL) {
+   \        0xA   0x0030             MOVS     R0,R6
+   \        0xC   0xB2C0             UXTB     R0,R0
+   \        0xE   0x2800             CMP      R0,#+0
+   \       0x10   0xD102             BNE.N    ??mbedtls_pk_sign_restartable_0
+   \       0x12   0x9806             LDR      R0,[SP, #+24]
+   \       0x14   0x2800             CMP      R0,#+0
+   \       0x16   0xD004             BEQ.N    ??mbedtls_pk_sign_restartable_1
+   \                     ??mbedtls_pk_sign_restartable_0: (+1)
+   \       0x18   0x2C00             CMP      R4,#+0
+   \       0x1A   0xD102             BNE.N    ??mbedtls_pk_sign_restartable_1
+    619                  return MBEDTLS_ERR_PK_BAD_INPUT_DATA;
+   \       0x1C   0x.... 0x....      LDR.W    R0,??DataTable14_3
+   \       0x20   0xE025             B.N      ??mbedtls_pk_sign_restartable_2
+    620              }
+    621          
+    622              if (ctx->pk_info == NULL || pk_hashlen_helper(md_alg, &hash_len) != 0) {
+   \                     ??mbedtls_pk_sign_restartable_1: (+1)
+   \       0x22   0x6828             LDR      R0,[R5, #+0]
+   \       0x24   0x2800             CMP      R0,#+0
+   \       0x26   0xD006             BEQ.N    ??mbedtls_pk_sign_restartable_3
+   \       0x28   0xA906             ADD      R1,SP,#+24
+   \       0x2A   0x0030             MOVS     R0,R6
+   \       0x2C   0xB2C0             UXTB     R0,R0
+   \       0x2E   0x.... 0x....      BL       pk_hashlen_helper
+   \       0x32   0x2800             CMP      R0,#+0
+   \       0x34   0xD002             BEQ.N    ??mbedtls_pk_sign_restartable_4
+    623                  return MBEDTLS_ERR_PK_BAD_INPUT_DATA;
+   \                     ??mbedtls_pk_sign_restartable_3: (+1)
+   \       0x36   0x.... 0x....      LDR.W    R0,??DataTable14_3
+   \       0x3A   0xE018             B.N      ??mbedtls_pk_sign_restartable_2
+    624              }
+    625          
+    626          #if defined(MBEDTLS_ECDSA_C) && defined(MBEDTLS_ECP_RESTARTABLE)
+    627              /* optimization: use non-restartable version if restart disabled */
+    628              if (rs_ctx != NULL &&
+    629                  mbedtls_ecp_restart_is_enabled() &&
+    630                  ctx->pk_info->sign_rs_func != NULL) {
+    631                  int ret = MBEDTLS_ERR_ERROR_CORRUPTION_DETECTED;
+    632          
+    633                  if ((ret = pk_restart_setup(rs_ctx, ctx->pk_info)) != 0) {
+    634                      return ret;
+    635                  }
+    636          
+    637                  ret = ctx->pk_info->sign_rs_func(ctx, md_alg,
+    638                                                   hash, hash_len,
+    639                                                   sig, sig_size, sig_len,
+    640                                                   f_rng, p_rng, rs_ctx->rs_ctx);
+    641          
+    642                  if (ret != MBEDTLS_ERR_ECP_IN_PROGRESS) {
+    643                      mbedtls_pk_restart_free(rs_ctx);
+    644                  }
+    645          
+    646                  return ret;
+    647              }
+    648          #else /* MBEDTLS_ECDSA_C && MBEDTLS_ECP_RESTARTABLE */
+    649              (void) rs_ctx;
+    650          #endif /* MBEDTLS_ECDSA_C && MBEDTLS_ECP_RESTARTABLE */
+    651          
+    652              if (ctx->pk_info->sign_func == NULL) {
+   \                     ??mbedtls_pk_sign_restartable_4: (+1)
+   \       0x3C   0x6828             LDR      R0,[R5, #+0]
+   \       0x3E   0x6940             LDR      R0,[R0, #+20]
+   \       0x40   0x2800             CMP      R0,#+0
+   \       0x42   0xD102             BNE.N    ??mbedtls_pk_sign_restartable_5
+    653                  return MBEDTLS_ERR_PK_TYPE_MISMATCH;
+   \       0x44   0x.... 0x....      LDR.W    R0,??DataTable14_16
+   \       0x48   0xE011             B.N      ??mbedtls_pk_sign_restartable_2
+    654              }
+    655          
+    656              return ctx->pk_info->sign_func(ctx, md_alg,
+    657                                             hash, hash_len,
+    658                                             sig, sig_size, sig_len,
+    659                                             f_rng, p_rng);
+   \                     ??mbedtls_pk_sign_restartable_5: (+1)
+   \       0x4A   0x9810             LDR      R0,[SP, #+64]
+   \       0x4C   0x9004             STR      R0,[SP, #+16]
+   \       0x4E   0x980F             LDR      R0,[SP, #+60]
+   \       0x50   0x9003             STR      R0,[SP, #+12]
+   \       0x52   0x980E             LDR      R0,[SP, #+56]
+   \       0x54   0x9002             STR      R0,[SP, #+8]
+   \       0x56   0x980D             LDR      R0,[SP, #+52]
+   \       0x58   0x9001             STR      R0,[SP, #+4]
+   \       0x5A   0x980C             LDR      R0,[SP, #+48]
+   \       0x5C   0x9000             STR      R0,[SP, #+0]
+   \       0x5E   0x9B06             LDR      R3,[SP, #+24]
+   \       0x60   0x0022             MOVS     R2,R4
+   \       0x62   0x0031             MOVS     R1,R6
+   \       0x64   0xB2C9             UXTB     R1,R1
+   \       0x66   0x0028             MOVS     R0,R5
+   \       0x68   0x682F             LDR      R7,[R5, #+0]
+   \       0x6A   0x697F             LDR      R7,[R7, #+20]
+   \       0x6C   0x47B8             BLX      R7
+   \                     ??mbedtls_pk_sign_restartable_2: (+1)
+   \       0x6E   0xB007             ADD      SP,SP,#+28
+   \       0x70   0xBDF0             POP      {R4-R7,PC}
+    660          }
+    661          
+    662          /*
+    663           * Make a signature
+    664           */
+
+   \                                 In section .text, align 2, keep-with-next
+    665          int mbedtls_pk_sign(mbedtls_pk_context *ctx, mbedtls_md_type_t md_alg,
+    666                              const unsigned char *hash, size_t hash_len,
+    667                              unsigned char *sig, size_t sig_size, size_t *sig_len,
+    668                              int (*f_rng)(void *, unsigned char *, size_t), void *p_rng)
+    669          {
+   \                     mbedtls_pk_sign: (+1)
+   \        0x0   0xB5F8             PUSH     {R3-R7,LR}
+   \        0x2   0xB086             SUB      SP,SP,#+24
+   \        0x4   0x0004             MOVS     R4,R0
+   \        0x6   0x000D             MOVS     R5,R1
+   \        0x8   0x0016             MOVS     R6,R2
+   \        0xA   0x001F             MOVS     R7,R3
+    670              return mbedtls_pk_sign_restartable(ctx, md_alg, hash, hash_len,
+    671                                                 sig, sig_size, sig_len,
+    672                                                 f_rng, p_rng, NULL);
+   \        0xC   0x2000             MOVS     R0,#+0
+   \        0xE   0x9005             STR      R0,[SP, #+20]
+   \       0x10   0x9810             LDR      R0,[SP, #+64]
+   \       0x12   0x9004             STR      R0,[SP, #+16]
+   \       0x14   0x980F             LDR      R0,[SP, #+60]
+   \       0x16   0x9003             STR      R0,[SP, #+12]
+   \       0x18   0x980E             LDR      R0,[SP, #+56]
+   \       0x1A   0x9002             STR      R0,[SP, #+8]
+   \       0x1C   0x980D             LDR      R0,[SP, #+52]
+   \       0x1E   0x9001             STR      R0,[SP, #+4]
+   \       0x20   0x980C             LDR      R0,[SP, #+48]
+   \       0x22   0x9000             STR      R0,[SP, #+0]
+   \       0x24   0x003B             MOVS     R3,R7
+   \       0x26   0x0032             MOVS     R2,R6
+   \       0x28   0x0029             MOVS     R1,R5
+   \       0x2A   0xB2C9             UXTB     R1,R1
+   \       0x2C   0x0020             MOVS     R0,R4
+   \       0x2E   0x.... 0x....      BL       mbedtls_pk_sign_restartable
+   \       0x32   0xB007             ADD      SP,SP,#+28
+   \       0x34   0xBDF0             POP      {R4-R7,PC}
+    673          }
+    674          
+    675          #if defined(MBEDTLS_PSA_CRYPTO_C)
+    676          /*
+    677           * Make a signature given a signature type.
+    678           */
+
+   \                                 In section .text, align 2, keep-with-next
+    679          int mbedtls_pk_sign_ext(mbedtls_pk_type_t pk_type,
+    680                                  mbedtls_pk_context *ctx,
+    681                                  mbedtls_md_type_t md_alg,
+    682                                  const unsigned char *hash, size_t hash_len,
+    683                                  unsigned char *sig, size_t sig_size, size_t *sig_len,
+    684                                  int (*f_rng)(void *, unsigned char *, size_t),
+    685                                  void *p_rng)
+    686          {
+   \                     mbedtls_pk_sign_ext: (+1)
+   \        0x0   0xE92D 0x43F0      PUSH     {R4-R9,LR}
+   \        0x4   0xB085             SUB      SP,SP,#+20
+   \        0x6   0x0004             MOVS     R4,R0
+   \        0x8   0x000D             MOVS     R5,R1
+   \        0xA   0x0016             MOVS     R6,R2
+   \        0xC   0x001F             MOVS     R7,R3
+   \        0xE   0xF8DD 0x8030      LDR      R8,[SP, #+48]
+   \       0x12   0xF8DD 0x903C      LDR      R9,[SP, #+60]
+    687          #if defined(MBEDTLS_RSA_C)
+    688              psa_algorithm_t psa_md_alg;
+    689          #endif /* MBEDTLS_RSA_C */
+    690              *sig_len = 0;
+   \       0x16   0x2000             MOVS     R0,#+0
+   \       0x18   0xF8C9 0x0000      STR      R0,[R9, #+0]
+    691          
+    692              if (ctx->pk_info == NULL) {
+   \       0x1C   0x6828             LDR      R0,[R5, #+0]
+   \       0x1E   0x2800             CMP      R0,#+0
+   \       0x20   0xD101             BNE.N    ??mbedtls_pk_sign_ext_0
+    693                  return MBEDTLS_ERR_PK_BAD_INPUT_DATA;
+   \       0x22   0x....             LDR.N    R0,??DataTable14_3
+   \       0x24   0xE01F             B.N      ??mbedtls_pk_sign_ext_1
+    694              }
+    695          
+    696              if (!mbedtls_pk_can_do(ctx, pk_type)) {
+   \                     ??mbedtls_pk_sign_ext_0: (+1)
+   \       0x26   0x0021             MOVS     R1,R4
+   \       0x28   0xB2C9             UXTB     R1,R1
+   \       0x2A   0x0028             MOVS     R0,R5
+   \       0x2C   0x.... 0x....      BL       mbedtls_pk_can_do
+   \       0x30   0x2800             CMP      R0,#+0
+   \       0x32   0xD101             BNE.N    ??mbedtls_pk_sign_ext_2
+    697                  return MBEDTLS_ERR_PK_TYPE_MISMATCH;
+   \       0x34   0x....             LDR.N    R0,??DataTable14_16
+   \       0x36   0xE016             B.N      ??mbedtls_pk_sign_ext_1
+    698              }
+    699          
+    700              if (pk_type != MBEDTLS_PK_RSASSA_PSS) {
+   \                     ??mbedtls_pk_sign_ext_2: (+1)
+   \       0x38   0x0020             MOVS     R0,R4
+   \       0x3A   0xB2C0             UXTB     R0,R0
+   \       0x3C   0x2806             CMP      R0,#+6
+   \       0x3E   0xD011             BEQ.N    ??mbedtls_pk_sign_ext_3
+    701                  return mbedtls_pk_sign(ctx, md_alg, hash, hash_len,
+    702                                         sig, sig_size, sig_len, f_rng, p_rng);
+   \       0x40   0x9811             LDR      R0,[SP, #+68]
+   \       0x42   0x9004             STR      R0,[SP, #+16]
+   \       0x44   0x9810             LDR      R0,[SP, #+64]
+   \       0x46   0x9003             STR      R0,[SP, #+12]
+   \       0x48   0xF8CD 0x9008      STR      R9,[SP, #+8]
+   \       0x4C   0x980E             LDR      R0,[SP, #+56]
+   \       0x4E   0x9001             STR      R0,[SP, #+4]
+   \       0x50   0x980D             LDR      R0,[SP, #+52]
+   \       0x52   0x9000             STR      R0,[SP, #+0]
+   \       0x54   0x4643             MOV      R3,R8
+   \       0x56   0x003A             MOVS     R2,R7
+   \       0x58   0x0031             MOVS     R1,R6
+   \       0x5A   0xB2C9             UXTB     R1,R1
+   \       0x5C   0x0028             MOVS     R0,R5
+   \       0x5E   0x.... 0x....      BL       mbedtls_pk_sign
+   \       0x62   0xE000             B.N      ??mbedtls_pk_sign_ext_1
+    703              }
+    704          
+    705          #if defined(MBEDTLS_RSA_C)
+    706              psa_md_alg = mbedtls_md_psa_alg_from_type(md_alg);
+    707              if (psa_md_alg == 0) {
+    708                  return MBEDTLS_ERR_PK_BAD_INPUT_DATA;
+    709              }
+    710          
+    711              if (mbedtls_pk_get_type(ctx) == MBEDTLS_PK_OPAQUE) {
+    712                  psa_status_t status;
+    713          
+    714                  status = psa_sign_hash(ctx->priv_id, PSA_ALG_RSA_PSS(psa_md_alg),
+    715                                         hash, hash_len,
+    716                                         sig, sig_size, sig_len);
+    717                  return PSA_PK_RSA_TO_MBEDTLS_ERR(status);
+    718              }
+    719          
+    720              return mbedtls_pk_psa_rsa_sign_ext(PSA_ALG_RSA_PSS(psa_md_alg),
+    721                                                 ctx->pk_ctx, hash, hash_len,
+    722                                                 sig, sig_size, sig_len);
+    723          #else /* MBEDTLS_RSA_C */
+    724              return MBEDTLS_ERR_PK_FEATURE_UNAVAILABLE;
+   \                     ??mbedtls_pk_sign_ext_3: (+1)
+   \       0x64   0x....             LDR.N    R0,??DataTable14_7
+   \                     ??mbedtls_pk_sign_ext_1: (+1)
+   \       0x66   0xB005             ADD      SP,SP,#+20
+   \       0x68   0xE8BD 0x83F0      POP      {R4-R9,PC}
+    725          #endif /* !MBEDTLS_RSA_C */
+    726          
+    727          }
+    728          #endif /* MBEDTLS_PSA_CRYPTO_C */
+    729          
+    730          /*
+    731           * Decrypt message
+    732           */
+
+   \                                 In section .text, align 2, keep-with-next
+    733          int mbedtls_pk_decrypt(mbedtls_pk_context *ctx,
+    734                                 const unsigned char *input, size_t ilen,
+    735                                 unsigned char *output, size_t *olen, size_t osize,
+    736                                 int (*f_rng)(void *, unsigned char *, size_t), void *p_rng)
+    737          {
+   \                     mbedtls_pk_decrypt: (+1)
+   \        0x0   0xB5F8             PUSH     {R3-R7,LR}
+   \        0x2   0xB084             SUB      SP,SP,#+16
+   \        0x4   0x0004             MOVS     R4,R0
+   \        0x6   0x000D             MOVS     R5,R1
+   \        0x8   0x0016             MOVS     R6,R2
+   \        0xA   0x001F             MOVS     R7,R3
+    738              if (ctx->pk_info == NULL) {
+   \        0xC   0x6820             LDR      R0,[R4, #+0]
+   \        0xE   0x2800             CMP      R0,#+0
+   \       0x10   0xD101             BNE.N    ??mbedtls_pk_decrypt_0
+    739                  return MBEDTLS_ERR_PK_BAD_INPUT_DATA;
+   \       0x12   0x....             LDR.N    R0,??DataTable14_3
+   \       0x14   0xE016             B.N      ??mbedtls_pk_decrypt_1
+    740              }
+    741          
+    742              if (ctx->pk_info->decrypt_func == NULL) {
+   \                     ??mbedtls_pk_decrypt_0: (+1)
+   \       0x16   0x6820             LDR      R0,[R4, #+0]
+   \       0x18   0x6980             LDR      R0,[R0, #+24]
+   \       0x1A   0x2800             CMP      R0,#+0
+   \       0x1C   0xD101             BNE.N    ??mbedtls_pk_decrypt_2
+    743                  return MBEDTLS_ERR_PK_TYPE_MISMATCH;
+   \       0x1E   0x....             LDR.N    R0,??DataTable14_16
+   \       0x20   0xE010             B.N      ??mbedtls_pk_decrypt_1
+    744              }
+    745          
+    746              return ctx->pk_info->decrypt_func(ctx, input, ilen,
+    747                                                output, olen, osize, f_rng, p_rng);
+   \                     ??mbedtls_pk_decrypt_2: (+1)
+   \       0x22   0x980D             LDR      R0,[SP, #+52]
+   \       0x24   0x9003             STR      R0,[SP, #+12]
+   \       0x26   0x980C             LDR      R0,[SP, #+48]
+   \       0x28   0x9002             STR      R0,[SP, #+8]
+   \       0x2A   0x980B             LDR      R0,[SP, #+44]
+   \       0x2C   0x9001             STR      R0,[SP, #+4]
+   \       0x2E   0x980A             LDR      R0,[SP, #+40]
+   \       0x30   0x9000             STR      R0,[SP, #+0]
+   \       0x32   0x003B             MOVS     R3,R7
+   \       0x34   0x0032             MOVS     R2,R6
+   \       0x36   0x0029             MOVS     R1,R5
+   \       0x38   0x0020             MOVS     R0,R4
+   \       0x3A   0xF8D4 0xC000      LDR      R12,[R4, #+0]
+   \       0x3E   0xF8DC 0xC018      LDR      R12,[R12, #+24]
+   \       0x42   0x47E0             BLX      R12
+   \                     ??mbedtls_pk_decrypt_1: (+1)
+   \       0x44   0xB005             ADD      SP,SP,#+20
+   \       0x46   0xBDF0             POP      {R4-R7,PC}
+    748          }
+    749          
+    750          /*
+    751           * Encrypt message
+    752           */
+
+   \                                 In section .text, align 2, keep-with-next
+    753          int mbedtls_pk_encrypt(mbedtls_pk_context *ctx,
+    754                                 const unsigned char *input, size_t ilen,
+    755                                 unsigned char *output, size_t *olen, size_t osize,
+    756                                 int (*f_rng)(void *, unsigned char *, size_t), void *p_rng)
+    757          {
+   \                     mbedtls_pk_encrypt: (+1)
+   \        0x0   0xB5F8             PUSH     {R3-R7,LR}
+   \        0x2   0xB084             SUB      SP,SP,#+16
+   \        0x4   0x0004             MOVS     R4,R0
+   \        0x6   0x000D             MOVS     R5,R1
+   \        0x8   0x0016             MOVS     R6,R2
+   \        0xA   0x001F             MOVS     R7,R3
+    758              if (ctx->pk_info == NULL) {
+   \        0xC   0x6820             LDR      R0,[R4, #+0]
+   \        0xE   0x2800             CMP      R0,#+0
+   \       0x10   0xD101             BNE.N    ??mbedtls_pk_encrypt_0
+    759                  return MBEDTLS_ERR_PK_BAD_INPUT_DATA;
+   \       0x12   0x....             LDR.N    R0,??DataTable14_3
+   \       0x14   0xE016             B.N      ??mbedtls_pk_encrypt_1
+    760              }
+    761          
+    762              if (ctx->pk_info->encrypt_func == NULL) {
+   \                     ??mbedtls_pk_encrypt_0: (+1)
+   \       0x16   0x6820             LDR      R0,[R4, #+0]
+   \       0x18   0x69C0             LDR      R0,[R0, #+28]
+   \       0x1A   0x2800             CMP      R0,#+0
+   \       0x1C   0xD101             BNE.N    ??mbedtls_pk_encrypt_2
+    763                  return MBEDTLS_ERR_PK_TYPE_MISMATCH;
+   \       0x1E   0x....             LDR.N    R0,??DataTable14_16
+   \       0x20   0xE010             B.N      ??mbedtls_pk_encrypt_1
+    764              }
+    765          
+    766              return ctx->pk_info->encrypt_func(ctx, input, ilen,
+    767                                                output, olen, osize, f_rng, p_rng);
+   \                     ??mbedtls_pk_encrypt_2: (+1)
+   \       0x22   0x980D             LDR      R0,[SP, #+52]
+   \       0x24   0x9003             STR      R0,[SP, #+12]
+   \       0x26   0x980C             LDR      R0,[SP, #+48]
+   \       0x28   0x9002             STR      R0,[SP, #+8]
+   \       0x2A   0x980B             LDR      R0,[SP, #+44]
+   \       0x2C   0x9001             STR      R0,[SP, #+4]
+   \       0x2E   0x980A             LDR      R0,[SP, #+40]
+   \       0x30   0x9000             STR      R0,[SP, #+0]
+   \       0x32   0x003B             MOVS     R3,R7
+   \       0x34   0x0032             MOVS     R2,R6
+   \       0x36   0x0029             MOVS     R1,R5
+   \       0x38   0x0020             MOVS     R0,R4
+   \       0x3A   0xF8D4 0xC000      LDR      R12,[R4, #+0]
+   \       0x3E   0xF8DC 0xC01C      LDR      R12,[R12, #+28]
+   \       0x42   0x47E0             BLX      R12
+   \                     ??mbedtls_pk_encrypt_1: (+1)
+   \       0x44   0xB005             ADD      SP,SP,#+20
+   \       0x46   0xBDF0             POP      {R4-R7,PC}
+    768          }
+    769          
+    770          /*
+    771           * Check public-private key pair
+    772           */
+
+   \                                 In section .text, align 2, keep-with-next
+    773          int mbedtls_pk_check_pair(const mbedtls_pk_context *pub,
+    774                                    const mbedtls_pk_context *prv,
+    775                                    int (*f_rng)(void *, unsigned char *, size_t),
+    776                                    void *p_rng)
+    777          {
+   \                     mbedtls_pk_check_pair: (+1)
+   \        0x0   0xB5F8             PUSH     {R3-R7,LR}
+   \        0x2   0x0004             MOVS     R4,R0
+   \        0x4   0x000D             MOVS     R5,R1
+   \        0x6   0x0016             MOVS     R6,R2
+   \        0x8   0x001F             MOVS     R7,R3
+    778              if (pub->pk_info == NULL ||
+    779                  prv->pk_info == NULL) {
+   \        0xA   0x6820             LDR      R0,[R4, #+0]
+   \        0xC   0x2800             CMP      R0,#+0
+   \        0xE   0xD002             BEQ.N    ??mbedtls_pk_check_pair_0
+   \       0x10   0x6828             LDR      R0,[R5, #+0]
+   \       0x12   0x2800             CMP      R0,#+0
+   \       0x14   0xD101             BNE.N    ??mbedtls_pk_check_pair_1
+    780                  return MBEDTLS_ERR_PK_BAD_INPUT_DATA;
+   \                     ??mbedtls_pk_check_pair_0: (+1)
+   \       0x16   0x....             LDR.N    R0,??DataTable14_3
+   \       0x18   0xE027             B.N      ??mbedtls_pk_check_pair_2
+    781              }
+    782          
+    783              if (f_rng == NULL) {
+   \                     ??mbedtls_pk_check_pair_1: (+1)
+   \       0x1A   0x0030             MOVS     R0,R6
+   \       0x1C   0x2800             CMP      R0,#+0
+   \       0x1E   0xD101             BNE.N    ??mbedtls_pk_check_pair_3
+    784                  return MBEDTLS_ERR_PK_BAD_INPUT_DATA;
+   \       0x20   0x....             LDR.N    R0,??DataTable14_3
+   \       0x22   0xE022             B.N      ??mbedtls_pk_check_pair_2
+    785              }
+    786          
+    787              if (prv->pk_info->check_pair_func == NULL) {
+   \                     ??mbedtls_pk_check_pair_3: (+1)
+   \       0x24   0x6828             LDR      R0,[R5, #+0]
+   \       0x26   0x6A00             LDR      R0,[R0, #+32]
+   \       0x28   0x2800             CMP      R0,#+0
+   \       0x2A   0xD101             BNE.N    ??mbedtls_pk_check_pair_4
+    788                  return MBEDTLS_ERR_PK_FEATURE_UNAVAILABLE;
+   \       0x2C   0x....             LDR.N    R0,??DataTable14_7
+   \       0x2E   0xE01C             B.N      ??mbedtls_pk_check_pair_2
+    789              }
+    790          
+    791              if (prv->pk_info->type == MBEDTLS_PK_RSA_ALT) {
+   \                     ??mbedtls_pk_check_pair_4: (+1)
+   \       0x30   0x6828             LDR      R0,[R5, #+0]
+   \       0x32   0x7800             LDRB     R0,[R0, #+0]
+   \       0x34   0x2805             CMP      R0,#+5
+   \       0x36   0xD105             BNE.N    ??mbedtls_pk_check_pair_5
+    792                  if (pub->pk_info->type != MBEDTLS_PK_RSA) {
+   \       0x38   0x6820             LDR      R0,[R4, #+0]
+   \       0x3A   0x7800             LDRB     R0,[R0, #+0]
+   \       0x3C   0x2801             CMP      R0,#+1
+   \       0x3E   0xD00B             BEQ.N    ??mbedtls_pk_check_pair_6
+    793                      return MBEDTLS_ERR_PK_TYPE_MISMATCH;
+   \       0x40   0x....             LDR.N    R0,??DataTable14_16
+   \       0x42   0xE012             B.N      ??mbedtls_pk_check_pair_2
+    794                  }
+    795              } else {
+    796                  if ((prv->pk_info->type != MBEDTLS_PK_OPAQUE) &&
+    797                      (pub->pk_info != prv->pk_info)) {
+   \                     ??mbedtls_pk_check_pair_5: (+1)
+   \       0x44   0x6828             LDR      R0,[R5, #+0]
+   \       0x46   0x7800             LDRB     R0,[R0, #+0]
+   \       0x48   0x2807             CMP      R0,#+7
+   \       0x4A   0xD005             BEQ.N    ??mbedtls_pk_check_pair_6
+   \       0x4C   0x6821             LDR      R1,[R4, #+0]
+   \       0x4E   0x6828             LDR      R0,[R5, #+0]
+   \       0x50   0x4281             CMP      R1,R0
+   \       0x52   0xD001             BEQ.N    ??mbedtls_pk_check_pair_6
+    798                      return MBEDTLS_ERR_PK_TYPE_MISMATCH;
+   \       0x54   0x....             LDR.N    R0,??DataTable14_16
+   \       0x56   0xE008             B.N      ??mbedtls_pk_check_pair_2
+    799                  }
+    800              }
+    801          
+    802              return prv->pk_info->check_pair_func((mbedtls_pk_context *) pub,
+    803                                                   (mbedtls_pk_context *) prv,
+    804                                                   f_rng, p_rng);
+   \                     ??mbedtls_pk_check_pair_6: (+1)
+   \       0x58   0x003B             MOVS     R3,R7
+   \       0x5A   0x0032             MOVS     R2,R6
+   \       0x5C   0x0029             MOVS     R1,R5
+   \       0x5E   0x0020             MOVS     R0,R4
+   \       0x60   0xF8D5 0xC000      LDR      R12,[R5, #+0]
+   \       0x64   0xF8DC 0xC020      LDR      R12,[R12, #+32]
+   \       0x68   0x47E0             BLX      R12
+   \                     ??mbedtls_pk_check_pair_2: (+1)
+   \       0x6A   0xBDF2             POP      {R1,R4-R7,PC}
+    805          }
+    806          
+    807          /*
+    808           * Get key size in bits
+    809           */
+
+   \                                 In section .text, align 2, keep-with-next
+    810          size_t mbedtls_pk_get_bitlen(const mbedtls_pk_context *ctx)
+    811          {
+   \                     mbedtls_pk_get_bitlen: (+1)
+   \        0x0   0xB510             PUSH     {R4,LR}
+   \        0x2   0x0004             MOVS     R4,R0
+    812              /* For backward compatibility, accept NULL or a context that
+    813               * isn't set up yet, and return a fake value that should be safe. */
+    814              if (ctx == NULL || ctx->pk_info == NULL) {
+   \        0x4   0x2C00             CMP      R4,#+0
+   \        0x6   0xD002             BEQ.N    ??mbedtls_pk_get_bitlen_0
+   \        0x8   0x6820             LDR      R0,[R4, #+0]
+   \        0xA   0x2800             CMP      R0,#+0
+   \        0xC   0xD101             BNE.N    ??mbedtls_pk_get_bitlen_1
+    815                  return 0;
+   \                     ??mbedtls_pk_get_bitlen_0: (+1)
+   \        0xE   0x2000             MOVS     R0,#+0
+   \       0x10   0xE003             B.N      ??mbedtls_pk_get_bitlen_2
+    816              }
+    817          
+    818              return ctx->pk_info->get_bitlen((mbedtls_pk_context *) ctx);
+   \                     ??mbedtls_pk_get_bitlen_1: (+1)
+   \       0x12   0x0020             MOVS     R0,R4
+   \       0x14   0x6821             LDR      R1,[R4, #+0]
+   \       0x16   0x6889             LDR      R1,[R1, #+8]
+   \       0x18   0x4788             BLX      R1
+   \                     ??mbedtls_pk_get_bitlen_2: (+1)
+   \       0x1A   0xBD10             POP      {R4,PC}
+    819          }
+    820          
+    821          /*
+    822           * Export debug information
+    823           */
+
+   \                                 In section .text, align 2, keep-with-next
+    824          int mbedtls_pk_debug(const mbedtls_pk_context *ctx, mbedtls_pk_debug_item *items)
+    825          {
+   \                     mbedtls_pk_debug: (+1)
+   \        0x0   0xB538             PUSH     {R3-R5,LR}
+   \        0x2   0x0004             MOVS     R4,R0
+   \        0x4   0x000D             MOVS     R5,R1
+    826              if (ctx->pk_info == NULL) {
+   \        0x6   0x6820             LDR      R0,[R4, #+0]
+   \        0x8   0x2800             CMP      R0,#+0
+   \        0xA   0xD101             BNE.N    ??mbedtls_pk_debug_0
+    827                  return MBEDTLS_ERR_PK_BAD_INPUT_DATA;
+   \        0xC   0x....             LDR.N    R0,??DataTable14_3
+   \        0xE   0xE00B             B.N      ??mbedtls_pk_debug_1
+    828              }
+    829          
+    830              if (ctx->pk_info->debug_func == NULL) {
+   \                     ??mbedtls_pk_debug_0: (+1)
+   \       0x10   0x6820             LDR      R0,[R4, #+0]
+   \       0x12   0x6AC0             LDR      R0,[R0, #+44]
+   \       0x14   0x2800             CMP      R0,#+0
+   \       0x16   0xD101             BNE.N    ??mbedtls_pk_debug_2
+    831                  return MBEDTLS_ERR_PK_TYPE_MISMATCH;
+   \       0x18   0x....             LDR.N    R0,??DataTable14_16
+   \       0x1A   0xE005             B.N      ??mbedtls_pk_debug_1
+    832              }
+    833          
+    834              ctx->pk_info->debug_func((mbedtls_pk_context *) ctx, items);
+   \                     ??mbedtls_pk_debug_2: (+1)
+   \       0x1C   0x0029             MOVS     R1,R5
+   \       0x1E   0x0020             MOVS     R0,R4
+   \       0x20   0x6822             LDR      R2,[R4, #+0]
+   \       0x22   0x6AD2             LDR      R2,[R2, #+44]
+   \       0x24   0x4790             BLX      R2
+    835              return 0;
+   \       0x26   0x2000             MOVS     R0,#+0
+   \                     ??mbedtls_pk_debug_1: (+1)
+   \       0x28   0xBD32             POP      {R1,R4,R5,PC}
+    836          }
+    837          
+    838          /*
+    839           * Access the PK type name
+    840           */
+
+   \                                 In section .text, align 2, keep-with-next
+    841          const char *mbedtls_pk_get_name(const mbedtls_pk_context *ctx)
+    842          {
+   \                     mbedtls_pk_get_name: (+1)
+   \        0x0   0x0001             MOVS     R1,R0
+    843              if (ctx == NULL || ctx->pk_info == NULL) {
+   \        0x2   0x2900             CMP      R1,#+0
+   \        0x4   0xD002             BEQ.N    ??mbedtls_pk_get_name_0
+   \        0x6   0x6808             LDR      R0,[R1, #+0]
+   \        0x8   0x2800             CMP      R0,#+0
+   \        0xA   0xD101             BNE.N    ??mbedtls_pk_get_name_1
+    844                  return "invalid PK";
+   \                     ??mbedtls_pk_get_name_0: (+1)
+   \        0xC   0x....             LDR.N    R0,??DataTable14_17
+   \        0xE   0xE001             B.N      ??mbedtls_pk_get_name_2
+    845              }
+    846          
+    847              return ctx->pk_info->name;
+   \                     ??mbedtls_pk_get_name_1: (+1)
+   \       0x10   0x6808             LDR      R0,[R1, #+0]
+   \       0x12   0x6840             LDR      R0,[R0, #+4]
+   \                     ??mbedtls_pk_get_name_2: (+1)
+   \       0x14   0x4770             BX       LR
+    848          }
+    849          
+    850          /*
+    851           * Access the PK type
+    852           */
+
+   \                                 In section .text, align 2, keep-with-next
+    853          mbedtls_pk_type_t mbedtls_pk_get_type(const mbedtls_pk_context *ctx)
+    854          {
+   \                     mbedtls_pk_get_type: (+1)
+   \        0x0   0x0001             MOVS     R1,R0
+    855              if (ctx == NULL || ctx->pk_info == NULL) {
+   \        0x2   0x2900             CMP      R1,#+0
+   \        0x4   0xD002             BEQ.N    ??mbedtls_pk_get_type_0
+   \        0x6   0x6808             LDR      R0,[R1, #+0]
+   \        0x8   0x2800             CMP      R0,#+0
+   \        0xA   0xD101             BNE.N    ??mbedtls_pk_get_type_1
+    856                  return MBEDTLS_PK_NONE;
+   \                     ??mbedtls_pk_get_type_0: (+1)
+   \        0xC   0x2000             MOVS     R0,#+0
+   \        0xE   0xE001             B.N      ??mbedtls_pk_get_type_2
+    857              }
+    858          
+    859              return ctx->pk_info->type;
+   \                     ??mbedtls_pk_get_type_1: (+1)
+   \       0x10   0x6808             LDR      R0,[R1, #+0]
+   \       0x12   0x7800             LDRB     R0,[R0, #+0]
+   \                     ??mbedtls_pk_get_type_2: (+1)
+   \       0x14   0x4770             BX       LR
+    860          }
+    861          
+    862          #if defined(MBEDTLS_USE_PSA_CRYPTO)
+    863          /*
+    864           * Load the key to a PSA key slot,
+    865           * then turn the PK context into a wrapper for that key slot.
+    866           *
+    867           * Currently only works for EC & RSA private keys.
+    868           */
+
+   \                                 In section .text, align 2, keep-with-next
+    869          int mbedtls_pk_wrap_as_opaque(mbedtls_pk_context *pk,
+    870                                        mbedtls_svc_key_id_t *key,
+    871                                        psa_algorithm_t alg,
+    872                                        psa_key_usage_t usage,
+    873                                        psa_algorithm_t alg2)
+    874          {
+   \                     mbedtls_pk_wrap_as_opaque: (+1)
+   \        0x0   0xE92D 0x4FFE      PUSH     {R1-R11,LR}
+   \        0x4   0xB0B6             SUB      SP,SP,#+216
+   \        0x6   0x0005             MOVS     R5,R0
+   \        0x8   0x000E             MOVS     R6,R1
+   \        0xA   0x9C42             LDR      R4,[SP, #+264]
+    875          #if !defined(MBEDTLS_PK_HAVE_ECC_KEYS) && !defined(MBEDTLS_RSA_C)
+    876              ((void) pk);
+    877              ((void) key);
+    878              ((void) alg);
+    879              ((void) usage);
+    880              ((void) alg2);
+    881          #else /* !MBEDTLS_PK_HAVE_ECC_KEYS && !MBEDTLS_RSA_C */
+    882          #if defined(MBEDTLS_PK_HAVE_ECC_KEYS)
+    883              if (mbedtls_pk_get_type(pk) == MBEDTLS_PK_ECKEY) {
+   \        0xC   0x0028             MOVS     R0,R5
+   \        0xE   0x.... 0x....      BL       mbedtls_pk_get_type
+   \       0x12   0x2802             CMP      R0,#+2
+   \       0x14   0xD15D             BNE.N    ??mbedtls_pk_wrap_as_opaque_0
+    884                  size_t d_len;
+    885                  psa_ecc_family_t curve_id;
+    886                  psa_key_attributes_t attributes = PSA_KEY_ATTRIBUTES_INIT;
+   \       0x16   0xA82D             ADD      R0,SP,#+180
+   \       0x18   0x2124             MOVS     R1,#+36
+   \       0x1A   0x.... 0x....      BL       __aeabi_memclr4
+    887                  psa_key_type_t key_type;
+    888                  size_t bits;
+    889                  psa_status_t status;
+    890          
+    891                  /* export the private key material in the format PSA wants */
+    892          #if defined(MBEDTLS_PK_USE_PSA_EC_DATA)
+    893                  unsigned char d[MBEDTLS_PSA_MAX_EC_KEY_PAIR_LENGTH];
+    894                  status = psa_export_key(pk->priv_id, d, sizeof(d), &d_len);
+    895                  if (status != PSA_SUCCESS) {
+    896                      return psa_pk_status_to_mbedtls(status);
+    897                  }
+    898          
+    899                  curve_id = pk->ec_family;
+    900                  bits = pk->ec_bits;
+    901          #else /* MBEDTLS_PK_USE_PSA_EC_DATA */
+    902                  unsigned char d[MBEDTLS_ECP_MAX_BYTES];
+    903                  mbedtls_ecp_keypair *ec = mbedtls_pk_ec_rw(*pk);
+   \       0x1E   0x0029             MOVS     R1,R5
+   \       0x20   0xB084             SUB      SP,SP,#+16
+   \       0x22   0x4668             MOV      R0,SP
+   \       0x24   0x22A0             MOVS     R2,#+160
+   \       0x26   0x.... 0x....      BL       __aeabi_memcpy4
+   \       0x2A   0xBC0F             POP      {R0-R3}
+   \       0x2C   0x.... 0x....      BL       mbedtls_pk_ec_rw
+   \       0x30   0x4681             MOV      R9,R0
+    904                  int ret = MBEDTLS_ERR_ERROR_CORRUPTION_DETECTED;
+   \       0x32   0xF07F 0x076D      MVNS     R7,#+109
+    905          
+    906                  d_len = PSA_BITS_TO_BYTES(ec->grp.nbits);
+   \       0x36   0xF8D9 0x8040      LDR      R8,[R9, #+64]
+   \       0x3A   0xF118 0x0807      ADDS     R8,R8,#+7
+   \       0x3E   0xEA5F 0x08D8      LSRS     R8,R8,#+3
+    907                  if ((ret = mbedtls_ecp_write_key(ec, d, d_len)) != 0) {
+   \       0x42   0x4642             MOV      R2,R8
+   \       0x44   0xA925             ADD      R1,SP,#+148
+   \       0x46   0x4648             MOV      R0,R9
+   \       0x48   0x.... 0x....      BL       mbedtls_ecp_write_key
+   \       0x4C   0x9000             STR      R0,[SP, #+0]
+   \       0x4E   0x2800             CMP      R0,#+0
+   \       0x50   0xD001             BEQ.N    ??mbedtls_pk_wrap_as_opaque_1
+    908                      return ret;
+   \       0x52   0x9800             LDR      R0,[SP, #+0]
+   \       0x54   0xE03E             B.N      ??mbedtls_pk_wrap_as_opaque_2
+    909                  }
+    910          
+    911                  curve_id = mbedtls_ecc_group_to_psa(ec->grp.id, &bits);
+   \                     ??mbedtls_pk_wrap_as_opaque_1: (+1)
+   \       0x56   0xA924             ADD      R1,SP,#+144
+   \       0x58   0xF899 0x0000      LDRB     R0,[R9, #+0]
+   \       0x5C   0x.... 0x....      BL       mbedtls_ecc_group_to_psa
+   \       0x60   0x4683             MOV      R11,R0
+    912          #endif /* MBEDTLS_PK_USE_PSA_EC_DATA */
+    913                  key_type = PSA_KEY_TYPE_ECC_KEY_PAIR(curve_id);
+   \       0x62   0x46DA             MOV      R10,R11
+   \       0x64   0xFA5F 0xFA8A      UXTB     R10,R10
+   \       0x68   0xF45A 0x4AE2      ORRS     R10,R10,#0x7100
+    914          
+    915                  /* prepare the key attributes */
+    916                  psa_set_key_type(&attributes, key_type);
+   \       0x6C   0x4651             MOV      R1,R10
+   \       0x6E   0xB289             UXTH     R1,R1
+   \       0x70   0xA82D             ADD      R0,SP,#+180
+   \       0x72   0x.... 0x....      BL       psa_set_key_type
+    917                  psa_set_key_bits(&attributes, bits);
+   \       0x76   0x9924             LDR      R1,[SP, #+144]
+   \       0x78   0xA82D             ADD      R0,SP,#+180
+   \       0x7A   0x.... 0x....      BL       psa_set_key_bits
+    918                  psa_set_key_usage_flags(&attributes, usage);
+   \       0x7E   0x9938             LDR      R1,[SP, #+224]
+   \       0x80   0xA82D             ADD      R0,SP,#+180
+   \       0x82   0x.... 0x....      BL       psa_set_key_usage_flags
+    919                  psa_set_key_algorithm(&attributes, alg);
+   \       0x86   0x9937             LDR      R1,[SP, #+220]
+   \       0x88   0xA82D             ADD      R0,SP,#+180
+   \       0x8A   0x.... 0x....      BL       psa_set_key_algorithm
+    920                  if (alg2 != PSA_ALG_NONE) {
+   \       0x8E   0x2C00             CMP      R4,#+0
+   \       0x90   0xD003             BEQ.N    ??mbedtls_pk_wrap_as_opaque_3
+    921                      psa_set_key_enrollment_algorithm(&attributes, alg2);
+   \       0x92   0x0021             MOVS     R1,R4
+   \       0x94   0xA82D             ADD      R0,SP,#+180
+   \       0x96   0x.... 0x....      BL       psa_set_key_enrollment_algorithm
+    922                  }
+    923          
+    924                  /* import private key into PSA */
+    925                  status = psa_import_key(&attributes, d, d_len, key);
+   \                     ??mbedtls_pk_wrap_as_opaque_3: (+1)
+   \       0x9A   0x0033             MOVS     R3,R6
+   \       0x9C   0x4642             MOV      R2,R8
+   \       0x9E   0xA925             ADD      R1,SP,#+148
+   \       0xA0   0xA82D             ADD      R0,SP,#+180
+   \       0xA2   0x.... 0x....      BL       psa_import_key
+   \       0xA6   0x0007             MOVS     R7,R0
+    926                  mbedtls_platform_zeroize(d, sizeof(d));
+   \       0xA8   0x2120             MOVS     R1,#+32
+   \       0xAA   0xA825             ADD      R0,SP,#+148
+   \       0xAC   0x.... 0x....      BL       mbedtls_platform_zeroize
+    927                  if (status != PSA_SUCCESS) {
+   \       0xB0   0x2F00             CMP      R7,#+0
+   \       0xB2   0xD003             BEQ.N    ??mbedtls_pk_wrap_as_opaque_4
+    928                      return PSA_PK_TO_MBEDTLS_ERR(status);
+   \       0xB4   0x0038             MOVS     R0,R7
+   \       0xB6   0x.... 0x....      BL       psa_pk_status_to_mbedtls
+   \       0xBA   0xE00B             B.N      ??mbedtls_pk_wrap_as_opaque_2
+    929                  }
+    930          
+    931                  /* make PK context wrap the key slot */
+    932                  mbedtls_pk_free(pk);
+   \                     ??mbedtls_pk_wrap_as_opaque_4: (+1)
+   \       0xBC   0x0028             MOVS     R0,R5
+   \       0xBE   0x.... 0x....      BL       mbedtls_pk_free
+    933                  mbedtls_pk_init(pk);
+   \       0xC2   0x0028             MOVS     R0,R5
+   \       0xC4   0x.... 0x....      BL       mbedtls_pk_init
+    934          
+    935                  return mbedtls_pk_setup_opaque(pk, *key);
+   \       0xC8   0x6831             LDR      R1,[R6, #+0]
+   \       0xCA   0x0028             MOVS     R0,R5
+   \       0xCC   0x.... 0x....      BL       mbedtls_pk_setup_opaque
+   \       0xD0   0xE000             B.N      ??mbedtls_pk_wrap_as_opaque_2
+    936              } else
+    937          #endif /* MBEDTLS_PK_HAVE_ECC_KEYS */
+    938          #if defined(MBEDTLS_RSA_C)
+    939              if (mbedtls_pk_get_type(pk) == MBEDTLS_PK_RSA) {
+    940                  unsigned char buf[MBEDTLS_PK_RSA_PRV_DER_MAX_BYTES];
+    941                  psa_key_attributes_t attributes = PSA_KEY_ATTRIBUTES_INIT;
+    942                  int key_len;
+    943                  psa_status_t status;
+    944          
+    945                  /* export the private key material in the format PSA wants */
+    946                  key_len = mbedtls_pk_write_key_der(pk, buf, sizeof(buf));
+    947                  if (key_len <= 0) {
+    948                      return MBEDTLS_ERR_PK_BAD_INPUT_DATA;
+    949                  }
+    950          
+    951                  /* prepare the key attributes */
+    952                  psa_set_key_type(&attributes, PSA_KEY_TYPE_RSA_KEY_PAIR);
+    953                  psa_set_key_bits(&attributes, mbedtls_pk_get_bitlen(pk));
+    954                  psa_set_key_usage_flags(&attributes, usage);
+    955                  psa_set_key_algorithm(&attributes, alg);
+    956                  if (alg2 != PSA_ALG_NONE) {
+    957                      psa_set_key_enrollment_algorithm(&attributes, alg2);
+    958                  }
+    959          
+    960                  /* import private key into PSA */
+    961                  status = psa_import_key(&attributes,
+    962                                          buf + sizeof(buf) - key_len,
+    963                                          key_len, key);
+    964          
+    965                  mbedtls_platform_zeroize(buf, sizeof(buf));
+    966          
+    967                  if (status != PSA_SUCCESS) {
+    968                      return PSA_PK_TO_MBEDTLS_ERR(status);
+    969                  }
+    970          
+    971                  /* make PK context wrap the key slot */
+    972                  mbedtls_pk_free(pk);
+    973                  mbedtls_pk_init(pk);
+    974          
+    975                  return mbedtls_pk_setup_opaque(pk, *key);
+    976              } else
+    977          #endif /* MBEDTLS_RSA_C */
+    978          #endif /* !MBEDTLS_PK_HAVE_ECC_KEYS && !MBEDTLS_RSA_C */
+    979              return MBEDTLS_ERR_PK_TYPE_MISMATCH;
+   \                     ??mbedtls_pk_wrap_as_opaque_0: (+1)
+   \       0xD2   0x....             LDR.N    R0,??DataTable14_16
+   \                     ??mbedtls_pk_wrap_as_opaque_2: (+1)
+   \       0xD4   0xB039             ADD      SP,SP,#+228
+   \       0xD6   0xE8BD 0x8FF0      POP      {R4-R11,PC}
+    980          }
+
+   \                                 In section .rodata, align 4
+   \        0x0   0x0000 0x0000      DC16 0, 0
+   \        0x4   0x0000'0000        DC32 0, 0, 0, 0, 0
+   \              0x0000'0000  
+   \              0x0000'0000  
+   \              0x0000'0000  
+   \              0x0000'0000
+   \       0x18   0x0000             DC16 0
+   \       0x1A                      DS8 2
+   \       0x1C   0x0000'0000        DC32 0x0, 0
+   \              0x0000'0000
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable14:
+   \        0x0   0x....'....        DC32     mbedtls_eckey_info
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable14_1:
+   \        0x0   0x....'....        DC32     mbedtls_eckeydh_info
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable14_2:
+   \        0x0   0x....'....        DC32     mbedtls_ecdsa_info
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable14_3:
+   \        0x0   0xFFFF'C180        DC32     0xffffc180
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable14_4:
+   \        0x0   0xFFFF'C080        DC32     0xffffc080
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable14_5:
+   \        0x0   0x....'....        DC32     mbedtls_ecdsa_opaque_info
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable14_6:
+   \        0x0   0x....'....        DC32     mbedtls_rsa_opaque_info
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable14_7:
+   \        0x0   0xFFFF'C680        DC32     0xffffc680
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable14_8:
+   \        0x0   0x0600'0200        DC32     0x6000200
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable14_9:
+   \        0x0   0x0600'0300        DC32     0x6000300
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable14_10:
+   \        0x0   0x0600'1300        DC32     0x6001300
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable14_11:
+   \        0x0   0x0700'0200        DC32     0x7000200
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable14_12:
+   \        0x0   0x0902'0000        DC32     0x9020000
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable14_13:
+   \        0x0   0x0600'0900        DC32     0x6000900
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable14_14:
+   \        0x0   0x0600'0400        DC32     0x6000400
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable14_15:
+   \        0x0   0x0200'00FF        DC32     0x20000ff
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable14_16:
+   \        0x0   0xFFFF'C100        DC32     0xffffc100
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable14_17:
+   \        0x0   0x....'....        DC32     ?_0
+
+   \                                 In section .rodata, align 4
+   \                     ?_0:
+   \        0x0   0x69 0x6E          DC8 "invalid PK"
+   \              0x76 0x61    
+   \              0x6C 0x69    
+   \              0x64 0x20    
+   \              0x50 0x4B    
+   \              0x00
+   \        0xB                      DS8 1
+    981          #endif /* MBEDTLS_USE_PSA_CRYPTO */
+    982          #endif /* MBEDTLS_PK_C */
+
+   Maximum stack usage in bytes:
+
+   .cstack Function
+   ------- --------
+       8   mbedtls_md_get_size_from_type
+         8   -> mbedtls_md_get_size
+         8   -> mbedtls_md_info_from_type
+      16   mbedtls_pk_can_do
+        16   -- Indirect call
+      72   mbedtls_pk_can_do_ext
+        72   -- Indirect call
+        72   -> __aeabi_memclr4
+        72   -> mbedtls_pk_get_type
+        72   -> psa_get_key_algorithm
+        72   -> psa_get_key_attributes
+        72   -> psa_get_key_enrollment_algorithm
+        72   -> psa_get_key_usage_flags
+        72   -> psa_reset_key_attributes
+      24   mbedtls_pk_check_pair
+        24   -- Indirect call
+      16   mbedtls_pk_debug
+        16   -- Indirect call
+      40   mbedtls_pk_decrypt
+        40   -- Indirect call
+      24   mbedtls_pk_ec_rw
+        24   -> mbedtls_pk_get_type
+      40   mbedtls_pk_encrypt
+        40   -- Indirect call
+       8   mbedtls_pk_free
+         8   -- Indirect call
+         8   -> mbedtls_platform_zeroize
+       8   mbedtls_pk_get_bitlen
+         8   -- Indirect call
+       0   mbedtls_pk_get_name
+       0   mbedtls_pk_get_type
+       0   mbedtls_pk_info_from_type
+       0   mbedtls_pk_init
+      16   mbedtls_pk_setup
+        16   -- Indirect call
+      56   mbedtls_pk_setup_opaque
+        56   -> __aeabi_memclr4
+        56   -> psa_get_key_attributes
+        56   -> psa_get_key_type
+        56   -> psa_reset_key_attributes
+      48   mbedtls_pk_sign
+        48   -> mbedtls_pk_sign_restartable
+      48   mbedtls_pk_sign_ext
+        48   -> mbedtls_pk_can_do
+        48   -> mbedtls_pk_sign
+      48   mbedtls_pk_sign_restartable
+        48   -- Indirect call
+        48   -> pk_hashlen_helper
+      32   mbedtls_pk_verify
+        32   -> mbedtls_pk_verify_restartable
+      40   mbedtls_pk_verify_ext
+        40   -> mbedtls_pk_can_do
+        40   -> mbedtls_pk_verify
+      32   mbedtls_pk_verify_restartable
+        32   -- Indirect call
+        32   -> pk_hashlen_helper
+     280   mbedtls_pk_wrap_as_opaque
+       264   -> __aeabi_memclr4
+       280   -> __aeabi_memcpy4
+       264   -> mbedtls_ecc_group_to_psa
+       264   -> mbedtls_ecp_write_key
+       264   -> mbedtls_pk_ec_rw
+       264   -> mbedtls_pk_free
+       264   -> mbedtls_pk_get_type
+       264   -> mbedtls_pk_init
+       264   -> mbedtls_pk_setup_opaque
+       264   -> mbedtls_platform_zeroize
+       264   -> psa_import_key
+       264   -> psa_pk_status_to_mbedtls
+       264   -> psa_set_key_algorithm
+       264   -> psa_set_key_bits
+       264   -> psa_set_key_enrollment_algorithm
+       264   -> psa_set_key_type
+       264   -> psa_set_key_usage_flags
+      16   pk_hashlen_helper
+        16   -> mbedtls_md_get_size_from_type
+       0   psa_extend_key_usage_flags
+       0   psa_get_key_algorithm
+       0   psa_get_key_enrollment_algorithm
+       0   psa_get_key_type
+       0   psa_get_key_usage_flags
+       0   psa_set_key_algorithm
+       0   psa_set_key_bits
+       0   psa_set_key_enrollment_algorithm
+      16   psa_set_key_type
+        16   -> psa_set_key_domain_parameters
+      16   psa_set_key_usage_flags
+        16   -> psa_extend_key_usage_flags
+
+
+   Section sizes:
+
+   Bytes  Function/Label
+   -----  --------------
+       4  ??DataTable14
+       4  ??DataTable14_1
+       4  ??DataTable14_10
+       4  ??DataTable14_11
+       4  ??DataTable14_12
+       4  ??DataTable14_13
+       4  ??DataTable14_14
+       4  ??DataTable14_15
+       4  ??DataTable14_16
+       4  ??DataTable14_17
+       4  ??DataTable14_2
+       4  ??DataTable14_3
+       4  ??DataTable14_4
+       4  ??DataTable14_5
+       4  ??DataTable14_6
+       4  ??DataTable14_7
+       4  ??DataTable14_8
+       4  ??DataTable14_9
+      12  ?_0
+      36  ?_1
+      36  ?_2
+      36  ?_3
+      18  mbedtls_md_get_size_from_type
+      32  mbedtls_pk_can_do
+   1'008  mbedtls_pk_can_do_ext
+     108  mbedtls_pk_check_pair
+      42  mbedtls_pk_debug
+      72  mbedtls_pk_decrypt
+      28  mbedtls_pk_ec_rw
+      72  mbedtls_pk_encrypt
+      40  mbedtls_pk_free
+      28  mbedtls_pk_get_bitlen
+      22  mbedtls_pk_get_name
+      22  mbedtls_pk_get_type
+      42  mbedtls_pk_info_from_type
+      14  mbedtls_pk_init
+      50  mbedtls_pk_setup
+     120  mbedtls_pk_setup_opaque
+      54  mbedtls_pk_sign
+     108  mbedtls_pk_sign_ext
+     114  mbedtls_pk_sign_restartable
+      38  mbedtls_pk_verify
+     122  mbedtls_pk_verify_ext
+      98  mbedtls_pk_verify_restartable
+     218  mbedtls_pk_wrap_as_opaque
+      42  pk_hashlen_helper
+      30  psa_extend_key_usage_flags
+       4  psa_get_key_algorithm
+       4  psa_get_key_enrollment_algorithm
+       4  psa_get_key_type
+       4  psa_get_key_usage_flags
+       4  psa_set_key_algorithm
+      20  psa_set_key_bits
+       4  psa_set_key_enrollment_algorithm
+      32  psa_set_key_type
+      16  psa_set_key_usage_flags
+
+ 
+   120 bytes in section .rodata
+ 2'706 bytes in section .text
+ 
+ 2'706 bytes of CODE  memory
+   120 bytes of CONST memory
+
+Errors: none
+Warnings: none

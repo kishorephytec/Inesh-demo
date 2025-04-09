@@ -1,0 +1,651 @@
+###############################################################################
+#
+# IAR ANSI C/C++ Compiler V9.50.2.385/W64 for ARM         27/Nov/2024  12:17:23
+# Copyright 1999-2024 IAR Systems AB.
+#
+#    Cpu mode                     =  thumb
+#    Endian                       =  little
+#    Source file                  =
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\util\third_party\mbedtls\library\constant_time.c
+#    Command line                 =
+#        -f
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\ewarm-iar\obj\library_11823079944874003547.dir\constant_time.o.rsp
+#        (C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\util\third_party\mbedtls\library\constant_time.c
+#        -D EFR32FG28B322F1024IM48=1 -D
+#        configNUM_SDK_THREAD_LOCAL_STORAGE_POINTERS=2 -D
+#        SL_COMPONENT_CATALOG_PRESENT=1 -D
+#        MBEDTLS_CONFIG_FILE=<sl_mbedtls_config.h> -D
+#        MBEDTLS_PSA_CRYPTO_CONFIG_FILE=<psa_crypto_config.h> -D
+#        SL_RAIL_LIB_MULTIPROTOCOL_SUPPORT=0 -D
+#        SL_RAIL_UTIL_PA_CONFIG_HEADER=<sl_rail_util_pa_config.h> -D
+#        RTT_USE_ASM=0 -D MBED_CONF_MBED_TRACE_ENABLE=1 -D
+#        MBED_CONF_NANOSTACK_CONFIGURATION=ws_router -D
+#        MBED_TRACE_MAX_LEVEL=TRACE_ACTIVE_LEVEL_ALL -D DEBUG_EFM_USER=1 -D
+#        HAVE_LFN=1 -D HAVE_LFN_PARENT=1 -lC
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\ewarm-iar\lst\library_11823079944874003547.dir
+#        --diag_suppress Pa050 -o
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\ewarm-iar\obj\library_11823079944874003547.dir
+#        --debug --endian=little --cpu=Cortex-M33 --cmse --cmse -e
+#        --fpu=VFPv5_sp --dlib_config "C:\Program Files\IAR Systems\Embedded
+#        Workbench 9.2\arm\inc\c\DLib_Config_Normal.h" -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\util\third_party\mbedtls\library\
+#        -I C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\autogen\ -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\config\ -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\config\rail\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\Device\SiliconLabs\EFR32FG28\Include\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\common\inc\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\CMSIS\Core\Include\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\CMSIS\RTOS2\Include\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\service\device_init\inc\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\emdrv\dmadrv\inc\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\emdrv\common\inc\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\emlib\inc\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\util\third_party\freertos\cmsis\Include\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\util\third_party\freertos\kernel\include\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\util\third_party\freertos\kernel\portable\IAR\ARM_CM33_NTZ\non_secure\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\service\iostream\inc\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\security\sl_component\sl_mbedtls_support\config\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\security\sl_component\sl_mbedtls_support\config\preset\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\security\sl_component\sl_mbedtls_support\inc\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\util\third_party\mbedtls\include\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\util\third_party\mbedtls\library\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\emdrv\nvm3\inc\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\peripheral\inc\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\security\sl_component\sl_psa_driver\inc\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\radio\rail_lib\common\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\radio\rail_lib\protocol\ble\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\radio\rail_lib\protocol\ieee802154\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\radio\rail_lib\protocol\wmbus\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\radio\rail_lib\protocol\zwave\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\radio\rail_lib\chip\efr32\efr32xg2x\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\radio\rail_lib\protocol\sidewalk\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\radio\rail_lib\plugin\pa-conversions\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\radio\rail_lib\plugin\pa-conversions\efr32xg28\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\radio\rail_lib\plugin\rail_util_pti\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\security\sl_component\se_manager\inc\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\security\sl_component\se_manager\src\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\util\third_party\segger\systemview\SEGGER\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\util\silicon_labs\silabs_core\memory_manager\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\common\toolchain\inc\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\service\system\inc\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\app\wisun\component\ns_list\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\app\wisun\component\trace_util\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\app\wisun\component\trace_util\nanostack\nanostack-libservice\mbed-client-libservice\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\service\sleeptimer\inc\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\protocol\wisun\stack\inc\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\protocol\wisun\app\wisun_rcp\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\protocol\wisun\stack\inc\socket\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\protocol\wisun\stack\src\
+#        -Ohz --use_c++_inline) --dependencies=n
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\ewarm-iar\obj\library_11823079944874003547.dir\constant_time.o.iar_deps
+#    Locale                       =  C
+#    List file                    =
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\ewarm-iar\lst\library_11823079944874003547.dir\constant_time.lst
+#    Object file                  =
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\ewarm-iar\obj\library_11823079944874003547.dir\constant_time.o
+#    Runtime model:                  
+#      __CPP_Runtime              =  1
+#      __SystemLibrary            =  DLib
+#      __dlib_full_locale_support =  0
+#      __dlib_version             =  6
+#
+###############################################################################
+
+C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\util\third_party\mbedtls\library\constant_time.c
+      1          /**
+      2           *  Constant-time functions
+      3           *
+      4           *  Copyright The Mbed TLS Contributors
+      5           *  SPDX-License-Identifier: Apache-2.0
+      6           *
+      7           *  Licensed under the Apache License, Version 2.0 (the "License"); you may
+      8           *  not use this file except in compliance with the License.
+      9           *  You may obtain a copy of the License at
+     10           *
+     11           *  http://www.apache.org/licenses/LICENSE-2.0
+     12           *
+     13           *  Unless required by applicable law or agreed to in writing, software
+     14           *  distributed under the License is distributed on an "AS IS" BASIS, WITHOUT
+     15           *  WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     16           *  See the License for the specific language governing permissions and
+     17           *  limitations under the License.
+     18           */
+     19          
+     20          /*
+     21           * The following functions are implemented without using comparison operators, as those
+     22           * might be translated to branches by some compilers on some platforms.
+     23           */
+     24          
+     25          #include <stdint.h>
+     26          #include <limits.h>
+     27          
+     28          #include "common.h"
+
+   \                                 In section .text, align 2
+   \   __vfp uint32_t mbedtls_get_unaligned_uint32(void const *)
+   \                     mbedtls_get_unaligned_uint32: (+1)
+   \        0x0   0xB081             SUB      SP,SP,#+4
+   \        0x2   0x6801             LDR      R1,[R0, #+0]
+   \        0x4   0x9100             STR      R1,[SP, #+0]
+   \        0x6   0xB001             ADD      SP,SP,#+4
+   \        0x8   0x4608             MOV      R0,R1
+   \        0xA   0x4770             BX       LR
+     29          #include "constant_time_internal.h"
+
+   \                                 In section .text, align 2, keep-with-next
+   \   static __vfp uint32_t mbedtls_ct_compiler_opaque(uint32_t)
+   \                     mbedtls_ct_compiler_opaque: (+1)
+   \        0x0   0x....             LDR.N    R2,??DataTable4
+   \        0x2   0x6811             LDR      R1,[R2, #+0]
+   \        0x4   0x4048             EORS     R0,R1,R0
+   \        0x6   0x4770             BX       LR
+
+   \                                 In section .text, align 2, keep-with-next
+   \   static __vfp uint32_t mbedtls_ct_bool(uint32_t)
+   \                     mbedtls_ct_bool: (+1)
+   \        0x0   0x....             LDR.N    R2,??DataTable4
+   \        0x2   0x6811             LDR      R1,[R2, #+0]
+   \        0x4   0x4048             EORS     R0,R1,R0
+   \        0x6   0x4241             RSBS     R1,R0,#+0
+   \        0x8   0x0840             LSRS     R0,R0,#+1
+   \        0xA   0x4240             RSBS     R0,R0,#+0
+   \        0xC   0x4308             ORRS     R0,R0,R1
+   \        0xE   0x0FC0             LSRS     R0,R0,#+31
+   \       0x10   0x4240             RSBS     R0,R0,#+0
+   \       0x12   0x4770             BX       LR
+
+   \                                 In section .text, align 2, keep-with-next
+   \   static __vfp uint32_t mbedtls_ct_uint_lt(uint32_t, uint32_t)
+   \                     mbedtls_ct_uint_lt: (+1)
+   \        0x0   0xB538             PUSH     {R3-R5,LR}
+   \        0x2   0x460D             MOV      R5,R1
+   \        0x4   0x.... 0x....      BL       mbedtls_ct_compiler_opaque
+   \        0x8   0x4604             MOV      R4,R0
+   \        0xA   0x4628             MOV      R0,R5
+   \        0xC   0x.... 0x....      BL       mbedtls_ct_compiler_opaque
+   \       0x10   0x4605             MOV      R5,R0
+   \       0x12   0xEA85 0x0004      EOR      R0,R5,R4
+   \       0x16   0x0FC0             LSRS     R0,R0,#+31
+   \       0x18   0x.... 0x....      BL       mbedtls_ct_bool
+   \       0x1C   0x....             LDR.N    R2,??DataTable4
+   \       0x1E   0x6812             LDR      R2,[R2, #+0]
+   \       0x20   0xEA05 0x0100      AND      R1,R5,R0
+   \       0x24   0x1B64             SUBS     R4,R4,R5
+   \       0x26   0x4050             EORS     R0,R2,R0
+   \       0x28   0x4384             BICS     R4,R4,R0
+   \       0x2A   0x430C             ORRS     R4,R4,R1
+   \       0x2C   0x0FE0             LSRS     R0,R4,#+31
+   \       0x2E   0xE8BD 0x4032      POP      {R1,R4,R5,LR}
+   \       0x32   0x....             B.N      mbedtls_ct_bool
+     30          #include "mbedtls/constant_time.h"
+     31          #include "mbedtls/error.h"
+     32          #include "mbedtls/platform_util.h"
+     33          
+     34          #include <string.h>
+     35          
+     36          #if defined(MBEDTLS_USE_PSA_CRYPTO) && defined(MBEDTLS_SSL_SOME_SUITES_USE_MAC)
+     37          #include "psa/crypto.h"
+     38          /* Define a local translating function to save code size by not using too many
+     39           * arguments in each translating place. */
+     40          static int local_err_translation(psa_status_t status)
+     41          {
+     42              return psa_status_to_mbedtls(status, psa_to_ssl_errors,
+     43                                           ARRAY_LENGTH(psa_to_ssl_errors),
+     44                                           psa_generic_status_to_mbedtls);
+     45          }
+     46          #define PSA_TO_MBEDTLS_ERR(status) local_err_translation(status)
+     47          #endif
+     48          
+     49          #if !defined(MBEDTLS_CT_ASM)
+     50          /*
+     51           * Define an object with the value zero, such that the compiler cannot prove that it
+     52           * has the value zero (because it is volatile, it "may be modified in ways unknown to
+     53           * the implementation").
+     54           */
+
+   \                                 In section .bss, align 4
+     55          volatile mbedtls_ct_uint_t mbedtls_ct_zero = 0;
+   \                     mbedtls_ct_zero:
+   \        0x0                      DS8 4
+     56          #endif
+     57          
+     58          /*
+     59           * Define MBEDTLS_EFFICIENT_UNALIGNED_VOLATILE_ACCESS where assembly is present to
+     60           * perform fast unaligned access to volatile data.
+     61           *
+     62           * This is needed because mbedtls_get_unaligned_uintXX etc don't support volatile
+     63           * memory accesses.
+     64           *
+     65           * Some of these definitions could be moved into alignment.h but for now they are
+     66           * only used here.
+     67           */
+     68          #if defined(MBEDTLS_EFFICIENT_UNALIGNED_ACCESS) && \
+     69              ((defined(MBEDTLS_CT_ARM_ASM) && (UINTPTR_MAX == 0xfffffffful)) || \
+     70              defined(MBEDTLS_CT_AARCH64_ASM))
+     71          /* We check pointer sizes to avoid issues with them not matching register size requirements */
+     72          #define MBEDTLS_EFFICIENT_UNALIGNED_VOLATILE_ACCESS
+     73          
+     74          static inline uint32_t mbedtls_get_unaligned_volatile_uint32(volatile const unsigned char *p)
+     75          {
+     76              /* This is UB, even where it's safe:
+     77               *    return *((volatile uint32_t*)p);
+     78               * so instead the same thing is expressed in assembly below.
+     79               */
+     80              uint32_t r;
+     81          #if defined(MBEDTLS_CT_ARM_ASM)
+     82              asm volatile ("ldr %0, [%1]" : "=r" (r) : "r" (p) :);
+     83          #elif defined(MBEDTLS_CT_AARCH64_ASM)
+     84              asm volatile ("ldr %w0, [%1]" : "=r" (r) : MBEDTLS_ASM_AARCH64_PTR_CONSTRAINT(p) :);
+     85          #else
+     86          #error "No assembly defined for mbedtls_get_unaligned_volatile_uint32"
+     87          #endif
+     88              return r;
+     89          }
+     90          #endif /* defined(MBEDTLS_EFFICIENT_UNALIGNED_ACCESS) &&
+     91                    (defined(MBEDTLS_CT_ARM_ASM) || defined(MBEDTLS_CT_AARCH64_ASM)) */
+     92          
+
+   \                                 In section .text, align 2, keep-with-next
+     93          int mbedtls_ct_memcmp(const void *a,
+     94                                const void *b,
+     95                                size_t n)
+     96          {
+   \                     mbedtls_ct_memcmp: (+1)
+   \        0x0   0xB570             PUSH     {R4-R6,LR}
+     97              size_t i = 0;
+   \        0x2   0x2600             MOVS     R6,#+0
+     98              /*
+     99               * `A` and `B` are cast to volatile to ensure that the compiler
+    100               * generates code that always fully reads both buffers.
+    101               * Otherwise it could generate a test to exit early if `diff` has all
+    102               * bits set early in the loop.
+    103               */
+    104              volatile const unsigned char *A = (volatile const unsigned char *) a;
+    105              volatile const unsigned char *B = (volatile const unsigned char *) b;
+    106              uint32_t diff = 0;
+   \        0x4   0x2400             MOVS     R4,#+0
+   \        0x6   0xE004             B.N      ??mbedtls_ct_memcmp_0
+    107          
+    108          #if defined(MBEDTLS_EFFICIENT_UNALIGNED_VOLATILE_ACCESS)
+    109              for (; (i + 4) <= n; i += 4) {
+    110                  uint32_t x = mbedtls_get_unaligned_volatile_uint32(A + i);
+    111                  uint32_t y = mbedtls_get_unaligned_volatile_uint32(B + i);
+    112                  diff |= x ^ y;
+    113              }
+    114          #endif
+    115          
+    116              for (; i < n; i++) {
+    117                  /* Read volatile data in order before computing diff.
+    118                   * This avoids IAR compiler warning:
+    119                   * 'the order of volatile accesses is undefined ..' */
+    120                  unsigned char x = A[i], y = B[i];
+   \                     ??mbedtls_ct_memcmp_1: (+1)
+   \        0x8   0x5D85             LDRB     R5,[R0, R6]
+   \        0xA   0x5D8B             LDRB     R3,[R1, R6]
+    121                  diff |= x ^ y;
+    122              }
+   \        0xC   0x1C76             ADDS     R6,R6,#+1
+   \        0xE   0x405D             EORS     R5,R3,R5
+   \       0x10   0x432C             ORRS     R4,R5,R4
+   \                     ??mbedtls_ct_memcmp_0: (+1)
+   \       0x12   0x4296             CMP      R6,R2
+   \       0x14   0xD3F8             BCC.N    ??mbedtls_ct_memcmp_1
+    123          
+    124          
+    125          #if (INT_MAX < INT32_MAX)
+    126              /* We don't support int smaller than 32-bits, but if someone tried to build
+    127               * with this configuration, there is a risk that, for differing data, the
+    128               * only bits set in diff are in the top 16-bits, and would be lost by a
+    129               * simple cast from uint32 to int.
+    130               * This would have significant security implications, so protect against it. */
+    131          #error "mbedtls_ct_memcmp() requires minimum 32-bit ints"
+    132          #else
+    133              /* The bit-twiddling ensures that when we cast uint32_t to int, we are casting
+    134               * a value that is in the range 0..INT_MAX - a value larger than this would
+    135               * result in implementation defined behaviour.
+    136               *
+    137               * This ensures that the value returned by the function is non-zero iff
+    138               * diff is non-zero.
+    139               */
+    140              return (int) ((diff & 0xffff) | (diff >> 16));
+   \       0x16   0xB2A0             UXTH     R0,R4
+   \       0x18   0xBD70             POP      {R4-R6,PC}
+    141          #endif
+    142          }
+    143          
+    144          #if defined(MBEDTLS_NIST_KW_C)
+    145          
+
+   \                                 In section .text, align 2, keep-with-next
+    146          int mbedtls_ct_memcmp_partial(const void *a,
+    147                                        const void *b,
+    148                                        size_t n,
+    149                                        size_t skip_head,
+    150                                        size_t skip_tail)
+    151          {
+   \                     mbedtls_ct_memcmp_partial: (+1)
+   \        0x0   0xE92D 0x4FF8      PUSH     {R3-R11,LR}
+   \        0x4   0x4688             MOV      R8,R1
+   \        0x6   0x990A             LDR      R1,[SP, #+40]
+   \        0x8   0x4692             MOV      R10,R2
+   \        0xA   0x469B             MOV      R11,R3
+    152              unsigned int diff = 0;
+   \        0xC   0x2600             MOVS     R6,#+0
+    153          
+    154              volatile const unsigned char *A = (volatile const unsigned char *) a;
+    155              volatile const unsigned char *B = (volatile const unsigned char *) b;
+    156          
+    157              size_t valid_end = n - skip_tail;
+   \        0xE   0xEBAA 0x0901      SUB      R9,R10,R1
+    158          
+    159              for (size_t i = 0; i < n; i++) {
+   \       0x12   0x2700             MOVS     R7,#+0
+   \       0x14   0x9000             STR      R0,[SP, #+0]
+   \       0x16   0xE011             B.N      ??mbedtls_ct_memcmp_partial_0
+    160                  unsigned char x = A[i], y = B[i];
+   \                     ??mbedtls_ct_memcmp_partial_1: (+1)
+   \       0x18   0x9A00             LDR      R2,[SP, #+0]
+    161                  unsigned int d = x ^ y;
+    162                  mbedtls_ct_condition_t valid = mbedtls_ct_bool_and(mbedtls_ct_uint_ge(i, skip_head),
+    163                                                                     mbedtls_ct_uint_lt(i, valid_end));
+    164                  diff |= mbedtls_ct_uint_if_else_0(valid, d);
+   \       0x1A   0x4649             MOV      R1,R9
+   \       0x1C   0x5DD5             LDRB     R5,[R2, R7]
+   \       0x1E   0xF818 0x0007      LDRB     R0,[R8, R7]
+   \       0x22   0x4045             EORS     R5,R0,R5
+   \       0x24   0x4638             MOV      R0,R7
+   \       0x26   0x.... 0x....      BL       mbedtls_ct_uint_lt
+   \       0x2A   0x4604             MOV      R4,R0
+   \       0x2C   0x4659             MOV      R1,R11
+   \       0x2E   0x4638             MOV      R0,R7
+   \       0x30   0x.... 0x....      BL       mbedtls_ct_uint_lt
+   \       0x34   0x4384             BICS     R4,R4,R0
+   \       0x36   0x4025             ANDS     R5,R5,R4
+   \       0x38   0x432E             ORRS     R6,R5,R6
+    165              }
+   \       0x3A   0x1C7F             ADDS     R7,R7,#+1
+   \                     ??mbedtls_ct_memcmp_partial_0: (+1)
+   \       0x3C   0x4557             CMP      R7,R10
+   \       0x3E   0xD3EB             BCC.N    ??mbedtls_ct_memcmp_partial_1
+    166          
+    167              /* Since we go byte-by-byte, the only bits set will be in the bottom 8 bits, so the
+    168               * cast from uint to int is safe. */
+    169              return (int) diff;
+   \       0x40   0x4630             MOV      R0,R6
+   \       0x42   0xE8BD 0x8FF2      POP      {R1,R4-R11,PC}
+    170          }
+    171          
+    172          #endif
+    173          
+    174          #if defined(MBEDTLS_PKCS1_V15) && defined(MBEDTLS_RSA_C) && !defined(MBEDTLS_RSA_ALT)
+    175          
+    176          void mbedtls_ct_memmove_left(void *start, size_t total, size_t offset)
+    177          {
+    178              volatile unsigned char *buf = start;
+    179              for (size_t i = 0; i < total; i++) {
+    180                  mbedtls_ct_condition_t no_op = mbedtls_ct_uint_gt(total - offset, i);
+    181                  /* The first `total - offset` passes are a no-op. The last
+    182                   * `offset` passes shift the data one byte to the left and
+    183                   * zero out the last byte. */
+    184                  for (size_t n = 0; n < total - 1; n++) {
+    185                      unsigned char current = buf[n];
+    186                      unsigned char next    = buf[n+1];
+    187                      buf[n] = mbedtls_ct_uint_if(no_op, current, next);
+    188                  }
+    189                  buf[total-1] = mbedtls_ct_uint_if_else_0(no_op, buf[total-1]);
+    190              }
+    191          }
+    192          
+    193          #endif /* MBEDTLS_PKCS1_V15 && MBEDTLS_RSA_C && ! MBEDTLS_RSA_ALT */
+    194          
+
+   \                                 In section .text, align 2, keep-with-next
+    195          void mbedtls_ct_memcpy_if(mbedtls_ct_condition_t condition,
+    196                                    unsigned char *dest,
+    197                                    const unsigned char *src1,
+    198                                    const unsigned char *src2,
+    199                                    size_t len)
+    200          {
+   \                     mbedtls_ct_memcpy_if: (+1)
+   \        0x0   0xE92D 0x4FF8      PUSH     {R3-R11,LR}
+    201          #if defined(MBEDTLS_CT_SIZE_64)
+    202              const uint64_t mask     = (uint64_t) condition;
+    203              const uint64_t not_mask = (uint64_t) ~mbedtls_ct_compiler_opaque(condition);
+    204          #else
+    205              const uint32_t mask     = (uint32_t) condition;
+    206              const uint32_t not_mask = (uint32_t) ~mbedtls_ct_compiler_opaque(condition);
+   \        0x4   0x....             LDR.N    R4,??DataTable4
+   \        0x6   0x6826             LDR      R6,[R4, #+0]
+   \        0x8   0x4046             EORS     R6,R6,R0
+   \        0xA   0x43F6             MVNS     R6,R6
+    207          #endif
+    208          
+    209              /* If src2 is NULL, setup src2 so that we read from the destination address.
+    210               *
+    211               * This means that if src2 == NULL && condition is false, the result will be a
+    212               * no-op because we read from dest and write the same data back into dest.
+    213               */
+    214              if (src2 == NULL) {
+   \        0xC   0xB903             CBNZ.N   R3,??mbedtls_ct_memcpy_if_0
+    215                  src2 = dest;
+   \        0xE   0x460B             MOV      R3,R1
+    216              }
+    217          
+    218              /* dest[i] = c1 == c2 ? src[i] : dest[i] */
+    219              size_t i = 0;
+   \                     ??mbedtls_ct_memcpy_if_0: (+1)
+   \       0x10   0x2700             MOVS     R7,#+0
+   \       0x12   0xF8DD 0x9028      LDR      R9,[SP, #+40]
+   \       0x16   0x4683             MOV      R11,R0
+   \       0x18   0x460C             MOV      R4,R1
+   \       0x1A   0x4615             MOV      R5,R2
+   \       0x1C   0x4698             MOV      R8,R3
+   \       0x1E   0xE00F             B.N      ??mbedtls_ct_memcpy_if_1
+    220          #if defined(MBEDTLS_EFFICIENT_UNALIGNED_ACCESS)
+    221          #if defined(MBEDTLS_CT_SIZE_64)
+    222              for (; (i + 8) <= len; i += 8) {
+    223                  uint64_t a = mbedtls_get_unaligned_uint64(src1 + i) & mask;
+    224                  uint64_t b = mbedtls_get_unaligned_uint64(src2 + i) & not_mask;
+    225                  mbedtls_put_unaligned_uint64(dest + i, a | b);
+    226              }
+    227          #else
+    228              for (; (i + 4) <= len; i += 4) {
+    229                  uint32_t a = mbedtls_get_unaligned_uint32(src1 + i) & mask;
+   \                     ??mbedtls_ct_memcpy_if_2: (+1)
+   \       0x20   0x19E8             ADDS     R0,R5,R7
+   \       0x22   0x.... 0x....      BL       mbedtls_get_unaligned_uint32
+    230                  uint32_t b = mbedtls_get_unaligned_uint32(src2 + i) & not_mask;
+    231                  mbedtls_put_unaligned_uint32(dest + i, a | b);
+   \       0x26   0xEA0B 0x0000      AND      R0,R11,R0
+   \       0x2A   0x9000             STR      R0,[SP, #+0]
+   \       0x2C   0xEB08 0x0007      ADD      R0,R8,R7
+   \       0x30   0x.... 0x....      BL       mbedtls_get_unaligned_uint32
+   \       0x34   0x9900             LDR      R1,[SP, #+0]
+   \       0x36   0x4030             ANDS     R0,R6,R0
+   \       0x38   0x4308             ORRS     R0,R0,R1
+   \       0x3A   0x9000             STR      R0,[SP, #+0]
+   \       0x3C   0x51E0             STR      R0,[R4, R7]
+    232              }
+   \       0x3E   0x4657             MOV      R7,R10
+   \                     ??mbedtls_ct_memcpy_if_1: (+1)
+   \       0x40   0xF107 0x0A04      ADD      R10,R7,#+4
+   \       0x44   0x45D1             CMP      R9,R10
+   \       0x46   0xD2EB             BCS.N    ??mbedtls_ct_memcpy_if_2
+    233          #endif /* defined(MBEDTLS_CT_SIZE_64) */
+    234          #endif /* MBEDTLS_EFFICIENT_UNALIGNED_ACCESS */
+    235              for (; i < len; i++) {
+   \                     ??mbedtls_ct_memcpy_if_3: (+1)
+   \       0x48   0x454F             CMP      R7,R9
+   \       0x4A   0xD209             BCS.N    ??mbedtls_ct_memcpy_if_4
+    236                  dest[i] = (src1[i] & mask) | (src2[i] & not_mask);
+   \       0x4C   0x5DE9             LDRB     R1,[R5, R7]
+   \       0x4E   0xF818 0x0007      LDRB     R0,[R8, R7]
+   \       0x52   0xEA0B 0x0101      AND      R1,R11,R1
+   \       0x56   0x4030             ANDS     R0,R6,R0
+   \       0x58   0x4301             ORRS     R1,R0,R1
+   \       0x5A   0x55E1             STRB     R1,[R4, R7]
+    237              }
+   \       0x5C   0x1C7F             ADDS     R7,R7,#+1
+   \       0x5E   0xE7F3             B.N      ??mbedtls_ct_memcpy_if_3
+    238          }
+   \                     ??mbedtls_ct_memcpy_if_4: (+1)
+   \       0x60   0xE8BD 0x8FF1      POP      {R0,R4-R11,PC}
+    239          
+
+   \                                 In section .text, align 2, keep-with-next
+    240          void mbedtls_ct_memcpy_offset(unsigned char *dest,
+    241                                        const unsigned char *src,
+    242                                        size_t offset,
+    243                                        size_t offset_min,
+    244                                        size_t offset_max,
+    245                                        size_t len)
+    246          {
+   \                     mbedtls_ct_memcpy_offset: (+1)
+   \        0x0   0xE92D 0x47FC      PUSH     {R2-R10,LR}
+   \        0x4   0x4680             MOV      R8,R0
+   \        0x6   0x468A             MOV      R10,R1
+   \        0x8   0x4614             MOV      R4,R2
+   \        0xA   0x461D             MOV      R5,R3
+   \        0xC   0xF8DD 0x9028      LDR      R9,[SP, #+40]
+   \       0x10   0x9F0B             LDR      R7,[SP, #+44]
+    247              size_t offsetval;
+    248          
+    249              for (offsetval = offset_min; offsetval <= offset_max; offsetval++) {
+   \       0x12   0x....             LDR.N    R6,??DataTable4
+   \       0x14   0xE00F             B.N      ??mbedtls_ct_memcpy_offset_0
+    250                  mbedtls_ct_memcpy_if(mbedtls_ct_uint_eq(offsetval, offset), dest, src + offsetval, NULL,
+    251                                       len);
+   \                     ??mbedtls_ct_memcpy_offset_1: (+1)
+   \       0x16   0x6830             LDR      R0,[R6, #+0]
+   \       0x18   0x6831             LDR      R1,[R6, #+0]
+   \       0x1A   0x4068             EORS     R0,R0,R5
+   \       0x1C   0x4060             EORS     R0,R4,R0
+   \       0x1E   0x4048             EORS     R0,R1,R0
+   \       0x20   0x.... 0x....      BL       mbedtls_ct_bool
+    252              }
+   \       0x24   0x9700             STR      R7,[SP, #+0]
+   \       0x26   0x2300             MOVS     R3,#+0
+   \       0x28   0xEB0A 0x0205      ADD      R2,R10,R5
+   \       0x2C   0x4641             MOV      R1,R8
+   \       0x2E   0x43C0             MVNS     R0,R0
+   \       0x30   0x.... 0x....      BL       mbedtls_ct_memcpy_if
+   \       0x34   0x1C6D             ADDS     R5,R5,#+1
+   \                     ??mbedtls_ct_memcpy_offset_0: (+1)
+   \       0x36   0x45A9             CMP      R9,R5
+   \       0x38   0xD2ED             BCS.N    ??mbedtls_ct_memcpy_offset_1
+    253          }
+   \       0x3A   0xE8BD 0x87F3      POP      {R0,R1,R4-R10,PC}
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable4:
+   \        0x0   0x....'....        DC32     mbedtls_ct_zero
+    254          
+    255          #if defined(MBEDTLS_PKCS1_V15) && defined(MBEDTLS_RSA_C) && !defined(MBEDTLS_RSA_ALT)
+    256          
+    257          void mbedtls_ct_zeroize_if(mbedtls_ct_condition_t condition, void *buf, size_t len)
+    258          {
+    259              uint32_t mask = (uint32_t) ~condition;
+    260              uint8_t *p = (uint8_t *) buf;
+    261              size_t i = 0;
+    262          #if defined(MBEDTLS_EFFICIENT_UNALIGNED_ACCESS)
+    263              for (; (i + 4) <= len; i += 4) {
+    264                  mbedtls_put_unaligned_uint32((void *) (p + i),
+    265                                               mbedtls_get_unaligned_uint32((void *) (p + i)) & mask);
+    266              }
+    267          #endif
+    268              for (; i < len; i++) {
+    269                  p[i] = p[i] & mask;
+    270              }
+    271          }
+    272          
+    273          #endif /* defined(MBEDTLS_PKCS1_V15) && defined(MBEDTLS_RSA_C) && !defined(MBEDTLS_RSA_ALT) */
+
+   Maximum stack usage in bytes:
+
+   .cstack Function
+   ------- --------
+       0   mbedtls_ct_bool
+       0   mbedtls_ct_compiler_opaque
+      16   mbedtls_ct_memcmp
+      40   mbedtls_ct_memcmp_partial
+        40   -> mbedtls_ct_uint_lt
+      40   mbedtls_ct_memcpy_if
+        40   -> mbedtls_get_unaligned_uint32
+      40   mbedtls_ct_memcpy_offset
+        40   -> mbedtls_ct_bool
+        40   -> mbedtls_ct_memcpy_if
+      16   mbedtls_ct_uint_lt
+         0   -> mbedtls_ct_bool
+        16   -> mbedtls_ct_bool
+        16   -> mbedtls_ct_compiler_opaque
+       4   mbedtls_get_unaligned_uint32
+
+
+   Section sizes:
+
+   Bytes  Function/Label
+   -----  --------------
+       4  ??DataTable4
+      20  mbedtls_ct_bool
+       8  mbedtls_ct_compiler_opaque
+      26  mbedtls_ct_memcmp
+      70  mbedtls_ct_memcmp_partial
+     100  mbedtls_ct_memcpy_if
+      62  mbedtls_ct_memcpy_offset
+      52  mbedtls_ct_uint_lt
+       4  mbedtls_ct_zero
+      12  mbedtls_get_unaligned_uint32
+
+ 
+   4 bytes in section .bss
+ 354 bytes in section .text
+ 
+ 342 bytes of CODE memory (+ 12 bytes shared)
+   4 bytes of DATA memory
+
+Errors: none
+Warnings: none

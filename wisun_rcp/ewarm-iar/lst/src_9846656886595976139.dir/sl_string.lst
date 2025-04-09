@@ -1,0 +1,577 @@
+###############################################################################
+#
+# IAR ANSI C/C++ Compiler V9.50.2.385/W64 for ARM         27/Nov/2024  12:17:50
+# Copyright 1999-2024 IAR Systems AB.
+#
+#    Cpu mode                     =  thumb
+#    Endian                       =  little
+#    Source file                  =
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\common\src\sl_string.c
+#    Command line                 =
+#        -f
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\ewarm-iar\obj\src_9846656886595976139.dir\sl_string.o.rsp
+#        (C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\common\src\sl_string.c
+#        -D EFR32FG28B322F1024IM48=1 -D
+#        configNUM_SDK_THREAD_LOCAL_STORAGE_POINTERS=2 -D
+#        SL_COMPONENT_CATALOG_PRESENT=1 -D
+#        MBEDTLS_CONFIG_FILE=<sl_mbedtls_config.h> -D
+#        MBEDTLS_PSA_CRYPTO_CONFIG_FILE=<psa_crypto_config.h> -D
+#        SL_RAIL_LIB_MULTIPROTOCOL_SUPPORT=0 -D
+#        SL_RAIL_UTIL_PA_CONFIG_HEADER=<sl_rail_util_pa_config.h> -D
+#        RTT_USE_ASM=0 -D MBED_CONF_MBED_TRACE_ENABLE=1 -D
+#        MBED_CONF_NANOSTACK_CONFIGURATION=ws_router -D
+#        MBED_TRACE_MAX_LEVEL=TRACE_ACTIVE_LEVEL_ALL -D DEBUG_EFM_USER=1 -D
+#        HAVE_LFN=1 -D HAVE_LFN_PARENT=1 -lC
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\ewarm-iar\lst\src_9846656886595976139.dir
+#        --diag_suppress Pa050 -o
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\ewarm-iar\obj\src_9846656886595976139.dir
+#        --debug --endian=little --cpu=Cortex-M33 --cmse --cmse -e
+#        --fpu=VFPv5_sp --dlib_config "C:\Program Files\IAR Systems\Embedded
+#        Workbench 9.2\arm\inc\c\DLib_Config_Normal.h" -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\common\src\
+#        -I C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\autogen\ -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\config\ -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\config\rail\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\Device\SiliconLabs\EFR32FG28\Include\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\common\inc\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\CMSIS\Core\Include\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\CMSIS\RTOS2\Include\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\service\device_init\inc\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\emdrv\dmadrv\inc\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\emdrv\common\inc\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\emlib\inc\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\util\third_party\freertos\cmsis\Include\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\util\third_party\freertos\kernel\include\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\util\third_party\freertos\kernel\portable\IAR\ARM_CM33_NTZ\non_secure\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\service\iostream\inc\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\security\sl_component\sl_mbedtls_support\config\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\security\sl_component\sl_mbedtls_support\config\preset\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\security\sl_component\sl_mbedtls_support\inc\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\util\third_party\mbedtls\include\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\util\third_party\mbedtls\library\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\emdrv\nvm3\inc\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\peripheral\inc\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\security\sl_component\sl_psa_driver\inc\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\radio\rail_lib\common\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\radio\rail_lib\protocol\ble\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\radio\rail_lib\protocol\ieee802154\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\radio\rail_lib\protocol\wmbus\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\radio\rail_lib\protocol\zwave\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\radio\rail_lib\chip\efr32\efr32xg2x\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\radio\rail_lib\protocol\sidewalk\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\radio\rail_lib\plugin\pa-conversions\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\radio\rail_lib\plugin\pa-conversions\efr32xg28\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\radio\rail_lib\plugin\rail_util_pti\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\security\sl_component\se_manager\inc\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\security\sl_component\se_manager\src\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\util\third_party\segger\systemview\SEGGER\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\util\silicon_labs\silabs_core\memory_manager\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\common\toolchain\inc\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\service\system\inc\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\app\wisun\component\ns_list\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\app\wisun\component\trace_util\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\app\wisun\component\trace_util\nanostack\nanostack-libservice\mbed-client-libservice\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\service\sleeptimer\inc\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\protocol\wisun\stack\inc\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\protocol\wisun\app\wisun_rcp\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\protocol\wisun\stack\inc\socket\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\protocol\wisun\stack\src\
+#        -Ohz --use_c++_inline) --dependencies=n
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\ewarm-iar\obj\src_9846656886595976139.dir\sl_string.o.iar_deps
+#    Locale                       =  C
+#    List file                    =
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\ewarm-iar\lst\src_9846656886595976139.dir\sl_string.lst
+#    Object file                  =
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\ewarm-iar\obj\src_9846656886595976139.dir\sl_string.o
+#    Runtime model:                  
+#      __CPP_Runtime              =  1
+#      __SystemLibrary            =  DLib
+#      __dlib_file_descriptor     =  0
+#      __dlib_full_locale_support =  0
+#      __dlib_version             =  6
+#
+###############################################################################
+
+C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\common\src\sl_string.c
+      1          /***************************************************************************//**
+      2           * @file
+      3           * @brief Implementation of safe string functions.
+      4           *******************************************************************************
+      5           * # License
+      6           * <b>Copyright 2019 Silicon Laboratories Inc. www.silabs.com</b>
+      7           *******************************************************************************
+      8           *
+      9           * SPDX-License-Identifier: Zlib
+     10           *
+     11           * The licensor of this software is Silicon Laboratories Inc.
+     12           *
+     13           * This software is provided 'as-is', without any express or implied
+     14           * warranty. In no event will the authors be held liable for any damages
+     15           * arising from the use of this software.
+     16           *
+     17           * Permission is granted to anyone to use this software for any purpose,
+     18           * including commercial applications, and to alter it and redistribute it
+     19           * freely, subject to the following restrictions:
+     20           *
+     21           * 1. The origin of this software must not be misrepresented; you must not
+     22           *    claim that you wrote the original software. If you use this software
+     23           *    in a product, an acknowledgment in the product documentation would be
+     24           *    appreciated but is not required.
+     25           * 2. Altered source versions must be plainly marked as such, and must not be
+     26           *    misrepresented as being the original software.
+     27           * 3. This notice may not be removed or altered from any source distribution.
+     28           *
+     29           ******************************************************************************/
+     30          
+     31          #include "sl_string.h"
+     32          #include <stdint.h>
+     33          #include <ctype.h>
+     34          
+     35          /*******************************************************************************
+     36           **************************   GLOBAL FUNCTIONS   *******************************
+     37           ******************************************************************************/
+     38          
+     39          /***************************************************************************//**
+     40           * Copy a string into a buffer.
+     41           ******************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+     42          void sl_strcpy_s(char *dst, size_t dst_size, const char *src)
+     43          {
+   \                     sl_strcpy_s: (+1)
+   \        0x0   0xB530             PUSH     {R4,R5,LR}
+     44            size_t len_copy = 0;
+   \        0x2   0x2400             MOVS     R4,#+0
+     45          
+     46            if (dst == NULL) {
+   \        0x4   0x2800             CMP      R0,#+0
+   \        0x6   0xBF18             IT       NE
+   \        0x8   0x2A00             CMPNE    R2,#+0
+     47              return;
+     48            }
+     49            if (src == NULL) {
+   \        0xA   0xD00D             BEQ.N    ??sl_strcpy_s_0
+     50              return;
+     51            }
+     52            if (dst_size == 0) {
+   \        0xC   0xB929             CBNZ.N   R1,??sl_strcpy_s_1
+     53              return;
+   \        0xE   0xBD30             POP      {R4,R5,PC}
+     54            }
+     55            while ((*src != '\0') && (len_copy < (dst_size - 1))) {
+     56              *dst = *src;
+   \                     ??sl_strcpy_s_2: (+1)
+   \       0x10   0xF812 0x5B01      LDRB     R5,[R2], #+1
+     57              dst++;
+     58              src++;
+     59              len_copy++;
+   \       0x14   0x1C64             ADDS     R4,R4,#+1
+   \       0x16   0xF800 0x5B01      STRB     R5,[R0], #+1
+     60            }
+   \                     ??sl_strcpy_s_1: (+1)
+   \       0x1A   0x7813             LDRB     R3,[R2, #+0]
+   \       0x1C   0xB113             CBZ.N    R3,??sl_strcpy_s_3
+   \       0x1E   0x1E4D             SUBS     R5,R1,#+1
+   \       0x20   0x42AC             CMP      R4,R5
+   \       0x22   0xD3F5             BCC.N    ??sl_strcpy_s_2
+     61            *dst = '\0';
+   \                     ??sl_strcpy_s_3: (+1)
+   \       0x24   0x2100             MOVS     R1,#+0
+   \       0x26   0x7001             STRB     R1,[R0, #+0]
+     62          }
+   \                     ??sl_strcpy_s_0: (+1)
+   \       0x28   0xBD30             POP      {R4,R5,PC}
+     63          
+     64          /***************************************************************************//**
+     65           * Append the source string to the end of destination string
+     66           ******************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+     67          void sl_strcat_s(char *dst, size_t dst_size, const char *src)
+     68          {
+   \                     sl_strcat_s: (+1)
+   \        0x0   0xB570             PUSH     {R4-R6,LR}
+   \        0x2   0x0006             MOVS     R6,R0
+   \        0x4   0x460C             MOV      R4,R1
+   \        0x6   0x4615             MOV      R5,R2
+     69            size_t ofs;
+     70          
+     71            if (dst == NULL) {
+   \        0x8   0xBF18             IT       NE
+   \        0xA   0x2D00             CMPNE    R5,#+0
+     72              return;
+     73            }
+     74            if (src == NULL) {
+   \        0xC   0xD00C             BEQ.N    ??sl_strcat_s_0
+     75              return;
+     76            }
+     77            if (dst_size == 0) {
+   \        0xE   0xB15C             CBZ.N    R4,??sl_strcat_s_0
+     78              return;
+     79            }
+     80            ofs = sl_strlen(dst);
+   \       0x10   0xF04F 0x31FF      MOV      R1,#+4294967295
+   \       0x14   0x.... 0x....      BL       sl_strnlen
+     81            if (ofs < dst_size) {
+   \       0x18   0x42A0             CMP      R0,R4
+   \       0x1A   0xD205             BCS.N    ??sl_strcat_s_0
+     82              sl_strcpy_s(&dst[ofs], dst_size - ofs, src);
+   \       0x1C   0x1A21             SUBS     R1,R4,R0
+   \       0x1E   0x462A             MOV      R2,R5
+   \       0x20   0x4430             ADD      R0,R6,R0
+   \       0x22   0xE8BD 0x4070      POP      {R4-R6,LR}
+   \       0x26   0x....             B.N      sl_strcpy_s
+     83            }
+     84          }
+   \                     ??sl_strcat_s_0: (+1)
+   \       0x28   0xBD70             POP      {R4-R6,PC}
+     85          
+     86          /***************************************************************************//**
+     87           * Get the string length
+     88           ******************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+     89          size_t sl_strlen(char *str)
+     90          {
+     91            return sl_strnlen(str, SIZE_MAX);
+   \                     sl_strlen: (+1)
+   \        0x0   0xF04F 0x31FF      MOV      R1,#+4294967295
+   \        0x4                      REQUIRE sl_strnlen
+   \        0x4                      ;; // Fall through to label sl_strnlen
+     92          }
+     93          
+     94          /***************************************************************************//**
+     95           * Get the string length, limited to a given length
+     96           ******************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+     97          size_t sl_strnlen(char *str, size_t max_len)
+     98          {
+   \                     sl_strnlen: (+1)
+   \        0x0   0x4602             MOV      R2,R0
+     99            size_t len = 0;
+   \        0x2   0x2000             MOVS     R0,#+0
+    100          
+    101            if (str == NULL) {
+   \        0x4   0xB90A             CBNZ.N   R2,??sl_strnlen_0
+    102              return len;
+   \        0x6   0x4770             BX       LR
+    103            }
+    104            while ((len < max_len) && (*str != '\0')) {
+    105              str++;
+    106              len++;
+   \                     ??sl_strnlen_1: (+1)
+   \        0x8   0x1C40             ADDS     R0,R0,#+1
+    107            }
+   \                     ??sl_strnlen_0: (+1)
+   \        0xA   0x4288             CMP      R0,R1
+   \        0xC   0xD203             BCS.N    ??sl_strnlen_2
+   \        0xE   0xF812 0x3B01      LDRB     R3,[R2], #+1
+   \       0x12   0x2B00             CMP      R3,#+0
+   \       0x14   0xD1F8             BNE.N    ??sl_strnlen_1
+    108          
+    109            return len;
+   \                     ??sl_strnlen_2: (+1)
+   \       0x16   0x4770             BX       LR
+    110          }
+    111          
+    112          /***************************************************************************//**
+    113           * Check if string is empty.
+    114           ******************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+    115          bool sl_str_is_empty(const char *str)
+    116          {
+    117            return (str == NULL || *str == '\0');
+   \                     sl_str_is_empty: (+1)
+   \        0x0   0xB120             CBZ.N    R0,??sl_str_is_empty_0
+   \        0x2   0x7800             LDRB     R0,[R0, #+0]
+   \        0x4   0x1E40             SUBS     R0,R0,#+1
+   \        0x6   0x4180             SBCS     R0,R0,R0
+   \        0x8   0x0FC0             LSRS     R0,R0,#+31
+   \        0xA   0x4770             BX       LR
+   \                     ??sl_str_is_empty_0: (+1)
+   \        0xC   0x2001             MOVS     R0,#+1
+   \        0xE   0x4770             BX       LR
+    118          }
+    119          
+    120          /***************************************************************************//**
+    121           * Compare two strings, ignoring case.
+    122           ******************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+    123          int sl_strcasecmp(char const *a, char const *b)
+    124          {
+   \                     sl_strcasecmp: (+1)
+   \        0x0   0xB570             PUSH     {R4-R6,LR}
+   \        0x2   0x0005             MOVS     R5,R0
+   \        0x4   0x460E             MOV      R6,R1
+    125            int d = 0;
+    126          
+    127            if ((a == NULL) || (b == NULL)) {
+   \        0x6   0xBF18             IT       NE
+   \        0x8   0x2E00             CMPNE    R6,#+0
+   \        0xA   0xD101             BNE.N    ??sl_strcasecmp_0
+    128              return 1;
+   \        0xC   0x2001             MOVS     R0,#+1
+   \        0xE   0xBD70             POP      {R4-R6,PC}
+    129            }
+    130            for (;; a++, b++) {
+    131              d = tolower((unsigned char)*a) - tolower((unsigned char)*b);
+   \                     ??sl_strcasecmp_0: (+1)
+   \       0x10   0x7828             LDRB     R0,[R5, #+0]
+   \       0x12   0x.... 0x....      BL       tolower
+   \       0x16   0x4604             MOV      R4,R0
+   \       0x18   0xF816 0x0B01      LDRB     R0,[R6], #+1
+   \       0x1C   0x.... 0x....      BL       tolower
+   \       0x20   0x1A24             SUBS     R4,R4,R0
+    132              if ((d != 0) || (!*a)) {
+   \       0x22   0xD103             BNE.N    ??sl_strcasecmp_1
+   \       0x24   0xF815 0x0B01      LDRB     R0,[R5], #+1
+   \       0x28   0x2800             CMP      R0,#+0
+   \       0x2A   0xD1F1             BNE.N    ??sl_strcasecmp_0
+    133                break;
+    134              }
+    135            }
+    136            return d;
+   \                     ??sl_strcasecmp_1: (+1)
+   \       0x2C   0x4620             MOV      R0,R4
+   \       0x2E   0xBD70             POP      {R4-R6,PC}
+    137          }
+    138          
+    139          /***************************************************************************//**
+    140           * Search for a character in memory, in reverse order.
+    141           * Inspired from the GNU implementation of memchr and memrchr.
+    142           ******************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+    143          void* sl_memrchr(void const *buff, char c, size_t buffer_len)
+    144          {
+   \                     sl_memrchr: (+1)
+   \        0x0   0xB570             PUSH     {R4-R6,LR}
+   \        0x2   0x460B             MOV      R3,R1
+    145            // Go to the end of the buffer
+    146            char* buffer;
+    147          
+    148            if (buff == NULL || buffer_len == 0) {
+   \        0x4   0x2800             CMP      R0,#+0
+   \        0x6   0xBF18             IT       NE
+   \        0x8   0x2A00             CMPNE    R2,#+0
+   \        0xA   0xD038             BEQ.N    ??sl_memrchr_0
+    149              return NULL;
+    150            }
+    151          
+    152            // Check unaligned chars
+    153            for (buffer = (char*)((uintptr_t)buff + buffer_len); buffer_len > 0 && ((unsigned long)buffer % sizeof(unsigned long)) != 0; buffer_len--) {
+   \        0xC   0x1810             ADDS     R0,R2,R0
+   \                     ??sl_memrchr_1: (+1)
+   \        0xE   0xF010 0x0103      ANDS     R1,R0,#0x3
+   \       0x12   0xD005             BEQ.N    ??sl_memrchr_2
+    154              if (*--buffer == c) {
+   \       0x14   0xF810 0x4D01      LDRB     R4,[R0, #-1]!
+   \       0x18   0x429C             CMP      R4,R3
+   \       0x1A   0xD031             BEQ.N    ??sl_memrchr_3
+    155                return buffer;
+    156              }
+    157            }
+   \       0x1C   0x1E52             SUBS     R2,R2,#+1
+   \       0x1E   0xD1F6             BNE.N    ??sl_memrchr_1
+    158          
+    159            // Check aligned buffers
+    160            /**
+    161             * Instead of checking byte per byte, we check an
+    162             * entire word at a time to see if the target byte is present.
+    163             * Algorithm goes as follows:
+    164             * 1) Compute the xor of the current 32bit buffer with a buffer
+    165             *    containing only the target char, this way, we get a 0 byte
+    166             *    iif the byte is the same as the char.
+    167             * 2) We substract 1 to all bytes, and then check if the MSb
+    168             *    is 1. If so, then the byte was 0, and so the character was there.
+    169             * 3) We return the address of the character.
+    170             **/
+    171            unsigned long *word_pointer = (unsigned long *) buffer - 1;
+    172            unsigned long c_mask = c << 24 | c << 16 | c << 8 | c;
+   \                     ??sl_memrchr_2: (+1)
+   \       0x20   0x0419             LSLS     R1,R3,#+16
+   \       0x22   0xEA41 0x6103      ORR      R1,R1,R3, LSL #+24
+   \       0x26   0x1F04             SUBS     R4,R0,#+4
+   \       0x28   0xEA41 0x2103      ORR      R1,R1,R3, LSL #+8
+   \       0x2C   0xEA43 0x0501      ORR      R5,R3,R1
+    173            unsigned long one_mask = 0x01010101;
+    174            if (sizeof(unsigned long) >  4) {
+   \       0x30   0xE00A             B.N      ??sl_memrchr_4
+    175              // 64 bit system support
+    176              c_mask |= c_mask << 31 << 1;
+    177              one_mask |= one_mask << 31 << 1;
+    178            }
+    179            while (buffer_len >= sizeof(uintptr_t)) {
+    180              uint32_t char_xor = c_mask ^ (*word_pointer);
+    181              if (((char_xor - one_mask) & (one_mask << 7)) != 0) {
+    182                // Character in the word
+    183                if (sizeof(unsigned long) >  4) {
+    184                  if (((char*)word_pointer)[7] == c) {
+    185                    return &((char*)word_pointer)[7];
+    186                  }
+    187                  if (((char*)word_pointer)[6] == c) {
+    188                    return &((char*)word_pointer)[6];
+    189                  }
+    190                  if (((char*)word_pointer)[5] == c) {
+    191                    return &((char*)word_pointer)[5];
+    192                  }
+    193                  if (((char*)word_pointer)[4] == c) {
+    194                    return &((char*)word_pointer)[4];
+    195                  }
+    196                }
+    197                if (((char*)word_pointer)[3] == c) {
+    198                  return &((char*)word_pointer)[3];
+    199                }
+    200                if (((char*)word_pointer)[2] == c) {
+   \                     ??sl_memrchr_5: (+1)
+   \       0x32   0x78A6             LDRB     R6,[R4, #+2]
+   \       0x34   0x429E             CMP      R6,R3
+   \       0x36   0xD015             BEQ.N    ??sl_memrchr_6
+    201                  return &((char*)word_pointer)[2];
+    202                }
+    203                if (((char*)word_pointer)[1] == c) {
+   \       0x38   0x7861             LDRB     R1,[R4, #+1]
+   \       0x3A   0x4299             CMP      R1,R3
+   \       0x3C   0xD014             BEQ.N    ??sl_memrchr_7
+    204                  return &((char*)word_pointer)[1];
+    205                }
+    206                if (((char*)word_pointer)[0] == c) {
+   \       0x3E   0x7826             LDRB     R6,[R4, #+0]
+   \       0x40   0x429E             CMP      R6,R3
+   \       0x42   0xD013             BEQ.N    ??sl_memrchr_8
+    207                  return &((char*)word_pointer)[0];
+    208                }
+    209              }
+    210              buffer--;
+   \                     ??sl_memrchr_9: (+1)
+   \       0x44   0x1E40             SUBS     R0,R0,#+1
+    211              buffer_len -= sizeof(uintptr_t);
+   \       0x46   0x1F12             SUBS     R2,R2,#+4
+   \                     ??sl_memrchr_4: (+1)
+   \       0x48   0x2A04             CMP      R2,#+4
+   \       0x4A   0xD312             BCC.N    ??sl_memrchr_10
+   \       0x4C   0x6821             LDR      R1,[R4, #+0]
+   \       0x4E   0x4069             EORS     R1,R1,R5
+   \       0x50   0xF1A1 0x3101      SUB      R1,R1,#+16843009
+   \       0x54   0xF031 0x317F      BICS     R1,R1,#0x7F7F7F7F
+   \       0x58   0xD0F4             BEQ.N    ??sl_memrchr_9
+   \       0x5A   0x78E6             LDRB     R6,[R4, #+3]
+   \       0x5C   0x429E             CMP      R6,R3
+   \       0x5E   0xD1E8             BNE.N    ??sl_memrchr_5
+   \       0x60   0x1CE0             ADDS     R0,R4,#+3
+   \       0x62   0xBD70             POP      {R4-R6,PC}
+   \                     ??sl_memrchr_6: (+1)
+   \       0x64   0x1CA0             ADDS     R0,R4,#+2
+   \       0x66   0xBD70             POP      {R4-R6,PC}
+   \                     ??sl_memrchr_7: (+1)
+   \       0x68   0x1C60             ADDS     R0,R4,#+1
+   \       0x6A   0xBD70             POP      {R4-R6,PC}
+   \                     ??sl_memrchr_8: (+1)
+   \       0x6C   0x4620             MOV      R0,R4
+   \       0x6E   0xBD70             POP      {R4-R6,PC}
+    212            }
+    213          
+    214            // Check the rest of the unaligned bytes, if any
+    215            for (; buffer_len > 0; buffer_len--) {
+   \                     ??sl_memrchr_11: (+1)
+   \       0x70   0x1E52             SUBS     R2,R2,#+1
+   \                     ??sl_memrchr_10: (+1)
+   \       0x72   0xB122             CBZ.N    R2,??sl_memrchr_0
+    216              if (*--buffer == c) {
+   \       0x74   0xF810 0x4D01      LDRB     R4,[R0, #-1]!
+   \       0x78   0x429C             CMP      R4,R3
+   \       0x7A   0xD1F9             BNE.N    ??sl_memrchr_11
+    217                return buffer;
+   \       0x7C   0xBD70             POP      {R4-R6,PC}
+    218              }
+    219            }
+    220            return NULL;
+   \                     ??sl_memrchr_0: (+1)
+   \       0x7E   0x2000             MOVS     R0,#+0
+   \                     ??sl_memrchr_3: (+1)
+   \       0x80   0xBD70             POP      {R4-R6,PC}
+    221          }
+
+   Maximum stack usage in bytes:
+
+   .cstack Function
+   ------- --------
+      16   sl_memrchr
+       0   sl_str_is_empty
+      16   sl_strcasecmp
+        16   -> tolower
+      16   sl_strcat_s
+         0   -> sl_strcpy_s
+        16   -> sl_strnlen
+      12   sl_strcpy_s
+       0   sl_strlen
+         0   -> sl_strnlen
+       0   sl_strnlen
+
+
+   Section sizes:
+
+   Bytes  Function/Label
+   -----  --------------
+     130  sl_memrchr
+      16  sl_str_is_empty
+      48  sl_strcasecmp
+      42  sl_strcat_s
+      42  sl_strcpy_s
+       4  sl_strlen
+      24  sl_strnlen
+
+ 
+ 306 bytes in section .text
+ 
+ 306 bytes of CODE memory
+
+Errors: none
+Warnings: none

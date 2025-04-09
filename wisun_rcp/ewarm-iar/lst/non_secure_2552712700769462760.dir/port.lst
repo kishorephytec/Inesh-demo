@@ -1,0 +1,1744 @@
+###############################################################################
+#
+# IAR ANSI C/C++ Compiler V9.50.2.385/W64 for ARM         27/Nov/2024  12:17:12
+# Copyright 1999-2024 IAR Systems AB.
+#
+#    Cpu mode          =  thumb
+#    Endian            =  little
+#    Source file       =
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\util\third_party\freertos\kernel\portable\IAR\ARM_CM33_NTZ\non_secure\port.c
+#    Command line      =
+#        -f
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\ewarm-iar\obj\non_secure_2552712700769462760.dir\port.o.rsp
+#        (C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\util\third_party\freertos\kernel\portable\IAR\ARM_CM33_NTZ\non_secure\port.c
+#        -D EFR32FG28B322F1024IM48=1 -D
+#        configNUM_SDK_THREAD_LOCAL_STORAGE_POINTERS=2 -D
+#        SL_COMPONENT_CATALOG_PRESENT=1 -D
+#        MBEDTLS_CONFIG_FILE=<sl_mbedtls_config.h> -D
+#        MBEDTLS_PSA_CRYPTO_CONFIG_FILE=<psa_crypto_config.h> -D
+#        SL_RAIL_LIB_MULTIPROTOCOL_SUPPORT=0 -D
+#        SL_RAIL_UTIL_PA_CONFIG_HEADER=<sl_rail_util_pa_config.h> -D
+#        RTT_USE_ASM=0 -D MBED_CONF_MBED_TRACE_ENABLE=1 -D
+#        MBED_CONF_NANOSTACK_CONFIGURATION=ws_router -D
+#        MBED_TRACE_MAX_LEVEL=TRACE_ACTIVE_LEVEL_ALL -D DEBUG_EFM_USER=1 -D
+#        HAVE_LFN=1 -D HAVE_LFN_PARENT=1 -lC
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\ewarm-iar\lst\non_secure_2552712700769462760.dir
+#        --diag_suppress Pa050 -o
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\ewarm-iar\obj\non_secure_2552712700769462760.dir
+#        --debug --endian=little --cpu=Cortex-M33 --cmse --cmse -e
+#        --fpu=VFPv5_sp --dlib_config "C:\Program Files\IAR Systems\Embedded
+#        Workbench 9.2\arm\inc\c\DLib_Config_Normal.h" -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\util\third_party\freertos\kernel\portable\IAR\ARM_CM33_NTZ\non_secure\
+#        -I C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\autogen\ -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\config\ -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\config\rail\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\Device\SiliconLabs\EFR32FG28\Include\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\common\inc\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\CMSIS\Core\Include\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\CMSIS\RTOS2\Include\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\service\device_init\inc\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\emdrv\dmadrv\inc\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\emdrv\common\inc\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\emlib\inc\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\util\third_party\freertos\cmsis\Include\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\util\third_party\freertos\kernel\include\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\util\third_party\freertos\kernel\portable\IAR\ARM_CM33_NTZ\non_secure\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\service\iostream\inc\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\security\sl_component\sl_mbedtls_support\config\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\security\sl_component\sl_mbedtls_support\config\preset\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\security\sl_component\sl_mbedtls_support\inc\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\util\third_party\mbedtls\include\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\util\third_party\mbedtls\library\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\emdrv\nvm3\inc\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\peripheral\inc\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\security\sl_component\sl_psa_driver\inc\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\radio\rail_lib\common\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\radio\rail_lib\protocol\ble\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\radio\rail_lib\protocol\ieee802154\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\radio\rail_lib\protocol\wmbus\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\radio\rail_lib\protocol\zwave\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\radio\rail_lib\chip\efr32\efr32xg2x\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\radio\rail_lib\protocol\sidewalk\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\radio\rail_lib\plugin\pa-conversions\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\radio\rail_lib\plugin\pa-conversions\efr32xg28\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\radio\rail_lib\plugin\rail_util_pti\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\security\sl_component\se_manager\inc\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\security\sl_component\se_manager\src\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\util\third_party\segger\systemview\SEGGER\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\util\silicon_labs\silabs_core\memory_manager\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\common\toolchain\inc\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\service\system\inc\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\app\wisun\component\ns_list\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\app\wisun\component\trace_util\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\app\wisun\component\trace_util\nanostack\nanostack-libservice\mbed-client-libservice\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\service\sleeptimer\inc\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\protocol\wisun\stack\inc\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\protocol\wisun\app\wisun_rcp\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\protocol\wisun\stack\inc\socket\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\protocol\wisun\stack\src\
+#        -Ohz --use_c++_inline) --dependencies=n
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\ewarm-iar\obj\non_secure_2552712700769462760.dir\port.o.iar_deps
+#    Locale            =  C
+#    List file         =
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\ewarm-iar\lst\non_secure_2552712700769462760.dir\port.lst
+#    Object file       =
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\ewarm-iar\obj\non_secure_2552712700769462760.dir\port.o
+#    Runtime model:       
+#      __CPP_Runtime   =  1
+#      __SystemLibrary =  DLib
+#      __dlib_version  =  6
+#
+###############################################################################
+
+C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\util\third_party\freertos\kernel\portable\IAR\ARM_CM33_NTZ\non_secure\port.c
+      1          /***************************************************************************//**
+      2           * # License
+      3           *
+      4           * The licensor of this software is Silicon Laboratories Inc. Your use of this
+      5           * software is governed by the terms of Silicon Labs Master Software License
+      6           * Agreement (MSLA) available at
+      7           * www.silabs.com/about-us/legal/master-software-license-agreement. This
+      8           * software is Third Party Software licensed by Silicon Labs from a third party
+      9           * and is governed by the sections of the MSLA applicable to Third Party
+     10           * Software and the additional terms set forth below.
+     11           *
+     12           ******************************************************************************/
+     13          
+     14          /*
+     15           * FreeRTOS Kernel V10.4.3
+     16           * Copyright (C) 2020 Amazon.com, Inc. or its affiliates.  All Rights Reserved.
+     17           *
+     18           * Permission is hereby granted, free of charge, to any person obtaining a copy of
+     19           * this software and associated documentation files (the "Software"), to deal in
+     20           * the Software without restriction, including without limitation the rights to
+     21           * use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of
+     22           * the Software, and to permit persons to whom the Software is furnished to do so,
+     23           * subject to the following conditions:
+     24           *
+     25           * The above copyright notice and this permission notice shall be included in all
+     26           * copies or substantial portions of the Software.
+     27           *
+     28           * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+     29           * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS
+     30           * FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR
+     31           * COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER
+     32           * IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN
+     33           * CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+     34           *
+     35           * https://www.FreeRTOS.org
+     36           * https://github.com/FreeRTOS
+     37           *
+     38           */
+     39          
+     40          /* Defining MPU_WRAPPERS_INCLUDED_FROM_API_FILE prevents task.h from redefining
+     41           * all the API functions to use the MPU wrappers. That should only be done when
+     42           * task.h is included from an application file. */
+     43          #define MPU_WRAPPERS_INCLUDED_FROM_API_FILE
+     44          
+     45          /* Scheduler includes. */
+     46          #include "FreeRTOS.h"
+     47          #include "task.h"
+     48          
+     49          /* MPU wrappers includes. */
+     50          #include "mpu_wrappers.h"
+     51          
+     52          /* Portasm includes. */
+     53          #include "portasm.h"
+     54          
+     55          #if ( configENABLE_TRUSTZONE == 1 )
+     56              /* Secure components includes. */
+     57              #include "secure_context.h"
+     58              #include "secure_init.h"
+     59          #endif /* configENABLE_TRUSTZONE */
+     60          
+     61          #undef MPU_WRAPPERS_INCLUDED_FROM_API_FILE
+     62          
+     63          /**
+     64           * The FreeRTOS Cortex M33 port can be configured to run on the Secure Side only
+     65           * i.e. the processor boots as secure and never jumps to the non-secure side.
+     66           * The Trust Zone support in the port must be disabled in order to run FreeRTOS
+     67           * on the secure side. The following are the valid configuration seetings:
+     68           *
+     69           * 1. Run FreeRTOS on the Secure Side:
+     70           *    configRUN_FREERTOS_SECURE_ONLY = 1 and configENABLE_TRUSTZONE = 0
+     71           *
+     72           * 2. Run FreeRTOS on the Non-Secure Side with Secure Side function call support:
+     73           *    configRUN_FREERTOS_SECURE_ONLY = 0 and configENABLE_TRUSTZONE = 1
+     74           *
+     75           * 3. Run FreeRTOS on the Non-Secure Side only i.e. no Secure Side function call support:
+     76           *    configRUN_FREERTOS_SECURE_ONLY = 0 and configENABLE_TRUSTZONE = 0
+     77           */
+     78          #if ( ( configRUN_FREERTOS_SECURE_ONLY == 1 ) && ( configENABLE_TRUSTZONE == 1 ) )
+     79              #error TrustZone needs to be disabled in order to run FreeRTOS on the Secure Side.
+     80          #endif
+     81          /*-----------------------------------------------------------*/
+     82          
+     83          /**
+     84           * @brief Constants required to manipulate the NVIC.
+     85           */
+     86          #define portNVIC_SYSTICK_CTRL_REG             ( *( ( volatile uint32_t * ) 0xe000e010 ) )
+     87          #define portNVIC_SYSTICK_LOAD_REG             ( *( ( volatile uint32_t * ) 0xe000e014 ) )
+     88          #define portNVIC_SYSTICK_CURRENT_VALUE_REG    ( *( ( volatile uint32_t * ) 0xe000e018 ) )
+     89          #define portNVIC_SHPR3_REG                    ( *( ( volatile uint32_t * ) 0xe000ed20 ) )
+     90          #define portNVIC_SYSTICK_ENABLE_BIT           ( 1UL << 0UL )
+     91          #define portNVIC_SYSTICK_INT_BIT              ( 1UL << 1UL )
+     92          #define portNVIC_SYSTICK_COUNT_FLAG_BIT       ( 1UL << 16UL )
+     93          #define portMIN_INTERRUPT_PRIORITY            ( 255UL )
+     94          #define portNVIC_PENDSV_PRI                   ( portMIN_INTERRUPT_PRIORITY << 16UL )
+     95          #define portNVIC_SYSTICK_PRI                  ( portMIN_INTERRUPT_PRIORITY << 24UL )
+     96          #ifndef configSYSTICK_CLOCK_HZ
+     97              #define configSYSTICK_CLOCK_HZ            configCPU_CLOCK_HZ
+     98              /* Ensure the SysTick is clocked at the same frequency as the core. */
+     99              #define portNVIC_SYSTICK_CLK_BIT          ( 1UL << 2UL )
+    100          #else
+    101          
+    102          /* The way the SysTick is clocked is not modified in case it is not the
+    103           * same a the core. */
+    104              #define portNVIC_SYSTICK_CLK_BIT    ( 0 )
+    105          #endif
+    106          /*-----------------------------------------------------------*/
+    107          
+    108          /**
+    109           * @brief Constants required to manipulate the SCB.
+    110           */
+    111          #define portSCB_SYS_HANDLER_CTRL_STATE_REG    ( *( volatile uint32_t * ) 0xe000ed24 )
+    112          #define portSCB_MEM_FAULT_ENABLE_BIT          ( 1UL << 16UL )
+    113          /*-----------------------------------------------------------*/
+    114          
+    115          /**
+    116           * @brief Constants required to manipulate the FPU.
+    117           */
+    118          #define portCPACR               ( ( volatile uint32_t * ) 0xe000ed88 )              /* Coprocessor Access Control Register. */
+    119          #define portCPACR_CP10_VALUE    ( 3UL )
+    120          #define portCPACR_CP11_VALUE    portCPACR_CP10_VALUE
+    121          #define portCPACR_CP10_POS      ( 20UL )
+    122          #define portCPACR_CP11_POS      ( 22UL )
+    123          
+    124          #define portFPCCR               ( ( volatile uint32_t * ) 0xe000ef34 )              /* Floating Point Context Control Register. */
+    125          #define portFPCCR_ASPEN_POS     ( 31UL )
+    126          #define portFPCCR_ASPEN_MASK    ( 1UL << portFPCCR_ASPEN_POS )
+    127          #define portFPCCR_LSPEN_POS     ( 30UL )
+    128          #define portFPCCR_LSPEN_MASK    ( 1UL << portFPCCR_LSPEN_POS )
+    129          /*-----------------------------------------------------------*/
+    130          
+    131          /**
+    132           * @brief Constants required to manipulate the MPU.
+    133           */
+    134          #define portMPU_TYPE_REG                      ( *( ( volatile uint32_t * ) 0xe000ed90 ) )
+    135          #define portMPU_CTRL_REG                      ( *( ( volatile uint32_t * ) 0xe000ed94 ) )
+    136          #define portMPU_RNR_REG                       ( *( ( volatile uint32_t * ) 0xe000ed98 ) )
+    137          
+    138          #define portMPU_RBAR_REG                      ( *( ( volatile uint32_t * ) 0xe000ed9c ) )
+    139          #define portMPU_RLAR_REG                      ( *( ( volatile uint32_t * ) 0xe000eda0 ) )
+    140          
+    141          #define portMPU_RBAR_A1_REG                   ( *( ( volatile uint32_t * ) 0xe000eda4 ) )
+    142          #define portMPU_RLAR_A1_REG                   ( *( ( volatile uint32_t * ) 0xe000eda8 ) )
+    143          
+    144          #define portMPU_RBAR_A2_REG                   ( *( ( volatile uint32_t * ) 0xe000edac ) )
+    145          #define portMPU_RLAR_A2_REG                   ( *( ( volatile uint32_t * ) 0xe000edb0 ) )
+    146          
+    147          #define portMPU_RBAR_A3_REG                   ( *( ( volatile uint32_t * ) 0xe000edb4 ) )
+    148          #define portMPU_RLAR_A3_REG                   ( *( ( volatile uint32_t * ) 0xe000edb8 ) )
+    149          
+    150          #define portMPU_MAIR0_REG                     ( *( ( volatile uint32_t * ) 0xe000edc0 ) )
+    151          #define portMPU_MAIR1_REG                     ( *( ( volatile uint32_t * ) 0xe000edc4 ) )
+    152          
+    153          #define portMPU_RBAR_ADDRESS_MASK             ( 0xffffffe0 ) /* Must be 32-byte aligned. */
+    154          #define portMPU_RLAR_ADDRESS_MASK             ( 0xffffffe0 ) /* Must be 32-byte aligned. */
+    155          
+    156          #define portMPU_MAIR_ATTR0_POS                ( 0UL )
+    157          #define portMPU_MAIR_ATTR0_MASK               ( 0x000000ff )
+    158          
+    159          #define portMPU_MAIR_ATTR1_POS                ( 8UL )
+    160          #define portMPU_MAIR_ATTR1_MASK               ( 0x0000ff00 )
+    161          
+    162          #define portMPU_MAIR_ATTR2_POS                ( 16UL )
+    163          #define portMPU_MAIR_ATTR2_MASK               ( 0x00ff0000 )
+    164          
+    165          #define portMPU_MAIR_ATTR3_POS                ( 24UL )
+    166          #define portMPU_MAIR_ATTR3_MASK               ( 0xff000000 )
+    167          
+    168          #define portMPU_MAIR_ATTR4_POS                ( 0UL )
+    169          #define portMPU_MAIR_ATTR4_MASK               ( 0x000000ff )
+    170          
+    171          #define portMPU_MAIR_ATTR5_POS                ( 8UL )
+    172          #define portMPU_MAIR_ATTR5_MASK               ( 0x0000ff00 )
+    173          
+    174          #define portMPU_MAIR_ATTR6_POS                ( 16UL )
+    175          #define portMPU_MAIR_ATTR6_MASK               ( 0x00ff0000 )
+    176          
+    177          #define portMPU_MAIR_ATTR7_POS                ( 24UL )
+    178          #define portMPU_MAIR_ATTR7_MASK               ( 0xff000000 )
+    179          
+    180          #define portMPU_RLAR_ATTR_INDEX0              ( 0UL << 1UL )
+    181          #define portMPU_RLAR_ATTR_INDEX1              ( 1UL << 1UL )
+    182          #define portMPU_RLAR_ATTR_INDEX2              ( 2UL << 1UL )
+    183          #define portMPU_RLAR_ATTR_INDEX3              ( 3UL << 1UL )
+    184          #define portMPU_RLAR_ATTR_INDEX4              ( 4UL << 1UL )
+    185          #define portMPU_RLAR_ATTR_INDEX5              ( 5UL << 1UL )
+    186          #define portMPU_RLAR_ATTR_INDEX6              ( 6UL << 1UL )
+    187          #define portMPU_RLAR_ATTR_INDEX7              ( 7UL << 1UL )
+    188          
+    189          #define portMPU_RLAR_REGION_ENABLE            ( 1UL )
+    190          
+    191          /* Enable privileged access to unmapped region. */
+    192          #define portMPU_PRIV_BACKGROUND_ENABLE_BIT    ( 1UL << 2UL )
+    193          
+    194          /* Enable MPU. */
+    195          #define portMPU_ENABLE_BIT                    ( 1UL << 0UL )
+    196          
+    197          /* Expected value of the portMPU_TYPE register. */
+    198          #define portEXPECTED_MPU_TYPE_VALUE           ( 8UL << 8UL ) /* 8 regions, unified. */
+    199          /*-----------------------------------------------------------*/
+    200          
+    201          /**
+    202           * @brief The maximum 24-bit number.
+    203           *
+    204           * It is needed because the systick is a 24-bit counter.
+    205           */
+    206          #define portMAX_24_BIT_NUMBER       ( 0xffffffUL )
+    207          
+    208          /**
+    209           * @brief A fiddle factor to estimate the number of SysTick counts that would
+    210           * have occurred while the SysTick counter is stopped during tickless idle
+    211           * calculations.
+    212           */
+    213          #define portMISSED_COUNTS_FACTOR    ( 45UL )
+    214          /*-----------------------------------------------------------*/
+    215          
+    216          /**
+    217           * @brief Constants required to set up the initial stack.
+    218           */
+    219          #define portINITIAL_XPSR    ( 0x01000000 )
+    220          
+    221          #if ( configRUN_FREERTOS_SECURE_ONLY == 1 )
+    222          
+    223          /**
+    224           * @brief Initial EXC_RETURN value.
+    225           *
+    226           *     FF         FF         FF         FD
+    227           * 1111 1111  1111 1111  1111 1111  1111 1101
+    228           *
+    229           * Bit[6] - 1 --> The exception was taken from the Secure state.
+    230           * Bit[5] - 1 --> Do not skip stacking of additional state context.
+    231           * Bit[4] - 1 --> The PE did not allocate space on the stack for FP context.
+    232           * Bit[3] - 1 --> Return to the Thread mode.
+    233           * Bit[2] - 1 --> Restore registers from the process stack.
+    234           * Bit[1] - 0 --> Reserved, 0.
+    235           * Bit[0] - 1 --> The exception was taken to the Secure state.
+    236           */
+    237              #define portINITIAL_EXC_RETURN    ( 0xfffffffd )
+    238          #else
+    239          
+    240          /**
+    241           * @brief Initial EXC_RETURN value.
+    242           *
+    243           *     FF         FF         FF         BC
+    244           * 1111 1111  1111 1111  1111 1111  1011 1100
+    245           *
+    246           * Bit[6] - 0 --> The exception was taken from the Non-Secure state.
+    247           * Bit[5] - 1 --> Do not skip stacking of additional state context.
+    248           * Bit[4] - 1 --> The PE did not allocate space on the stack for FP context.
+    249           * Bit[3] - 1 --> Return to the Thread mode.
+    250           * Bit[2] - 1 --> Restore registers from the process stack.
+    251           * Bit[1] - 0 --> Reserved, 0.
+    252           * Bit[0] - 0 --> The exception was taken to the Non-Secure state.
+    253           */
+    254              #define portINITIAL_EXC_RETURN    ( 0xffffffbc )
+    255          #endif /* configRUN_FREERTOS_SECURE_ONLY */
+    256          
+    257          /**
+    258           * @brief CONTROL register privileged bit mask.
+    259           *
+    260           * Bit[0] in CONTROL register tells the privilege:
+    261           *  Bit[0] = 0 ==> The task is privileged.
+    262           *  Bit[0] = 1 ==> The task is not privileged.
+    263           */
+    264          #define portCONTROL_PRIVILEGED_MASK         ( 1UL << 0UL )
+    265          
+    266          /**
+    267           * @brief Initial CONTROL register values.
+    268           */
+    269          #define portINITIAL_CONTROL_UNPRIVILEGED    ( 0x3 )
+    270          #define portINITIAL_CONTROL_PRIVILEGED      ( 0x2 )
+    271          
+    272          /**
+    273           * @brief Let the user override the pre-loading of the initial LR with the
+    274           * address of prvTaskExitError() in case it messes up unwinding of the stack
+    275           * in the debugger.
+    276           */
+    277          #ifdef configTASK_RETURN_ADDRESS
+    278              #define portTASK_RETURN_ADDRESS    configTASK_RETURN_ADDRESS
+    279          #else
+    280              #define portTASK_RETURN_ADDRESS    prvTaskExitError
+    281          #endif
+    282          
+    283          /**
+    284           * @brief If portPRELOAD_REGISTERS then registers will be given an initial value
+    285           * when a task is created. This helps in debugging at the cost of code size.
+    286           */
+    287          #define portPRELOAD_REGISTERS    1
+    288          
+    289          /**
+    290           * @brief A task is created without a secure context, and must call
+    291           * portALLOCATE_SECURE_CONTEXT() to give itself a secure context before it makes
+    292           * any secure calls.
+    293           */
+    294          #define portNO_SECURE_CONTEXT    0
+    295          /*-----------------------------------------------------------*/
+    296          
+    297          /**
+    298           * @brief Used to catch tasks that attempt to return from their implementing
+    299           * function.
+    300           */
+    301          static void prvTaskExitError( void );
+    302          
+    303          #if ( configENABLE_MPU == 1 )
+    304          
+    305          /**
+    306           * @brief Setup the Memory Protection Unit (MPU).
+    307           */
+    308              static void prvSetupMPU( void ) PRIVILEGED_FUNCTION;
+    309          #endif /* configENABLE_MPU */
+    310          
+    311          #if ( configENABLE_FPU == 1 )
+    312          
+    313          /**
+    314           * @brief Setup the Floating Point Unit (FPU).
+    315           */
+    316              static void prvSetupFPU( void ) PRIVILEGED_FUNCTION;
+    317          #endif /* configENABLE_FPU */
+    318          
+    319          /**
+    320           * @brief Setup the timer to generate the tick interrupts.
+    321           *
+    322           * The implementation in this file is weak to allow application writers to
+    323           * change the timer used to generate the tick interrupt.
+    324           */
+    325          void vPortSetupTimerInterrupt( void ) PRIVILEGED_FUNCTION;
+    326          
+    327          /**
+    328           * @brief Checks whether the current execution context is interrupt.
+    329           *
+    330           * @return pdTRUE if the current execution context is interrupt, pdFALSE
+    331           * otherwise.
+    332           */
+    333          BaseType_t xPortIsInsideInterrupt( void );
+    334          
+    335          /**
+    336           * @brief Yield the processor.
+    337           */
+    338          void vPortYield( void ) PRIVILEGED_FUNCTION;
+    339          
+    340          /**
+    341           * @brief Enter critical section.
+    342           */
+    343          void vPortEnterCritical( void ) PRIVILEGED_FUNCTION;
+    344          
+    345          /**
+    346           * @brief Exit from critical section.
+    347           */
+    348          void vPortExitCritical( void ) PRIVILEGED_FUNCTION;
+    349          
+    350          /**
+    351           * @brief SysTick handler.
+    352           */
+    353          void SysTick_Handler( void ) PRIVILEGED_FUNCTION;
+    354          
+    355          /**
+    356           * @brief C part of SVC handler.
+    357           */
+    358          portDONT_DISCARD void vPortSVCHandler_C( uint32_t * pulCallerStackAddress ) PRIVILEGED_FUNCTION;
+    359          /*-----------------------------------------------------------*/
+    360          
+    361          /**
+    362           * @brief Each task maintains its own interrupt status in the critical nesting
+    363           * variable.
+    364           */
+
+   \                                 In section .data, align 4
+    365          PRIVILEGED_DATA static volatile uint32_t ulCriticalNesting = 0xaaaaaaaaUL;
+   \                     ulCriticalNesting:
+   \        0x0   0xAAAA'AAAA        DC32 2'863'311'530
+    366          
+    367          #if ( configENABLE_TRUSTZONE == 1 )
+    368          
+    369          /**
+    370           * @brief Saved as part of the task context to indicate which context the
+    371           * task is using on the secure side.
+    372           */
+    373              PRIVILEGED_DATA portDONT_DISCARD volatile SecureContextHandle_t xSecureContext = portNO_SECURE_CONTEXT;
+    374          #endif /* configENABLE_TRUSTZONE */
+    375          
+    376          #if ( configUSE_TICKLESS_IDLE == 1 )
+    377          
+    378          /**
+    379           * @brief The number of SysTick increments that make up one tick period.
+    380           */
+    381              PRIVILEGED_DATA static uint32_t ulTimerCountsForOneTick = 0;
+    382          
+    383          /**
+    384           * @brief The maximum number of tick periods that can be suppressed is
+    385           * limited by the 24 bit resolution of the SysTick timer.
+    386           */
+    387              PRIVILEGED_DATA static uint32_t xMaximumPossibleSuppressedTicks = 0;
+    388          
+    389          /**
+    390           * @brief Compensate for the CPU cycles that pass while the SysTick is
+    391           * stopped (low power functionality only).
+    392           */
+    393              PRIVILEGED_DATA static uint32_t ulStoppedTimerCompensation = 0;
+    394          #endif /* configUSE_TICKLESS_IDLE */
+    395          /*-----------------------------------------------------------*/
+    396          
+    397          #if ( configUSE_TICKLESS_IDLE == 1 )
+    398              __attribute__( ( weak ) ) void vPortSuppressTicksAndSleep( TickType_t xExpectedIdleTime )
+    399              {
+    400                  uint32_t ulReloadValue, ulCompleteTickPeriods, ulCompletedSysTickDecrements;
+    401                  TickType_t xModifiableIdleTime;
+    402          
+    403                  /* Make sure the SysTick reload value does not overflow the counter. */
+    404                  if( xExpectedIdleTime > xMaximumPossibleSuppressedTicks )
+    405                  {
+    406                      xExpectedIdleTime = xMaximumPossibleSuppressedTicks;
+    407                  }
+    408          
+    409                  /* Stop the SysTick momentarily. The time the SysTick is stopped for is
+    410                   * accounted for as best it can be, but using the tickless mode will
+    411                   * inevitably result in some tiny drift of the time maintained by the
+    412                   * kernel with respect to calendar time. */
+    413                  portNVIC_SYSTICK_CTRL_REG &= ~portNVIC_SYSTICK_ENABLE_BIT;
+    414          
+    415                  /* Calculate the reload value required to wait xExpectedIdleTime
+    416                   * tick periods. -1 is used because this code will execute part way
+    417                   * through one of the tick periods. */
+    418                  ulReloadValue = portNVIC_SYSTICK_CURRENT_VALUE_REG + ( ulTimerCountsForOneTick * ( xExpectedIdleTime - 1UL ) );
+    419          
+    420                  if( ulReloadValue > ulStoppedTimerCompensation )
+    421                  {
+    422                      ulReloadValue -= ulStoppedTimerCompensation;
+    423                  }
+    424          
+    425                  /* Enter a critical section but don't use the taskENTER_CRITICAL()
+    426                   * method as that will mask interrupts that should exit sleep mode. */
+    427                  __asm volatile ( "cpsid i" ::: "memory" );
+    428                  __asm volatile ( "dsb" );
+    429                  __asm volatile ( "isb" );
+    430          
+    431                  /* If a context switch is pending or a task is waiting for the scheduler
+    432                   * to be un-suspended then abandon the low power entry. */
+    433                  if( eTaskConfirmSleepModeStatus() == eAbortSleep )
+    434                  {
+    435                      /* Restart from whatever is left in the count register to complete
+    436                       * this tick period. */
+    437                      portNVIC_SYSTICK_LOAD_REG = portNVIC_SYSTICK_CURRENT_VALUE_REG;
+    438          
+    439                      /* Restart SysTick. */
+    440                      portNVIC_SYSTICK_CTRL_REG |= portNVIC_SYSTICK_ENABLE_BIT;
+    441          
+    442                      /* Reset the reload register to the value required for normal tick
+    443                       * periods. */
+    444                      portNVIC_SYSTICK_LOAD_REG = ulTimerCountsForOneTick - 1UL;
+    445          
+    446                      /* Re-enable interrupts - see comments above the cpsid instruction()
+    447                       * above. */
+    448                      __asm volatile ( "cpsie i" ::: "memory" );
+    449                  }
+    450                  else
+    451                  {
+    452                      /* Set the new reload value. */
+    453                      portNVIC_SYSTICK_LOAD_REG = ulReloadValue;
+    454          
+    455                      /* Clear the SysTick count flag and set the count value back to
+    456                       * zero. */
+    457                      portNVIC_SYSTICK_CURRENT_VALUE_REG = 0UL;
+    458          
+    459                      /* Restart SysTick. */
+    460                      portNVIC_SYSTICK_CTRL_REG |= portNVIC_SYSTICK_ENABLE_BIT;
+    461          
+    462                      /* Sleep until something happens. configPRE_SLEEP_PROCESSING() can
+    463                       * set its parameter to 0 to indicate that its implementation
+    464                       * contains its own wait for interrupt or wait for event
+    465                       * instruction, and so wfi should not be executed again. However,
+    466                       * the original expected idle time variable must remain unmodified,
+    467                       * so a copy is taken. */
+    468                      xModifiableIdleTime = xExpectedIdleTime;
+    469                      configPRE_SLEEP_PROCESSING( xModifiableIdleTime );
+    470          
+    471                      if( xModifiableIdleTime > 0 )
+    472                      {
+    473                          __asm volatile ( "dsb" ::: "memory" );
+    474                          __asm volatile ( "wfi" );
+    475                          __asm volatile ( "isb" );
+    476                      }
+    477          
+    478                      configPOST_SLEEP_PROCESSING( xExpectedIdleTime );
+    479          
+    480                      /* Re-enable interrupts to allow the interrupt that brought the MCU
+    481                       * out of sleep mode to execute immediately. See comments above
+    482                       * the cpsid instruction above. */
+    483                      __asm volatile ( "cpsie i" ::: "memory" );
+    484                      __asm volatile ( "dsb" );
+    485                      __asm volatile ( "isb" );
+    486          
+    487                      /* Disable interrupts again because the clock is about to be stopped
+    488                       * and interrupts that execute while the clock is stopped will
+    489                       * increase any slippage between the time maintained by the RTOS and
+    490                       * calendar time. */
+    491                      __asm volatile ( "cpsid i" ::: "memory" );
+    492                      __asm volatile ( "dsb" );
+    493                      __asm volatile ( "isb" );
+    494          
+    495                      /* Disable the SysTick clock without reading the
+    496                       * portNVIC_SYSTICK_CTRL_REG register to ensure the
+    497                       * portNVIC_SYSTICK_COUNT_FLAG_BIT is not cleared if it is set.
+    498                       * Again, the time the SysTick is stopped for is accounted for as
+    499                       * best it can be, but using the tickless mode will inevitably
+    500                       * result in some tiny drift of the time maintained by the kernel
+    501                       * with respect to calendar time*/
+    502                      portNVIC_SYSTICK_CTRL_REG = ( portNVIC_SYSTICK_CLK_BIT | portNVIC_SYSTICK_INT_BIT );
+    503          
+    504                      /* Determine if the SysTick clock has already counted to zero and
+    505                       * been set back to the current reload value (the reload back being
+    506                       * correct for the entire expected idle time) or if the SysTick is
+    507                       * yet to count to zero (in which case an interrupt other than the
+    508                       * SysTick must have brought the system out of sleep mode). */
+    509                      if( ( portNVIC_SYSTICK_CTRL_REG & portNVIC_SYSTICK_COUNT_FLAG_BIT ) != 0 )
+    510                      {
+    511                          uint32_t ulCalculatedLoadValue;
+    512          
+    513                          /* The tick interrupt is already pending, and the SysTick count
+    514                           * reloaded with ulReloadValue.  Reset the
+    515                           * portNVIC_SYSTICK_LOAD_REG with whatever remains of this tick
+    516                           * period. */
+    517                          ulCalculatedLoadValue = ( ulTimerCountsForOneTick - 1UL ) - ( ulReloadValue - portNVIC_SYSTICK_CURRENT_VALUE_REG );
+    518          
+    519                          /* Don't allow a tiny value, or values that have somehow
+    520                           * underflowed because the post sleep hook did something
+    521                           * that took too long. */
+    522                          if( ( ulCalculatedLoadValue < ulStoppedTimerCompensation ) || ( ulCalculatedLoadValue > ulTimerCountsForOneTick ) )
+    523                          {
+    524                              ulCalculatedLoadValue = ( ulTimerCountsForOneTick - 1UL );
+    525                          }
+    526          
+    527                          portNVIC_SYSTICK_LOAD_REG = ulCalculatedLoadValue;
+    528          
+    529                          /* As the pending tick will be processed as soon as this
+    530                           * function exits, the tick value maintained by the tick is
+    531                           * stepped forward by one less than the time spent waiting. */
+    532                          ulCompleteTickPeriods = xExpectedIdleTime - 1UL;
+    533                      }
+    534                      else
+    535                      {
+    536                          /* Something other than the tick interrupt ended the sleep.
+    537                           * Work out how long the sleep lasted rounded to complete tick
+    538                           * periods (not the ulReload value which accounted for part
+    539                           * ticks). */
+    540                          ulCompletedSysTickDecrements = ( xExpectedIdleTime * ulTimerCountsForOneTick ) - portNVIC_SYSTICK_CURRENT_VALUE_REG;
+    541          
+    542                          /* How many complete tick periods passed while the processor
+    543                           * was waiting? */
+    544                          ulCompleteTickPeriods = ulCompletedSysTickDecrements / ulTimerCountsForOneTick;
+    545          
+    546                          /* The reload value is set to whatever fraction of a single tick
+    547                           * period remains. */
+    548                          portNVIC_SYSTICK_LOAD_REG = ( ( ulCompleteTickPeriods + 1UL ) * ulTimerCountsForOneTick ) - ulCompletedSysTickDecrements;
+    549                      }
+    550          
+    551                      /* Restart SysTick so it runs from portNVIC_SYSTICK_LOAD_REG
+    552                       * again, then set portNVIC_SYSTICK_LOAD_REG back to its standard
+    553                       * value. */
+    554                      portNVIC_SYSTICK_CURRENT_VALUE_REG = 0UL;
+    555                      portNVIC_SYSTICK_CTRL_REG |= portNVIC_SYSTICK_ENABLE_BIT;
+    556                      vTaskStepTick( ulCompleteTickPeriods );
+    557                      portNVIC_SYSTICK_LOAD_REG = ulTimerCountsForOneTick - 1UL;
+    558          
+    559                      /* Exit with interrupts enabled. */
+    560                      __asm volatile ( "cpsie i" ::: "memory" );
+    561                  }
+    562              }
+    563          #endif /* configUSE_TICKLESS_IDLE */
+    564          /*-----------------------------------------------------------*/
+    565          
+
+   \                                 In section .text, align 4
+    566          __attribute__( ( weak ) ) void vPortSetupTimerInterrupt( void ) /* PRIVILEGED_FUNCTION */
+    567          {
+    568              /* Calculate the constants required to configure the tick interrupt. */
+    569              #if ( configUSE_TICKLESS_IDLE == 1 )
+    570                  {
+    571                      ulTimerCountsForOneTick = ( configSYSTICK_CLOCK_HZ / configTICK_RATE_HZ );
+    572                      xMaximumPossibleSuppressedTicks = portMAX_24_BIT_NUMBER / ulTimerCountsForOneTick;
+    573                      ulStoppedTimerCompensation = portMISSED_COUNTS_FACTOR / ( configCPU_CLOCK_HZ / configSYSTICK_CLOCK_HZ );
+    574                  }
+    575              #endif /* configUSE_TICKLESS_IDLE */
+    576          
+    577              /* Stop and reset the SysTick. */
+    578              portNVIC_SYSTICK_CTRL_REG = 0UL;
+   \                     vPortSetupTimerInterrupt: (+1)
+   \        0x0   0x4807             LDR.N    R0,??vPortSetupTimerInterrupt_0
+   \        0x2   0x2200             MOVS     R2,#+0
+   \        0x4   0x6002             STR      R2,[R0, #+0]
+    579              portNVIC_SYSTICK_CURRENT_VALUE_REG = 0UL;
+   \        0x6   0x2100             MOVS     R1,#+0
+   \        0x8   0x6081             STR      R1,[R0, #+8]
+    580          
+    581              /* Configure SysTick to interrupt at the requested rate. */
+    582              portNVIC_SYSTICK_LOAD_REG = ( configSYSTICK_CLOCK_HZ / configTICK_RATE_HZ ) - 1UL;
+   \        0xA   0x4B06             LDR.N    R3,??vPortSetupTimerInterrupt_0+4
+   \        0xC   0x681A             LDR      R2,[R3, #+0]
+   \        0xE   0xF44F 0x717A      MOV      R1,#+1000
+   \       0x12   0xFBB2 0xF1F1      UDIV     R1,R2,R1
+    583              portNVIC_SYSTICK_CTRL_REG = portNVIC_SYSTICK_CLK_BIT | portNVIC_SYSTICK_INT_BIT | portNVIC_SYSTICK_ENABLE_BIT;
+   \       0x16   0x2207             MOVS     R2,#+7
+   \       0x18   0x1E49             SUBS     R1,R1,#+1
+   \       0x1A   0x6041             STR      R1,[R0, #+4]
+   \       0x1C   0x6002             STR      R2,[R0, #+0]
+    584          }
+   \       0x1E   0x4770             BX       LR
+   \                     ??vPortSetupTimerInterrupt_0:
+   \       0x20   0xE000'E010        DC32     0xe000e010
+   \       0x24   0x....'....        DC32     SystemCoreClock
+    585          /*-----------------------------------------------------------*/
+    586          
+
+   \                                 In section .text, align 2, keep-with-next
+    587          static void prvTaskExitError( void )
+    588          {
+   \                     prvTaskExitError: (+1)
+   \        0x0   0xB580             PUSH     {R7,LR}
+    589              volatile uint32_t ulDummy = 0UL;
+   \        0x2   0x2000             MOVS     R0,#+0
+   \        0x4   0x9000             STR      R0,[SP, #+0]
+    590          
+    591              /* A function that implements a task must not exit or attempt to return to
+    592               * its caller as there is nothing to return to. If a task wants to exit it
+    593               * should instead call vTaskDelete( NULL ). Artificially force an assert()
+    594               * to be triggered if configASSERT() is defined, then stop here so
+    595               * application writers can catch the error. */
+    596              configASSERT( ulCriticalNesting == ~0UL );
+   \        0x6   0x....             LDR.N    R1,??DataTable9
+   \        0x8   0x680A             LDR      R2,[R1, #+0]
+   \        0xA   0xF112 0x0F01      CMN      R2,#+1
+   \        0xE   0xD001             BEQ.N    ??CrossCallReturnLabel_1
+   \       0x10   0x.... 0x....      BL       ?Subroutine2
+    597              portDISABLE_INTERRUPTS();
+   \                     ??CrossCallReturnLabel_1: (+1)
+   \       0x14   0x.... 0x....      BL       ulSetInterruptMask
+    598          
+    599              while( ulDummy == 0 )
+   \                     ??prvTaskExitError_0: (+1)
+   \       0x18   0x9800             LDR      R0,[SP, #+0]
+   \       0x1A   0x2800             CMP      R0,#+0
+   \       0x1C   0xD0FC             BEQ.N    ??prvTaskExitError_0
+    600              {
+    601                  /* This file calls prvTaskExitError() after the scheduler has been
+    602                   * started to remove a compiler warning about the function being
+    603                   * defined but never called.  ulDummy is used purely to quieten other
+    604                   * warnings about code appearing after this function is called - making
+    605                   * ulDummy volatile makes the compiler think the function could return
+    606                   * and therefore not output an 'unreachable code' warning for code that
+    607                   * appears after it. */
+    608              }
+    609          }
+   \       0x1E   0xBD01             POP      {R0,PC}
+
+   \                                 In section .text, align 2, keep-with-next
+   \                     ?Subroutine2: (+1)
+   \        0x0   0xF44F 0x7115      MOV      R1,#+596
+   \        0x4   0x....             LDR.N    R0,??DataTable9_2
+   \        0x6   0x.... 0x....      B.W      assertEFM
+    610          /*-----------------------------------------------------------*/
+    611          
+    612          #if ( configENABLE_MPU == 1 )
+    613              static void prvSetupMPU( void ) /* PRIVILEGED_FUNCTION */
+    614              {
+    615                  #if defined( __ARMCC_VERSION )
+    616          
+    617                      /* Declaration when these variable are defined in code instead of being
+    618                       * exported from linker scripts. */
+    619                      extern uint32_t * __privileged_functions_start__;
+    620                      extern uint32_t * __privileged_functions_end__;
+    621                      extern uint32_t * __syscalls_flash_start__;
+    622                      extern uint32_t * __syscalls_flash_end__;
+    623                      extern uint32_t * __unprivileged_flash_start__;
+    624                      extern uint32_t * __unprivileged_flash_end__;
+    625                      extern uint32_t * __privileged_sram_start__;
+    626                      extern uint32_t * __privileged_sram_end__;
+    627                  #else /* if defined( __ARMCC_VERSION ) */
+    628                      /* Declaration when these variable are exported from linker scripts. */
+    629                      extern uint32_t __privileged_functions_start__[];
+    630                      extern uint32_t __privileged_functions_end__[];
+    631                      extern uint32_t __syscalls_flash_start__[];
+    632                      extern uint32_t __syscalls_flash_end__[];
+    633                      extern uint32_t __unprivileged_flash_start__[];
+    634                      extern uint32_t __unprivileged_flash_end__[];
+    635                      extern uint32_t __privileged_sram_start__[];
+    636                      extern uint32_t __privileged_sram_end__[];
+    637                  #endif /* defined( __ARMCC_VERSION ) */
+    638          
+    639                  /* Check that the MPU is present. */
+    640                  if( portMPU_TYPE_REG == portEXPECTED_MPU_TYPE_VALUE )
+    641                  {
+    642                      /* MAIR0 - Index 0. */
+    643                      portMPU_MAIR0_REG |= ( ( portMPU_NORMAL_MEMORY_BUFFERABLE_CACHEABLE << portMPU_MAIR_ATTR0_POS ) & portMPU_MAIR_ATTR0_MASK );
+    644                      /* MAIR0 - Index 1. */
+    645                      portMPU_MAIR0_REG |= ( ( portMPU_DEVICE_MEMORY_nGnRE << portMPU_MAIR_ATTR1_POS ) & portMPU_MAIR_ATTR1_MASK );
+    646          
+    647                      /* Setup privileged flash as Read Only so that privileged tasks can
+    648                       * read it but not modify. */
+    649                      portMPU_RNR_REG = portPRIVILEGED_FLASH_REGION;
+    650                      portMPU_RBAR_REG = ( ( ( uint32_t ) __privileged_functions_start__ ) & portMPU_RBAR_ADDRESS_MASK ) |
+    651                                         ( portMPU_REGION_NON_SHAREABLE ) |
+    652                                         ( portMPU_REGION_PRIVILEGED_READ_ONLY );
+    653                      portMPU_RLAR_REG = ( ( ( uint32_t ) __privileged_functions_end__ ) & portMPU_RLAR_ADDRESS_MASK ) |
+    654                                         ( portMPU_RLAR_ATTR_INDEX0 ) |
+    655                                         ( portMPU_RLAR_REGION_ENABLE );
+    656          
+    657                      /* Setup unprivileged flash as Read Only by both privileged and
+    658                       * unprivileged tasks. All tasks can read it but no-one can modify. */
+    659                      portMPU_RNR_REG = portUNPRIVILEGED_FLASH_REGION;
+    660                      portMPU_RBAR_REG = ( ( ( uint32_t ) __unprivileged_flash_start__ ) & portMPU_RBAR_ADDRESS_MASK ) |
+    661                                         ( portMPU_REGION_NON_SHAREABLE ) |
+    662                                         ( portMPU_REGION_READ_ONLY );
+    663                      portMPU_RLAR_REG = ( ( ( uint32_t ) __unprivileged_flash_end__ ) & portMPU_RLAR_ADDRESS_MASK ) |
+    664                                         ( portMPU_RLAR_ATTR_INDEX0 ) |
+    665                                         ( portMPU_RLAR_REGION_ENABLE );
+    666          
+    667                      /* Setup unprivileged syscalls flash as Read Only by both privileged
+    668                       * and unprivileged tasks. All tasks can read it but no-one can modify. */
+    669                      portMPU_RNR_REG = portUNPRIVILEGED_SYSCALLS_REGION;
+    670                      portMPU_RBAR_REG = ( ( ( uint32_t ) __syscalls_flash_start__ ) & portMPU_RBAR_ADDRESS_MASK ) |
+    671                                         ( portMPU_REGION_NON_SHAREABLE ) |
+    672                                         ( portMPU_REGION_READ_ONLY );
+    673                      portMPU_RLAR_REG = ( ( ( uint32_t ) __syscalls_flash_end__ ) & portMPU_RLAR_ADDRESS_MASK ) |
+    674                                         ( portMPU_RLAR_ATTR_INDEX0 ) |
+    675                                         ( portMPU_RLAR_REGION_ENABLE );
+    676          
+    677                      /* Setup RAM containing kernel data for privileged access only. */
+    678                      portMPU_RNR_REG = portPRIVILEGED_RAM_REGION;
+    679                      portMPU_RBAR_REG = ( ( ( uint32_t ) __privileged_sram_start__ ) & portMPU_RBAR_ADDRESS_MASK ) |
+    680                                         ( portMPU_REGION_NON_SHAREABLE ) |
+    681                                         ( portMPU_REGION_PRIVILEGED_READ_WRITE ) |
+    682                                         ( portMPU_REGION_EXECUTE_NEVER );
+    683                      portMPU_RLAR_REG = ( ( ( uint32_t ) __privileged_sram_end__ ) & portMPU_RLAR_ADDRESS_MASK ) |
+    684                                         ( portMPU_RLAR_ATTR_INDEX0 ) |
+    685                                         ( portMPU_RLAR_REGION_ENABLE );
+    686          
+    687                      /* Enable mem fault. */
+    688                      portSCB_SYS_HANDLER_CTRL_STATE_REG |= portSCB_MEM_FAULT_ENABLE_BIT;
+    689          
+    690                      /* Enable MPU with privileged background access i.e. unmapped
+    691                       * regions have privileged access. */
+    692                      portMPU_CTRL_REG |= ( portMPU_PRIV_BACKGROUND_ENABLE_BIT | portMPU_ENABLE_BIT );
+    693                  }
+    694              }
+    695          #endif /* configENABLE_MPU */
+    696          /*-----------------------------------------------------------*/
+    697          
+    698          #if ( configENABLE_FPU == 1 )
+    699              static void prvSetupFPU( void ) /* PRIVILEGED_FUNCTION */
+    700              {
+    701                  #if ( configENABLE_TRUSTZONE == 1 )
+    702                      {
+    703                          /* Enable non-secure access to the FPU. */
+    704                          SecureInit_EnableNSFPUAccess();
+    705                      }
+    706                  #endif /* configENABLE_TRUSTZONE */
+    707          
+    708                  /* CP10 = 11 ==> Full access to FPU i.e. both privileged and
+    709                   * unprivileged code should be able to access FPU. CP11 should be
+    710                   * programmed to the same value as CP10. */
+    711                  *( portCPACR ) |= ( ( portCPACR_CP10_VALUE << portCPACR_CP10_POS ) |
+    712                                      ( portCPACR_CP11_VALUE << portCPACR_CP11_POS )
+    713                                      );
+    714          
+    715                  /* ASPEN = 1 ==> Hardware should automatically preserve floating point
+    716                   * context on exception entry and restore on exception return.
+    717                   * LSPEN = 1 ==> Enable lazy context save of FP state. */
+    718                  *( portFPCCR ) |= ( portFPCCR_ASPEN_MASK | portFPCCR_LSPEN_MASK );
+    719              }
+    720          #endif /* configENABLE_FPU */
+    721          /*-----------------------------------------------------------*/
+    722          
+
+   \                                 In section .text, align 4, keep-with-next
+    723          void vPortYield( void ) /* PRIVILEGED_FUNCTION */
+    724          {
+    725              /* Set a PendSV to request a context switch. */
+    726              portNVIC_INT_CTRL_REG = portNVIC_PENDSVSET_BIT;
+   \                     vPortYield: (+1)
+   \        0x0   0xF04F 0x5180      MOV      R1,#+268435456
+   \        0x4   0x....             LDR.N    R0,??DataTable9_1
+   \        0x6   0x6001             STR      R1,[R0, #+0]
+    727          
+    728              /* Barriers are normally not required but do ensure the code is
+    729               * completely within the specified behaviour for the architecture. */
+    730              __asm volatile ( "dsb" ::: "memory" );
+   \        0x8   0xF3BF 0x8F4F      dsb
+    731              __asm volatile ( "isb" );
+   \        0xC   0xF3BF 0x8F6F      isb
+    732          }
+   \       0x10   0x4770             BX       LR
+    733          /*-----------------------------------------------------------*/
+    734          
+
+   \                                 In section .text, align 4, keep-with-next
+    735          void vPortEnterCritical( void ) /* PRIVILEGED_FUNCTION */
+    736          {
+   \                     vPortEnterCritical: (+1)
+   \        0x0   0xB580             PUSH     {R7,LR}
+    737              portDISABLE_INTERRUPTS();
+   \        0x2   0x.... 0x....      BL       ulSetInterruptMask
+    738              ulCriticalNesting++;
+   \        0x6   0x....             LDR.N    R1,??DataTable9
+   \        0x8   0x6808             LDR      R0,[R1, #+0]
+   \        0xA   0x1C40             ADDS     R0,R0,#+1
+   \        0xC   0x6008             STR      R0,[R1, #+0]
+    739          
+    740              /* Barriers are normally not required but do ensure the code is
+    741               * completely within the specified behaviour for the architecture. */
+    742              __asm volatile ( "dsb" ::: "memory" );
+   \        0xE   0xF3BF 0x8F4F      dsb
+    743              __asm volatile ( "isb" );
+   \       0x12   0xF3BF 0x8F6F      isb
+    744          }
+   \       0x16   0xBD01             POP      {R0,PC}
+    745          /*-----------------------------------------------------------*/
+    746          
+
+   \                                 In section .text, align 2, keep-with-next
+    747          void vPortExitCritical( void ) /* PRIVILEGED_FUNCTION */
+    748          {
+   \                     vPortExitCritical: (+1)
+   \        0x0   0xB510             PUSH     {R4,LR}
+    749              configASSERT( ulCriticalNesting );
+   \        0x2   0x....             LDR.N    R4,??DataTable9
+   \        0x4   0x6820             LDR      R0,[R4, #+0]
+   \        0x6   0xB920             CBNZ.N   R0,??vPortExitCritical_0
+   \        0x8   0xF240 0x21ED      MOVW     R1,#+749
+   \        0xC   0x....             LDR.N    R0,??DataTable9_2
+   \        0xE   0x.... 0x....      BL       assertEFM
+    750              ulCriticalNesting--;
+   \                     ??vPortExitCritical_0: (+1)
+   \       0x12   0x6821             LDR      R1,[R4, #+0]
+   \       0x14   0x1E49             SUBS     R1,R1,#+1
+   \       0x16   0x6021             STR      R1,[R4, #+0]
+    751          
+    752              if( ulCriticalNesting == 0 )
+   \       0x18   0x6820             LDR      R0,[R4, #+0]
+   \       0x1A   0xB900             CBNZ.N   R0,??vPortExitCritical_1
+    753              {
+    754                  portENABLE_INTERRUPTS();
+   \       0x1C   0x....             B.N      ?Subroutine0
+    755              }
+    756          }
+   \                     ??vPortExitCritical_1: (+1)
+   \       0x1E   0xBD10             POP      {R4,PC}
+
+   \                                 In section .text, align 2, keep-with-next
+   \                     ?Subroutine0: (+1)
+   \        0x0   0xE8BD 0x4010      POP      {R4,LR}
+   \        0x4   0x.... 0x....      B.W      vClearInterruptMask
+    757          /*-----------------------------------------------------------*/
+    758          
+
+   \                                 In section .text, align 2, keep-with-next
+    759          void SysTick_Handler( void ) /* PRIVILEGED_FUNCTION */
+    760          {
+   \                     xPortSysTickHandler: (+1)
+   \        0x0   0xB510             PUSH     {R4,LR}
+    761              uint32_t ulPreviousMask;
+    762          
+    763              ulPreviousMask = portSET_INTERRUPT_MASK_FROM_ISR();
+   \        0x2   0x.... 0x....      BL       ulSetInterruptMask
+   \        0x6   0x4604             MOV      R4,R0
+    764              {
+    765                  /* Increment the RTOS tick. */
+    766                  if( xTaskIncrementTick() != pdFALSE )
+   \        0x8   0x.... 0x....      BL       xTaskIncrementTick
+   \        0xC   0xB118             CBZ.N    R0,??xPortSysTickHandler_0
+    767                  {
+    768                      /* Pend a context switch. */
+    769                      portNVIC_INT_CTRL_REG = portNVIC_PENDSVSET_BIT;
+   \        0xE   0xF04F 0x5180      MOV      R1,#+268435456
+   \       0x12   0x....             LDR.N    R0,??DataTable9_1
+   \       0x14   0x6001             STR      R1,[R0, #+0]
+    770                  }
+    771              }
+    772              portCLEAR_INTERRUPT_MASK_FROM_ISR( ulPreviousMask );
+   \                     ??xPortSysTickHandler_0: (+1)
+   \       0x16   0x4620             MOV      R0,R4
+   \       0x18                      REQUIRE ?Subroutine0
+   \       0x18                      ;; // Fall through to label ?Subroutine0
+    773          }
+    774          /*-----------------------------------------------------------*/
+    775          
+
+   \                                 In section .text, align 2, keep-with-next, root
+    776          void vPortSVCHandler_C( uint32_t * pulCallerStackAddress ) /* PRIVILEGED_FUNCTION portDONT_DISCARD */
+    777          {
+    778              #if ( configENABLE_MPU == 1 )
+    779                  #if defined( __ARMCC_VERSION )
+    780          
+    781                      /* Declaration when these variable are defined in code instead of being
+    782                       * exported from linker scripts. */
+    783                      extern uint32_t * __syscalls_flash_start__;
+    784                      extern uint32_t * __syscalls_flash_end__;
+    785                  #else
+    786                      /* Declaration when these variable are exported from linker scripts. */
+    787                      extern uint32_t __syscalls_flash_start__[];
+    788                      extern uint32_t __syscalls_flash_end__[];
+    789                  #endif /* defined( __ARMCC_VERSION ) */
+    790              #endif /* configENABLE_MPU */
+    791          
+    792              uint32_t ulPC;
+    793          
+    794              #if ( configENABLE_TRUSTZONE == 1 )
+    795                  uint32_t ulR0;
+    796                  #if ( configENABLE_MPU == 1 )
+    797                      uint32_t ulControl, ulIsTaskPrivileged;
+    798                  #endif /* configENABLE_MPU */
+    799              #endif /* configENABLE_TRUSTZONE */
+    800              uint8_t ucSVCNumber;
+    801          
+    802              /* Register are stored on the stack in the following order - R0, R1, R2, R3,
+    803               * R12, LR, PC, xPSR. */
+    804              ulPC = pulCallerStackAddress[ 6 ];
+    805              ucSVCNumber = ( ( uint8_t * ) ulPC )[ -2 ];
+    806          
+    807              switch( ucSVCNumber )
+   \                     vPortSVCHandler_C: (+1)
+   \        0x0   0x6981             LDR      R1,[R0, #+24]
+   \        0x2   0xF811 0x0C02      LDRB     R0,[R1, #-2]
+   \        0x6   0x2802             CMP      R0,#+2
+   \        0x8   0xD10B             BNE.N    ??vPortSVCHandler_C_0
+    808              {
+    809                  #if ( configENABLE_TRUSTZONE == 1 )
+    810                      case portSVC_ALLOCATE_SECURE_CONTEXT:
+    811          
+    812                          /* R0 contains the stack size passed as parameter to the
+    813                           * vPortAllocateSecureContext function. */
+    814                          ulR0 = pulCallerStackAddress[ 0 ];
+    815          
+    816                          #if ( configENABLE_MPU == 1 )
+    817                              {
+    818                                  /* Read the CONTROL register value. */
+    819                                  __asm volatile ( "mrs %0, control"  : "=r" ( ulControl ) );
+    820          
+    821                                  /* The task that raised the SVC is privileged if Bit[0]
+    822                                   * in the CONTROL register is 0. */
+    823                                  ulIsTaskPrivileged = ( ( ulControl & portCONTROL_PRIVILEGED_MASK ) == 0 );
+    824          
+    825                                  /* Allocate and load a context for the secure task. */
+    826                                  xSecureContext = SecureContext_AllocateContext( ulR0, ulIsTaskPrivileged );
+    827                              }
+    828                          #else /* if ( configENABLE_MPU == 1 ) */
+    829                              {
+    830                                  /* Allocate and load a context for the secure task. */
+    831                                  xSecureContext = SecureContext_AllocateContext( ulR0 );
+    832                              }
+    833                          #endif /* configENABLE_MPU */
+    834          
+    835                          configASSERT( xSecureContext != NULL );
+    836                          SecureContext_LoadContext( xSecureContext );
+    837                          break;
+    838          
+    839                      case portSVC_FREE_SECURE_CONTEXT:
+    840                          /* R0 contains the secure context handle to be freed. */
+    841                          ulR0 = pulCallerStackAddress[ 0 ];
+    842          
+    843                          /* Free the secure context. */
+    844                          SecureContext_FreeContext( ( SecureContextHandle_t ) ulR0 );
+    845                          break;
+    846                  #endif /* configENABLE_TRUSTZONE */
+    847          
+    848                  case portSVC_START_SCHEDULER:
+    849                      #if ( configENABLE_TRUSTZONE == 1 )
+    850                          {
+    851                              /* De-prioritize the non-secure exceptions so that the
+    852                               * non-secure pendSV runs at the lowest priority. */
+    853                              SecureInit_DePrioritizeNSExceptions();
+    854          
+    855                              /* Initialize the secure context management system. */
+    856                              SecureContext_Init();
+    857                          }
+    858                      #endif /* configENABLE_TRUSTZONE */
+    859          
+    860                      #if ( configENABLE_FPU == 1 )
+    861                          {
+    862                              /* Setup the Floating Point Unit (FPU). */
+    863                              prvSetupFPU();
+   \        0xA   0x....             LDR.N    R0,??DataTable9_3
+   \        0xC   0x6801             LDR      R1,[R0, #+0]
+   \        0xE   0xF441 0x0170      ORR      R1,R1,#0xF00000
+   \       0x12   0x6001             STR      R1,[R0, #+0]
+   \       0x14   0x....             LDR.N    R1,??DataTable9_4
+   \       0x16   0x6808             LDR      R0,[R1, #+0]
+   \       0x18   0xF040 0x4040      ORR      R0,R0,#0xC0000000
+   \       0x1C   0x6008             STR      R0,[R1, #+0]
+    864                          }
+    865                      #endif /* configENABLE_FPU */
+    866          
+    867                      /* Setup the context of the first task so that the first task starts
+    868                       * executing. */
+    869                      vRestoreContextOfFirstTask();
+   \       0x1E   0x.... 0x....      B.W      vRestoreContextOfFirstTask
+    870                      break;
+    871          
+    872                      #if ( configENABLE_MPU == 1 )
+    873                          case portSVC_RAISE_PRIVILEGE:
+    874          
+    875                              /* Only raise the privilege, if the svc was raised from any of
+    876                               * the system calls. */
+    877                              if( ( ulPC >= ( uint32_t ) __syscalls_flash_start__ ) &&
+    878                                  ( ulPC <= ( uint32_t ) __syscalls_flash_end__ ) )
+    879                              {
+    880                                  vRaisePrivilege();
+    881                              }
+    882                              break;
+    883                      #endif /* configENABLE_MPU */
+    884          
+    885                  default:
+    886                      /* Incorrect SVC call. */
+    887                      configASSERT( pdFALSE );
+   \                     ??vPortSVCHandler_C_0: (+1)
+   \       0x22   0xF240 0x3177      MOVW     R1,#+887
+   \       0x26                      REQUIRE ?Subroutine1
+   \       0x26                      ;; // Fall through to label ?Subroutine1
+    888              }
+    889          }
+
+   \                                 In section .text, align 2, keep-with-next
+   \                     ?Subroutine1: (+1)
+   \        0x0   0x....             LDR.N    R0,??DataTable9_2
+   \        0x2   0x.... 0x....      B.W      assertEFM
+    890          /*-----------------------------------------------------------*/
+    891          /* *INDENT-OFF* */
+    892          #if ( configENABLE_MPU == 1 )
+    893              StackType_t * pxPortInitialiseStack( StackType_t * pxTopOfStack,
+    894                                                   StackType_t * pxEndOfStack,
+    895                                                   TaskFunction_t pxCode,
+    896                                                   void * pvParameters,
+    897                                                   BaseType_t xRunPrivileged ) /* PRIVILEGED_FUNCTION */
+    898          #else
+
+   \                                 In section .text, align 2, keep-with-next
+    899              StackType_t * pxPortInitialiseStack( StackType_t * pxTopOfStack,
+    900                                                   StackType_t * pxEndOfStack,
+    901                                                   TaskFunction_t pxCode,
+    902                                                   void * pvParameters ) /* PRIVILEGED_FUNCTION */
+    903          #endif /* configENABLE_MPU */
+    904          /* *INDENT-ON* */
+    905          {
+   \                     pxPortInitialiseStack: (+1)
+   \        0x0   0xB530             PUSH     {R4,R5,LR}
+    906              /* Simulate the stack frame as it would be created by a context switch
+    907               * interrupt. */
+    908              #if ( portPRELOAD_REGISTERS == 0 )
+    909                  {
+    910                      pxTopOfStack--;                                          /* Offset added to account for the way the MCU uses the stack on entry/exit of interrupts. */
+    911                      *pxTopOfStack = portINITIAL_XPSR;                        /* xPSR */
+    912                      pxTopOfStack--;
+    913                      *pxTopOfStack = ( StackType_t ) pxCode;                  /* PC */
+    914                      pxTopOfStack--;
+    915                      *pxTopOfStack = ( StackType_t ) portTASK_RETURN_ADDRESS; /* LR */
+    916                      pxTopOfStack -= 5;                                       /* R12, R3, R2 and R1. */
+    917                      *pxTopOfStack = ( StackType_t ) pvParameters;            /* R0 */
+    918                      pxTopOfStack -= 9;                                       /* R11..R4, EXC_RETURN. */
+    919                      *pxTopOfStack = portINITIAL_EXC_RETURN;
+    920          
+    921                      #if ( configENABLE_MPU == 1 )
+    922                          {
+    923                              pxTopOfStack--;
+    924          
+    925                              if( xRunPrivileged == pdTRUE )
+    926                              {
+    927                                  *pxTopOfStack = portINITIAL_CONTROL_PRIVILEGED; /* Slot used to hold this task's CONTROL value. */
+    928                              }
+    929                              else
+    930                              {
+    931                                  *pxTopOfStack = portINITIAL_CONTROL_UNPRIVILEGED; /* Slot used to hold this task's CONTROL value. */
+    932                              }
+    933                          }
+    934                      #endif /* configENABLE_MPU */
+    935          
+    936                      pxTopOfStack--;
+    937                      *pxTopOfStack = ( StackType_t ) pxEndOfStack; /* Slot used to hold this task's PSPLIM value. */
+    938          
+    939                      #if ( configENABLE_TRUSTZONE == 1 )
+    940                          {
+    941                              pxTopOfStack--;
+    942                              *pxTopOfStack = portNO_SECURE_CONTEXT; /* Slot used to hold this task's xSecureContext value. */
+    943                          }
+    944                      #endif /* configENABLE_TRUSTZONE */
+    945                  }
+    946              #else /* portPRELOAD_REGISTERS */
+    947                  {
+    948                      pxTopOfStack--;                                          /* Offset added to account for the way the MCU uses the stack on entry/exit of interrupts. */
+    949                      *pxTopOfStack = portINITIAL_XPSR;                        /* xPSR */
+   \        0x2   0xF1A0 0x0444      SUB      R4,R0,#+68
+    950                      pxTopOfStack--;
+    951                      *pxTopOfStack = ( StackType_t ) pxCode;                  /* PC */
+   \        0x6   0x63E2             STR      R2,[R4, #+60]
+    952                      pxTopOfStack--;
+    953                      *pxTopOfStack = ( StackType_t ) portTASK_RETURN_ADDRESS; /* LR */
+   \        0x8   0x....             LDR.N    R2,??DataTable9_5
+   \        0xA   0x63A2             STR      R2,[R4, #+56]
+    954                      pxTopOfStack--;
+    955                      *pxTopOfStack = ( StackType_t ) 0x12121212UL;            /* R12 */
+    956                      pxTopOfStack--;
+    957                      *pxTopOfStack = ( StackType_t ) 0x03030303UL;            /* R3 */
+   \        0xC   0xF04F 0x3203      MOV      R2,#+50529027
+   \       0x10   0x6322             STR      R2,[R4, #+48]
+    958                      pxTopOfStack--;
+    959                      *pxTopOfStack = ( StackType_t ) 0x02020202UL;            /* R2 */
+    960                      pxTopOfStack--;
+    961                      *pxTopOfStack = ( StackType_t ) 0x01010101UL;            /* R1 */
+   \       0x12   0xF04F 0x3201      MOV      R2,#+16843009
+   \       0x16   0x62A2             STR      R2,[R4, #+40]
+    962                      pxTopOfStack--;
+    963                      *pxTopOfStack = ( StackType_t ) pvParameters;            /* R0 */
+   \       0x18   0x6263             STR      R3,[R4, #+36]
+   \       0x1A   0xF04F 0x7580      MOV      R5,#+16777216
+    964                      pxTopOfStack--;
+    965                      *pxTopOfStack = ( StackType_t ) 0x11111111UL;            /* R11 */
+    966                      pxTopOfStack--;
+    967                      *pxTopOfStack = ( StackType_t ) 0x10101010UL;            /* R10 */
+   \       0x1E   0xF04F 0x3310      MOV      R3,#+269488144
+    968                      pxTopOfStack--;
+    969                      *pxTopOfStack = ( StackType_t ) 0x09090909UL;            /* R09 */
+   \       0x22   0xF04F 0x3209      MOV      R2,#+151587081
+   \       0x26   0x6425             STR      R5,[R4, #+64]
+   \       0x28   0x61E3             STR      R3,[R4, #+28]
+   \       0x2A   0x61A2             STR      R2,[R4, #+24]
+   \       0x2C   0xF04F 0x3512      MOV      R5,#+303174162
+    970                      pxTopOfStack--;
+    971                      *pxTopOfStack = ( StackType_t ) 0x08080808UL;            /* R08 */
+   \       0x30   0xF04F 0x3308      MOV      R3,#+134744072
+    972                      pxTopOfStack--;
+    973                      *pxTopOfStack = ( StackType_t ) 0x07070707UL;            /* R07 */
+   \       0x34   0xF04F 0x3207      MOV      R2,#+117901063
+   \       0x38   0x6365             STR      R5,[R4, #+52]
+   \       0x3A   0x6163             STR      R3,[R4, #+20]
+   \       0x3C   0x6122             STR      R2,[R4, #+16]
+   \       0x3E   0xF04F 0x3502      MOV      R5,#+33686018
+    974                      pxTopOfStack--;
+    975                      *pxTopOfStack = ( StackType_t ) 0x06060606UL;            /* R06 */
+   \       0x42   0xF04F 0x3306      MOV      R3,#+101058054
+    976                      pxTopOfStack--;
+    977                      *pxTopOfStack = ( StackType_t ) 0x05050505UL;            /* R05 */
+   \       0x46   0xF04F 0x3205      MOV      R2,#+84215045
+   \       0x4A   0x62E5             STR      R5,[R4, #+44]
+   \       0x4C   0x60E3             STR      R3,[R4, #+12]
+   \       0x4E   0x60A2             STR      R2,[R4, #+8]
+   \       0x50   0xF04F 0x3511      MOV      R5,#+286331153
+    978                      pxTopOfStack--;
+    979                      *pxTopOfStack = ( StackType_t ) 0x04040404UL;            /* R04 */
+   \       0x54   0xF04F 0x3304      MOV      R3,#+67372036
+    980                      pxTopOfStack--;
+    981                      *pxTopOfStack = portINITIAL_EXC_RETURN;                  /* EXC_RETURN */
+   \       0x58   0xF06F 0x0202      MVN      R2,#+2
+   \       0x5C   0x6225             STR      R5,[R4, #+32]
+   \       0x5E   0x6063             STR      R3,[R4, #+4]
+   \       0x60   0x6022             STR      R2,[R4, #+0]
+    982          
+    983                      #if ( configENABLE_MPU == 1 )
+    984                          {
+    985                              pxTopOfStack--;
+    986          
+    987                              if( xRunPrivileged == pdTRUE )
+    988                              {
+    989                                  *pxTopOfStack = portINITIAL_CONTROL_PRIVILEGED; /* Slot used to hold this task's CONTROL value. */
+    990                              }
+    991                              else
+    992                              {
+    993                                  *pxTopOfStack = portINITIAL_CONTROL_UNPRIVILEGED; /* Slot used to hold this task's CONTROL value. */
+    994                              }
+    995                          }
+    996                      #endif /* configENABLE_MPU */
+    997          
+    998                      pxTopOfStack--;
+    999                      *pxTopOfStack = ( StackType_t ) pxEndOfStack; /* Slot used to hold this task's PSPLIM value. */
+   \       0x62   0xF840 0x1D48      STR      R1,[R0, #-72]!
+   1000          
+   1001                      #if ( configENABLE_TRUSTZONE == 1 )
+   1002                          {
+   1003                              pxTopOfStack--;
+   1004                              *pxTopOfStack = portNO_SECURE_CONTEXT; /* Slot used to hold this task's xSecureContext value. */
+   1005                          }
+   1006                      #endif /* configENABLE_TRUSTZONE */
+   1007                  }
+   1008              #endif /* portPRELOAD_REGISTERS */
+   1009          
+   1010              return pxTopOfStack;
+   \       0x66   0xBD30             POP      {R4,R5,PC}
+   1011          }
+   1012          /*-----------------------------------------------------------*/
+   1013          
+
+   \                                 In section .text, align 2, keep-with-next
+   1014          BaseType_t xPortStartScheduler( void ) /* PRIVILEGED_FUNCTION */
+   1015          {
+   \                     xPortStartScheduler: (+1)
+   \        0x0   0xB51C             PUSH     {R2-R4,LR}
+   1016              /* Make PendSV, CallSV and SysTick the same priority as the kernel. */
+   1017              portNVIC_SHPR3_REG |= portNVIC_PENDSV_PRI;
+   \        0x2   0x....             LDR.N    R0,??DataTable9_6
+   \        0x4   0x6802             LDR      R2,[R0, #+0]
+   1018              portNVIC_SHPR3_REG |= portNVIC_SYSTICK_PRI;
+   \        0x6   0x....             LDR.N    R4,??DataTable9
+   \        0x8   0xF442 0x027F      ORR      R2,R2,#0xFF0000
+   \        0xC   0x6002             STR      R2,[R0, #+0]
+   \        0xE   0x6801             LDR      R1,[R0, #+0]
+   \       0x10   0xF041 0x417F      ORR      R1,R1,#0xFF000000
+   \       0x14   0x6001             STR      R1,[R0, #+0]
+   1019          
+   1020              #if ( configENABLE_MPU == 1 )
+   1021                  {
+   1022                      /* Setup the Memory Protection Unit (MPU). */
+   1023                      prvSetupMPU();
+   1024                  }
+   1025              #endif /* configENABLE_MPU */
+   1026          
+   1027              /* Start the timer that generates the tick ISR. Interrupts are disabled
+   1028               * here already. */
+   1029              vPortSetupTimerInterrupt();
+   \       0x16   0x.... 0x....      BL       vPortSetupTimerInterrupt
+   1030          
+   1031              /* Initialize the critical nesting count ready for the first task. */
+   1032              ulCriticalNesting = 0;
+   \       0x1A   0x2000             MOVS     R0,#+0
+   \       0x1C   0x6020             STR      R0,[R4, #+0]
+   1033          
+   1034              /* Start the first task. */
+   1035              vStartFirstTask();
+   \       0x1E   0x.... 0x....      BL       vStartFirstTask
+   1036          
+   1037              /* Should never get here as the tasks will now be executing. Call the task
+   1038               * exit error function to prevent compiler warnings about a static function
+   1039               * not being called in the case that the application writer overrides this
+   1040               * functionality by defining configTASK_RETURN_ADDRESS. Call
+   1041               * vTaskSwitchContext() so link time optimization does not remove the
+   1042               * symbol. */
+   1043              vTaskSwitchContext();
+   \       0x22   0x.... 0x....      BL       vTaskSwitchContext
+   1044              prvTaskExitError();
+   \       0x26   0x2000             MOVS     R0,#+0
+   \       0x28   0x9000             STR      R0,[SP, #+0]
+   \       0x2A   0x6821             LDR      R1,[R4, #+0]
+   \       0x2C   0xF111 0x0F01      CMN      R1,#+1
+   \       0x30   0xD001             BEQ.N    ??CrossCallReturnLabel_0
+   \       0x32   0x.... 0x....      BL       ?Subroutine2
+   \                     ??CrossCallReturnLabel_0: (+1)
+   \       0x36   0x.... 0x....      BL       ulSetInterruptMask
+   \                     ??xPortStartScheduler_0: (+1)
+   \       0x3A   0x9800             LDR      R0,[SP, #+0]
+   \       0x3C   0x2800             CMP      R0,#+0
+   \       0x3E   0xD0FC             BEQ.N    ??xPortStartScheduler_0
+   1045          
+   1046              /* Should not get here. */
+   1047              return 0;
+   \       0x40   0x2000             MOVS     R0,#+0
+   \       0x42   0xBD16             POP      {R1,R2,R4,PC}
+   1048          }
+   1049          /*-----------------------------------------------------------*/
+   1050          
+
+   \                                 In section .text, align 2, keep-with-next
+   1051          void vPortEndScheduler( void ) /* PRIVILEGED_FUNCTION */
+   1052          {
+   1053              /* Not implemented in ports where there is nothing to return to.
+   1054               * Artificially force an assert. */
+   1055              configASSERT( ulCriticalNesting == 1000UL );
+   \                     vPortEndScheduler: (+1)
+   \        0x0   0x....             LDR.N    R1,??DataTable9
+   \        0x2   0x6808             LDR      R0,[R1, #+0]
+   \        0x4   0xF5B0 0x7F7A      CMP      R0,#+1000
+   \        0x8   0xD002             BEQ.N    ??vPortEndScheduler_0
+   \        0xA   0xF240 0x411F      MOVW     R1,#+1055
+   \        0xE   0x....             B.N      ?Subroutine1
+   1056          }
+   \                     ??vPortEndScheduler_0: (+1)
+   \       0x10   0x4770             BX       LR
+   1057          /*-----------------------------------------------------------*/
+   1058          
+   1059          #if ( configENABLE_MPU == 1 )
+   1060              void vPortStoreTaskMPUSettings( xMPU_SETTINGS * xMPUSettings,
+   1061                                              const struct xMEMORY_REGION * const xRegions,
+   1062                                              StackType_t * pxBottomOfStack,
+   1063                                              uint32_t ulStackDepth )
+   1064              {
+   1065                  uint32_t ulRegionStartAddress, ulRegionEndAddress, ulRegionNumber;
+   1066                  int32_t lIndex = 0;
+   1067          
+   1068                  #if defined( __ARMCC_VERSION )
+   1069          
+   1070                      /* Declaration when these variable are defined in code instead of being
+   1071                       * exported from linker scripts. */
+   1072                      extern uint32_t * __privileged_sram_start__;
+   1073                      extern uint32_t * __privileged_sram_end__;
+   1074                  #else
+   1075                      /* Declaration when these variable are exported from linker scripts. */
+   1076                      extern uint32_t __privileged_sram_start__[];
+   1077                      extern uint32_t __privileged_sram_end__[];
+   1078                  #endif /* defined( __ARMCC_VERSION ) */
+   1079          
+   1080                  /* Setup MAIR0. */
+   1081                  xMPUSettings->ulMAIR0 = ( ( portMPU_NORMAL_MEMORY_BUFFERABLE_CACHEABLE << portMPU_MAIR_ATTR0_POS ) & portMPU_MAIR_ATTR0_MASK );
+   1082                  xMPUSettings->ulMAIR0 |= ( ( portMPU_DEVICE_MEMORY_nGnRE << portMPU_MAIR_ATTR1_POS ) & portMPU_MAIR_ATTR1_MASK );
+   1083          
+   1084                  /* This function is called automatically when the task is created - in
+   1085                   * which case the stack region parameters will be valid.  At all other
+   1086                   * times the stack parameters will not be valid and it is assumed that
+   1087                   * the stack region has already been configured. */
+   1088                  if( ulStackDepth > 0 )
+   1089                  {
+   1090                      ulRegionStartAddress = ( uint32_t ) pxBottomOfStack;
+   1091                      ulRegionEndAddress = ( uint32_t ) pxBottomOfStack + ( ulStackDepth * ( uint32_t ) sizeof( StackType_t ) ) - 1;
+   1092          
+   1093                      /* If the stack is within the privileged SRAM, do not protect it
+   1094                       * using a separate MPU region. This is needed because privileged
+   1095                       * SRAM is already protected using an MPU region and ARMv8-M does
+   1096                       * not allow overlapping MPU regions. */
+   1097                      if( ( ulRegionStartAddress >= ( uint32_t ) __privileged_sram_start__ ) &&
+   1098                          ( ulRegionEndAddress <= ( uint32_t ) __privileged_sram_end__ ) )
+   1099                      {
+   1100                          xMPUSettings->xRegionsSettings[ 0 ].ulRBAR = 0;
+   1101                          xMPUSettings->xRegionsSettings[ 0 ].ulRLAR = 0;
+   1102                      }
+   1103                      else
+   1104                      {
+   1105                          /* Define the region that allows access to the stack. */
+   1106                          ulRegionStartAddress &= portMPU_RBAR_ADDRESS_MASK;
+   1107                          ulRegionEndAddress &= portMPU_RLAR_ADDRESS_MASK;
+   1108          
+   1109                          xMPUSettings->xRegionsSettings[ 0 ].ulRBAR = ( ulRegionStartAddress ) |
+   1110                                                                       ( portMPU_REGION_NON_SHAREABLE ) |
+   1111                                                                       ( portMPU_REGION_READ_WRITE ) |
+   1112                                                                       ( portMPU_REGION_EXECUTE_NEVER );
+   1113          
+   1114                          xMPUSettings->xRegionsSettings[ 0 ].ulRLAR = ( ulRegionEndAddress ) |
+   1115                                                                       ( portMPU_RLAR_ATTR_INDEX0 ) |
+   1116                                                                       ( portMPU_RLAR_REGION_ENABLE );
+   1117                      }
+   1118                  }
+   1119          
+   1120                  /* User supplied configurable regions. */
+   1121                  for( ulRegionNumber = 1; ulRegionNumber <= portNUM_CONFIGURABLE_REGIONS; ulRegionNumber++ )
+   1122                  {
+   1123                      /* If xRegions is NULL i.e. the task has not specified any MPU
+   1124                       * region, the else part ensures that all the configurable MPU
+   1125                       * regions are invalidated. */
+   1126                      if( ( xRegions != NULL ) && ( xRegions[ lIndex ].ulLengthInBytes > 0UL ) )
+   1127                      {
+   1128                          /* Translate the generic region definition contained in xRegions
+   1129                           * into the ARMv8 specific MPU settings that are then stored in
+   1130                           * xMPUSettings. */
+   1131                          ulRegionStartAddress = ( ( uint32_t ) xRegions[ lIndex ].pvBaseAddress ) & portMPU_RBAR_ADDRESS_MASK;
+   1132                          ulRegionEndAddress = ( uint32_t ) xRegions[ lIndex ].pvBaseAddress + xRegions[ lIndex ].ulLengthInBytes - 1;
+   1133                          ulRegionEndAddress &= portMPU_RLAR_ADDRESS_MASK;
+   1134          
+   1135                          /* Start address. */
+   1136                          xMPUSettings->xRegionsSettings[ ulRegionNumber ].ulRBAR = ( ulRegionStartAddress ) |
+   1137                                                                                    ( portMPU_REGION_NON_SHAREABLE );
+   1138          
+   1139                          /* RO/RW. */
+   1140                          if( ( xRegions[ lIndex ].ulParameters & tskMPU_REGION_READ_ONLY ) != 0 )
+   1141                          {
+   1142                              xMPUSettings->xRegionsSettings[ ulRegionNumber ].ulRBAR |= ( portMPU_REGION_READ_ONLY );
+   1143                          }
+   1144                          else
+   1145                          {
+   1146                              xMPUSettings->xRegionsSettings[ ulRegionNumber ].ulRBAR |= ( portMPU_REGION_READ_WRITE );
+   1147                          }
+   1148          
+   1149                          /* XN. */
+   1150                          if( ( xRegions[ lIndex ].ulParameters & tskMPU_REGION_EXECUTE_NEVER ) != 0 )
+   1151                          {
+   1152                              xMPUSettings->xRegionsSettings[ ulRegionNumber ].ulRBAR |= ( portMPU_REGION_EXECUTE_NEVER );
+   1153                          }
+   1154          
+   1155                          /* End Address. */
+   1156                          xMPUSettings->xRegionsSettings[ ulRegionNumber ].ulRLAR = ( ulRegionEndAddress ) |
+   1157                                                                                    ( portMPU_RLAR_REGION_ENABLE );
+   1158          
+   1159                          /* Normal memory/ Device memory. */
+   1160                          if( ( xRegions[ lIndex ].ulParameters & tskMPU_REGION_DEVICE_MEMORY ) != 0 )
+   1161                          {
+   1162                              /* Attr1 in MAIR0 is configured as device memory. */
+   1163                              xMPUSettings->xRegionsSettings[ ulRegionNumber ].ulRLAR |= portMPU_RLAR_ATTR_INDEX1;
+   1164                          }
+   1165                          else
+   1166                          {
+   1167                              /* Attr1 in MAIR0 is configured as normal memory. */
+   1168                              xMPUSettings->xRegionsSettings[ ulRegionNumber ].ulRLAR |= portMPU_RLAR_ATTR_INDEX0;
+   1169                          }
+   1170                      }
+   1171                      else
+   1172                      {
+   1173                          /* Invalidate the region. */
+   1174                          xMPUSettings->xRegionsSettings[ ulRegionNumber ].ulRBAR = 0UL;
+   1175                          xMPUSettings->xRegionsSettings[ ulRegionNumber ].ulRLAR = 0UL;
+   1176                      }
+   1177          
+   1178                      lIndex++;
+   1179                  }
+   1180              }
+   1181          #endif /* configENABLE_MPU */
+   1182          /*-----------------------------------------------------------*/
+   1183          
+
+   \                                 In section .text, align 4, keep-with-next
+   1184          BaseType_t xPortIsInsideInterrupt( void )
+   1185          {
+   1186              uint32_t ulCurrentInterrupt;
+   1187              BaseType_t xReturn;
+   1188          
+   1189              /* Obtain the number of the currently executing interrupt. Interrupt Program
+   1190               * Status Register (IPSR) holds the exception number of the currently-executing
+   1191               * exception or zero for Thread mode.*/
+   1192              __asm volatile ( "mrs %0, ipsr" : "=r" ( ulCurrentInterrupt )::"memory" );
+   \                     xPortIsInsideInterrupt: (+1)
+   \        0x0   0xF3EF 0x8005      mrs R0, ipsr
+   1193          
+   1194              if( ulCurrentInterrupt == 0 )
+   \        0x4   0xB100             CBZ.N    R0,??xPortIsInsideInterrupt_0
+   \        0x6   0x2001             MOVS     R0,#+1
+   1195              {
+   1196                  xReturn = pdFALSE;
+   1197              }
+   1198              else
+   1199              {
+   1200                  xReturn = pdTRUE;
+   1201              }
+   1202          
+   1203              return xReturn;
+   \                     ??xPortIsInsideInterrupt_0: (+1)
+   \        0x8   0x4770             BX       LR
+   1204          }
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable9:
+   \        0x0   0x....'....        DC32     ulCriticalNesting
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable9_1:
+   \        0x0   0xE000'ED04        DC32     0xe000ed04
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable9_2:
+   \        0x0   0x....'....        DC32     ?_0
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable9_3:
+   \        0x0   0xE000'ED88        DC32     0xe000ed88
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable9_4:
+   \        0x0   0xE000'EF34        DC32     0xe000ef34
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable9_5:
+   \        0x0   0x....'....        DC32     prvTaskExitError
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable9_6:
+   \        0x0   0xE000'ED20        DC32     0xe000ed20
+
+   \                                 In section .rodata, align 4
+   \                     ?_0:
+   \        0x0   0x43 0x3A          DC8 0x43, 0x3A, 0x5C, 0x55, 0x73, 0x65, 0x72, 0x73
+   \              0x5C 0x55    
+   \              0x73 0x65    
+   \              0x72 0x73
+   \        0x8   0x5C 0x44          DC8 0x5C, 0x44, 0x45, 0x4C, 0x4C, 0x5C, 0x53, 0x69
+   \              0x45 0x4C    
+   \              0x4C 0x5C    
+   \              0x53 0x69
+   \       0x10   0x6D 0x70          DC8 0x6D, 0x70, 0x6C, 0x69, 0x63, 0x69, 0x74, 0x79
+   \              0x6C 0x69    
+   \              0x63 0x69    
+   \              0x74 0x79
+   \       0x18   0x53 0x74          DC8 0x53, 0x74, 0x75, 0x64, 0x69, 0x6F, 0x5C, 0x76
+   \              0x75 0x64    
+   \              0x69 0x6F    
+   \              0x5C 0x76
+   \       0x20   0x35 0x5F          DC8 0x35, 0x5F, 0x77, 0x6F, 0x72, 0x6B, 0x73, 0x70
+   \              0x77 0x6F    
+   \              0x72 0x6B    
+   \              0x73 0x70
+   \       0x28   0x61 0x63          DC8 0x61, 0x63, 0x65, 0x5C, 0x77, 0x69, 0x73, 0x75
+   \              0x65 0x5C    
+   \              0x77 0x69    
+   \              0x73 0x75
+   \       0x30   0x6E 0x5F          DC8 0x6E, 0x5F, 0x72, 0x63, 0x70, 0x5F, 0x37, 0x5C
+   \              0x72 0x63    
+   \              0x70 0x5F    
+   \              0x37 0x5C
+   \       0x38   0x67 0x65          DC8 0x67, 0x65, 0x63, 0x6B, 0x6F, 0x5F, 0x73, 0x64
+   \              0x63 0x6B    
+   \              0x6F 0x5F    
+   \              0x73 0x64
+   \       0x40   0x6B 0x5F          DC8 0x6B, 0x5F, 0x34, 0x2E, 0x34, 0x2E, 0x33, 0x5C
+   \              0x34 0x2E    
+   \              0x34 0x2E    
+   \              0x33 0x5C
+   \       0x48   0x75 0x74          DC8 0x75, 0x74, 0x69, 0x6C, 0x5C, 0x74, 0x68, 0x69
+   \              0x69 0x6C    
+   \              0x5C 0x74    
+   \              0x68 0x69
+   \       0x50   0x72 0x64          DC8 0x72, 0x64, 0x5F, 0x70, 0x61, 0x72, 0x74, 0x79
+   \              0x5F 0x70    
+   \              0x61 0x72    
+   \              0x74 0x79
+   \       0x58   0x5C 0x66          DC8 0x5C, 0x66, 0x72, 0x65, 0x65, 0x72, 0x74, 0x6F
+   \              0x72 0x65    
+   \              0x65 0x72    
+   \              0x74 0x6F
+   \       0x60   0x73 0x5C          DC8 0x73, 0x5C, 0x6B, 0x65, 0x72, 0x6E, 0x65, 0x6C
+   \              0x6B 0x65    
+   \              0x72 0x6E    
+   \              0x65 0x6C
+   \       0x68   0x5C 0x70          DC8 0x5C, 0x70, 0x6F, 0x72, 0x74, 0x61, 0x62, 0x6C
+   \              0x6F 0x72    
+   \              0x74 0x61    
+   \              0x62 0x6C
+   \       0x70   0x65 0x5C          DC8 0x65, 0x5C, 0x49, 0x41, 0x52, 0x5C, 0x41, 0x52
+   \              0x49 0x41    
+   \              0x52 0x5C    
+   \              0x41 0x52
+   \       0x78   0x4D 0x5F          DC8 0x4D, 0x5F, 0x43, 0x4D, 0x33, 0x33, 0x5F, 0x4E
+   \              0x43 0x4D    
+   \              0x33 0x33    
+   \              0x5F 0x4E
+   \       0x80   0x54 0x5A          DC8 0x54, 0x5A, 0x5C, 0x6E, 0x6F, 0x6E, 0x5F, 0x73
+   \              0x5C 0x6E    
+   \              0x6F 0x6E    
+   \              0x5F 0x73
+   \       0x88   0x65 0x63          DC8 0x65, 0x63, 0x75, 0x72, 0x65, 0x5C, 0x70, 0x6F
+   \              0x75 0x72    
+   \              0x65 0x5C    
+   \              0x70 0x6F
+   \       0x90   0x72 0x74          DC8 0x72, 0x74, 0x2E, 0x63, 0
+   \              0x2E 0x63    
+   \              0x00
+   \       0x95                      DS8 3
+   1205          /*-----------------------------------------------------------*/
+
+   Maximum stack usage in bytes:
+
+   .cstack Function
+   ------- --------
+       8   prvTaskExitError
+         8   -> assertEFM
+         8   -> ulSetInterruptMask
+      12   pxPortInitialiseStack
+       0   vPortEndScheduler
+         0   -> assertEFM
+       8   vPortEnterCritical
+         8   -> ulSetInterruptMask
+       8   vPortExitCritical
+         8   -> assertEFM
+         0   -> vClearInterruptMask
+       0   vPortSVCHandler_C
+         0   -> assertEFM
+         0   -> vRestoreContextOfFirstTask
+       0   vPortSetupTimerInterrupt
+       0   vPortYield
+       0   xPortIsInsideInterrupt
+      16   xPortStartScheduler
+        16   -> assertEFM
+        16   -> ulSetInterruptMask
+        16   -> vPortSetupTimerInterrupt
+        16   -> vStartFirstTask
+        16   -> vTaskSwitchContext
+       8   xPortSysTickHandler
+         8   -> ulSetInterruptMask
+         0   -> vClearInterruptMask
+         8   -> xTaskIncrementTick
+
+
+   Section sizes:
+
+   Bytes  Function/Label
+   -----  --------------
+       4  ??DataTable9
+       4  ??DataTable9_1
+       4  ??DataTable9_2
+       4  ??DataTable9_3
+       4  ??DataTable9_4
+       4  ??DataTable9_5
+       4  ??DataTable9_6
+       8  ?Subroutine0
+       6  ?Subroutine1
+      10  ?Subroutine2
+     152  ?_0
+      32  prvTaskExitError
+     104  pxPortInitialiseStack
+       4  ulCriticalNesting
+      18  vPortEndScheduler
+      24  vPortEnterCritical
+      32  vPortExitCritical
+      38  vPortSVCHandler_C
+      40  vPortSetupTimerInterrupt
+      18  vPortYield
+      10  xPortIsInsideInterrupt
+      68  xPortStartScheduler
+      24  xPortSysTickHandler
+
+ 
+   4 bytes in section .data
+ 152 bytes in section .rodata
+ 460 bytes in section .text
+ 
+ 420 bytes of CODE  memory (+ 40 bytes shared)
+ 152 bytes of CONST memory
+   4 bytes of DATA  memory
+
+Errors: none
+Warnings: none

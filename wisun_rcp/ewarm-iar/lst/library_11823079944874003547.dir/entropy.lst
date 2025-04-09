@@ -1,0 +1,1336 @@
+###############################################################################
+#
+# IAR ANSI C/C++ Compiler V9.50.2.385/W64 for ARM         27/Nov/2024  12:17:28
+# Copyright 1999-2024 IAR Systems AB.
+#
+#    Cpu mode                     =  thumb
+#    Endian                       =  little
+#    Source file                  =
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\util\third_party\mbedtls\library\entropy.c
+#    Command line                 =
+#        -f
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\ewarm-iar\obj\library_11823079944874003547.dir\entropy.o.rsp
+#        (C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\util\third_party\mbedtls\library\entropy.c
+#        -D EFR32FG28B322F1024IM48=1 -D
+#        configNUM_SDK_THREAD_LOCAL_STORAGE_POINTERS=2 -D
+#        SL_COMPONENT_CATALOG_PRESENT=1 -D
+#        MBEDTLS_CONFIG_FILE=<sl_mbedtls_config.h> -D
+#        MBEDTLS_PSA_CRYPTO_CONFIG_FILE=<psa_crypto_config.h> -D
+#        SL_RAIL_LIB_MULTIPROTOCOL_SUPPORT=0 -D
+#        SL_RAIL_UTIL_PA_CONFIG_HEADER=<sl_rail_util_pa_config.h> -D
+#        RTT_USE_ASM=0 -D MBED_CONF_MBED_TRACE_ENABLE=1 -D
+#        MBED_CONF_NANOSTACK_CONFIGURATION=ws_router -D
+#        MBED_TRACE_MAX_LEVEL=TRACE_ACTIVE_LEVEL_ALL -D DEBUG_EFM_USER=1 -D
+#        HAVE_LFN=1 -D HAVE_LFN_PARENT=1 -lC
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\ewarm-iar\lst\library_11823079944874003547.dir
+#        --diag_suppress Pa050 -o
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\ewarm-iar\obj\library_11823079944874003547.dir
+#        --debug --endian=little --cpu=Cortex-M33 --cmse --cmse -e
+#        --fpu=VFPv5_sp --dlib_config "C:\Program Files\IAR Systems\Embedded
+#        Workbench 9.2\arm\inc\c\DLib_Config_Normal.h" -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\util\third_party\mbedtls\library\
+#        -I C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\autogen\ -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\config\ -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\config\rail\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\Device\SiliconLabs\EFR32FG28\Include\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\common\inc\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\CMSIS\Core\Include\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\CMSIS\RTOS2\Include\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\service\device_init\inc\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\emdrv\dmadrv\inc\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\emdrv\common\inc\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\emlib\inc\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\util\third_party\freertos\cmsis\Include\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\util\third_party\freertos\kernel\include\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\util\third_party\freertos\kernel\portable\IAR\ARM_CM33_NTZ\non_secure\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\service\iostream\inc\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\security\sl_component\sl_mbedtls_support\config\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\security\sl_component\sl_mbedtls_support\config\preset\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\security\sl_component\sl_mbedtls_support\inc\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\util\third_party\mbedtls\include\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\util\third_party\mbedtls\library\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\emdrv\nvm3\inc\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\peripheral\inc\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\security\sl_component\sl_psa_driver\inc\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\radio\rail_lib\common\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\radio\rail_lib\protocol\ble\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\radio\rail_lib\protocol\ieee802154\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\radio\rail_lib\protocol\wmbus\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\radio\rail_lib\protocol\zwave\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\radio\rail_lib\chip\efr32\efr32xg2x\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\radio\rail_lib\protocol\sidewalk\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\radio\rail_lib\plugin\pa-conversions\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\radio\rail_lib\plugin\pa-conversions\efr32xg28\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\radio\rail_lib\plugin\rail_util_pti\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\security\sl_component\se_manager\inc\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\security\sl_component\se_manager\src\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\util\third_party\segger\systemview\SEGGER\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\util\silicon_labs\silabs_core\memory_manager\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\common\toolchain\inc\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\service\system\inc\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\app\wisun\component\ns_list\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\app\wisun\component\trace_util\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\app\wisun\component\trace_util\nanostack\nanostack-libservice\mbed-client-libservice\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\service\sleeptimer\inc\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\protocol\wisun\stack\inc\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\protocol\wisun\app\wisun_rcp\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\protocol\wisun\stack\inc\socket\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\protocol\wisun\stack\src\
+#        -Ohz --use_c++_inline) --dependencies=n
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\ewarm-iar\obj\library_11823079944874003547.dir\entropy.o.iar_deps
+#    Locale                       =  C
+#    List file                    =
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\ewarm-iar\lst\library_11823079944874003547.dir\entropy.lst
+#    Object file                  =
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\ewarm-iar\obj\library_11823079944874003547.dir\entropy.o
+#    Runtime model:                  
+#      __CPP_Runtime              =  1
+#      __SystemLibrary            =  DLib
+#      __dlib_file_descriptor     =  0
+#      __dlib_full_locale_support =  0
+#      __dlib_version             =  6
+#
+###############################################################################
+
+C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\util\third_party\mbedtls\library\entropy.c
+      1          /*
+      2           *  Entropy accumulator implementation
+      3           *
+      4           *  Copyright The Mbed TLS Contributors
+      5           *  SPDX-License-Identifier: Apache-2.0
+      6           *
+      7           *  Licensed under the Apache License, Version 2.0 (the "License"); you may
+      8           *  not use this file except in compliance with the License.
+      9           *  You may obtain a copy of the License at
+     10           *
+     11           *  http://www.apache.org/licenses/LICENSE-2.0
+     12           *
+     13           *  Unless required by applicable law or agreed to in writing, software
+     14           *  distributed under the License is distributed on an "AS IS" BASIS, WITHOUT
+     15           *  WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     16           *  See the License for the specific language governing permissions and
+     17           *  limitations under the License.
+     18           */
+     19          
+     20          #include "common.h"
+     21          
+     22          #if defined(MBEDTLS_ENTROPY_C)
+     23          
+     24          #include "mbedtls/entropy.h"
+     25          #include "entropy_poll.h"
+     26          #include "mbedtls/platform_util.h"
+     27          #include "mbedtls/error.h"
+     28          
+     29          #include <string.h>
+     30          
+     31          #if defined(MBEDTLS_FS_IO)
+     32          #include <stdio.h>
+     33          #endif
+     34          
+     35          #include "mbedtls/platform.h"
+     36          
+     37          #define ENTROPY_MAX_LOOP    256     /**< Maximum amount to loop before error */
+     38          
+
+   \                                 In section .text, align 2, keep-with-next
+     39          void mbedtls_entropy_init(mbedtls_entropy_context *ctx)
+     40          {
+   \                     mbedtls_entropy_init: (+1)
+   \        0x0   0xB51C             PUSH     {R2-R4,LR}
+   \        0x2   0x4604             MOV      R4,R0
+     41              ctx->source_count = 0;
+   \        0x4   0x.... 0x....      BL       ?Subroutine2
+   \                     ??CrossCallReturnLabel_4: (+1)
+   \        0x8   0x.... 0x....      BL       __aeabi_memclr4
+     42              memset(ctx->source, 0, sizeof(ctx->source));
+     43          
+     44          #if defined(MBEDTLS_THREADING_C)
+     45              mbedtls_mutex_init(&ctx->mutex);
+   \        0xC   0x....             LDR.N    R2,??DataTable6
+   \        0xE   0x6811             LDR      R1,[R2, #+0]
+   \       0x10   0xF104 0x0040      ADD      R0,R4,#+64
+   \       0x14   0x4788             BLX      R1
+     46          #endif
+     47          
+     48              ctx->accumulator_started = 0;
+   \       0x16   0x2000             MOVS     R0,#+0
+   \       0x18   0x6120             STR      R0,[R4, #+16]
+     49              mbedtls_md_init(&ctx->accumulator);
+   \       0x1A   0x4620             MOV      R0,R4
+   \       0x1C   0x.... 0x....      BL       mbedtls_md_init
+     50          
+     51              /* Reminder: Update ENTROPY_HAVE_STRONG in the test files
+     52               *           when adding more strong entropy sources here. */
+     53          
+     54          #if !defined(MBEDTLS_NO_DEFAULT_ENTROPY_SOURCES)
+     55          #if !defined(MBEDTLS_NO_PLATFORM_ENTROPY)
+     56              mbedtls_entropy_add_source(ctx, mbedtls_platform_entropy_poll, NULL,
+     57                                         MBEDTLS_ENTROPY_MIN_PLATFORM,
+     58                                         MBEDTLS_ENTROPY_SOURCE_STRONG);
+     59          #endif
+     60          #if defined(MBEDTLS_ENTROPY_HARDWARE_ALT)
+     61              mbedtls_entropy_add_source(ctx, mbedtls_hardware_poll, NULL,
+     62                                         MBEDTLS_ENTROPY_MIN_HARDWARE,
+     63                                         MBEDTLS_ENTROPY_SOURCE_STRONG);
+   \       0x20   0x2001             MOVS     R0,#+1
+   \       0x22   0x9000             STR      R0,[SP, #+0]
+   \       0x24   0x2320             MOVS     R3,#+32
+   \       0x26   0x2200             MOVS     R2,#+0
+   \       0x28   0x....             LDR.N    R1,??DataTable6_1
+   \       0x2A   0x4620             MOV      R0,R4
+   \       0x2C   0x.... 0x....      BL       mbedtls_entropy_add_source
+     64          #endif
+     65          #if defined(MBEDTLS_ENTROPY_NV_SEED)
+     66              mbedtls_entropy_add_source(ctx, mbedtls_nv_seed_poll, NULL,
+     67                                         MBEDTLS_ENTROPY_BLOCK_SIZE,
+     68                                         MBEDTLS_ENTROPY_SOURCE_STRONG);
+     69              ctx->initial_entropy_run = 0;
+     70          #endif
+     71          #endif /* MBEDTLS_NO_DEFAULT_ENTROPY_SOURCES */
+     72          }
+   \       0x30   0xBD13             POP      {R0,R1,R4,PC}
+
+   \                                 In section .text, align 2, keep-with-next
+   \                     ?Subroutine2: (+1)
+   \        0x0   0x2000             MOVS     R0,#+0
+   \        0x2   0x6160             STR      R0,[R4, #+20]
+   \        0x4   0x2128             MOVS     R1,#+40
+   \        0x6   0xF104 0x0018      ADD      R0,R4,#+24
+   \        0xA   0x4770             BX       LR
+     73          
+
+   \                                 In section .text, align 2, keep-with-next
+     74          void mbedtls_entropy_free(mbedtls_entropy_context *ctx)
+     75          {
+   \                     mbedtls_entropy_free: (+1)
+   \        0x0   0xB510             PUSH     {R4,LR}
+   \        0x2   0x4604             MOV      R4,R0
+     76              /* If the context was already free, don't call free() again.
+     77               * This is important for mutexes which don't allow double-free. */
+     78              if (ctx->accumulator_started == -1) {
+   \        0x4   0x6921             LDR      R1,[R4, #+16]
+   \        0x6   0xF111 0x0F01      CMN      R1,#+1
+   \        0xA   0xD00E             BEQ.N    ??mbedtls_entropy_free_0
+     79                  return;
+     80              }
+     81          
+     82          #if defined(MBEDTLS_THREADING_C)
+     83              mbedtls_mutex_free(&ctx->mutex);
+   \        0xC   0x....             LDR.N    R2,??DataTable6_2
+   \        0xE   0x6811             LDR      R1,[R2, #+0]
+   \       0x10   0xF104 0x0040      ADD      R0,R4,#+64
+   \       0x14   0x4788             BLX      R1
+     84          #endif
+     85              mbedtls_md_free(&ctx->accumulator);
+   \       0x16   0x4620             MOV      R0,R4
+   \       0x18   0x.... 0x....      BL       mbedtls_md_free
+     86          #if defined(MBEDTLS_ENTROPY_NV_SEED)
+     87              ctx->initial_entropy_run = 0;
+     88          #endif
+     89              ctx->source_count = 0;
+   \       0x1C   0x.... 0x....      BL       ?Subroutine2
+     90              mbedtls_platform_zeroize(ctx->source, sizeof(ctx->source));
+   \                     ??CrossCallReturnLabel_5: (+1)
+   \       0x20   0x.... 0x....      BL       mbedtls_platform_zeroize
+     91              ctx->accumulator_started = -1;
+   \       0x24   0xF04F 0x30FF      MOV      R0,#+4294967295
+   \       0x28   0x6120             STR      R0,[R4, #+16]
+     92          }
+   \                     ??mbedtls_entropy_free_0: (+1)
+   \       0x2A   0xBD10             POP      {R4,PC}
+     93          
+
+   \                                 In section .text, align 2, keep-with-next
+     94          int mbedtls_entropy_add_source(mbedtls_entropy_context *ctx,
+     95                                         mbedtls_entropy_f_source_ptr f_source, void *p_source,
+     96                                         size_t threshold, int strong)
+     97          {
+   \                     mbedtls_entropy_add_source: (+1)
+   \        0x0   0xE92D 0x41F0      PUSH     {R4-R8,LR}
+   \        0x4   0x4614             MOV      R4,R2
+   \        0x6   0x460E             MOV      R6,R1
+     98              int idx, ret = 0;
+     99          
+    100          #if defined(MBEDTLS_THREADING_C)
+    101              if ((ret = mbedtls_mutex_lock(&ctx->mutex)) != 0) {
+   \        0x8   0x....             LDR.N    R2,??DataTable6_3
+   \        0xA   0x6811             LDR      R1,[R2, #+0]
+   \        0xC   0x4605             MOV      R5,R0
+   \        0xE   0x461F             MOV      R7,R3
+   \       0x10   0xF105 0x0040      ADD      R0,R5,#+64
+   \       0x14   0x4788             BLX      R1
+   \       0x16   0xEA5F 0x0800      MOVS     R8,R0
+   \       0x1A   0xD117             BNE.N    ??mbedtls_entropy_add_source_0
+    102                  return ret;
+    103              }
+    104          #endif
+    105          
+    106              idx = ctx->source_count;
+   \       0x1C   0x696A             LDR      R2,[R5, #+20]
+    107              if (idx >= MBEDTLS_ENTROPY_MAX_SOURCES) {
+   \       0x1E   0x2A01             CMP      R2,#+1
+   \       0x20   0xBFC8             IT       GT
+   \       0x22   0xF06F 0x083D      MVNGT    R8,#+61
+    108                  ret = MBEDTLS_ERR_ENTROPY_MAX_SOURCES;
+    109                  goto exit;
+   \       0x26   0xDC0A             BGT.N    ??mbedtls_entropy_add_source_1
+    110              }
+    111          
+    112              ctx->source[idx].f_source  = f_source;
+   \       0x28   0x2014             MOVS     R0,#+20
+   \       0x2A   0x4342             MULS     R2,R0,R2
+   \       0x2C   0x9906             LDR      R1,[SP, #+24]
+   \       0x2E   0x18A8             ADDS     R0,R5,R2
+   \       0x30   0x6186             STR      R6,[R0, #+24]
+    113              ctx->source[idx].p_source  = p_source;
+   \       0x32   0x61C4             STR      R4,[R0, #+28]
+    114              ctx->source[idx].threshold = threshold;
+   \       0x34   0x6247             STR      R7,[R0, #+36]
+    115              ctx->source[idx].strong    = strong;
+   \       0x36   0x6281             STR      R1,[R0, #+40]
+    116          
+    117              ctx->source_count++;
+   \       0x38   0x6968             LDR      R0,[R5, #+20]
+   \       0x3A   0x1C40             ADDS     R0,R0,#+1
+   \       0x3C   0x6168             STR      R0,[R5, #+20]
+    118          
+    119          exit:
+    120          #if defined(MBEDTLS_THREADING_C)
+    121              if (mbedtls_mutex_unlock(&ctx->mutex) != 0) {
+   \                     ??mbedtls_entropy_add_source_1: (+1)
+   \       0x3E   0x.... 0x....      BL       ?Subroutine0
+   \                     ??CrossCallReturnLabel_1: (+1)
+   \       0x42   0x2800             CMP      R0,#+0
+   \       0x44   0xBF14             ITE      NE
+   \       0x46   0xF06F 0x001D      MVNNE    R0,#+29
+   \       0x4A   0x4640             MOVEQ    R0,R8
+    122                  return MBEDTLS_ERR_THREADING_MUTEX_ERROR;
+    123              }
+    124          #endif
+    125          
+    126              return ret;
+   \                     ??mbedtls_entropy_add_source_0: (+1)
+   \       0x4C   0xE8BD 0x81F0      POP      {R4-R8,PC}
+    127          }
+
+   \                                 In section .text, align 2, keep-with-next
+   \                     ?Subroutine0: (+1)
+   \        0x0   0x....             LDR.N    R2,??DataTable6_4
+   \        0x2   0x6811             LDR      R1,[R2, #+0]
+   \        0x4   0xF105 0x0040      ADD      R0,R5,#+64
+   \        0x8   0x4708             BX       R1
+    128          
+    129          /*
+    130           * Entropy accumulator update
+    131           */
+
+   \                                 In section .text, align 2, keep-with-next
+    132          static int entropy_update(mbedtls_entropy_context *ctx, unsigned char source_id,
+    133                                    const unsigned char *data, size_t len)
+    134          {
+   \                     entropy_update: (+1)
+   \        0x0   0xE92D 0x41F8      PUSH     {R3-R8,LR}
+   \        0x4   0x461E             MOV      R6,R3
+   \        0x6   0xB089             SUB      SP,SP,#+36
+   \        0x8   0x4607             MOV      R7,R0
+   \        0xA   0x4688             MOV      R8,R1
+   \        0xC   0x4615             MOV      R5,R2
+    135              unsigned char header[2];
+    136              unsigned char tmp[MBEDTLS_ENTROPY_BLOCK_SIZE];
+    137              size_t use_len = len;
+    138              const unsigned char *p = data;
+    139              int ret = 0;
+    140          
+    141              if (use_len > MBEDTLS_ENTROPY_BLOCK_SIZE) {
+   \        0xE   0x2E20             CMP      R6,#+32
+   \       0x10   0xD90A             BLS.N    ??entropy_update_0
+    142                  if ((ret = mbedtls_md(mbedtls_md_info_from_type(MBEDTLS_ENTROPY_MD),
+    143                                        data, len, tmp)) != 0) {
+   \       0x12   0x.... 0x....      BL       ?Subroutine3
+   \                     ??CrossCallReturnLabel_9: (+1)
+   \       0x16   0xAB01             ADD      R3,SP,#+4
+   \       0x18   0x4632             MOV      R2,R6
+   \       0x1A   0x4629             MOV      R1,R5
+   \       0x1C   0x.... 0x....      BL       mbedtls_md
+   \       0x20   0x0004             MOVS     R4,R0
+   \       0x22   0xD124             BNE.N    ??entropy_update_1
+    144                      goto cleanup;
+    145                  }
+    146                  p = tmp;
+   \       0x24   0xAD01             ADD      R5,SP,#+4
+    147                  use_len = MBEDTLS_ENTROPY_BLOCK_SIZE;
+   \       0x26   0x2620             MOVS     R6,#+32
+    148              }
+    149          
+    150              header[0] = source_id;
+   \                     ??entropy_update_0: (+1)
+   \       0x28   0xF88D 0x8000      STRB     R8,[SP, #+0]
+    151              header[1] = use_len & 0xFF;
+   \       0x2C   0xF88D 0x6001      STRB     R6,[SP, #+1]
+    152          
+    153              /*
+    154               * Start the accumulator if this has not already happened. Note that
+    155               * it is sufficient to start the accumulator here only because all calls to
+    156               * gather entropy eventually execute this code.
+    157               */
+    158              if (ctx->accumulator_started == 0) {
+   \       0x30   0x6938             LDR      R0,[R7, #+16]
+   \       0x32   0xB978             CBNZ.N   R0,??entropy_update_2
+    159                  ret = mbedtls_md_setup(&ctx->accumulator,
+    160                                         mbedtls_md_info_from_type(MBEDTLS_ENTROPY_MD), 0);
+   \       0x34   0x.... 0x....      BL       ?Subroutine3
+   \                     ??CrossCallReturnLabel_8: (+1)
+   \       0x38   0x4601             MOV      R1,R0
+   \       0x3A   0x2200             MOVS     R2,#+0
+   \       0x3C   0x4638             MOV      R0,R7
+   \       0x3E   0x.... 0x....      BL       mbedtls_md_setup
+   \       0x42   0x0004             MOVS     R4,R0
+    161                  if (ret != 0) {
+   \       0x44   0xD113             BNE.N    ??entropy_update_1
+    162                      goto cleanup;
+    163                  }
+    164                  ret = mbedtls_md_starts(&ctx->accumulator);
+   \       0x46   0x4638             MOV      R0,R7
+   \       0x48   0x.... 0x....      BL       mbedtls_md_starts
+   \       0x4C   0x0004             MOVS     R4,R0
+    165                  if (ret != 0) {
+   \       0x4E   0xD10E             BNE.N    ??entropy_update_1
+    166                      goto cleanup;
+    167                  }
+    168                  ctx->accumulator_started = 1;
+   \       0x50   0x2001             MOVS     R0,#+1
+   \       0x52   0x6138             STR      R0,[R7, #+16]
+    169              }
+    170              if ((ret = mbedtls_md_update(&ctx->accumulator, header, 2)) != 0) {
+   \                     ??entropy_update_2: (+1)
+   \       0x54   0x2202             MOVS     R2,#+2
+   \       0x56   0x4669             MOV      R1,SP
+   \       0x58   0x4638             MOV      R0,R7
+   \       0x5A   0x.... 0x....      BL       mbedtls_md_update
+   \       0x5E   0x0004             MOVS     R4,R0
+   \       0x60   0xD105             BNE.N    ??entropy_update_1
+    171                  goto cleanup;
+    172              }
+    173              ret = mbedtls_md_update(&ctx->accumulator, p, use_len);
+   \       0x62   0x4632             MOV      R2,R6
+   \       0x64   0x4629             MOV      R1,R5
+   \       0x66   0x4638             MOV      R0,R7
+   \       0x68   0x.... 0x....      BL       mbedtls_md_update
+   \       0x6C   0x4604             MOV      R4,R0
+    174          
+    175          cleanup:
+    176              mbedtls_platform_zeroize(tmp, sizeof(tmp));
+   \                     ??entropy_update_1: (+1)
+   \       0x6E   0x2120             MOVS     R1,#+32
+   \       0x70   0xA801             ADD      R0,SP,#+4
+   \       0x72   0x.... 0x....      BL       mbedtls_platform_zeroize
+    177          
+    178              return ret;
+   \       0x76   0x4620             MOV      R0,R4
+   \       0x78   0xB00A             ADD      SP,SP,#+40
+   \       0x7A   0xE8BD 0x81F0      POP      {R4-R8,PC}
+    179          }
+
+   \                                 In section .text, align 2, keep-with-next
+   \                     ?Subroutine3: (+1)
+   \        0x0   0x2009             MOVS     R0,#+9
+   \        0x2   0x.... 0x....      B.W      mbedtls_md_info_from_type
+    180          
+
+   \                                 In section .text, align 2, keep-with-next
+    181          int mbedtls_entropy_update_manual(mbedtls_entropy_context *ctx,
+    182                                            const unsigned char *data, size_t len)
+    183          {
+   \                     mbedtls_entropy_update_manual: (+1)
+   \        0x0   0xB570             PUSH     {R4-R6,LR}
+   \        0x2   0x4616             MOV      R6,R2
+   \        0x4   0x460D             MOV      R5,R1
+    184              int ret = MBEDTLS_ERR_ERROR_CORRUPTION_DETECTED;
+    185          
+    186          #if defined(MBEDTLS_THREADING_C)
+    187              if ((ret = mbedtls_mutex_lock(&ctx->mutex)) != 0) {
+   \        0x6   0x....             LDR.N    R2,??DataTable6_3
+   \        0x8   0x6811             LDR      R1,[R2, #+0]
+   \        0xA   0x4604             MOV      R4,R0
+   \        0xC   0xF104 0x0040      ADD      R0,R4,#+64
+   \       0x10   0x4788             BLX      R1
+   \       0x12   0xB980             CBNZ.N   R0,??mbedtls_entropy_update_manual_0
+    188                  return ret;
+    189              }
+    190          #endif
+    191          
+    192              ret = entropy_update(ctx, MBEDTLS_ENTROPY_SOURCE_MANUAL, data, len);
+   \       0x14   0x4633             MOV      R3,R6
+   \       0x16   0x462A             MOV      R2,R5
+   \       0x18   0x2102             MOVS     R1,#+2
+   \       0x1A   0x4620             MOV      R0,R4
+   \       0x1C   0x.... 0x....      BL       entropy_update
+    193          
+    194          #if defined(MBEDTLS_THREADING_C)
+    195              if (mbedtls_mutex_unlock(&ctx->mutex) != 0) {
+   \       0x20   0x....             LDR.N    R2,??DataTable6_4
+   \       0x22   0x6811             LDR      R1,[R2, #+0]
+   \       0x24   0x4605             MOV      R5,R0
+   \       0x26   0xF104 0x0040      ADD      R0,R4,#+64
+   \       0x2A   0x4788             BLX      R1
+   \       0x2C   0xB110             CBZ.N    R0,??mbedtls_entropy_update_manual_1
+    196                  return MBEDTLS_ERR_THREADING_MUTEX_ERROR;
+   \       0x2E   0xF06F 0x001D      MVN      R0,#+29
+   \       0x32   0xBD70             POP      {R4-R6,PC}
+    197              }
+    198          #endif
+    199          
+    200              return ret;
+   \                     ??mbedtls_entropy_update_manual_1: (+1)
+   \       0x34   0x4628             MOV      R0,R5
+   \                     ??mbedtls_entropy_update_manual_0: (+1)
+   \       0x36   0xBD70             POP      {R4-R6,PC}
+    201          }
+    202          
+    203          /*
+    204           * Run through the different sources to add entropy to our accumulator
+    205           */
+
+   \                                 In section .text, align 2, keep-with-next
+    206          static int entropy_gather_internal(mbedtls_entropy_context *ctx)
+    207          {
+   \                     entropy_gather_internal: (+1)
+   \        0x0   0xE92D 0x41F8      PUSH     {R3-R8,LR}
+   \        0x4   0xB0A1             SUB      SP,SP,#+132
+   \        0x6   0x4606             MOV      R6,R0
+    208              int ret = MBEDTLS_ERR_ENTROPY_SOURCE_FAILED;
+    209              int i;
+    210              int have_one_strong = 0;
+    211              unsigned char buf[MBEDTLS_ENTROPY_MAX_GATHER];
+    212              size_t olen;
+    213          
+    214              if (ctx->source_count == 0) {
+   \        0x8   0x6970             LDR      R0,[R6, #+20]
+   \        0xA   0xF06F 0x083B      MVN      R8,#+59
+   \        0xE   0x2500             MOVS     R5,#+0
+   \       0x10   0xB910             CBNZ.N   R0,??entropy_gather_internal_0
+    215                  return MBEDTLS_ERR_ENTROPY_NO_SOURCES_DEFINED;
+   \       0x12   0xF06F 0x003F      MVN      R0,#+63
+   \       0x16   0xE031             B.N      ??entropy_gather_internal_1
+    216              }
+    217          
+    218              /*
+    219               * Run through our entropy sources
+    220               */
+    221              for (i = 0; i < ctx->source_count; i++) {
+   \                     ??entropy_gather_internal_0: (+1)
+   \       0x18   0x2400             MOVS     R4,#+0
+   \       0x1A   0xE004             B.N      ??entropy_gather_internal_2
+    222                  if (ctx->source[i].strong == MBEDTLS_ENTROPY_SOURCE_STRONG) {
+    223                      have_one_strong = 1;
+    224                  }
+    225          
+    226                  olen = 0;
+    227                  if ((ret = ctx->source[i].f_source(ctx->source[i].p_source,
+    228                                                     buf, MBEDTLS_ENTROPY_MAX_GATHER, &olen)) != 0) {
+    229                      goto cleanup;
+    230                  }
+    231          
+    232                  /*
+    233                   * Add if we actually gathered something
+    234                   */
+    235                  if (olen > 0) {
+    236                      if ((ret = entropy_update(ctx, (unsigned char) i,
+    237                                                buf, olen)) != 0) {
+    238                          return ret;
+    239                      }
+    240                      ctx->source[i].size += olen;
+   \                     ??entropy_gather_internal_3: (+1)
+   \       0x1C   0x6A39             LDR      R1,[R7, #+32]
+   \       0x1E   0x9800             LDR      R0,[SP, #+0]
+   \       0x20   0x1841             ADDS     R1,R0,R1
+   \       0x22   0x6239             STR      R1,[R7, #+32]
+   \                     ??entropy_gather_internal_4: (+1)
+   \       0x24   0x1C64             ADDS     R4,R4,#+1
+   \                     ??entropy_gather_internal_2: (+1)
+   \       0x26   0x6970             LDR      R0,[R6, #+20]
+   \       0x28   0x4284             CMP      R4,R0
+   \       0x2A   0xDA1F             BGE.N    ??entropy_gather_internal_5
+   \       0x2C   0x2114             MOVS     R1,#+20
+   \       0x2E   0x4361             MULS     R1,R1,R4
+   \       0x30   0x1877             ADDS     R7,R6,R1
+   \       0x32   0x6AB8             LDR      R0,[R7, #+40]
+   \       0x34   0x2801             CMP      R0,#+1
+   \       0x36   0xBF08             IT       EQ
+   \       0x38   0x2501             MOVEQ    R5,#+1
+   \       0x3A   0x2000             MOVS     R0,#+0
+   \       0x3C   0x9000             STR      R0,[SP, #+0]
+   \       0x3E   0x69F8             LDR      R0,[R7, #+28]
+   \       0x40   0xF8D7 0x8018      LDR      R8,[R7, #+24]
+   \       0x44   0x466B             MOV      R3,SP
+   \       0x46   0x2280             MOVS     R2,#+128
+   \       0x48   0xA901             ADD      R1,SP,#+4
+   \       0x4A   0x47C0             BLX      R8
+   \       0x4C   0xEA5F 0x0800      MOVS     R8,R0
+   \       0x50   0xD10F             BNE.N    ??entropy_gather_internal_6
+   \       0x52   0x9800             LDR      R0,[SP, #+0]
+   \       0x54   0x2800             CMP      R0,#+0
+   \       0x56   0xD0E5             BEQ.N    ??entropy_gather_internal_4
+   \       0x58   0x4603             MOV      R3,R0
+   \       0x5A   0xAA01             ADD      R2,SP,#+4
+   \       0x5C   0xB2E1             UXTB     R1,R4
+   \       0x5E   0x4630             MOV      R0,R6
+   \       0x60   0x.... 0x....      BL       entropy_update
+   \       0x64   0xEA5F 0x0800      MOVS     R8,R0
+   \       0x68   0xD0D8             BEQ.N    ??entropy_gather_internal_3
+   \       0x6A   0xE007             B.N      ??entropy_gather_internal_1
+    241                  }
+    242              }
+    243          
+    244              if (have_one_strong == 0) {
+   \                     ??entropy_gather_internal_5: (+1)
+   \       0x6C   0xB90D             CBNZ.N   R5,??entropy_gather_internal_6
+    245                  ret = MBEDTLS_ERR_ENTROPY_NO_STRONG_SOURCE;
+   \       0x6E   0xF06F 0x083C      MVN      R8,#+60
+    246              }
+    247          
+    248          cleanup:
+    249              mbedtls_platform_zeroize(buf, sizeof(buf));
+   \                     ??entropy_gather_internal_6: (+1)
+   \       0x72   0x2180             MOVS     R1,#+128
+   \       0x74   0xA801             ADD      R0,SP,#+4
+   \       0x76   0x.... 0x....      BL       mbedtls_platform_zeroize
+    250          
+    251              return ret;
+   \       0x7A   0x4640             MOV      R0,R8
+   \                     ??entropy_gather_internal_1: (+1)
+   \       0x7C   0xB022             ADD      SP,SP,#+136
+   \       0x7E   0xE8BD 0x81F0      POP      {R4-R8,PC}
+    252          }
+    253          
+    254          /*
+    255           * Thread-safe wrapper for entropy_gather_internal()
+    256           */
+
+   \                                 In section .text, align 2, keep-with-next
+    257          int mbedtls_entropy_gather(mbedtls_entropy_context *ctx)
+    258          {
+    259              int ret = MBEDTLS_ERR_ERROR_CORRUPTION_DETECTED;
+    260          
+    261          #if defined(MBEDTLS_THREADING_C)
+    262              if ((ret = mbedtls_mutex_lock(&ctx->mutex)) != 0) {
+   \                     mbedtls_entropy_gather: (+1)
+   \        0x0   0x....             LDR.N    R2,??DataTable6_3
+   \        0x2   0xB538             PUSH     {R3-R5,LR}
+   \        0x4   0x.... 0x....      BL       ?Subroutine1
+   \                     ??CrossCallReturnLabel_3: (+1)
+   \        0x8   0xB968             CBNZ.N   R0,??mbedtls_entropy_gather_0
+    263                  return ret;
+    264              }
+    265          #endif
+    266          
+    267              ret = entropy_gather_internal(ctx);
+   \        0xA   0x4628             MOV      R0,R5
+   \        0xC   0x.... 0x....      BL       entropy_gather_internal
+    268          
+    269          #if defined(MBEDTLS_THREADING_C)
+    270              if (mbedtls_mutex_unlock(&ctx->mutex) != 0) {
+   \       0x10   0x....             LDR.N    R2,??DataTable6_4
+   \       0x12   0x6811             LDR      R1,[R2, #+0]
+   \       0x14   0x4604             MOV      R4,R0
+   \       0x16   0xF105 0x0040      ADD      R0,R5,#+64
+   \       0x1A   0x4788             BLX      R1
+   \       0x1C   0xB110             CBZ.N    R0,??mbedtls_entropy_gather_1
+    271                  return MBEDTLS_ERR_THREADING_MUTEX_ERROR;
+   \       0x1E   0xF06F 0x001D      MVN      R0,#+29
+   \       0x22   0xBD32             POP      {R1,R4,R5,PC}
+    272              }
+    273          #endif
+    274          
+    275              return ret;
+   \                     ??mbedtls_entropy_gather_1: (+1)
+   \       0x24   0x4620             MOV      R0,R4
+   \                     ??mbedtls_entropy_gather_0: (+1)
+   \       0x26   0xBD32             POP      {R1,R4,R5,PC}
+    276          }
+
+   \                                 In section .text, align 2, keep-with-next
+   \                     ?Subroutine1: (+1)
+   \        0x0   0x6811             LDR      R1,[R2, #+0]
+   \        0x2   0x4605             MOV      R5,R0
+   \        0x4   0xF105 0x0040      ADD      R0,R5,#+64
+   \        0x8   0x4708             BX       R1
+    277          
+
+   \                                 In section .text, align 2, keep-with-next
+    278          int mbedtls_entropy_func(void *data, unsigned char *output, size_t len)
+    279          {
+   \                     mbedtls_entropy_func: (+1)
+   \        0x0   0xE92D 0x47F0      PUSH     {R4-R10,LR}
+   \        0x4   0x4616             MOV      R6,R2
+    280              int ret, count = 0, i, thresholds_reached;
+   \        0x6   0x2700             MOVS     R7,#+0
+   \        0x8   0xB088             SUB      SP,SP,#+32
+   \        0xA   0x4689             MOV      R9,R1
+    281              size_t strong_size;
+    282              mbedtls_entropy_context *ctx = (mbedtls_entropy_context *) data;
+    283              unsigned char buf[MBEDTLS_ENTROPY_BLOCK_SIZE];
+    284          
+    285              if (len > MBEDTLS_ENTROPY_BLOCK_SIZE) {
+   \        0xC   0xF06F 0x083B      MVN      R8,#+59
+   \       0x10   0x2E20             CMP      R6,#+32
+   \       0x12   0xBF88             IT       HI
+   \       0x14   0x4640             MOVHI    R0,R8
+    286                  return MBEDTLS_ERR_ENTROPY_SOURCE_FAILED;
+   \       0x16   0xD87A             BHI.N    ??mbedtls_entropy_func_0
+    287              }
+    288          
+    289          #if defined(MBEDTLS_ENTROPY_NV_SEED)
+    290              /* Update the NV entropy seed before generating any entropy for outside
+    291               * use.
+    292               */
+    293              if (ctx->initial_entropy_run == 0) {
+    294                  ctx->initial_entropy_run = 1;
+    295                  if ((ret = mbedtls_entropy_update_nv_seed(ctx)) != 0) {
+    296                      return ret;
+    297                  }
+    298              }
+    299          #endif
+    300          
+    301          #if defined(MBEDTLS_THREADING_C)
+    302              if ((ret = mbedtls_mutex_lock(&ctx->mutex)) != 0) {
+   \       0x18   0x....             LDR.N    R2,??DataTable6_3
+   \       0x1A   0x.... 0x....      BL       ?Subroutine1
+   \                     ??CrossCallReturnLabel_2: (+1)
+   \       0x1E   0x2800             CMP      R0,#+0
+   \       0x20   0xD175             BNE.N    ??mbedtls_entropy_func_0
+    303                  return ret;
+    304              }
+    305          #endif
+    306          
+    307              /*
+    308               * Always gather extra entropy before a call
+    309               */
+    310              do {
+    311                  if (count++ > ENTROPY_MAX_LOOP) {
+   \                     ??mbedtls_entropy_func_1: (+1)
+   \       0x22   0x4639             MOV      R1,R7
+   \       0x24   0x1C4F             ADDS     R7,R1,#+1
+   \       0x26   0xF240 0x1001      MOVW     R0,#+257
+   \       0x2A   0x4281             CMP      R1,R0
+   \       0x2C   0xDA0A             BGE.N    ??mbedtls_entropy_func_2
+    312                      ret = MBEDTLS_ERR_ENTROPY_SOURCE_FAILED;
+    313                      goto exit;
+    314                  }
+    315          
+    316                  if ((ret = entropy_gather_internal(ctx)) != 0) {
+   \       0x2E   0x4628             MOV      R0,R5
+   \       0x30   0x.... 0x....      BL       entropy_gather_internal
+   \       0x34   0x0004             MOVS     R4,R0
+   \       0x36   0xD15F             BNE.N    ??mbedtls_entropy_func_3
+    317                      goto exit;
+    318                  }
+    319          
+    320                  thresholds_reached = 1;
+   \       0x38   0x2001             MOVS     R0,#+1
+    321                  strong_size = 0;
+   \       0x3A   0x2100             MOVS     R1,#+0
+    322                  for (i = 0; i < ctx->source_count; i++) {
+   \       0x3C   0x2200             MOVS     R2,#+0
+   \       0x3E   0xF04F 0x0A14      MOV      R10,#+20
+   \       0x42   0xE012             B.N      ??mbedtls_entropy_func_4
+   \                     ??mbedtls_entropy_func_2: (+1)
+   \       0x44   0x4644             MOV      R4,R8
+   \       0x46   0xE057             B.N      ??mbedtls_entropy_func_3
+    323                      if (ctx->source[i].size < ctx->source[i].threshold) {
+   \                     ??mbedtls_entropy_func_5: (+1)
+   \       0x48   0xFB0A 0xF302      MUL      R3,R10,R2
+   \       0x4C   0xEB05 0x0C03      ADD      R12,R5,R3
+   \       0x50   0xF8DC 0x3020      LDR      R3,[R12, #+32]
+   \       0x54   0xF8DC 0x4024      LDR      R4,[R12, #+36]
+   \       0x58   0x42A3             CMP      R3,R4
+   \       0x5A   0xBF38             IT       CC
+   \       0x5C   0x2000             MOVCC    R0,#+0
+    324                          thresholds_reached = 0;
+    325                      }
+    326                      if (ctx->source[i].strong == MBEDTLS_ENTROPY_SOURCE_STRONG) {
+   \       0x5E   0xF8DC 0x4028      LDR      R4,[R12, #+40]
+   \       0x62   0x2C01             CMP      R4,#+1
+   \       0x64   0xBF08             IT       EQ
+   \       0x66   0x1859             ADDEQ    R1,R3,R1
+    327                          strong_size += ctx->source[i].size;
+    328                      }
+    329                  }
+   \       0x68   0x1C52             ADDS     R2,R2,#+1
+   \                     ??mbedtls_entropy_func_4: (+1)
+   \       0x6A   0x696B             LDR      R3,[R5, #+20]
+   \       0x6C   0x429A             CMP      R2,R3
+   \       0x6E   0xDBEB             BLT.N    ??mbedtls_entropy_func_5
+    330              } while (!thresholds_reached || strong_size < MBEDTLS_ENTROPY_BLOCK_SIZE);
+   \       0x70   0x2800             CMP      R0,#+0
+   \       0x72   0xD0D6             BEQ.N    ??mbedtls_entropy_func_1
+   \       0x74   0x2920             CMP      R1,#+32
+   \       0x76   0xD3D4             BCC.N    ??mbedtls_entropy_func_1
+    331          
+    332              memset(buf, 0, MBEDTLS_ENTROPY_BLOCK_SIZE);
+   \       0x78   0x2120             MOVS     R1,#+32
+   \       0x7A   0x4668             MOV      R0,SP
+   \       0x7C   0x.... 0x....      BL       __aeabi_memclr4
+    333          
+    334              /*
+    335               * Note that at this stage it is assumed that the accumulator was started
+    336               * in a previous call to entropy_update(). If this is not guaranteed, the
+    337               * code below will fail.
+    338               */
+    339              if ((ret = mbedtls_md_finish(&ctx->accumulator, buf)) != 0) {
+   \       0x80   0x4669             MOV      R1,SP
+   \       0x82   0x4628             MOV      R0,R5
+   \       0x84   0x.... 0x....      BL       mbedtls_md_finish
+   \       0x88   0x0004             MOVS     R4,R0
+   \       0x8A   0xD135             BNE.N    ??mbedtls_entropy_func_3
+    340                  goto exit;
+    341              }
+    342          
+    343              /*
+    344               * Reset accumulator and counters and recycle existing entropy
+    345               */
+    346              mbedtls_md_free(&ctx->accumulator);
+   \       0x8C   0x4628             MOV      R0,R5
+   \       0x8E   0x.... 0x....      BL       mbedtls_md_free
+    347              mbedtls_md_init(&ctx->accumulator);
+   \       0x92   0x4628             MOV      R0,R5
+   \       0x94   0x.... 0x....      BL       mbedtls_md_init
+    348              ret = mbedtls_md_setup(&ctx->accumulator,
+    349                                     mbedtls_md_info_from_type(MBEDTLS_ENTROPY_MD), 0);
+   \       0x98   0x.... 0x....      BL       ?Subroutine3
+   \                     ??CrossCallReturnLabel_7: (+1)
+   \       0x9C   0x4601             MOV      R1,R0
+   \       0x9E   0x2200             MOVS     R2,#+0
+   \       0xA0   0x4628             MOV      R0,R5
+   \       0xA2   0x.... 0x....      BL       mbedtls_md_setup
+   \       0xA6   0x0004             MOVS     R4,R0
+    350              if (ret != 0) {
+   \       0xA8   0xD126             BNE.N    ??mbedtls_entropy_func_3
+    351                  goto exit;
+    352              }
+    353              ret = mbedtls_md_starts(&ctx->accumulator);
+   \       0xAA   0x4628             MOV      R0,R5
+   \       0xAC   0x.... 0x....      BL       mbedtls_md_starts
+   \       0xB0   0x0004             MOVS     R4,R0
+    354              if (ret != 0) {
+   \       0xB2   0xD121             BNE.N    ??mbedtls_entropy_func_3
+    355                  goto exit;
+    356              }
+    357              if ((ret = mbedtls_md_update(&ctx->accumulator, buf,
+    358                                           MBEDTLS_ENTROPY_BLOCK_SIZE)) != 0) {
+   \       0xB4   0x2220             MOVS     R2,#+32
+   \       0xB6   0x4669             MOV      R1,SP
+   \       0xB8   0x4628             MOV      R0,R5
+   \       0xBA   0x.... 0x....      BL       mbedtls_md_update
+   \       0xBE   0x0004             MOVS     R4,R0
+   \       0xC0   0xD11A             BNE.N    ??mbedtls_entropy_func_3
+    359                  goto exit;
+    360              }
+    361          
+    362              /*
+    363               * Perform second hashing on entropy
+    364               */
+    365              if ((ret = mbedtls_md(mbedtls_md_info_from_type(MBEDTLS_ENTROPY_MD),
+    366                                    buf, MBEDTLS_ENTROPY_BLOCK_SIZE, buf)) != 0) {
+   \       0xC2   0x.... 0x....      BL       ?Subroutine3
+   \                     ??CrossCallReturnLabel_6: (+1)
+   \       0xC6   0x466B             MOV      R3,SP
+   \       0xC8   0x2220             MOVS     R2,#+32
+   \       0xCA   0x4669             MOV      R1,SP
+   \       0xCC   0x.... 0x....      BL       mbedtls_md
+   \       0xD0   0x0004             MOVS     R4,R0
+   \       0xD2   0xD111             BNE.N    ??mbedtls_entropy_func_3
+    367                  goto exit;
+    368              }
+    369          
+    370              for (i = 0; i < ctx->source_count; i++) {
+   \       0xD4   0x2000             MOVS     R0,#+0
+   \       0xD6   0xF105 0x0220      ADD      R2,R5,#+32
+   \       0xDA   0x2300             MOVS     R3,#+0
+   \       0xDC   0xE003             B.N      ??mbedtls_entropy_func_6
+    371                  ctx->source[i].size = 0;
+   \                     ??mbedtls_entropy_func_7: (+1)
+   \       0xDE   0xFB0A 0xF100      MUL      R1,R10,R0
+    372              }
+   \       0xE2   0x1C40             ADDS     R0,R0,#+1
+   \       0xE4   0x5053             STR      R3,[R2, R1]
+   \                     ??mbedtls_entropy_func_6: (+1)
+   \       0xE6   0x6969             LDR      R1,[R5, #+20]
+   \       0xE8   0x4288             CMP      R0,R1
+   \       0xEA   0xDBF8             BLT.N    ??mbedtls_entropy_func_7
+   \       0xEC   0x4648             MOV      R0,R9
+    373          
+    374              memcpy(output, buf, len);
+   \       0xEE   0x4632             MOV      R2,R6
+   \       0xF0   0x4669             MOV      R1,SP
+   \       0xF2   0x.... 0x....      BL       __aeabi_memcpy
+    375          
+    376              ret = 0;
+   \       0xF6   0x2400             MOVS     R4,#+0
+    377          
+    378          exit:
+    379              mbedtls_platform_zeroize(buf, sizeof(buf));
+   \                     ??mbedtls_entropy_func_3: (+1)
+   \       0xF8   0x2120             MOVS     R1,#+32
+   \       0xFA   0x4668             MOV      R0,SP
+   \       0xFC   0x.... 0x....      BL       mbedtls_platform_zeroize
+    380          
+    381          #if defined(MBEDTLS_THREADING_C)
+    382              if (mbedtls_mutex_unlock(&ctx->mutex) != 0) {
+   \      0x100   0x.... 0x....      BL       ?Subroutine0
+   \                     ??CrossCallReturnLabel_0: (+1)
+   \      0x104   0x2800             CMP      R0,#+0
+   \      0x106   0xBF14             ITE      NE
+   \      0x108   0xF06F 0x001D      MVNNE    R0,#+29
+   \      0x10C   0x4620             MOVEQ    R0,R4
+    383                  return MBEDTLS_ERR_THREADING_MUTEX_ERROR;
+    384              }
+    385          #endif
+    386          
+    387              return ret;
+   \                     ??mbedtls_entropy_func_0: (+1)
+   \      0x10E   0xB008             ADD      SP,SP,#+32
+   \      0x110   0xE8BD 0x87F0      POP      {R4-R10,PC}
+    388          }
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable6:
+   \        0x0   0x....'....        DC32     mbedtls_mutex_init
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable6_1:
+   \        0x0   0x....'....        DC32     mbedtls_hardware_poll
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable6_2:
+   \        0x0   0x....'....        DC32     mbedtls_mutex_free
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable6_3:
+   \        0x0   0x....'....        DC32     mbedtls_mutex_lock
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable6_4:
+   \        0x0   0x....'....        DC32     mbedtls_mutex_unlock
+    389          
+    390          #if defined(MBEDTLS_ENTROPY_NV_SEED)
+    391          int mbedtls_entropy_update_nv_seed(mbedtls_entropy_context *ctx)
+    392          {
+    393              int ret = MBEDTLS_ERR_ENTROPY_FILE_IO_ERROR;
+    394              unsigned char buf[MBEDTLS_ENTROPY_BLOCK_SIZE];
+    395          
+    396              /* Read new seed  and write it to NV */
+    397              if ((ret = mbedtls_entropy_func(ctx, buf, MBEDTLS_ENTROPY_BLOCK_SIZE)) != 0) {
+    398                  return ret;
+    399              }
+    400          
+    401              if (mbedtls_nv_seed_write(buf, MBEDTLS_ENTROPY_BLOCK_SIZE) < 0) {
+    402                  return MBEDTLS_ERR_ENTROPY_FILE_IO_ERROR;
+    403              }
+    404          
+    405              /* Manually update the remaining stream with a separator value to diverge */
+    406              memset(buf, 0, MBEDTLS_ENTROPY_BLOCK_SIZE);
+    407              ret = mbedtls_entropy_update_manual(ctx, buf, MBEDTLS_ENTROPY_BLOCK_SIZE);
+    408          
+    409              return ret;
+    410          }
+    411          #endif /* MBEDTLS_ENTROPY_NV_SEED */
+    412          
+    413          #if defined(MBEDTLS_FS_IO)
+    414          int mbedtls_entropy_write_seed_file(mbedtls_entropy_context *ctx, const char *path)
+    415          {
+    416              int ret = MBEDTLS_ERR_ERROR_CORRUPTION_DETECTED;
+    417              FILE *f = NULL;
+    418              unsigned char buf[MBEDTLS_ENTROPY_BLOCK_SIZE];
+    419          
+    420              if ((ret = mbedtls_entropy_func(ctx, buf, MBEDTLS_ENTROPY_BLOCK_SIZE)) != 0) {
+    421                  ret = MBEDTLS_ERR_ENTROPY_SOURCE_FAILED;
+    422                  goto exit;
+    423              }
+    424          
+    425              if ((f = fopen(path, "wb")) == NULL) {
+    426                  ret = MBEDTLS_ERR_ENTROPY_FILE_IO_ERROR;
+    427                  goto exit;
+    428              }
+    429          
+    430              /* Ensure no stdio buffering of secrets, as such buffers cannot be wiped. */
+    431              mbedtls_setbuf(f, NULL);
+    432          
+    433              if (fwrite(buf, 1, MBEDTLS_ENTROPY_BLOCK_SIZE, f) != MBEDTLS_ENTROPY_BLOCK_SIZE) {
+    434                  ret = MBEDTLS_ERR_ENTROPY_FILE_IO_ERROR;
+    435                  goto exit;
+    436              }
+    437          
+    438              ret = 0;
+    439          
+    440          exit:
+    441              mbedtls_platform_zeroize(buf, sizeof(buf));
+    442          
+    443              if (f != NULL) {
+    444                  fclose(f);
+    445              }
+    446          
+    447              return ret;
+    448          }
+    449          
+    450          int mbedtls_entropy_update_seed_file(mbedtls_entropy_context *ctx, const char *path)
+    451          {
+    452              int ret = 0;
+    453              FILE *f;
+    454              size_t n;
+    455              unsigned char buf[MBEDTLS_ENTROPY_MAX_SEED_SIZE];
+    456          
+    457              if ((f = fopen(path, "rb")) == NULL) {
+    458                  return MBEDTLS_ERR_ENTROPY_FILE_IO_ERROR;
+    459              }
+    460          
+    461              /* Ensure no stdio buffering of secrets, as such buffers cannot be wiped. */
+    462              mbedtls_setbuf(f, NULL);
+    463          
+    464              fseek(f, 0, SEEK_END);
+    465              n = (size_t) ftell(f);
+    466              fseek(f, 0, SEEK_SET);
+    467          
+    468              if (n > MBEDTLS_ENTROPY_MAX_SEED_SIZE) {
+    469                  n = MBEDTLS_ENTROPY_MAX_SEED_SIZE;
+    470              }
+    471          
+    472              if (fread(buf, 1, n, f) != n) {
+    473                  ret = MBEDTLS_ERR_ENTROPY_FILE_IO_ERROR;
+    474              } else {
+    475                  ret = mbedtls_entropy_update_manual(ctx, buf, n);
+    476              }
+    477          
+    478              fclose(f);
+    479          
+    480              mbedtls_platform_zeroize(buf, sizeof(buf));
+    481          
+    482              if (ret != 0) {
+    483                  return ret;
+    484              }
+    485          
+    486              return mbedtls_entropy_write_seed_file(ctx, path);
+    487          }
+    488          #endif /* MBEDTLS_FS_IO */
+    489          
+    490          #if defined(MBEDTLS_SELF_TEST)
+    491          /*
+    492           * Dummy source function
+    493           */
+    494          static int entropy_dummy_source(void *data, unsigned char *output,
+    495                                          size_t len, size_t *olen)
+    496          {
+    497              ((void) data);
+    498          
+    499              memset(output, 0x2a, len);
+    500              *olen = len;
+    501          
+    502              return 0;
+    503          }
+    504          
+    505          #if defined(MBEDTLS_ENTROPY_HARDWARE_ALT)
+    506          
+    507          static int mbedtls_entropy_source_self_test_gather(unsigned char *buf, size_t buf_len)
+    508          {
+    509              int ret = 0;
+    510              size_t entropy_len = 0;
+    511              size_t olen = 0;
+    512              size_t attempts = buf_len;
+    513          
+    514              while (attempts > 0 && entropy_len < buf_len) {
+    515                  if ((ret = mbedtls_hardware_poll(NULL, buf + entropy_len,
+    516                                                   buf_len - entropy_len, &olen)) != 0) {
+    517                      return ret;
+    518                  }
+    519          
+    520                  entropy_len += olen;
+    521                  attempts--;
+    522              }
+    523          
+    524              if (entropy_len < buf_len) {
+    525                  ret = 1;
+    526              }
+    527          
+    528              return ret;
+    529          }
+    530          
+    531          
+    532          static int mbedtls_entropy_source_self_test_check_bits(const unsigned char *buf,
+    533                                                                 size_t buf_len)
+    534          {
+    535              unsigned char set = 0xFF;
+    536              unsigned char unset = 0x00;
+    537              size_t i;
+    538          
+    539              for (i = 0; i < buf_len; i++) {
+    540                  set &= buf[i];
+    541                  unset |= buf[i];
+    542              }
+    543          
+    544              return set == 0xFF || unset == 0x00;
+    545          }
+    546          
+    547          /*
+    548           * A test to ensure that the entropy sources are functioning correctly
+    549           * and there is no obvious failure. The test performs the following checks:
+    550           *  - The entropy source is not providing only 0s (all bits unset) or 1s (all
+    551           *    bits set).
+    552           *  - The entropy source is not providing values in a pattern. Because the
+    553           *    hardware could be providing data in an arbitrary length, this check polls
+    554           *    the hardware entropy source twice and compares the result to ensure they
+    555           *    are not equal.
+    556           *  - The error code returned by the entropy source is not an error.
+    557           */
+    558          int mbedtls_entropy_source_self_test(int verbose)
+    559          {
+    560              int ret = 0;
+    561              unsigned char buf0[2 * sizeof(unsigned long long int)];
+    562              unsigned char buf1[2 * sizeof(unsigned long long int)];
+    563          
+    564              if (verbose != 0) {
+    565                  mbedtls_printf("  ENTROPY_BIAS test: ");
+    566              }
+    567          
+    568              memset(buf0, 0x00, sizeof(buf0));
+    569              memset(buf1, 0x00, sizeof(buf1));
+    570          
+    571              if ((ret = mbedtls_entropy_source_self_test_gather(buf0, sizeof(buf0))) != 0) {
+    572                  goto cleanup;
+    573              }
+    574              if ((ret = mbedtls_entropy_source_self_test_gather(buf1, sizeof(buf1))) != 0) {
+    575                  goto cleanup;
+    576              }
+    577          
+    578              /* Make sure that the returned values are not all 0 or 1 */
+    579              if ((ret = mbedtls_entropy_source_self_test_check_bits(buf0, sizeof(buf0))) != 0) {
+    580                  goto cleanup;
+    581              }
+    582              if ((ret = mbedtls_entropy_source_self_test_check_bits(buf1, sizeof(buf1))) != 0) {
+    583                  goto cleanup;
+    584              }
+    585          
+    586              /* Make sure that the entropy source is not returning values in a
+    587               * pattern */
+    588              ret = memcmp(buf0, buf1, sizeof(buf0)) == 0;
+    589          
+    590          cleanup:
+    591              if (verbose != 0) {
+    592                  if (ret != 0) {
+    593                      mbedtls_printf("failed\n");
+    594                  } else {
+    595                      mbedtls_printf("passed\n");
+    596                  }
+    597          
+    598                  mbedtls_printf("\n");
+    599              }
+    600          
+    601              return ret != 0;
+    602          }
+    603          
+    604          #endif /* MBEDTLS_ENTROPY_HARDWARE_ALT */
+    605          
+    606          /*
+    607           * The actual entropy quality is hard to test, but we can at least
+    608           * test that the functions don't cause errors and write the correct
+    609           * amount of data to buffers.
+    610           */
+    611          int mbedtls_entropy_self_test(int verbose)
+    612          {
+    613              int ret = 1;
+    614              mbedtls_entropy_context ctx;
+    615              unsigned char buf[MBEDTLS_ENTROPY_BLOCK_SIZE] = { 0 };
+    616              unsigned char acc[MBEDTLS_ENTROPY_BLOCK_SIZE] = { 0 };
+    617              size_t i, j;
+    618          
+    619              if (verbose != 0) {
+    620                  mbedtls_printf("  ENTROPY test: ");
+    621              }
+    622          
+    623              mbedtls_entropy_init(&ctx);
+    624          
+    625              /* First do a gather to make sure we have default sources */
+    626              if ((ret = mbedtls_entropy_gather(&ctx)) != 0) {
+    627                  goto cleanup;
+    628              }
+    629          
+    630              ret = mbedtls_entropy_add_source(&ctx, entropy_dummy_source, NULL, 16,
+    631                                               MBEDTLS_ENTROPY_SOURCE_WEAK);
+    632              if (ret != 0) {
+    633                  goto cleanup;
+    634              }
+    635          
+    636              if ((ret = mbedtls_entropy_update_manual(&ctx, buf, sizeof(buf))) != 0) {
+    637                  goto cleanup;
+    638              }
+    639          
+    640              /*
+    641               * To test that mbedtls_entropy_func writes correct number of bytes:
+    642               * - use the whole buffer and rely on ASan to detect overruns
+    643               * - collect entropy 8 times and OR the result in an accumulator:
+    644               *   any byte should then be 0 with probably 2^(-64), so requiring
+    645               *   each of the 32 or 64 bytes to be non-zero has a false failure rate
+    646               *   of at most 2^(-58) which is acceptable.
+    647               */
+    648              for (i = 0; i < 8; i++) {
+    649                  if ((ret = mbedtls_entropy_func(&ctx, buf, sizeof(buf))) != 0) {
+    650                      goto cleanup;
+    651                  }
+    652          
+    653                  for (j = 0; j < sizeof(buf); j++) {
+    654                      acc[j] |= buf[j];
+    655                  }
+    656              }
+    657          
+    658              for (j = 0; j < sizeof(buf); j++) {
+    659                  if (acc[j] == 0) {
+    660                      ret = 1;
+    661                      goto cleanup;
+    662                  }
+    663              }
+    664          
+    665          #if defined(MBEDTLS_ENTROPY_HARDWARE_ALT)
+    666              if ((ret = mbedtls_entropy_source_self_test(0)) != 0) {
+    667                  goto cleanup;
+    668              }
+    669          #endif
+    670          
+    671          cleanup:
+    672              mbedtls_entropy_free(&ctx);
+    673          
+    674              if (verbose != 0) {
+    675                  if (ret != 0) {
+    676                      mbedtls_printf("failed\n");
+    677                  } else {
+    678                      mbedtls_printf("passed\n");
+    679                  }
+    680          
+    681                  mbedtls_printf("\n");
+    682              }
+    683          
+    684              return ret != 0;
+    685          }
+    686          #endif /* MBEDTLS_SELF_TEST */
+    687          
+    688          #endif /* MBEDTLS_ENTROPY_C */
+
+   Maximum stack usage in bytes:
+
+   .cstack Function
+   ------- --------
+     160   entropy_gather_internal
+       160   -- Indirect call
+       160   -> entropy_update
+       160   -> mbedtls_platform_zeroize
+      64   entropy_update
+        64   -> mbedtls_md
+        64   -> mbedtls_md_info_from_type
+        64   -> mbedtls_md_setup
+        64   -> mbedtls_md_starts
+        64   -> mbedtls_md_update
+        64   -> mbedtls_platform_zeroize
+      24   mbedtls_entropy_add_source
+        24   -- Indirect call
+       8   mbedtls_entropy_free
+         8   -- Indirect call
+         8   -> mbedtls_md_free
+         8   -> mbedtls_platform_zeroize
+      64   mbedtls_entropy_func
+        64   -- Indirect call
+        64   -> __aeabi_memclr4
+        64   -> __aeabi_memcpy
+        64   -> entropy_gather_internal
+        64   -> mbedtls_md
+        64   -> mbedtls_md_finish
+        64   -> mbedtls_md_free
+        64   -> mbedtls_md_info_from_type
+        64   -> mbedtls_md_init
+        64   -> mbedtls_md_setup
+        64   -> mbedtls_md_starts
+        64   -> mbedtls_md_update
+        64   -> mbedtls_platform_zeroize
+      16   mbedtls_entropy_gather
+        16   -- Indirect call
+        16   -> entropy_gather_internal
+      16   mbedtls_entropy_init
+        16   -- Indirect call
+        16   -> __aeabi_memclr4
+        16   -> mbedtls_entropy_add_source
+        16   -> mbedtls_md_init
+      16   mbedtls_entropy_update_manual
+        16   -- Indirect call
+        16   -> entropy_update
+
+
+   Section sizes:
+
+   Bytes  Function/Label
+   -----  --------------
+       4  ??DataTable6
+       4  ??DataTable6_1
+       4  ??DataTable6_2
+       4  ??DataTable6_3
+       4  ??DataTable6_4
+      10  ?Subroutine0
+      10  ?Subroutine1
+      12  ?Subroutine2
+       6  ?Subroutine3
+     130  entropy_gather_internal
+     126  entropy_update
+      80  mbedtls_entropy_add_source
+      44  mbedtls_entropy_free
+     276  mbedtls_entropy_func
+      40  mbedtls_entropy_gather
+      50  mbedtls_entropy_init
+      56  mbedtls_entropy_update_manual
+
+ 
+ 860 bytes in section .text
+ 
+ 860 bytes of CODE memory
+
+Errors: none
+Warnings: none

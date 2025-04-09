@@ -1,0 +1,2591 @@
+###############################################################################
+#
+# IAR ANSI C/C++ Compiler V9.50.2.385/W64 for ARM         27/Nov/2024  12:17:56
+# Copyright 1999-2024 IAR Systems AB.
+#
+#    Cpu mode          =  thumb
+#    Endian            =  little
+#    Source file       =
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\emlib\src\em_se.c
+#    Command line      =
+#        -f
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\ewarm-iar\obj\src_12162447720190469977.dir\em_se.o.rsp
+#        (C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\emlib\src\em_se.c
+#        -D EFR32FG28B322F1024IM48=1 -D
+#        configNUM_SDK_THREAD_LOCAL_STORAGE_POINTERS=2 -D
+#        SL_COMPONENT_CATALOG_PRESENT=1 -D
+#        MBEDTLS_CONFIG_FILE=<sl_mbedtls_config.h> -D
+#        MBEDTLS_PSA_CRYPTO_CONFIG_FILE=<psa_crypto_config.h> -D
+#        SL_RAIL_LIB_MULTIPROTOCOL_SUPPORT=0 -D
+#        SL_RAIL_UTIL_PA_CONFIG_HEADER=<sl_rail_util_pa_config.h> -D
+#        RTT_USE_ASM=0 -D MBED_CONF_MBED_TRACE_ENABLE=1 -D
+#        MBED_CONF_NANOSTACK_CONFIGURATION=ws_router -D
+#        MBED_TRACE_MAX_LEVEL=TRACE_ACTIVE_LEVEL_ALL -D DEBUG_EFM_USER=1 -D
+#        HAVE_LFN=1 -D HAVE_LFN_PARENT=1 -lC
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\ewarm-iar\lst\src_12162447720190469977.dir
+#        --diag_suppress Pa050 -o
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\ewarm-iar\obj\src_12162447720190469977.dir
+#        --debug --endian=little --cpu=Cortex-M33 --cmse --cmse -e
+#        --fpu=VFPv5_sp --dlib_config "C:\Program Files\IAR Systems\Embedded
+#        Workbench 9.2\arm\inc\c\DLib_Config_Normal.h" -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\emlib\src\
+#        -I C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\autogen\ -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\config\ -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\config\rail\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\Device\SiliconLabs\EFR32FG28\Include\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\common\inc\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\CMSIS\Core\Include\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\CMSIS\RTOS2\Include\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\service\device_init\inc\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\emdrv\dmadrv\inc\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\emdrv\common\inc\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\emlib\inc\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\util\third_party\freertos\cmsis\Include\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\util\third_party\freertos\kernel\include\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\util\third_party\freertos\kernel\portable\IAR\ARM_CM33_NTZ\non_secure\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\service\iostream\inc\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\security\sl_component\sl_mbedtls_support\config\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\security\sl_component\sl_mbedtls_support\config\preset\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\security\sl_component\sl_mbedtls_support\inc\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\util\third_party\mbedtls\include\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\util\third_party\mbedtls\library\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\emdrv\nvm3\inc\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\peripheral\inc\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\security\sl_component\sl_psa_driver\inc\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\radio\rail_lib\common\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\radio\rail_lib\protocol\ble\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\radio\rail_lib\protocol\ieee802154\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\radio\rail_lib\protocol\wmbus\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\radio\rail_lib\protocol\zwave\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\radio\rail_lib\chip\efr32\efr32xg2x\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\radio\rail_lib\protocol\sidewalk\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\radio\rail_lib\plugin\pa-conversions\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\radio\rail_lib\plugin\pa-conversions\efr32xg28\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\radio\rail_lib\plugin\rail_util_pti\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\security\sl_component\se_manager\inc\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\security\sl_component\se_manager\src\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\util\third_party\segger\systemview\SEGGER\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\util\silicon_labs\silabs_core\memory_manager\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\common\toolchain\inc\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\service\system\inc\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\app\wisun\component\ns_list\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\app\wisun\component\trace_util\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\app\wisun\component\trace_util\nanostack\nanostack-libservice\mbed-client-libservice\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\service\sleeptimer\inc\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\protocol\wisun\stack\inc\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\protocol\wisun\app\wisun_rcp\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\protocol\wisun\stack\inc\socket\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\protocol\wisun\stack\src\
+#        -Ohz --use_c++_inline) --dependencies=n
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\ewarm-iar\obj\src_12162447720190469977.dir\em_se.o.iar_deps
+#    Locale            =  C
+#    List file         =
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\ewarm-iar\lst\src_12162447720190469977.dir\em_se.lst
+#    Object file       =
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\ewarm-iar\obj\src_12162447720190469977.dir\em_se.o
+#    Runtime model:       
+#      __CPP_Runtime   =  1
+#      __SystemLibrary =  DLib
+#      __dlib_version  =  6
+#
+###############################################################################
+
+C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\emlib\src\em_se.c
+      1          /***************************************************************************//**
+      2           * @file
+      3           * @brief Secure Element API
+      4           *******************************************************************************
+      5           * # License
+      6           * <b>Copyright 2018 Silicon Laboratories Inc. www.silabs.com</b>
+      7           *******************************************************************************
+      8           *
+      9           * SPDX-License-Identifier: Zlib
+     10           *
+     11           * The licensor of this software is Silicon Laboratories Inc.
+     12           *
+     13           * This software is provided 'as-is', without any express or implied
+     14           * warranty. In no event will the authors be held liable for any damages
+     15           * arising from the use of this software.
+     16           *
+     17           * Permission is granted to anyone to use this software for any purpose,
+     18           * including commercial applications, and to alter it and redistribute it
+     19           * freely, subject to the following restrictions:
+     20           *
+     21           * 1. The origin of this software must not be misrepresented; you must not
+     22           *    claim that you wrote the original software. If you use this software
+     23           *    in a product, an acknowledgment in the product documentation would be
+     24           *    appreciated but is not required.
+     25           * 2. Altered source versions must be plainly marked as such, and must not be
+     26           *    misrepresented as being the original software.
+     27           * 3. This notice may not be removed or altered from any source distribution.
+     28           *
+     29           ******************************************************************************/
+     30          
+     31          #include "em_se.h"
+     32          
+     33          #if defined(SLI_EM_SE_HOST) || defined(SEMAILBOX_PRESENT) || defined(CRYPTOACC_PRESENT)
+     34          
+     35          #if defined(SEMAILBOX_PRESENT) || defined(CRYPTOACC_PRESENT)
+     36          
+     37          #include "em_core.h"
+     38          #include "sl_assert.h"
+     39          #include "em_system.h"
+     40          
+     41          #endif
+     42          
+     43          /***************************************************************************//**
+     44           * @addtogroup se
+     45           * @{
+     46           ******************************************************************************/
+     47          
+     48          /*******************************************************************************
+     49           ******************************   DEFINES    ***********************************
+     50           ******************************************************************************/
+     51          /** @cond DO_NOT_INCLUDE_WITH_DOXYGEN */
+     52          /* OTP initialization structure defines. */
+     53          #define SE_OTP_MCU_SETTINGS_FLAG_SECURE_BOOT_ENABLE (1 << 16)
+     54          #define SE_OTP_MCU_SETTINGS_FLAG_SECURE_BOOT_VERIFY_CERTIFICATE (1 << 17)
+     55          #define SE_OTP_MCU_SETTINGS_FLAG_SECURE_BOOT_ANTI_ROLLBACK (1 << 18)
+     56          #define SE_OTP_MCU_SETTINGS_FLAG_SECURE_BOOT_PAGE_LOCK_NARROW (1 << 19)
+     57          #define SE_OTP_MCU_SETTINGS_FLAG_SECURE_BOOT_PAGE_LOCK_FULL (1 << 20)
+     58          
+     59          #if defined(CRYPTOACC_PRESENT)
+     60          
+     61          /// Signal that OTP version is incorporated into the status field of the output
+     62          #define SE_VSE_REPLY_STATUS_OTP_VERSION_SET (1 << 21)
+     63          /// Mask defining the region of the status field that contains the OTP version
+     64          /// number.
+     65          #define SE_VSE_REPLY_STATUS_OTP_VERSION_MASK (0xFF000000UL)
+     66          /// Shift to insert a number into the otp version part of the status field
+     67          #define SE_VSE_REPLY_STATUS_OTP_VERSION_SHIFT (24)
+     68          
+     69          /* Size of VSE Mailbox instance.
+     70             There are two instances, input and output. */
+     71          #define ROOT_MAILBOX_SIZE  (512UL)
+     72          
+     73          /* Base addresses of the VSE Input and Output Mailbox data structures.
+     74             (Must be stored in a RAM area which is not used by the VSE)
+     75             We use the upper 1KB of FRC RAM for the VSE mailboxes. */
+     76          #define ROOT_MAILBOX_OUTPUT_S_BASE (RDMEM_FRCRAM_S_MEM_END + 1 - ROOT_MAILBOX_SIZE)
+     77          #define ROOT_MAILBOX_INPUT_S_BASE  (ROOT_MAILBOX_OUTPUT_S_BASE - ROOT_MAILBOX_SIZE)
+     78          
+     79          // SL_TRUSTZONE_PERIPHERAL_AHBRADIO_S is defined in sl_trustzone_secure_config.h
+     80          #if ((defined(SL_TRUSTZONE_SECURE) && !defined(SL_TRUSTZONE_PERIPHERAL_AHBRADIO_S)) \
+     81            || (defined(SL_TRUSTZONE_PERIPHERAL_AHBRADIO_S) && SL_TRUSTZONE_PERIPHERAL_AHBRADIO_S))
+     82          
+     83          #define RDMEM_FRCRAM_MEM_BASE RDMEM_FRCRAM_S_MEM_BASE
+     84          
+     85          #define ROOT_MAILBOX_OUTPUT_BASE SYSCFG->ROOTDATA1;
+     86          #define ROOT_MAILBOX_OUTPUT_BASE_EXPECTED ROOT_MAILBOX_OUTPUT_S_BASE
+     87          #else
+     88          #define RDMEM_FRCRAM_MEM_BASE RDMEM_FRCRAM_NS_MEM_BASE
+     89          
+     90          // VSE will always output the secure address, if NS is desired, caculate the NS address.
+     91          #define ROOT_MAILBOX_OUTPUT_BASE (SYSCFG->ROOTDATA1 - RDMEM_FRCRAM_S_MEM_BASE + RDMEM_FRCRAM_NS_MEM_BASE);
+     92          #define ROOT_MAILBOX_OUTPUT_BASE_EXPECTED (RDMEM_FRCRAM_NS_MEM_END + 1 - ROOT_MAILBOX_SIZE)
+     93          #endif
+     94          #define ROOT_MAILBOX_INPUT_BASE  (ROOT_MAILBOX_OUTPUT_BASE_EXPECTED - ROOT_MAILBOX_SIZE)
+     95          
+     96          /* Position of parameter number field in VSE Input Mailbox LENGTH field.*/
+     97          #define ROOT_MB_LENGTH_PARAM_NUM_SHIFT (24)
+     98          
+     99          /* Done flag indicating that the VSE Mailbox handler has completed
+    100             processing the mailbox command. */
+    101          #define ROOT_MB_DONE  (1 << 23)
+    102          
+    103          /* VSE Configuration Status bits mask */
+    104          #define ROOT_MB_OUTPUT_STATUS_CONFIG_BITS_MASK  (0xFFFF)
+    105          
+    106          #endif // #if defined(CRYPTOACC_PRESENT)
+    107          /** @endcond */
+    108          
+    109          /*******************************************************************************
+    110           ******************************   TYPEDEFS   ***********************************
+    111           ******************************************************************************/
+    112          #if defined(CRYPTOACC_PRESENT)
+    113          /** @cond DO_NOT_INCLUDE_WITH_DOXYGEN */
+    114          // VSE Input Mailbox structure
+    115          typedef struct {
+    116            volatile uint32_t magic;
+    117            volatile uint32_t command;
+    118            volatile uint32_t length;
+    119            volatile uint32_t data[0];
+    120          } root_InputMailbox_t;
+    121          
+    122          // VSE Output Mailbox structure
+    123          typedef struct {
+    124            volatile uint32_t magic;
+    125            volatile uint32_t version;
+    126            volatile uint32_t status;
+    127            volatile uint32_t command;
+    128            volatile uint32_t length;
+    129            volatile uint32_t data[0];
+    130          } root_OutputMailbox_t;
+    131          /** @endcond */
+    132          
+    133          #endif // #if defined(CRYPTOACC_PRESENT)
+    134          
+    135          /*******************************************************************************
+    136           **************************   STATIC FUNCTIONS   *******************************
+    137           ******************************************************************************/
+    138          
+    139          #if defined(SEMAILBOX_PRESENT)
+    140          /***************************************************************************//**
+    141           * @brief
+    142           *   Write to FIFO
+    143           *
+    144           * @param value
+    145           *   Value to write to FIFO
+    146           ******************************************************************************/
+    147          #if defined(_SEMAILBOX_FIFO_RESETVALUE)
+    148          __STATIC_INLINE void writeToFifo(uint32_t value)
+    149          {
+    150            SEMAILBOX_HOST->FIFO = value;
+    151          }
+    152          #else
+    153          __STATIC_INLINE void writeToFifo(uint32_t value)
+    154          {
+    155            SEMAILBOX_HOST->FIFO[0].DATA = value;
+    156          }
+    157          #endif
+    158          
+    159          #endif // SEMAILBOX_PRESENT
+    160          
+    161          /*******************************************************************************
+    162           **************************   GLOBAL FUNCTIONS   *******************************
+    163           ******************************************************************************/
+    164          
+    165          /***************************************************************************//**
+    166           * @brief
+    167           *   Add input data to a command
+    168           *
+    169           * @details
+    170           *   This function adds a buffer of input data to the given SE command structure
+    171           *   The buffer gets appended by reference at the end of the list of already
+    172           *   added buffers.
+    173           *
+    174           * @note
+    175           *   Note that this function does not copy either the data buffer or the buffer
+    176           *   structure, so make sure to keep the data object in scope until the command
+    177           *   has been executed by the secure element.
+    178           *
+    179           * @param[in]  command
+    180           *   Pointer to an SE command structure.
+    181           *
+    182           * @param[in]  data
+    183           *   Pointer to a data transfer structure.
+    184           ******************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+    185          void SE_addDataInput(SE_Command_t *command, SE_DataTransfer_t *data)
+    186          {
+    187            if (command->data_in == NULL) {
+   \                     SE_addDataInput: (+1)
+   \        0x0   0x6842             LDR      R2,[R0, #+4]
+   \        0x2   0xB912             CBNZ.N   R2,??SE_addDataInput_0
+    188              command->data_in = data;
+   \        0x4   0x6041             STR      R1,[R0, #+4]
+   \        0x6   0x4770             BX       LR
+    189            } else {
+    190              SE_DataTransfer_t *next = command->data_in;
+    191              while (next->next != (void*)SE_DATATRANSFER_STOP) {
+    192                next = (SE_DataTransfer_t*)next->next;
+   \                     ??SE_addDataInput_1: (+1)
+   \        0x8   0x6852             LDR      R2,[R2, #+4]
+    193              }
+   \                     ??SE_addDataInput_0: (+1)
+   \        0xA   0x6850             LDR      R0,[R2, #+4]
+   \        0xC   0x2801             CMP      R0,#+1
+   \        0xE   0xD1FB             BNE.N    ??SE_addDataInput_1
+    194              next->next = data;
+   \       0x10   0x6051             STR      R1,[R2, #+4]
+    195            }
+    196          }
+   \       0x12   0x4770             BX       LR
+    197          
+    198          /***************************************************************************//**
+    199           * @brief
+    200           *   Add output data to a command
+    201           *
+    202           * @details
+    203           *   This function adds a buffer of output data to the given command structure
+    204           *   The buffer gets appended by reference at the end of the list of already
+    205           *   added buffers.
+    206           *
+    207           * @note
+    208           *   Note that this function does not copy either the data buffer or the buffer
+    209           *   structure, so make sure to keep the data object in scope until the command
+    210           *   has been executed by the secure element.
+    211           *
+    212           * @param[in]  command
+    213           *   Pointer to an SE command structure.
+    214           *
+    215           * @param[in]  data
+    216           *   Pointer to a data transfer structure.
+    217           ******************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+    218          void SE_addDataOutput(SE_Command_t *command,
+    219                                SE_DataTransfer_t *data)
+    220          {
+    221            if (command->data_out == NULL) {
+   \                     SE_addDataOutput: (+1)
+   \        0x0   0x6882             LDR      R2,[R0, #+8]
+   \        0x2   0xB912             CBNZ.N   R2,??SE_addDataOutput_0
+    222              command->data_out = data;
+   \        0x4   0x6081             STR      R1,[R0, #+8]
+   \        0x6   0x4770             BX       LR
+    223            } else {
+    224              SE_DataTransfer_t *next = command->data_out;
+    225              while (next->next != (void*)SE_DATATRANSFER_STOP) {
+    226                next = (SE_DataTransfer_t*)next->next;
+   \                     ??SE_addDataOutput_1: (+1)
+   \        0x8   0x6852             LDR      R2,[R2, #+4]
+    227              }
+   \                     ??SE_addDataOutput_0: (+1)
+   \        0xA   0x6850             LDR      R0,[R2, #+4]
+   \        0xC   0x2801             CMP      R0,#+1
+   \        0xE   0xD1FB             BNE.N    ??SE_addDataOutput_1
+    228              next->next = data;
+   \       0x10   0x6051             STR      R1,[R2, #+4]
+    229            }
+    230          }
+   \       0x12   0x4770             BX       LR
+    231          
+    232          /***************************************************************************//**
+    233           * @brief
+    234           *   Add a parameter to a command
+    235           *
+    236           * @details
+    237           *   This function adds a parameter word to the passed command.
+    238           *
+    239           * @note
+    240           *   Make sure to not exceed @ref SE_MAX_PARAMETERS.
+    241           *
+    242           * @param[in]  command
+    243           *   Pointer to a filled-out SE command structure.
+    244           * @param[in]  parameter
+    245           *   Parameter to add.
+    246           ******************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+    247          void SE_addParameter(SE_Command_t *command, uint32_t parameter)
+    248          {
+    249            if (command->num_parameters >= SE_MAX_PARAMETERS) {
+   \                     SE_addParameter: (+1)
+   \        0x0   0x69C2             LDR      R2,[R0, #+28]
+   \        0x2   0x2A04             CMP      R2,#+4
+   \        0x4   0xD301             BCC.N    ??SE_addParameter_0
+    250              EFM_ASSERT(command->num_parameters < SE_MAX_PARAMETERS);
+   \        0x6   0x21FA             MOVS     R1,#+250
+   \        0x8   0x....             B.N      ?Subroutine0
+    251              return;
+    252            }
+    253          
+    254            command->parameters[command->num_parameters] = parameter;
+   \                     ??SE_addParameter_0: (+1)
+   \        0xA   0xEB00 0x0282      ADD      R2,R0,R2, LSL #+2
+   \        0xE   0x60D1             STR      R1,[R2, #+12]
+    255            command->num_parameters += 1;
+   \       0x10   0x69C1             LDR      R1,[R0, #+28]
+   \       0x12   0x1C49             ADDS     R1,R1,#+1
+   \       0x14   0x61C1             STR      R1,[R0, #+28]
+    256          }
+   \       0x16   0x4770             BX       LR
+
+   \                                 In section .text, align 2, keep-with-next
+   \                     ?Subroutine0: (+1)
+   \        0x0   0x.... 0x....      LDR.W    R0,??DataTable33
+   \        0x4   0x.... 0x....      B.W      assertEFM
+    257          
+    258          #if !defined(SLI_EM_SE_HOST)
+    259          /***************************************************************************//**
+    260           * @brief
+    261           *   Execute the passed command
+    262           *
+    263           * @details
+    264           *   This function starts the execution of the passed command by the secure
+    265           *   element. When started, wait for the RXINT interrupt flag, or call
+    266           *   @ref SE_waitCommandCompletion to busy-wait. After completion, you have to
+    267           *   call @ref SE_readCommandResponse to get the command's execution status.
+    268           *
+    269           * @param[in]  command
+    270           *   Pointer to a filled-out SE command structure.
+    271           ******************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+    272          void SE_executeCommand(SE_Command_t *command)
+    273          {
+    274            // Don't overflow our struct
+    275            if (command->num_parameters > SE_MAX_PARAMETERS) {
+   \                     SE_executeCommand: (+1)
+   \        0x0   0x69C2             LDR      R2,[R0, #+28]
+   \        0x2   0x2A04             CMP      R2,#+4
+   \        0x4   0xD902             BLS.N    ??SE_executeCommand_0
+    276              EFM_ASSERT(command->num_parameters <= SE_MAX_PARAMETERS);
+   \        0x6   0xF44F 0x718A      MOV      R1,#+276
+   \        0xA   0x....             B.N      ?Subroutine0
+    277              return;
+    278            }
+    279          
+    280          #if defined(SEMAILBOX_PRESENT)
+    281          
+    282            // Wait for room available in the mailbox
+    283            while (!(SEMAILBOX_HOST->TX_STATUS & SEMAILBOX_TX_STATUS_TXINT)) ;
+   \                     ??SE_executeCommand_0: (+1)
+   \        0xC   0xF04F 0x4198      MOV      R1,#+1275068416
+   \       0x10   0x6C0A             LDR      R2,[R1, #+64]
+   \       0x12   0x02D3             LSLS     R3,R2,#+11
+   \       0x14   0xD5FA             BPL.N    ??SE_executeCommand_0
+    284          
+    285            // Write header to start transaction
+    286            SEMAILBOX_HOST->TX_HEADER = sizeof(uint32_t) * (4 + command->num_parameters);
+   \       0x16   0x69C2             LDR      R2,[R0, #+28]
+   \       0x18   0x1D12             ADDS     R2,R2,#+4
+   \       0x1A   0x0092             LSLS     R2,R2,#+2
+   \       0x1C   0x650A             STR      R2,[R1, #+80]
+    287          
+    288            // Write command into FIFO
+    289            writeToFifo(command->command);
+   \       0x1E   0x6802             LDR      R2,[R0, #+0]
+   \       0x20   0x600A             STR      R2,[R1, #+0]
+    290          
+    291            // Write DMA descriptors into FIFO
+    292            writeToFifo((uint32_t)command->data_in);
+   \       0x22   0x6843             LDR      R3,[R0, #+4]
+   \       0x24   0x600B             STR      R3,[R1, #+0]
+    293            writeToFifo((uint32_t)command->data_out);
+   \       0x26   0x6882             LDR      R2,[R0, #+8]
+   \       0x28   0x600A             STR      R2,[R1, #+0]
+    294          
+    295            // Write applicable parameters into FIFO
+    296            for (size_t i = 0; i < command->num_parameters; i++) {
+   \       0x2A   0x2200             MOVS     R2,#+0
+   \       0x2C   0xE004             B.N      ??SE_executeCommand_1
+    297              writeToFifo(command->parameters[i]);
+   \                     ??SE_executeCommand_2: (+1)
+   \       0x2E   0xEB00 0x0382      ADD      R3,R0,R2, LSL #+2
+   \       0x32   0x68DB             LDR      R3,[R3, #+12]
+    298            }
+   \       0x34   0x1C52             ADDS     R2,R2,#+1
+   \       0x36   0x600B             STR      R3,[R1, #+0]
+   \                     ??SE_executeCommand_1: (+1)
+   \       0x38   0x69C3             LDR      R3,[R0, #+28]
+   \       0x3A   0x429A             CMP      R2,R3
+   \       0x3C   0xD3F7             BCC.N    ??SE_executeCommand_2
+    299          
+    300          #elif defined(CRYPTOACC_PRESENT)
+    301            // Prepare the VSE Mailbox within a critical section to prevent
+    302            // the process from getting interrupted. At this point, the only option
+    303            // we have is to go through a reset, so it is safe to enter the critical section.
+    304            (void)CORE_EnterCritical();
+    305          
+    306            // Setup pointer to the VSE Mailbox Input data structure
+    307            // (must be stored in a RAM area which is not used by the VSE)
+    308            root_InputMailbox_t *rootInMb = (root_InputMailbox_t*)ROOT_MAILBOX_INPUT_BASE;
+    309            uint32_t *mbData;
+    310            unsigned int mbDataLen, inDataLen, i;
+    311            SE_DataTransfer_t *inDataDesc;
+    312            uint32_t *inData;
+    313            uint32_t checksum;
+    314            bool sysCfgClkWasEnabled = ((CMU->CLKEN0 & CMU_CLKEN0_SYSCFG) != 0);
+    315            CMU->CLKEN0_SET = CMU_CLKEN0_SYSCFG;
+    316          
+    317            // Store the secure memory base addresses for VSE to be able to read from the address
+    318            // Set base of Mailbox Input data structure in SYSCFG register in order
+    319            // for VSE to find it.
+    320            SYSCFG->ROOTDATA0 = ROOT_MAILBOX_INPUT_S_BASE;
+    321            // Set base of Mailbox Output data structure in SYSCFG register in order
+    322            // for VSE to know where to write output data.
+    323            // Write command into FIFO
+    324            SYSCFG->ROOTDATA1 = ROOT_MAILBOX_OUTPUT_S_BASE;
+    325          
+    326            if (!sysCfgClkWasEnabled) {
+    327              CMU->CLKEN0_CLR = CMU_CLKEN0_SYSCFG;
+    328            }
+    329          
+    330            rootInMb->magic   = SE_RESPONSE_MAILBOX_VALID;
+    331            rootInMb->command = command->command;
+    332          
+    333            // Write applicable parameters into Mailbox DATA array
+    334            mbData = (uint32_t*) rootInMb->data;
+    335            for (mbDataLen = 0; mbDataLen < command->num_parameters; mbDataLen++) {
+    336              mbData[mbDataLen] = command->parameters[mbDataLen];
+    337            }
+    338          
+    339            // Write input data into Mailbox DATA array
+    340            inDataLen = 0;
+    341            for (inDataDesc = command->data_in; inDataDesc; inDataDesc = (SE_DataTransfer_t*) inDataDesc->next) {
+    342              inData = (uint32_t*) inDataDesc->data;
+    343              for (i = 0; i < (inDataDesc->length & SE_DATATRANSFER_LENGTH_MASK) / sizeof(uint32_t); i++) {
+    344                // Make sure we do not overflow the input mailbox.
+    345                EFM_ASSERT(mbDataLen < ROOT_MAILBOX_SIZE);
+    346                mbData[mbDataLen++] = inData[i];
+    347                inDataLen++;
+    348              }
+    349              if (inDataDesc->next == (void*)SE_DATATRANSFER_STOP) {
+    350                break;
+    351              }
+    352            }
+    353          
+    354            // Write number of parameters and data words to 'length' field of mailbox.
+    355            rootInMb->length =
+    356              inDataLen | (command->num_parameters << ROOT_MB_LENGTH_PARAM_NUM_SHIFT);
+    357          
+    358            // Calculate checksum using bitwise XOR over the all words in the mailbox
+    359            // data structure, minus the CHECKSUM word (32bit = 4bytes ) at the end.
+    360            checksum = rootInMb->magic;
+    361            checksum ^= rootInMb->command;
+    362            checksum ^= rootInMb->length;
+    363            for (i = 0; i < mbDataLen; i++) {
+    364              checksum ^= mbData[i];
+    365            }
+    366          
+    367            // Finally, write the calculated checksum to mailbox checksum field
+    368            mbData[mbDataLen] = checksum;
+    369          
+    370            __NVIC_SystemReset();
+    371          
+    372          #endif // #if defined(SEMAILBOX_PRESENT)
+    373          }
+   \       0x3E   0x4770             BX       LR
+    374          
+    375          #endif // #if !defined(SLI_EM_SE_HOST)
+    376          
+    377          #if defined(CRYPTOACC_PRESENT)
+    378          /***************************************************************************//**
+    379           * @brief
+    380           *   Check whether the VSE Output Mailbox is valid.
+    381           *
+    382           * @return True if the VSE Output Mailbox is valid (magic and checksum OK)
+    383           ******************************************************************************/
+    384          bool rootIsOutputMailboxValid(void)
+    385          {
+    386            // Setup pointer to the VSE Output Mailbox data structure
+    387            // (must be stored in a RAM area which is not used by the VSE)
+    388            bool sysCfgClkWasEnabled = ((CMU->CLKEN0 & CMU_CLKEN0_SYSCFG) != 0);
+    389            CMU->CLKEN0_SET = CMU_CLKEN0_SYSCFG;
+    390            root_OutputMailbox_t *rootOutMb = (root_OutputMailbox_t *) ROOT_MAILBOX_OUTPUT_BASE;
+    391            if ((uint32_t)rootOutMb > ROOT_MAILBOX_OUTPUT_BASE_EXPECTED
+    392                || (uint32_t)rootOutMb < RDMEM_FRCRAM_MEM_BASE) {
+    393              return false;
+    394            }
+    395          
+    396            if (!sysCfgClkWasEnabled) {
+    397              CMU->CLKEN0_CLR = CMU_CLKEN0_SYSCFG;
+    398            }
+    399          
+    400            uint32_t *mbPtr = (uint32_t*) rootOutMb;
+    401            uint32_t checksum;
+    402            unsigned int mbLen, cnt;
+    403          
+    404            // Verify magic word of mailbox
+    405            if (rootOutMb->magic != SE_RESPONSE_MAILBOX_VALID) {
+    406              return false;
+    407            }
+    408          
+    409            // Get length of mailbox
+    410            mbLen = sizeof(root_OutputMailbox_t) / sizeof(uint32_t) + rootOutMb->length;
+    411            if (mbLen >= ROOT_MAILBOX_SIZE) {
+    412              return false;
+    413            }
+    414            // Calculate checksum using bitwise XOR over all words in the mailbox
+    415            // data structure, minus the CHECKSUM word at the end.
+    416            for (checksum = 0, cnt = 0; cnt < mbLen; cnt++) {
+    417              checksum ^= mbPtr[cnt];
+    418            }
+    419          
+    420            // Verify that the calculated checksum is equal to the mailbox checksum.
+    421            return (mbPtr[mbLen] == checksum);
+    422          }
+    423          
+    424          /***************************************************************************//**
+    425           * @brief
+    426           *   Get current SE version
+    427           *
+    428           * @details
+    429           *   This function returns the current VSE version
+    430           *
+    431           * @param[in]  version
+    432           *   Pointer to location where to copy the version of VSE to.
+    433           *
+    434           * @return
+    435           *   One of the SE_RESPONSE return codes:
+    436           *   SE_RESPONSE_OK when the command was executed successfully
+    437           *   SE_RESPONSE_INVALID_PARAMETER when an invalid parameter was passed
+    438           *   SE_RESPONSE_MAILBOX_INVALID when the mailbox content is invalid
+    439           ******************************************************************************/
+    440          SE_Response_t SE_getVersion(uint32_t *version)
+    441          {
+    442            bool sysCfgClkWasEnabled = ((CMU->CLKEN0 & CMU_CLKEN0_SYSCFG) != 0);
+    443            CMU->CLKEN0_SET = CMU_CLKEN0_SYSCFG;
+    444            root_OutputMailbox_t *rootOutMb = (root_OutputMailbox_t *) ROOT_MAILBOX_OUTPUT_BASE;
+    445            if (!sysCfgClkWasEnabled) {
+    446              CMU->CLKEN0_CLR = CMU_CLKEN0_SYSCFG;
+    447            }
+    448          
+    449            if (version == NULL) {
+    450              return SE_RESPONSE_INVALID_PARAMETER;
+    451            }
+    452          
+    453            // First verify that the response is ok.
+    454            if (!rootIsOutputMailboxValid()) {
+    455              return SE_RESPONSE_MAILBOX_INVALID;
+    456            }
+    457          
+    458            // Return the 'version' from the Output Mailbox
+    459            *version = rootOutMb->version;
+    460          
+    461            return SE_RESPONSE_OK;
+    462          }
+    463          
+    464          /***************************************************************************//**
+    465           * @brief
+    466           *   Get VSE configuration and status bits
+    467           *
+    468           * @details
+    469           *   This function returns the current VSE configuration and status bits.
+    470           *   The following list explains what the different bits in cfgStatus indicate.
+    471           *   A bit value of 1 means enabled, while 0 means disabled:
+    472           *    * [0]: Secure boot
+    473           *    * [1]: Verify secure boot certificate
+    474           *    * [2]: Anti-rollback
+    475           *    * [3]: Narrow page lock
+    476           *    * [4]: Full page lock
+    477           *   The following status bits can be read with VSE versions
+    478           *   higher than 1.2.2.
+    479           *    * [10]: Debug port lock
+    480           *    * [11]: Device erase enabled
+    481           *    * [12]: Secure debug enabled
+    482           *    * [15]: Debug port register state, 1 if the debug port is locked.
+    483           *
+    484           * @param[out]  cfgStatus
+    485           *   Pointer to location to copy Configuration Status bits into.
+    486           *
+    487           * @note
+    488           *   This function will check that the mailbox content is valid before
+    489           *   reading the status bits. If the command response has already been read
+    490           *   with a call to @ref SE_ackCommand(), the validity check will fail, and
+    491           *   the config status bits cannot be read before a reset has occurred.
+    492           *
+    493           * @return
+    494           *   One of the SE_RESPONSE return codes:
+    495           *   SE_RESPONSE_OK when the command was executed successfully
+    496           *   SE_RESPONSE_INVALID_PARAMETER when an invalid parameter was passed
+    497           *   SE_RESPONSE_MAILBOX_INVALID when the mailbox content is invalid
+    498           ******************************************************************************/
+    499          SE_Response_t SE_getConfigStatusBits(uint32_t *cfgStatus)
+    500          {
+    501            bool sysCfgClkWasEnabled = ((CMU->CLKEN0 & CMU_CLKEN0_SYSCFG) != 0);
+    502            CMU->CLKEN0_SET = CMU_CLKEN0_SYSCFG;
+    503            root_OutputMailbox_t *rootOutMb = (root_OutputMailbox_t *) ROOT_MAILBOX_OUTPUT_BASE;
+    504            if (!sysCfgClkWasEnabled) {
+    505              CMU->CLKEN0_CLR = CMU_CLKEN0_SYSCFG;
+    506            }
+    507          
+    508            if (cfgStatus == NULL) {
+    509              return SE_RESPONSE_INVALID_PARAMETER;
+    510            }
+    511          
+    512            // First verify that the response is ok.
+    513            if (!rootIsOutputMailboxValid()) {
+    514              return SE_RESPONSE_MAILBOX_INVALID;
+    515            }
+    516          
+    517            // Return the configuration status bits
+    518            *cfgStatus = rootOutMb->status & ROOT_MB_OUTPUT_STATUS_CONFIG_BITS_MASK;
+    519          
+    520            return SE_RESPONSE_OK;
+    521          }
+    522          
+    523          /***************************************************************************//**
+    524           * @brief
+    525           *  Get the version number of the OTP from the status field of the output
+    526           *  mailbox
+    527           * @details
+    528           *  This function checks if the OTP version number flag is set in the output
+    529           *  mailbox. If it is, the version number is writen to @ref otpVersion pointer
+    530           *  location. If not, it returns error response.
+    531           *
+    532           * @param[out] otpVersion
+    533           *  Pointer to location to copy OTP version number into.
+    534           * @return
+    535           *  One of the SE_RESPONSE return codes.
+    536           * @retval SE_RESPONSE_OK when the command was executed successfully
+    537           ******************************************************************************/
+    538          SE_Response_t SE_getOTPVersion(uint32_t *otpVersion)
+    539          {
+    540            bool sysCfgClkWasEnabled = ((CMU->CLKEN0 & CMU_CLKEN0_SYSCFG) != 0);
+    541            CMU->CLKEN0_SET = CMU_CLKEN0_SYSCFG;
+    542            root_OutputMailbox_t *rootOutMb = (root_OutputMailbox_t *) ROOT_MAILBOX_OUTPUT_BASE;
+    543            if (!sysCfgClkWasEnabled) {
+    544              CMU->CLKEN0_CLR = CMU_CLKEN0_SYSCFG;
+    545            }
+    546          
+    547            if (otpVersion == NULL) {
+    548              return SE_RESPONSE_INVALID_PARAMETER;
+    549            }
+    550          
+    551            // First verify that the response is ok.
+    552            if (!rootIsOutputMailboxValid()) {
+    553              return SE_RESPONSE_MAILBOX_INVALID;
+    554            }
+    555          
+    556            bool isOTPVersionSet = rootOutMb->status & SE_VSE_REPLY_STATUS_OTP_VERSION_SET;
+    557            if (isOTPVersionSet) {
+    558              // Return the OTP version from the status field.
+    559              *otpVersion = (rootOutMb->status & SE_VSE_REPLY_STATUS_OTP_VERSION_MASK) >> SE_VSE_REPLY_STATUS_OTP_VERSION_SHIFT;
+    560            } else {
+    561              return SE_RESPONSE_INVALID_COMMAND;
+    562            }
+    563          
+    564            return SE_RESPONSE_OK;
+    565          }
+    566          
+    567          /***************************************************************************//**
+    568           * @brief
+    569           *   Check whether the running command has completed.
+    570           *
+    571           * @details
+    572           *   This function polls the SE-to-host mailbox interrupt flag.
+    573           *
+    574           * @return True if a command has completed and the result is available
+    575           ******************************************************************************/
+    576          bool SE_isCommandCompleted(void)
+    577          {
+    578            bool sysCfgClkWasEnabled = ((CMU->CLKEN0 & CMU_CLKEN0_SYSCFG) != 0);
+    579            CMU->CLKEN0_SET = CMU_CLKEN0_SYSCFG;
+    580            root_OutputMailbox_t *rootOutMb = (root_OutputMailbox_t *) ROOT_MAILBOX_OUTPUT_BASE;
+    581            if (!sysCfgClkWasEnabled) {
+    582              CMU->CLKEN0_CLR = CMU_CLKEN0_SYSCFG;
+    583            }
+    584          
+    585            // First verify that the response is ok
+    586            if (!rootIsOutputMailboxValid()) {
+    587              return false;
+    588            }
+    589          
+    590            // Check status MB_DONE flag of the mailbox
+    591            return ((rootOutMb->status & ROOT_MB_DONE) == ROOT_MB_DONE);
+    592          }
+    593          
+    594          /***************************************************************************//**
+    595           * @brief
+    596           *   Read the previously executed command.
+    597           *
+    598           * @details
+    599           *   This function reads the previously executed command.
+    600           *
+    601           * @return
+    602           *   One of the SE command words.
+    603           *   SE_RESPONSE_MAILBOX_INVALID when the mailbox content is invalid.
+    604           ******************************************************************************/
+    605          uint32_t SE_readExecutedCommand(void)
+    606          {
+    607            bool sysCfgClkWasEnabled = ((CMU->CLKEN0 & CMU_CLKEN0_SYSCFG) != 0);
+    608            CMU->CLKEN0_SET = CMU_CLKEN0_SYSCFG;
+    609            root_OutputMailbox_t *rootOutMb = (root_OutputMailbox_t *) ROOT_MAILBOX_OUTPUT_BASE;
+    610            if (!sysCfgClkWasEnabled) {
+    611              CMU->CLKEN0_CLR = CMU_CLKEN0_SYSCFG;
+    612            }
+    613          
+    614            // First verify that the Output Mailbox includes a valid response.
+    615            if (!SE_isCommandCompleted()) {
+    616              return SE_RESPONSE_MAILBOX_INVALID;
+    617            }
+    618          
+    619            return rootOutMb->command;
+    620          }
+    621          
+    622          /***************************************************************************//**
+    623           * @brief
+    624           *   Read the status of the previously executed command.
+    625           *
+    626           * @details
+    627           *   This function reads the status of the previously executed command.
+    628           *
+    629           * @return
+    630           *   One of the SE_RESPONSE return codes:
+    631           *   SE_RESPONSE_OK when the command was executed successfully or a signature
+    632           *   was successfully verified,
+    633           *   SE_RESPONSE_INVALID_COMMAND when the command ID was not recognized,
+    634           *   SE_RESPONSE_AUTHORIZATION_ERROR when the command is not authorized,
+    635           *   SE_RESPONSE_INVALID_SIGNATURE when signature verification failed,
+    636           *   SE_RESPONSE_BUS_ERROR when a bus error was thrown during the command, e.g.
+    637           *   because of conflicting Secure/Non-Secure memory accesses,
+    638           *   SE_RESPONSE_CRYPTO_ERROR on an internal SE failure, or
+    639           *   SE_RESPONSE_INVALID_PARAMETER when an invalid parameter was passed
+    640           *   SE_RESPONSE_MAILBOX_INVALID when the mailbox content is invalid
+    641           ******************************************************************************/
+    642          SE_Response_t SE_readCommandResponse(void)
+    643          {
+    644            bool sysCfgClkWasEnabled = ((CMU->CLKEN0 & CMU_CLKEN0_SYSCFG) != 0);
+    645            CMU->CLKEN0_SET = CMU_CLKEN0_SYSCFG;
+    646            root_OutputMailbox_t *rootOutMb = (root_OutputMailbox_t *) ROOT_MAILBOX_OUTPUT_BASE;
+    647            if (!sysCfgClkWasEnabled) {
+    648              CMU->CLKEN0_CLR = CMU_CLKEN0_SYSCFG;
+    649            }
+    650          
+    651            // First verify that the Output Mailbox includes a valid response.
+    652            if (!SE_isCommandCompleted()) {
+    653              return SE_RESPONSE_MAILBOX_INVALID;
+    654            }
+    655          
+    656            return (SE_Response_t)(rootOutMb->status & SE_RESPONSE_MASK);
+    657          }
+    658          
+    659          /***************************************************************************//**
+    660           * @brief
+    661           *   Acknowledge and get status and output data of a completed command.
+    662           *
+    663           * @details
+    664           *   This function acknowledges and gets the status and output data of a
+    665           *   completed mailbox command.
+    666           *   The mailbox command is acknowledged by inverting all bits in the checksum
+    667           *   (XOR with 0xFFFFFFFF).
+    668           *   The output data is copied into the linked list of output buffers pointed
+    669           *   to in the given command data structure.
+    670           *
+    671           * @param[in]  command
+    672           *   Pointer to an SE command structure.
+    673           *
+    674           * @return
+    675           *   One of the SE_RESPONSE return codes.
+    676           * @retval SE_RESPONSE_OK when the command was executed successfully or a
+    677           *                        signature was successfully verified,
+    678           * @retval SE_RESPONSE_INVALID_COMMAND when the command ID was not recognized,
+    679           * @retval SE_RESPONSE_AUTHORIZATION_ERROR when the command is not authorized,
+    680           * @retval SE_RESPONSE_INVALID_SIGNATURE when signature verification failed,
+    681           * @retval SE_RESPONSE_BUS_ERROR when a bus error was thrown during the command,
+    682           *                               e.g. because of conflicting Secure/Non-Secure
+    683           *                               memory accesses,
+    684           * @retval SE_RESPONSE_CRYPTO_ERROR on an internal SE failure, or
+    685           * @retval SE_RESPONSE_INVALID_PARAMETER when an invalid parameter was passed
+    686           * @retval SE_RESPONSE_MAILBOX_INVALID when mailbox command not done or invalid
+    687           ******************************************************************************/
+    688          SE_Response_t SE_ackCommand(SE_Command_t *command)
+    689          {
+    690            // Setup pointer to the VSE Output Mailbox data structure
+    691            // (must be stored in a RAM area which is not used by the VSE)
+    692            bool sysCfgClkWasEnabled = ((CMU->CLKEN0 & CMU_CLKEN0_SYSCFG) != 0);
+    693            CMU->CLKEN0_SET = CMU_CLKEN0_SYSCFG;
+    694            root_OutputMailbox_t *rootOutMb = (root_OutputMailbox_t *) ROOT_MAILBOX_OUTPUT_BASE;
+    695            if (!sysCfgClkWasEnabled) {
+    696              CMU->CLKEN0_CLR = CMU_CLKEN0_SYSCFG;
+    697            }
+    698            uint32_t *mbData = (uint32_t*) rootOutMb->data;
+    699            SE_DataTransfer_t *outDataDesc = command->data_out;
+    700            unsigned int outDataLen, outDataCnt, i, outDescLen;
+    701            uint32_t *outData;
+    702          
+    703            // First verify that the Output Mailbox includes a valid response.
+    704            if (!SE_isCommandCompleted()) {
+    705              return SE_RESPONSE_MAILBOX_INVALID;
+    706            }
+    707          
+    708            // Get output data length
+    709            outDataLen = rootOutMb->length;
+    710          
+    711            // Acknowledge the output mailbox response by invalidating checksum
+    712            mbData[outDataLen] ^= 0xFFFFFFFFUL;
+    713          
+    714            // Check command status code
+    715            if ((rootOutMb->status & SE_RESPONSE_MASK) != SE_RESPONSE_OK) {
+    716              return rootOutMb->status & SE_RESPONSE_MASK;
+    717            }
+    718          
+    719            // Copy data from the Output Mailbox to the linked list of output
+    720            // buffers provided by the user
+    721            outDataCnt = 0;
+    722            while (outDataDesc && (outDataCnt < outDataLen)) {
+    723              outData = (uint32_t*) outDataDesc->data;
+    724              outDescLen =
+    725                (outDataDesc->length & SE_DATATRANSFER_LENGTH_MASK) / sizeof(uint32_t);
+    726              for (i = 0; (i < outDescLen) && (outDataCnt < outDataLen); i++) {
+    727                outData[i] = mbData[outDataCnt++];
+    728              }
+    729              // If we have reached the end of a buffer, go to next buffer descriptor
+    730              if (i == outDescLen) {
+    731                outDataDesc = (SE_DataTransfer_t*)
+    732                              ((uint32_t)outDataDesc->next & ~SE_DATATRANSFER_STOP);
+    733              }
+    734            }
+    735          
+    736            // Check if the output data list is too small to copy all output data in
+    737            // mailbox.
+    738            if ((outDataDesc == 0) && (outDataCnt < outDataLen)) {
+    739              return SE_RESPONSE_INVALID_PARAMETER;
+    740            }
+    741          
+    742            return SE_RESPONSE_OK;
+    743          }
+    744          
+    745          #endif // #if defined(CRYPTOACC_PRESENT)
+    746          
+    747          /*******************************************************************************
+    748           *****************************   DEPRECATED    *********************************
+    749           ******************************************************************************/
+    750          
+    751          /***************************************************************************//**
+    752           * @addtogroup se_deprecated
+    753           *
+    754           * @{
+    755           ******************************************************************************/
+    756          
+    757          /*******************************************************************************
+    758          *  The following functions have been deprecated and will be removed in a future
+    759          *  version of emlib. All high-level functionality have been moved to the SE
+    760          *  manager.
+    761          *******************************************************************************/
+    762          
+    763          #if !defined(SLI_EM_SE_HOST)
+    764          /***************************************************************************//**
+    765           * @brief
+    766           *
+    767           * @deprecated
+    768           *   This function has been moved to the SE manager, and will be removed in a
+    769           *   future version of emlib.
+    770           *
+    771           *   Init pubkey or pubkey signature.
+    772           *
+    773           * @details
+    774           *   Initialize public key stored in the SE, or its corresponding signature. The
+    775           *   command can be used to write:
+    776           *   * SE_KEY_TYPE_BOOT -- public key used to perform secure boot
+    777           *   * SE_KEY_TYPE_AUTH -- public key used to perform secure debug
+    778           *
+    779           * @note
+    780           *   These keys can not be overwritten, so this command can only be issued once
+    781           *   per key per part.
+    782           *
+    783           * @param[in] key_type
+    784           *   ID of key type to initialize.
+    785           *
+    786           * @param[in] pubkey
+    787           *   Pointer to a buffer that contains the public key or signature.
+    788           *   Must be word aligned and have a length of 64 bytes.
+    789           *
+    790           * @param[in] numBytes
+    791           *   Length of pubkey buffer (64 bytes).
+    792           *
+    793           * @param[in] signature
+    794           *   If true, initialize signature for the specified key type instead of the
+    795           *   public key itself.
+    796           *
+    797           * @return
+    798           *   One of the SE_RESPONSE return codes.
+    799           * @retval SE_RESPONSE_OK when the command was executed successfully
+    800           * @retval SE_RESPONSE_TEST_FAILED when the pubkey is not set
+    801           * @retval SE_RESPONSE_INVALID_PARAMETER when an invalid type is passed
+    802           ******************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+    803          SE_Response_t SE_initPubkey(uint32_t key_type, void *pubkey, uint32_t numBytes, bool signature)
+    804          {
+   \                     SE_initPubkey: (+1)
+   \        0x0   0xE92D 0x43F0      PUSH     {R4-R9,LR}
+   \        0x4   0x4607             MOV      R7,R0
+   \        0x6   0xB08F             SUB      SP,SP,#+60
+   \        0x8   0x460D             MOV      R5,R1
+   \        0xA   0x4614             MOV      R4,R2
+   \        0xC   0x4698             MOV      R8,R3
+    805            uint32_t commandWord = SE_COMMAND_INIT_PUBKEY;
+   \        0xE   0x.... 0x....      LDR.W    R6,??DataTable33_1
+    806            SE_Response_t res = SE_RESPONSE_INVALID_COMMAND;
+    807          
+    808            EFM_ASSERT((key_type == SE_KEY_TYPE_BOOT)
+    809                       || (key_type == SE_KEY_TYPE_AUTH));
+   \       0x12   0x.... 0x....      LDR.W    R9,??DataTable33
+   \       0x16   0xF5B7 0x7F80      CMP      R7,#+256
+   \       0x1A   0xBF18             IT       NE
+   \       0x1C   0xF5B7 0x7F00      CMPNE    R7,#+512
+   \       0x20   0xD004             BEQ.N    ??SE_initPubkey_0
+   \       0x22   0xF240 0x3129      MOVW     R1,#+809
+   \       0x26   0x4648             MOV      R0,R9
+   \       0x28   0x.... 0x....      BL       assertEFM
+    810          
+    811            EFM_ASSERT(numBytes == 64);
+   \                     ??SE_initPubkey_0: (+1)
+   \       0x2C   0x2C40             CMP      R4,#+64
+   \       0x2E   0xD004             BEQ.N    ??SE_initPubkey_1
+   \       0x30   0xF240 0x312B      MOVW     R1,#+811
+   \       0x34   0x4648             MOV      R0,R9
+   \       0x36   0x.... 0x....      BL       assertEFM
+    812            EFM_ASSERT(!((size_t)pubkey & 3U));
+   \                     ??SE_initPubkey_1: (+1)
+   \       0x3A   0xF015 0x0003      ANDS     R0,R5,#0x3
+   \       0x3E   0xD004             BEQ.N    ??SE_initPubkey_2
+   \       0x40   0xF44F 0x714B      MOV      R1,#+812
+   \       0x44   0x4648             MOV      R0,R9
+   \       0x46   0x.... 0x....      BL       assertEFM
+    813          
+    814            // Find parity word
+    815            volatile uint32_t parity = 0;
+   \                     ??SE_initPubkey_2: (+1)
+   \       0x4A   0x2000             MOVS     R0,#+0
+   \       0x4C   0x9000             STR      R0,[SP, #+0]
+    816            for (size_t i = 0; i < numBytes / 4; i++) {
+   \       0x4E   0xE005             B.N      ??SE_initPubkey_3
+    817              parity = parity ^ ((uint32_t *)pubkey)[i];
+   \                     ??SE_initPubkey_4: (+1)
+   \       0x50   0x9A00             LDR      R2,[SP, #+0]
+   \       0x52   0xF855 0x1020      LDR      R1,[R5, R0, LSL #+2]
+    818            }
+   \       0x56   0x1C40             ADDS     R0,R0,#+1
+   \       0x58   0x404A             EORS     R2,R1,R2
+   \       0x5A   0x9200             STR      R2,[SP, #+0]
+   \                     ??SE_initPubkey_3: (+1)
+   \       0x5C   0xEBB0 0x0F94      CMP      R0,R4, LSR #+2
+   \       0x60   0xD3F6             BCC.N    ??SE_initPubkey_4
+    819          
+    820            // SE command structures
+    821          #if defined(SEMAILBOX_PRESENT)
+    822            commandWord =
+    823              (signature) ? SE_COMMAND_INIT_PUBKEY_SIGNATURE : SE_COMMAND_INIT_PUBKEY;
+   \       0x62   0xF1B8 0x0F00      CMP      R8,#+0
+   \       0x66   0xBF18             IT       NE
+   \       0x68   0x.... 0x....      LDRNE.W  R6,??DataTable33_2
+    824          #elif defined(CRYPTOACC_PRESENT)
+    825            (void)signature;
+    826          #endif
+    827            SE_Command_t command = SE_COMMAND_DEFAULT(commandWord | key_type);
+   \       0x6C   0xA807             ADD      R0,SP,#+28
+   \       0x6E   0x2120             MOVS     R1,#+32
+   \       0x70   0x.... 0x....      BL       __aeabi_memclr4
+   \       0x74   0x4337             ORRS     R7,R7,R6
+   \       0x76   0x9707             STR      R7,[SP, #+28]
+    828          
+    829            SE_DataTransfer_t parityData = SE_DATATRANSFER_DEFAULT(&parity, 4);
+   \       0x78   0x.... 0x....      ADR.W    R0,?_2
+   \       0x7C   0xE890 0x00C2      LDM      R0,{R1,R6,R7}
+   \       0x80   0xF10D 0x0E10      ADD      LR,SP,#+16
+   \       0x84   0x466A             MOV      R2,SP
+   \       0x86   0xE88E 0x00C2      STM      LR,{R1,R6,R7}
+   \       0x8A   0x9204             STR      R2,[SP, #+16]
+    830            SE_addDataInput(&command, &parityData);
+   \       0x8C   0xA904             ADD      R1,SP,#+16
+   \       0x8E   0xA807             ADD      R0,SP,#+28
+   \       0x90   0x.... 0x....      BL       SE_addDataInput
+    831          
+    832            SE_DataTransfer_t pubkeyData = SE_DATATRANSFER_DEFAULT(pubkey, numBytes);
+   \       0x94   0x.... 0x....      ADR.W    R0,?_3
+   \       0x98   0xE890 0x000E      LDM      R0,{R1-R3}
+   \       0x9C   0xAE01             ADD      R6,SP,#+4
+   \       0x9E   0xF044 0x5400      ORR      R4,R4,#0x20000000
+   \       0xA2   0xE886 0x000E      STM      R6,{R1-R3}
+   \       0xA6   0x9501             STR      R5,[SP, #+4]
+   \       0xA8   0x9403             STR      R4,[SP, #+12]
+    833            SE_addDataInput(&command, &pubkeyData);
+   \       0xAA   0xA901             ADD      R1,SP,#+4
+   \       0xAC   0xA807             ADD      R0,SP,#+28
+   \       0xAE   0x.... 0x....      BL       SE_addDataInput
+    834          
+    835            SE_executeCommand(&command);
+   \       0xB2   0xA807             ADD      R0,SP,#+28
+   \       0xB4   0x.... 0x....      BL       SE_executeCommand
+    836          #if defined(SEMAILBOX_PRESENT)
+    837            res = SE_readCommandResponse();
+   \       0xB8   0x.... 0x....      BL       ?Subroutine3
+    838          #endif
+    839            return res;
+   \                     ??CrossCallReturnLabel_0: (+1)
+   \       0xBC   0xB00F             ADD      SP,SP,#+60
+   \       0xBE   0x....             B.N      ?Subroutine1
+    840          }
+
+   \                                 In section .text, align 2, keep-with-next
+   \                     ?Subroutine1: (+1)
+   \        0x0   0xF400 0x2070      AND      R0,R0,#0xF0000
+   \        0x4   0xE8BD 0x83F0      POP      {R4-R9,PC}
+
+   \                                 In section .rodata, align 4, keep-with-next
+   \                     ?_1:
+   \        0x0   0x0000'0000        DC32 0, 0x0, 0x0, 0, 0, 0, 0, 0
+   \              0x0000'0000  
+   \              0x0000'0000  
+   \              0x0000'0000  
+   \              0x0000'0000  
+   \              0x0000'0000  
+   \              0x0000'0000  
+   \              0x0000'0000
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ?_2:
+   \        0x0   0x0000'0000        DC32 0x0, 0x1, 536'870'916
+   \              0x0000'0001  
+   \              0x2000'0004
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ?_3:
+   \        0x0   0x0000'0000        DC32 0x0, 0x1, 0
+   \              0x0000'0001  
+   \              0x0000'0000
+    841          
+    842          /***************************************************************************//**
+    843           * @brief
+    844           *
+    845           * @deprecated
+    846           *   This function has been moved to the SE manager, and will be removed in a
+    847           *   future version of emlib.
+    848           *
+    849           *   Initialize SE one-time-programmable (OTP) configuration.
+    850           *
+    851           * @details
+    852           *   Configuration is performed by setting the desired options in the
+    853           *   @ref SE_OTPInit_t structure.
+    854           *
+    855           *   This function can be used to enable secure boot, to configure flash page
+    856           *   locking, and to enable anti-rollback protection when using the SE to
+    857           *   perform an application upgrade, typically a Gecko bootloader upgrade.
+    858           *
+    859           *   Before secure boot can be enabled, the public key used for secure boot
+    860           *   verification must be uploaded using @ref SE_initPubkey().
+    861           *
+    862           * @warning
+    863           *   This command can only be executed once per device! When the configuration
+    864           *   has been programmed it is not possible to update any of the fields.
+    865           *
+    866           * @param[in] otp_init
+    867           *   @ref SE_OTPInit_t structure containing the SE configuration.
+    868           *
+    869           * @return
+    870           *   One of the SE_RESPONSE return codes.
+    871           * @retval SE_RESPONSE_OK when the command was executed successfully
+    872           ******************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+    873          SE_Response_t SE_initOTP(SE_OTPInit_t *otp_init)
+    874          {
+   \                     SE_initOTP: (+1)
+   \        0x0   0xB5F0             PUSH     {R4-R7,LR}
+   \        0x2   0xB0A7             SUB      SP,SP,#+156
+    875            uint32_t mcuSettingsFlags = 0;
+   \        0x4   0x2100             MOVS     R1,#+0
+   \        0x6   0x4605             MOV      R5,R0
+   \        0x8   0x9100             STR      R1,[SP, #+0]
+    876          
+    877            SE_Response_t res = SE_RESPONSE_INVALID_COMMAND;
+    878          
+    879            if (otp_init->enableSecureBoot) {
+   \        0xA   0x7828             LDRB     R0,[R5, #+0]
+   \        0xC   0x.... 0x....      LDR.W    R4,??DataTable33_3
+   \       0x10   0xB340             CBZ.N    R0,??SE_initOTP_0
+    880              mcuSettingsFlags |= SE_OTP_MCU_SETTINGS_FLAG_SECURE_BOOT_ENABLE;
+   \       0x12   0xF44F 0x3180      MOV      R1,#+65536
+    881          
+    882          #if defined(SEMAILBOX_PRESENT)
+    883              uint8_t pubkey[64];
+    884              {
+    885                EFM_ASSERT(!((size_t)pubkey & 3U));
+   \       0x16   0xA817             ADD      R0,SP,#+92
+   \       0x18   0x9100             STR      R1,[SP, #+0]
+   \       0x1A   0xF010 0x0F03      TST      R0,#0x3
+   \       0x1E   0xD005             BEQ.N    ??SE_initOTP_1
+   \       0x20   0xF240 0x3175      MOVW     R1,#+885
+   \       0x24   0x.... 0x....      LDR.W    R0,??DataTable33
+   \       0x28   0x.... 0x....      BL       assertEFM
+    886                // SE command structures
+    887                SE_Command_t commandPubkeyRead = SE_COMMAND_DEFAULT(SE_COMMAND_READ_PUBKEY | SE_KEY_TYPE_BOOT);
+   \                     ??SE_initOTP_1: (+1)
+   \       0x2C   0xA804             ADD      R0,SP,#+16
+   \       0x2E   0x.... 0x....      ADR.W    R1,?_4
+   \       0x32   0x.... 0x....      BL       ?Subroutine4
+    888                SE_DataTransfer_t pubkeyData = SE_DATATRANSFER_DEFAULT(pubkey, sizeof(pubkey));
+   \                     ??CrossCallReturnLabel_6: (+1)
+   \       0x36   0x.... 0x....      ADR.W    R0,?_5
+   \       0x3A   0xE890 0x0046      LDM      R0,{R1,R2,R6}
+   \       0x3E   0xAB01             ADD      R3,SP,#+4
+   \       0x40   0xAF17             ADD      R7,SP,#+92
+   \       0x42   0xE883 0x0046      STM      R3,{R1,R2,R6}
+   \       0x46   0x9701             STR      R7,[SP, #+4]
+    889                SE_addDataOutput(&commandPubkeyRead, &pubkeyData);
+   \       0x48   0xA901             ADD      R1,SP,#+4
+   \       0x4A   0xA804             ADD      R0,SP,#+16
+   \       0x4C   0x.... 0x....      BL       SE_addDataOutput
+    890                SE_executeCommand(&commandPubkeyRead);
+   \       0x50   0xA804             ADD      R0,SP,#+16
+   \       0x52   0x.... 0x....      BL       SE_executeCommand
+    891                res = SE_readCommandResponse();
+   \                     ??SE_initOTP_2: (+1)
+   \       0x56   0x6820             LDR      R0,[R4, #+0]
+   \       0x58   0x02C0             LSLS     R0,R0,#+11
+   \       0x5A   0xD5FC             BPL.N    ??SE_initOTP_2
+   \       0x5C   0x6920             LDR      R0,[R4, #+16]
+    892                if (res != SE_RESPONSE_OK) {
+   \       0x5E   0xF410 0x2F70      TST      R0,#0xF0000
+   \       0x62   0xD10F             BNE.N    ??SE_initOTP_3
+    893                  return SE_RESPONSE_ABORT;
+    894                }
+    895                res = SE_RESPONSE_INVALID_COMMAND;
+    896              }
+    897          #endif
+    898            }
+    899            if (otp_init->verifySecureBootCertificate) {
+   \                     ??SE_initOTP_0: (+1)
+   \       0x64   0x7868             LDRB     R0,[R5, #+1]
+   \       0x66   0xB118             CBZ.N    R0,??SE_initOTP_4
+    900              mcuSettingsFlags |= SE_OTP_MCU_SETTINGS_FLAG_SECURE_BOOT_VERIFY_CERTIFICATE;
+   \       0x68   0x9800             LDR      R0,[SP, #+0]
+   \       0x6A   0xF440 0x3000      ORR      R0,R0,#0x20000
+   \       0x6E   0x9000             STR      R0,[SP, #+0]
+    901            }
+    902            if (otp_init->enableAntiRollback) {
+   \                     ??SE_initOTP_4: (+1)
+   \       0x70   0x78A8             LDRB     R0,[R5, #+2]
+   \       0x72   0xB118             CBZ.N    R0,??SE_initOTP_5
+    903              mcuSettingsFlags |= SE_OTP_MCU_SETTINGS_FLAG_SECURE_BOOT_ANTI_ROLLBACK;
+   \       0x74   0x9800             LDR      R0,[SP, #+0]
+   \       0x76   0xF440 0x2080      ORR      R0,R0,#0x40000
+   \       0x7A   0x9000             STR      R0,[SP, #+0]
+    904            }
+    905          
+    906            if (otp_init->secureBootPageLockNarrow && otp_init->secureBootPageLockFull) {
+   \                     ??SE_initOTP_5: (+1)
+   \       0x7C   0x78E9             LDRB     R1,[R5, #+3]
+   \       0x7E   0x7928             LDRB     R0,[R5, #+4]
+   \       0x80   0xB139             CBZ.N    R1,??SE_initOTP_6
+   \       0x82   0xB110             CBZ.N    R0,??SE_initOTP_7
+    907              return SE_RESPONSE_ABORT;
+   \                     ??SE_initOTP_3: (+1)
+   \       0x84   0xF44F 0x007F      MOV      R0,#+16711680
+   \       0x88   0xE061             B.N      ??SE_initOTP_8
+    908            }
+    909            if (otp_init->secureBootPageLockNarrow) {
+    910              mcuSettingsFlags |= SE_OTP_MCU_SETTINGS_FLAG_SECURE_BOOT_PAGE_LOCK_NARROW;
+   \                     ??SE_initOTP_7: (+1)
+   \       0x8A   0x9800             LDR      R0,[SP, #+0]
+   \       0x8C   0xF440 0x2000      ORR      R0,R0,#0x80000
+   \       0x90   0xE003             B.N      ??SE_initOTP_9
+    911            }
+    912            if (otp_init->secureBootPageLockFull) {
+   \                     ??SE_initOTP_6: (+1)
+   \       0x92   0xB118             CBZ.N    R0,??SE_initOTP_10
+    913              mcuSettingsFlags |= SE_OTP_MCU_SETTINGS_FLAG_SECURE_BOOT_PAGE_LOCK_FULL;
+   \       0x94   0x9800             LDR      R0,[SP, #+0]
+   \       0x96   0xF440 0x1080      ORR      R0,R0,#0x100000
+   \                     ??SE_initOTP_9: (+1)
+   \       0x9A   0x9000             STR      R0,[SP, #+0]
+    914            }
+    915          
+    916            // Find parity word
+    917            volatile uint32_t parity = 0;
+   \                     ??SE_initOTP_10: (+1)
+   \       0x9C   0x2200             MOVS     R2,#+0
+   \       0x9E   0x9201             STR      R2,[SP, #+4]
+    918            parity = parity ^ mcuSettingsFlags;
+   \       0xA0   0x9901             LDR      R1,[SP, #+4]
+   \       0xA2   0x9800             LDR      R0,[SP, #+0]
+    919          
+    920            volatile uint32_t parameters[2] = {
+    921              parity,
+    922              sizeof(mcuSettingsFlags)
+    923            };
+   \       0xA4   0x.... 0x....      ADR.W    R5,?_6
+   \       0xA8   0xAB15             ADD      R3,SP,#+84
+   \       0xAA   0x4041             EORS     R1,R0,R1
+   \       0xAC   0x9101             STR      R1,[SP, #+4]
+   \       0xAE   0xE9D5 0x2100      LDRD     R2,R1,[R5, #+0]
+   \       0xB2   0xA815             ADD      R0,SP,#+84
+   \       0xB4   0xAF02             ADD      R7,SP,#+8
+   \       0xB6   0xE9C3 0x2100      STRD     R2,R1,[R3, #+0]
+   \       0xBA   0xE9D0 0x6E00      LDRD     R6,LR,[R0, #+0]
+    924          
+    925            // SE command structures
+    926            SE_Command_t command = SE_COMMAND_DEFAULT(SE_COMMAND_INIT_OTP);
+   \       0xBE   0xA80D             ADD      R0,SP,#+52
+   \       0xC0   0x2220             MOVS     R2,#+32
+   \       0xC2   0xE9C7 0x6E00      STRD     R6,LR,[R7, #+0]
+   \       0xC6   0x9901             LDR      R1,[SP, #+4]
+   \       0xC8   0x9102             STR      R1,[SP, #+8]
+   \       0xCA   0x.... 0x....      ADR.W    R1,?_7
+   \       0xCE   0x.... 0x....      BL       __aeabi_memcpy4
+    927          
+    928          #if defined(SEMAILBOX_PRESENT)
+    929            static struct ReservedSettings {
+    930              uint8_t reserved1[16];
+    931              uint8_t reserved2[2];
+    932              uint8_t reserved3[2];
+    933            } reservedSettings = {
+    934              { 0x00 },
+    935              { 0xFF },
+    936              { 0x00 }
+    937            };
+    938          
+    939            for (size_t i = 0; i < 5; i++) {
+   \       0xD2   0x2100             MOVS     R1,#+0
+   \       0xD4   0x....             LDR.N    R0,??DataTable33_4
+    940              parity = parity ^ ((uint32_t*)(&reservedSettings))[i];
+   \                     ??SE_initOTP_11: (+1)
+   \       0xD6   0x9B01             LDR      R3,[SP, #+4]
+   \       0xD8   0xF850 0x2021      LDR      R2,[R0, R1, LSL #+2]
+    941            }
+   \       0xDC   0x1C49             ADDS     R1,R1,#+1
+   \       0xDE   0x4053             EORS     R3,R2,R3
+   \       0xE0   0x9301             STR      R3,[SP, #+4]
+   \       0xE2   0x2905             CMP      R1,#+5
+   \       0xE4   0xD3F7             BCC.N    ??SE_initOTP_11
+    942            parameters[0] = parity;
+   \       0xE6   0x9801             LDR      R0,[SP, #+4]
+    943            parameters[1] = parameters[1] + sizeof(reservedSettings);
+   \       0xE8   0xA902             ADD      R1,SP,#+8
+    944          
+    945            SE_DataTransfer_t parametersData = SE_DATATRANSFER_DEFAULT(&parameters, 8);
+   \       0xEA   0xAD0A             ADD      R5,SP,#+40
+   \       0xEC   0x9002             STR      R0,[SP, #+8]
+   \       0xEE   0x6848             LDR      R0,[R1, #+4]
+   \       0xF0   0xAE02             ADD      R6,SP,#+8
+   \       0xF2   0x3014             ADDS     R0,R0,#+20
+   \       0xF4   0x6048             STR      R0,[R1, #+4]
+   \       0xF6   0x.... 0x....      ADR.W    R0,?_8
+   \       0xFA   0xE890 0x000E      LDM      R0,{R1-R3}
+    946            SE_addDataInput(&command, &parametersData);
+   \       0xFE   0xA80D             ADD      R0,SP,#+52
+   \      0x100   0xE885 0x000E      STM      R5,{R1-R3}
+   \      0x104   0x960A             STR      R6,[SP, #+40]
+   \      0x106   0xA90A             ADD      R1,SP,#+40
+   \      0x108   0x.... 0x....      BL       SE_addDataInput
+    947          
+    948            SE_DataTransfer_t mcuSettingsFlagsData = SE_DATATRANSFER_DEFAULT((volatile void *)&mcuSettingsFlags, sizeof(mcuSettingsFlags));
+   \      0x10C   0x.... 0x....      ADR.W    R0,?_9
+   \      0x110   0xE890 0x0026      LDM      R0,{R1,R2,R5}
+   \      0x114   0xAB07             ADD      R3,SP,#+28
+   \      0x116   0x466E             MOV      R6,SP
+   \      0x118   0xE883 0x0026      STM      R3,{R1,R2,R5}
+   \      0x11C   0x9607             STR      R6,[SP, #+28]
+    949            SE_addDataInput(&command, &mcuSettingsFlagsData);
+   \      0x11E   0xA907             ADD      R1,SP,#+28
+   \      0x120   0xA80D             ADD      R0,SP,#+52
+   \      0x122   0x.... 0x....      BL       SE_addDataInput
+    950          
+    951            SE_DataTransfer_t reservedSettingsData = SE_DATATRANSFER_DEFAULT((volatile void *)&reservedSettings, sizeof(reservedSettings));
+   \      0x126   0x.... 0x....      ADR.W    R0,?_10
+   \      0x12A   0xE890 0x000E      LDM      R0,{R1-R3}
+   \      0x12E   0xAD04             ADD      R5,SP,#+16
+    952            SE_addDataInput(&command, &reservedSettingsData);
+   \      0x130   0xA80D             ADD      R0,SP,#+52
+   \      0x132   0xE885 0x000E      STM      R5,{R1-R3}
+   \      0x136   0xA904             ADD      R1,SP,#+16
+   \      0x138   0x.... 0x....      BL       SE_addDataInput
+    953          
+    954            SE_executeCommand(&command);
+   \      0x13C   0xA80D             ADD      R0,SP,#+52
+   \      0x13E   0x.... 0x....      BL       SE_executeCommand
+    955          
+    956            res = SE_readCommandResponse();
+   \                     ??SE_initOTP_12: (+1)
+   \      0x142   0x6820             LDR      R0,[R4, #+0]
+   \      0x144   0x02C0             LSLS     R0,R0,#+11
+   \      0x146   0xD5FC             BPL.N    ??SE_initOTP_12
+   \      0x148   0x6920             LDR      R0,[R4, #+16]
+    957          #elif defined(CRYPTOACC_PRESENT)
+    958            SE_DataTransfer_t parametersData = SE_DATATRANSFER_DEFAULT(&parameters, 8);
+    959            SE_addDataInput(&command, &parametersData);
+    960          
+    961            SE_DataTransfer_t mcuSettingsFlagsData = SE_DATATRANSFER_DEFAULT((volatile void *)&mcuSettingsFlags, sizeof(mcuSettingsFlags));
+    962            SE_addDataInput(&command, &mcuSettingsFlagsData);
+    963          
+    964            SE_executeCommand(&command);
+    965          #else
+    966            (void)command;
+    967            (void)parameters;
+    968          #endif
+    969          
+    970            return res;
+   \      0x14A   0xF400 0x2070      AND      R0,R0,#0xF0000
+   \                     ??SE_initOTP_8: (+1)
+   \      0x14E   0xB027             ADD      SP,SP,#+156
+   \      0x150   0xBDF0             POP      {R4-R7,PC}
+    971          }
+
+   \                                 In section .text, align 2, keep-with-next
+   \                     ?Subroutine4: (+1)
+   \        0x0   0x2220             MOVS     R2,#+32
+   \        0x2   0x.... 0x....      B.W      __aeabi_memcpy4
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ?_4:
+   \        0x0   0xFF08'0101        DC32 4'278'714'625, 0x0, 0x0, 0, 0, 0, 0, 0
+   \              0x0000'0000  
+   \              0x0000'0000  
+   \              0x0000'0000  
+   \              0x0000'0000  
+   \              0x0000'0000  
+   \              0x0000'0000  
+   \              0x0000'0000
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ?_5:
+   \        0x0   0x0000'0000        DC32 0x0, 0x1, 536'870'976
+   \              0x0000'0001  
+   \              0x2000'0040
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ?_6:
+   \        0x0   0x0000'0000        DC32 0, 4
+   \              0x0000'0004
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ?_7:
+   \        0x0   0xFF00'0001        DC32 4'278'190'081, 0x0, 0x0, 0, 0, 0, 0, 0
+   \              0x0000'0000  
+   \              0x0000'0000  
+   \              0x0000'0000  
+   \              0x0000'0000  
+   \              0x0000'0000  
+   \              0x0000'0000  
+   \              0x0000'0000
+
+   \                                 In section .data, align 4
+   \                     `SE_initOTP::reservedSettings`:
+   \        0x0   0x00 0x00          DC8 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 255, 0, 0, 0
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0x00 0x00    
+   \              0xFF 0x00    
+   \              0x00 0x00
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ?_8:
+   \        0x0   0x0000'0000        DC32 0x0, 0x1, 536'870'920
+   \              0x0000'0001  
+   \              0x2000'0008
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ?_9:
+   \        0x0   0x0000'0000        DC32 0x0, 0x1, 536'870'916
+   \              0x0000'0001  
+   \              0x2000'0004
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ?_10:
+   \        0x0   0x....'....        DC32 `SE_initOTP::reservedSettings`, 0x1, 536'870'932
+   \              0x0000'0001  
+   \              0x2000'0014
+    972          
+    973          #if defined(SEMAILBOX_PRESENT)
+    974          
+    975          /***************************************************************************//**
+    976           * @brief
+    977           * @deprecated
+    978           *   This function has been moved to the SE manager, and will be removed in a
+    979           *   future version of emlib.
+    980           *
+    981           *   Writes data to User Data section in MTP. Write data must be aligned to
+    982           *    word size and contain a number of bytes that is divisable by four.
+    983           *
+    984           * @note
+    985           *   It is recommended to erase the flash page before performing a write.
+    986           *
+    987           * @param[in] offset
+    988           *   Offset to the flash word to write to. Must be aligned to words.
+    989           * @param[in] data
+    990           *   Data to write to flash.
+    991           * @param[in] numBytes
+    992           *   Number of bytes to write to flash. NB: Must be divisable by four.
+    993           * @return
+    994           *   One of the SE_RESPONSE return codes.
+    995           * @retval SE_RESPONSE_OK when the command was executed successfully or a
+    996           *                        signature was successfully verified,
+    997           * @retval SE_RESPONSE_INVALID_COMMAND when the command ID was not recognized,
+    998           * @retval SE_RESPONSE_AUTHORIZATION_ERROR when the command is not authorized,
+    999           * @retval SE_RESPONSE_INVALID_SIGNATURE when signature verification failed,
+   1000           * @retval SE_RESPONSE_BUS_ERROR when a bus error was thrown during the command,
+   1001           *                               e.g. because of conflicting Secure/Non-Secure
+   1002           *                               memory accesses,
+   1003           * @retval SE_RESPONSE_CRYPTO_ERROR on an internal SE failure, or
+   1004           * @retval SE_RESPONSE_INVALID_PARAMETER when an invalid parameter was passed
+   1005           ******************************************************************************/
+
+   \                                 In section .text, align 4, keep-with-next
+   1006          SE_Response_t SE_writeUserData(uint32_t offset,
+   1007                                         void *data,
+   1008                                         uint32_t numBytes)
+   1009          {
+   \                     SE_writeUserData: (+1)
+   \        0x0   0xE92D 0x4FF0      PUSH     {R4-R11,LR}
+   \        0x4   0xB08B             SUB      SP,SP,#+44
+   \        0x6   0x4604             MOV      R4,R0
+   \        0x8   0x460E             MOV      R6,R1
+   \        0xA   0x4615             MOV      R5,R2
+   1010            // SE command structures
+   1011            SE_Command_t command = SE_COMMAND_DEFAULT(SE_COMMAND_WRITE_USER_DATA);
+   \        0xC   0xF10D 0x000C      ADD.W    R0,SP,#+12
+   \       0x10   0x....             ADR.N    R1,?_11
+   \       0x12   0x.... 0x....      BL       ?Subroutine4
+   1012            SE_DataTransfer_t userData = SE_DATATRANSFER_DEFAULT(data, numBytes);
+   \                     ??CrossCallReturnLabel_7: (+1)
+   \       0x16   0x.... 0x....      ADR.W    R7,?_12
+   \       0x1A   0xE897 0x0700      LDM      R7,{R8-R10}
+   \       0x1E   0x46EB             MOV      R11,SP
+   \       0x20   0xF045 0x5100      ORR      R1,R5,#0x20000000
+   \       0x24   0xE88B 0x0700      STM      R11,{R8-R10}
+   \       0x28   0x9600             STR      R6,[SP, #+0]
+   \       0x2A   0x9102             STR      R1,[SP, #+8]
+   1013          
+   1014            SE_addDataInput(&command, &userData);
+   \       0x2C   0x4669             MOV      R1,SP
+   \       0x2E   0xA803             ADD      R0,SP,#+12
+   \       0x30   0x.... 0x....      BL       SE_addDataInput
+   1015          
+   1016            SE_addParameter(&command, offset);
+   \       0x34   0x4621             MOV      R1,R4
+   \       0x36   0xA803             ADD      R0,SP,#+12
+   \       0x38   0x.... 0x....      BL       SE_addParameter
+   1017            SE_addParameter(&command, numBytes);
+   \       0x3C   0x4629             MOV      R1,R5
+   \       0x3E   0xA803             ADD      R0,SP,#+12
+   \       0x40   0x.... 0x....      BL       SE_addParameter
+   1018          
+   1019            SE_executeCommand(&command);
+   \       0x44   0xA803             ADD      R0,SP,#+12
+   \       0x46   0x.... 0x....      BL       SE_executeCommand
+   1020            SE_Response_t res = SE_readCommandResponse();
+   \       0x4A   0x.... 0x....      BL       ?Subroutine3
+   1021            return res;
+   \                     ??CrossCallReturnLabel_1: (+1)
+   \       0x4E   0xB00B             ADD      SP,SP,#+44
+   \       0x50   0xF400 0x2070      AND      R0,R0,#0xF0000
+   \       0x54   0xE8BD 0x8FF0      POP      {R4-R11,PC}
+   1022          }
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ?_11:
+   \        0x0   0x4309'0000        DC32 1'124'663'296, 0x0, 0x0, 0, 0, 0, 0, 0
+   \              0x0000'0000  
+   \              0x0000'0000  
+   \              0x0000'0000  
+   \              0x0000'0000  
+   \              0x0000'0000  
+   \              0x0000'0000  
+   \              0x0000'0000
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ?_12:
+   \        0x0   0x0000'0000        DC32 0x0, 0x1, 0
+   \              0x0000'0001  
+   \              0x0000'0000
+   1023          
+   1024          /***************************************************************************//**
+   1025           * @brief
+   1026           * @deprecated
+   1027           *   This function has been moved to the SE manager, and will be removed in a
+   1028           *   future version of emlib.
+   1029           *
+   1030           *   Erases User Data section in MTP.
+   1031           *
+   1032           * @return
+   1033           *   One of the SE_RESPONSE return codes.
+   1034           * @retval SE_RESPONSE_OK when the command was executed successfully or a
+   1035           *                        signature was successfully verified,
+   1036           * @retval SE_RESPONSE_INVALID_COMMAND when the command ID was not recognized,
+   1037           * @retval SE_RESPONSE_AUTHORIZATION_ERROR when the command is not authorized,
+   1038           * @retval SE_RESPONSE_INVALID_SIGNATURE when signature verification failed,
+   1039           * @retval SE_RESPONSE_BUS_ERROR when a bus error was thrown during the command,
+   1040           *                               e.g. because of conflicting Secure/Non-Secure
+   1041           *                               memory accesses,
+   1042           * @retval SE_RESPONSE_CRYPTO_ERROR on an internal SE failure, or
+   1043           * @retval SE_RESPONSE_INVALID_PARAMETER when an invalid parameter was passed
+   1044           ******************************************************************************/
+
+   \                                 In section .text, align 4, keep-with-next
+   1045          SE_Response_t SE_eraseUserData()
+   1046          {
+   \                     SE_eraseUserData: (+1)
+   \        0x0   0xB580             PUSH     {R7,LR}
+   \        0x2   0xB088             SUB      SP,SP,#+32
+   1047            // SE command structures
+   1048            SE_Command_t command = SE_COMMAND_DEFAULT(SE_COMMAND_ERASE_USER_DATA);
+   \        0x4   0xEA4F 0x000D      MOV.W    R0,SP
+   \        0x8   0x....             ADR.N    R1,?_13
+   \        0xA   0x.... 0x....      BL       ?Subroutine4
+   1049          
+   1050            SE_addParameter(&command, SE_COMMAND_OPTION_ERASE_UD);
+   \                     ??CrossCallReturnLabel_8: (+1)
+   \        0xE   0x....             LDR.N    R1,??DataTable33_5
+   \       0x10   0x4668             MOV      R0,SP
+   \       0x12   0x.... 0x....      BL       SE_addParameter
+   1051            SE_executeCommand(&command);
+   \       0x16   0x....             B.N      ??Subroutine2_0
+   1052            SE_Response_t res = SE_readCommandResponse();
+   1053            return res;
+   1054          }
+
+   \                                 In section .text, align 2, keep-with-next
+   \                     ?Subroutine2: (+1)
+   \        0x0   0x2220             MOVS     R2,#+32
+   \        0x2   0x.... 0x....      BL       __aeabi_memcpy4
+   \                     ??Subroutine2_0: (+1)
+   \        0x6   0x4668             MOV      R0,SP
+   \        0x8   0x.... 0x....      BL       SE_executeCommand
+   \        0xC   0x....             LDR.N    R0,??DataTable33_3
+   \                     ??Subroutine2_1: (+1)
+   \        0xE   0x6801             LDR      R1,[R0, #+0]
+   \       0x10   0x02C9             LSLS     R1,R1,#+11
+   \       0x12   0xD5FC             BPL.N    ??Subroutine2_1
+   \       0x14   0x6900             LDR      R0,[R0, #+16]
+   \       0x16   0xB009             ADD      SP,SP,#+36
+   \       0x18   0xF400 0x2070      AND      R0,R0,#0xF0000
+   \       0x1C   0xBD00             POP      {PC}
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ?_13:
+   \        0x0   0x430A'0000        DC32 1'124'728'832, 0x0, 0x0, 0, 0, 0, 0, 0
+   \              0x0000'0000  
+   \              0x0000'0000  
+   \              0x0000'0000  
+   \              0x0000'0000  
+   \              0x0000'0000  
+   \              0x0000'0000  
+   \              0x0000'0000
+   1055          
+   1056          /***************************************************************************//**
+   1057           * @brief
+   1058           * @deprecated
+   1059           *   This function has been moved to the SE manager, and will be removed in a
+   1060           *   future version of emlib.
+   1061           *
+   1062           *   Returns the current boot status, versions and system configuration.
+   1063           *
+   1064           * @param[out] status
+   1065           *   @ref SE_Status_t containing current SE status.
+   1066           *
+   1067           * @return
+   1068           *   One of the SE_RESPONSE return codes.
+   1069           * @retval SE_RESPONSE_OK upon command completion. Errors are encoded in the
+   1070           *                        different parts of the returned status object.
+   1071           ******************************************************************************/
+
+   \                                 In section .text, align 4, keep-with-next
+   1072          SE_Response_t SE_getStatus(SE_Status_t *status)
+   1073          {
+   \                     SE_getStatus: (+1)
+   \        0x0   0xB570             PUSH     {R4-R6,LR}
+   \        0x2   0xB094             SUB      SP,SP,#+80
+   \        0x4   0x4604             MOV      R4,R0
+   \        0x6   0x2124             MOVS     R1,#+36
+   \        0x8   0x2200             MOVS     R2,#+0
+   \        0xA   0xA803             ADD      R0,SP,#+12
+   \        0xC   0x.... 0x....      BL       __aeabi_memset
+   1074            volatile uint32_t output[9] = { 0 };
+   1075          
+   1076            // SE command structures
+   1077            SE_Command_t command = SE_COMMAND_DEFAULT(SE_COMMAND_GET_STATUS);
+   \       0x10   0xF10D 0x0030      ADD.W    R0,SP,#+48
+   \       0x14   0x....             ADR.N    R1,?_14
+   \       0x16   0x.... 0x....      BL       ?Subroutine4
+   1078            SE_DataTransfer_t outData = SE_DATATRANSFER_DEFAULT((void*)output, 4 * 9);
+   \                     ??CrossCallReturnLabel_9: (+1)
+   \       0x1A   0xBF00             Nop
+   \       0x1C   0x....             ADR.N    R0,?_15
+   \       0x1E   0xE890 0x000E      LDM      R0,{R1-R3}
+   \       0x22   0x466D             MOV      R5,SP
+   \       0x24   0xAE03             ADD      R6,SP,#+12
+   \       0x26   0xE885 0x000E      STM      R5,{R1-R3}
+   \       0x2A   0x9600             STR      R6,[SP, #+0]
+   1079          
+   1080            SE_addDataOutput(&command, &outData);
+   \       0x2C   0x4669             MOV      R1,SP
+   \       0x2E   0xA80C             ADD      R0,SP,#+48
+   \       0x30   0x.... 0x....      BL       SE_addDataOutput
+   1081          
+   1082            // Execute command and return response
+   1083            SE_executeCommand(&command);
+   \       0x34   0xA80C             ADD      R0,SP,#+48
+   \       0x36   0x.... 0x....      BL       SE_executeCommand
+   1084            SE_Response_t res = SE_readCommandResponse();
+   \       0x3A   0x.... 0x....      BL       ?Subroutine3
+   1085          
+   1086            // Update status object
+   1087            status->bootStatus = output[4];
+   \                     ??CrossCallReturnLabel_2: (+1)
+   \       0x3E   0x9A07             LDR      R2,[SP, #+28]
+   \       0x40   0x6022             STR      R2,[R4, #+0]
+   1088            status->seFwVersion = output[5];
+   \       0x42   0x9908             LDR      R1,[SP, #+32]
+   \       0x44   0xF400 0x2070      AND      R0,R0,#0xF0000
+   \       0x48   0x6061             STR      R1,[R4, #+4]
+   1089            status->hostFwVersion = output[6];
+   \       0x4A   0x9909             LDR      R1,[SP, #+36]
+   \       0x4C   0x60A1             STR      R1,[R4, #+8]
+   1090          
+   1091            SE_DebugStatus_t debugStatus;
+   1092            debugStatus.debugLockEnabled = (output[7] & (1 << 0));
+   \       0x4E   0xA903             ADD      R1,SP,#+12
+   \       0x50   0x69CD             LDR      R5,[R1, #+28]
+   1093            debugStatus.deviceEraseEnabled = (output[7] & (1 << 1));
+   \       0x52   0x69CA             LDR      R2,[R1, #+28]
+   1094            debugStatus.secureDebugEnabled = (output[7] & (1 << 2));
+   \       0x54   0x69CB             LDR      R3,[R1, #+28]
+   1095            status->debugStatus = debugStatus;
+   \       0x56   0x0852             LSRS     R2,R2,#+1
+   \       0x58   0xF005 0x0501      AND      R5,R5,#0x1
+   \       0x5C   0x089B             LSRS     R3,R3,#+2
+   \       0x5E   0xF002 0x0201      AND      R2,R2,#0x1
+   \       0x62   0xF003 0x0301      AND      R3,R3,#0x1
+   \       0x66   0x7325             STRB     R5,[R4, #+12]
+   \       0x68   0x7362             STRB     R2,[R4, #+13]
+   \       0x6A   0x73A3             STRB     R3,[R4, #+14]
+   1096          
+   1097            status->secureBootEnabled = ((output[8] & 0x1) && ((output[8] & ~0x1) == 0));
+   \       0x6C   0x6A0B             LDR      R3,[R1, #+32]
+   \       0x6E   0x07DA             LSLS     R2,R3,#+31
+   \       0x70   0xD506             BPL.N    ??SE_getStatus_0
+   \       0x72   0x6A09             LDR      R1,[R1, #+32]
+   \       0x74   0x0849             LSRS     R1,R1,#+1
+   \       0x76   0x0049             LSLS     R1,R1,#+1
+   \       0x78   0x1E49             SUBS     R1,R1,#+1
+   \       0x7A   0x4189             SBCS     R1,R1,R1
+   \       0x7C   0x0FC9             LSRS     R1,R1,#+31
+   \       0x7E   0xE000             B.N      ??SE_getStatus_1
+   \                     ??SE_getStatus_0: (+1)
+   \       0x80   0x2100             MOVS     R1,#+0
+   \                     ??SE_getStatus_1: (+1)
+   \       0x82   0x73E1             STRB     R1,[R4, #+15]
+   1098          
+   1099            return res;
+   \       0x84   0xB014             ADD      SP,SP,#+80
+   \       0x86   0xBD70             POP      {R4-R6,PC}
+   1100          }
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ?_14:
+   \        0x0   0xFE01'0000        DC32 4'261'478'400, 0x0, 0x0, 0, 0, 0, 0, 0
+   \              0x0000'0000  
+   \              0x0000'0000  
+   \              0x0000'0000  
+   \              0x0000'0000  
+   \              0x0000'0000  
+   \              0x0000'0000  
+   \              0x0000'0000
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ?_15:
+   \        0x0   0x0000'0000        DC32 0x0, 0x1, 536'870'948
+   \              0x0000'0001  
+   \              0x2000'0024
+   1101          
+   1102          /***************************************************************************//**
+   1103           * @brief
+   1104           * @deprecated
+   1105           *   This function has been moved to the SE manager, and will be removed in a
+   1106           *   future version of emlib.
+   1107           *
+   1108           *   Read the serial number of the SE module.
+   1109           *
+   1110           * @param[out] serial
+   1111           *   Pointer to array of size 16 bytes.
+   1112           *
+   1113           * @return
+   1114           *   One of the @ref SE_Response_t return codes.
+   1115           * @retval SE_RESPONSE_OK when serial number is returned successfully,
+   1116           * @retval SE_RESPONSE_INTERNAL_ERROR if not.
+   1117           ******************************************************************************/
+
+   \                                 In section .text, align 4, keep-with-next
+   1118          SE_Response_t SE_serialNumber(void *serial)
+   1119          {
+   \                     SE_serialNumber: (+1)
+   \        0x0   0xE92D 0x43F0      PUSH     {R4-R9,LR}
+   \        0x4   0xB08B             SUB      SP,SP,#+44
+   \        0x6   0x4604             MOV      R4,R0
+   1120            // SE command structures
+   1121            SE_Command_t command = SE_COMMAND_DEFAULT(SE_COMMAND_READ_SERIAL);
+   \        0x8   0xF10D 0x000C      ADD.W    R0,SP,#+12
+   \        0xC   0x....             ADR.N    R1,?_16
+   \        0xE   0x.... 0x....      BL       ?Subroutine4
+   1122            SE_DataTransfer_t outData = SE_DATATRANSFER_DEFAULT(serial, 16);
+   \                     ??CrossCallReturnLabel_10: (+1)
+   \       0x12   0xBF00             Nop
+   \       0x14   0x....             ADR.N    R5,?_17
+   \       0x16   0xE895 0x01C0      LDM      R5,{R6-R8}
+   \       0x1A   0x46E9             MOV      R9,SP
+   1123          
+   1124            SE_addDataOutput(&command, &outData);
+   \       0x1C   0x4669             MOV      R1,SP
+   \       0x1E   0xE889 0x01C0      STM      R9,{R6-R8}
+   \       0x22   0x9400             STR      R4,[SP, #+0]
+   \       0x24   0xA803             ADD      R0,SP,#+12
+   \       0x26   0x.... 0x....      BL       SE_addDataOutput
+   1125          
+   1126            // Execute command and return response
+   1127            SE_executeCommand(&command);
+   \       0x2A   0xA803             ADD      R0,SP,#+12
+   \       0x2C   0x.... 0x....      BL       SE_executeCommand
+   1128            SE_Response_t res = SE_readCommandResponse();
+   \       0x30   0x.... 0x....      BL       ?Subroutine3
+   1129            return res;
+   \                     ??CrossCallReturnLabel_3: (+1)
+   \       0x34   0xB00B             ADD      SP,SP,#+44
+   \       0x36                      REQUIRE ?Subroutine1
+   \       0x36                      ;; // Fall through to label ?Subroutine1
+   1130          }
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ?_16:
+   \        0x0   0xFE00'0000        DC32 4'261'412'864, 0x0, 0x0, 0, 0, 0, 0, 0
+   \              0x0000'0000  
+   \              0x0000'0000  
+   \              0x0000'0000  
+   \              0x0000'0000  
+   \              0x0000'0000  
+   \              0x0000'0000  
+   \              0x0000'0000
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ?_17:
+   \        0x0   0x0000'0000        DC32 0x0, 0x1, 536'870'928
+   \              0x0000'0001  
+   \              0x2000'0010
+   1131          
+   1132          /***************************************************************************//**
+   1133           * @brief
+   1134           * @deprecated
+   1135           *   This function has been moved to the SE manager, and will be removed in a
+   1136           *   future version of emlib.
+   1137           *
+   1138           *   Read pubkey or pubkey signature.
+   1139           *
+   1140           * @details
+   1141           *   Read out a public key stored in the SE, or its signature. The command can
+   1142           *   be used to read:
+   1143           *   * SE_KEY_TYPE_BOOT
+   1144           *   * SE_KEY_TYPE_AUTH
+   1145           *
+   1146           * @param[in] key_type
+   1147           *   ID of key type to read.
+   1148           *
+   1149           * @param[out] pubkey
+   1150           *   Pointer to a buffer to contain the returned public key.
+   1151           *   Must be word aligned and have a length of 64 bytes.
+   1152           *
+   1153           * @param[in] numBytes
+   1154           *   Length of pubkey buffer (64 bytes).
+   1155           *
+   1156           * @param[in] signature
+   1157           *   If true, the function will return the signature programmed for the
+   1158           *   specified public key instead of the public key itself.
+   1159           *
+   1160           * @return
+   1161           *   One of the SE_RESPONSE return codes.
+   1162           * @retval SE_RESPONSE_OK when the command was executed successfully
+   1163           * @retval SE_RESPONSE_TEST_FAILED when the pubkey is not set
+   1164           * @retval SE_RESPONSE_INVALID_PARAMETER when an invalid type is passed
+   1165           ******************************************************************************/
+
+   \                                 In section .text, align 4, keep-with-next
+   1166          SE_Response_t SE_readPubkey(uint32_t key_type, void *pubkey, uint32_t numBytes, bool signature)
+   1167          {
+   \                     SE_readPubkey: (+1)
+   \        0x0   0xE92D 0x41F8      PUSH     {R3-R8,LR}
+   \        0x4   0x4606             MOV      R6,R0
+   \        0x6   0xB08B             SUB      SP,SP,#+44
+   \        0x8   0x460D             MOV      R5,R1
+   \        0xA   0x4614             MOV      R4,R2
+   \        0xC   0x4698             MOV      R8,R3
+   1168            EFM_ASSERT((key_type == SE_KEY_TYPE_BOOT)
+   1169                       || (key_type == SE_KEY_TYPE_AUTH));
+   \        0xE   0x....             LDR.N    R7,??DataTable33
+   \       0x10   0xF5B6 0x7F80      CMP      R6,#+256
+   \       0x14   0xBF18             IT       NE
+   \       0x16   0xF5B6 0x7F00      CMPNE    R6,#+512
+   \       0x1A   0xD004             BEQ.N    ??SE_readPubkey_0
+   \       0x1C   0xF240 0x4191      MOVW     R1,#+1169
+   \       0x20   0x4638             MOV      R0,R7
+   \       0x22   0x.... 0x....      BL       assertEFM
+   1170          
+   1171            EFM_ASSERT(numBytes == 64);
+   \                     ??SE_readPubkey_0: (+1)
+   \       0x26   0x2C40             CMP      R4,#+64
+   \       0x28   0xD004             BEQ.N    ??SE_readPubkey_1
+   \       0x2A   0xF240 0x4193      MOVW     R1,#+1171
+   \       0x2E   0x4638             MOV      R0,R7
+   \       0x30   0x.... 0x....      BL       assertEFM
+   1172            EFM_ASSERT(!((size_t)pubkey & 3U));
+   \                     ??SE_readPubkey_1: (+1)
+   \       0x34   0xF015 0x0003      ANDS     R0,R5,#0x3
+   \       0x38   0xD004             BEQ.N    ??SE_readPubkey_2
+   \       0x3A   0xF240 0x4194      MOVW     R1,#+1172
+   \       0x3E   0x4638             MOV      R0,R7
+   \       0x40   0x.... 0x....      BL       assertEFM
+   1173          
+   1174            // SE command structures
+   1175            uint32_t commandWord =
+   1176              (signature) ? SE_COMMAND_READ_PUBKEY_SIGNATURE : SE_COMMAND_READ_PUBKEY;
+   \                     ??SE_readPubkey_2: (+1)
+   \       0x44   0xF1B8 0x0F00      CMP      R8,#+0
+   \       0x48   0xBF14             ITE      NE
+   \       0x4A   0x....             LDRNE.N  R7,??DataTable33_6
+   \       0x4C   0x....             LDREQ.N  R7,??DataTable33_7
+   1177            SE_Command_t command = SE_COMMAND_DEFAULT(commandWord | key_type);
+   \       0x4E   0xA803             ADD      R0,SP,#+12
+   \       0x50   0x2120             MOVS     R1,#+32
+   \       0x52   0x.... 0x....      BL       __aeabi_memclr4
+   \       0x56   0x433E             ORRS     R6,R6,R7
+   \       0x58   0x9603             STR      R6,[SP, #+12]
+   1178          
+   1179            SE_DataTransfer_t pubkeyData = SE_DATATRANSFER_DEFAULT(pubkey, numBytes);
+   \       0x5A   0xBF00             Nop
+   \       0x5C   0x....             ADR.N    R1,?_19
+   \       0x5E   0xE891 0x40C0      LDM      R1,{R6,R7,LR}
+   \       0x62   0x46E8             MOV      R8,SP
+   \       0x64   0xF044 0x5400      ORR      R4,R4,#0x20000000
+   \       0x68   0xE888 0x40C0      STM      R8,{R6,R7,LR}
+   \       0x6C   0x9500             STR      R5,[SP, #+0]
+   \       0x6E   0x9402             STR      R4,[SP, #+8]
+   1180            SE_addDataOutput(&command, &pubkeyData);
+   \       0x70   0x4669             MOV      R1,SP
+   \       0x72   0xA803             ADD      R0,SP,#+12
+   \       0x74   0x.... 0x....      BL       SE_addDataOutput
+   1181          
+   1182            SE_executeCommand(&command);
+   \       0x78   0xA803             ADD      R0,SP,#+12
+   \       0x7A   0x.... 0x....      BL       SE_executeCommand
+   1183            SE_Response_t res = SE_readCommandResponse();
+   \       0x7E   0x.... 0x....      BL       ?Subroutine3
+   1184            return res;
+   \                     ??CrossCallReturnLabel_4: (+1)
+   \       0x82   0xB00C             ADD      SP,SP,#+48
+   \       0x84   0xF400 0x2070      AND      R0,R0,#0xF0000
+   \       0x88   0xE8BD 0x81F0      POP      {R4-R8,PC}
+   1185          }
+
+   \                                 In section .rodata, align 4, keep-with-next
+   \                     ?_18:
+   \        0x0   0x0000'0000        DC32 0, 0x0, 0x0, 0, 0, 0, 0, 0
+   \              0x0000'0000  
+   \              0x0000'0000  
+   \              0x0000'0000  
+   \              0x0000'0000  
+   \              0x0000'0000  
+   \              0x0000'0000  
+   \              0x0000'0000
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ?_19:
+   \        0x0   0x0000'0000        DC32 0x0, 0x1, 0
+   \              0x0000'0001  
+   \              0x0000'0000
+   1186          
+   1187          /***************************************************************************//**
+   1188           * @brief
+   1189           * @deprecated
+   1190           *   This function has been moved to the SE manager, and will be removed in a
+   1191           *   future version of emlib.
+   1192           *
+   1193           *   Returns the current debug lock configuration.
+   1194           * @param[out] status
+   1195           *   The command returns a @ref SE_DebugStatus_t with the current status of the
+   1196           *   debug configuration.
+   1197           * @return
+   1198           *   One of the SE_RESPONSE return codes.
+   1199           * @retval SE_RESPONSE_OK when the command was executed successfully.
+   1200           * @retval SE_RESPONSE_INTERNAL_ERROR if there are configuration errors.
+   1201           ******************************************************************************/
+
+   \                                 In section .text, align 4, keep-with-next
+   1202          SE_Response_t SE_debugLockStatus(SE_DebugStatus_t *status)
+   1203          {
+   \                     SE_debugLockStatus: (+1)
+   \        0x0   0xB570             PUSH     {R4-R6,LR}
+   \        0x2   0xB08C             SUB      SP,SP,#+48
+   \        0x4   0x4604             MOV      R4,R0
+   1204            SE_Response_t res;
+   1205          
+   1206            // SE command structures
+   1207            SE_Command_t command = SE_COMMAND_DEFAULT(SE_COMMAND_DBG_LOCK_STATUS);
+   \        0x6   0xA804             ADD      R0,SP,#+16
+   \        0x8   0x....             ADR.N    R1,?_20
+   \        0xA   0x.... 0x....      BL       ?Subroutine4
+   1208          
+   1209            volatile uint32_t status_word = 0;
+   \                     ??CrossCallReturnLabel_11: (+1)
+   \        0xE   0x2600             MOVS     R6,#+0
+   \       0x10   0x9600             STR      R6,[SP, #+0]
+   1210            SE_DataTransfer_t statusData = SE_DATATRANSFER_DEFAULT((void*)&status_word, 4);
+   \       0x12   0xBF00             Nop
+   \       0x14   0x....             ADR.N    R0,?_21
+   \       0x16   0xE890 0x000E      LDM      R0,{R1-R3}
+   \       0x1A   0xAD01             ADD      R5,SP,#+4
+   \       0x1C   0x466E             MOV      R6,SP
+   \       0x1E   0xE885 0x000E      STM      R5,{R1-R3}
+   \       0x22   0x9601             STR      R6,[SP, #+4]
+   1211            SE_addDataOutput(&command, &statusData);
+   \       0x24   0xA901             ADD      R1,SP,#+4
+   \       0x26   0xA804             ADD      R0,SP,#+16
+   \       0x28   0x.... 0x....      BL       SE_addDataOutput
+   1212          
+   1213            SE_executeCommand(&command);
+   \       0x2C   0xA804             ADD      R0,SP,#+16
+   \       0x2E   0x.... 0x....      BL       SE_executeCommand
+   1214            res = SE_readCommandResponse();
+   \       0x32   0x.... 0x....      BL       ?Subroutine3
+   1215          
+   1216            status->debugLockEnabled = (status_word & (1 << 0));
+   \                     ??CrossCallReturnLabel_5: (+1)
+   \       0x36   0x9A00             LDR      R2,[SP, #+0]
+   \       0x38   0xF002 0x0201      AND      R2,R2,#0x1
+   \       0x3C   0x7022             STRB     R2,[R4, #+0]
+   1217            status->deviceEraseEnabled = (status_word & (1 << 1));
+   \       0x3E   0x9900             LDR      R1,[SP, #+0]
+   1218            status->secureDebugEnabled = (status_word & (1 << 2));
+   1219          
+   1220            return res;
+   \       0x40   0xF400 0x2070      AND      R0,R0,#0xF0000
+   \       0x44   0x0849             LSRS     R1,R1,#+1
+   \       0x46   0xF001 0x0101      AND      R1,R1,#0x1
+   \       0x4A   0x7061             STRB     R1,[R4, #+1]
+   \       0x4C   0x9900             LDR      R1,[SP, #+0]
+   \       0x4E   0x0889             LSRS     R1,R1,#+2
+   \       0x50   0xF001 0x0101      AND      R1,R1,#0x1
+   \       0x54   0x70A1             STRB     R1,[R4, #+2]
+   \       0x56   0xB00C             ADD      SP,SP,#+48
+   \       0x58   0xBD70             POP      {R4-R6,PC}
+   1221          }
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ?_20:
+   \        0x0   0x4311'0000        DC32 1'125'187'584, 0x0, 0x0, 0, 0, 0, 0, 0
+   \              0x0000'0000  
+   \              0x0000'0000  
+   \              0x0000'0000  
+   \              0x0000'0000  
+   \              0x0000'0000  
+   \              0x0000'0000  
+   \              0x0000'0000
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ?_21:
+   \        0x0   0x0000'0000        DC32 0x0, 0x1, 536'870'916
+   \              0x0000'0001  
+   \              0x2000'0004
+   1222          
+   1223          /***************************************************************************//**
+   1224           * @brief
+   1225           * @deprecated
+   1226           *   This function has been moved to the SE manager, and will be removed in a
+   1227           *   future version of emlib.
+   1228           *
+   1229           *   Enables the debug lock for the part.
+   1230           * @details
+   1231           *   The debug port will be closed and the only way to open it is through
+   1232           *   device erase (if enabled) or temporarily through secure debug unlock (if
+   1233           *   enabled).
+   1234           *
+   1235           * @return
+   1236           *   One of the SE_RESPONSE return codes.
+   1237           * @retval SE_RESPONSE_OK when the command was executed successfully.
+   1238           * @retval SE_RESPONSE_INTERNAL_ERROR there was a problem locking the debug port.
+   1239           ******************************************************************************/
+
+   \                                 In section .text, align 4, keep-with-next
+   1240          SE_Response_t SE_debugLockApply(void)
+   1241          {
+   \                     SE_debugLockApply: (+1)
+   \        0x0   0xB580             PUSH     {R7,LR}
+   \        0x2   0xB088             SUB      SP,SP,#+32
+   1242            SE_Command_t command = SE_COMMAND_DEFAULT(SE_COMMAND_DBG_LOCK_APPLY);
+   \        0x4   0xEA4F 0x000D      MOV.W    R0,SP
+   \        0x8   0x....             ADR.N    R1,?_22
+   \        0xA   0x....             B.N      ?Subroutine2
+   1243            SE_executeCommand(&command);
+   1244          
+   1245            return SE_readCommandResponse();
+   1246          }
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ?_22:
+   \        0x0   0x430C'0000        DC32 1'124'859'904, 0x0, 0x0, 0, 0, 0, 0, 0
+   \              0x0000'0000  
+   \              0x0000'0000  
+   \              0x0000'0000  
+   \              0x0000'0000  
+   \              0x0000'0000  
+   \              0x0000'0000  
+   \              0x0000'0000
+   1247          
+   1248          /***************************************************************************//**
+   1249           * @brief
+   1250           * @deprecated
+   1251           *   This function has been moved to the SE manager, and will be removed in a
+   1252           *   future version of emlib.
+   1253           *
+   1254           *   Enables the secure debug functionality.
+   1255           * @details
+   1256           *   Enables the secure debug functionality. This functionality makes it
+   1257           *   possible to open a locked debug port by signing a cryptographic challenge
+   1258           *   and using the debug command interface (DCI).
+   1259           *
+   1260           *   This command can only be executed before the debug port is locked, and
+   1261           *   after a secure debug public key has been installed in the SE using
+   1262           *   @ref SE_initPubkey() or the corresponding DCI command.
+   1263           *
+   1264           * @return
+   1265           *   One of the SE_RESPONSE return codes.
+   1266           * @retval SE_RESPONSE_OK when the command was executed successfully.
+   1267           * @retval SE_RESPONSE_INVALID_COMMAND if debug port is locked.
+   1268           * @retval SE_RESPONSE_INVALID_PARAMETER if secure debug certificates are
+   1269           *                                       missing.
+   1270           * @retval SE_RESPONSE_INTERNAL_ERROR if there was a problem during execution.
+   1271           ******************************************************************************/
+
+   \                                 In section .text, align 4, keep-with-next
+   1272          SE_Response_t SE_debugSecureEnable(void)
+   1273          {
+   \                     SE_debugSecureEnable: (+1)
+   \        0x0   0xB580             PUSH     {R7,LR}
+   \        0x2   0xB088             SUB      SP,SP,#+32
+   1274            SE_Command_t command = SE_COMMAND_DEFAULT(SE_COMMAND_DBG_LOCK_ENABLE_SECURE);
+   \        0x4   0xEA4F 0x000D      MOV.W    R0,SP
+   \        0x8   0x....             ADR.N    R1,?_23
+   \        0xA                      REQUIRE ?Subroutine2
+   \        0xA                      ;; // Fall through to label ?Subroutine2
+   1275            SE_executeCommand(&command);
+   1276          
+   1277            return SE_readCommandResponse();
+   1278          }
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ?_23:
+   \        0x0   0x430D'0000        DC32 1'124'925'440, 0x0, 0x0, 0, 0, 0, 0, 0
+   \              0x0000'0000  
+   \              0x0000'0000  
+   \              0x0000'0000  
+   \              0x0000'0000  
+   \              0x0000'0000  
+   \              0x0000'0000  
+   \              0x0000'0000
+   1279          
+   1280          /***************************************************************************//**
+   1281           * @brief
+   1282           * @deprecated
+   1283           *   This function has been moved to the SE manager, and will be removed in a
+   1284           *   future version of emlib.
+   1285           *
+   1286           *   Disables the secure debug functionality.
+   1287           * @details
+   1288           *   Disables the secure debug functionality that can be used to open a
+   1289           *   locked debug port.
+   1290           * @return
+   1291           *   One of the SE_RESPONSE return codes.
+   1292           * @retval SE_RESPONSE_OK when the command was executed successfully.
+   1293           * @retval SE_RESPONSE_INTERNAL_ERROR if there was a problem during execution.
+   1294           ******************************************************************************/
+
+   \                                 In section .text, align 4, keep-with-next
+   1295          SE_Response_t SE_debugSecureDisable(void)
+   1296          {
+   \                     SE_debugSecureDisable: (+1)
+   \        0x0   0xB580             PUSH     {R7,LR}
+   \        0x2   0xB088             SUB      SP,SP,#+32
+   1297            SE_Command_t command = SE_COMMAND_DEFAULT(SE_COMMAND_DBG_LOCK_DISABLE_SECURE);
+   \        0x4   0xEA4F 0x000D      MOV.W    R0,SP
+   \        0x8   0x....             ADR.N    R1,?_24
+   \        0xA   0x....             B.N      ?Subroutine2
+   1298            SE_executeCommand(&command);
+   1299          
+   1300            return SE_readCommandResponse();
+   1301          }
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ?_24:
+   \        0x0   0x430E'0000        DC32 1'124'990'976, 0x0, 0x0, 0, 0, 0, 0, 0
+   \              0x0000'0000  
+   \              0x0000'0000  
+   \              0x0000'0000  
+   \              0x0000'0000  
+   \              0x0000'0000  
+   \              0x0000'0000  
+   \              0x0000'0000
+   1302          
+   1303          /***************************************************************************//**
+   1304           * @brief
+   1305           * @deprecated
+   1306           *   This function has been moved to the SE manager, and will be removed in a
+   1307           *   future version of emlib.
+   1308           *
+   1309           *   Performs a device mass erase and debug unlock.
+   1310           *
+   1311           * @details
+   1312           *   Performs a device mass erase and resets the debug configuration to its
+   1313           *   initial unlocked state. Only available before @ref SE_deviceEraseDisable or
+   1314           *   the corresponding DCI command has been executed.
+   1315           *
+   1316           * @note
+   1317           *   This command clears and verifies the complete flash and ram of the
+   1318           *   system, excluding the user data pages and one-time programmable
+   1319           *   commissioning information in the secure element.
+   1320           *
+   1321           * @return
+   1322           *   One of the SE_RESPONSE return codes.
+   1323           * @retval SE_RESPONSE_OK when the command was executed successfully.
+   1324           * @retval SE_RESPONSE_INVALID_COMMAND if device erase is disabled.
+   1325           * @retval SE_RESPONSE_INTERNAL_ERROR if there was a problem during execution.
+   1326           ******************************************************************************/
+
+   \                                 In section .text, align 4, keep-with-next
+   1327          SE_Response_t SE_deviceErase(void)
+   1328          {
+   \                     SE_deviceErase: (+1)
+   \        0x0   0xB580             PUSH     {R7,LR}
+   \        0x2   0xB088             SUB      SP,SP,#+32
+   1329            SE_Command_t command = SE_COMMAND_DEFAULT(SE_COMMAND_DEVICE_ERASE);
+   \        0x4   0xEA4F 0x000D      MOV.W    R0,SP
+   \        0x8   0x....             ADR.N    R1,?_25
+   \        0xA   0x....             B.N      ?Subroutine2
+   1330            SE_executeCommand(&command);
+   1331          
+   1332            return SE_readCommandResponse();
+   1333          }
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ?_25:
+   \        0x0   0x430F'0000        DC32 1'125'056'512, 0x0, 0x0, 0, 0, 0, 0, 0
+   \              0x0000'0000  
+   \              0x0000'0000  
+   \              0x0000'0000  
+   \              0x0000'0000  
+   \              0x0000'0000  
+   \              0x0000'0000  
+   \              0x0000'0000
+   1334          
+   1335          /***************************************************************************//**
+   1336           * @brief
+   1337           * @deprecated
+   1338           *   This function has been moved to the SE manager, and will be removed in a
+   1339           *   future version of emlib.
+   1340           *
+   1341           *   Disabled device erase functionality.
+   1342           *
+   1343           * @details
+   1344           *   This command disables the device erase command. It does not lock the
+   1345           *   debug interface to the part, but it is a permanent action for the part.
+   1346           *   If device erase is disabled and the device is debug locked, there is no
+   1347           *   way to permanently unlock the part. If secure debug unlock is enabled,
+   1348           *   secure debug unlock can still be used to temporarily open the debug port.
+   1349           *
+   1350           * @warning
+   1351           *   This command permanently disables the device erase functionality!
+   1352           *
+   1353           * @return
+   1354           *   One of the SE_RESPONSE return codes.
+   1355           * @retval SE_RESPONSE_OK when the command was executed successfully.
+   1356           * @retval SE_RESPONSE_INTERNAL_ERROR if there was a problem during execution.
+   1357           ******************************************************************************/
+
+   \                                 In section .text, align 4, keep-with-next
+   1358          SE_Response_t SE_deviceEraseDisable(void)
+   1359          {
+   \                     SE_deviceEraseDisable: (+1)
+   \        0x0   0xB580             PUSH     {R7,LR}
+   \        0x2   0xB088             SUB      SP,SP,#+32
+   1360            SE_Command_t command = SE_COMMAND_DEFAULT(SE_COMMAND_DEVICE_ERASE_DISABLE);
+   \        0x4   0xEA4F 0x000D      MOV.W    R0,SP
+   \        0x8   0x....             ADR.N    R1,?_26
+   \        0xA   0x....             B.N      ?Subroutine2
+   1361            SE_executeCommand(&command);
+   1362          
+   1363            return SE_readCommandResponse();
+   1364          }
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ?_26:
+   \        0x0   0x4310'0000        DC32 1'125'122'048, 0x0, 0x0, 0, 0, 0, 0, 0
+   \              0x0000'0000  
+   \              0x0000'0000  
+   \              0x0000'0000  
+   \              0x0000'0000  
+   \              0x0000'0000  
+   \              0x0000'0000  
+   \              0x0000'0000
+
+   \                                 In section .text, align 2, keep-with-next
+   \                     ?Subroutine3: (+1)
+   \        0x0   0x....             LDR.N    R0,??DataTable33_3
+   \                     ??Subroutine3_0: (+1)
+   \        0x2   0x6801             LDR      R1,[R0, #+0]
+   \        0x4   0x02C9             LSLS     R1,R1,#+11
+   \        0x6   0xD5FC             BPL.N    ??Subroutine3_0
+   \        0x8   0x6900             LDR      R0,[R0, #+16]
+   \        0xA   0x4770             BX       LR
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable33:
+   \        0x0   0x....'....        DC32     ?_0
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable33_1:
+   \        0x0   0xFF07'0001        DC32     0xff070001
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable33_2:
+   \        0x0   0xFF09'0001        DC32     0xff090001
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable33_3:
+   \        0x0   0x4C00'0044        DC32     0x4c000044
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable33_4:
+   \        0x0   0x....'....        DC32     `SE_initOTP::reservedSettings`
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable33_5:
+   \        0x0   0xDE1E'7EAD        DC32     0xde1e7ead
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable33_6:
+   \        0x0   0xFF0A'0001        DC32     0xff0a0001
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable33_7:
+   \        0x0   0xFF08'0001        DC32     0xff080001
+
+   \                                 In section .rodata, align 4
+   \                     ?_0:
+   \        0x0   0x43 0x3A          DC8 0x43, 0x3A, 0x5C, 0x55, 0x73, 0x65, 0x72, 0x73
+   \              0x5C 0x55    
+   \              0x73 0x65    
+   \              0x72 0x73
+   \        0x8   0x5C 0x44          DC8 0x5C, 0x44, 0x45, 0x4C, 0x4C, 0x5C, 0x53, 0x69
+   \              0x45 0x4C    
+   \              0x4C 0x5C    
+   \              0x53 0x69
+   \       0x10   0x6D 0x70          DC8 0x6D, 0x70, 0x6C, 0x69, 0x63, 0x69, 0x74, 0x79
+   \              0x6C 0x69    
+   \              0x63 0x69    
+   \              0x74 0x79
+   \       0x18   0x53 0x74          DC8 0x53, 0x74, 0x75, 0x64, 0x69, 0x6F, 0x5C, 0x76
+   \              0x75 0x64    
+   \              0x69 0x6F    
+   \              0x5C 0x76
+   \       0x20   0x35 0x5F          DC8 0x35, 0x5F, 0x77, 0x6F, 0x72, 0x6B, 0x73, 0x70
+   \              0x77 0x6F    
+   \              0x72 0x6B    
+   \              0x73 0x70
+   \       0x28   0x61 0x63          DC8 0x61, 0x63, 0x65, 0x5C, 0x77, 0x69, 0x73, 0x75
+   \              0x65 0x5C    
+   \              0x77 0x69    
+   \              0x73 0x75
+   \       0x30   0x6E 0x5F          DC8 0x6E, 0x5F, 0x72, 0x63, 0x70, 0x5F, 0x37, 0x5C
+   \              0x72 0x63    
+   \              0x70 0x5F    
+   \              0x37 0x5C
+   \       0x38   0x67 0x65          DC8 0x67, 0x65, 0x63, 0x6B, 0x6F, 0x5F, 0x73, 0x64
+   \              0x63 0x6B    
+   \              0x6F 0x5F    
+   \              0x73 0x64
+   \       0x40   0x6B 0x5F          DC8 0x6B, 0x5F, 0x34, 0x2E, 0x34, 0x2E, 0x33, 0x5C
+   \              0x34 0x2E    
+   \              0x34 0x2E    
+   \              0x33 0x5C
+   \       0x48   0x70 0x6C          DC8 0x70, 0x6C, 0x61, 0x74, 0x66, 0x6F, 0x72, 0x6D
+   \              0x61 0x74    
+   \              0x66 0x6F    
+   \              0x72 0x6D
+   \       0x50   0x5C 0x65          DC8 0x5C, 0x65, 0x6D, 0x6C, 0x69, 0x62, 0x5C, 0x73
+   \              0x6D 0x6C    
+   \              0x69 0x62    
+   \              0x5C 0x73
+   \       0x58   0x72 0x63          DC8 0x72, 0x63, 0x5C, 0x65, 0x6D, 0x5F, 0x73, 0x65
+   \              0x5C 0x65    
+   \              0x6D 0x5F    
+   \              0x73 0x65
+   \       0x60   0x2E 0x63          DC8 0x2E, 0x63, 0
+   \              0x00
+   \       0x63                      DS8 1
+   1365          
+   1366          #endif // #if defined(SEMAILBOX_PRESENT)
+   1367          #endif // #if !defined(SLI_EM_SE_HOST)
+   1368          
+   1369          /** @} (end addtogroup deprecated_se) */
+   1370          /** @} (end addtogroup se) */
+   1371          
+   1372          #endif /* defined(SEMAILBOX_PRESENT) || defined(CRYPTOACC_PRESENT) */
+
+   Maximum stack usage in bytes:
+
+   .cstack Function
+   ------- --------
+       0   SE_addDataInput
+       0   SE_addDataOutput
+       0   SE_addParameter
+         0   -> assertEFM
+      40   SE_debugLockApply
+        40   -> SE_executeCommand
+        40   -> __aeabi_memcpy4
+      64   SE_debugLockStatus
+        64   -> SE_addDataOutput
+        64   -> SE_executeCommand
+        64   -> __aeabi_memcpy4
+      40   SE_debugSecureDisable
+        40   -> SE_executeCommand
+        40   -> __aeabi_memcpy4
+      40   SE_debugSecureEnable
+        40   -> SE_executeCommand
+        40   -> __aeabi_memcpy4
+      40   SE_deviceErase
+        40   -> SE_executeCommand
+        40   -> __aeabi_memcpy4
+      40   SE_deviceEraseDisable
+        40   -> SE_executeCommand
+        40   -> __aeabi_memcpy4
+      40   SE_eraseUserData
+        40   -> SE_addParameter
+        40   -> SE_executeCommand
+        40   -> __aeabi_memcpy4
+       0   SE_executeCommand
+         0   -> assertEFM
+      96   SE_getStatus
+        96   -> SE_addDataOutput
+        96   -> SE_executeCommand
+        96   -> __aeabi_memcpy4
+        96   -> __aeabi_memset
+     176   SE_initOTP
+       176   -> SE_addDataInput
+       176   -> SE_addDataOutput
+       176   -> SE_executeCommand
+       176   -> __aeabi_memcpy4
+       176   -> assertEFM
+      88   SE_initPubkey
+        88   -> SE_addDataInput
+        88   -> SE_executeCommand
+        88   -> __aeabi_memclr4
+        88   -> assertEFM
+      72   SE_readPubkey
+        72   -> SE_addDataOutput
+        72   -> SE_executeCommand
+        72   -> __aeabi_memclr4
+        72   -> assertEFM
+      72   SE_serialNumber
+        72   -> SE_addDataOutput
+        72   -> SE_executeCommand
+        72   -> __aeabi_memcpy4
+      80   SE_writeUserData
+        80   -> SE_addDataInput
+        80   -> SE_addParameter
+        80   -> SE_executeCommand
+        80   -> __aeabi_memcpy4
+
+
+   Section sizes:
+
+   Bytes  Function/Label
+   -----  --------------
+       4  ??DataTable33
+       4  ??DataTable33_1
+       4  ??DataTable33_2
+       4  ??DataTable33_3
+       4  ??DataTable33_4
+       4  ??DataTable33_5
+       4  ??DataTable33_6
+       4  ??DataTable33_7
+       8  ?Subroutine0
+       8  ?Subroutine1
+      30  ?Subroutine2
+      12  ?Subroutine3
+       6  ?Subroutine4
+     100  ?_0
+      32  ?_1
+      12  ?_10
+      32  ?_11
+      12  ?_12
+      32  ?_13
+      32  ?_14
+      12  ?_15
+      32  ?_16
+      12  ?_17
+      32  ?_18
+      12  ?_19
+      12  ?_2
+      32  ?_20
+      12  ?_21
+      32  ?_22
+      32  ?_23
+      32  ?_24
+      32  ?_25
+      32  ?_26
+      12  ?_3
+      32  ?_4
+      12  ?_5
+       8  ?_6
+      32  ?_7
+      12  ?_8
+      12  ?_9
+      20  SE_addDataInput
+      20  SE_addDataOutput
+      24  SE_addParameter
+      12  SE_debugLockApply
+      90  SE_debugLockStatus
+      12  SE_debugSecureDisable
+      10  SE_debugSecureEnable
+      12  SE_deviceErase
+      12  SE_deviceEraseDisable
+      24  SE_eraseUserData
+      64  SE_executeCommand
+     136  SE_getStatus
+     338  SE_initOTP
+     192  SE_initPubkey
+     140  SE_readPubkey
+      54  SE_serialNumber
+      88  SE_writeUserData
+      20  reservedSettings
+
+ 
+    20 bytes in section .data
+   164 bytes in section .rodata
+ 1'868 bytes in section .text
+ 
+ 1'868 bytes of CODE  memory
+   164 bytes of CONST memory
+    20 bytes of DATA  memory
+
+Errors: none
+Warnings: none

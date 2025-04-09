@@ -1,0 +1,675 @@
+###############################################################################
+#
+# IAR ANSI C/C++ Compiler V9.50.2.385/W64 for ARM         29/Mar/2025  15:53:20
+# Copyright 1999-2024 IAR Systems AB.
+#
+#    Cpu mode                     =  thumb
+#    Endian                       =  little
+#    Source file                  =
+#        D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\common\src\sl_string.c
+#    Command line                 =
+#        -f "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\ewarm-iar\obj\src_2571367178678603533.dir\sl_string.o.rsp"
+#        ("D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\common\src\sl_string.c" -D
+#        DEBUG_EFM=1 -D EFR32FG28B322F1024IM48=1 -D
+#        configNUM_SDK_THREAD_LOCAL_STORAGE_POINTERS=2 -D
+#        SL_COMPONENT_CATALOG_PRESENT=1 -D
+#        MBEDTLS_CONFIG_FILE=<sl_mbedtls_config.h> -D
+#        MBEDTLS_PSA_CRYPTO_CONFIG_FILE=<psa_crypto_config.h> -D
+#        SL_RAIL_LIB_MULTIPROTOCOL_SUPPORT=0 -D
+#        SL_RAIL_UTIL_PA_CONFIG_HEADER=<sl_rail_util_pa_config.h> -D
+#        RTT_USE_ASM=0 -lC "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\ewarm-iar\lst\src_2571367178678603533.dir"
+#        --diag_suppress Pa050 -o "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\ewarm-iar\obj\src_2571367178678603533.dir" --no_cse
+#        --no_unroll --no_inline --no_code_motion --no_tbaa --no_clustering
+#        --no_scheduling --debug --endian=little --cpu=Cortex-M33 --cmse --cmse
+#        -e --fpu=VFPv5_sp --dlib_config "C:\Program Files\IAR Systems\Embedded
+#        Workbench 9.2\arm\inc\c\DLib_Config_Normal.h" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\common\src\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App 1\Wisun_Node_App\config\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App 1\Wisun_Node_App\config\rail\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App 1\Wisun_Node_App\config\wisun\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App 1\Wisun_Node_App\.\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\Device\SiliconLabs\EFR32FG28\Include\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\app\wisun\component\app_project_info\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\common\inc\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\service\cli\inc\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\service\cli\src\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\CMSIS\Core\Include\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\CMSIS\RTOS2\Include\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\service\device_init\inc\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\emdrv\common\inc\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\emlib\inc\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\service\iostream\inc\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\security\sl_component\sl_mbedtls_support\config\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\security\sl_component\sl_mbedtls_support\config\preset\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\security\sl_component\sl_mbedtls_support\inc\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\util\third_party\mbedtls\include\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\util\third_party\mbedtls\library\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\micrium_os\common\source\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\micrium_os\common\include\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\micrium_os\cpu\include\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\micrium_os\ports\source\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\micrium_os\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\micrium_os\kernel\source\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\micrium_os\kernel\include\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\emdrv\nvm3\inc\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\peripheral\inc\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\util\third_party\printf\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\util\third_party\printf\inc\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\security\sl_component\sl_psa_driver\inc\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\radio\rail_lib\common\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\radio\rail_lib\protocol\ble\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\radio\rail_lib\protocol\ieee802154\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\radio\rail_lib\protocol\wmbus\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\radio\rail_lib\protocol\zwave\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\radio\rail_lib\chip\efr32\efr32xg2x\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\radio\rail_lib\protocol\sidewalk\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\radio\rail_lib\plugin\pa-conversions\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\radio\rail_lib\plugin\pa-conversions\efr32xg28\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\radio\rail_lib\plugin\rail_util_pti\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\security\sl_component\se_manager\inc\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\security\sl_component\se_manager\src\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\util\third_party\segger\systemview\SEGGER\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\util\silicon_labs\silabs_core\memory_manager\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\common\toolchain\inc\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\service\system\inc\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\app\wisun\component\app_core\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\app\wisun\component\app_setting\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\app\wisun\component\cli_util\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\app\wisun\component\event_manager\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\app\wisun\component\ns_list\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\app\wisun\component\ping\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\app\wisun\component\trace_util\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\app\wisun\component\trace_util\nanostack\nanostack-libservice\mbed-client-libservice\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\app\wisun\component\udp_client\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\service\sleeptimer\inc\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\protocol\wisun\plugin\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\protocol\wisun\stack\inc\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\protocol\wisun\stack\inc\socket\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App 1\Wisun_Node_App\autogen\\" -On
+#        --use_c++_inline) --dependencies=n "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\ewarm-iar\obj\src_2571367178678603533.dir\sl_string.o.iar_deps"
+#    Locale                       =  C
+#    List file                    =
+#        D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\ewarm-iar\lst\src_2571367178678603533.dir\sl_string.lst
+#    Object file                  =
+#        D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\ewarm-iar\obj\src_2571367178678603533.dir\sl_string.o
+#    Runtime model:                  
+#      __CPP_Runtime              =  1
+#      __SystemLibrary            =  DLib
+#      __dlib_file_descriptor     =  0
+#      __dlib_full_locale_support =  0
+#      __dlib_version             =  6
+#
+###############################################################################
+
+D:\Inesh_wisun\Wisun_Node_App 1\Wisun_Node_App\gecko_sdk_4.4.5\platform\common\src\sl_string.c
+      1          /***************************************************************************//**
+      2           * @file
+      3           * @brief Implementation of safe string functions.
+      4           *******************************************************************************
+      5           * # License
+      6           * <b>Copyright 2019 Silicon Laboratories Inc. www.silabs.com</b>
+      7           *******************************************************************************
+      8           *
+      9           * SPDX-License-Identifier: Zlib
+     10           *
+     11           * The licensor of this software is Silicon Laboratories Inc.
+     12           *
+     13           * This software is provided 'as-is', without any express or implied
+     14           * warranty. In no event will the authors be held liable for any damages
+     15           * arising from the use of this software.
+     16           *
+     17           * Permission is granted to anyone to use this software for any purpose,
+     18           * including commercial applications, and to alter it and redistribute it
+     19           * freely, subject to the following restrictions:
+     20           *
+     21           * 1. The origin of this software must not be misrepresented; you must not
+     22           *    claim that you wrote the original software. If you use this software
+     23           *    in a product, an acknowledgment in the product documentation would be
+     24           *    appreciated but is not required.
+     25           * 2. Altered source versions must be plainly marked as such, and must not be
+     26           *    misrepresented as being the original software.
+     27           * 3. This notice may not be removed or altered from any source distribution.
+     28           *
+     29           ******************************************************************************/
+     30          
+     31          #include "sl_string.h"
+     32          #include <stdint.h>
+     33          #include <ctype.h>
+     34          
+     35          /*******************************************************************************
+     36           **************************   GLOBAL FUNCTIONS   *******************************
+     37           ******************************************************************************/
+     38          
+     39          /***************************************************************************//**
+     40           * Copy a string into a buffer.
+     41           ******************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+     42          void sl_strcpy_s(char *dst, size_t dst_size, const char *src)
+     43          {
+   \                     sl_strcpy_s: (+1)
+   \        0x0   0xB410             PUSH     {R4}
+     44            size_t len_copy = 0;
+   \        0x2   0x2400             MOVS     R4,#+0
+     45          
+     46            if (dst == NULL) {
+   \        0x4   0x2800             CMP      R0,#+0
+   \        0x6   0xD011             BEQ.N    ??sl_strcpy_s_0
+     47              return;
+     48            }
+     49            if (src == NULL) {
+   \                     ??sl_strcpy_s_1: (+1)
+   \        0x8   0x2A00             CMP      R2,#+0
+   \        0xA   0xD00F             BEQ.N    ??sl_strcpy_s_0
+     50              return;
+     51            }
+     52            if (dst_size == 0) {
+   \                     ??sl_strcpy_s_2: (+1)
+   \        0xC   0x2900             CMP      R1,#+0
+   \        0xE   0xD00D             BEQ.N    ??sl_strcpy_s_0
+     53              return;
+     54            }
+     55            while ((*src != '\0') && (len_copy < (dst_size - 1))) {
+   \                     ??sl_strcpy_s_3: (+1)
+   \       0x10   0x7813             LDRB     R3,[R2, #+0]
+   \       0x12   0x2B00             CMP      R3,#+0
+   \       0x14   0xD008             BEQ.N    ??sl_strcpy_s_4
+   \       0x16   0x1E4B             SUBS     R3,R1,#+1
+   \       0x18   0x429C             CMP      R4,R3
+   \       0x1A   0xD205             BCS.N    ??sl_strcpy_s_4
+     56              *dst = *src;
+   \       0x1C   0x7813             LDRB     R3,[R2, #+0]
+   \       0x1E   0x7003             STRB     R3,[R0, #+0]
+     57              dst++;
+   \       0x20   0x1C40             ADDS     R0,R0,#+1
+     58              src++;
+   \       0x22   0x1C52             ADDS     R2,R2,#+1
+     59              len_copy++;
+   \       0x24   0x1C64             ADDS     R4,R4,#+1
+   \       0x26   0xE7F3             B.N      ??sl_strcpy_s_3
+     60            }
+     61            *dst = '\0';
+   \                     ??sl_strcpy_s_4: (+1)
+   \       0x28   0x2300             MOVS     R3,#+0
+   \       0x2A   0x7003             STRB     R3,[R0, #+0]
+     62          }
+   \                     ??sl_strcpy_s_0: (+1)
+   \       0x2C   0xBC10             POP      {R4}
+   \       0x2E   0x4770             BX       LR
+     63          
+     64          /***************************************************************************//**
+     65           * Append the source string to the end of destination string
+     66           ******************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+     67          void sl_strcat_s(char *dst, size_t dst_size, const char *src)
+     68          {
+   \                     sl_strcat_s: (+1)
+   \        0x0   0xB5F8             PUSH     {R3-R7,LR}
+   \        0x2   0x0004             MOVS     R4,R0
+   \        0x4   0x000D             MOVS     R5,R1
+   \        0x6   0x0016             MOVS     R6,R2
+     69            size_t ofs;
+     70          
+     71            if (dst == NULL) {
+   \        0x8   0x2C00             CMP      R4,#+0
+   \        0xA   0xD00F             BEQ.N    ??sl_strcat_s_0
+     72              return;
+     73            }
+     74            if (src == NULL) {
+   \                     ??sl_strcat_s_1: (+1)
+   \        0xC   0x2E00             CMP      R6,#+0
+   \        0xE   0xD00D             BEQ.N    ??sl_strcat_s_0
+     75              return;
+     76            }
+     77            if (dst_size == 0) {
+   \                     ??sl_strcat_s_2: (+1)
+   \       0x10   0x2D00             CMP      R5,#+0
+   \       0x12   0xD00B             BEQ.N    ??sl_strcat_s_0
+     78              return;
+     79            }
+     80            ofs = sl_strlen(dst);
+   \                     ??sl_strcat_s_3: (+1)
+   \       0x14   0x0020             MOVS     R0,R4
+   \       0x16   0x.... 0x....      BL       sl_strlen
+   \       0x1A   0x0007             MOVS     R7,R0
+     81            if (ofs < dst_size) {
+   \       0x1C   0x42AF             CMP      R7,R5
+   \       0x1E   0xD205             BCS.N    ??sl_strcat_s_4
+     82              sl_strcpy_s(&dst[ofs], dst_size - ofs, src);
+   \       0x20   0x0032             MOVS     R2,R6
+   \       0x22   0x1BE9             SUBS     R1,R5,R7
+   \       0x24   0xEB04 0x0007      ADD      R0,R4,R7
+   \       0x28   0x.... 0x....      BL       sl_strcpy_s
+     83            }
+     84          }
+   \                     ??sl_strcat_s_4: (+1)
+   \                     ??sl_strcat_s_0: (+1)
+   \       0x2C   0xBDF1             POP      {R0,R4-R7,PC}
+     85          
+     86          /***************************************************************************//**
+     87           * Get the string length
+     88           ******************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+     89          size_t sl_strlen(char *str)
+     90          {
+   \                     sl_strlen: (+1)
+   \        0x0   0xB510             PUSH     {R4,LR}
+   \        0x2   0x0004             MOVS     R4,R0
+     91            return sl_strnlen(str, SIZE_MAX);
+   \        0x4   0xF05F 0x31FF      MOVS     R1,#+4294967295
+   \        0x8   0x0020             MOVS     R0,R4
+   \        0xA   0x.... 0x....      BL       sl_strnlen
+   \        0xE   0xBD10             POP      {R4,PC}
+     92          }
+     93          
+     94          /***************************************************************************//**
+     95           * Get the string length, limited to a given length
+     96           ******************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+     97          size_t sl_strnlen(char *str, size_t max_len)
+     98          {
+   \                     sl_strnlen: (+1)
+   \        0x0   0x0003             MOVS     R3,R0
+     99            size_t len = 0;
+   \        0x2   0x2000             MOVS     R0,#+0
+    100          
+    101            if (str == NULL) {
+   \        0x4   0x2B00             CMP      R3,#+0
+   \        0x6   0xD007             BEQ.N    ??sl_strnlen_0
+    102              return len;
+    103            }
+    104            while ((len < max_len) && (*str != '\0')) {
+   \                     ??sl_strnlen_1: (+1)
+   \        0x8   0x4288             CMP      R0,R1
+   \        0xA   0xD205             BCS.N    ??sl_strnlen_2
+   \        0xC   0x781A             LDRB     R2,[R3, #+0]
+   \        0xE   0x2A00             CMP      R2,#+0
+   \       0x10   0xD002             BEQ.N    ??sl_strnlen_2
+    105              str++;
+   \       0x12   0x1C5B             ADDS     R3,R3,#+1
+    106              len++;
+   \       0x14   0x1C40             ADDS     R0,R0,#+1
+   \       0x16   0xE7F7             B.N      ??sl_strnlen_1
+    107            }
+    108          
+    109            return len;
+   \                     ??sl_strnlen_2: (+1)
+   \                     ??sl_strnlen_0: (+1)
+   \       0x18   0x4770             BX       LR
+    110          }
+    111          
+    112          /***************************************************************************//**
+    113           * Check if string is empty.
+    114           ******************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+    115          bool sl_str_is_empty(const char *str)
+    116          {
+    117            return (str == NULL || *str == '\0');
+   \                     sl_str_is_empty: (+1)
+   \        0x0   0x2800             CMP      R0,#+0
+   \        0x2   0xD002             BEQ.N    ??sl_str_is_empty_0
+   \        0x4   0x7800             LDRB     R0,[R0, #+0]
+   \        0x6   0x2800             CMP      R0,#+0
+   \        0x8   0xD101             BNE.N    ??sl_str_is_empty_1
+   \                     ??sl_str_is_empty_0: (+1)
+   \        0xA   0x2001             MOVS     R0,#+1
+   \        0xC   0xE000             B.N      ??sl_str_is_empty_2
+   \                     ??sl_str_is_empty_1: (+1)
+   \        0xE   0x2000             MOVS     R0,#+0
+   \                     ??sl_str_is_empty_2: (+1)
+   \       0x10   0xB2C0             UXTB     R0,R0
+   \       0x12   0x4770             BX       LR
+    118          }
+    119          
+    120          /***************************************************************************//**
+    121           * Compare two strings, ignoring case.
+    122           ******************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+    123          int sl_strcasecmp(char const *a, char const *b)
+    124          {
+   \                     sl_strcasecmp: (+1)
+   \        0x0   0xB5F8             PUSH     {R3-R7,LR}
+   \        0x2   0x0005             MOVS     R5,R0
+   \        0x4   0x000E             MOVS     R6,R1
+    125            int d = 0;
+   \        0x6   0x2400             MOVS     R4,#+0
+    126          
+    127            if ((a == NULL) || (b == NULL)) {
+   \        0x8   0x2D00             CMP      R5,#+0
+   \        0xA   0xD001             BEQ.N    ??sl_strcasecmp_0
+   \        0xC   0x2E00             CMP      R6,#+0
+   \        0xE   0xD101             BNE.N    ??sl_strcasecmp_1
+    128              return 1;
+   \                     ??sl_strcasecmp_0: (+1)
+   \       0x10   0x2001             MOVS     R0,#+1
+   \       0x12   0xE012             B.N      ??sl_strcasecmp_2
+    129            }
+    130            for (;; a++, b++) {
+    131              d = tolower((unsigned char)*a) - tolower((unsigned char)*b);
+   \                     ??sl_strcasecmp_1: (+1)
+   \       0x14   0x7828             LDRB     R0,[R5, #+0]
+   \       0x16   0x.... 0x....      BL       tolower
+   \       0x1A   0x0007             MOVS     R7,R0
+   \       0x1C   0x7830             LDRB     R0,[R6, #+0]
+   \       0x1E   0x.... 0x....      BL       tolower
+   \       0x22   0x1A3F             SUBS     R7,R7,R0
+   \       0x24   0x003C             MOVS     R4,R7
+    132              if ((d != 0) || (!*a)) {
+   \       0x26   0x2C00             CMP      R4,#+0
+   \       0x28   0xD102             BNE.N    ??sl_strcasecmp_3
+   \       0x2A   0x7828             LDRB     R0,[R5, #+0]
+   \       0x2C   0x2800             CMP      R0,#+0
+   \       0x2E   0xD101             BNE.N    ??sl_strcasecmp_4
+    133                break;
+    134              }
+    135            }
+    136            return d;
+   \                     ??sl_strcasecmp_3: (+1)
+   \       0x30   0x0020             MOVS     R0,R4
+   \       0x32   0xE002             B.N      ??sl_strcasecmp_2
+   \                     ??sl_strcasecmp_4: (+1)
+   \       0x34   0x1C6D             ADDS     R5,R5,#+1
+   \       0x36   0x1C76             ADDS     R6,R6,#+1
+   \       0x38   0xE7EC             B.N      ??sl_strcasecmp_1
+   \                     ??sl_strcasecmp_2: (+1)
+   \       0x3A   0xBDF2             POP      {R1,R4-R7,PC}
+    137          }
+    138          
+    139          /***************************************************************************//**
+    140           * Search for a character in memory, in reverse order.
+    141           * Inspired from the GNU implementation of memchr and memrchr.
+    142           ******************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+    143          void* sl_memrchr(void const *buff, char c, size_t buffer_len)
+    144          {
+   \                     sl_memrchr: (+1)
+   \        0x0   0xB5F0             PUSH     {R4-R7,LR}
+   \        0x2   0x0003             MOVS     R3,R0
+    145            // Go to the end of the buffer
+    146            char* buffer;
+    147          
+    148            if (buff == NULL || buffer_len == 0) {
+   \        0x4   0x2B00             CMP      R3,#+0
+   \        0x6   0xD001             BEQ.N    ??sl_memrchr_0
+   \        0x8   0x2A00             CMP      R2,#+0
+   \        0xA   0xD101             BNE.N    ??sl_memrchr_1
+    149              return NULL;
+   \                     ??sl_memrchr_0: (+1)
+   \        0xC   0x2000             MOVS     R0,#+0
+   \        0xE   0xE05E             B.N      ??sl_memrchr_2
+    150            }
+    151          
+    152            // Check unaligned chars
+    153            for (buffer = (char*)((uintptr_t)buff + buffer_len); buffer_len > 0 && ((unsigned long)buffer % sizeof(unsigned long)) != 0; buffer_len--) {
+   \                     ??sl_memrchr_1: (+1)
+   \       0x10   0x18D4             ADDS     R4,R2,R3
+   \                     ??sl_memrchr_3: (+1)
+   \       0x12   0x2A00             CMP      R2,#+0
+   \       0x14   0xD00D             BEQ.N    ??sl_memrchr_4
+   \       0x16   0xF014 0x0003      ANDS     R0,R4,#0x3
+   \       0x1A   0x2800             CMP      R0,#+0
+   \       0x1C   0xD009             BEQ.N    ??sl_memrchr_4
+    154              if (*--buffer == c) {
+   \       0x1E   0x1E64             SUBS     R4,R4,#+1
+   \       0x20   0x7825             LDRB     R5,[R4, #+0]
+   \       0x22   0x0008             MOVS     R0,R1
+   \       0x24   0xB2C0             UXTB     R0,R0
+   \       0x26   0x4285             CMP      R5,R0
+   \       0x28   0xD101             BNE.N    ??sl_memrchr_5
+    155                return buffer;
+   \       0x2A   0x0020             MOVS     R0,R4
+   \       0x2C   0xE04F             B.N      ??sl_memrchr_2
+    156              }
+    157            }
+   \                     ??sl_memrchr_5: (+1)
+   \       0x2E   0x1E52             SUBS     R2,R2,#+1
+   \       0x30   0xE7EF             B.N      ??sl_memrchr_3
+    158          
+    159            // Check aligned buffers
+    160            /**
+    161             * Instead of checking byte per byte, we check an
+    162             * entire word at a time to see if the target byte is present.
+    163             * Algorithm goes as follows:
+    164             * 1) Compute the xor of the current 32bit buffer with a buffer
+    165             *    containing only the target char, this way, we get a 0 byte
+    166             *    iif the byte is the same as the char.
+    167             * 2) We substract 1 to all bytes, and then check if the MSb
+    168             *    is 1. If so, then the byte was 0, and so the character was there.
+    169             * 3) We return the address of the character.
+    170             **/
+    171            unsigned long *word_pointer = (unsigned long *) buffer - 1;
+   \                     ??sl_memrchr_4: (+1)
+   \       0x32   0xF1B4 0x0C04      SUBS     R12,R4,#+4
+    172            unsigned long c_mask = c << 24 | c << 16 | c << 8 | c;
+   \       0x36   0x000D             MOVS     R5,R1
+   \       0x38   0xB2ED             UXTB     R5,R5
+   \       0x3A   0x0008             MOVS     R0,R1
+   \       0x3C   0xB2C0             UXTB     R0,R0
+   \       0x3E   0x0400             LSLS     R0,R0,#+16
+   \       0x40   0xEA50 0x6005      ORRS     R0,R0,R5, LSL #+24
+   \       0x44   0x000D             MOVS     R5,R1
+   \       0x46   0xB2ED             UXTB     R5,R5
+   \       0x48   0xEA50 0x2005      ORRS     R0,R0,R5, LSL #+8
+   \       0x4C   0x000D             MOVS     R5,R1
+   \       0x4E   0xB2ED             UXTB     R5,R5
+   \       0x50   0x4305             ORRS     R5,R5,R0
+    173            unsigned long one_mask = 0x01010101;
+   \       0x52   0xF05F 0x3601      MOVS     R6,#+16843009
+    174            if (sizeof(unsigned long) >  4) {
+    175              // 64 bit system support
+    176              c_mask |= c_mask << 31 << 1;
+    177              one_mask |= one_mask << 31 << 1;
+    178            }
+    179            while (buffer_len >= sizeof(uintptr_t)) {
+   \                     ??sl_memrchr_6: (+1)
+   \       0x56   0x2A04             CMP      R2,#+4
+   \       0x58   0xD32C             BCC.N    ??sl_memrchr_7
+    180              uint32_t char_xor = c_mask ^ (*word_pointer);
+   \       0x5A   0xF8DC 0x7000      LDR      R7,[R12, #+0]
+   \       0x5E   0x406F             EORS     R7,R7,R5
+    181              if (((char_xor - one_mask) & (one_mask << 7)) != 0) {
+   \       0x60   0x1BB8             SUBS     R0,R7,R6
+   \       0x62   0xEA10 0x1FC6      TST      R0,R6, LSL #+7
+   \       0x66   0xD022             BEQ.N    ??sl_memrchr_8
+    182                // Character in the word
+    183                if (sizeof(unsigned long) >  4) {
+    184                  if (((char*)word_pointer)[7] == c) {
+    185                    return &((char*)word_pointer)[7];
+    186                  }
+    187                  if (((char*)word_pointer)[6] == c) {
+    188                    return &((char*)word_pointer)[6];
+    189                  }
+    190                  if (((char*)word_pointer)[5] == c) {
+    191                    return &((char*)word_pointer)[5];
+    192                  }
+    193                  if (((char*)word_pointer)[4] == c) {
+    194                    return &((char*)word_pointer)[4];
+    195                  }
+    196                }
+    197                if (((char*)word_pointer)[3] == c) {
+   \       0x68   0xF89C 0xE003      LDRB     LR,[R12, #+3]
+   \       0x6C   0x0008             MOVS     R0,R1
+   \       0x6E   0xB2C0             UXTB     R0,R0
+   \       0x70   0x4586             CMP      LR,R0
+   \       0x72   0xD102             BNE.N    ??sl_memrchr_9
+    198                  return &((char*)word_pointer)[3];
+   \       0x74   0xF11C 0x0003      ADDS     R0,R12,#+3
+   \       0x78   0xE029             B.N      ??sl_memrchr_2
+    199                }
+    200                if (((char*)word_pointer)[2] == c) {
+   \                     ??sl_memrchr_9: (+1)
+   \       0x7A   0xF89C 0xE002      LDRB     LR,[R12, #+2]
+   \       0x7E   0x0008             MOVS     R0,R1
+   \       0x80   0xB2C0             UXTB     R0,R0
+   \       0x82   0x4586             CMP      LR,R0
+   \       0x84   0xD102             BNE.N    ??sl_memrchr_10
+    201                  return &((char*)word_pointer)[2];
+   \       0x86   0xF11C 0x0002      ADDS     R0,R12,#+2
+   \       0x8A   0xE020             B.N      ??sl_memrchr_2
+    202                }
+    203                if (((char*)word_pointer)[1] == c) {
+   \                     ??sl_memrchr_10: (+1)
+   \       0x8C   0xF89C 0xE001      LDRB     LR,[R12, #+1]
+   \       0x90   0x0008             MOVS     R0,R1
+   \       0x92   0xB2C0             UXTB     R0,R0
+   \       0x94   0x4586             CMP      LR,R0
+   \       0x96   0xD102             BNE.N    ??sl_memrchr_11
+    204                  return &((char*)word_pointer)[1];
+   \       0x98   0xF11C 0x0001      ADDS     R0,R12,#+1
+   \       0x9C   0xE017             B.N      ??sl_memrchr_2
+    205                }
+    206                if (((char*)word_pointer)[0] == c) {
+   \                     ??sl_memrchr_11: (+1)
+   \       0x9E   0xF89C 0xE000      LDRB     LR,[R12, #+0]
+   \       0xA2   0x0008             MOVS     R0,R1
+   \       0xA4   0xB2C0             UXTB     R0,R0
+   \       0xA6   0x4586             CMP      LR,R0
+   \       0xA8   0xD101             BNE.N    ??sl_memrchr_8
+    207                  return &((char*)word_pointer)[0];
+   \       0xAA   0x4660             MOV      R0,R12
+   \       0xAC   0xE00F             B.N      ??sl_memrchr_2
+    208                }
+    209              }
+    210              buffer--;
+   \                     ??sl_memrchr_8: (+1)
+   \       0xAE   0x1E64             SUBS     R4,R4,#+1
+    211              buffer_len -= sizeof(uintptr_t);
+   \       0xB0   0x1F12             SUBS     R2,R2,#+4
+   \       0xB2   0xE7D0             B.N      ??sl_memrchr_6
+    212            }
+    213          
+    214            // Check the rest of the unaligned bytes, if any
+    215            for (; buffer_len > 0; buffer_len--) {
+   \                     ??sl_memrchr_7: (+1)
+   \       0xB4   0x2A00             CMP      R2,#+0
+   \       0xB6   0xD009             BEQ.N    ??sl_memrchr_12
+    216              if (*--buffer == c) {
+   \       0xB8   0x1E64             SUBS     R4,R4,#+1
+   \       0xBA   0x7827             LDRB     R7,[R4, #+0]
+   \       0xBC   0x0008             MOVS     R0,R1
+   \       0xBE   0xB2C0             UXTB     R0,R0
+   \       0xC0   0x4287             CMP      R7,R0
+   \       0xC2   0xD101             BNE.N    ??sl_memrchr_13
+    217                return buffer;
+   \       0xC4   0x0020             MOVS     R0,R4
+   \       0xC6   0xE002             B.N      ??sl_memrchr_2
+    218              }
+    219            }
+   \                     ??sl_memrchr_13: (+1)
+   \       0xC8   0x1E52             SUBS     R2,R2,#+1
+   \       0xCA   0xE7F3             B.N      ??sl_memrchr_7
+    220            return NULL;
+   \                     ??sl_memrchr_12: (+1)
+   \       0xCC   0x2000             MOVS     R0,#+0
+   \                     ??sl_memrchr_2: (+1)
+   \       0xCE   0xBDF0             POP      {R4-R7,PC}
+    221          }
+
+   Maximum stack usage in bytes:
+
+   .cstack Function
+   ------- --------
+      20   sl_memrchr
+       0   sl_str_is_empty
+      24   sl_strcasecmp
+        24   -> tolower
+      24   sl_strcat_s
+        24   -> sl_strcpy_s
+        24   -> sl_strlen
+       4   sl_strcpy_s
+       8   sl_strlen
+         8   -> sl_strnlen
+       0   sl_strnlen
+
+
+   Section sizes:
+
+   Bytes  Function/Label
+   -----  --------------
+     208  sl_memrchr
+      20  sl_str_is_empty
+      60  sl_strcasecmp
+      46  sl_strcat_s
+      48  sl_strcpy_s
+      16  sl_strlen
+      26  sl_strnlen
+
+ 
+ 424 bytes in section .text
+ 
+ 424 bytes of CODE memory
+
+Errors: none
+Warnings: none

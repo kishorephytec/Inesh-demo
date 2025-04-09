@@ -1,0 +1,641 @@
+###############################################################################
+#
+# IAR ANSI C/C++ Compiler V9.50.2.385/W64 for ARM         27/Nov/2024  12:17:48
+# Copyright 1999-2024 IAR Systems AB.
+#
+#    Cpu mode          =  thumb
+#    Endian            =  little
+#    Source file       =
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\app\wisun\component\trace_util\nanostack\nanostack-libservice\source\libBits\common_inlined_functions.c
+#    Command line      =
+#        -f
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\ewarm-iar\obj\libBits_502825786182981814.dir\common_inlined_functions.o.rsp
+#        (C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\app\wisun\component\trace_util\nanostack\nanostack-libservice\source\libBits\common_inlined_functions.c
+#        -D EFR32FG28B322F1024IM48=1 -D
+#        configNUM_SDK_THREAD_LOCAL_STORAGE_POINTERS=2 -D
+#        SL_COMPONENT_CATALOG_PRESENT=1 -D
+#        MBEDTLS_CONFIG_FILE=<sl_mbedtls_config.h> -D
+#        MBEDTLS_PSA_CRYPTO_CONFIG_FILE=<psa_crypto_config.h> -D
+#        SL_RAIL_LIB_MULTIPROTOCOL_SUPPORT=0 -D
+#        SL_RAIL_UTIL_PA_CONFIG_HEADER=<sl_rail_util_pa_config.h> -D
+#        RTT_USE_ASM=0 -D MBED_CONF_MBED_TRACE_ENABLE=1 -D
+#        MBED_CONF_NANOSTACK_CONFIGURATION=ws_router -D
+#        MBED_TRACE_MAX_LEVEL=TRACE_ACTIVE_LEVEL_ALL -D DEBUG_EFM_USER=1 -D
+#        HAVE_LFN=1 -D HAVE_LFN_PARENT=1 -lC
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\ewarm-iar\lst\libBits_502825786182981814.dir
+#        --diag_suppress Pa050 -o
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\ewarm-iar\obj\libBits_502825786182981814.dir
+#        --debug --endian=little --cpu=Cortex-M33 --cmse --cmse -e
+#        --fpu=VFPv5_sp --dlib_config "C:\Program Files\IAR Systems\Embedded
+#        Workbench 9.2\arm\inc\c\DLib_Config_Normal.h" -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\app\wisun\component\trace_util\nanostack\nanostack-libservice\source\libBits\
+#        -I C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\autogen\ -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\config\ -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\config\rail\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\Device\SiliconLabs\EFR32FG28\Include\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\common\inc\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\CMSIS\Core\Include\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\CMSIS\RTOS2\Include\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\service\device_init\inc\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\emdrv\dmadrv\inc\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\emdrv\common\inc\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\emlib\inc\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\util\third_party\freertos\cmsis\Include\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\util\third_party\freertos\kernel\include\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\util\third_party\freertos\kernel\portable\IAR\ARM_CM33_NTZ\non_secure\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\service\iostream\inc\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\security\sl_component\sl_mbedtls_support\config\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\security\sl_component\sl_mbedtls_support\config\preset\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\security\sl_component\sl_mbedtls_support\inc\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\util\third_party\mbedtls\include\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\util\third_party\mbedtls\library\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\emdrv\nvm3\inc\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\peripheral\inc\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\security\sl_component\sl_psa_driver\inc\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\radio\rail_lib\common\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\radio\rail_lib\protocol\ble\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\radio\rail_lib\protocol\ieee802154\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\radio\rail_lib\protocol\wmbus\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\radio\rail_lib\protocol\zwave\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\radio\rail_lib\chip\efr32\efr32xg2x\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\radio\rail_lib\protocol\sidewalk\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\radio\rail_lib\plugin\pa-conversions\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\radio\rail_lib\plugin\pa-conversions\efr32xg28\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\radio\rail_lib\plugin\rail_util_pti\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\security\sl_component\se_manager\inc\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\security\sl_component\se_manager\src\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\util\third_party\segger\systemview\SEGGER\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\util\silicon_labs\silabs_core\memory_manager\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\common\toolchain\inc\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\service\system\inc\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\app\wisun\component\ns_list\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\app\wisun\component\trace_util\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\app\wisun\component\trace_util\nanostack\nanostack-libservice\mbed-client-libservice\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\service\sleeptimer\inc\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\protocol\wisun\stack\inc\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\protocol\wisun\app\wisun_rcp\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\protocol\wisun\stack\inc\socket\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\protocol\wisun\stack\src\
+#        -Ohz --use_c++_inline) --dependencies=n
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\ewarm-iar\obj\libBits_502825786182981814.dir\common_inlined_functions.o.iar_deps
+#    Locale            =  C
+#    List file         =
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\ewarm-iar\lst\libBits_502825786182981814.dir\common_inlined_functions.lst
+#    Object file       =
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\ewarm-iar\obj\libBits_502825786182981814.dir\common_inlined_functions.o
+#    Runtime model:       
+#      __CPP_Runtime   =  1
+#      __SystemLibrary =  DLib
+#      __dlib_version  =  6
+#
+###############################################################################
+
+C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\app\wisun\component\trace_util\nanostack\nanostack-libservice\source\libBits\common_inlined_functions.c
+      1          /*
+      2           * Copyright (c) 2014-2015 ARM Limited. All rights reserved.
+      3           * SPDX-License-Identifier: Apache-2.0
+      4           * Licensed under the Apache License, Version 2.0 (the License); you may
+      5           * not use this file except in compliance with the License.
+      6           * You may obtain a copy of the License at
+      7           *
+      8           * http://www.apache.org/licenses/LICENSE-2.0
+      9           *
+     10           * Unless required by applicable law or agreed to in writing, software
+     11           * distributed under the License is distributed on an AS IS BASIS, WITHOUT
+     12           * WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     13           * See the License for the specific language governing permissions and
+     14           * limitations under the License.
+     15           */
+     16          
+     17          /*
+     18           * Most functions can be inlined, and definitions are in common_functions.h.
+     19           * Define COMMON_FUNCTIONS_FN before including it to generate external definitions.
+     20           */
+     21          #define COMMON_FUNCTIONS_FN extern
+     22          
+     23          #include "common_inlined_functions.h"
+
+   \                                 In section .text, align 2, keep-with-next
+   \   __vfp uint8_t *common_write_64_bit(uint64_t, uint8_t *)
+   \                     common_write_64_bit: (+1)
+   \        0x0   0xB550             PUSH     {R4,R6,LR}
+   \        0x2   0x4604             MOV      R4,R0
+   \        0x4   0x4613             MOV      R3,R2
+   \        0x6   0x0E08             LSRS     R0,R1,#+24
+   \        0x8   0x7018             STRB     R0,[R3, #+0]
+   \        0xA   0x0C0A             LSRS     R2,R1,#+16
+   \        0xC   0x705A             STRB     R2,[R3, #+1]
+   \        0xE   0x0A0E             LSRS     R6,R1,#+8
+   \       0x10   0x709E             STRB     R6,[R3, #+2]
+   \       0x12   0x70D9             STRB     R1,[R3, #+3]
+   \       0x14   0x0E20             LSRS     R0,R4,#+24
+   \       0x16   0x7118             STRB     R0,[R3, #+4]
+   \       0x18   0x0C21             LSRS     R1,R4,#+16
+   \       0x1A   0x0420             LSLS     R0,R4,#+16
+   \       0x1C   0x7159             STRB     R1,[R3, #+5]
+   \       0x1E   0x0E00             LSRS     R0,R0,#+24
+   \       0x20   0x7198             STRB     R0,[R3, #+6]
+   \       0x22   0x71DC             STRB     R4,[R3, #+7]
+   \       0x24   0xF103 0x0008      ADD      R0,R3,#+8
+   \       0x28   0xBD50             POP      {R4,R6,PC}
+
+   \                                 In section .text, align 2, keep-with-next
+   \   __vfp uint64_t common_read_64_bit(uint8_t const *)
+   \                     common_read_64_bit: (+1)
+   \        0x0   0xE92D 0x42F0      PUSH     {R4-R7,R9,LR}
+   \        0x4   0x7804             LDRB     R4,[R0, #+0]
+   \        0x6   0x7842             LDRB     R2,[R0, #+1]
+   \        0x8   0x7886             LDRB     R6,[R0, #+2]
+   \        0xA   0x0625             LSLS     R5,R4,#+24
+   \        0xC   0x2400             MOVS     R4,#+0
+   \        0xE   0x0413             LSLS     R3,R2,#+16
+   \       0x10   0x415D             ADCS     R5,R5,R3
+   \       0x12   0x0237             LSLS     R7,R6,#+8
+   \       0x14   0xEB45 0x0307      ADC      R3,R5,R7
+   \       0x18   0x78C5             LDRB     R5,[R0, #+3]
+   \       0x1A   0x1926             ADDS     R6,R4,R4
+   \       0x1C   0x7902             LDRB     R2,[R0, #+4]
+   \       0x1E   0xEB43 0x0705      ADC      R7,R3,R5
+   \       0x22   0x2300             MOVS     R3,#+0
+   \       0x24   0xEB16 0x6102      ADDS     R1,R6,R2, LSL #+24
+   \       0x28   0x7944             LDRB     R4,[R0, #+5]
+   \       0x2A   0x7982             LDRB     R2,[R0, #+6]
+   \       0x2C   0xEB47 0x0903      ADC      R9,R7,R3
+   \       0x30   0xEB11 0x4604      ADDS     R6,R1,R4, LSL #+16
+   \       0x34   0x79C0             LDRB     R0,[R0, #+7]
+   \       0x36   0xEB49 0x0703      ADC      R7,R9,R3
+   \       0x3A   0xEB16 0x2402      ADDS     R4,R6,R2, LSL #+8
+   \       0x3E   0xEB47 0x0503      ADC      R5,R7,R3
+   \       0x42   0x2100             MOVS     R1,#+0
+   \       0x44   0x1820             ADDS     R0,R4,R0
+   \       0x46   0x4169             ADCS     R1,R5,R1
+   \       0x48   0xE8BD 0x82F0      POP      {R4-R7,R9,PC}
+
+   \                                 In section .text, align 2, keep-with-next
+   \   __vfp uint8_t *common_write_32_bit(uint32_t, uint8_t *)
+   \                     common_write_32_bit: (+1)
+   \        0x0   0xB510             PUSH     {R4,LR}
+   \        0x2   0x0E04             LSRS     R4,R0,#+24
+   \        0x4   0x700C             STRB     R4,[R1, #+0]
+   \        0x6   0x0C03             LSRS     R3,R0,#+16
+   \        0x8   0x0A02             LSRS     R2,R0,#+8
+   \        0xA   0x70C8             STRB     R0,[R1, #+3]
+   \        0xC   0x704B             STRB     R3,[R1, #+1]
+   \        0xE   0x708A             STRB     R2,[R1, #+2]
+   \       0x10   0x1D08             ADDS     R0,R1,#+4
+   \       0x12   0xBD10             POP      {R4,PC}
+
+   \                                 In section .text, align 2, keep-with-next
+   \   __vfp uint32_t common_read_32_bit(uint8_t const *)
+   \                     common_read_32_bit: (+1)
+   \        0x0   0x7841             LDRB     R1,[R0, #+1]
+   \        0x2   0x7802             LDRB     R2,[R0, #+0]
+   \        0x4   0x0409             LSLS     R1,R1,#+16
+   \        0x6   0xEB01 0x6102      ADD      R1,R1,R2, LSL #+24
+   \        0xA   0x7882             LDRB     R2,[R0, #+2]
+   \        0xC   0x78C0             LDRB     R0,[R0, #+3]
+   \        0xE   0xEB01 0x2102      ADD      R1,R1,R2, LSL #+8
+   \       0x12   0x1808             ADDS     R0,R1,R0
+   \       0x14   0x4770             BX       LR
+
+   \                                 In section .text, align 2, keep-with-next
+   \   __vfp uint8_t *common_write_32_bit_inverse(uint32_t, uint8_t *)
+   \                     common_write_32_bit_inverse: (+1)
+   \        0x0   0x7008             STRB     R0,[R1, #+0]
+   \        0x2   0x0A03             LSRS     R3,R0,#+8
+   \        0x4   0x0C02             LSRS     R2,R0,#+16
+   \        0x6   0x0E00             LSRS     R0,R0,#+24
+   \        0x8   0x70C8             STRB     R0,[R1, #+3]
+   \        0xA   0x704B             STRB     R3,[R1, #+1]
+   \        0xC   0x708A             STRB     R2,[R1, #+2]
+   \        0xE   0x1D08             ADDS     R0,R1,#+4
+   \       0x10   0x4770             BX       LR
+
+   \                                 In section .text, align 2, keep-with-next
+   \   __vfp uint32_t common_read_32_bit_inverse(uint8_t const *)
+   \                     common_read_32_bit_inverse: (+1)
+   \        0x0   0x4601             MOV      R1,R0
+   \        0x2   0x780A             LDRB     R2,[R1, #+0]
+   \        0x4   0x7848             LDRB     R0,[R1, #+1]
+   \        0x6   0xEB02 0x2000      ADD      R0,R2,R0, LSL #+8
+   \        0xA   0x788A             LDRB     R2,[R1, #+2]
+   \        0xC   0x78C9             LDRB     R1,[R1, #+3]
+   \        0xE   0xEB00 0x4002      ADD      R0,R0,R2, LSL #+16
+   \       0x12   0xEB00 0x6001      ADD      R0,R0,R1, LSL #+24
+   \       0x16   0x4770             BX       LR
+
+   \                                 In section .text, align 2, keep-with-next
+   \   __vfp uint8_t *common_write_24_bit(unsigned int, uint8_t *)
+   \                     common_write_24_bit: (+1)
+   \        0x0   0x0C03             LSRS     R3,R0,#+16
+   \        0x2   0x700B             STRB     R3,[R1, #+0]
+   \        0x4   0x0A02             LSRS     R2,R0,#+8
+   \        0x6   0x....             B.N      ?Subroutine0
+
+   \                                 In section .text, align 2, keep-with-next
+   \                     ?Subroutine0: (+1)
+   \        0x0   0x7088             STRB     R0,[R1, #+2]
+   \        0x2   0x704A             STRB     R2,[R1, #+1]
+   \        0x4   0x1CC8             ADDS     R0,R1,#+3
+   \        0x6   0x4770             BX       LR
+
+   \                                 In section .text, align 2, keep-with-next
+   \   __vfp unsigned int common_read_24_bit(uint8_t const *)
+   \                     common_read_24_bit: (+1)
+   \        0x0   0x7841             LDRB     R1,[R0, #+1]
+   \        0x2   0x7802             LDRB     R2,[R0, #+0]
+   \        0x4   0x7880             LDRB     R0,[R0, #+2]
+   \        0x6   0x0209             LSLS     R1,R1,#+8
+   \        0x8   0xEB01 0x4102      ADD      R1,R1,R2, LSL #+16
+   \        0xC   0x1808             ADDS     R0,R1,R0
+   \        0xE   0x4770             BX       LR
+
+   \                                 In section .text, align 2, keep-with-next
+   \   __vfp uint8_t *common_write_24_bit_inverse(unsigned int, uint8_t *)
+   \                     common_write_24_bit_inverse: (+1)
+   \        0x0   0x7008             STRB     R0,[R1, #+0]
+   \        0x2   0x0A02             LSRS     R2,R0,#+8
+   \        0x4   0x0C00             LSRS     R0,R0,#+16
+   \        0x6                      REQUIRE ?Subroutine0
+   \        0x6                      ;; // Fall through to label ?Subroutine0
+
+   \                                 In section .text, align 2, keep-with-next
+   \   __vfp unsigned int common_read_24_bit_inverse(uint8_t const *)
+   \                     common_read_24_bit_inverse: (+1)
+   \        0x0   0x4601             MOV      R1,R0
+   \        0x2   0x780A             LDRB     R2,[R1, #+0]
+   \        0x4   0x7848             LDRB     R0,[R1, #+1]
+   \        0x6   0x7889             LDRB     R1,[R1, #+2]
+   \        0x8   0xEB02 0x2000      ADD      R0,R2,R0, LSL #+8
+   \        0xC   0xEB00 0x4001      ADD      R0,R0,R1, LSL #+16
+   \       0x10   0x4770             BX       LR
+
+   \                                 In section .text, align 2, keep-with-next
+   \   __vfp uint8_t *common_write_16_bit(uint16_t, uint8_t *)
+   \                     common_write_16_bit: (+1)
+   \        0x0   0x0A02             LSRS     R2,R0,#+8
+   \        0x2   0x700A             STRB     R2,[R1, #+0]
+   \        0x4   0x....             B.N      ?Subroutine1
+
+   \                                 In section .text, align 2, keep-with-next
+   \                     ?Subroutine1: (+1)
+   \        0x0   0x7048             STRB     R0,[R1, #+1]
+   \        0x2   0x1C88             ADDS     R0,R1,#+2
+   \        0x4   0x4770             BX       LR
+
+   \                                 In section .text, align 2, keep-with-next
+   \   __vfp uint16_t common_read_16_bit(uint8_t const *)
+   \                     common_read_16_bit: (+1)
+   \        0x0   0x7801             LDRB     R1,[R0, #+0]
+   \        0x2   0x7840             LDRB     R0,[R0, #+1]
+   \        0x4   0xEB00 0x2001      ADD      R0,R0,R1, LSL #+8
+   \        0x8   0x4770             BX       LR
+
+   \                                 In section .text, align 2, keep-with-next
+   \   __vfp uint8_t *common_write_16_bit_inverse(uint16_t, uint8_t *)
+   \                     common_write_16_bit_inverse: (+1)
+   \        0x0   0x7008             STRB     R0,[R1, #+0]
+   \        0x2   0x0A00             LSRS     R0,R0,#+8
+   \        0x4                      REQUIRE ?Subroutine1
+   \        0x4                      ;; // Fall through to label ?Subroutine1
+
+   \                                 In section .text, align 2, keep-with-next
+   \   __vfp uint16_t common_read_16_bit_inverse(uint8_t const *)
+   \                     common_read_16_bit_inverse: (+1)
+   \        0x0   0x7801             LDRB     R1,[R0, #+0]
+   \        0x2   0x7840             LDRB     R0,[R0, #+1]
+   \        0x4   0xEB01 0x2000      ADD      R0,R1,R0, LSL #+8
+   \        0x8   0x4770             BX       LR
+
+   \                                 In section .text, align 2, keep-with-next
+   \   __vfp uint_fast8_t common_count_bits(uint8_t)
+   \                     common_count_bits: (+1)
+   \        0x0   0x0842             LSRS     R2,R0,#+1
+   \        0x2   0xF002 0x0255      AND      R2,R2,#0x55
+   \        0x6   0x1A81             SUBS     R1,R0,R2
+   \        0x8   0xF001 0x0033      AND      R0,R1,#0x33
+   \        0xC   0x0889             LSRS     R1,R1,#+2
+   \        0xE   0xF001 0x0133      AND      R1,R1,#0x33
+   \       0x12   0x1809             ADDS     R1,R1,R0
+   \       0x14   0xF001 0x000F      AND      R0,R1,#0xF
+   \       0x18   0xEB00 0x1011      ADD      R0,R0,R1, LSR #+4
+   \       0x1C   0x4770             BX       LR
+
+   \                                 In section .text, align 4, keep-with-next
+   \   __vfp uint_fast8_t common_count_leading_zeros(uint8_t)
+   \                     common_count_leading_zeros: (+1)
+   \        0x0   0xBF00             Nop
+   \        0x2                      REQUIRE common_count_leading_zeros_8
+   \        0x2                      ;; // Fall through to label common_count_leading_zeros_8
+
+   \                                 In section .text, align 2, keep-with-next
+   \   __vfp uint_fast8_t common_count_leading_zeros_8(uint8_t)
+   \                     common_count_leading_zeros_8: (+1)
+   \        0x0   0x4601             MOV      R1,R0
+   \        0x2   0x2000             MOVS     R0,#+0
+   \        0x4   0x000A             MOVS     R2,R1
+   \        0x6   0xD101             BNE.N    ??common_count_leading_zeros_8_0
+   \        0x8   0x2008             MOVS     R0,#+8
+   \        0xA   0x4770             BX       LR
+   \                     ??common_count_leading_zeros_8_0: (+1)
+   \        0xC   0xF011 0x0FF0      TST      R1,#0xF0
+   \       0x10   0xBF04             ITT      EQ
+   \       0x12   0x0109             LSLEQ    R1,R1,#+4
+   \       0x14   0x2004             MOVEQ    R0,#+4
+   \       0x16   0xF011 0x0FC0      TST      R1,#0xC0
+   \       0x1A   0xBF04             ITT      EQ
+   \       0x1C   0x0089             LSLEQ    R1,R1,#+2
+   \       0x1E   0x1C80             ADDEQ    R0,R0,#+2
+   \       0x20   0x0609             LSLS     R1,R1,#+24
+   \       0x22   0xBF58             IT       PL
+   \       0x24   0x1C40             ADDPL    R0,R0,#+1
+   \       0x26   0x4770             BX       LR
+
+   \                                 In section .text, align 2, keep-with-next
+   \   __vfp uint_fast8_t common_count_leading_zeros_16(uint16_t)
+   \                     common_count_leading_zeros_16: (+1)
+   \        0x0   0x4601             MOV      R1,R0
+   \        0x2   0x2000             MOVS     R0,#+0
+   \        0x4   0x000A             MOVS     R2,R1
+   \        0x6   0xD101             BNE.N    ??common_count_leading_zeros_16_0
+   \        0x8   0x2010             MOVS     R0,#+16
+   \        0xA   0x4770             BX       LR
+   \                     ??common_count_leading_zeros_16_0: (+1)
+   \        0xC   0xF411 0x4F7F      TST      R1,#0xFF00
+   \       0x10   0xBF04             ITT      EQ
+   \       0x12   0x0209             LSLEQ    R1,R1,#+8
+   \       0x14   0x2008             MOVEQ    R0,#+8
+   \       0x16   0xF411 0x4F70      TST      R1,#0xF000
+   \       0x1A   0xBF04             ITT      EQ
+   \       0x1C   0x0109             LSLEQ    R1,R1,#+4
+   \       0x1E   0x1D00             ADDEQ    R0,R0,#+4
+   \       0x20   0xF411 0x4F40      TST      R1,#0xC000
+   \       0x24   0xBF04             ITT      EQ
+   \       0x26   0x0089             LSLEQ    R1,R1,#+2
+   \       0x28   0x1C80             ADDEQ    R0,R0,#+2
+   \       0x2A   0x0409             LSLS     R1,R1,#+16
+   \       0x2C   0xBF58             IT       PL
+   \       0x2E   0x1C40             ADDPL    R0,R0,#+1
+   \       0x30   0x4770             BX       LR
+
+   \                                 In section .text, align 2, keep-with-next
+   \   __vfp uint_fast8_t common_count_leading_zeros_32(uint32_t)
+   \                     common_count_leading_zeros_32: (+1)
+   \        0x0   0x4601             MOV      R1,R0
+   \        0x2   0x2000             MOVS     R0,#+0
+   \        0x4   0xB909             CBNZ.N   R1,??common_count_leading_zeros_32_0
+   \        0x6   0x2020             MOVS     R0,#+32
+   \        0x8   0x4770             BX       LR
+   \                     ??common_count_leading_zeros_32_0: (+1)
+   \        0xA   0x0C0A             LSRS     R2,R1,#+16
+   \        0xC   0x0412             LSLS     R2,R2,#+16
+   \        0xE   0xBF04             ITT      EQ
+   \       0x10   0x0409             LSLEQ    R1,R1,#+16
+   \       0x12   0x2010             MOVEQ    R0,#+16
+   \       0x14   0xF011 0x4F7F      TST      R1,#0xFF000000
+   \       0x18   0xBF04             ITT      EQ
+   \       0x1A   0x0209             LSLEQ    R1,R1,#+8
+   \       0x1C   0x3008             ADDEQ    R0,R0,#+8
+   \       0x1E   0xF011 0x4F70      TST      R1,#0xF0000000
+   \       0x22   0xBF04             ITT      EQ
+   \       0x24   0x0109             LSLEQ    R1,R1,#+4
+   \       0x26   0x1D00             ADDEQ    R0,R0,#+4
+   \       0x28   0xF011 0x4F40      TST      R1,#0xC0000000
+   \       0x2C   0xBF04             ITT      EQ
+   \       0x2E   0x0089             LSLEQ    R1,R1,#+2
+   \       0x30   0x1C80             ADDEQ    R0,R0,#+2
+   \       0x32   0x2900             CMP      R1,#+0
+   \       0x34   0xBF58             IT       PL
+   \       0x36   0x1C40             ADDPL    R0,R0,#+1
+   \       0x38   0x4770             BX       LR
+
+   \                                 In section .text, align 2, keep-with-next
+   \   __vfp bool common_serial_number_greater_8(uint8_t, uint8_t)
+   \                     common_serial_number_greater_8: (+1)
+   \        0x0   0xB520             PUSH     {R5,LR}
+   \        0x2   0x4281             CMP      R1,R0
+   \        0x4   0xD204             BCS.N    ??common_serial_number_greater_8_0
+   \        0x6   0x1A45             SUBS     R5,R0,R1
+   \        0x8   0x2D80             CMP      R5,#+128
+   \        0xA   0xDB06             BLT.N    ??common_serial_number_greater_8_1
+   \                     ??common_serial_number_greater_8_2: (+1)
+   \        0xC   0x2000             MOVS     R0,#+0
+   \        0xE   0xBD20             POP      {R5,PC}
+   \                     ??common_serial_number_greater_8_0: (+1)
+   \       0x10   0x4288             CMP      R0,R1
+   \       0x12   0xD2FB             BCS.N    ??common_serial_number_greater_8_2
+   \       0x14   0x1A0D             SUBS     R5,R1,R0
+   \       0x16   0x2D80             CMP      R5,#+128
+   \       0x18   0xDDF8             BLE.N    ??common_serial_number_greater_8_2
+   \                     ??common_serial_number_greater_8_1: (+1)
+   \       0x1A   0x2001             MOVS     R0,#+1
+   \       0x1C   0xBD20             POP      {R5,PC}
+
+   \                                 In section .text, align 2, keep-with-next
+   \   __vfp bool common_serial_number_greater_16(uint16_t, uint16_t)
+   \                     common_serial_number_greater_16: (+1)
+   \        0x0   0xB520             PUSH     {R5,LR}
+   \        0x2   0x4281             CMP      R1,R0
+   \        0x4   0xD205             BCS.N    ??common_serial_number_greater_16_0
+   \        0x6   0x1A45             SUBS     R5,R0,R1
+   \        0x8   0xF5B5 0x4F00      CMP      R5,#+32768
+   \        0xC   0xDB07             BLT.N    ??common_serial_number_greater_16_1
+   \                     ??common_serial_number_greater_16_2: (+1)
+   \        0xE   0x2000             MOVS     R0,#+0
+   \       0x10   0xBD20             POP      {R5,PC}
+   \                     ??common_serial_number_greater_16_0: (+1)
+   \       0x12   0x4288             CMP      R0,R1
+   \       0x14   0xD2FB             BCS.N    ??common_serial_number_greater_16_2
+   \       0x16   0x1A0D             SUBS     R5,R1,R0
+   \       0x18   0xF5B5 0x4F00      CMP      R5,#+32768
+   \       0x1C   0xDDF7             BLE.N    ??common_serial_number_greater_16_2
+   \                     ??common_serial_number_greater_16_1: (+1)
+   \       0x1E   0x2001             MOVS     R0,#+1
+   \       0x20   0xBD20             POP      {R5,PC}
+
+   \                                 In section .text, align 2, keep-with-next
+   \   __vfp bool common_serial_number_greater_32(uint32_t, uint32_t)
+   \                     common_serial_number_greater_32: (+1)
+   \        0x0   0x4281             CMP      R1,R0
+   \        0x2   0xD205             BCS.N    ??common_serial_number_greater_32_0
+   \        0x4   0x1A40             SUBS     R0,R0,R1
+   \        0x6   0xF1B0 0x4F00      CMP      R0,#+2147483648
+   \        0xA   0x4180             SBCS     R0,R0,R0
+   \        0xC   0x0FC0             LSRS     R0,R0,#+31
+   \        0xE   0x4770             BX       LR
+   \                     ??common_serial_number_greater_32_0: (+1)
+   \       0x10   0x4288             CMP      R0,R1
+   \       0x12   0xD205             BCS.N    ??common_serial_number_greater_32_1
+   \       0x14   0x1A08             SUBS     R0,R1,R0
+   \       0x16   0xF1B0 0x4F00      CMP      R0,#+2147483648
+   \       0x1A   0xD901             BLS.N    ??common_serial_number_greater_32_1
+   \       0x1C   0x2001             MOVS     R0,#+1
+   \       0x1E   0x4770             BX       LR
+   \                     ??common_serial_number_greater_32_1: (+1)
+   \       0x20   0x2000             MOVS     R0,#+0
+   \       0x22   0x4770             BX       LR
+
+   \                                 In section .text, align 2, keep-with-next
+   \   __vfp bool bit_test(uint8_t const *, uint_fast8_t)
+   \                     bit_test: (+1)
+   \        0x0   0x08CB             LSRS     R3,R1,#+3
+   \        0x2   0x5CC2             LDRB     R2,[R0, R3]
+   \        0x4   0x2080             MOVS     R0,#+128
+   \        0x6   0xF001 0x0107      AND      R1,R1,#0x7
+   \        0xA   0x40C8             LSRS     R0,R0,R1
+   \        0xC   0x4010             ANDS     R0,R0,R2
+   \        0xE   0xBF18             IT       NE
+   \       0x10   0x2001             MOVNE    R0,#+1
+   \       0x12   0x4770             BX       LR
+
+   \                                 In section .text, align 2, keep-with-next
+   \   __vfp void bit_set(uint8_t *, uint_fast8_t)
+   \                     bit_set: (+1)
+   \        0x0   0xB510             PUSH     {R4,LR}
+   \        0x2   0x.... 0x....      BL       ?Subroutine2
+   \                     ??CrossCallReturnLabel_0: (+1)
+   \        0x6   0x431A             ORRS     R2,R3,R2
+   \        0x8   0x5502             STRB     R2,[R0, R4]
+   \        0xA   0xBD10             POP      {R4,PC}
+
+   \                                 In section .text, align 2, keep-with-next
+   \                     ?Subroutine2: (+1)
+   \        0x0   0x08CC             LSRS     R4,R1,#+3
+   \        0x2   0x5D02             LDRB     R2,[R0, R4]
+   \        0x4   0x2380             MOVS     R3,#+128
+   \        0x6   0xF001 0x0107      AND      R1,R1,#0x7
+   \        0xA   0x40CB             LSRS     R3,R3,R1
+   \        0xC   0x4770             BX       LR
+
+   \                                 In section .text, align 2, keep-with-next
+   \   __vfp void bit_clear(uint8_t *, uint_fast8_t)
+   \                     bit_clear: (+1)
+   \        0x0   0xB510             PUSH     {R4,LR}
+   \        0x2   0x.... 0x....      BL       ?Subroutine2
+   \                     ??CrossCallReturnLabel_1: (+1)
+   \        0x6   0x439A             BICS     R2,R2,R3
+   \        0x8   0x5502             STRB     R2,[R0, R4]
+   \        0xA   0xBD10             POP      {R4,PC}
+     24          
+     25          /* WI_SUN-467
+     26           * common_functions.c was split to help mitigate an issue with IAR linker and inlining.
+     27           * Normally the linker should behave as explained by the note below, but it does not.
+     28           * https://www.iar.com/knowledge/support/technical-notes/compiler/linker-error-undefined-external-for-inline-functions/
+     29           */
+
+   Maximum stack usage in bytes:
+
+   .cstack Function
+   ------- --------
+       8   bit_clear
+       8   bit_set
+       0   bit_test
+       0   common_count_bits
+       0   common_count_leading_zeros
+         0   -> common_count_leading_zeros_8
+       0   common_count_leading_zeros_16
+       0   common_count_leading_zeros_32
+       0   common_count_leading_zeros_8
+       0   common_read_16_bit
+       0   common_read_16_bit_inverse
+       0   common_read_24_bit
+       0   common_read_24_bit_inverse
+       0   common_read_32_bit
+       0   common_read_32_bit_inverse
+      24   common_read_64_bit
+       8   common_serial_number_greater_16
+       0   common_serial_number_greater_32
+       8   common_serial_number_greater_8
+       0   common_write_16_bit
+       0   common_write_16_bit_inverse
+       0   common_write_24_bit
+       0   common_write_24_bit_inverse
+       8   common_write_32_bit
+       0   common_write_32_bit_inverse
+      12   common_write_64_bit
+
+
+   Section sizes:
+
+   Bytes  Function/Label
+   -----  --------------
+       8  ?Subroutine0
+       6  ?Subroutine1
+      14  ?Subroutine2
+      12  bit_clear
+      12  bit_set
+      20  bit_test
+      30  common_count_bits
+       2  common_count_leading_zeros
+      50  common_count_leading_zeros_16
+      58  common_count_leading_zeros_32
+      40  common_count_leading_zeros_8
+      10  common_read_16_bit
+      10  common_read_16_bit_inverse
+      16  common_read_24_bit
+      18  common_read_24_bit_inverse
+      22  common_read_32_bit
+      24  common_read_32_bit_inverse
+      76  common_read_64_bit
+      34  common_serial_number_greater_16
+      36  common_serial_number_greater_32
+      30  common_serial_number_greater_8
+       6  common_write_16_bit
+       4  common_write_16_bit_inverse
+       8  common_write_24_bit
+       6  common_write_24_bit_inverse
+      20  common_write_32_bit
+      18  common_write_32_bit_inverse
+      42  common_write_64_bit
+
+ 
+ 632 bytes in section .text
+ 
+ 632 bytes of CODE memory
+
+Errors: none
+Warnings: none

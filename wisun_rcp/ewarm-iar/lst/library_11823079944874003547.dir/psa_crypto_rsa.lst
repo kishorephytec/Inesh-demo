@@ -1,0 +1,956 @@
+###############################################################################
+#
+# IAR ANSI C/C++ Compiler V9.50.2.385/W64 for ARM         27/Nov/2024  12:17:41
+# Copyright 1999-2024 IAR Systems AB.
+#
+#    Cpu mode                     =  thumb
+#    Endian                       =  little
+#    Source file                  =
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\util\third_party\mbedtls\library\psa_crypto_rsa.c
+#    Command line                 =
+#        -f
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\ewarm-iar\obj\library_11823079944874003547.dir\psa_crypto_rsa.o.rsp
+#        (C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\util\third_party\mbedtls\library\psa_crypto_rsa.c
+#        -D EFR32FG28B322F1024IM48=1 -D
+#        configNUM_SDK_THREAD_LOCAL_STORAGE_POINTERS=2 -D
+#        SL_COMPONENT_CATALOG_PRESENT=1 -D
+#        MBEDTLS_CONFIG_FILE=<sl_mbedtls_config.h> -D
+#        MBEDTLS_PSA_CRYPTO_CONFIG_FILE=<psa_crypto_config.h> -D
+#        SL_RAIL_LIB_MULTIPROTOCOL_SUPPORT=0 -D
+#        SL_RAIL_UTIL_PA_CONFIG_HEADER=<sl_rail_util_pa_config.h> -D
+#        RTT_USE_ASM=0 -D MBED_CONF_MBED_TRACE_ENABLE=1 -D
+#        MBED_CONF_NANOSTACK_CONFIGURATION=ws_router -D
+#        MBED_TRACE_MAX_LEVEL=TRACE_ACTIVE_LEVEL_ALL -D DEBUG_EFM_USER=1 -D
+#        HAVE_LFN=1 -D HAVE_LFN_PARENT=1 -lC
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\ewarm-iar\lst\library_11823079944874003547.dir
+#        --diag_suppress Pa050 -o
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\ewarm-iar\obj\library_11823079944874003547.dir
+#        --debug --endian=little --cpu=Cortex-M33 --cmse --cmse -e
+#        --fpu=VFPv5_sp --dlib_config "C:\Program Files\IAR Systems\Embedded
+#        Workbench 9.2\arm\inc\c\DLib_Config_Normal.h" -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\util\third_party\mbedtls\library\
+#        -I C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\autogen\ -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\config\ -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\config\rail\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\Device\SiliconLabs\EFR32FG28\Include\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\common\inc\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\CMSIS\Core\Include\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\CMSIS\RTOS2\Include\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\service\device_init\inc\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\emdrv\dmadrv\inc\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\emdrv\common\inc\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\emlib\inc\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\util\third_party\freertos\cmsis\Include\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\util\third_party\freertos\kernel\include\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\util\third_party\freertos\kernel\portable\IAR\ARM_CM33_NTZ\non_secure\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\service\iostream\inc\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\security\sl_component\sl_mbedtls_support\config\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\security\sl_component\sl_mbedtls_support\config\preset\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\security\sl_component\sl_mbedtls_support\inc\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\util\third_party\mbedtls\include\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\util\third_party\mbedtls\library\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\emdrv\nvm3\inc\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\peripheral\inc\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\security\sl_component\sl_psa_driver\inc\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\radio\rail_lib\common\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\radio\rail_lib\protocol\ble\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\radio\rail_lib\protocol\ieee802154\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\radio\rail_lib\protocol\wmbus\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\radio\rail_lib\protocol\zwave\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\radio\rail_lib\chip\efr32\efr32xg2x\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\radio\rail_lib\protocol\sidewalk\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\radio\rail_lib\plugin\pa-conversions\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\radio\rail_lib\plugin\pa-conversions\efr32xg28\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\radio\rail_lib\plugin\rail_util_pti\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\security\sl_component\se_manager\inc\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\security\sl_component\se_manager\src\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\util\third_party\segger\systemview\SEGGER\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\util\silicon_labs\silabs_core\memory_manager\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\common\toolchain\inc\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\service\system\inc\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\app\wisun\component\ns_list\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\app\wisun\component\trace_util\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\app\wisun\component\trace_util\nanostack\nanostack-libservice\mbed-client-libservice\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\service\sleeptimer\inc\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\protocol\wisun\stack\inc\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\protocol\wisun\app\wisun_rcp\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\protocol\wisun\stack\inc\socket\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\protocol\wisun\stack\src\
+#        -Ohz --use_c++_inline) --dependencies=n
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\ewarm-iar\obj\library_11823079944874003547.dir\psa_crypto_rsa.o.iar_deps
+#    Locale                       =  C
+#    List file                    =
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\ewarm-iar\lst\library_11823079944874003547.dir\psa_crypto_rsa.lst
+#    Object file                  =
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\ewarm-iar\obj\library_11823079944874003547.dir\psa_crypto_rsa.o
+#    Runtime model:                  
+#      __CPP_Runtime              =  1
+#      __SystemLibrary            =  DLib
+#      __dlib_file_descriptor     =  0
+#      __dlib_full_locale_support =  0
+#      __dlib_version             =  6
+#
+###############################################################################
+
+C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\util\third_party\mbedtls\library\psa_crypto_rsa.c
+      1          /*
+      2           *  PSA RSA layer on top of Mbed TLS crypto
+      3           */
+      4          /*
+      5           *  Copyright The Mbed TLS Contributors
+      6           *  SPDX-License-Identifier: Apache-2.0
+      7           *
+      8           *  Licensed under the Apache License, Version 2.0 (the "License"); you may
+      9           *  not use this file except in compliance with the License.
+     10           *  You may obtain a copy of the License at
+     11           *
+     12           *  http://www.apache.org/licenses/LICENSE-2.0
+     13           *
+     14           *  Unless required by applicable law or agreed to in writing, software
+     15           *  distributed under the License is distributed on an "AS IS" BASIS, WITHOUT
+     16           *  WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     17           *  See the License for the specific language governing permissions and
+     18           *  limitations under the License.
+     19           */
+     20          
+     21          #include "common.h"
+     22          
+     23          #if defined(MBEDTLS_PSA_CRYPTO_C)
+     24          
+     25          #include <psa/crypto.h>
+     26          #include "psa/crypto_values.h"
+     27          #include "psa_crypto_core.h"
+     28          #include "psa_crypto_random_impl.h"
+     29          #include "psa_crypto_rsa.h"
+     30          #include "psa_crypto_hash.h"
+     31          #include "md_psa.h"
+     32          
+     33          #include <stdlib.h>
+     34          #include <string.h>
+     35          #include "mbedtls/platform.h"
+     36          
+     37          #include <mbedtls/rsa.h>
+     38          #include <mbedtls/error.h>
+     39          #include <mbedtls/pk.h>
+     40          #include "pk_wrap.h"
+     41          
+     42          #if defined(MBEDTLS_PSA_BUILTIN_ALG_RSA_PKCS1V15_CRYPT) || \
+     43              defined(MBEDTLS_PSA_BUILTIN_ALG_RSA_OAEP) || \
+     44              defined(MBEDTLS_PSA_BUILTIN_ALG_RSA_PKCS1V15_SIGN) || \
+     45              defined(MBEDTLS_PSA_BUILTIN_ALG_RSA_PSS) || \
+     46              defined(MBEDTLS_PSA_BUILTIN_KEY_TYPE_RSA_KEY_PAIR_IMPORT) || \
+     47              defined(MBEDTLS_PSA_BUILTIN_KEY_TYPE_RSA_KEY_PAIR_EXPORT) || \
+     48              defined(MBEDTLS_PSA_BUILTIN_KEY_TYPE_RSA_PUBLIC_KEY)
+     49          
+     50          /* Mbed TLS doesn't support non-byte-aligned key sizes (i.e. key sizes
+     51           * that are not a multiple of 8) well. For example, there is only
+     52           * mbedtls_rsa_get_len(), which returns a number of bytes, and no
+     53           * way to return the exact bit size of a key.
+     54           * To keep things simple, reject non-byte-aligned key sizes. */
+     55          static psa_status_t psa_check_rsa_key_byte_aligned(
+     56              const mbedtls_rsa_context *rsa)
+     57          {
+     58              mbedtls_mpi n;
+     59              psa_status_t status;
+     60              mbedtls_mpi_init(&n);
+     61              status = mbedtls_to_psa_error(
+     62                  mbedtls_rsa_export(rsa, &n, NULL, NULL, NULL, NULL));
+     63              if (status == PSA_SUCCESS) {
+     64                  if (mbedtls_mpi_bitlen(&n) % 8 != 0) {
+     65                      status = PSA_ERROR_NOT_SUPPORTED;
+     66                  }
+     67              }
+     68              mbedtls_mpi_free(&n);
+     69              return status;
+     70          }
+     71          
+     72          psa_status_t mbedtls_psa_rsa_load_representation(
+     73              psa_key_type_t type, const uint8_t *data, size_t data_length,
+     74              mbedtls_rsa_context **p_rsa)
+     75          {
+     76              psa_status_t status;
+     77              mbedtls_pk_context ctx;
+     78              size_t bits;
+     79              mbedtls_pk_init(&ctx);
+     80          
+     81              /* Parse the data. */
+     82              if (PSA_KEY_TYPE_IS_KEY_PAIR(type)) {
+     83                  status = mbedtls_to_psa_error(
+     84                      mbedtls_pk_parse_key(&ctx, data, data_length, NULL, 0,
+     85                                           mbedtls_psa_get_random, MBEDTLS_PSA_RANDOM_STATE));
+     86              } else {
+     87                  status = mbedtls_to_psa_error(
+     88                      mbedtls_pk_parse_public_key(&ctx, data, data_length));
+     89              }
+     90              if (status != PSA_SUCCESS) {
+     91                  goto exit;
+     92              }
+     93          
+     94              /* We have something that the pkparse module recognizes. If it is a
+     95               * valid RSA key, store it. */
+     96              if (mbedtls_pk_get_type(&ctx) != MBEDTLS_PK_RSA) {
+     97                  status = PSA_ERROR_INVALID_ARGUMENT;
+     98                  goto exit;
+     99              }
+    100          
+    101              /* The size of an RSA key doesn't have to be a multiple of 8. Mbed TLS
+    102               * supports non-byte-aligned key sizes, but not well. For example,
+    103               * mbedtls_rsa_get_len() returns the key size in bytes, not in bits. */
+    104              bits = PSA_BYTES_TO_BITS(mbedtls_rsa_get_len(mbedtls_pk_rsa(ctx)));
+    105              if (bits > PSA_VENDOR_RSA_MAX_KEY_BITS) {
+    106                  status = PSA_ERROR_NOT_SUPPORTED;
+    107                  goto exit;
+    108              }
+    109              status = psa_check_rsa_key_byte_aligned(mbedtls_pk_rsa(ctx));
+    110              if (status != PSA_SUCCESS) {
+    111                  goto exit;
+    112              }
+    113          
+    114              /* Copy out the pointer to the RSA context, and reset the PK context
+    115               * such that pk_free doesn't free the RSA context we just grabbed. */
+    116              *p_rsa = mbedtls_pk_rsa(ctx);
+    117              ctx.pk_info = NULL;
+    118          
+    119          exit:
+    120              mbedtls_pk_free(&ctx);
+    121              return status;
+    122          }
+    123          #endif /* defined(MBEDTLS_PSA_BUILTIN_ALG_RSA_PKCS1V15_CRYPT) ||
+    124                  * defined(MBEDTLS_PSA_BUILTIN_ALG_RSA_OAEP) ||
+    125                  * defined(MBEDTLS_PSA_BUILTIN_ALG_RSA_PKCS1V15_SIGN) ||
+    126                  * defined(MBEDTLS_PSA_BUILTIN_ALG_RSA_PSS) ||
+    127                  * defined(MBEDTLS_PSA_BUILTIN_KEY_TYPE_RSA_KEY_PAIR_IMPORT) ||
+    128                  * defined(MBEDTLS_PSA_BUILTIN_KEY_TYPE_RSA_KEY_PAIR_EXPORT) ||
+    129                  * defined(MBEDTLS_PSA_BUILTIN_KEY_TYPE_RSA_PUBLIC_KEY) */
+    130          
+    131          #if (defined(MBEDTLS_PSA_BUILTIN_KEY_TYPE_RSA_KEY_PAIR_IMPORT) && \
+    132              defined(MBEDTLS_PSA_BUILTIN_KEY_TYPE_RSA_KEY_PAIR_EXPORT)) || \
+    133              defined(MBEDTLS_PSA_BUILTIN_KEY_TYPE_RSA_PUBLIC_KEY)
+    134          psa_status_t mbedtls_psa_rsa_import_key(
+    135              const psa_key_attributes_t *attributes,
+    136              const uint8_t *data, size_t data_length,
+    137              uint8_t *key_buffer, size_t key_buffer_size,
+    138              size_t *key_buffer_length, size_t *bits)
+    139          {
+    140              psa_status_t status;
+    141              mbedtls_rsa_context *rsa = NULL;
+    142          
+    143              /* Parse input */
+    144              status = mbedtls_psa_rsa_load_representation(attributes->core.type,
+    145                                                           data,
+    146                                                           data_length,
+    147                                                           &rsa);
+    148              if (status != PSA_SUCCESS) {
+    149                  goto exit;
+    150              }
+    151          
+    152              *bits = (psa_key_bits_t) PSA_BYTES_TO_BITS(mbedtls_rsa_get_len(rsa));
+    153          
+    154              /* Re-export the data to PSA export format, such that we can store export
+    155               * representation in the key slot. Export representation in case of RSA is
+    156               * the smallest representation that's allowed as input, so a straight-up
+    157               * allocation of the same size as the input buffer will be large enough. */
+    158              status = mbedtls_psa_rsa_export_key(attributes->core.type,
+    159                                                  rsa,
+    160                                                  key_buffer,
+    161                                                  key_buffer_size,
+    162                                                  key_buffer_length);
+    163          exit:
+    164              /* Always free the RSA object */
+    165              mbedtls_rsa_free(rsa);
+    166              mbedtls_free(rsa);
+    167          
+    168              return status;
+    169          }
+    170          #endif /* (defined(MBEDTLS_PSA_BUILTIN_KEY_TYPE_RSA_KEY_PAIR_IMPORT) &&
+    171                  *  defined(MBEDTLS_PSA_BUILTIN_KEY_TYPE_RSA_KEY_PAIR_EXPORT)) ||
+    172                  * defined(MBEDTLS_PSA_BUILTIN_KEY_TYPE_RSA_PUBLIC_KEY) */
+    173          
+    174          #if defined(MBEDTLS_PSA_BUILTIN_KEY_TYPE_RSA_KEY_PAIR_EXPORT) || \
+    175              defined(MBEDTLS_PSA_BUILTIN_KEY_TYPE_RSA_PUBLIC_KEY)
+    176          psa_status_t mbedtls_psa_rsa_export_key(psa_key_type_t type,
+    177                                                  mbedtls_rsa_context *rsa,
+    178                                                  uint8_t *data,
+    179                                                  size_t data_size,
+    180                                                  size_t *data_length)
+    181          {
+    182              int ret;
+    183              mbedtls_pk_context pk;
+    184              uint8_t *pos = data + data_size;
+    185          
+    186              mbedtls_pk_init(&pk);
+    187              pk.pk_info = &mbedtls_rsa_info;
+    188              pk.pk_ctx = rsa;
+    189          
+    190              /* PSA Crypto API defines the format of an RSA key as a DER-encoded
+    191               * representation of the non-encrypted PKCS#1 RSAPrivateKey for a
+    192               * private key and of the RFC3279 RSAPublicKey for a public key. */
+    193              if (PSA_KEY_TYPE_IS_KEY_PAIR(type)) {
+    194                  ret = mbedtls_pk_write_key_der(&pk, data, data_size);
+    195              } else {
+    196                  ret = mbedtls_pk_write_pubkey(&pos, data, &pk);
+    197              }
+    198          
+    199              if (ret < 0) {
+    200                  /* Clean up in case pk_write failed halfway through. */
+    201                  memset(data, 0, data_size);
+    202                  return mbedtls_to_psa_error(ret);
+    203              }
+    204          
+    205              /* The mbedtls_pk_xxx functions write to the end of the buffer.
+    206               * Move the data to the beginning and erase remaining data
+    207               * at the original location. */
+    208              if (2 * (size_t) ret <= data_size) {
+    209                  memcpy(data, data + data_size - ret, ret);
+    210                  memset(data + data_size - ret, 0, ret);
+    211              } else if ((size_t) ret < data_size) {
+    212                  memmove(data, data + data_size - ret, ret);
+    213                  memset(data + ret, 0, data_size - ret);
+    214              }
+    215          
+    216              *data_length = ret;
+    217              return PSA_SUCCESS;
+    218          }
+    219          
+    220          psa_status_t mbedtls_psa_rsa_export_public_key(
+    221              const psa_key_attributes_t *attributes,
+    222              const uint8_t *key_buffer, size_t key_buffer_size,
+    223              uint8_t *data, size_t data_size, size_t *data_length)
+    224          {
+    225              psa_status_t status = PSA_ERROR_CORRUPTION_DETECTED;
+    226              mbedtls_rsa_context *rsa = NULL;
+    227          
+    228              status = mbedtls_psa_rsa_load_representation(
+    229                  attributes->core.type, key_buffer, key_buffer_size, &rsa);
+    230              if (status != PSA_SUCCESS) {
+    231                  return status;
+    232              }
+    233          
+    234              status = mbedtls_psa_rsa_export_key(PSA_KEY_TYPE_RSA_PUBLIC_KEY,
+    235                                                  rsa,
+    236                                                  data,
+    237                                                  data_size,
+    238                                                  data_length);
+    239          
+    240              mbedtls_rsa_free(rsa);
+    241              mbedtls_free(rsa);
+    242          
+    243              return status;
+    244          }
+    245          #endif /* defined(MBEDTLS_PSA_BUILTIN_KEY_TYPE_RSA_KEY_PAIR_EXPORT) ||
+    246                  * defined(MBEDTLS_PSA_BUILTIN_KEY_TYPE_RSA_PUBLIC_KEY) */
+    247          
+    248          #if defined(MBEDTLS_PSA_BUILTIN_KEY_TYPE_RSA_KEY_PAIR_GENERATE)
+    249          static psa_status_t psa_rsa_read_exponent(const uint8_t *domain_parameters,
+    250                                                    size_t domain_parameters_size,
+    251                                                    int *exponent)
+    252          {
+    253              size_t i;
+    254              uint32_t acc = 0;
+    255          
+    256              if (domain_parameters_size == 0) {
+    257                  *exponent = 65537;
+    258                  return PSA_SUCCESS;
+    259              }
+    260          
+    261              /* Mbed TLS encodes the public exponent as an int. For simplicity, only
+    262               * support values that fit in a 32-bit integer, which is larger than
+    263               * int on just about every platform anyway. */
+    264              if (domain_parameters_size > sizeof(acc)) {
+    265                  return PSA_ERROR_NOT_SUPPORTED;
+    266              }
+    267              for (i = 0; i < domain_parameters_size; i++) {
+    268                  acc = (acc << 8) | domain_parameters[i];
+    269              }
+    270              if (acc > INT_MAX) {
+    271                  return PSA_ERROR_NOT_SUPPORTED;
+    272              }
+    273              *exponent = acc;
+    274              return PSA_SUCCESS;
+    275          }
+    276          
+    277          psa_status_t mbedtls_psa_rsa_generate_key(
+    278              const psa_key_attributes_t *attributes,
+    279              uint8_t *key_buffer, size_t key_buffer_size, size_t *key_buffer_length)
+    280          {
+    281              psa_status_t status;
+    282              mbedtls_rsa_context rsa;
+    283              int ret = MBEDTLS_ERR_ERROR_CORRUPTION_DETECTED;
+    284              int exponent;
+    285          
+    286              status = psa_rsa_read_exponent(attributes->domain_parameters,
+    287                                             attributes->domain_parameters_size,
+    288                                             &exponent);
+    289              if (status != PSA_SUCCESS) {
+    290                  return status;
+    291              }
+    292          
+    293              mbedtls_rsa_init(&rsa);
+    294              ret = mbedtls_rsa_gen_key(&rsa,
+    295                                        mbedtls_psa_get_random,
+    296                                        MBEDTLS_PSA_RANDOM_STATE,
+    297                                        (unsigned int) attributes->core.bits,
+    298                                        exponent);
+    299              if (ret != 0) {
+    300                  return mbedtls_to_psa_error(ret);
+    301              }
+    302          
+    303              status = mbedtls_psa_rsa_export_key(attributes->core.type,
+    304                                                  &rsa, key_buffer, key_buffer_size,
+    305                                                  key_buffer_length);
+    306              mbedtls_rsa_free(&rsa);
+    307          
+    308              return status;
+    309          }
+    310          #endif /* defined(MBEDTLS_PSA_BUILTIN_KEY_TYPE_RSA_KEY_PAIR_GENERATE) */
+    311          
+    312          /****************************************************************/
+    313          /* Sign/verify hashes */
+    314          /****************************************************************/
+    315          
+    316          #if defined(MBEDTLS_PSA_BUILTIN_ALG_RSA_PKCS1V15_SIGN) || \
+    317              defined(MBEDTLS_PSA_BUILTIN_ALG_RSA_PSS)
+    318          
+    319          /* Decode the hash algorithm from alg and store the mbedtls encoding in
+    320           * md_alg. Verify that the hash length is acceptable. */
+    321          static psa_status_t psa_rsa_decode_md_type(psa_algorithm_t alg,
+    322                                                     size_t hash_length,
+    323                                                     mbedtls_md_type_t *md_alg)
+    324          {
+    325              psa_algorithm_t hash_alg = PSA_ALG_SIGN_GET_HASH(alg);
+    326              *md_alg = mbedtls_md_type_from_psa_alg(hash_alg);
+    327          
+    328              /* The Mbed TLS RSA module uses an unsigned int for hash length
+    329               * parameters. Validate that it fits so that we don't risk an
+    330               * overflow later. */
+    331          #if SIZE_MAX > UINT_MAX
+    332              if (hash_length > UINT_MAX) {
+    333                  return PSA_ERROR_INVALID_ARGUMENT;
+    334              }
+    335          #endif
+    336          
+    337              /* For signatures using a hash, the hash length must be correct. */
+    338              if (alg != PSA_ALG_RSA_PKCS1V15_SIGN_RAW) {
+    339                  if (*md_alg == MBEDTLS_MD_NONE) {
+    340                      return PSA_ERROR_NOT_SUPPORTED;
+    341                  }
+    342                  if (mbedtls_md_get_size_from_type(*md_alg) != hash_length) {
+    343                      return PSA_ERROR_INVALID_ARGUMENT;
+    344                  }
+    345              }
+    346          
+    347              return PSA_SUCCESS;
+    348          }
+    349          
+    350          psa_status_t mbedtls_psa_rsa_sign_hash(
+    351              const psa_key_attributes_t *attributes,
+    352              const uint8_t *key_buffer, size_t key_buffer_size,
+    353              psa_algorithm_t alg, const uint8_t *hash, size_t hash_length,
+    354              uint8_t *signature, size_t signature_size, size_t *signature_length)
+    355          {
+    356              psa_status_t status = PSA_ERROR_CORRUPTION_DETECTED;
+    357              mbedtls_rsa_context *rsa = NULL;
+    358              int ret = MBEDTLS_ERR_ERROR_CORRUPTION_DETECTED;
+    359              mbedtls_md_type_t md_alg;
+    360          
+    361              status = mbedtls_psa_rsa_load_representation(attributes->core.type,
+    362                                                           key_buffer,
+    363                                                           key_buffer_size,
+    364                                                           &rsa);
+    365              if (status != PSA_SUCCESS) {
+    366                  return status;
+    367              }
+    368          
+    369              status = psa_rsa_decode_md_type(alg, hash_length, &md_alg);
+    370              if (status != PSA_SUCCESS) {
+    371                  goto exit;
+    372              }
+    373          
+    374              if (signature_size < mbedtls_rsa_get_len(rsa)) {
+    375                  status = PSA_ERROR_BUFFER_TOO_SMALL;
+    376                  goto exit;
+    377              }
+    378          
+    379          #if defined(MBEDTLS_PSA_BUILTIN_ALG_RSA_PKCS1V15_SIGN)
+    380              if (PSA_ALG_IS_RSA_PKCS1V15_SIGN(alg)) {
+    381                  ret = mbedtls_rsa_set_padding(rsa, MBEDTLS_RSA_PKCS_V15,
+    382                                                MBEDTLS_MD_NONE);
+    383                  if (ret == 0) {
+    384                      ret = mbedtls_rsa_pkcs1_sign(rsa,
+    385                                                   mbedtls_psa_get_random,
+    386                                                   MBEDTLS_PSA_RANDOM_STATE,
+    387                                                   md_alg,
+    388                                                   (unsigned int) hash_length,
+    389                                                   hash,
+    390                                                   signature);
+    391                  }
+    392              } else
+    393          #endif /* MBEDTLS_PSA_BUILTIN_ALG_RSA_PKCS1V15_SIGN */
+    394          #if defined(MBEDTLS_PSA_BUILTIN_ALG_RSA_PSS)
+    395              if (PSA_ALG_IS_RSA_PSS(alg)) {
+    396                  ret = mbedtls_rsa_set_padding(rsa, MBEDTLS_RSA_PKCS_V21, md_alg);
+    397          
+    398                  if (ret == 0) {
+    399                      ret = mbedtls_rsa_rsassa_pss_sign(rsa,
+    400                                                        mbedtls_psa_get_random,
+    401                                                        MBEDTLS_PSA_RANDOM_STATE,
+    402                                                        MBEDTLS_MD_NONE,
+    403                                                        (unsigned int) hash_length,
+    404                                                        hash,
+    405                                                        signature);
+    406                  }
+    407              } else
+    408          #endif /* MBEDTLS_PSA_BUILTIN_ALG_RSA_PSS */
+    409              {
+    410                  status = PSA_ERROR_INVALID_ARGUMENT;
+    411                  goto exit;
+    412              }
+    413          
+    414              if (ret == 0) {
+    415                  *signature_length = mbedtls_rsa_get_len(rsa);
+    416              }
+    417              status = mbedtls_to_psa_error(ret);
+    418          
+    419          exit:
+    420              mbedtls_rsa_free(rsa);
+    421              mbedtls_free(rsa);
+    422          
+    423              return status;
+    424          }
+    425          
+    426          #if defined(MBEDTLS_PSA_BUILTIN_ALG_RSA_PSS)
+    427          static int rsa_pss_expected_salt_len(psa_algorithm_t alg,
+    428                                               const mbedtls_rsa_context *rsa,
+    429                                               size_t hash_length)
+    430          {
+    431              if (PSA_ALG_IS_RSA_PSS_ANY_SALT(alg)) {
+    432                  return MBEDTLS_RSA_SALT_LEN_ANY;
+    433              }
+    434              /* Otherwise: standard salt length, i.e. largest possible salt length
+    435               * up to the hash length. */
+    436              int klen = (int) mbedtls_rsa_get_len(rsa);   // known to fit
+    437              int hlen = (int) hash_length; // known to fit
+    438              int room = klen - 2 - hlen;
+    439              if (room < 0) {
+    440                  return 0;  // there is no valid signature in this case anyway
+    441              } else if (room > hlen) {
+    442                  return hlen;
+    443              } else {
+    444                  return room;
+    445              }
+    446          }
+    447          #endif /* MBEDTLS_PSA_BUILTIN_ALG_RSA_PSS */
+    448          
+    449          psa_status_t mbedtls_psa_rsa_verify_hash(
+    450              const psa_key_attributes_t *attributes,
+    451              const uint8_t *key_buffer, size_t key_buffer_size,
+    452              psa_algorithm_t alg, const uint8_t *hash, size_t hash_length,
+    453              const uint8_t *signature, size_t signature_length)
+    454          {
+    455              psa_status_t status = PSA_ERROR_CORRUPTION_DETECTED;
+    456              mbedtls_rsa_context *rsa = NULL;
+    457              int ret = MBEDTLS_ERR_ERROR_CORRUPTION_DETECTED;
+    458              mbedtls_md_type_t md_alg;
+    459          
+    460              status = mbedtls_psa_rsa_load_representation(attributes->core.type,
+    461                                                           key_buffer,
+    462                                                           key_buffer_size,
+    463                                                           &rsa);
+    464              if (status != PSA_SUCCESS) {
+    465                  goto exit;
+    466              }
+    467          
+    468              status = psa_rsa_decode_md_type(alg, hash_length, &md_alg);
+    469              if (status != PSA_SUCCESS) {
+    470                  goto exit;
+    471              }
+    472          
+    473              if (signature_length != mbedtls_rsa_get_len(rsa)) {
+    474                  status = PSA_ERROR_INVALID_SIGNATURE;
+    475                  goto exit;
+    476              }
+    477          
+    478          #if defined(MBEDTLS_PSA_BUILTIN_ALG_RSA_PKCS1V15_SIGN)
+    479              if (PSA_ALG_IS_RSA_PKCS1V15_SIGN(alg)) {
+    480                  ret = mbedtls_rsa_set_padding(rsa, MBEDTLS_RSA_PKCS_V15,
+    481                                                MBEDTLS_MD_NONE);
+    482                  if (ret == 0) {
+    483                      ret = mbedtls_rsa_pkcs1_verify(rsa,
+    484                                                     md_alg,
+    485                                                     (unsigned int) hash_length,
+    486                                                     hash,
+    487                                                     signature);
+    488                  }
+    489              } else
+    490          #endif /* MBEDTLS_PSA_BUILTIN_ALG_RSA_PKCS1V15_SIGN */
+    491          #if defined(MBEDTLS_PSA_BUILTIN_ALG_RSA_PSS)
+    492              if (PSA_ALG_IS_RSA_PSS(alg)) {
+    493                  ret = mbedtls_rsa_set_padding(rsa, MBEDTLS_RSA_PKCS_V21, md_alg);
+    494                  if (ret == 0) {
+    495                      int slen = rsa_pss_expected_salt_len(alg, rsa, hash_length);
+    496                      ret = mbedtls_rsa_rsassa_pss_verify_ext(rsa,
+    497                                                              md_alg,
+    498                                                              (unsigned) hash_length,
+    499                                                              hash,
+    500                                                              md_alg,
+    501                                                              slen,
+    502                                                              signature);
+    503                  }
+    504              } else
+    505          #endif /* MBEDTLS_PSA_BUILTIN_ALG_RSA_PSS */
+    506              {
+    507                  status = PSA_ERROR_INVALID_ARGUMENT;
+    508                  goto exit;
+    509              }
+    510          
+    511              /* Mbed TLS distinguishes "invalid padding" from "valid padding but
+    512               * the rest of the signature is invalid". This has little use in
+    513               * practice and PSA doesn't report this distinction. */
+    514              status = (ret == MBEDTLS_ERR_RSA_INVALID_PADDING) ?
+    515                       PSA_ERROR_INVALID_SIGNATURE :
+    516                       mbedtls_to_psa_error(ret);
+    517          
+    518          exit:
+    519              mbedtls_rsa_free(rsa);
+    520              mbedtls_free(rsa);
+    521          
+    522              return status;
+    523          }
+    524          
+    525          #endif /* defined(MBEDTLS_PSA_BUILTIN_ALG_RSA_PKCS1V15_SIGN) ||
+    526                  * defined(MBEDTLS_PSA_BUILTIN_ALG_RSA_PSS) */
+    527          
+    528          /****************************************************************/
+    529          /* Asymmetric cryptography */
+    530          /****************************************************************/
+    531          
+    532          #if defined(MBEDTLS_PSA_BUILTIN_ALG_RSA_OAEP)
+    533          static int psa_rsa_oaep_set_padding_mode(psa_algorithm_t alg,
+    534                                                   mbedtls_rsa_context *rsa)
+    535          {
+    536              psa_algorithm_t hash_alg = PSA_ALG_RSA_OAEP_GET_HASH(alg);
+    537              mbedtls_md_type_t md_alg = mbedtls_md_type_from_psa_alg(hash_alg);
+    538          
+    539              /* Just to get the error status right, as rsa_set_padding() doesn't
+    540               * distinguish between "bad RSA algorithm" and "unknown hash". */
+    541              if (mbedtls_md_info_from_type(md_alg) == NULL) {
+    542                  return PSA_ERROR_NOT_SUPPORTED;
+    543              }
+    544          
+    545              return mbedtls_rsa_set_padding(rsa, MBEDTLS_RSA_PKCS_V21, md_alg);
+    546          }
+    547          #endif /* defined(MBEDTLS_PSA_BUILTIN_ALG_RSA_OAEP) */
+    548          
+
+   \                                 In section .text, align 2, keep-with-next
+    549          psa_status_t mbedtls_psa_asymmetric_encrypt(const psa_key_attributes_t *attributes,
+    550                                                      const uint8_t *key_buffer,
+    551                                                      size_t key_buffer_size,
+    552                                                      psa_algorithm_t alg,
+    553                                                      const uint8_t *input,
+    554                                                      size_t input_length,
+    555                                                      const uint8_t *salt,
+    556                                                      size_t salt_length,
+    557                                                      uint8_t *output,
+    558                                                      size_t output_size,
+    559                                                      size_t *output_length)
+    560          {
+   \                     mbedtls_psa_asymmetric_encrypt: (+1)
+   \        0x0   0x4601             MOV      R1,R0
+    561              psa_status_t status = PSA_ERROR_CORRUPTION_DETECTED;
+    562              (void) key_buffer;
+    563              (void) key_buffer_size;
+    564              (void) input;
+    565              (void) input_length;
+    566              (void) salt;
+    567              (void) salt_length;
+    568              (void) output;
+    569              (void) output_size;
+    570              (void) output_length;
+    571          
+    572              if (PSA_KEY_TYPE_IS_RSA(attributes->core.type)) {
+   \        0x2   0x880A             LDRH     R2,[R1, #+0]
+   \        0x4   0xF244 0x0101      MOVW     R1,#+16385
+   \        0x8   0xF06F 0x0085      MVN      R0,#+133
+   \        0xC   0xF422 0x5240      BIC      R2,R2,#0x3000
+   \       0x10   0x428A             CMP      R2,R1
+   \       0x12   0xD109             BNE.N    ??mbedtls_psa_asymmetric_encrypt_0
+    573          #if defined(MBEDTLS_PSA_BUILTIN_ALG_RSA_PKCS1V15_CRYPT) || \
+    574                  defined(MBEDTLS_PSA_BUILTIN_ALG_RSA_OAEP)
+    575                  mbedtls_rsa_context *rsa = NULL;
+    576                  status = mbedtls_psa_rsa_load_representation(attributes->core.type,
+    577                                                               key_buffer,
+    578                                                               key_buffer_size,
+    579                                                               &rsa);
+    580                  if (status != PSA_SUCCESS) {
+    581                      goto rsa_exit;
+    582                  }
+    583          
+    584                  if (output_size < mbedtls_rsa_get_len(rsa)) {
+    585                      status = PSA_ERROR_BUFFER_TOO_SMALL;
+    586                      goto rsa_exit;
+    587                  }
+    588          #endif /* defined(MBEDTLS_PSA_BUILTIN_ALG_RSA_PKCS1V15_CRYPT) ||
+    589                  * defined(MBEDTLS_PSA_BUILTIN_ALG_RSA_OAEP) */
+    590                  if (alg == PSA_ALG_RSA_PKCS1V15_CRYPT) {
+   \       0x14   0x....             LDR.N    R2,??DataTable1
+   \       0x16   0x4293             CMP      R3,R2
+   \       0x18   0xBF1F             ITTTT    NE
+   \       0x1A   0x0A1B             LSRNE    R3,R3,#+8
+   \       0x1C   0x021B             LSLNE    R3,R3,#+8
+   \       0x1E   0x....             LDRNE.N  R1,??DataTable1_1
+   \       0x20   0x428B             CMPNE    R3,R1
+    591          #if defined(MBEDTLS_PSA_BUILTIN_ALG_RSA_PKCS1V15_CRYPT)
+    592                      status = mbedtls_to_psa_error(
+    593                          mbedtls_rsa_pkcs1_encrypt(rsa,
+    594                                                    mbedtls_psa_get_random,
+    595                                                    MBEDTLS_PSA_RANDOM_STATE,
+    596                                                    input_length,
+    597                                                    input,
+    598                                                    output));
+    599          #else
+    600                      status = PSA_ERROR_NOT_SUPPORTED;
+    601          #endif /* MBEDTLS_PSA_BUILTIN_ALG_RSA_PKCS1V15_CRYPT */
+    602                  } else
+    603                  if (PSA_ALG_IS_RSA_OAEP(alg)) {
+   \       0x22   0xBF18             IT       NE
+   \       0x24   0xF06F 0x0086      MVNNE    R0,#+134
+    604          #if defined(MBEDTLS_PSA_BUILTIN_ALG_RSA_OAEP)
+    605                      status = mbedtls_to_psa_error(
+    606                          psa_rsa_oaep_set_padding_mode(alg, rsa));
+    607                      if (status != PSA_SUCCESS) {
+    608                          goto rsa_exit;
+    609                      }
+    610          
+    611                      status = mbedtls_to_psa_error(
+    612                          mbedtls_rsa_rsaes_oaep_encrypt(rsa,
+    613                                                         mbedtls_psa_get_random,
+    614                                                         MBEDTLS_PSA_RANDOM_STATE,
+    615                                                         salt, salt_length,
+    616                                                         input_length,
+    617                                                         input,
+    618                                                         output));
+    619          #else
+    620                      status = PSA_ERROR_NOT_SUPPORTED;
+    621          #endif /* MBEDTLS_PSA_BUILTIN_ALG_RSA_OAEP */
+    622                  } else {
+    623                      status = PSA_ERROR_INVALID_ARGUMENT;
+    624                  }
+    625          #if defined(MBEDTLS_PSA_BUILTIN_ALG_RSA_PKCS1V15_CRYPT) || \
+    626                  defined(MBEDTLS_PSA_BUILTIN_ALG_RSA_OAEP)
+    627          rsa_exit:
+    628                  if (status == PSA_SUCCESS) {
+    629                      *output_length = mbedtls_rsa_get_len(rsa);
+    630                  }
+    631          
+    632                  mbedtls_rsa_free(rsa);
+    633                  mbedtls_free(rsa);
+    634          #endif /* defined(MBEDTLS_PSA_BUILTIN_ALG_RSA_PKCS1V15_CRYPT) ||
+    635                  * defined(MBEDTLS_PSA_BUILTIN_ALG_RSA_OAEP) */
+    636              } else {
+    637                  status = PSA_ERROR_NOT_SUPPORTED;
+    638              }
+    639          
+    640              return status;
+   \                     ??mbedtls_psa_asymmetric_encrypt_0: (+1)
+   \       0x28   0x4770             BX       LR
+    641          }
+    642          
+
+   \                                 In section .text, align 2, keep-with-next
+    643          psa_status_t mbedtls_psa_asymmetric_decrypt(const psa_key_attributes_t *attributes,
+    644                                                      const uint8_t *key_buffer,
+    645                                                      size_t key_buffer_size,
+    646                                                      psa_algorithm_t alg,
+    647                                                      const uint8_t *input,
+    648                                                      size_t input_length,
+    649                                                      const uint8_t *salt,
+    650                                                      size_t salt_length,
+    651                                                      uint8_t *output,
+    652                                                      size_t output_size,
+    653                                                      size_t *output_length)
+    654          {
+   \                     mbedtls_psa_asymmetric_decrypt: (+1)
+   \        0x0   0xB510             PUSH     {R4,LR}
+   \        0x2   0x9A08             LDR      R2,[SP, #+32]
+   \        0x4   0x4601             MOV      R1,R0
+    655              psa_status_t status = PSA_ERROR_CORRUPTION_DETECTED;
+    656              (void) key_buffer;
+    657              (void) key_buffer_size;
+    658              (void) input;
+    659              (void) input_length;
+    660              (void) salt;
+    661              (void) salt_length;
+    662              (void) output;
+    663              (void) output_size;
+    664              (void) output_length;
+    665          
+    666              *output_length = 0;
+   \        0x6   0x2000             MOVS     R0,#+0
+   \        0x8   0x6010             STR      R0,[R2, #+0]
+    667          
+    668              if (attributes->core.type == PSA_KEY_TYPE_RSA_KEY_PAIR) {
+   \        0xA   0x880A             LDRH     R2,[R1, #+0]
+   \        0xC   0xF247 0x0101      MOVW     R1,#+28673
+   \       0x10   0xF06F 0x0085      MVN      R0,#+133
+   \       0x14   0x428A             CMP      R2,R1
+   \       0x16   0xD109             BNE.N    ??mbedtls_psa_asymmetric_decrypt_0
+    669          #if defined(MBEDTLS_PSA_BUILTIN_ALG_RSA_PKCS1V15_CRYPT) || \
+    670                  defined(MBEDTLS_PSA_BUILTIN_ALG_RSA_OAEP)
+    671                  mbedtls_rsa_context *rsa = NULL;
+    672                  status = mbedtls_psa_rsa_load_representation(attributes->core.type,
+    673                                                               key_buffer,
+    674                                                               key_buffer_size,
+    675                                                               &rsa);
+    676                  if (status != PSA_SUCCESS) {
+    677                      goto rsa_exit;
+    678                  }
+    679          
+    680                  if (input_length != mbedtls_rsa_get_len(rsa)) {
+    681                      status = PSA_ERROR_INVALID_ARGUMENT;
+    682                      goto rsa_exit;
+    683                  }
+    684          #endif /* defined(MBEDTLS_PSA_BUILTIN_ALG_RSA_PKCS1V15_CRYPT) ||
+    685                  * defined(MBEDTLS_PSA_BUILTIN_ALG_RSA_OAEP) */
+    686          
+    687                  if (alg == PSA_ALG_RSA_PKCS1V15_CRYPT) {
+   \       0x18   0x....             LDR.N    R4,??DataTable1
+   \       0x1A   0x42A3             CMP      R3,R4
+   \       0x1C   0xBF1F             ITTTT    NE
+   \       0x1E   0x0A1B             LSRNE    R3,R3,#+8
+   \       0x20   0x021B             LSLNE    R3,R3,#+8
+   \       0x22   0x....             LDRNE.N  R1,??DataTable1_1
+   \       0x24   0x428B             CMPNE    R3,R1
+    688          #if defined(MBEDTLS_PSA_BUILTIN_ALG_RSA_PKCS1V15_CRYPT)
+    689                      status = mbedtls_to_psa_error(
+    690                          mbedtls_rsa_pkcs1_decrypt(rsa,
+    691                                                    mbedtls_psa_get_random,
+    692                                                    MBEDTLS_PSA_RANDOM_STATE,
+    693                                                    output_length,
+    694                                                    input,
+    695                                                    output,
+    696                                                    output_size));
+    697          #else
+    698                      status = PSA_ERROR_NOT_SUPPORTED;
+    699          #endif /* MBEDTLS_PSA_BUILTIN_ALG_RSA_PKCS1V15_CRYPT */
+    700                  } else
+    701                  if (PSA_ALG_IS_RSA_OAEP(alg)) {
+   \       0x26   0xBF18             IT       NE
+   \       0x28   0xF06F 0x0086      MVNNE    R0,#+134
+    702          #if defined(MBEDTLS_PSA_BUILTIN_ALG_RSA_OAEP)
+    703                      status = mbedtls_to_psa_error(
+    704                          psa_rsa_oaep_set_padding_mode(alg, rsa));
+    705                      if (status != PSA_SUCCESS) {
+    706                          goto rsa_exit;
+    707                      }
+    708          
+    709                      status = mbedtls_to_psa_error(
+    710                          mbedtls_rsa_rsaes_oaep_decrypt(rsa,
+    711                                                         mbedtls_psa_get_random,
+    712                                                         MBEDTLS_PSA_RANDOM_STATE,
+    713                                                         salt, salt_length,
+    714                                                         output_length,
+    715                                                         input,
+    716                                                         output,
+    717                                                         output_size));
+    718          #else
+    719                      status = PSA_ERROR_NOT_SUPPORTED;
+    720          #endif /* MBEDTLS_PSA_BUILTIN_ALG_RSA_OAEP */
+    721                  } else {
+    722                      status = PSA_ERROR_INVALID_ARGUMENT;
+    723                  }
+    724          
+    725          #if defined(MBEDTLS_PSA_BUILTIN_ALG_RSA_PKCS1V15_CRYPT) || \
+    726                  defined(MBEDTLS_PSA_BUILTIN_ALG_RSA_OAEP)
+    727          rsa_exit:
+    728                  mbedtls_rsa_free(rsa);
+    729                  mbedtls_free(rsa);
+    730          #endif /* defined(MBEDTLS_PSA_BUILTIN_ALG_RSA_PKCS1V15_CRYPT) ||
+    731                  * defined(MBEDTLS_PSA_BUILTIN_ALG_RSA_OAEP) */
+    732              } else {
+    733                  status = PSA_ERROR_NOT_SUPPORTED;
+    734              }
+    735          
+    736              return status;
+   \                     ??mbedtls_psa_asymmetric_decrypt_0: (+1)
+   \       0x2C   0xBD10             POP      {R4,PC}
+    737          }
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable1:
+   \        0x0   0x0700'0200        DC32     0x7000200
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable1_1:
+   \        0x0   0x0700'0300        DC32     0x7000300
+    738          
+    739          #endif /* MBEDTLS_PSA_CRYPTO_C */
+
+   Maximum stack usage in bytes:
+
+   .cstack Function
+   ------- --------
+       8   mbedtls_psa_asymmetric_decrypt
+       0   mbedtls_psa_asymmetric_encrypt
+
+
+   Section sizes:
+
+   Bytes  Function/Label
+   -----  --------------
+       4  ??DataTable1
+       4  ??DataTable1_1
+      46  mbedtls_psa_asymmetric_decrypt
+      42  mbedtls_psa_asymmetric_encrypt
+
+ 
+ 96 bytes in section .text
+ 
+ 96 bytes of CODE memory
+
+Errors: none
+Warnings: none

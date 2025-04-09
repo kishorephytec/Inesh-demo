@@ -1,0 +1,1763 @@
+###############################################################################
+#
+# IAR ANSI C/C++ Compiler V9.50.2.385/W64 for ARM         27/Nov/2024  12:17:38
+# Copyright 1999-2024 IAR Systems AB.
+#
+#    Cpu mode                     =  thumb
+#    Endian                       =  little
+#    Source file                  =
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\util\third_party\mbedtls\library\psa_crypto_slot_management.c
+#    Command line                 =
+#        -f
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\ewarm-iar\obj\library_11823079944874003547.dir\psa_crypto_slot_management.o.rsp
+#        (C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\util\third_party\mbedtls\library\psa_crypto_slot_management.c
+#        -D EFR32FG28B322F1024IM48=1 -D
+#        configNUM_SDK_THREAD_LOCAL_STORAGE_POINTERS=2 -D
+#        SL_COMPONENT_CATALOG_PRESENT=1 -D
+#        MBEDTLS_CONFIG_FILE=<sl_mbedtls_config.h> -D
+#        MBEDTLS_PSA_CRYPTO_CONFIG_FILE=<psa_crypto_config.h> -D
+#        SL_RAIL_LIB_MULTIPROTOCOL_SUPPORT=0 -D
+#        SL_RAIL_UTIL_PA_CONFIG_HEADER=<sl_rail_util_pa_config.h> -D
+#        RTT_USE_ASM=0 -D MBED_CONF_MBED_TRACE_ENABLE=1 -D
+#        MBED_CONF_NANOSTACK_CONFIGURATION=ws_router -D
+#        MBED_TRACE_MAX_LEVEL=TRACE_ACTIVE_LEVEL_ALL -D DEBUG_EFM_USER=1 -D
+#        HAVE_LFN=1 -D HAVE_LFN_PARENT=1 -lC
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\ewarm-iar\lst\library_11823079944874003547.dir
+#        --diag_suppress Pa050 -o
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\ewarm-iar\obj\library_11823079944874003547.dir
+#        --debug --endian=little --cpu=Cortex-M33 --cmse --cmse -e
+#        --fpu=VFPv5_sp --dlib_config "C:\Program Files\IAR Systems\Embedded
+#        Workbench 9.2\arm\inc\c\DLib_Config_Normal.h" -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\util\third_party\mbedtls\library\
+#        -I C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\autogen\ -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\config\ -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\config\rail\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\Device\SiliconLabs\EFR32FG28\Include\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\common\inc\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\CMSIS\Core\Include\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\CMSIS\RTOS2\Include\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\service\device_init\inc\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\emdrv\dmadrv\inc\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\emdrv\common\inc\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\emlib\inc\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\util\third_party\freertos\cmsis\Include\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\util\third_party\freertos\kernel\include\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\util\third_party\freertos\kernel\portable\IAR\ARM_CM33_NTZ\non_secure\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\service\iostream\inc\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\security\sl_component\sl_mbedtls_support\config\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\security\sl_component\sl_mbedtls_support\config\preset\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\security\sl_component\sl_mbedtls_support\inc\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\util\third_party\mbedtls\include\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\util\third_party\mbedtls\library\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\emdrv\nvm3\inc\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\peripheral\inc\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\security\sl_component\sl_psa_driver\inc\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\radio\rail_lib\common\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\radio\rail_lib\protocol\ble\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\radio\rail_lib\protocol\ieee802154\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\radio\rail_lib\protocol\wmbus\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\radio\rail_lib\protocol\zwave\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\radio\rail_lib\chip\efr32\efr32xg2x\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\radio\rail_lib\protocol\sidewalk\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\radio\rail_lib\plugin\pa-conversions\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\radio\rail_lib\plugin\pa-conversions\efr32xg28\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\radio\rail_lib\plugin\rail_util_pti\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\security\sl_component\se_manager\inc\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\security\sl_component\se_manager\src\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\util\third_party\segger\systemview\SEGGER\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\util\silicon_labs\silabs_core\memory_manager\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\common\toolchain\inc\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\service\system\inc\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\app\wisun\component\ns_list\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\app\wisun\component\trace_util\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\app\wisun\component\trace_util\nanostack\nanostack-libservice\mbed-client-libservice\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\service\sleeptimer\inc\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\protocol\wisun\stack\inc\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\protocol\wisun\app\wisun_rcp\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\protocol\wisun\stack\inc\socket\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\protocol\wisun\stack\src\
+#        -Ohz --use_c++_inline) --dependencies=n
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\ewarm-iar\obj\library_11823079944874003547.dir\psa_crypto_slot_management.o.iar_deps
+#    Locale                       =  C
+#    List file                    =
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\ewarm-iar\lst\library_11823079944874003547.dir\psa_crypto_slot_management.lst
+#    Object file                  =
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\ewarm-iar\obj\library_11823079944874003547.dir\psa_crypto_slot_management.o
+#    Runtime model:                  
+#      __CPP_Runtime              =  1
+#      __SystemLibrary            =  DLib
+#      __dlib_file_descriptor     =  0
+#      __dlib_full_locale_support =  0
+#      __dlib_version             =  6
+#
+###############################################################################
+
+C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\util\third_party\mbedtls\library\psa_crypto_slot_management.c
+      1          /*
+      2           *  PSA crypto layer on top of Mbed TLS crypto
+      3           */
+      4          /*
+      5           *  Copyright The Mbed TLS Contributors
+      6           *  SPDX-License-Identifier: Apache-2.0
+      7           *
+      8           *  Licensed under the Apache License, Version 2.0 (the "License"); you may
+      9           *  not use this file except in compliance with the License.
+     10           *  You may obtain a copy of the License at
+     11           *
+     12           *  http://www.apache.org/licenses/LICENSE-2.0
+     13           *
+     14           *  Unless required by applicable law or agreed to in writing, software
+     15           *  distributed under the License is distributed on an "AS IS" BASIS, WITHOUT
+     16           *  WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     17           *  See the License for the specific language governing permissions and
+     18           *  limitations under the License.
+     19           */
+     20          
+     21          #include "common.h"
+     22          
+     23          #if defined(MBEDTLS_PSA_CRYPTO_C)
+     24          
+     25          #include "psa/crypto.h"
+     26          
+     27          #include "psa_crypto_core.h"
+     28          #include "psa_crypto_driver_wrappers_no_static.h"
+     29          #include "psa_crypto_slot_management.h"
+
+   \                                 In section .text, align 2, keep-with-next
+   \   static __vfp int psa_key_id_is_volatile(uint32_t)
+   \                     psa_key_id_is_volatile: (+1)
+   \        0x0   0xF100 0x4000      ADD      R0,R0,#+2147483648
+   \        0x4   0x300E             ADDS     R0,R0,#+14
+   \        0x6   0x280E             CMP      R0,#+14
+   \        0x8   0x....             B.N      ?Subroutine0
+
+   \                                 In section .text, align 2, keep-with-next
+   \                     ?Subroutine0: (+1)
+   \        0x0   0x4180             SBCS     R0,R0,R0
+   \        0x2   0x0FC0             LSRS     R0,R0,#+31
+   \        0x4   0x4770             BX       LR
+     30          #include "psa_crypto_storage.h"
+     31          #if defined(MBEDTLS_PSA_CRYPTO_SE_C)
+     32          #include "psa_crypto_se.h"
+     33          #endif
+     34          
+     35          #include <stdlib.h>
+     36          #include <string.h>
+     37          #include "mbedtls/threading.h"
+     38          #include "mbedtls/platform.h"
+     39          
+     40          typedef struct {
+     41              psa_key_slot_t key_slots[MBEDTLS_PSA_KEY_SLOT_COUNT];
+     42              uint8_t key_slots_initialized;
+     43          } psa_global_data_t;
+     44          
+
+   \                                 In section .bss, align 4
+     45          static psa_global_data_t global_data;
+   \                     global_data:
+   \        0x0                      DS8 620
+     46          
+
+   \                                 In section .text, align 2, keep-with-next
+     47          int psa_is_valid_key_id(mbedtls_svc_key_id_t key, int vendor_ok)
+     48          {
+     49              psa_key_id_t key_id = MBEDTLS_SVC_KEY_ID_GET_KEY_ID(key);
+     50          
+     51              if ((PSA_KEY_ID_USER_MIN <= key_id) &&
+     52                  (key_id <= PSA_KEY_ID_USER_MAX)) {
+   \                     psa_is_valid_key_id: (+1)
+   \        0x0   0xB110             CBZ.N    R0,??psa_is_valid_key_id_0
+   \        0x2   0xF1B0 0x4F80      CMP      R0,#+1073741824
+   \        0x6   0xD305             BCC.N    ??psa_is_valid_key_id_1
+     53                  return 1;
+     54              }
+     55          
+     56              if (vendor_ok &&
+     57                  (PSA_KEY_ID_VENDOR_MIN <= key_id) &&
+     58                  (key_id <= PSA_KEY_ID_VENDOR_MAX)) {
+   \                     ??psa_is_valid_key_id_0: (+1)
+   \        0x8   0xB131             CBZ.N    R1,??psa_is_valid_key_id_2
+   \        0xA   0xF100 0x4040      ADD      R0,R0,#+3221225472
+   \        0xE   0xF1B0 0x4F80      CMP      R0,#+1073741824
+   \       0x12   0xD201             BCS.N    ??psa_is_valid_key_id_2
+     59                  return 1;
+   \                     ??psa_is_valid_key_id_1: (+1)
+   \       0x14   0x2001             MOVS     R0,#+1
+   \       0x16   0x4770             BX       LR
+     60              }
+     61          
+     62              return 0;
+   \                     ??psa_is_valid_key_id_2: (+1)
+   \       0x18   0x2000             MOVS     R0,#+0
+   \       0x1A   0x4770             BX       LR
+     63          }
+     64          
+
+   \                                 In section .text, align 4, keep-with-next
+     65          psa_status_t psa_slot_change_state( psa_key_slot_t *slot,
+     66              psa_key_slot_state_t target_state )
+     67          {
+     68              switch( slot->state )
+   \                     psa_slot_change_state: (+1)
+   \        0x0   0xF890 0x2020      LDRB     R2,[R0, #+32]
+   \        0x4   0x2A05             CMP      R2,#+5
+   \        0x6   0xD80D             BHI.N    ??psa_slot_change_state_1
+   \        0x8   0xE8DF 0xF002      TBB      [PC, R2]
+   \                     ??psa_slot_change_state_0:
+   \        0xC   0x03 0x09          DC8      0x3,0x9,0x10,0x18
+   \              0x10 0x18
+   \       0x10   0x23 0x25          DC8      0x23,0x25
+     69              {
+     70                  case PSA_STATE_EMPTY:
+     71                      if( target_state != PSA_STATE_CREATING &&
+     72                          target_state != PSA_STATE_UNUSED &&
+     73                          target_state != PSA_STATE_WIPING )
+   \                     ??psa_slot_change_state_2: (+1)
+   \       0x12   0x2901             CMP      R1,#+1
+   \       0x14   0xBF1C             ITT      NE
+   \       0x16   0x2902             CMPNE    R1,#+2
+   \       0x18   0x2904             CMPNE    R1,#+4
+   \       0x1A   0xD003             BEQ.N    ??psa_slot_change_state_1
+     74                          return( PSA_ERROR_INVALID_HANDLE );
+   \       0x1C   0x....             B.N      ?Subroutine2
+     75                      break;
+     76                  case PSA_STATE_CREATING:
+     77                      if( target_state != PSA_STATE_UNUSED &&
+     78                          target_state != PSA_STATE_DESTROYING &&
+     79                          target_state != PSA_STATE_WIPING )
+   \                     ??psa_slot_change_state_3: (+1)
+   \       0x1E   0x460A             MOV      R2,R1
+   \       0x20   0x2A02             CMP      R2,#+2
+   \       0x22   0xD106             BNE.N    ??psa_slot_change_state_4
+     80                          return( PSA_ERROR_BAD_STATE );
+     81                      break;
+     82                  case PSA_STATE_UNUSED:
+     83                      if( target_state != PSA_STATE_READING &&
+     84                          target_state != PSA_STATE_DESTROYING  &&
+     85                          target_state != PSA_STATE_WIPING )
+     86                          return( PSA_ERROR_BAD_STATE );
+     87                      break;
+     88                  case PSA_STATE_READING:
+     89                      if( target_state != PSA_STATE_UNUSED &&
+     90                          target_state != PSA_STATE_DESTROYING &&
+     91                          target_state != PSA_STATE_WIPING &&
+     92                          target_state != PSA_STATE_READING )
+     93                          return( PSA_ERROR_BAD_STATE );
+     94                      if( target_state == PSA_STATE_UNUSED &&
+     95                          slot->reader_count > 0 )
+     96                          return( PSA_ERROR_BAD_STATE );
+     97                      break;
+     98                  case PSA_STATE_DESTROYING:
+     99                      if( target_state != PSA_STATE_EMPTY )
+    100                          return( PSA_ERROR_BAD_STATE );
+    101                      break;
+    102                  case PSA_STATE_WIPING :
+    103                      if( target_state != PSA_STATE_DESTROYING &&
+    104                          target_state != PSA_STATE_EMPTY )
+    105                          return( PSA_ERROR_BAD_STATE );
+    106                      break;
+    107              }
+    108              slot->state = target_state;
+   \                     ??psa_slot_change_state_1: (+1)
+   \       0x24   0xF880 0x1020      STRB     R1,[R0, #+32]
+    109              return( PSA_SUCCESS );
+   \       0x28   0x2000             MOVS     R0,#+0
+   \       0x2A   0x4770             BX       LR
+   \                     ??psa_slot_change_state_5: (+1)
+   \       0x2C   0x460A             MOV      R2,R1
+   \       0x2E   0x2A03             CMP      R2,#+3
+   \       0x30   0xD0F8             BEQ.N    ??psa_slot_change_state_1
+   \                     ??psa_slot_change_state_4: (+1)
+   \       0x32   0x2A05             CMP      R2,#+5
+   \       0x34   0xD0F6             BEQ.N    ??psa_slot_change_state_1
+   \       0x36   0x2A04             CMP      R2,#+4
+   \                     ??psa_slot_change_state_6: (+1)
+   \       0x38   0xD10F             BNE.N    ??psa_slot_change_state_7
+   \       0x3A   0xE7F3             B.N      ??psa_slot_change_state_1
+   \                     ??psa_slot_change_state_8: (+1)
+   \       0x3C   0x2902             CMP      R1,#+2
+   \       0x3E   0xD005             BEQ.N    ??psa_slot_change_state_9
+   \       0x40   0x2905             CMP      R1,#+5
+   \       0x42   0xBF18             IT       NE
+   \       0x44   0x2904             CMPNE    R1,#+4
+   \       0x46   0xD0ED             BEQ.N    ??psa_slot_change_state_1
+   \       0x48   0x2903             CMP      R1,#+3
+   \       0x4A   0xE7F5             B.N      ??psa_slot_change_state_6
+   \                     ??psa_slot_change_state_9: (+1)
+   \       0x4C   0x69C2             LDR      R2,[R0, #+28]
+   \       0x4E   0x2A00             CMP      R2,#+0
+   \       0x50   0xE7F2             B.N      ??psa_slot_change_state_6
+   \                     ??psa_slot_change_state_10: (+1)
+   \       0x52   0x2905             CMP      R1,#+5
+   \       0x54   0xD0E6             BEQ.N    ??psa_slot_change_state_1
+   \                     ??psa_slot_change_state_11: (+1)
+   \       0x56   0x000A             MOVS     R2,R1
+   \       0x58   0xD0E4             BEQ.N    ??psa_slot_change_state_1
+   \                     ??psa_slot_change_state_7: (+1)
+   \       0x5A                      REQUIRE ?Subroutine1
+   \       0x5A                      ;; // Fall through to label ?Subroutine1
+    110          }
+
+   \                                 In section .text, align 2, keep-with-next
+   \                     ?Subroutine1: (+1)
+   \        0x0   0xF06F 0x0088      MVN      R0,#+136
+   \        0x4   0x4770             BX       LR
+
+   \                                 In section .text, align 2, keep-with-next
+   \                     ?Subroutine2: (+1)
+   \        0x0   0xF06F 0x0087      MVN      R0,#+135
+   \        0x4   0x4770             BX       LR
+    111          
+
+   \                                 In section .text, align 2, keep-with-next
+    112          int psa_slot_has_no_readers( psa_key_slot_t *slot )
+    113          {
+    114              if( slot->reader_count == 0 )
+   \                     psa_slot_has_no_readers: (+1)
+   \        0x0   0x69C0             LDR      R0,[R0, #+28]
+   \        0x2   0x1E40             SUBS     R0,R0,#+1
+   \        0x4                      REQUIRE ?Subroutine0
+   \        0x4                      ;; // Fall through to label ?Subroutine0
+    115                  return( 1 );
+    116          
+    117              return( 0 );
+    118          }
+    119          
+
+   \                                 In section .text, align 2, keep-with-next
+    120          static psa_status_t psa_slot_add_reader( psa_key_slot_t *slot )
+    121          {
+    122              psa_status_t status = PSA_ERROR_CORRUPTION_DETECTED;
+    123          
+    124              status = psa_slot_change_state( slot, PSA_STATE_READING );
+   \                     psa_slot_add_reader: (+1)
+   \        0x0   0xF890 0x2020      LDRB     R2,[R0, #+32]
+   \        0x4   0xB12A             CBZ.N    R2,??psa_slot_add_reader_0
+   \        0x6   0x1E52             SUBS     R2,R2,#+1
+   \        0x8   0xD002             BEQ.N    ??psa_slot_add_reader_1
+   \        0xA   0x1ED2             SUBS     R2,R2,#+3
+   \        0xC   0x2A01             CMP      R2,#+1
+   \        0xE   0xD801             BHI.N    ??psa_slot_add_reader_2
+   \                     ??psa_slot_add_reader_1: (+1)
+   \       0x10   0x....             B.N      ?Subroutine1
+   \                     ??psa_slot_add_reader_0: (+1)
+   \       0x12   0x....             B.N      ?Subroutine2
+   \                     ??psa_slot_add_reader_2: (+1)
+   \       0x14   0x2103             MOVS     R1,#+3
+   \       0x16   0xF880 0x1020      STRB     R1,[R0, #+32]
+    125              if( status != PSA_SUCCESS )
+    126                  return( status );
+    127          
+    128              if( slot->reader_count >= SIZE_MAX )
+   \       0x1A   0x69C1             LDR      R1,[R0, #+28]
+   \       0x1C   0xF111 0x0F01      CMN      R1,#+1
+   \       0x20   0xD102             BNE.N    ??psa_slot_add_reader_3
+    129                  return( PSA_ERROR_CORRUPTION_DETECTED );
+   \       0x22   0xF06F 0x0096      MVN      R0,#+150
+   \       0x26   0x4770             BX       LR
+    130          
+    131              slot->reader_count++;
+   \                     ??psa_slot_add_reader_3: (+1)
+   \       0x28   0x1C49             ADDS     R1,R1,#+1
+   \       0x2A   0x61C1             STR      R1,[R0, #+28]
+    132          
+    133              return( PSA_SUCCESS );
+   \       0x2C   0x2000             MOVS     R0,#+0
+   \       0x2E   0x4770             BX       LR
+    134          }
+    135          
+    136          /** Get the description in memory of a key given its identifier.
+    137           *
+    138           * The descriptions of volatile keys and loaded persistent keys are
+    139           * stored in key slots. This function returns a pointer to the key slot
+    140           * containing the description of a key given its identifier.
+    141           *
+    142           * The function searches the key slots containing the description of the key
+    143           * with \p key identifier. The function does only read accesses to the key
+    144           * slots. The function does not load any persistent key thus does not access
+    145           * any storage.
+    146           *
+    147           * For volatile key identifiers, only one key slot is queried as a volatile
+    148           * key with identifier key_id can only be stored in slot of index
+    149           * ( key_id - #PSA_KEY_ID_VOLATILE_MIN ).
+    150           *
+    151           * Please note that, if MBEDTLS_THREADING_C is enabled, this function should
+    152           * be called with locked mbedtls_psa_slots_mutex.
+    153           *
+    154           * \param key           Key identifier to query.
+    155           * \param[out] p_slot   On success, `*p_slot` contains a pointer to the
+    156           *                      key slot containing the description of the key
+    157           *                      identified by \p key.
+    158           *
+    159           * \retval #PSA_SUCCESS
+    160           *         The pointer to the key slot containing the description of the key
+    161           *         identified by \p key was returned.
+    162           * \retval #PSA_ERROR_INVALID_HANDLE
+    163           *         \p key is not a valid key identifier.
+    164           * \retval #PSA_ERROR_DOES_NOT_EXIST
+    165           *         There is no key with key identifier \p key in the key slots.
+    166           */
+
+   \                                 In section .text, align 2, keep-with-next
+    167          static psa_status_t psa_get_key_slot(
+    168              mbedtls_svc_key_id_t key, psa_key_slot_t **p_slot )
+    169          {
+   \                     psa_get_key_slot: (+1)
+   \        0x0   0xB5F8             PUSH     {R3-R7,LR}
+   \        0x2   0x4604             MOV      R4,R0
+   \        0x4   0x460D             MOV      R5,R1
+    170              psa_status_t status = PSA_ERROR_CORRUPTION_DETECTED;
+    171              psa_key_id_t key_id = MBEDTLS_SVC_KEY_ID_GET_KEY_ID(key);
+    172              size_t slot_idx;
+    173              psa_key_slot_t *slot = NULL;
+    174          
+    175              if (psa_key_id_is_volatile(key_id)) {
+   \        0x6   0x272C             MOVS     R7,#+44
+   \        0x8   0x.... 0x....      LDR.W    R6,??DataTable10
+   \        0xC   0x.... 0x....      BL       psa_key_id_is_volatile
+   \       0x10   0xB148             CBZ.N    R0,??psa_get_key_slot_0
+    176                  slot = &global_data.key_slots[key_id - PSA_KEY_ID_VOLATILE_MIN];
+   \       0x12   0x4367             MULS     R7,R7,R4
+   \       0x14   0x19F0             ADDS     R0,R6,R7
+   \       0x16   0xF500 0x701A      ADD      R0,R0,#+616
+    177          
+    178                  /*
+    179                   * Check if both the PSA key identifier key_id and the owner
+    180                   * identifier of key match those of the key slot.
+    181                   *
+    182                   * Note that, if the key slot is not occupied, its PSA key identifier
+    183                   * is equal to zero. This is an invalid value for a PSA key identifier
+    184                   * and thus cannot be equal to the valid PSA key identifier key_id.
+    185                   */
+    186                  status = mbedtls_svc_key_id_equal(key, slot->attr.id) ?
+    187                           PSA_SUCCESS : PSA_ERROR_DOES_NOT_EXIST;
+   \       0x1A   0x6881             LDR      R1,[R0, #+8]
+   \       0x1C   0x428C             CMP      R4,R1
+   \       0x1E   0xD116             BNE.N    ??psa_get_key_slot_1
+    188              } else {
+    189                  if (!psa_is_valid_key_id(key, 1)) {
+    190                      return PSA_ERROR_INVALID_HANDLE;
+    191                  }
+    192          
+    193                  for (slot_idx = 0; slot_idx < MBEDTLS_PSA_KEY_SLOT_COUNT; slot_idx++) {
+    194                      slot = &global_data.key_slots[slot_idx];
+    195                      if (mbedtls_svc_key_id_equal(key, slot->attr.id)) {
+    196                          break;
+    197                      }
+    198                  }
+    199                  status = (slot_idx < MBEDTLS_PSA_KEY_SLOT_COUNT) ?
+    200                           PSA_SUCCESS : PSA_ERROR_DOES_NOT_EXIST;
+    201              }
+    202          
+    203              if( status != PSA_SUCCESS )
+    204                  return( status );
+    205              else
+    206                  *p_slot = slot;
+   \                     ??psa_get_key_slot_2: (+1)
+   \       0x20   0x6028             STR      R0,[R5, #+0]
+    207          
+    208              return( status );
+   \       0x22   0x2000             MOVS     R0,#+0
+   \       0x24   0xBDF2             POP      {R1,R4-R7,PC}
+   \                     ??psa_get_key_slot_0: (+1)
+   \       0x26   0x2101             MOVS     R1,#+1
+   \       0x28   0x4620             MOV      R0,R4
+   \       0x2A   0x.... 0x....      BL       psa_is_valid_key_id
+   \       0x2E   0xB910             CBNZ.N   R0,??psa_get_key_slot_3
+   \       0x30   0xF06F 0x0087      MVN      R0,#+135
+   \       0x34   0xBDF2             POP      {R1,R4-R7,PC}
+   \                     ??psa_get_key_slot_3: (+1)
+   \       0x36   0x2100             MOVS     R1,#+0
+   \                     ??psa_get_key_slot_4: (+1)
+   \       0x38   0xFB07 0xF001      MUL      R0,R7,R1
+   \       0x3C   0x4430             ADD      R0,R6,R0
+   \       0x3E   0x6882             LDR      R2,[R0, #+8]
+   \       0x40   0x4294             CMP      R4,R2
+   \       0x42   0xD002             BEQ.N    ??psa_get_key_slot_5
+   \       0x44   0x1C49             ADDS     R1,R1,#+1
+   \       0x46   0x290E             CMP      R1,#+14
+   \       0x48   0xD3F6             BCC.N    ??psa_get_key_slot_4
+   \                     ??psa_get_key_slot_5: (+1)
+   \       0x4A   0x290E             CMP      R1,#+14
+   \       0x4C   0xD3E8             BCC.N    ??psa_get_key_slot_2
+   \                     ??psa_get_key_slot_1: (+1)
+   \       0x4E   0xF06F 0x008B      MVN      R0,#+139
+   \       0x52   0xBDF2             POP      {R1,R4-R7,PC}
+    209          }
+    210          
+
+   \                                 In section .text, align 2, keep-with-next
+    211          psa_status_t psa_initialize_key_slots(void)
+    212          {
+    213              /* Nothing to do: program startup and psa_wipe_all_key_slots() both
+    214               * guarantee that the key slots are initialized to all-zero, which
+    215               * means that all the key slots are in a valid, empty state. */
+    216              global_data.key_slots_initialized = 1;
+   \                     psa_initialize_key_slots: (+1)
+   \        0x0   0x2101             MOVS     R1,#+1
+   \        0x2   0x.... 0x....      LDR.W    R0,??DataTable10
+   \        0x6   0xF880 0x1268      STRB     R1,[R0, #+616]
+    217              return PSA_SUCCESS;
+   \        0xA   0x2000             MOVS     R0,#+0
+   \        0xC   0x4770             BX       LR
+    218          }
+    219          
+
+   \                                 In section .text, align 2, keep-with-next
+    220          void psa_wipe_all_key_slots(void)
+    221          {
+    222              size_t slot_idx;
+    223          
+    224          #if defined(MBEDTLS_THREADING_C)
+    225              (void) mbedtls_mutex_lock( &mbedtls_psa_slots_mutex );
+   \                     psa_wipe_all_key_slots: (+1)
+   \        0x0   0x.... 0x....      LDR.W    R2,??DataTable10_1
+   \        0x4   0xB570             PUSH     {R4-R6,LR}
+   \        0x6   0x6811             LDR      R1,[R2, #+0]
+   \        0x8   0x.... 0x....      LDR.W    R4,??DataTable10_2
+   \        0xC   0x4620             MOV      R0,R4
+   \        0xE   0x4788             BLX      R1
+    226          #endif
+    227          
+    228              for( slot_idx = 0; slot_idx < MBEDTLS_PSA_KEY_SLOT_COUNT; slot_idx++ )
+   \       0x10   0x2600             MOVS     R6,#+0
+   \       0x12   0x.... 0x....      LDR.W    R5,??DataTable10
+    229              {
+    230                  psa_key_slot_t *slot = &global_data.key_slots[ slot_idx ];
+    231                  (void) psa_slot_change_state( slot, PSA_STATE_WIPING );
+   \                     ??psa_wipe_all_key_slots_0: (+1)
+   \       0x16   0x202C             MOVS     R0,#+44
+   \       0x18   0x4370             MULS     R0,R0,R6
+   \       0x1A   0x4428             ADD      R0,R5,R0
+   \       0x1C   0xF890 0x2020      LDRB     R2,[R0, #+32]
+   \       0x20   0x1F12             SUBS     R2,R2,#+4
+   \       0x22   0x2A01             CMP      R2,#+1
+   \       0x24   0xBF84             ITT      HI
+   \       0x26   0x2304             MOVHI    R3,#+4
+   \       0x28   0xF880 0x3020      STRBHI   R3,[R0, #+32]
+    232                  (void) psa_wipe_key_slot( slot );
+   \       0x2C   0x.... 0x....      BL       psa_wipe_key_slot
+    233              }
+   \       0x30   0x1C76             ADDS     R6,R6,#+1
+   \       0x32   0x2E0E             CMP      R6,#+14
+   \       0x34   0xD3EF             BCC.N    ??psa_wipe_all_key_slots_0
+    234              global_data.key_slots_initialized = 0;
+   \       0x36   0x2000             MOVS     R0,#+0
+    235          #if defined(MBEDTLS_THREADING_C)
+    236              (void) mbedtls_mutex_unlock( &mbedtls_psa_slots_mutex );
+   \       0x38   0x.... 0x....      LDR.W    R2,??DataTable10_3
+   \       0x3C   0xF885 0x0268      STRB     R0,[R5, #+616]
+   \       0x40   0x6811             LDR      R1,[R2, #+0]
+   \       0x42   0x4620             MOV      R0,R4
+   \       0x44   0xE8BD 0x4070      POP      {R4-R6,LR}
+   \       0x48   0x4708             BX       R1
+    237          #endif
+    238          }
+    239          
+
+   \                                 In section .text, align 2, keep-with-next
+    240          psa_status_t psa_get_empty_key_slot(psa_key_id_t *volatile_key_id,
+    241                                              psa_key_slot_t **p_slot)
+    242          {
+   \                     psa_get_empty_key_slot: (+1)
+   \        0x0   0xB5F8             PUSH     {R3-R7,LR}
+   \        0x2   0x4604             MOV      R4,R0
+    243              psa_status_t status = PSA_ERROR_CORRUPTION_DETECTED;
+    244              size_t slot_idx;
+    245              psa_key_slot_t *selected_slot, *unlocked_persistent_key_slot;
+    246              if( ! global_data.key_slots_initialized )
+   \        0x4   0x.... 0x....      LDR.W    R7,??DataTable10
+   \        0x8   0xF897 0x0268      LDRB     R0,[R7, #+616]
+   \        0xC   0x460D             MOV      R5,R1
+   \        0xE   0xF06F 0x0188      MVN      R1,#+136
+   \       0x12   0xB360             CBZ.N    R0,??psa_get_empty_key_slot_0
+    247              {
+    248                  status = PSA_ERROR_BAD_STATE;
+    249                  goto error;
+    250              }
+    251          
+    252              selected_slot = unlocked_persistent_key_slot = NULL;
+   \       0x14   0x2000             MOVS     R0,#+0
+    253              for( slot_idx = 0; slot_idx < MBEDTLS_PSA_KEY_SLOT_COUNT; slot_idx++ )
+   \       0x16   0x2300             MOVS     R3,#+0
+    254              {
+    255                  psa_key_slot_t *slot = &global_data.key_slots[ slot_idx ];
+    256                  if( slot->state == PSA_STATE_EMPTY )
+   \                     ??psa_get_empty_key_slot_1: (+1)
+   \       0x18   0x262C             MOVS     R6,#+44
+   \       0x1A   0x435E             MULS     R6,R6,R3
+   \       0x1C   0x443E             ADD      R6,R7,R6
+   \       0x1E   0xF896 0x2020      LDRB     R2,[R6, #+32]
+   \       0x22   0xB1BA             CBZ.N    R2,??psa_get_empty_key_slot_2
+    257                  {
+    258                      selected_slot = slot;
+    259                      break;
+    260                  }
+    261          
+    262                  if( ( unlocked_persistent_key_slot == NULL ) &&
+    263                          ( ! PSA_KEY_LIFETIME_IS_VOLATILE( slot->attr.lifetime ) ) &&
+    264                          ( slot->state == PSA_STATE_UNUSED ) )
+   \       0x24   0xB938             CBNZ.N   R0,??psa_get_empty_key_slot_3
+   \       0x26   0x6872             LDR      R2,[R6, #+4]
+   \       0x28   0xB2D2             UXTB     R2,R2
+   \       0x2A   0xB122             CBZ.N    R2,??psa_get_empty_key_slot_3
+   \       0x2C   0xF896 0x2020      LDRB     R2,[R6, #+32]
+   \       0x30   0x2A02             CMP      R2,#+2
+   \       0x32   0xBF08             IT       EQ
+   \       0x34   0x4630             MOVEQ    R0,R6
+    265                              unlocked_persistent_key_slot = slot;
+    266              }
+   \                     ??psa_get_empty_key_slot_3: (+1)
+   \       0x36   0x1C5B             ADDS     R3,R3,#+1
+   \       0x38   0x2B0E             CMP      R3,#+14
+   \       0x3A   0xD3ED             BCC.N    ??psa_get_empty_key_slot_1
+   \       0x3C   0xB1A8             CBZ.N    R0,??psa_get_empty_key_slot_4
+    267          
+    268              /*
+    269               * If there is no unused key slot and there is at least one unlocked key
+    270               * slot containing the description of a persistent key, recycle the first
+    271               * such key slot we encountered. If we later need to operate on the
+    272               * persistent key we are evicting now, we will reload its description from
+    273               * storage.
+    274               */
+    275              if( ( selected_slot == NULL ) && ( unlocked_persistent_key_slot != NULL ) )
+    276              {
+    277                  selected_slot = unlocked_persistent_key_slot;
+   \       0x3E   0x4606             MOV      R6,R0
+    278                  status = psa_slot_change_state( selected_slot, PSA_STATE_WIPING );
+   \       0x40   0xF896 0x2020      LDRB     R2,[R6, #+32]
+   \       0x44   0x1F12             SUBS     R2,R2,#+4
+   \       0x46   0x2A01             CMP      R2,#+1
+   \       0x48   0xD914             BLS.N    ??psa_get_empty_key_slot_5
+   \       0x4A   0x2104             MOVS     R1,#+4
+   \       0x4C   0xF886 0x1020      STRB     R1,[R6, #+32]
+    279                  if( status != PSA_SUCCESS )
+    280                      return( status );
+    281          
+    282                  psa_wipe_key_slot( selected_slot );
+   \       0x50   0x.... 0x....      BL       psa_wipe_key_slot
+    283              }
+    284          
+    285              if( selected_slot != NULL )
+    286              {
+    287                  *volatile_key_id = PSA_KEY_ID_VOLATILE_MIN +
+    288                                     ((psa_key_id_t) (selected_slot - global_data.key_slots));
+   \                     ??psa_get_empty_key_slot_2: (+1)
+   \       0x54   0x1BF7             SUBS     R7,R6,R7
+   \       0x56   0x212C             MOVS     R1,#+44
+   \       0x58   0xFB97 0xF1F1      SDIV     R1,R7,R1
+   \       0x5C   0x.... 0x....      LDR.W    R0,??DataTable10_4
+   \       0x60   0x1841             ADDS     R1,R0,R1
+   \       0x62   0x6021             STR      R1,[R4, #+0]
+    289                  *p_slot = selected_slot;
+   \       0x64   0x602E             STR      R6,[R5, #+0]
+    290          
+    291                  return PSA_SUCCESS;
+   \       0x66   0x2000             MOVS     R0,#+0
+   \       0x68   0xBDF2             POP      {R1,R4-R7,PC}
+    292              }
+    293              status = PSA_ERROR_INSUFFICIENT_MEMORY;
+   \                     ??psa_get_empty_key_slot_4: (+1)
+   \       0x6A   0xF06F 0x018C      MVN      R1,#+140
+    294          
+    295          error:
+    296              *p_slot = NULL;
+   \                     ??psa_get_empty_key_slot_0: (+1)
+   \       0x6E   0x2000             MOVS     R0,#+0
+   \       0x70   0x6028             STR      R0,[R5, #+0]
+    297              *volatile_key_id = 0;
+   \       0x72   0x6020             STR      R0,[R4, #+0]
+    298          
+    299              return status;
+   \                     ??psa_get_empty_key_slot_5: (+1)
+   \       0x74   0x4608             MOV      R0,R1
+   \       0x76   0xBDF2             POP      {R1,R4-R7,PC}
+    300          }
+    301          
+    302          #if defined(MBEDTLS_PSA_CRYPTO_STORAGE_C)
+    303          static psa_status_t psa_load_persistent_key_into_slot(psa_key_slot_t *slot)
+    304          {
+    305              psa_status_t status = PSA_SUCCESS;
+    306              uint8_t *key_data = NULL;
+    307              size_t key_data_length = 0;
+    308          
+    309              status = psa_load_persistent_key(&slot->attr,
+    310                                               &key_data, &key_data_length);
+    311              if (status != PSA_SUCCESS) {
+    312                  goto exit;
+    313              }
+    314          
+    315          #if defined(MBEDTLS_PSA_CRYPTO_SE_C)
+    316              /* Special handling is required for loading keys associated with a
+    317               * dynamically registered SE interface. */
+    318              const psa_drv_se_t *drv;
+    319              psa_drv_se_context_t *drv_context;
+    320              if (psa_get_se_driver(slot->attr.lifetime, &drv, &drv_context)) {
+    321                  psa_se_key_data_storage_t *data;
+    322          
+    323                  if (key_data_length != sizeof(*data)) {
+    324                      status = PSA_ERROR_DATA_INVALID;
+    325                      goto exit;
+    326                  }
+    327                  data = (psa_se_key_data_storage_t *) key_data;
+    328                  status = psa_copy_key_material_into_slot(
+    329                      slot, data->slot_number, sizeof(data->slot_number));
+    330                  goto exit;
+    331              }
+    332          #endif /* MBEDTLS_PSA_CRYPTO_SE_C */
+    333          
+    334              if( ( status = psa_copy_key_material_into_slot( slot, key_data,
+    335                  key_data_length ) ) != PSA_SUCCESS )
+    336              {
+    337                  goto exit;
+    338              }
+    339          
+    340          exit:
+    341              psa_free_persistent_key_data( key_data, key_data_length );
+    342              if( status == PSA_SUCCESS )
+    343                  status = psa_slot_change_state( slot, PSA_STATE_UNUSED );
+    344              return( status );
+    345          }
+    346          #endif /* MBEDTLS_PSA_CRYPTO_STORAGE_C */
+    347          
+    348          #if defined(MBEDTLS_PSA_CRYPTO_BUILTIN_KEYS)
+    349          
+    350          static psa_status_t psa_load_builtin_key_into_slot(psa_key_slot_t *slot)
+    351          {
+    352              psa_status_t status = PSA_ERROR_CORRUPTION_DETECTED;
+    353              psa_key_attributes_t attributes = PSA_KEY_ATTRIBUTES_INIT;
+    354              psa_key_lifetime_t lifetime = PSA_KEY_LIFETIME_VOLATILE;
+    355              psa_drv_slot_number_t slot_number = 0;
+    356              size_t key_buffer_size = 0;
+    357              size_t key_buffer_length = 0;
+    358          
+    359              if (!psa_key_id_is_builtin(
+    360                      MBEDTLS_SVC_KEY_ID_GET_KEY_ID(slot->attr.id))) {
+    361                  return PSA_ERROR_DOES_NOT_EXIST;
+    362              }
+    363          
+    364              /* Check the platform function to see whether this key actually exists */
+    365              status = mbedtls_psa_platform_get_builtin_key(
+    366                  slot->attr.id, &lifetime, &slot_number);
+    367              if (status != PSA_SUCCESS) {
+    368                  return status;
+    369              }
+    370          
+    371              /* Set required key attributes to ensure get_builtin_key can retrieve the
+    372               * full attributes. */
+    373              psa_set_key_id(&attributes, slot->attr.id);
+    374              psa_set_key_lifetime(&attributes, lifetime);
+    375          
+    376              /* Get the full key attributes from the driver in order to be able to
+    377               * calculate the required buffer size. */
+    378              status = psa_driver_wrapper_get_builtin_key(
+    379                  slot_number, &attributes,
+    380                  NULL, 0, NULL);
+    381              if (status != PSA_ERROR_BUFFER_TOO_SMALL) {
+    382                  /* Builtin keys cannot be defined by the attributes alone */
+    383                  if (status == PSA_SUCCESS) {
+    384                      status = PSA_ERROR_CORRUPTION_DETECTED;
+    385                  }
+    386                  return status;
+    387              }
+    388          
+    389              /* If the key should exist according to the platform, then ask the driver
+    390               * what its expected size is. */
+    391              status = psa_driver_wrapper_get_key_buffer_size(&attributes,
+    392                                                              &key_buffer_size);
+    393              if (status != PSA_SUCCESS) {
+    394                  return status;
+    395              }
+    396          
+    397              /* Allocate a buffer of the required size and load the builtin key directly
+    398               * into the (now properly sized) slot buffer. */
+    399              status = psa_allocate_buffer_to_slot(slot, key_buffer_size);
+    400              if (status != PSA_SUCCESS) {
+    401                  return status;
+    402              }
+    403          
+    404              status = psa_driver_wrapper_get_builtin_key(
+    405                  slot_number, &attributes,
+    406                  slot->key.data, slot->key.bytes, &key_buffer_length);
+    407              if (status != PSA_SUCCESS) {
+    408                  goto exit;
+    409              }
+    410          
+    411              /* Copy actual key length and core attributes into the slot on success */
+    412              slot->key.bytes = key_buffer_length;
+    413              slot->attr = attributes.core;
+    414          
+    415              status = psa_slot_change_state( slot, PSA_STATE_UNUSED );
+    416          exit:
+    417              if (status != PSA_SUCCESS) {
+    418                  psa_remove_key_data_from_memory(slot);
+    419              }
+    420              return status;
+    421          }
+    422          #endif /* MBEDTLS_PSA_CRYPTO_BUILTIN_KEYS */
+    423          
+
+   \                                 In section .text, align 4, keep-with-next
+    424          psa_status_t psa_get_and_lock_key_slot( mbedtls_svc_key_id_t key,
+    425                                                  psa_key_slot_t **p_slot,
+    426                                                  psa_slot_locking_intent_t intent )
+    427          {
+   \                     psa_get_and_lock_key_slot: (+1)
+   \        0x0   0xE92D 0x4FFE      PUSH     {R1-R11,LR}
+   \        0x4   0x4614             MOV      R4,R2
+   \        0x6   0x460D             MOV      R5,R1
+    428              psa_status_t status = PSA_ERROR_CORRUPTION_DETECTED;
+    429              MBEDTLS_MUTEX_LOCK_CHECK( &mbedtls_psa_slots_mutex );
+   \        0x8   0x.... 0x....      LDR.W    R2,??DataTable10_1
+   \        0xC   0x6811             LDR      R1,[R2, #+0]
+   \        0xE   0x4680             MOV      R8,R0
+   \       0x10   0x.... 0x....      LDR.W    R11,??DataTable10_2
+   \       0x14   0x4658             MOV      R0,R11
+   \       0x16   0x4788             BLX      R1
+   \       0x18   0xF06F 0x0988      MVN      R9,#+136
+   \       0x1C   0x2800             CMP      R0,#+0
+   \       0x1E   0xD109             BNE.N    ??CrossCallReturnLabel_5
+    430          
+    431              *p_slot = NULL;
+   \       0x20   0x6028             STR      R0,[R5, #+0]
+    432              if( !global_data.key_slots_initialized )
+   \       0x22   0x.... 0x....      LDR.W    R1,??DataTable10
+   \       0x26   0xF891 0x0268      LDRB     R0,[R1, #+616]
+   \       0x2A   0x.... 0x....      LDR.W    R7,??DataTable10_3
+   \       0x2E   0xB910             CBNZ.N   R0,??psa_get_and_lock_key_slot_1
+    433              {
+    434                  MBEDTLS_MUTEX_UNLOCK_CHECK( &mbedtls_psa_slots_mutex );
+   \       0x30   0x.... 0x....      BL       ?Subroutine4
+    435                  return( PSA_ERROR_BAD_STATE );
+    436              }
+   \                     ??CrossCallReturnLabel_5: (+1)
+   \       0x34   0xE091             B.N      ??psa_get_and_lock_key_slot_2
+    437          
+    438              /*
+    439               * On success, the pointer to the slot is passed directly to the caller
+    440               * thus no need to unlock the key slot here.
+    441               */
+    442              if( ( status = psa_get_key_slot( key, p_slot ) ) == PSA_SUCCESS )
+   \                     ??psa_get_and_lock_key_slot_1: (+1)
+   \       0x36   0x4629             MOV      R1,R5
+   \       0x38   0x4640             MOV      R0,R8
+   \       0x3A   0x.... 0x....      BL       psa_get_key_slot
+   \       0x3E   0x4606             MOV      R6,R0
+   \       0x40   0xB9D0             CBNZ.N   R0,??psa_get_and_lock_key_slot_3
+    443              {
+    444                  if( intent == PSA_INTENT_READ )
+   \       0x42   0xB944             CBNZ.N   R4,??psa_get_and_lock_key_slot_4
+    445                      status = psa_slot_add_reader( *p_slot );
+   \       0x44   0x6828             LDR      R0,[R5, #+0]
+   \       0x46   0x.... 0x....      BL       psa_slot_add_reader
+   \       0x4A   0x0006             MOVS     R6,R0
+    446                  else if( intent == PSA_INTENT_DESTROY )
+    447                      status = psa_slot_change_state( *p_slot, PSA_STATE_DESTROYING );
+    448                  if( status != PSA_SUCCESS )
+   \       0x4C   0xD01E             BEQ.N    ??psa_get_and_lock_key_slot_5
+    449                  {
+    450                      MBEDTLS_MUTEX_UNLOCK_CHECK( &mbedtls_psa_slots_mutex );
+   \                     ??psa_get_and_lock_key_slot_6: (+1)
+   \       0x4E   0x.... 0x....      BL       ?Subroutine4
+   \                     ??CrossCallReturnLabel_4: (+1)
+   \       0x52   0xB1F8             CBZ.N    R0,??psa_get_and_lock_key_slot_7
+   \       0x54   0xE081             B.N      ??psa_get_and_lock_key_slot_2
+    451                      return( status );
+    452                  }
+   \                     ??psa_get_and_lock_key_slot_4: (+1)
+   \       0x56   0x2C01             CMP      R4,#+1
+   \       0x58   0xD118             BNE.N    ??psa_get_and_lock_key_slot_5
+   \       0x5A   0x6828             LDR      R0,[R5, #+0]
+   \       0x5C   0xF890 0x1020      LDRB     R1,[R0, #+32]
+   \       0x60   0xB119             CBZ.N    R1,??psa_get_and_lock_key_slot_8
+   \       0x62   0x2905             CMP      R1,#+5
+   \       0x64   0xD104             BNE.N    ??psa_get_and_lock_key_slot_9
+   \       0x66   0x464E             MOV      R6,R9
+   \       0x68   0xE7F1             B.N      ??psa_get_and_lock_key_slot_6
+   \                     ??psa_get_and_lock_key_slot_8: (+1)
+   \       0x6A   0xF06F 0x0687      MVN      R6,#+135
+   \       0x6E   0xE7EE             B.N      ??psa_get_and_lock_key_slot_6
+   \                     ??psa_get_and_lock_key_slot_9: (+1)
+   \       0x70   0x2105             MOVS     R1,#+5
+   \       0x72   0xF880 0x1020      STRB     R1,[R0, #+32]
+   \       0x76   0xE009             B.N      ??psa_get_and_lock_key_slot_5
+    453              }
+    454              if( status != PSA_ERROR_DOES_NOT_EXIST )
+   \                     ??psa_get_and_lock_key_slot_3: (+1)
+   \       0x78   0xF06F 0x0A8B      MVN      R10,#+139
+   \       0x7C   0x4556             CMP      R6,R10
+   \       0x7E   0xD105             BNE.N    ??psa_get_and_lock_key_slot_5
+    455              {
+    456                  MBEDTLS_MUTEX_UNLOCK_CHECK( &mbedtls_psa_slots_mutex );
+    457                  return( status );
+    458              }
+    459          
+    460              /* Loading keys from storage requires support for such a mechanism */
+    461          #if defined(MBEDTLS_PSA_CRYPTO_STORAGE_C) || \
+    462              defined(MBEDTLS_PSA_CRYPTO_BUILTIN_KEYS)
+    463              psa_key_id_t volatile_key_id;
+    464          
+    465              status = psa_get_empty_key_slot( &volatile_key_id, p_slot );
+   \       0x80   0x4629             MOV      R1,R5
+   \       0x82   0xA802             ADD      R0,SP,#+8
+   \       0x84   0x.... 0x....      BL       psa_get_empty_key_slot
+   \       0x88   0x0006             MOVS     R6,R0
+    466              if( status != PSA_SUCCESS )
+   \       0x8A   0xD005             BEQ.N    ??psa_get_and_lock_key_slot_10
+    467              {
+    468                  MBEDTLS_MUTEX_UNLOCK_CHECK( &mbedtls_psa_slots_mutex );
+   \                     ??psa_get_and_lock_key_slot_5: (+1)
+   \       0x8C   0x.... 0x....      BL       ?Subroutine4
+   \                     ??CrossCallReturnLabel_3: (+1)
+   \       0x90   0x2800             CMP      R0,#+0
+   \       0x92   0xD162             BNE.N    ??psa_get_and_lock_key_slot_2
+    469                  return( status );
+   \                     ??psa_get_and_lock_key_slot_7: (+1)
+   \       0x94   0x4630             MOV      R0,R6
+   \       0x96   0xE063             B.N      ??psa_get_and_lock_key_slot_11
+    470              }
+    471          
+    472              (*p_slot)->attr.id = key;
+   \                     ??psa_get_and_lock_key_slot_10: (+1)
+   \       0x98   0x682E             LDR      R6,[R5, #+0]
+    473              (*p_slot)->attr.lifetime = PSA_KEY_LIFETIME_PERSISTENT;
+   \       0x9A   0x2001             MOVS     R0,#+1
+    474          
+    475              status = PSA_ERROR_DOES_NOT_EXIST;
+    476          #if defined(MBEDTLS_PSA_CRYPTO_BUILTIN_KEYS)
+    477              /* Load keys in the 'builtin' range through their own interface */
+    478              status = psa_load_builtin_key_into_slot(*p_slot);
+    479          #endif /* MBEDTLS_PSA_CRYPTO_BUILTIN_KEYS */
+    480          
+    481          #if defined(MBEDTLS_PSA_CRYPTO_STORAGE_C)
+    482              if (status == PSA_ERROR_DOES_NOT_EXIST) {
+    483                  status = psa_load_persistent_key_into_slot(*p_slot);
+   \       0x9C   0x2100             MOVS     R1,#+0
+   \       0x9E   0xF8C6 0x8008      STR      R8,[R6, #+8]
+   \       0xA2   0x6070             STR      R0,[R6, #+4]
+   \       0xA4   0x9101             STR      R1,[SP, #+4]
+   \       0xA6   0x9100             STR      R1,[SP, #+0]
+   \       0xA8   0x466A             MOV      R2,SP
+   \       0xAA   0xA901             ADD      R1,SP,#+4
+   \       0xAC   0x4630             MOV      R0,R6
+   \       0xAE   0x.... 0x....      BL       psa_load_persistent_key
+   \       0xB2   0xEA5F 0x0800      MOVS     R8,R0
+   \       0xB6   0xD105             BNE.N    ??psa_get_and_lock_key_slot_12
+   \       0xB8   0x9A00             LDR      R2,[SP, #+0]
+   \       0xBA   0x9901             LDR      R1,[SP, #+4]
+   \       0xBC   0x4630             MOV      R0,R6
+   \       0xBE   0x.... 0x....      BL       psa_copy_key_material_into_slot
+   \       0xC2   0x4680             MOV      R8,R0
+   \                     ??psa_get_and_lock_key_slot_12: (+1)
+   \       0xC4   0x9900             LDR      R1,[SP, #+0]
+   \       0xC6   0x9801             LDR      R0,[SP, #+4]
+   \       0xC8   0x.... 0x....      BL       psa_free_persistent_key_data
+   \       0xCC   0xF1B8 0x0F00      CMP      R8,#+0
+   \       0xD0   0xD10F             BNE.N    ??psa_get_and_lock_key_slot_13
+   \       0xD2   0xF896 0x1020      LDRB     R1,[R6, #+32]
+   \       0xD6   0x1E89             SUBS     R1,R1,#+2
+   \       0xD8   0x2903             CMP      R1,#+3
+   \       0xDA   0xD807             BHI.N    ??psa_get_and_lock_key_slot_14
+   \       0xDC   0xE8DF 0xF001      TBB      [PC, R1]
+   \                     ??psa_get_and_lock_key_slot_0:
+   \       0xE0   0x04 0x02          DC8      0x4,0x2,0x4,0x4
+   \              0x04 0x04
+   \                     ??psa_get_and_lock_key_slot_15: (+1)
+   \       0xE4   0x69F0             LDR      R0,[R6, #+28]
+   \       0xE6   0xB108             CBZ.N    R0,??psa_get_and_lock_key_slot_14
+   \                     ??psa_get_and_lock_key_slot_16: (+1)
+   \       0xE8   0x46C8             MOV      R8,R9
+   \       0xEA   0xE002             B.N      ??psa_get_and_lock_key_slot_13
+   \                     ??psa_get_and_lock_key_slot_14: (+1)
+   \       0xEC   0x2102             MOVS     R1,#+2
+   \       0xEE   0xF886 0x1020      STRB     R1,[R6, #+32]
+    484              }
+    485          #endif /* defined(MBEDTLS_PSA_CRYPTO_STORAGE_C) */
+    486          
+    487              if( status != PSA_SUCCESS )
+   \                     ??psa_get_and_lock_key_slot_13: (+1)
+   \       0xF2   0xF06F 0x0687      MVN      R6,#+135
+   \       0xF6   0xF1B8 0x0F00      CMP      R8,#+0
+   \       0xFA   0x6828             LDR      R0,[R5, #+0]
+   \       0xFC   0xD00A             BEQ.N    ??psa_get_and_lock_key_slot_17
+    488              {
+    489                  (void) psa_slot_change_state( *p_slot, PSA_STATE_WIPING );
+   \       0xFE   0x.... 0x....      BL       ??Subroutine6_0
+   \                     ??CrossCallReturnLabel_8: (+1)
+   \      0x102   0xBF84             ITT      HI
+   \      0x104   0x2104             MOVHI    R1,#+4
+   \      0x106   0xF880 0x1020      STRBHI   R1,[R0, #+32]
+    490                  (void) psa_wipe_key_slot( *p_slot );
+   \      0x10A   0x.... 0x....      BL       psa_wipe_key_slot
+    491                  if( status == PSA_ERROR_DOES_NOT_EXIST )
+   \      0x10E   0x45D0             CMP      R8,R10
+   \      0x110   0xD120             BNE.N    ??psa_get_and_lock_key_slot_18
+    492                      status = PSA_ERROR_INVALID_HANDLE;
+   \      0x112   0xE01E             B.N      ??psa_get_and_lock_key_slot_19
+    493              }
+    494              else
+    495              {
+    496                  /* Add implicit usage flags. */
+    497                  psa_extend_key_usage_flags( &(*p_slot)->attr.policy.usage );
+   \                     ??psa_get_and_lock_key_slot_17: (+1)
+   \      0x114   0xF100 0x010C      ADD      R1,R0,#+12
+   \      0x118   0x680B             LDR      R3,[R1, #+0]
+   \      0x11A   0x04DA             LSLS     R2,R3,#+19
+   \      0x11C   0xBF44             ITT      MI
+   \      0x11E   0xF443 0x6380      ORRMI    R3,R3,#0x400
+   \      0x122   0x600B             STRMI    R3,[R1, #+0]
+   \      0x124   0x680B             LDR      R3,[R1, #+0]
+   \      0x126   0x049A             LSLS     R2,R3,#+18
+   \      0x128   0xBF44             ITT      MI
+   \      0x12A   0xF443 0x6300      ORRMI    R3,R3,#0x800
+   \      0x12E   0x600B             STRMI    R3,[R1, #+0]
+    498                  if( intent == PSA_INTENT_READ )
+   \      0x130   0xB91C             CBNZ.N   R4,??psa_get_and_lock_key_slot_20
+    499                      status = psa_slot_add_reader( *p_slot );
+   \      0x132   0x.... 0x....      BL       psa_slot_add_reader
+   \      0x136   0x4680             MOV      R8,R0
+   \      0x138   0xE00C             B.N      ??psa_get_and_lock_key_slot_18
+    500                  else if( intent == PSA_INTENT_DESTROY )
+   \                     ??psa_get_and_lock_key_slot_20: (+1)
+   \      0x13A   0x2C01             CMP      R4,#+1
+   \      0x13C   0xD10A             BNE.N    ??psa_get_and_lock_key_slot_18
+    501                      status = psa_slot_change_state( *p_slot, PSA_STATE_DESTROYING );
+   \      0x13E   0xF890 0x1020      LDRB     R1,[R0, #+32]
+   \      0x142   0xB131             CBZ.N    R1,??psa_get_and_lock_key_slot_19
+   \      0x144   0x2905             CMP      R1,#+5
+   \      0x146   0xBF0E             ITEE     EQ
+   \      0x148   0x46C8             MOVEQ    R8,R9
+   \      0x14A   0x2205             MOVNE    R2,#+5
+   \      0x14C   0xF880 0x2020      STRBNE   R2,[R0, #+32]
+   \      0x150   0xE000             B.N      ??psa_get_and_lock_key_slot_18
+   \                     ??psa_get_and_lock_key_slot_19: (+1)
+   \      0x152   0x46B0             MOV      R8,R6
+    502              }
+    503          
+    504              MBEDTLS_MUTEX_UNLOCK_CHECK( &mbedtls_psa_slots_mutex );
+   \                     ??psa_get_and_lock_key_slot_18: (+1)
+   \      0x154   0x.... 0x....      BL       ?Subroutine4
+   \                     ??CrossCallReturnLabel_2: (+1)
+   \      0x158   0xB108             CBZ.N    R0,??psa_get_and_lock_key_slot_21
+   \                     ??psa_get_and_lock_key_slot_2: (+1)
+   \      0x15A   0x4648             MOV      R0,R9
+   \      0x15C   0xE000             B.N      ??psa_get_and_lock_key_slot_11
+    505              return( status );
+   \                     ??psa_get_and_lock_key_slot_21: (+1)
+   \      0x15E   0x4640             MOV      R0,R8
+   \                     ??psa_get_and_lock_key_slot_11: (+1)
+   \      0x160   0xE8BD 0x8FFE      POP      {R1-R11,PC}
+    506          #else /* MBEDTLS_PSA_CRYPTO_STORAGE_C || MBEDTLS_PSA_CRYPTO_BUILTIN_KEYS */
+    507              MBEDTLS_MUTEX_UNLOCK_CHECK( &mbedtls_psa_slots_mutex );
+    508              return( PSA_ERROR_INVALID_HANDLE );
+    509          #endif /* MBEDTLS_PSA_CRYPTO_STORAGE_C || MBEDTLS_PSA_CRYPTO_BUILTIN_KEYS */
+    510          }
+
+   \                                 In section .text, align 2, keep-with-next
+   \                     ?Subroutine4: (+1)
+   \        0x0   0x6839             LDR      R1,[R7, #+0]
+   \        0x2   0x4658             MOV      R0,R11
+   \        0x4   0x4708             BX       R1
+    511          
+
+   \                                 In section .text, align 2, keep-with-next
+    512          psa_status_t psa_unlock_key_slot(psa_key_slot_t *slot)
+    513          {
+   \                     psa_unlock_key_slot: (+1)
+   \        0x0   0xE92D 0x41F0      PUSH     {R4-R8,LR}
+   \        0x4   0x0004             MOVS     R4,R0
+    514              psa_status_t status = PSA_ERROR_CORRUPTION_DETECTED;
+    515              if( slot == NULL )
+   \        0x6   0xBF08             IT       EQ
+   \        0x8   0x2000             MOVEQ    R0,#+0
+    516                  return( PSA_SUCCESS );
+   \        0xA   0xD040             BEQ.N    ??psa_unlock_key_slot_0
+    517          
+    518              MBEDTLS_MUTEX_LOCK_CHECK( &mbedtls_psa_slots_mutex );
+   \        0xC   0x....             LDR.N    R2,??DataTable10_1
+   \        0xE   0x6811             LDR      R1,[R2, #+0]
+   \       0x10   0x.... 0x....      LDR.W    R8,??DataTable10_2
+   \       0x14   0x4640             MOV      R0,R8
+   \       0x16   0x4788             BLX      R1
+   \       0x18   0xF06F 0x0588      MVN      R5,#+136
+   \       0x1C   0x2800             CMP      R0,#+0
+   \       0x1E   0xD133             BNE.N    ??psa_unlock_key_slot_1
+    519          
+    520              if( slot->state != PSA_STATE_READING &&
+    521                  slot->state != PSA_STATE_DESTROYING &&
+    522                  slot->state != PSA_STATE_WIPING )
+   \       0x20   0xF894 0x2020      LDRB     R2,[R4, #+32]
+   \       0x24   0x....             LDR.N    R7,??DataTable10_3
+   \       0x26   0x6839             LDR      R1,[R7, #+0]
+   \       0x28   0x2A03             CMP      R2,#+3
+   \       0x2A   0xBF1C             ITT      NE
+   \       0x2C   0x2A05             CMPNE    R2,#+5
+   \       0x2E   0x2A04             CMPNE    R2,#+4
+   \       0x30   0xD002             BEQ.N    ??psa_unlock_key_slot_2
+    523              {
+    524                  MBEDTLS_TEST_HOOK_TEST_ASSERT( slot->state != PSA_STATE_READING &&
+    525                      slot->state != PSA_STATE_DESTROYING &&
+    526                      slot->state != PSA_STATE_WIPING );
+    527                  MBEDTLS_MUTEX_UNLOCK_CHECK( &mbedtls_psa_slots_mutex );
+   \       0x32   0x4640             MOV      R0,R8
+   \       0x34   0x4788             BLX      R1
+   \       0x36   0xE027             B.N      ??psa_unlock_key_slot_1
+    528                  return( PSA_ERROR_BAD_STATE );
+    529              }
+    530          
+    531              if( slot->reader_count == 0 )
+   \                     ??psa_unlock_key_slot_2: (+1)
+   \       0x38   0x69E0             LDR      R0,[R4, #+28]
+   \       0x3A   0xB928             CBNZ.N   R0,??psa_unlock_key_slot_3
+    532              {
+    533                  MBEDTLS_TEST_HOOK_TEST_ASSERT( slot->reader_count != 0 );
+    534                  MBEDTLS_MUTEX_UNLOCK_CHECK( &mbedtls_psa_slots_mutex );
+   \       0x3C   0x4640             MOV      R0,R8
+   \       0x3E   0x4788             BLX      R1
+   \       0x40   0xBB10             CBNZ.N   R0,??psa_unlock_key_slot_1
+    535                  return( PSA_ERROR_CORRUPTION_DETECTED );
+   \       0x42   0xF06F 0x0096      MVN      R0,#+150
+   \       0x46   0xE022             B.N      ??psa_unlock_key_slot_0
+    536              }
+    537              slot->reader_count--;
+   \                     ??psa_unlock_key_slot_3: (+1)
+   \       0x48   0x1E40             SUBS     R0,R0,#+1
+    538              status = PSA_SUCCESS;
+   \       0x4A   0xF04F 0x0600      MOV      R6,#+0
+    539          
+    540              if( psa_slot_has_no_readers( slot ) )
+   \       0x4E   0x61E0             STR      R0,[R4, #+28]
+   \       0x50   0xD116             BNE.N    ??psa_unlock_key_slot_4
+    541              {
+    542                  if( slot->state == PSA_STATE_DESTROYING )
+   \       0x52   0x2A05             CMP      R2,#+5
+   \       0x54   0xD103             BNE.N    ??psa_unlock_key_slot_5
+    543                      status = psa_finish_key_destruction( slot );
+   \       0x56   0x4620             MOV      R0,R4
+   \       0x58   0x.... 0x....      BL       psa_finish_key_destruction
+   \       0x5C   0xE004             B.N      ??psa_unlock_key_slot_6
+    544                  else if ( slot->state == PSA_STATE_WIPING )
+   \                     ??psa_unlock_key_slot_5: (+1)
+   \       0x5E   0x2A04             CMP      R2,#+4
+   \       0x60   0xD104             BNE.N    ??psa_unlock_key_slot_7
+    545                      status = psa_wipe_key_slot( slot );
+   \       0x62   0x4620             MOV      R0,R4
+   \       0x64   0x.... 0x....      BL       psa_wipe_key_slot
+   \                     ??psa_unlock_key_slot_6: (+1)
+   \       0x68   0x4606             MOV      R6,R0
+   \       0x6A   0xE009             B.N      ??psa_unlock_key_slot_4
+    546                  else
+    547                      status = psa_slot_change_state( slot, PSA_STATE_UNUSED );
+   \                     ??psa_unlock_key_slot_7: (+1)
+   \       0x6C   0x1E92             SUBS     R2,R2,#+2
+   \       0x6E   0xD002             BEQ.N    ??psa_unlock_key_slot_8
+   \       0x70   0x1E92             SUBS     R2,R2,#+2
+   \       0x72   0x2A01             CMP      R2,#+1
+   \       0x74   0xD801             BHI.N    ??psa_unlock_key_slot_9
+   \                     ??psa_unlock_key_slot_8: (+1)
+   \       0x76   0x462E             MOV      R6,R5
+   \       0x78   0xE002             B.N      ??psa_unlock_key_slot_4
+   \                     ??psa_unlock_key_slot_9: (+1)
+   \       0x7A   0x2002             MOVS     R0,#+2
+   \       0x7C   0xF884 0x0020      STRB     R0,[R4, #+32]
+    548              }
+    549              MBEDTLS_MUTEX_UNLOCK_CHECK( &mbedtls_psa_slots_mutex );
+   \                     ??psa_unlock_key_slot_4: (+1)
+   \       0x80   0x6839             LDR      R1,[R7, #+0]
+   \       0x82   0x4640             MOV      R0,R8
+   \       0x84   0x4788             BLX      R1
+   \       0x86   0xB108             CBZ.N    R0,??psa_unlock_key_slot_10
+   \                     ??psa_unlock_key_slot_1: (+1)
+   \       0x88   0x4628             MOV      R0,R5
+   \       0x8A   0xE000             B.N      ??psa_unlock_key_slot_0
+    550              return( status );
+   \                     ??psa_unlock_key_slot_10: (+1)
+   \       0x8C   0x4630             MOV      R0,R6
+   \                     ??psa_unlock_key_slot_0: (+1)
+   \       0x8E   0xE8BD 0x81F0      POP      {R4-R8,PC}
+    551          }
+    552          
+
+   \                                 In section .text, align 2, keep-with-next
+    553          psa_status_t psa_validate_key_location(psa_key_lifetime_t lifetime,
+    554                                                 psa_se_drv_table_entry_t **p_drv)
+    555          {
+    556              if (psa_key_lifetime_is_external(lifetime)) {
+   \                     psa_validate_key_location: (+1)
+   \        0x0   0x0A00             LSRS     R0,R0,#+8
+   \        0x2   0xBF18             IT       NE
+   \        0x4   0x2000             MOVNE    R0,#+0
+    557          #if defined(MBEDTLS_PSA_CRYPTO_SE_C)
+    558                  /* Check whether a driver is registered against this lifetime */
+    559                  psa_se_drv_table_entry_t *driver = psa_get_se_driver_entry(lifetime);
+    560                  if (driver != NULL) {
+    561                      if (p_drv != NULL) {
+    562                          *p_drv = driver;
+    563                      }
+    564                      return PSA_SUCCESS;
+    565                  }
+    566          #else /* MBEDTLS_PSA_CRYPTO_SE_C */
+    567                  (void) p_drv;
+    568          #endif /* MBEDTLS_PSA_CRYPTO_SE_C */
+    569          
+    570                  /* Key location for external keys gets checked by the wrapper */
+    571                  return PSA_SUCCESS;
+    572              } else {
+    573                  /* Local/internal keys are always valid */
+    574                  return PSA_SUCCESS;
+   \        0x6   0x4770             BX       LR
+    575              }
+    576          }
+    577          
+
+   \                                 In section .text, align 2, keep-with-next
+    578          psa_status_t psa_validate_key_persistence(psa_key_lifetime_t lifetime)
+    579          {
+    580              if (PSA_KEY_LIFETIME_IS_VOLATILE(lifetime)) {
+   \                     psa_validate_key_persistence: (+1)
+   \        0x0   0xB2C1             UXTB     R1,R0
+   \        0x2   0xB129             CBZ.N    R1,??psa_validate_key_persistence_0
+    581                  /* Volatile keys are always supported */
+    582                  return PSA_SUCCESS;
+    583              } else {
+    584                  /* Persistent keys require storage support */
+    585          #if defined(MBEDTLS_PSA_CRYPTO_STORAGE_C)
+    586                  if (PSA_KEY_LIFETIME_IS_READ_ONLY(lifetime)) {
+   \        0x4   0xB2C0             UXTB     R0,R0
+   \        0x6   0x28FF             CMP      R0,#+255
+   \        0x8   0xD102             BNE.N    ??psa_validate_key_persistence_0
+    587                      return PSA_ERROR_INVALID_ARGUMENT;
+   \        0xA   0xF06F 0x0086      MVN      R0,#+134
+   \        0xE   0x4770             BX       LR
+    588                  } else {
+    589                      return PSA_SUCCESS;
+   \                     ??psa_validate_key_persistence_0: (+1)
+   \       0x10   0x2000             MOVS     R0,#+0
+   \       0x12   0x4770             BX       LR
+    590                  }
+    591          #else /* MBEDTLS_PSA_CRYPTO_STORAGE_C */
+    592                  return PSA_ERROR_NOT_SUPPORTED;
+    593          #endif /* !MBEDTLS_PSA_CRYPTO_STORAGE_C */
+    594              }
+    595          }
+    596          
+
+   \                                 In section .text, align 2, keep-with-next
+    597          psa_status_t psa_open_key(mbedtls_svc_key_id_t key, psa_key_handle_t *handle)
+    598          {
+   \                     psa_open_key: (+1)
+   \        0x0   0xB538             PUSH     {R3-R5,LR}
+   \        0x2   0x460C             MOV      R4,R1
+   \        0x4   0x4605             MOV      R5,R0
+    599          #if defined(MBEDTLS_PSA_CRYPTO_STORAGE_C) || \
+    600              defined(MBEDTLS_PSA_CRYPTO_BUILTIN_KEYS)
+    601              psa_status_t status;
+    602              psa_key_slot_t *slot;
+    603          
+    604              status = psa_get_and_lock_key_slot( key, &slot, PSA_INTENT_OPEN );
+   \        0x6   0x2202             MOVS     R2,#+2
+   \        0x8   0x4669             MOV      R1,SP
+   \        0xA   0x.... 0x....      BL       psa_get_and_lock_key_slot
+    605              if( status != PSA_SUCCESS )
+   \        0xE   0xB138             CBZ.N    R0,??psa_open_key_0
+    606              {
+    607                  *handle = PSA_KEY_HANDLE_INIT;
+   \       0x10   0x2100             MOVS     R1,#+0
+   \       0x12   0x6021             STR      R1,[R4, #+0]
+    608                  if (status == PSA_ERROR_INVALID_HANDLE) {
+   \       0x14   0xF110 0x0F88      CMN      R0,#+136
+   \       0x18   0xD103             BNE.N    ??psa_open_key_1
+    609                      status = PSA_ERROR_DOES_NOT_EXIST;
+   \       0x1A   0xF06F 0x008B      MVN      R0,#+139
+    610                  }
+    611          
+    612                  return status;
+   \       0x1E   0xBD32             POP      {R1,R4,R5,PC}
+    613              }
+    614          
+    615              *handle = key;
+   \                     ??psa_open_key_0: (+1)
+   \       0x20   0x6025             STR      R5,[R4, #+0]
+    616          
+    617              return( status );
+   \                     ??psa_open_key_1: (+1)
+   \       0x22   0xBD32             POP      {R1,R4,R5,PC}
+    618          
+    619          #else /* MBEDTLS_PSA_CRYPTO_STORAGE_C || MBEDTLS_PSA_CRYPTO_BUILTIN_KEYS */
+    620              (void) key;
+    621              *handle = PSA_KEY_HANDLE_INIT;
+    622              return PSA_ERROR_NOT_SUPPORTED;
+    623          #endif /* MBEDTLS_PSA_CRYPTO_STORAGE_C || MBEDTLS_PSA_CRYPTO_BUILTIN_KEYS */
+    624          }
+    625          
+
+   \                                 In section .text, align 2, keep-with-next
+    626          psa_status_t psa_close_key(psa_key_handle_t handle)
+    627          {
+   \                     psa_close_key: (+1)
+   \        0x0   0xB5F8             PUSH     {R3-R7,LR}
+   \        0x2   0x0004             MOVS     R4,R0
+    628              psa_status_t status;
+    629              psa_key_slot_t *slot;
+    630          
+    631              if (psa_key_handle_is_null(handle)) {
+   \        0x4   0xD101             BNE.N    ??psa_close_key_0
+    632                  return PSA_SUCCESS;
+   \        0x6   0x2000             MOVS     R0,#+0
+   \        0x8   0xBDF2             POP      {R1,R4-R7,PC}
+    633              }
+    634          
+    635              MBEDTLS_MUTEX_LOCK_CHECK( &mbedtls_psa_slots_mutex );
+   \                     ??psa_close_key_0: (+1)
+   \        0xA   0x.... 0x....      BL       ?Subroutine3
+   \                     ??CrossCallReturnLabel_0: (+1)
+   \        0xE   0x4788             BLX      R1
+   \       0x10   0xF06F 0x0588      MVN      R5,#+136
+   \       0x14   0x2800             CMP      R0,#+0
+   \       0x16   0xD122             BNE.N    ??psa_close_key_1
+    636              status = psa_get_key_slot( handle, &slot );
+   \       0x18   0x4669             MOV      R1,SP
+   \       0x1A   0x4620             MOV      R0,R4
+   \       0x1C   0x.... 0x....      BL       psa_get_key_slot
+    637              if( status != PSA_SUCCESS )
+   \       0x20   0x....             LDR.N    R7,??DataTable10_3
+   \       0x22   0x0004             MOVS     R4,R0
+   \       0x24   0x6839             LDR      R1,[R7, #+0]
+   \       0x26   0xD006             BEQ.N    ??psa_close_key_2
+    638              {
+    639                  if( status == PSA_ERROR_DOES_NOT_EXIST )
+   \       0x28   0xF114 0x0F8C      CMN      R4,#+140
+   \       0x2C   0xBF08             IT       EQ
+   \       0x2E   0xF06F 0x0487      MVNEQ    R4,#+135
+    640                      status = PSA_ERROR_INVALID_HANDLE;
+    641          
+    642                  MBEDTLS_MUTEX_UNLOCK_CHECK( &mbedtls_psa_slots_mutex );
+   \       0x32   0x4630             MOV      R0,R6
+   \       0x34   0xE011             B.N      ??psa_close_key_3
+    643                  return( status );
+    644              }
+    645          
+    646              status = psa_slot_change_state( slot, PSA_STATE_WIPING );
+   \                     ??psa_close_key_2: (+1)
+   \       0x36   0x.... 0x....      BL       ?Subroutine6
+   \                     ??CrossCallReturnLabel_9: (+1)
+   \       0x3A   0xD802             BHI.N    ??psa_close_key_4
+    647          
+    648              if( status != PSA_SUCCESS )
+    649              {
+    650                  MBEDTLS_MUTEX_UNLOCK_CHECK( &mbedtls_psa_slots_mutex );
+   \       0x3C   0x4630             MOV      R0,R6
+   \       0x3E   0x4788             BLX      R1
+   \       0x40   0xE00D             B.N      ??psa_close_key_1
+    651                  return( status );
+    652              }
+   \                     ??psa_close_key_4: (+1)
+   \       0x42   0x.... 0x....      BL       ?Subroutine5
+    653          
+    654              if( psa_slot_has_no_readers(slot) )
+   \                     ??CrossCallReturnLabel_6: (+1)
+   \       0x46   0xB920             CBNZ.N   R0,??psa_close_key_5
+    655                  status = psa_wipe_key_slot( slot );
+   \       0x48   0x4610             MOV      R0,R2
+   \       0x4A   0x.... 0x....      BL       psa_wipe_key_slot
+   \       0x4E   0x4604             MOV      R4,R0
+   \       0x50   0xE001             B.N      ??psa_close_key_6
+    656              else
+    657                  status = PSA_ERROR_DELAYED;
+   \                     ??psa_close_key_5: (+1)
+   \       0x52   0xF06F 0x0499      MVN      R4,#+153
+    658          
+    659              MBEDTLS_MUTEX_UNLOCK_CHECK( &mbedtls_psa_slots_mutex );
+   \                     ??psa_close_key_6: (+1)
+   \       0x56   0x4630             MOV      R0,R6
+   \       0x58   0x6839             LDR      R1,[R7, #+0]
+   \                     ??psa_close_key_3: (+1)
+   \       0x5A   0x4788             BLX      R1
+   \       0x5C   0xB108             CBZ.N    R0,??psa_close_key_7
+   \                     ??psa_close_key_1: (+1)
+   \       0x5E   0x4628             MOV      R0,R5
+   \       0x60   0xBDF2             POP      {R1,R4-R7,PC}
+    660              return( status );
+   \                     ??psa_close_key_7: (+1)
+   \       0x62   0x4620             MOV      R0,R4
+   \       0x64   0xBDF2             POP      {R1,R4-R7,PC}
+    661          }
+
+   \                                 In section .text, align 2, keep-with-next
+   \                     ?Subroutine6: (+1)
+   \        0x0   0x9800             LDR      R0,[SP, #+0]
+   \                     ??Subroutine6_0: (+1)
+   \        0x2   0xF890 0x3020      LDRB     R3,[R0, #+32]
+   \        0x6   0x1F1B             SUBS     R3,R3,#+4
+   \        0x8   0x2B01             CMP      R3,#+1
+   \        0xA   0x4770             BX       LR
+
+   \                                 In section .text, align 2, keep-with-next
+   \                     ?Subroutine5: (+1)
+   \        0x0   0x2104             MOVS     R1,#+4
+   \        0x2   0xF880 0x1020      STRB     R1,[R0, #+32]
+   \        0x6   0x9A00             LDR      R2,[SP, #+0]
+   \        0x8   0x69D0             LDR      R0,[R2, #+28]
+   \        0xA   0x4770             BX       LR
+
+   \                                 In section .text, align 2, keep-with-next
+   \                     ?Subroutine3: (+1)
+   \        0x0   0x....             LDR.N    R2,??DataTable10_1
+   \        0x2   0x6811             LDR      R1,[R2, #+0]
+   \        0x4   0x....             LDR.N    R6,??DataTable10_2
+   \        0x6   0x4630             MOV      R0,R6
+   \        0x8   0x4770             BX       LR
+    662          
+
+   \                                 In section .text, align 2, keep-with-next
+    663          psa_status_t psa_purge_key(mbedtls_svc_key_id_t key)
+    664          {
+   \                     psa_purge_key: (+1)
+   \        0x0   0xB5F8             PUSH     {R3-R7,LR}
+   \        0x2   0x4604             MOV      R4,R0
+    665              psa_status_t status;
+    666              psa_key_slot_t *slot;
+    667          
+    668              if( psa_key_id_is_volatile( MBEDTLS_SVC_KEY_ID_GET_KEY_ID( key ) ) )
+   \        0x4   0xF104 0x4000      ADD      R0,R4,#+2147483648
+   \        0x8   0x300E             ADDS     R0,R0,#+14
+   \        0xA   0x280E             CMP      R0,#+14
+   \        0xC   0xD201             BCS.N    ??psa_purge_key_0
+    669                  return( PSA_SUCCESS );
+   \        0xE   0x2000             MOVS     R0,#+0
+   \       0x10   0xBDF2             POP      {R1,R4-R7,PC}
+    670          
+    671              MBEDTLS_MUTEX_LOCK_CHECK( &mbedtls_psa_slots_mutex );
+   \                     ??psa_purge_key_0: (+1)
+   \       0x12   0x.... 0x....      BL       ?Subroutine3
+   \                     ??CrossCallReturnLabel_1: (+1)
+   \       0x16   0xF06F 0x0588      MVN      R5,#+136
+   \       0x1A   0x4788             BLX      R1
+   \       0x1C   0xB9E8             CBNZ.N   R0,??psa_purge_key_1
+    672              status = psa_get_key_slot( key, &slot );
+   \       0x1E   0x4669             MOV      R1,SP
+   \       0x20   0x4620             MOV      R0,R4
+   \       0x22   0x.... 0x....      BL       psa_get_key_slot
+    673              if( status != PSA_SUCCESS )
+   \       0x26   0x....             LDR.N    R7,??DataTable10_3
+   \       0x28   0x0004             MOVS     R4,R0
+   \       0x2A   0x6839             LDR      R1,[R7, #+0]
+   \       0x2C   0xBF18             IT       NE
+   \       0x2E   0x4630             MOVNE    R0,R6
+    674              {
+    675                  MBEDTLS_MUTEX_UNLOCK_CHECK( &mbedtls_psa_slots_mutex );
+   \       0x30   0xD111             BNE.N    ??psa_purge_key_2
+    676                  return( status );
+    677              }
+    678          
+    679              status = psa_slot_change_state( slot, PSA_STATE_WIPING );
+   \       0x32   0x.... 0x....      BL       ?Subroutine6
+   \                     ??CrossCallReturnLabel_10: (+1)
+   \       0x36   0xD802             BHI.N    ??psa_purge_key_3
+    680          
+    681              if( status != PSA_SUCCESS )
+    682              {
+    683                  MBEDTLS_MUTEX_UNLOCK_CHECK( &mbedtls_psa_slots_mutex );
+   \       0x38   0x4630             MOV      R0,R6
+   \       0x3A   0x4788             BLX      R1
+   \       0x3C   0xE00D             B.N      ??psa_purge_key_1
+    684                  return( status );
+    685              }
+   \                     ??psa_purge_key_3: (+1)
+   \       0x3E   0x.... 0x....      BL       ?Subroutine5
+    686          
+    687              if( psa_slot_has_no_readers(slot) )
+   \                     ??CrossCallReturnLabel_7: (+1)
+   \       0x42   0xB920             CBNZ.N   R0,??psa_purge_key_4
+    688                  status = psa_wipe_key_slot( slot );
+   \       0x44   0x4610             MOV      R0,R2
+   \       0x46   0x.... 0x....      BL       psa_wipe_key_slot
+   \       0x4A   0x4604             MOV      R4,R0
+   \       0x4C   0xE001             B.N      ??psa_purge_key_5
+    689              else
+    690                  status = PSA_ERROR_DELAYED;
+   \                     ??psa_purge_key_4: (+1)
+   \       0x4E   0xF06F 0x0499      MVN      R4,#+153
+    691          
+    692              MBEDTLS_MUTEX_UNLOCK_CHECK( &mbedtls_psa_slots_mutex );
+   \                     ??psa_purge_key_5: (+1)
+   \       0x52   0x4630             MOV      R0,R6
+   \       0x54   0x6839             LDR      R1,[R7, #+0]
+   \                     ??psa_purge_key_2: (+1)
+   \       0x56   0x4788             BLX      R1
+   \       0x58   0xB108             CBZ.N    R0,??psa_purge_key_6
+   \                     ??psa_purge_key_1: (+1)
+   \       0x5A   0x4628             MOV      R0,R5
+   \       0x5C   0xBDF2             POP      {R1,R4-R7,PC}
+    693              return( status );
+   \                     ??psa_purge_key_6: (+1)
+   \       0x5E   0x4620             MOV      R0,R4
+   \       0x60   0xBDF2             POP      {R1,R4-R7,PC}
+    694          }
+    695          
+
+   \                                 In section .text, align 2, keep-with-next
+    696          void mbedtls_psa_get_stats(mbedtls_psa_stats_t *stats)
+    697          {
+   \                     mbedtls_psa_get_stats: (+1)
+   \        0x0   0xB510             PUSH     {R4,LR}
+   \        0x2   0x4604             MOV      R4,R0
+    698              size_t slot_idx;
+    699          
+    700              memset(stats, 0, sizeof(*stats));
+   \        0x4   0x2124             MOVS     R1,#+36
+   \        0x6   0x.... 0x....      BL       __aeabi_memclr4
+    701          
+    702              for( slot_idx = 0; slot_idx < MBEDTLS_PSA_KEY_SLOT_COUNT; slot_idx++ )
+   \        0xA   0x2200             MOVS     R2,#+0
+    703              {
+    704                  const psa_key_slot_t *slot = &global_data.key_slots[ slot_idx ];
+    705                  if( slot->state != PSA_STATE_EMPTY )
+   \                     ??mbedtls_psa_get_stats_0: (+1)
+   \        0xC   0x212C             MOVS     R1,#+44
+   \        0xE   0x4351             MULS     R1,R1,R2
+   \       0x10   0x....             LDR.N    R3,??DataTable10
+   \       0x12   0x4419             ADD      R1,R3,R1
+   \       0x14   0xF891 0x0020      LDRB     R0,[R1, #+32]
+   \       0x18   0xB128             CBZ.N    R0,??mbedtls_psa_get_stats_1
+    706                  {
+    707                      ++stats->locked_slots;
+   \       0x1A   0x69A0             LDR      R0,[R4, #+24]
+   \       0x1C   0x1C40             ADDS     R0,R0,#+1
+   \       0x1E   0x61A0             STR      R0,[R4, #+24]
+    708                  }
+    709                  if( slot->state == PSA_STATE_EMPTY )
+   \       0x20   0xF891 0x0020      LDRB     R0,[R1, #+32]
+   \       0x24   0xB918             CBNZ.N   R0,??mbedtls_psa_get_stats_2
+    710                  {
+    711                      ++stats->empty_slots;
+   \                     ??mbedtls_psa_get_stats_1: (+1)
+   \       0x26   0x6960             LDR      R0,[R4, #+20]
+   \       0x28   0x1C40             ADDS     R0,R0,#+1
+   \       0x2A   0x6160             STR      R0,[R4, #+20]
+    712                      continue;
+   \       0x2C   0xE01B             B.N      ??mbedtls_psa_get_stats_3
+    713                  }
+    714                  if (PSA_KEY_LIFETIME_IS_VOLATILE(slot->attr.lifetime)) {
+   \                     ??mbedtls_psa_get_stats_2: (+1)
+   \       0x2E   0x684B             LDR      R3,[R1, #+4]
+   \       0x30   0xB2DB             UXTB     R3,R3
+   \       0x32   0xB91B             CBNZ.N   R3,??mbedtls_psa_get_stats_4
+    715                      ++stats->volatile_slots;
+   \       0x34   0x6820             LDR      R0,[R4, #+0]
+   \       0x36   0x1C40             ADDS     R0,R0,#+1
+   \       0x38   0x6020             STR      R0,[R4, #+0]
+   \       0x3A   0xE008             B.N      ??mbedtls_psa_get_stats_5
+    716                  } else {
+    717                      psa_key_id_t id = MBEDTLS_SVC_KEY_ID_GET_KEY_ID(slot->attr.id);
+    718                      ++stats->persistent_slots;
+   \                     ??mbedtls_psa_get_stats_4: (+1)
+   \       0x3C   0x6863             LDR      R3,[R4, #+4]
+   \       0x3E   0x6888             LDR      R0,[R1, #+8]
+   \       0x40   0x1C5B             ADDS     R3,R3,#+1
+   \       0x42   0x6063             STR      R3,[R4, #+4]
+    719                      if (id > stats->max_open_internal_key_id) {
+   \       0x44   0x69E3             LDR      R3,[R4, #+28]
+   \       0x46   0x4298             CMP      R0,R3
+   \       0x48   0xBF38             IT       CC
+   \       0x4A   0x4618             MOVCC    R0,R3
+   \       0x4C   0x61E0             STR      R0,[R4, #+28]
+    720                          stats->max_open_internal_key_id = id;
+    721                      }
+    722                  }
+    723                  if (PSA_KEY_LIFETIME_GET_LOCATION(slot->attr.lifetime) !=
+    724                      PSA_KEY_LOCATION_LOCAL_STORAGE) {
+   \                     ??mbedtls_psa_get_stats_5: (+1)
+   \       0x4E   0x6848             LDR      R0,[R1, #+4]
+   \       0x50   0x0A00             LSRS     R0,R0,#+8
+   \       0x52   0xD008             BEQ.N    ??mbedtls_psa_get_stats_3
+    725                      psa_key_id_t id = MBEDTLS_SVC_KEY_ID_GET_KEY_ID(slot->attr.id);
+   \       0x54   0x6888             LDR      R0,[R1, #+8]
+    726                      ++stats->external_slots;
+   \       0x56   0x68A1             LDR      R1,[R4, #+8]
+   \       0x58   0x1C49             ADDS     R1,R1,#+1
+   \       0x5A   0x60A1             STR      R1,[R4, #+8]
+    727                      if (id > stats->max_open_external_key_id) {
+   \       0x5C   0x6A21             LDR      R1,[R4, #+32]
+   \       0x5E   0x4288             CMP      R0,R1
+   \       0x60   0xBF38             IT       CC
+   \       0x62   0x4608             MOVCC    R0,R1
+   \       0x64   0x6220             STR      R0,[R4, #+32]
+    728                          stats->max_open_external_key_id = id;
+    729                      }
+    730                  }
+    731              }
+   \                     ??mbedtls_psa_get_stats_3: (+1)
+   \       0x66   0x1C52             ADDS     R2,R2,#+1
+   \       0x68   0x2A0E             CMP      R2,#+14
+   \       0x6A   0xD3CF             BCC.N    ??mbedtls_psa_get_stats_0
+    732          }
+   \       0x6C   0xBD10             POP      {R4,PC}
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable10:
+   \        0x0   0x....'....        DC32     global_data
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable10_1:
+   \        0x0   0x....'....        DC32     mbedtls_mutex_lock
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable10_2:
+   \        0x0   0x....'....        DC32     mbedtls_psa_slots_mutex
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable10_3:
+   \        0x0   0x....'....        DC32     mbedtls_mutex_unlock
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable10_4:
+   \        0x0   0x7FFF'FFF2        DC32     0x7ffffff2
+    733          
+    734          #if defined(MBEDTLS_TEST_HOOKS)
+    735          psa_key_slot_t* mbedtls_psa_get_key_slot( uint32_t num )
+    736          {
+    737              if( num >= MBEDTLS_PSA_KEY_SLOT_COUNT )
+    738                  return( NULL );
+    739              return( &global_data.key_slots[num] );
+    740          }
+    741          #endif /* MBEDTLS_TEST_HOOKS */
+    742          
+    743          #endif /* MBEDTLS_PSA_CRYPTO_C */
+
+   Maximum stack usage in bytes:
+
+   .cstack Function
+   ------- --------
+       8   mbedtls_psa_get_stats
+         8   -> __aeabi_memclr4
+      24   psa_close_key
+        24   -- Indirect call
+        24   -> psa_get_key_slot
+        24   -> psa_wipe_key_slot
+      48   psa_get_and_lock_key_slot
+        48   -- Indirect call
+        48   -> psa_copy_key_material_into_slot
+        48   -> psa_free_persistent_key_data
+        48   -> psa_get_empty_key_slot
+        48   -> psa_get_key_slot
+        48   -> psa_load_persistent_key
+        48   -> psa_slot_add_reader
+        48   -> psa_wipe_key_slot
+      24   psa_get_empty_key_slot
+        24   -> psa_wipe_key_slot
+      24   psa_get_key_slot
+        24   -> psa_is_valid_key_id
+        24   -> psa_key_id_is_volatile
+       0   psa_initialize_key_slots
+       0   psa_is_valid_key_id
+       0   psa_key_id_is_volatile
+      16   psa_open_key
+        16   -> psa_get_and_lock_key_slot
+      24   psa_purge_key
+        24   -- Indirect call
+        24   -> psa_get_key_slot
+        24   -> psa_wipe_key_slot
+       0   psa_slot_add_reader
+       0   psa_slot_change_state
+       0   psa_slot_has_no_readers
+      24   psa_unlock_key_slot
+        24   -- Indirect call
+        24   -> psa_finish_key_destruction
+        24   -> psa_wipe_key_slot
+       0   psa_validate_key_location
+       0   psa_validate_key_persistence
+      16   psa_wipe_all_key_slots
+         0   -- Indirect call
+        16   -- Indirect call
+        16   -> psa_wipe_key_slot
+
+
+   Section sizes:
+
+   Bytes  Function/Label
+   -----  --------------
+       4  ??DataTable10
+       4  ??DataTable10_1
+       4  ??DataTable10_2
+       4  ??DataTable10_3
+       4  ??DataTable10_4
+       6  ?Subroutine0
+       6  ?Subroutine1
+       6  ?Subroutine2
+      10  ?Subroutine3
+       6  ?Subroutine4
+      12  ?Subroutine5
+      12  ?Subroutine6
+     620  global_data
+     110  mbedtls_psa_get_stats
+     102  psa_close_key
+     356  psa_get_and_lock_key_slot
+     120  psa_get_empty_key_slot
+      84  psa_get_key_slot
+      14  psa_initialize_key_slots
+      28  psa_is_valid_key_id
+      10  psa_key_id_is_volatile
+      36  psa_open_key
+      98  psa_purge_key
+      48  psa_slot_add_reader
+      90  psa_slot_change_state
+       4  psa_slot_has_no_readers
+     146  psa_unlock_key_slot
+       8  psa_validate_key_location
+      20  psa_validate_key_persistence
+      74  psa_wipe_all_key_slots
+
+ 
+   620 bytes in section .bss
+ 1'426 bytes in section .text
+ 
+ 1'426 bytes of CODE memory
+   620 bytes of DATA memory
+
+Errors: none
+Warnings: none

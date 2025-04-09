@@ -1,0 +1,861 @@
+###############################################################################
+#
+# IAR ANSI C/C++ Compiler V9.50.2.385/W64 for ARM         29/Mar/2025  15:53:25
+# Copyright 1999-2024 IAR Systems AB.
+#
+#    Cpu mode          =  thumb
+#    Endian            =  little
+#    Source file       =
+#        D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\security\sl_component\se_manager\src\sl_se_manager_attestation.c
+#    Command line      =
+#        -f "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\ewarm-iar\obj\src_10044205007528117694.dir\sl_se_manager_attestation.o.rsp"
+#        ("D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\security\sl_component\se_manager\src\sl_se_manager_attestation.c"
+#        -D DEBUG_EFM=1 -D EFR32FG28B322F1024IM48=1 -D
+#        configNUM_SDK_THREAD_LOCAL_STORAGE_POINTERS=2 -D
+#        SL_COMPONENT_CATALOG_PRESENT=1 -D
+#        MBEDTLS_CONFIG_FILE=<sl_mbedtls_config.h> -D
+#        MBEDTLS_PSA_CRYPTO_CONFIG_FILE=<psa_crypto_config.h> -D
+#        SL_RAIL_LIB_MULTIPROTOCOL_SUPPORT=0 -D
+#        SL_RAIL_UTIL_PA_CONFIG_HEADER=<sl_rail_util_pa_config.h> -D
+#        RTT_USE_ASM=0 -lC "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\ewarm-iar\lst\src_10044205007528117694.dir"
+#        --diag_suppress Pa050 -o "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\ewarm-iar\obj\src_10044205007528117694.dir" --no_cse
+#        --no_unroll --no_inline --no_code_motion --no_tbaa --no_clustering
+#        --no_scheduling --debug --endian=little --cpu=Cortex-M33 --cmse --cmse
+#        -e --fpu=VFPv5_sp --dlib_config "C:\Program Files\IAR Systems\Embedded
+#        Workbench 9.2\arm\inc\c\DLib_Config_Normal.h" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\security\sl_component\se_manager\src\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App 1\Wisun_Node_App\config\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App 1\Wisun_Node_App\config\rail\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App 1\Wisun_Node_App\config\wisun\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App 1\Wisun_Node_App\.\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\Device\SiliconLabs\EFR32FG28\Include\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\app\wisun\component\app_project_info\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\common\inc\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\service\cli\inc\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\service\cli\src\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\CMSIS\Core\Include\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\CMSIS\RTOS2\Include\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\service\device_init\inc\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\emdrv\common\inc\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\emlib\inc\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\service\iostream\inc\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\security\sl_component\sl_mbedtls_support\config\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\security\sl_component\sl_mbedtls_support\config\preset\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\security\sl_component\sl_mbedtls_support\inc\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\util\third_party\mbedtls\include\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\util\third_party\mbedtls\library\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\micrium_os\common\source\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\micrium_os\common\include\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\micrium_os\cpu\include\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\micrium_os\ports\source\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\micrium_os\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\micrium_os\kernel\source\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\micrium_os\kernel\include\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\emdrv\nvm3\inc\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\peripheral\inc\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\util\third_party\printf\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\util\third_party\printf\inc\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\security\sl_component\sl_psa_driver\inc\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\radio\rail_lib\common\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\radio\rail_lib\protocol\ble\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\radio\rail_lib\protocol\ieee802154\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\radio\rail_lib\protocol\wmbus\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\radio\rail_lib\protocol\zwave\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\radio\rail_lib\chip\efr32\efr32xg2x\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\radio\rail_lib\protocol\sidewalk\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\radio\rail_lib\plugin\pa-conversions\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\radio\rail_lib\plugin\pa-conversions\efr32xg28\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\radio\rail_lib\plugin\rail_util_pti\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\security\sl_component\se_manager\inc\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\security\sl_component\se_manager\src\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\util\third_party\segger\systemview\SEGGER\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\util\silicon_labs\silabs_core\memory_manager\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\common\toolchain\inc\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\service\system\inc\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\app\wisun\component\app_core\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\app\wisun\component\app_setting\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\app\wisun\component\cli_util\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\app\wisun\component\event_manager\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\app\wisun\component\ns_list\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\app\wisun\component\ping\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\app\wisun\component\trace_util\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\app\wisun\component\trace_util\nanostack\nanostack-libservice\mbed-client-libservice\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\app\wisun\component\udp_client\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\service\sleeptimer\inc\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\protocol\wisun\plugin\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\protocol\wisun\stack\inc\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\protocol\wisun\stack\inc\socket\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App 1\Wisun_Node_App\autogen\\" -On
+#        --use_c++_inline) --dependencies=n "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\ewarm-iar\obj\src_10044205007528117694.dir\sl_se_manager_attestation.o.iar_deps"
+#    Locale            =  C
+#    List file         =
+#        D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\ewarm-iar\lst\src_10044205007528117694.dir\sl_se_manager_attestation.lst
+#    Object file       =
+#        D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\ewarm-iar\obj\src_10044205007528117694.dir\sl_se_manager_attestation.o
+#    Runtime model:       
+#      __CPP_Runtime   =  1
+#      __SystemLibrary =  DLib
+#      __dlib_version  =  6
+#
+###############################################################################
+
+D:\Inesh_wisun\Wisun_Node_App 1\Wisun_Node_App\gecko_sdk_4.4.5\platform\security\sl_component\se_manager\src\sl_se_manager_attestation.c
+      1          /***************************************************************************//**
+      2           * @file
+      3           * @brief Silicon Labs Secure Engine Manager API.
+      4           *******************************************************************************
+      5           * # License
+      6           * <b>Copyright 2020 Silicon Laboratories Inc. www.silabs.com</b>
+      7           *******************************************************************************
+      8           *
+      9           * SPDX-License-Identifier: Zlib
+     10           *
+     11           * The licensor of this software is Silicon Laboratories Inc.
+     12           *
+     13           * This software is provided 'as-is', without any express or implied
+     14           * warranty. In no event will the authors be held liable for any damages
+     15           * arising from the use of this software.
+     16           *
+     17           * Permission is granted to anyone to use this software for any purpose,
+     18           * including commercial applications, and to alter it and redistribute it
+     19           * freely, subject to the following restrictions:
+     20           *
+     21           * 1. The origin of this software must not be misrepresented; you must not
+     22           *    claim that you wrote the original software. If you use this software
+     23           *    in a product, an acknowledgment in the product documentation would be
+     24           *    appreciated but is not required.
+     25           * 2. Altered source versions must be plainly marked as such, and must not be
+     26           *    misrepresented as being the original software.
+     27           * 3. This notice may not be removed or altered from any source distribution.
+     28           *
+     29           ******************************************************************************/
+     30          
+     31          #include "sl_se_manager.h"
+     32          
+     33          #if defined(SLI_MAILBOX_COMMAND_SUPPORTED) \
+     34            && (_SILICON_LABS_SECURITY_FEATURE == _SILICON_LABS_SECURITY_FEATURE_VAULT)
+     35          
+     36          #include "sl_se_manager.h"
+     37          #include "sli_se_manager_internal.h"
+     38          #include "sl_se_manager_attestation.h"
+     39          #include "em_se.h"
+     40          
+     41          /// @addtogroup sl_se_manager
+     42          /// @{
+     43          
+     44          // -----------------------------------------------------------------------------
+     45          // Static Functions
+     46          
+     47          /***************************************************************************//**
+     48           * @brief
+     49           *   Validate the command word, challenge size and update command word with
+     50           *   option flags
+     51           *
+     52           * @param[in, out] command_word
+     53           *   The command word to send to the SE. Will be modified to reflect challenge
+     54           *   size.
+     55           *
+     56           * @param challenge_size
+     57           *   Size of the challenge to be used.
+     58           *
+     59           * @return
+     60           *   Status code, @ref sl_status.h.
+     61           ******************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+     62          static sl_status_t validate_and_update_command_word(uint32_t *command_word,
+     63                                                              size_t challenge_size)
+     64          {
+   \                     validate_and_update_command_word: (+1)
+   \        0x0   0x0002             MOVS     R2,R0
+     65            // Check supported challenge sizes
+     66            uint32_t command_id = *command_word & 0xFFFF0000UL;
+   \        0x2   0x6813             LDR      R3,[R2, #+0]
+   \        0x4   0x0C1B             LSRS     R3,R3,#+16
+   \        0x6   0x041B             LSLS     R3,R3,#+16
+     67            if (command_id == SLI_SE_COMMAND_ATTEST_PSA_IAT) {
+   \        0x8   0x....             LDR.N    R0,??DataTable6
+   \        0xA   0x4283             CMP      R3,R0
+   \        0xC   0xD118             BNE.N    ??validate_and_update_command_word_0
+     68              switch (challenge_size) {
+   \        0xE   0x0008             MOVS     R0,R1
+   \       0x10   0x2820             CMP      R0,#+32
+   \       0x12   0xD004             BEQ.N    ??validate_and_update_command_word_1
+   \       0x14   0x2830             CMP      R0,#+48
+   \       0x16   0xD007             BEQ.N    ??validate_and_update_command_word_2
+   \       0x18   0x2840             CMP      R0,#+64
+   \       0x1A   0xD00A             BEQ.N    ??validate_and_update_command_word_3
+   \       0x1C   0xE00E             B.N      ??validate_and_update_command_word_4
+     69                case SL_SE_ATTESTATION_CHALLENGE_SIZE_32:
+     70                  *command_word |= 0x01 << 8;
+   \                     ??validate_and_update_command_word_1: (+1)
+   \       0x1E   0x6810             LDR      R0,[R2, #+0]
+   \       0x20   0xF450 0x7080      ORRS     R0,R0,#0x100
+   \       0x24   0x6010             STR      R0,[R2, #+0]
+     71                  break;
+   \       0x26   0xE014             B.N      ??validate_and_update_command_word_5
+     72                case SL_SE_ATTESTATION_CHALLENGE_SIZE_48:
+     73                  *command_word |= 0x02 << 8;
+   \                     ??validate_and_update_command_word_2: (+1)
+   \       0x28   0x6810             LDR      R0,[R2, #+0]
+   \       0x2A   0xF450 0x7000      ORRS     R0,R0,#0x200
+   \       0x2E   0x6010             STR      R0,[R2, #+0]
+     74                  break;
+   \       0x30   0xE00F             B.N      ??validate_and_update_command_word_5
+     75                case SL_SE_ATTESTATION_CHALLENGE_SIZE_64:
+     76                  *command_word |= 0x03 << 8;
+   \                     ??validate_and_update_command_word_3: (+1)
+   \       0x32   0x6810             LDR      R0,[R2, #+0]
+   \       0x34   0xF450 0x7040      ORRS     R0,R0,#0x300
+   \       0x38   0x6010             STR      R0,[R2, #+0]
+     77                  break;
+   \       0x3A   0xE00A             B.N      ??validate_and_update_command_word_5
+     78                default:
+     79                  return SL_STATUS_INVALID_PARAMETER;
+   \                     ??validate_and_update_command_word_4: (+1)
+   \       0x3C   0x2021             MOVS     R0,#+33
+   \       0x3E   0xE009             B.N      ??validate_and_update_command_word_6
+     80              }
+     81            } else if (command_id == SLI_SE_COMMAND_ATTEST_CONFIG) {
+   \                     ??validate_and_update_command_word_0: (+1)
+   \       0x40   0x....             LDR.N    R0,??DataTable6_1
+   \       0x42   0x4283             CMP      R3,R0
+   \       0x44   0xD103             BNE.N    ??validate_and_update_command_word_7
+     82              if (challenge_size != SL_SE_ATTESTATION_CHALLENGE_SIZE_32) {
+   \       0x46   0x2920             CMP      R1,#+32
+   \       0x48   0xD003             BEQ.N    ??validate_and_update_command_word_5
+     83                return SL_STATUS_INVALID_PARAMETER;
+   \       0x4A   0x2021             MOVS     R0,#+33
+   \       0x4C   0xE002             B.N      ??validate_and_update_command_word_6
+     84              }
+     85              // No need to do anything with the command word
+     86            } else {
+     87              // Unknown command ID
+     88              return SL_STATUS_INVALID_PARAMETER;
+   \                     ??validate_and_update_command_word_7: (+1)
+   \       0x4E   0x2021             MOVS     R0,#+33
+   \       0x50   0xE000             B.N      ??validate_and_update_command_word_6
+     89            }
+     90            // All the checks passed
+     91            return SL_STATUS_OK;
+   \                     ??validate_and_update_command_word_5: (+1)
+   \       0x52   0x2000             MOVS     R0,#+0
+   \                     ??validate_and_update_command_word_6: (+1)
+   \       0x54   0x4770             BX       LR
+     92          }
+     93          
+     94          /***************************************************************************//**
+     95           * @brief
+     96           *   Get the PSA initial attest token from the SE
+     97           *
+     98           * @param[in] cmd_ctx
+     99           *   SE command context struct.
+    100           *
+    101           * @param[in] challenge_size
+    102           *   Size of the challenge object in bytes. Must be either 32, 48 or 64.
+    103           *
+    104           * @param[out] token_size
+    105           *   Number of bytes actually used in token_buf.
+    106           *
+    107           * @param[in] command_word
+    108           *   The command word to send to the SE, to differentiat between token types
+    109           *
+    110           * @return
+    111           *   Status code, @ref sl_status.h.
+    112           ******************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+    113          static sl_status_t get_attestation_token_size(sl_se_command_context_t *cmd_ctx,
+    114                                                        size_t challenge_size,
+    115                                                        size_t *token_size,
+    116                                                        uint32_t command_word)
+    117          {
+   \                     get_attestation_token_size: (+1)
+   \        0x0   0xE92D 0x41FC      PUSH     {R2-R8,LR}
+   \        0x4   0xB096             SUB      SP,SP,#+88
+   \        0x6   0x0004             MOVS     R4,R0
+   \        0x8   0x4688             MOV      R8,R1
+   \        0xA   0x0015             MOVS     R5,R2
+    118            // Parameter check
+    119            if (cmd_ctx == NULL || token_size == NULL) {
+   \        0xC   0x2C00             CMP      R4,#+0
+   \        0xE   0xD001             BEQ.N    ??get_attestation_token_size_0
+   \       0x10   0x2D00             CMP      R5,#+0
+   \       0x12   0xD101             BNE.N    ??get_attestation_token_size_1
+    120              return SL_STATUS_INVALID_PARAMETER;
+   \                     ??get_attestation_token_size_0: (+1)
+   \       0x14   0x2021             MOVS     R0,#+33
+   \       0x16   0xE036             B.N      ??get_attestation_token_size_2
+    121            }
+    122          
+    123            // Check command word and challenge size
+    124            sl_status_t status = validate_and_update_command_word(&command_word,
+    125                                                                  challenge_size);
+   \                     ??get_attestation_token_size_1: (+1)
+   \       0x18   0x4641             MOV      R1,R8
+   \       0x1A   0xA817             ADD      R0,SP,#+92
+   \       0x1C   0x.... 0x....      BL       validate_and_update_command_word
+   \       0x20   0x0006             MOVS     R6,R0
+    126            if (status != SL_STATUS_OK) {
+   \       0x22   0x2E00             CMP      R6,#+0
+   \       0x24   0xD001             BEQ.N    ??get_attestation_token_size_3
+    127              return status;
+   \       0x26   0x0030             MOVS     R0,R6
+   \       0x28   0xE02D             B.N      ??get_attestation_token_size_2
+    128            }
+   \                     ??get_attestation_token_size_3: (+1)
+   \       0x2A   0x2140             MOVS     R1,#+64
+   \       0x2C   0x2200             MOVS     R2,#+0
+   \       0x2E   0xA806             ADD      R0,SP,#+24
+   \       0x30   0x.... 0x....      BL       __aeabi_memset
+    129          
+    130            // Use a dummy nonce since the SE requires nonce input even if we just
+    131            // want to find the token length
+    132            uint8_t dummy_nonce[SL_SE_ATTESTATION_CHALLENGE_SIZE_64] = { 0 };
+    133          
+    134            // Build and execute the command
+    135            SE_Command_t *se_cmd = &cmd_ctx->command;
+   \       0x34   0x0027             MOVS     R7,R4
+    136            // Or comman word with 0x01 to enable length output only
+    137            sli_se_command_init(cmd_ctx, command_word | 0x01UL);
+   \       0x36   0x9817             LDR      R0,[SP, #+92]
+   \       0x38   0xF050 0x0001      ORRS     R0,R0,#0x1
+   \       0x3C   0x6020             STR      R0,[R4, #+0]
+   \       0x3E   0x2000             MOVS     R0,#+0
+   \       0x40   0x6060             STR      R0,[R4, #+4]
+   \       0x42   0x2000             MOVS     R0,#+0
+   \       0x44   0x60A0             STR      R0,[R4, #+8]
+   \       0x46   0x2000             MOVS     R0,#+0
+   \       0x48   0x61E0             STR      R0,[R4, #+28]
+    138            SE_DataTransfer_t noncedata =
+    139              SE_DATATRANSFER_DEFAULT(dummy_nonce, challenge_size);
+   \       0x4A   0x46EC             MOV      R12,SP
+   \       0x4C   0x....             LDR.N    R0,??DataTable6_2
+   \       0x4E   0xE890 0x000E      LDM      R0,{R1-R3}
+   \       0x52   0xE88C 0x000E      STM      R12,{R1-R3}
+   \       0x56   0xA806             ADD      R0,SP,#+24
+   \       0x58   0x9000             STR      R0,[SP, #+0]
+   \       0x5A   0xF058 0x5000      ORRS     R0,R8,#0x20000000
+   \       0x5E   0x9002             STR      R0,[SP, #+8]
+    140            SE_addDataInput(se_cmd, &noncedata);
+   \       0x60   0x4669             MOV      R1,SP
+   \       0x62   0x0038             MOVS     R0,R7
+   \       0x64   0x.... 0x....      BL       SE_addDataInput
+    141            SE_DataTransfer_t sizedata =
+    142              SE_DATATRANSFER_DEFAULT(token_size, sizeof(*token_size));
+   \       0x68   0xF10D 0x0C0C      ADD      R12,SP,#+12
+   \       0x6C   0x....             LDR.N    R0,??DataTable6_3
+   \       0x6E   0xE890 0x000E      LDM      R0,{R1-R3}
+   \       0x72   0xE88C 0x000E      STM      R12,{R1-R3}
+   \       0x76   0x9503             STR      R5,[SP, #+12]
+    143            SE_addDataOutput(se_cmd, &sizedata);
+   \       0x78   0xA903             ADD      R1,SP,#+12
+   \       0x7A   0x0038             MOVS     R0,R7
+   \       0x7C   0x.... 0x....      BL       SE_addDataOutput
+    144          
+    145            return sli_se_execute_and_wait(cmd_ctx);
+   \       0x80   0x0020             MOVS     R0,R4
+   \       0x82   0x.... 0x....      BL       sli_se_execute_and_wait
+   \                     ??get_attestation_token_size_2: (+1)
+   \       0x86   0xB018             ADD      SP,SP,#+96
+   \       0x88   0xE8BD 0x81F0      POP      {R4-R8,PC}
+    146          }
+
+   \                                 In section .rodata, align 4
+   \                     ?_0:
+   \        0x0   0x0000'0000        DC32 0x0, 0x1, 0
+   \              0x0000'0001  
+   \              0x0000'0000
+
+   \                                 In section .rodata, align 4
+   \                     ?_1:
+   \        0x0   0x0000'0000        DC32 0x0, 0x1, 536'870'916
+   \              0x0000'0001  
+   \              0x2000'0004
+    147          
+    148          /***************************************************************************//**
+    149           * @brief
+    150           *   Get an attestation token from the SE
+    151           *
+    152           * @param[in] cmd_ctx
+    153           *   SE command context struct.
+    154           *
+    155           * @param[in] auth_challenge
+    156           *   Buffer with a challenge object selected by the caller.
+    157           *
+    158           * @param[in] challenge_size
+    159           *   Size of the challenge object in bytes. Must be either 32, 48 or 64.
+    160           *
+    161           * @param[out] token_buf
+    162           *   Buffer where the output token will be stored.
+    163           *
+    164           * @param[in] token_buf_size
+    165           *   Size of token_buf in bytes.
+    166           *
+    167           * @param[out] token_size
+    168           *   Number of bytes actually used in token_buf.
+    169           *
+    170           * @param[in] command_word
+    171           *   The command word to send to the SE, to differentiat between token types
+    172           *
+    173           * @return
+    174           *   Status code, @ref sl_status.h.
+    175           ******************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+    176          static sl_status_t get_attestation_token(sl_se_command_context_t *cmd_ctx,
+    177                                                   const uint8_t *auth_challenge,
+    178                                                   size_t challenge_size,
+    179                                                   uint8_t *token_buf,
+    180                                                   size_t token_buf_size,
+    181                                                   size_t *token_size,
+    182                                                   uint32_t command_word)
+    183          {
+   \                     get_attestation_token: (+1)
+   \        0x0   0xE92D 0x4FF0      PUSH     {R4-R11,LR}
+   \        0x4   0xB089             SUB      SP,SP,#+36
+   \        0x6   0x0004             MOVS     R4,R0
+   \        0x8   0x000D             MOVS     R5,R1
+   \        0xA   0x4693             MOV      R11,R2
+   \        0xC   0x001E             MOVS     R6,R3
+   \        0xE   0xF8DD 0xA048      LDR      R10,[SP, #+72]
+   \       0x12   0x9F13             LDR      R7,[SP, #+76]
+    184            // Parameter check
+    185            if (cmd_ctx == NULL
+    186                || auth_challenge == NULL
+    187                || token_buf == NULL
+    188                || token_size == NULL) {
+   \       0x14   0x2C00             CMP      R4,#+0
+   \       0x16   0xD005             BEQ.N    ??get_attestation_token_0
+   \       0x18   0x2D00             CMP      R5,#+0
+   \       0x1A   0xD003             BEQ.N    ??get_attestation_token_0
+   \       0x1C   0x2E00             CMP      R6,#+0
+   \       0x1E   0xD001             BEQ.N    ??get_attestation_token_0
+   \       0x20   0x2F00             CMP      R7,#+0
+   \       0x22   0xD101             BNE.N    ??get_attestation_token_1
+    189              return SL_STATUS_INVALID_PARAMETER;
+   \                     ??get_attestation_token_0: (+1)
+   \       0x24   0x2021             MOVS     R0,#+33
+   \       0x26   0xE056             B.N      ??get_attestation_token_2
+    190            }
+    191          
+    192            // Check supported challenge sizes
+    193            sl_status_t status = validate_and_update_command_word(&command_word,
+    194                                                                  challenge_size);
+   \                     ??get_attestation_token_1: (+1)
+   \       0x28   0x4659             MOV      R1,R11
+   \       0x2A   0xA814             ADD      R0,SP,#+80
+   \       0x2C   0x.... 0x....      BL       validate_and_update_command_word
+   \       0x30   0x4680             MOV      R8,R0
+    195            if (status != SL_STATUS_OK) {
+   \       0x32   0xF1B8 0x0F00      CMP      R8,#+0
+   \       0x36   0xD001             BEQ.N    ??get_attestation_token_3
+    196              return status;
+   \       0x38   0x4640             MOV      R0,R8
+   \       0x3A   0xE04C             B.N      ??get_attestation_token_2
+    197            }
+    198          
+    199            // Check that buffer is sufficiently large
+    200            status = get_attestation_token_size(cmd_ctx,
+    201                                                challenge_size,
+    202                                                token_size,
+    203                                                command_word);
+   \                     ??get_attestation_token_3: (+1)
+   \       0x3C   0x9B14             LDR      R3,[SP, #+80]
+   \       0x3E   0x003A             MOVS     R2,R7
+   \       0x40   0x4659             MOV      R1,R11
+   \       0x42   0x0020             MOVS     R0,R4
+   \       0x44   0x.... 0x....      BL       get_attestation_token_size
+   \       0x48   0x4681             MOV      R9,R0
+    204            if (status != SL_STATUS_OK) {
+   \       0x4A   0xF1B9 0x0F00      CMP      R9,#+0
+   \       0x4E   0xD001             BEQ.N    ??get_attestation_token_4
+    205              return status;
+   \       0x50   0x4648             MOV      R0,R9
+   \       0x52   0xE040             B.N      ??get_attestation_token_2
+    206            }
+    207            if (((*token_size + 0x3) & ~0x3) > token_buf_size) {
+   \                     ??get_attestation_token_4: (+1)
+   \       0x54   0x6838             LDR      R0,[R7, #+0]
+   \       0x56   0x1CC0             ADDS     R0,R0,#+3
+   \       0x58   0x0880             LSRS     R0,R0,#+2
+   \       0x5A   0x0080             LSLS     R0,R0,#+2
+   \       0x5C   0x4582             CMP      R10,R0
+   \       0x5E   0xD201             BCS.N    ??get_attestation_token_5
+    208              return SL_STATUS_WOULD_OVERFLOW;
+   \       0x60   0x201D             MOVS     R0,#+29
+   \       0x62   0xE038             B.N      ??get_attestation_token_2
+    209            }
+    210          
+    211            // Build and execute the command
+    212            SE_Command_t *se_cmd = &cmd_ctx->command;
+   \                     ??get_attestation_token_5: (+1)
+   \       0x64   0x46A0             MOV      R8,R4
+    213            sli_se_command_init(cmd_ctx, command_word);
+   \       0x66   0x9814             LDR      R0,[SP, #+80]
+   \       0x68   0x6020             STR      R0,[R4, #+0]
+   \       0x6A   0x2000             MOVS     R0,#+0
+   \       0x6C   0x6060             STR      R0,[R4, #+4]
+   \       0x6E   0x2000             MOVS     R0,#+0
+   \       0x70   0x60A0             STR      R0,[R4, #+8]
+   \       0x72   0x2000             MOVS     R0,#+0
+   \       0x74   0x61E0             STR      R0,[R4, #+28]
+    214            SE_DataTransfer_t noncedata =
+    215              SE_DATATRANSFER_DEFAULT(auth_challenge, challenge_size);
+   \       0x76   0xF10D 0x0C0C      ADD      R12,SP,#+12
+   \       0x7A   0x....             LDR.N    R0,??DataTable6_4
+   \       0x7C   0xE890 0x000E      LDM      R0,{R1-R3}
+   \       0x80   0xE88C 0x000E      STM      R12,{R1-R3}
+   \       0x84   0x9503             STR      R5,[SP, #+12]
+   \       0x86   0xF05B 0x5000      ORRS     R0,R11,#0x20000000
+   \       0x8A   0x9005             STR      R0,[SP, #+20]
+    216            SE_addDataInput(se_cmd, &noncedata);
+   \       0x8C   0xA903             ADD      R1,SP,#+12
+   \       0x8E   0x4640             MOV      R0,R8
+   \       0x90   0x.... 0x....      BL       SE_addDataInput
+    217            SE_DataTransfer_t sizedata =
+    218              SE_DATATRANSFER_DEFAULT(token_size, sizeof(*token_size));
+   \       0x94   0xF10D 0x0C18      ADD      R12,SP,#+24
+   \       0x98   0x....             LDR.N    R0,??DataTable6_5
+   \       0x9A   0xE890 0x000E      LDM      R0,{R1-R3}
+   \       0x9E   0xE88C 0x000E      STM      R12,{R1-R3}
+   \       0xA2   0x9706             STR      R7,[SP, #+24]
+    219            SE_addDataOutput(se_cmd, &sizedata);
+   \       0xA4   0xA906             ADD      R1,SP,#+24
+   \       0xA6   0x4640             MOV      R0,R8
+   \       0xA8   0x.... 0x....      BL       SE_addDataOutput
+    220            SE_DataTransfer_t tokendata =
+    221              SE_DATATRANSFER_DEFAULT(token_buf, ((*token_size + 0x3) & ~0x3));
+   \       0xAC   0x46EC             MOV      R12,SP
+   \       0xAE   0x....             LDR.N    R0,??DataTable6_6
+   \       0xB0   0xE890 0x000E      LDM      R0,{R1-R3}
+   \       0xB4   0xE88C 0x000E      STM      R12,{R1-R3}
+   \       0xB8   0x9600             STR      R6,[SP, #+0]
+   \       0xBA   0x6838             LDR      R0,[R7, #+0]
+   \       0xBC   0x1CC0             ADDS     R0,R0,#+3
+   \       0xBE   0x0880             LSRS     R0,R0,#+2
+   \       0xC0   0x0080             LSLS     R0,R0,#+2
+   \       0xC2   0xF050 0x5000      ORRS     R0,R0,#0x20000000
+   \       0xC6   0x9002             STR      R0,[SP, #+8]
+    222            SE_addDataOutput(se_cmd, &tokendata);
+   \       0xC8   0x4669             MOV      R1,SP
+   \       0xCA   0x4640             MOV      R0,R8
+   \       0xCC   0x.... 0x....      BL       SE_addDataOutput
+    223          
+    224            return sli_se_execute_and_wait(cmd_ctx);
+   \       0xD0   0x0020             MOVS     R0,R4
+   \       0xD2   0x.... 0x....      BL       sli_se_execute_and_wait
+   \                     ??get_attestation_token_2: (+1)
+   \       0xD6   0xB009             ADD      SP,SP,#+36
+   \       0xD8   0xE8BD 0x8FF0      POP      {R4-R11,PC}
+    225          }
+
+   \                                 In section .rodata, align 4
+   \                     ?_2:
+   \        0x0   0x0000'0000        DC32 0x0, 0x1, 0
+   \              0x0000'0001  
+   \              0x0000'0000
+
+   \                                 In section .rodata, align 4
+   \                     ?_3:
+   \        0x0   0x0000'0000        DC32 0x0, 0x1, 536'870'916
+   \              0x0000'0001  
+   \              0x2000'0004
+
+   \                                 In section .rodata, align 4
+   \                     ?_4:
+   \        0x0   0x0000'0000        DC32 0x0, 0x1, 0
+   \              0x0000'0001  
+   \              0x0000'0000
+    226          
+    227          // -----------------------------------------------------------------------------
+    228          // Global Functions
+    229          
+    230          /***************************************************************************//**
+    231           * Get the PSA initial attest token from the SE
+    232           ******************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+    233          sl_status_t sl_se_attestation_get_psa_iat_token(sl_se_command_context_t *cmd_ctx,
+    234                                                          const uint8_t *auth_challenge,
+    235                                                          size_t challenge_size,
+    236                                                          uint8_t *token_buf,
+    237                                                          size_t token_buf_size,
+    238                                                          size_t *token_size)
+    239          {
+   \                     sl_se_attestation_get_psa_iat_token: (+1)
+   \        0x0   0xB5FE             PUSH     {R1-R7,LR}
+   \        0x2   0x0004             MOVS     R4,R0
+   \        0x4   0x000D             MOVS     R5,R1
+   \        0x6   0x0016             MOVS     R6,R2
+   \        0x8   0x001F             MOVS     R7,R3
+    240            return get_attestation_token(cmd_ctx,
+    241                                         auth_challenge,
+    242                                         challenge_size,
+    243                                         token_buf,
+    244                                         token_buf_size,
+    245                                         token_size,
+    246                                         SLI_SE_COMMAND_ATTEST_PSA_IAT);
+   \        0xA   0x....             LDR.N    R0,??DataTable6
+   \        0xC   0x9002             STR      R0,[SP, #+8]
+   \        0xE   0x9809             LDR      R0,[SP, #+36]
+   \       0x10   0x9001             STR      R0,[SP, #+4]
+   \       0x12   0x9808             LDR      R0,[SP, #+32]
+   \       0x14   0x9000             STR      R0,[SP, #+0]
+   \       0x16   0x003B             MOVS     R3,R7
+   \       0x18   0x0032             MOVS     R2,R6
+   \       0x1A   0x0029             MOVS     R1,R5
+   \       0x1C   0x0020             MOVS     R0,R4
+   \       0x1E   0x.... 0x....      BL       get_attestation_token
+   \       0x22   0xBDFE             POP      {R1-R7,PC}
+    247          }
+    248          
+    249          /***************************************************************************//**
+    250           * Get the size of a PSA initial attest token with the given nonce
+    251           ******************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+    252          sl_status_t sl_se_attestation_get_psa_iat_token_size(sl_se_command_context_t *cmd_ctx,
+    253                                                               size_t challenge_size,
+    254                                                               size_t *token_size)
+    255          {
+   \                     sl_se_attestation_get_psa_iat_token_size: (+1)
+   \        0x0   0xB570             PUSH     {R4-R6,LR}
+   \        0x2   0x0006             MOVS     R6,R0
+   \        0x4   0x000C             MOVS     R4,R1
+   \        0x6   0x0015             MOVS     R5,R2
+    256            return get_attestation_token_size(cmd_ctx,
+    257                                              challenge_size,
+    258                                              token_size,
+    259                                              SLI_SE_COMMAND_ATTEST_PSA_IAT);
+   \        0x8   0x....             LDR.N    R3,??DataTable6
+   \        0xA   0x002A             MOVS     R2,R5
+   \        0xC   0x0021             MOVS     R1,R4
+   \        0xE   0x0030             MOVS     R0,R6
+   \       0x10   0x.... 0x....      BL       get_attestation_token_size
+   \       0x14   0xBD70             POP      {R4-R6,PC}
+    260          }
+    261          
+    262          /***************************************************************************//**
+    263           * Get an attested (signed) security configuration token from the SE
+    264           ******************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+    265          sl_status_t sl_se_attestation_get_config_token(sl_se_command_context_t *cmd_ctx,
+    266                                                         const uint8_t *auth_challenge,
+    267                                                         size_t challenge_size,
+    268                                                         uint8_t *token_buf,
+    269                                                         size_t token_buf_size,
+    270                                                         size_t *token_size)
+    271          {
+   \                     sl_se_attestation_get_config_token: (+1)
+   \        0x0   0xB5FE             PUSH     {R1-R7,LR}
+   \        0x2   0x0004             MOVS     R4,R0
+   \        0x4   0x000D             MOVS     R5,R1
+   \        0x6   0x0016             MOVS     R6,R2
+   \        0x8   0x001F             MOVS     R7,R3
+    272            return get_attestation_token(cmd_ctx,
+    273                                         auth_challenge,
+    274                                         challenge_size,
+    275                                         token_buf,
+    276                                         token_buf_size,
+    277                                         token_size,
+    278                                         SLI_SE_COMMAND_ATTEST_CONFIG);
+   \        0xA   0x....             LDR.N    R0,??DataTable6_1
+   \        0xC   0x9002             STR      R0,[SP, #+8]
+   \        0xE   0x9809             LDR      R0,[SP, #+36]
+   \       0x10   0x9001             STR      R0,[SP, #+4]
+   \       0x12   0x9808             LDR      R0,[SP, #+32]
+   \       0x14   0x9000             STR      R0,[SP, #+0]
+   \       0x16   0x003B             MOVS     R3,R7
+   \       0x18   0x0032             MOVS     R2,R6
+   \       0x1A   0x0029             MOVS     R1,R5
+   \       0x1C   0x0020             MOVS     R0,R4
+   \       0x1E   0x.... 0x....      BL       get_attestation_token
+   \       0x22   0xBDFE             POP      {R1-R7,PC}
+    279          }
+    280          
+    281          /***************************************************************************//**
+    282           * Get the size of a security configuration token
+    283           ******************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+    284          sl_status_t sl_se_attestation_get_config_token_size(sl_se_command_context_t *cmd_ctx,
+    285                                                              size_t challenge_size,
+    286                                                              size_t *token_size)
+    287          {
+   \                     sl_se_attestation_get_config_token_size: (+1)
+   \        0x0   0xB570             PUSH     {R4-R6,LR}
+   \        0x2   0x0006             MOVS     R6,R0
+   \        0x4   0x000C             MOVS     R4,R1
+   \        0x6   0x0015             MOVS     R5,R2
+    288            return get_attestation_token_size(cmd_ctx,
+    289                                              challenge_size,
+    290                                              token_size,
+    291                                              SLI_SE_COMMAND_ATTEST_CONFIG);
+   \        0x8   0x....             LDR.N    R3,??DataTable6_1
+   \        0xA   0x002A             MOVS     R2,R5
+   \        0xC   0x0021             MOVS     R1,R4
+   \        0xE   0x0030             MOVS     R0,R6
+   \       0x10   0x.... 0x....      BL       get_attestation_token_size
+   \       0x14   0xBD70             POP      {R4-R6,PC}
+    292          }
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable6:
+   \        0x0   0x0A03'0000        DC32     0xa030000
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable6_1:
+   \        0x0   0x0A04'0000        DC32     0xa040000
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable6_2:
+   \        0x0   0x....'....        DC32     ?_0
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable6_3:
+   \        0x0   0x....'....        DC32     ?_1
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable6_4:
+   \        0x0   0x....'....        DC32     ?_2
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable6_5:
+   \        0x0   0x....'....        DC32     ?_3
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable6_6:
+   \        0x0   0x....'....        DC32     ?_4
+    293          
+    294          /** @} (end addtogroup sl_se_manager) */
+    295          
+    296          #endif // SLI_MAILBOX_COMMAND_SUPPORTED && VAULT
+
+   Maximum stack usage in bytes:
+
+   .cstack Function
+   ------- --------
+      72   get_attestation_token
+        72   -> SE_addDataInput
+        72   -> SE_addDataOutput
+        72   -> get_attestation_token_size
+        72   -> sli_se_execute_and_wait
+        72   -> validate_and_update_command_word
+     120   get_attestation_token_size
+       120   -> SE_addDataInput
+       120   -> SE_addDataOutput
+       120   -> __aeabi_memset
+       120   -> sli_se_execute_and_wait
+       120   -> validate_and_update_command_word
+      32   sl_se_attestation_get_config_token
+        32   -> get_attestation_token
+      16   sl_se_attestation_get_config_token_size
+        16   -> get_attestation_token_size
+      32   sl_se_attestation_get_psa_iat_token
+        32   -> get_attestation_token
+      16   sl_se_attestation_get_psa_iat_token_size
+        16   -> get_attestation_token_size
+       0   validate_and_update_command_word
+
+
+   Section sizes:
+
+   Bytes  Function/Label
+   -----  --------------
+       4  ??DataTable6
+       4  ??DataTable6_1
+       4  ??DataTable6_2
+       4  ??DataTable6_3
+       4  ??DataTable6_4
+       4  ??DataTable6_5
+       4  ??DataTable6_6
+      12  ?_0
+      12  ?_1
+      12  ?_2
+      12  ?_3
+      12  ?_4
+     220  get_attestation_token
+     140  get_attestation_token_size
+      36  sl_se_attestation_get_config_token
+      22  sl_se_attestation_get_config_token_size
+      36  sl_se_attestation_get_psa_iat_token
+      22  sl_se_attestation_get_psa_iat_token_size
+      86  validate_and_update_command_word
+
+ 
+  60 bytes in section .rodata
+ 590 bytes in section .text
+ 
+ 590 bytes of CODE  memory
+  60 bytes of CONST memory
+
+Errors: none
+Warnings: none

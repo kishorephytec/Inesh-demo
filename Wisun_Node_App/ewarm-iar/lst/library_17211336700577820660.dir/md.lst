@@ -1,0 +1,2596 @@
+###############################################################################
+#
+# IAR ANSI C/C++ Compiler V9.50.2.385/W64 for ARM         29/Mar/2025  15:53:44
+# Copyright 1999-2024 IAR Systems AB.
+#
+#    Cpu mode                     =  thumb
+#    Endian                       =  little
+#    Source file                  =
+#        D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\util\third_party\mbedtls\library\md.c
+#    Command line                 =
+#        -f "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\ewarm-iar\obj\library_17211336700577820660.dir\md.o.rsp"
+#        ("D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\util\third_party\mbedtls\library\md.c"
+#        -D DEBUG_EFM=1 -D EFR32FG28B322F1024IM48=1 -D
+#        configNUM_SDK_THREAD_LOCAL_STORAGE_POINTERS=2 -D
+#        SL_COMPONENT_CATALOG_PRESENT=1 -D
+#        MBEDTLS_CONFIG_FILE=<sl_mbedtls_config.h> -D
+#        MBEDTLS_PSA_CRYPTO_CONFIG_FILE=<psa_crypto_config.h> -D
+#        SL_RAIL_LIB_MULTIPROTOCOL_SUPPORT=0 -D
+#        SL_RAIL_UTIL_PA_CONFIG_HEADER=<sl_rail_util_pa_config.h> -D
+#        RTT_USE_ASM=0 -lC "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\ewarm-iar\lst\library_17211336700577820660.dir"
+#        --diag_suppress Pa050 -o "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\ewarm-iar\obj\library_17211336700577820660.dir"
+#        --no_cse --no_unroll --no_inline --no_code_motion --no_tbaa
+#        --no_clustering --no_scheduling --debug --endian=little
+#        --cpu=Cortex-M33 --cmse --cmse -e --fpu=VFPv5_sp --dlib_config
+#        "C:\Program Files\IAR Systems\Embedded Workbench
+#        9.2\arm\inc\c\DLib_Config_Normal.h" -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\util\third_party\mbedtls\library\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App 1\Wisun_Node_App\config\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App 1\Wisun_Node_App\config\rail\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App 1\Wisun_Node_App\config\wisun\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App 1\Wisun_Node_App\.\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\Device\SiliconLabs\EFR32FG28\Include\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\app\wisun\component\app_project_info\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\common\inc\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\service\cli\inc\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\service\cli\src\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\CMSIS\Core\Include\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\CMSIS\RTOS2\Include\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\service\device_init\inc\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\emdrv\common\inc\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\emlib\inc\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\service\iostream\inc\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\security\sl_component\sl_mbedtls_support\config\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\security\sl_component\sl_mbedtls_support\config\preset\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\security\sl_component\sl_mbedtls_support\inc\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\util\third_party\mbedtls\include\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\util\third_party\mbedtls\library\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\micrium_os\common\source\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\micrium_os\common\include\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\micrium_os\cpu\include\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\micrium_os\ports\source\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\micrium_os\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\micrium_os\kernel\source\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\micrium_os\kernel\include\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\emdrv\nvm3\inc\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\peripheral\inc\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\util\third_party\printf\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\util\third_party\printf\inc\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\security\sl_component\sl_psa_driver\inc\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\radio\rail_lib\common\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\radio\rail_lib\protocol\ble\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\radio\rail_lib\protocol\ieee802154\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\radio\rail_lib\protocol\wmbus\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\radio\rail_lib\protocol\zwave\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\radio\rail_lib\chip\efr32\efr32xg2x\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\radio\rail_lib\protocol\sidewalk\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\radio\rail_lib\plugin\pa-conversions\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\radio\rail_lib\plugin\pa-conversions\efr32xg28\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\radio\rail_lib\plugin\rail_util_pti\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\security\sl_component\se_manager\inc\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\security\sl_component\se_manager\src\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\util\third_party\segger\systemview\SEGGER\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\util\silicon_labs\silabs_core\memory_manager\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\common\toolchain\inc\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\service\system\inc\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\app\wisun\component\app_core\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\app\wisun\component\app_setting\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\app\wisun\component\cli_util\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\app\wisun\component\event_manager\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\app\wisun\component\ns_list\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\app\wisun\component\ping\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\app\wisun\component\trace_util\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\app\wisun\component\trace_util\nanostack\nanostack-libservice\mbed-client-libservice\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\app\wisun\component\udp_client\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\service\sleeptimer\inc\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\protocol\wisun\plugin\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\protocol\wisun\stack\inc\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\protocol\wisun\stack\inc\socket\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App 1\Wisun_Node_App\autogen\\" -On
+#        --use_c++_inline) --dependencies=n "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\ewarm-iar\obj\library_17211336700577820660.dir\md.o.iar_deps"
+#    Locale                       =  C
+#    List file                    =
+#        D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\ewarm-iar\lst\library_17211336700577820660.dir\md.lst
+#    Object file                  =
+#        D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\ewarm-iar\obj\library_17211336700577820660.dir\md.o
+#    Runtime model:                  
+#      __CPP_Runtime              =  1
+#      __SystemLibrary            =  DLib
+#      __dlib_file_descriptor     =  0
+#      __dlib_full_locale_support =  0
+#      __dlib_version             =  6
+#
+###############################################################################
+
+D:\Inesh_wisun\Wisun_Node_App 1\Wisun_Node_App\gecko_sdk_4.4.5\util\third_party\mbedtls\library\md.c
+      1          /**
+      2           * \file md.c
+      3           *
+      4           * \brief Generic message digest wrapper for Mbed TLS
+      5           *
+      6           * \author Adriaan de Jong <dejong@fox-it.com>
+      7           *
+      8           *  Copyright The Mbed TLS Contributors
+      9           *  SPDX-License-Identifier: Apache-2.0
+     10           *
+     11           *  Licensed under the Apache License, Version 2.0 (the "License"); you may
+     12           *  not use this file except in compliance with the License.
+     13           *  You may obtain a copy of the License at
+     14           *
+     15           *  http://www.apache.org/licenses/LICENSE-2.0
+     16           *
+     17           *  Unless required by applicable law or agreed to in writing, software
+     18           *  distributed under the License is distributed on an "AS IS" BASIS, WITHOUT
+     19           *  WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     20           *  See the License for the specific language governing permissions and
+     21           *  limitations under the License.
+     22           */
+     23          
+     24          #include "common.h"
+
+   \                                 In section .text, align 2
+   \   __vfp uint32_t mbedtls_get_unaligned_uint32(void const *)
+   \                     mbedtls_get_unaligned_uint32: (+1)
+   \        0x0   0xB5F8             PUSH     {R3-R7,LR}
+   \        0x2   0x0007             MOVS     R7,R0
+   \        0x4   0x2404             MOVS     R4,#+4
+   \        0x6   0x003D             MOVS     R5,R7
+   \        0x8   0x466E             MOV      R6,SP
+   \        0xA   0x0022             MOVS     R2,R4
+   \        0xC   0x0029             MOVS     R1,R5
+   \        0xE   0x0030             MOVS     R0,R6
+   \       0x10   0x.... 0x....      BL       __aeabi_memcpy
+   \       0x14   0x9800             LDR      R0,[SP, #+0]
+   \       0x16   0xBDF2             POP      {R1,R4-R7,PC}
+
+   \                                 In section .text, align 2
+   \   __vfp void mbedtls_put_unaligned_uint32(void *, uint32_t)
+   \                     mbedtls_put_unaligned_uint32: (+1)
+   \        0x0   0xB5F2             PUSH     {R1,R4-R7,LR}
+   \        0x2   0x0007             MOVS     R7,R0
+   \        0x4   0x2404             MOVS     R4,#+4
+   \        0x6   0x466D             MOV      R5,SP
+   \        0x8   0x003E             MOVS     R6,R7
+   \        0xA   0x0022             MOVS     R2,R4
+   \        0xC   0x0029             MOVS     R1,R5
+   \        0xE   0x0030             MOVS     R0,R6
+   \       0x10   0x.... 0x....      BL       __aeabi_memcpy
+   \       0x14   0xBDF1             POP      {R0,R4-R7,PC}
+
+   \                                 In section .text, align 2
+   \   __vfp void mbedtls_xor(unsigned char *, unsigned char const *, unsigned char const *, size_t)
+   \                     mbedtls_xor: (+1)
+   \        0x0   0xE92D 0x47F0      PUSH     {R4-R10,LR}
+   \        0x4   0x0004             MOVS     R4,R0
+   \        0x6   0x000D             MOVS     R5,R1
+   \        0x8   0x0016             MOVS     R6,R2
+   \        0xA   0x001F             MOVS     R7,R3
+   \        0xC   0xF05F 0x0800      MOVS     R8,#+0
+   \                     ??mbedtls_xor_0: (+1)
+   \       0x10   0xF118 0x0004      ADDS     R0,R8,#+4
+   \       0x14   0x4287             CMP      R7,R0
+   \       0x16   0xD313             BCC.N    ??mbedtls_xor_1
+   \       0x18   0xEB05 0x0008      ADD      R0,R5,R8
+   \       0x1C   0x.... 0x....      BL       mbedtls_get_unaligned_uint32
+   \       0x20   0x4681             MOV      R9,R0
+   \       0x22   0xEB06 0x0008      ADD      R0,R6,R8
+   \       0x26   0x.... 0x....      BL       mbedtls_get_unaligned_uint32
+   \       0x2A   0x4682             MOV      R10,R0
+   \       0x2C   0xEA9A 0x0A09      EORS     R10,R10,R9
+   \       0x30   0x4651             MOV      R1,R10
+   \       0x32   0xEB04 0x0008      ADD      R0,R4,R8
+   \       0x36   0x.... 0x....      BL       mbedtls_put_unaligned_uint32
+   \       0x3A   0xF118 0x0804      ADDS     R8,R8,#+4
+   \       0x3E   0xE7E7             B.N      ??mbedtls_xor_0
+   \                     ??mbedtls_xor_1: (+1)
+   \       0x40   0x45B8             CMP      R8,R7
+   \       0x42   0xD209             BCS.N    ??mbedtls_xor_2
+   \       0x44   0xF815 0x1008      LDRB     R1,[R5, R8]
+   \       0x48   0xF816 0x0008      LDRB     R0,[R6, R8]
+   \       0x4C   0x4041             EORS     R1,R0,R1
+   \       0x4E   0xF804 0x1008      STRB     R1,[R4, R8]
+   \       0x52   0xF118 0x0801      ADDS     R8,R8,#+1
+   \       0x56   0xE7F3             B.N      ??mbedtls_xor_1
+   \                     ??mbedtls_xor_2: (+1)
+   \       0x58   0xE8BD 0x87F0      POP      {R4-R10,PC}
+     25          
+     26          /*
+     27           * Availability of functions in this module is controlled by two
+     28           * feature macros:
+     29           * - MBEDTLS_MD_C enables the whole module;
+     30           * - MBEDTLS_MD_LIGHT enables only functions for hashing and accessing
+     31           * most hash metadata (everything except string names); is it
+     32           * automatically set whenever MBEDTLS_MD_C is defined.
+     33           *
+     34           * In this file, functions from MD_LIGHT are at the top, MD_C at the end.
+     35           *
+     36           * In the future we may want to change the contract of some functions
+     37           * (behaviour with NULL arguments) depending on whether MD_C is defined or
+     38           * only MD_LIGHT. Also, the exact scope of MD_LIGHT might vary.
+     39           *
+     40           * For these reasons, we're keeping MD_LIGHT internal for now.
+     41           */
+     42          #if defined(MBEDTLS_MD_LIGHT)
+     43          
+     44          #include "mbedtls/md.h"
+     45          #include "md_wrap.h"
+     46          #include "mbedtls/platform_util.h"
+     47          #include "mbedtls/error.h"
+     48          
+     49          #include "mbedtls/md5.h"
+     50          #include "mbedtls/ripemd160.h"
+     51          #include "mbedtls/sha1.h"
+     52          #include "mbedtls/sha256.h"
+     53          #include "mbedtls/sha512.h"
+     54          #include "mbedtls/sha3.h"
+     55          
+     56          #if defined(MBEDTLS_PSA_CRYPTO_C)
+     57          #include <psa/crypto.h>
+     58          #include "md_psa.h"
+     59          #include "psa_util_internal.h"
+     60          #endif
+     61          
+     62          #include "mbedtls/platform.h"
+     63          
+     64          #include <string.h>
+     65          
+     66          #if defined(MBEDTLS_FS_IO)
+     67          #include <stdio.h>
+     68          #endif
+     69          
+     70          /* See comment above MBEDTLS_MD_MAX_SIZE in md.h */
+     71          #if defined(MBEDTLS_PSA_CRYPTO_C) && MBEDTLS_MD_MAX_SIZE < PSA_HASH_MAX_SIZE
+     72          #error "Internal error: MBEDTLS_MD_MAX_SIZE < PSA_HASH_MAX_SIZE"
+     73          #endif
+     74          
+     75          #if defined(MBEDTLS_MD_C)
+     76          #define MD_INFO(type, out_size, block_size) type, out_size, block_size,
+     77          #else
+     78          #define MD_INFO(type, out_size, block_size) type, out_size,
+     79          #endif
+     80          
+     81          #if defined(MBEDTLS_MD_CAN_MD5)
+     82          static const mbedtls_md_info_t mbedtls_md5_info = {
+     83              MD_INFO(MBEDTLS_MD_MD5, 16, 64)
+     84          };
+     85          #endif
+     86          
+     87          #if defined(MBEDTLS_MD_CAN_RIPEMD160)
+     88          static const mbedtls_md_info_t mbedtls_ripemd160_info = {
+     89              MD_INFO(MBEDTLS_MD_RIPEMD160, 20, 64)
+     90          };
+     91          #endif
+     92          
+     93          #if defined(MBEDTLS_MD_CAN_SHA1)
+
+   \                                 In section .rodata, align 4
+     94          static const mbedtls_md_info_t mbedtls_sha1_info = {
+   \                     mbedtls_sha1_info:
+   \        0x0   0x05 0x14          DC8 5, 20, 64
+   \              0x40
+   \        0x3                      DS8 1
+     95              MD_INFO(MBEDTLS_MD_SHA1, 20, 64)
+     96          };
+     97          #endif
+     98          
+     99          #if defined(MBEDTLS_MD_CAN_SHA224)
+
+   \                                 In section .rodata, align 4
+    100          static const mbedtls_md_info_t mbedtls_sha224_info = {
+   \                     mbedtls_sha224_info:
+   \        0x0   0x08 0x1C          DC8 8, 28, 64
+   \              0x40
+   \        0x3                      DS8 1
+    101              MD_INFO(MBEDTLS_MD_SHA224, 28, 64)
+    102          };
+    103          #endif
+    104          
+    105          #if defined(MBEDTLS_MD_CAN_SHA256)
+
+   \                                 In section .rodata, align 4
+    106          static const mbedtls_md_info_t mbedtls_sha256_info = {
+   \                     mbedtls_sha256_info:
+   \        0x0   0x09 0x20          DC8 9, 32, 64
+   \              0x40
+   \        0x3                      DS8 1
+    107              MD_INFO(MBEDTLS_MD_SHA256, 32, 64)
+    108          };
+    109          #endif
+    110          
+    111          #if defined(MBEDTLS_MD_CAN_SHA384)
+    112          static const mbedtls_md_info_t mbedtls_sha384_info = {
+    113              MD_INFO(MBEDTLS_MD_SHA384, 48, 128)
+    114          };
+    115          #endif
+    116          
+    117          #if defined(MBEDTLS_MD_CAN_SHA512)
+    118          static const mbedtls_md_info_t mbedtls_sha512_info = {
+    119              MD_INFO(MBEDTLS_MD_SHA512, 64, 128)
+    120          };
+    121          #endif
+    122          
+    123          #if defined(MBEDTLS_MD_CAN_SHA3_224)
+    124          static const mbedtls_md_info_t mbedtls_sha3_224_info = {
+    125              MD_INFO(MBEDTLS_MD_SHA3_224, 28, 144)
+    126          };
+    127          #endif
+    128          
+    129          #if defined(MBEDTLS_MD_CAN_SHA3_256)
+    130          static const mbedtls_md_info_t mbedtls_sha3_256_info = {
+    131              MD_INFO(MBEDTLS_MD_SHA3_256, 32, 136)
+    132          };
+    133          #endif
+    134          
+    135          #if defined(MBEDTLS_MD_CAN_SHA3_384)
+    136          static const mbedtls_md_info_t mbedtls_sha3_384_info = {
+    137              MD_INFO(MBEDTLS_MD_SHA3_384, 48, 104)
+    138          };
+    139          #endif
+    140          
+    141          #if defined(MBEDTLS_MD_CAN_SHA3_512)
+    142          static const mbedtls_md_info_t mbedtls_sha3_512_info = {
+    143              MD_INFO(MBEDTLS_MD_SHA3_512, 64, 72)
+    144          };
+    145          #endif
+    146          
+
+   \                                 In section .text, align 2, keep-with-next
+    147          const mbedtls_md_info_t *mbedtls_md_info_from_type(mbedtls_md_type_t md_type)
+    148          {
+   \                     mbedtls_md_info_from_type: (+1)
+   \        0x0   0x0001             MOVS     R1,R0
+    149              switch (md_type) {
+   \        0x2   0x0008             MOVS     R0,R1
+   \        0x4   0xB2C0             UXTB     R0,R0
+   \        0x6   0x2805             CMP      R0,#+5
+   \        0x8   0xD004             BEQ.N    ??mbedtls_md_info_from_type_0
+   \        0xA   0x2808             CMP      R0,#+8
+   \        0xC   0xD005             BEQ.N    ??mbedtls_md_info_from_type_1
+   \        0xE   0x2809             CMP      R0,#+9
+   \       0x10   0xD006             BEQ.N    ??mbedtls_md_info_from_type_2
+   \       0x12   0xE008             B.N      ??mbedtls_md_info_from_type_3
+    150          #if defined(MBEDTLS_MD_CAN_MD5)
+    151                  case MBEDTLS_MD_MD5:
+    152                      return &mbedtls_md5_info;
+    153          #endif
+    154          #if defined(MBEDTLS_MD_CAN_RIPEMD160)
+    155                  case MBEDTLS_MD_RIPEMD160:
+    156                      return &mbedtls_ripemd160_info;
+    157          #endif
+    158          #if defined(MBEDTLS_MD_CAN_SHA1)
+    159                  case MBEDTLS_MD_SHA1:
+    160                      return &mbedtls_sha1_info;
+   \                     ??mbedtls_md_info_from_type_0: (+1)
+   \       0x14   0x.... 0x....      LDR.W    R0,??DataTable16
+   \       0x18   0xE006             B.N      ??mbedtls_md_info_from_type_4
+    161          #endif
+    162          #if defined(MBEDTLS_MD_CAN_SHA224)
+    163                  case MBEDTLS_MD_SHA224:
+    164                      return &mbedtls_sha224_info;
+   \                     ??mbedtls_md_info_from_type_1: (+1)
+   \       0x1A   0x.... 0x....      LDR.W    R0,??DataTable16_1
+   \       0x1E   0xE003             B.N      ??mbedtls_md_info_from_type_4
+    165          #endif
+    166          #if defined(MBEDTLS_MD_CAN_SHA256)
+    167                  case MBEDTLS_MD_SHA256:
+    168                      return &mbedtls_sha256_info;
+   \                     ??mbedtls_md_info_from_type_2: (+1)
+   \       0x20   0x.... 0x....      LDR.W    R0,??DataTable16_2
+   \       0x24   0xE000             B.N      ??mbedtls_md_info_from_type_4
+    169          #endif
+    170          #if defined(MBEDTLS_MD_CAN_SHA384)
+    171                  case MBEDTLS_MD_SHA384:
+    172                      return &mbedtls_sha384_info;
+    173          #endif
+    174          #if defined(MBEDTLS_MD_CAN_SHA512)
+    175                  case MBEDTLS_MD_SHA512:
+    176                      return &mbedtls_sha512_info;
+    177          #endif
+    178          #if defined(MBEDTLS_MD_CAN_SHA3_224)
+    179                  case MBEDTLS_MD_SHA3_224:
+    180                      return &mbedtls_sha3_224_info;
+    181          #endif
+    182          #if defined(MBEDTLS_MD_CAN_SHA3_256)
+    183                  case MBEDTLS_MD_SHA3_256:
+    184                      return &mbedtls_sha3_256_info;
+    185          #endif
+    186          #if defined(MBEDTLS_MD_CAN_SHA3_384)
+    187                  case MBEDTLS_MD_SHA3_384:
+    188                      return &mbedtls_sha3_384_info;
+    189          #endif
+    190          #if defined(MBEDTLS_MD_CAN_SHA3_512)
+    191                  case MBEDTLS_MD_SHA3_512:
+    192                      return &mbedtls_sha3_512_info;
+    193          #endif
+    194                  default:
+    195                      return NULL;
+   \                     ??mbedtls_md_info_from_type_3: (+1)
+   \       0x26   0x2000             MOVS     R0,#+0
+   \                     ??mbedtls_md_info_from_type_4: (+1)
+   \       0x28   0x4770             BX       LR
+    196              }
+    197          }
+    198          
+    199          #if defined(MBEDTLS_MD_SOME_PSA)
+
+   \                                 In section .text, align 2, keep-with-next
+    200          static psa_algorithm_t psa_alg_of_md(const mbedtls_md_info_t *info)
+    201          {
+   \                     psa_alg_of_md: (+1)
+   \        0x0   0x0001             MOVS     R1,R0
+    202              switch (info->type) {
+   \        0x2   0x7808             LDRB     R0,[R1, #+0]
+   \        0x4   0x2805             CMP      R0,#+5
+   \        0x6   0xD004             BEQ.N    ??psa_alg_of_md_0
+   \        0x8   0x2808             CMP      R0,#+8
+   \        0xA   0xD005             BEQ.N    ??psa_alg_of_md_1
+   \        0xC   0x2809             CMP      R0,#+9
+   \        0xE   0xD006             BEQ.N    ??psa_alg_of_md_2
+   \       0x10   0xE008             B.N      ??psa_alg_of_md_3
+    203          #if defined(MBEDTLS_MD_MD5_VIA_PSA)
+    204                  case MBEDTLS_MD_MD5:
+    205                      return PSA_ALG_MD5;
+    206          #endif
+    207          #if defined(MBEDTLS_MD_RIPEMD160_VIA_PSA)
+    208                  case MBEDTLS_MD_RIPEMD160:
+    209                      return PSA_ALG_RIPEMD160;
+    210          #endif
+    211          #if defined(MBEDTLS_MD_SHA1_VIA_PSA)
+    212                  case MBEDTLS_MD_SHA1:
+    213                      return PSA_ALG_SHA_1;
+   \                     ??psa_alg_of_md_0: (+1)
+   \       0x12   0x.... 0x....      LDR.W    R0,??DataTable16_3
+   \       0x16   0xE006             B.N      ??psa_alg_of_md_4
+    214          #endif
+    215          #if defined(MBEDTLS_MD_SHA224_VIA_PSA)
+    216                  case MBEDTLS_MD_SHA224:
+    217                      return PSA_ALG_SHA_224;
+   \                     ??psa_alg_of_md_1: (+1)
+   \       0x18   0x.... 0x....      LDR.W    R0,??DataTable16_4
+   \       0x1C   0xE003             B.N      ??psa_alg_of_md_4
+    218          #endif
+    219          #if defined(MBEDTLS_MD_SHA256_VIA_PSA)
+    220                  case MBEDTLS_MD_SHA256:
+    221                      return PSA_ALG_SHA_256;
+   \                     ??psa_alg_of_md_2: (+1)
+   \       0x1E   0x.... 0x....      LDR.W    R0,??DataTable16_5
+   \       0x22   0xE000             B.N      ??psa_alg_of_md_4
+    222          #endif
+    223          #if defined(MBEDTLS_MD_SHA384_VIA_PSA)
+    224                  case MBEDTLS_MD_SHA384:
+    225                      return PSA_ALG_SHA_384;
+    226          #endif
+    227          #if defined(MBEDTLS_MD_SHA512_VIA_PSA)
+    228                  case MBEDTLS_MD_SHA512:
+    229                      return PSA_ALG_SHA_512;
+    230          #endif
+    231          #if defined(MBEDTLS_MD_SHA3_224_VIA_PSA)
+    232                  case MBEDTLS_MD_SHA3_224:
+    233                      return PSA_ALG_SHA3_224;
+    234          #endif
+    235          #if defined(MBEDTLS_MD_SHA3_256_VIA_PSA)
+    236                  case MBEDTLS_MD_SHA3_256:
+    237                      return PSA_ALG_SHA3_256;
+    238          #endif
+    239          #if defined(MBEDTLS_MD_SHA3_384_VIA_PSA)
+    240                  case MBEDTLS_MD_SHA3_384:
+    241                      return PSA_ALG_SHA3_384;
+    242          #endif
+    243          #if defined(MBEDTLS_MD_SHA3_512_VIA_PSA)
+    244                  case MBEDTLS_MD_SHA3_512:
+    245                      return PSA_ALG_SHA3_512;
+    246          #endif
+    247                  default:
+    248                      return PSA_ALG_NONE;
+   \                     ??psa_alg_of_md_3: (+1)
+   \       0x24   0x2000             MOVS     R0,#+0
+   \                     ??psa_alg_of_md_4: (+1)
+   \       0x26   0x4770             BX       LR
+    249              }
+    250          }
+    251          
+
+   \                                 In section .text, align 2, keep-with-next
+    252          static int md_can_use_psa(const mbedtls_md_info_t *info)
+    253          {
+   \                     md_can_use_psa: (+1)
+   \        0x0   0xB510             PUSH     {R4,LR}
+   \        0x2   0x0004             MOVS     R4,R0
+    254              psa_algorithm_t alg = psa_alg_of_md(info);
+   \        0x4   0x0020             MOVS     R0,R4
+   \        0x6   0x.... 0x....      BL       psa_alg_of_md
+   \        0xA   0x0001             MOVS     R1,R0
+    255              if (alg == PSA_ALG_NONE) {
+   \        0xC   0x2900             CMP      R1,#+0
+   \        0xE   0xD101             BNE.N    ??md_can_use_psa_0
+    256                  return 0;
+   \       0x10   0x2000             MOVS     R0,#+0
+   \       0x12   0xE000             B.N      ??md_can_use_psa_1
+    257              }
+    258          
+    259              return 1;
+   \                     ??md_can_use_psa_0: (+1)
+   \       0x14   0x2001             MOVS     R0,#+1
+   \                     ??md_can_use_psa_1: (+1)
+   \       0x16   0xBD10             POP      {R4,PC}
+    260          }
+    261          #endif /* MBEDTLS_MD_SOME_PSA */
+    262          
+
+   \                                 In section .text, align 2, keep-with-next
+    263          void mbedtls_md_init(mbedtls_md_context_t *ctx)
+    264          {
+   \                     mbedtls_md_init: (+1)
+   \        0x0   0xB5F8             PUSH     {R3-R7,LR}
+   \        0x2   0x0007             MOVS     R7,R0
+    265              /* Note: this sets engine (if present) to MBEDTLS_MD_ENGINE_LEGACY */
+    266              memset(ctx, 0, sizeof(mbedtls_md_context_t));
+   \        0x4   0x2410             MOVS     R4,#+16
+   \        0x6   0x2500             MOVS     R5,#+0
+   \        0x8   0x003E             MOVS     R6,R7
+   \        0xA   0x002A             MOVS     R2,R5
+   \        0xC   0x0021             MOVS     R1,R4
+   \        0xE   0x0030             MOVS     R0,R6
+   \       0x10   0x.... 0x....      BL       __aeabi_memset
+    267          }
+   \       0x14   0xBDF1             POP      {R0,R4-R7,PC}
+    268          
+
+   \                                 In section .text, align 2, keep-with-next
+    269          void mbedtls_md_free(mbedtls_md_context_t *ctx)
+    270          {
+   \                     mbedtls_md_free: (+1)
+   \        0x0   0xB510             PUSH     {R4,LR}
+   \        0x2   0x0004             MOVS     R4,R0
+    271              if (ctx == NULL || ctx->md_info == NULL) {
+   \        0x4   0x2C00             CMP      R4,#+0
+   \        0x6   0xD002             BEQ.N    ??mbedtls_md_free_0
+   \        0x8   0x6820             LDR      R0,[R4, #+0]
+   \        0xA   0x2800             CMP      R0,#+0
+   \        0xC   0xD100             BNE.N    ??mbedtls_md_free_1
+    272                  return;
+   \                     ??mbedtls_md_free_0: (+1)
+   \        0xE   0xE02E             B.N      ??mbedtls_md_free_2
+    273              }
+    274          
+    275              if (ctx->md_ctx != NULL) {
+   \                     ??mbedtls_md_free_1: (+1)
+   \       0x10   0x68A0             LDR      R0,[R4, #+8]
+   \       0x12   0x2800             CMP      R0,#+0
+   \       0x14   0xD01E             BEQ.N    ??mbedtls_md_free_3
+    276          #if defined(MBEDTLS_MD_SOME_PSA)
+    277                  if (ctx->engine == MBEDTLS_MD_ENGINE_PSA) {
+   \       0x16   0x7920             LDRB     R0,[R4, #+4]
+   \       0x18   0x2801             CMP      R0,#+1
+   \       0x1A   0xD103             BNE.N    ??mbedtls_md_free_4
+    278                      psa_hash_abort(ctx->md_ctx);
+   \       0x1C   0x68A0             LDR      R0,[R4, #+8]
+   \       0x1E   0x.... 0x....      BL       psa_hash_abort
+   \       0x22   0xE014             B.N      ??mbedtls_md_free_5
+    279                  } else
+    280          #endif
+    281                  switch (ctx->md_info->type) {
+   \                     ??mbedtls_md_free_4: (+1)
+   \       0x24   0x6820             LDR      R0,[R4, #+0]
+   \       0x26   0x7800             LDRB     R0,[R0, #+0]
+   \       0x28   0x2805             CMP      R0,#+5
+   \       0x2A   0xD004             BEQ.N    ??mbedtls_md_free_6
+   \       0x2C   0x2808             CMP      R0,#+8
+   \       0x2E   0xD006             BEQ.N    ??mbedtls_md_free_7
+   \       0x30   0x2809             CMP      R0,#+9
+   \       0x32   0xD008             BEQ.N    ??mbedtls_md_free_8
+   \       0x34   0xE00B             B.N      ??mbedtls_md_free_9
+    282          #if defined(MBEDTLS_MD5_C)
+    283                      case MBEDTLS_MD_MD5:
+    284                          mbedtls_md5_free(ctx->md_ctx);
+    285                          break;
+    286          #endif
+    287          #if defined(MBEDTLS_RIPEMD160_C)
+    288                      case MBEDTLS_MD_RIPEMD160:
+    289                          mbedtls_ripemd160_free(ctx->md_ctx);
+    290                          break;
+    291          #endif
+    292          #if defined(MBEDTLS_SHA1_C)
+    293                      case MBEDTLS_MD_SHA1:
+    294                          mbedtls_sha1_free(ctx->md_ctx);
+   \                     ??mbedtls_md_free_6: (+1)
+   \       0x36   0x68A0             LDR      R0,[R4, #+8]
+   \       0x38   0x.... 0x....      BL       mbedtls_sha1_free
+    295                          break;
+   \       0x3C   0xE007             B.N      ??mbedtls_md_free_5
+    296          #endif
+    297          #if defined(MBEDTLS_SHA224_C)
+    298                      case MBEDTLS_MD_SHA224:
+    299                          mbedtls_sha256_free(ctx->md_ctx);
+   \                     ??mbedtls_md_free_7: (+1)
+   \       0x3E   0x68A0             LDR      R0,[R4, #+8]
+   \       0x40   0x.... 0x....      BL       mbedtls_sha256_free
+    300                          break;
+   \       0x44   0xE003             B.N      ??mbedtls_md_free_5
+    301          #endif
+    302          #if defined(MBEDTLS_SHA256_C)
+    303                      case MBEDTLS_MD_SHA256:
+    304                          mbedtls_sha256_free(ctx->md_ctx);
+   \                     ??mbedtls_md_free_8: (+1)
+   \       0x46   0x68A0             LDR      R0,[R4, #+8]
+   \       0x48   0x.... 0x....      BL       mbedtls_sha256_free
+    305                          break;
+   \       0x4C   0xE7FF             B.N      ??mbedtls_md_free_5
+    306          #endif
+    307          #if defined(MBEDTLS_SHA384_C)
+    308                      case MBEDTLS_MD_SHA384:
+    309                          mbedtls_sha512_free(ctx->md_ctx);
+    310                          break;
+    311          #endif
+    312          #if defined(MBEDTLS_SHA512_C)
+    313                      case MBEDTLS_MD_SHA512:
+    314                          mbedtls_sha512_free(ctx->md_ctx);
+    315                          break;
+    316          #endif
+    317          #if defined(MBEDTLS_SHA3_C)
+    318                      case MBEDTLS_MD_SHA3_224:
+    319                      case MBEDTLS_MD_SHA3_256:
+    320                      case MBEDTLS_MD_SHA3_384:
+    321                      case MBEDTLS_MD_SHA3_512:
+    322                          mbedtls_sha3_free(ctx->md_ctx);
+    323                          break;
+    324          #endif
+    325                      default:
+    326                          /* Shouldn't happen */
+    327                          break;
+    328                  }
+    329                  mbedtls_free(ctx->md_ctx);
+   \                     ??mbedtls_md_free_9: (+1)
+   \                     ??mbedtls_md_free_5: (+1)
+   \       0x4E   0x68A0             LDR      R0,[R4, #+8]
+   \       0x50   0x.... 0x....      BL       sl_free
+    330              }
+    331          
+    332          #if defined(MBEDTLS_MD_C)
+    333              if (ctx->hmac_ctx != NULL) {
+   \                     ??mbedtls_md_free_3: (+1)
+   \       0x54   0x68E0             LDR      R0,[R4, #+12]
+   \       0x56   0x2800             CMP      R0,#+0
+   \       0x58   0xD005             BEQ.N    ??mbedtls_md_free_10
+    334                  mbedtls_zeroize_and_free(ctx->hmac_ctx,
+    335                                           2 * ctx->md_info->block_size);
+   \       0x5A   0x6820             LDR      R0,[R4, #+0]
+   \       0x5C   0x7880             LDRB     R0,[R0, #+2]
+   \       0x5E   0x0041             LSLS     R1,R0,#+1
+   \       0x60   0x68E0             LDR      R0,[R4, #+12]
+   \       0x62   0x.... 0x....      BL       mbedtls_zeroize_and_free
+    336              }
+    337          #endif
+    338          
+    339              mbedtls_platform_zeroize(ctx, sizeof(mbedtls_md_context_t));
+   \                     ??mbedtls_md_free_10: (+1)
+   \       0x66   0x2110             MOVS     R1,#+16
+   \       0x68   0x0020             MOVS     R0,R4
+   \       0x6A   0x.... 0x....      BL       mbedtls_platform_zeroize
+    340          }
+   \                     ??mbedtls_md_free_2: (+1)
+   \       0x6E   0xBD10             POP      {R4,PC}
+    341          
+
+   \                                 In section .text, align 2, keep-with-next
+    342          int mbedtls_md_clone(mbedtls_md_context_t *dst,
+    343                               const mbedtls_md_context_t *src)
+    344          {
+   \                     mbedtls_md_clone: (+1)
+   \        0x0   0xB5F8             PUSH     {R3-R7,LR}
+   \        0x2   0x0004             MOVS     R4,R0
+   \        0x4   0x000D             MOVS     R5,R1
+    345              int ret = 0;
+   \        0x6   0x2600             MOVS     R6,#+0
+    346          
+    347              if (dst == NULL || dst->md_info == NULL ||
+    348                  src == NULL || src->md_info == NULL ||
+    349                  dst->md_info != src->md_info) {
+   \        0x8   0x2C00             CMP      R4,#+0
+   \        0xA   0xD00B             BEQ.N    ??mbedtls_md_clone_0
+   \        0xC   0x6820             LDR      R0,[R4, #+0]
+   \        0xE   0x2800             CMP      R0,#+0
+   \       0x10   0xD008             BEQ.N    ??mbedtls_md_clone_0
+   \       0x12   0x2D00             CMP      R5,#+0
+   \       0x14   0xD006             BEQ.N    ??mbedtls_md_clone_0
+   \       0x16   0x6828             LDR      R0,[R5, #+0]
+   \       0x18   0x2800             CMP      R0,#+0
+   \       0x1A   0xD003             BEQ.N    ??mbedtls_md_clone_0
+   \       0x1C   0x6821             LDR      R1,[R4, #+0]
+   \       0x1E   0x6828             LDR      R0,[R5, #+0]
+   \       0x20   0x4281             CMP      R1,R0
+   \       0x22   0xD002             BEQ.N    ??mbedtls_md_clone_1
+    350                  return MBEDTLS_ERR_MD_BAD_INPUT_DATA;
+   \                     ??mbedtls_md_clone_0: (+1)
+   \       0x24   0x.... 0x....      LDR.W    R0,??DataTable16_6
+   \       0x28   0xE02E             B.N      ??mbedtls_md_clone_2
+    351              }
+    352          
+    353          #if defined(MBEDTLS_MD_SOME_PSA)
+    354              if (src->engine != dst->engine) {
+   \                     ??mbedtls_md_clone_1: (+1)
+   \       0x2A   0x7929             LDRB     R1,[R5, #+4]
+   \       0x2C   0x7920             LDRB     R0,[R4, #+4]
+   \       0x2E   0x4281             CMP      R1,R0
+   \       0x30   0xD002             BEQ.N    ??mbedtls_md_clone_3
+    355                  /* This can happen with src set to legacy because PSA wasn't ready
+    356                   * yet, and dst to PSA because it became ready in the meantime.
+    357                   * We currently don't support that case (we'd need to re-allocate
+    358                   * md_ctx to the size of the appropriate MD context). */
+    359                  return MBEDTLS_ERR_MD_FEATURE_UNAVAILABLE;
+   \       0x32   0x.... 0x....      LDR.W    R0,??DataTable16_7
+   \       0x36   0xE027             B.N      ??mbedtls_md_clone_2
+    360              }
+    361          
+    362              if (src->engine == MBEDTLS_MD_ENGINE_PSA) {
+   \                     ??mbedtls_md_clone_3: (+1)
+   \       0x38   0x7928             LDRB     R0,[R5, #+4]
+   \       0x3A   0x2801             CMP      R0,#+1
+   \       0x3C   0xD108             BNE.N    ??mbedtls_md_clone_4
+    363                  psa_status_t status = psa_hash_clone(src->md_ctx, dst->md_ctx);
+   \       0x3E   0x68A1             LDR      R1,[R4, #+8]
+   \       0x40   0x68A8             LDR      R0,[R5, #+8]
+   \       0x42   0x.... 0x....      BL       psa_hash_clone
+   \       0x46   0x0007             MOVS     R7,R0
+    364                  return mbedtls_md_error_from_psa(status);
+   \       0x48   0x0038             MOVS     R0,R7
+   \       0x4A   0x.... 0x....      BL       mbedtls_md_error_from_psa
+   \       0x4E   0xE01B             B.N      ??mbedtls_md_clone_2
+    365              }
+    366          #endif
+    367          
+    368              switch (src->md_info->type) {
+   \                     ??mbedtls_md_clone_4: (+1)
+   \       0x50   0x6828             LDR      R0,[R5, #+0]
+   \       0x52   0x7800             LDRB     R0,[R0, #+0]
+   \       0x54   0x2805             CMP      R0,#+5
+   \       0x56   0xD004             BEQ.N    ??mbedtls_md_clone_5
+   \       0x58   0x2808             CMP      R0,#+8
+   \       0x5A   0xD007             BEQ.N    ??mbedtls_md_clone_6
+   \       0x5C   0x2809             CMP      R0,#+9
+   \       0x5E   0xD00A             BEQ.N    ??mbedtls_md_clone_7
+   \       0x60   0xE00E             B.N      ??mbedtls_md_clone_8
+    369          #if defined(MBEDTLS_MD5_C)
+    370                  case MBEDTLS_MD_MD5:
+    371                      mbedtls_md5_clone(dst->md_ctx, src->md_ctx);
+    372                      break;
+    373          #endif
+    374          #if defined(MBEDTLS_RIPEMD160_C)
+    375                  case MBEDTLS_MD_RIPEMD160:
+    376                      mbedtls_ripemd160_clone(dst->md_ctx, src->md_ctx);
+    377                      break;
+    378          #endif
+    379          #if defined(MBEDTLS_SHA1_C)
+    380                  case MBEDTLS_MD_SHA1:
+    381                      mbedtls_sha1_clone(dst->md_ctx, src->md_ctx);
+   \                     ??mbedtls_md_clone_5: (+1)
+   \       0x62   0x68A9             LDR      R1,[R5, #+8]
+   \       0x64   0x68A0             LDR      R0,[R4, #+8]
+   \       0x66   0x.... 0x....      BL       mbedtls_sha1_clone
+    382                      break;
+   \       0x6A   0xE00C             B.N      ??mbedtls_md_clone_9
+    383          #endif
+    384          #if defined(MBEDTLS_SHA224_C)
+    385                  case MBEDTLS_MD_SHA224:
+    386                      mbedtls_sha256_clone(dst->md_ctx, src->md_ctx);
+   \                     ??mbedtls_md_clone_6: (+1)
+   \       0x6C   0x68A9             LDR      R1,[R5, #+8]
+   \       0x6E   0x68A0             LDR      R0,[R4, #+8]
+   \       0x70   0x.... 0x....      BL       mbedtls_sha256_clone
+    387                      break;
+   \       0x74   0xE007             B.N      ??mbedtls_md_clone_9
+    388          #endif
+    389          #if defined(MBEDTLS_SHA256_C)
+    390                  case MBEDTLS_MD_SHA256:
+    391                      mbedtls_sha256_clone(dst->md_ctx, src->md_ctx);
+   \                     ??mbedtls_md_clone_7: (+1)
+   \       0x76   0x68A9             LDR      R1,[R5, #+8]
+   \       0x78   0x68A0             LDR      R0,[R4, #+8]
+   \       0x7A   0x.... 0x....      BL       mbedtls_sha256_clone
+    392                      break;
+   \       0x7E   0xE002             B.N      ??mbedtls_md_clone_9
+    393          #endif
+    394          #if defined(MBEDTLS_SHA384_C)
+    395                  case MBEDTLS_MD_SHA384:
+    396                      mbedtls_sha512_clone(dst->md_ctx, src->md_ctx);
+    397                      break;
+    398          #endif
+    399          #if defined(MBEDTLS_SHA512_C)
+    400                  case MBEDTLS_MD_SHA512:
+    401                      mbedtls_sha512_clone(dst->md_ctx, src->md_ctx);
+    402                      break;
+    403          #endif
+    404          #if defined(MBEDTLS_SHA3_C)
+    405                  case MBEDTLS_MD_SHA3_224:
+    406                  case MBEDTLS_MD_SHA3_256:
+    407                  case MBEDTLS_MD_SHA3_384:
+    408                  case MBEDTLS_MD_SHA3_512:
+    409                      mbedtls_sha3_clone(dst->md_ctx, src->md_ctx);
+    410                      break;
+    411          #endif
+    412                  default:
+    413                      ret = MBEDTLS_ERR_MD_BAD_INPUT_DATA;
+   \                     ??mbedtls_md_clone_8: (+1)
+   \       0x80   0x.... 0x....      LDR.W    R0,??DataTable16_6
+   \       0x84   0x0006             MOVS     R6,R0
+    414              }
+    415          
+    416              return ret;
+   \                     ??mbedtls_md_clone_9: (+1)
+   \       0x86   0x0030             MOVS     R0,R6
+   \                     ??mbedtls_md_clone_2: (+1)
+   \       0x88   0xBDF2             POP      {R1,R4-R7,PC}
+    417          }
+    418          
+    419          #define ALLOC(type)                                                   \
+    420              do {                                                                \
+    421                  ctx->md_ctx = mbedtls_calloc(1, sizeof(mbedtls_##type##_context)); \
+    422                  if (ctx->md_ctx == NULL)                                       \
+    423                  return MBEDTLS_ERR_MD_ALLOC_FAILED;                      \
+    424                  mbedtls_##type##_init(ctx->md_ctx);                           \
+    425              }                                                                   \
+    426              while (0)
+    427          
+
+   \                                 In section .text, align 2, keep-with-next
+    428          int mbedtls_md_setup(mbedtls_md_context_t *ctx, const mbedtls_md_info_t *md_info, int hmac)
+    429          {
+   \                     mbedtls_md_setup: (+1)
+   \        0x0   0xB570             PUSH     {R4-R6,LR}
+   \        0x2   0x0004             MOVS     R4,R0
+   \        0x4   0x000D             MOVS     R5,R1
+   \        0x6   0x0016             MOVS     R6,R2
+    430          #if defined(MBEDTLS_MD_C)
+    431              if (ctx == NULL) {
+   \        0x8   0x2C00             CMP      R4,#+0
+   \        0xA   0xD102             BNE.N    ??mbedtls_md_setup_0
+    432                  return MBEDTLS_ERR_MD_BAD_INPUT_DATA;
+   \        0xC   0x.... 0x....      LDR.W    R0,??DataTable16_6
+   \       0x10   0xE065             B.N      ??mbedtls_md_setup_1
+    433              }
+    434          #endif
+    435              if (md_info == NULL) {
+   \                     ??mbedtls_md_setup_0: (+1)
+   \       0x12   0x2D00             CMP      R5,#+0
+   \       0x14   0xD102             BNE.N    ??mbedtls_md_setup_2
+    436                  return MBEDTLS_ERR_MD_BAD_INPUT_DATA;
+   \       0x16   0x.... 0x....      LDR.W    R0,??DataTable16_6
+   \       0x1A   0xE060             B.N      ??mbedtls_md_setup_1
+    437              }
+    438          
+    439              ctx->md_info = md_info;
+   \                     ??mbedtls_md_setup_2: (+1)
+   \       0x1C   0x6025             STR      R5,[R4, #+0]
+    440              ctx->md_ctx = NULL;
+   \       0x1E   0x2000             MOVS     R0,#+0
+   \       0x20   0x60A0             STR      R0,[R4, #+8]
+    441          #if defined(MBEDTLS_MD_C)
+    442              ctx->hmac_ctx = NULL;
+   \       0x22   0x2000             MOVS     R0,#+0
+   \       0x24   0x60E0             STR      R0,[R4, #+12]
+    443          #else
+    444              if (hmac != 0) {
+    445                  return MBEDTLS_ERR_MD_BAD_INPUT_DATA;
+    446              }
+    447          #endif
+    448          
+    449          #if defined(MBEDTLS_MD_SOME_PSA)
+    450              if (md_can_use_psa(ctx->md_info)) {
+   \       0x26   0x6820             LDR      R0,[R4, #+0]
+   \       0x28   0x.... 0x....      BL       md_can_use_psa
+   \       0x2C   0x2800             CMP      R0,#+0
+   \       0x2E   0xD00D             BEQ.N    ??mbedtls_md_setup_3
+    451                  ctx->md_ctx = mbedtls_calloc(1, sizeof(psa_hash_operation_t));
+   \       0x30   0x21E0             MOVS     R1,#+224
+   \       0x32   0x2001             MOVS     R0,#+1
+   \       0x34   0x.... 0x....      BL       sl_calloc
+   \       0x38   0x60A0             STR      R0,[R4, #+8]
+    452                  if (ctx->md_ctx == NULL) {
+   \       0x3A   0x68A0             LDR      R0,[R4, #+8]
+   \       0x3C   0x2800             CMP      R0,#+0
+   \       0x3E   0xD102             BNE.N    ??mbedtls_md_setup_4
+    453                      return MBEDTLS_ERR_MD_ALLOC_FAILED;
+   \       0x40   0x.... 0x....      LDR.W    R0,??DataTable16_8
+   \       0x44   0xE04B             B.N      ??mbedtls_md_setup_1
+    454                  }
+    455                  ctx->engine = MBEDTLS_MD_ENGINE_PSA;
+   \                     ??mbedtls_md_setup_4: (+1)
+   \       0x46   0x2001             MOVS     R0,#+1
+   \       0x48   0x7120             STRB     R0,[R4, #+4]
+   \       0x4A   0xE037             B.N      ??mbedtls_md_setup_5
+    456              } else
+    457          #endif
+    458              switch (md_info->type) {
+   \                     ??mbedtls_md_setup_3: (+1)
+   \       0x4C   0x7828             LDRB     R0,[R5, #+0]
+   \       0x4E   0x2805             CMP      R0,#+5
+   \       0x50   0xD004             BEQ.N    ??mbedtls_md_setup_6
+   \       0x52   0x2808             CMP      R0,#+8
+   \       0x54   0xD011             BEQ.N    ??mbedtls_md_setup_7
+   \       0x56   0x2809             CMP      R0,#+9
+   \       0x58   0xD01E             BEQ.N    ??mbedtls_md_setup_8
+   \       0x5A   0xE02C             B.N      ??mbedtls_md_setup_9
+    459          #if defined(MBEDTLS_MD5_C)
+    460                  case MBEDTLS_MD_MD5:
+    461                      ALLOC(md5);
+    462                      break;
+    463          #endif
+    464          #if defined(MBEDTLS_RIPEMD160_C)
+    465                  case MBEDTLS_MD_RIPEMD160:
+    466                      ALLOC(ripemd160);
+    467                      break;
+    468          #endif
+    469          #if defined(MBEDTLS_SHA1_C)
+    470                  case MBEDTLS_MD_SHA1:
+    471                      ALLOC(sha1);
+   \                     ??mbedtls_md_setup_6: (+1)
+   \       0x5C   0x21D8             MOVS     R1,#+216
+   \       0x5E   0x2001             MOVS     R0,#+1
+   \       0x60   0x.... 0x....      BL       sl_calloc
+   \       0x64   0x60A0             STR      R0,[R4, #+8]
+   \       0x66   0x68A0             LDR      R0,[R4, #+8]
+   \       0x68   0x2800             CMP      R0,#+0
+   \       0x6A   0xD102             BNE.N    ??mbedtls_md_setup_10
+   \       0x6C   0x.... 0x....      LDR.W    R0,??DataTable16_8
+   \       0x70   0xE035             B.N      ??mbedtls_md_setup_1
+   \                     ??mbedtls_md_setup_10: (+1)
+   \       0x72   0x68A0             LDR      R0,[R4, #+8]
+   \       0x74   0x.... 0x....      BL       mbedtls_sha1_init
+    472                      break;
+   \       0x78   0xE020             B.N      ??mbedtls_md_setup_5
+    473          #endif
+    474          #if defined(MBEDTLS_SHA224_C)
+    475                  case MBEDTLS_MD_SHA224:
+    476                      ALLOC(sha256);
+   \                     ??mbedtls_md_setup_7: (+1)
+   \       0x7A   0x21D8             MOVS     R1,#+216
+   \       0x7C   0x2001             MOVS     R0,#+1
+   \       0x7E   0x.... 0x....      BL       sl_calloc
+   \       0x82   0x60A0             STR      R0,[R4, #+8]
+   \       0x84   0x68A0             LDR      R0,[R4, #+8]
+   \       0x86   0x2800             CMP      R0,#+0
+   \       0x88   0xD102             BNE.N    ??mbedtls_md_setup_11
+   \       0x8A   0x.... 0x....      LDR.W    R0,??DataTable16_8
+   \       0x8E   0xE026             B.N      ??mbedtls_md_setup_1
+   \                     ??mbedtls_md_setup_11: (+1)
+   \       0x90   0x68A0             LDR      R0,[R4, #+8]
+   \       0x92   0x.... 0x....      BL       mbedtls_sha256_init
+    477                      break;
+   \       0x96   0xE011             B.N      ??mbedtls_md_setup_5
+    478          #endif
+    479          #if defined(MBEDTLS_SHA256_C)
+    480                  case MBEDTLS_MD_SHA256:
+    481                      ALLOC(sha256);
+   \                     ??mbedtls_md_setup_8: (+1)
+   \       0x98   0x21D8             MOVS     R1,#+216
+   \       0x9A   0x2001             MOVS     R0,#+1
+   \       0x9C   0x.... 0x....      BL       sl_calloc
+   \       0xA0   0x60A0             STR      R0,[R4, #+8]
+   \       0xA2   0x68A0             LDR      R0,[R4, #+8]
+   \       0xA4   0x2800             CMP      R0,#+0
+   \       0xA6   0xD102             BNE.N    ??mbedtls_md_setup_12
+   \       0xA8   0x.... 0x....      LDR.W    R0,??DataTable16_8
+   \       0xAC   0xE017             B.N      ??mbedtls_md_setup_1
+   \                     ??mbedtls_md_setup_12: (+1)
+   \       0xAE   0x68A0             LDR      R0,[R4, #+8]
+   \       0xB0   0x.... 0x....      BL       mbedtls_sha256_init
+    482                      break;
+   \       0xB4   0xE002             B.N      ??mbedtls_md_setup_5
+    483          #endif
+    484          #if defined(MBEDTLS_SHA384_C)
+    485                  case MBEDTLS_MD_SHA384:
+    486                      ALLOC(sha512);
+    487                      break;
+    488          #endif
+    489          #if defined(MBEDTLS_SHA512_C)
+    490                  case MBEDTLS_MD_SHA512:
+    491                      ALLOC(sha512);
+    492                      break;
+    493          #endif
+    494          #if defined(MBEDTLS_SHA3_C)
+    495                  case MBEDTLS_MD_SHA3_224:
+    496                  case MBEDTLS_MD_SHA3_256:
+    497                  case MBEDTLS_MD_SHA3_384:
+    498                  case MBEDTLS_MD_SHA3_512:
+    499                      ALLOC(sha3);
+    500                      break;
+    501          #endif
+    502                  default:
+    503                      return MBEDTLS_ERR_MD_BAD_INPUT_DATA;
+   \                     ??mbedtls_md_setup_9: (+1)
+   \       0xB6   0x.... 0x....      LDR.W    R0,??DataTable16_6
+   \       0xBA   0xE010             B.N      ??mbedtls_md_setup_1
+    504              }
+    505          
+    506          #if defined(MBEDTLS_MD_C)
+    507              if (hmac != 0) {
+   \                     ??mbedtls_md_setup_5: (+1)
+   \       0xBC   0x2E00             CMP      R6,#+0
+   \       0xBE   0xD00D             BEQ.N    ??mbedtls_md_setup_13
+    508                  ctx->hmac_ctx = mbedtls_calloc(2, md_info->block_size);
+   \       0xC0   0x78A9             LDRB     R1,[R5, #+2]
+   \       0xC2   0x2002             MOVS     R0,#+2
+   \       0xC4   0x.... 0x....      BL       sl_calloc
+   \       0xC8   0x60E0             STR      R0,[R4, #+12]
+    509                  if (ctx->hmac_ctx == NULL) {
+   \       0xCA   0x68E0             LDR      R0,[R4, #+12]
+   \       0xCC   0x2800             CMP      R0,#+0
+   \       0xCE   0xD105             BNE.N    ??mbedtls_md_setup_13
+    510                      mbedtls_md_free(ctx);
+   \       0xD0   0x0020             MOVS     R0,R4
+   \       0xD2   0x.... 0x....      BL       mbedtls_md_free
+    511                      return MBEDTLS_ERR_MD_ALLOC_FAILED;
+   \       0xD6   0x.... 0x....      LDR.W    R0,??DataTable16_8
+   \       0xDA   0xE000             B.N      ??mbedtls_md_setup_1
+    512                  }
+    513              }
+    514          #endif
+    515          
+    516              return 0;
+   \                     ??mbedtls_md_setup_13: (+1)
+   \       0xDC   0x2000             MOVS     R0,#+0
+   \                     ??mbedtls_md_setup_1: (+1)
+   \       0xDE   0xBD70             POP      {R4-R6,PC}
+    517          }
+    518          #undef ALLOC
+    519          
+
+   \                                 In section .text, align 2, keep-with-next
+    520          int mbedtls_md_starts(mbedtls_md_context_t *ctx)
+    521          {
+   \                     mbedtls_md_starts: (+1)
+   \        0x0   0xB570             PUSH     {R4-R6,LR}
+   \        0x2   0x0004             MOVS     R4,R0
+    522          #if defined(MBEDTLS_MD_C)
+    523              if (ctx == NULL || ctx->md_info == NULL) {
+   \        0x4   0x2C00             CMP      R4,#+0
+   \        0x6   0xD002             BEQ.N    ??mbedtls_md_starts_0
+   \        0x8   0x6820             LDR      R0,[R4, #+0]
+   \        0xA   0x2800             CMP      R0,#+0
+   \        0xC   0xD102             BNE.N    ??mbedtls_md_starts_1
+    524                  return MBEDTLS_ERR_MD_BAD_INPUT_DATA;
+   \                     ??mbedtls_md_starts_0: (+1)
+   \        0xE   0x.... 0x....      LDR.W    R0,??DataTable16_6
+   \       0x12   0xE02B             B.N      ??mbedtls_md_starts_2
+    525              }
+    526          #endif
+    527          
+    528          #if defined(MBEDTLS_MD_SOME_PSA)
+    529              if (ctx->engine == MBEDTLS_MD_ENGINE_PSA) {
+   \                     ??mbedtls_md_starts_1: (+1)
+   \       0x14   0x7920             LDRB     R0,[R4, #+4]
+   \       0x16   0x2801             CMP      R0,#+1
+   \       0x18   0xD10F             BNE.N    ??mbedtls_md_starts_3
+    530                  psa_algorithm_t alg = psa_alg_of_md(ctx->md_info);
+   \       0x1A   0x6820             LDR      R0,[R4, #+0]
+   \       0x1C   0x.... 0x....      BL       psa_alg_of_md
+   \       0x20   0x0006             MOVS     R6,R0
+    531                  psa_hash_abort(ctx->md_ctx);
+   \       0x22   0x68A0             LDR      R0,[R4, #+8]
+   \       0x24   0x.... 0x....      BL       psa_hash_abort
+    532                  psa_status_t status = psa_hash_setup(ctx->md_ctx, alg);
+   \       0x28   0x0031             MOVS     R1,R6
+   \       0x2A   0x68A0             LDR      R0,[R4, #+8]
+   \       0x2C   0x.... 0x....      BL       psa_hash_setup
+   \       0x30   0x0005             MOVS     R5,R0
+    533                  return mbedtls_md_error_from_psa(status);
+   \       0x32   0x0028             MOVS     R0,R5
+   \       0x34   0x.... 0x....      BL       mbedtls_md_error_from_psa
+   \       0x38   0xE018             B.N      ??mbedtls_md_starts_2
+    534              }
+    535          #endif
+    536          
+    537              switch (ctx->md_info->type) {
+   \                     ??mbedtls_md_starts_3: (+1)
+   \       0x3A   0x6820             LDR      R0,[R4, #+0]
+   \       0x3C   0x7800             LDRB     R0,[R0, #+0]
+   \       0x3E   0x2805             CMP      R0,#+5
+   \       0x40   0xD004             BEQ.N    ??mbedtls_md_starts_4
+   \       0x42   0x2808             CMP      R0,#+8
+   \       0x44   0xD006             BEQ.N    ??mbedtls_md_starts_5
+   \       0x46   0x2809             CMP      R0,#+9
+   \       0x48   0xD009             BEQ.N    ??mbedtls_md_starts_6
+   \       0x4A   0xE00D             B.N      ??mbedtls_md_starts_7
+    538          #if defined(MBEDTLS_MD5_C)
+    539                  case MBEDTLS_MD_MD5:
+    540                      return mbedtls_md5_starts(ctx->md_ctx);
+    541          #endif
+    542          #if defined(MBEDTLS_RIPEMD160_C)
+    543                  case MBEDTLS_MD_RIPEMD160:
+    544                      return mbedtls_ripemd160_starts(ctx->md_ctx);
+    545          #endif
+    546          #if defined(MBEDTLS_SHA1_C)
+    547                  case MBEDTLS_MD_SHA1:
+    548                      return mbedtls_sha1_starts(ctx->md_ctx);
+   \                     ??mbedtls_md_starts_4: (+1)
+   \       0x4C   0x68A0             LDR      R0,[R4, #+8]
+   \       0x4E   0x.... 0x....      BL       mbedtls_sha1_starts
+   \       0x52   0xE00B             B.N      ??mbedtls_md_starts_2
+    549          #endif
+    550          #if defined(MBEDTLS_SHA224_C)
+    551                  case MBEDTLS_MD_SHA224:
+    552                      return mbedtls_sha256_starts(ctx->md_ctx, 1);
+   \                     ??mbedtls_md_starts_5: (+1)
+   \       0x54   0x2101             MOVS     R1,#+1
+   \       0x56   0x68A0             LDR      R0,[R4, #+8]
+   \       0x58   0x.... 0x....      BL       mbedtls_sha256_starts
+   \       0x5C   0xE006             B.N      ??mbedtls_md_starts_2
+    553          #endif
+    554          #if defined(MBEDTLS_SHA256_C)
+    555                  case MBEDTLS_MD_SHA256:
+    556                      return mbedtls_sha256_starts(ctx->md_ctx, 0);
+   \                     ??mbedtls_md_starts_6: (+1)
+   \       0x5E   0x2100             MOVS     R1,#+0
+   \       0x60   0x68A0             LDR      R0,[R4, #+8]
+   \       0x62   0x.... 0x....      BL       mbedtls_sha256_starts
+   \       0x66   0xE001             B.N      ??mbedtls_md_starts_2
+    557          #endif
+    558          #if defined(MBEDTLS_SHA384_C)
+    559                  case MBEDTLS_MD_SHA384:
+    560                      return mbedtls_sha512_starts(ctx->md_ctx, 1);
+    561          #endif
+    562          #if defined(MBEDTLS_SHA512_C)
+    563                  case MBEDTLS_MD_SHA512:
+    564                      return mbedtls_sha512_starts(ctx->md_ctx, 0);
+    565          #endif
+    566          #if defined(MBEDTLS_SHA3_C)
+    567                  case MBEDTLS_MD_SHA3_224:
+    568                      return mbedtls_sha3_starts(ctx->md_ctx, MBEDTLS_SHA3_224);
+    569                  case MBEDTLS_MD_SHA3_256:
+    570                      return mbedtls_sha3_starts(ctx->md_ctx, MBEDTLS_SHA3_256);
+    571                  case MBEDTLS_MD_SHA3_384:
+    572                      return mbedtls_sha3_starts(ctx->md_ctx, MBEDTLS_SHA3_384);
+    573                  case MBEDTLS_MD_SHA3_512:
+    574                      return mbedtls_sha3_starts(ctx->md_ctx, MBEDTLS_SHA3_512);
+    575          #endif
+    576                  default:
+    577                      return MBEDTLS_ERR_MD_BAD_INPUT_DATA;
+   \                     ??mbedtls_md_starts_7: (+1)
+   \       0x68   0x.... 0x....      LDR.W    R0,??DataTable16_6
+   \                     ??mbedtls_md_starts_2: (+1)
+   \       0x6C   0xBD70             POP      {R4-R6,PC}
+    578              }
+    579          }
+    580          
+
+   \                                 In section .text, align 2, keep-with-next
+    581          int mbedtls_md_update(mbedtls_md_context_t *ctx, const unsigned char *input, size_t ilen)
+    582          {
+   \                     mbedtls_md_update: (+1)
+   \        0x0   0xB5F8             PUSH     {R3-R7,LR}
+   \        0x2   0x0004             MOVS     R4,R0
+   \        0x4   0x000D             MOVS     R5,R1
+   \        0x6   0x0016             MOVS     R6,R2
+    583          #if defined(MBEDTLS_MD_C)
+    584              if (ctx == NULL || ctx->md_info == NULL) {
+   \        0x8   0x2C00             CMP      R4,#+0
+   \        0xA   0xD002             BEQ.N    ??mbedtls_md_update_0
+   \        0xC   0x6820             LDR      R0,[R4, #+0]
+   \        0xE   0x2800             CMP      R0,#+0
+   \       0x10   0xD102             BNE.N    ??mbedtls_md_update_1
+    585                  return MBEDTLS_ERR_MD_BAD_INPUT_DATA;
+   \                     ??mbedtls_md_update_0: (+1)
+   \       0x12   0x.... 0x....      LDR.W    R0,??DataTable16_6
+   \       0x16   0xE029             B.N      ??mbedtls_md_update_2
+    586              }
+    587          #endif
+    588          
+    589          #if defined(MBEDTLS_MD_SOME_PSA)
+    590              if (ctx->engine == MBEDTLS_MD_ENGINE_PSA) {
+   \                     ??mbedtls_md_update_1: (+1)
+   \       0x18   0x7920             LDRB     R0,[R4, #+4]
+   \       0x1A   0x2801             CMP      R0,#+1
+   \       0x1C   0xD109             BNE.N    ??mbedtls_md_update_3
+    591                  psa_status_t status = psa_hash_update(ctx->md_ctx, input, ilen);
+   \       0x1E   0x0032             MOVS     R2,R6
+   \       0x20   0x0029             MOVS     R1,R5
+   \       0x22   0x68A0             LDR      R0,[R4, #+8]
+   \       0x24   0x.... 0x....      BL       psa_hash_update
+   \       0x28   0x0007             MOVS     R7,R0
+    592                  return mbedtls_md_error_from_psa(status);
+   \       0x2A   0x0038             MOVS     R0,R7
+   \       0x2C   0x.... 0x....      BL       mbedtls_md_error_from_psa
+   \       0x30   0xE01C             B.N      ??mbedtls_md_update_2
+    593              }
+    594          #endif
+    595          
+    596              switch (ctx->md_info->type) {
+   \                     ??mbedtls_md_update_3: (+1)
+   \       0x32   0x6820             LDR      R0,[R4, #+0]
+   \       0x34   0x7800             LDRB     R0,[R0, #+0]
+   \       0x36   0x2805             CMP      R0,#+5
+   \       0x38   0xD004             BEQ.N    ??mbedtls_md_update_4
+   \       0x3A   0x2808             CMP      R0,#+8
+   \       0x3C   0xD008             BEQ.N    ??mbedtls_md_update_5
+   \       0x3E   0x2809             CMP      R0,#+9
+   \       0x40   0xD00C             BEQ.N    ??mbedtls_md_update_6
+   \       0x42   0xE011             B.N      ??mbedtls_md_update_7
+    597          #if defined(MBEDTLS_MD5_C)
+    598                  case MBEDTLS_MD_MD5:
+    599                      return mbedtls_md5_update(ctx->md_ctx, input, ilen);
+    600          #endif
+    601          #if defined(MBEDTLS_RIPEMD160_C)
+    602                  case MBEDTLS_MD_RIPEMD160:
+    603                      return mbedtls_ripemd160_update(ctx->md_ctx, input, ilen);
+    604          #endif
+    605          #if defined(MBEDTLS_SHA1_C)
+    606                  case MBEDTLS_MD_SHA1:
+    607                      return mbedtls_sha1_update(ctx->md_ctx, input, ilen);
+   \                     ??mbedtls_md_update_4: (+1)
+   \       0x44   0x0032             MOVS     R2,R6
+   \       0x46   0x0029             MOVS     R1,R5
+   \       0x48   0x68A0             LDR      R0,[R4, #+8]
+   \       0x4A   0x.... 0x....      BL       mbedtls_sha1_update
+   \       0x4E   0xE00D             B.N      ??mbedtls_md_update_2
+    608          #endif
+    609          #if defined(MBEDTLS_SHA224_C)
+    610                  case MBEDTLS_MD_SHA224:
+    611                      return mbedtls_sha256_update(ctx->md_ctx, input, ilen);
+   \                     ??mbedtls_md_update_5: (+1)
+   \       0x50   0x0032             MOVS     R2,R6
+   \       0x52   0x0029             MOVS     R1,R5
+   \       0x54   0x68A0             LDR      R0,[R4, #+8]
+   \       0x56   0x.... 0x....      BL       mbedtls_sha256_update
+   \       0x5A   0xE007             B.N      ??mbedtls_md_update_2
+    612          #endif
+    613          #if defined(MBEDTLS_SHA256_C)
+    614                  case MBEDTLS_MD_SHA256:
+    615                      return mbedtls_sha256_update(ctx->md_ctx, input, ilen);
+   \                     ??mbedtls_md_update_6: (+1)
+   \       0x5C   0x0032             MOVS     R2,R6
+   \       0x5E   0x0029             MOVS     R1,R5
+   \       0x60   0x68A0             LDR      R0,[R4, #+8]
+   \       0x62   0x.... 0x....      BL       mbedtls_sha256_update
+   \       0x66   0xE001             B.N      ??mbedtls_md_update_2
+    616          #endif
+    617          #if defined(MBEDTLS_SHA384_C)
+    618                  case MBEDTLS_MD_SHA384:
+    619                      return mbedtls_sha512_update(ctx->md_ctx, input, ilen);
+    620          #endif
+    621          #if defined(MBEDTLS_SHA512_C)
+    622                  case MBEDTLS_MD_SHA512:
+    623                      return mbedtls_sha512_update(ctx->md_ctx, input, ilen);
+    624          #endif
+    625          #if defined(MBEDTLS_SHA3_C)
+    626                  case MBEDTLS_MD_SHA3_224:
+    627                  case MBEDTLS_MD_SHA3_256:
+    628                  case MBEDTLS_MD_SHA3_384:
+    629                  case MBEDTLS_MD_SHA3_512:
+    630                      return mbedtls_sha3_update(ctx->md_ctx, input, ilen);
+    631          #endif
+    632                  default:
+    633                      return MBEDTLS_ERR_MD_BAD_INPUT_DATA;
+   \                     ??mbedtls_md_update_7: (+1)
+   \       0x68   0x.... 0x....      LDR.W    R0,??DataTable16_6
+   \                     ??mbedtls_md_update_2: (+1)
+   \       0x6C   0xBDF2             POP      {R1,R4-R7,PC}
+    634              }
+    635          }
+    636          
+
+   \                                 In section .text, align 2, keep-with-next
+    637          int mbedtls_md_finish(mbedtls_md_context_t *ctx, unsigned char *output)
+    638          {
+   \                     mbedtls_md_finish: (+1)
+   \        0x0   0xB57C             PUSH     {R2-R6,LR}
+   \        0x2   0x0004             MOVS     R4,R0
+   \        0x4   0x000D             MOVS     R5,R1
+    639          #if defined(MBEDTLS_MD_C)
+    640              if (ctx == NULL || ctx->md_info == NULL) {
+   \        0x6   0x2C00             CMP      R4,#+0
+   \        0x8   0xD002             BEQ.N    ??mbedtls_md_finish_0
+   \        0xA   0x6820             LDR      R0,[R4, #+0]
+   \        0xC   0x2800             CMP      R0,#+0
+   \        0xE   0xD102             BNE.N    ??mbedtls_md_finish_1
+    641                  return MBEDTLS_ERR_MD_BAD_INPUT_DATA;
+   \                     ??mbedtls_md_finish_0: (+1)
+   \       0x10   0x.... 0x....      LDR.W    R0,??DataTable16_6
+   \       0x14   0xE02A             B.N      ??mbedtls_md_finish_2
+    642              }
+    643          #endif
+    644          
+    645          #if defined(MBEDTLS_MD_SOME_PSA)
+    646              if (ctx->engine == MBEDTLS_MD_ENGINE_PSA) {
+   \                     ??mbedtls_md_finish_1: (+1)
+   \       0x16   0x7920             LDRB     R0,[R4, #+4]
+   \       0x18   0x2801             CMP      R0,#+1
+   \       0x1A   0xD10D             BNE.N    ??mbedtls_md_finish_3
+    647                  size_t size = ctx->md_info->size;
+   \       0x1C   0x6820             LDR      R0,[R4, #+0]
+   \       0x1E   0x7840             LDRB     R0,[R0, #+1]
+   \       0x20   0x9000             STR      R0,[SP, #+0]
+    648                  psa_status_t status = psa_hash_finish(ctx->md_ctx,
+    649                                                        output, size, &size);
+   \       0x22   0x466B             MOV      R3,SP
+   \       0x24   0x9A00             LDR      R2,[SP, #+0]
+   \       0x26   0x0029             MOVS     R1,R5
+   \       0x28   0x68A0             LDR      R0,[R4, #+8]
+   \       0x2A   0x.... 0x....      BL       psa_hash_finish
+   \       0x2E   0x0006             MOVS     R6,R0
+    650                  return mbedtls_md_error_from_psa(status);
+   \       0x30   0x0030             MOVS     R0,R6
+   \       0x32   0x.... 0x....      BL       mbedtls_md_error_from_psa
+   \       0x36   0xE019             B.N      ??mbedtls_md_finish_2
+    651              }
+    652          #endif
+    653          
+    654              switch (ctx->md_info->type) {
+   \                     ??mbedtls_md_finish_3: (+1)
+   \       0x38   0x6820             LDR      R0,[R4, #+0]
+   \       0x3A   0x7800             LDRB     R0,[R0, #+0]
+   \       0x3C   0x2805             CMP      R0,#+5
+   \       0x3E   0xD004             BEQ.N    ??mbedtls_md_finish_4
+   \       0x40   0x2808             CMP      R0,#+8
+   \       0x42   0xD007             BEQ.N    ??mbedtls_md_finish_5
+   \       0x44   0x2809             CMP      R0,#+9
+   \       0x46   0xD00A             BEQ.N    ??mbedtls_md_finish_6
+   \       0x48   0xE00E             B.N      ??mbedtls_md_finish_7
+    655          #if defined(MBEDTLS_MD5_C)
+    656                  case MBEDTLS_MD_MD5:
+    657                      return mbedtls_md5_finish(ctx->md_ctx, output);
+    658          #endif
+    659          #if defined(MBEDTLS_RIPEMD160_C)
+    660                  case MBEDTLS_MD_RIPEMD160:
+    661                      return mbedtls_ripemd160_finish(ctx->md_ctx, output);
+    662          #endif
+    663          #if defined(MBEDTLS_SHA1_C)
+    664                  case MBEDTLS_MD_SHA1:
+    665                      return mbedtls_sha1_finish(ctx->md_ctx, output);
+   \                     ??mbedtls_md_finish_4: (+1)
+   \       0x4A   0x0029             MOVS     R1,R5
+   \       0x4C   0x68A0             LDR      R0,[R4, #+8]
+   \       0x4E   0x.... 0x....      BL       mbedtls_sha1_finish
+   \       0x52   0xE00B             B.N      ??mbedtls_md_finish_2
+    666          #endif
+    667          #if defined(MBEDTLS_SHA224_C)
+    668                  case MBEDTLS_MD_SHA224:
+    669                      return mbedtls_sha256_finish(ctx->md_ctx, output);
+   \                     ??mbedtls_md_finish_5: (+1)
+   \       0x54   0x0029             MOVS     R1,R5
+   \       0x56   0x68A0             LDR      R0,[R4, #+8]
+   \       0x58   0x.... 0x....      BL       mbedtls_sha256_finish
+   \       0x5C   0xE006             B.N      ??mbedtls_md_finish_2
+    670          #endif
+    671          #if defined(MBEDTLS_SHA256_C)
+    672                  case MBEDTLS_MD_SHA256:
+    673                      return mbedtls_sha256_finish(ctx->md_ctx, output);
+   \                     ??mbedtls_md_finish_6: (+1)
+   \       0x5E   0x0029             MOVS     R1,R5
+   \       0x60   0x68A0             LDR      R0,[R4, #+8]
+   \       0x62   0x.... 0x....      BL       mbedtls_sha256_finish
+   \       0x66   0xE001             B.N      ??mbedtls_md_finish_2
+    674          #endif
+    675          #if defined(MBEDTLS_SHA384_C)
+    676                  case MBEDTLS_MD_SHA384:
+    677                      return mbedtls_sha512_finish(ctx->md_ctx, output);
+    678          #endif
+    679          #if defined(MBEDTLS_SHA512_C)
+    680                  case MBEDTLS_MD_SHA512:
+    681                      return mbedtls_sha512_finish(ctx->md_ctx, output);
+    682          #endif
+    683          #if defined(MBEDTLS_SHA3_C)
+    684                  case MBEDTLS_MD_SHA3_224:
+    685                  case MBEDTLS_MD_SHA3_256:
+    686                  case MBEDTLS_MD_SHA3_384:
+    687                  case MBEDTLS_MD_SHA3_512:
+    688                      return mbedtls_sha3_finish(ctx->md_ctx, output, ctx->md_info->size);
+    689          #endif
+    690                  default:
+    691                      return MBEDTLS_ERR_MD_BAD_INPUT_DATA;
+   \                     ??mbedtls_md_finish_7: (+1)
+   \       0x68   0x.... 0x....      LDR.W    R0,??DataTable16_6
+   \                     ??mbedtls_md_finish_2: (+1)
+   \       0x6C   0xBD76             POP      {R1,R2,R4-R6,PC}
+    692              }
+    693          }
+    694          
+
+   \                                 In section .text, align 2, keep-with-next
+    695          int mbedtls_md(const mbedtls_md_info_t *md_info, const unsigned char *input, size_t ilen,
+    696                         unsigned char *output)
+    697          {
+   \                     mbedtls_md: (+1)
+   \        0x0   0xE92D 0x41FF      PUSH     {R0-R8,LR}
+   \        0x4   0x0004             MOVS     R4,R0
+   \        0x6   0x000D             MOVS     R5,R1
+   \        0x8   0x0016             MOVS     R6,R2
+   \        0xA   0x001F             MOVS     R7,R3
+    698              if (md_info == NULL) {
+   \        0xC   0x2C00             CMP      R4,#+0
+   \        0xE   0xD102             BNE.N    ??mbedtls_md_0
+    699                  return MBEDTLS_ERR_MD_BAD_INPUT_DATA;
+   \       0x10   0x.... 0x....      LDR.W    R0,??DataTable16_6
+   \       0x14   0xE034             B.N      ??mbedtls_md_1
+    700              }
+    701          
+    702          #if defined(MBEDTLS_MD_SOME_PSA)
+    703              if (md_can_use_psa(md_info)) {
+   \                     ??mbedtls_md_0: (+1)
+   \       0x16   0x0020             MOVS     R0,R4
+   \       0x18   0x.... 0x....      BL       md_can_use_psa
+   \       0x1C   0x2800             CMP      R0,#+0
+   \       0x1E   0xD012             BEQ.N    ??mbedtls_md_2
+    704                  size_t size = md_info->size;
+   \       0x20   0x7860             LDRB     R0,[R4, #+1]
+   \       0x22   0x9002             STR      R0,[SP, #+8]
+    705                  psa_status_t status = psa_hash_compute(psa_alg_of_md(md_info),
+    706                                                         input, ilen,
+    707                                                         output, size, &size);
+   \       0x24   0x0020             MOVS     R0,R4
+   \       0x26   0x.... 0x....      BL       psa_alg_of_md
+   \       0x2A   0xA902             ADD      R1,SP,#+8
+   \       0x2C   0x9101             STR      R1,[SP, #+4]
+   \       0x2E   0x9902             LDR      R1,[SP, #+8]
+   \       0x30   0x9100             STR      R1,[SP, #+0]
+   \       0x32   0x003B             MOVS     R3,R7
+   \       0x34   0x0032             MOVS     R2,R6
+   \       0x36   0x0029             MOVS     R1,R5
+   \       0x38   0x.... 0x....      BL       psa_hash_compute
+   \       0x3C   0x4680             MOV      R8,R0
+    708                  return mbedtls_md_error_from_psa(status);
+   \       0x3E   0x4640             MOV      R0,R8
+   \       0x40   0x.... 0x....      BL       mbedtls_md_error_from_psa
+   \       0x44   0xE01C             B.N      ??mbedtls_md_1
+    709              }
+    710          #endif
+    711          
+    712              switch (md_info->type) {
+   \                     ??mbedtls_md_2: (+1)
+   \       0x46   0x7820             LDRB     R0,[R4, #+0]
+   \       0x48   0x2805             CMP      R0,#+5
+   \       0x4A   0xD004             BEQ.N    ??mbedtls_md_3
+   \       0x4C   0x2808             CMP      R0,#+8
+   \       0x4E   0xD008             BEQ.N    ??mbedtls_md_4
+   \       0x50   0x2809             CMP      R0,#+9
+   \       0x52   0xD00D             BEQ.N    ??mbedtls_md_5
+   \       0x54   0xE013             B.N      ??mbedtls_md_6
+    713          #if defined(MBEDTLS_MD5_C)
+    714                  case MBEDTLS_MD_MD5:
+    715                      return mbedtls_md5(input, ilen, output);
+    716          #endif
+    717          #if defined(MBEDTLS_RIPEMD160_C)
+    718                  case MBEDTLS_MD_RIPEMD160:
+    719                      return mbedtls_ripemd160(input, ilen, output);
+    720          #endif
+    721          #if defined(MBEDTLS_SHA1_C)
+    722                  case MBEDTLS_MD_SHA1:
+    723                      return mbedtls_sha1(input, ilen, output);
+   \                     ??mbedtls_md_3: (+1)
+   \       0x56   0x003A             MOVS     R2,R7
+   \       0x58   0x0031             MOVS     R1,R6
+   \       0x5A   0x0028             MOVS     R0,R5
+   \       0x5C   0x.... 0x....      BL       mbedtls_sha1
+   \       0x60   0xE00E             B.N      ??mbedtls_md_1
+    724          #endif
+    725          #if defined(MBEDTLS_SHA224_C)
+    726                  case MBEDTLS_MD_SHA224:
+    727                      return mbedtls_sha256(input, ilen, output, 1);
+   \                     ??mbedtls_md_4: (+1)
+   \       0x62   0x2301             MOVS     R3,#+1
+   \       0x64   0x003A             MOVS     R2,R7
+   \       0x66   0x0031             MOVS     R1,R6
+   \       0x68   0x0028             MOVS     R0,R5
+   \       0x6A   0x.... 0x....      BL       mbedtls_sha256
+   \       0x6E   0xE007             B.N      ??mbedtls_md_1
+    728          #endif
+    729          #if defined(MBEDTLS_SHA256_C)
+    730                  case MBEDTLS_MD_SHA256:
+    731                      return mbedtls_sha256(input, ilen, output, 0);
+   \                     ??mbedtls_md_5: (+1)
+   \       0x70   0x2300             MOVS     R3,#+0
+   \       0x72   0x003A             MOVS     R2,R7
+   \       0x74   0x0031             MOVS     R1,R6
+   \       0x76   0x0028             MOVS     R0,R5
+   \       0x78   0x.... 0x....      BL       mbedtls_sha256
+   \       0x7C   0xE000             B.N      ??mbedtls_md_1
+    732          #endif
+    733          #if defined(MBEDTLS_SHA384_C)
+    734                  case MBEDTLS_MD_SHA384:
+    735                      return mbedtls_sha512(input, ilen, output, 1);
+    736          #endif
+    737          #if defined(MBEDTLS_SHA512_C)
+    738                  case MBEDTLS_MD_SHA512:
+    739                      return mbedtls_sha512(input, ilen, output, 0);
+    740          #endif
+    741          #if defined(MBEDTLS_SHA3_C)
+    742                  case MBEDTLS_MD_SHA3_224:
+    743                      return mbedtls_sha3(MBEDTLS_SHA3_224, input, ilen, output, md_info->size);
+    744                  case MBEDTLS_MD_SHA3_256:
+    745                      return mbedtls_sha3(MBEDTLS_SHA3_256, input, ilen, output, md_info->size);
+    746                  case MBEDTLS_MD_SHA3_384:
+    747                      return mbedtls_sha3(MBEDTLS_SHA3_384, input, ilen, output, md_info->size);
+    748                  case MBEDTLS_MD_SHA3_512:
+    749                      return mbedtls_sha3(MBEDTLS_SHA3_512, input, ilen, output, md_info->size);
+    750          #endif
+    751                  default:
+    752                      return MBEDTLS_ERR_MD_BAD_INPUT_DATA;
+   \                     ??mbedtls_md_6: (+1)
+   \       0x7E   0x....             LDR.N    R0,??DataTable16_6
+   \                     ??mbedtls_md_1: (+1)
+   \       0x80   0xB004             ADD      SP,SP,#+16
+   \       0x82   0xE8BD 0x81F0      POP      {R4-R8,PC}
+    753              }
+    754          }
+    755          
+
+   \                                 In section .text, align 2, keep-with-next
+    756          unsigned char mbedtls_md_get_size(const mbedtls_md_info_t *md_info)
+    757          {
+   \                     mbedtls_md_get_size: (+1)
+   \        0x0   0x0001             MOVS     R1,R0
+    758              if (md_info == NULL) {
+   \        0x2   0x2900             CMP      R1,#+0
+   \        0x4   0xD101             BNE.N    ??mbedtls_md_get_size_0
+    759                  return 0;
+   \        0x6   0x2000             MOVS     R0,#+0
+   \        0x8   0xE000             B.N      ??mbedtls_md_get_size_1
+    760              }
+    761          
+    762              return md_info->size;
+   \                     ??mbedtls_md_get_size_0: (+1)
+   \        0xA   0x7848             LDRB     R0,[R1, #+1]
+   \                     ??mbedtls_md_get_size_1: (+1)
+   \        0xC   0x4770             BX       LR
+    763          }
+    764          
+
+   \                                 In section .text, align 2, keep-with-next
+    765          mbedtls_md_type_t mbedtls_md_get_type(const mbedtls_md_info_t *md_info)
+    766          {
+   \                     mbedtls_md_get_type: (+1)
+   \        0x0   0x0001             MOVS     R1,R0
+    767              if (md_info == NULL) {
+   \        0x2   0x2900             CMP      R1,#+0
+   \        0x4   0xD101             BNE.N    ??mbedtls_md_get_type_0
+    768                  return MBEDTLS_MD_NONE;
+   \        0x6   0x2000             MOVS     R0,#+0
+   \        0x8   0xE000             B.N      ??mbedtls_md_get_type_1
+    769              }
+    770          
+    771              return md_info->type;
+   \                     ??mbedtls_md_get_type_0: (+1)
+   \        0xA   0x7808             LDRB     R0,[R1, #+0]
+   \                     ??mbedtls_md_get_type_1: (+1)
+   \        0xC   0x4770             BX       LR
+    772          }
+    773          
+    774          #if defined(MBEDTLS_PSA_CRYPTO_C)
+
+   \                                 In section .text, align 2, keep-with-next
+    775          int mbedtls_md_error_from_psa(psa_status_t status)
+    776          {
+   \                     mbedtls_md_error_from_psa: (+1)
+   \        0x0   0xB510             PUSH     {R4,LR}
+   \        0x2   0x0004             MOVS     R4,R0
+    777              return PSA_TO_MBEDTLS_ERR_LIST(status, psa_to_md_errors,
+    778                                             psa_generic_status_to_mbedtls);
+   \        0x4   0x....             LDR.N    R3,??DataTable16_9
+   \        0x6   0x2204             MOVS     R2,#+4
+   \        0x8   0x....             LDR.N    R1,??DataTable16_10
+   \        0xA   0x0020             MOVS     R0,R4
+   \        0xC   0x.... 0x....      BL       psa_status_to_mbedtls
+   \       0x10   0xBD10             POP      {R4,PC}
+    779          }
+    780          #endif /* MBEDTLS_PSA_CRYPTO_C */
+    781          
+    782          
+    783          /************************************************************************
+    784           * Functions above this separator are part of MBEDTLS_MD_LIGHT,         *
+    785           * functions below are only available when MBEDTLS_MD_C is set.         *
+    786           ************************************************************************/
+    787          #if defined(MBEDTLS_MD_C)
+    788          
+    789          /*
+    790           * Reminder: update profiles in x509_crt.c when adding a new hash!
+    791           */
+
+   \                                 In section .rodata, align 4
+    792          static const mbedtls_md_type_t supported_digests[] = {
+   \                     supported_digests:
+   \        0x0   0x09 0x08          DC8 9, 8, 5, 0
+   \              0x05 0x00
+    793          
+    794          #if defined(MBEDTLS_MD_CAN_SHA512)
+    795              MBEDTLS_MD_SHA512,
+    796          #endif
+    797          
+    798          #if defined(MBEDTLS_MD_CAN_SHA384)
+    799              MBEDTLS_MD_SHA384,
+    800          #endif
+    801          
+    802          #if defined(MBEDTLS_MD_CAN_SHA256)
+    803              MBEDTLS_MD_SHA256,
+    804          #endif
+    805          #if defined(MBEDTLS_MD_CAN_SHA224)
+    806              MBEDTLS_MD_SHA224,
+    807          #endif
+    808          
+    809          #if defined(MBEDTLS_MD_CAN_SHA1)
+    810              MBEDTLS_MD_SHA1,
+    811          #endif
+    812          
+    813          #if defined(MBEDTLS_MD_CAN_RIPEMD160)
+    814              MBEDTLS_MD_RIPEMD160,
+    815          #endif
+    816          
+    817          #if defined(MBEDTLS_MD_CAN_MD5)
+    818              MBEDTLS_MD_MD5,
+    819          #endif
+    820          
+    821          #if defined(MBEDTLS_MD_CAN_SHA3_224)
+    822              MBEDTLS_MD_SHA3_224,
+    823          #endif
+    824          
+    825          #if defined(MBEDTLS_MD_CAN_SHA3_256)
+    826              MBEDTLS_MD_SHA3_256,
+    827          #endif
+    828          
+    829          #if defined(MBEDTLS_MD_CAN_SHA3_384)
+    830              MBEDTLS_MD_SHA3_384,
+    831          #endif
+    832          
+    833          #if defined(MBEDTLS_MD_CAN_SHA3_512)
+    834              MBEDTLS_MD_SHA3_512,
+    835          #endif
+    836          
+    837              MBEDTLS_MD_NONE
+    838          };
+    839          
+
+   \                                 In section .text, align 2, keep-with-next
+    840          const mbedtls_md_type_t *mbedtls_md_list(void)
+    841          {
+    842              return supported_digests;
+   \                     mbedtls_md_list: (+1)
+   \        0x0   0x....             LDR.N    R0,??DataTable16_11
+   \        0x2   0x4770             BX       LR
+    843          }
+    844          
+    845          typedef struct {
+    846              const char *md_name;
+    847              mbedtls_md_type_t md_type;
+    848          } md_name_entry;
+    849          
+
+   \                                 In section .rodata, align 4
+    850          static const md_name_entry md_names[] = {
+   \                     md_names:
+   \        0x0   0x....'....        DC32 ?_0
+   \        0x4   0x05               DC8 5
+   \        0x5                      DS8 3
+   \        0x8   0x....'....        DC32 ?_1
+   \        0xC   0x05               DC8 5
+   \        0xD                      DS8 3
+   \       0x10   0x....'....        DC32 ?_2
+   \       0x14   0x08               DC8 8
+   \       0x15                      DS8 3
+   \       0x18   0x....'....        DC32 ?_3
+   \       0x1C   0x09               DC8 9
+   \       0x1D                      DS8 3
+   \       0x20   0x0000'0000        DC32 0x0
+   \       0x24   0x00               DC8 0
+   \       0x25                      DS8 3
+    851          #if defined(MBEDTLS_MD_CAN_MD5)
+    852              { "MD5", MBEDTLS_MD_MD5 },
+    853          #endif
+    854          #if defined(MBEDTLS_MD_CAN_RIPEMD160)
+    855              { "RIPEMD160", MBEDTLS_MD_RIPEMD160 },
+    856          #endif
+    857          #if defined(MBEDTLS_MD_CAN_SHA1)
+    858              { "SHA1", MBEDTLS_MD_SHA1 },
+    859              { "SHA", MBEDTLS_MD_SHA1 }, // compatibility fallback
+    860          #endif
+    861          #if defined(MBEDTLS_MD_CAN_SHA224)
+    862              { "SHA224", MBEDTLS_MD_SHA224 },
+    863          #endif
+    864          #if defined(MBEDTLS_MD_CAN_SHA256)
+    865              { "SHA256", MBEDTLS_MD_SHA256 },
+    866          #endif
+    867          #if defined(MBEDTLS_MD_CAN_SHA384)
+    868              { "SHA384", MBEDTLS_MD_SHA384 },
+    869          #endif
+    870          #if defined(MBEDTLS_MD_CAN_SHA512)
+    871              { "SHA512", MBEDTLS_MD_SHA512 },
+    872          #endif
+    873          #if defined(MBEDTLS_MD_CAN_SHA3_224)
+    874              { "SHA3-224", MBEDTLS_MD_SHA3_224 },
+    875          #endif
+    876          #if defined(MBEDTLS_MD_CAN_SHA3_256)
+    877              { "SHA3-256", MBEDTLS_MD_SHA3_256 },
+    878          #endif
+    879          #if defined(MBEDTLS_MD_CAN_SHA3_384)
+    880              { "SHA3-384", MBEDTLS_MD_SHA3_384 },
+    881          #endif
+    882          #if defined(MBEDTLS_MD_CAN_SHA3_512)
+    883              { "SHA3-512", MBEDTLS_MD_SHA3_512 },
+    884          #endif
+    885              { NULL, MBEDTLS_MD_NONE },
+    886          };
+    887          
+
+   \                                 In section .text, align 2, keep-with-next
+    888          const mbedtls_md_info_t *mbedtls_md_info_from_string(const char *md_name)
+    889          {
+   \                     mbedtls_md_info_from_string: (+1)
+   \        0x0   0xB538             PUSH     {R3-R5,LR}
+   \        0x2   0x0004             MOVS     R4,R0
+    890              if (NULL == md_name) {
+   \        0x4   0x2C00             CMP      R4,#+0
+   \        0x6   0xD101             BNE.N    ??mbedtls_md_info_from_string_0
+    891                  return NULL;
+   \        0x8   0x2000             MOVS     R0,#+0
+   \        0xA   0xE00E             B.N      ??mbedtls_md_info_from_string_1
+    892              }
+    893          
+    894              const md_name_entry *entry = md_names;
+   \                     ??mbedtls_md_info_from_string_0: (+1)
+   \        0xC   0x....             LDR.N    R5,??DataTable16_12
+    895              while (entry->md_name != NULL &&
+    896                     strcmp(entry->md_name, md_name) != 0) {
+   \                     ??mbedtls_md_info_from_string_2: (+1)
+   \        0xE   0x6828             LDR      R0,[R5, #+0]
+   \       0x10   0x2800             CMP      R0,#+0
+   \       0x12   0xD007             BEQ.N    ??mbedtls_md_info_from_string_3
+   \       0x14   0x0021             MOVS     R1,R4
+   \       0x16   0x6828             LDR      R0,[R5, #+0]
+   \       0x18   0x.... 0x....      BL       strcmp
+   \       0x1C   0x2800             CMP      R0,#+0
+   \       0x1E   0xD001             BEQ.N    ??mbedtls_md_info_from_string_3
+    897                  ++entry;
+   \       0x20   0x3508             ADDS     R5,R5,#+8
+   \       0x22   0xE7F4             B.N      ??mbedtls_md_info_from_string_2
+    898              }
+    899          
+    900              return mbedtls_md_info_from_type(entry->md_type);
+   \                     ??mbedtls_md_info_from_string_3: (+1)
+   \       0x24   0x7928             LDRB     R0,[R5, #+4]
+   \       0x26   0x.... 0x....      BL       mbedtls_md_info_from_type
+   \                     ??mbedtls_md_info_from_string_1: (+1)
+   \       0x2A   0xBD32             POP      {R1,R4,R5,PC}
+    901          }
+    902          
+
+   \                                 In section .text, align 2, keep-with-next
+    903          const char *mbedtls_md_get_name(const mbedtls_md_info_t *md_info)
+    904          {
+   \                     mbedtls_md_get_name: (+1)
+   \        0x0   0x0001             MOVS     R1,R0
+    905              if (md_info == NULL) {
+   \        0x2   0x2900             CMP      R1,#+0
+   \        0x4   0xD101             BNE.N    ??mbedtls_md_get_name_0
+    906                  return NULL;
+   \        0x6   0x2000             MOVS     R0,#+0
+   \        0x8   0xE00A             B.N      ??mbedtls_md_get_name_1
+    907              }
+    908          
+    909              const md_name_entry *entry = md_names;
+   \                     ??mbedtls_md_get_name_0: (+1)
+   \        0xA   0x....             LDR.N    R2,??DataTable16_12
+    910              while (entry->md_type != MBEDTLS_MD_NONE &&
+    911                     entry->md_type != md_info->type) {
+   \                     ??mbedtls_md_get_name_2: (+1)
+   \        0xC   0x7910             LDRB     R0,[R2, #+4]
+   \        0xE   0x2800             CMP      R0,#+0
+   \       0x10   0xD005             BEQ.N    ??mbedtls_md_get_name_3
+   \       0x12   0x7913             LDRB     R3,[R2, #+4]
+   \       0x14   0x7808             LDRB     R0,[R1, #+0]
+   \       0x16   0x4283             CMP      R3,R0
+   \       0x18   0xD001             BEQ.N    ??mbedtls_md_get_name_3
+    912                  ++entry;
+   \       0x1A   0x3208             ADDS     R2,R2,#+8
+   \       0x1C   0xE7F6             B.N      ??mbedtls_md_get_name_2
+    913              }
+    914          
+    915              return entry->md_name;
+   \                     ??mbedtls_md_get_name_3: (+1)
+   \       0x1E   0x6810             LDR      R0,[R2, #+0]
+   \                     ??mbedtls_md_get_name_1: (+1)
+   \       0x20   0x4770             BX       LR
+    916          }
+    917          
+
+   \                                 In section .text, align 2, keep-with-next
+    918          const mbedtls_md_info_t *mbedtls_md_info_from_ctx(
+    919              const mbedtls_md_context_t *ctx)
+    920          {
+   \                     mbedtls_md_info_from_ctx: (+1)
+   \        0x0   0x0001             MOVS     R1,R0
+    921              if (ctx == NULL) {
+   \        0x2   0x2900             CMP      R1,#+0
+   \        0x4   0xD101             BNE.N    ??mbedtls_md_info_from_ctx_0
+    922                  return NULL;
+   \        0x6   0x2000             MOVS     R0,#+0
+   \        0x8   0xE000             B.N      ??mbedtls_md_info_from_ctx_1
+    923              }
+    924          
+    925              return ctx->MBEDTLS_PRIVATE(md_info);
+   \                     ??mbedtls_md_info_from_ctx_0: (+1)
+   \        0xA   0x6808             LDR      R0,[R1, #+0]
+   \                     ??mbedtls_md_info_from_ctx_1: (+1)
+   \        0xC   0x4770             BX       LR
+    926          }
+    927          
+    928          #if defined(MBEDTLS_FS_IO)
+    929          int mbedtls_md_file(const mbedtls_md_info_t *md_info, const char *path, unsigned char *output)
+    930          {
+    931              int ret = MBEDTLS_ERR_ERROR_CORRUPTION_DETECTED;
+    932              FILE *f;
+    933              size_t n;
+    934              mbedtls_md_context_t ctx;
+    935              unsigned char buf[1024];
+    936          
+    937              if (md_info == NULL) {
+    938                  return MBEDTLS_ERR_MD_BAD_INPUT_DATA;
+    939              }
+    940          
+    941              if ((f = fopen(path, "rb")) == NULL) {
+    942                  return MBEDTLS_ERR_MD_FILE_IO_ERROR;
+    943              }
+    944          
+    945              /* Ensure no stdio buffering of secrets, as such buffers cannot be wiped. */
+    946              mbedtls_setbuf(f, NULL);
+    947          
+    948              mbedtls_md_init(&ctx);
+    949          
+    950              if ((ret = mbedtls_md_setup(&ctx, md_info, 0)) != 0) {
+    951                  goto cleanup;
+    952              }
+    953          
+    954              if ((ret = mbedtls_md_starts(&ctx)) != 0) {
+    955                  goto cleanup;
+    956              }
+    957          
+    958              while ((n = fread(buf, 1, sizeof(buf), f)) > 0) {
+    959                  if ((ret = mbedtls_md_update(&ctx, buf, n)) != 0) {
+    960                      goto cleanup;
+    961                  }
+    962              }
+    963          
+    964              if (ferror(f) != 0) {
+    965                  ret = MBEDTLS_ERR_MD_FILE_IO_ERROR;
+    966              } else {
+    967                  ret = mbedtls_md_finish(&ctx, output);
+    968              }
+    969          
+    970          cleanup:
+    971              mbedtls_platform_zeroize(buf, sizeof(buf));
+    972              fclose(f);
+    973              mbedtls_md_free(&ctx);
+    974          
+    975              return ret;
+    976          }
+    977          #endif /* MBEDTLS_FS_IO */
+    978          
+
+   \                                 In section .text, align 2, keep-with-next
+    979          int mbedtls_md_hmac_starts(mbedtls_md_context_t *ctx, const unsigned char *key, size_t keylen)
+    980          {
+   \                     mbedtls_md_hmac_starts: (+1)
+   \        0x0   0xE92D 0x4FF0      PUSH     {R4-R11,LR}
+   \        0x4   0xB08B             SUB      SP,SP,#+44
+   \        0x6   0x0004             MOVS     R4,R0
+   \        0x8   0x000D             MOVS     R5,R1
+   \        0xA   0x0016             MOVS     R6,R2
+    981              int ret = MBEDTLS_ERR_ERROR_CORRUPTION_DETECTED;
+   \        0xC   0xF07F 0x076D      MVNS     R7,#+109
+    982              unsigned char sum[MBEDTLS_MD_MAX_SIZE];
+    983              unsigned char *ipad, *opad;
+    984          
+    985              if (ctx == NULL || ctx->md_info == NULL || ctx->hmac_ctx == NULL) {
+   \       0x10   0x2C00             CMP      R4,#+0
+   \       0x12   0xD005             BEQ.N    ??mbedtls_md_hmac_starts_0
+   \       0x14   0x6820             LDR      R0,[R4, #+0]
+   \       0x16   0x2800             CMP      R0,#+0
+   \       0x18   0xD002             BEQ.N    ??mbedtls_md_hmac_starts_0
+   \       0x1A   0x68E0             LDR      R0,[R4, #+12]
+   \       0x1C   0x2800             CMP      R0,#+0
+   \       0x1E   0xD101             BNE.N    ??mbedtls_md_hmac_starts_1
+    986                  return MBEDTLS_ERR_MD_BAD_INPUT_DATA;
+   \                     ??mbedtls_md_hmac_starts_0: (+1)
+   \       0x20   0x....             LDR.N    R0,??DataTable16_6
+   \       0x22   0xE05A             B.N      ??mbedtls_md_hmac_starts_2
+    987              }
+    988          
+    989              if (keylen > (size_t) ctx->md_info->block_size) {
+   \                     ??mbedtls_md_hmac_starts_1: (+1)
+   \       0x24   0x6820             LDR      R0,[R4, #+0]
+   \       0x26   0x7880             LDRB     R0,[R0, #+2]
+   \       0x28   0x42B0             CMP      R0,R6
+   \       0x2A   0xD219             BCS.N    ??mbedtls_md_hmac_starts_3
+    990                  if ((ret = mbedtls_md_starts(ctx)) != 0) {
+   \       0x2C   0x0020             MOVS     R0,R4
+   \       0x2E   0x.... 0x....      BL       mbedtls_md_starts
+   \       0x32   0x0007             MOVS     R7,R0
+   \       0x34   0x2800             CMP      R0,#+0
+   \       0x36   0xD14B             BNE.N    ??mbedtls_md_hmac_starts_4
+    991                      goto cleanup;
+    992                  }
+    993                  if ((ret = mbedtls_md_update(ctx, key, keylen)) != 0) {
+   \                     ??mbedtls_md_hmac_starts_5: (+1)
+   \       0x38   0x0032             MOVS     R2,R6
+   \       0x3A   0x0029             MOVS     R1,R5
+   \       0x3C   0x0020             MOVS     R0,R4
+   \       0x3E   0x.... 0x....      BL       mbedtls_md_update
+   \       0x42   0x0007             MOVS     R7,R0
+   \       0x44   0x2800             CMP      R0,#+0
+   \       0x46   0xD143             BNE.N    ??mbedtls_md_hmac_starts_4
+    994                      goto cleanup;
+    995                  }
+    996                  if ((ret = mbedtls_md_finish(ctx, sum)) != 0) {
+   \                     ??mbedtls_md_hmac_starts_6: (+1)
+   \       0x48   0xA903             ADD      R1,SP,#+12
+   \       0x4A   0x0020             MOVS     R0,R4
+   \       0x4C   0x.... 0x....      BL       mbedtls_md_finish
+   \       0x50   0x0007             MOVS     R7,R0
+   \       0x52   0x2800             CMP      R0,#+0
+   \       0x54   0xD13C             BNE.N    ??mbedtls_md_hmac_starts_4
+    997                      goto cleanup;
+    998                  }
+    999          
+   1000                  keylen = ctx->md_info->size;
+   \                     ??mbedtls_md_hmac_starts_7: (+1)
+   \       0x56   0x6820             LDR      R0,[R4, #+0]
+   \       0x58   0x7840             LDRB     R0,[R0, #+1]
+   \       0x5A   0x0006             MOVS     R6,R0
+   1001                  key = sum;
+   \       0x5C   0xA803             ADD      R0,SP,#+12
+   \       0x5E   0x0005             MOVS     R5,R0
+   1002              }
+   1003          
+   1004              ipad = (unsigned char *) ctx->hmac_ctx;
+   \                     ??mbedtls_md_hmac_starts_3: (+1)
+   \       0x60   0x68E0             LDR      R0,[R4, #+12]
+   \       0x62   0x4680             MOV      R8,R0
+   1005              opad = (unsigned char *) ctx->hmac_ctx + ctx->md_info->block_size;
+   \       0x64   0x68E0             LDR      R0,[R4, #+12]
+   \       0x66   0x6821             LDR      R1,[R4, #+0]
+   \       0x68   0x7889             LDRB     R1,[R1, #+2]
+   \       0x6A   0x4408             ADD      R0,R0,R1
+   \       0x6C   0x9000             STR      R0,[SP, #+0]
+   1006          
+   1007              memset(ipad, 0x36, ctx->md_info->block_size);
+   \       0x6E   0x6820             LDR      R0,[R4, #+0]
+   \       0x70   0x7880             LDRB     R0,[R0, #+2]
+   \       0x72   0x9002             STR      R0,[SP, #+8]
+   \       0x74   0xF05F 0x0936      MOVS     R9,#+54
+   \       0x78   0x46C2             MOV      R10,R8
+   \       0x7A   0x464A             MOV      R2,R9
+   \       0x7C   0x9902             LDR      R1,[SP, #+8]
+   \       0x7E   0x4650             MOV      R0,R10
+   \       0x80   0x.... 0x....      BL       __aeabi_memset
+   1008              memset(opad, 0x5C, ctx->md_info->block_size);
+   \       0x84   0x6820             LDR      R0,[R4, #+0]
+   \       0x86   0x7880             LDRB     R0,[R0, #+2]
+   \       0x88   0x9001             STR      R0,[SP, #+4]
+   \       0x8A   0xF05F 0x0A5C      MOVS     R10,#+92
+   \       0x8E   0xF8DD 0xB000      LDR      R11,[SP, #+0]
+   \       0x92   0x4652             MOV      R2,R10
+   \       0x94   0x9901             LDR      R1,[SP, #+4]
+   \       0x96   0x4658             MOV      R0,R11
+   \       0x98   0x.... 0x....      BL       __aeabi_memset
+   1009          
+   1010              mbedtls_xor(ipad, ipad, key, keylen);
+   \       0x9C   0x0033             MOVS     R3,R6
+   \       0x9E   0x002A             MOVS     R2,R5
+   \       0xA0   0x4641             MOV      R1,R8
+   \       0xA2   0x4640             MOV      R0,R8
+   \       0xA4   0x.... 0x....      BL       mbedtls_xor
+   1011              mbedtls_xor(opad, opad, key, keylen);
+   \       0xA8   0x0033             MOVS     R3,R6
+   \       0xAA   0x002A             MOVS     R2,R5
+   \       0xAC   0x9900             LDR      R1,[SP, #+0]
+   \       0xAE   0x9800             LDR      R0,[SP, #+0]
+   \       0xB0   0x.... 0x....      BL       mbedtls_xor
+   1012          
+   1013              if ((ret = mbedtls_md_starts(ctx)) != 0) {
+   \       0xB4   0x0020             MOVS     R0,R4
+   \       0xB6   0x.... 0x....      BL       mbedtls_md_starts
+   \       0xBA   0x0007             MOVS     R7,R0
+   \       0xBC   0x2800             CMP      R0,#+0
+   \       0xBE   0xD107             BNE.N    ??mbedtls_md_hmac_starts_4
+   1014                  goto cleanup;
+   1015              }
+   1016              if ((ret = mbedtls_md_update(ctx, ipad,
+   1017                                           ctx->md_info->block_size)) != 0) {
+   \                     ??mbedtls_md_hmac_starts_8: (+1)
+   \       0xC0   0x6820             LDR      R0,[R4, #+0]
+   \       0xC2   0x7882             LDRB     R2,[R0, #+2]
+   \       0xC4   0x4641             MOV      R1,R8
+   \       0xC6   0x0020             MOVS     R0,R4
+   \       0xC8   0x.... 0x....      BL       mbedtls_md_update
+   \       0xCC   0x0007             MOVS     R7,R0
+   \       0xCE   0x2800             CMP      R0,#+0
+   1018                  goto cleanup;
+   1019              }
+   1020          
+   1021          cleanup:
+   1022              mbedtls_platform_zeroize(sum, sizeof(sum));
+   \                     ??mbedtls_md_hmac_starts_4: (+1)
+   \       0xD0   0x2120             MOVS     R1,#+32
+   \       0xD2   0xA803             ADD      R0,SP,#+12
+   \       0xD4   0x.... 0x....      BL       mbedtls_platform_zeroize
+   1023          
+   1024              return ret;
+   \       0xD8   0x0038             MOVS     R0,R7
+   \                     ??mbedtls_md_hmac_starts_2: (+1)
+   \       0xDA   0xB00B             ADD      SP,SP,#+44
+   \       0xDC   0xE8BD 0x8FF0      POP      {R4-R11,PC}
+   1025          }
+   1026          
+
+   \                                 In section .text, align 2, keep-with-next
+   1027          int mbedtls_md_hmac_update(mbedtls_md_context_t *ctx, const unsigned char *input, size_t ilen)
+   1028          {
+   \                     mbedtls_md_hmac_update: (+1)
+   \        0x0   0xB570             PUSH     {R4-R6,LR}
+   \        0x2   0x0004             MOVS     R4,R0
+   \        0x4   0x000E             MOVS     R6,R1
+   \        0x6   0x0015             MOVS     R5,R2
+   1029              if (ctx == NULL || ctx->md_info == NULL || ctx->hmac_ctx == NULL) {
+   \        0x8   0x2C00             CMP      R4,#+0
+   \        0xA   0xD005             BEQ.N    ??mbedtls_md_hmac_update_0
+   \        0xC   0x6820             LDR      R0,[R4, #+0]
+   \        0xE   0x2800             CMP      R0,#+0
+   \       0x10   0xD002             BEQ.N    ??mbedtls_md_hmac_update_0
+   \       0x12   0x68E0             LDR      R0,[R4, #+12]
+   \       0x14   0x2800             CMP      R0,#+0
+   \       0x16   0xD101             BNE.N    ??mbedtls_md_hmac_update_1
+   1030                  return MBEDTLS_ERR_MD_BAD_INPUT_DATA;
+   \                     ??mbedtls_md_hmac_update_0: (+1)
+   \       0x18   0x....             LDR.N    R0,??DataTable16_6
+   \       0x1A   0xE004             B.N      ??mbedtls_md_hmac_update_2
+   1031              }
+   1032          
+   1033              return mbedtls_md_update(ctx, input, ilen);
+   \                     ??mbedtls_md_hmac_update_1: (+1)
+   \       0x1C   0x002A             MOVS     R2,R5
+   \       0x1E   0x0031             MOVS     R1,R6
+   \       0x20   0x0020             MOVS     R0,R4
+   \       0x22   0x.... 0x....      BL       mbedtls_md_update
+   \                     ??mbedtls_md_hmac_update_2: (+1)
+   \       0x26   0xBD70             POP      {R4-R6,PC}
+   1034          }
+   1035          
+
+   \                                 In section .text, align 2, keep-with-next
+   1036          int mbedtls_md_hmac_finish(mbedtls_md_context_t *ctx, unsigned char *output)
+   1037          {
+   \                     mbedtls_md_hmac_finish: (+1)
+   \        0x0   0xE92D 0x41F0      PUSH     {R4-R8,LR}
+   \        0x4   0xB088             SUB      SP,SP,#+32
+   \        0x6   0x0004             MOVS     R4,R0
+   \        0x8   0x000D             MOVS     R5,R1
+   1038              int ret = MBEDTLS_ERR_ERROR_CORRUPTION_DETECTED;
+   \        0xA   0xF07F 0x076D      MVNS     R7,#+109
+   1039              unsigned char tmp[MBEDTLS_MD_MAX_SIZE];
+   1040              unsigned char *opad;
+   1041          
+   1042              if (ctx == NULL || ctx->md_info == NULL || ctx->hmac_ctx == NULL) {
+   \        0xE   0x2C00             CMP      R4,#+0
+   \       0x10   0xD005             BEQ.N    ??mbedtls_md_hmac_finish_0
+   \       0x12   0x6820             LDR      R0,[R4, #+0]
+   \       0x14   0x2800             CMP      R0,#+0
+   \       0x16   0xD002             BEQ.N    ??mbedtls_md_hmac_finish_0
+   \       0x18   0x68E0             LDR      R0,[R4, #+12]
+   \       0x1A   0x2800             CMP      R0,#+0
+   \       0x1C   0xD101             BNE.N    ??mbedtls_md_hmac_finish_1
+   1043                  return MBEDTLS_ERR_MD_BAD_INPUT_DATA;
+   \                     ??mbedtls_md_hmac_finish_0: (+1)
+   \       0x1E   0x....             LDR.N    R0,??DataTable16_6
+   \       0x20   0xE02F             B.N      ??mbedtls_md_hmac_finish_2
+   1044              }
+   1045          
+   1046              opad = (unsigned char *) ctx->hmac_ctx + ctx->md_info->block_size;
+   \                     ??mbedtls_md_hmac_finish_1: (+1)
+   \       0x22   0x68E0             LDR      R0,[R4, #+12]
+   \       0x24   0x6821             LDR      R1,[R4, #+0]
+   \       0x26   0x7889             LDRB     R1,[R1, #+2]
+   \       0x28   0xEB00 0x0601      ADD      R6,R0,R1
+   1047          
+   1048              if ((ret = mbedtls_md_finish(ctx, tmp)) != 0) {
+   \       0x2C   0x4669             MOV      R1,SP
+   \       0x2E   0x0020             MOVS     R0,R4
+   \       0x30   0x.... 0x....      BL       mbedtls_md_finish
+   \       0x34   0x4680             MOV      R8,R0
+   \       0x36   0x2800             CMP      R0,#+0
+   \       0x38   0xD001             BEQ.N    ??mbedtls_md_hmac_finish_3
+   1049                  return ret;
+   \       0x3A   0x4640             MOV      R0,R8
+   \       0x3C   0xE021             B.N      ??mbedtls_md_hmac_finish_2
+   1050              }
+   1051              if ((ret = mbedtls_md_starts(ctx)) != 0) {
+   \                     ??mbedtls_md_hmac_finish_3: (+1)
+   \       0x3E   0x0020             MOVS     R0,R4
+   \       0x40   0x.... 0x....      BL       mbedtls_md_starts
+   \       0x44   0x0007             MOVS     R7,R0
+   \       0x46   0x2800             CMP      R0,#+0
+   \       0x48   0xD001             BEQ.N    ??mbedtls_md_hmac_finish_4
+   1052                  return ret;
+   \       0x4A   0x0038             MOVS     R0,R7
+   \       0x4C   0xE019             B.N      ??mbedtls_md_hmac_finish_2
+   1053              }
+   1054              if ((ret = mbedtls_md_update(ctx, opad,
+   1055                                           ctx->md_info->block_size)) != 0) {
+   \                     ??mbedtls_md_hmac_finish_4: (+1)
+   \       0x4E   0x6820             LDR      R0,[R4, #+0]
+   \       0x50   0x7882             LDRB     R2,[R0, #+2]
+   \       0x52   0x0031             MOVS     R1,R6
+   \       0x54   0x0020             MOVS     R0,R4
+   \       0x56   0x.... 0x....      BL       mbedtls_md_update
+   \       0x5A   0x4680             MOV      R8,R0
+   \       0x5C   0x2800             CMP      R0,#+0
+   \       0x5E   0xD001             BEQ.N    ??mbedtls_md_hmac_finish_5
+   1056                  return ret;
+   \       0x60   0x4640             MOV      R0,R8
+   \       0x62   0xE00E             B.N      ??mbedtls_md_hmac_finish_2
+   1057              }
+   1058              if ((ret = mbedtls_md_update(ctx, tmp,
+   1059                                           ctx->md_info->size)) != 0) {
+   \                     ??mbedtls_md_hmac_finish_5: (+1)
+   \       0x64   0x6820             LDR      R0,[R4, #+0]
+   \       0x66   0x7842             LDRB     R2,[R0, #+1]
+   \       0x68   0x4669             MOV      R1,SP
+   \       0x6A   0x0020             MOVS     R0,R4
+   \       0x6C   0x.... 0x....      BL       mbedtls_md_update
+   \       0x70   0x0007             MOVS     R7,R0
+   \       0x72   0x2800             CMP      R0,#+0
+   \       0x74   0xD001             BEQ.N    ??mbedtls_md_hmac_finish_6
+   1060                  return ret;
+   \       0x76   0x0038             MOVS     R0,R7
+   \       0x78   0xE003             B.N      ??mbedtls_md_hmac_finish_2
+   1061              }
+   1062              return mbedtls_md_finish(ctx, output);
+   \                     ??mbedtls_md_hmac_finish_6: (+1)
+   \       0x7A   0x0029             MOVS     R1,R5
+   \       0x7C   0x0020             MOVS     R0,R4
+   \       0x7E   0x.... 0x....      BL       mbedtls_md_finish
+   \                     ??mbedtls_md_hmac_finish_2: (+1)
+   \       0x82   0xB008             ADD      SP,SP,#+32
+   \       0x84   0xE8BD 0x81F0      POP      {R4-R8,PC}
+   1063          }
+   1064          
+
+   \                                 In section .text, align 2, keep-with-next
+   1065          int mbedtls_md_hmac_reset(mbedtls_md_context_t *ctx)
+   1066          {
+   \                     mbedtls_md_hmac_reset: (+1)
+   \        0x0   0xB5F8             PUSH     {R3-R7,LR}
+   \        0x2   0x0004             MOVS     R4,R0
+   1067              int ret = MBEDTLS_ERR_ERROR_CORRUPTION_DETECTED;
+   \        0x4   0xF07F 0x056D      MVNS     R5,#+109
+   1068              unsigned char *ipad;
+   1069          
+   1070              if (ctx == NULL || ctx->md_info == NULL || ctx->hmac_ctx == NULL) {
+   \        0x8   0x2C00             CMP      R4,#+0
+   \        0xA   0xD005             BEQ.N    ??mbedtls_md_hmac_reset_0
+   \        0xC   0x6820             LDR      R0,[R4, #+0]
+   \        0xE   0x2800             CMP      R0,#+0
+   \       0x10   0xD002             BEQ.N    ??mbedtls_md_hmac_reset_0
+   \       0x12   0x68E0             LDR      R0,[R4, #+12]
+   \       0x14   0x2800             CMP      R0,#+0
+   \       0x16   0xD101             BNE.N    ??mbedtls_md_hmac_reset_1
+   1071                  return MBEDTLS_ERR_MD_BAD_INPUT_DATA;
+   \                     ??mbedtls_md_hmac_reset_0: (+1)
+   \       0x18   0x....             LDR.N    R0,??DataTable16_6
+   \       0x1A   0xE00E             B.N      ??mbedtls_md_hmac_reset_2
+   1072              }
+   1073          
+   1074              ipad = (unsigned char *) ctx->hmac_ctx;
+   \                     ??mbedtls_md_hmac_reset_1: (+1)
+   \       0x1C   0x68E6             LDR      R6,[R4, #+12]
+   1075          
+   1076              if ((ret = mbedtls_md_starts(ctx)) != 0) {
+   \       0x1E   0x0020             MOVS     R0,R4
+   \       0x20   0x.... 0x....      BL       mbedtls_md_starts
+   \       0x24   0x0007             MOVS     R7,R0
+   \       0x26   0x2800             CMP      R0,#+0
+   \       0x28   0xD001             BEQ.N    ??mbedtls_md_hmac_reset_3
+   1077                  return ret;
+   \       0x2A   0x0038             MOVS     R0,R7
+   \       0x2C   0xE005             B.N      ??mbedtls_md_hmac_reset_2
+   1078              }
+   1079              return mbedtls_md_update(ctx, ipad, ctx->md_info->block_size);
+   \                     ??mbedtls_md_hmac_reset_3: (+1)
+   \       0x2E   0x6820             LDR      R0,[R4, #+0]
+   \       0x30   0x7882             LDRB     R2,[R0, #+2]
+   \       0x32   0x0031             MOVS     R1,R6
+   \       0x34   0x0020             MOVS     R0,R4
+   \       0x36   0x.... 0x....      BL       mbedtls_md_update
+   \                     ??mbedtls_md_hmac_reset_2: (+1)
+   \       0x3A   0xBDF2             POP      {R1,R4-R7,PC}
+   1080          }
+   1081          
+
+   \                                 In section .text, align 2, keep-with-next
+   1082          int mbedtls_md_hmac(const mbedtls_md_info_t *md_info,
+   1083                              const unsigned char *key, size_t keylen,
+   1084                              const unsigned char *input, size_t ilen,
+   1085                              unsigned char *output)
+   1086          {
+   \                     mbedtls_md_hmac: (+1)
+   \        0x0   0xE92D 0x4FF8      PUSH     {R3-R11,LR}
+   \        0x4   0xB084             SUB      SP,SP,#+16
+   \        0x6   0x0004             MOVS     R4,R0
+   \        0x8   0x468B             MOV      R11,R1
+   \        0xA   0x0015             MOVS     R5,R2
+   \        0xC   0x001E             MOVS     R6,R3
+   \        0xE   0x9F0E             LDR      R7,[SP, #+56]
+   \       0x10   0xF8DD 0x803C      LDR      R8,[SP, #+60]
+   1087              mbedtls_md_context_t ctx;
+   1088              int ret = MBEDTLS_ERR_ERROR_CORRUPTION_DETECTED;
+   \       0x14   0xF07F 0x096D      MVNS     R9,#+109
+   1089          
+   1090              if (md_info == NULL) {
+   \       0x18   0x2C00             CMP      R4,#+0
+   \       0x1A   0xD101             BNE.N    ??mbedtls_md_hmac_0
+   1091                  return MBEDTLS_ERR_MD_BAD_INPUT_DATA;
+   \       0x1C   0x....             LDR.N    R0,??DataTable16_6
+   \       0x1E   0xE024             B.N      ??mbedtls_md_hmac_1
+   1092              }
+   1093          
+   1094              mbedtls_md_init(&ctx);
+   \                     ??mbedtls_md_hmac_0: (+1)
+   \       0x20   0x4668             MOV      R0,SP
+   \       0x22   0x.... 0x....      BL       mbedtls_md_init
+   1095          
+   1096              if ((ret = mbedtls_md_setup(&ctx, md_info, 1)) != 0) {
+   \       0x26   0x2201             MOVS     R2,#+1
+   \       0x28   0x0021             MOVS     R1,R4
+   \       0x2A   0x4668             MOV      R0,SP
+   \       0x2C   0x.... 0x....      BL       mbedtls_md_setup
+   \       0x30   0x4682             MOV      R10,R0
+   \       0x32   0x2800             CMP      R0,#+0
+   \       0x34   0xD115             BNE.N    ??mbedtls_md_hmac_2
+   1097                  goto cleanup;
+   1098              }
+   1099          
+   1100              if ((ret = mbedtls_md_hmac_starts(&ctx, key, keylen)) != 0) {
+   \                     ??mbedtls_md_hmac_3: (+1)
+   \       0x36   0x002A             MOVS     R2,R5
+   \       0x38   0x4659             MOV      R1,R11
+   \       0x3A   0x4668             MOV      R0,SP
+   \       0x3C   0x.... 0x....      BL       mbedtls_md_hmac_starts
+   \       0x40   0x4682             MOV      R10,R0
+   \       0x42   0x2800             CMP      R0,#+0
+   \       0x44   0xD10D             BNE.N    ??mbedtls_md_hmac_2
+   1101                  goto cleanup;
+   1102              }
+   1103              if ((ret = mbedtls_md_hmac_update(&ctx, input, ilen)) != 0) {
+   \                     ??mbedtls_md_hmac_4: (+1)
+   \       0x46   0x003A             MOVS     R2,R7
+   \       0x48   0x0031             MOVS     R1,R6
+   \       0x4A   0x4668             MOV      R0,SP
+   \       0x4C   0x.... 0x....      BL       mbedtls_md_hmac_update
+   \       0x50   0x4682             MOV      R10,R0
+   \       0x52   0x2800             CMP      R0,#+0
+   \       0x54   0xD105             BNE.N    ??mbedtls_md_hmac_2
+   1104                  goto cleanup;
+   1105              }
+   1106              if ((ret = mbedtls_md_hmac_finish(&ctx, output)) != 0) {
+   \                     ??mbedtls_md_hmac_5: (+1)
+   \       0x56   0x4641             MOV      R1,R8
+   \       0x58   0x4668             MOV      R0,SP
+   \       0x5A   0x.... 0x....      BL       mbedtls_md_hmac_finish
+   \       0x5E   0x4682             MOV      R10,R0
+   \       0x60   0x2800             CMP      R0,#+0
+   1107                  goto cleanup;
+   1108              }
+   1109          
+   1110          cleanup:
+   1111              mbedtls_md_free(&ctx);
+   \                     ??mbedtls_md_hmac_2: (+1)
+   \       0x62   0x4668             MOV      R0,SP
+   \       0x64   0x.... 0x....      BL       mbedtls_md_free
+   1112          
+   1113              return ret;
+   \       0x68   0x4650             MOV      R0,R10
+   \                     ??mbedtls_md_hmac_1: (+1)
+   \       0x6A   0xB005             ADD      SP,SP,#+20
+   \       0x6C   0xE8BD 0x8FF0      POP      {R4-R11,PC}
+   1114          }
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable16:
+   \        0x0   0x....'....        DC32     mbedtls_sha1_info
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable16_1:
+   \        0x0   0x....'....        DC32     mbedtls_sha224_info
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable16_2:
+   \        0x0   0x....'....        DC32     mbedtls_sha256_info
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable16_3:
+   \        0x0   0x0200'0005        DC32     0x2000005
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable16_4:
+   \        0x0   0x0200'0008        DC32     0x2000008
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable16_5:
+   \        0x0   0x0200'0009        DC32     0x2000009
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable16_6:
+   \        0x0   0xFFFF'AF00        DC32     0xffffaf00
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable16_7:
+   \        0x0   0xFFFF'AF80        DC32     0xffffaf80
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable16_8:
+   \        0x0   0xFFFF'AE80        DC32     0xffffae80
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable16_9:
+   \        0x0   0x....'....        DC32     psa_generic_status_to_mbedtls
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable16_10:
+   \        0x0   0x....'....        DC32     psa_to_md_errors
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable16_11:
+   \        0x0   0x....'....        DC32     supported_digests
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable16_12:
+   \        0x0   0x....'....        DC32     md_names
+
+   \                                 In section .rodata, align 4
+   \                     ?_0:
+   \        0x0   0x53 0x48          DC8 "SHA1"
+   \              0x41 0x31    
+   \              0x00
+   \        0x5                      DS8 3
+
+   \                                 In section .rodata, align 4
+   \                     ?_1:
+   \        0x0   0x53 0x48          DC8 "SHA"
+   \              0x41 0x00
+
+   \                                 In section .rodata, align 4
+   \                     ?_2:
+   \        0x0   0x53 0x48          DC8 "SHA224"
+   \              0x41 0x32    
+   \              0x32 0x34    
+   \              0x00
+   \        0x7                      DS8 1
+
+   \                                 In section .rodata, align 4
+   \                     ?_3:
+   \        0x0   0x53 0x48          DC8 "SHA256"
+   \              0x41 0x32    
+   \              0x35 0x36    
+   \              0x00
+   \        0x7                      DS8 1
+   1115          
+   1116          #endif /* MBEDTLS_MD_C */
+   1117          
+   1118          #endif /* MBEDTLS_MD_LIGHT */
+
+   Maximum stack usage in bytes:
+
+   .cstack Function
+   ------- --------
+      24   mbedtls_get_unaligned_uint32
+        24   -> __aeabi_memcpy
+      40   mbedtls_md
+        40   -> mbedtls_md_error_from_psa
+        40   -> mbedtls_sha1
+        40   -> mbedtls_sha256
+        40   -> md_can_use_psa
+        40   -> psa_alg_of_md
+        40   -> psa_hash_compute
+      24   mbedtls_md_clone
+        24   -> mbedtls_md_error_from_psa
+        24   -> mbedtls_sha1_clone
+        24   -> mbedtls_sha256_clone
+        24   -> psa_hash_clone
+       8   mbedtls_md_error_from_psa
+         8   -> psa_status_to_mbedtls
+      24   mbedtls_md_finish
+        24   -> mbedtls_md_error_from_psa
+        24   -> mbedtls_sha1_finish
+        24   -> mbedtls_sha256_finish
+        24   -> psa_hash_finish
+       8   mbedtls_md_free
+         8   -> mbedtls_platform_zeroize
+         8   -> mbedtls_sha1_free
+         8   -> mbedtls_sha256_free
+         8   -> mbedtls_zeroize_and_free
+         8   -> psa_hash_abort
+         8   -> sl_free
+       0   mbedtls_md_get_name
+       0   mbedtls_md_get_size
+       0   mbedtls_md_get_type
+      56   mbedtls_md_hmac
+        56   -> mbedtls_md_free
+        56   -> mbedtls_md_hmac_finish
+        56   -> mbedtls_md_hmac_starts
+        56   -> mbedtls_md_hmac_update
+        56   -> mbedtls_md_init
+        56   -> mbedtls_md_setup
+      56   mbedtls_md_hmac_finish
+        56   -> mbedtls_md_finish
+        56   -> mbedtls_md_starts
+        56   -> mbedtls_md_update
+      24   mbedtls_md_hmac_reset
+        24   -> mbedtls_md_starts
+        24   -> mbedtls_md_update
+      80   mbedtls_md_hmac_starts
+        80   -> __aeabi_memset
+        80   -> mbedtls_md_finish
+        80   -> mbedtls_md_starts
+        80   -> mbedtls_md_update
+        80   -> mbedtls_platform_zeroize
+        80   -> mbedtls_xor
+      16   mbedtls_md_hmac_update
+        16   -> mbedtls_md_update
+       0   mbedtls_md_info_from_ctx
+      16   mbedtls_md_info_from_string
+        16   -> mbedtls_md_info_from_type
+        16   -> strcmp
+       0   mbedtls_md_info_from_type
+      24   mbedtls_md_init
+        24   -> __aeabi_memset
+       0   mbedtls_md_list
+      16   mbedtls_md_setup
+        16   -> mbedtls_md_free
+        16   -> mbedtls_sha1_init
+        16   -> mbedtls_sha256_init
+        16   -> md_can_use_psa
+        16   -> sl_calloc
+      16   mbedtls_md_starts
+        16   -> mbedtls_md_error_from_psa
+        16   -> mbedtls_sha1_starts
+        16   -> mbedtls_sha256_starts
+        16   -> psa_alg_of_md
+        16   -> psa_hash_abort
+        16   -> psa_hash_setup
+      24   mbedtls_md_update
+        24   -> mbedtls_md_error_from_psa
+        24   -> mbedtls_sha1_update
+        24   -> mbedtls_sha256_update
+        24   -> psa_hash_update
+      24   mbedtls_put_unaligned_uint32
+        24   -> __aeabi_memcpy
+      32   mbedtls_xor
+        32   -> mbedtls_get_unaligned_uint32
+        32   -> mbedtls_put_unaligned_uint32
+       8   md_can_use_psa
+         8   -> psa_alg_of_md
+       0   psa_alg_of_md
+
+
+   Section sizes:
+
+   Bytes  Function/Label
+   -----  --------------
+       4  ??DataTable16
+       4  ??DataTable16_1
+       4  ??DataTable16_10
+       4  ??DataTable16_11
+       4  ??DataTable16_12
+       4  ??DataTable16_2
+       4  ??DataTable16_3
+       4  ??DataTable16_4
+       4  ??DataTable16_5
+       4  ??DataTable16_6
+       4  ??DataTable16_7
+       4  ??DataTable16_8
+       4  ??DataTable16_9
+       8  ?_0
+       4  ?_1
+       8  ?_2
+       8  ?_3
+      24  mbedtls_get_unaligned_uint32
+     134  mbedtls_md
+     138  mbedtls_md_clone
+      18  mbedtls_md_error_from_psa
+     110  mbedtls_md_finish
+     112  mbedtls_md_free
+      34  mbedtls_md_get_name
+      14  mbedtls_md_get_size
+      14  mbedtls_md_get_type
+     112  mbedtls_md_hmac
+     136  mbedtls_md_hmac_finish
+      60  mbedtls_md_hmac_reset
+     224  mbedtls_md_hmac_starts
+      40  mbedtls_md_hmac_update
+      14  mbedtls_md_info_from_ctx
+      44  mbedtls_md_info_from_string
+      42  mbedtls_md_info_from_type
+      22  mbedtls_md_init
+       4  mbedtls_md_list
+     224  mbedtls_md_setup
+     110  mbedtls_md_starts
+     110  mbedtls_md_update
+      22  mbedtls_put_unaligned_uint32
+       4  mbedtls_sha1_info
+       4  mbedtls_sha224_info
+       4  mbedtls_sha256_info
+      92  mbedtls_xor
+      24  md_can_use_psa
+      40  md_names
+      40  psa_alg_of_md
+       4  supported_digests
+
+ 
+    84 bytes in section .rodata
+ 1'970 bytes in section .text
+ 
+ 1'832 bytes of CODE  memory (+ 138 bytes shared)
+    84 bytes of CONST memory
+
+Errors: none
+Warnings: none

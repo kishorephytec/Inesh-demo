@@ -1,0 +1,846 @@
+###############################################################################
+#
+# IAR ANSI C/C++ Compiler V9.50.2.385/W64 for ARM         27/Nov/2024  12:17:11
+# Copyright 1999-2024 IAR Systems AB.
+#
+#    Cpu mode          =  thumb
+#    Endian            =  little
+#    Source file       =
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\security\sl_component\sl_psa_driver\src\sli_se_transparent_driver_hash.c
+#    Command line      =
+#        -f
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\ewarm-iar\obj\src_4811620319817103232.dir\sli_se_transparent_driver_hash.o.rsp
+#        (C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\security\sl_component\sl_psa_driver\src\sli_se_transparent_driver_hash.c
+#        -D EFR32FG28B322F1024IM48=1 -D
+#        configNUM_SDK_THREAD_LOCAL_STORAGE_POINTERS=2 -D
+#        SL_COMPONENT_CATALOG_PRESENT=1 -D
+#        MBEDTLS_CONFIG_FILE=<sl_mbedtls_config.h> -D
+#        MBEDTLS_PSA_CRYPTO_CONFIG_FILE=<psa_crypto_config.h> -D
+#        SL_RAIL_LIB_MULTIPROTOCOL_SUPPORT=0 -D
+#        SL_RAIL_UTIL_PA_CONFIG_HEADER=<sl_rail_util_pa_config.h> -D
+#        RTT_USE_ASM=0 -D MBED_CONF_MBED_TRACE_ENABLE=1 -D
+#        MBED_CONF_NANOSTACK_CONFIGURATION=ws_router -D
+#        MBED_TRACE_MAX_LEVEL=TRACE_ACTIVE_LEVEL_ALL -D DEBUG_EFM_USER=1 -D
+#        HAVE_LFN=1 -D HAVE_LFN_PARENT=1 -lC
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\ewarm-iar\lst\src_4811620319817103232.dir
+#        --diag_suppress Pa050 -o
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\ewarm-iar\obj\src_4811620319817103232.dir
+#        --debug --endian=little --cpu=Cortex-M33 --cmse --cmse -e
+#        --fpu=VFPv5_sp --dlib_config "C:\Program Files\IAR Systems\Embedded
+#        Workbench 9.2\arm\inc\c\DLib_Config_Normal.h" -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\security\sl_component\sl_psa_driver\src\
+#        -I C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\autogen\ -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\config\ -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\config\rail\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\Device\SiliconLabs\EFR32FG28\Include\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\common\inc\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\CMSIS\Core\Include\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\CMSIS\RTOS2\Include\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\service\device_init\inc\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\emdrv\dmadrv\inc\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\emdrv\common\inc\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\emlib\inc\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\util\third_party\freertos\cmsis\Include\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\util\third_party\freertos\kernel\include\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\util\third_party\freertos\kernel\portable\IAR\ARM_CM33_NTZ\non_secure\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\service\iostream\inc\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\security\sl_component\sl_mbedtls_support\config\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\security\sl_component\sl_mbedtls_support\config\preset\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\security\sl_component\sl_mbedtls_support\inc\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\util\third_party\mbedtls\include\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\util\third_party\mbedtls\library\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\emdrv\nvm3\inc\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\peripheral\inc\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\security\sl_component\sl_psa_driver\inc\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\radio\rail_lib\common\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\radio\rail_lib\protocol\ble\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\radio\rail_lib\protocol\ieee802154\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\radio\rail_lib\protocol\wmbus\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\radio\rail_lib\protocol\zwave\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\radio\rail_lib\chip\efr32\efr32xg2x\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\radio\rail_lib\protocol\sidewalk\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\radio\rail_lib\plugin\pa-conversions\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\radio\rail_lib\plugin\pa-conversions\efr32xg28\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\radio\rail_lib\plugin\rail_util_pti\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\security\sl_component\se_manager\inc\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\security\sl_component\se_manager\src\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\util\third_party\segger\systemview\SEGGER\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\util\silicon_labs\silabs_core\memory_manager\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\common\toolchain\inc\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\service\system\inc\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\app\wisun\component\ns_list\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\app\wisun\component\trace_util\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\app\wisun\component\trace_util\nanostack\nanostack-libservice\mbed-client-libservice\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\service\sleeptimer\inc\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\protocol\wisun\stack\inc\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\protocol\wisun\app\wisun_rcp\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\protocol\wisun\stack\inc\socket\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\protocol\wisun\stack\src\
+#        -Ohz --use_c++_inline) --dependencies=n
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\ewarm-iar\obj\src_4811620319817103232.dir\sli_se_transparent_driver_hash.o.iar_deps
+#    Locale            =  C
+#    List file         =
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\ewarm-iar\lst\src_4811620319817103232.dir\sli_se_transparent_driver_hash.lst
+#    Object file       =
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\ewarm-iar\obj\src_4811620319817103232.dir\sli_se_transparent_driver_hash.o
+#    Runtime model:       
+#      __CPP_Runtime   =  1
+#      __SystemLibrary =  DLib
+#      __dlib_version  =  6
+#
+###############################################################################
+
+C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\security\sl_component\sl_psa_driver\src\sli_se_transparent_driver_hash.c
+      1          /***************************************************************************//**
+      2           * @file
+      3           * @brief Silicon Labs PSA Crypto Transparent Driver Hash functions.
+      4           *******************************************************************************
+      5           * # License
+      6           * <b>Copyright 2020 Silicon Laboratories Inc. www.silabs.com</b>
+      7           *******************************************************************************
+      8           *
+      9           * SPDX-License-Identifier: Zlib
+     10           *
+     11           * The licensor of this software is Silicon Laboratories Inc.
+     12           *
+     13           * This software is provided 'as-is', without any express or implied
+     14           * warranty. In no event will the authors be held liable for any damages
+     15           * arising from the use of this software.
+     16           *
+     17           * Permission is granted to anyone to use this software for any purpose,
+     18           * including commercial applications, and to alter it and redistribute it
+     19           * freely, subject to the following restrictions:
+     20           *
+     21           * 1. The origin of this software must not be misrepresented; you must not
+     22           *    claim that you wrote the original software. If you use this software
+     23           *    in a product, an acknowledgment in the product documentation would be
+     24           *    appreciated but is not required.
+     25           * 2. Altered source versions must be plainly marked as such, and must not be
+     26           *    misrepresented as being the original software.
+     27           * 3. This notice may not be removed or altered from any source distribution.
+     28           *
+     29           ******************************************************************************/
+     30          
+     31          #include "sli_psa_driver_features.h"
+     32          
+     33          #if defined(SLI_MBEDTLS_DEVICE_HSE)
+     34          
+     35          #include "psa/crypto.h"
+     36          
+     37          #include "sli_se_transparent_types.h"
+     38          #include "sli_se_transparent_functions.h"
+     39          
+     40          #include "sl_se_manager.h"
+     41          #include "sl_se_manager_hash.h"
+     42          
+     43          #include <string.h>
+     44          
+     45          // -----------------------------------------------------------------------------
+     46          // Single-shot driver entry points
+     47          
+
+   \                                 In section .text, align 2, keep-with-next
+     48          psa_status_t sli_se_transparent_hash_compute(psa_algorithm_t alg,
+     49                                                       const uint8_t *input,
+     50                                                       size_t input_length,
+     51                                                       uint8_t *hash,
+     52                                                       size_t hash_size,
+     53                                                       size_t *hash_length)
+     54          {
+   \                     sli_se_transparent_hash_compute: (+1)
+   \        0x0   0xE92D 0x47F8      PUSH     {R3-R10,LR}
+   \        0x4   0xB08B             SUB      SP,SP,#+44
+   \        0x6   0xEA5F 0x0801      MOVS     R8,R1
+   \        0xA   0x4691             MOV      R9,R2
+   \        0xC   0x461F             MOV      R7,R3
+     55            #if defined(SLI_PSA_DRIVER_FEATURE_HASH)
+     56          
+     57            if ((input == NULL && input_length > 0)
+     58                || (hash == NULL && hash_size > 0)
+     59                || hash_length == NULL) {
+   \        0xE   0xD102             BNE.N    ??sli_se_transparent_hash_compute_0
+   \       0x10   0xF1B9 0x0F00      CMP      R9,#+0
+   \       0x14   0xD104             BNE.N    ??sli_se_transparent_hash_compute_1
+   \                     ??sli_se_transparent_hash_compute_0: (+1)
+   \       0x16   0x9E14             LDR      R6,[SP, #+80]
+   \       0x18   0xB907             CBNZ.N   R7,??sli_se_transparent_hash_compute_2
+   \       0x1A   0xB90E             CBNZ.N   R6,??sli_se_transparent_hash_compute_1
+   \                     ??sli_se_transparent_hash_compute_2: (+1)
+   \       0x1C   0x9C15             LDR      R4,[SP, #+84]
+   \       0x1E   0xB914             CBNZ.N   R4,??sli_se_transparent_hash_compute_3
+     60              return PSA_ERROR_INVALID_ARGUMENT;
+   \                     ??sli_se_transparent_hash_compute_1: (+1)
+   \       0x20   0xF06F 0x0086      MVN      R0,#+134
+   \       0x24   0xE02C             B.N      ??sli_se_transparent_hash_compute_4
+     61            }
+     62          
+     63            sl_se_hash_type_t hash_type;
+     64            sl_se_command_context_t ephemeral_se_ctx;
+     65          
+     66            switch (alg) {
+   \                     ??sli_se_transparent_hash_compute_3: (+1)
+   \       0x26   0x....             LDR.N    R1,??DataTable1
+   \       0x28   0x1A40             SUBS     R0,R0,R1
+   \       0x2A   0xD004             BEQ.N    ??sli_se_transparent_hash_compute_5
+   \       0x2C   0x1EC0             SUBS     R0,R0,#+3
+   \       0x2E   0xD00B             BEQ.N    ??sli_se_transparent_hash_compute_6
+   \       0x30   0x1E40             SUBS     R0,R0,#+1
+   \       0x32   0xD00C             BEQ.N    ??sli_se_transparent_hash_compute_7
+   \       0x34   0xE00E             B.N      ??sli_se_transparent_hash_compute_8
+     67              #if defined(SLI_PSA_DRIVER_FEATURE_SHA1)
+     68              case PSA_ALG_SHA_1:
+     69                hash_type = SL_SE_HASH_SHA1;
+   \                     ??sli_se_transparent_hash_compute_5: (+1)
+   \       0x36   0x2501             MOVS     R5,#+1
+     70                *hash_length = 20;
+   \       0x38   0x2014             MOVS     R0,#+20
+     71                break;
+     72              #endif
+     73          
+     74              #if defined(SLI_PSA_DRIVER_FEATURE_SHA224)
+     75              case PSA_ALG_SHA_224:
+     76                hash_type = SL_SE_HASH_SHA224;
+     77                *hash_length = 28;
+     78                break;
+     79              #endif
+     80          
+     81              #if defined(SLI_PSA_DRIVER_FEATURE_SHA256)
+     82              case PSA_ALG_SHA_256:
+     83                hash_type = SL_SE_HASH_SHA256;
+     84                *hash_length = 32;
+     85                break;
+     86              #endif
+     87          
+     88              #if defined(SLI_PSA_DRIVER_FEATURE_SHA384)
+     89              case PSA_ALG_SHA_384:
+     90                hash_type = SL_SE_HASH_SHA384;
+     91                *hash_length = 48;
+     92                break;
+     93              #endif
+     94          
+     95              #if defined(SLI_PSA_DRIVER_FEATURE_SHA512)
+     96              case PSA_ALG_SHA_512:
+     97                hash_type = SL_SE_HASH_SHA512;
+     98                *hash_length = 64;
+     99                break;
+    100              #endif
+    101          
+    102              default:
+    103                return PSA_ERROR_NOT_SUPPORTED;
+    104            }
+    105          
+    106            if (hash_size < *hash_length) {
+   \                     ??sli_se_transparent_hash_compute_9: (+1)
+   \       0x3A   0x4286             CMP      R6,R0
+   \       0x3C   0xD20D             BCS.N    ??sli_se_transparent_hash_compute_10
+    107              *hash_length = 0;
+   \       0x3E   0x2000             MOVS     R0,#+0
+   \       0x40   0x6020             STR      R0,[R4, #+0]
+    108              return PSA_ERROR_BUFFER_TOO_SMALL;
+   \       0x42   0xF06F 0x0089      MVN      R0,#+137
+   \       0x46   0xE01B             B.N      ??sli_se_transparent_hash_compute_4
+    109            }
+   \                     ??sli_se_transparent_hash_compute_6: (+1)
+   \       0x48   0x2502             MOVS     R5,#+2
+   \       0x4A   0x201C             MOVS     R0,#+28
+   \       0x4C   0xE7F5             B.N      ??sli_se_transparent_hash_compute_9
+   \                     ??sli_se_transparent_hash_compute_7: (+1)
+   \       0x4E   0x2503             MOVS     R5,#+3
+   \       0x50   0x2020             MOVS     R0,#+32
+   \       0x52   0xE7F2             B.N      ??sli_se_transparent_hash_compute_9
+   \                     ??sli_se_transparent_hash_compute_8: (+1)
+   \       0x54   0xF06F 0x0085      MVN      R0,#+133
+   \       0x58   0xE012             B.N      ??sli_se_transparent_hash_compute_4
+    110          
+    111            sl_status_t status = sl_se_init_command_context(&ephemeral_se_ctx);
+    112            if (status != SL_STATUS_OK) {
+   \                     ??sli_se_transparent_hash_compute_10: (+1)
+   \       0x5A   0x6020             STR      R0,[R4, #+0]
+   \       0x5C   0xA802             ADD      R0,SP,#+8
+   \       0x5E   0xF06F 0x0A92      MVN      R10,#+146
+   \       0x62   0x.... 0x....      BL       sl_se_init_command_context
+   \       0x66   0xB950             CBNZ.N   R0,??sli_se_transparent_hash_compute_11
+    113              return PSA_ERROR_HARDWARE_FAILURE;
+    114            }
+    115          
+    116            status = sl_se_hash(&ephemeral_se_ctx,
+    117                                hash_type,
+    118                                input,
+    119                                input_length,
+    120                                hash,
+    121                                hash_size);
+    122          
+    123            if (status == SL_STATUS_OK) {
+   \       0x68   0x9601             STR      R6,[SP, #+4]
+   \       0x6A   0x9700             STR      R7,[SP, #+0]
+   \       0x6C   0x464B             MOV      R3,R9
+   \       0x6E   0x4642             MOV      R2,R8
+   \       0x70   0x4629             MOV      R1,R5
+   \       0x72   0xA802             ADD      R0,SP,#+8
+   \       0x74   0x.... 0x....      BL       sl_se_hash
+   \       0x78   0xB110             CBZ.N    R0,??sli_se_transparent_hash_compute_4
+    124              return PSA_SUCCESS;
+    125            } else {
+    126              *hash_length = 0;
+   \       0x7A   0x2000             MOVS     R0,#+0
+   \       0x7C   0x6020             STR      R0,[R4, #+0]
+    127              return PSA_ERROR_HARDWARE_FAILURE;
+   \                     ??sli_se_transparent_hash_compute_11: (+1)
+   \       0x7E   0x4650             MOV      R0,R10
+   \                     ??sli_se_transparent_hash_compute_4: (+1)
+   \       0x80   0xB00C             ADD      SP,SP,#+48
+   \       0x82   0xE8BD 0x87F0      POP      {R4-R10,PC}
+    128            }
+    129          
+    130            #else // SLI_PSA_DRIVER_FEATURE_HASH
+    131          
+    132            (void)alg;
+    133            (void)input;
+    134            (void)input_length;
+    135            (void)hash;
+    136            (void)hash_size;
+    137            (void)hash_length;
+    138          
+    139            return PSA_ERROR_NOT_SUPPORTED;
+    140          
+    141            #endif // SLI_PSA_DRIVER_FEATURE_HASH
+    142          }
+    143          
+    144          // -----------------------------------------------------------------------------
+    145          // Multi-part driver entry points
+    146          
+
+   \                                 In section .text, align 2, keep-with-next
+    147          psa_status_t sli_se_transparent_hash_setup(
+    148            sli_se_transparent_hash_operation_t *operation,
+    149            psa_algorithm_t alg)
+    150          {
+   \                     sli_se_transparent_hash_setup: (+1)
+   \        0x0   0xB530             PUSH     {R4,R5,LR}
+   \        0x2   0xB089             SUB      SP,SP,#+36
+   \        0x4   0x0004             MOVS     R4,R0
+   \        0x6   0x460D             MOV      R5,R1
+    151            #if defined(SLI_PSA_DRIVER_FEATURE_HASH_MULTIPART)
+    152          
+    153            if (operation == NULL) {
+   \        0x8   0xBF08             IT       EQ
+   \        0xA   0xF06F 0x0086      MVNEQ    R0,#+134
+    154              return PSA_ERROR_INVALID_ARGUMENT;
+   \        0xE   0xD026             BEQ.N    ??sli_se_transparent_hash_setup_0
+    155            }
+    156          
+    157            // reset context
+    158            memset(&operation->streaming_contexts, 0, sizeof(operation->streaming_contexts));
+   \       0x10   0x21D4             MOVS     R1,#+212
+   \       0x12   0x1D20             ADDS     R0,R4,#+4
+   \       0x14   0x.... 0x....      BL       __aeabi_memclr4
+    159          
+    160            // create ephemeral contexts
+    161            sl_se_command_context_t ephemeral_se_ctx;
+    162            sl_status_t status = SL_STATUS_INVALID_PARAMETER;
+    163          
+    164            switch (alg) {
+   \       0x18   0x....             LDR.N    R0,??DataTable1
+   \       0x1A   0x1A2D             SUBS     R5,R5,R0
+   \       0x1C   0xD004             BEQ.N    ??sli_se_transparent_hash_setup_1
+   \       0x1E   0x1EED             SUBS     R5,R5,#+3
+   \       0x20   0xD00D             BEQ.N    ??sli_se_transparent_hash_setup_2
+   \       0x22   0x1E6D             SUBS     R5,R5,#+1
+   \       0x24   0xD012             BEQ.N    ??sli_se_transparent_hash_setup_3
+   \       0x26   0xE018             B.N      ??sli_se_transparent_hash_setup_4
+    165              #if defined(SLI_PSA_DRIVER_FEATURE_SHA1)
+    166              case PSA_ALG_SHA_1:
+    167                operation->hash_type = SL_SE_HASH_SHA1;
+   \                     ??sli_se_transparent_hash_setup_1: (+1)
+   \       0x28   0x2001             MOVS     R0,#+1
+   \       0x2A   0x7020             STRB     R0,[R4, #+0]
+    168                status = sl_se_hash_sha1_multipart_starts(&(operation->streaming_contexts.sha1_context),
+    169                                                          &ephemeral_se_ctx);
+   \       0x2C   0x4669             MOV      R1,SP
+   \       0x2E   0x1D20             ADDS     R0,R4,#+4
+   \       0x30   0x.... 0x....      BL       sl_se_hash_sha1_multipart_starts
+    170                break;
+    171              #endif
+    172          
+    173              #if defined(SLI_PSA_DRIVER_FEATURE_SHA224)
+    174              case PSA_ALG_SHA_224:
+    175                operation->hash_type = SL_SE_HASH_SHA224;
+    176                status = sl_se_hash_sha224_multipart_starts(&(operation->streaming_contexts.sha224_context),
+    177                                                            &ephemeral_se_ctx);
+    178                break;
+    179              #endif
+    180          
+    181              #if defined(SLI_PSA_DRIVER_FEATURE_SHA256)
+    182              case PSA_ALG_SHA_256:
+    183                operation->hash_type = SL_SE_HASH_SHA256;
+    184                status = sl_se_hash_sha256_multipart_starts(&(operation->streaming_contexts.sha256_context),
+    185                                                            &ephemeral_se_ctx);
+    186                break;
+    187              #endif
+    188          
+    189              #if defined(SLI_PSA_DRIVER_FEATURE_SHA384)
+    190              case PSA_ALG_SHA_384:
+    191                operation->hash_type = SL_SE_HASH_SHA384;
+    192                status = sl_se_hash_sha384_multipart_starts(&(operation->streaming_contexts.sha384_context),
+    193                                                            &ephemeral_se_ctx);
+    194                break;
+    195              #endif
+    196          
+    197              #if defined(SLI_PSA_DRIVER_FEATURE_SHA512)
+    198              case PSA_ALG_SHA_512:
+    199                operation->hash_type = SL_SE_HASH_SHA512;
+    200                status = sl_se_hash_sha512_multipart_starts(&(operation->streaming_contexts.sha512_context),
+    201                                                            &ephemeral_se_ctx);
+    202                break;
+    203              #endif
+    204          
+    205              default:
+    206                return PSA_ERROR_NOT_SUPPORTED;
+    207            }
+    208          
+    209            if (status == SL_STATUS_OK) {
+   \                     ??sli_se_transparent_hash_setup_5: (+1)
+   \       0x34   0x2800             CMP      R0,#+0
+   \       0x36   0xBF18             IT       NE
+   \       0x38   0xF06F 0x0092      MVNNE    R0,#+146
+    210              return PSA_SUCCESS;
+    211            } else {
+    212              return PSA_ERROR_HARDWARE_FAILURE;
+   \       0x3C   0xE00F             B.N      ??sli_se_transparent_hash_setup_0
+   \                     ??sli_se_transparent_hash_setup_2: (+1)
+   \       0x3E   0x2002             MOVS     R0,#+2
+   \       0x40   0x7020             STRB     R0,[R4, #+0]
+   \       0x42   0x4669             MOV      R1,SP
+   \       0x44   0x1D20             ADDS     R0,R4,#+4
+   \       0x46   0x.... 0x....      BL       sl_se_hash_sha224_multipart_starts
+   \       0x4A   0xE7F3             B.N      ??sli_se_transparent_hash_setup_5
+   \                     ??sli_se_transparent_hash_setup_3: (+1)
+   \       0x4C   0x2003             MOVS     R0,#+3
+   \       0x4E   0x7020             STRB     R0,[R4, #+0]
+   \       0x50   0x4669             MOV      R1,SP
+   \       0x52   0x1D20             ADDS     R0,R4,#+4
+   \       0x54   0x.... 0x....      BL       sl_se_hash_sha256_multipart_starts
+   \       0x58   0xE7EC             B.N      ??sli_se_transparent_hash_setup_5
+   \                     ??sli_se_transparent_hash_setup_4: (+1)
+   \       0x5A   0xF06F 0x0085      MVN      R0,#+133
+   \                     ??sli_se_transparent_hash_setup_0: (+1)
+   \       0x5E   0xB009             ADD      SP,SP,#+36
+   \       0x60   0xBD30             POP      {R4,R5,PC}
+    213            }
+    214          
+    215            #else // SLI_PSA_DRIVER_FEATURE_HASH_MULTIPART
+    216          
+    217            (void) operation;
+    218            (void) alg;
+    219          
+    220            return PSA_ERROR_NOT_SUPPORTED;
+    221          
+    222            #endif // SLI_PSA_DRIVER_FEATURE_HASH_MULTIPART
+    223          }
+    224          
+
+   \                                 In section .text, align 2, keep-with-next
+    225          psa_status_t sli_se_transparent_hash_update(
+    226            sli_se_transparent_hash_operation_t *operation,
+    227            const uint8_t *input,
+    228            size_t input_length)
+    229          {
+   \                     sli_se_transparent_hash_update: (+1)
+   \        0x0   0xB5F0             PUSH     {R4-R7,LR}
+   \        0x2   0xB089             SUB      SP,SP,#+36
+   \        0x4   0x0004             MOVS     R4,R0
+   \        0x6   0x460D             MOV      R5,R1
+   \        0x8   0x4616             MOV      R6,R2
+    230            #if defined(SLI_PSA_DRIVER_FEATURE_HASH_MULTIPART)
+    231          
+    232            if (operation == NULL
+    233                || (input == NULL && input_length > 0)) {
+   \        0xA   0xD001             BEQ.N    ??sli_se_transparent_hash_update_0
+   \        0xC   0xB91D             CBNZ.N   R5,??sli_se_transparent_hash_update_1
+   \        0xE   0xB116             CBZ.N    R6,??sli_se_transparent_hash_update_1
+    234              return PSA_ERROR_INVALID_ARGUMENT;
+   \                     ??sli_se_transparent_hash_update_0: (+1)
+   \       0x10   0xF06F 0x0086      MVN      R0,#+134
+   \       0x14   0xE00D             B.N      ??sli_se_transparent_hash_update_2
+    235            }
+    236          
+    237            // create ephemeral contexts
+    238            sl_se_command_context_t ephemeral_se_ctx;
+    239            sl_status_t status = sl_se_init_command_context(&ephemeral_se_ctx);
+    240            if (status != SL_STATUS_OK) {
+   \                     ??sli_se_transparent_hash_update_1: (+1)
+   \       0x16   0x4668             MOV      R0,SP
+   \       0x18   0xF06F 0x0792      MVN      R7,#+146
+   \       0x1C   0x.... 0x....      BL       sl_se_init_command_context
+   \       0x20   0xB930             CBNZ.N   R0,??sli_se_transparent_hash_update_3
+    241              return PSA_ERROR_HARDWARE_FAILURE;
+    242            }
+    243          
+    244            status = sl_se_hash_multipart_update((void*)&(operation->streaming_contexts),
+    245                                                 &ephemeral_se_ctx,
+    246                                                 input,
+    247                                                 input_length);
+    248          
+    249            if (status == SL_STATUS_OK) {
+   \       0x22   0x4633             MOV      R3,R6
+   \       0x24   0x462A             MOV      R2,R5
+   \       0x26   0x4669             MOV      R1,SP
+   \       0x28   0x1D20             ADDS     R0,R4,#+4
+   \       0x2A   0x.... 0x....      BL       sl_se_hash_multipart_update
+   \       0x2E   0xB100             CBZ.N    R0,??sli_se_transparent_hash_update_2
+    250              return PSA_SUCCESS;
+    251            } else {
+    252              return PSA_ERROR_HARDWARE_FAILURE;
+   \                     ??sli_se_transparent_hash_update_3: (+1)
+   \       0x30   0x4638             MOV      R0,R7
+   \                     ??sli_se_transparent_hash_update_2: (+1)
+   \       0x32   0xB009             ADD      SP,SP,#+36
+   \       0x34   0xBDF0             POP      {R4-R7,PC}
+    253            }
+    254          
+    255            #else // SLI_PSA_DRIVER_FEATURE_HASH_MULTIPART
+    256          
+    257            (void) operation;
+    258            (void) input;
+    259            (void) input_length;
+    260          
+    261            return PSA_ERROR_NOT_SUPPORTED;
+    262          
+    263            #endif // SLI_PSA_DRIVER_FEATURE_HASH_MULTIPART
+    264          }
+    265          
+
+   \                                 In section .text, align 2, keep-with-next
+    266          psa_status_t sli_se_transparent_hash_finish(
+    267            sli_se_transparent_hash_operation_t *operation,
+    268            uint8_t *hash,
+    269            size_t hash_size,
+    270            size_t *hash_length)
+    271          {
+   \                     sli_se_transparent_hash_finish: (+1)
+   \        0x0   0xE92D 0x41F8      PUSH     {R3-R8,LR}
+   \        0x4   0xB089             SUB      SP,SP,#+36
+   \        0x6   0x0004             MOVS     R4,R0
+   \        0x8   0x460D             MOV      R5,R1
+   \        0xA   0x4617             MOV      R7,R2
+   \        0xC   0x461E             MOV      R6,R3
+    272            #if defined(SLI_PSA_DRIVER_FEATURE_HASH_MULTIPART)
+    273          
+    274            if (operation == NULL
+    275                || (hash == NULL && hash_size > 0)
+    276                || hash_length == NULL) {
+   \        0xE   0xD002             BEQ.N    ??sli_se_transparent_hash_finish_0
+   \       0x10   0xB905             CBNZ.N   R5,??sli_se_transparent_hash_finish_1
+   \       0x12   0xB907             CBNZ.N   R7,??sli_se_transparent_hash_finish_0
+   \                     ??sli_se_transparent_hash_finish_1: (+1)
+   \       0x14   0xB916             CBNZ.N   R6,??sli_se_transparent_hash_finish_2
+    277              return PSA_ERROR_INVALID_ARGUMENT;
+   \                     ??sli_se_transparent_hash_finish_0: (+1)
+   \       0x16   0xF06F 0x0086      MVN      R0,#+134
+   \       0x1A   0xE02A             B.N      ??sli_se_transparent_hash_finish_3
+    278            }
+    279          
+    280            // create ephemeral contexts
+    281            sl_se_command_context_t ephemeral_se_ctx;
+    282            sl_status_t status = sl_se_init_command_context(&ephemeral_se_ctx);
+    283            if (status != SL_STATUS_OK) {
+   \                     ??sli_se_transparent_hash_finish_2: (+1)
+   \       0x1C   0x4668             MOV      R0,SP
+   \       0x1E   0xF06F 0x0892      MVN      R8,#+146
+   \       0x22   0x.... 0x....      BL       sl_se_init_command_context
+   \       0x26   0xBB18             CBNZ.N   R0,??sli_se_transparent_hash_finish_4
+    284              return PSA_ERROR_HARDWARE_FAILURE;
+    285            }
+    286          
+    287            status = sl_se_hash_multipart_finish((void*)&(operation->streaming_contexts),
+    288                                                 &ephemeral_se_ctx,
+    289                                                 hash,
+    290                                                 hash_size);
+   \       0x28   0x463B             MOV      R3,R7
+   \       0x2A   0x462A             MOV      R2,R5
+   \       0x2C   0x4669             MOV      R1,SP
+   \       0x2E   0x1D20             ADDS     R0,R4,#+4
+   \       0x30   0x.... 0x....      BL       sl_se_hash_multipart_finish
+   \       0x34   0x4605             MOV      R5,R0
+    291          
+    292            // reset context
+    293            memset(&operation->streaming_contexts,
+    294                   0,
+    295                   sizeof(operation->streaming_contexts));
+   \       0x36   0x21D4             MOVS     R1,#+212
+   \       0x38   0x1D20             ADDS     R0,R4,#+4
+   \       0x3A   0x.... 0x....      BL       __aeabi_memclr4
+    296          
+    297            if (status == SL_STATUS_OK) {
+   \       0x3E   0xB995             CBNZ.N   R5,??sli_se_transparent_hash_finish_5
+    298              switch (operation->hash_type) {
+   \       0x40   0x7820             LDRB     R0,[R4, #+0]
+   \       0x42   0x2801             CMP      R0,#+1
+   \       0x44   0xD004             BEQ.N    ??sli_se_transparent_hash_finish_6
+   \       0x46   0xD30B             BCC.N    ??sli_se_transparent_hash_finish_7
+   \       0x48   0x2803             CMP      R0,#+3
+   \       0x4A   0xD007             BEQ.N    ??sli_se_transparent_hash_finish_8
+   \       0x4C   0xD304             BCC.N    ??sli_se_transparent_hash_finish_9
+   \       0x4E   0xE007             B.N      ??sli_se_transparent_hash_finish_7
+    299                #if defined(SLI_PSA_DRIVER_FEATURE_SHA1)
+    300                case SL_SE_HASH_SHA1:
+    301                  *hash_length = 20;
+   \                     ??sli_se_transparent_hash_finish_6: (+1)
+   \       0x50   0x2014             MOVS     R0,#+20
+    302                  break;
+    303                #endif
+    304          
+    305                #if defined(SLI_PSA_DRIVER_FEATURE_SHA224)
+    306                case SL_SE_HASH_SHA224:
+    307                  *hash_length = 28;
+    308                  break;
+    309                #endif
+    310          
+    311                #if defined(SLI_PSA_DRIVER_FEATURE_SHA256)
+    312                case SL_SE_HASH_SHA256:
+    313                  *hash_length = 32;
+    314                  break;
+    315                #endif
+    316          
+    317                #if defined(SLI_PSA_DRIVER_FEATURE_SHA384)
+    318                case SL_SE_HASH_SHA384:
+    319                  *hash_length = 48;
+    320                  break;
+    321                #endif
+    322          
+    323                #if defined(SLI_PSA_DRIVER_FEATURE_SHA512)
+    324                case SL_SE_HASH_SHA512:
+    325                  *hash_length = 64;
+    326                  break;
+    327                #endif
+    328          
+    329                default:
+    330                  return PSA_ERROR_BAD_STATE;
+    331              }
+    332              return PSA_SUCCESS;
+   \                     ??sli_se_transparent_hash_finish_10: (+1)
+   \       0x52   0x6030             STR      R0,[R6, #+0]
+   \       0x54   0x2000             MOVS     R0,#+0
+   \       0x56   0xE00C             B.N      ??sli_se_transparent_hash_finish_3
+   \                     ??sli_se_transparent_hash_finish_9: (+1)
+   \       0x58   0x201C             MOVS     R0,#+28
+   \       0x5A   0xE7FA             B.N      ??sli_se_transparent_hash_finish_10
+   \                     ??sli_se_transparent_hash_finish_8: (+1)
+   \       0x5C   0x2020             MOVS     R0,#+32
+   \       0x5E   0xE7F8             B.N      ??sli_se_transparent_hash_finish_10
+   \                     ??sli_se_transparent_hash_finish_7: (+1)
+   \       0x60   0xF06F 0x0088      MVN      R0,#+136
+   \       0x64   0xE005             B.N      ??sli_se_transparent_hash_finish_3
+    333            } else if ( status == SL_STATUS_INVALID_PARAMETER) {
+   \                     ??sli_se_transparent_hash_finish_5: (+1)
+   \       0x66   0x2D21             CMP      R5,#+33
+   \       0x68   0xBF08             IT       EQ
+   \       0x6A   0xF06F 0x0089      MVNEQ    R0,#+137
+    334              return PSA_ERROR_BUFFER_TOO_SMALL;
+   \       0x6E   0xD000             BEQ.N    ??sli_se_transparent_hash_finish_3
+    335            } else {
+    336              return PSA_ERROR_HARDWARE_FAILURE;
+   \                     ??sli_se_transparent_hash_finish_4: (+1)
+   \       0x70   0x4640             MOV      R0,R8
+   \                     ??sli_se_transparent_hash_finish_3: (+1)
+   \       0x72   0xB00A             ADD      SP,SP,#+40
+   \       0x74   0xE8BD 0x81F0      POP      {R4-R8,PC}
+    337            }
+    338          
+    339            #else // SLI_PSA_DRIVER_FEATURE_HASH_MULTIPART
+    340          
+    341            (void) operation;
+    342            (void) hash;
+    343            (void) hash_size;
+    344            (void) hash_length;
+    345          
+    346            return PSA_ERROR_NOT_SUPPORTED;
+    347          
+    348            #endif // SLI_PSA_DRIVER_FEATURE_HASH_MULTIPART
+    349          }
+    350          
+
+   \                                 In section .text, align 2, keep-with-next
+    351          psa_status_t sli_se_transparent_hash_abort(
+    352            sli_se_transparent_hash_operation_t *operation)
+    353          {
+   \                     sli_se_transparent_hash_abort: (+1)
+   \        0x0   0xB580             PUSH     {R7,LR}
+    354            #if defined(SLI_PSA_DRIVER_FEATURE_HASH_MULTIPART)
+    355          
+    356            if (operation != NULL) {
+   \        0x2   0xB110             CBZ.N    R0,??sli_se_transparent_hash_abort_0
+    357              // Accelerator does not keep state, so just zero out the context and we're good
+    358              memset(operation, 0, sizeof(sli_se_transparent_hash_operation_t));
+   \        0x4   0x21D8             MOVS     R1,#+216
+   \        0x6   0x.... 0x....      BL       __aeabi_memclr4
+    359            }
+    360          
+    361            return PSA_SUCCESS;
+   \                     ??sli_se_transparent_hash_abort_0: (+1)
+   \        0xA   0x2000             MOVS     R0,#+0
+   \        0xC   0xBD02             POP      {R1,PC}
+    362          
+    363            #else // SLI_PSA_DRIVER_FEATURE_HASH_MULTIPART
+    364          
+    365            (void) operation;
+    366          
+    367            return PSA_ERROR_NOT_SUPPORTED;
+    368          
+    369            #endif // SLI_PSA_DRIVER_FEATURE_HASH_MULTIPART
+    370          }
+    371          
+
+   \                                 In section .text, align 2, keep-with-next
+    372          psa_status_t sli_se_transparent_hash_clone(
+    373            const sli_se_transparent_hash_operation_t *source_operation,
+    374            sli_se_transparent_hash_operation_t *target_operation)
+    375          {
+   \                     sli_se_transparent_hash_clone: (+1)
+   \        0x0   0x0002             MOVS     R2,R0
+   \        0x2   0xF06F 0x0088      MVN      R0,#+136
+   \        0x6   0xD100             BNE.N    ??sli_se_transparent_hash_clone_0
+   \        0x8   0x4770             BX       LR
+   \                     ??sli_se_transparent_hash_clone_0: (+1)
+   \        0xA   0xB510             PUSH     {R4,LR}
+    376            #if defined(SLI_PSA_DRIVER_FEATURE_HASH_MULTIPART)
+    377          
+    378            if (source_operation == NULL
+    379                || target_operation == NULL) {
+   \        0xC   0x2900             CMP      R1,#+0
+   \        0xE   0xBF1C             ITT      NE
+   \       0x10   0x7814             LDRBNE   R4,[R2, #+0]
+   \       0x12   0x2C00             CMPNE    R4,#+0
+    380              return PSA_ERROR_BAD_STATE;
+    381            }
+    382          
+    383            // Source operation must be active (setup has been called)
+    384            if (source_operation->hash_type == 0) {
+   \       0x14   0xD007             BEQ.N    ??sli_se_transparent_hash_clone_1
+    385              return PSA_ERROR_BAD_STATE;
+    386            }
+    387          
+    388            // Target operation must be inactive (setup has not been called)
+    389            if (target_operation->hash_type != 0) {
+   \       0x16   0x780B             LDRB     R3,[R1, #+0]
+   \       0x18   0xB92B             CBNZ.N   R3,??sli_se_transparent_hash_clone_1
+    390              return PSA_ERROR_BAD_STATE;
+    391            }
+    392          
+    393            // The operation context does not contain any pointers, and the target
+    394            // operation have already have been initialized, so we can do a direct copy.
+    395            *target_operation = *source_operation;
+   \       0x1A   0x4608             MOV      R0,R1
+   \       0x1C   0x4611             MOV      R1,R2
+   \       0x1E   0x22D8             MOVS     R2,#+216
+   \       0x20   0x.... 0x....      BL       __aeabi_memcpy4
+    396          
+    397            return PSA_SUCCESS;
+   \       0x24   0x2000             MOVS     R0,#+0
+   \                     ??sli_se_transparent_hash_clone_1: (+1)
+   \       0x26   0xBD10             POP      {R4,PC}
+    398          
+    399            #else // SLI_PSA_DRIVER_FEATURE_HASH_MULTIPART
+    400          
+    401            (void) source_operation;
+    402            (void) target_operation;
+    403          
+    404            return PSA_ERROR_NOT_SUPPORTED;
+    405          
+    406            #endif // SLI_PSA_DRIVER_FEATURE_HASH_MULTIPART
+    407          }
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable1:
+   \        0x0   0x0200'0005        DC32     0x2000005
+    408          
+    409          #endif // SLI_MBEDTLS_DEVICE_HSE
+
+   Maximum stack usage in bytes:
+
+   .cstack Function
+   ------- --------
+       8   sli_se_transparent_hash_abort
+         8   -> __aeabi_memclr4
+       8   sli_se_transparent_hash_clone
+         8   -> __aeabi_memcpy4
+      80   sli_se_transparent_hash_compute
+        80   -> sl_se_hash
+        80   -> sl_se_init_command_context
+      64   sli_se_transparent_hash_finish
+        64   -> __aeabi_memclr4
+        64   -> sl_se_hash_multipart_finish
+        64   -> sl_se_init_command_context
+      48   sli_se_transparent_hash_setup
+        48   -> __aeabi_memclr4
+        48   -> sl_se_hash_sha1_multipart_starts
+        48   -> sl_se_hash_sha224_multipart_starts
+        48   -> sl_se_hash_sha256_multipart_starts
+      56   sli_se_transparent_hash_update
+        56   -> sl_se_hash_multipart_update
+        56   -> sl_se_init_command_context
+
+
+   Section sizes:
+
+   Bytes  Function/Label
+   -----  --------------
+       4  ??DataTable1
+      14  sli_se_transparent_hash_abort
+      40  sli_se_transparent_hash_clone
+     134  sli_se_transparent_hash_compute
+     120  sli_se_transparent_hash_finish
+      98  sli_se_transparent_hash_setup
+      54  sli_se_transparent_hash_update
+
+ 
+ 464 bytes in section .text
+ 
+ 464 bytes of CODE memory
+
+Errors: none
+Warnings: none

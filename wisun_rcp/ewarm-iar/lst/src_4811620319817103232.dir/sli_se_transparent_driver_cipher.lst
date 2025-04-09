@@ -1,0 +1,792 @@
+###############################################################################
+#
+# IAR ANSI C/C++ Compiler V9.50.2.385/W64 for ARM         27/Nov/2024  12:17:08
+# Copyright 1999-2024 IAR Systems AB.
+#
+#    Cpu mode          =  thumb
+#    Endian            =  little
+#    Source file       =
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\security\sl_component\sl_psa_driver\src\sli_se_transparent_driver_cipher.c
+#    Command line      =
+#        -f
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\ewarm-iar\obj\src_4811620319817103232.dir\sli_se_transparent_driver_cipher.o.rsp
+#        (C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\security\sl_component\sl_psa_driver\src\sli_se_transparent_driver_cipher.c
+#        -D EFR32FG28B322F1024IM48=1 -D
+#        configNUM_SDK_THREAD_LOCAL_STORAGE_POINTERS=2 -D
+#        SL_COMPONENT_CATALOG_PRESENT=1 -D
+#        MBEDTLS_CONFIG_FILE=<sl_mbedtls_config.h> -D
+#        MBEDTLS_PSA_CRYPTO_CONFIG_FILE=<psa_crypto_config.h> -D
+#        SL_RAIL_LIB_MULTIPROTOCOL_SUPPORT=0 -D
+#        SL_RAIL_UTIL_PA_CONFIG_HEADER=<sl_rail_util_pa_config.h> -D
+#        RTT_USE_ASM=0 -D MBED_CONF_MBED_TRACE_ENABLE=1 -D
+#        MBED_CONF_NANOSTACK_CONFIGURATION=ws_router -D
+#        MBED_TRACE_MAX_LEVEL=TRACE_ACTIVE_LEVEL_ALL -D DEBUG_EFM_USER=1 -D
+#        HAVE_LFN=1 -D HAVE_LFN_PARENT=1 -lC
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\ewarm-iar\lst\src_4811620319817103232.dir
+#        --diag_suppress Pa050 -o
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\ewarm-iar\obj\src_4811620319817103232.dir
+#        --debug --endian=little --cpu=Cortex-M33 --cmse --cmse -e
+#        --fpu=VFPv5_sp --dlib_config "C:\Program Files\IAR Systems\Embedded
+#        Workbench 9.2\arm\inc\c\DLib_Config_Normal.h" -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\security\sl_component\sl_psa_driver\src\
+#        -I C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\autogen\ -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\config\ -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\config\rail\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\Device\SiliconLabs\EFR32FG28\Include\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\common\inc\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\CMSIS\Core\Include\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\CMSIS\RTOS2\Include\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\service\device_init\inc\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\emdrv\dmadrv\inc\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\emdrv\common\inc\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\emlib\inc\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\util\third_party\freertos\cmsis\Include\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\util\third_party\freertos\kernel\include\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\util\third_party\freertos\kernel\portable\IAR\ARM_CM33_NTZ\non_secure\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\service\iostream\inc\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\security\sl_component\sl_mbedtls_support\config\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\security\sl_component\sl_mbedtls_support\config\preset\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\security\sl_component\sl_mbedtls_support\inc\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\util\third_party\mbedtls\include\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\util\third_party\mbedtls\library\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\emdrv\nvm3\inc\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\peripheral\inc\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\security\sl_component\sl_psa_driver\inc\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\radio\rail_lib\common\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\radio\rail_lib\protocol\ble\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\radio\rail_lib\protocol\ieee802154\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\radio\rail_lib\protocol\wmbus\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\radio\rail_lib\protocol\zwave\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\radio\rail_lib\chip\efr32\efr32xg2x\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\radio\rail_lib\protocol\sidewalk\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\radio\rail_lib\plugin\pa-conversions\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\radio\rail_lib\plugin\pa-conversions\efr32xg28\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\radio\rail_lib\plugin\rail_util_pti\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\security\sl_component\se_manager\inc\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\security\sl_component\se_manager\src\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\util\third_party\segger\systemview\SEGGER\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\util\silicon_labs\silabs_core\memory_manager\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\common\toolchain\inc\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\service\system\inc\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\app\wisun\component\ns_list\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\app\wisun\component\trace_util\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\app\wisun\component\trace_util\nanostack\nanostack-libservice\mbed-client-libservice\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\service\sleeptimer\inc\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\protocol\wisun\stack\inc\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\protocol\wisun\app\wisun_rcp\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\protocol\wisun\stack\inc\socket\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\protocol\wisun\stack\src\
+#        -Ohz --use_c++_inline) --dependencies=n
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\ewarm-iar\obj\src_4811620319817103232.dir\sli_se_transparent_driver_cipher.o.iar_deps
+#    Locale            =  C
+#    List file         =
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\ewarm-iar\lst\src_4811620319817103232.dir\sli_se_transparent_driver_cipher.lst
+#    Object file       =
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\ewarm-iar\obj\src_4811620319817103232.dir\sli_se_transparent_driver_cipher.o
+#    Runtime model:       
+#      __CPP_Runtime   =  1
+#      __SystemLibrary =  DLib
+#      __dlib_version  =  6
+#
+###############################################################################
+
+C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\security\sl_component\sl_psa_driver\src\sli_se_transparent_driver_cipher.c
+      1          /***************************************************************************//**
+      2           * @file
+      3           * @brief Silicon Labs PSA Crypto Transparent Driver Cipher functions.
+      4           *******************************************************************************
+      5           * # License
+      6           * <b>Copyright 2020 Silicon Laboratories Inc. www.silabs.com</b>
+      7           *******************************************************************************
+      8           *
+      9           * SPDX-License-Identifier: Zlib
+     10           *
+     11           * The licensor of this software is Silicon Laboratories Inc.
+     12           *
+     13           * This software is provided 'as-is', without any express or implied
+     14           * warranty. In no event will the authors be held liable for any damages
+     15           * arising from the use of this software.
+     16           *
+     17           * Permission is granted to anyone to use this software for any purpose,
+     18           * including commercial applications, and to alter it and redistribute it
+     19           * freely, subject to the following restrictions:
+     20           *
+     21           * 1. The origin of this software must not be misrepresented; you must not
+     22           *    claim that you wrote the original software. If you use this software
+     23           *    in a product, an acknowledgment in the product documentation would be
+     24           *    appreciated but is not required.
+     25           * 2. Altered source versions must be plainly marked as such, and must not be
+     26           *    misrepresented as being the original software.
+     27           * 3. This notice may not be removed or altered from any source distribution.
+     28           *
+     29           ******************************************************************************/
+     30          
+     31          #include "sli_psa_driver_features.h"
+     32          
+     33          #if defined(SLI_MBEDTLS_DEVICE_HSE)
+     34          
+     35          #include "psa/crypto.h"
+     36          
+     37          #include "sli_se_transparent_types.h"
+     38          #include "sli_se_transparent_functions.h"
+     39          
+     40          #include "sl_se_manager.h"
+     41          #include "sl_se_manager_cipher.h"
+     42          
+     43          #include "sli_se_driver_cipher.h"
+     44          #include "sli_se_driver_key_management.h"
+     45          
+     46          #include <string.h>
+     47          
+     48          // -----------------------------------------------------------------------------
+     49          // Static functions
+     50          
+     51          #if defined(SLI_PSA_DRIVER_FEATURE_CIPHER)
+     52          
+
+   \                                 In section .text, align 2, keep-with-next
+     53          static void update_key_from_context(
+     54            sli_se_transparent_cipher_operation_t* operation)
+     55          {
+     56            // Point to transparent key buffer as storage location
+     57            sli_se_key_descriptor_set_plaintext(&operation->operation.key_desc,
+     58                                                operation->key,
+     59                                                sizeof(operation->key));
+   \                     update_key_from_context: (+1)
+   \        0x0   0x2200             MOVS     R2,#+0
+   \        0x2   0x2120             MOVS     R1,#+32
+   \        0x4   0x6302             STR      R2,[R0, #+48]
+   \        0x6   0x6340             STR      R0,[R0, #+52]
+   \        0x8   0x6381             STR      R1,[R0, #+56]
+     60          }
+   \        0xA   0x4770             BX       LR
+     61          
+
+   \                                 In section .text, align 2, keep-with-next
+     62          static psa_status_t initialize_key_in_context(
+     63            const psa_key_attributes_t *attributes,
+     64            sli_se_transparent_cipher_operation_t *operation,
+     65            const uint8_t *key_buffer,
+     66            size_t key_buffer_size)
+     67          {
+   \                     initialize_key_in_context: (+1)
+   \        0x0   0xB5F8             PUSH     {R3-R7,LR}
+     68            const size_t key_size = PSA_BITS_TO_BYTES(psa_get_key_bits(attributes));
+   \        0x2   0x8846             LDRH     R6,[R0, #+2]
+   \        0x4   0x460F             MOV      R7,R1
+   \        0x6   0x4614             MOV      R4,R2
+   \        0x8   0x1DF6             ADDS     R6,R6,#+7
+   \        0xA   0x08F6             LSRS     R6,R6,#+3
+   \        0xC   0x461D             MOV      R5,R3
+     69            psa_status_t psa_status =
+     70              sli_se_key_desc_from_psa_attributes(attributes,
+     71                                                  key_size,
+     72                                                  &operation->operation.key_desc);
+   \        0xE   0xF107 0x0224      ADD      R2,R7,#+36
+   \       0x12   0x4631             MOV      R1,R6
+   \       0x14   0x.... 0x....      BL       sli_se_key_desc_from_psa_attributes
+     73            if (psa_status != PSA_SUCCESS) {
+   \       0x18   0xB960             CBNZ.N   R0,??initialize_key_in_context_0
+     74              return psa_status;
+     75            }
+     76            if (key_buffer_size < key_size) {
+   \       0x1A   0xF06F 0x0086      MVN      R0,#+134
+   \       0x1E   0x42B5             CMP      R5,R6
+   \       0x20   0xD308             BCC.N    ??initialize_key_in_context_0
+     77              return PSA_ERROR_INVALID_ARGUMENT;
+     78            }
+     79            if (sizeof(operation->key) < key_size) {
+   \       0x22   0x2E21             CMP      R6,#+33
+   \       0x24   0xD206             BCS.N    ??initialize_key_in_context_0
+     80              return PSA_ERROR_INVALID_ARGUMENT;
+     81            }
+     82            memcpy(operation->key, key_buffer, key_size);
+   \       0x26   0x4632             MOV      R2,R6
+   \       0x28   0x4621             MOV      R1,R4
+   \       0x2A   0x4638             MOV      R0,R7
+   \       0x2C   0x.... 0x....      BL       __aeabi_memcpy
+     83            operation->key_len = key_size;
+   \       0x30   0x623E             STR      R6,[R7, #+32]
+     84            return PSA_SUCCESS;
+   \       0x32   0x2000             MOVS     R0,#+0
+   \                     ??initialize_key_in_context_0: (+1)
+   \       0x34   0xBDF2             POP      {R1,R4-R7,PC}
+     85          }
+     86          
+     87          #endif // SLI_PSA_DRIVER_FEATURE_CIPHER
+     88          
+     89          // -----------------------------------------------------------------------------
+     90          // Single-shot driver entry points
+     91          
+
+   \                                 In section .text, align 2, keep-with-next
+     92          psa_status_t sli_se_transparent_cipher_encrypt(
+     93            const psa_key_attributes_t *attributes,
+     94            const uint8_t *key_buffer,
+     95            size_t key_buffer_size,
+     96            psa_algorithm_t alg,
+     97            const uint8_t *iv,
+     98            size_t iv_length,
+     99            const uint8_t *input,
+    100            size_t input_length,
+    101            uint8_t *output,
+    102            size_t output_size,
+    103            size_t *output_length)
+    104          {
+   \                     sli_se_transparent_cipher_encrypt: (+1)
+   \        0x0   0xB530             PUSH     {R4,R5,LR}
+   \        0x2   0xB087             SUB      SP,SP,#+28
+    105            #if defined(SLI_PSA_DRIVER_FEATURE_CIPHER)
+    106          
+    107            return sli_se_driver_cipher_encrypt(attributes,
+    108                                                key_buffer,
+    109                                                key_buffer_size,
+    110                                                alg,
+    111                                                iv,
+    112                                                iv_length,
+    113                                                input,
+    114                                                input_length,
+    115                                                output,
+    116                                                output_size,
+    117                                                output_length);
+   \        0x4   0x9C10             LDR      R4,[SP, #+64]
+   \        0x6   0x9D0F             LDR      R5,[SP, #+60]
+   \        0x8   0x9406             STR      R4,[SP, #+24]
+   \        0xA   0x9C0E             LDR      R4,[SP, #+56]
+   \        0xC   0x9505             STR      R5,[SP, #+20]
+   \        0xE   0x9D0D             LDR      R5,[SP, #+52]
+   \       0x10   0x9404             STR      R4,[SP, #+16]
+   \       0x12   0x9C0C             LDR      R4,[SP, #+48]
+   \       0x14   0x9503             STR      R5,[SP, #+12]
+   \       0x16   0x9D0B             LDR      R5,[SP, #+44]
+   \       0x18   0x9402             STR      R4,[SP, #+8]
+   \       0x1A   0x9C0A             LDR      R4,[SP, #+40]
+   \       0x1C   0x9501             STR      R5,[SP, #+4]
+   \       0x1E   0x9400             STR      R4,[SP, #+0]
+   \       0x20   0x.... 0x....      BL       sli_se_driver_cipher_encrypt
+   \       0x24   0xB007             ADD      SP,SP,#+28
+   \       0x26   0xBD30             POP      {R4,R5,PC}
+    118          
+    119            #else // SLI_PSA_DRIVER_FEATURE_CIPHER
+    120          
+    121            (void)attributes;
+    122            (void)key_buffer;
+    123            (void)key_buffer_size;
+    124            (void)alg;
+    125            (void)iv;
+    126            (void)iv_length;
+    127            (void)input;
+    128            (void)input_length;
+    129            (void)output;
+    130            (void)output_size;
+    131            (void)output_length;
+    132          
+    133            return PSA_ERROR_NOT_SUPPORTED;
+    134          
+    135            #endif // SLI_PSA_DRIVER_FEATURE_CIPHER
+    136          }
+    137          
+
+   \                                 In section .text, align 2, keep-with-next
+    138          psa_status_t sli_se_transparent_cipher_decrypt(
+    139            const psa_key_attributes_t *attributes,
+    140            const uint8_t *key_buffer,
+    141            size_t key_buffer_size,
+    142            psa_algorithm_t alg,
+    143            const uint8_t *input,
+    144            size_t input_length,
+    145            uint8_t *output,
+    146            size_t output_size,
+    147            size_t *output_length)
+    148          {
+   \                     sli_se_transparent_cipher_decrypt: (+1)
+   \        0x0   0xB530             PUSH     {R4,R5,LR}
+   \        0x2   0xB085             SUB      SP,SP,#+20
+    149            #if defined(SLI_PSA_DRIVER_FEATURE_CIPHER)
+    150          
+    151            return sli_se_driver_cipher_decrypt(attributes,
+    152                                                key_buffer,
+    153                                                key_buffer_size,
+    154                                                alg,
+    155                                                input,
+    156                                                input_length,
+    157                                                output,
+    158                                                output_size,
+    159                                                output_length);
+   \        0x4   0x9C0C             LDR      R4,[SP, #+48]
+   \        0x6   0x9D0B             LDR      R5,[SP, #+44]
+   \        0x8   0x9404             STR      R4,[SP, #+16]
+   \        0xA   0x9C0A             LDR      R4,[SP, #+40]
+   \        0xC   0x9503             STR      R5,[SP, #+12]
+   \        0xE   0x9D09             LDR      R5,[SP, #+36]
+   \       0x10   0x9402             STR      R4,[SP, #+8]
+   \       0x12   0x9C08             LDR      R4,[SP, #+32]
+   \       0x14   0x9501             STR      R5,[SP, #+4]
+   \       0x16   0x9400             STR      R4,[SP, #+0]
+   \       0x18   0x.... 0x....      BL       sli_se_driver_cipher_decrypt
+   \       0x1C   0xB005             ADD      SP,SP,#+20
+   \       0x1E   0xBD30             POP      {R4,R5,PC}
+    160          
+    161            #else // SLI_PSA_DRIVER_FEATURE_CIPHER
+    162          
+    163            (void)attributes;
+    164            (void)key_buffer;
+    165            (void)key_buffer_size;
+    166            (void)alg;
+    167            (void)input;
+    168            (void)input_length;
+    169            (void)output;
+    170            (void)output_size;
+    171            (void)output_length;
+    172          
+    173            return PSA_ERROR_NOT_SUPPORTED;
+    174          
+    175            #endif // SLI_PSA_DRIVER_FEATURE_CIPHER
+    176          }
+    177          
+    178          // -----------------------------------------------------------------------------
+    179          // Multi-part driver entry points
+    180          
+
+   \                                 In section .text, align 2, keep-with-next
+    181          psa_status_t sli_se_transparent_cipher_encrypt_setup(
+    182            sli_se_transparent_cipher_operation_t *operation,
+    183            const psa_key_attributes_t *attributes,
+    184            const uint8_t *key_buffer,
+    185            size_t key_buffer_size,
+    186            psa_algorithm_t alg)
+    187          {
+   \                     sli_se_transparent_cipher_encrypt_setup: (+1)
+   \        0x0   0xE92D 0x41F0      PUSH     {R4-R8,LR}
+   \        0x4   0x0004             MOVS     R4,R0
+   \        0x6   0x460D             MOV      R5,R1
+   \        0x8   0x4616             MOV      R6,R2
+   \        0xA   0x4698             MOV      R8,R3
+    188            #if defined(SLI_PSA_DRIVER_FEATURE_CIPHER_MULTIPART)
+    189          
+    190            if (operation == NULL || attributes == NULL || key_buffer == NULL) {
+   \        0xC   0xBF18             IT       NE
+   \        0xE   0x2D00             CMPNE    R5,#+0
+   \       0x10   0xD000             BEQ.N    ??sli_se_transparent_cipher_encrypt_setup_0
+   \       0x12   0xB916             CBNZ.N   R6,??sli_se_transparent_cipher_encrypt_setup_1
+    191              return PSA_ERROR_INVALID_ARGUMENT;
+   \                     ??sli_se_transparent_cipher_encrypt_setup_0: (+1)
+   \       0x14   0xF06F 0x0086      MVN      R0,#+134
+   \       0x18   0xE009             B.N      ??sli_se_transparent_cipher_encrypt_setup_2
+    192            }
+   \                     ??sli_se_transparent_cipher_encrypt_setup_1: (+1)
+   \       0x1A   0x.... 0x....      BL       ?Subroutine1
+    193            // Reset context
+    194            memset(operation, 0, sizeof(*operation));
+    195          
+    196            psa_status_t psa_status =
+    197              sli_se_driver_cipher_encrypt_setup(&operation->operation,
+    198                                                 attributes,
+    199                                                 alg);
+   \                     ??CrossCallReturnLabel_1: (+1)
+   \       0x1E   0x463A             MOV      R2,R7
+   \       0x20   0x4629             MOV      R1,R5
+   \       0x22   0xF104 0x0024      ADD      R0,R4,#+36
+   \       0x26   0x.... 0x....      BL       sli_se_driver_cipher_encrypt_setup
+    200            if (psa_status != PSA_SUCCESS) {
+   \       0x2A   0xB900             CBNZ.N   R0,??sli_se_transparent_cipher_encrypt_setup_2
+    201              return psa_status;
+    202            }
+    203          
+    204            // Copy key into context
+    205            psa_status = initialize_key_in_context(attributes,
+    206                                                   operation,
+    207                                                   key_buffer,
+    208                                                   key_buffer_size);
+    209            return psa_status;
+   \       0x2C   0x....             B.N      ?Subroutine0
+   \                     ??sli_se_transparent_cipher_encrypt_setup_2: (+1)
+   \       0x2E   0xE8BD 0x81F0      POP      {R4-R8,PC}
+    210          
+    211            #else // SLI_PSA_DRIVER_FEATURE_CIPHER_MULTIPART
+    212          
+    213            (void)operation;
+    214            (void)attributes;
+    215            (void)key_buffer;
+    216            (void)key_buffer_size;
+    217            (void)alg;
+    218          
+    219            return PSA_ERROR_NOT_SUPPORTED;
+    220          
+    221            #endif // SLI_PSA_DRIVER_FEATURE_CIPHER_MULTIPART
+    222          }
+
+   \                                 In section .text, align 2, keep-with-next
+   \                     ?Subroutine1: (+1)
+   \        0x0   0x9F06             LDR      R7,[SP, #+24]
+   \                     ??Subroutine1_0: (+1)
+   \        0x2   0x2174             MOVS     R1,#+116
+   \        0x4   0x.... 0x....      B.W      __aeabi_memclr4
+
+   \                                 In section .text, align 2, keep-with-next
+   \                     ?Subroutine0: (+1)
+   \        0x0   0x4643             MOV      R3,R8
+   \        0x2   0x4632             MOV      R2,R6
+   \        0x4   0x4621             MOV      R1,R4
+   \        0x6   0x4628             MOV      R0,R5
+   \        0x8   0xE8BD 0x41F0      POP      {R4-R8,LR}
+   \        0xC   0x....             B.N      initialize_key_in_context
+    223          
+
+   \                                 In section .text, align 2, keep-with-next
+    224          psa_status_t sli_se_transparent_cipher_decrypt_setup(
+    225            sli_se_transparent_cipher_operation_t *operation,
+    226            const psa_key_attributes_t *attributes,
+    227            const uint8_t *key_buffer,
+    228            size_t key_buffer_size,
+    229            psa_algorithm_t alg)
+    230          {
+   \                     sli_se_transparent_cipher_decrypt_setup: (+1)
+   \        0x0   0xE92D 0x41F0      PUSH     {R4-R8,LR}
+   \        0x4   0x0004             MOVS     R4,R0
+   \        0x6   0x460D             MOV      R5,R1
+   \        0x8   0x4616             MOV      R6,R2
+   \        0xA   0x4698             MOV      R8,R3
+    231            #if defined(SLI_PSA_DRIVER_FEATURE_CIPHER_MULTIPART)
+    232          
+    233            if (operation == NULL || attributes == NULL || key_buffer == NULL) {
+   \        0xC   0xBF18             IT       NE
+   \        0xE   0x2D00             CMPNE    R5,#+0
+   \       0x10   0xD000             BEQ.N    ??sli_se_transparent_cipher_decrypt_setup_0
+   \       0x12   0xB916             CBNZ.N   R6,??sli_se_transparent_cipher_decrypt_setup_1
+    234              return PSA_ERROR_INVALID_ARGUMENT;
+   \                     ??sli_se_transparent_cipher_decrypt_setup_0: (+1)
+   \       0x14   0xF06F 0x0086      MVN      R0,#+134
+   \       0x18   0xE009             B.N      ??sli_se_transparent_cipher_decrypt_setup_2
+    235            }
+   \                     ??sli_se_transparent_cipher_decrypt_setup_1: (+1)
+   \       0x1A   0x.... 0x....      BL       ?Subroutine1
+    236          
+    237            // Reset context
+    238            memset(operation, 0, sizeof(*operation));
+    239          
+    240            psa_status_t psa_status =
+    241              sli_se_driver_cipher_decrypt_setup(&operation->operation,
+    242                                                 attributes,
+    243                                                 alg);
+   \                     ??CrossCallReturnLabel_0: (+1)
+   \       0x1E   0x463A             MOV      R2,R7
+   \       0x20   0x4629             MOV      R1,R5
+   \       0x22   0xF104 0x0024      ADD      R0,R4,#+36
+   \       0x26   0x.... 0x....      BL       sli_se_driver_cipher_decrypt_setup
+    244            if (psa_status != PSA_SUCCESS) {
+   \       0x2A   0xB900             CBNZ.N   R0,??sli_se_transparent_cipher_decrypt_setup_2
+    245              return psa_status;
+    246            }
+    247          
+    248            // Copy key into context
+    249            psa_status = initialize_key_in_context(attributes,
+    250                                                   operation,
+    251                                                   key_buffer,
+    252                                                   key_buffer_size);
+    253            return psa_status;
+   \       0x2C   0x....             B.N      ?Subroutine0
+   \                     ??sli_se_transparent_cipher_decrypt_setup_2: (+1)
+   \       0x2E   0xE8BD 0x81F0      POP      {R4-R8,PC}
+    254          
+    255            #else // SLI_PSA_DRIVER_FEATURE_CIPHER_MULTIPART
+    256          
+    257            (void)operation;
+    258            (void)attributes;
+    259            (void)key_buffer;
+    260            (void)key_buffer_size;
+    261            (void)alg;
+    262          
+    263            return PSA_ERROR_NOT_SUPPORTED;
+    264          
+    265            #endif // SLI_PSA_DRIVER_FEATURE_CIPHER_MULTIPART
+    266          }
+    267          
+
+   \                                 In section .text, align 2, keep-with-next
+    268          psa_status_t sli_se_transparent_cipher_set_iv(
+    269            sli_se_transparent_cipher_operation_t *operation,
+    270            const uint8_t *iv,
+    271            size_t iv_length)
+    272          {
+    273            #if defined(SLI_PSA_DRIVER_FEATURE_CIPHER_MULTIPART)
+    274          
+    275            if (operation == NULL) {
+   \                     sli_se_transparent_cipher_set_iv: (+1)
+   \        0x0   0xB910             CBNZ.N   R0,??sli_se_transparent_cipher_set_iv_0
+    276              return PSA_ERROR_INVALID_ARGUMENT;
+   \        0x2   0xF06F 0x0086      MVN      R0,#+134
+   \        0x6   0x4770             BX       LR
+    277            }
+    278          
+    279            if (operation->key_len == 0) {
+   \                     ??sli_se_transparent_cipher_set_iv_0: (+1)
+   \        0x8   0x6A03             LDR      R3,[R0, #+32]
+   \        0xA   0x2B00             CMP      R3,#+0
+   \        0xC   0xBF1C             ITT      NE
+    280              // context hasn't been properly initialised
+    281              return PSA_ERROR_BAD_STATE;
+    282            }
+    283          
+    284            return sli_se_driver_cipher_set_iv(&operation->operation, iv, iv_length);
+   \        0xE   0x3024             ADDNE    R0,R0,#+36
+   \       0x10   0x.... 0x....      BNE.W    sli_se_driver_cipher_set_iv
+   \       0x14   0xF06F 0x0088      MVN      R0,#+136
+   \       0x18   0x4770             BX       LR
+    285          
+    286            #else // SLI_PSA_DRIVER_FEATURE_CIPHER_MULTIPART
+    287          
+    288            (void)operation;
+    289            (void)iv;
+    290            (void)iv_length;
+    291          
+    292            return PSA_ERROR_NOT_SUPPORTED;
+    293          
+    294            #endif // SLI_PSA_DRIVER_FEATURE_CIPHER_MULTIPART
+    295          }
+    296          
+
+   \                                 In section .text, align 2, keep-with-next
+    297          psa_status_t sli_se_transparent_cipher_update(
+    298            sli_se_transparent_cipher_operation_t *operation,
+    299            const uint8_t *input,
+    300            size_t input_length,
+    301            uint8_t *output,
+    302            size_t output_size,
+    303            size_t *output_length)
+    304          {
+   \                     sli_se_transparent_cipher_update: (+1)
+   \        0x0   0xB5FE             PUSH     {R1-R7,LR}
+   \        0x2   0x0004             MOVS     R4,R0
+   \        0x4   0x460D             MOV      R5,R1
+   \        0x6   0x4616             MOV      R6,R2
+   \        0x8   0x461F             MOV      R7,R3
+    305            #if defined(SLI_PSA_DRIVER_FEATURE_CIPHER_MULTIPART)
+    306          
+    307            // Argument check
+    308            if (operation == NULL) {
+   \        0xA   0xD102             BNE.N    ??sli_se_transparent_cipher_update_0
+    309              return PSA_ERROR_INVALID_ARGUMENT;
+   \        0xC   0xF06F 0x0086      MVN      R0,#+134
+   \       0x10   0xBDFE             POP      {R1-R7,PC}
+    310            }
+    311          
+    312            // Set the key correctly
+    313            update_key_from_context(operation);
+   \                     ??sli_se_transparent_cipher_update_0: (+1)
+   \       0x12   0x.... 0x....      BL       update_key_from_context
+    314          
+    315            // Compute
+    316            return sli_se_driver_cipher_update(&operation->operation,
+    317                                               input,
+    318                                               input_length,
+    319                                               output,
+    320                                               output_size,
+    321                                               output_length);
+   \       0x16   0x9909             LDR      R1,[SP, #+36]
+   \       0x18   0x9808             LDR      R0,[SP, #+32]
+   \       0x1A   0x9101             STR      R1,[SP, #+4]
+   \       0x1C   0x463B             MOV      R3,R7
+   \       0x1E   0x9000             STR      R0,[SP, #+0]
+   \       0x20   0x4632             MOV      R2,R6
+   \       0x22   0x4629             MOV      R1,R5
+   \       0x24   0xF104 0x0024      ADD      R0,R4,#+36
+   \       0x28   0x.... 0x....      BL       sli_se_driver_cipher_update
+   \       0x2C   0xBDFE             POP      {R1-R7,PC}
+    322          
+    323            #else // SLI_PSA_DRIVER_FEATURE_CIPHER_MULTIPART
+    324          
+    325            (void)operation;
+    326            (void)input;
+    327            (void)input_length;
+    328            (void)output;
+    329            (void)output_size;
+    330            (void)output_length;
+    331          
+    332            return PSA_ERROR_NOT_SUPPORTED;
+    333          
+    334            #endif // SLI_PSA_DRIVER_FEATURE_CIPHER_MULTIPART
+    335          }
+    336          
+
+   \                                 In section .text, align 2, keep-with-next
+    337          psa_status_t sli_se_transparent_cipher_finish(
+    338            sli_se_transparent_cipher_operation_t *operation,
+    339            uint8_t *output,
+    340            size_t output_size,
+    341            size_t *output_length)
+    342          {
+   \                     sli_se_transparent_cipher_finish: (+1)
+   \        0x0   0xB5F8             PUSH     {R3-R7,LR}
+   \        0x2   0x0004             MOVS     R4,R0
+   \        0x4   0x460F             MOV      R7,R1
+   \        0x6   0x4615             MOV      R5,R2
+   \        0x8   0x461E             MOV      R6,R3
+    343            #if defined(SLI_PSA_DRIVER_FEATURE_CIPHER_MULTIPART)
+    344          
+    345            if (operation == NULL) {
+   \        0xA   0xD102             BNE.N    ??sli_se_transparent_cipher_finish_0
+    346              return PSA_ERROR_INVALID_ARGUMENT;
+   \        0xC   0xF06F 0x0086      MVN      R0,#+134
+   \       0x10   0xBDF2             POP      {R1,R4-R7,PC}
+    347            }
+    348          
+    349            update_key_from_context(operation);
+   \                     ??sli_se_transparent_cipher_finish_0: (+1)
+   \       0x12   0x.... 0x....      BL       update_key_from_context
+    350            return sli_se_driver_cipher_finish(&operation->operation,
+    351                                               output,
+    352                                               output_size,
+    353                                               output_length);
+   \       0x16   0x4633             MOV      R3,R6
+   \       0x18   0x462A             MOV      R2,R5
+   \       0x1A   0x4639             MOV      R1,R7
+   \       0x1C   0xF104 0x0024      ADD      R0,R4,#+36
+   \       0x20   0xB001             ADD      SP,SP,#+4
+   \       0x22   0xE8BD 0x40F0      POP      {R4-R7,LR}
+   \       0x26   0x.... 0x....      B.W      sli_se_driver_cipher_finish
+    354          
+    355            #else // SLI_PSA_DRIVER_FEATURE_CIPHER_MULTIPART
+    356          
+    357            (void)operation;
+    358            (void)output;
+    359            (void)output_size;
+    360            (void)output_length;
+    361          
+    362            return PSA_ERROR_NOT_SUPPORTED;
+    363          
+    364            #endif // SLI_PSA_DRIVER_FEATURE_CIPHER_MULTIPART
+    365          }
+    366          
+
+   \                                 In section .text, align 2, keep-with-next
+    367          psa_status_t sli_se_transparent_cipher_abort(
+    368            sli_se_transparent_cipher_operation_t *operation)
+    369          {
+   \                     sli_se_transparent_cipher_abort: (+1)
+   \        0x0   0xB580             PUSH     {R7,LR}
+    370            #if defined(SLI_PSA_DRIVER_FEATURE_CIPHER_MULTIPART)
+    371          
+    372            if (operation != NULL) {
+   \        0x2   0xB108             CBZ.N    R0,??CrossCallReturnLabel_2
+    373              // Wipe context
+    374              memset(operation, 0, sizeof(sli_se_transparent_cipher_operation_t));
+   \        0x4   0x.... 0x....      BL       ??Subroutine1_0
+    375            }
+    376          
+    377            return PSA_SUCCESS;
+   \                     ??CrossCallReturnLabel_2: (+1)
+   \        0x8   0x2000             MOVS     R0,#+0
+   \        0xA   0xBD02             POP      {R1,PC}
+    378          
+    379            #else // SLI_PSA_DRIVER_FEATURE_CIPHER_MULTIPART
+    380          
+    381            (void)operation;
+    382          
+    383            return PSA_ERROR_NOT_SUPPORTED;
+    384          
+    385            #endif // SLI_PSA_DRIVER_FEATURE_CIPHER_MULTIPART
+    386          }
+    387          
+    388          #endif // SLI_MBEDTLS_DEVICE_HSE
+
+   Maximum stack usage in bytes:
+
+   .cstack Function
+   ------- --------
+      24   initialize_key_in_context
+        24   -> __aeabi_memcpy
+        24   -> sli_se_key_desc_from_psa_attributes
+       8   sli_se_transparent_cipher_abort
+         8   -> __aeabi_memclr4
+      32   sli_se_transparent_cipher_decrypt
+        32   -> sli_se_driver_cipher_decrypt
+      24   sli_se_transparent_cipher_decrypt_setup
+        24   -> __aeabi_memclr4
+         0   -> initialize_key_in_context
+        24   -> sli_se_driver_cipher_decrypt_setup
+      40   sli_se_transparent_cipher_encrypt
+        40   -> sli_se_driver_cipher_encrypt
+      24   sli_se_transparent_cipher_encrypt_setup
+        24   -> __aeabi_memclr4
+         0   -> initialize_key_in_context
+        24   -> sli_se_driver_cipher_encrypt_setup
+      24   sli_se_transparent_cipher_finish
+         0   -> sli_se_driver_cipher_finish
+        24   -> update_key_from_context
+       0   sli_se_transparent_cipher_set_iv
+         0   -> sli_se_driver_cipher_set_iv
+      32   sli_se_transparent_cipher_update
+        32   -> sli_se_driver_cipher_update
+        32   -> update_key_from_context
+       0   update_key_from_context
+
+
+   Section sizes:
+
+   Bytes  Function/Label
+   -----  --------------
+      14  ?Subroutine0
+       8  ?Subroutine1
+      54  initialize_key_in_context
+      12  sli_se_transparent_cipher_abort
+      32  sli_se_transparent_cipher_decrypt
+      50  sli_se_transparent_cipher_decrypt_setup
+      40  sli_se_transparent_cipher_encrypt
+      50  sli_se_transparent_cipher_encrypt_setup
+      42  sli_se_transparent_cipher_finish
+      26  sli_se_transparent_cipher_set_iv
+      46  sli_se_transparent_cipher_update
+      12  update_key_from_context
+
+ 
+ 386 bytes in section .text
+ 
+ 386 bytes of CODE memory
+
+Errors: none
+Warnings: none

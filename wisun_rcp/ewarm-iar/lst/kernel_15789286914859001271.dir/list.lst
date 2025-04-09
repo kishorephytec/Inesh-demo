@@ -1,0 +1,477 @@
+###############################################################################
+#
+# IAR ANSI C/C++ Compiler V9.50.2.385/W64 for ARM         27/Nov/2024  12:17:13
+# Copyright 1999-2024 IAR Systems AB.
+#
+#    Cpu mode                     =  thumb
+#    Endian                       =  little
+#    Source file                  =
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\util\third_party\freertos\kernel\list.c
+#    Command line                 =
+#        -f
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\ewarm-iar\obj\kernel_15789286914859001271.dir\list.o.rsp
+#        (C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\util\third_party\freertos\kernel\list.c
+#        -D EFR32FG28B322F1024IM48=1 -D
+#        configNUM_SDK_THREAD_LOCAL_STORAGE_POINTERS=2 -D
+#        SL_COMPONENT_CATALOG_PRESENT=1 -D
+#        MBEDTLS_CONFIG_FILE=<sl_mbedtls_config.h> -D
+#        MBEDTLS_PSA_CRYPTO_CONFIG_FILE=<psa_crypto_config.h> -D
+#        SL_RAIL_LIB_MULTIPROTOCOL_SUPPORT=0 -D
+#        SL_RAIL_UTIL_PA_CONFIG_HEADER=<sl_rail_util_pa_config.h> -D
+#        RTT_USE_ASM=0 -D MBED_CONF_MBED_TRACE_ENABLE=1 -D
+#        MBED_CONF_NANOSTACK_CONFIGURATION=ws_router -D
+#        MBED_TRACE_MAX_LEVEL=TRACE_ACTIVE_LEVEL_ALL -D DEBUG_EFM_USER=1 -D
+#        HAVE_LFN=1 -D HAVE_LFN_PARENT=1 -lC
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\ewarm-iar\lst\kernel_15789286914859001271.dir
+#        --diag_suppress Pa050 -o
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\ewarm-iar\obj\kernel_15789286914859001271.dir
+#        --debug --endian=little --cpu=Cortex-M33 --cmse --cmse -e
+#        --fpu=VFPv5_sp --dlib_config "C:\Program Files\IAR Systems\Embedded
+#        Workbench 9.2\arm\inc\c\DLib_Config_Normal.h" -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\util\third_party\freertos\kernel\
+#        -I C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\autogen\ -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\config\ -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\config\rail\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\Device\SiliconLabs\EFR32FG28\Include\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\common\inc\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\CMSIS\Core\Include\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\CMSIS\RTOS2\Include\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\service\device_init\inc\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\emdrv\dmadrv\inc\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\emdrv\common\inc\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\emlib\inc\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\util\third_party\freertos\cmsis\Include\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\util\third_party\freertos\kernel\include\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\util\third_party\freertos\kernel\portable\IAR\ARM_CM33_NTZ\non_secure\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\service\iostream\inc\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\security\sl_component\sl_mbedtls_support\config\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\security\sl_component\sl_mbedtls_support\config\preset\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\security\sl_component\sl_mbedtls_support\inc\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\util\third_party\mbedtls\include\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\util\third_party\mbedtls\library\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\emdrv\nvm3\inc\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\peripheral\inc\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\security\sl_component\sl_psa_driver\inc\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\radio\rail_lib\common\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\radio\rail_lib\protocol\ble\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\radio\rail_lib\protocol\ieee802154\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\radio\rail_lib\protocol\wmbus\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\radio\rail_lib\protocol\zwave\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\radio\rail_lib\chip\efr32\efr32xg2x\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\radio\rail_lib\protocol\sidewalk\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\radio\rail_lib\plugin\pa-conversions\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\radio\rail_lib\plugin\pa-conversions\efr32xg28\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\radio\rail_lib\plugin\rail_util_pti\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\security\sl_component\se_manager\inc\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\security\sl_component\se_manager\src\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\util\third_party\segger\systemview\SEGGER\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\util\silicon_labs\silabs_core\memory_manager\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\common\toolchain\inc\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\service\system\inc\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\app\wisun\component\ns_list\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\app\wisun\component\trace_util\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\app\wisun\component\trace_util\nanostack\nanostack-libservice\mbed-client-libservice\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\service\sleeptimer\inc\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\protocol\wisun\stack\inc\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\protocol\wisun\app\wisun_rcp\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\protocol\wisun\stack\inc\socket\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\protocol\wisun\stack\src\
+#        -Ohz --use_c++_inline) --dependencies=n
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\ewarm-iar\obj\kernel_15789286914859001271.dir\list.o.iar_deps
+#    Locale                       =  C
+#    List file                    =
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\ewarm-iar\lst\kernel_15789286914859001271.dir\list.lst
+#    Object file                  =
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\ewarm-iar\obj\kernel_15789286914859001271.dir\list.o
+#    Runtime model:                  
+#      __CPP_Runtime              =  1
+#      __SystemLibrary            =  DLib
+#      __dlib_full_locale_support =  0
+#      __dlib_version             =  6
+#
+###############################################################################
+
+C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\util\third_party\freertos\kernel\list.c
+      1          /***************************************************************************//**
+      2           * # License
+      3           *
+      4           * The licensor of this software is Silicon Laboratories Inc. Your use of this
+      5           * software is governed by the terms of Silicon Labs Master Software License
+      6           * Agreement (MSLA) available at
+      7           * www.silabs.com/about-us/legal/master-software-license-agreement. This
+      8           * software is Third Party Software licensed by Silicon Labs from a third party
+      9           * and is governed by the sections of the MSLA applicable to Third Party
+     10           * Software and the additional terms set forth below.
+     11           *
+     12           ******************************************************************************/
+     13          
+     14          /*
+     15           * FreeRTOS Kernel V10.4.3
+     16           * Copyright (C) 2020 Amazon.com, Inc. or its affiliates.  All Rights Reserved.
+     17           *
+     18           * Permission is hereby granted, free of charge, to any person obtaining a copy of
+     19           * this software and associated documentation files (the "Software"), to deal in
+     20           * the Software without restriction, including without limitation the rights to
+     21           * use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of
+     22           * the Software, and to permit persons to whom the Software is furnished to do so,
+     23           * subject to the following conditions:
+     24           *
+     25           * The above copyright notice and this permission notice shall be included in all
+     26           * copies or substantial portions of the Software.
+     27           *
+     28           * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+     29           * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS
+     30           * FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR
+     31           * COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER
+     32           * IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN
+     33           * CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+     34           *
+     35           * https://www.FreeRTOS.org
+     36           * https://github.com/FreeRTOS
+     37           *
+     38           */
+     39          
+     40          
+     41          #include <stdlib.h>
+     42          
+     43          /* Defining MPU_WRAPPERS_INCLUDED_FROM_API_FILE prevents task.h from redefining
+     44           * all the API functions to use the MPU wrappers.  That should only be done when
+     45           * task.h is included from an application file. */
+     46          #define MPU_WRAPPERS_INCLUDED_FROM_API_FILE
+     47          
+     48          #include "FreeRTOS.h"
+     49          #include "list.h"
+     50          
+     51          /* Lint e9021, e961 and e750 are suppressed as a MISRA exception justified
+     52           * because the MPU ports require MPU_WRAPPERS_INCLUDED_FROM_API_FILE to be
+     53           * defined for the header files above, but not in this file, in order to
+     54           * generate the correct privileged Vs unprivileged linkage and placement. */
+     55          #undef MPU_WRAPPERS_INCLUDED_FROM_API_FILE /*lint !e961 !e750 !e9021. */
+     56          
+     57          /*-----------------------------------------------------------
+     58          * PUBLIC LIST API documented in list.h
+     59          *----------------------------------------------------------*/
+     60          
+
+   \                                 In section .text, align 2, keep-with-next
+     61          void vListInitialise( List_t * const pxList )
+     62          {
+     63              /* The list structure contains a list item which is used to mark the
+     64               * end of the list.  To initialise the list the list end is inserted
+     65               * as the only list entry. */
+     66              pxList->pxIndex = ( ListItem_t * ) &( pxList->xListEnd ); /*lint !e826 !e740 !e9087 The mini list structure is used as the list end to save RAM.  This is checked and valid. */
+     67          
+     68              /* The list end value is the highest possible value in the list to
+     69               * ensure it remains at the end of the list. */
+     70              pxList->xListEnd.xItemValue = portMAX_DELAY;
+   \                     vListInitialise: (+1)
+   \        0x0   0xF04F 0x32FF      MOV      R2,#+4294967295
+   \        0x4   0xF100 0x0108      ADD      R1,R0,#+8
+   \        0x8   0x6082             STR      R2,[R0, #+8]
+   \        0xA   0x6041             STR      R1,[R0, #+4]
+     71          
+     72              /* The list end next and previous pointers point to itself so we know
+     73               * when the list is empty. */
+     74              pxList->xListEnd.pxNext = ( ListItem_t * ) &( pxList->xListEnd );     /*lint !e826 !e740 !e9087 The mini list structure is used as the list end to save RAM.  This is checked and valid. */
+   \        0xC   0x60C1             STR      R1,[R0, #+12]
+     75              pxList->xListEnd.pxPrevious = ( ListItem_t * ) &( pxList->xListEnd ); /*lint !e826 !e740 !e9087 The mini list structure is used as the list end to save RAM.  This is checked and valid. */
+   \        0xE   0xF100 0x0208      ADD      R2,R0,#+8
+   \       0x12   0x6102             STR      R2,[R0, #+16]
+     76          
+     77              pxList->uxNumberOfItems = ( UBaseType_t ) 0U;
+   \       0x14   0x2100             MOVS     R1,#+0
+   \       0x16   0x6001             STR      R1,[R0, #+0]
+     78          
+     79              /* Write known values into the list if
+     80               * configUSE_LIST_DATA_INTEGRITY_CHECK_BYTES is set to 1. */
+     81              listSET_LIST_INTEGRITY_CHECK_1_VALUE( pxList );
+     82              listSET_LIST_INTEGRITY_CHECK_2_VALUE( pxList );
+     83          }
+   \       0x18   0x4770             BX       LR
+     84          /*-----------------------------------------------------------*/
+     85          
+
+   \                                 In section .text, align 2, keep-with-next
+     86          void vListInitialiseItem( ListItem_t * const pxItem )
+     87          {
+     88              /* Make sure the list item is not recorded as being on a list. */
+     89              pxItem->pxContainer = NULL;
+   \                     vListInitialiseItem: (+1)
+   \        0x0   0x2100             MOVS     R1,#+0
+   \        0x2   0x6101             STR      R1,[R0, #+16]
+     90          
+     91              /* Write known values into the list item if
+     92               * configUSE_LIST_DATA_INTEGRITY_CHECK_BYTES is set to 1. */
+     93              listSET_FIRST_LIST_ITEM_INTEGRITY_CHECK_VALUE( pxItem );
+     94              listSET_SECOND_LIST_ITEM_INTEGRITY_CHECK_VALUE( pxItem );
+     95          }
+   \        0x4   0x4770             BX       LR
+     96          /*-----------------------------------------------------------*/
+     97          
+
+   \                                 In section .text, align 2, keep-with-next
+     98          void vListInsertEnd( List_t * const pxList,
+     99                               ListItem_t * const pxNewListItem )
+    100          {
+   \                     vListInsertEnd: (+1)
+   \        0x0   0xB510             PUSH     {R4,LR}
+    101              ListItem_t * const pxIndex = pxList->pxIndex;
+   \        0x2   0x6842             LDR      R2,[R0, #+4]
+    102          
+    103              /* Only effective when configASSERT() is also defined, these tests may catch
+    104               * the list data structures being overwritten in memory.  They will not catch
+    105               * data errors caused by incorrect configuration or use of FreeRTOS. */
+    106              listTEST_LIST_INTEGRITY( pxList );
+    107              listTEST_LIST_ITEM_INTEGRITY( pxNewListItem );
+    108          
+    109              /* Insert a new list item into pxList, but rather than sort the list,
+    110               * makes the new list item the last item to be removed by a call to
+    111               * listGET_OWNER_OF_NEXT_ENTRY(). */
+    112              pxNewListItem->pxNext = pxIndex;
+   \        0x4   0x604A             STR      R2,[R1, #+4]
+    113              pxNewListItem->pxPrevious = pxIndex->pxPrevious;
+   \        0x6   0x6894             LDR      R4,[R2, #+8]
+   \        0x8   0x608C             STR      R4,[R1, #+8]
+    114          
+    115              /* Only used during decision coverage testing. */
+    116              mtCOVERAGE_TEST_DELAY();
+    117          
+    118              pxIndex->pxPrevious->pxNext = pxNewListItem;
+   \        0xA   0x6893             LDR      R3,[R2, #+8]
+   \        0xC   0x6059             STR      R1,[R3, #+4]
+    119              pxIndex->pxPrevious = pxNewListItem;
+   \        0xE   0x6091             STR      R1,[R2, #+8]
+    120          
+    121              /* Remember which list the item is in. */
+    122              pxNewListItem->pxContainer = pxList;
+   \       0x10   0x6108             STR      R0,[R1, #+16]
+    123          
+    124              ( pxList->uxNumberOfItems )++;
+   \       0x12   0x6801             LDR      R1,[R0, #+0]
+   \       0x14   0x1C49             ADDS     R1,R1,#+1
+   \       0x16   0x6001             STR      R1,[R0, #+0]
+    125          }
+   \       0x18   0xBD10             POP      {R4,PC}
+    126          /*-----------------------------------------------------------*/
+    127          
+
+   \                                 In section .text, align 2, keep-with-next
+    128          void vListInsert( List_t * const pxList,
+    129                            ListItem_t * const pxNewListItem )
+    130          {
+   \                     vListInsert: (+1)
+   \        0x0   0xB530             PUSH     {R4,R5,LR}
+    131              ListItem_t * pxIterator;
+    132              const TickType_t xValueOfInsertion = pxNewListItem->xItemValue;
+   \        0x2   0x680D             LDR      R5,[R1, #+0]
+    133          
+    134              /* Only effective when configASSERT() is also defined, these tests may catch
+    135               * the list data structures being overwritten in memory.  They will not catch
+    136               * data errors caused by incorrect configuration or use of FreeRTOS. */
+    137              listTEST_LIST_INTEGRITY( pxList );
+    138              listTEST_LIST_ITEM_INTEGRITY( pxNewListItem );
+    139          
+    140              /* Insert the new list item into the list, sorted in xItemValue order.
+    141               *
+    142               * If the list already contains a list item with the same item value then the
+    143               * new list item should be placed after it.  This ensures that TCBs which are
+    144               * stored in ready lists (all of which have the same xItemValue value) get a
+    145               * share of the CPU.  However, if the xItemValue is the same as the back marker
+    146               * the iteration loop below will not end.  Therefore the value is checked
+    147               * first, and the algorithm slightly modified if necessary. */
+    148              if( xValueOfInsertion == portMAX_DELAY )
+   \        0x4   0xF115 0x0F01      CMN      R5,#+1
+   \        0x8   0xBF08             IT       EQ
+   \        0xA   0x6904             LDREQ    R4,[R0, #+16]
+    149              {
+    150                  pxIterator = pxList->xListEnd.pxPrevious;
+   \        0xC   0xD007             BEQ.N    ??vListInsert_0
+    151              }
+    152              else
+    153              {
+    154                  /* *** NOTE ***********************************************************
+    155                  *  If you find your application is crashing here then likely causes are
+    156                  *  listed below.  In addition see https://www.FreeRTOS.org/FAQHelp.html for
+    157                  *  more tips, and ensure configASSERT() is defined!
+    158                  *  https://www.FreeRTOS.org/a00110.html#configASSERT
+    159                  *
+    160                  *   1) Stack overflow -
+    161                  *      see https://www.FreeRTOS.org/Stacks-and-stack-overflow-checking.html
+    162                  *   2) Incorrect interrupt priority assignment, especially on Cortex-M
+    163                  *      parts where numerically high priority values denote low actual
+    164                  *      interrupt priorities, which can seem counter intuitive.  See
+    165                  *      https://www.FreeRTOS.org/RTOS-Cortex-M3-M4.html and the definition
+    166                  *      of configMAX_SYSCALL_INTERRUPT_PRIORITY on
+    167                  *      https://www.FreeRTOS.org/a00110.html
+    168                  *   3) Calling an API function from within a critical section or when
+    169                  *      the scheduler is suspended, or calling an API function that does
+    170                  *      not end in "FromISR" from an interrupt.
+    171                  *   4) Using a queue or semaphore before it has been initialised or
+    172                  *      before the scheduler has been started (are interrupts firing
+    173                  *      before vTaskStartScheduler() has been called?).
+    174                  **********************************************************************/
+    175          
+    176                  for( pxIterator = ( ListItem_t * ) &( pxList->xListEnd ); pxIterator->pxNext->xItemValue <= xValueOfInsertion; pxIterator = pxIterator->pxNext ) /*lint !e826 !e740 !e9087 The mini list structure is used as the list end to save RAM.  This is checked and valid. *//*lint !e440 The iterator moves to a different value, not xValueOfInsertion. */
+   \        0xE   0xF100 0x0408      ADD      R4,R0,#+8
+   \       0x12   0xE000             B.N      ??vListInsert_1
+   \                     ??vListInsert_2: (+1)
+   \       0x14   0x461C             MOV      R4,R3
+   \                     ??vListInsert_1: (+1)
+   \       0x16   0x6863             LDR      R3,[R4, #+4]
+   \       0x18   0x681A             LDR      R2,[R3, #+0]
+   \       0x1A   0x4295             CMP      R5,R2
+   \       0x1C   0xD2FA             BCS.N    ??vListInsert_2
+    177                  {
+    178                      /* There is nothing to do here, just iterating to the wanted
+    179                       * insertion position. */
+    180                  }
+    181              }
+    182          
+    183              pxNewListItem->pxNext = pxIterator->pxNext;
+    184              pxNewListItem->pxNext->pxPrevious = pxNewListItem;
+   \                     ??vListInsert_0: (+1)
+   \       0x1E   0x6862             LDR      R2,[R4, #+4]
+   \       0x20   0x604A             STR      R2,[R1, #+4]
+   \       0x22   0x6091             STR      R1,[R2, #+8]
+    185              pxNewListItem->pxPrevious = pxIterator;
+   \       0x24   0x608C             STR      R4,[R1, #+8]
+    186              pxIterator->pxNext = pxNewListItem;
+   \       0x26   0x6061             STR      R1,[R4, #+4]
+    187          
+    188              /* Remember which list the item is in.  This allows fast removal of the
+    189               * item later. */
+    190              pxNewListItem->pxContainer = pxList;
+   \       0x28   0x6108             STR      R0,[R1, #+16]
+    191          
+    192              ( pxList->uxNumberOfItems )++;
+   \       0x2A   0x6801             LDR      R1,[R0, #+0]
+   \       0x2C   0x1C49             ADDS     R1,R1,#+1
+   \       0x2E   0x6001             STR      R1,[R0, #+0]
+    193          }
+   \       0x30   0xBD30             POP      {R4,R5,PC}
+    194          /*-----------------------------------------------------------*/
+    195          
+
+   \                                 In section .text, align 2, keep-with-next
+    196          UBaseType_t uxListRemove( ListItem_t * const pxItemToRemove )
+    197          {
+   \                     uxListRemove: (+1)
+   \        0x0   0xB510             PUSH     {R4,LR}
+    198          /* The list item knows which list it is in.  Obtain the list from the list
+    199           * item. */
+    200              List_t * const pxList = pxItemToRemove->pxContainer;
+    201          
+    202              pxItemToRemove->pxNext->pxPrevious = pxItemToRemove->pxPrevious;
+   \        0x2   0x6883             LDR      R3,[R0, #+8]
+   \        0x4   0x6842             LDR      R2,[R0, #+4]
+   \        0x6   0x6901             LDR      R1,[R0, #+16]
+   \        0x8   0x6093             STR      R3,[R2, #+8]
+    203              pxItemToRemove->pxPrevious->pxNext = pxItemToRemove->pxNext;
+   \        0xA   0x6843             LDR      R3,[R0, #+4]
+   \        0xC   0x6882             LDR      R2,[R0, #+8]
+   \        0xE   0x6053             STR      R3,[R2, #+4]
+    204          
+    205              /* Only used during decision coverage testing. */
+    206              mtCOVERAGE_TEST_DELAY();
+    207          
+    208              /* Make sure the index is left pointing to a valid item. */
+    209              if( pxList->pxIndex == pxItemToRemove )
+   \       0x10   0x684C             LDR      R4,[R1, #+4]
+   \       0x12   0x4284             CMP      R4,R0
+   \       0x14   0xBF04             ITT      EQ
+   \       0x16   0x6883             LDREQ    R3,[R0, #+8]
+   \       0x18   0x604B             STREQ    R3,[R1, #+4]
+    210              {
+    211                  pxList->pxIndex = pxItemToRemove->pxPrevious;
+    212              }
+    213              else
+    214              {
+    215                  mtCOVERAGE_TEST_MARKER();
+    216              }
+    217          
+    218              pxItemToRemove->pxContainer = NULL;
+   \       0x1A   0x2200             MOVS     R2,#+0
+   \       0x1C   0x6102             STR      R2,[R0, #+16]
+    219              ( pxList->uxNumberOfItems )--;
+   \       0x1E   0x6808             LDR      R0,[R1, #+0]
+   \       0x20   0x1E40             SUBS     R0,R0,#+1
+   \       0x22   0x6008             STR      R0,[R1, #+0]
+    220          
+    221              return pxList->uxNumberOfItems;
+   \       0x24   0x6808             LDR      R0,[R1, #+0]
+   \       0x26   0xBD10             POP      {R4,PC}
+    222          }
+    223          /*-----------------------------------------------------------*/
+
+   Maximum stack usage in bytes:
+
+   .cstack Function
+   ------- --------
+       8   uxListRemove
+       0   vListInitialise
+       0   vListInitialiseItem
+      12   vListInsert
+       8   vListInsertEnd
+
+
+   Section sizes:
+
+   Bytes  Function/Label
+   -----  --------------
+      40  uxListRemove
+      26  vListInitialise
+       6  vListInitialiseItem
+      50  vListInsert
+      26  vListInsertEnd
+
+ 
+ 148 bytes in section .text
+ 
+ 148 bytes of CODE memory
+
+Errors: none
+Warnings: none

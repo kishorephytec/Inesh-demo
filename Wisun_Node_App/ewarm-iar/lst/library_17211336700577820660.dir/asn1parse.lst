@@ -1,0 +1,1502 @@
+###############################################################################
+#
+# IAR ANSI C/C++ Compiler V9.50.2.385/W64 for ARM         29/Mar/2025  15:53:39
+# Copyright 1999-2024 IAR Systems AB.
+#
+#    Cpu mode                     =  thumb
+#    Endian                       =  little
+#    Source file                  =
+#        D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\util\third_party\mbedtls\library\asn1parse.c
+#    Command line                 =
+#        -f "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\ewarm-iar\obj\library_17211336700577820660.dir\asn1parse.o.rsp"
+#        ("D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\util\third_party\mbedtls\library\asn1parse.c"
+#        -D DEBUG_EFM=1 -D EFR32FG28B322F1024IM48=1 -D
+#        configNUM_SDK_THREAD_LOCAL_STORAGE_POINTERS=2 -D
+#        SL_COMPONENT_CATALOG_PRESENT=1 -D
+#        MBEDTLS_CONFIG_FILE=<sl_mbedtls_config.h> -D
+#        MBEDTLS_PSA_CRYPTO_CONFIG_FILE=<psa_crypto_config.h> -D
+#        SL_RAIL_LIB_MULTIPROTOCOL_SUPPORT=0 -D
+#        SL_RAIL_UTIL_PA_CONFIG_HEADER=<sl_rail_util_pa_config.h> -D
+#        RTT_USE_ASM=0 -lC "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\ewarm-iar\lst\library_17211336700577820660.dir"
+#        --diag_suppress Pa050 -o "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\ewarm-iar\obj\library_17211336700577820660.dir"
+#        --no_cse --no_unroll --no_inline --no_code_motion --no_tbaa
+#        --no_clustering --no_scheduling --debug --endian=little
+#        --cpu=Cortex-M33 --cmse --cmse -e --fpu=VFPv5_sp --dlib_config
+#        "C:\Program Files\IAR Systems\Embedded Workbench
+#        9.2\arm\inc\c\DLib_Config_Normal.h" -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\util\third_party\mbedtls\library\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App 1\Wisun_Node_App\config\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App 1\Wisun_Node_App\config\rail\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App 1\Wisun_Node_App\config\wisun\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App 1\Wisun_Node_App\.\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\Device\SiliconLabs\EFR32FG28\Include\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\app\wisun\component\app_project_info\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\common\inc\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\service\cli\inc\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\service\cli\src\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\CMSIS\Core\Include\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\CMSIS\RTOS2\Include\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\service\device_init\inc\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\emdrv\common\inc\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\emlib\inc\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\service\iostream\inc\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\security\sl_component\sl_mbedtls_support\config\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\security\sl_component\sl_mbedtls_support\config\preset\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\security\sl_component\sl_mbedtls_support\inc\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\util\third_party\mbedtls\include\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\util\third_party\mbedtls\library\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\micrium_os\common\source\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\micrium_os\common\include\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\micrium_os\cpu\include\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\micrium_os\ports\source\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\micrium_os\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\micrium_os\kernel\source\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\micrium_os\kernel\include\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\emdrv\nvm3\inc\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\peripheral\inc\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\util\third_party\printf\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\util\third_party\printf\inc\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\security\sl_component\sl_psa_driver\inc\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\radio\rail_lib\common\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\radio\rail_lib\protocol\ble\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\radio\rail_lib\protocol\ieee802154\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\radio\rail_lib\protocol\wmbus\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\radio\rail_lib\protocol\zwave\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\radio\rail_lib\chip\efr32\efr32xg2x\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\radio\rail_lib\protocol\sidewalk\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\radio\rail_lib\plugin\pa-conversions\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\radio\rail_lib\plugin\pa-conversions\efr32xg28\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\radio\rail_lib\plugin\rail_util_pti\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\security\sl_component\se_manager\inc\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\security\sl_component\se_manager\src\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\util\third_party\segger\systemview\SEGGER\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\util\silicon_labs\silabs_core\memory_manager\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\common\toolchain\inc\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\service\system\inc\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\app\wisun\component\app_core\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\app\wisun\component\app_setting\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\app\wisun\component\cli_util\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\app\wisun\component\event_manager\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\app\wisun\component\ns_list\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\app\wisun\component\ping\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\app\wisun\component\trace_util\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\app\wisun\component\trace_util\nanostack\nanostack-libservice\mbed-client-libservice\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\app\wisun\component\udp_client\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\service\sleeptimer\inc\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\protocol\wisun\plugin\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\protocol\wisun\stack\inc\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\protocol\wisun\stack\inc\socket\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App 1\Wisun_Node_App\autogen\\" -On
+#        --use_c++_inline) --dependencies=n "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\ewarm-iar\obj\library_17211336700577820660.dir\asn1parse.o.iar_deps"
+#    Locale                       =  C
+#    List file                    =
+#        D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\ewarm-iar\lst\library_17211336700577820660.dir\asn1parse.lst
+#    Object file                  =
+#        D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\ewarm-iar\obj\library_17211336700577820660.dir\asn1parse.o
+#    Runtime model:                  
+#      __CPP_Runtime              =  1
+#      __SystemLibrary            =  DLib
+#      __dlib_file_descriptor     =  0
+#      __dlib_full_locale_support =  0
+#      __dlib_version             =  6
+#
+###############################################################################
+
+D:\Inesh_wisun\Wisun_Node_App 1\Wisun_Node_App\gecko_sdk_4.4.5\util\third_party\mbedtls\library\asn1parse.c
+      1          /*
+      2           *  Generic ASN.1 parsing
+      3           *
+      4           *  Copyright The Mbed TLS Contributors
+      5           *  SPDX-License-Identifier: Apache-2.0
+      6           *
+      7           *  Licensed under the Apache License, Version 2.0 (the "License"); you may
+      8           *  not use this file except in compliance with the License.
+      9           *  You may obtain a copy of the License at
+     10           *
+     11           *  http://www.apache.org/licenses/LICENSE-2.0
+     12           *
+     13           *  Unless required by applicable law or agreed to in writing, software
+     14           *  distributed under the License is distributed on an "AS IS" BASIS, WITHOUT
+     15           *  WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     16           *  See the License for the specific language governing permissions and
+     17           *  limitations under the License.
+     18           */
+     19          
+     20          #include "common.h"
+     21          
+     22          #if defined(MBEDTLS_ASN1_PARSE_C) || defined(MBEDTLS_X509_CREATE_C)
+     23          
+     24          #include "mbedtls/asn1.h"
+     25          #include "mbedtls/platform_util.h"
+     26          #include "mbedtls/error.h"
+     27          
+     28          #include <string.h>
+     29          
+     30          #if defined(MBEDTLS_BIGNUM_C)
+     31          #include "mbedtls/bignum.h"
+     32          #endif
+     33          
+     34          #include "mbedtls/platform.h"
+     35          
+     36          /*
+     37           * ASN.1 DER decoding routines
+     38           */
+
+   \                                 In section .text, align 2, keep-with-next
+     39          int mbedtls_asn1_get_len(unsigned char **p,
+     40                                   const unsigned char *end,
+     41                                   size_t *len)
+     42          {
+   \                     mbedtls_asn1_get_len: (+1)
+   \        0x0   0xB430             PUSH     {R4,R5}
+   \        0x2   0x0004             MOVS     R4,R0
+     43              if ((end - *p) < 1) {
+   \        0x4   0x6820             LDR      R0,[R4, #+0]
+   \        0x6   0x1A08             SUBS     R0,R1,R0
+   \        0x8   0x2801             CMP      R0,#+1
+   \        0xA   0xDA02             BGE.N    ??mbedtls_asn1_get_len_0
+     44                  return MBEDTLS_ERR_ASN1_OUT_OF_DATA;
+   \        0xC   0xF07F 0x005F      MVNS     R0,#+95
+   \       0x10   0xE037             B.N      ??mbedtls_asn1_get_len_1
+     45              }
+     46          
+     47              if ((**p & 0x80) == 0) {
+   \                     ??mbedtls_asn1_get_len_0: (+1)
+   \       0x12   0x6820             LDR      R0,[R4, #+0]
+   \       0x14   0x7800             LDRB     R0,[R0, #+0]
+   \       0x16   0x0600             LSLS     R0,R0,#+24
+   \       0x18   0xD405             BMI.N    ??mbedtls_asn1_get_len_2
+     48                  *len = *(*p)++;
+   \       0x1A   0x6823             LDR      R3,[R4, #+0]
+   \       0x1C   0x1C58             ADDS     R0,R3,#+1
+   \       0x1E   0x6020             STR      R0,[R4, #+0]
+   \       0x20   0x7818             LDRB     R0,[R3, #+0]
+   \       0x22   0x6010             STR      R0,[R2, #+0]
+   \       0x24   0xE024             B.N      ??mbedtls_asn1_get_len_3
+     49              } else {
+     50                  int n = (**p) & 0x7F;
+   \                     ??mbedtls_asn1_get_len_2: (+1)
+   \       0x26   0x6820             LDR      R0,[R4, #+0]
+   \       0x28   0x7803             LDRB     R3,[R0, #+0]
+   \       0x2A   0xF013 0x037F      ANDS     R3,R3,#0x7F
+     51                  if (n == 0 || n > 4) {
+   \       0x2E   0x2B00             CMP      R3,#+0
+   \       0x30   0xD001             BEQ.N    ??mbedtls_asn1_get_len_4
+   \       0x32   0x2B05             CMP      R3,#+5
+   \       0x34   0xDB02             BLT.N    ??mbedtls_asn1_get_len_5
+     52                      return MBEDTLS_ERR_ASN1_INVALID_LENGTH;
+   \                     ??mbedtls_asn1_get_len_4: (+1)
+   \       0x36   0xF07F 0x0063      MVNS     R0,#+99
+   \       0x3A   0xE022             B.N      ??mbedtls_asn1_get_len_1
+     53                  }
+     54                  if ((end - *p) <= n) {
+   \                     ??mbedtls_asn1_get_len_5: (+1)
+   \       0x3C   0x6820             LDR      R0,[R4, #+0]
+   \       0x3E   0x1A08             SUBS     R0,R1,R0
+   \       0x40   0x4283             CMP      R3,R0
+   \       0x42   0xDB02             BLT.N    ??mbedtls_asn1_get_len_6
+     55                      return MBEDTLS_ERR_ASN1_OUT_OF_DATA;
+   \       0x44   0xF07F 0x005F      MVNS     R0,#+95
+   \       0x48   0xE01B             B.N      ??mbedtls_asn1_get_len_1
+     56                  }
+     57                  *len = 0;
+   \                     ??mbedtls_asn1_get_len_6: (+1)
+   \       0x4A   0x2000             MOVS     R0,#+0
+   \       0x4C   0x6010             STR      R0,[R2, #+0]
+     58                  (*p)++;
+   \       0x4E   0x6820             LDR      R0,[R4, #+0]
+   \       0x50   0x1C40             ADDS     R0,R0,#+1
+   \       0x52   0x6020             STR      R0,[R4, #+0]
+     59                  while (n--) {
+   \                     ??mbedtls_asn1_get_len_7: (+1)
+   \       0x54   0x0018             MOVS     R0,R3
+   \       0x56   0x1E43             SUBS     R3,R0,#+1
+   \       0x58   0x2800             CMP      R0,#+0
+   \       0x5A   0xD009             BEQ.N    ??mbedtls_asn1_get_len_3
+     60                      *len = (*len << 8) | **p;
+   \       0x5C   0x6810             LDR      R0,[R2, #+0]
+   \       0x5E   0x6825             LDR      R5,[R4, #+0]
+   \       0x60   0x782D             LDRB     R5,[R5, #+0]
+   \       0x62   0xEA55 0x2500      ORRS     R5,R5,R0, LSL #+8
+   \       0x66   0x6015             STR      R5,[R2, #+0]
+     61                      (*p)++;
+   \       0x68   0x6820             LDR      R0,[R4, #+0]
+   \       0x6A   0x1C40             ADDS     R0,R0,#+1
+   \       0x6C   0x6020             STR      R0,[R4, #+0]
+   \       0x6E   0xE7F1             B.N      ??mbedtls_asn1_get_len_7
+     62                  }
+     63              }
+     64          
+     65              if (*len > (size_t) (end - *p)) {
+   \                     ??mbedtls_asn1_get_len_3: (+1)
+   \       0x70   0x6823             LDR      R3,[R4, #+0]
+   \       0x72   0x1ACB             SUBS     R3,R1,R3
+   \       0x74   0x6810             LDR      R0,[R2, #+0]
+   \       0x76   0x4283             CMP      R3,R0
+   \       0x78   0xD202             BCS.N    ??mbedtls_asn1_get_len_8
+     66                  return MBEDTLS_ERR_ASN1_OUT_OF_DATA;
+   \       0x7A   0xF07F 0x005F      MVNS     R0,#+95
+   \       0x7E   0xE000             B.N      ??mbedtls_asn1_get_len_1
+     67              }
+     68          
+     69              return 0;
+   \                     ??mbedtls_asn1_get_len_8: (+1)
+   \       0x80   0x2000             MOVS     R0,#+0
+   \                     ??mbedtls_asn1_get_len_1: (+1)
+   \       0x82   0xBC30             POP      {R4,R5}
+   \       0x84   0x4770             BX       LR
+     70          }
+     71          
+
+   \                                 In section .text, align 2, keep-with-next
+     72          int mbedtls_asn1_get_tag(unsigned char **p,
+     73                                   const unsigned char *end,
+     74                                   size_t *len, int tag)
+     75          {
+   \                     mbedtls_asn1_get_tag: (+1)
+   \        0x0   0xB5F8             PUSH     {R3-R7,LR}
+   \        0x2   0x0004             MOVS     R4,R0
+   \        0x4   0x000D             MOVS     R5,R1
+   \        0x6   0x0016             MOVS     R6,R2
+   \        0x8   0x001F             MOVS     R7,R3
+     76              if ((end - *p) < 1) {
+   \        0xA   0x6820             LDR      R0,[R4, #+0]
+   \        0xC   0x1A28             SUBS     R0,R5,R0
+   \        0xE   0x2801             CMP      R0,#+1
+   \       0x10   0xDA02             BGE.N    ??mbedtls_asn1_get_tag_0
+     77                  return MBEDTLS_ERR_ASN1_OUT_OF_DATA;
+   \       0x12   0xF07F 0x005F      MVNS     R0,#+95
+   \       0x16   0xE00E             B.N      ??mbedtls_asn1_get_tag_1
+     78              }
+     79          
+     80              if (**p != tag) {
+   \                     ??mbedtls_asn1_get_tag_0: (+1)
+   \       0x18   0x6820             LDR      R0,[R4, #+0]
+   \       0x1A   0x7800             LDRB     R0,[R0, #+0]
+   \       0x1C   0x42B8             CMP      R0,R7
+   \       0x1E   0xD002             BEQ.N    ??mbedtls_asn1_get_tag_2
+     81                  return MBEDTLS_ERR_ASN1_UNEXPECTED_TAG;
+   \       0x20   0xF07F 0x0061      MVNS     R0,#+97
+   \       0x24   0xE007             B.N      ??mbedtls_asn1_get_tag_1
+     82              }
+     83          
+     84              (*p)++;
+   \                     ??mbedtls_asn1_get_tag_2: (+1)
+   \       0x26   0x6820             LDR      R0,[R4, #+0]
+   \       0x28   0x1C40             ADDS     R0,R0,#+1
+   \       0x2A   0x6020             STR      R0,[R4, #+0]
+     85          
+     86              return mbedtls_asn1_get_len(p, end, len);
+   \       0x2C   0x0032             MOVS     R2,R6
+   \       0x2E   0x0029             MOVS     R1,R5
+   \       0x30   0x0020             MOVS     R0,R4
+   \       0x32   0x.... 0x....      BL       mbedtls_asn1_get_len
+   \                     ??mbedtls_asn1_get_tag_1: (+1)
+   \       0x36   0xBDF2             POP      {R1,R4-R7,PC}
+     87          }
+     88          #endif /* MBEDTLS_ASN1_PARSE_C || MBEDTLS_X509_CREATE_C */
+     89          
+     90          #if defined(MBEDTLS_ASN1_PARSE_C)
+
+   \                                 In section .text, align 2, keep-with-next
+     91          int mbedtls_asn1_get_bool(unsigned char **p,
+     92                                    const unsigned char *end,
+     93                                    int *val)
+     94          {
+   \                     mbedtls_asn1_get_bool: (+1)
+   \        0x0   0xB5F8             PUSH     {R3-R7,LR}
+   \        0x2   0x0004             MOVS     R4,R0
+   \        0x4   0x000D             MOVS     R5,R1
+   \        0x6   0x0016             MOVS     R6,R2
+     95              int ret = MBEDTLS_ERR_ERROR_CORRUPTION_DETECTED;
+   \        0x8   0xF07F 0x076D      MVNS     R7,#+109
+     96              size_t len;
+     97          
+     98              if ((ret = mbedtls_asn1_get_tag(p, end, &len, MBEDTLS_ASN1_BOOLEAN)) != 0) {
+   \        0xC   0x2301             MOVS     R3,#+1
+   \        0xE   0x466A             MOV      R2,SP
+   \       0x10   0x0029             MOVS     R1,R5
+   \       0x12   0x0020             MOVS     R0,R4
+   \       0x14   0x.... 0x....      BL       mbedtls_asn1_get_tag
+   \       0x18   0x0001             MOVS     R1,R0
+   \       0x1A   0x2800             CMP      R0,#+0
+   \       0x1C   0xD001             BEQ.N    ??mbedtls_asn1_get_bool_0
+     99                  return ret;
+   \       0x1E   0x0008             MOVS     R0,R1
+   \       0x20   0xE011             B.N      ??mbedtls_asn1_get_bool_1
+    100              }
+    101          
+    102              if (len != 1) {
+   \                     ??mbedtls_asn1_get_bool_0: (+1)
+   \       0x22   0x9800             LDR      R0,[SP, #+0]
+   \       0x24   0x2801             CMP      R0,#+1
+   \       0x26   0xD002             BEQ.N    ??mbedtls_asn1_get_bool_2
+    103                  return MBEDTLS_ERR_ASN1_INVALID_LENGTH;
+   \       0x28   0xF07F 0x0063      MVNS     R0,#+99
+   \       0x2C   0xE00B             B.N      ??mbedtls_asn1_get_bool_1
+    104              }
+    105          
+    106              *val = (**p != 0) ? 1 : 0;
+   \                     ??mbedtls_asn1_get_bool_2: (+1)
+   \       0x2E   0x6820             LDR      R0,[R4, #+0]
+   \       0x30   0x7800             LDRB     R0,[R0, #+0]
+   \       0x32   0x2800             CMP      R0,#+0
+   \       0x34   0xD001             BEQ.N    ??mbedtls_asn1_get_bool_3
+   \       0x36   0x2001             MOVS     R0,#+1
+   \       0x38   0xE000             B.N      ??mbedtls_asn1_get_bool_4
+   \                     ??mbedtls_asn1_get_bool_3: (+1)
+   \       0x3A   0x2000             MOVS     R0,#+0
+   \                     ??mbedtls_asn1_get_bool_4: (+1)
+   \       0x3C   0x6030             STR      R0,[R6, #+0]
+    107              (*p)++;
+   \       0x3E   0x6820             LDR      R0,[R4, #+0]
+   \       0x40   0x1C40             ADDS     R0,R0,#+1
+   \       0x42   0x6020             STR      R0,[R4, #+0]
+    108          
+    109              return 0;
+   \       0x44   0x2000             MOVS     R0,#+0
+   \                     ??mbedtls_asn1_get_bool_1: (+1)
+   \       0x46   0xBDF2             POP      {R1,R4-R7,PC}
+    110          }
+    111          
+
+   \                                 In section .text, align 2, keep-with-next
+    112          static int asn1_get_tagged_int(unsigned char **p,
+    113                                         const unsigned char *end,
+    114                                         int tag, int *val)
+    115          {
+   \                     asn1_get_tagged_int: (+1)
+   \        0x0   0xE92D 0x41FC      PUSH     {R2-R8,LR}
+   \        0x4   0x0007             MOVS     R7,R0
+   \        0x6   0x000C             MOVS     R4,R1
+   \        0x8   0x0015             MOVS     R5,R2
+   \        0xA   0x001E             MOVS     R6,R3
+    116              int ret = MBEDTLS_ERR_ERROR_CORRUPTION_DETECTED;
+   \        0xC   0xF07F 0x086D      MVNS     R8,#+109
+    117              size_t len;
+    118          
+    119              if ((ret = mbedtls_asn1_get_tag(p, end, &len, tag)) != 0) {
+   \       0x10   0x002B             MOVS     R3,R5
+   \       0x12   0x466A             MOV      R2,SP
+   \       0x14   0x0021             MOVS     R1,R4
+   \       0x16   0x0038             MOVS     R0,R7
+   \       0x18   0x.... 0x....      BL       mbedtls_asn1_get_tag
+   \       0x1C   0x0001             MOVS     R1,R0
+   \       0x1E   0x2800             CMP      R0,#+0
+   \       0x20   0xD001             BEQ.N    ??asn1_get_tagged_int_0
+    120                  return ret;
+   \       0x22   0x0008             MOVS     R0,R1
+   \       0x24   0xE03C             B.N      ??asn1_get_tagged_int_1
+    121              }
+    122          
+    123              /*
+    124               * len==0 is malformed (0 must be represented as 020100 for INTEGER,
+    125               * or 0A0100 for ENUMERATED tags
+    126               */
+    127              if (len == 0) {
+   \                     ??asn1_get_tagged_int_0: (+1)
+   \       0x26   0x9800             LDR      R0,[SP, #+0]
+   \       0x28   0x2800             CMP      R0,#+0
+   \       0x2A   0xD102             BNE.N    ??asn1_get_tagged_int_2
+    128                  return MBEDTLS_ERR_ASN1_INVALID_LENGTH;
+   \       0x2C   0xF07F 0x0063      MVNS     R0,#+99
+   \       0x30   0xE036             B.N      ??asn1_get_tagged_int_1
+    129              }
+    130              /* This is a cryptography library. Reject negative integers. */
+    131              if ((**p & 0x80) != 0) {
+   \                     ??asn1_get_tagged_int_2: (+1)
+   \       0x32   0x6838             LDR      R0,[R7, #+0]
+   \       0x34   0x7800             LDRB     R0,[R0, #+0]
+   \       0x36   0x0600             LSLS     R0,R0,#+24
+   \       0x38   0xD502             BPL.N    ??asn1_get_tagged_int_3
+    132                  return MBEDTLS_ERR_ASN1_INVALID_LENGTH;
+   \       0x3A   0xF07F 0x0063      MVNS     R0,#+99
+   \       0x3E   0xE02F             B.N      ??asn1_get_tagged_int_1
+    133              }
+    134          
+    135              /* Skip leading zeros. */
+    136              while (len > 0 && **p == 0) {
+   \                     ??asn1_get_tagged_int_3: (+1)
+   \       0x40   0x9800             LDR      R0,[SP, #+0]
+   \       0x42   0x2800             CMP      R0,#+0
+   \       0x44   0xD00A             BEQ.N    ??asn1_get_tagged_int_4
+   \       0x46   0x6838             LDR      R0,[R7, #+0]
+   \       0x48   0x7800             LDRB     R0,[R0, #+0]
+   \       0x4A   0x2800             CMP      R0,#+0
+   \       0x4C   0xD106             BNE.N    ??asn1_get_tagged_int_4
+    137                  ++(*p);
+   \       0x4E   0x6838             LDR      R0,[R7, #+0]
+   \       0x50   0x1C40             ADDS     R0,R0,#+1
+   \       0x52   0x6038             STR      R0,[R7, #+0]
+    138                  --len;
+   \       0x54   0x9800             LDR      R0,[SP, #+0]
+   \       0x56   0x1E40             SUBS     R0,R0,#+1
+   \       0x58   0x9000             STR      R0,[SP, #+0]
+   \       0x5A   0xE7F1             B.N      ??asn1_get_tagged_int_3
+    139              }
+    140          
+    141              /* Reject integers that don't fit in an int. This code assumes that
+    142               * the int type has no padding bit. */
+    143              if (len > sizeof(int)) {
+   \                     ??asn1_get_tagged_int_4: (+1)
+   \       0x5C   0x9800             LDR      R0,[SP, #+0]
+   \       0x5E   0x2805             CMP      R0,#+5
+   \       0x60   0xD302             BCC.N    ??asn1_get_tagged_int_5
+    144                  return MBEDTLS_ERR_ASN1_INVALID_LENGTH;
+   \       0x62   0xF07F 0x0063      MVNS     R0,#+99
+   \       0x66   0xE01B             B.N      ??asn1_get_tagged_int_1
+    145              }
+    146              if (len == sizeof(int) && (**p & 0x80) != 0) {
+   \                     ??asn1_get_tagged_int_5: (+1)
+   \       0x68   0x9800             LDR      R0,[SP, #+0]
+   \       0x6A   0x2804             CMP      R0,#+4
+   \       0x6C   0xD106             BNE.N    ??asn1_get_tagged_int_6
+   \       0x6E   0x6838             LDR      R0,[R7, #+0]
+   \       0x70   0x7800             LDRB     R0,[R0, #+0]
+   \       0x72   0x0600             LSLS     R0,R0,#+24
+   \       0x74   0xD502             BPL.N    ??asn1_get_tagged_int_6
+    147                  return MBEDTLS_ERR_ASN1_INVALID_LENGTH;
+   \       0x76   0xF07F 0x0063      MVNS     R0,#+99
+   \       0x7A   0xE011             B.N      ??asn1_get_tagged_int_1
+    148              }
+    149          
+    150              *val = 0;
+   \                     ??asn1_get_tagged_int_6: (+1)
+   \       0x7C   0x2000             MOVS     R0,#+0
+   \       0x7E   0x6030             STR      R0,[R6, #+0]
+    151              while (len-- > 0) {
+   \                     ??asn1_get_tagged_int_7: (+1)
+   \       0x80   0x9800             LDR      R0,[SP, #+0]
+   \       0x82   0x1E42             SUBS     R2,R0,#+1
+   \       0x84   0x9200             STR      R2,[SP, #+0]
+   \       0x86   0x2800             CMP      R0,#+0
+   \       0x88   0xD009             BEQ.N    ??asn1_get_tagged_int_8
+    152                  *val = (*val << 8) | **p;
+   \       0x8A   0x6830             LDR      R0,[R6, #+0]
+   \       0x8C   0x683A             LDR      R2,[R7, #+0]
+   \       0x8E   0x7812             LDRB     R2,[R2, #+0]
+   \       0x90   0xEA52 0x2200      ORRS     R2,R2,R0, LSL #+8
+   \       0x94   0x6032             STR      R2,[R6, #+0]
+    153                  (*p)++;
+   \       0x96   0x6838             LDR      R0,[R7, #+0]
+   \       0x98   0x1C40             ADDS     R0,R0,#+1
+   \       0x9A   0x6038             STR      R0,[R7, #+0]
+   \       0x9C   0xE7F0             B.N      ??asn1_get_tagged_int_7
+    154              }
+    155          
+    156              return 0;
+   \                     ??asn1_get_tagged_int_8: (+1)
+   \       0x9E   0x2000             MOVS     R0,#+0
+   \                     ??asn1_get_tagged_int_1: (+1)
+   \       0xA0   0xE8BD 0x81F6      POP      {R1,R2,R4-R8,PC}
+    157          }
+    158          
+
+   \                                 In section .text, align 2, keep-with-next
+    159          int mbedtls_asn1_get_int(unsigned char **p,
+    160                                   const unsigned char *end,
+    161                                   int *val)
+    162          {
+   \                     mbedtls_asn1_get_int: (+1)
+   \        0x0   0xB570             PUSH     {R4-R6,LR}
+   \        0x2   0x0006             MOVS     R6,R0
+   \        0x4   0x000C             MOVS     R4,R1
+   \        0x6   0x0015             MOVS     R5,R2
+    163              return asn1_get_tagged_int(p, end, MBEDTLS_ASN1_INTEGER, val);
+   \        0x8   0x002B             MOVS     R3,R5
+   \        0xA   0x2202             MOVS     R2,#+2
+   \        0xC   0x0021             MOVS     R1,R4
+   \        0xE   0x0030             MOVS     R0,R6
+   \       0x10   0x.... 0x....      BL       asn1_get_tagged_int
+   \       0x14   0xBD70             POP      {R4-R6,PC}
+    164          }
+    165          
+
+   \                                 In section .text, align 2, keep-with-next
+    166          int mbedtls_asn1_get_enum(unsigned char **p,
+    167                                    const unsigned char *end,
+    168                                    int *val)
+    169          {
+   \                     mbedtls_asn1_get_enum: (+1)
+   \        0x0   0xB570             PUSH     {R4-R6,LR}
+   \        0x2   0x0006             MOVS     R6,R0
+   \        0x4   0x000C             MOVS     R4,R1
+   \        0x6   0x0015             MOVS     R5,R2
+    170              return asn1_get_tagged_int(p, end, MBEDTLS_ASN1_ENUMERATED, val);
+   \        0x8   0x002B             MOVS     R3,R5
+   \        0xA   0x220A             MOVS     R2,#+10
+   \        0xC   0x0021             MOVS     R1,R4
+   \        0xE   0x0030             MOVS     R0,R6
+   \       0x10   0x.... 0x....      BL       asn1_get_tagged_int
+   \       0x14   0xBD70             POP      {R4-R6,PC}
+    171          }
+    172          
+    173          #if defined(MBEDTLS_BIGNUM_C)
+
+   \                                 In section .text, align 2, keep-with-next
+    174          int mbedtls_asn1_get_mpi(unsigned char **p,
+    175                                   const unsigned char *end,
+    176                                   mbedtls_mpi *X)
+    177          {
+   \                     mbedtls_asn1_get_mpi: (+1)
+   \        0x0   0xE92D 0x41FC      PUSH     {R2-R8,LR}
+   \        0x4   0x0004             MOVS     R4,R0
+   \        0x6   0x000D             MOVS     R5,R1
+   \        0x8   0x0016             MOVS     R6,R2
+    178              int ret = MBEDTLS_ERR_ERROR_CORRUPTION_DETECTED;
+   \        0xA   0xF07F 0x086D      MVNS     R8,#+109
+    179              size_t len;
+    180          
+    181              if ((ret = mbedtls_asn1_get_tag(p, end, &len, MBEDTLS_ASN1_INTEGER)) != 0) {
+   \        0xE   0x2302             MOVS     R3,#+2
+   \       0x10   0x466A             MOV      R2,SP
+   \       0x12   0x0029             MOVS     R1,R5
+   \       0x14   0x0020             MOVS     R0,R4
+   \       0x16   0x.... 0x....      BL       mbedtls_asn1_get_tag
+   \       0x1A   0x0007             MOVS     R7,R0
+   \       0x1C   0x2800             CMP      R0,#+0
+   \       0x1E   0xD001             BEQ.N    ??mbedtls_asn1_get_mpi_0
+    182                  return ret;
+   \       0x20   0x0038             MOVS     R0,R7
+   \       0x22   0xE008             B.N      ??mbedtls_asn1_get_mpi_1
+    183              }
+    184          
+    185              ret = mbedtls_mpi_read_binary(X, *p, len);
+   \                     ??mbedtls_asn1_get_mpi_0: (+1)
+   \       0x24   0x9A00             LDR      R2,[SP, #+0]
+   \       0x26   0x6821             LDR      R1,[R4, #+0]
+   \       0x28   0x0030             MOVS     R0,R6
+   \       0x2A   0x.... 0x....      BL       mbedtls_mpi_read_binary
+    186          
+    187              *p += len;
+   \       0x2E   0x6822             LDR      R2,[R4, #+0]
+   \       0x30   0x9900             LDR      R1,[SP, #+0]
+   \       0x32   0x4411             ADD      R1,R2,R1
+   \       0x34   0x6021             STR      R1,[R4, #+0]
+    188          
+    189              return ret;
+   \                     ??mbedtls_asn1_get_mpi_1: (+1)
+   \       0x36   0xE8BD 0x81F6      POP      {R1,R2,R4-R8,PC}
+    190          }
+    191          #endif /* MBEDTLS_BIGNUM_C */
+    192          
+
+   \                                 In section .text, align 2, keep-with-next
+    193          int mbedtls_asn1_get_bitstring(unsigned char **p, const unsigned char *end,
+    194                                         mbedtls_asn1_bitstring *bs)
+    195          {
+   \                     mbedtls_asn1_get_bitstring: (+1)
+   \        0x0   0xB5F8             PUSH     {R3-R7,LR}
+   \        0x2   0x0004             MOVS     R4,R0
+   \        0x4   0x000D             MOVS     R5,R1
+   \        0x6   0x0016             MOVS     R6,R2
+    196              int ret = MBEDTLS_ERR_ERROR_CORRUPTION_DETECTED;
+   \        0x8   0xF07F 0x076D      MVNS     R7,#+109
+    197          
+    198              /* Certificate type is a single byte bitstring */
+    199              if ((ret = mbedtls_asn1_get_tag(p, end, &bs->len, MBEDTLS_ASN1_BIT_STRING)) != 0) {
+   \        0xC   0x2303             MOVS     R3,#+3
+   \        0xE   0x0032             MOVS     R2,R6
+   \       0x10   0x0029             MOVS     R1,R5
+   \       0x12   0x0020             MOVS     R0,R4
+   \       0x14   0x.... 0x....      BL       mbedtls_asn1_get_tag
+   \       0x18   0x0001             MOVS     R1,R0
+   \       0x1A   0x2800             CMP      R0,#+0
+   \       0x1C   0xD001             BEQ.N    ??mbedtls_asn1_get_bitstring_0
+    200                  return ret;
+   \       0x1E   0x0008             MOVS     R0,R1
+   \       0x20   0xE021             B.N      ??mbedtls_asn1_get_bitstring_1
+    201              }
+    202          
+    203              /* Check length, subtract one for actual bit string length */
+    204              if (bs->len < 1) {
+   \                     ??mbedtls_asn1_get_bitstring_0: (+1)
+   \       0x22   0x6830             LDR      R0,[R6, #+0]
+   \       0x24   0x2800             CMP      R0,#+0
+   \       0x26   0xD102             BNE.N    ??mbedtls_asn1_get_bitstring_2
+    205                  return MBEDTLS_ERR_ASN1_OUT_OF_DATA;
+   \       0x28   0xF07F 0x005F      MVNS     R0,#+95
+   \       0x2C   0xE01B             B.N      ??mbedtls_asn1_get_bitstring_1
+    206              }
+    207              bs->len -= 1;
+   \                     ??mbedtls_asn1_get_bitstring_2: (+1)
+   \       0x2E   0x6830             LDR      R0,[R6, #+0]
+   \       0x30   0x1E40             SUBS     R0,R0,#+1
+   \       0x32   0x6030             STR      R0,[R6, #+0]
+    208          
+    209              /* Get number of unused bits, ensure unused bits <= 7 */
+    210              bs->unused_bits = **p;
+   \       0x34   0x6820             LDR      R0,[R4, #+0]
+   \       0x36   0x7800             LDRB     R0,[R0, #+0]
+   \       0x38   0x7130             STRB     R0,[R6, #+4]
+    211              if (bs->unused_bits > 7) {
+   \       0x3A   0x7930             LDRB     R0,[R6, #+4]
+   \       0x3C   0x2808             CMP      R0,#+8
+   \       0x3E   0xDB02             BLT.N    ??mbedtls_asn1_get_bitstring_3
+    212                  return MBEDTLS_ERR_ASN1_INVALID_LENGTH;
+   \       0x40   0xF07F 0x0063      MVNS     R0,#+99
+   \       0x44   0xE00F             B.N      ??mbedtls_asn1_get_bitstring_1
+    213              }
+    214              (*p)++;
+   \                     ??mbedtls_asn1_get_bitstring_3: (+1)
+   \       0x46   0x6820             LDR      R0,[R4, #+0]
+   \       0x48   0x1C40             ADDS     R0,R0,#+1
+   \       0x4A   0x6020             STR      R0,[R4, #+0]
+    215          
+    216              /* Get actual bitstring */
+    217              bs->p = *p;
+   \       0x4C   0x6820             LDR      R0,[R4, #+0]
+   \       0x4E   0x60B0             STR      R0,[R6, #+8]
+    218              *p += bs->len;
+   \       0x50   0x6822             LDR      R2,[R4, #+0]
+   \       0x52   0x6830             LDR      R0,[R6, #+0]
+   \       0x54   0x4410             ADD      R0,R2,R0
+   \       0x56   0x6020             STR      R0,[R4, #+0]
+    219          
+    220              if (*p != end) {
+   \       0x58   0x6820             LDR      R0,[R4, #+0]
+   \       0x5A   0x42A8             CMP      R0,R5
+   \       0x5C   0xD002             BEQ.N    ??mbedtls_asn1_get_bitstring_4
+    221                  return MBEDTLS_ERR_ASN1_LENGTH_MISMATCH;
+   \       0x5E   0xF07F 0x0065      MVNS     R0,#+101
+   \       0x62   0xE000             B.N      ??mbedtls_asn1_get_bitstring_1
+    222              }
+    223          
+    224              return 0;
+   \                     ??mbedtls_asn1_get_bitstring_4: (+1)
+   \       0x64   0x2000             MOVS     R0,#+0
+   \                     ??mbedtls_asn1_get_bitstring_1: (+1)
+   \       0x66   0xBDF2             POP      {R1,R4-R7,PC}
+    225          }
+    226          
+    227          /*
+    228           * Traverse an ASN.1 "SEQUENCE OF <tag>"
+    229           * and call a callback for each entry found.
+    230           */
+
+   \                                 In section .text, align 2, keep-with-next
+    231          int mbedtls_asn1_traverse_sequence_of(
+    232              unsigned char **p,
+    233              const unsigned char *end,
+    234              unsigned char tag_must_mask, unsigned char tag_must_val,
+    235              unsigned char tag_may_mask, unsigned char tag_may_val,
+    236              int (*cb)(void *ctx, int tag,
+    237                        unsigned char *start, size_t len),
+    238              void *ctx)
+    239          {
+   \                     mbedtls_asn1_traverse_sequence_of: (+1)
+   \        0x0   0xE92D 0x4FFE      PUSH     {R1-R11,LR}
+   \        0x4   0x4683             MOV      R11,R0
+   \        0x6   0x000F             MOVS     R7,R1
+   \        0x8   0x9D0C             LDR      R5,[SP, #+48]
+   \        0xA   0x9E0D             LDR      R6,[SP, #+52]
+   \        0xC   0xF8DD 0x8038      LDR      R8,[SP, #+56]
+   \       0x10   0xF8DD 0x903C      LDR      R9,[SP, #+60]
+    240              int ret;
+    241              size_t len;
+    242          
+    243              /* Get main sequence tag */
+    244              if ((ret = mbedtls_asn1_get_tag(p, end, &len,
+    245                                              MBEDTLS_ASN1_CONSTRUCTED | MBEDTLS_ASN1_SEQUENCE)) != 0) {
+   \       0x14   0x2330             MOVS     R3,#+48
+   \       0x16   0x466A             MOV      R2,SP
+   \       0x18   0x0039             MOVS     R1,R7
+   \       0x1A   0x4658             MOV      R0,R11
+   \       0x1C   0x.... 0x....      BL       mbedtls_asn1_get_tag
+   \       0x20   0x0004             MOVS     R4,R0
+   \       0x22   0x2800             CMP      R0,#+0
+   \       0x24   0xD001             BEQ.N    ??mbedtls_asn1_traverse_sequence_of_0
+    246                  return ret;
+   \       0x26   0x0020             MOVS     R0,R4
+   \       0x28   0xE049             B.N      ??mbedtls_asn1_traverse_sequence_of_1
+    247              }
+    248          
+    249              if (*p + len != end) {
+   \                     ??mbedtls_asn1_traverse_sequence_of_0: (+1)
+   \       0x2A   0xF8DB 0x1000      LDR      R1,[R11, #+0]
+   \       0x2E   0x9800             LDR      R0,[SP, #+0]
+   \       0x30   0x4408             ADD      R0,R1,R0
+   \       0x32   0x42B8             CMP      R0,R7
+   \       0x34   0xD002             BEQ.N    ??mbedtls_asn1_traverse_sequence_of_2
+    250                  return MBEDTLS_ERR_ASN1_LENGTH_MISMATCH;
+   \       0x36   0xF07F 0x0065      MVNS     R0,#+101
+   \       0x3A   0xE040             B.N      ??mbedtls_asn1_traverse_sequence_of_1
+    251              }
+    252          
+    253              while (*p < end) {
+   \                     ??mbedtls_asn1_traverse_sequence_of_2: (+1)
+   \       0x3C   0xF8DB 0x0000      LDR      R0,[R11, #+0]
+   \       0x40   0x42B8             CMP      R0,R7
+   \       0x42   0xD23B             BCS.N    ??mbedtls_asn1_traverse_sequence_of_3
+    254                  unsigned char const tag = *(*p)++;
+   \       0x44   0xF8DB 0x1000      LDR      R1,[R11, #+0]
+   \       0x48   0x1C48             ADDS     R0,R1,#+1
+   \       0x4A   0xF8CB 0x0000      STR      R0,[R11, #+0]
+   \       0x4E   0xF891 0xA000      LDRB     R10,[R1, #+0]
+    255          
+    256                  if ((tag & tag_must_mask) != tag_must_val) {
+   \       0x52   0x4651             MOV      R1,R10
+   \       0x54   0xB2C9             UXTB     R1,R1
+   \       0x56   0xF89D 0x0004      LDRB     R0,[SP, #+4]
+   \       0x5A   0x4001             ANDS     R1,R0,R1
+   \       0x5C   0xF89D 0x0008      LDRB     R0,[SP, #+8]
+   \       0x60   0x4281             CMP      R1,R0
+   \       0x62   0xD002             BEQ.N    ??mbedtls_asn1_traverse_sequence_of_4
+    257                      return MBEDTLS_ERR_ASN1_UNEXPECTED_TAG;
+   \       0x64   0xF07F 0x0061      MVNS     R0,#+97
+   \       0x68   0xE029             B.N      ??mbedtls_asn1_traverse_sequence_of_1
+    258                  }
+    259          
+    260                  if ((ret = mbedtls_asn1_get_len(p, end, &len)) != 0) {
+   \                     ??mbedtls_asn1_traverse_sequence_of_4: (+1)
+   \       0x6A   0x466A             MOV      R2,SP
+   \       0x6C   0x0039             MOVS     R1,R7
+   \       0x6E   0x4658             MOV      R0,R11
+   \       0x70   0x.... 0x....      BL       mbedtls_asn1_get_len
+   \       0x74   0x0004             MOVS     R4,R0
+   \       0x76   0x2800             CMP      R0,#+0
+   \       0x78   0xD001             BEQ.N    ??mbedtls_asn1_traverse_sequence_of_5
+    261                      return ret;
+   \       0x7A   0x0020             MOVS     R0,R4
+   \       0x7C   0xE01F             B.N      ??mbedtls_asn1_traverse_sequence_of_1
+    262                  }
+    263          
+    264                  if ((tag & tag_may_mask) == tag_may_val) {
+   \                     ??mbedtls_asn1_traverse_sequence_of_5: (+1)
+   \       0x7E   0x4651             MOV      R1,R10
+   \       0x80   0xB2C9             UXTB     R1,R1
+   \       0x82   0x0028             MOVS     R0,R5
+   \       0x84   0xB2C0             UXTB     R0,R0
+   \       0x86   0x4001             ANDS     R1,R0,R1
+   \       0x88   0x0030             MOVS     R0,R6
+   \       0x8A   0xB2C0             UXTB     R0,R0
+   \       0x8C   0x4281             CMP      R1,R0
+   \       0x8E   0xD10E             BNE.N    ??mbedtls_asn1_traverse_sequence_of_6
+    265                      if (cb != NULL) {
+   \       0x90   0x4640             MOV      R0,R8
+   \       0x92   0x2800             CMP      R0,#+0
+   \       0x94   0xD00B             BEQ.N    ??mbedtls_asn1_traverse_sequence_of_6
+    266                          ret = cb(ctx, tag, *p, len);
+   \       0x96   0x9B00             LDR      R3,[SP, #+0]
+   \       0x98   0xF8DB 0x2000      LDR      R2,[R11, #+0]
+   \       0x9C   0x4651             MOV      R1,R10
+   \       0x9E   0xB2C9             UXTB     R1,R1
+   \       0xA0   0x4648             MOV      R0,R9
+   \       0xA2   0x47C0             BLX      R8
+   \       0xA4   0x0004             MOVS     R4,R0
+    267                          if (ret != 0) {
+   \       0xA6   0x2C00             CMP      R4,#+0
+   \       0xA8   0xD001             BEQ.N    ??mbedtls_asn1_traverse_sequence_of_6
+    268                              return ret;
+   \       0xAA   0x0020             MOVS     R0,R4
+   \       0xAC   0xE007             B.N      ??mbedtls_asn1_traverse_sequence_of_1
+    269                          }
+    270                      }
+    271                  }
+    272          
+    273                  *p += len;
+   \                     ??mbedtls_asn1_traverse_sequence_of_6: (+1)
+   \       0xAE   0xF8DB 0x1000      LDR      R1,[R11, #+0]
+   \       0xB2   0x9800             LDR      R0,[SP, #+0]
+   \       0xB4   0x4408             ADD      R0,R1,R0
+   \       0xB6   0xF8CB 0x0000      STR      R0,[R11, #+0]
+   \       0xBA   0xE7BF             B.N      ??mbedtls_asn1_traverse_sequence_of_2
+    274              }
+    275          
+    276              return 0;
+   \                     ??mbedtls_asn1_traverse_sequence_of_3: (+1)
+   \       0xBC   0x2000             MOVS     R0,#+0
+   \                     ??mbedtls_asn1_traverse_sequence_of_1: (+1)
+   \       0xBE   0xE8BD 0x8FFE      POP      {R1-R11,PC}
+    277          }
+    278          
+    279          /*
+    280           * Get a bit string without unused bits
+    281           */
+
+   \                                 In section .text, align 2, keep-with-next
+    282          int mbedtls_asn1_get_bitstring_null(unsigned char **p, const unsigned char *end,
+    283                                              size_t *len)
+    284          {
+   \                     mbedtls_asn1_get_bitstring_null: (+1)
+   \        0x0   0xB5F8             PUSH     {R3-R7,LR}
+   \        0x2   0x0004             MOVS     R4,R0
+   \        0x4   0x000D             MOVS     R5,R1
+   \        0x6   0x0016             MOVS     R6,R2
+    285              int ret = MBEDTLS_ERR_ERROR_CORRUPTION_DETECTED;
+   \        0x8   0xF07F 0x076D      MVNS     R7,#+109
+    286          
+    287              if ((ret = mbedtls_asn1_get_tag(p, end, len, MBEDTLS_ASN1_BIT_STRING)) != 0) {
+   \        0xC   0x2303             MOVS     R3,#+3
+   \        0xE   0x0032             MOVS     R2,R6
+   \       0x10   0x0029             MOVS     R1,R5
+   \       0x12   0x0020             MOVS     R0,R4
+   \       0x14   0x.... 0x....      BL       mbedtls_asn1_get_tag
+   \       0x18   0x0001             MOVS     R1,R0
+   \       0x1A   0x2800             CMP      R0,#+0
+   \       0x1C   0xD001             BEQ.N    ??mbedtls_asn1_get_bitstring_null_0
+    288                  return ret;
+   \       0x1E   0x0008             MOVS     R0,R1
+   \       0x20   0xE013             B.N      ??mbedtls_asn1_get_bitstring_null_1
+    289              }
+    290          
+    291              if (*len == 0) {
+   \                     ??mbedtls_asn1_get_bitstring_null_0: (+1)
+   \       0x22   0x6830             LDR      R0,[R6, #+0]
+   \       0x24   0x2800             CMP      R0,#+0
+   \       0x26   0xD102             BNE.N    ??mbedtls_asn1_get_bitstring_null_2
+    292                  return MBEDTLS_ERR_ASN1_INVALID_DATA;
+   \       0x28   0xF07F 0x0067      MVNS     R0,#+103
+   \       0x2C   0xE00D             B.N      ??mbedtls_asn1_get_bitstring_null_1
+    293              }
+    294              --(*len);
+   \                     ??mbedtls_asn1_get_bitstring_null_2: (+1)
+   \       0x2E   0x6830             LDR      R0,[R6, #+0]
+   \       0x30   0x1E40             SUBS     R0,R0,#+1
+   \       0x32   0x6030             STR      R0,[R6, #+0]
+    295          
+    296              if (**p != 0) {
+   \       0x34   0x6820             LDR      R0,[R4, #+0]
+   \       0x36   0x7800             LDRB     R0,[R0, #+0]
+   \       0x38   0x2800             CMP      R0,#+0
+   \       0x3A   0xD002             BEQ.N    ??mbedtls_asn1_get_bitstring_null_3
+    297                  return MBEDTLS_ERR_ASN1_INVALID_DATA;
+   \       0x3C   0xF07F 0x0067      MVNS     R0,#+103
+   \       0x40   0xE003             B.N      ??mbedtls_asn1_get_bitstring_null_1
+    298              }
+    299              ++(*p);
+   \                     ??mbedtls_asn1_get_bitstring_null_3: (+1)
+   \       0x42   0x6820             LDR      R0,[R4, #+0]
+   \       0x44   0x1C40             ADDS     R0,R0,#+1
+   \       0x46   0x6020             STR      R0,[R4, #+0]
+    300          
+    301              return 0;
+   \       0x48   0x2000             MOVS     R0,#+0
+   \                     ??mbedtls_asn1_get_bitstring_null_1: (+1)
+   \       0x4A   0xBDF2             POP      {R1,R4-R7,PC}
+    302          }
+    303          
+
+   \                                 In section .text, align 2, keep-with-next
+    304          void mbedtls_asn1_sequence_free(mbedtls_asn1_sequence *seq)
+    305          {
+   \                     mbedtls_asn1_sequence_free: (+1)
+   \        0x0   0xB538             PUSH     {R3-R5,LR}
+   \        0x2   0x0004             MOVS     R4,R0
+    306              while (seq != NULL) {
+   \                     ??mbedtls_asn1_sequence_free_0: (+1)
+   \        0x4   0x2C00             CMP      R4,#+0
+   \        0x6   0xD005             BEQ.N    ??mbedtls_asn1_sequence_free_1
+    307                  mbedtls_asn1_sequence *next = seq->next;
+   \        0x8   0x68E5             LDR      R5,[R4, #+12]
+    308                  mbedtls_free(seq);
+   \        0xA   0x0020             MOVS     R0,R4
+   \        0xC   0x.... 0x....      BL       sl_free
+    309                  seq = next;
+   \       0x10   0x002C             MOVS     R4,R5
+   \       0x12   0xE7F7             B.N      ??mbedtls_asn1_sequence_free_0
+    310              }
+    311          }
+   \                     ??mbedtls_asn1_sequence_free_1: (+1)
+   \       0x14   0xBD31             POP      {R0,R4,R5,PC}
+    312          
+    313          typedef struct {
+    314              int tag;
+    315              mbedtls_asn1_sequence *cur;
+    316          } asn1_get_sequence_of_cb_ctx_t;
+    317          
+
+   \                                 In section .text, align 2, keep-with-next
+    318          static int asn1_get_sequence_of_cb(void *ctx,
+    319                                             int tag,
+    320                                             unsigned char *start,
+    321                                             size_t len)
+    322          {
+   \                     asn1_get_sequence_of_cb: (+1)
+   \        0x0   0xE92D 0x43F8      PUSH     {R3-R9,LR}
+   \        0x4   0x4681             MOV      R9,R0
+   \        0x6   0x000C             MOVS     R4,R1
+   \        0x8   0x0015             MOVS     R5,R2
+   \        0xA   0x001E             MOVS     R6,R3
+    323              asn1_get_sequence_of_cb_ctx_t *cb_ctx =
+    324                  (asn1_get_sequence_of_cb_ctx_t *) ctx;
+   \        0xC   0x464F             MOV      R7,R9
+    325              mbedtls_asn1_sequence *cur =
+    326                  cb_ctx->cur;
+   \        0xE   0xF8D7 0x8004      LDR      R8,[R7, #+4]
+    327          
+    328              if (cur->buf.p != NULL) {
+   \       0x12   0xF8D8 0x0008      LDR      R0,[R8, #+8]
+   \       0x16   0x2800             CMP      R0,#+0
+   \       0x18   0xD00E             BEQ.N    ??asn1_get_sequence_of_cb_0
+    329                  cur->next =
+    330                      mbedtls_calloc(1, sizeof(mbedtls_asn1_sequence));
+   \       0x1A   0x2110             MOVS     R1,#+16
+   \       0x1C   0x2001             MOVS     R0,#+1
+   \       0x1E   0x.... 0x....      BL       sl_calloc
+   \       0x22   0xF8C8 0x000C      STR      R0,[R8, #+12]
+    331          
+    332                  if (cur->next == NULL) {
+   \       0x26   0xF8D8 0x000C      LDR      R0,[R8, #+12]
+   \       0x2A   0x2800             CMP      R0,#+0
+   \       0x2C   0xD102             BNE.N    ??asn1_get_sequence_of_cb_1
+    333                      return MBEDTLS_ERR_ASN1_ALLOC_FAILED;
+   \       0x2E   0xF07F 0x0069      MVNS     R0,#+105
+   \       0x32   0xE00A             B.N      ??asn1_get_sequence_of_cb_2
+    334                  }
+    335          
+    336                  cur = cur->next;
+   \                     ??asn1_get_sequence_of_cb_1: (+1)
+   \       0x34   0xF8D8 0x800C      LDR      R8,[R8, #+12]
+    337              }
+    338          
+    339              cur->buf.p = start;
+   \                     ??asn1_get_sequence_of_cb_0: (+1)
+   \       0x38   0xF8C8 0x5008      STR      R5,[R8, #+8]
+    340              cur->buf.len = len;
+   \       0x3C   0xF8C8 0x6004      STR      R6,[R8, #+4]
+    341              cur->buf.tag = tag;
+   \       0x40   0xF8C8 0x4000      STR      R4,[R8, #+0]
+    342          
+    343              cb_ctx->cur = cur;
+   \       0x44   0xF8C7 0x8004      STR      R8,[R7, #+4]
+    344              return 0;
+   \       0x48   0x2000             MOVS     R0,#+0
+   \                     ??asn1_get_sequence_of_cb_2: (+1)
+   \       0x4A   0xE8BD 0x83F2      POP      {R1,R4-R9,PC}
+    345          }
+    346          
+    347          /*
+    348           *  Parses and splits an ASN.1 "SEQUENCE OF <tag>"
+    349           */
+
+   \                                 In section .text, align 2, keep-with-next
+    350          int mbedtls_asn1_get_sequence_of(unsigned char **p,
+    351                                           const unsigned char *end,
+    352                                           mbedtls_asn1_sequence *cur,
+    353                                           int tag)
+    354          {
+   \                     mbedtls_asn1_get_sequence_of: (+1)
+   \        0x0   0xE92D 0x47F0      PUSH     {R4-R10,LR}
+   \        0x4   0xB086             SUB      SP,SP,#+24
+   \        0x6   0x0004             MOVS     R4,R0
+   \        0x8   0x000D             MOVS     R5,R1
+   \        0xA   0x0016             MOVS     R6,R2
+   \        0xC   0x001F             MOVS     R7,R3
+    355              asn1_get_sequence_of_cb_ctx_t cb_ctx = { tag, cur };
+   \        0xE   0x9704             STR      R7,[SP, #+16]
+   \       0x10   0x9605             STR      R6,[SP, #+20]
+    356              memset(cur, 0, sizeof(mbedtls_asn1_sequence));
+   \       0x12   0xF05F 0x0810      MOVS     R8,#+16
+   \       0x16   0xF05F 0x0900      MOVS     R9,#+0
+   \       0x1A   0x46B2             MOV      R10,R6
+   \       0x1C   0x464A             MOV      R2,R9
+   \       0x1E   0x4641             MOV      R1,R8
+   \       0x20   0x4650             MOV      R0,R10
+   \       0x22   0x.... 0x....      BL       __aeabi_memset
+    357              return mbedtls_asn1_traverse_sequence_of(
+    358                  p, end, 0xFF, tag, 0, 0,
+    359                  asn1_get_sequence_of_cb, &cb_ctx);
+   \       0x26   0xA804             ADD      R0,SP,#+16
+   \       0x28   0x9003             STR      R0,[SP, #+12]
+   \       0x2A   0x....             LDR.N    R0,??DataTable1
+   \       0x2C   0x9002             STR      R0,[SP, #+8]
+   \       0x2E   0x2000             MOVS     R0,#+0
+   \       0x30   0x9001             STR      R0,[SP, #+4]
+   \       0x32   0x2000             MOVS     R0,#+0
+   \       0x34   0x9000             STR      R0,[SP, #+0]
+   \       0x36   0x0038             MOVS     R0,R7
+   \       0x38   0x0003             MOVS     R3,R0
+   \       0x3A   0xB2DB             UXTB     R3,R3
+   \       0x3C   0x22FF             MOVS     R2,#+255
+   \       0x3E   0x0029             MOVS     R1,R5
+   \       0x40   0x0020             MOVS     R0,R4
+   \       0x42   0x.... 0x....      BL       mbedtls_asn1_traverse_sequence_of
+   \       0x46   0xB006             ADD      SP,SP,#+24
+   \       0x48   0xE8BD 0x87F0      POP      {R4-R10,PC}
+    360          }
+    361          
+
+   \                                 In section .text, align 2, keep-with-next
+    362          int mbedtls_asn1_get_alg(unsigned char **p,
+    363                                   const unsigned char *end,
+    364                                   mbedtls_asn1_buf *alg, mbedtls_asn1_buf *params)
+    365          {
+   \                     mbedtls_asn1_get_alg: (+1)
+   \        0x0   0xE92D 0x47FC      PUSH     {R2-R10,LR}
+   \        0x4   0x0004             MOVS     R4,R0
+   \        0x6   0x000D             MOVS     R5,R1
+   \        0x8   0x0016             MOVS     R6,R2
+   \        0xA   0x001F             MOVS     R7,R3
+    366              int ret = MBEDTLS_ERR_ERROR_CORRUPTION_DETECTED;
+   \        0xC   0xF07F 0x096D      MVNS     R9,#+109
+    367              size_t len;
+    368          
+    369              if ((ret = mbedtls_asn1_get_tag(p, end, &len,
+    370                                              MBEDTLS_ASN1_CONSTRUCTED | MBEDTLS_ASN1_SEQUENCE)) != 0) {
+   \       0x10   0x2330             MOVS     R3,#+48
+   \       0x12   0x466A             MOV      R2,SP
+   \       0x14   0x0029             MOVS     R1,R5
+   \       0x16   0x0020             MOVS     R0,R4
+   \       0x18   0x.... 0x....      BL       mbedtls_asn1_get_tag
+   \       0x1C   0x4680             MOV      R8,R0
+   \       0x1E   0x2800             CMP      R0,#+0
+   \       0x20   0xD001             BEQ.N    ??mbedtls_asn1_get_alg_0
+    371                  return ret;
+   \       0x22   0x4640             MOV      R0,R8
+   \       0x24   0xE044             B.N      ??mbedtls_asn1_get_alg_1
+    372              }
+    373          
+    374              if ((end - *p) < 1) {
+   \                     ??mbedtls_asn1_get_alg_0: (+1)
+   \       0x26   0x6820             LDR      R0,[R4, #+0]
+   \       0x28   0x1A28             SUBS     R0,R5,R0
+   \       0x2A   0x2801             CMP      R0,#+1
+   \       0x2C   0xDA02             BGE.N    ??mbedtls_asn1_get_alg_2
+    375                  return MBEDTLS_ERR_ASN1_OUT_OF_DATA;
+   \       0x2E   0xF07F 0x005F      MVNS     R0,#+95
+   \       0x32   0xE03D             B.N      ??mbedtls_asn1_get_alg_1
+    376              }
+    377          
+    378              alg->tag = **p;
+   \                     ??mbedtls_asn1_get_alg_2: (+1)
+   \       0x34   0x6820             LDR      R0,[R4, #+0]
+   \       0x36   0x7800             LDRB     R0,[R0, #+0]
+   \       0x38   0x6030             STR      R0,[R6, #+0]
+    379              end = *p + len;
+   \       0x3A   0x6821             LDR      R1,[R4, #+0]
+   \       0x3C   0x9800             LDR      R0,[SP, #+0]
+   \       0x3E   0xEB01 0x0A00      ADD      R10,R1,R0
+    380          
+    381              if ((ret = mbedtls_asn1_get_tag(p, end, &alg->len, MBEDTLS_ASN1_OID)) != 0) {
+   \       0x42   0x2306             MOVS     R3,#+6
+   \       0x44   0x1D32             ADDS     R2,R6,#+4
+   \       0x46   0x4651             MOV      R1,R10
+   \       0x48   0x0020             MOVS     R0,R4
+   \       0x4A   0x.... 0x....      BL       mbedtls_asn1_get_tag
+   \       0x4E   0x4681             MOV      R9,R0
+   \       0x50   0x2800             CMP      R0,#+0
+   \       0x52   0xD001             BEQ.N    ??mbedtls_asn1_get_alg_3
+    382                  return ret;
+   \       0x54   0x4648             MOV      R0,R9
+   \       0x56   0xE02B             B.N      ??mbedtls_asn1_get_alg_1
+    383              }
+    384          
+    385              alg->p = *p;
+   \                     ??mbedtls_asn1_get_alg_3: (+1)
+   \       0x58   0x6820             LDR      R0,[R4, #+0]
+   \       0x5A   0x60B0             STR      R0,[R6, #+8]
+    386              *p += alg->len;
+   \       0x5C   0x6821             LDR      R1,[R4, #+0]
+   \       0x5E   0x6870             LDR      R0,[R6, #+4]
+   \       0x60   0x4408             ADD      R0,R1,R0
+   \       0x62   0x6020             STR      R0,[R4, #+0]
+    387          
+    388              if (*p == end) {
+   \       0x64   0x6820             LDR      R0,[R4, #+0]
+   \       0x66   0x4550             CMP      R0,R10
+   \       0x68   0xD105             BNE.N    ??mbedtls_asn1_get_alg_4
+    389                  mbedtls_platform_zeroize(params, sizeof(mbedtls_asn1_buf));
+   \       0x6A   0x210C             MOVS     R1,#+12
+   \       0x6C   0x0038             MOVS     R0,R7
+   \       0x6E   0x.... 0x....      BL       mbedtls_platform_zeroize
+    390                  return 0;
+   \       0x72   0x2000             MOVS     R0,#+0
+   \       0x74   0xE01C             B.N      ??mbedtls_asn1_get_alg_1
+    391              }
+    392          
+    393              params->tag = **p;
+   \                     ??mbedtls_asn1_get_alg_4: (+1)
+   \       0x76   0x6820             LDR      R0,[R4, #+0]
+   \       0x78   0x7800             LDRB     R0,[R0, #+0]
+   \       0x7A   0x6038             STR      R0,[R7, #+0]
+    394              (*p)++;
+   \       0x7C   0x6820             LDR      R0,[R4, #+0]
+   \       0x7E   0x1C40             ADDS     R0,R0,#+1
+   \       0x80   0x6020             STR      R0,[R4, #+0]
+    395          
+    396              if ((ret = mbedtls_asn1_get_len(p, end, &params->len)) != 0) {
+   \       0x82   0x1D3A             ADDS     R2,R7,#+4
+   \       0x84   0x4651             MOV      R1,R10
+   \       0x86   0x0020             MOVS     R0,R4
+   \       0x88   0x.... 0x....      BL       mbedtls_asn1_get_len
+   \       0x8C   0x0001             MOVS     R1,R0
+   \       0x8E   0x2800             CMP      R0,#+0
+   \       0x90   0xD001             BEQ.N    ??mbedtls_asn1_get_alg_5
+    397                  return ret;
+   \       0x92   0x0008             MOVS     R0,R1
+   \       0x94   0xE00C             B.N      ??mbedtls_asn1_get_alg_1
+    398              }
+    399          
+    400              params->p = *p;
+   \                     ??mbedtls_asn1_get_alg_5: (+1)
+   \       0x96   0x6820             LDR      R0,[R4, #+0]
+   \       0x98   0x60B8             STR      R0,[R7, #+8]
+    401              *p += params->len;
+   \       0x9A   0x6822             LDR      R2,[R4, #+0]
+   \       0x9C   0x6878             LDR      R0,[R7, #+4]
+   \       0x9E   0x4410             ADD      R0,R2,R0
+   \       0xA0   0x6020             STR      R0,[R4, #+0]
+    402          
+    403              if (*p != end) {
+   \       0xA2   0x6820             LDR      R0,[R4, #+0]
+   \       0xA4   0x4550             CMP      R0,R10
+   \       0xA6   0xD002             BEQ.N    ??mbedtls_asn1_get_alg_6
+    404                  return MBEDTLS_ERR_ASN1_LENGTH_MISMATCH;
+   \       0xA8   0xF07F 0x0065      MVNS     R0,#+101
+   \       0xAC   0xE000             B.N      ??mbedtls_asn1_get_alg_1
+    405              }
+    406          
+    407              return 0;
+   \                     ??mbedtls_asn1_get_alg_6: (+1)
+   \       0xAE   0x2000             MOVS     R0,#+0
+   \                     ??mbedtls_asn1_get_alg_1: (+1)
+   \       0xB0   0xE8BD 0x87F6      POP      {R1,R2,R4-R10,PC}
+    408          }
+    409          
+
+   \                                 In section .text, align 2, keep-with-next
+    410          int mbedtls_asn1_get_alg_null(unsigned char **p,
+    411                                        const unsigned char *end,
+    412                                        mbedtls_asn1_buf *alg)
+    413          {
+   \                     mbedtls_asn1_get_alg_null: (+1)
+   \        0x0   0xE92D 0x47FF      PUSH     {R0-R10,LR}
+   \        0x4   0x0004             MOVS     R4,R0
+   \        0x6   0x000D             MOVS     R5,R1
+   \        0x8   0x0016             MOVS     R6,R2
+    414              int ret = MBEDTLS_ERR_ERROR_CORRUPTION_DETECTED;
+   \        0xA   0xF07F 0x076D      MVNS     R7,#+109
+    415              mbedtls_asn1_buf params;
+    416          
+    417              memset(&params, 0, sizeof(mbedtls_asn1_buf));
+   \        0xE   0xF05F 0x080C      MOVS     R8,#+12
+   \       0x12   0xF05F 0x0900      MOVS     R9,#+0
+   \       0x16   0x46EA             MOV      R10,SP
+   \       0x18   0x464A             MOV      R2,R9
+   \       0x1A   0x4641             MOV      R1,R8
+   \       0x1C   0x4650             MOV      R0,R10
+   \       0x1E   0x.... 0x....      BL       __aeabi_memset
+    418          
+    419              if ((ret = mbedtls_asn1_get_alg(p, end, alg, &params)) != 0) {
+   \       0x22   0x466B             MOV      R3,SP
+   \       0x24   0x0032             MOVS     R2,R6
+   \       0x26   0x0029             MOVS     R1,R5
+   \       0x28   0x0020             MOVS     R0,R4
+   \       0x2A   0x.... 0x....      BL       mbedtls_asn1_get_alg
+   \       0x2E   0x0001             MOVS     R1,R0
+   \       0x30   0x2800             CMP      R0,#+0
+   \       0x32   0xD001             BEQ.N    ??mbedtls_asn1_get_alg_null_0
+    420                  return ret;
+   \       0x34   0x0008             MOVS     R0,R1
+   \       0x36   0xE00C             B.N      ??mbedtls_asn1_get_alg_null_1
+    421              }
+    422          
+    423              if ((params.tag != MBEDTLS_ASN1_NULL && params.tag != 0) || params.len != 0) {
+   \                     ??mbedtls_asn1_get_alg_null_0: (+1)
+   \       0x38   0x9800             LDR      R0,[SP, #+0]
+   \       0x3A   0x2805             CMP      R0,#+5
+   \       0x3C   0xD002             BEQ.N    ??mbedtls_asn1_get_alg_null_2
+   \       0x3E   0x9800             LDR      R0,[SP, #+0]
+   \       0x40   0x2800             CMP      R0,#+0
+   \       0x42   0xD102             BNE.N    ??mbedtls_asn1_get_alg_null_3
+   \                     ??mbedtls_asn1_get_alg_null_2: (+1)
+   \       0x44   0x9801             LDR      R0,[SP, #+4]
+   \       0x46   0x2800             CMP      R0,#+0
+   \       0x48   0xD002             BEQ.N    ??mbedtls_asn1_get_alg_null_4
+    424                  return MBEDTLS_ERR_ASN1_INVALID_DATA;
+   \                     ??mbedtls_asn1_get_alg_null_3: (+1)
+   \       0x4A   0xF07F 0x0067      MVNS     R0,#+103
+   \       0x4E   0xE000             B.N      ??mbedtls_asn1_get_alg_null_1
+    425              }
+    426          
+    427              return 0;
+   \                     ??mbedtls_asn1_get_alg_null_4: (+1)
+   \       0x50   0x2000             MOVS     R0,#+0
+   \                     ??mbedtls_asn1_get_alg_null_1: (+1)
+   \       0x52   0xB004             ADD      SP,SP,#+16
+   \       0x54   0xE8BD 0x87F0      POP      {R4-R10,PC}
+    428          }
+    429          
+    430          #if !defined(MBEDTLS_DEPRECATED_REMOVED)
+
+   \                                 In section .text, align 2, keep-with-next
+    431          void mbedtls_asn1_free_named_data(mbedtls_asn1_named_data *cur)
+    432          {
+   \                     mbedtls_asn1_free_named_data: (+1)
+   \        0x0   0xB510             PUSH     {R4,LR}
+   \        0x2   0x0004             MOVS     R4,R0
+    433              if (cur == NULL) {
+   \        0x4   0x2C00             CMP      R4,#+0
+   \        0x6   0xD009             BEQ.N    ??mbedtls_asn1_free_named_data_0
+    434                  return;
+    435              }
+    436          
+    437              mbedtls_free(cur->oid.p);
+   \                     ??mbedtls_asn1_free_named_data_1: (+1)
+   \        0x8   0x68A0             LDR      R0,[R4, #+8]
+   \        0xA   0x.... 0x....      BL       sl_free
+    438              mbedtls_free(cur->val.p);
+   \        0xE   0x6960             LDR      R0,[R4, #+20]
+   \       0x10   0x.... 0x....      BL       sl_free
+    439          
+    440              mbedtls_platform_zeroize(cur, sizeof(mbedtls_asn1_named_data));
+   \       0x14   0x2120             MOVS     R1,#+32
+   \       0x16   0x0020             MOVS     R0,R4
+   \       0x18   0x.... 0x....      BL       mbedtls_platform_zeroize
+    441          }
+   \                     ??mbedtls_asn1_free_named_data_0: (+1)
+   \       0x1C   0xBD10             POP      {R4,PC}
+    442          #endif /* MBEDTLS_DEPRECATED_REMOVED */
+    443          
+
+   \                                 In section .text, align 2, keep-with-next
+    444          void mbedtls_asn1_free_named_data_list(mbedtls_asn1_named_data **head)
+    445          {
+   \                     mbedtls_asn1_free_named_data_list: (+1)
+   \        0x0   0xB538             PUSH     {R3-R5,LR}
+   \        0x2   0x0005             MOVS     R5,R0
+    446              mbedtls_asn1_named_data *cur;
+    447          
+    448              while ((cur = *head) != NULL) {
+   \                     ??mbedtls_asn1_free_named_data_list_0: (+1)
+   \        0x4   0x6828             LDR      R0,[R5, #+0]
+   \        0x6   0x0004             MOVS     R4,R0
+   \        0x8   0x2C00             CMP      R4,#+0
+   \        0xA   0xD00B             BEQ.N    ??mbedtls_asn1_free_named_data_list_1
+    449                  *head = cur->next;
+   \        0xC   0x69A0             LDR      R0,[R4, #+24]
+   \        0xE   0x6028             STR      R0,[R5, #+0]
+    450                  mbedtls_free(cur->oid.p);
+   \       0x10   0x68A0             LDR      R0,[R4, #+8]
+   \       0x12   0x.... 0x....      BL       sl_free
+    451                  mbedtls_free(cur->val.p);
+   \       0x16   0x6960             LDR      R0,[R4, #+20]
+   \       0x18   0x.... 0x....      BL       sl_free
+    452                  mbedtls_free(cur);
+   \       0x1C   0x0020             MOVS     R0,R4
+   \       0x1E   0x.... 0x....      BL       sl_free
+   \       0x22   0xE7EF             B.N      ??mbedtls_asn1_free_named_data_list_0
+    453              }
+    454          }
+   \                     ??mbedtls_asn1_free_named_data_list_1: (+1)
+   \       0x24   0xBD31             POP      {R0,R4,R5,PC}
+    455          
+
+   \                                 In section .text, align 2, keep-with-next
+    456          void mbedtls_asn1_free_named_data_list_shallow(mbedtls_asn1_named_data *name)
+    457          {
+   \                     mbedtls_asn1_free_named_data_list_shallow: (+1)
+   \        0x0   0xB538             PUSH     {R3-R5,LR}
+   \        0x2   0x0004             MOVS     R4,R0
+    458              for (mbedtls_asn1_named_data *next; name != NULL; name = next) {
+   \                     ??mbedtls_asn1_free_named_data_list_shallow_0: (+1)
+   \        0x4   0x2C00             CMP      R4,#+0
+   \        0x6   0xD006             BEQ.N    ??mbedtls_asn1_free_named_data_list_shallow_1
+    459                  next = name->next;
+   \        0x8   0x69A0             LDR      R0,[R4, #+24]
+   \        0xA   0x0005             MOVS     R5,R0
+    460                  mbedtls_free(name);
+   \        0xC   0x0020             MOVS     R0,R4
+   \        0xE   0x.... 0x....      BL       sl_free
+    461              }
+   \       0x12   0x002C             MOVS     R4,R5
+   \       0x14   0xE7F6             B.N      ??mbedtls_asn1_free_named_data_list_shallow_0
+    462          }
+   \                     ??mbedtls_asn1_free_named_data_list_shallow_1: (+1)
+   \       0x16   0xBD31             POP      {R0,R4,R5,PC}
+    463          
+
+   \                                 In section .text, align 2, keep-with-next
+    464          const mbedtls_asn1_named_data *mbedtls_asn1_find_named_data(const mbedtls_asn1_named_data *list,
+    465                                                                      const char *oid, size_t len)
+    466          {
+   \                     mbedtls_asn1_find_named_data: (+1)
+   \        0x0   0xB570             PUSH     {R4-R6,LR}
+   \        0x2   0x0004             MOVS     R4,R0
+   \        0x4   0x000D             MOVS     R5,R1
+   \        0x6   0x0016             MOVS     R6,R2
+    467              while (list != NULL) {
+   \                     ??mbedtls_asn1_find_named_data_0: (+1)
+   \        0x8   0x2C00             CMP      R4,#+0
+   \        0xA   0xD00B             BEQ.N    ??mbedtls_asn1_find_named_data_1
+    468                  if (list->oid.len == len &&
+    469                      memcmp(list->oid.p, oid, len) == 0) {
+   \        0xC   0x6860             LDR      R0,[R4, #+4]
+   \        0xE   0x42B0             CMP      R0,R6
+   \       0x10   0xD106             BNE.N    ??mbedtls_asn1_find_named_data_2
+   \       0x12   0x0032             MOVS     R2,R6
+   \       0x14   0x0029             MOVS     R1,R5
+   \       0x16   0x68A0             LDR      R0,[R4, #+8]
+   \       0x18   0x.... 0x....      BL       memcmp
+   \       0x1C   0x2800             CMP      R0,#+0
+   \       0x1E   0xD001             BEQ.N    ??mbedtls_asn1_find_named_data_1
+    470                      break;
+    471                  }
+    472          
+    473                  list = list->next;
+   \                     ??mbedtls_asn1_find_named_data_2: (+1)
+   \       0x20   0x69A4             LDR      R4,[R4, #+24]
+   \       0x22   0xE7F1             B.N      ??mbedtls_asn1_find_named_data_0
+    474              }
+    475          
+    476              return list;
+   \                     ??mbedtls_asn1_find_named_data_1: (+1)
+   \       0x24   0x0020             MOVS     R0,R4
+   \       0x26   0xBD70             POP      {R4-R6,PC}
+    477          }
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable1:
+   \        0x0   0x....'....        DC32     asn1_get_sequence_of_cb
+    478          
+    479          #endif /* MBEDTLS_ASN1_PARSE_C */
+
+   Maximum stack usage in bytes:
+
+   .cstack Function
+   ------- --------
+      32   asn1_get_sequence_of_cb
+        32   -> sl_calloc
+      32   asn1_get_tagged_int
+        32   -> mbedtls_asn1_get_tag
+      16   mbedtls_asn1_find_named_data
+        16   -> memcmp
+       8   mbedtls_asn1_free_named_data
+         8   -> mbedtls_platform_zeroize
+         8   -> sl_free
+      16   mbedtls_asn1_free_named_data_list
+        16   -> sl_free
+      16   mbedtls_asn1_free_named_data_list_shallow
+        16   -> sl_free
+      40   mbedtls_asn1_get_alg
+        40   -> mbedtls_asn1_get_len
+        40   -> mbedtls_asn1_get_tag
+        40   -> mbedtls_platform_zeroize
+      48   mbedtls_asn1_get_alg_null
+        48   -> __aeabi_memset
+        48   -> mbedtls_asn1_get_alg
+      24   mbedtls_asn1_get_bitstring
+        24   -> mbedtls_asn1_get_tag
+      24   mbedtls_asn1_get_bitstring_null
+        24   -> mbedtls_asn1_get_tag
+      24   mbedtls_asn1_get_bool
+        24   -> mbedtls_asn1_get_tag
+      16   mbedtls_asn1_get_enum
+        16   -> asn1_get_tagged_int
+      16   mbedtls_asn1_get_int
+        16   -> asn1_get_tagged_int
+       8   mbedtls_asn1_get_len
+      32   mbedtls_asn1_get_mpi
+        32   -> mbedtls_asn1_get_tag
+        32   -> mbedtls_mpi_read_binary
+      56   mbedtls_asn1_get_sequence_of
+        56   -> __aeabi_memset
+        56   -> mbedtls_asn1_traverse_sequence_of
+      24   mbedtls_asn1_get_tag
+        24   -> mbedtls_asn1_get_len
+      16   mbedtls_asn1_sequence_free
+        16   -> sl_free
+      48   mbedtls_asn1_traverse_sequence_of
+        48   -- Indirect call
+        48   -> mbedtls_asn1_get_len
+        48   -> mbedtls_asn1_get_tag
+
+
+   Section sizes:
+
+   Bytes  Function/Label
+   -----  --------------
+       4  ??DataTable1
+      78  asn1_get_sequence_of_cb
+     164  asn1_get_tagged_int
+      40  mbedtls_asn1_find_named_data
+      30  mbedtls_asn1_free_named_data
+      38  mbedtls_asn1_free_named_data_list
+      24  mbedtls_asn1_free_named_data_list_shallow
+     180  mbedtls_asn1_get_alg
+      88  mbedtls_asn1_get_alg_null
+     104  mbedtls_asn1_get_bitstring
+      76  mbedtls_asn1_get_bitstring_null
+      72  mbedtls_asn1_get_bool
+      22  mbedtls_asn1_get_enum
+      22  mbedtls_asn1_get_int
+     134  mbedtls_asn1_get_len
+      58  mbedtls_asn1_get_mpi
+      76  mbedtls_asn1_get_sequence_of
+      56  mbedtls_asn1_get_tag
+      22  mbedtls_asn1_sequence_free
+     194  mbedtls_asn1_traverse_sequence_of
+
+ 
+ 1'482 bytes in section .text
+ 
+ 1'482 bytes of CODE memory
+
+Errors: none
+Warnings: none

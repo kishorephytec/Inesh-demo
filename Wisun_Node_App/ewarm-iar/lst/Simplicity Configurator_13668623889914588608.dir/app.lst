@@ -1,0 +1,963 @@
+###############################################################################
+#
+# IAR ANSI C/C++ Compiler V9.50.2.385/W64 for ARM         07/Apr/2025  16:44:50
+# Copyright 1999-2024 IAR Systems AB.
+#
+#    Cpu mode                     =  thumb
+#    Endian                       =  little
+#    Source file                  =
+#        D:\Inesh_wisun\Wisun_Node_App 1\Wisun_Node_App\app.c
+#    Command line                 =
+#        -f "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\ewarm-iar\obj\Simplicity
+#        Configurator_13668623889914588608.dir\app.o.rsp"
+#        ("D:\Inesh_wisun\Wisun_Node_App 1\Wisun_Node_App\app.c" -D DEBUG_EFM=1
+#        -D EFR32FG28B322F1024IM48=1 -D
+#        configNUM_SDK_THREAD_LOCAL_STORAGE_POINTERS=2 -D
+#        SL_COMPONENT_CATALOG_PRESENT=1 -D
+#        MBEDTLS_CONFIG_FILE=<sl_mbedtls_config.h> -D
+#        MBEDTLS_PSA_CRYPTO_CONFIG_FILE=<psa_crypto_config.h> -D
+#        SL_RAIL_LIB_MULTIPROTOCOL_SUPPORT=0 -D
+#        SL_RAIL_UTIL_PA_CONFIG_HEADER=<sl_rail_util_pa_config.h> -D
+#        RTT_USE_ASM=0 -lC "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\ewarm-iar\lst\Simplicity
+#        Configurator_13668623889914588608.dir" --diag_suppress Pa050 -o
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\ewarm-iar\obj\Simplicity
+#        Configurator_13668623889914588608.dir" --no_cse --no_unroll
+#        --no_inline --no_code_motion --no_tbaa --no_clustering --no_scheduling
+#        --debug --endian=little --cpu=Cortex-M33 --cmse --cmse -e
+#        --fpu=VFPv5_sp --dlib_config "C:\Program Files\IAR Systems\Embedded
+#        Workbench 9.2\arm\inc\c\DLib_Config_Normal.h" -I
+#        "D:\Inesh_wisun\Wisun_Node_App 1\Wisun_Node_App\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App 1\Wisun_Node_App\config\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App 1\Wisun_Node_App\config\rail\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App 1\Wisun_Node_App\config\wisun\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App 1\Wisun_Node_App\.\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\Device\SiliconLabs\EFR32FG28\Include\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\app\wisun\component\app_project_info\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\common\inc\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\service\cli\inc\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\service\cli\src\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\CMSIS\Core\Include\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\CMSIS\RTOS2\Include\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\service\device_init\inc\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\emdrv\common\inc\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\emlib\inc\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\service\iostream\inc\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\security\sl_component\sl_mbedtls_support\config\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\security\sl_component\sl_mbedtls_support\config\preset\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\security\sl_component\sl_mbedtls_support\inc\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\util\third_party\mbedtls\include\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\util\third_party\mbedtls\library\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\micrium_os\common\source\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\micrium_os\common\include\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\micrium_os\cpu\include\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\micrium_os\ports\source\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\micrium_os\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\micrium_os\kernel\source\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\micrium_os\kernel\include\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\emdrv\nvm3\inc\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\peripheral\inc\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\util\third_party\printf\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\util\third_party\printf\inc\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\security\sl_component\sl_psa_driver\inc\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\radio\rail_lib\common\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\radio\rail_lib\protocol\ble\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\radio\rail_lib\protocol\ieee802154\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\radio\rail_lib\protocol\wmbus\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\radio\rail_lib\protocol\zwave\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\radio\rail_lib\chip\efr32\efr32xg2x\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\radio\rail_lib\protocol\sidewalk\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\radio\rail_lib\plugin\pa-conversions\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\radio\rail_lib\plugin\pa-conversions\efr32xg28\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\radio\rail_lib\plugin\rail_util_pti\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\security\sl_component\se_manager\inc\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\security\sl_component\se_manager\src\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\util\third_party\segger\systemview\SEGGER\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\util\silicon_labs\silabs_core\memory_manager\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\common\toolchain\inc\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\service\system\inc\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\app\wisun\component\app_core\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\app\wisun\component\app_setting\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\app\wisun\component\cli_util\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\app\wisun\component\event_manager\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\app\wisun\component\ns_list\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\app\wisun\component\ping\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\app\wisun\component\trace_util\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\app\wisun\component\trace_util\nanostack\nanostack-libservice\mbed-client-libservice\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\app\wisun\component\udp_client\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\service\sleeptimer\inc\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\protocol\wisun\plugin\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\protocol\wisun\stack\inc\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\protocol\wisun\stack\inc\socket\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App 1\Wisun_Node_App\autogen\\" -On
+#        --use_c++_inline) --dependencies=n "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\ewarm-iar\obj\Simplicity
+#        Configurator_13668623889914588608.dir\app.o.iar_deps"
+#    Locale                       =  C
+#    List file                    =
+#        D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\ewarm-iar\lst\Simplicity
+#        Configurator_13668623889914588608.dir\app.lst
+#    Object file                  =
+#        D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\ewarm-iar\obj\Simplicity
+#        Configurator_13668623889914588608.dir\app.o
+#    Runtime model:                  
+#      __CPP_Runtime              =  1
+#      __SystemLibrary            =  DLib
+#      __dlib_file_descriptor     =  0
+#      __dlib_full_locale_support =  0
+#      __dlib_version             =  6
+#      __iar_require _Printf         
+#
+###############################################################################
+
+D:\Inesh_wisun\Wisun_Node_App 1\Wisun_Node_App\app.c
+      1          /***************************************************************************//**
+      2           * @file
+      3           * @brief Application code
+      4           *******************************************************************************
+      5           * # License
+      6           * <b>Copyright 2019 Silicon Laboratories Inc. www.silabs.com</b>
+      7           *******************************************************************************
+      8           *
+      9           * SPDX-License-Identifier: Zlib
+     10           *
+     11           * The licensor of this software is Silicon Laboratories Inc.
+     12           *
+     13           * This software is provided 'as-is', without any express or implied
+     14           * warranty. In no event will the authors be held liable for any damages
+     15           * arising from the use of this software.
+     16           *
+     17           * Permission is granted to anyone to use this software for any purpose,
+     18           * including commercial applications, and to alter it and redistribute it
+     19           * freely, subject to the following restrictions:
+     20           *
+     21           * 1. The origin of this software must not be misrepresented; you must not
+     22           *    claim that you wrote the original software. If you use this software
+     23           *    in a product, an acknowledgment in the product documentation would be
+     24           *    appreciated but is not required.
+     25           * 2. Altered source versions must be plainly marked as such, and must not be
+     26           *    misrepresented as being the original software.
+     27           * 3. This notice may not be removed or altered from any source distribution.
+     28           *
+     29           ******************************************************************************/
+     30          // -----------------------------------------------------------------------------
+     31          //                                   Includes
+     32          // -----------------------------------------------------------------------------
+     33          #include <stdio.h>
+     34          #include <assert.h>
+     35          #include <string.h>
+     36          
+     37          #include "app.h"
+     38          #include "app_init.h"
+     39          #include "uart_hal.h"
+     40          #include "uart_udp_com.h"
+     41          #include "sl_wisun_trace_util.h"
+     42          #include "rail.h"
+     43          #include "rail_types.h"
+     44          
+     45          // -----------------------------------------------------------------------------
+     46          //                              Macros and Typedefs
+     47          // -----------------------------------------------------------------------------
+     48          // Define the RAIL handle
+
+   \                                 In section .bss, align 4
+     49          static RAIL_Handle_t railHandle;
+   \                     railHandle:
+   \        0x0                      DS8 4
+     50          //#define RAIL_DECLARE_STATE_BUFFER(name) RAIL_StateBuffer_t name
+     51          
+     52          // -----------------------------------------------------------------------------
+     53          //                          Static Function Declarations
+     54          // -----------------------------------------------------------------------------
+     55          
+     56          // -----------------------------------------------------------------------------
+     57          //                                Global Variables
+     58          // -----------------------------------------------------------------------------
+     59          extern int udp_socket;
+     60          extern sl_wisun_app_core_current_addr_t ip;
+
+   \                                 In section .bss, align 1
+     61          volatile bool uart_data_ready = false;
+   \                     uart_data_ready:
+   \        0x0                      DS8 1
+
+   \                                 In section .bss, align 4
+     62          sl_wisun_mac_address_t mac_address; 
+   \                     mac_address:
+   \        0x0                      DS8 8
+
+   \                                 In section .bss, align 2
+     63                uint16_t data_length = 0;
+   \                     data_length:
+   \        0x0                      DS8 2
+
+   \                                 In section .bss, align 4
+     64                uint8_t data[RING_BUFFER_SIZE];
+   \                     `data`:
+   \        0x0                      DS8 1'024
+
+   \                                 In section .bss, align 4
+     65                int initialisation_done=0;
+   \                     initialisation_done:
+   \        0x0                      DS8 4
+
+   \                                 In section .bss, align 1
+     66             RAIL_StateBuffer_t stateBuffer;
+   \                     stateBuffer:
+   \        0x0                      DS8 1
+     67                
+     68          //extern uint8_t uart_debug_buff[2000];
+     69          //extern uint16_t uart_debug_buff_Cnt;
+     70          // -----------------------------------------------------------------------------
+     71          //                                Static Variables
+     72          // -----------------------------------------------------------------------------
+
+   \                                 In section .bss, align 4
+     73          char remote_ip[35];
+   \                     remote_ip:
+   \        0x0                      DS8 36
+     74          // -----------------------------------------------------------------------------
+     75          //                          Public Function Definitions
+     76          // -----------------------------------------------------------------------------
+     77          
+     78          /*App task function*/
+
+   \                                 In section .text, align 2, keep-with-next
+     79          void uart_timeout_handler(void)
+     80          {
+   \                     uart_timeout_handler: (+1)
+   \        0x0   0xB410             PUSH     {R4}
+     81          //    uart_data_ready = true;
+     82          //            if (uart_data_ready) {
+     83          //      // Reset the flag
+     84          //      uart_data_ready = false;
+     85          
+     86                // Example: Process the ring buffer
+     87          
+     88                while (r_buff.tail != r_buff.head) {
+   \                     ??uart_timeout_handler_0: (+1)
+   \        0x2   0x....             LDR.N    R0,??DataTable1
+   \        0x4   0xF8B0 0x2402      LDRH     R2,[R0, #+1026]
+   \        0x8   0xF8B0 0x1400      LDRH     R1,[R0, #+1024]
+   \        0xC   0x428A             CMP      R2,R1
+   \        0xE   0xD015             BEQ.N    ??uart_timeout_handler_1
+     89                    data[data_length++] = r_buff.buffer[r_buff.tail];
+   \       0x10   0x....             LDR.N    R1,??DataTable1_1
+   \       0x12   0xF8B0 0x2402      LDRH     R2,[R0, #+1026]
+   \       0x16   0x5C84             LDRB     R4,[R0, R2]
+   \       0x18   0x....             LDR.N    R3,??DataTable1_2
+   \       0x1A   0x880A             LDRH     R2,[R1, #+0]
+   \       0x1C   0x549C             STRB     R4,[R3, R2]
+   \       0x1E   0x880A             LDRH     R2,[R1, #+0]
+   \       0x20   0x1C52             ADDS     R2,R2,#+1
+   \       0x22   0x800A             STRH     R2,[R1, #+0]
+     90                    r_buff.tail = (r_buff.tail + 1) % RING_BUFFER_SIZE;
+   \       0x24   0xF8B0 0x3402      LDRH     R3,[R0, #+1026]
+   \       0x28   0x1C5B             ADDS     R3,R3,#+1
+   \       0x2A   0xF44F 0x6180      MOV      R1,#+1024
+   \       0x2E   0xFB93 0xF2F1      SDIV     R2,R3,R1
+   \       0x32   0xFB01 0x3312      MLS      R3,R1,R2,R3
+   \       0x36   0xF8A0 0x3402      STRH     R3,[R0, #+1026]
+   \       0x3A   0xE7E2             B.N      ??uart_timeout_handler_0
+     91                }
+     92           
+     93                // Send the data over UDP
+     94                //udp_client_write(udp_socket,remote_ip,UDP_PORT,(char *)data,data_length);
+     95           
+     96                // Reset the ring buffer
+     97          //      r_buff.head = 0;
+     98          //      r_buff.tail = 0;
+     99                uart_data_ready=true;
+   \                     ??uart_timeout_handler_1: (+1)
+   \       0x3C   0x2101             MOVS     R1,#+1
+   \       0x3E   0x....             LDR.N    R0,??DataTable1_3
+   \       0x40   0x7001             STRB     R1,[R0, #+0]
+    100          //  }
+    101          
+    102          }
+   \       0x42   0xBC10             POP      {R4}
+   \       0x44   0x4770             BX       LR
+
+   \                                 In section .text, align 2, keep-with-next
+    103          void app_task(void *args)
+    104          {
+   \                     app_task: (+1)
+   \        0x0   0xE92D 0x4FF1      PUSH     {R0,R4-R11,LR}
+   \        0x4   0xB0A2             SUB      SP,SP,#+136
+    105            (void) args;
+    106          
+    107            // connect to the wisun network
+    108            sl_wisun_app_core_util_connect_and_wait();
+   \        0x6   0x.... 0x....      BL       sl_wisun_app_core_util_connect_and_wait
+    109            
+    110            UART_init();
+   \        0xA   0x.... 0x....      BL       UART_init
+    111            sl_wisun_app_core_get_current_addresses(&ip);
+   \        0xE   0x....             LDR.N    R4,??DataTable1_4
+   \       0x10   0x0020             MOVS     R0,R4
+   \       0x12   0x.... 0x....      BL       sl_wisun_app_core_get_current_addresses
+    112              if (inet_ntop(AF_INET6, &ip.border_router, remote_ip, sizeof(remote_ip)) == NULL) {
+   \       0x16   0x....             LDR.N    R6,??DataTable1_5
+   \       0x18   0x2323             MOVS     R3,#+35
+   \       0x1A   0x0032             MOVS     R2,R6
+   \       0x1C   0xF114 0x0120      ADDS     R1,R4,#+32
+   \       0x20   0x2000             MOVS     R0,#+0
+   \       0x22   0x.... 0x....      BL       inet_ntop
+   \       0x26   0x2800             CMP      R0,#+0
+   \       0x28   0xD103             BNE.N    ??app_task_0
+    113              perror("inet_ntop");
+   \       0x2A   0x....             LDR.N    R0,??DataTable1_6
+   \       0x2C   0x.... 0x....      BL       perror
+    114              return;
+   \       0x30   0xE0B7             B.N      ??app_task_1
+    115            }
+    116            
+    117            if (sl_wisun_get_mac_address(&mac_address) != SL_STATUS_OK) {
+                       ^
+Warning[Pe223]: function "sl_wisun_get_mac_address" declared implicitly
+   \                     ??app_task_0: (+1)
+   \       0x32   0x....             LDR.N    R0,??DataTable1_7
+   \       0x34   0x.... 0x....      BL       sl_wisun_get_mac_address
+   \       0x38   0x2800             CMP      R0,#+0
+   \       0x3A   0xD002             BEQ.N    ??app_task_2
+    118                printf("Error: Failed to get MAC address\n");
+   \       0x3C   0x....             LDR.N    R0,??DataTable1_8
+   \       0x3E   0x.... 0x....      BL       printf
+    119            }
+    120            
+    121            udp_socket = udp_client_create();
+   \                     ??app_task_2: (+1)
+   \       0x42   0x.... 0x....      BL       udp_client_create
+   \       0x46   0x....             LDR.N    R1,??DataTable1_9
+   \       0x48   0x6008             STR      R0,[R1, #+0]
+    122            
+    123            static sockaddr_in6_t server_addr;
+    124            // setting the server address
+    125            server_addr.sin6_family = AF_INET6;
+   \       0x4A   0x....             LDR.N    R0,??DataTable1_10
+   \       0x4C   0x2100             MOVS     R1,#+0
+   \       0x4E   0x8001             STRH     R1,[R0, #+0]
+    126            server_addr.sin6_port = UDP_PORT;
+   \       0x50   0xF240 0x45D2      MOVW     R5,#+1234
+   \       0x54   0x8045             STRH     R5,[R0, #+2]
+    127            if (inet_pton(AF_INET6, remote_ip,
+    128                          &server_addr.sin6_addr) == SOCKET_RETVAL_ERROR) {
+   \       0x56   0xF110 0x0208      ADDS     R2,R0,#+8
+   \       0x5A   0x0031             MOVS     R1,R6
+   \       0x5C   0x2000             MOVS     R0,#+0
+   \       0x5E   0x.... 0x....      BL       inet_pton
+   \       0x62   0xF110 0x0F01      CMN      R0,#+1
+   \       0x66   0xD104             BNE.N    ??app_task_3
+    129              printf("[Invalid IP address: %s]\n", remote_ip);
+   \       0x68   0x0031             MOVS     R1,R6
+   \       0x6A   0x....             LDR.N    R0,??DataTable1_11
+   \       0x6C   0x.... 0x....      BL       printf
+    130              return;
+   \       0x70   0xE097             B.N      ??app_task_1
+    131            }
+    132            udp_init(); 
+   \                     ??app_task_3: (+1)
+   \       0x72   0x.... 0x....      BL       udp_init
+    133           
+    134          RAIL_Config_t railConfig = {
+    135              .eventsCallback = NULL,
+    136          };
+   \       0x76   0xA806             ADD      R0,SP,#+24
+   \       0x78   0x2110             MOVS     R1,#+16
+   \       0x7A   0x.... 0x....      BL       __aeabi_memclr4
+    137            railHandle = RAIL_Init(&railConfig, NULL);
+   \       0x7E   0x....             LDR.N    R4,??DataTable1_12
+   \       0x80   0x2100             MOVS     R1,#+0
+   \       0x82   0xA806             ADD      R0,SP,#+24
+   \       0x84   0x.... 0x....      BL       RAIL_Init
+   \       0x88   0x6020             STR      R0,[R4, #+0]
+    138            if (railHandle == NULL) {
+   \       0x8A   0x6820             LDR      R0,[R4, #+0]
+   \       0x8C   0x2800             CMP      R0,#+0
+   \       0x8E   0xD102             BNE.N    ??app_task_4
+    139              printf("Failed to initialize RAIL\n");
+   \       0x90   0x....             LDR.N    R0,??DataTable1_13
+   \       0x92   0x.... 0x....      BL       printf
+    140            }
+    141          
+    142          // Initialize the RAIL timer for UART//
+    143            UART_init_rail_timer(railHandle);
+   \                     ??app_task_4: (+1)
+   \       0x96   0x6820             LDR      R0,[R4, #+0]
+   \       0x98   0x.... 0x....      BL       UART_init_rail_timer
+    144          
+    145          // Register the UART timeout callback
+    146            register_uart_timeout_cb(uart_timeout_handler);
+   \       0x9C   0x....             LDR.N    R0,??DataTable1_14
+   \       0x9E   0x.... 0x....      BL       register_uart_timeout_cb
+    147          
+    148            char *buff;
+                         ^
+Warning[Pe177]: variable "buff" was declared but never referenced
+    149            char buf[39]={0x00, 0x01, 0x00, 0x10, 0x00, 0x01, 0x00, 0x1F, 0x60, 0x1D, 0xA1, 0x09, 0x06, 0x07, 0x60, 0x85, 0x74, 0x05, 0x08, 0x01, 0x01, 0xBE, 0x10, 0x04, 0x0E, 0x01, 0x00, 0x00, 0x00, 0x06, 0x5F, 0x1F, 0x04, 0x00, 0x62, 0x1E, 0x5D, 0xFF, 0xFF};
+   \       0xA2   0xA817             ADD      R0,SP,#+92
+   \       0xA4   0x....             LDR.N    R1,??DataTable1_15
+   \       0xA6   0x2228             MOVS     R2,#+40
+   \       0xA8   0x.... 0x....      BL       __aeabi_memcpy4
+    150                  uart_hal_write((uint8_t *)buf,39);
+   \       0xAC   0x2127             MOVS     R1,#+39
+   \       0xAE   0xA817             ADD      R0,SP,#+92
+   \       0xB0   0x.... 0x....      BL       uart_hal_write
+    151          
+    152            while (1) {
+    153              // User code here
+    154              sl_wisun_app_core_util_dispatch_thread();
+   \                     ??app_task_5: (+1)
+   \       0xB4   0x.... 0x....      BL       sl_wisun_app_core_util_dispatch_thread
+    155              
+    156              if(uart_data_ready){
+   \       0xB8   0x....             LDR.N    R7,??DataTable1_3
+   \       0xBA   0x7838             LDRB     R0,[R7, #+0]
+   \       0xBC   0x2800             CMP      R0,#+0
+   \       0xBE   0xD0F9             BEQ.N    ??app_task_5
+    157                if (!initialisation_done) {
+   \       0xC0   0x....             LDR.N    R4,??DataTable1_16
+   \       0xC2   0x6820             LDR      R0,[R4, #+0]
+   \       0xC4   0x2800             CMP      R0,#+0
+   \       0xC6   0xD132             BNE.N    ??app_task_6
+    158                  // Buffer to compare
+    159                  char buf[51] = {0x00, 0x01, 0x00, 0x01, 0x00, 0x10, 0x00, 0x2B, 0x61, 0x29, 0xA1, 0x09, 0x06, 0x07, 0x60, 0x85, 0x74, 0x05, 0x08, 0x01, 0x01, 0xA2, 0x03, 0x02, 0x01, 0x00, 0xA3, 0x05, 0xA1, 0x03, 0x02, 0x01, 0x00, 0xBE, 0x10, 0x04, 0x0E, 0x08, 0x00, 0x06, 0x5F, 0x1F, 0x04, 0x00, 0x00, 0x00, 0x10, 0x03, 0x40, 0x00, 0x07};
+   \       0xC8   0xA80A             ADD      R0,SP,#+40
+   \       0xCA   0x....             LDR.N    R1,??DataTable1_17
+   \       0xCC   0x2234             MOVS     R2,#+52
+   \       0xCE   0x.... 0x....      BL       __aeabi_memcpy4
+    160          
+    161                  // Compare the `data` buffer with the predefined buffer
+    162                  if (memcmp(data, buf, 43) == 0) {
+   \       0xD2   0x.... 0x....      LDR.W    R8,??DataTable1_2
+   \       0xD6   0x222B             MOVS     R2,#+43
+   \       0xD8   0xA90A             ADD      R1,SP,#+40
+   \       0xDA   0x4640             MOV      R0,R8
+   \       0xDC   0x.... 0x....      BL       memcmp
+   \       0xE0   0x2800             CMP      R0,#+0
+   \       0xE2   0xD108             BNE.N    ??app_task_7
+    163                      // Data to write if the comparison matches
+    164                      char data_read[21] = {0x00, 0x01, 0x00, 0x10, 0x00, 0x01, 0x00, 0x0D, 0xC0, 0x01, 0xC1, 0x00, 0x01, 0x00, 0x00, 0x60, 0x01, 0x00, 0xFF, 0x02, 0x00};
+   \       0xE4   0x4668             MOV      R0,SP
+   \       0xE6   0x....             LDR.N    R1,??DataTable1_18
+   \       0xE8   0x2218             MOVS     R2,#+24
+   \       0xEA   0x.... 0x....      BL       __aeabi_memcpy4
+    165                      uart_hal_write((uint8_t *)data_read, 21);
+   \       0xEE   0x2115             MOVS     R1,#+21
+   \       0xF0   0x4668             MOV      R0,SP
+   \       0xF2   0x.... 0x....      BL       uart_hal_write
+    166                  }
+    167          
+    168                  // Check specific conditions in the `data` buffer
+    169                  if ((data[10] == 0xC1) || (data[11] == 0xC1)) {
+   \                     ??app_task_7: (+1)
+   \       0xF6   0xF898 0x000A      LDRB     R0,[R8, #+10]
+   \       0xFA   0x28C1             CMP      R0,#+193
+   \       0xFC   0xD003             BEQ.N    ??app_task_8
+   \       0xFE   0xF898 0x000B      LDRB     R0,[R8, #+11]
+   \      0x102   0x28C1             CMP      R0,#+193
+   \      0x104   0xD113             BNE.N    ??app_task_6
+    170                      // Shift data forward by one byte
+    171                      for (int i = data_length - 1; i >= 0; i--) {
+   \                     ??app_task_8: (+1)
+   \      0x106   0x....             LDR.N    R0,??DataTable1_1
+   \      0x108   0x8803             LDRH     R3,[R0, #+0]
+   \      0x10A   0x1E5B             SUBS     R3,R3,#+1
+   \                     ??app_task_9: (+1)
+   \      0x10C   0x2B00             CMP      R3,#+0
+   \      0x10E   0xD406             BMI.N    ??app_task_10
+    172                          data[i + 1] = data[i];
+   \      0x110   0xF818 0x1003      LDRB     R1,[R8, R3]
+   \      0x114   0xEB08 0x0203      ADD      R2,R8,R3
+   \      0x118   0x7051             STRB     R1,[R2, #+1]
+    173                      }
+   \      0x11A   0x1E5B             SUBS     R3,R3,#+1
+   \      0x11C   0xE7F6             B.N      ??app_task_9
+    174          
+    175                      // Add a new byte at the start of the buffer
+    176                      data[0] = 0x4D;
+   \                     ??app_task_10: (+1)
+   \      0x11E   0x214D             MOVS     R1,#+77
+   \      0x120   0xF888 0x1000      STRB     R1,[R8, #+0]
+    177                      data_length++;
+   \      0x124   0x8801             LDRH     R1,[R0, #+0]
+   \      0x126   0x1C49             ADDS     R1,R1,#+1
+   \      0x128   0x8001             STRH     R1,[R0, #+0]
+    178                      initialisation_done = 1;
+   \      0x12A   0x2001             MOVS     R0,#+1
+   \      0x12C   0x6020             STR      R0,[R4, #+0]
+    179                  }
+    180              }
+    181                uint8_t *packet = (uint8_t *)malloc(data_length + 12); // 12 bytes for header
+   \                     ??app_task_6: (+1)
+   \      0x12E   0x.... 0x....      LDR.W    R11,??DataTable1_1
+   \      0x132   0xF8BB 0x0000      LDRH     R0,[R11, #+0]
+   \      0x136   0x300C             ADDS     R0,R0,#+12
+   \      0x138   0x.... 0x....      BL       malloc
+   \      0x13C   0x0004             MOVS     R4,R0
+    182                    if (packet == NULL) {
+   \      0x13E   0x2C00             CMP      R4,#+0
+   \      0x140   0xD103             BNE.N    ??app_task_11
+    183                        printf("[Error: Memory allocation failed for packet]\n");
+   \      0x142   0x....             LDR.N    R0,??DataTable1_19
+   \      0x144   0x.... 0x....      BL       printf
+    184                        return;
+   \      0x148   0xE02B             B.N      ??app_task_1
+    185                    }
+    186                      create_buffer_packet(packet, data, data_length);
+   \                     ??app_task_11: (+1)
+   \      0x14A   0x.... 0x....      LDR.W    R8,??DataTable1_2
+   \      0x14E   0xF8BB 0x2000      LDRH     R2,[R11, #+0]
+   \      0x152   0x4641             MOV      R1,R8
+   \      0x154   0x0020             MOVS     R0,R4
+   \      0x156   0x.... 0x....      BL       create_buffer_packet
+    187                udp_client_write(udp_socket,remote_ip,UDP_PORT,(char *)packet,data_length+12);
+   \      0x15A   0xF8BB 0x0000      LDRH     R0,[R11, #+0]
+   \      0x15E   0x300C             ADDS     R0,R0,#+12
+   \      0x160   0x9000             STR      R0,[SP, #+0]
+   \      0x162   0x0023             MOVS     R3,R4
+   \      0x164   0x002A             MOVS     R2,R5
+   \      0x166   0x0031             MOVS     R1,R6
+   \      0x168   0x....             LDR.N    R0,??DataTable1_9
+   \      0x16A   0x6800             LDR      R0,[R0, #+0]
+   \      0x16C   0x.... 0x....      BL       udp_client_write
+    188                r_buff.head = 0;
+   \      0x170   0x....             LDR.N    R0,??DataTable1
+   \      0x172   0x2100             MOVS     R1,#+0
+   \      0x174   0xF8A0 0x1400      STRH     R1,[R0, #+1024]
+    189                r_buff.tail = 0;
+   \      0x178   0x2100             MOVS     R1,#+0
+   \      0x17A   0xF8A0 0x1402      STRH     R1,[R0, #+1026]
+    190                
+    191                memset(data,0,RING_BUFFER_SIZE);
+   \      0x17E   0xF44F 0x6980      MOV      R9,#+1024
+   \      0x182   0xF05F 0x0A00      MOVS     R10,#+0
+   \      0x186   0x4652             MOV      R2,R10
+   \      0x188   0x4649             MOV      R1,R9
+   \      0x18A   0x4640             MOV      R0,R8
+   \      0x18C   0x.... 0x....      BL       __aeabi_memset
+    192                data_length=0;
+   \      0x190   0x2000             MOVS     R0,#+0
+   \      0x192   0xF8AB 0x0000      STRH     R0,[R11, #+0]
+    193                
+    194                uart_data_ready=false;
+   \      0x196   0x2000             MOVS     R0,#+0
+   \      0x198   0x7038             STRB     R0,[R7, #+0]
+    195                app_wisun_free(packet);
+   \      0x19A   0x0020             MOVS     R0,R4
+   \      0x19C   0x.... 0x....      BL       app_wisun_free
+   \      0x1A0   0xE788             B.N      ??app_task_5
+    196              }
+    197              
+    198          
+    199          
+    200          
+    201            }
+   \                     ??app_task_1: (+1)
+   \      0x1A2   0xB023             ADD      SP,SP,#+140
+   \      0x1A4   0xE8BD 0x8FF0      POP      {R4-R11,PC}
+    202          }
+
+   \                                 In section .bss, align 4
+   \                     `app_task::server_addr`:
+   \        0x0                      DS8 28
+
+   \                                 In section .rodata, align 4
+   \        0x0   0x0000'0000        DC32 0x0
+   \        0x4                      DS8 12
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable1:
+   \        0x0   0x....'....        DC32     r_buff
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable1_1:
+   \        0x0   0x....'....        DC32     data_length
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable1_2:
+   \        0x0   0x....'....        DC32     `data`
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable1_3:
+   \        0x0   0x....'....        DC32     uart_data_ready
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable1_4:
+   \        0x0   0x....'....        DC32     ip
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable1_5:
+   \        0x0   0x....'....        DC32     remote_ip
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable1_6:
+   \        0x0   0x....'....        DC32     ?_0
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable1_7:
+   \        0x0   0x....'....        DC32     mac_address
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable1_8:
+   \        0x0   0x....'....        DC32     ?_1
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable1_9:
+   \        0x0   0x....'....        DC32     udp_socket
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable1_10:
+   \        0x0   0x....'....        DC32     `app_task::server_addr`
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable1_11:
+   \        0x0   0x....'....        DC32     ?_2
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable1_12:
+   \        0x0   0x....'....        DC32     railHandle
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable1_13:
+   \        0x0   0x....'....        DC32     ?_3
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable1_14:
+   \        0x0   0x....'....        DC32     uart_timeout_handler
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable1_15:
+   \        0x0   0x....'....        DC32     ?_4
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable1_16:
+   \        0x0   0x....'....        DC32     initialisation_done
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable1_17:
+   \        0x0   0x....'....        DC32     ?_5
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable1_18:
+   \        0x0   0x....'....        DC32     ?_6
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable1_19:
+   \        0x0   0x....'....        DC32     ?_7
+
+   \                                 In section .rodata, align 4
+   \                     ?_0:
+   \        0x0   0x69 0x6E          DC8 "inet_ntop"
+   \              0x65 0x74    
+   \              0x5F 0x6E    
+   \              0x74 0x6F    
+   \              0x70 0x00
+   \        0xA                      DS8 2
+
+   \                                 In section .rodata, align 4
+   \                     ?_1:
+   \        0x0   0x45 0x72          DC8 "Error: Failed to get MAC address\012"
+   \              0x72 0x6F    
+   \              0x72 0x3A    
+   \              0x20 0x46    
+   \              0x61 0x69    
+   \              0x6C 0x65    
+   \              0x64 0x20    
+   \              0x74 0x6F    
+   \              0x20 0x67    
+   \              0x65 0x74    
+   \              0x20 0x4D    
+   \              0x41 0x43    
+   \              0x20 0x61    
+   \              0x64 0x64    
+   \              0x72 0x65    
+   \              0x73 0x73    
+   \              0x0A 0x00
+   \       0x22                      DS8 2
+
+   \                                 In section .rodata, align 4
+   \                     ?_2:
+   \        0x0   0x5B 0x49          DC8 "[Invalid IP address: %s]\012"
+   \              0x6E 0x76    
+   \              0x61 0x6C    
+   \              0x69 0x64    
+   \              0x20 0x49    
+   \              0x50 0x20    
+   \              0x61 0x64    
+   \              0x64 0x72    
+   \              0x65 0x73    
+   \              0x73 0x3A    
+   \              0x20 0x25    
+   \              0x73 0x5D    
+   \              0x0A 0x00
+   \       0x1A                      DS8 2
+
+   \                                 In section .rodata, align 4
+   \                     ?_3:
+   \        0x0   0x46 0x61          DC8 "Failed to initialize RAIL\012"
+   \              0x69 0x6C    
+   \              0x65 0x64    
+   \              0x20 0x74    
+   \              0x6F 0x20    
+   \              0x69 0x6E    
+   \              0x69 0x74    
+   \              0x69 0x61    
+   \              0x6C 0x69    
+   \              0x7A 0x65    
+   \              0x20 0x52    
+   \              0x41 0x49    
+   \              0x4C 0x0A    
+   \              0x00
+   \       0x1B                      DS8 1
+
+   \                                 In section .rodata, align 4
+   \                     ?_4:
+   \        0x0   0x00 0x01          DC8 0, 1, 0, 16, 0, 1, 0, 31, 96, 29, 161, 9, 6, 7, 96, 133, 116, 5, 8
+   \              0x00 0x10    
+   \              0x00 0x01    
+   \              0x00 0x1F    
+   \              0x60 0x1D    
+   \              0xA1 0x09    
+   \              0x06 0x07    
+   \              0x60 0x85    
+   \              0x74 0x05    
+   \              0x08
+   \       0x13   0x01 0x01          DC8 1, 1, 190, 16, 4, 14, 1, 0, 0, 0, 6, 95, 31, 4, 0, 98, 30, 93, 255
+   \              0xBE 0x10    
+   \              0x04 0x0E    
+   \              0x01 0x00    
+   \              0x00 0x00    
+   \              0x06 0x5F    
+   \              0x1F 0x04    
+   \              0x00 0x62    
+   \              0x1E 0x5D    
+   \              0xFF
+   \       0x26   0xFF               DC8 255
+   \       0x27                      DS8 1
+
+   \                                 In section .rodata, align 4
+   \                     ?_5:
+   \        0x0   0x00 0x01          DC8 0, 1, 0, 1, 0, 16, 0, 43, 97, 41, 161, 9, 6, 7, 96, 133, 116, 5, 8
+   \              0x00 0x01    
+   \              0x00 0x10    
+   \              0x00 0x2B    
+   \              0x61 0x29    
+   \              0xA1 0x09    
+   \              0x06 0x07    
+   \              0x60 0x85    
+   \              0x74 0x05    
+   \              0x08
+   \       0x13   0x01 0x01          DC8 1, 1, 162, 3, 2, 1, 0, 163, 5, 161, 3, 2, 1, 0, 190, 16, 4, 14, 8
+   \              0xA2 0x03    
+   \              0x02 0x01    
+   \              0x00 0xA3    
+   \              0x05 0xA1    
+   \              0x03 0x02    
+   \              0x01 0x00    
+   \              0xBE 0x10    
+   \              0x04 0x0E    
+   \              0x08
+   \       0x26   0x00 0x06          DC8 0, 6, 95, 31, 4, 0, 0, 0, 16, 3, 64, 0, 7
+   \              0x5F 0x1F    
+   \              0x04 0x00    
+   \              0x00 0x00    
+   \              0x10 0x03    
+   \              0x40 0x00    
+   \              0x07
+   \       0x33                      DS8 1
+
+   \                                 In section .rodata, align 4
+   \                     ?_6:
+   \        0x0   0x00 0x01          DC8 0, 1, 0, 16, 0, 1, 0, 13, 192, 1, 193, 0, 1, 0, 0, 96, 1, 0, 255, 2
+   \              0x00 0x10    
+   \              0x00 0x01    
+   \              0x00 0x0D    
+   \              0xC0 0x01    
+   \              0xC1 0x00    
+   \              0x01 0x00    
+   \              0x00 0x60    
+   \              0x01 0x00    
+   \              0xFF 0x02
+   \       0x14   0x00               DC8 0
+   \       0x15                      DS8 3
+
+   \                                 In section .rodata, align 4
+   \                     ?_7:
+   \        0x0   0x5B 0x45          DC8 "[Error: Memory allocation failed for packet]\012"
+   \              0x72 0x72    
+   \              0x6F 0x72    
+   \              0x3A 0x20    
+   \              0x4D 0x65    
+   \              0x6D 0x6F    
+   \              0x72 0x79    
+   \              0x20 0x61    
+   \              0x6C 0x6C    
+   \              0x6F 0x63    
+   \              0x61 0x74    
+   \              0x69 0x6F    
+   \              0x6E 0x20    
+   \              0x66 0x61    
+   \              0x69 0x6C    
+   \              0x65 0x64    
+   \              0x20 0x66    
+   \              0x6F 0x72    
+   \              0x20 0x70    
+   \              0x61 0x63    
+   \              0x6B 0x65    
+   \              0x74 0x5D    
+   \              0x0A 0x00
+   \       0x2E                      DS8 2
+    203          
+    204          // -----------------------------------------------------------------------------
+    205          //                          Static Function Definitions
+    206          // -----------------------------------------------------------------------------
+
+   Maximum stack usage in bytes:
+
+   .cstack Function
+   ------- --------
+     176   app_task
+       176   -> RAIL_Init
+       176   -> UART_init
+       176   -> UART_init_rail_timer
+       176   -> __aeabi_memclr4
+       176   -> __aeabi_memcpy4
+       176   -> __aeabi_memset
+       176   -> app_wisun_free
+       176   -> create_buffer_packet
+       176   -> inet_ntop
+       176   -> inet_pton
+       176   -> malloc
+       176   -> memcmp
+       176   -> perror
+       176   -> printf
+       176   -> register_uart_timeout_cb
+       176   -> sl_wisun_app_core_get_current_addresses
+       176   -> sl_wisun_app_core_util_connect_and_wait
+       176   -> sl_wisun_app_core_util_dispatch_thread
+       176   -> sl_wisun_get_mac_address
+       176   -> uart_hal_write
+       176   -> udp_client_create
+       176   -> udp_client_write
+       176   -> udp_init
+       4   uart_timeout_handler
+
+
+   Section sizes:
+
+   Bytes  Function/Label
+   -----  --------------
+       4  ??DataTable1
+       4  ??DataTable1_1
+       4  ??DataTable1_10
+       4  ??DataTable1_11
+       4  ??DataTable1_12
+       4  ??DataTable1_13
+       4  ??DataTable1_14
+       4  ??DataTable1_15
+       4  ??DataTable1_16
+       4  ??DataTable1_17
+       4  ??DataTable1_18
+       4  ??DataTable1_19
+       4  ??DataTable1_2
+       4  ??DataTable1_3
+       4  ??DataTable1_4
+       4  ??DataTable1_5
+       4  ??DataTable1_6
+       4  ??DataTable1_7
+       4  ??DataTable1_8
+       4  ??DataTable1_9
+      12  ?_0
+      36  ?_1
+      28  ?_2
+      28  ?_3
+      40  ?_4
+      52  ?_5
+      24  ?_6
+      48  ?_7
+      16  ?_8
+     424  app_task
+   1'024  data
+       2  data_length
+       4  initialisation_done
+       8  mac_address
+       4  railHandle
+      36  remote_ip
+      28  server_addr
+       1  stateBuffer
+       1  uart_data_ready
+      70  uart_timeout_handler
+
+ 
+ 1'108 bytes in section .bss
+   284 bytes in section .rodata
+   574 bytes in section .text
+ 
+   574 bytes of CODE  memory
+   284 bytes of CONST memory
+ 1'108 bytes of DATA  memory
+
+Errors: none
+Warnings: 2

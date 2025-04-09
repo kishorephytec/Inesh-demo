@@ -1,0 +1,3289 @@
+###############################################################################
+#
+# IAR ANSI C/C++ Compiler V9.50.2.385/W64 for ARM         27/Nov/2024  12:17:05
+# Copyright 1999-2024 IAR Systems AB.
+#
+#    Cpu mode          =  thumb
+#    Endian            =  little
+#    Source file       =
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\security\sl_component\sl_psa_driver\src\sli_se_driver_cipher.c
+#    Command line      =
+#        -f
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\ewarm-iar\obj\src_4811620319817103232.dir\sli_se_driver_cipher.o.rsp
+#        (C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\security\sl_component\sl_psa_driver\src\sli_se_driver_cipher.c
+#        -D EFR32FG28B322F1024IM48=1 -D
+#        configNUM_SDK_THREAD_LOCAL_STORAGE_POINTERS=2 -D
+#        SL_COMPONENT_CATALOG_PRESENT=1 -D
+#        MBEDTLS_CONFIG_FILE=<sl_mbedtls_config.h> -D
+#        MBEDTLS_PSA_CRYPTO_CONFIG_FILE=<psa_crypto_config.h> -D
+#        SL_RAIL_LIB_MULTIPROTOCOL_SUPPORT=0 -D
+#        SL_RAIL_UTIL_PA_CONFIG_HEADER=<sl_rail_util_pa_config.h> -D
+#        RTT_USE_ASM=0 -D MBED_CONF_MBED_TRACE_ENABLE=1 -D
+#        MBED_CONF_NANOSTACK_CONFIGURATION=ws_router -D
+#        MBED_TRACE_MAX_LEVEL=TRACE_ACTIVE_LEVEL_ALL -D DEBUG_EFM_USER=1 -D
+#        HAVE_LFN=1 -D HAVE_LFN_PARENT=1 -lC
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\ewarm-iar\lst\src_4811620319817103232.dir
+#        --diag_suppress Pa050 -o
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\ewarm-iar\obj\src_4811620319817103232.dir
+#        --debug --endian=little --cpu=Cortex-M33 --cmse --cmse -e
+#        --fpu=VFPv5_sp --dlib_config "C:\Program Files\IAR Systems\Embedded
+#        Workbench 9.2\arm\inc\c\DLib_Config_Normal.h" -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\security\sl_component\sl_psa_driver\src\
+#        -I C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\autogen\ -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\config\ -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\config\rail\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\Device\SiliconLabs\EFR32FG28\Include\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\common\inc\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\CMSIS\Core\Include\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\CMSIS\RTOS2\Include\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\service\device_init\inc\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\emdrv\dmadrv\inc\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\emdrv\common\inc\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\emlib\inc\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\util\third_party\freertos\cmsis\Include\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\util\third_party\freertos\kernel\include\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\util\third_party\freertos\kernel\portable\IAR\ARM_CM33_NTZ\non_secure\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\service\iostream\inc\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\security\sl_component\sl_mbedtls_support\config\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\security\sl_component\sl_mbedtls_support\config\preset\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\security\sl_component\sl_mbedtls_support\inc\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\util\third_party\mbedtls\include\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\util\third_party\mbedtls\library\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\emdrv\nvm3\inc\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\peripheral\inc\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\security\sl_component\sl_psa_driver\inc\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\radio\rail_lib\common\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\radio\rail_lib\protocol\ble\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\radio\rail_lib\protocol\ieee802154\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\radio\rail_lib\protocol\wmbus\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\radio\rail_lib\protocol\zwave\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\radio\rail_lib\chip\efr32\efr32xg2x\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\radio\rail_lib\protocol\sidewalk\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\radio\rail_lib\plugin\pa-conversions\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\radio\rail_lib\plugin\pa-conversions\efr32xg28\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\radio\rail_lib\plugin\rail_util_pti\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\security\sl_component\se_manager\inc\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\security\sl_component\se_manager\src\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\util\third_party\segger\systemview\SEGGER\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\util\silicon_labs\silabs_core\memory_manager\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\common\toolchain\inc\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\service\system\inc\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\app\wisun\component\ns_list\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\app\wisun\component\trace_util\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\app\wisun\component\trace_util\nanostack\nanostack-libservice\mbed-client-libservice\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\service\sleeptimer\inc\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\protocol\wisun\stack\inc\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\protocol\wisun\app\wisun_rcp\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\protocol\wisun\stack\inc\socket\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\protocol\wisun\stack\src\
+#        -Ohz --use_c++_inline) --dependencies=n
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\ewarm-iar\obj\src_4811620319817103232.dir\sli_se_driver_cipher.o.iar_deps
+#    Locale            =  C
+#    List file         =
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\ewarm-iar\lst\src_4811620319817103232.dir\sli_se_driver_cipher.lst
+#    Object file       =
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\ewarm-iar\obj\src_4811620319817103232.dir\sli_se_driver_cipher.o
+#    Runtime model:       
+#      __CPP_Runtime   =  1
+#      __SystemLibrary =  DLib
+#      __dlib_version  =  6
+#
+###############################################################################
+
+C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\security\sl_component\sl_psa_driver\src\sli_se_driver_cipher.c
+      1          /***************************************************************************//**
+      2           * @file
+      3           * @brief Silicon Labs PSA Crypto Driver Cipher functions.
+      4           *******************************************************************************
+      5           * # License
+      6           * <b>Copyright 2020 Silicon Laboratories Inc. www.silabs.com</b>
+      7           *******************************************************************************
+      8           *
+      9           * SPDX-License-Identifier: Zlib
+     10           *
+     11           * The licensor of this software is Silicon Laboratories Inc.
+     12           *
+     13           * This software is provided 'as-is', without any express or implied
+     14           * warranty. In no event will the authors be held liable for any damages
+     15           * arising from the use of this software.
+     16           *
+     17           * Permission is granted to anyone to use this software for any purpose,
+     18           * including commercial applications, and to alter it and redistribute it
+     19           * freely, subject to the following restrictions:
+     20           *
+     21           * 1. The origin of this software must not be misrepresented; you must not
+     22           *    claim that you wrote the original software. If you use this software
+     23           *    in a product, an acknowledgment in the product documentation would be
+     24           *    appreciated but is not required.
+     25           * 2. Altered source versions must be plainly marked as such, and must not be
+     26           *    misrepresented as being the original software.
+     27           * 3. This notice may not be removed or altered from any source distribution.
+     28           *
+     29           ******************************************************************************/
+     30          
+     31          #include "sli_psa_driver_features.h"
+     32          
+     33          #if defined(SLI_MBEDTLS_DEVICE_HSE)
+     34          
+     35          #include "psa/crypto.h"
+     36          #include "psa/crypto_extra.h"
+     37          
+     38          #include "sli_psa_driver_common.h"
+     39          
+     40          #include "sli_se_driver_cipher.h"
+     41          #include "sli_se_driver_key_management.h"
+     42          
+     43          #include "sl_se_manager.h"
+     44          #include "sl_se_manager_cipher.h"
+     45          
+     46          #include <string.h>
+     47          
+     48          // -----------------------------------------------------------------------------
+     49          // Static functions
+     50          
+     51          #if defined(SLI_PSA_DRIVER_FEATURE_CIPHER)
+     52          
+     53          /**
+     54           * @brief
+     55           *   Validate that the given key desc has the correct properties
+     56           *   to be used for a cipher operation
+     57           * @param key_desc
+     58           *   Pointer to a key descriptor
+     59           * @return
+     60           *   PSA_SUCCESS if all is good
+     61           *   PSA_ERROR_INVALID_ARGUMENT otherwise
+     62           */
+
+   \                                 In section .text, align 2, keep-with-next
+     63          static psa_status_t validate_key_type(const sl_se_key_descriptor_t *key_desc)
+     64          {
+     65            sl_se_key_type_t sl_key_type = key_desc->type;
+   \                     validate_key_type: (+1)
+   \        0x0   0x6800             LDR      R0,[R0, #+0]
+     66            // Check with if (..) since switch does not support multiple equal entries
+     67            // (AES 256 and CHACHA20 has same sl_key_type value)
+     68            if (sl_key_type == SL_SE_KEY_TYPE_AES_128
+     69                || sl_key_type == SL_SE_KEY_TYPE_AES_192
+     70                || sl_key_type == SL_SE_KEY_TYPE_AES_256
+     71                #if defined(SLI_PSA_DRIVER_FEATURE_CHACHA20)
+     72                || sl_key_type == SL_SE_KEY_TYPE_CHACHA20
+     73                #endif
+     74                ) {
+   \        0x2   0x2810             CMP      R0,#+16
+   \        0x4   0xBF1C             ITT      NE
+   \        0x6   0x2818             CMPNE    R0,#+24
+   \        0x8   0x2820             CMPNE    R0,#+32
+   \        0xA   0xD101             BNE.N    ??validate_key_type_0
+     75              return PSA_SUCCESS;
+   \        0xC   0x2000             MOVS     R0,#+0
+   \        0xE   0x4770             BX       LR
+     76            }
+     77          
+     78            return PSA_ERROR_INVALID_ARGUMENT;
+   \                     ??validate_key_type_0: (+1)
+   \       0x10   0xF06F 0x0086      MVN      R0,#+134
+   \       0x14   0x4770             BX       LR
+     79          }
+     80          
+     81          // Validate combination of key and algorithm
+     82          static psa_status_t validate_key_algorithm_match(
+     83            psa_algorithm_t alg,
+     84            const psa_key_attributes_t *attributes)
+     85          {
+     86            switch (alg) {
+     87              #if defined(SLI_PSA_DRIVER_FEATURE_BLOCK_CIPHER)
+     88              #if defined(SLI_PSA_DRIVER_FEATURE_AES_ECB)
+     89              case PSA_ALG_ECB_NO_PADDING:
+     90              #endif
+     91              #if defined(SLI_PSA_DRIVER_FEATURE_AES_CTR)
+     92              case PSA_ALG_CTR:
+     93              #endif
+     94              #if defined(SLI_PSA_DRIVER_FEATURE_AES_CFB)
+     95              case PSA_ALG_CFB:
+     96              #endif
+     97              #if defined(SLI_PSA_DRIVER_FEATURE_AES_OFB)
+     98              case PSA_ALG_OFB:
+     99              #endif
+    100              #if defined(SLI_PSA_DRIVER_FEATURE_AES_CCM_STAR_NO_TAG)
+    101              case PSA_ALG_CCM_STAR_NO_TAG:
+    102              #endif
+    103              #if defined(SLI_PSA_DRIVER_FEATURE_AES_CBC_NO_PADDING)
+    104              case PSA_ALG_CBC_NO_PADDING:
+    105              #endif
+    106              #if defined(SLI_PSA_DRIVER_FEATURE_AES_CBC_PKCS7)
+    107              case PSA_ALG_CBC_PKCS7:
+    108              #endif
+    109              if (psa_get_key_type(attributes) != PSA_KEY_TYPE_AES) {
+    110                return PSA_ERROR_NOT_SUPPORTED;
+    111              }
+    112              break;
+    113              #endif // SLI_PSA_DRIVER_FEATURE_BLOCK_CIPHER
+    114          
+    115              #if defined(SLI_PSA_DRIVER_FEATURE_CHACHA20)
+    116              case PSA_ALG_STREAM_CIPHER:
+    117                if (psa_get_key_type(attributes) != PSA_KEY_TYPE_CHACHA20) {
+    118                  return PSA_ERROR_NOT_SUPPORTED;
+    119                }
+    120                break;
+    121              #endif
+    122          
+    123              default:
+    124                return PSA_ERROR_NOT_SUPPORTED;
+    125            }
+    126          
+    127            return PSA_SUCCESS;
+    128          }
+    129          
+    130          #endif // SLI_PSA_DRIVER_FEATURE_CIPHER
+    131          
+    132          // -----------------------------------------------------------------------------
+    133          // Single-shot driver entry points
+    134          
+
+   \                                 In section .text, align 2, keep-with-next
+    135          psa_status_t sli_se_driver_cipher_encrypt(const psa_key_attributes_t *attributes,
+    136                                                    const uint8_t *key_buffer,
+    137                                                    size_t key_buffer_size,
+    138                                                    psa_algorithm_t alg,
+    139                                                    const uint8_t *iv,
+    140                                                    size_t iv_length,
+    141                                                    const uint8_t *input,
+    142                                                    size_t input_length,
+    143                                                    uint8_t *output,
+    144                                                    size_t output_size,
+    145                                                    size_t *output_length)
+    146          {
+   \                     sli_se_driver_cipher_encrypt: (+1)
+   \        0x0   0xE92D 0x4FF8      PUSH     {R3-R11,LR}
+   \        0x4   0xB0A2             SUB      SP,SP,#+136
+   \        0x6   0x.... 0x....      BL       ?Subroutine1
+   \                     ??CrossCallReturnLabel_0: (+1)
+   \        0xA   0xA80D             ADD      R0,SP,#+52
+   \        0xC   0x.... 0x....      BL       __aeabi_memset
+   \       0x10   0x2110             MOVS     R1,#+16
+   \       0x12   0x2200             MOVS     R2,#+0
+   \       0x14   0xA809             ADD      R0,SP,#+36
+   \       0x16   0x.... 0x....      BL       __aeabi_memset
+    147            #if defined(SLI_PSA_DRIVER_FEATURE_CIPHER)
+    148          
+    149            #if defined(MBEDTLS_PSA_CRYPTO_C)
+    150          
+    151            #if defined(SLI_PSA_DRIVER_FEATURE_AES_CTR)            \
+    152            || defined(SLI_PSA_DRIVER_FEATURE_AES_CFB)             \
+    153            || defined(SLI_PSA_DRIVER_FEATURE_AES_OFB)             \
+    154            || defined(SLI_PSA_DRIVER_FEATURE_AES_CCM_STAR_NO_TAG) \
+    155            || defined(SLI_PSA_DRIVER_FEATURE_AES_CBC_NO_PADDING)  \
+    156            || defined(SLI_PSA_DRIVER_FEATURE_AES_CBC_PKCS7)       \
+    157            || defined(SLI_PSA_DRIVER_FEATURE_CHACHA20)
+    158            uint8_t tmp_buf[16] = { 0 };
+    159            #endif
+    160          
+    161            #if defined(SLI_PSA_DRIVER_FEATURE_AES_CTR)            \
+    162            || defined(SLI_PSA_DRIVER_FEATURE_AES_CFB)             \
+    163            || defined(SLI_PSA_DRIVER_FEATURE_AES_OFB)             \
+    164            || defined(SLI_PSA_DRIVER_FEATURE_AES_CCM_STAR_NO_TAG) \
+    165            || defined(SLI_PSA_DRIVER_FEATURE_AES_CBC_NO_PADDING)  \
+    166            || defined(SLI_PSA_DRIVER_FEATURE_AES_CBC_PKCS7)
+    167            uint8_t final_block[16] = { 0 };
+    168            #endif
+    169          
+    170            #endif   // MBEDTLS_PSA_CRYPTO_C
+    171          
+    172            // Argument check
+    173            if (key_buffer == NULL
+    174                || key_buffer_size == 0
+    175                || (input == NULL && input_length > 0)
+    176                || (iv == NULL && iv_length > 0)
+    177                || (output == NULL && output_size > 0)
+    178                || output_length == NULL) {
+   \       0x1A   0x2F00             CMP      R7,#+0
+   \       0x1C   0xD019             BEQ.N    ??sli_se_driver_cipher_encrypt_0
+   \       0x1E   0x9400             STR      R4,[SP, #+0]
+   \       0x20   0x0020             MOVS     R0,R4
+   \       0x22   0xD016             BEQ.N    ??sli_se_driver_cipher_encrypt_0
+   \       0x24   0x9D2E             LDR      R5,[SP, #+184]
+   \       0x26   0x9C2F             LDR      R4,[SP, #+188]
+   \       0x28   0xB90D             CBNZ.N   R5,??sli_se_driver_cipher_encrypt_1
+   \       0x2A   0x2C00             CMP      R4,#+0
+   \       0x2C   0xD10D             BNE.N    ??sli_se_driver_cipher_encrypt_2
+   \                     ??sli_se_driver_cipher_encrypt_1: (+1)
+   \       0x2E   0x982C             LDR      R0,[SP, #+176]
+   \       0x30   0xF8DD 0x80B4      LDR      R8,[SP, #+180]
+   \       0x34   0xB910             CBNZ.N   R0,??sli_se_driver_cipher_encrypt_3
+   \       0x36   0xF1B8 0x0F00      CMP      R8,#+0
+   \       0x3A   0xD106             BNE.N    ??sli_se_driver_cipher_encrypt_2
+   \                     ??sli_se_driver_cipher_encrypt_3: (+1)
+   \       0x3C   0xF8DD 0xA0C0      LDR      R10,[SP, #+192]
+   \       0x40   0xF1BA 0x0F00      CMP      R10,#+0
+   \       0x44   0xD103             BNE.N    ??sli_se_driver_cipher_encrypt_4
+   \       0x46   0x9831             LDR      R0,[SP, #+196]
+   \       0x48   0x2800             CMP      R0,#+0
+   \                     ??sli_se_driver_cipher_encrypt_2: (+1)
+   \       0x4A   0xF040 0x80F2      BNE.W    ??sli_se_driver_cipher_encrypt_5
+   \                     ??sli_se_driver_cipher_encrypt_4: (+1)
+   \       0x4E   0x9E32             LDR      R6,[SP, #+200]
+   \       0x50   0x2E00             CMP      R6,#+0
+   \                     ??sli_se_driver_cipher_encrypt_0: (+1)
+   \       0x52   0xF000 0x80EE      BEQ.W    ??sli_se_driver_cipher_encrypt_5
+   \       0x56   0xF8CD 0x900C      STR      R9,[SP, #+12]
+    179              return PSA_ERROR_INVALID_ARGUMENT;
+    180            }
+    181          
+    182            psa_status_t psa_status = validate_key_algorithm_match(alg, attributes);
+   \       0x5A   0x9903             LDR      R1,[SP, #+12]
+   \       0x5C   0x.... 0x....      LDR.W    R0,??DataTable10
+   \       0x60   0xF06F 0x0985      MVN      R9,#+133
+   \       0x64   0x4281             CMP      R1,R0
+   \       0x66   0xBF1F             ITTTT    NE
+   \       0x68   0x.... 0x....      LDRNE.W  R0,??DataTable10_1
+   \       0x6C   0x4281             CMPNE    R1,R0
+   \       0x6E   0x.... 0x....      LDRNE.W  R0,??DataTable10_2
+   \       0x72   0x4281             CMPNE    R1,R0
+   \       0x74   0xD11D             BNE.N    ??sli_se_driver_cipher_encrypt_6
+   \       0x76   0x.... 0x....      BL       ?Subroutine4
+   \                     ??CrossCallReturnLabel_6: (+1)
+   \       0x7A   0xD11A             BNE.N    ??sli_se_driver_cipher_encrypt_6
+    183            if (psa_status != PSA_SUCCESS) {
+    184              return psa_status;
+    185            }
+    186          
+    187            // Ephemeral contexts
+    188            sl_se_command_context_t cmd_ctx = { 0 };
+   \       0x7C   0xA819             ADD      R0,SP,#+100
+   \       0x7E   0x2124             MOVS     R1,#+36
+   \       0x80   0x.... 0x....      BL       __aeabi_memclr4
+    189            sl_se_key_descriptor_t key_desc = { 0 };
+   \       0x84   0xA811             ADD      R0,SP,#+68
+   \       0x86   0x2120             MOVS     R1,#+32
+   \       0x88   0x.... 0x....      BL       __aeabi_memclr4
+    190          
+    191            sl_status_t status = sl_se_init_command_context(&cmd_ctx);
+   \       0x8C   0xA819             ADD      R0,SP,#+100
+   \       0x8E   0x.... 0x....      BL       sl_se_init_command_context
+   \       0x92   0xEA5F 0x0B00      MOVS     R11,R0
+    192            if (status != SL_STATUS_OK) {
+   \       0x96   0xD10E             BNE.N    ??sli_se_driver_cipher_encrypt_7
+    193              return PSA_ERROR_HARDWARE_FAILURE;
+    194            }
+    195          
+    196            psa_status = sli_se_key_desc_from_input(attributes,
+    197                                                    key_buffer,
+    198                                                    key_buffer_size,
+    199                                                    &key_desc);
+   \       0x98   0x9A00             LDR      R2,[SP, #+0]
+   \       0x9A   0x9801             LDR      R0,[SP, #+4]
+   \       0x9C   0xAB11             ADD      R3,SP,#+68
+   \       0x9E   0x4639             MOV      R1,R7
+   \       0xA0   0x.... 0x....      BL       sli_se_key_desc_from_input
+    200            if (psa_status != PSA_SUCCESS) {
+   \       0xA4   0x2800             CMP      R0,#+0
+   \       0xA6   0xD153             BNE.N    ??sli_se_driver_cipher_encrypt_8
+    201              return psa_status;
+    202            }
+    203            psa_status = validate_key_type(&key_desc);
+   \       0xA8   0xA811             ADD      R0,SP,#+68
+   \       0xAA   0x.... 0x....      BL       validate_key_type
+    204            if (psa_status != PSA_SUCCESS) {
+   \       0xAE   0xB128             CBZ.N    R0,??sli_se_driver_cipher_encrypt_9
+    205              return psa_status;
+   \       0xB0   0xE04E             B.N      ??sli_se_driver_cipher_encrypt_8
+    206            }
+   \                     ??sli_se_driver_cipher_encrypt_6: (+1)
+   \       0xB2   0x4648             MOV      R0,R9
+   \       0xB4   0xE04C             B.N      ??sli_se_driver_cipher_encrypt_8
+   \                     ??sli_se_driver_cipher_encrypt_7: (+1)
+   \       0xB6   0xF06F 0x0092      MVN      R0,#+146
+   \       0xBA   0xE049             B.N      ??sli_se_driver_cipher_encrypt_8
+    207          
+    208            if (input_length == 0) {
+   \                     ??sli_se_driver_cipher_encrypt_9: (+1)
+   \       0xBC   0xB90C             CBNZ.N   R4,??sli_se_driver_cipher_encrypt_10
+    209              *output_length = 0;
+   \       0xBE   0x6030             STR      R0,[R6, #+0]
+    210              return PSA_SUCCESS;
+   \       0xC0   0xE046             B.N      ??sli_se_driver_cipher_encrypt_8
+    211            }
+    212          
+    213            // Our drivers only support full or no overlap between input and output
+    214            // buffers. So in the case of partial overlap, copy the input buffer into
+    215            // the output buffer and process it in place as if the buffers fully
+    216            // overlapped.
+    217            if ((output > input) && (output < (input + input_length))) {
+   \                     ??sli_se_driver_cipher_encrypt_10: (+1)
+   \       0xC2   0x4555             CMP      R5,R10
+   \       0xC4   0xBF3C             ITT      CC
+   \       0xC6   0x1928             ADDCC    R0,R5,R4
+   \       0xC8   0x4582             CMPCC    R10,R0
+   \       0xCA   0xD208             BCS.N    ??sli_se_driver_cipher_encrypt_11
+    218              // Sanity check before copying. Some ciphers have a stricter requirement
+    219              // than this (if an IV is included), but no ciphers will have an output
+    220              // smaller than the input.
+    221              if (output_size < input_length) {
+   \       0xCC   0x9931             LDR      R1,[SP, #+196]
+   \       0xCE   0x42A1             CMP      R1,R4
+   \       0xD0   0xD345             BCC.N    ??sli_se_driver_cipher_encrypt_12
+    222                return PSA_ERROR_INVALID_ARGUMENT;
+    223              }
+    224          
+    225              memmove(output, input, input_length);
+   \       0xD2   0x4622             MOV      R2,R4
+   \       0xD4   0x4629             MOV      R1,R5
+   \       0xD6   0x4650             MOV      R0,R10
+   \       0xD8   0x.... 0x....      BL       __aeabi_memmove
+    226              input = output;
+   \       0xDC   0x4655             MOV      R5,R10
+    227            }
+    228          
+    229            switch (alg) {
+   \                     ??sli_se_driver_cipher_encrypt_11: (+1)
+   \       0xDE   0x0922             LSRS     R2,R4,#+4
+   \       0xE0   0xEB0A 0x1202      ADD      R2,R10,R2, LSL #+4
+   \       0xE4   0x0921             LSRS     R1,R4,#+4
+   \       0xE6   0xEB05 0x1101      ADD      R1,R5,R1, LSL #+4
+   \       0xEA   0x9204             STR      R2,[SP, #+16]
+   \       0xEC   0x0922             LSRS     R2,R4,#+4
+   \       0xEE   0x0112             LSLS     R2,R2,#+4
+   \       0xF0   0x3210             ADDS     R2,R2,#+16
+   \       0xF2   0x9205             STR      R2,[SP, #+20]
+   \       0xF4   0x9A03             LDR      R2,[SP, #+12]
+   \       0xF6   0x9100             STR      R1,[SP, #+0]
+   \       0xF8   0x.... 0x....      LDR.W    R1,??DataTable10
+   \       0xFC   0xF004 0x070F      AND      R7,R4,#0xF
+   \      0x100   0x428A             CMP      R2,R1
+   \      0x102   0xF000 0x8088      BEQ.W    ??sli_se_driver_cipher_encrypt_13
+   \      0x106   0x.... 0x....      LDR.W    R1,??DataTable10_3
+   \      0x10A   0x428A             CMP      R2,R1
+   \      0x10C   0xF000 0x808A      BEQ.W    ??sli_se_driver_cipher_encrypt_14
+   \      0x110   0x.... 0x....      LDR.W    R1,??DataTable10_1
+   \      0x114   0x428A             CMP      R2,R1
+   \      0x116   0xD008             BEQ.N    ??sli_se_driver_cipher_encrypt_15
+   \      0x118   0x.... 0x....      LDR.W    R1,??DataTable10_4
+   \      0x11C   0x428A             CMP      R2,R1
+   \      0x11E   0xBF1C             ITT      NE
+   \      0x120   0x.... 0x....      LDRNE.W  R1,??DataTable10_2
+   \      0x124   0x428A             CMPNE    R2,R1
+   \      0x126   0xD016             BEQ.N    ??sli_se_driver_cipher_encrypt_16
+   \      0x128   0xE7C3             B.N      ??sli_se_driver_cipher_encrypt_6
+    230              #if defined(SLI_PSA_DRIVER_FEATURE_AES_ECB)
+    231              case PSA_ALG_ECB_NO_PADDING:
+    232                // Check buffer sizes
+    233                if (output_size < input_length) {
+   \                     ??sli_se_driver_cipher_encrypt_15: (+1)
+   \      0x12A   0x9831             LDR      R0,[SP, #+196]
+   \      0x12C   0x42A0             CMP      R0,R4
+   \      0x12E   0xD316             BCC.N    ??sli_se_driver_cipher_encrypt_12
+    234                  return PSA_ERROR_INVALID_ARGUMENT;
+    235                }
+    236          
+    237                // We cannot do ECB on non-block sizes
+    238                if (input_length % 16 != 0) {
+   \      0x130   0x2F00             CMP      R7,#+0
+   \      0x132   0xD11C             BNE.N    ??sli_se_driver_cipher_encrypt_17
+    239                  return PSA_ERROR_INVALID_ARGUMENT;
+    240                }
+    241          
+    242                // do the operation
+    243                status = sl_se_aes_crypt_ecb(&cmd_ctx,
+    244                                             &key_desc,
+    245                                             SL_SE_ENCRYPT,
+    246                                             input_length,
+    247                                             input,
+    248                                             output);
+   \      0x134   0xF8CD 0xA004      STR      R10,[SP, #+4]
+   \      0x138   0x9500             STR      R5,[SP, #+0]
+   \      0x13A   0x4623             MOV      R3,R4
+   \      0x13C   0x2200             MOVS     R2,#+0
+   \      0x13E   0xA911             ADD      R1,SP,#+68
+   \      0x140   0xA819             ADD      R0,SP,#+100
+   \      0x142   0x.... 0x....      BL       sl_se_aes_crypt_ecb
+   \      0x146   0xEA5F 0x0B00      MOVS     R11,R0
+    249                if (status != PSA_SUCCESS) {
+   \      0x14A   0xD154             BNE.N    ??sli_se_driver_cipher_encrypt_18
+   \                     ??sli_se_driver_cipher_encrypt_19: (+1)
+   \      0x14C   0x6034             STR      R4,[R6, #+0]
+    250                  goto exit;
+    251                }
+    252                *output_length = input_length;
+    253                break;
+    254              #endif   // SLI_PSA_DRIVER_FEATURE_AES_ECB
+    255          
+    256              #if defined(MBEDTLS_PSA_CRYPTO_C)
+    257          
+    258              #if defined(SLI_PSA_DRIVER_FEATURE_AES_CCM_STAR_NO_TAG)
+    259              case PSA_ALG_CCM_STAR_NO_TAG:     // Explicit fallthrough
+    260              #endif
+    261          
+    262              #if defined(SLI_PSA_DRIVER_FEATURE_AES_CTR_VARIANT)
+    263              case PSA_ALG_CTR: {
+    264                uint8_t iv_buf[16] = { 0 };
+    265                // Check buffer sizes
+    266                if (output_size < input_length) {
+    267                  return PSA_ERROR_INVALID_ARGUMENT;
+    268                }
+    269                #if defined(SLI_PSA_DRIVER_FEATURE_AES_CCM_STAR_NO_TAG)
+    270                if (alg == PSA_ALG_CCM_STAR_NO_TAG) {
+    271                  if (iv_length != 13) {
+    272                    return PSA_ERROR_INVALID_ARGUMENT;
+    273                  }
+    274          
+    275                  // AES-CCM*-no-tag is basically AES-CTR with preformatted IV
+    276                  iv_buf[0] = 1;
+    277                  memcpy(&iv_buf[1], iv, 13);
+    278                  iv_buf[14] = 0;
+    279                  iv_buf[15] = 1;
+    280                } else
+    281                #endif     // SLI_PSA_DRIVER_FEATURE_AES_CCM_STAR_NO_TAG
+    282                {
+    283                  if (iv_length != 16) {
+    284                    return PSA_ERROR_INVALID_ARGUMENT;
+    285                  }
+    286          
+    287                  // Write nonce to temporary buf to be used internally by
+    288                  // sl_se_aes_crypt_ctr.
+    289                  memcpy(iv_buf, iv, 16);
+    290                }
+    291          
+    292                // Store final block in a temporary buffer in order to avoid in being
+    293                // overwritten inside of sl_se_aes_crypt_ctr() (hence the separation
+    294                // into two calls).
+    295                if ((input_length & 0x0F) > 0) {
+    296                  memcpy(final_block, &input[input_length & ~0x0F], 16);
+    297                }
+    298          
+    299                // Do multi-block operation if applicable.
+    300                if ((input_length & ~0x0F) > 0) {
+    301                  status = sl_se_aes_crypt_ctr(&cmd_ctx,
+    302                                               &key_desc,
+    303                                               input_length & ~0x0F,
+    304                                               NULL,
+    305                                               iv_buf,
+    306                                               tmp_buf,
+    307                                               input,
+    308                                               output);
+    309                  if (status != PSA_SUCCESS) {
+    310                    goto exit;
+    311                  }
+    312                }
+    313          
+    314                // Encrypt final block if there is any.
+    315                if ((input_length & 0x0F) > 0) {
+    316                  status = sl_se_aes_crypt_ctr(&cmd_ctx,
+    317                                               &key_desc,
+    318                                               input_length & 0x0F,
+    319                                               NULL,
+    320                                               iv_buf,
+    321                                               tmp_buf,
+    322                                               final_block,
+    323                                               &output[(input_length & ~0x0F)]);
+    324                  if (status != PSA_SUCCESS) {
+    325                    goto exit;
+    326                  }
+    327                }
+    328          
+    329                *output_length = input_length;
+    330                break;
+    331              }
+    332              #endif   // SLI_PSA_DRIVER_FEATURE_AES_CTR_VARIANT
+    333          
+    334              #if defined(SLI_PSA_DRIVER_FEATURE_AES_CFB)
+    335              case PSA_ALG_CFB:
+    336                // Check buffer sizes
+    337                if (output_size < input_length) {
+    338                  return PSA_ERROR_INVALID_ARGUMENT;
+    339                }
+    340          
+    341                if (iv_length != 16) {
+    342                  return PSA_ERROR_INVALID_ARGUMENT;
+    343                }
+    344          
+    345                // Write IV to temporary buf to be used internally by
+    346                // sl_se_aes_crypt_cbf128.
+    347                memcpy(tmp_buf, iv, 16);
+    348          
+    349                // Store final block in a temporary buffer in order to avoid in being
+    350                // overwritten inside of sl_se_aes_crypt_ctr() (hence the separation
+    351                // into two calls).
+    352                if ((input_length & 0x0F) > 0) {
+    353                  memcpy(final_block, &input[input_length & ~0x0F], 16);
+    354                }
+    355          
+    356                // Do multi-block operation if applicable.
+    357                if ((input_length & ~0x0F) > 0) {
+    358                  status = sl_se_aes_crypt_cfb128(&cmd_ctx,
+    359                                                  &key_desc,
+    360                                                  SL_SE_ENCRYPT,
+    361                                                  input_length & ~0x0F,
+    362                                                  NULL,
+    363                                                  tmp_buf,
+    364                                                  input,
+    365                                                  output);
+    366                  if (status != PSA_SUCCESS) {
+    367                    goto exit;
+    368                  }
+    369                }
+    370          
+    371                // Encrypt final block if there is any.
+    372                if ((input_length & 0x0F) > 0) {
+    373                  status = sl_se_aes_crypt_cfb128(&cmd_ctx,
+    374                                                  &key_desc,
+    375                                                  SL_SE_ENCRYPT,
+    376                                                  input_length & 0x0F,
+    377                                                  NULL,
+    378                                                  tmp_buf,
+    379                                                  final_block,
+    380                                                  &output[(input_length & ~0x0F)]);
+    381                  if (status != PSA_SUCCESS) {
+    382                    goto exit;
+    383                  }
+    384                }
+    385          
+    386                *output_length = input_length;
+    387                break;
+    388              #endif   // SLI_PSA_DRIVER_FEATURE_AES_CFB
+    389          
+    390              #if defined(SLI_PSA_DRIVER_FEATURE_AES_OFB)
+    391              case PSA_ALG_OFB:
+    392              {
+    393                // Check buffer sizes
+    394                if (output_size < input_length) {
+    395                  return PSA_ERROR_INVALID_ARGUMENT;
+    396                }
+    397          
+    398                if (iv_length != 16) {
+    399                  return PSA_ERROR_INVALID_ARGUMENT;
+    400                }
+    401          
+    402                // Write IV to temporary buf to be used internally by
+    403                // sl_se_aes_crypt_ecb.
+    404                memcpy(tmp_buf, iv, 16);
+    405          
+    406                size_t data_length = input_length;
+    407                size_t n = 0;
+    408          
+    409                // Use final_block as a temporary storage in order to avoid input being
+    410                // overwritten by the output (in case of buffer overlap).
+    411                memcpy(final_block, input, 16);
+    412          
+    413                // Loop over input data to create output.
+    414                do {
+    415                  if (n == 0) {
+    416                    status = sl_se_aes_crypt_ecb(&cmd_ctx,
+    417                                                 &key_desc,
+    418                                                 SL_SE_ENCRYPT,
+    419                                                 16,
+    420                                                 tmp_buf,
+    421                                                 tmp_buf);
+    422                    if (status != SL_STATUS_OK) {
+    423                      goto exit;
+    424                    }
+    425                  }
+    426                  uint8_t tmp_input_val = final_block[n];
+    427                  final_block[n] = input[16 + input_length - data_length];
+    428                  output[input_length - data_length] = tmp_input_val ^ tmp_buf[n];
+    429                  n = (n + 1) & 0x0F;
+    430                } while (data_length--);
+    431          
+    432                *output_length = input_length;
+    433              }
+    434              break;
+    435              #endif   // SLI_PSA_DRIVER_FEATURE_AES_OFB
+    436          
+    437              #if defined(SLI_PSA_DRIVER_FEATURE_AES_CBC_VARIANT)
+    438              case PSA_ALG_CBC_NO_PADDING:
+    439                // We cannot do CBC without padding on non-block sizes.
+    440                if (input_length % 16 != 0) {
+    441                  return PSA_ERROR_INVALID_ARGUMENT;
+    442                }
+    443              // fall through
+    444              case PSA_ALG_CBC_PKCS7:
+    445                // Check buffer sizes
+    446                if (alg == PSA_ALG_CBC_NO_PADDING) {
+    447                  if (output_size < input_length) {
+    448                    return PSA_ERROR_BUFFER_TOO_SMALL;
+    449                  }
+    450                } else {
+    451                  if (output_size < 16 + (input_length & ~0xF)) {
+    452                    return PSA_ERROR_BUFFER_TOO_SMALL;
+    453                  }
+    454                }
+    455          
+    456                if (iv_length != 16) {
+    457                  return PSA_ERROR_INVALID_ARGUMENT;
+    458                }
+    459          
+    460                // Write IV to temporary buf to be used internally by
+    461                // sl_se_aes_crypt_cbf128.
+    462                memcpy(tmp_buf, iv, 16);
+    463          
+    464                // Store last block (if non-blocksize input-length) to temporary
+    465                // buffer to be used in padding.
+    466                if (alg == PSA_ALG_CBC_PKCS7) {
+    467                  memcpy(final_block, &input[input_length & ~0xF], input_length & 0xF);
+    468                }
+    469          
+    470                // CBC-encrypt all but the last block
+    471                if (input_length >= 16) {
+    472                  status = sl_se_aes_crypt_cbc(&cmd_ctx,
+    473                                               &key_desc,
+    474                                               SL_SE_ENCRYPT,
+    475                                               input_length & ~0xF,
+    476                                               tmp_buf,
+    477                                               input,
+    478                                               output);
+    479                  if (status != SL_STATUS_OK) {
+    480                    goto exit;
+    481                  }
+    482                }
+    483          
+    484                // Process final block.
+    485                if (alg == PSA_ALG_CBC_PKCS7) {
+    486                  // Add PKCS7 padding.
+    487                  memset(&final_block[input_length & 0xF],
+    488                         16 - (input_length & 0xF),
+    489                         16 - (input_length & 0xF));
+    490          
+    491                  // Store IV (last ciphertext block) in temp buffer to avoid messing
+    492                  // up output.
+    493                  if (input_length >= 16) {
+    494                    memcpy(tmp_buf, &output[(input_length & ~0xF) - 16], 16);
+    495                  }
+    496          
+    497                  // CBC-encrypt the last block.
+    498                  status = sl_se_aes_crypt_cbc(&cmd_ctx,
+    499                                               &key_desc,
+    500                                               SL_SE_ENCRYPT,
+    501                                               16,
+    502                                               tmp_buf,
+    503                                               final_block,
+    504                                               final_block);
+    505          
+    506                  if (status != SL_STATUS_OK) {
+    507                    goto exit;
+    508                  }
+    509          
+    510                  // Copy to output.
+    511                  memcpy(&output[(input_length & ~0xF)], final_block, 16);
+    512                  *output_length = (input_length & ~0xF) + 16;
+    513                } else {
+    514                  *output_length = input_length;
+    515                }
+    516                break;
+    517              #endif   // SLI_PSA_DRIVER_FEATURE_AES_CBC_VARIANT
+    518          
+    519              #if defined(SLI_PSA_DRIVER_FEATURE_CHACHA20)
+    520              case PSA_ALG_STREAM_CIPHER:
+    521                if (psa_get_key_type(attributes) != PSA_KEY_TYPE_CHACHA20) {
+    522                  return PSA_ERROR_INVALID_ARGUMENT;
+    523                }
+    524          
+    525                // check buffer sizes
+    526                if (output_size < input_length) {
+    527                  return PSA_ERROR_INVALID_ARGUMENT;
+    528                }
+    529          
+    530                if (iv_length != 12) {
+    531                  return PSA_ERROR_INVALID_ARGUMENT;
+    532                }
+    533          
+    534                // PSA Crypto dictates that the initial counter for ChaCha20 starts
+    535                // at zero (unless using the multi-part API)
+    536                memset(tmp_buf, 0, 4);
+    537                memcpy(&tmp_buf[4], iv, 12);
+    538          
+    539                status = sl_se_chacha20_crypt(&cmd_ctx,
+    540                                              SL_SE_ENCRYPT,
+    541                                              &key_desc,
+    542                                              input_length,
+    543                                              tmp_buf,
+    544                                              &tmp_buf[4],
+    545                                              input,
+    546                                              output);
+    547                if (status != SL_STATUS_OK) {
+    548                  goto exit;
+    549                }
+    550          
+    551                *output_length = input_length;
+    552                break;
+    553              #endif   // SLI_PSA_DRIVER_FEATURE_CHACHA20
+    554          
+    555              #endif   // MBEDTLS_PSA_CRYPTO_C
+    556          
+    557              default:
+    558                (void)attributes;
+    559                (void)key_buffer;
+    560                (void)key_buffer_size;
+    561                (void)alg;
+    562                (void)iv;
+    563                (void)iv_length;
+    564                (void)input;
+    565                (void)input_length;
+    566                (void)output;
+    567                (void)output_size;
+    568                (void)output_length;
+    569                return PSA_ERROR_NOT_SUPPORTED;
+    570            }
+    571          
+    572            exit:
+    573            if (status != SL_STATUS_OK) {
+    574              memset(output, 0, output_size);
+    575              *output_length = 0;
+    576              if (status == SL_STATUS_FAIL) {
+    577                // This specific code maps to 'does not exist' for builtin keys
+    578                return PSA_ERROR_DOES_NOT_EXIST;
+    579              } else {
+    580                return PSA_ERROR_HARDWARE_FAILURE;
+    581              }
+    582            } else {
+    583              return PSA_SUCCESS;
+   \                     ??sli_se_driver_cipher_encrypt_20: (+1)
+   \      0x14E   0x2000             MOVS     R0,#+0
+   \                     ??sli_se_driver_cipher_encrypt_8: (+1)
+   \      0x150   0xB023             ADD      SP,SP,#+140
+   \      0x152   0xE8BD 0x8FF0      POP      {R4-R11,PC}
+    584            }
+   \                     ??sli_se_driver_cipher_encrypt_16: (+1)
+   \      0x156   0x.... 0x....      BL       ?Subroutine2
+   \                     ??CrossCallReturnLabel_2: (+1)
+   \      0x15A   0x9931             LDR      R1,[SP, #+196]
+   \      0x15C   0x42A1             CMP      R1,R4
+   \                     ??sli_se_driver_cipher_encrypt_12: (+1)
+   \      0x15E   0xD368             BCC.N    ??sli_se_driver_cipher_encrypt_5
+   \      0x160   0x9803             LDR      R0,[SP, #+12]
+   \      0x162   0x.... 0x....      LDR.W    R1,??DataTable10_2
+   \      0x166   0x4288             CMP      R0,R1
+   \      0x168   0xD112             BNE.N    ??sli_se_driver_cipher_encrypt_21
+   \      0x16A   0xF1B8 0x0F0D      CMP      R8,#+13
+   \                     ??sli_se_driver_cipher_encrypt_17: (+1)
+   \      0x16E   0xD160             BNE.N    ??sli_se_driver_cipher_encrypt_5
+   \      0x170   0x2001             MOVS     R0,#+1
+   \      0x172   0x992C             LDR      R1,[SP, #+176]
+   \      0x174   0xF88D 0x0014      STRB     R0,[SP, #+20]
+   \      0x178   0x220D             MOVS     R2,#+13
+   \      0x17A   0xF10D 0x0015      ADD      R0,SP,#+21
+   \      0x17E   0x.... 0x....      BL       __aeabi_memcpy
+   \      0x182   0x2200             MOVS     R2,#+0
+   \      0x184   0x2101             MOVS     R1,#+1
+   \      0x186   0xF88D 0x2022      STRB     R2,[SP, #+34]
+   \      0x18A   0xF88D 0x1023      STRB     R1,[SP, #+35]
+   \      0x18E   0xE007             B.N      ??sli_se_driver_cipher_encrypt_22
+   \                     ??sli_se_driver_cipher_encrypt_21: (+1)
+   \      0x190   0xF1B8 0x0F10      CMP      R8,#+16
+   \      0x194   0xD14D             BNE.N    ??sli_se_driver_cipher_encrypt_5
+   \      0x196   0x992C             LDR      R1,[SP, #+176]
+   \      0x198   0x2210             MOVS     R2,#+16
+   \      0x19A   0xA805             ADD      R0,SP,#+20
+   \      0x19C   0x.... 0x....      BL       __aeabi_memcpy
+   \                     ??sli_se_driver_cipher_encrypt_22: (+1)
+   \      0x1A0   0xB127             CBZ.N    R7,??sli_se_driver_cipher_encrypt_23
+   \      0x1A2   0x9900             LDR      R1,[SP, #+0]
+   \      0x1A4   0x2210             MOVS     R2,#+16
+   \      0x1A6   0xA809             ADD      R0,SP,#+36
+   \      0x1A8   0x.... 0x....      BL       __aeabi_memcpy
+   \                     ??sli_se_driver_cipher_encrypt_23: (+1)
+   \      0x1AC   0x0922             LSRS     R2,R4,#+4
+   \      0x1AE   0x0112             LSLS     R2,R2,#+4
+   \      0x1B0   0xD00E             BEQ.N    ??sli_se_driver_cipher_encrypt_24
+   \      0x1B2   0xA80D             ADD      R0,SP,#+52
+   \      0x1B4   0xA905             ADD      R1,SP,#+20
+   \      0x1B6   0x9001             STR      R0,[SP, #+4]
+   \      0x1B8   0x9100             STR      R1,[SP, #+0]
+   \      0x1BA   0xF8CD 0xA00C      STR      R10,[SP, #+12]
+   \      0x1BE   0x9502             STR      R5,[SP, #+8]
+   \      0x1C0   0x2300             MOVS     R3,#+0
+   \      0x1C2   0xA911             ADD      R1,SP,#+68
+   \      0x1C4   0xA819             ADD      R0,SP,#+100
+   \      0x1C6   0x.... 0x....      BL       sl_se_aes_crypt_ctr
+   \      0x1CA   0xEA5F 0x0B00      MOVS     R11,R0
+   \      0x1CE   0xD112             BNE.N    ??sli_se_driver_cipher_encrypt_18
+   \                     ??sli_se_driver_cipher_encrypt_24: (+1)
+   \      0x1D0   0x2F00             CMP      R7,#+0
+   \      0x1D2   0xD075             BEQ.N    ??sli_se_driver_cipher_encrypt_25
+   \      0x1D4   0x9804             LDR      R0,[SP, #+16]
+   \      0x1D6   0xA909             ADD      R1,SP,#+36
+   \      0x1D8   0xAA0D             ADD      R2,SP,#+52
+   \      0x1DA   0xAB05             ADD      R3,SP,#+20
+   \      0x1DC   0x9003             STR      R0,[SP, #+12]
+   \      0x1DE   0x9102             STR      R1,[SP, #+8]
+   \      0x1E0   0x9201             STR      R2,[SP, #+4]
+   \      0x1E2   0x9300             STR      R3,[SP, #+0]
+   \      0x1E4   0x2300             MOVS     R3,#+0
+   \      0x1E6   0x463A             MOV      R2,R7
+   \      0x1E8   0xA911             ADD      R1,SP,#+68
+   \      0x1EA   0xA819             ADD      R0,SP,#+100
+   \      0x1EC   0x.... 0x....      BL       sl_se_aes_crypt_ctr
+   \      0x1F0   0xEA5F 0x0B00      MOVS     R11,R0
+   \      0x1F4   0xD0AA             BEQ.N    ??sli_se_driver_cipher_encrypt_19
+   \                     ??sli_se_driver_cipher_encrypt_18: (+1)
+   \      0x1F6   0xF1BB 0x0F00      CMP      R11,#+0
+   \      0x1FA   0xD0A8             BEQ.N    ??sli_se_driver_cipher_encrypt_20
+   \      0x1FC   0x9931             LDR      R1,[SP, #+196]
+   \      0x1FE   0x4650             MOV      R0,R10
+   \      0x200   0x.... 0x....      BL       __aeabi_memclr
+   \      0x204   0x2000             MOVS     R0,#+0
+   \      0x206   0x6030             STR      R0,[R6, #+0]
+   \      0x208   0xF1BB 0x0F01      CMP      R11,#+1
+   \      0x20C   0xF47F 0xAF53      BNE.W    ??sli_se_driver_cipher_encrypt_7
+   \      0x210   0xF06F 0x008B      MVN      R0,#+139
+   \      0x214   0xE79C             B.N      ??sli_se_driver_cipher_encrypt_8
+   \                     ??sli_se_driver_cipher_encrypt_13: (+1)
+   \      0x216   0xB967             CBNZ.N   R7,??sli_se_driver_cipher_encrypt_5
+   \      0x218   0x9831             LDR      R0,[SP, #+196]
+   \      0x21A   0x42A0             CMP      R0,R4
+   \      0x21C   0xD206             BCS.N    ??sli_se_driver_cipher_encrypt_26
+   \                     ??sli_se_driver_cipher_encrypt_27: (+1)
+   \      0x21E   0xF06F 0x0089      MVN      R0,#+137
+   \      0x222   0xE795             B.N      ??sli_se_driver_cipher_encrypt_8
+   \                     ??sli_se_driver_cipher_encrypt_14: (+1)
+   \      0x224   0x9931             LDR      R1,[SP, #+196]
+   \      0x226   0x9805             LDR      R0,[SP, #+20]
+   \      0x228   0x4281             CMP      R1,R0
+   \      0x22A   0xD3F8             BCC.N    ??sli_se_driver_cipher_encrypt_27
+   \                     ??sli_se_driver_cipher_encrypt_26: (+1)
+   \      0x22C   0xF1B8 0x0F10      CMP      R8,#+16
+   \      0x230   0xD002             BEQ.N    ??sli_se_driver_cipher_encrypt_28
+   \                     ??sli_se_driver_cipher_encrypt_5: (+1)
+   \      0x232   0xF06F 0x0086      MVN      R0,#+134
+   \      0x236   0xE78B             B.N      ??sli_se_driver_cipher_encrypt_8
+   \                     ??sli_se_driver_cipher_encrypt_28: (+1)
+   \      0x238   0x992C             LDR      R1,[SP, #+176]
+   \      0x23A   0x2210             MOVS     R2,#+16
+   \      0x23C   0xA80D             ADD      R0,SP,#+52
+   \      0x23E   0x.... 0x....      BL       __aeabi_memcpy
+   \      0x242   0x9803             LDR      R0,[SP, #+12]
+   \      0x244   0x.... 0x....      LDR.W    R8,??DataTable10_3
+   \      0x248   0x4540             CMP      R0,R8
+   \      0x24A   0xD104             BNE.N    ??sli_se_driver_cipher_encrypt_29
+   \      0x24C   0x9900             LDR      R1,[SP, #+0]
+   \      0x24E   0x463A             MOV      R2,R7
+   \      0x250   0xA809             ADD      R0,SP,#+36
+   \      0x252   0x.... 0x....      BL       __aeabi_memcpy
+   \                     ??sli_se_driver_cipher_encrypt_29: (+1)
+   \      0x256   0x2C10             CMP      R4,#+16
+   \      0x258   0xD30B             BCC.N    ??sli_se_driver_cipher_encrypt_30
+   \      0x25A   0xA80D             ADD      R0,SP,#+52
+   \      0x25C   0x9000             STR      R0,[SP, #+0]
+   \      0x25E   0x0923             LSRS     R3,R4,#+4
+   \      0x260   0xF8CD 0xA008      STR      R10,[SP, #+8]
+   \      0x264   0x9501             STR      R5,[SP, #+4]
+   \      0x266   0x011B             LSLS     R3,R3,#+4
+   \      0x268   0x.... 0x....      BL       ?Subroutine3
+   \                     ??CrossCallReturnLabel_5: (+1)
+   \      0x26C   0xEA5F 0x0B00      MOVS     R11,R0
+   \      0x270   0xD1C1             BNE.N    ??sli_se_driver_cipher_encrypt_18
+   \                     ??sli_se_driver_cipher_encrypt_30: (+1)
+   \      0x272   0x9803             LDR      R0,[SP, #+12]
+   \      0x274   0x4540             CMP      R0,R8
+   \      0x276   0xD123             BNE.N    ??sli_se_driver_cipher_encrypt_25
+   \      0x278   0xF1C7 0x0110      RSB      R1,R7,#+16
+   \      0x27C   0xAB09             ADD      R3,SP,#+36
+   \      0x27E   0x460A             MOV      R2,R1
+   \      0x280   0x19D8             ADDS     R0,R3,R7
+   \      0x282   0x.... 0x....      BL       __aeabi_memset
+   \      0x286   0x2C10             CMP      R4,#+16
+   \      0x288   0xD306             BCC.N    ??sli_se_driver_cipher_encrypt_31
+   \      0x28A   0x9804             LDR      R0,[SP, #+16]
+   \      0x28C   0x2210             MOVS     R2,#+16
+   \      0x28E   0xF1A0 0x0110      SUB      R1,R0,#+16
+   \      0x292   0xA80D             ADD      R0,SP,#+52
+   \      0x294   0x.... 0x....      BL       __aeabi_memcpy
+   \                     ??sli_se_driver_cipher_encrypt_31: (+1)
+   \      0x298   0xAA09             ADD      R2,SP,#+36
+   \      0x29A   0xA909             ADD      R1,SP,#+36
+   \      0x29C   0xA80D             ADD      R0,SP,#+52
+   \      0x29E   0x9202             STR      R2,[SP, #+8]
+   \      0x2A0   0x9101             STR      R1,[SP, #+4]
+   \      0x2A2   0x9000             STR      R0,[SP, #+0]
+   \      0x2A4   0x2310             MOVS     R3,#+16
+   \      0x2A6   0x.... 0x....      BL       ?Subroutine3
+   \                     ??CrossCallReturnLabel_4: (+1)
+   \      0x2AA   0xEA5F 0x0B00      MOVS     R11,R0
+   \      0x2AE   0xD1A2             BNE.N    ??sli_se_driver_cipher_encrypt_18
+   \      0x2B0   0x9804             LDR      R0,[SP, #+16]
+   \      0x2B2   0x2210             MOVS     R2,#+16
+   \      0x2B4   0xA909             ADD      R1,SP,#+36
+   \      0x2B6   0x.... 0x....      BL       __aeabi_memcpy
+   \      0x2BA   0x9805             LDR      R0,[SP, #+20]
+   \      0x2BC   0x6030             STR      R0,[R6, #+0]
+   \      0x2BE   0xE746             B.N      ??sli_se_driver_cipher_encrypt_20
+   \                     ??sli_se_driver_cipher_encrypt_25: (+1)
+   \      0x2C0   0x6034             STR      R4,[R6, #+0]
+   \      0x2C2   0xE798             B.N      ??sli_se_driver_cipher_encrypt_18
+    585          
+    586            #else // SLI_PSA_DRIVER_FEATURE_CIPHER
+    587          
+    588            (void)attributes;
+    589            (void)key_buffer;
+    590            (void)key_buffer_size;
+    591            (void)alg;
+    592            (void)iv;
+    593            (void)iv_length;
+    594            (void)input;
+    595            (void)input_length;
+    596            (void)output;
+    597            (void)output_size;
+    598            (void)output_length;
+    599          
+    600            return PSA_ERROR_NOT_SUPPORTED;
+    601          
+    602            #endif // SLI_PSA_DRIVER_FEATURE_CIPHER
+    603          }
+
+   \                                 In section .text, align 2, keep-with-next
+   \                     ?Subroutine3: (+1)
+   \        0x0   0x2200             MOVS     R2,#+0
+   \        0x2   0xA911             ADD      R1,SP,#+68
+   \        0x4   0xA819             ADD      R0,SP,#+100
+   \        0x6   0x.... 0x....      B.W      sl_se_aes_crypt_cbc
+
+   \                                 In section .text, align 2, keep-with-next
+   \                     ?Subroutine4: (+1)
+   \        0x0   0xF8CD 0xB004      STR      R11,[SP, #+4]
+   \        0x4   0xF8BB 0x1000      LDRH     R1,[R11, #+0]
+   \        0x8   0xF5B1 0x5F10      CMP      R1,#+9216
+   \        0xC   0x4770             BX       LR
+
+   \                                 In section .text, align 2, keep-with-next
+   \                     ?Subroutine2: (+1)
+   \        0x0   0x2110             MOVS     R1,#+16
+   \        0x2   0x2200             MOVS     R2,#+0
+   \        0x4   0xA805             ADD      R0,SP,#+20
+   \        0x6   0x.... 0x....      B.W      __aeabi_memset
+
+   \                                 In section .text, align 2, keep-with-next
+   \                     ?Subroutine1: (+1)
+   \        0x0   0x4683             MOV      R11,R0
+   \        0x2   0x460F             MOV      R7,R1
+   \        0x4   0x4614             MOV      R4,R2
+   \        0x6   0x4699             MOV      R9,R3
+   \        0x8   0x2110             MOVS     R1,#+16
+   \        0xA   0x2200             MOVS     R2,#+0
+   \        0xC   0x4770             BX       LR
+
+   \                                 In section .rodata, align 4
+   \        0x0   0x0000'0000        DC32 0
+   \        0x4                      DS8 28
+   \       0x20                      DS8 4
+
+   \                                 In section .rodata, align 4, keep-with-next
+   \                     ?_3:
+   \        0x0   0x0000'0000        DC32 0
+   \        0x4                      DS8 28
+    604          
+
+   \                                 In section .text, align 2, keep-with-next
+    605          psa_status_t sli_se_driver_cipher_decrypt(const psa_key_attributes_t *attributes,
+    606                                                    const uint8_t *key_buffer,
+    607                                                    size_t key_buffer_size,
+    608                                                    psa_algorithm_t alg,
+    609                                                    const uint8_t *input,
+    610                                                    size_t input_length,
+    611                                                    uint8_t *output,
+    612                                                    size_t output_size,
+    613                                                    size_t *output_length)
+    614          {
+   \                     sli_se_driver_cipher_decrypt: (+1)
+   \        0x0   0xE92D 0x4FF8      PUSH     {R3-R11,LR}
+   \        0x4   0xB09E             SUB      SP,SP,#+120
+   \        0x6   0x.... 0x....      BL       ?Subroutine1
+   \                     ??CrossCallReturnLabel_1: (+1)
+   \        0xA   0xA809             ADD      R0,SP,#+36
+   \        0xC   0x.... 0x....      BL       __aeabi_memset
+   \       0x10   0x.... 0x....      BL       ?Subroutine2
+    615            #if defined(SLI_PSA_DRIVER_FEATURE_CIPHER)
+    616          
+    617            #if defined(SLI_PSA_DRIVER_FEATURE_AES_CTR_VARIANT) \
+    618            || defined(SLI_PSA_DRIVER_FEATURE_AES_CBC_VARIANT)
+    619            uint8_t tmp_buf[16] = { 0 };
+    620            #endif
+    621          
+    622            #if defined(SLI_PSA_DRIVER_FEATURE_AES_CTR)            \
+    623            || defined(SLI_PSA_DRIVER_FEATURE_AES_CFB)             \
+    624            || defined(SLI_PSA_DRIVER_FEATURE_AES_OFB)             \
+    625            || defined(SLI_PSA_DRIVER_FEATURE_AES_CCM_STAR_NO_TAG) \
+    626            || defined(SLI_PSA_DRIVER_FEATURE_AES_CBC_NO_PADDING)  \
+    627            || defined(SLI_PSA_DRIVER_FEATURE_AES_CBC_PKCS7)       \
+    628            || defined(SLI_PSA_DRIVER_FEATURE_CHACHA20)
+    629            uint8_t iv_buf[16] = { 0 };
+    630            #endif
+    631          
+    632            // Argument check.
+    633            if (key_buffer == NULL
+    634                || key_buffer_size == 0
+    635                || (input == NULL && input_length > 0)
+    636                || (output == NULL && output_size > 0)
+    637                || output_length == NULL) {
+   \                     ??CrossCallReturnLabel_3: (+1)
+   \       0x14   0x2F00             CMP      R7,#+0
+   \       0x16   0xD013             BEQ.N    ??sli_se_driver_cipher_decrypt_0
+   \       0x18   0x9400             STR      R4,[SP, #+0]
+   \       0x1A   0x0020             MOVS     R0,R4
+   \       0x1C   0xD010             BEQ.N    ??sli_se_driver_cipher_decrypt_0
+   \       0x1E   0xF8DD 0x80A0      LDR      R8,[SP, #+160]
+   \       0x22   0x9C29             LDR      R4,[SP, #+164]
+   \       0x24   0xF1B8 0x0F00      CMP      R8,#+0
+   \       0x28   0xD101             BNE.N    ??sli_se_driver_cipher_decrypt_1
+   \       0x2A   0x2C00             CMP      R4,#+0
+   \       0x2C   0xD166             BNE.N    ??sli_se_driver_cipher_decrypt_2
+   \                     ??sli_se_driver_cipher_decrypt_1: (+1)
+   \       0x2E   0x9E2A             LDR      R6,[SP, #+168]
+   \       0x30   0xF8DD 0xA0AC      LDR      R10,[SP, #+172]
+   \       0x34   0xB916             CBNZ.N   R6,??sli_se_driver_cipher_decrypt_3
+   \       0x36   0xF1BA 0x0F00      CMP      R10,#+0
+   \       0x3A   0xD15F             BNE.N    ??sli_se_driver_cipher_decrypt_2
+   \                     ??sli_se_driver_cipher_decrypt_3: (+1)
+   \       0x3C   0x9D2C             LDR      R5,[SP, #+176]
+   \       0x3E   0x2D00             CMP      R5,#+0
+   \                     ??sli_se_driver_cipher_decrypt_0: (+1)
+   \       0x40   0xF000 0x80B1      BEQ.W    ??sli_se_driver_cipher_decrypt_4
+   \       0x44   0xF8CD 0x900C      STR      R9,[SP, #+12]
+    638              return PSA_ERROR_INVALID_ARGUMENT;
+    639            }
+    640          
+    641            psa_status_t psa_status = validate_key_algorithm_match(alg, attributes);
+   \       0x48   0x9803             LDR      R0,[SP, #+12]
+   \       0x4A   0x.... 0x....      LDR.W    R1,??DataTable10
+   \       0x4E   0xF06F 0x0985      MVN      R9,#+133
+   \       0x52   0x4288             CMP      R0,R1
+   \       0x54   0xBF1F             ITTTT    NE
+   \       0x56   0x.... 0x....      LDRNE.W  R1,??DataTable10_1
+   \       0x5A   0x4288             CMPNE    R0,R1
+   \       0x5C   0x.... 0x....      LDRNE.W  R1,??DataTable10_2
+   \       0x60   0x4288             CMPNE    R0,R1
+   \       0x62   0xD147             BNE.N    ??sli_se_driver_cipher_decrypt_5
+   \       0x64   0x.... 0x....      BL       ?Subroutine4
+   \                     ??CrossCallReturnLabel_7: (+1)
+   \       0x68   0xD144             BNE.N    ??sli_se_driver_cipher_decrypt_5
+    642            if (psa_status != PSA_SUCCESS) {
+    643              return psa_status;
+    644            }
+    645          
+    646            // Ephemeral contexts.
+    647            sl_se_command_context_t cmd_ctx = { 0 };
+   \       0x6A   0xA815             ADD      R0,SP,#+84
+   \       0x6C   0x2124             MOVS     R1,#+36
+   \       0x6E   0x.... 0x....      BL       __aeabi_memclr4
+    648            sl_se_key_descriptor_t key_desc = { 0 };
+   \       0x72   0xA80D             ADD      R0,SP,#+52
+   \       0x74   0x2120             MOVS     R1,#+32
+   \       0x76   0x.... 0x....      BL       __aeabi_memclr4
+    649          
+    650            sl_status_t status = sl_se_init_command_context(&cmd_ctx);
+   \       0x7A   0xA815             ADD      R0,SP,#+84
+   \       0x7C   0x.... 0x....      BL       sl_se_init_command_context
+   \       0x80   0xEA5F 0x0B00      MOVS     R11,R0
+    651            if (status != SL_STATUS_OK) {
+   \       0x84   0xD152             BNE.N    ??sli_se_driver_cipher_decrypt_6
+    652              return PSA_ERROR_HARDWARE_FAILURE;
+    653            }
+    654          
+    655            psa_status = sli_se_key_desc_from_input(attributes,
+    656                                                    key_buffer,
+    657                                                    key_buffer_size,
+    658                                                    &key_desc);
+   \       0x86   0x9A00             LDR      R2,[SP, #+0]
+   \       0x88   0x9801             LDR      R0,[SP, #+4]
+   \       0x8A   0xAB0D             ADD      R3,SP,#+52
+   \       0x8C   0x4639             MOV      R1,R7
+   \       0x8E   0x.... 0x....      BL       sli_se_key_desc_from_input
+    659            if (psa_status != PSA_SUCCESS) {
+   \       0x92   0x2800             CMP      R0,#+0
+   \       0x94   0xD106             BNE.N    ??sli_se_driver_cipher_decrypt_7
+    660              return psa_status;
+    661            }
+    662            psa_status = validate_key_type(&key_desc);
+   \       0x96   0xA80D             ADD      R0,SP,#+52
+   \       0x98   0x.... 0x....      BL       validate_key_type
+    663            if (psa_status != PSA_SUCCESS) {
+   \       0x9C   0x2800             CMP      R0,#+0
+   \       0x9E   0xD101             BNE.N    ??sli_se_driver_cipher_decrypt_7
+    664              return psa_status;
+    665            }
+    666          
+    667            if (input_length == 0) {
+   \       0xA0   0xB90C             CBNZ.N   R4,??sli_se_driver_cipher_decrypt_8
+    668              *output_length = 0;
+   \       0xA2   0x6028             STR      R0,[R5, #+0]
+    669              return PSA_SUCCESS;
+   \                     ??sli_se_driver_cipher_decrypt_7: (+1)
+   \       0xA4   0xE0D5             B.N      ??sli_se_driver_cipher_decrypt_9
+    670            }
+    671          
+    672            // Our drivers only support full or no overlap between input and output
+    673            // buffers. So in the case of partial overlap, copy the input buffer into
+    674            // the output buffer and process it in place as if the buffers fully
+    675            // overlapped.
+    676            if ((output > input) && (output < (input + input_length))) {
+   \                     ??sli_se_driver_cipher_decrypt_8: (+1)
+   \       0xA6   0x45B0             CMP      R8,R6
+   \       0xA8   0xBF3C             ITT      CC
+   \       0xAA   0xEB08 0x0004      ADDCC    R0,R8,R4
+   \       0xAE   0x4286             CMPCC    R6,R0
+   \       0xB0   0xD207             BCS.N    ??sli_se_driver_cipher_decrypt_10
+    677              // Sanity check before copying. Some ciphers have a stricter requirement
+    678              // than this (if an IV is included), but no ciphers will have an output
+    679              // smaller than the input.
+    680              if (output_size < input_length) {
+   \       0xB2   0x45A2             CMP      R10,R4
+   \       0xB4   0xD377             BCC.N    ??sli_se_driver_cipher_decrypt_4
+    681                return PSA_ERROR_INVALID_ARGUMENT;
+    682              }
+    683          
+    684              memmove(output, input, input_length);
+   \       0xB6   0x4622             MOV      R2,R4
+   \       0xB8   0x4641             MOV      R1,R8
+   \       0xBA   0x4630             MOV      R0,R6
+   \       0xBC   0x.... 0x....      BL       __aeabi_memmove
+    685              input = output;
+   \       0xC0   0x46B0             MOV      R8,R6
+    686            }
+    687          
+    688            switch (alg) {
+   \                     ??sli_se_driver_cipher_decrypt_10: (+1)
+   \       0xC2   0x9A03             LDR      R2,[SP, #+12]
+   \       0xC4   0x.... 0x....      LDR.W    R1,??DataTable10
+   \       0xC8   0xF1A4 0x0710      SUB      R7,R4,#+16
+   \       0xCC   0xF004 0x000F      AND      R0,R4,#0xF
+   \       0xD0   0x428A             CMP      R2,R1
+   \       0xD2   0xD05F             BEQ.N    ??sli_se_driver_cipher_decrypt_11
+   \       0xD4   0x.... 0x....      LDR.W    R1,??DataTable10_3
+   \       0xD8   0x428A             CMP      R2,R1
+   \       0xDA   0xD061             BEQ.N    ??sli_se_driver_cipher_decrypt_12
+   \       0xDC   0x.... 0x....      LDR.W    R1,??DataTable10_1
+   \       0xE0   0x428A             CMP      R2,R1
+   \       0xE2   0xD008             BEQ.N    ??sli_se_driver_cipher_decrypt_13
+   \       0xE4   0x.... 0x....      LDR.W    R1,??DataTable10_4
+   \       0xE8   0x428A             CMP      R2,R1
+   \       0xEA   0xBF1C             ITT      NE
+   \       0xEC   0x.... 0x....      LDRNE.W  R1,??DataTable10_2
+   \       0xF0   0x428A             CMPNE    R2,R1
+   \       0xF2   0xD020             BEQ.N    ??sli_se_driver_cipher_decrypt_14
+   \                     ??sli_se_driver_cipher_decrypt_5: (+1)
+   \       0xF4   0xE0B0             B.N      ??sli_se_driver_cipher_decrypt_15
+    689              #if defined(SLI_PSA_DRIVER_FEATURE_AES_ECB)
+    690              case PSA_ALG_ECB_NO_PADDING:
+    691                // Check buffer sizes.
+    692                if (output_size < input_length) {
+   \                     ??sli_se_driver_cipher_decrypt_13: (+1)
+   \       0xF6   0x45A2             CMP      R10,R4
+   \       0xF8   0xD35C             BCC.N    ??sli_se_driver_cipher_decrypt_16
+    693                  return PSA_ERROR_BUFFER_TOO_SMALL;
+    694                }
+    695          
+    696                // We cannot do ECB on non-block sizes.
+    697                if (input_length % 16 != 0) {
+   \       0xFA   0x2800             CMP      R0,#+0
+   \                     ??sli_se_driver_cipher_decrypt_2: (+1)
+   \       0xFC   0xD153             BNE.N    ??sli_se_driver_cipher_decrypt_4
+    698                  return PSA_ERROR_INVALID_ARGUMENT;
+    699                }
+    700          
+    701                // Do the operation.
+    702                status = sl_se_aes_crypt_ecb(&cmd_ctx,
+    703                                             &key_desc,
+    704                                             SL_SE_DECRYPT,
+    705                                             input_length,
+    706                                             input,
+    707                                             output);
+   \       0xFE   0x9601             STR      R6,[SP, #+4]
+   \      0x100   0xF8CD 0x8000      STR      R8,[SP, #+0]
+   \      0x104   0x4623             MOV      R3,R4
+   \      0x106   0x2201             MOVS     R2,#+1
+   \      0x108   0xA90D             ADD      R1,SP,#+52
+   \      0x10A   0xA815             ADD      R0,SP,#+84
+   \      0x10C   0x.... 0x....      BL       sl_se_aes_crypt_ecb
+   \      0x110   0x4683             MOV      R11,R0
+    708          
+    709                *output_length = input_length;
+   \      0x112   0x602C             STR      R4,[R5, #+0]
+    710                break;
+    711              #endif   // SLI_PSA_DRIVER_FEATURE_AES_ECB
+    712          
+    713              #if defined(SLI_PSA_DRIVER_FEATURE_AES_CCM_STAR_NO_TAG)
+    714              case PSA_ALG_CCM_STAR_NO_TAG:     // Explicit fallthrough
+    715              #endif   // SLI_PSA_DRIVER_FEATURE_AES_CCM_STAR_NO_TAG
+    716          
+    717              #if defined(SLI_PSA_DRIVER_FEATURE_AES_CTR_VARIANT)
+    718              case PSA_ALG_CTR:
+    719                // Check buffer sizes.
+    720                #if defined(SLI_PSA_DRIVER_FEATURE_AES_CCM_STAR_NO_TAG)
+    721                if (alg == PSA_ALG_CCM_STAR_NO_TAG) {
+    722                  if (output_size < input_length - 13) {
+    723                    return PSA_ERROR_BUFFER_TOO_SMALL;
+    724                  }
+    725          
+    726                  // AES-CCM*-no-tag is basically AES-CTR with preformatted IV
+    727                  iv_buf[0] = 1;
+    728                  memcpy(&iv_buf[1], input, 13);
+    729                  iv_buf[14] = 0;
+    730                  iv_buf[15] = 1;
+    731                  input += 13;
+    732                  input_length -= 13;
+    733                } else
+    734                #endif     // SLI_PSA_DRIVER_FEATURE_AES_CCM_STAR_NO_TAG
+    735                {
+    736                  if (output_size < input_length - 16) {
+    737                    return PSA_ERROR_BUFFER_TOO_SMALL;
+    738                  }
+    739          
+    740                  // Write IV to temporary buf to be used internally by
+    741                  // sl_se_aes_crypt_ctr.
+    742                  memcpy(iv_buf, input, 16);
+    743                  input += 16;
+    744                  input_length -= 16;
+    745                }
+    746          
+    747                status = sl_se_aes_crypt_ctr(&cmd_ctx,
+    748                                             &key_desc,
+    749                                             input_length,
+    750                                             NULL,
+    751                                             iv_buf,
+    752                                             tmp_buf,
+    753                                             input,
+    754                                             output);
+    755          
+    756                *output_length = input_length;
+    757                break;
+    758              #endif   // SLI_PSA_DRIVER_FEATURE_AES_CTR_VARIANT
+    759          
+    760              #if defined(SLI_PSA_DRIVER_FEATURE_AES_CFB)
+    761              case PSA_ALG_CFB:
+    762                // Check buffer sizes.
+    763                if (output_size < input_length - 16) {
+    764                  return PSA_ERROR_INVALID_ARGUMENT;
+    765                }
+    766          
+    767                // Write IV to temporary buf to be used internally by
+    768                // sl_se_aes_crypt_cfb128.
+    769                memcpy(iv_buf, input, 16);
+    770          
+    771                status = sl_se_aes_crypt_cfb128(&cmd_ctx,
+    772                                                &key_desc,
+    773                                                SL_SE_DECRYPT,
+    774                                                input_length - 16,
+    775                                                NULL,
+    776                                                iv_buf,
+    777                                                &input[16],
+    778                                                output);
+    779          
+    780                *output_length = input_length - 16;
+    781                break;
+    782              #endif   // SLI_PSA_DRIVER_FEATURE_AES_CFB
+    783          
+    784              #if defined(SLI_PSA_DRIVER_FEATURE_AES_OFB)
+    785              case PSA_ALG_OFB:
+    786              {
+    787                // Check buffer sizes.
+    788                if (output_size < input_length - 16) {
+    789                  return PSA_ERROR_BUFFER_TOO_SMALL;
+    790                }
+    791          
+    792                // Write IV to temporary buf to be used internally by
+    793                // sl_se_aes_crypt_ecb.
+    794                memcpy(iv_buf, input, 16);
+    795          
+    796                input += 16;
+    797                size_t data_length = input_length - 16;
+    798                size_t n = 0;
+    799          
+    800                // Loop over input data to create output.
+    801                while (data_length--) {
+    802                  if (n == 0) {
+    803                    status = sl_se_aes_crypt_ecb(&cmd_ctx,
+    804                                                 &key_desc,
+    805                                                 SL_SE_ENCRYPT,
+    806                                                 16,
+    807                                                 iv_buf,
+    808                                                 iv_buf);
+    809                    if (status != SL_STATUS_OK) {
+    810                      goto exit;
+    811                    }
+    812                  }
+    813                  *output++ = *input++ ^ iv_buf[n];
+    814          
+    815                  n = (n + 1) & 0x0F;
+    816                }
+    817          
+    818                *output_length = input_length - 16;
+    819              }
+    820              break;
+    821              #endif   // SLI_PSA_DRIVER_FEATURE_AES_OFB
+    822          
+    823              #if defined(SLI_PSA_DRIVER_FEATURE_AES_CBC_VARIANT)
+    824              case PSA_ALG_CBC_NO_PADDING:
+    825                // We cannot do CBC without padding on non-block sizes.
+    826                if (input_length % 16 != 0) {
+    827                  return PSA_ERROR_INVALID_ARGUMENT;
+    828                }
+    829              // fall through
+    830          
+    831              case PSA_ALG_CBC_PKCS7: {
+    832                size_t full_blocks;
+    833                if (alg == PSA_ALG_CBC_NO_PADDING) {
+    834                  if (output_size < input_length - 16) {
+    835                    return PSA_ERROR_BUFFER_TOO_SMALL;
+    836                  }
+    837                  full_blocks = (input_length - 16) / 16;
+    838                } else {
+    839                  // Check correct input amount
+    840                  if (input_length < 32
+    841                      || ((input_length & 0xF) != 0)) {
+    842                    return PSA_ERROR_INVALID_ARGUMENT;
+    843                  }
+    844                  // Check output has enough room for at least n-1 blocks.
+    845                  if (output_size < (input_length - 32)) {
+    846                    return PSA_ERROR_BUFFER_TOO_SMALL;
+    847                  }
+    848                  full_blocks = (input_length - 32) / 16;
+    849                }
+    850          
+    851                // Write IV to temporary buf to be used internally by
+    852                // sl_se_aes_crypt_cbc.
+    853                memcpy(iv_buf, input, 16);
+    854          
+    855                // CBC-decrypt all but the last block.
+    856                if (full_blocks > 0) {
+    857                  status = sl_se_aes_crypt_cbc(&cmd_ctx,
+    858                                               &key_desc,
+    859                                               SL_SE_DECRYPT,
+    860                                               full_blocks * 16,
+    861                                               iv_buf,
+    862                                               &input[16],
+    863                                               output);
+    864                  if (status != SL_STATUS_OK) {
+    865                    goto exit;
+    866                  }
+    867                }
+    868          
+    869                // Process final block.
+    870                if (alg == PSA_ALG_CBC_PKCS7) {
+    871                  // Store last block to temporary buffer to be used in removing the
+    872                  // padding.
+    873                  memcpy(tmp_buf, &input[input_length - 16], 16);
+    874          
+    875                  // CBC-decrypt the last block.
+    876                  status = sl_se_aes_crypt_cbc(&cmd_ctx,
+    877                                               &key_desc,
+    878                                               SL_SE_DECRYPT,
+    879                                               16,
+    880                                               iv_buf,
+    881                                               tmp_buf,
+    882                                               tmp_buf);
+    883                  if (status != SL_STATUS_OK) {
+    884                    goto exit;
+    885                  }
+    886          
+    887                  // Validate padding.
+    888                  size_t pad_bytes = 0;
+    889                  psa_status = sli_psa_validate_pkcs7_padding(tmp_buf,
+    890                                                              16,
+    891                                                              &pad_bytes);
+    892                  if (psa_status != PSA_SUCCESS) {
+    893                    *output_length = 0;
+    894                    return psa_status;
+    895                  }
+    896          
+    897                  if (output_size < (input_length - 16 - pad_bytes)) {
+    898                    *output_length = 0;
+    899                    return PSA_ERROR_BUFFER_TOO_SMALL;
+    900                  }
+    901          
+    902                  // Copy non-padding bytes.
+    903                  memcpy(&output[full_blocks * 16], tmp_buf, 16 - pad_bytes);
+    904                  *output_length = input_length - 16 - pad_bytes;
+    905                } else {
+    906                  *output_length = input_length - 16;
+    907                }
+    908                break;
+    909              }
+    910              #endif   // SLI_PSA_DRIVER_FEATURE_AES_CBC_VARIANT
+    911          
+    912              #if defined(SLI_PSA_DRIVER_FEATURE_CHACHA20)
+    913              case PSA_ALG_STREAM_CIPHER:
+    914                if (psa_get_key_type(attributes) != PSA_KEY_TYPE_CHACHA20) {
+    915                  return PSA_ERROR_INVALID_ARGUMENT;
+    916                }
+    917          
+    918                // check buffer sizes.
+    919                if (output_size < input_length - 12) {
+    920                  return PSA_ERROR_BUFFER_TOO_SMALL;
+    921                }
+    922          
+    923                // PSA Crypto dictates that the initial counter for ChaCha20 starts
+    924                // at zero (unless using the multi-part API)
+    925                memset(iv_buf, 0, 4);
+    926          
+    927                status = sl_se_chacha20_crypt(&cmd_ctx,
+    928                                              SL_SE_DECRYPT,
+    929                                              &key_desc,
+    930                                              input_length - 12,     // - 12 due to the nonce.
+    931                                              iv_buf,
+    932                                              input,
+    933                                              &input[12],
+    934                                              output);
+    935          
+    936                *output_length = input_length - 12;
+    937                break;
+    938              #endif   // SLI_PSA_DRIVER_FEATURE_CHACHA20
+    939          
+    940              default:
+    941                return PSA_ERROR_NOT_SUPPORTED;
+    942            }
+    943          
+    944            #if defined(SLI_PSA_DRIVER_FEATURE_AES_CBC_VARIANT) \
+    945            || defined(SLI_PSA_DRIVER_FEATURE_AES_OFB)
+    946            exit:
+    947            #endif
+    948          
+    949            if (status != SL_STATUS_OK) {
+   \                     ??sli_se_driver_cipher_decrypt_17: (+1)
+   \      0x114   0xF1BB 0x0F00      CMP      R11,#+0
+   \      0x118   0xF000 0x809A      BEQ.W    ??sli_se_driver_cipher_decrypt_18
+    950              memset(output, 0, output_size);
+   \      0x11C   0x4651             MOV      R1,R10
+   \      0x11E   0x4630             MOV      R0,R6
+   \      0x120   0x.... 0x....      BL       __aeabi_memclr
+    951              *output_length = 0;
+   \      0x124   0x2000             MOVS     R0,#+0
+   \      0x126   0x6028             STR      R0,[R5, #+0]
+    952              if (status == SL_STATUS_FAIL) {
+   \      0x128   0xF1BB 0x0F01      CMP      R11,#+1
+   \                     ??sli_se_driver_cipher_decrypt_6: (+1)
+   \      0x12C   0xF040 0x8096      BNE.W    ??sli_se_driver_cipher_decrypt_19
+    953                // This specific code maps to 'does not exist' for builtin keys
+    954                return PSA_ERROR_DOES_NOT_EXIST;
+   \      0x130   0xF06F 0x008B      MVN      R0,#+139
+   \      0x134   0xE08D             B.N      ??sli_se_driver_cipher_decrypt_9
+    955              } else {
+   \                     ??sli_se_driver_cipher_decrypt_14: (+1)
+   \      0x136   0x.... 0x....      LDR.W    R0,??DataTable10_2
+   \      0x13A   0x4282             CMP      R2,R0
+   \      0x13C   0xD115             BNE.N    ??sli_se_driver_cipher_decrypt_20
+   \      0x13E   0xF1A4 0x070D      SUB      R7,R4,#+13
+   \      0x142   0x45BA             CMP      R10,R7
+   \      0x144   0xD336             BCC.N    ??sli_se_driver_cipher_decrypt_16
+   \      0x146   0x2001             MOVS     R0,#+1
+   \      0x148   0xF88D 0x0014      STRB     R0,[SP, #+20]
+   \      0x14C   0x220D             MOVS     R2,#+13
+   \      0x14E   0x4641             MOV      R1,R8
+   \      0x150   0xF10D 0x0015      ADD      R0,SP,#+21
+   \      0x154   0x.... 0x....      BL       __aeabi_memcpy
+   \      0x158   0x2000             MOVS     R0,#+0
+   \      0x15A   0xF88D 0x0022      STRB     R0,[SP, #+34]
+   \      0x15E   0x2101             MOVS     R1,#+1
+   \      0x160   0xF88D 0x1023      STRB     R1,[SP, #+35]
+   \      0x164   0xF108 0x000D      ADD      R0,R8,#+13
+   \      0x168   0xE005             B.N      ??sli_se_driver_cipher_decrypt_21
+   \                     ??sli_se_driver_cipher_decrypt_20: (+1)
+   \      0x16A   0x45BA             CMP      R10,R7
+   \      0x16C   0xD322             BCC.N    ??sli_se_driver_cipher_decrypt_16
+   \      0x16E   0x.... 0x....      BL       ?Subroutine6
+   \                     ??CrossCallReturnLabel_10: (+1)
+   \      0x172   0xF108 0x0010      ADD      R0,R8,#+16
+   \                     ??sli_se_driver_cipher_decrypt_21: (+1)
+   \      0x176   0x9002             STR      R0,[SP, #+8]
+   \      0x178   0xA809             ADD      R0,SP,#+36
+   \      0x17A   0xA905             ADD      R1,SP,#+20
+   \      0x17C   0x9001             STR      R0,[SP, #+4]
+   \      0x17E   0x9100             STR      R1,[SP, #+0]
+   \      0x180   0x9603             STR      R6,[SP, #+12]
+   \      0x182   0x2300             MOVS     R3,#+0
+   \      0x184   0x463A             MOV      R2,R7
+   \      0x186   0xA90D             ADD      R1,SP,#+52
+   \      0x188   0xA815             ADD      R0,SP,#+84
+   \      0x18A   0x.... 0x....      BL       sl_se_aes_crypt_ctr
+   \      0x18E   0x4683             MOV      R11,R0
+   \                     ??sli_se_driver_cipher_decrypt_22: (+1)
+   \      0x190   0x602F             STR      R7,[R5, #+0]
+   \      0x192   0xE7BF             B.N      ??sli_se_driver_cipher_decrypt_17
+   \                     ??sli_se_driver_cipher_decrypt_11: (+1)
+   \      0x194   0xB938             CBNZ.N   R0,??sli_se_driver_cipher_decrypt_4
+   \      0x196   0x45BA             CMP      R10,R7
+   \      0x198   0xD30C             BCC.N    ??sli_se_driver_cipher_decrypt_16
+   \      0x19A   0xEA4F 0x1917      LSR      R9,R7,#+4
+   \      0x19E   0xE00E             B.N      ??sli_se_driver_cipher_decrypt_23
+   \                     ??sli_se_driver_cipher_decrypt_12: (+1)
+   \      0x1A0   0x2C20             CMP      R4,#+32
+   \      0x1A2   0xD300             BCC.N    ??sli_se_driver_cipher_decrypt_4
+   \      0x1A4   0xB110             CBZ.N    R0,??sli_se_driver_cipher_decrypt_24
+   \                     ??sli_se_driver_cipher_decrypt_4: (+1)
+   \      0x1A6   0xF06F 0x0086      MVN      R0,#+134
+   \      0x1AA   0xE052             B.N      ??sli_se_driver_cipher_decrypt_9
+   \                     ??sli_se_driver_cipher_decrypt_24: (+1)
+   \      0x1AC   0xF1A4 0x0020      SUB      R0,R4,#+32
+   \      0x1B0   0x4582             CMP      R10,R0
+   \      0x1B2   0xD202             BCS.N    ??sli_se_driver_cipher_decrypt_25
+   \                     ??sli_se_driver_cipher_decrypt_16: (+1)
+   \      0x1B4   0xF06F 0x0089      MVN      R0,#+137
+   \      0x1B8   0xE04B             B.N      ??sli_se_driver_cipher_decrypt_9
+   \                     ??sli_se_driver_cipher_decrypt_25: (+1)
+   \      0x1BA   0xEA4F 0x1910      LSR      R9,R0,#+4
+   \                     ??sli_se_driver_cipher_decrypt_23: (+1)
+   \      0x1BE   0x.... 0x....      BL       ?Subroutine6
+   \                     ??CrossCallReturnLabel_11: (+1)
+   \      0x1C2   0xEA4F 0x1009      LSL      R0,R9,#+4
+   \      0x1C6   0x9004             STR      R0,[SP, #+16]
+   \      0x1C8   0xF1B9 0x0F00      CMP      R9,#+0
+   \      0x1CC   0xD00B             BEQ.N    ??sli_se_driver_cipher_decrypt_26
+   \      0x1CE   0xF108 0x0010      ADD      R0,R8,#+16
+   \      0x1D2   0xA905             ADD      R1,SP,#+20
+   \      0x1D4   0x9B04             LDR      R3,[SP, #+16]
+   \      0x1D6   0x9001             STR      R0,[SP, #+4]
+   \      0x1D8   0x9100             STR      R1,[SP, #+0]
+   \      0x1DA   0x9602             STR      R6,[SP, #+8]
+   \      0x1DC   0x.... 0x....      BL       ?Subroutine9
+   \                     ??CrossCallReturnLabel_17: (+1)
+   \      0x1E0   0xEA5F 0x0B00      MOVS     R11,R0
+   \                     ??sli_se_driver_cipher_decrypt_27: (+1)
+   \      0x1E4   0xD196             BNE.N    ??sli_se_driver_cipher_decrypt_17
+   \                     ??sli_se_driver_cipher_decrypt_26: (+1)
+   \      0x1E6   0x9803             LDR      R0,[SP, #+12]
+   \      0x1E8   0x.... 0x....      LDR.W    R1,??DataTable10_3
+   \      0x1EC   0x4288             CMP      R0,R1
+   \      0x1EE   0xD1CF             BNE.N    ??sli_se_driver_cipher_decrypt_22
+   \      0x1F0   0xEB08 0x0304      ADD      R3,R8,R4
+   \      0x1F4   0x2210             MOVS     R2,#+16
+   \      0x1F6   0xF1A3 0x0110      SUB      R1,R3,#+16
+   \      0x1FA   0xA809             ADD      R0,SP,#+36
+   \      0x1FC   0x.... 0x....      BL       __aeabi_memcpy
+   \      0x200   0xA809             ADD      R0,SP,#+36
+   \      0x202   0xA909             ADD      R1,SP,#+36
+   \      0x204   0xAA05             ADD      R2,SP,#+20
+   \      0x206   0x9002             STR      R0,[SP, #+8]
+   \      0x208   0x9101             STR      R1,[SP, #+4]
+   \      0x20A   0x9200             STR      R2,[SP, #+0]
+   \      0x20C   0x2310             MOVS     R3,#+16
+   \      0x20E   0x.... 0x....      BL       ?Subroutine9
+   \                     ??CrossCallReturnLabel_16: (+1)
+   \      0x212   0xEA5F 0x0B00      MOVS     R11,R0
+   \      0x216   0xD1E5             BNE.N    ??sli_se_driver_cipher_decrypt_27
+   \      0x218   0x9000             STR      R0,[SP, #+0]
+   \      0x21A   0x466A             MOV      R2,SP
+   \      0x21C   0x2110             MOVS     R1,#+16
+   \      0x21E   0xA809             ADD      R0,SP,#+36
+   \      0x220   0x.... 0x....      BL       sli_psa_validate_pkcs7_padding
+   \      0x224   0xB110             CBZ.N    R0,??sli_se_driver_cipher_decrypt_28
+   \      0x226   0x2100             MOVS     R1,#+0
+   \      0x228   0x6029             STR      R1,[R5, #+0]
+   \      0x22A   0xE012             B.N      ??sli_se_driver_cipher_decrypt_9
+   \                     ??sli_se_driver_cipher_decrypt_28: (+1)
+   \      0x22C   0x9800             LDR      R0,[SP, #+0]
+   \      0x22E   0x1A38             SUBS     R0,R7,R0
+   \      0x230   0x4582             CMP      R10,R0
+   \      0x232   0xD202             BCS.N    ??sli_se_driver_cipher_decrypt_29
+   \      0x234   0x2100             MOVS     R1,#+0
+   \      0x236   0x6029             STR      R1,[R5, #+0]
+   \      0x238   0xE7BC             B.N      ??sli_se_driver_cipher_decrypt_16
+   \                     ??sli_se_driver_cipher_decrypt_29: (+1)
+   \      0x23A   0x9A00             LDR      R2,[SP, #+0]
+   \      0x23C   0x9B04             LDR      R3,[SP, #+16]
+   \      0x23E   0xA909             ADD      R1,SP,#+36
+   \      0x240   0xF1C2 0x0210      RSB      R2,R2,#+16
+   \      0x244   0x18F0             ADDS     R0,R6,R3
+   \      0x246   0x.... 0x....      BL       __aeabi_memcpy
+   \      0x24A   0x9800             LDR      R0,[SP, #+0]
+   \      0x24C   0x1A3F             SUBS     R7,R7,R0
+   \      0x24E   0x602F             STR      R7,[R5, #+0]
+    956                return PSA_ERROR_HARDWARE_FAILURE;
+    957              }
+    958            } else {
+    959              return PSA_SUCCESS;
+   \                     ??sli_se_driver_cipher_decrypt_18: (+1)
+   \      0x250   0x2000             MOVS     R0,#+0
+   \                     ??sli_se_driver_cipher_decrypt_9: (+1)
+   \      0x252   0xB01F             ADD      SP,SP,#+124
+   \      0x254   0xE8BD 0x8FF0      POP      {R4-R11,PC}
+    960            }
+   \                     ??sli_se_driver_cipher_decrypt_15: (+1)
+   \      0x258   0x4648             MOV      R0,R9
+   \      0x25A   0xE7FA             B.N      ??sli_se_driver_cipher_decrypt_9
+   \                     ??sli_se_driver_cipher_decrypt_19: (+1)
+   \      0x25C   0xF06F 0x0092      MVN      R0,#+146
+   \      0x260   0xE7F7             B.N      ??sli_se_driver_cipher_decrypt_9
+    961          
+    962            #else // SLI_PSA_DRIVER_FEATURE_CIPHER
+    963          
+    964            (void)attributes;
+    965            (void)key_buffer;
+    966            (void)key_buffer_size;
+    967            (void)alg;
+    968            (void)input;
+    969            (void)input_length;
+    970            (void)output;
+    971            (void)output_size;
+    972            (void)output_length;
+    973          
+    974            return PSA_ERROR_NOT_SUPPORTED;
+    975          
+    976            #endif // SLI_PSA_DRIVER_FEATURE_CIPHER
+    977          }
+
+   \                                 In section .text, align 2, keep-with-next
+   \                     ?Subroutine9: (+1)
+   \        0x0   0x2201             MOVS     R2,#+1
+   \        0x2   0xA90D             ADD      R1,SP,#+52
+   \        0x4   0xA815             ADD      R0,SP,#+84
+   \        0x6   0x.... 0x....      B.W      sl_se_aes_crypt_cbc
+
+   \                                 In section .rodata, align 4
+   \        0x0   0x0000'0000        DC32 0
+   \        0x4                      DS8 28
+   \       0x20                      DS8 4
+
+   \                                 In section .rodata, align 4, keep-with-next
+   \                     ?_4:
+   \        0x0   0x0000'0000        DC32 0
+   \        0x4                      DS8 28
+    978          
+    979          // -----------------------------------------------------------------------------
+    980          // Multi-part driver entry points
+    981          
+
+   \                                 In section .text, align 2, keep-with-next
+    982          psa_status_t sli_se_driver_cipher_encrypt_setup(
+    983            sli_se_driver_cipher_operation_t *operation,
+    984            const psa_key_attributes_t *attributes,
+    985            psa_algorithm_t alg)
+    986          {
+   \                     sli_se_driver_cipher_encrypt_setup: (+1)
+   \        0x0   0xB534             PUSH     {R2,R4,R5,LR}
+   \        0x2   0x0005             MOVS     R5,R0
+   \        0x4   0x460C             MOV      R4,R1
+    987            #if defined(SLI_PSA_DRIVER_FEATURE_CIPHER_MULTIPART)
+    988          
+    989            if (operation == NULL || attributes == NULL) {
+   \        0x6   0xBF18             IT       NE
+   \        0x8   0x2C00             CMPNE    R4,#+0
+   \        0xA   0xD100             BNE.N    ??sli_se_driver_cipher_encrypt_setup_0
+    990              return PSA_ERROR_INVALID_ARGUMENT;
+   \        0xC   0x....             B.N      ?Subroutine0
+    991            }
+    992          
+    993            // Reset context
+    994            memset(operation, 0, sizeof(*operation));
+   \                     ??sli_se_driver_cipher_encrypt_setup_0: (+1)
+   \        0xE   0x2150             MOVS     R1,#+80
+   \       0x10   0x.... 0x....      BL       __aeabi_memclr4
+    995          
+    996            // Set up context
+    997            memcpy(&operation->alg, &alg, sizeof(alg));
+   \       0x14   0x9900             LDR      R1,[SP, #+0]
+   \       0x16   0xF105 0x0024      ADD      R0,R5,#+36
+   \       0x1A   0x6001             STR      R1,[R0, #+0]
+    998            operation->direction = SL_SE_ENCRYPT;
+   \       0x1C   0x2100             MOVS     R1,#+0
+   \       0x1E   0x.... 0x....      BL       ?Subroutine5
+   \                     ??CrossCallReturnLabel_8: (+1)
+   \       0x22   0xBF1F             ITTTT    NE
+   \       0x24   0x.... 0x....      LDRNE.W  R1,??DataTable10_1
+   \       0x28   0x428A             CMPNE    R2,R1
+   \       0x2A   0x.... 0x....      LDRNE.W  R1,??DataTable10_2
+   \       0x2E   0x428A             CMPNE    R2,R1
+   \       0x30   0xD104             BNE.N    ??sli_se_driver_cipher_encrypt_setup_1
+   \       0x32   0x8823             LDRH     R3,[R4, #+0]
+   \       0x34   0xF5B3 0x5F10      CMP      R3,#+9216
+   \       0x38   0xBF08             IT       EQ
+   \       0x3A   0x2000             MOVEQ    R0,#+0
+    999          
+   1000            // Validate combination of key and algorithm
+   1001            return validate_key_algorithm_match(alg, attributes);
+   \                     ??sli_se_driver_cipher_encrypt_setup_1: (+1)
+   \       0x3C   0xBD32             POP      {R1,R4,R5,PC}
+   1002          
+   1003            #else // SLI_PSA_DRIVER_FEATURE_CIPHER_MULTIPART
+   1004          
+   1005            (void)operation;
+   1006            (void)attributes;
+   1007            (void)alg;
+   1008          
+   1009            return PSA_ERROR_NOT_SUPPORTED;
+   1010          
+   1011            #endif // SLI_PSA_DRIVER_FEATURE_CIPHER_MULTIPART
+   1012          }
+
+   \                                 In section .text, align 2, keep-with-next
+   \                     ?Subroutine5: (+1)
+   \        0x0   0xF885 0x1020      STRB     R1,[R5, #+32]
+   \        0x4   0x9A00             LDR      R2,[SP, #+0]
+   \        0x6   0x.... 0x....      LDR.W    R1,??DataTable10
+   \        0xA   0xF06F 0x0085      MVN      R0,#+133
+   \        0xE   0x428A             CMP      R2,R1
+   \       0x10   0x4770             BX       LR
+
+   \                                 In section .text, align 2, keep-with-next
+   \                     ?Subroutine0: (+1)
+   \        0x0   0xF06F 0x0086      MVN      R0,#+134
+   \        0x4   0xBD32             POP      {R1,R4,R5,PC}
+   1013          
+
+   \                                 In section .text, align 2, keep-with-next
+   1014          psa_status_t sli_se_driver_cipher_decrypt_setup(
+   1015            sli_se_driver_cipher_operation_t *operation,
+   1016            const psa_key_attributes_t *attributes,
+   1017            psa_algorithm_t alg)
+   1018          {
+   \                     sli_se_driver_cipher_decrypt_setup: (+1)
+   \        0x0   0xB534             PUSH     {R2,R4,R5,LR}
+   \        0x2   0x0005             MOVS     R5,R0
+   \        0x4   0x460C             MOV      R4,R1
+   1019            #if defined(SLI_PSA_DRIVER_FEATURE_CIPHER_MULTIPART)
+   1020          
+   1021            if (operation == NULL || attributes == NULL) {
+   \        0x6   0xBF18             IT       NE
+   \        0x8   0x2C00             CMPNE    R4,#+0
+   \        0xA   0xD100             BNE.N    ??sli_se_driver_cipher_decrypt_setup_0
+   1022              return PSA_ERROR_INVALID_ARGUMENT;
+   \        0xC   0x....             B.N      ?Subroutine0
+   1023            }
+   1024          
+   1025            // Reset context
+   1026            memset(operation, 0, sizeof(*operation));
+   \                     ??sli_se_driver_cipher_decrypt_setup_0: (+1)
+   \        0xE   0x2150             MOVS     R1,#+80
+   \       0x10   0x.... 0x....      BL       __aeabi_memclr4
+   1027          
+   1028            // Set up context
+   1029            memcpy(&operation->alg, &alg, sizeof(alg));
+   \       0x14   0x9900             LDR      R1,[SP, #+0]
+   \       0x16   0xF105 0x0024      ADD      R0,R5,#+36
+   \       0x1A   0x6001             STR      R1,[R0, #+0]
+   1030            operation->direction = SL_SE_DECRYPT;
+   \       0x1C   0x2101             MOVS     R1,#+1
+   \       0x1E   0x.... 0x....      BL       ?Subroutine5
+   \                     ??CrossCallReturnLabel_9: (+1)
+   \       0x22   0xBF1F             ITTTT    NE
+   \       0x24   0x.... 0x....      LDRNE.W  R1,??DataTable10_1
+   \       0x28   0x428A             CMPNE    R2,R1
+   \       0x2A   0x.... 0x....      LDRNE.W  R1,??DataTable10_2
+   \       0x2E   0x428A             CMPNE    R2,R1
+   \       0x30   0xD104             BNE.N    ??sli_se_driver_cipher_decrypt_setup_1
+   \       0x32   0x8823             LDRH     R3,[R4, #+0]
+   \       0x34   0xF5B3 0x5F10      CMP      R3,#+9216
+   \       0x38   0xBF08             IT       EQ
+   \       0x3A   0x2000             MOVEQ    R0,#+0
+   1031          
+   1032            // Validate combination of key and algorithm
+   1033            return validate_key_algorithm_match(alg, attributes);
+   \                     ??sli_se_driver_cipher_decrypt_setup_1: (+1)
+   \       0x3C   0xBD32             POP      {R1,R4,R5,PC}
+   1034          
+   1035            #else // SLI_PSA_DRIVER_FEATURE_CIPHER_MULTIPART
+   1036          
+   1037            (void)operation;
+   1038            (void)attributes;
+   1039            (void)alg;
+   1040          
+   1041            return PSA_ERROR_NOT_SUPPORTED;
+   1042          
+   1043            #endif // SLI_PSA_DRIVER_FEATURE_CIPHER_MULTIPART
+   1044          }
+   1045          
+
+   \                                 In section .text, align 2, keep-with-next
+   1046          psa_status_t sli_se_driver_cipher_set_iv(
+   1047            sli_se_driver_cipher_operation_t *operation,
+   1048            const uint8_t *iv,
+   1049            size_t iv_length)
+   1050          {
+   \                     sli_se_driver_cipher_set_iv: (+1)
+   \        0x0   0xB5F8             PUSH     {R3-R7,LR}
+   \        0x2   0x0003             MOVS     R3,R0
+   1051            #if defined(SLI_PSA_DRIVER_FEATURE_CIPHER_MULTIPART)
+   1052          
+   1053            if (operation == NULL || iv == NULL) {
+   \        0x4   0xF06F 0x0086      MVN      R0,#+134
+   \        0x8   0xBF18             IT       NE
+   \        0xA   0x2900             CMPNE    R1,#+0
+   \        0xC   0xD02D             BEQ.N    ??sli_se_driver_cipher_set_iv_0
+   1054              return PSA_ERROR_INVALID_ARGUMENT;
+   1055            }
+   1056          
+   1057            if (iv_length > sizeof(operation->iv)) {
+   \        0xE   0x2A10             CMP      R2,#+16
+   \       0x10   0xD82B             BHI.N    ??sli_se_driver_cipher_set_iv_0
+   1058              // IV can't be larger than what our state can store
+   1059              return PSA_ERROR_INVALID_ARGUMENT;
+   1060            }
+   1061          
+   1062            if (operation->iv_len != 0) {
+   \       0x12   0xF103 0x0524      ADD      R5,R3,#+36
+   \       0x16   0x696C             LDR      R4,[R5, #+20]
+   \       0x18   0xBBAC             CBNZ.N   R4,??sli_se_driver_cipher_set_iv_1
+   1063              // IV was set previously
+   1064              return PSA_ERROR_BAD_STATE;
+   1065            }
+   1066          
+   1067            switch (operation->alg) {
+   \       0x1A   0x682F             LDR      R7,[R5, #+0]
+   \       0x1C   0x.... 0x....      LDR.W    R6,??DataTable10
+   \       0x20   0x42B7             CMP      R7,R6
+   \       0x22   0xBF1C             ITT      NE
+   \       0x24   0x.... 0x....      LDRNE.W  R6,??DataTable10_3
+   \       0x28   0x42B7             CMPNE    R7,R6
+   \       0x2A   0xD015             BEQ.N    ??sli_se_driver_cipher_set_iv_2
+   \       0x2C   0x.... 0x....      LDR.W    R6,??DataTable10_1
+   \       0x30   0x42B7             CMP      R7,R6
+   \       0x32   0xD00F             BEQ.N    ??sli_se_driver_cipher_set_iv_3
+   \       0x34   0x.... 0x....      LDR.W    R6,??DataTable10_4
+   \       0x38   0x42B7             CMP      R7,R6
+   \       0x3A   0xBF1F             ITTTT    NE
+   \       0x3C   0x.... 0x....      LDRNE.W  R6,??DataTable10_5
+   \       0x40   0x42B7             CMPNE    R7,R6
+   \       0x42   0x.... 0x....      LDRNE.W  R6,??DataTable10_6
+   \       0x46   0x42B7             CMPNE    R7,R6
+   \       0x48   0xD006             BEQ.N    ??sli_se_driver_cipher_set_iv_2
+   \       0x4A   0x.... 0x....      LDR.W    R6,??DataTable10_2
+   \       0x4E   0x42B7             CMP      R7,R6
+   \       0x50   0xD00C             BEQ.N    ??sli_se_driver_cipher_set_iv_4
+   \       0x52   0xE018             B.N      ??sli_se_driver_cipher_set_iv_1
+   1068              case PSA_ALG_ECB_NO_PADDING:
+   1069                if (iv_length > 0) {
+   \                     ??sli_se_driver_cipher_set_iv_3: (+1)
+   \       0x54   0xB94A             CBNZ.N   R2,??sli_se_driver_cipher_set_iv_0
+   1070                  return PSA_ERROR_INVALID_ARGUMENT;
+   1071                } else {
+   1072                  return PSA_SUCCESS;
+   \       0x56   0xE007             B.N      ??sli_se_driver_cipher_set_iv_5
+   1073                }
+   1074                break;
+   1075          
+   1076              case PSA_ALG_CTR:   // Explicit fallthrough
+   1077              case PSA_ALG_CFB:   // Explicit fallthrough
+   1078              case PSA_ALG_OFB:   // Explicit fallthrough
+   1079              case PSA_ALG_CBC_NO_PADDING:   // Explicit fallthrough
+   1080              case PSA_ALG_CBC_PKCS7:   // Explicit fallthrough
+   1081                if (iv_length != 16) {
+   \                     ??sli_se_driver_cipher_set_iv_2: (+1)
+   \       0x58   0x2A10             CMP      R2,#+16
+   \       0x5A   0xD106             BNE.N    ??sli_se_driver_cipher_set_iv_0
+   1082                  return PSA_ERROR_INVALID_ARGUMENT;
+   1083                }
+   1084                memcpy(operation->iv, iv, iv_length);
+   \       0x5C   0xF103 0x0028      ADD      R0,R3,#+40
+   \       0x60   0x.... 0x....      BL       __aeabi_memcpy
+   1085                break;
+   1086          
+   1087              case PSA_ALG_CCM_STAR_NO_TAG:
+   1088                // Preformat the IV for CCM*-no-tag here, such that the remainder
+   1089                // of the processing for this algorithm boils down to AES-CTR
+   1090                if (iv_length != 13) {
+   1091                  return PSA_ERROR_INVALID_ARGUMENT;
+   1092                }
+   1093                operation->iv[0] = 1;
+   1094                memcpy(&operation->iv[1], iv, iv_length);
+   1095                operation->iv[14] = 0;
+   1096                operation->iv[15] = 1;
+   1097                iv_length = 16;
+   1098                break;
+   1099          
+   1100                #if defined(SLI_PSA_DRIVER_FEATURE_CHACHA20)
+   1101              case PSA_ALG_STREAM_CIPHER:
+   1102                // PSA Crypto supports multiple IV input lengths for ChaCha20
+   1103                // refer to the doc for PSA_ALG_STREAM_CIPHER
+   1104                if (iv_length == 12) {
+   1105                  // Set initial counter value to zero
+   1106                  memset(operation->iv, 0, 4);
+   1107                  memcpy(&operation->iv[4], iv, iv_length);
+   1108                } else if (iv_length == 16) {
+   1109                  // Initial counter value is stored little-endian in the first four
+   1110                  // bytes. This makes our lives easier: since this driver will only
+   1111                  // run on little-endian machines, we can just cast it to a uint32.
+   1112                  memcpy(operation->iv, iv, iv_length);
+   1113                } else if (iv_length == 8) {
+   1114                  // "Original" ChaCha20: 8-byte IV and 8-byte counter (0-initialised).
+   1115                  // We currently don't support this format.
+   1116                  return PSA_ERROR_NOT_SUPPORTED;
+   1117                } else {
+   1118                  return PSA_ERROR_INVALID_ARGUMENT;
+   1119                }
+   1120                break;
+   1121                #endif // SLI_PSA_DRIVER_FEATURE_CHACHA20
+   1122          
+   1123              default:
+   1124                return PSA_ERROR_BAD_STATE;
+   1125            }
+   1126          
+   1127            operation->iv_len = iv_length;
+   \                     ??sli_se_driver_cipher_set_iv_6: (+1)
+   \       0x64   0x2010             MOVS     R0,#+16
+   \       0x66   0x6168             STR      R0,[R5, #+20]
+   1128          
+   1129            return PSA_SUCCESS;
+   \                     ??sli_se_driver_cipher_set_iv_5: (+1)
+   \       0x68   0x2000             MOVS     R0,#+0
+   \                     ??sli_se_driver_cipher_set_iv_0: (+1)
+   \       0x6A   0xBDF2             POP      {R1,R4-R7,PC}
+   \                     ??sli_se_driver_cipher_set_iv_4: (+1)
+   \       0x6C   0x2A0D             CMP      R2,#+13
+   \       0x6E   0xD1FC             BNE.N    ??sli_se_driver_cipher_set_iv_0
+   \       0x70   0x2001             MOVS     R0,#+1
+   \       0x72   0x7128             STRB     R0,[R5, #+4]
+   \       0x74   0xF103 0x0029      ADD      R0,R3,#+41
+   \       0x78   0x.... 0x....      BL       __aeabi_memcpy
+   \       0x7C   0x2100             MOVS     R1,#+0
+   \       0x7E   0x2001             MOVS     R0,#+1
+   \       0x80   0x74A9             STRB     R1,[R5, #+18]
+   \       0x82   0x74E8             STRB     R0,[R5, #+19]
+   \       0x84   0xE7EE             B.N      ??sli_se_driver_cipher_set_iv_6
+   \                     ??sli_se_driver_cipher_set_iv_1: (+1)
+   \       0x86   0xF06F 0x0088      MVN      R0,#+136
+   \       0x8A   0xBDF2             POP      {R1,R4-R7,PC}
+   1130          
+   1131            #else // SLI_PSA_DRIVER_FEATURE_CIPHER_MULTIPART
+   1132          
+   1133            (void)operation;
+   1134            (void)iv;
+   1135            (void)iv_length;
+   1136          
+   1137            return PSA_ERROR_NOT_SUPPORTED;
+   1138          
+   1139            #endif // SLI_PSA_DRIVER_FEATURE_CIPHER_MULTIPART
+   1140          }
+   1141          
+
+   \                                 In section .text, align 2, keep-with-next
+   1142          psa_status_t sli_se_driver_cipher_update(
+   1143            sli_se_driver_cipher_operation_t *operation,
+   1144            const uint8_t *input,
+   1145            size_t input_length,
+   1146            uint8_t *output,
+   1147            size_t output_size,
+   1148            size_t *output_length)
+   1149          {
+   \                     sli_se_driver_cipher_update: (+1)
+   \        0x0   0xE92D 0x4FF0      PUSH     {R4-R11,LR}
+   \        0x4   0xB08F             SUB      SP,SP,#+60
+   \        0x6   0x0006             MOVS     R6,R0
+   1150            #if defined(SLI_PSA_DRIVER_FEATURE_CIPHER_MULTIPART)
+   1151          
+   1152            // Argument check
+   1153            if (operation == NULL
+   1154                || (input == NULL && input_length > 0)
+   1155                || (output == NULL && output_size > 0)
+   1156                || output_length == NULL) {
+   \        0x8   0xD00D             BEQ.N    ??sli_se_driver_cipher_update_0
+   \        0xA   0xEA5F 0x0A01      MOVS     R10,R1
+   \        0xE   0x4615             MOV      R5,R2
+   \       0x10   0xD101             BNE.N    ??sli_se_driver_cipher_update_1
+   \       0x12   0x2D00             CMP      R5,#+0
+   \       0x14   0xD104             BNE.N    ??sli_se_driver_cipher_update_2
+   \                     ??sli_se_driver_cipher_update_1: (+1)
+   \       0x16   0xEA5F 0x0803      MOVS     R8,R3
+   \       0x1A   0xD102             BNE.N    ??sli_se_driver_cipher_update_3
+   \       0x1C   0x9818             LDR      R0,[SP, #+96]
+   \       0x1E   0x2800             CMP      R0,#+0
+   \                     ??sli_se_driver_cipher_update_2: (+1)
+   \       0x20   0xD17B             BNE.N    ??sli_se_driver_cipher_update_4
+   \                     ??sli_se_driver_cipher_update_3: (+1)
+   \       0x22   0x9819             LDR      R0,[SP, #+100]
+   \       0x24   0x2800             CMP      R0,#+0
+   \                     ??sli_se_driver_cipher_update_0: (+1)
+   \       0x26   0xD078             BEQ.N    ??sli_se_driver_cipher_update_4
+   1157              return PSA_ERROR_INVALID_ARGUMENT;
+   1158            }
+   1159          
+   1160            // Key desc has been properly set by wrapper function
+   1161            const sl_se_key_descriptor_t *key_desc = &operation->key_desc;
+   1162            psa_status_t psa_status = validate_key_type(key_desc);
+   \       0x28   0x4630             MOV      R0,R6
+   \       0x2A   0x.... 0x....      BL       validate_key_type
+   1163            if (psa_status != PSA_SUCCESS) {
+   \       0x2E   0x2800             CMP      R0,#+0
+   \       0x30   0xD169             BNE.N    ??sli_se_driver_cipher_update_5
+   1164              return psa_status;
+   1165            }
+   1166          
+   1167            bool lagging;
+   1168            size_t bytes_to_boundary = 16 - (operation->processed_length % 16);
+   \       0x32   0x6CF0             LDR      R0,[R6, #+76]
+   1169            size_t actual_output_length = 0;
+   1170          
+   1171            // We need to cache (not return) the whole last block for decryption with
+   1172            // padding, otherwise it won't be possible to remove a potential padding
+   1173            // block during finish.
+   1174            bool cache_full_block = (operation->alg == PSA_ALG_CBC_PKCS7
+   1175                                     && operation->direction == SL_SE_DECRYPT);
+   \       0x34   0x6A71             LDR      R1,[R6, #+36]
+   \       0x36   0x.... 0x....      LDR.W    R2,??DataTable10_3
+   \       0x3A   0xF000 0x030F      AND      R3,R0,#0xF
+   \       0x3E   0xF1C3 0x0710      RSB      R7,R3,#+16
+   \       0x42   0xF04F 0x0900      MOV      R9,#+0
+   \       0x46   0x4291             CMP      R1,R2
+   \       0x48   0xD106             BNE.N    ??sli_se_driver_cipher_update_6
+   \       0x4A   0xF896 0x1020      LDRB     R1,[R6, #+32]
+   \       0x4E   0x2901             CMP      R1,#+1
+   \       0x50   0xBF0C             ITE      EQ
+   \       0x52   0x2401             MOVEQ    R4,#+1
+   \       0x54   0x2400             MOVNE    R4,#+0
+   \       0x56   0xE01C             B.N      ??sli_se_driver_cipher_update_7
+   \                     ??sli_se_driver_cipher_update_6: (+1)
+   \       0x58   0x2400             MOVS     R4,#+0
+   1176          
+   1177            // Figure out whether the operation is on a lagging or forward-looking cipher
+   1178            // Lagging: needs a full block of input data before being able to output
+   1179            // Non-lagging: can output the same amount of data as getting fed
+   1180            switch (operation->alg) {
+   \       0x5A   0x.... 0x....      LDR.W    R2,??DataTable10
+   \       0x5E   0x4291             CMP      R1,R2
+   \       0x60   0xBF1F             ITTTT    NE
+   \       0x62   0x.... 0x....      LDRNE.W  R2,??DataTable10_3
+   \       0x66   0x4291             CMPNE    R1,R2
+   \       0x68   0x.... 0x....      LDRNE.W  R2,??DataTable10_1
+   \       0x6C   0x4291             CMPNE    R1,R2
+   \       0x6E   0xD010             BEQ.N    ??sli_se_driver_cipher_update_7
+   \       0x70   0x.... 0x....      LDR.W    R2,??DataTable10_4
+   \       0x74   0x4291             CMP      R1,R2
+   \       0x76   0xBF1C             ITT      NE
+   \       0x78   0x.... 0x....      LDRNE.W  R2,??DataTable10_5
+   \       0x7C   0x4291             CMPNE    R1,R2
+   \       0x7E   0xD00B             BEQ.N    ??sli_se_driver_cipher_update_8
+   \       0x80   0x.... 0x....      LDR.W    R2,??DataTable10_6
+   \       0x84   0x4291             CMP      R1,R2
+   \       0x86   0xBF1C             ITT      NE
+   \       0x88   0x.... 0x....      LDRNE.W  R2,??DataTable10_2
+   \       0x8C   0x4291             CMPNE    R1,R2
+   \       0x8E   0xD003             BEQ.N    ??sli_se_driver_cipher_update_8
+   \       0x90   0xE0A8             B.N      ??sli_se_driver_cipher_update_9
+   1181              case PSA_ALG_ECB_NO_PADDING:
+   1182              case PSA_ALG_CBC_NO_PADDING:
+   1183              case PSA_ALG_CBC_PKCS7:
+   1184                lagging = true;
+   \                     ??sli_se_driver_cipher_update_7: (+1)
+   \       0x92   0x2101             MOVS     R1,#+1
+   \       0x94   0x9103             STR      R1,[SP, #+12]
+   1185                break;
+   \       0x96   0xE000             B.N      ??sli_se_driver_cipher_update_10
+   1186          
+   1187              case PSA_ALG_CTR:
+   1188              case PSA_ALG_CCM_STAR_NO_TAG:
+   1189              case PSA_ALG_CFB:
+   1190              case PSA_ALG_OFB:
+   1191                lagging = false;
+   \                     ??sli_se_driver_cipher_update_8: (+1)
+   \       0x98   0x9403             STR      R4,[SP, #+12]
+   1192                break;
+   1193          
+   1194                #if defined(SLI_PSA_DRIVER_FEATURE_CHACHA20)
+   1195              case PSA_ALG_STREAM_CIPHER:
+   1196                lagging = false;
+   1197                break;
+   1198                #endif
+   1199          
+   1200              default:
+   1201                return PSA_ERROR_BAD_STATE;
+   1202            }
+   1203          
+   1204            if (input_length == 0) {
+   \                     ??sli_se_driver_cipher_update_10: (+1)
+   \       0x9A   0xB90D             CBNZ     R5,.+6
+   \       0x9C   0xF000 0xB913      B.W      ??sli_se_driver_cipher_update_11
+   1205              // We don't need to do anything if the input length is zero.
+   1206              *output_length = 0;
+   1207              return PSA_SUCCESS;
+   1208            }
+   1209          
+   1210            if (lagging) {
+   \       0xA0   0x9903             LDR      R1,[SP, #+12]
+   \       0xA2   0xB359             CBZ.N    R1,??sli_se_driver_cipher_update_12
+   1211              // Early processing if not getting to a full block
+   1212              if (cache_full_block
+   1213                  && bytes_to_boundary == 16
+   1214                  && operation->processed_length > 0) {
+   \       0xA4   0xB114             CBZ.N    R4,??sli_se_driver_cipher_update_13
+   \       0xA6   0x2F10             CMP      R7,#+16
+   \       0xA8   0xD100             BNE.N    ??sli_se_driver_cipher_update_13
+   \       0xAA   0xB960             CBNZ.N   R0,??sli_se_driver_cipher_update_14
+   1215                // Don't overwrite the streaming block if it's currently full.
+   1216              } else {
+   1217                if (input_length < bytes_to_boundary) {
+   \                     ??sli_se_driver_cipher_update_13: (+1)
+   \       0xAC   0x42BD             CMP      R5,R7
+   \       0xAE   0xD20A             BCS.N    ??sli_se_driver_cipher_update_14
+   1218                  memcpy(&operation->streaming_block[operation->processed_length % 16],
+   1219                         input,
+   1220                         input_length);
+   \       0xB0   0xF106 0x003C      ADD      R0,R6,#+60
+   \       0xB4   0x462A             MOV      R2,R5
+   \       0xB6   0x4651             MOV      R1,R10
+   \       0xB8   0x4418             ADD      R0,R0,R3
+   \       0xBA   0x.... 0x....      BL       __aeabi_memcpy
+   1221                  operation->processed_length += input_length;
+   \       0xBE   0x6CF1             LDR      R1,[R6, #+76]
+   \       0xC0   0x186D             ADDS     R5,R5,R1
+   \       0xC2   0x64F5             STR      R5,[R6, #+76]
+   1222                  *output_length = actual_output_length;
+   \       0xC4   0xE0FF             B.N      ??sli_se_driver_cipher_update_11
+   1223                  return PSA_SUCCESS;
+   1224                }
+   1225              }
+   1226          
+   1227              // We know we'll be computing and outputing at least the completed
+   1228              // streaming block.
+   1229              size_t output_blocks = 1;
+   \                     ??sli_se_driver_cipher_update_14: (+1)
+   \       0xC6   0x2010             MOVS     R0,#+16
+   1230          
+   1231              if (input_length > bytes_to_boundary) {
+   \       0xC8   0x42AF             CMP      R7,R5
+   \       0xCA   0xD209             BCS.N    ??sli_se_driver_cipher_update_15
+   1232                // plus however many full blocks are left over after filling the stream buffer
+   1233                output_blocks += (input_length - bytes_to_boundary) / 16;
+   \       0xCC   0x1BE8             SUBS     R0,R5,R7
+   \       0xCE   0x0900             LSRS     R0,R0,#+4
+   \       0xD0   0x1C40             ADDS     R0,R0,#+1
+   1234                // If we're caching and the sum of already-input and to-be-input data
+   1235                // ends up at a block boundary, we won't be outputting the last block
+   1236                if (cache_full_block && ((input_length - bytes_to_boundary) % 16 == 0)) {
+   \       0xD2   0xB124             CBZ.N    R4,??sli_se_driver_cipher_update_16
+   \       0xD4   0x1BE9             SUBS     R1,R5,R7
+   \       0xD6   0xF011 0x0F0F      TST      R1,#0xF
+   \       0xDA   0xBF08             IT       EQ
+   \       0xDC   0x1E40             SUBEQ    R0,R0,#+1
+   1237                  output_blocks -= 1;
+   \                     ??sli_se_driver_cipher_update_16: (+1)
+   \       0xDE   0x0100             LSLS     R0,R0,#+4
+   1238                }
+   1239              }
+   1240          
+   1241              if (output_size < (output_blocks * 16)) {
+   \                     ??sli_se_driver_cipher_update_15: (+1)
+   \       0xE0   0x9918             LDR      R1,[SP, #+96]
+   \       0xE2   0x4281             CMP      R1,R0
+   \       0xE4   0xD30D             BCC.N    ??sli_se_driver_cipher_update_17
+   1242                return PSA_ERROR_BUFFER_TOO_SMALL;
+   1243              }
+   1244            } else {
+   1245              // Early failure if output buffer is too small
+   1246              if (output_size < input_length) {
+   1247                return PSA_ERROR_BUFFER_TOO_SMALL;
+   1248              }
+   1249            }
+   1250          
+   1251            // Ephemeral contexts
+   1252            sl_se_command_context_t cmd_ctx = { 0 };
+   \                     ??sli_se_driver_cipher_update_18: (+1)
+   \       0xE6   0xA806             ADD      R0,SP,#+24
+   \       0xE8   0x2124             MOVS     R1,#+36
+   \       0xEA   0x.... 0x....      BL       __aeabi_memclr4
+   1253          
+   1254            sl_status_t status = sl_se_init_command_context(&cmd_ctx);
+   \       0xEE   0xA806             ADD      R0,SP,#+24
+   \       0xF0   0x.... 0x....      BL       sl_se_init_command_context
+   \       0xF4   0xEA5F 0x0B00      MOVS     R11,R0
+   1255            if (status != SL_STATUS_OK) {
+   \       0xF8   0xD006             BEQ.N    ??sli_se_driver_cipher_update_19
+   1256              return PSA_ERROR_HARDWARE_FAILURE;
+   \       0xFA   0xE100             B.N      ??sli_se_driver_cipher_update_20
+   1257            }
+   \                     ??sli_se_driver_cipher_update_12: (+1)
+   \       0xFC   0x9818             LDR      R0,[SP, #+96]
+   \       0xFE   0x42A8             CMP      R0,R5
+   \      0x100   0xD2F1             BCS.N    ??sli_se_driver_cipher_update_18
+   \                     ??sli_se_driver_cipher_update_17: (+1)
+   \      0x102   0xF06F 0x0089      MVN      R0,#+137
+   \                     ??sli_se_driver_cipher_update_5: (+1)
+   \      0x106   0xE0E2             B.N      ??sli_se_driver_cipher_update_21
+   1258          
+   1259            // Our drivers only support full or no overlap between input and output
+   1260            // buffers. So in the case of partial overlap, copy the input buffer into
+   1261            // the output buffer and process it in place as if the buffers fully
+   1262            // overlapped.
+   1263            if ((output > input) && (output < (input + input_length))) {
+   \                     ??sli_se_driver_cipher_update_19: (+1)
+   \      0x108   0x45C2             CMP      R10,R8
+   \      0x10A   0xBF3C             ITT      CC
+   \      0x10C   0xEB0A 0x0105      ADDCC    R1,R10,R5
+   \      0x110   0x4588             CMPCC    R8,R1
+   \      0x112   0xD20B             BCS.N    ??sli_se_driver_cipher_update_22
+   1264              // Sanity check before copying. Some ciphers have a stricter requirement
+   1265              // than this (if an IV is included), but no ciphers will have an output
+   1266              // smaller than the input.
+   1267              if (output_size < input_length) {
+   \      0x114   0x9818             LDR      R0,[SP, #+96]
+   \      0x116   0x42A8             CMP      R0,R5
+   \      0x118   0xD202             BCS.N    ??sli_se_driver_cipher_update_23
+   1268                return PSA_ERROR_INVALID_ARGUMENT;
+   \                     ??sli_se_driver_cipher_update_4: (+1)
+   \      0x11A   0xF06F 0x0086      MVN      R0,#+134
+   \      0x11E   0xE0D6             B.N      ??sli_se_driver_cipher_update_21
+   1269              }
+   1270          
+   1271              memmove(output, input, input_length);
+   \                     ??sli_se_driver_cipher_update_23: (+1)
+   \      0x120   0x462A             MOV      R2,R5
+   \      0x122   0x4651             MOV      R1,R10
+   \      0x124   0x4640             MOV      R0,R8
+   \      0x126   0x.... 0x....      BL       __aeabi_memmove
+   1272              input = output;
+   \      0x12A   0x46C2             MOV      R10,R8
+   1273            }
+   1274          
+   1275            switch (operation->alg) {
+   \                     ??sli_se_driver_cipher_update_22: (+1)
+   \      0x12C   0xEB0A 0x0107      ADD      R1,R10,R7
+   \      0x130   0x1BE8             SUBS     R0,R5,R7
+   \      0x132   0x9105             STR      R1,[SP, #+20]
+   \      0x134   0x9004             STR      R0,[SP, #+16]
+   \      0x136   0x6A72             LDR      R2,[R6, #+36]
+   \      0x138   0x....             LDR.N    R1,??DataTable10
+   \      0x13A   0x428A             CMP      R2,R1
+   \      0x13C   0xBF1C             ITT      NE
+   \      0x13E   0x....             LDRNE.N  R1,??DataTable10_3
+   \      0x140   0x428A             CMPNE    R2,R1
+   \      0x142   0xD052             BEQ.N    ??sli_se_driver_cipher_update_24
+   \      0x144   0x....             LDR.N    R1,??DataTable10_1
+   \      0x146   0x428A             CMP      R2,R1
+   \      0x148   0xD007             BEQ.N    ??sli_se_driver_cipher_update_25
+   \      0x14A   0x....             LDR.N    R1,??DataTable10_4
+   \      0x14C   0x428A             CMP      R2,R1
+   \      0x14E   0xBF1C             ITT      NE
+   \      0x150   0x....             LDRNE.N  R1,??DataTable10_2
+   \      0x152   0x428A             CMPNE    R2,R1
+   \      0x154   0xF000 0x809B      BEQ.W    ??sli_se_driver_cipher_update_26
+   \      0x158   0xE044             B.N      ??sli_se_driver_cipher_update_9
+   1276              #if defined(SLI_PSA_DRIVER_FEATURE_AES_ECB)
+   1277              case PSA_ALG_ECB_NO_PADDING:
+   1278                // Read in up to full streaming input block
+   1279                if (bytes_to_boundary != 16) {
+   \                     ??sli_se_driver_cipher_update_25: (+1)
+   \      0x15A   0x2F10             CMP      R7,#+16
+   \      0x15C   0xD018             BEQ.N    ??sli_se_driver_cipher_update_27
+   1280                  memcpy(&operation->streaming_block[operation->processed_length % 16],
+   1281                         input,
+   1282                         bytes_to_boundary);
+   \      0x15E   0x.... 0x....      BL       ?Subroutine7
+   1283                  input += bytes_to_boundary;
+   1284                  input_length -= bytes_to_boundary;
+   1285          
+   1286                  status = sl_se_aes_crypt_ecb(&cmd_ctx,
+   1287                                               key_desc,
+   1288                                               operation->direction,
+   1289                                               16,
+   1290                                               operation->streaming_block,
+   1291                                               output);
+   \                     ??CrossCallReturnLabel_12: (+1)
+   \      0x162   0xF106 0x003C      ADD      R0,R6,#+60
+   \      0x166   0xF8CD 0x8004      STR      R8,[SP, #+4]
+   \      0x16A   0x9000             STR      R0,[SP, #+0]
+   \      0x16C   0xF896 0x2020      LDRB     R2,[R6, #+32]
+   \      0x170   0xF8DD 0xA014      LDR      R10,[SP, #+20]
+   \      0x174   0x9D04             LDR      R5,[SP, #+16]
+   \      0x176   0x2310             MOVS     R3,#+16
+   \      0x178   0x4631             MOV      R1,R6
+   \      0x17A   0xA806             ADD      R0,SP,#+24
+   \      0x17C   0x.... 0x....      BL       sl_se_aes_crypt_ecb
+   \      0x180   0xEA5F 0x0B00      MOVS     R11,R0
+   1292                  if (status != SL_STATUS_OK) {
+   \      0x184   0xD144             BNE.N    ??sli_se_driver_cipher_update_28
+   1293                    goto exit;
+   1294                  }
+   1295          
+   1296                  output += 16;
+   1297                  actual_output_length += 16;
+   1298                  operation->processed_length += bytes_to_boundary;
+   \      0x186   0x6CF0             LDR      R0,[R6, #+76]
+   \      0x188   0x.... 0x....      BL       ?Subroutine10
+   1299                }
+   \                     ??CrossCallReturnLabel_20: (+1)
+   \      0x18C   0x183F             ADDS     R7,R7,R0
+   \      0x18E   0x64F7             STR      R7,[R6, #+76]
+   1300          
+   1301                // Do multi-block operation if applicable
+   1302                if (input_length >= 16) {
+   \                     ??sli_se_driver_cipher_update_27: (+1)
+   \      0x190   0x2D10             CMP      R5,#+16
+   \      0x192   0xD318             BCC.N    ??sli_se_driver_cipher_update_29
+   1303                  size_t operation_size = (input_length / 16) * 16;
+   1304                  status = sl_se_aes_crypt_ecb(&cmd_ctx,
+   1305                                               key_desc,
+   1306                                               operation->direction,
+   1307                                               operation_size,
+   1308                                               input,
+   1309                                               output);
+   \      0x194   0xF8CD 0x8004      STR      R8,[SP, #+4]
+   \      0x198   0xF8CD 0xA000      STR      R10,[SP, #+0]
+   \      0x19C   0xF896 0x2020      LDRB     R2,[R6, #+32]
+   \      0x1A0   0x092F             LSRS     R7,R5,#+4
+   \      0x1A2   0x013B             LSLS     R3,R7,#+4
+   \      0x1A4   0x4631             MOV      R1,R6
+   \      0x1A6   0xA806             ADD      R0,SP,#+24
+   \      0x1A8   0x.... 0x....      BL       sl_se_aes_crypt_ecb
+   \      0x1AC   0xEA5F 0x0B00      MOVS     R11,R0
+   1310          
+   1311                  if (status != SL_STATUS_OK) {
+   \      0x1B0   0xD12E             BNE.N    ??sli_se_driver_cipher_update_28
+   1312                    goto exit;
+   1313                  }
+   1314          
+   1315                  input += operation_size;
+   1316                  input_length -= operation_size;
+   1317                  actual_output_length += operation_size;
+   1318                  operation->processed_length += operation_size;
+   \      0x1B2   0x6CF0             LDR      R0,[R6, #+76]
+   \      0x1B4   0xEB0A 0x1A07      ADD      R10,R10,R7, LSL #+4
+   \      0x1B8   0xEBA5 0x1507      SUB      R5,R5,R7, LSL #+4
+   \      0x1BC   0xEB09 0x1907      ADD      R9,R9,R7, LSL #+4
+   \      0x1C0   0xEB00 0x1707      ADD      R7,R0,R7, LSL #+4
+   \                     ??sli_se_driver_cipher_update_30: (+1)
+   \      0x1C4   0x64F7             STR      R7,[R6, #+76]
+   1319                }
+   1320          
+   1321                // What's left over in the input buffer will be cleaned up after switch-case
+   1322                break;
+   1323              #endif   // SLI_PSA_DRIVER_FEATURE_AES_ECB
+   1324          
+   1325              #if defined(SLI_PSA_DRIVER_FEATURE_AES_CBC_VARIANT)
+   1326              case PSA_ALG_CBC_NO_PADDING:     // fall through
+   1327              case PSA_ALG_CBC_PKCS7:
+   1328                if (bytes_to_boundary != 16) {
+   1329                  memcpy(&operation->streaming_block[operation->processed_length % 16],
+   1330                         input,
+   1331                         bytes_to_boundary);
+   1332                  if (cache_full_block && (bytes_to_boundary == input_length)) {
+   1333                    // Don't process the streaming block if there is no more input data
+   1334                  } else {
+   1335                    status = sl_se_aes_crypt_cbc(&cmd_ctx,
+   1336                                                 key_desc,
+   1337                                                 operation->direction,
+   1338                                                 16,
+   1339                                                 operation->iv,
+   1340                                                 operation->streaming_block,
+   1341                                                 output);
+   1342                    if (status != PSA_SUCCESS) {
+   1343                      goto exit;
+   1344                    }
+   1345                    output += 16;
+   1346                    actual_output_length += 16;
+   1347                  }
+   1348          
+   1349                  input += bytes_to_boundary;
+   1350                  input_length -= bytes_to_boundary;
+   1351                  operation->processed_length += bytes_to_boundary;
+   1352                } else if (input_length > 0
+   1353                           && cache_full_block
+   1354                           && operation->processed_length > 0) {
+   1355                  // We know there's processing to be done, and that we haven't processed
+   1356                  // the full block in the streaming buffer yet. Process it now.
+   1357                  status = sl_se_aes_crypt_cbc(&cmd_ctx,
+   1358                                               key_desc,
+   1359                                               operation->direction,
+   1360                                               16,
+   1361                                               operation->iv,
+   1362                                               operation->streaming_block,
+   1363                                               output);
+   1364                  if (status != PSA_SUCCESS) {
+   1365                    goto exit;
+   1366                  }
+   1367                  output += 16;
+   1368                  actual_output_length += 16;
+   1369                }
+   1370          
+   1371                // Do multi-block operation if applicable
+   1372                if (input_length >= 16) {
+   1373                  size_t operation_size = (input_length / 16) * 16;
+   1374                  if (cache_full_block && (input_length % 16 == 0)) {
+   1375                    // Don't decrypt the last block until finish is called, so that we
+   1376                    // can properly remove the padding before returning it.
+   1377                    operation_size -= 16;
+   1378                  }
+   1379          
+   1380                  if (operation_size > 0) {
+   1381                    status = sl_se_aes_crypt_cbc(&cmd_ctx,
+   1382                                                 key_desc,
+   1383                                                 operation->direction,
+   1384                                                 operation_size,
+   1385                                                 operation->iv,
+   1386                                                 input,
+   1387                                                 output);
+   1388                    if (status != PSA_SUCCESS) {
+   1389                      goto exit;
+   1390                    }
+   1391                  } else {
+   1392                    status = PSA_SUCCESS;
+   1393                  }
+   1394          
+   1395                  input += operation_size;
+   1396                  input_length -= operation_size;
+   1397                  actual_output_length += operation_size;
+   1398                  operation->processed_length += operation_size;
+   1399                }
+   1400          
+   1401                // What's left over in the input buffer will be cleaned up after switch-case
+   1402                break;
+   1403              #endif   // SLI_PSA_DRIVER_FEATURE_AES_CBC_VARIANT
+   1404          
+   1405              #if defined(SLI_PSA_DRIVER_FEATURE_AES_CCM_STAR_NO_TAG)
+   1406              case PSA_ALG_CCM_STAR_NO_TAG:     // Explicit fallthrough
+   1407              #endif   // SLI_PSA_DRIVER_FEATURE_AES_CCM_STAR_NO_TAG
+   1408          
+   1409              #if defined(SLI_PSA_DRIVER_FEATURE_AES_CTR_VARIANT)
+   1410              case PSA_ALG_CTR:
+   1411              {
+   1412                uint32_t offset = operation->processed_length % 16;
+   1413          
+   1414                status = sl_se_aes_crypt_ctr(&cmd_ctx,
+   1415                                             key_desc,
+   1416                                             input_length,
+   1417                                             &offset,
+   1418                                             operation->iv,
+   1419                                             operation->streaming_block,
+   1420                                             input,
+   1421                                             output);
+   1422          
+   1423                if (status != SL_STATUS_OK) {
+   1424                  goto exit;
+   1425                }
+   1426          
+   1427                input += input_length;
+   1428                actual_output_length += input_length;
+   1429                operation->processed_length += input_length;
+   1430                input_length -= input_length;
+   1431                break;
+   1432              }
+   1433              #endif   // SLI_PSA_DRIVER_FEATURE_AES_CTR_VARIANT
+   1434          
+   1435              #if defined(SLI_PSA_DRIVER_FEATURE_AES_CFB)
+   1436              case PSA_ALG_CFB:
+   1437              {
+   1438                uint32_t offset = operation->processed_length % 16;
+   1439                status = sl_se_aes_crypt_cfb128(&cmd_ctx,
+   1440                                                key_desc,
+   1441                                                operation->direction,
+   1442                                                input_length,
+   1443                                                &offset,
+   1444                                                operation->iv,
+   1445                                                input,
+   1446                                                output);
+   1447          
+   1448                if (status != SL_STATUS_OK) {
+   1449                  goto exit;
+   1450                }
+   1451          
+   1452                input += input_length;
+   1453                actual_output_length += input_length;
+   1454                operation->processed_length += input_length;
+   1455                input_length -= input_length;
+   1456                break;
+   1457              }
+   1458              #endif   // SLI_PSA_DRIVER_FEATURE_AES_CFB
+   1459          
+   1460              #if defined(SLI_PSA_DRIVER_FEATURE_AES_OFB)
+   1461              case PSA_ALG_OFB:
+   1462              {
+   1463                size_t data_length = input_length;
+   1464                size_t n = operation->processed_length % 16;
+   1465          
+   1466                // loop over input data to create output
+   1467                while (data_length--) {
+   1468                  if (n == 0) {
+   1469                    status = sl_se_aes_crypt_ecb(&cmd_ctx,
+   1470                                                 key_desc,
+   1471                                                 SL_SE_ENCRYPT,
+   1472                                                 16,
+   1473                                                 operation->iv,
+   1474                                                 operation->iv);
+   1475                    if (status != SL_STATUS_OK) {
+   1476                      goto exit;
+   1477                    }
+   1478                  }
+   1479                  *output++ =  *input++ ^ operation->iv[n];
+   1480          
+   1481                  n = (n + 1) & 0x0F;
+   1482                }
+   1483          
+   1484                input += input_length;
+   1485                actual_output_length += input_length;
+   1486                operation->processed_length += input_length;
+   1487                input_length -= input_length;
+   1488                break;
+   1489              }
+   1490              #endif   // SLI_PSA_DRIVER_FEATURE_AES_OFB
+   1491          
+   1492              #if defined(SLI_PSA_DRIVER_FEATURE_CHACHA20)
+   1493              case PSA_ALG_STREAM_CIPHER:
+   1494              {
+   1495                // counter value is at the start of the IV buffer
+   1496                uint32_t ctr_value = *((uint32_t*)operation->iv);
+   1497          
+   1498                // If the counter would wrap, refuse the operation
+   1499                if (ctr_value > (ctr_value + (input_length / 64))) {
+   1500                  return PSA_ERROR_BAD_STATE;
+   1501                }
+   1502          
+   1503                if (operation->processed_length % 64 != 0) {
+   1504                  // Perform partial block operation until block boundary or end of input
+   1505                  uint8_t chacha20_block[64] = { 0 };
+   1506                  size_t offset_in_block = operation->processed_length
+   1507                                           % sizeof(chacha20_block);
+   1508                  size_t length_in_block =
+   1509                    input_length < (sizeof(chacha20_block) - offset_in_block)
+   1510                    ? input_length
+   1511                    : (sizeof(chacha20_block) - offset_in_block);
+   1512                  uint32_t counter_bytes = __REV(ctr_value);
+   1513          
+   1514                  // Retrieve streaming block
+   1515                  status = sl_se_chacha20_crypt(&cmd_ctx,
+   1516                                                SL_SE_ENCRYPT,
+   1517                                                key_desc,
+   1518                                                sizeof(chacha20_block),
+   1519                                                (const unsigned char*)&counter_bytes,
+   1520                                                &operation->iv[4],
+   1521                                                chacha20_block,
+   1522                                                chacha20_block);
+   1523          
+   1524                  if (status != SL_STATUS_OK) {
+   1525                    goto exit;
+   1526                  }
+   1527          
+   1528                  // Calculate stream output
+   1529                  for (size_t i = 0; i < length_in_block; i++) {
+   1530                    output[i] = input[i] ^ chacha20_block[offset_in_block + i];
+   1531                  }
+   1532          
+   1533                  input += length_in_block;
+   1534                  actual_output_length += length_in_block;
+   1535                  operation->processed_length += length_in_block;
+   1536                  input_length -= length_in_block;
+   1537          
+   1538                  // Update the counter if the block is complete
+   1539                  if (offset_in_block + length_in_block == sizeof(chacha20_block)) {
+   1540                    ctr_value++;
+   1541                  }
+   1542                }
+   1543          
+   1544                if (input_length > 0) {
+   1545                  // Perform remainder of operation in a single call
+   1546                  uint32_t counter_bytes = __REV(ctr_value);
+   1547          
+   1548                  status = sl_se_chacha20_crypt(&cmd_ctx,
+   1549                                                SL_SE_ENCRYPT,
+   1550                                                key_desc,
+   1551                                                input_length,
+   1552                                                (const unsigned char*)&counter_bytes,
+   1553                                                &operation->iv[4],
+   1554                                                input,
+   1555                                                &output[actual_output_length]);
+   1556          
+   1557                  if (status != SL_STATUS_OK) {
+   1558                    goto exit;
+   1559                  }
+   1560          
+   1561                  // Update the counter with the amount of full blocks processed
+   1562                  ctr_value += input_length / 64;
+   1563          
+   1564                  input += input_length;
+   1565                  actual_output_length += input_length;
+   1566                  operation->processed_length += input_length;
+   1567                  input_length -= input_length;
+   1568                }
+   1569          
+   1570                // Store the updated counter number to the IV buffer
+   1571                *((uint32_t*)operation->iv) = ctr_value;
+   1572                break;
+   1573              }
+   1574              #endif   // SLI_PSA_DRIVER_FEATURE_CHACHA20
+   1575          
+   1576              default:
+   1577                return PSA_ERROR_BAD_STATE;
+   1578            }
+   1579          
+   1580            // If there's anything left in the input buffer, copy it to the context
+   1581            // This'll only be the case for lagging ciphers
+   1582            if (input_length > 0) {
+   \                     ??sli_se_driver_cipher_update_29: (+1)
+   \      0x1C6   0x2D00             CMP      R5,#+0
+   \      0x1C8   0xF000 0x808D      BEQ.W    ??sli_se_driver_cipher_update_31
+   1583              if (!lagging
+   1584                  || (input_length >= 16 && !cache_full_block)
+   1585                  || (input_length > 16 && cache_full_block)) {
+   \      0x1CC   0x9803             LDR      R0,[SP, #+12]
+   \      0x1CE   0xB130             CBZ.N    R0,??sli_se_driver_cipher_update_32
+   \      0x1D0   0x2D10             CMP      R5,#+16
+   \      0x1D2   0xD300             BCC.N    ??sli_se_driver_cipher_update_33
+   \      0x1D4   0xB11C             CBZ.N    R4,??sli_se_driver_cipher_update_32
+   \                     ??sli_se_driver_cipher_update_33: (+1)
+   \      0x1D6   0x2D10             CMP      R5,#+16
+   \      0x1D8   0xD97C             BLS.N    ??sli_se_driver_cipher_update_34
+   \      0x1DA   0x2C00             CMP      R4,#+0
+   \      0x1DC   0xD07A             BEQ.N    ??sli_se_driver_cipher_update_34
+   1586                *output_length = 0;
+   \                     ??sli_se_driver_cipher_update_32: (+1)
+   \      0x1DE   0x9819             LDR      R0,[SP, #+100]
+   \      0x1E0   0x2100             MOVS     R1,#+0
+   \      0x1E2   0x6001             STR      R1,[R0, #+0]
+   1587                return PSA_ERROR_BAD_STATE;
+   1588              }
+   \                     ??sli_se_driver_cipher_update_9: (+1)
+   \      0x1E4   0xF06F 0x0088      MVN      R0,#+136
+   \      0x1E8   0xE071             B.N      ??sli_se_driver_cipher_update_21
+   \                     ??sli_se_driver_cipher_update_24: (+1)
+   \      0x1EA   0x2F10             CMP      R7,#+16
+   \      0x1EC   0xD01A             BEQ.N    ??sli_se_driver_cipher_update_35
+   \      0x1EE   0x.... 0x....      BL       ?Subroutine7
+   \                     ??CrossCallReturnLabel_13: (+1)
+   \      0x1F2   0xB10C             CBZ.N    R4,??sli_se_driver_cipher_update_36
+   \      0x1F4   0x42AF             CMP      R7,R5
+   \      0x1F6   0xD00E             BEQ.N    ??CrossCallReturnLabel_18
+   \                     ??sli_se_driver_cipher_update_36: (+1)
+   \      0x1F8   0xF106 0x003C      ADD      R0,R6,#+60
+   \      0x1FC   0xF106 0x0128      ADD      R1,R6,#+40
+   \      0x200   0xF8CD 0x8008      STR      R8,[SP, #+8]
+   \      0x204   0x9001             STR      R0,[SP, #+4]
+   \      0x206   0x9100             STR      R1,[SP, #+0]
+   \      0x208   0x.... 0x....      BL       ?Subroutine8
+   \                     ??CrossCallReturnLabel_15: (+1)
+   \      0x20C   0xEA5F 0x0B00      MOVS     R11,R0
+   \                     ??sli_se_driver_cipher_update_28: (+1)
+   \      0x210   0xD169             BNE.N    ??sli_se_driver_cipher_update_31
+   \      0x212   0x.... 0x....      BL       ?Subroutine10
+   \                     ??CrossCallReturnLabel_18: (+1)
+   \      0x216   0x6CF0             LDR      R0,[R6, #+76]
+   \      0x218   0xF8DD 0xA014      LDR      R10,[SP, #+20]
+   \      0x21C   0x9D04             LDR      R5,[SP, #+16]
+   \      0x21E   0x183F             ADDS     R7,R7,R0
+   \      0x220   0x64F7             STR      R7,[R6, #+76]
+   \      0x222   0xE013             B.N      ??CrossCallReturnLabel_19
+   \                     ??sli_se_driver_cipher_update_35: (+1)
+   \      0x224   0x2C00             CMP      R4,#+0
+   \      0x226   0xBF1C             ITT      NE
+   \      0x228   0x6CF0             LDRNE    R0,[R6, #+76]
+   \      0x22A   0x2800             CMPNE    R0,#+0
+   \      0x22C   0xD00E             BEQ.N    ??CrossCallReturnLabel_19
+   \      0x22E   0xF106 0x013C      ADD      R1,R6,#+60
+   \      0x232   0xF106 0x0028      ADD      R0,R6,#+40
+   \      0x236   0xF8CD 0x8008      STR      R8,[SP, #+8]
+   \      0x23A   0x9101             STR      R1,[SP, #+4]
+   \      0x23C   0x9000             STR      R0,[SP, #+0]
+   \      0x23E   0x.... 0x....      BL       ?Subroutine8
+   \                     ??CrossCallReturnLabel_14: (+1)
+   \      0x242   0xEA5F 0x0B00      MOVS     R11,R0
+   \      0x246   0xD14E             BNE.N    ??sli_se_driver_cipher_update_31
+   \      0x248   0x.... 0x....      BL       ?Subroutine10
+   \                     ??CrossCallReturnLabel_19: (+1)
+   \      0x24C   0x2D10             CMP      R5,#+16
+   \      0x24E   0xD3BA             BCC.N    ??sli_se_driver_cipher_update_29
+   \      0x250   0x092F             LSRS     R7,R5,#+4
+   \      0x252   0x013F             LSLS     R7,R7,#+4
+   \      0x254   0xB11C             CBZ.N    R4,??sli_se_driver_cipher_update_37
+   \      0x256   0xF015 0x0F0F      TST      R5,#0xF
+   \      0x25A   0xBF08             IT       EQ
+   \      0x25C   0x3F10             SUBEQ    R7,R7,#+16
+   \                     ??sli_se_driver_cipher_update_37: (+1)
+   \      0x25E   0xB187             CBZ.N    R7,??sli_se_driver_cipher_update_38
+   \      0x260   0xF106 0x0028      ADD      R0,R6,#+40
+   \      0x264   0xF8CD 0x8008      STR      R8,[SP, #+8]
+   \      0x268   0xF8CD 0xA004      STR      R10,[SP, #+4]
+   \      0x26C   0x9000             STR      R0,[SP, #+0]
+   \      0x26E   0xF896 0x2020      LDRB     R2,[R6, #+32]
+   \      0x272   0x463B             MOV      R3,R7
+   \      0x274   0x4631             MOV      R1,R6
+   \      0x276   0xA806             ADD      R0,SP,#+24
+   \      0x278   0x.... 0x....      BL       sl_se_aes_crypt_cbc
+   \      0x27C   0xEA5F 0x0B00      MOVS     R11,R0
+   \      0x280   0xD131             BNE.N    ??sli_se_driver_cipher_update_31
+   \                     ??sli_se_driver_cipher_update_38: (+1)
+   \      0x282   0x6CF0             LDR      R0,[R6, #+76]
+   \      0x284   0x44BA             ADD      R10,R10,R7
+   \      0x286   0x1BED             SUBS     R5,R5,R7
+   \      0x288   0x44B9             ADD      R9,R7,R9
+   \      0x28A   0x183F             ADDS     R7,R7,R0
+   \      0x28C   0xE79A             B.N      ??sli_se_driver_cipher_update_30
+   \                     ??sli_se_driver_cipher_update_26: (+1)
+   \      0x28E   0xF896 0x004C      LDRB     R0,[R6, #+76]
+   \      0x292   0xF106 0x013C      ADD      R1,R6,#+60
+   \      0x296   0x9101             STR      R1,[SP, #+4]
+   \      0x298   0xF000 0x000F      AND      R0,R0,#0xF
+   \      0x29C   0x9004             STR      R0,[SP, #+16]
+   \      0x29E   0xF106 0x0028      ADD      R0,R6,#+40
+   \      0x2A2   0x9000             STR      R0,[SP, #+0]
+   \      0x2A4   0xF8CD 0x800C      STR      R8,[SP, #+12]
+   \      0x2A8   0xF8CD 0xA008      STR      R10,[SP, #+8]
+   \      0x2AC   0xAB04             ADD      R3,SP,#+16
+   \      0x2AE   0x462A             MOV      R2,R5
+   \      0x2B0   0x4631             MOV      R1,R6
+   \      0x2B2   0xA806             ADD      R0,SP,#+24
+   \      0x2B4   0x.... 0x....      BL       sl_se_aes_crypt_ctr
+   \      0x2B8   0xEA5F 0x0B00      MOVS     R11,R0
+   \      0x2BC   0xD113             BNE.N    ??sli_se_driver_cipher_update_31
+   \      0x2BE   0x6CF0             LDR      R0,[R6, #+76]
+   \      0x2C0   0x46A9             MOV      R9,R5
+   \      0x2C2   0x182D             ADDS     R5,R5,R0
+   \      0x2C4   0x64F5             STR      R5,[R6, #+76]
+   1589          
+   1590              memcpy(operation->streaming_block,
+   1591                     input,
+   1592                     input_length);
+   1593              operation->processed_length += input_length;
+   1594            }
+   1595          
+   1596            exit:
+   1597            if (status != SL_STATUS_OK) {
+   1598              *output_length = 0;
+   1599              if (status == SL_STATUS_FAIL) {
+   1600                // This specific code maps to 'does not exist' for builtin keys
+   1601                return PSA_ERROR_DOES_NOT_EXIST;
+   1602              } else {
+   1603                return PSA_ERROR_HARDWARE_FAILURE;
+   1604              }
+   1605            } else {
+   1606              *output_length = actual_output_length;
+   \                     ??sli_se_driver_cipher_update_11: (+1)
+   \      0x2C6   0x9819             LDR      R0,[SP, #+100]
+   \      0x2C8   0xF8C0 0x9000      STR      R9,[R0, #+0]
+   1607              return PSA_SUCCESS;
+   \      0x2CC   0x2000             MOVS     R0,#+0
+   \                     ??sli_se_driver_cipher_update_21: (+1)
+   \      0x2CE   0xB00F             ADD      SP,SP,#+60
+   \      0x2D0   0xE8BD 0x8FF0      POP      {R4-R11,PC}
+   1608            }
+   \                     ??sli_se_driver_cipher_update_34: (+1)
+   \      0x2D4   0x462A             MOV      R2,R5
+   \      0x2D6   0x4651             MOV      R1,R10
+   \      0x2D8   0xF106 0x003C      ADD      R0,R6,#+60
+   \      0x2DC   0x.... 0x....      BL       __aeabi_memcpy
+   \      0x2E0   0x6CF0             LDR      R0,[R6, #+76]
+   \      0x2E2   0x182D             ADDS     R5,R5,R0
+   \      0x2E4   0x64F5             STR      R5,[R6, #+76]
+   \                     ??sli_se_driver_cipher_update_31: (+1)
+   \      0x2E6   0xF1BB 0x0F00      CMP      R11,#+0
+   \      0x2EA   0xD0EC             BEQ.N    ??sli_se_driver_cipher_update_11
+   \      0x2EC   0x9919             LDR      R1,[SP, #+100]
+   \      0x2EE   0x2000             MOVS     R0,#+0
+   \      0x2F0   0xF1BB 0x0F01      CMP      R11,#+1
+   \      0x2F4   0x6008             STR      R0,[R1, #+0]
+   \      0x2F6   0xBF08             IT       EQ
+   \      0x2F8   0xF06F 0x008B      MVNEQ    R0,#+139
+   \      0x2FC   0xD0E7             BEQ.N    ??sli_se_driver_cipher_update_21
+   \                     ??sli_se_driver_cipher_update_20: (+1)
+   \      0x2FE   0xF06F 0x0092      MVN      R0,#+146
+   \      0x302   0xE7E4             B.N      ??sli_se_driver_cipher_update_21
+   1609          
+   1610            #else // SLI_PSA_DRIVER_FEATURE_CIPHER_MULTIPART
+   1611          
+   1612            (void)operation;
+   1613            (void)input;
+   1614            (void)input_length;
+   1615            (void)output;
+   1616            (void)output_size;
+   1617            (void)output_length;
+   1618          
+   1619            return PSA_ERROR_NOT_SUPPORTED;
+   1620          
+   1621            #endif // SLI_PSA_DRIVER_FEATURE_CIPHER_MULTIPART
+   1622          }
+
+   \                                 In section .text, align 2, keep-with-next
+   \                     ?Subroutine10: (+1)
+   \        0x0   0xF108 0x0810      ADD      R8,R8,#+16
+   \        0x4   0xF04F 0x0910      MOV      R9,#+16
+   \        0x8   0x4770             BX       LR
+
+   \                                 In section .text, align 2, keep-with-next
+   \                     ?Subroutine8: (+1)
+   \        0x0   0xF896 0x2020      LDRB     R2,[R6, #+32]
+   \        0x4   0x2310             MOVS     R3,#+16
+   \        0x6   0x4631             MOV      R1,R6
+   \        0x8   0xA806             ADD      R0,SP,#+24
+   \        0xA   0x.... 0x....      B.W      sl_se_aes_crypt_cbc
+
+   \                                 In section .rodata, align 4
+   \        0x0   0x0000'0000        DC32 0
+   \        0x4                      DS8 28
+   \       0x20                      DS8 4
+   1623          
+
+   \                                 In section .text, align 2, keep-with-next
+   1624          psa_status_t sli_se_driver_cipher_finish(
+   1625            sli_se_driver_cipher_operation_t *operation,
+   1626            uint8_t *output,
+   1627            size_t output_size,
+   1628            size_t *output_length)
+   1629          {
+   \                     sli_se_driver_cipher_finish: (+1)
+   \        0x0   0xB570             PUSH     {R4-R6,LR}
+   \        0x2   0x0004             MOVS     R4,R0
+   \        0x4   0x461D             MOV      R5,R3
+   1630            #if defined(SLI_PSA_DRIVER_FEATURE_CIPHER_MULTIPART)
+   1631          
+   1632            // Finalize cipher operation. This will only output data for algorithms
+   1633            // which include padding. This is currently only AES-CBC with PKCS#7.
+   1634          
+   1635            // Argument check
+   1636            if (operation == NULL
+   1637                || (output == NULL && output_size > 0)
+   1638                || output_length == NULL) {
+   \        0x6   0xF06F 0x0686      MVN      R6,#+134
+   \        0xA   0xD002             BEQ.N    ??sli_se_driver_cipher_finish_0
+   \        0xC   0xB901             CBNZ.N   R1,??sli_se_driver_cipher_finish_1
+   \        0xE   0xB902             CBNZ.N   R2,??sli_se_driver_cipher_finish_0
+   \                     ??sli_se_driver_cipher_finish_1: (+1)
+   \       0x10   0xB90D             CBNZ.N   R5,??sli_se_driver_cipher_finish_2
+   1639              return PSA_ERROR_INVALID_ARGUMENT;
+   \                     ??sli_se_driver_cipher_finish_0: (+1)
+   \       0x12   0x4630             MOV      R0,R6
+   \       0x14   0xBD70             POP      {R4-R6,PC}
+   1640            }
+   1641          
+   1642            // Key desc has been properly set by wrapper function
+   1643            const sl_se_key_descriptor_t *key_desc = &operation->key_desc;
+   1644            psa_status_t psa_status = validate_key_type(key_desc);
+   \                     ??sli_se_driver_cipher_finish_2: (+1)
+   \       0x16   0x.... 0x....      BL       validate_key_type
+   1645            if (psa_status != PSA_SUCCESS) {
+   \       0x1A   0xBB10             CBNZ.N   R0,??sli_se_driver_cipher_finish_3
+   1646              return psa_status;
+   1647            }
+   1648          
+   1649            switch (operation->alg) {
+   \       0x1C   0x6A62             LDR      R2,[R4, #+36]
+   \       0x1E   0x....             LDR.N    R1,??DataTable10
+   \       0x20   0x428A             CMP      R2,R1
+   \       0x22   0xBF1C             ITT      NE
+   \       0x24   0x....             LDRNE.N  R1,??DataTable10_1
+   \       0x26   0x428A             CMPNE    R2,R1
+   \       0x28   0xD00E             BEQ.N    ??sli_se_driver_cipher_finish_4
+   \       0x2A   0x....             LDR.N    R1,??DataTable10_7
+   \       0x2C   0x428A             CMP      R2,R1
+   \       0x2E   0xBF1C             ITT      NE
+   \       0x30   0x....             LDRNE.N  R1,??DataTable10_4
+   \       0x32   0x428A             CMPNE    R2,R1
+   \       0x34   0xD013             BEQ.N    ??sli_se_driver_cipher_finish_5
+   \       0x36   0x....             LDR.N    R1,??DataTable10_5
+   \       0x38   0x428A             CMP      R2,R1
+   \       0x3A   0xBF1F             ITTTT    NE
+   \       0x3C   0x....             LDRNE.N  R1,??DataTable10_6
+   \       0x3E   0x428A             CMPNE    R2,R1
+   \       0x40   0x....             LDRNE.N  R1,??DataTable10_2
+   \       0x42   0x428A             CMPNE    R2,R1
+   \       0x44   0xD00B             BEQ.N    ??sli_se_driver_cipher_finish_5
+   \       0x46   0xE008             B.N      ??sli_se_driver_cipher_finish_6
+   1650              #if defined(SLI_PSA_DRIVER_FEATURE_AES_ECB) || defined(SLI_PSA_DRIVER_FEATURE_AES_CBC_VARIANT)
+   1651              case PSA_ALG_ECB_NO_PADDING:     // Explicit fallthrough
+   1652              case PSA_ALG_CBC_NO_PADDING:
+   1653                // No-padding operations can't finish if they haven't processed block-size input
+   1654                *output_length = 0;
+   \                     ??sli_se_driver_cipher_finish_4: (+1)
+   \       0x48   0x2300             MOVS     R3,#+0
+   \       0x4A   0x602B             STR      R3,[R5, #+0]
+   1655                if (operation->processed_length % 16 != 0) {
+   \       0x4C   0xF894 0x104C      LDRB     R1,[R4, #+76]
+   \       0x50   0xF011 0x0F0F      TST      R1,#0xF
+   \       0x54   0xD005             BEQ.N    ??sli_se_driver_cipher_finish_3
+   1656                  psa_status = PSA_ERROR_INVALID_ARGUMENT;
+   \       0x56   0x4630             MOV      R0,R6
+   \       0x58   0xE001             B.N      ??sli_se_driver_cipher_finish_5
+   1657                } else {
+   1658                  psa_status = PSA_SUCCESS;
+   1659                }
+   1660                break;
+   1661              #endif // SLI_PSA_DRIVER_FEATURE_AES_ECB || SLI_PSA_DRIVER_FEATURE_AES_CBC_VARIANT
+   1662          
+   1663              #if defined(SLI_PSA_DRIVER_FEATURE_AES_CBC_PKCS7)
+   1664              case PSA_ALG_CBC_PKCS7:
+   1665              {
+   1666                // Ephemeral contexts
+   1667                sl_se_command_context_t cmd_ctx = { 0 };
+   1668          
+   1669                sl_status_t status = sl_se_init_command_context(&cmd_ctx);
+   1670                if (status != SL_STATUS_OK) {
+   1671                  psa_status = PSA_ERROR_HARDWARE_FAILURE;
+   1672                  break;
+   1673                }
+   1674          
+   1675                // Calculate padding, update, output final block
+   1676                if (operation->direction == SL_SE_ENCRYPT) {
+   1677                  if (output_size < 16) {
+   1678                    psa_status = PSA_ERROR_BUFFER_TOO_SMALL;
+   1679                    break;
+   1680                  }
+   1681                  size_t padding_bytes = 16 - (operation->processed_length % 16);
+   1682                  memset(&operation->streaming_block[16 - padding_bytes],
+   1683                         padding_bytes,
+   1684                         padding_bytes);
+   1685          
+   1686                  status = sl_se_aes_crypt_cbc(&cmd_ctx,
+   1687                                               key_desc,
+   1688                                               SL_SE_ENCRYPT,
+   1689                                               16,
+   1690                                               operation->iv,
+   1691                                               operation->streaming_block,
+   1692                                               output);
+   1693                  if (status != SL_STATUS_OK) {
+   1694                    *output_length = 0;
+   1695                    psa_status = PSA_ERROR_HARDWARE_FAILURE;
+   1696                  } else {
+   1697                    *output_length = 16;
+   1698                    psa_status = PSA_SUCCESS;
+   1699                  }
+   1700                } else {
+   1701                  // Expect full-block input
+   1702                  if (operation->processed_length % 16 != 0
+   1703                      || operation->processed_length < 16) {
+   1704                    psa_status = PSA_ERROR_INVALID_ARGUMENT;
+   1705                    break;
+   1706                  }
+   1707          
+   1708                  uint8_t out_buf[16];
+   1709          
+   1710                  // Decrypt the last block
+   1711                  status = sl_se_aes_crypt_cbc(&cmd_ctx,
+   1712                                               key_desc,
+   1713                                               SL_SE_DECRYPT,
+   1714                                               16,
+   1715                                               operation->iv,
+   1716                                               operation->streaming_block,
+   1717                                               out_buf);
+   1718          
+   1719                  if (status != SL_STATUS_OK) {
+   1720                    *output_length = 0;
+   1721                    psa_status = PSA_ERROR_HARDWARE_FAILURE;
+   1722                    break;
+   1723                  } else {
+   1724                    psa_status = PSA_SUCCESS;
+   1725                  }
+   1726          
+   1727                  size_t padding_bytes = 0;
+   1728                  psa_status = sli_psa_validate_pkcs7_padding(out_buf,
+   1729                                                              16,
+   1730                                                              &padding_bytes);
+   1731          
+   1732                  if (psa_status == PSA_SUCCESS) {
+   1733                    // The padding was valid
+   1734                    if (output_size < 16 - padding_bytes) {
+   1735                      psa_status = PSA_ERROR_BUFFER_TOO_SMALL;
+   1736                      break;
+   1737                    }
+   1738                    memcpy(output, out_buf, 16 - padding_bytes);
+   1739                    *output_length = 16 - padding_bytes;
+   1740                  }
+   1741                }
+   1742              }
+   1743              break;
+   1744              #endif // SLI_PSA_DRIVER_FEATURE_AES_CBC_PKCS7
+   1745          
+   1746              case PSA_ALG_CTR:
+   1747              case PSA_ALG_CCM_STAR_NO_TAG:
+   1748              case PSA_ALG_CFB:
+   1749              case PSA_ALG_OFB:
+   1750              case PSA_ALG_STREAM_CIPHER:
+   1751                // Actual stream ciphers: nothing to do here.
+   1752                *output_length = 0;
+   1753                psa_status = PSA_SUCCESS;
+   1754                break;
+   1755          
+   1756              default:
+   1757                psa_status = PSA_ERROR_BAD_STATE;
+   \                     ??sli_se_driver_cipher_finish_6: (+1)
+   \       0x5A   0xF06F 0x0088      MVN      R0,#+136
+   1758            }
+   1759            if (psa_status != PSA_SUCCESS) {
+   1760              *output_length = 0;
+   \                     ??sli_se_driver_cipher_finish_5: (+1)
+   \       0x5E   0x2100             MOVS     R1,#+0
+   \       0x60   0x6029             STR      R1,[R5, #+0]
+   1761            }
+   1762            return psa_status;
+   \                     ??sli_se_driver_cipher_finish_3: (+1)
+   \       0x62   0xBD70             POP      {R4-R6,PC}
+   1763          
+   1764            #else // SLI_PSA_DRIVER_FEATURE_CIPHER_MULTIPART
+   1765          
+   1766            (void)operation;
+   1767            (void)output;
+   1768            (void)output_size;
+   1769            (void)output_length;
+   1770          
+   1771            return PSA_ERROR_NOT_SUPPORTED;
+   1772          
+   1773            #endif // SLI_PSA_DRIVER_FEATURE_CIPHER_MULTIPART
+   1774          }
+
+   \                                 In section .text, align 2, keep-with-next
+   \                     ?Subroutine6: (+1)
+   \        0x0   0x2210             MOVS     R2,#+16
+   \        0x2   0x4641             MOV      R1,R8
+   \        0x4   0xA805             ADD      R0,SP,#+20
+   \        0x6   0x.... 0x....      B.W      __aeabi_memcpy
+
+   \                                 In section .text, align 2, keep-with-next
+   \                     ?Subroutine7: (+1)
+   \        0x0   0xF896 0x004C      LDRB     R0,[R6, #+76]
+   \        0x4   0xF106 0x033C      ADD      R3,R6,#+60
+   \        0x8   0x463A             MOV      R2,R7
+   \        0xA   0xF000 0x000F      AND      R0,R0,#0xF
+   \        0xE   0x4651             MOV      R1,R10
+   \       0x10   0x4418             ADD      R0,R3,R0
+   \       0x12   0x.... 0x....      B.W      __aeabi_memcpy
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable10:
+   \        0x0   0x0440'4000        DC32     0x4404000
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable10_1:
+   \        0x0   0x0440'4400        DC32     0x4404400
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable10_2:
+   \        0x0   0x04C0'1300        DC32     0x4c01300
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable10_3:
+   \        0x0   0x0440'4100        DC32     0x4404100
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable10_4:
+   \        0x0   0x04C0'1000        DC32     0x4c01000
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable10_5:
+   \        0x0   0x04C0'1100        DC32     0x4c01100
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable10_6:
+   \        0x0   0x04C0'1200        DC32     0x4c01200
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable10_7:
+   \        0x0   0x0480'0100        DC32     0x4800100
+   1775          
+   1776          #endif // SLI_MBEDTLS_DEVICE_HSE
+
+   Maximum stack usage in bytes:
+
+   .cstack Function
+   ------- --------
+     160   sli_se_driver_cipher_decrypt
+       160   -> __aeabi_memclr
+       160   -> __aeabi_memclr4
+       160   -> __aeabi_memcpy
+       160   -> __aeabi_memmove
+       160   -> __aeabi_memset
+       160   -> sl_se_aes_crypt_cbc
+       160   -> sl_se_aes_crypt_ctr
+       160   -> sl_se_aes_crypt_ecb
+       160   -> sl_se_init_command_context
+       160   -> sli_psa_validate_pkcs7_padding
+       160   -> sli_se_key_desc_from_input
+       160   -> validate_key_type
+      16   sli_se_driver_cipher_decrypt_setup
+        16   -> __aeabi_memclr4
+     176   sli_se_driver_cipher_encrypt
+       176   -> __aeabi_memclr
+       176   -> __aeabi_memclr4
+       176   -> __aeabi_memcpy
+       176   -> __aeabi_memmove
+       176   -> __aeabi_memset
+       176   -> sl_se_aes_crypt_cbc
+       176   -> sl_se_aes_crypt_ctr
+       176   -> sl_se_aes_crypt_ecb
+       176   -> sl_se_init_command_context
+       176   -> sli_se_key_desc_from_input
+       176   -> validate_key_type
+      16   sli_se_driver_cipher_encrypt_setup
+        16   -> __aeabi_memclr4
+      16   sli_se_driver_cipher_finish
+        16   -> validate_key_type
+      24   sli_se_driver_cipher_set_iv
+        24   -> __aeabi_memcpy
+      96   sli_se_driver_cipher_update
+        96   -> __aeabi_memclr4
+        96   -> __aeabi_memcpy
+        96   -> __aeabi_memmove
+        96   -> sl_se_aes_crypt_cbc
+        96   -> sl_se_aes_crypt_ctr
+        96   -> sl_se_aes_crypt_ecb
+        96   -> sl_se_init_command_context
+        96   -> validate_key_type
+       0   validate_key_type
+
+
+   Section sizes:
+
+   Bytes  Function/Label
+   -----  --------------
+       4  ??DataTable10
+       4  ??DataTable10_1
+       4  ??DataTable10_2
+       4  ??DataTable10_3
+       4  ??DataTable10_4
+       4  ??DataTable10_5
+       4  ??DataTable10_6
+       4  ??DataTable10_7
+       6  ?Subroutine0
+      14  ?Subroutine1
+      10  ?Subroutine10
+      10  ?Subroutine2
+      10  ?Subroutine3
+      14  ?Subroutine4
+      18  ?Subroutine5
+      10  ?Subroutine6
+      22  ?Subroutine7
+      14  ?Subroutine8
+      10  ?Subroutine9
+      36  ?_0
+      36  ?_1
+      36  ?_2
+      32  ?_3
+      32  ?_4
+     610  sli_se_driver_cipher_decrypt
+      62  sli_se_driver_cipher_decrypt_setup
+     708  sli_se_driver_cipher_encrypt
+      62  sli_se_driver_cipher_encrypt_setup
+     100  sli_se_driver_cipher_finish
+     140  sli_se_driver_cipher_set_iv
+     772  sli_se_driver_cipher_update
+      22  validate_key_type
+
+ 
+   172 bytes in section .rodata
+ 2'646 bytes in section .text
+ 
+ 2'646 bytes of CODE  memory
+   172 bytes of CONST memory
+
+Errors: none
+Warnings: none

@@ -1,0 +1,444 @@
+###############################################################################
+#                                                                             #
+#     IAR Assembler V9.50.2.385/W64 for ARM 27/Nov/2024  12:18:05             #
+#     Copyright 1999-2024 IAR Systems AB.                                     #
+#                                                                             #
+#           Source file   =  C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\util\third_party\freertos\kernel\portable\IAR\ARM_CM33_NTZ\non_secure\portasm.s#
+#           List file     =  C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\ewarm-iar\lst\non_secure_2552712700769462760.dir\portasm.lst#
+#           Object file   =  C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\ewarm-iar\obj\non_secure_2552712700769462760.dir\portasm.o#
+#           Command line  =  -f                                               #
+#                            C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\ewarm-iar\obj\non_secure_2552712700769462760.dir\portasm.o.rsp #
+#                            (C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\util\third_party\freertos\kernel\portable\IAR\ARM_CM33_NTZ\non_secure\portasm.s #
+#                            -OC:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\ewarm-iar\obj\non_secure_2552712700769462760.dir #
+#                            -s+ -M<> -w+ -r -DEFR32FG28B322F1024IM48=1       #
+#                            -DconfigNUM_SDK_THREAD_LOCAL_STORAGE_POINTERS=2  #
+#                            -DSL_COMPONENT_CATALOG_PRESENT=1                 #
+#                            -DMBEDTLS_CONFIG_FILE=<sl_mbedtls_config.h>      #
+#                            -DMBEDTLS_PSA_CRYPTO_CONFIG_FILE=<psa_crypto_config.h> #
+#                            -DSL_RAIL_LIB_MULTIPROTOCOL_SUPPORT=0            #
+#                            -DSL_RAIL_UTIL_PA_CONFIG_HEADER=<sl_rail_util_pa_config.h> #
+#                            -DRTT_USE_ASM=0 -DMBED_CONF_MBED_TRACE_ENABLE=1  #
+#                            -DMBED_CONF_NANOSTACK_CONFIGURATION=ws_router    #
+#                            -DMBED_TRACE_MAX_LEVEL=TRACE_ACTIVE_LEVEL_ALL    #
+#                            -DDEBUG_EFM_USER=1 -DHAVE_LFN=1                  #
+#                            -DHAVE_LFN_PARENT=1                              #
+#                            -LC:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\ewarm-iar\lst\non_secure_2552712700769462760.dir #
+#                            -t2 --cpu Cortex-M33 --cmse --fpu VFPv5_sp       #
+#                            -IC:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\util\third_party\freertos\kernel\portable\IAR\ARM_CM33_NTZ\non_secure\ #
+#                            -IC:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\autogen\ #
+#                            -IC:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\config\ #
+#                            -IC:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\config\rail\ #
+#                            -IC:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\Device\SiliconLabs\EFR32FG28\Include\ #
+#                            -IC:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\common\inc\ #
+#                            -IC:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\CMSIS\Core\Include\ #
+#                            -IC:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\CMSIS\RTOS2\Include\ #
+#                            -IC:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\service\device_init\inc\ #
+#                            -IC:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\emdrv\dmadrv\inc\ #
+#                            -IC:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\emdrv\common\inc\ #
+#                            -IC:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\emlib\inc\ #
+#                            -IC:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\util\third_party\freertos\cmsis\Include\ #
+#                            -IC:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\util\third_party\freertos\kernel\include\ #
+#                            -IC:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\util\third_party\freertos\kernel\portable\IAR\ARM_CM33_NTZ\non_secure\ #
+#                            -IC:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\service\iostream\inc\ #
+#                            -IC:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\security\sl_component\sl_mbedtls_support\config\ #
+#                            -IC:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\security\sl_component\sl_mbedtls_support\config\preset\ #
+#                            -IC:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\security\sl_component\sl_mbedtls_support\inc\ #
+#                            -IC:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\util\third_party\mbedtls\include\ #
+#                            -IC:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\util\third_party\mbedtls\library\ #
+#                            -IC:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\emdrv\nvm3\inc\ #
+#                            -IC:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\peripheral\inc\ #
+#                            -IC:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\security\sl_component\sl_psa_driver\inc\ #
+#                            -IC:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\radio\rail_lib\common\ #
+#                            -IC:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\radio\rail_lib\protocol\ble\ #
+#                            -IC:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\radio\rail_lib\protocol\ieee802154\ #
+#                            -IC:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\radio\rail_lib\protocol\wmbus\ #
+#                            -IC:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\radio\rail_lib\protocol\zwave\ #
+#                            -IC:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\radio\rail_lib\chip\efr32\efr32xg2x\ #
+#                            -IC:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\radio\rail_lib\protocol\sidewalk\ #
+#                            -IC:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\radio\rail_lib\plugin\pa-conversions\ #
+#                            -IC:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\radio\rail_lib\plugin\pa-conversions\efr32xg28\ #
+#                            -IC:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\radio\rail_lib\plugin\rail_util_pti\ #
+#                            -IC:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\security\sl_component\se_manager\inc\ #
+#                            -IC:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\security\sl_component\se_manager\src\ #
+#                            -IC:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\util\third_party\segger\systemview\SEGGER\ #
+#                            -IC:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\util\silicon_labs\silabs_core\memory_manager\ #
+#                            -IC:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\common\toolchain\inc\ #
+#                            -IC:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\service\system\inc\ #
+#                            -IC:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\app\wisun\component\ns_list\ #
+#                            -IC:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\app\wisun\component\trace_util\ #
+#                            -IC:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\app\wisun\component\trace_util\nanostack\nanostack-libservice\mbed-client-libservice\ #
+#                            -IC:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\service\sleeptimer\inc\ #
+#                            -IC:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\protocol\wisun\stack\inc\ #
+#                            -IC:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\protocol\wisun\app\wisun_rcp\ #
+#                            -IC:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\protocol\wisun\stack\inc\socket\ #
+#                            -IC:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\protocol\wisun\stack\src\) #
+#                            -y                                               #
+#                            C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\ewarm-iar\obj\non_secure_2552712700769462760.dir\portasm.o.iar_deps #
+#                                                                             #
+###############################################################################
+
+    1                           /*********************************************
+                                ******************************//**
+    2                            * # License
+    3                            *
+    4                            * The licensor of this software is Silicon
+                                 Laboratories Inc. Your use of this
+    5                            * software is governed by the terms of
+                                 Silicon Labs Master Software License
+    6                            * Agreement (MSLA) available at
+    7                            * www.silabs.com/about-us/legal/master-softwa
+                                re-license-agreement. This
+    8                            * software is Third Party Software licensed
+                                 by Silicon Labs from a third party
+    9                            * and is governed by the sections of the MSLA
+                                 applicable to Third Party
+   10                            * Software and the additional terms set forth
+                                 below.
+   11                            *
+   12                            *********************************************
+                                *********************************/
+   13                           
+   14                           /*
+   15                            * FreeRTOS Kernel V10.4.3
+   16                            * Copyright (C) 2020 Amazon.com, Inc. or its
+                                 affiliates.  All Rights Reserved.
+   17                            *
+   18                            * Permission is hereby granted, free of
+                                 charge, to any person obtaining a copy
+                                 of
+   19                            * this software and associated documentation
+                                 files (the "Software"), to deal in
+   20                            * the Software without restriction, including
+                                 without limitation the rights to
+   21                            * use, copy, modify, merge, publish,
+                                 distribute, sublicense, and/or sell copies
+                                 of
+   22                            * the Software, and to permit persons to whom
+                                 the Software is furnished to do so,
+   23                            * subject to the following conditions:
+   24                            *
+   25                            * The above copyright notice and this
+                                 permission notice shall be included in
+                                 all
+   26                            * copies or substantial portions of the
+                                 Software.
+   27                            *
+   28                            * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT
+                                 WARRANTY OF ANY KIND, EXPRESS OR
+   29                            * IMPLIED, INCLUDING BUT NOT LIMITED TO THE
+                                 WARRANTIES OF MERCHANTABILITY, FITNESS
+   30                            * FOR A PARTICULAR PURPOSE AND NONINFRINGEMEN
+                                T. IN NO EVENT SHALL THE AUTHORS OR
+   31                            * COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM,
+                                 DAMAGES OR OTHER LIABILITY, WHETHER
+   32                            * IN AN ACTION OF CONTRACT, TORT OR
+                                 OTHERWISE, ARISING FROM, OUT OF OR IN
+   33                            * CONNECTION WITH THE SOFTWARE OR THE USE OR
+                                 OTHER DEALINGS IN THE SOFTWARE.
+   34                            *
+   35                            * https://www.FreeRTOS.org
+   36                            * https://github.com/FreeRTOS
+   37                            *
+   38                            * 1 tab == 4 spaces!
+   39                            */
+   40                           /* Including FreeRTOSConfig.h here will cause
+                                 build errors if the header file
+   41                           contains code not understood by the assembler
+                                 - for example the 'extern' keyword.
+   42                           To avoid errors place any such code inside a
+                                 #ifdef __ICCARM__/#endif block so
+   43                           the code is included in C files but excluded
+                                 by the preprocessor in assembly
+   44                           files (__ICCARM__ is defined by the IAR C
+                                 compiler but not by the IAR assembler.
+                                 */
+   45                           #include "FreeRTOSConfig.h"
+   46                           
+   47                             EXTERN pxCurrentTCB
+   48                             EXTERN vTaskSwitchContext
+   49                             EXTERN vPortSVCHandler_C
+   50                           
+   51                             PUBLIC xIsPrivileged
+   52                             PUBLIC vResetPrivilege
+   53                             PUBLIC vRestoreContextOfFirstTask
+   54                             PUBLIC vRaisePrivilege
+   55                             PUBLIC vStartFirstTask
+   56                             PUBLIC ulSetInterruptMask
+   57                             PUBLIC vClearInterruptMask
+   58                             PUBLIC PendSV_Handler
+   59                             PUBLIC SVC_Handler
+   60                           /*--------------------------------------------
+                                ---------------*/
+   61                           
+   62                           /*---------------- Unprivileged Functions
+                                 -------------------*/
+   63                           
+   64                           /*--------------------------------------------
+                                ---------------*/
+   65                           
+   66                             SECTION .text:CODE:NOROOT(2)
+   67                             THUMB
+   68                           /*--------------------------------------------
+                                ---------------*/
+   69                           
+   70                           xIsPrivileged:
+   71    00000000 EFF31480        mrs r0, control             /* r0 = CONTROL.
+                                            */
+   72    00000004 10F0010F        tst r0, #1                /* Perform r0 & 1
+                                            (bitwise AND) and update the
+                                            conditions flag. */
+   73    00000008 14BF            ite ne
+   74    0000000A 0020            movne r0, #0              /* CONTROL[0]!=0.
+                                              Return false to indicate that the
+                                              processor is not privileged.
+                                              */
+   75    0000000C 0120            moveq r0, #1              /* CONTROL[0]==0.
+                                              Return true to indicate that the
+                                              processor is not privileged.
+                                              */
+   76    0000000E 7047            bx lr                 /* Return. */
+   77                           /*--------------------------------------------
+                                ---------------*/
+   78                           
+   79                           vResetPrivilege:
+   80    00000010 EFF31480        mrs r0, control             /* r0 = CONTROL.
+                                            */
+   81    00000014 40F00100        orr r0, r0, #1              /* r0 = r0 | 1.
+                                                */
+   82    00000018 80F31488        msr control, r0             /* CONTROL = r0.
+                                                 */
+   83    0000001C 7047            bx lr                 /* Return to the
+                                       caller. */
+   84                           /*--------------------------------------------
+                                ---------------*/
+   85                           
+   86                           /*----------------- Privileged Functions
+                                 --------------------*/
+   87                           
+   88                           /*--------------------------------------------
+                                ---------------*/
+   89                           
+   90                             SECTION privileged_functions:CODE:NOROOT(2)
+   91                             THUMB
+   92                           /*--------------------------------------------
+                                ---------------*/
+   93                           
+   94                           vRestoreContextOfFirstTask:
+   95    00000000 364A            ldr  r2, =pxCurrentTCB          /* Read the
+                                             location of pxCurrentTCB i.e. &(
+                                             pxCurrentTCB ). */
+   96    00000002 1168            ldr  r1, [r2]             /* Read pxCurrentTC
+                                            B. */
+   97    00000004 0868            ldr  r0, [r1]             /* Read top of
+                                             stack from TCB - The first item in
+                                             pxCurrentTCB is the task top of
+                                             stack. */
+   98                           
+   99                           #if ( configENABLE_MPU == 1 )
+  123                           #endif /* configENABLE_MPU */
+  124                           
+  125                           #if ( configENABLE_MPU == 1 )
+  135                           #else /* configENABLE_MPU */
+  136    00000006 06C8            ldm  r0!, {r1-r2}           /* Read from
+                                              stack - r1 = PSPLIM and r2 =
+                                              EXC_RETURN. */
+  137    00000008 81F30B88        msr  psplim, r1             /* Set this
+                                                 task's PSPLIM value.
+                                                 */
+  138    0000000C 0221            movs r1, #2               /* r1 = 2.
+                                             */
+  139    0000000E 81F31488        msr  CONTROL, r1            /* Switch to use
+                                                  PSP in the thread mode.
+                                                  */
+  140    00000012 2030            adds r0, #32              /* Discard
+                                             everything up to r0. */
+  141    00000014 80F30988        msr  psp, r0              /* This is now the
+                                              new top of stack to use in the
+                                              task. */
+  142    00000018 BFF36F8F        isb
+  143    0000001C 4FF00000        mov  r0, #0
+  144    00000020 80F31188        msr  basepri, r0            /* Ensure that
+                                                  interrupts are enabled when
+                                                  the first task starts.
+                                                  */
+  145    00000024 1047            bx   r2                 /* Finally, branch to
+                                         EXC_RETURN. */
+  146                           #endif /* configENABLE_MPU */
+  147                           /*--------------------------------------------
+                                ---------------*/
+  148                           
+  149                           vRaisePrivilege:
+  150    00000026 EFF31480        mrs  r0, control            /* Read the
+                                             CONTROL register. */
+  151    0000002A 20F00100        bic r0, r0, #1              /* Clear the bit
+                                                0. */
+  152    0000002E 80F31488        msr  control, r0            /* Write back the
+                                                  new CONTROL value. */
+  153    00000032 7047            bx lr                 /* Return to the
+                                       caller. */
+  154                           /*--------------------------------------------
+                                ---------------*/
+  155                           
+  156                           vStartFirstTask:
+  157    00000034 2A48            ldr r0, =0xe000ed08           /* Use the NVIC
+                                            offset register to locate the
+                                            stack. */
+  158    00000036 0068            ldr r0, [r0]              /* Read the VTOR
+                                            register which gives the address of
+                                            vector table. */
+  159    00000038 0068            ldr r0, [r0]              /* The first entry
+                                            in vector table is stack pointer.
+                                            */
+  160    0000003A 80F30888        msr msp, r0               /* Set the MSP back
+                                             to the start of the stack.
+                                             */
+  161    0000003E 62B6            cpsie i                 /* Globally enable
+                                                           interrupts.
+                                                           */
+  162    00000040 61B6            cpsie f
+  163    00000042 BFF34F8F        dsb
+  164    00000046 BFF36F8F        isb
+  165    0000004A 02DF            svc 2                 /* System call to start
+                                                         the first task.
+                                                         portSVC_START_SCHEDULE
+                                                        R = 2. */
+  166                           /*--------------------------------------------
+                                ---------------*/
+  167                           
+  168                           ulSetInterruptMask:
+  169    0000004C EFF31180        mrs r0, basepri             /* r0 = basepri.
+                                            Return original basepri value.
+                                            */
+  170    00000050 4FF03001        mov r1, #configMAX_SYSCALL_INTERRUPT_PRIORITY
+  171    00000054 81F31188        msr basepri, r1             /* Disable
+                                                 interrupts upto configMAX_SYSC
+                                                ALL_INTERRUPT_PRIORITY.
+                                                 */
+  172    00000058 BFF34F8F        dsb
+  173    0000005C BFF36F8F        isb
+  174    00000060 7047            bx lr                 /* Return. */
+  175                           /*--------------------------------------------
+                                ---------------*/
+  176                           
+  177                           vClearInterruptMask:
+  178    00000062 80F31188        msr basepri, r0             /* basepri =
+                                                 ulMask. */
+  179    00000066 BFF34F8F        dsb
+  180    0000006A BFF36F8F        isb
+  181    0000006E 7047            bx lr                 /* Return. */
+  182                           /*--------------------------------------------
+                                ---------------*/
+  183                           
+  184                           PendSV_Handler:
+  185    00000070 EFF30980        mrs r0, psp               /* Read PSP in r0.
+                                            */
+  186                           #if ( configENABLE_FPU == 1 )
+  187    00000074 1EF0100F        tst lr, #0x10             /* Test Bit[4] in
+                                            LR. Bit[4] of EXC_RETURN is 0 if
+                                            the FPU is in use. */
+  188    00000078 08BF            it eq
+  189    0000007A 20ED108A        vstmdbeq r0!, {s16-s31}         /* Store the
+                                                  FPU registers which are not
+                                                  saved automatically.
+                                                  */
+  190                           #endif /* configENABLE_FPU */
+  191                           #if ( configENABLE_MPU == 1 )
+  196                           #else /* configENABLE_MPU */
+  197    0000007E EFF30B82        mrs r2, psplim              /* r2 = PSPLIM.
+                                            */
+  198    00000082 7346            mov r3, lr                /* r3 = LR/EXC_RETU
+                                           RN. */
+  199    00000084 20E9FC0F        stmdb r0!, {r2-r11}           /* Store on the
+                                               stack - PSPLIM, LR and registers
+                                               that are not automatically.
+                                               */
+  200                           #endif /* configENABLE_MPU */
+  201                           
+  202    00000088 144A            ldr r2, =pxCurrentTCB         /* Read the
+                                            location of pxCurrentTCB i.e. &(
+                                            pxCurrentTCB ). */
+  203    0000008A 1168            ldr r1, [r2]              /* Read pxCurrentTC
+                                           B. */
+  204    0000008C 0860            str r0, [r1]              /* Save the new top
+                                            of stack in TCB. */
+  205                           
+  206    0000008E 4FF03000        mov r0, #configMAX_SYSCALL_INTERRUPT_PRIORITY
+  207    00000092 80F31188        msr basepri, r0             /* Disable
+                                                 interrupts upto configMAX_SYSC
+                                                ALL_INTERRUPT_PRIORITY.
+                                                 */
+  208    00000096 BFF34F8F        dsb
+  209    0000009A BFF36F8F        isb
+  210    0000009E ........        bl vTaskSwitchContext
+  211    000000A2 4FF00000        mov r0, #0                /* r0 = 0.
+                                            */
+  212    000000A6 80F31188        msr basepri, r0             /* Enable
+                                                 interrupts. */
+  213                           
+  214    000000AA 0C4A            ldr r2, =pxCurrentTCB         /* Read the
+                                            location of pxCurrentTCB i.e. &(
+                                            pxCurrentTCB ). */
+  215    000000AC 1168            ldr r1, [r2]              /* Read pxCurrentTC
+                                           B. */
+  216    000000AE 0868            ldr r0, [r1]              /* The first item
+                                            in pxCurrentTCB is the task top of
+                                            stack. r0 now points to the top of
+                                            stack. */
+  217                           
+  218                           #if ( configENABLE_MPU == 1 )
+  242                           #endif /* configENABLE_MPU */
+  243                           
+  244                           #if ( configENABLE_MPU == 1 )
+  246                           #else /* configENABLE_MPU */
+  247    000000B0 B0E8FC0F        ldmia r0!, {r2-r11}           /* Read from
+                                               stack - r2 = PSPLIM, r3 = LR and
+                                               r4-r11 restored. */
+  248                           #endif /* configENABLE_MPU */
+  249                           
+  250                           #if ( configENABLE_FPU == 1 )
+  251    000000B4 13F0100F        tst r3, #0x10             /* Test Bit[4] in
+                                            LR. Bit[4] of EXC_RETURN is 0 if
+                                            the FPU is in use. */
+  252    000000B8 08BF            it eq
+  253    000000BA B0EC108A        vldmiaeq r0!, {s16-s31}         /* Restore
+                                                  the FPU registers which are
+                                                  not restored automatically.
+                                                  */
+  254                           #endif /* configENABLE_FPU */
+  255                           
+  256                            #if ( configENABLE_MPU == 1 )
+  259                           #else /* configENABLE_MPU */
+  260    000000BE 82F30B88        msr psplim, r2              /* Restore the
+                                                PSPLIM register value for the
+                                                task. */
+  261                           #endif /* configENABLE_MPU */
+  262    000000C2 80F30988        msr psp, r0               /* Remember the new
+                                             top of stack for the task.
+                                             */
+  263    000000C6 1847            bx r3
+  264                           /*--------------------------------------------
+                                ---------------*/
+  265                           
+  266                           SVC_Handler:
+  267    000000C8 1EF0040F        tst lr, #4
+  268    000000CC 0CBF            ite eq
+  269    000000CE EFF30880        mrseq r0, msp
+  270    000000D2 EFF30980        mrsne r0, psp
+  271    000000D6 ........        b vPortSVCHandler_C
+  272                           /*--------------------------------------------
+                                ---------------*/
+  273                           
+  273.1                                  TABLE.32
+  273.2  000000DC ........              Reference on line 95,202,214
+  273.3  000000E0 08ED00E0              Reference on line 157
+  274                             END
+##############################
+#           CRC:0            #
+#        Errors:   0         #
+#        Warnings: 0         #
+#         Bytes: 258         #
+##############################
+
+
+
+

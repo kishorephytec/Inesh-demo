@@ -1,0 +1,1592 @@
+###############################################################################
+#
+# IAR ANSI C/C++ Compiler V9.50.2.385/W64 for ARM         27/Nov/2024  12:17:57
+# Copyright 1999-2024 IAR Systems AB.
+#
+#    Cpu mode          =  thumb
+#    Endian            =  little
+#    Source file       =
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\peripheral\src\peripheral_sysrtc.c
+#    Command line      =
+#        -f
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\ewarm-iar\obj\src_6463605736132958298.dir\peripheral_sysrtc.o.rsp
+#        (C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\peripheral\src\peripheral_sysrtc.c
+#        -D EFR32FG28B322F1024IM48=1 -D
+#        configNUM_SDK_THREAD_LOCAL_STORAGE_POINTERS=2 -D
+#        SL_COMPONENT_CATALOG_PRESENT=1 -D
+#        MBEDTLS_CONFIG_FILE=<sl_mbedtls_config.h> -D
+#        MBEDTLS_PSA_CRYPTO_CONFIG_FILE=<psa_crypto_config.h> -D
+#        SL_RAIL_LIB_MULTIPROTOCOL_SUPPORT=0 -D
+#        SL_RAIL_UTIL_PA_CONFIG_HEADER=<sl_rail_util_pa_config.h> -D
+#        RTT_USE_ASM=0 -D MBED_CONF_MBED_TRACE_ENABLE=1 -D
+#        MBED_CONF_NANOSTACK_CONFIGURATION=ws_router -D
+#        MBED_TRACE_MAX_LEVEL=TRACE_ACTIVE_LEVEL_ALL -D DEBUG_EFM_USER=1 -D
+#        HAVE_LFN=1 -D HAVE_LFN_PARENT=1 -lC
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\ewarm-iar\lst\src_6463605736132958298.dir
+#        --diag_suppress Pa050 -o
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\ewarm-iar\obj\src_6463605736132958298.dir
+#        --debug --endian=little --cpu=Cortex-M33 --cmse --cmse -e
+#        --fpu=VFPv5_sp --dlib_config "C:\Program Files\IAR Systems\Embedded
+#        Workbench 9.2\arm\inc\c\DLib_Config_Normal.h" -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\peripheral\src\
+#        -I C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\autogen\ -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\config\ -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\config\rail\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\Device\SiliconLabs\EFR32FG28\Include\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\common\inc\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\CMSIS\Core\Include\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\CMSIS\RTOS2\Include\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\service\device_init\inc\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\emdrv\dmadrv\inc\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\emdrv\common\inc\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\emlib\inc\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\util\third_party\freertos\cmsis\Include\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\util\third_party\freertos\kernel\include\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\util\third_party\freertos\kernel\portable\IAR\ARM_CM33_NTZ\non_secure\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\service\iostream\inc\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\security\sl_component\sl_mbedtls_support\config\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\security\sl_component\sl_mbedtls_support\config\preset\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\security\sl_component\sl_mbedtls_support\inc\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\util\third_party\mbedtls\include\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\util\third_party\mbedtls\library\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\emdrv\nvm3\inc\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\peripheral\inc\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\security\sl_component\sl_psa_driver\inc\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\radio\rail_lib\common\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\radio\rail_lib\protocol\ble\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\radio\rail_lib\protocol\ieee802154\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\radio\rail_lib\protocol\wmbus\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\radio\rail_lib\protocol\zwave\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\radio\rail_lib\chip\efr32\efr32xg2x\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\radio\rail_lib\protocol\sidewalk\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\radio\rail_lib\plugin\pa-conversions\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\radio\rail_lib\plugin\pa-conversions\efr32xg28\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\radio\rail_lib\plugin\rail_util_pti\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\security\sl_component\se_manager\inc\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\security\sl_component\se_manager\src\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\util\third_party\segger\systemview\SEGGER\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\util\silicon_labs\silabs_core\memory_manager\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\common\toolchain\inc\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\service\system\inc\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\app\wisun\component\ns_list\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\app\wisun\component\trace_util\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\app\wisun\component\trace_util\nanostack\nanostack-libservice\mbed-client-libservice\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\service\sleeptimer\inc\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\protocol\wisun\stack\inc\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\protocol\wisun\app\wisun_rcp\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\protocol\wisun\stack\inc\socket\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\protocol\wisun\stack\src\
+#        -Ohz --use_c++_inline) --dependencies=n
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\ewarm-iar\obj\src_6463605736132958298.dir\peripheral_sysrtc.o.iar_deps
+#    Locale            =  C
+#    List file         =
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\ewarm-iar\lst\src_6463605736132958298.dir\peripheral_sysrtc.lst
+#    Object file       =
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\ewarm-iar\obj\src_6463605736132958298.dir\peripheral_sysrtc.o
+#    Runtime model:       
+#      __CPP_Runtime   =  1
+#      __SystemLibrary =  DLib
+#      __dlib_version  =  6
+#
+###############################################################################
+
+C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\peripheral\src\peripheral_sysrtc.c
+      1          /***************************************************************************//**
+      2           * @file
+      3           * @brief System Real Time Counter (SYSRTC) Peripheral API
+      4           *******************************************************************************
+      5           * # License
+      6           * <b>Copyright 2020 Silicon Laboratories Inc. www.silabs.com</b>
+      7           *******************************************************************************
+      8           *
+      9           * SPDX-License-Identifier: Zlib
+     10           *
+     11           * The licensor of this software is Silicon Laboratories Inc.
+     12           *
+     13           * This software is provided 'as-is', without any express or implied
+     14           * warranty. In no event will the authors be held liable for any damages
+     15           * arising from the use of this software.
+     16           *
+     17           * Permission is granted to anyone to use this software for any purpose,
+     18           * including commercial applications, and to alter it and redistribute it
+     19           * freely, subject to the following restrictions:
+     20           *
+     21           * 1. The origin of this software must not be misrepresented; you must not
+     22           *    claim that you wrote the original software. If you use this software
+     23           *    in a product, an acknowledgment in the product documentation would be
+     24           *    appreciated but is not required.
+     25           * 2. Altered source versions must be plainly marked as such, and must not be
+     26           *    misrepresented as being the original software.
+     27           * 3. This notice may not be removed or altered from any source distribution.
+     28           *
+     29           ******************************************************************************/
+     30          
+     31          #include "peripheral_sysrtc.h"
+
+   \                                 In section .text, align 4
+   \   __vfp void sl_hal_sysrtc_wait_ready(void)
+   \                     sl_hal_sysrtc_wait_ready: (+1)
+   \        0x0   0x4905             LDR.N    R1,??sl_hal_sysrtc_wait_ready_0
+   \                     ??sl_hal_sysrtc_wait_ready_1: (+1)
+   \        0x2   0x6848             LDR      R0,[R1, #+4]
+   \        0x4   0x0782             LSLS     R2,R0,#+30
+   \        0x6   0xD4FC             BMI.N    ??sl_hal_sysrtc_wait_ready_1
+   \        0x8   0x6808             LDR      R0,[R1, #+0]
+   \        0xA   0x0782             LSLS     R2,R0,#+30
+   \        0xC   0xD4F9             BMI.N    ??sl_hal_sysrtc_wait_ready_1
+   \        0xE   0x6988             LDR      R0,[R1, #+24]
+   \       0x10   0x2800             CMP      R0,#+0
+   \       0x12   0xD1F6             BNE.N    ??sl_hal_sysrtc_wait_ready_1
+   \       0x14   0x4770             BX       LR
+   \       0x16   0xBF00             Nop
+   \                     ??sl_hal_sysrtc_wait_ready_0:
+   \       0x18   0x500A'8004        DC32     0x500a8004
+     32          #if defined(SYSRTC_COUNT) && (SYSRTC_COUNT > 0)
+     33          #include "sl_assert.h"
+     34          #include "em_bus.h"
+     35          #include "stddef.h"
+     36          
+     37          /***************************************************************************//**
+     38           * @addtogroup sysrtc SYSRTC - System Real Time Counter
+     39           * @brief System Real Time Counter (SYSRTC) Peripheral API
+     40           * @details
+     41           *  This module contains functions to control the SYSRTC peripheral of Silicon
+     42           *  Labs 32-bit MCUs and SoCs. The SYSRTC ensures timekeeping in low energy modes.
+     43           * @{
+     44           ******************************************************************************/
+     45          
+     46          /*******************************************************************************
+     47           **************************   GLOBAL FUNCTIONS   *******************************
+     48           ******************************************************************************/
+     49          
+     50          extern __INLINE void sl_hal_sysrtc_wait_sync(void);
+     51          extern __INLINE void sl_hal_sysrtc_wait_ready(void);
+     52          extern __INLINE void sl_hal_sysrtc_start(void);
+     53          extern __INLINE void sl_hal_sysrtc_stop(void);
+     54          extern __INLINE uint32_t sl_hal_sysrtc_get_status(void);
+     55          extern __INLINE void sl_hal_sysrtc_lock(void);
+     56          extern __INLINE void sl_hal_sysrtc_unlock(void);
+     57          extern __INLINE uint32_t sl_hal_sysrtc_get_counter(void);
+     58          extern __INLINE void sl_hal_sysrtc_set_counter(uint32_t value);
+     59          
+     60          /***************************************************************************//**
+     61           * Initializes SYSRTC module.
+     62           ******************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+     63          void sl_hal_sysrtc_init(const sl_hal_sysrtc_config_t *p_config)
+     64          {
+   \                     sl_hal_sysrtc_init: (+1)
+   \        0x0   0xB538             PUSH     {R3-R5,LR}
+   \        0x2   0x4604             MOV      R4,R0
+     65            // Wait to be ready
+     66            sl_hal_sysrtc_wait_ready();
+   \        0x4   0x.... 0x....      BL       sl_hal_sysrtc_wait_ready
+     67          
+     68            if (SYSRTC0->EN == SYSRTC_EN_EN) {
+   \        0x8   0x....             LDR.N    R5,??DataTable15
+   \        0xA   0x6828             LDR      R0,[R5, #+0]
+   \        0xC   0x2801             CMP      R0,#+1
+   \        0xE   0xD103             BNE.N    ??sl_hal_sysrtc_init_0
+     69              // Disable the module
+     70              sl_hal_sysrtc_disable();
+   \       0x10   0x.... 0x....      BL       sl_hal_sysrtc_disable
+     71              // Wait to be ready
+     72              sl_hal_sysrtc_wait_ready();
+   \       0x14   0x.... 0x....      BL       sl_hal_sysrtc_wait_ready
+     73            }
+     74          
+     75            // Set configuration
+     76            SYSRTC0->CFG = (p_config->enable_debug_run ? 1UL : 0UL) << _SYSRTC_CFG_DEBUGRUN_SHIFT;
+   \                     ??sl_hal_sysrtc_init_0: (+1)
+   \       0x18   0x7820             LDRB     R0,[R4, #+0]
+   \       0x1A   0xB100             CBZ.N    R0,??sl_hal_sysrtc_init_1
+   \       0x1C   0x2001             MOVS     R0,#+1
+   \                     ??sl_hal_sysrtc_init_1: (+1)
+   \       0x1E   0x60A8             STR      R0,[R5, #+8]
+     77          }
+   \       0x20   0xBD31             POP      {R0,R4,R5,PC}
+     78          
+     79          /***************************************************************************//**
+     80           * Enables SYSRTC counting.
+     81           ******************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+     82          void sl_hal_sysrtc_enable(void)
+     83          {
+   \                     sl_hal_sysrtc_enable: (+1)
+   \        0x0   0xB580             PUSH     {R7,LR}
+     84            // Wait if disabling
+     85            sl_hal_sysrtc_wait_ready();
+   \        0x2   0x.... 0x....      BL       sl_hal_sysrtc_wait_ready
+     86          
+     87            // Enable SYSRTC module
+     88            SYSRTC0->EN_SET = SYSRTC_EN_EN;
+   \        0x6   0x2301             MOVS     R3,#+1
+   \        0x8   0x....             LDR.N    R2,??DataTable15_1
+   \        0xA   0x6013             STR      R3,[R2, #+0]
+     89          
+     90            // Start counter
+     91            SYSRTC0->CMD = SYSRTC_CMD_START;
+   \        0xC   0x2101             MOVS     R1,#+1
+   \        0xE   0x....             LDR.N    R0,??DataTable15_2
+   \       0x10   0x6001             STR      R1,[R0, #+0]
+     92          }
+   \       0x12   0xBD01             POP      {R0,PC}
+     93          
+     94          /***************************************************************************//**
+     95           * Disables SYSRTC counting.
+     96           ******************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+     97          void sl_hal_sysrtc_disable(void)
+     98          {
+     99            if (SYSRTC0->EN != SYSRTC_EN_EN) {
+   \                     sl_hal_sysrtc_disable: (+1)
+   \        0x0   0x....             LDR.N    R1,??DataTable15
+   \        0x2   0x680A             LDR      R2,[R1, #+0]
+   \        0x4   0x2A01             CMP      R2,#+1
+   \        0x6   0xD10A             BNE.N    ??sl_hal_sysrtc_disable_0
+    100              return;
+   \                     ??sl_hal_sysrtc_disable_1: (+1)
+   \        0x8   0x6808             LDR      R0,[R1, #+0]
+   \        0xA   0x07C2             LSLS     R2,R0,#+31
+   \        0xC   0xD502             BPL.N    ??sl_hal_sysrtc_disable_2
+   \        0xE   0x6988             LDR      R0,[R1, #+24]
+   \       0x10   0x2800             CMP      R0,#+0
+   \       0x12   0xD1F9             BNE.N    ??sl_hal_sysrtc_disable_1
+   \                     ??sl_hal_sysrtc_disable_2: (+1)
+   \       0x14   0x2202             MOVS     R2,#+2
+   \       0x16   0x60CA             STR      R2,[R1, #+12]
+    101            }
+    102          
+    103            // Stop counter
+    104            sl_hal_sysrtc_stop();
+    105          
+    106            // Disable module
+    107            SYSRTC0->EN_CLR = SYSRTC_EN_EN;
+   \       0x18   0x2101             MOVS     R1,#+1
+   \       0x1A   0x....             LDR.N    R0,??DataTable15_3
+   \       0x1C   0x6001             STR      R1,[R0, #+0]
+    108          }
+   \                     ??sl_hal_sysrtc_disable_0: (+1)
+   \       0x1E   0x4770             BX       LR
+    109          
+    110          /***************************************************************************//**
+    111           * Restores SYSRTC to its reset state.
+    112           ******************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+    113          void sl_hal_sysrtc_reset(void)
+    114          {
+    115            // Reset timer
+    116            SYSRTC0->SWRST = SYSRTC_SWRST_SWRST;
+   \                     sl_hal_sysrtc_reset: (+1)
+   \        0x0   0x2101             MOVS     R1,#+1
+   \        0x2   0x....             LDR.N    R0,??DataTable15_4
+   \        0x4   0x6001             STR      R1,[R0, #+0]
+    117          }
+   \        0x6   0x4770             BX       LR
+    118          
+    119          /***************************************************************************//**
+    120           * Initializes the selected SYSRTC group.
+    121           ******************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+    122          void sl_hal_sysrtc_init_group(uint8_t group_number,
+    123                                        sl_hal_sysrtc_group_config_t const *p_group_config)
+    124          {
+    125            uint32_t temp = 0;
+    126          
+    127            EFM_ASSERT(SYSRTC_GROUP_VALID(group_number));
+   \                     sl_hal_sysrtc_init_group: (+1)
+   \        0x0   0xB108             CBZ.N    R0,??sl_hal_sysrtc_init_group_0
+   \        0x2   0x217F             MOVS     R1,#+127
+   \        0x4   0x....             B.N      ?Subroutine0
+    128          
+    129            switch (group_number) {
+    130              case 0:
+    131                temp = ((p_group_config->compare_channel0_enable ? 1UL : 0UL) << _SYSRTC_GRP0_CTRL_CMP0EN_SHIFT);
+   \                     ??sl_hal_sysrtc_init_group_0: (+1)
+   \        0x6   0x780A             LDRB     R2,[R1, #+0]
+   \        0x8   0xB102             CBZ.N    R2,??sl_hal_sysrtc_init_group_1
+   \        0xA   0x2201             MOVS     R2,#+1
+    132                if (p_group_config->p_compare_channel0_config != NULL) {
+   \                     ??sl_hal_sysrtc_init_group_1: (+1)
+   \        0xC   0x6848             LDR      R0,[R1, #+4]
+   \        0xE   0xB110             CBZ.N    R0,??sl_hal_sysrtc_init_group_2
+    133                  temp |= ((uint32_t)p_group_config->p_compare_channel0_config->compare_match_out_action << _SYSRTC_GRP0_CTRL_CMP0CMOA_SHIFT);
+   \       0x10   0x7800             LDRB     R0,[R0, #+0]
+   \       0x12   0xEA42 0x02C0      ORR      R2,R2,R0, LSL #+3
+    134                }
+    135          
+    136          #ifdef SYSRTC_GRP0_CTRL_CMP1EN
+    137                temp |= ((p_group_config->compare_channel1_enable ? 1UL : 0UL) << _SYSRTC_GRP0_CTRL_CMP1EN_SHIFT);
+   \                     ??sl_hal_sysrtc_init_group_2: (+1)
+   \       0x16   0x7848             LDRB     R0,[R1, #+1]
+   \       0x18   0xB108             CBZ.N    R0,??sl_hal_sysrtc_init_group_3
+   \       0x1A   0xF042 0x0202      ORR      R2,R2,#0x2
+    138                if (p_group_config->p_compare_channel1_config != NULL) {
+   \                     ??sl_hal_sysrtc_init_group_3: (+1)
+   \       0x1E   0x6888             LDR      R0,[R1, #+8]
+   \       0x20   0xB110             CBZ.N    R0,??sl_hal_sysrtc_init_group_4
+    139                  temp |= ((uint32_t)p_group_config->p_compare_channel1_config->compare_match_out_action << _SYSRTC_GRP0_CTRL_CMP1CMOA_SHIFT);
+   \       0x22   0x7800             LDRB     R0,[R0, #+0]
+   \       0x24   0xEA42 0x1280      ORR      R2,R2,R0, LSL #+6
+    140                }
+    141          #endif
+    142          #ifdef SYSRTC_GRP0_CTRL_CAP0EN
+    143                temp |= ((p_group_config->capture_channel0_enable ? 1UL : 0UL) << _SYSRTC_GRP0_CTRL_CAP0EN_SHIFT);
+   \                     ??sl_hal_sysrtc_init_group_4: (+1)
+   \       0x28   0x7888             LDRB     R0,[R1, #+2]
+   \       0x2A   0xB108             CBZ.N    R0,??sl_hal_sysrtc_init_group_5
+   \       0x2C   0xF042 0x0204      ORR      R2,R2,#0x4
+    144                if (p_group_config->p_capture_channel0_config != NULL) {
+   \                     ??sl_hal_sysrtc_init_group_5: (+1)
+   \       0x30   0x68C8             LDR      R0,[R1, #+12]
+   \       0x32   0xB110             CBZ.N    R0,??sl_hal_sysrtc_init_group_6
+    145                  temp |= ((uint32_t)p_group_config->p_capture_channel0_config->capture_input_edge << _SYSRTC_GRP0_CTRL_CAP0EDGE_SHIFT);
+   \       0x34   0x7801             LDRB     R1,[R0, #+0]
+   \       0x36   0xEA42 0x2241      ORR      R2,R2,R1, LSL #+9
+    146                }
+    147          #endif
+    148                SYSRTC0->GRP0_CTRL = temp;
+   \                     ??sl_hal_sysrtc_init_group_6: (+1)
+   \       0x3A   0x....             LDR.N    R0,??DataTable15_5
+   \       0x3C   0x6002             STR      R2,[R0, #+0]
+    149                break;
+    150          
+    151          #if SYSRTC_GROUP_NUMBER > 1
+    152              case 1:
+    153                temp = ((p_group_config->compare_channel0_enable ? 1UL : 0UL) << _SYSRTC_GRP1_CTRL_CMP0EN_SHIFT);
+    154                if (p_group_config->p_compare_channel0_config != NULL) {
+    155                  temp |= ((uint32_t)p_group_config->p_compare_channel0_config->compare_match_out_action << _SYSRTC_GRP1_CTRL_CMP0CMOA_SHIFT);
+    156                }
+    157          #ifdef SYSRTC_GRP1_CTRL_CMP1EN
+    158                temp |= ((p_group_config->compare_channel1_enable ? 1UL : 0UL) << _SYSRTC_GRP1_CTRL_CMP1EN_SHIFT);
+    159                if (p_group_config->p_compare_channel1_config != NULL) {
+    160                  temp |= ((uint32_t)p_group_config->p_compare_channel1_config->compare_match_out_action << _SYSRTC_GRP1_CTRL_CMP1CMOA_SHIFT);
+    161                }
+    162          #endif
+    163          #ifdef SYSRTC_GRP1_CTRL_CAP0EN
+    164                temp |= ((p_group_config->capture_channel0_enable ? 1UL : 0UL) << _SYSRTC_GRP1_CTRL_CAP0EN_SHIFT);
+    165                if (p_group_config->p_capture_channel0_config != NULL) {
+    166                  temp |=  ((uint32_t)p_group_config->p_capture_channel0_config->capture_input_edge << _SYSRTC_GRP1_CTRL_CAP0EDGE_SHIFT);
+    167                }
+    168          #endif
+    169                SYSRTC0->GRP1_CTRL = temp;
+    170                break;
+    171          
+    172          #if SYSRTC_GROUP_NUMBER > 2
+    173              case 2:
+    174          //      SYSRTC0->GRP2_CTRL = ((p_group_config->compare_channel0_enable ? 1UL : 0UL) << _SYSRTC_GRP2_CTRL_CMP0EN_SHIFT)
+    175          //                           | ((uint32_t)p_group_config->p_compare_channel0_config->compare_match_out_action << _SYSRTC_GRP2_CTRL_CMP0CMOA_SHIFT);
+    176          #ifdef SYSRTC_GRP2_CTRL_CMP1EN
+    177                SYSRTC0->GRP2_CTRL |= ((p_group_config->compare_channel1_enable ? 1UL : 0UL) << _SYSRTC_GRP2_CTRL_CMP1EN_SHIFT)
+    178                                      | ((uint32_t)p_group_config->p_compare_channel1_config->compare_match_out_action << _SYSRTC_GRP2_CTRL_CMP1CMOA_SHIFT);
+    179          #endif
+    180          #ifdef SYSRTC_GRP2_CTRL_CAP0EN
+    181                SYSRTC0->GRP2_CTRL |= ((p_group_config->capture_channel0_enable ? 1UL : 0UL) << _SYSRTC_GRP2_CTRL_CAP0EN_SHIFT)
+    182                                      | ((uint32_t)p_group_config->p_capture_channel0_config->capture_input_edge << _SYSRTC_GRP2_CTRL_CAP0EDGE_SHIFT);
+    183          #endif
+    184                break;
+    185          
+    186          #if SYSRTC_GROUP_NUMBER > 3
+    187              case 3:
+    188                SYSRTC0->GRP3_CTRL = ((p_group_config->compare_channel0_enable ? 1UL : 0UL) << _SYSRTC_GRP3_CTRL_CMP0EN_SHIFT)
+    189                                     | ((uint32_t)p_group_config->p_compare_channel0_config->compare_match_out_action << _SYSRTC_GRP3_CTRL_CMP0CMOA_SHIFT);
+    190          #ifdef SYSRTC_GRP3_CTRL_CMP1EN
+    191                SYSRTC0->GRP3_CTRL |= ((p_group_config->compare_channel1_enable ? 1UL : 0UL) << _SYSRTC_GRP3_CTRL_CMP1EN_SHIFT)
+    192                                      | ((uint32_t)p_group_config->p_compare_channel1_config->compare_match_out_action << _SYSRTC_GRP3_CTRL_CMP1CMOA_SHIFT);
+    193          #endif
+    194          #ifdef SYSRTC_GRP3_CTRL_CAP0EN
+    195                SYSRTC0->GRP3_CTRL |= ((p_group_config->capture_channel0_enable ? 1UL : 0UL) << _SYSRTC_GRP3_CTRL_CAP0EN_SHIFT)
+    196                                      | ((uint32_t)p_group_config->p_capture_channel0_config->capture_input_edge << _SYSRTC_GRP3_CTRL_CAP0EDGE_SHIFT);
+    197          #endif
+    198                break;
+    199          
+    200          #if SYSRTC_GROUP_NUMBER > 4
+    201              case 4:
+    202                SYSRTC0->GRP4_CTRL = ((p_group_config->compare_channel0_enable ? 1UL : 0UL) << _SYSRTC_GRP4_CTRL_CMP0EN_SHIFT)
+    203                                     | ((uint32_t)p_group_config->p_compare_channel0_config->compare_match_out_action << _SYSRTC_GRP4_CTRL_CMP0CMOA_SHIFT);
+    204          #ifdef SYSRTC_GRP4_CTRL_CMP1EN
+    205                SYSRTC0->GRP4_CTRL |= ((p_group_config->compare_channel1_enable ? 1UL : 0UL) << _SYSRTC_GRP4_CTRL_CMP1EN_SHIFT)
+    206                                      | ((uint32_t)p_group_config->p_compare_channel1_config->compare_match_out_action << _SYSRTC_GRP4_CTRL_CMP1CMOA_SHIFT);
+    207          #endif
+    208          #ifdef SYSRTC_GRP4_CTRL_CAP0EN
+    209                SYSRTC0->GRP4_CTRL |= ((p_group_config->capture_channel0_enable ? 1UL : 0UL) << _SYSRTC_GRP4_CTRL_CAP0EN_SHIFT)
+    210                                      | ((uint32_t)p_group_config->p_capture_channel0_config->capture_input_edge << _SYSRTC_GRP4_CTRL_CAP0EDGE_SHIFT);
+    211          #endif
+    212                break;
+    213          
+    214          #if SYSRTC_GROUP_NUMBER > 5
+    215              case 5:
+    216                SYSRTC0->GRP5_CTRL = ((p_group_config->compare_channel0_enable ? 1UL : 0UL) << _SYSRTC_GRP5_CTRL_CMP0EN_SHIFT)
+    217                                     | ((uint32_t)p_group_config->p_compare_channel0_config->compare_match_out_action << _SYSRTC_GRP5_CTRL_CMP0CMOA_SHIFT);
+    218          #ifdef SYSRTC_GRP5_CTRL_CMP1EN
+    219                SYSRTC0->GRP5_CTRL |= ((p_group_config->compare_channel1_enable ? 1UL : 0UL) << _SYSRTC_GRP5_CTRL_CMP1EN_SHIFT)
+    220                                      | ((uint32_t)p_group_config->p_compare_channel1_config->compare_match_out_action << _SYSRTC_GRP5_CTRL_CMP1CMOA_SHIFT);
+    221          #endif
+    222          #ifdef SYSRTC_GRP5_CTRL_CAP0EN
+    223                SYSRTC0->GRP5_CTRL |= ((p_group_config->capture_channel0_enable ? 1UL : 0UL) << _SYSRTC_GRP5_CTRL_CAP0EN_SHIFT)
+    224                                      | ((uint32_t)p_group_config->p_capture_channel0_config->capture_input_edge << _SYSRTC_GRP5_CTRL_CAP0EDGE_SHIFT);
+    225          #endif
+    226                break;
+    227          
+    228          #if SYSRTC_GROUP_NUMBER > 6
+    229              case 6:
+    230                SYSRTC0->GRP6_CTRL = ((p_group_config->compare_channel0_enable ? 1UL : 0UL) << _SYSRTC_GRP6_CTRL_CMP0EN_SHIFT)
+    231                                     | ((uint32_t)p_group_config->p_compare_channel0_config->compare_match_out_action << _SYSRTC_GRP6_CTRL_CMP0CMOA_SHIFT);
+    232          #ifdef SYSRTC_GRP6_CTRL_CMP1EN
+    233                SYSRTC0->GRP6_CTRL |= ((p_group_config->compare_channel1_enable ? 1UL : 0UL) << _SYSRTC_GRP6_CTRL_CMP1EN_SHIFT)
+    234                                      | ((uint32_t)p_group_config->p_compare_channel1_config->compare_match_out_action << _SYSRTC_GRP6_CTRL_CMP1CMOA_SHIFT);
+    235          #endif
+    236          #ifdef SYSRTC_GRP6_CTRL_CAP0EN
+    237                SYSRTC0->GRP6_CTRL |= ((p_group_config->capture_channel0_enable ? 1UL : 0UL) << _SYSRTC_GRP6_CTRL_CAP0EN_SHIFT)
+    238                                      | ((uint32_t)p_group_config->p_capture_channel0_config->capture_input_edge << _SYSRTC_GRP6_CTRL_CAP0EDGE_SHIFT);
+    239          #endif
+    240                break;
+    241          
+    242          #if SYSRTC_GROUP_NUMBER > 7
+    243              case 7:
+    244                SYSRTC0->GRP7_CTRL = ((p_group_config->compare_channel0_enable ? 1UL : 0UL) << _SYSRTC_GRP7_CTRL_CMP0EN_SHIFT)
+    245                                     | ((uint32_t)p_group_config->p_compare_channel0_config->compare_match_out_action << _SYSRTC_GRP7_CTRL_CMP0CMOA_SHIFT);
+    246          #ifdef SYSRTC_GRP7_CTRL_CMP1EN
+    247                SYSRTC0->GRP7_CTRL |= ((p_group_config->compare_channel1_enable ? 1UL : 0UL) << _SYSRTC_GRP7_CTRL_CMP1EN_SHIFT)
+    248                                      | ((uint32_t)p_group_config->p_compare_channel1_config->compare_match_out_action << _SYSRTC_GRP7_CTRL_CMP1CMOA_SHIFT);
+    249          #endif
+    250          #ifdef SYSRTC_GRP7_CTRL_CAP0EN
+    251                SYSRTC0->GRP7_CTRL |= ((p_group_config->capture_channel0_enable ? 1UL : 0UL) << _SYSRTC_GRP7_CTRL_CAP0EN_SHIFT)
+    252                                      | ((uint32_t)p_group_config->p_capture_channel0_config->capture_input_edge << _SYSRTC_GRP7_CTRL_CAP0EDGE_SHIFT);
+    253          #endif
+    254                break;
+    255          #endif
+    256          #endif
+    257          #endif
+    258          #endif
+    259          #endif
+    260          #endif
+    261          #endif
+    262          
+    263              default:
+    264                EFM_ASSERT(1);
+    265            }
+    266          }
+   \       0x3E   0x4770             BX       LR
+
+   \                                 In section .text, align 2, keep-with-next
+   \                     ?Subroutine0: (+1)
+   \        0x0   0x....             LDR.N    R0,??DataTable15_7
+   \        0x2   0x.... 0x....      B.W      assertEFM
+    267          
+    268          /***************************************************************************//**
+    269           * Enables one or more SYSRTC interrupts for the given group.
+    270           ******************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+    271          void sl_hal_sysrtc_enable_group_interrupts(uint8_t group_number,
+    272                                                     uint32_t flags)
+    273          {
+    274            EFM_ASSERT(SYSRTC_GROUP_VALID(group_number));
+   \                     sl_hal_sysrtc_enable_group_interrupts: (+1)
+   \        0x0   0xB110             CBZ.N    R0,??sl_hal_sysrtc_enable_group_interrupts_0
+   \        0x2   0xF44F 0x7189      MOV      R1,#+274
+   \        0x6   0x....             B.N      ?Subroutine0
+    275          
+    276            switch (group_number) {
+    277              case 0:
+    278                SYSRTC0->GRP0_IEN_SET = flags;
+   \                     ??sl_hal_sysrtc_enable_group_interrupts_0: (+1)
+   \        0x8   0x....             LDR.N    R2,??DataTable15_6
+   \        0xA   0x6011             STR      R1,[R2, #+0]
+    279                break;
+    280          
+    281          #if SYSRTC_GROUP_NUMBER > 1
+    282              case 1:
+    283                SYSRTC0->GRP1_IEN_SET = flags;
+    284                break;
+    285          
+    286          #if SYSRTC_GROUP_NUMBER > 2
+    287              case 2:
+    288                SYSRTC0->GRP2_IEN_SET = flags;
+    289                break;
+    290          
+    291          #if SYSRTC_GROUP_NUMBER > 3
+    292              case 3:
+    293                SYSRTC0->GRP3_IEN_SET = flags;
+    294                break;
+    295          
+    296          #if SYSRTC_GROUP_NUMBER > 4
+    297              case 4:
+    298                SYSRTC0->GRP4_IEN_SET = flags;
+    299                break;
+    300          
+    301          #if SYSRTC_GROUP_NUMBER > 5
+    302              case 5:
+    303                SYSRTC0->GRP5_IEN_SET = flags;
+    304                break;
+    305          
+    306          #if SYSRTC_GROUP_NUMBER > 6
+    307              case 6:
+    308                SYSRTC0->GRP6_IEN_SET = flags;
+    309                break;
+    310          
+    311          #if SYSRTC_GROUP_NUMBER > 7
+    312              case 7:
+    313                SYSRTC0->GRP7_IEN_SET = flags;
+    314                break;
+    315          #endif
+    316          #endif
+    317          #endif
+    318          #endif
+    319          #endif
+    320          #endif
+    321          #endif
+    322          
+    323              default:
+    324                EFM_ASSERT(1);
+    325            }
+    326          }
+   \        0xC   0x4770             BX       LR
+    327          
+    328          /***************************************************************************//**
+    329           * Disables one or more SYSRTC interrupts for the given group.
+    330           ******************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+    331          void sl_hal_sysrtc_disable_group_interrupts(uint8_t group_number,
+    332                                                      uint32_t flags)
+    333          {
+    334            EFM_ASSERT(SYSRTC_GROUP_VALID(group_number));
+   \                     sl_hal_sysrtc_disable_group_interrupts: (+1)
+   \        0x0   0xB110             CBZ.N    R0,??sl_hal_sysrtc_disable_group_interrupts_0
+   \        0x2   0xF44F 0x71A7      MOV      R1,#+334
+   \        0x6   0x....             B.N      ?Subroutine0
+    335          
+    336            switch (group_number) {
+    337              case 0:
+    338                SYSRTC0->GRP0_IEN_CLR = flags;
+   \                     ??sl_hal_sysrtc_disable_group_interrupts_0: (+1)
+   \        0x8   0x....             LDR.N    R2,??DataTable15_8
+   \        0xA   0x6011             STR      R1,[R2, #+0]
+    339                break;
+    340          
+    341          #if SYSRTC_GROUP_NUMBER > 1
+    342              case 1:
+    343                SYSRTC0->GRP1_IEN_CLR = flags;
+    344                break;
+    345          
+    346          #if SYSRTC_GROUP_NUMBER > 2
+    347              case 2:
+    348                SYSRTC0->GRP2_IEN_CLR = flags;
+    349                break;
+    350          
+    351          #if SYSRTC_GROUP_NUMBER > 3
+    352              case 3:
+    353                SYSRTC0->GRP3_IEN_CLR = flags;
+    354                break;
+    355          
+    356          #if SYSRTC_GROUP_NUMBER > 4
+    357              case 4:
+    358                SYSRTC0->GRP4_IEN_CLR = flags;
+    359                break;
+    360          
+    361          #if SYSRTC_GROUP_NUMBER > 5
+    362              case 5:
+    363                SYSRTC0->GRP5_IEN_CLR = flags;
+    364                break;
+    365          
+    366          #if SYSRTC_GROUP_NUMBER > 6
+    367              case 6:
+    368                SYSRTC0->GRP6_IEN_CLR = flags;
+    369                break;
+    370          
+    371          #if SYSRTC_GROUP_NUMBER > 7
+    372              case 7:
+    373                SYSRTC0->GRP7_IEN_CLR = flags;
+    374                break;
+    375          #endif
+    376          #endif
+    377          #endif
+    378          #endif
+    379          #endif
+    380          #endif
+    381          #endif
+    382          
+    383              default:
+    384                EFM_ASSERT(1);
+    385            }
+    386          }
+   \        0xC   0x4770             BX       LR
+    387          
+    388          /***************************************************************************//**
+    389           * Clears one or more pending SYSRTC interrupts for the given group.
+    390           ******************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+    391          void sl_hal_sysrtc_clear_group_interrupts(uint8_t group_number,
+    392                                                    uint32_t flags)
+    393          {
+    394            EFM_ASSERT(SYSRTC_GROUP_VALID(group_number));
+   \                     sl_hal_sysrtc_clear_group_interrupts: (+1)
+   \        0x0   0xB110             CBZ.N    R0,??sl_hal_sysrtc_clear_group_interrupts_0
+   \        0x2   0xF44F 0x71C5      MOV      R1,#+394
+   \        0x6   0x....             B.N      ?Subroutine0
+    395          
+    396            switch (group_number) {
+    397              case 0:
+    398                SYSRTC0->GRP0_IF_CLR = flags;
+   \                     ??sl_hal_sysrtc_clear_group_interrupts_0: (+1)
+   \        0x8   0x....             LDR.N    R2,??DataTable15_9
+   \        0xA   0x6011             STR      R1,[R2, #+0]
+    399                break;
+    400          
+    401          #if SYSRTC_GROUP_NUMBER > 1
+    402              case 1:
+    403                SYSRTC0->GRP1_IF_CLR = flags;
+    404                break;
+    405          
+    406          #if SYSRTC_GROUP_NUMBER > 2
+    407              case 2:
+    408                SYSRTC0->GRP2_IF_CLR = flags;
+    409                break;
+    410          
+    411          #if SYSRTC_GROUP_NUMBER > 3
+    412              case 3:
+    413                SYSRTC0->GRP3_IF_CLR = flags;
+    414                break;
+    415          
+    416          #if SYSRTC_GROUP_NUMBER > 4
+    417              case 4:
+    418                SYSRTC0->GRP4_IF_CLR = flags;
+    419                break;
+    420          
+    421          #if SYSRTC_GROUP_NUMBER > 5
+    422              case 5:
+    423                SYSRTC0->GRP5_IF_CLR = flags;
+    424                break;
+    425          
+    426          #if SYSRTC_GROUP_NUMBER > 6
+    427              case 6:
+    428                SYSRTC0->GRP6_IF_CLR = flags;
+    429                break;
+    430          
+    431          #if SYSRTC_GROUP_NUMBER > 7
+    432              case 7:
+    433                SYSRTC0->GRP7_IF_CLR = flags;
+    434                break;
+    435          #endif
+    436          #endif
+    437          #endif
+    438          #endif
+    439          #endif
+    440          #endif
+    441          #endif
+    442          
+    443              default:
+    444                EFM_ASSERT(1);
+    445            }
+    446          }
+   \        0xC   0x4770             BX       LR
+    447          
+    448          /***************************************************************************//**
+    449           * Gets pending SYSRTC interrupt flags for the given group.
+    450           ******************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+    451          uint32_t sl_hal_sysrtc_get_group_interrupts(uint8_t group_number)
+    452          {
+   \                     sl_hal_sysrtc_get_group_interrupts: (+1)
+   \        0x0   0xB580             PUSH     {R7,LR}
+    453            EFM_ASSERT(SYSRTC_GROUP_VALID(group_number));
+   \        0x2   0xB110             CBZ.N    R0,??sl_hal_sysrtc_get_group_interrupts_0
+   \        0x4   0xF240 0x11C5      MOVW     R1,#+453
+   \        0x8   0x....             B.N      ?Subroutine1
+    454          
+    455            switch (group_number) {
+    456              case 0:
+    457                return SYSRTC0->GRP0_IF;
+   \                     ??sl_hal_sysrtc_get_group_interrupts_0: (+1)
+   \        0xA   0x....             LDR.N    R0,??DataTable15_10
+   \        0xC   0x6800             LDR      R0,[R0, #+0]
+   \        0xE   0xBD02             POP      {R1,PC}
+    458          
+    459          #if SYSRTC_GROUP_NUMBER > 1
+    460              case 1:
+    461                return SYSRTC0->GRP1_IF;
+    462          
+    463          #if SYSRTC_GROUP_NUMBER > 2
+    464              case 2:
+    465                return SYSRTC0->GRP2_IF;
+    466          
+    467          #if SYSRTC_GROUP_NUMBER > 3
+    468              case 3:
+    469                return SYSRTC0->GRP3_IF;
+    470          
+    471          #if SYSRTC_GROUP_NUMBER > 4
+    472              case 4:
+    473                return SYSRTC0->GRP4_IF;
+    474          
+    475          #if SYSRTC_GROUP_NUMBER > 5
+    476              case 5:
+    477                return SYSRTC0->GRP5_IF;
+    478          
+    479          #if SYSRTC_GROUP_NUMBER > 6
+    480              case 6:
+    481                return SYSRTC0->GRP6_IF;
+    482          
+    483          #if SYSRTC_GROUP_NUMBER > 7
+    484              case 7:
+    485                return SYSRTC0->GRP7_IF;
+    486          #endif
+    487          #endif
+    488          #endif
+    489          #endif
+    490          #endif
+    491          #endif
+    492          #endif
+    493          
+    494              default:
+    495                EFM_ASSERT(1);
+    496                return 0;
+    497            }
+    498          }
+
+   \                                 In section .text, align 2, keep-with-next
+   \                     ?Subroutine1: (+1)
+   \        0x0   0x....             LDR.N    R0,??DataTable15_7
+   \        0x2   0x.... 0x....      BL       assertEFM
+   \        0x6   0x2000             MOVS     R0,#+0
+   \        0x8   0xBD02             POP      {R1,PC}
+    499          
+    500          /***************************************************************************//**
+    501           * Gets enabled and pending SYSRTC interrupt flags.
+    502           ******************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+    503          uint32_t sl_hal_sysrtc_get_group_enabled_interrupts(uint8_t group_number)
+    504          {
+   \                     sl_hal_sysrtc_get_group_enabled_interrupts: (+1)
+   \        0x0   0xB580             PUSH     {R7,LR}
+    505            uint32_t ien = 0;
+    506          
+    507            EFM_ASSERT(SYSRTC_GROUP_VALID(group_number));
+   \        0x2   0xB110             CBZ.N    R0,??sl_hal_sysrtc_get_group_enabled_interrupts_0
+   \        0x4   0xF240 0x11FB      MOVW     R1,#+507
+   \        0x8   0x....             B.N      ?Subroutine1
+    508          
+    509            switch (group_number) {
+    510              case 0:
+    511                ien = SYSRTC0->GRP0_IEN;
+   \                     ??sl_hal_sysrtc_get_group_enabled_interrupts_0: (+1)
+   \        0xA   0x....             LDR.N    R1,??DataTable15_10
+   \        0xC   0x6848             LDR      R0,[R1, #+4]
+    512                return SYSRTC0->GRP0_IF & ien;
+   \        0xE   0x6809             LDR      R1,[R1, #+0]
+   \       0x10   0x4008             ANDS     R0,R0,R1
+   \       0x12   0xBD02             POP      {R1,PC}
+    513          
+    514          #if SYSRTC_GROUP_NUMBER > 1
+    515              case 1:
+    516                ien = SYSRTC0->GRP1_IEN;
+    517                return SYSRTC0->GRP1_IF & ien;
+    518          
+    519          #if SYSRTC_GROUP_NUMBER > 2
+    520              case 2:
+    521                ien = SYSRTC0->GRP2_IEN;
+    522                return SYSRTC0->GRP2_IF & ien;
+    523          
+    524          #if SYSRTC_GROUP_NUMBER > 3
+    525              case 3:
+    526                ien = SYSRTC0->GRP3_IEN;
+    527                return SYSRTC0->GRP3_IF & ien;
+    528          
+    529          #if SYSRTC_GROUP_NUMBER > 4
+    530              case 4:
+    531                ien = SYSRTC0->GRP4_IEN;
+    532                return SYSRTC0->GRP4_IF & ien;
+    533          
+    534          #if SYSRTC_GROUP_NUMBER > 5
+    535              case 5:
+    536                ien = SYSRTC0->GRP5_IEN;
+    537                return SYSRTC0->GRP5_IF & ien;
+    538          
+    539          #if SYSRTC_GROUP_NUMBER > 6
+    540              case 6:
+    541                ien = SYSRTC0->GRP6_IEN;
+    542                return SYSRTC0->GRP6_IF & ien;
+    543          
+    544          #if SYSRTC_GROUP_NUMBER > 7
+    545              case 7:
+    546                ien = SYSRTC0->GRP7_IEN;
+    547                return SYSRTC0->GRP7_IF & ien;
+    548          #endif
+    549          #endif
+    550          #endif
+    551          #endif
+    552          #endif
+    553          #endif
+    554          #endif
+    555          
+    556              default:
+    557                EFM_ASSERT(1);
+    558                return 0;
+    559            }
+    560          }
+    561          
+    562          /***************************************************************************//**
+    563           * Sets one or more pending SYSRTC interrupts for the given group from Software.
+    564           ******************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+    565          void sl_hal_sysrtc_set_group_interrupts(uint8_t group_number,
+    566                                                  uint32_t flags)
+    567          {
+    568            EFM_ASSERT(SYSRTC_GROUP_VALID(group_number));
+   \                     sl_hal_sysrtc_set_group_interrupts: (+1)
+   \        0x0   0xB110             CBZ.N    R0,??sl_hal_sysrtc_set_group_interrupts_0
+   \        0x2   0xF44F 0x710E      MOV      R1,#+568
+   \        0x6   0x....             B.N      ?Subroutine0
+    569          
+    570            switch (group_number) {
+    571              case 0:
+    572                SYSRTC0->GRP0_IF_SET = flags;
+   \                     ??sl_hal_sysrtc_set_group_interrupts_0: (+1)
+   \        0x8   0x....             LDR.N    R2,??DataTable15_11
+   \        0xA   0x6011             STR      R1,[R2, #+0]
+    573                break;
+    574          
+    575          #if SYSRTC_GROUP_NUMBER > 1
+    576              case 1:
+    577                SYSRTC0->GRP1_IF_SET = flags;
+    578                break;
+    579          
+    580          #if SYSRTC_GROUP_NUMBER > 2
+    581              case 2:
+    582                SYSRTC0->GRP2_IF_SET = flags;
+    583                break;
+    584          
+    585          #if SYSRTC_GROUP_NUMBER > 3
+    586              case 3:
+    587                SYSRTC0->GRP3_IF_SET = flags;
+    588                break;
+    589          
+    590          #if SYSRTC_GROUP_NUMBER > 4
+    591              case 4:
+    592                SYSRTC0->GRP4_IF_SET = flags;
+    593                break;
+    594          
+    595          #if SYSRTC_GROUP_NUMBER > 5
+    596              case 5:
+    597                SYSRTC0->GRP5_IF_SET = flags;
+    598                break;
+    599          
+    600          #if SYSRTC_GROUP_NUMBER > 6
+    601              case 6:
+    602                SYSRTC0->GRP6_IF_SET = flags;
+    603                break;
+    604          
+    605          #if SYSRTC_GROUP_NUMBER > 7
+    606              case 7:
+    607                SYSRTC0->GRP7_IF_SET = flags;
+    608                break;
+    609          #endif
+    610          #endif
+    611          #endif
+    612          #endif
+    613          #endif
+    614          #endif
+    615          #endif
+    616          
+    617              default:
+    618                EFM_ASSERT(1);
+    619            }
+    620          }
+   \        0xC   0x4770             BX       LR
+    621          
+    622          /***************************************************************************//**
+    623           * Gets SYSRTC compare register value for selected channel of given group.
+    624           ******************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+    625          uint32_t sl_hal_sysrtc_get_group_compare_channel_value(uint8_t group_number,
+    626                                                                 uint8_t channel)
+    627          {
+   \                     sl_hal_sysrtc_get_group_compare_channel_value: (+1)
+   \        0x0   0xB580             PUSH     {R7,LR}
+    628            EFM_ASSERT(SYSRTC_GROUP_VALID(group_number));
+   \        0x2   0xB130             CBZ.N    R0,??sl_hal_sysrtc_get_group_compare_channel_value_0
+   \        0x4   0xF44F 0x711D      MOV      R1,#+628
+   \        0x8   0x....             LDR.N    R0,??DataTable15_7
+   \        0xA   0x.... 0x....      BL       assertEFM
+    629          
+    630            switch (group_number) {
+    631              case 0:
+    632                switch (channel) {
+    633                  case 0:
+    634                    return SYSRTC0->GRP0_CMP0VALUE;
+    635          
+    636          #ifdef SYSRTC_GRP0_CTRL_CMP1EN
+    637                  case 1:
+    638                    return SYSRTC0->GRP0_CMP1VALUE;
+    639          #endif
+    640          
+    641                  default:
+    642                    EFM_ASSERT(1);
+    643                    return 0;
+    644                }
+    645                break;
+    646          
+    647          #if SYSRTC_GROUP_NUMBER > 1
+    648              case 1:
+    649                switch (channel) {
+    650                  case 0:
+    651                    return SYSRTC0->GRP1_CMP0VALUE;
+    652          
+    653          #ifdef SYSRTC_GRP1_CTRL_CMP1EN
+    654                  case 1:
+    655                    return SYSRTC0->GRP1_CMP1VALUE;
+    656          #endif
+    657          
+    658                  default:
+    659                    EFM_ASSERT(1);
+    660                    return 0;
+    661                }
+    662                break;
+    663          
+    664          #if SYSRTC_GROUP_NUMBER > 2
+    665              case 2:
+    666                switch (channel) {
+    667                  case 0:
+    668                    return SYSRTC0->GRP2_CMP0VALUE;
+    669          
+    670          #ifdef SYSRTC_GRP2_CTRL_CMP1EN
+    671                  case 1:
+    672                    return SYSRTC0->GRP2_CMP1VALUE;
+    673          #endif
+    674          
+    675                  default:
+    676                    EFM_ASSERT(1);
+    677                    return 0;
+    678                }
+    679                break;
+    680          
+    681          #if SYSRTC_GROUP_NUMBER > 3
+    682              case 3:
+    683                switch (channel) {
+    684                  case 0:
+    685                    return SYSRTC0->GRP3_CMP0VALUE;
+    686          
+    687          #ifdef SYSRTC_GRP3_CTRL_CMP1EN
+    688                  case 1:
+    689                    return SYSRTC0->GRP3_CMP1VALUE;
+    690          #endif
+    691          
+    692                  default:
+    693                    EFM_ASSERT(1);
+    694                    return 0;
+    695                }
+    696                break;
+    697          
+    698          #if SYSRTC_GROUP_NUMBER > 4
+    699              case 4:
+    700                switch (channel) {
+    701                  case 0:
+    702                    return SYSRTC0->GRP4_CMP0VALUE;
+    703          
+    704          #ifdef SYSRTC_GRP4_CTRL_CMP1EN
+    705                  case 1:
+    706                    return SYSRTC0->GRP4_CMP1VALUE;
+    707          #endif
+    708          
+    709                  default:
+    710                    EFM_ASSERT(1);
+    711                    return 0;
+    712                }
+    713                break;
+    714          
+    715          #if SYSRTC_GROUP_NUMBER > 5
+    716              case 5:
+    717                switch (channel) {
+    718                  case 0:
+    719                    return SYSRTC0->GRP5_CMP0VALUE;
+    720          
+    721          #ifdef SYSRTC_GRP5_CTRL_CMP1EN
+    722                  case 1:
+    723                    return SYSRTC0->GRP5_CMP1VALUE;
+    724          #endif
+    725          
+    726                  default:
+    727                    EFM_ASSERT(1);
+    728                    return 0;
+    729                }
+    730                break;
+    731          
+    732          #if SYSRTC_GROUP_NUMBER > 6
+    733              case 6:
+    734                switch (channel) {
+    735                  case 0:
+    736                    return SYSRTC0->GRP6_CMP0VALUE;
+    737          
+    738          #ifdef SYSRTC_GRP6_CTRL_CMP1EN
+    739                  case 1:
+    740                    return SYSRTC0->GRP6_CMP1VALUE;
+    741          #endif
+    742          
+    743                  default:
+    744                    EFM_ASSERT(1);
+    745                    return 0;
+    746                }
+    747                break;
+    748          
+    749          #if SYSRTC_GROUP_NUMBER > 7
+    750              case 7:
+    751                switch (channel) {
+    752                  case 0:
+    753                    return SYSRTC0->GRP7_CMP0VALUE;
+    754          
+    755          #ifdef SYSRTC_GRP7_CTRL_CMP1EN
+    756                  case 1:
+    757                    return SYSRTC0->GRP7_CMP1VALUE;
+    758          #endif
+    759          
+    760                  default:
+    761                    EFM_ASSERT(1);
+    762                    return 0;
+    763                }
+    764                break;
+    765          #endif
+    766          #endif
+    767          #endif
+    768          #endif
+    769          #endif
+    770          #endif
+    771          #endif
+    772          
+    773              default:
+    774                EFM_ASSERT(1);
+    775                return 0;
+   \                     ??sl_hal_sysrtc_get_group_compare_channel_value_1: (+1)
+   \        0xE   0x2000             MOVS     R0,#+0
+   \       0x10   0xBD02             POP      {R1,PC}
+   \                     ??sl_hal_sysrtc_get_group_compare_channel_value_0: (+1)
+   \       0x12   0x....             LDR.N    R0,??DataTable15_12
+   \       0x14   0xB111             CBZ.N    R1,??sl_hal_sysrtc_get_group_compare_channel_value_2
+   \       0x16   0x2901             CMP      R1,#+1
+   \       0x18   0xD002             BEQ.N    ??sl_hal_sysrtc_get_group_compare_channel_value_3
+   \       0x1A   0xE7F8             B.N      ??sl_hal_sysrtc_get_group_compare_channel_value_1
+   \                     ??sl_hal_sysrtc_get_group_compare_channel_value_2: (+1)
+   \       0x1C   0x6800             LDR      R0,[R0, #+0]
+   \       0x1E   0xBD02             POP      {R1,PC}
+   \                     ??sl_hal_sysrtc_get_group_compare_channel_value_3: (+1)
+   \       0x20   0x6840             LDR      R0,[R0, #+4]
+   \       0x22   0xBD02             POP      {R1,PC}
+    776            }
+    777          }
+    778          
+    779          /***************************************************************************//**
+    780           * Sets SYSRTC compare register value for selected channel of given group.
+    781           ******************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+    782          void sl_hal_sysrtc_set_group_compare_channel_value(uint8_t group_number,
+    783                                                             uint8_t channel,
+    784                                                             uint32_t value)
+    785          {
+    786            EFM_ASSERT(SYSRTC_GROUP_VALID(group_number));
+   \                     sl_hal_sysrtc_set_group_compare_channel_value: (+1)
+   \        0x0   0xB110             CBZ.N    R0,??sl_hal_sysrtc_set_group_compare_channel_value_0
+   \        0x2   0xF240 0x3112      MOVW     R1,#+786
+   \        0x6   0x....             B.N      ?Subroutine0
+    787          
+    788            switch (group_number) {
+    789              case 0:
+    790                switch (channel) {
+   \                     ??sl_hal_sysrtc_set_group_compare_channel_value_0: (+1)
+   \        0x8   0x....             LDR.N    R0,??DataTable15_12
+   \        0xA   0xB111             CBZ.N    R1,??sl_hal_sysrtc_set_group_compare_channel_value_1
+   \        0xC   0x2901             CMP      R1,#+1
+   \        0xE   0xD002             BEQ.N    ??sl_hal_sysrtc_set_group_compare_channel_value_2
+   \       0x10   0x4770             BX       LR
+    791                  case 0:
+    792                    SYSRTC0->GRP0_CMP0VALUE = value;
+   \                     ??sl_hal_sysrtc_set_group_compare_channel_value_1: (+1)
+   \       0x12   0x6002             STR      R2,[R0, #+0]
+    793                    break;
+   \       0x14   0x4770             BX       LR
+    794          
+    795          #ifdef SYSRTC_GRP0_CTRL_CMP1EN
+    796                  case 1:
+    797                    SYSRTC0->GRP0_CMP1VALUE = value;
+   \                     ??sl_hal_sysrtc_set_group_compare_channel_value_2: (+1)
+   \       0x16   0x6042             STR      R2,[R0, #+4]
+    798                    break;
+    799          #endif
+    800          
+    801                  default:
+    802                    EFM_ASSERT(1);
+    803                }
+    804                break;
+    805          
+    806          #if SYSRTC_GROUP_NUMBER > 1
+    807              case 1:
+    808                switch (channel) {
+    809                  case 0:
+    810                    SYSRTC0->GRP1_CMP0VALUE = value;
+    811                    break;
+    812          
+    813          #ifdef SYSRTC_GRP1_CTRL_CMP1EN
+    814                  case 1:
+    815                    SYSRTC0->GRP1_CMP1VALUE = value;
+    816                    break;
+    817          #endif
+    818          
+    819                  default:
+    820                    EFM_ASSERT(1);
+    821                }
+    822                break;
+    823          
+    824          #if SYSRTC_GROUP_NUMBER > 2
+    825              case 2:
+    826                switch (channel) {
+    827                  case 0:
+    828                    SYSRTC0->GRP2_CMP0VALUE = value;
+    829                    break;
+    830          
+    831          #ifdef SYSRTC_GRP2_CTRL_CMP1EN
+    832                  case 1:
+    833                    SYSRTC0->GRP2_CMP1VALUE = value;
+    834                    break;
+    835          #endif
+    836          
+    837                  default:
+    838                    EFM_ASSERT(1);
+    839                }
+    840                break;
+    841          
+    842          #if SYSRTC_GROUP_NUMBER > 3
+    843              case 3:
+    844                switch (channel) {
+    845                  case 0:
+    846                    SYSRTC0->GRP3_CMP0VALUE = value;
+    847                    break;
+    848          
+    849          #ifdef SYSRTC_GRP3_CTRL_CMP1EN
+    850                  case 1:
+    851                    SYSRTC0->GRP3_CMP1VALUE = value;
+    852                    break;
+    853          #endif
+    854          
+    855                  default:
+    856                    EFM_ASSERT(1);
+    857                }
+    858                break;
+    859          
+    860          #if SYSRTC_GROUP_NUMBER > 4
+    861              case 4:
+    862                switch (channel) {
+    863                  case 0:
+    864                    SYSRTC0->GRP4_CMP0VALUE = value;
+    865                    break;
+    866          
+    867          #ifdef SYSRTC_GRP4_CTRL_CMP1EN
+    868                  case 1:
+    869                    SYSRTC0->GRP4_CMP1VALUE = value;
+    870                    break;
+    871          #endif
+    872          
+    873                  default:
+    874                    EFM_ASSERT(1);
+    875                }
+    876                break;
+    877          
+    878          #if SYSRTC_GROUP_NUMBER > 5
+    879              case 5:
+    880                switch (channel) {
+    881                  case 0:
+    882                    SYSRTC0->GRP5_CMP0VALUE = value;
+    883                    break;
+    884          
+    885          #ifdef SYSRTC_GRP5_CTRL_CMP1EN
+    886                  case 1:
+    887                    SYSRTC0->GRP5_CMP1VALUE = value;
+    888                    break;
+    889          #endif
+    890          
+    891                  default:
+    892                    EFM_ASSERT(1);
+    893                }
+    894                break;
+    895          
+    896          #if SYSRTC_GROUP_NUMBER > 6
+    897              case 6:
+    898                switch (channel) {
+    899                  case 0:
+    900                    SYSRTC0->GRP6_CMP0VALUE = value;
+    901                    break;
+    902          
+    903          #ifdef SYSRTC_GRP6_CTRL_CMP1EN
+    904                  case 1:
+    905                    SYSRTC0->GRP6_CMP1VALUE = value;
+    906                    break;
+    907          #endif
+    908          
+    909                  default:
+    910                    EFM_ASSERT(1);
+    911                }
+    912                break;
+    913          
+    914          #if SYSRTC_GROUP_NUMBER > 7
+    915              case 7:
+    916                switch (channel) {
+    917                  case 0:
+    918                    SYSRTC0->GRP7_CMP0VALUE = value;
+    919                    break;
+    920          
+    921          #ifdef SYSRTC_GRP7_CTRL_CMP1EN
+    922                  case 1:
+    923                    SYSRTC0->GRP7_CMP1VALUE = value;
+    924                    break;
+    925          #endif
+    926          
+    927                  default:
+    928                    EFM_ASSERT(1);
+    929                }
+    930                break;
+    931          #endif
+    932          #endif
+    933          #endif
+    934          #endif
+    935          #endif
+    936          #endif
+    937          #endif
+    938          
+    939              default:
+    940                EFM_ASSERT(1);
+    941            }
+    942          }
+   \       0x18   0x4770             BX       LR
+    943          
+    944          /***************************************************************************//**
+    945           * Gets SYSRTC input capture register value for selected channel of given group.
+    946           ******************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+    947          uint32_t sl_hal_sysrtc_get_group_capture_channel_value(uint8_t group_number)
+    948          {
+   \                     sl_hal_sysrtc_get_group_capture_channel_value: (+1)
+   \        0x0   0xB580             PUSH     {R7,LR}
+    949            EFM_ASSERT(SYSRTC_GROUP_VALID(group_number));
+   \        0x2   0xB110             CBZ.N    R0,??sl_hal_sysrtc_get_group_capture_channel_value_0
+   \        0x4   0xF240 0x31B5      MOVW     R1,#+949
+   \        0x8   0x....             B.N      ?Subroutine1
+    950          
+    951            switch (group_number) {
+    952          #ifdef SYSRTC_GRP0_CTRL_CAP0EN
+    953              case 0:
+    954                return SYSRTC0->GRP0_CAP0VALUE;
+   \                     ??sl_hal_sysrtc_get_group_capture_channel_value_0: (+1)
+   \        0xA   0x....             LDR.N    R0,??DataTable15_13
+   \        0xC   0x6800             LDR      R0,[R0, #+0]
+   \        0xE   0xBD02             POP      {R1,PC}
+    955          #endif
+    956          
+    957          #if SYSRTC_GROUP_NUMBER > 1
+    958          #ifdef SYSRTC_GRP1_CTRL_CAP0EN
+    959              case 1:
+    960                return SYSRTC0->GRP1_CAP0VALUE;
+    961          #endif
+    962          
+    963          #if SYSRTC_GROUP_NUMBER > 2
+    964          #ifdef SYSRTC_GRP2_CTRL_CAP0EN
+    965              case 2:
+    966                return SYSRTC0->GRP2_CAP0VALUE;
+    967          #endif
+    968          
+    969          #if SYSRTC_GROUP_NUMBER > 3
+    970          #ifdef SYSRTC_GRP3_CTRL_CAP0EN
+    971              case 3:
+    972                return SYSRTC0->GRP3_CAP0VALUE;
+    973          #endif
+    974          
+    975          #if SYSRTC_GROUP_NUMBER > 4
+    976          #ifdef SYSRTC_GRP4_CTRL_CAP0EN
+    977              case 4:
+    978                return SYSRTC0->GRP4_CAP0VALUE;
+    979          #endif
+    980          
+    981          #if SYSRTC_GROUP_NUMBER > 5
+    982          #ifdef SYSRTC_GRP5_CTRL_CAP0EN
+    983              case 5:
+    984                return SYSRTC0->GRP5_CAP0VALUE;
+    985          #endif
+    986          
+    987          #if SYSRTC_GROUP_NUMBER > 6
+    988          #ifdef SYSRTC_GRP6_CTRL_CAP0EN
+    989              case 6:
+    990                return SYSRTC0->GRP6_CAP0VALUE;
+    991          #endif
+    992          
+    993          #if SYSRTC_GROUP_NUMBER > 7
+    994          #ifdef SYSRTC_GRP7_CTRL_CAP0EN
+    995              case 7:
+    996                return SYSRTC0->GRP7_CAP0VALUE;
+    997          #endif
+    998          #endif
+    999          #endif
+   1000          #endif
+   1001          #endif
+   1002          #endif
+   1003          #endif
+   1004          #endif
+   1005          
+   1006              default:
+   1007                EFM_ASSERT(1);
+   1008                return 0;
+   1009            }
+   1010          }
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable15:
+   \        0x0   0x500A'8004        DC32     0x500a8004
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable15_1:
+   \        0x0   0x500A'9004        DC32     0x500a9004
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable15_2:
+   \        0x0   0x500A'8010        DC32     0x500a8010
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable15_3:
+   \        0x0   0x500A'A004        DC32     0x500aa004
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable15_4:
+   \        0x0   0x500A'8008        DC32     0x500a8008
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable15_5:
+   \        0x0   0x500A'8048        DC32     0x500a8048
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable15_6:
+   \        0x0   0x500A'9044        DC32     0x500a9044
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable15_7:
+   \        0x0   0x....'....        DC32     ?_0
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable15_8:
+   \        0x0   0x500A'A044        DC32     0x500aa044
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable15_9:
+   \        0x0   0x500A'A040        DC32     0x500aa040
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable15_10:
+   \        0x0   0x500A'8040        DC32     0x500a8040
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable15_11:
+   \        0x0   0x500A'9040        DC32     0x500a9040
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable15_12:
+   \        0x0   0x500A'804C        DC32     0x500a804c
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable15_13:
+   \        0x0   0x500A'8054        DC32     0x500a8054
+
+   \                                 In section .rodata, align 4
+   \                     ?_0:
+   \        0x0   0x43 0x3A          DC8 0x43, 0x3A, 0x5C, 0x55, 0x73, 0x65, 0x72, 0x73
+   \              0x5C 0x55    
+   \              0x73 0x65    
+   \              0x72 0x73
+   \        0x8   0x5C 0x44          DC8 0x5C, 0x44, 0x45, 0x4C, 0x4C, 0x5C, 0x53, 0x69
+   \              0x45 0x4C    
+   \              0x4C 0x5C    
+   \              0x53 0x69
+   \       0x10   0x6D 0x70          DC8 0x6D, 0x70, 0x6C, 0x69, 0x63, 0x69, 0x74, 0x79
+   \              0x6C 0x69    
+   \              0x63 0x69    
+   \              0x74 0x79
+   \       0x18   0x53 0x74          DC8 0x53, 0x74, 0x75, 0x64, 0x69, 0x6F, 0x5C, 0x76
+   \              0x75 0x64    
+   \              0x69 0x6F    
+   \              0x5C 0x76
+   \       0x20   0x35 0x5F          DC8 0x35, 0x5F, 0x77, 0x6F, 0x72, 0x6B, 0x73, 0x70
+   \              0x77 0x6F    
+   \              0x72 0x6B    
+   \              0x73 0x70
+   \       0x28   0x61 0x63          DC8 0x61, 0x63, 0x65, 0x5C, 0x77, 0x69, 0x73, 0x75
+   \              0x65 0x5C    
+   \              0x77 0x69    
+   \              0x73 0x75
+   \       0x30   0x6E 0x5F          DC8 0x6E, 0x5F, 0x72, 0x63, 0x70, 0x5F, 0x37, 0x5C
+   \              0x72 0x63    
+   \              0x70 0x5F    
+   \              0x37 0x5C
+   \       0x38   0x67 0x65          DC8 0x67, 0x65, 0x63, 0x6B, 0x6F, 0x5F, 0x73, 0x64
+   \              0x63 0x6B    
+   \              0x6F 0x5F    
+   \              0x73 0x64
+   \       0x40   0x6B 0x5F          DC8 0x6B, 0x5F, 0x34, 0x2E, 0x34, 0x2E, 0x33, 0x5C
+   \              0x34 0x2E    
+   \              0x34 0x2E    
+   \              0x33 0x5C
+   \       0x48   0x70 0x6C          DC8 0x70, 0x6C, 0x61, 0x74, 0x66, 0x6F, 0x72, 0x6D
+   \              0x61 0x74    
+   \              0x66 0x6F    
+   \              0x72 0x6D
+   \       0x50   0x5C 0x70          DC8 0x5C, 0x70, 0x65, 0x72, 0x69, 0x70, 0x68, 0x65
+   \              0x65 0x72    
+   \              0x69 0x70    
+   \              0x68 0x65
+   \       0x58   0x72 0x61          DC8 0x72, 0x61, 0x6C, 0x5C, 0x73, 0x72, 0x63, 0x5C
+   \              0x6C 0x5C    
+   \              0x73 0x72    
+   \              0x63 0x5C
+   \       0x60   0x70 0x65          DC8 0x70, 0x65, 0x72, 0x69, 0x70, 0x68, 0x65, 0x72
+   \              0x72 0x69    
+   \              0x70 0x68    
+   \              0x65 0x72
+   \       0x68   0x61 0x6C          DC8 0x61, 0x6C, 0x5F, 0x73, 0x79, 0x73, 0x72, 0x74
+   \              0x5F 0x73    
+   \              0x79 0x73    
+   \              0x72 0x74
+   \       0x70   0x63 0x2E          DC8 0x63, 0x2E, 0x63, 0
+   \              0x63 0x00
+   1011          
+   1012          /** @} (end addtogroup sysrtc) */
+   1013          #endif /* defined(SYSRTC_COUNT) && (SYSRTC_COUNT > 0) */
+
+   Maximum stack usage in bytes:
+
+   .cstack Function
+   ------- --------
+       0   sl_hal_sysrtc_clear_group_interrupts
+         0   -> assertEFM
+       0   sl_hal_sysrtc_disable
+       0   sl_hal_sysrtc_disable_group_interrupts
+         0   -> assertEFM
+       8   sl_hal_sysrtc_enable
+         8   -> sl_hal_sysrtc_wait_ready
+       0   sl_hal_sysrtc_enable_group_interrupts
+         0   -> assertEFM
+       8   sl_hal_sysrtc_get_group_capture_channel_value
+         8   -> assertEFM
+       8   sl_hal_sysrtc_get_group_compare_channel_value
+         8   -> assertEFM
+       8   sl_hal_sysrtc_get_group_enabled_interrupts
+         8   -> assertEFM
+       8   sl_hal_sysrtc_get_group_interrupts
+         8   -> assertEFM
+      16   sl_hal_sysrtc_init
+        16   -> sl_hal_sysrtc_disable
+        16   -> sl_hal_sysrtc_wait_ready
+       0   sl_hal_sysrtc_init_group
+         0   -> assertEFM
+       0   sl_hal_sysrtc_reset
+       0   sl_hal_sysrtc_set_group_compare_channel_value
+         0   -> assertEFM
+       0   sl_hal_sysrtc_set_group_interrupts
+         0   -> assertEFM
+       0   sl_hal_sysrtc_wait_ready
+
+
+   Section sizes:
+
+   Bytes  Function/Label
+   -----  --------------
+       4  ??DataTable15
+       4  ??DataTable15_1
+       4  ??DataTable15_10
+       4  ??DataTable15_11
+       4  ??DataTable15_12
+       4  ??DataTable15_13
+       4  ??DataTable15_2
+       4  ??DataTable15_3
+       4  ??DataTable15_4
+       4  ??DataTable15_5
+       4  ??DataTable15_6
+       4  ??DataTable15_7
+       4  ??DataTable15_8
+       4  ??DataTable15_9
+       6  ?Subroutine0
+      10  ?Subroutine1
+     116  ?_0
+      14  sl_hal_sysrtc_clear_group_interrupts
+      32  sl_hal_sysrtc_disable
+      14  sl_hal_sysrtc_disable_group_interrupts
+      20  sl_hal_sysrtc_enable
+      14  sl_hal_sysrtc_enable_group_interrupts
+      16  sl_hal_sysrtc_get_group_capture_channel_value
+      36  sl_hal_sysrtc_get_group_compare_channel_value
+      20  sl_hal_sysrtc_get_group_enabled_interrupts
+      16  sl_hal_sysrtc_get_group_interrupts
+      34  sl_hal_sysrtc_init
+      64  sl_hal_sysrtc_init_group
+       8  sl_hal_sysrtc_reset
+      26  sl_hal_sysrtc_set_group_compare_channel_value
+      14  sl_hal_sysrtc_set_group_interrupts
+      28  sl_hal_sysrtc_wait_ready
+
+ 
+ 116 bytes in section .rodata
+ 428 bytes in section .text
+ 
+ 400 bytes of CODE  memory (+ 28 bytes shared)
+ 116 bytes of CONST memory
+
+Errors: none
+Warnings: none

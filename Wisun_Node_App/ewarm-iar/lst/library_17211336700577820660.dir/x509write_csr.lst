@@ -1,0 +1,1297 @@
+###############################################################################
+#
+# IAR ANSI C/C++ Compiler V9.50.2.385/W64 for ARM         29/Mar/2025  15:54:08
+# Copyright 1999-2024 IAR Systems AB.
+#
+#    Cpu mode                     =  thumb
+#    Endian                       =  little
+#    Source file                  =
+#        D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\util\third_party\mbedtls\library\x509write_csr.c
+#    Command line                 =
+#        -f "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\ewarm-iar\obj\library_17211336700577820660.dir\x509write_csr.o.rsp"
+#        ("D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\util\third_party\mbedtls\library\x509write_csr.c"
+#        -D DEBUG_EFM=1 -D EFR32FG28B322F1024IM48=1 -D
+#        configNUM_SDK_THREAD_LOCAL_STORAGE_POINTERS=2 -D
+#        SL_COMPONENT_CATALOG_PRESENT=1 -D
+#        MBEDTLS_CONFIG_FILE=<sl_mbedtls_config.h> -D
+#        MBEDTLS_PSA_CRYPTO_CONFIG_FILE=<psa_crypto_config.h> -D
+#        SL_RAIL_LIB_MULTIPROTOCOL_SUPPORT=0 -D
+#        SL_RAIL_UTIL_PA_CONFIG_HEADER=<sl_rail_util_pa_config.h> -D
+#        RTT_USE_ASM=0 -lC "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\ewarm-iar\lst\library_17211336700577820660.dir"
+#        --diag_suppress Pa050 -o "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\ewarm-iar\obj\library_17211336700577820660.dir"
+#        --no_cse --no_unroll --no_inline --no_code_motion --no_tbaa
+#        --no_clustering --no_scheduling --debug --endian=little
+#        --cpu=Cortex-M33 --cmse --cmse -e --fpu=VFPv5_sp --dlib_config
+#        "C:\Program Files\IAR Systems\Embedded Workbench
+#        9.2\arm\inc\c\DLib_Config_Normal.h" -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\util\third_party\mbedtls\library\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App 1\Wisun_Node_App\config\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App 1\Wisun_Node_App\config\rail\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App 1\Wisun_Node_App\config\wisun\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App 1\Wisun_Node_App\.\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\Device\SiliconLabs\EFR32FG28\Include\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\app\wisun\component\app_project_info\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\common\inc\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\service\cli\inc\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\service\cli\src\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\CMSIS\Core\Include\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\CMSIS\RTOS2\Include\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\service\device_init\inc\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\emdrv\common\inc\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\emlib\inc\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\service\iostream\inc\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\security\sl_component\sl_mbedtls_support\config\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\security\sl_component\sl_mbedtls_support\config\preset\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\security\sl_component\sl_mbedtls_support\inc\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\util\third_party\mbedtls\include\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\util\third_party\mbedtls\library\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\micrium_os\common\source\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\micrium_os\common\include\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\micrium_os\cpu\include\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\micrium_os\ports\source\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\micrium_os\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\micrium_os\kernel\source\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\micrium_os\kernel\include\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\emdrv\nvm3\inc\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\peripheral\inc\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\util\third_party\printf\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\util\third_party\printf\inc\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\security\sl_component\sl_psa_driver\inc\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\radio\rail_lib\common\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\radio\rail_lib\protocol\ble\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\radio\rail_lib\protocol\ieee802154\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\radio\rail_lib\protocol\wmbus\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\radio\rail_lib\protocol\zwave\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\radio\rail_lib\chip\efr32\efr32xg2x\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\radio\rail_lib\protocol\sidewalk\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\radio\rail_lib\plugin\pa-conversions\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\radio\rail_lib\plugin\pa-conversions\efr32xg28\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\radio\rail_lib\plugin\rail_util_pti\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\security\sl_component\se_manager\inc\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\security\sl_component\se_manager\src\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\util\third_party\segger\systemview\SEGGER\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\util\silicon_labs\silabs_core\memory_manager\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\common\toolchain\inc\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\service\system\inc\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\app\wisun\component\app_core\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\app\wisun\component\app_setting\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\app\wisun\component\cli_util\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\app\wisun\component\event_manager\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\app\wisun\component\ns_list\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\app\wisun\component\ping\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\app\wisun\component\trace_util\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\app\wisun\component\trace_util\nanostack\nanostack-libservice\mbed-client-libservice\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\app\wisun\component\udp_client\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\service\sleeptimer\inc\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\protocol\wisun\plugin\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\protocol\wisun\stack\inc\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\protocol\wisun\stack\inc\socket\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App 1\Wisun_Node_App\autogen\\" -On
+#        --use_c++_inline) --dependencies=n "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\ewarm-iar\obj\library_17211336700577820660.dir\x509write_csr.o.iar_deps"
+#    Locale                       =  C
+#    List file                    =
+#        D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\ewarm-iar\lst\library_17211336700577820660.dir\x509write_csr.lst
+#    Object file                  =
+#        D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\ewarm-iar\obj\library_17211336700577820660.dir\x509write_csr.o
+#    Runtime model:                  
+#      __CPP_Runtime              =  1
+#      __SystemLibrary            =  DLib
+#      __dlib_file_descriptor     =  0
+#      __dlib_full_locale_support =  0
+#      __dlib_version             =  6
+#
+###############################################################################
+
+D:\Inesh_wisun\Wisun_Node_App 1\Wisun_Node_App\gecko_sdk_4.4.5\util\third_party\mbedtls\library\x509write_csr.c
+      1          /*
+      2           *  X.509 Certificate Signing Request writing
+      3           *
+      4           *  Copyright The Mbed TLS Contributors
+      5           *  SPDX-License-Identifier: Apache-2.0
+      6           *
+      7           *  Licensed under the Apache License, Version 2.0 (the "License"); you may
+      8           *  not use this file except in compliance with the License.
+      9           *  You may obtain a copy of the License at
+     10           *
+     11           *  http://www.apache.org/licenses/LICENSE-2.0
+     12           *
+     13           *  Unless required by applicable law or agreed to in writing, software
+     14           *  distributed under the License is distributed on an "AS IS" BASIS, WITHOUT
+     15           *  WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     16           *  See the License for the specific language governing permissions and
+     17           *  limitations under the License.
+     18           */
+     19          /*
+     20           * References:
+     21           * - CSRs: PKCS#10 v1.7 aka RFC 2986
+     22           * - attributes: PKCS#9 v2.0 aka RFC 2985
+     23           */
+     24          
+     25          #include "common.h"
+     26          
+     27          #if defined(MBEDTLS_X509_CSR_WRITE_C)
+     28          
+     29          #include "mbedtls/x509.h"
+     30          #include "mbedtls/x509_csr.h"
+     31          #include "mbedtls/asn1write.h"
+     32          #include "mbedtls/error.h"
+     33          #include "mbedtls/oid.h"
+     34          #include "mbedtls/platform_util.h"
+     35          
+     36          #if defined(MBEDTLS_USE_PSA_CRYPTO)
+     37          #include "psa/crypto.h"
+     38          #include "psa_util_internal.h"
+     39          #include "md_psa.h"
+
+   \                                 In section .text, align 2, keep-with-next
+   \   static __vfp uint32_t mbedtls_md_psa_alg_from_type(mbedtls_md_type_t)
+   \                     mbedtls_md_psa_alg_from_type: (+1)
+   \        0x0   0xB2C0             UXTB     R0,R0
+   \        0x2   0xF050 0x7000      ORRS     R0,R0,#0x2000000
+   \        0x6   0x4770             BX       LR
+     40          #endif /* MBEDTLS_USE_PSA_CRYPTO */
+     41          
+     42          #include <string.h>
+     43          #include <stdlib.h>
+     44          
+     45          #if defined(MBEDTLS_PEM_WRITE_C)
+     46          #include "mbedtls/pem.h"
+     47          #endif
+     48          
+     49          #include "mbedtls/platform.h"
+     50          
+
+   \                                 In section .text, align 2, keep-with-next
+     51          void mbedtls_x509write_csr_init(mbedtls_x509write_csr *ctx)
+     52          {
+   \                     mbedtls_x509write_csr_init: (+1)
+   \        0x0   0xB5F8             PUSH     {R3-R7,LR}
+   \        0x2   0x0007             MOVS     R7,R0
+     53              memset(ctx, 0, sizeof(mbedtls_x509write_csr));
+   \        0x4   0x2410             MOVS     R4,#+16
+   \        0x6   0x2500             MOVS     R5,#+0
+   \        0x8   0x003E             MOVS     R6,R7
+   \        0xA   0x002A             MOVS     R2,R5
+   \        0xC   0x0021             MOVS     R1,R4
+   \        0xE   0x0030             MOVS     R0,R6
+   \       0x10   0x.... 0x....      BL       __aeabi_memset
+     54          }
+   \       0x14   0xBDF1             POP      {R0,R4-R7,PC}
+     55          
+
+   \                                 In section .text, align 2, keep-with-next
+     56          void mbedtls_x509write_csr_free(mbedtls_x509write_csr *ctx)
+     57          {
+   \                     mbedtls_x509write_csr_free: (+1)
+   \        0x0   0xB510             PUSH     {R4,LR}
+   \        0x2   0x0004             MOVS     R4,R0
+     58              mbedtls_asn1_free_named_data_list(&ctx->subject);
+   \        0x4   0x1D20             ADDS     R0,R4,#+4
+   \        0x6   0x.... 0x....      BL       mbedtls_asn1_free_named_data_list
+     59              mbedtls_asn1_free_named_data_list(&ctx->extensions);
+   \        0xA   0xF114 0x000C      ADDS     R0,R4,#+12
+   \        0xE   0x.... 0x....      BL       mbedtls_asn1_free_named_data_list
+     60          
+     61              mbedtls_platform_zeroize(ctx, sizeof(mbedtls_x509write_csr));
+   \       0x12   0x2110             MOVS     R1,#+16
+   \       0x14   0x0020             MOVS     R0,R4
+   \       0x16   0x.... 0x....      BL       mbedtls_platform_zeroize
+     62          }
+   \       0x1A   0xBD10             POP      {R4,PC}
+     63          
+
+   \                                 In section .text, align 2, keep-with-next
+     64          void mbedtls_x509write_csr_set_md_alg(mbedtls_x509write_csr *ctx, mbedtls_md_type_t md_alg)
+     65          {
+     66              ctx->md_alg = md_alg;
+   \                     mbedtls_x509write_csr_set_md_alg: (+1)
+   \        0x0   0x7201             STRB     R1,[R0, #+8]
+     67          }
+   \        0x2   0x4770             BX       LR
+     68          
+
+   \                                 In section .text, align 2, keep-with-next
+     69          void mbedtls_x509write_csr_set_key(mbedtls_x509write_csr *ctx, mbedtls_pk_context *key)
+     70          {
+     71              ctx->key = key;
+   \                     mbedtls_x509write_csr_set_key: (+1)
+   \        0x0   0x6001             STR      R1,[R0, #+0]
+     72          }
+   \        0x2   0x4770             BX       LR
+     73          
+
+   \                                 In section .text, align 2, keep-with-next
+     74          int mbedtls_x509write_csr_set_subject_name(mbedtls_x509write_csr *ctx,
+     75                                                     const char *subject_name)
+     76          {
+   \                     mbedtls_x509write_csr_set_subject_name: (+1)
+   \        0x0   0xB538             PUSH     {R3-R5,LR}
+   \        0x2   0x0005             MOVS     R5,R0
+   \        0x4   0x000C             MOVS     R4,R1
+     77              return mbedtls_x509_string_to_names(&ctx->subject, subject_name);
+   \        0x6   0x0021             MOVS     R1,R4
+   \        0x8   0x1D28             ADDS     R0,R5,#+4
+   \        0xA   0x.... 0x....      BL       mbedtls_x509_string_to_names
+   \        0xE   0xBD32             POP      {R1,R4,R5,PC}
+     78          }
+     79          
+
+   \                                 In section .text, align 2, keep-with-next
+     80          int mbedtls_x509write_csr_set_extension(mbedtls_x509write_csr *ctx,
+     81                                                  const char *oid, size_t oid_len,
+     82                                                  int critical,
+     83                                                  const unsigned char *val, size_t val_len)
+     84          {
+   \                     mbedtls_x509write_csr_set_extension: (+1)
+   \        0x0   0xB5FE             PUSH     {R1-R7,LR}
+   \        0x2   0x0004             MOVS     R4,R0
+   \        0x4   0x000D             MOVS     R5,R1
+   \        0x6   0x0016             MOVS     R6,R2
+   \        0x8   0x001F             MOVS     R7,R3
+     85              return mbedtls_x509_set_extension(&ctx->extensions, oid, oid_len,
+     86                                                critical, val, val_len);
+   \        0xA   0x9809             LDR      R0,[SP, #+36]
+   \        0xC   0x9001             STR      R0,[SP, #+4]
+   \        0xE   0x9808             LDR      R0,[SP, #+32]
+   \       0x10   0x9000             STR      R0,[SP, #+0]
+   \       0x12   0x003B             MOVS     R3,R7
+   \       0x14   0x0032             MOVS     R2,R6
+   \       0x16   0x0029             MOVS     R1,R5
+   \       0x18   0xF114 0x000C      ADDS     R0,R4,#+12
+   \       0x1C   0x.... 0x....      BL       mbedtls_x509_set_extension
+   \       0x20   0xBDFE             POP      {R1-R7,PC}
+     87          }
+     88          
+
+   \                                 In section .text, align 2, keep-with-next
+     89          int mbedtls_x509write_csr_set_subject_alternative_name(mbedtls_x509write_csr *ctx,
+     90                                                                 const mbedtls_x509_san_list *san_list)
+     91          {
+   \                     mbedtls_x509write_csr_set_subject_alternative_name: (+1)
+   \        0x0   0xB538             PUSH     {R3-R5,LR}
+   \        0x2   0x0005             MOVS     R5,R0
+   \        0x4   0x000C             MOVS     R4,R1
+     92              return mbedtls_x509_write_set_san_common(&ctx->extensions, san_list);
+   \        0x6   0x0021             MOVS     R1,R4
+   \        0x8   0xF115 0x000C      ADDS     R0,R5,#+12
+   \        0xC   0x.... 0x....      BL       mbedtls_x509_write_set_san_common
+   \       0x10   0xBD32             POP      {R1,R4,R5,PC}
+     93          }
+     94          
+
+   \                                 In section .text, align 2, keep-with-next
+     95          int mbedtls_x509write_csr_set_key_usage(mbedtls_x509write_csr *ctx, unsigned char key_usage)
+     96          {
+   \                     mbedtls_x509write_csr_set_key_usage: (+1)
+   \        0x0   0xB573             PUSH     {R0,R1,R4-R6,LR}
+   \        0x2   0xB084             SUB      SP,SP,#+16
+   \        0x4   0x0004             MOVS     R4,R0
+   \        0x6   0x2104             MOVS     R1,#+4
+   \        0x8   0x2200             MOVS     R2,#+0
+   \        0xA   0xAD03             ADD      R5,SP,#+12
+   \        0xC   0x0028             MOVS     R0,R5
+   \        0xE   0x.... 0x....      BL       __aeabi_memset
+     97              unsigned char buf[4] = { 0 };
+     98              unsigned char *c;
+     99              int ret = MBEDTLS_ERR_ERROR_CORRUPTION_DETECTED;
+   \       0x12   0xF07F 0x056D      MVNS     R5,#+109
+    100          
+    101              c = buf + 4;
+   \       0x16   0xA804             ADD      R0,SP,#+16
+   \       0x18   0x9002             STR      R0,[SP, #+8]
+    102          
+    103              ret = mbedtls_asn1_write_named_bitstring(&c, buf, &key_usage, 8);
+   \       0x1A   0x2308             MOVS     R3,#+8
+   \       0x1C   0xAA05             ADD      R2,SP,#+20
+   \       0x1E   0xA903             ADD      R1,SP,#+12
+   \       0x20   0xA802             ADD      R0,SP,#+8
+   \       0x22   0x.... 0x....      BL       mbedtls_asn1_write_named_bitstring
+   \       0x26   0x0006             MOVS     R6,R0
+    104              if (ret < 3 || ret > 4) {
+   \       0x28   0x2E03             CMP      R6,#+3
+   \       0x2A   0xDB01             BLT.N    ??mbedtls_x509write_csr_set_key_usage_0
+   \       0x2C   0x2E05             CMP      R6,#+5
+   \       0x2E   0xDB01             BLT.N    ??mbedtls_x509write_csr_set_key_usage_1
+    105                  return ret;
+   \                     ??mbedtls_x509write_csr_set_key_usage_0: (+1)
+   \       0x30   0x0030             MOVS     R0,R6
+   \       0x32   0xE00E             B.N      ??mbedtls_x509write_csr_set_key_usage_2
+    106              }
+    107          
+    108              ret = mbedtls_x509write_csr_set_extension(ctx, MBEDTLS_OID_KEY_USAGE,
+    109                                                        MBEDTLS_OID_SIZE(MBEDTLS_OID_KEY_USAGE),
+    110                                                        0, c, (size_t) ret);
+   \                     ??mbedtls_x509write_csr_set_key_usage_1: (+1)
+   \       0x34   0x9601             STR      R6,[SP, #+4]
+   \       0x36   0x9802             LDR      R0,[SP, #+8]
+   \       0x38   0x9000             STR      R0,[SP, #+0]
+   \       0x3A   0x2300             MOVS     R3,#+0
+   \       0x3C   0x2203             MOVS     R2,#+3
+   \       0x3E   0x....             ADR.N    R1,??DataTable2
+   \       0x40   0x0020             MOVS     R0,R4
+   \       0x42   0x.... 0x....      BL       mbedtls_x509write_csr_set_extension
+   \       0x46   0x0001             MOVS     R1,R0
+    111              if (ret != 0) {
+   \       0x48   0x2900             CMP      R1,#+0
+   \       0x4A   0xD001             BEQ.N    ??mbedtls_x509write_csr_set_key_usage_3
+    112                  return ret;
+   \       0x4C   0x0008             MOVS     R0,R1
+   \       0x4E   0xE000             B.N      ??mbedtls_x509write_csr_set_key_usage_2
+    113              }
+    114          
+    115              return 0;
+   \                     ??mbedtls_x509write_csr_set_key_usage_3: (+1)
+   \       0x50   0x2000             MOVS     R0,#+0
+   \                     ??mbedtls_x509write_csr_set_key_usage_2: (+1)
+   \       0x52   0xB006             ADD      SP,SP,#+24
+   \       0x54   0xBD70             POP      {R4-R6,PC}
+    116          }
+    117          
+
+   \                                 In section .text, align 2, keep-with-next
+    118          int mbedtls_x509write_csr_set_ns_cert_type(mbedtls_x509write_csr *ctx,
+    119                                                     unsigned char ns_cert_type)
+    120          {
+   \                     mbedtls_x509write_csr_set_ns_cert_type: (+1)
+   \        0x0   0xB573             PUSH     {R0,R1,R4-R6,LR}
+   \        0x2   0xB084             SUB      SP,SP,#+16
+   \        0x4   0x0004             MOVS     R4,R0
+   \        0x6   0x2104             MOVS     R1,#+4
+   \        0x8   0x2200             MOVS     R2,#+0
+   \        0xA   0xAD03             ADD      R5,SP,#+12
+   \        0xC   0x0028             MOVS     R0,R5
+   \        0xE   0x.... 0x....      BL       __aeabi_memset
+    121              unsigned char buf[4] = { 0 };
+    122              unsigned char *c;
+    123              int ret = MBEDTLS_ERR_ERROR_CORRUPTION_DETECTED;
+   \       0x12   0xF07F 0x056D      MVNS     R5,#+109
+    124          
+    125              c = buf + 4;
+   \       0x16   0xA804             ADD      R0,SP,#+16
+   \       0x18   0x9002             STR      R0,[SP, #+8]
+    126          
+    127              ret = mbedtls_asn1_write_named_bitstring(&c, buf, &ns_cert_type, 8);
+   \       0x1A   0x2308             MOVS     R3,#+8
+   \       0x1C   0xAA05             ADD      R2,SP,#+20
+   \       0x1E   0xA903             ADD      R1,SP,#+12
+   \       0x20   0xA802             ADD      R0,SP,#+8
+   \       0x22   0x.... 0x....      BL       mbedtls_asn1_write_named_bitstring
+   \       0x26   0x0006             MOVS     R6,R0
+    128              if (ret < 3 || ret > 4) {
+   \       0x28   0x2E03             CMP      R6,#+3
+   \       0x2A   0xDB01             BLT.N    ??mbedtls_x509write_csr_set_ns_cert_type_0
+   \       0x2C   0x2E05             CMP      R6,#+5
+   \       0x2E   0xDB01             BLT.N    ??mbedtls_x509write_csr_set_ns_cert_type_1
+    129                  return ret;
+   \                     ??mbedtls_x509write_csr_set_ns_cert_type_0: (+1)
+   \       0x30   0x0030             MOVS     R0,R6
+   \       0x32   0xE00F             B.N      ??mbedtls_x509write_csr_set_ns_cert_type_2
+    130              }
+    131          
+    132              ret = mbedtls_x509write_csr_set_extension(ctx, MBEDTLS_OID_NS_CERT_TYPE,
+    133                                                        MBEDTLS_OID_SIZE(MBEDTLS_OID_NS_CERT_TYPE),
+    134                                                        0, c, (size_t) ret);
+   \                     ??mbedtls_x509write_csr_set_ns_cert_type_1: (+1)
+   \       0x34   0x9601             STR      R6,[SP, #+4]
+   \       0x36   0x9802             LDR      R0,[SP, #+8]
+   \       0x38   0x9000             STR      R0,[SP, #+0]
+   \       0x3A   0x2300             MOVS     R3,#+0
+   \       0x3C   0x2209             MOVS     R2,#+9
+   \       0x3E   0x.... 0x....      LDR.W    R1,??DataTable5
+   \       0x42   0x0020             MOVS     R0,R4
+   \       0x44   0x.... 0x....      BL       mbedtls_x509write_csr_set_extension
+   \       0x48   0x0001             MOVS     R1,R0
+    135              if (ret != 0) {
+   \       0x4A   0x2900             CMP      R1,#+0
+   \       0x4C   0xD001             BEQ.N    ??mbedtls_x509write_csr_set_ns_cert_type_3
+    136                  return ret;
+   \       0x4E   0x0008             MOVS     R0,R1
+   \       0x50   0xE000             B.N      ??mbedtls_x509write_csr_set_ns_cert_type_2
+    137              }
+    138          
+    139              return 0;
+   \                     ??mbedtls_x509write_csr_set_ns_cert_type_3: (+1)
+   \       0x52   0x2000             MOVS     R0,#+0
+   \                     ??mbedtls_x509write_csr_set_ns_cert_type_2: (+1)
+   \       0x54   0xB006             ADD      SP,SP,#+24
+   \       0x56   0xBD70             POP      {R4-R6,PC}
+    140          }
+    141          
+
+   \                                 In section .text, align 2, keep-with-next
+    142          static int x509write_csr_der_internal(mbedtls_x509write_csr *ctx,
+    143                                                unsigned char *buf,
+    144                                                size_t size,
+    145                                                unsigned char *sig, size_t sig_size,
+    146                                                int (*f_rng)(void *, unsigned char *, size_t),
+    147                                                void *p_rng)
+    148          {
+   \                     x509write_csr_der_internal: (+1)
+   \        0x0   0xE92D 0x4FF6      PUSH     {R1,R2,R4-R11,LR}
+   \        0x4   0xB095             SUB      SP,SP,#+84
+   \        0x6   0x0004             MOVS     R4,R0
+   \        0x8   0x000D             MOVS     R5,R1
+   \        0xA   0x001E             MOVS     R6,R3
+    149              int ret = MBEDTLS_ERR_ERROR_CORRUPTION_DETECTED;
+   \        0xC   0xF07F 0x0B6D      MVNS     R11,#+109
+    150              const char *sig_oid;
+    151              size_t sig_oid_len = 0;
+   \       0x10   0x2000             MOVS     R0,#+0
+   \       0x12   0x9007             STR      R0,[SP, #+28]
+    152              unsigned char *c, *c2;
+    153              unsigned char hash[MBEDTLS_MD_MAX_SIZE];
+    154              size_t pub_len = 0, sig_and_oid_len = 0, sig_len;
+   \       0x14   0xF05F 0x0A00      MOVS     R10,#+0
+   \       0x18   0x2700             MOVS     R7,#+0
+    155              size_t len = 0;
+   \       0x1A   0xF05F 0x0800      MOVS     R8,#+0
+    156              mbedtls_pk_type_t pk_alg;
+    157          #if defined(MBEDTLS_USE_PSA_CRYPTO)
+    158              size_t hash_len;
+    159              psa_algorithm_t hash_alg = mbedtls_md_psa_alg_from_type(ctx->md_alg);
+   \       0x1E   0x7A20             LDRB     R0,[R4, #+8]
+   \       0x20   0x.... 0x....      BL       mbedtls_md_psa_alg_from_type
+   \       0x24   0x900B             STR      R0,[SP, #+44]
+    160          #endif /* MBEDTLS_USE_PSA_CRYPTO */
+    161          
+    162              /* Write the CSR backwards starting from the end of buf */
+    163              c = buf + size;
+   \       0x26   0x9816             LDR      R0,[SP, #+88]
+   \       0x28   0x4428             ADD      R0,R5,R0
+   \       0x2A   0x9005             STR      R0,[SP, #+20]
+    164          
+    165              MBEDTLS_ASN1_CHK_ADD(len, mbedtls_x509_write_extensions(&c, buf,
+    166                                                                      ctx->extensions));
+   \       0x2C   0x68E2             LDR      R2,[R4, #+12]
+   \       0x2E   0x0029             MOVS     R1,R5
+   \       0x30   0xA805             ADD      R0,SP,#+20
+   \       0x32   0x.... 0x....      BL       mbedtls_x509_write_extensions
+   \       0x36   0x4681             MOV      R9,R0
+   \       0x38   0x2800             CMP      R0,#+0
+   \       0x3A   0xD501             BPL.N    ??x509write_csr_der_internal_0
+   \       0x3C   0x4648             MOV      R0,R9
+   \       0x3E   0xE158             B.N      ??x509write_csr_der_internal_1
+   \                     ??x509write_csr_der_internal_0: (+1)
+   \       0x40   0xEB19 0x0808      ADDS     R8,R9,R8
+    167          
+    168              if (len) {
+   \       0x44   0xF1B8 0x0F00      CMP      R8,#+0
+   \       0x48   0xD057             BEQ.N    ??x509write_csr_der_internal_2
+    169                  MBEDTLS_ASN1_CHK_ADD(len, mbedtls_asn1_write_len(&c, buf, len));
+   \       0x4A   0x4642             MOV      R2,R8
+   \       0x4C   0x0029             MOVS     R1,R5
+   \       0x4E   0xA805             ADD      R0,SP,#+20
+   \       0x50   0x.... 0x....      BL       mbedtls_asn1_write_len
+   \       0x54   0x4683             MOV      R11,R0
+   \       0x56   0x2800             CMP      R0,#+0
+   \       0x58   0xD501             BPL.N    ??x509write_csr_der_internal_3
+   \       0x5A   0x4658             MOV      R0,R11
+   \       0x5C   0xE149             B.N      ??x509write_csr_der_internal_1
+   \                     ??x509write_csr_der_internal_3: (+1)
+   \       0x5E   0xEB1B 0x0808      ADDS     R8,R11,R8
+   \       0x62   0x46C1             MOV      R9,R8
+    170                  MBEDTLS_ASN1_CHK_ADD(len,
+    171                                       mbedtls_asn1_write_tag(
+    172                                           &c, buf,
+    173                                           MBEDTLS_ASN1_CONSTRUCTED | MBEDTLS_ASN1_SEQUENCE));
+   \       0x64   0x2230             MOVS     R2,#+48
+   \       0x66   0x0029             MOVS     R1,R5
+   \       0x68   0xA805             ADD      R0,SP,#+20
+   \       0x6A   0x.... 0x....      BL       mbedtls_asn1_write_tag
+   \       0x6E   0x4680             MOV      R8,R0
+   \       0x70   0x2800             CMP      R0,#+0
+   \       0x72   0xD501             BPL.N    ??x509write_csr_der_internal_4
+   \       0x74   0x4640             MOV      R0,R8
+   \       0x76   0xE13C             B.N      ??x509write_csr_der_internal_1
+   \                     ??x509write_csr_der_internal_4: (+1)
+   \       0x78   0xEB18 0x0909      ADDS     R9,R8,R9
+   \       0x7C   0x46CB             MOV      R11,R9
+    174          
+    175                  MBEDTLS_ASN1_CHK_ADD(len, mbedtls_asn1_write_len(&c, buf, len));
+   \       0x7E   0x465A             MOV      R2,R11
+   \       0x80   0x0029             MOVS     R1,R5
+   \       0x82   0xA805             ADD      R0,SP,#+20
+   \       0x84   0x.... 0x....      BL       mbedtls_asn1_write_len
+   \       0x88   0x4681             MOV      R9,R0
+   \       0x8A   0x2800             CMP      R0,#+0
+   \       0x8C   0xD501             BPL.N    ??x509write_csr_der_internal_5
+   \       0x8E   0x4648             MOV      R0,R9
+   \       0x90   0xE12F             B.N      ??x509write_csr_der_internal_1
+   \                     ??x509write_csr_der_internal_5: (+1)
+   \       0x92   0xEB19 0x0B0B      ADDS     R11,R9,R11
+   \       0x96   0x46D8             MOV      R8,R11
+    176                  MBEDTLS_ASN1_CHK_ADD(len,
+    177                                       mbedtls_asn1_write_tag(
+    178                                           &c, buf,
+    179                                           MBEDTLS_ASN1_CONSTRUCTED | MBEDTLS_ASN1_SET));
+   \       0x98   0x2231             MOVS     R2,#+49
+   \       0x9A   0x0029             MOVS     R1,R5
+   \       0x9C   0xA805             ADD      R0,SP,#+20
+   \       0x9E   0x.... 0x....      BL       mbedtls_asn1_write_tag
+   \       0xA2   0x4683             MOV      R11,R0
+   \       0xA4   0x2800             CMP      R0,#+0
+   \       0xA6   0xD501             BPL.N    ??x509write_csr_der_internal_6
+   \       0xA8   0x4658             MOV      R0,R11
+   \       0xAA   0xE122             B.N      ??x509write_csr_der_internal_1
+   \                     ??x509write_csr_der_internal_6: (+1)
+   \       0xAC   0xEB1B 0x0808      ADDS     R8,R11,R8
+    180          
+    181                  MBEDTLS_ASN1_CHK_ADD(len,
+    182                                       mbedtls_asn1_write_oid(
+    183                                           &c, buf, MBEDTLS_OID_PKCS9_CSR_EXT_REQ,
+    184                                           MBEDTLS_OID_SIZE(MBEDTLS_OID_PKCS9_CSR_EXT_REQ)));
+   \       0xB0   0x2309             MOVS     R3,#+9
+   \       0xB2   0x....             LDR.N    R2,??DataTable5_1
+   \       0xB4   0x0029             MOVS     R1,R5
+   \       0xB6   0xA805             ADD      R0,SP,#+20
+   \       0xB8   0x.... 0x....      BL       mbedtls_asn1_write_oid
+   \       0xBC   0x4681             MOV      R9,R0
+   \       0xBE   0x2800             CMP      R0,#+0
+   \       0xC0   0xD501             BPL.N    ??x509write_csr_der_internal_7
+   \       0xC2   0x4648             MOV      R0,R9
+   \       0xC4   0xE115             B.N      ??x509write_csr_der_internal_1
+   \                     ??x509write_csr_der_internal_7: (+1)
+   \       0xC6   0xEB19 0x0808      ADDS     R8,R9,R8
+    185          
+    186                  MBEDTLS_ASN1_CHK_ADD(len, mbedtls_asn1_write_len(&c, buf, len));
+   \       0xCA   0x4642             MOV      R2,R8
+   \       0xCC   0x0029             MOVS     R1,R5
+   \       0xCE   0xA805             ADD      R0,SP,#+20
+   \       0xD0   0x.... 0x....      BL       mbedtls_asn1_write_len
+   \       0xD4   0x4683             MOV      R11,R0
+   \       0xD6   0x2800             CMP      R0,#+0
+   \       0xD8   0xD501             BPL.N    ??x509write_csr_der_internal_8
+   \       0xDA   0x4658             MOV      R0,R11
+   \       0xDC   0xE109             B.N      ??x509write_csr_der_internal_1
+   \                     ??x509write_csr_der_internal_8: (+1)
+   \       0xDE   0xEB1B 0x0808      ADDS     R8,R11,R8
+    187                  MBEDTLS_ASN1_CHK_ADD(len,
+    188                                       mbedtls_asn1_write_tag(
+    189                                           &c, buf,
+    190                                           MBEDTLS_ASN1_CONSTRUCTED | MBEDTLS_ASN1_SEQUENCE));
+   \       0xE2   0x2230             MOVS     R2,#+48
+   \       0xE4   0x0029             MOVS     R1,R5
+   \       0xE6   0xA805             ADD      R0,SP,#+20
+   \       0xE8   0x.... 0x....      BL       mbedtls_asn1_write_tag
+   \       0xEC   0x4681             MOV      R9,R0
+   \       0xEE   0x2800             CMP      R0,#+0
+   \       0xF0   0xD501             BPL.N    ??x509write_csr_der_internal_9
+   \       0xF2   0x4648             MOV      R0,R9
+   \       0xF4   0xE0FD             B.N      ??x509write_csr_der_internal_1
+   \                     ??x509write_csr_der_internal_9: (+1)
+   \       0xF6   0xEB19 0x0808      ADDS     R8,R9,R8
+    191              }
+    192          
+    193              MBEDTLS_ASN1_CHK_ADD(len, mbedtls_asn1_write_len(&c, buf, len));
+   \                     ??x509write_csr_der_internal_2: (+1)
+   \       0xFA   0x4642             MOV      R2,R8
+   \       0xFC   0x0029             MOVS     R1,R5
+   \       0xFE   0xA805             ADD      R0,SP,#+20
+   \      0x100   0x.... 0x....      BL       mbedtls_asn1_write_len
+   \      0x104   0x4683             MOV      R11,R0
+   \      0x106   0x2800             CMP      R0,#+0
+   \      0x108   0xD501             BPL.N    ??x509write_csr_der_internal_10
+   \      0x10A   0x4658             MOV      R0,R11
+   \      0x10C   0xE0F1             B.N      ??x509write_csr_der_internal_1
+   \                     ??x509write_csr_der_internal_10: (+1)
+   \      0x10E   0xEB1B 0x0808      ADDS     R8,R11,R8
+    194              MBEDTLS_ASN1_CHK_ADD(len,
+    195                                   mbedtls_asn1_write_tag(
+    196                                       &c, buf,
+    197                                       MBEDTLS_ASN1_CONSTRUCTED | MBEDTLS_ASN1_CONTEXT_SPECIFIC));
+   \      0x112   0x22A0             MOVS     R2,#+160
+   \      0x114   0x0029             MOVS     R1,R5
+   \      0x116   0xA805             ADD      R0,SP,#+20
+   \      0x118   0x.... 0x....      BL       mbedtls_asn1_write_tag
+   \      0x11C   0x4681             MOV      R9,R0
+   \      0x11E   0x2800             CMP      R0,#+0
+   \      0x120   0xD501             BPL.N    ??x509write_csr_der_internal_11
+   \      0x122   0x4648             MOV      R0,R9
+   \      0x124   0xE0E5             B.N      ??x509write_csr_der_internal_1
+   \                     ??x509write_csr_der_internal_11: (+1)
+   \      0x126   0xEB19 0x0808      ADDS     R8,R9,R8
+   \      0x12A   0x46C3             MOV      R11,R8
+    198          
+    199              MBEDTLS_ASN1_CHK_ADD(pub_len, mbedtls_pk_write_pubkey_der(ctx->key,
+    200                                                                        buf, c - buf));
+   \      0x12C   0x9A05             LDR      R2,[SP, #+20]
+   \      0x12E   0x1B52             SUBS     R2,R2,R5
+   \      0x130   0x0029             MOVS     R1,R5
+   \      0x132   0x6820             LDR      R0,[R4, #+0]
+   \      0x134   0x.... 0x....      BL       mbedtls_pk_write_pubkey_der
+   \      0x138   0x4680             MOV      R8,R0
+   \      0x13A   0x2800             CMP      R0,#+0
+   \      0x13C   0xD501             BPL.N    ??x509write_csr_der_internal_12
+   \      0x13E   0x4640             MOV      R0,R8
+   \      0x140   0xE0D7             B.N      ??x509write_csr_der_internal_1
+   \                     ??x509write_csr_der_internal_12: (+1)
+   \      0x142   0xEB18 0x0A0A      ADDS     R10,R8,R10
+   \      0x146   0xF8CD 0xA020      STR      R10,[SP, #+32]
+    201              c -= pub_len;
+   \      0x14A   0x9805             LDR      R0,[SP, #+20]
+   \      0x14C   0x9908             LDR      R1,[SP, #+32]
+   \      0x14E   0x4249             RSBS     R1,R1,#+0
+   \      0x150   0x4408             ADD      R0,R0,R1
+   \      0x152   0x9005             STR      R0,[SP, #+20]
+    202              len += pub_len;
+   \      0x154   0x9808             LDR      R0,[SP, #+32]
+   \      0x156   0xEB10 0x0B0B      ADDS     R11,R0,R11
+    203          
+    204              /*
+    205               *  Subject  ::=  Name
+    206               */
+    207              MBEDTLS_ASN1_CHK_ADD(len, mbedtls_x509_write_names(&c, buf,
+    208                                                                 ctx->subject));
+   \      0x15A   0x6862             LDR      R2,[R4, #+4]
+   \      0x15C   0x0029             MOVS     R1,R5
+   \      0x15E   0xA805             ADD      R0,SP,#+20
+   \      0x160   0x.... 0x....      BL       mbedtls_x509_write_names
+   \      0x164   0x4681             MOV      R9,R0
+   \      0x166   0x2800             CMP      R0,#+0
+   \      0x168   0xD501             BPL.N    ??x509write_csr_der_internal_13
+   \      0x16A   0x4648             MOV      R0,R9
+   \      0x16C   0xE0C1             B.N      ??x509write_csr_der_internal_1
+   \                     ??x509write_csr_der_internal_13: (+1)
+   \      0x16E   0xEB19 0x0B0B      ADDS     R11,R9,R11
+    209          
+    210              /*
+    211               *  Version  ::=  INTEGER  {  v1(0), v2(1), v3(2)  }
+    212               */
+    213              MBEDTLS_ASN1_CHK_ADD(len, mbedtls_asn1_write_int(&c, buf, 0));
+   \      0x172   0x2200             MOVS     R2,#+0
+   \      0x174   0x0029             MOVS     R1,R5
+   \      0x176   0xA805             ADD      R0,SP,#+20
+   \      0x178   0x.... 0x....      BL       mbedtls_asn1_write_int
+   \      0x17C   0x4680             MOV      R8,R0
+   \      0x17E   0x2800             CMP      R0,#+0
+   \      0x180   0xD501             BPL.N    ??x509write_csr_der_internal_14
+   \      0x182   0x4640             MOV      R0,R8
+   \      0x184   0xE0B5             B.N      ??x509write_csr_der_internal_1
+   \                     ??x509write_csr_der_internal_14: (+1)
+   \      0x186   0xEB18 0x0B0B      ADDS     R11,R8,R11
+    214          
+    215              MBEDTLS_ASN1_CHK_ADD(len, mbedtls_asn1_write_len(&c, buf, len));
+   \      0x18A   0x465A             MOV      R2,R11
+   \      0x18C   0x0029             MOVS     R1,R5
+   \      0x18E   0xA805             ADD      R0,SP,#+20
+   \      0x190   0x.... 0x....      BL       mbedtls_asn1_write_len
+   \      0x194   0x4682             MOV      R10,R0
+   \      0x196   0x2800             CMP      R0,#+0
+   \      0x198   0xD501             BPL.N    ??x509write_csr_der_internal_15
+   \      0x19A   0x4650             MOV      R0,R10
+   \      0x19C   0xE0A9             B.N      ??x509write_csr_der_internal_1
+   \                     ??x509write_csr_der_internal_15: (+1)
+   \      0x19E   0xEB1A 0x0B0B      ADDS     R11,R10,R11
+    216              MBEDTLS_ASN1_CHK_ADD(len,
+    217                                   mbedtls_asn1_write_tag(
+    218                                       &c, buf,
+    219                                       MBEDTLS_ASN1_CONSTRUCTED | MBEDTLS_ASN1_SEQUENCE));
+   \      0x1A2   0x2230             MOVS     R2,#+48
+   \      0x1A4   0x0029             MOVS     R1,R5
+   \      0x1A6   0xA805             ADD      R0,SP,#+20
+   \      0x1A8   0x.... 0x....      BL       mbedtls_asn1_write_tag
+   \      0x1AC   0x4681             MOV      R9,R0
+   \      0x1AE   0x2800             CMP      R0,#+0
+   \      0x1B0   0xD501             BPL.N    ??x509write_csr_der_internal_16
+   \      0x1B2   0x4648             MOV      R0,R9
+   \      0x1B4   0xE09D             B.N      ??x509write_csr_der_internal_1
+   \                     ??x509write_csr_der_internal_16: (+1)
+   \      0x1B6   0xEB19 0x0B0B      ADDS     R11,R9,R11
+    220          
+    221              /*
+    222               * Sign the written CSR data into the sig buffer
+    223               * Note: hash errors can happen only after an internal error
+    224               */
+    225          #if defined(MBEDTLS_USE_PSA_CRYPTO)
+    226              if (psa_hash_compute(hash_alg,
+    227                                   c,
+    228                                   len,
+    229                                   hash,
+    230                                   sizeof(hash),
+    231                                   &hash_len) != PSA_SUCCESS) {
+   \      0x1BA   0xA80C             ADD      R0,SP,#+48
+   \      0x1BC   0x9001             STR      R0,[SP, #+4]
+   \      0x1BE   0x2020             MOVS     R0,#+32
+   \      0x1C0   0x9000             STR      R0,[SP, #+0]
+   \      0x1C2   0xAB0D             ADD      R3,SP,#+52
+   \      0x1C4   0x465A             MOV      R2,R11
+   \      0x1C6   0x9905             LDR      R1,[SP, #+20]
+   \      0x1C8   0x980B             LDR      R0,[SP, #+44]
+   \      0x1CA   0x.... 0x....      BL       psa_hash_compute
+   \      0x1CE   0x2800             CMP      R0,#+0
+   \      0x1D0   0xD002             BEQ.N    ??x509write_csr_der_internal_17
+    232                  return MBEDTLS_ERR_PLATFORM_HW_ACCEL_FAILED;
+   \      0x1D2   0xF07F 0x006F      MVNS     R0,#+111
+   \      0x1D6   0xE08C             B.N      ??x509write_csr_der_internal_1
+    233              }
+    234          #else /* MBEDTLS_USE_PSA_CRYPTO */
+    235              ret = mbedtls_md(mbedtls_md_info_from_type(ctx->md_alg), c, len, hash);
+    236              if (ret != 0) {
+    237                  return ret;
+    238              }
+    239          #endif
+    240              if ((ret = mbedtls_pk_sign(ctx->key, ctx->md_alg, hash, 0,
+    241                                         sig, sig_size, &sig_len,
+    242                                         f_rng, p_rng)) != 0) {
+   \                     ??x509write_csr_der_internal_17: (+1)
+   \      0x1D8   0x9822             LDR      R0,[SP, #+136]
+   \      0x1DA   0x9004             STR      R0,[SP, #+16]
+   \      0x1DC   0x9821             LDR      R0,[SP, #+132]
+   \      0x1DE   0x9003             STR      R0,[SP, #+12]
+   \      0x1E0   0xA809             ADD      R0,SP,#+36
+   \      0x1E2   0x9002             STR      R0,[SP, #+8]
+   \      0x1E4   0x9820             LDR      R0,[SP, #+128]
+   \      0x1E6   0x9001             STR      R0,[SP, #+4]
+   \      0x1E8   0x9600             STR      R6,[SP, #+0]
+   \      0x1EA   0x2300             MOVS     R3,#+0
+   \      0x1EC   0xAA0D             ADD      R2,SP,#+52
+   \      0x1EE   0x7A21             LDRB     R1,[R4, #+8]
+   \      0x1F0   0x6820             LDR      R0,[R4, #+0]
+   \      0x1F2   0x.... 0x....      BL       mbedtls_pk_sign
+   \      0x1F6   0x4680             MOV      R8,R0
+   \      0x1F8   0x2800             CMP      R0,#+0
+   \      0x1FA   0xD001             BEQ.N    ??x509write_csr_der_internal_18
+    243                  return ret;
+   \      0x1FC   0x4640             MOV      R0,R8
+   \      0x1FE   0xE078             B.N      ??x509write_csr_der_internal_1
+    244              }
+    245          
+    246              if (mbedtls_pk_can_do(ctx->key, MBEDTLS_PK_RSA)) {
+   \                     ??x509write_csr_der_internal_18: (+1)
+   \      0x200   0x2101             MOVS     R1,#+1
+   \      0x202   0x6820             LDR      R0,[R4, #+0]
+   \      0x204   0x.... 0x....      BL       mbedtls_pk_can_do
+   \      0x208   0x2800             CMP      R0,#+0
+   \      0x20A   0xD002             BEQ.N    ??x509write_csr_der_internal_19
+    247                  pk_alg = MBEDTLS_PK_RSA;
+   \      0x20C   0xF05F 0x0901      MOVS     R9,#+1
+   \      0x210   0xE00A             B.N      ??x509write_csr_der_internal_20
+    248              } else if (mbedtls_pk_can_do(ctx->key, MBEDTLS_PK_ECDSA)) {
+   \                     ??x509write_csr_der_internal_19: (+1)
+   \      0x212   0x2104             MOVS     R1,#+4
+   \      0x214   0x6820             LDR      R0,[R4, #+0]
+   \      0x216   0x.... 0x....      BL       mbedtls_pk_can_do
+   \      0x21A   0x2800             CMP      R0,#+0
+   \      0x21C   0xD002             BEQ.N    ??x509write_csr_der_internal_21
+    249                  pk_alg = MBEDTLS_PK_ECDSA;
+   \      0x21E   0xF05F 0x0904      MOVS     R9,#+4
+   \      0x222   0xE001             B.N      ??x509write_csr_der_internal_20
+    250              } else {
+    251                  return MBEDTLS_ERR_X509_INVALID_ALG;
+   \                     ??x509write_csr_der_internal_21: (+1)
+   \      0x224   0x....             LDR.N    R0,??DataTable5_2
+   \      0x226   0xE064             B.N      ??x509write_csr_der_internal_1
+    252              }
+    253          
+    254              if ((ret = mbedtls_oid_get_oid_by_sig_alg(pk_alg, ctx->md_alg,
+    255                                                        &sig_oid, &sig_oid_len)) != 0) {
+   \                     ??x509write_csr_der_internal_20: (+1)
+   \      0x228   0xAB07             ADD      R3,SP,#+28
+   \      0x22A   0xAA0A             ADD      R2,SP,#+40
+   \      0x22C   0x7A21             LDRB     R1,[R4, #+8]
+   \      0x22E   0x4648             MOV      R0,R9
+   \      0x230   0xB2C0             UXTB     R0,R0
+   \      0x232   0x.... 0x....      BL       mbedtls_oid_get_oid_by_sig_alg
+   \      0x236   0x4682             MOV      R10,R0
+   \      0x238   0x2800             CMP      R0,#+0
+   \      0x23A   0xD001             BEQ.N    ??x509write_csr_der_internal_22
+    256                  return ret;
+   \      0x23C   0x4650             MOV      R0,R10
+   \      0x23E   0xE058             B.N      ??x509write_csr_der_internal_1
+    257              }
+    258          
+    259              /*
+    260               * Move the written CSR data to the start of buf to create space for
+    261               * writing the signature into buf.
+    262               */
+    263              memmove(buf, c, len);
+   \                     ??x509write_csr_der_internal_22: (+1)
+   \      0x240   0xF8CD 0xB010      STR      R11,[SP, #+16]
+   \      0x244   0x9805             LDR      R0,[SP, #+20]
+   \      0x246   0x9003             STR      R0,[SP, #+12]
+   \      0x248   0x46A8             MOV      R8,R5
+   \      0x24A   0x9A04             LDR      R2,[SP, #+16]
+   \      0x24C   0x9903             LDR      R1,[SP, #+12]
+   \      0x24E   0x4640             MOV      R0,R8
+   \      0x250   0x.... 0x....      BL       __aeabi_memmove
+    264          
+    265              /*
+    266               * Write sig and its OID into buf backwards from the end of buf.
+    267               * Note: mbedtls_x509_write_sig will check for c2 - ( buf + len ) < sig_len
+    268               * and return MBEDTLS_ERR_ASN1_BUF_TOO_SMALL if needed.
+    269               */
+    270              c2 = buf + size;
+   \      0x254   0x9816             LDR      R0,[SP, #+88]
+   \      0x256   0x4428             ADD      R0,R5,R0
+   \      0x258   0x9006             STR      R0,[SP, #+24]
+    271              MBEDTLS_ASN1_CHK_ADD(sig_and_oid_len,
+    272                                   mbedtls_x509_write_sig(&c2, buf + len, sig_oid, sig_oid_len,
+    273                                                          sig, sig_len, pk_alg));
+   \      0x25A   0x4648             MOV      R0,R9
+   \      0x25C   0xB2C0             UXTB     R0,R0
+   \      0x25E   0x9002             STR      R0,[SP, #+8]
+   \      0x260   0x9809             LDR      R0,[SP, #+36]
+   \      0x262   0x9001             STR      R0,[SP, #+4]
+   \      0x264   0x9600             STR      R6,[SP, #+0]
+   \      0x266   0x9B07             LDR      R3,[SP, #+28]
+   \      0x268   0x9A0A             LDR      R2,[SP, #+40]
+   \      0x26A   0xEB05 0x010B      ADD      R1,R5,R11
+   \      0x26E   0xA806             ADD      R0,SP,#+24
+   \      0x270   0x.... 0x....      BL       mbedtls_x509_write_sig
+   \      0x274   0x4680             MOV      R8,R0
+   \      0x276   0x2800             CMP      R0,#+0
+   \      0x278   0xD501             BPL.N    ??x509write_csr_der_internal_23
+   \      0x27A   0x4640             MOV      R0,R8
+   \      0x27C   0xE039             B.N      ??x509write_csr_der_internal_1
+   \                     ??x509write_csr_der_internal_23: (+1)
+   \      0x27E   0xEB18 0x0707      ADDS     R7,R8,R7
+   \      0x282   0x9702             STR      R7,[SP, #+8]
+    274          
+    275              /*
+    276               * Compact the space between the CSR data and signature by moving the
+    277               * CSR data to the start of the signature.
+    278               */
+    279              c2 -= len;
+   \      0x284   0x9906             LDR      R1,[SP, #+24]
+   \      0x286   0xF1DB 0x0000      RSBS     R0,R11,#+0
+   \      0x28A   0x4408             ADD      R0,R1,R0
+   \      0x28C   0x9006             STR      R0,[SP, #+24]
+    280              memmove(c2, buf, len);
+   \      0x28E   0xF8CD 0xB004      STR      R11,[SP, #+4]
+   \      0x292   0x9500             STR      R5,[SP, #+0]
+   \      0x294   0x9F06             LDR      R7,[SP, #+24]
+   \      0x296   0x9A01             LDR      R2,[SP, #+4]
+   \      0x298   0x9900             LDR      R1,[SP, #+0]
+   \      0x29A   0x0038             MOVS     R0,R7
+   \      0x29C   0x.... 0x....      BL       __aeabi_memmove
+    281          
+    282              /* ASN encode the total size and tag the CSR data with it. */
+    283              len += sig_and_oid_len;
+   \      0x2A0   0x9802             LDR      R0,[SP, #+8]
+   \      0x2A2   0xEB10 0x0B0B      ADDS     R11,R0,R11
+    284              MBEDTLS_ASN1_CHK_ADD(len, mbedtls_asn1_write_len(&c2, buf, len));
+   \      0x2A6   0x465A             MOV      R2,R11
+   \      0x2A8   0x0029             MOVS     R1,R5
+   \      0x2AA   0xA806             ADD      R0,SP,#+24
+   \      0x2AC   0x.... 0x....      BL       mbedtls_asn1_write_len
+   \      0x2B0   0x0007             MOVS     R7,R0
+   \      0x2B2   0x2800             CMP      R0,#+0
+   \      0x2B4   0xD501             BPL.N    ??x509write_csr_der_internal_24
+   \      0x2B6   0x0038             MOVS     R0,R7
+   \      0x2B8   0xE01B             B.N      ??x509write_csr_der_internal_1
+   \                     ??x509write_csr_der_internal_24: (+1)
+   \      0x2BA   0xEB17 0x0B0B      ADDS     R11,R7,R11
+    285              MBEDTLS_ASN1_CHK_ADD(len,
+    286                                   mbedtls_asn1_write_tag(
+    287                                       &c2, buf,
+    288                                       MBEDTLS_ASN1_CONSTRUCTED | MBEDTLS_ASN1_SEQUENCE));
+   \      0x2BE   0x2230             MOVS     R2,#+48
+   \      0x2C0   0x0029             MOVS     R1,R5
+   \      0x2C2   0xA806             ADD      R0,SP,#+24
+   \      0x2C4   0x.... 0x....      BL       mbedtls_asn1_write_tag
+   \      0x2C8   0x4680             MOV      R8,R0
+   \      0x2CA   0x2800             CMP      R0,#+0
+   \      0x2CC   0xD501             BPL.N    ??x509write_csr_der_internal_25
+   \      0x2CE   0x4640             MOV      R0,R8
+   \      0x2D0   0xE00F             B.N      ??x509write_csr_der_internal_1
+   \                     ??x509write_csr_der_internal_25: (+1)
+   \      0x2D2   0xEB18 0x0B0B      ADDS     R11,R8,R11
+   \      0x2D6   0xF8CD 0xB000      STR      R11,[SP, #+0]
+    289          
+    290              /* Zero the unused bytes at the start of buf */
+    291              memset(buf, 0, c2 - buf);
+   \      0x2DA   0xF8DD 0xB018      LDR      R11,[SP, #+24]
+   \      0x2DE   0xEBBB 0x0B05      SUBS     R11,R11,R5
+   \      0x2E2   0x2700             MOVS     R7,#+0
+   \      0x2E4   0x46AA             MOV      R10,R5
+   \      0x2E6   0x003A             MOVS     R2,R7
+   \      0x2E8   0x4659             MOV      R1,R11
+   \      0x2EA   0x4650             MOV      R0,R10
+   \      0x2EC   0x.... 0x....      BL       __aeabi_memset
+    292          
+    293              return (int) len;
+   \      0x2F0   0x9800             LDR      R0,[SP, #+0]
+   \                     ??x509write_csr_der_internal_1: (+1)
+   \      0x2F2   0xB017             ADD      SP,SP,#+92
+   \      0x2F4   0xE8BD 0x8FF0      POP      {R4-R11,PC}
+    294          }
+    295          
+
+   \                                 In section .text, align 2, keep-with-next
+    296          int mbedtls_x509write_csr_der(mbedtls_x509write_csr *ctx, unsigned char *buf,
+    297                                        size_t size,
+    298                                        int (*f_rng)(void *, unsigned char *, size_t),
+    299                                        void *p_rng)
+    300          {
+   \                     mbedtls_x509write_csr_der: (+1)
+   \        0x0   0xE92D 0x43FE      PUSH     {R1-R9,LR}
+   \        0x4   0x0005             MOVS     R5,R0
+   \        0x6   0x000E             MOVS     R6,R1
+   \        0x8   0x0017             MOVS     R7,R2
+   \        0xA   0x4698             MOV      R8,R3
+    301              int ret;
+    302              unsigned char *sig;
+    303          
+    304              if ((sig = mbedtls_calloc(1, MBEDTLS_PK_SIGNATURE_MAX_SIZE)) == NULL) {
+   \        0xC   0x214B             MOVS     R1,#+75
+   \        0xE   0x2001             MOVS     R0,#+1
+   \       0x10   0x.... 0x....      BL       sl_calloc
+   \       0x14   0x0004             MOVS     R4,R0
+   \       0x16   0x2C00             CMP      R4,#+0
+   \       0x18   0xD101             BNE.N    ??mbedtls_x509write_csr_der_0
+    305                  return MBEDTLS_ERR_X509_ALLOC_FAILED;
+   \       0x1A   0x....             LDR.N    R0,??DataTable5_3
+   \       0x1C   0xE010             B.N      ??mbedtls_x509write_csr_der_1
+    306              }
+    307          
+    308              ret = x509write_csr_der_internal(ctx, buf, size,
+    309                                               sig, MBEDTLS_PK_SIGNATURE_MAX_SIZE,
+    310                                               f_rng, p_rng);
+   \                     ??mbedtls_x509write_csr_der_0: (+1)
+   \       0x1E   0x980A             LDR      R0,[SP, #+40]
+   \       0x20   0x9002             STR      R0,[SP, #+8]
+   \       0x22   0xF8CD 0x8004      STR      R8,[SP, #+4]
+   \       0x26   0x204B             MOVS     R0,#+75
+   \       0x28   0x9000             STR      R0,[SP, #+0]
+   \       0x2A   0x0023             MOVS     R3,R4
+   \       0x2C   0x003A             MOVS     R2,R7
+   \       0x2E   0x0031             MOVS     R1,R6
+   \       0x30   0x0028             MOVS     R0,R5
+   \       0x32   0x.... 0x....      BL       x509write_csr_der_internal
+   \       0x36   0x4681             MOV      R9,R0
+    311          
+    312              mbedtls_free(sig);
+   \       0x38   0x0020             MOVS     R0,R4
+   \       0x3A   0x.... 0x....      BL       sl_free
+    313          
+    314              return ret;
+   \       0x3E   0x4648             MOV      R0,R9
+   \                     ??mbedtls_x509write_csr_der_1: (+1)
+   \       0x40   0xE8BD 0x83FE      POP      {R1-R9,PC}
+    315          }
+    316          
+    317          #define PEM_BEGIN_CSR           "-----BEGIN CERTIFICATE REQUEST-----\n"
+    318          #define PEM_END_CSR             "-----END CERTIFICATE REQUEST-----\n"
+    319          
+    320          #if defined(MBEDTLS_PEM_WRITE_C)
+
+   \                                 In section .text, align 2, keep-with-next
+    321          int mbedtls_x509write_csr_pem(mbedtls_x509write_csr *ctx, unsigned char *buf, size_t size,
+    322                                        int (*f_rng)(void *, unsigned char *, size_t),
+    323                                        void *p_rng)
+    324          {
+   \                     mbedtls_x509write_csr_pem: (+1)
+   \        0x0   0xE92D 0x43F8      PUSH     {R3-R9,LR}
+   \        0x4   0xB084             SUB      SP,SP,#+16
+   \        0x6   0x0004             MOVS     R4,R0
+   \        0x8   0x000D             MOVS     R5,R1
+   \        0xA   0x0016             MOVS     R6,R2
+   \        0xC   0x001F             MOVS     R7,R3
+    325              int ret = MBEDTLS_ERR_ERROR_CORRUPTION_DETECTED;
+   \        0xE   0xF07F 0x086D      MVNS     R8,#+109
+    326              size_t olen = 0;
+   \       0x12   0x2000             MOVS     R0,#+0
+   \       0x14   0x9003             STR      R0,[SP, #+12]
+    327          
+    328              if ((ret = mbedtls_x509write_csr_der(ctx, buf, size,
+    329                                                   f_rng, p_rng)) < 0) {
+   \       0x16   0x980C             LDR      R0,[SP, #+48]
+   \       0x18   0x9000             STR      R0,[SP, #+0]
+   \       0x1A   0x003B             MOVS     R3,R7
+   \       0x1C   0x0032             MOVS     R2,R6
+   \       0x1E   0x0029             MOVS     R1,R5
+   \       0x20   0x0020             MOVS     R0,R4
+   \       0x22   0x.... 0x....      BL       mbedtls_x509write_csr_der
+   \       0x26   0x4681             MOV      R9,R0
+   \       0x28   0x2800             CMP      R0,#+0
+   \       0x2A   0xD501             BPL.N    ??mbedtls_x509write_csr_pem_0
+    330                  return ret;
+   \       0x2C   0x4648             MOV      R0,R9
+   \       0x2E   0xE014             B.N      ??mbedtls_x509write_csr_pem_1
+    331              }
+    332          
+    333              if ((ret = mbedtls_pem_write_buffer(PEM_BEGIN_CSR, PEM_END_CSR,
+    334                                                  buf + size - ret,
+    335                                                  ret, buf, size, &olen)) != 0) {
+   \                     ??mbedtls_x509write_csr_pem_0: (+1)
+   \       0x30   0xA803             ADD      R0,SP,#+12
+   \       0x32   0x9002             STR      R0,[SP, #+8]
+   \       0x34   0x9601             STR      R6,[SP, #+4]
+   \       0x36   0x9500             STR      R5,[SP, #+0]
+   \       0x38   0x464B             MOV      R3,R9
+   \       0x3A   0xEB05 0x0106      ADD      R1,R5,R6
+   \       0x3E   0xF1D9 0x0000      RSBS     R0,R9,#+0
+   \       0x42   0xEB01 0x0200      ADD      R2,R1,R0
+   \       0x46   0x....             LDR.N    R1,??DataTable5_4
+   \       0x48   0x....             LDR.N    R0,??DataTable5_5
+   \       0x4A   0x.... 0x....      BL       mbedtls_pem_write_buffer
+   \       0x4E   0x0001             MOVS     R1,R0
+   \       0x50   0x2800             CMP      R0,#+0
+   \       0x52   0xD001             BEQ.N    ??mbedtls_x509write_csr_pem_2
+    336                  return ret;
+   \       0x54   0x0008             MOVS     R0,R1
+   \       0x56   0xE000             B.N      ??mbedtls_x509write_csr_pem_1
+    337              }
+    338          
+    339              return 0;
+   \                     ??mbedtls_x509write_csr_pem_2: (+1)
+   \       0x58   0x2000             MOVS     R0,#+0
+   \                     ??mbedtls_x509write_csr_pem_1: (+1)
+   \       0x5A   0xB005             ADD      SP,SP,#+20
+   \       0x5C   0xE8BD 0x83F0      POP      {R4-R9,PC}
+    340          }
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable2:
+   \        0x0   0x55 0x1D          DC8      "U\035\017"    
+   \              0x0F 0x00
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable5:
+   \        0x0   0x....'....        DC32     ?_1
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable5_1:
+   \        0x0   0x....'....        DC32     ?_2
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable5_2:
+   \        0x0   0xFFFF'DD00        DC32     0xffffdd00
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable5_3:
+   \        0x0   0xFFFF'D780        DC32     0xffffd780
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable5_4:
+   \        0x0   0x....'....        DC32     ?_4
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable5_5:
+   \        0x0   0x....'....        DC32     ?_3
+
+   \                                 In section .rodata, align 4
+   \        0x0   0x55 0x1D          DC8 "U\035\017"
+   \              0x0F 0x00
+
+   \                                 In section .rodata, align 4
+   \                     ?_1:
+   \        0x0   0x60 0x86          DC8 "`\206H\001\206\370B\001\001"
+   \              0x48 0x01    
+   \              0x86 0xF8    
+   \              0x42 0x01    
+   \              0x01 0x00
+   \        0xA                      DS8 2
+
+   \                                 In section .rodata, align 4
+   \                     ?_2:
+   \        0x0   0x2A 0x86          DC8 "*\206H\206\367\015\001\t\016"
+   \              0x48 0x86    
+   \              0xF7 0x0D    
+   \              0x01 0x09    
+   \              0x0E 0x00
+   \        0xA                      DS8 2
+
+   \                                 In section .rodata, align 4
+   \                     ?_3:
+   \        0x0   0x2D 0x2D          DC8 "-----BEGIN CERTIFICATE REQUEST-----\012"
+   \              0x2D 0x2D    
+   \              0x2D 0x42    
+   \              0x45 0x47    
+   \              0x49 0x4E    
+   \              0x20 0x43    
+   \              0x45 0x52    
+   \              0x54 0x49    
+   \              0x46 0x49    
+   \              0x43 0x41    
+   \              0x54 0x45    
+   \              0x20 0x52    
+   \              0x45 0x51    
+   \              0x55 0x45    
+   \              0x53 0x54    
+   \              0x2D 0x2D    
+   \              0x2D 0x2D    
+   \              0x2D 0x0A    
+   \              0x00
+   \       0x25                      DS8 3
+
+   \                                 In section .rodata, align 4
+   \                     ?_4:
+   \        0x0   0x2D 0x2D          DC8 "-----END CERTIFICATE REQUEST-----\012"
+   \              0x2D 0x2D    
+   \              0x2D 0x45    
+   \              0x4E 0x44    
+   \              0x20 0x43    
+   \              0x45 0x52    
+   \              0x54 0x49    
+   \              0x46 0x49    
+   \              0x43 0x41    
+   \              0x54 0x45    
+   \              0x20 0x52    
+   \              0x45 0x51    
+   \              0x55 0x45    
+   \              0x53 0x54    
+   \              0x2D 0x2D    
+   \              0x2D 0x2D    
+   \              0x2D 0x0A    
+   \              0x00
+   \       0x23                      DS8 1
+    341          #endif /* MBEDTLS_PEM_WRITE_C */
+    342          
+    343          #endif /* MBEDTLS_X509_CSR_WRITE_C */
+
+   Maximum stack usage in bytes:
+
+   .cstack Function
+   ------- --------
+       0   mbedtls_md_psa_alg_from_type
+      40   mbedtls_x509write_csr_der
+        40   -> sl_calloc
+        40   -> sl_free
+        40   -> x509write_csr_der_internal
+       8   mbedtls_x509write_csr_free
+         8   -> mbedtls_asn1_free_named_data_list
+         8   -> mbedtls_platform_zeroize
+      24   mbedtls_x509write_csr_init
+        24   -> __aeabi_memset
+      48   mbedtls_x509write_csr_pem
+        48   -> mbedtls_pem_write_buffer
+        48   -> mbedtls_x509write_csr_der
+      32   mbedtls_x509write_csr_set_extension
+        32   -> mbedtls_x509_set_extension
+       0   mbedtls_x509write_csr_set_key
+      40   mbedtls_x509write_csr_set_key_usage
+        40   -> __aeabi_memset
+        40   -> mbedtls_asn1_write_named_bitstring
+        40   -> mbedtls_x509write_csr_set_extension
+       0   mbedtls_x509write_csr_set_md_alg
+      40   mbedtls_x509write_csr_set_ns_cert_type
+        40   -> __aeabi_memset
+        40   -> mbedtls_asn1_write_named_bitstring
+        40   -> mbedtls_x509write_csr_set_extension
+      16   mbedtls_x509write_csr_set_subject_alternative_name
+        16   -> mbedtls_x509_write_set_san_common
+      16   mbedtls_x509write_csr_set_subject_name
+        16   -> mbedtls_x509_string_to_names
+     128   x509write_csr_der_internal
+       128   -> __aeabi_memmove
+       128   -> __aeabi_memset
+       128   -> mbedtls_asn1_write_int
+       128   -> mbedtls_asn1_write_len
+       128   -> mbedtls_asn1_write_oid
+       128   -> mbedtls_asn1_write_tag
+       128   -> mbedtls_md_psa_alg_from_type
+       128   -> mbedtls_oid_get_oid_by_sig_alg
+       128   -> mbedtls_pk_can_do
+       128   -> mbedtls_pk_sign
+       128   -> mbedtls_pk_write_pubkey_der
+       128   -> mbedtls_x509_write_extensions
+       128   -> mbedtls_x509_write_names
+       128   -> mbedtls_x509_write_sig
+       128   -> psa_hash_compute
+
+
+   Section sizes:
+
+   Bytes  Function/Label
+   -----  --------------
+       4  ??DataTable2
+       4  ??DataTable5
+       4  ??DataTable5_1
+       4  ??DataTable5_2
+       4  ??DataTable5_3
+       4  ??DataTable5_4
+       4  ??DataTable5_5
+       4  ?_0
+      12  ?_1
+      12  ?_2
+      40  ?_3
+      36  ?_4
+       8  mbedtls_md_psa_alg_from_type
+      68  mbedtls_x509write_csr_der
+      28  mbedtls_x509write_csr_free
+      22  mbedtls_x509write_csr_init
+      96  mbedtls_x509write_csr_pem
+      34  mbedtls_x509write_csr_set_extension
+       4  mbedtls_x509write_csr_set_key
+      86  mbedtls_x509write_csr_set_key_usage
+       4  mbedtls_x509write_csr_set_md_alg
+      88  mbedtls_x509write_csr_set_ns_cert_type
+      18  mbedtls_x509write_csr_set_subject_alternative_name
+      16  mbedtls_x509write_csr_set_subject_name
+     760  x509write_csr_der_internal
+
+ 
+   104 bytes in section .rodata
+ 1'260 bytes in section .text
+ 
+ 1'260 bytes of CODE  memory
+   104 bytes of CONST memory
+
+Errors: none
+Warnings: none

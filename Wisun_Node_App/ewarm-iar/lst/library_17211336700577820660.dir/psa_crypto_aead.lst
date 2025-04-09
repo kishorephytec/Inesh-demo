@@ -1,0 +1,1426 @@
+###############################################################################
+#
+# IAR ANSI C/C++ Compiler V9.50.2.385/W64 for ARM         29/Mar/2025  15:53:51
+# Copyright 1999-2024 IAR Systems AB.
+#
+#    Cpu mode                     =  thumb
+#    Endian                       =  little
+#    Source file                  =
+#        D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\util\third_party\mbedtls\library\psa_crypto_aead.c
+#    Command line                 =
+#        -f "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\ewarm-iar\obj\library_17211336700577820660.dir\psa_crypto_aead.o.rsp"
+#        ("D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\util\third_party\mbedtls\library\psa_crypto_aead.c"
+#        -D DEBUG_EFM=1 -D EFR32FG28B322F1024IM48=1 -D
+#        configNUM_SDK_THREAD_LOCAL_STORAGE_POINTERS=2 -D
+#        SL_COMPONENT_CATALOG_PRESENT=1 -D
+#        MBEDTLS_CONFIG_FILE=<sl_mbedtls_config.h> -D
+#        MBEDTLS_PSA_CRYPTO_CONFIG_FILE=<psa_crypto_config.h> -D
+#        SL_RAIL_LIB_MULTIPROTOCOL_SUPPORT=0 -D
+#        SL_RAIL_UTIL_PA_CONFIG_HEADER=<sl_rail_util_pa_config.h> -D
+#        RTT_USE_ASM=0 -lC "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\ewarm-iar\lst\library_17211336700577820660.dir"
+#        --diag_suppress Pa050 -o "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\ewarm-iar\obj\library_17211336700577820660.dir"
+#        --no_cse --no_unroll --no_inline --no_code_motion --no_tbaa
+#        --no_clustering --no_scheduling --debug --endian=little
+#        --cpu=Cortex-M33 --cmse --cmse -e --fpu=VFPv5_sp --dlib_config
+#        "C:\Program Files\IAR Systems\Embedded Workbench
+#        9.2\arm\inc\c\DLib_Config_Normal.h" -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\util\third_party\mbedtls\library\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App 1\Wisun_Node_App\config\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App 1\Wisun_Node_App\config\rail\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App 1\Wisun_Node_App\config\wisun\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App 1\Wisun_Node_App\.\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\Device\SiliconLabs\EFR32FG28\Include\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\app\wisun\component\app_project_info\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\common\inc\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\service\cli\inc\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\service\cli\src\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\CMSIS\Core\Include\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\CMSIS\RTOS2\Include\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\service\device_init\inc\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\emdrv\common\inc\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\emlib\inc\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\service\iostream\inc\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\security\sl_component\sl_mbedtls_support\config\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\security\sl_component\sl_mbedtls_support\config\preset\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\security\sl_component\sl_mbedtls_support\inc\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\util\third_party\mbedtls\include\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\util\third_party\mbedtls\library\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\micrium_os\common\source\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\micrium_os\common\include\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\micrium_os\cpu\include\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\micrium_os\ports\source\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\micrium_os\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\micrium_os\kernel\source\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\micrium_os\kernel\include\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\emdrv\nvm3\inc\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\peripheral\inc\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\util\third_party\printf\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\util\third_party\printf\inc\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\security\sl_component\sl_psa_driver\inc\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\radio\rail_lib\common\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\radio\rail_lib\protocol\ble\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\radio\rail_lib\protocol\ieee802154\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\radio\rail_lib\protocol\wmbus\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\radio\rail_lib\protocol\zwave\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\radio\rail_lib\chip\efr32\efr32xg2x\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\radio\rail_lib\protocol\sidewalk\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\radio\rail_lib\plugin\pa-conversions\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\radio\rail_lib\plugin\pa-conversions\efr32xg28\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\radio\rail_lib\plugin\rail_util_pti\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\security\sl_component\se_manager\inc\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\security\sl_component\se_manager\src\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\util\third_party\segger\systemview\SEGGER\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\util\silicon_labs\silabs_core\memory_manager\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\common\toolchain\inc\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\service\system\inc\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\app\wisun\component\app_core\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\app\wisun\component\app_setting\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\app\wisun\component\cli_util\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\app\wisun\component\event_manager\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\app\wisun\component\ns_list\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\app\wisun\component\ping\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\app\wisun\component\trace_util\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\app\wisun\component\trace_util\nanostack\nanostack-libservice\mbed-client-libservice\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\app\wisun\component\udp_client\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\service\sleeptimer\inc\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\protocol\wisun\plugin\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\protocol\wisun\stack\inc\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\protocol\wisun\stack\inc\socket\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App 1\Wisun_Node_App\autogen\\" -On
+#        --use_c++_inline) --dependencies=n "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\ewarm-iar\obj\library_17211336700577820660.dir\psa_crypto_aead.o.iar_deps"
+#    Locale                       =  C
+#    List file                    =
+#        D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\ewarm-iar\lst\library_17211336700577820660.dir\psa_crypto_aead.lst
+#    Object file                  =
+#        D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\ewarm-iar\obj\library_17211336700577820660.dir\psa_crypto_aead.o
+#    Runtime model:                  
+#      __CPP_Runtime              =  1
+#      __SystemLibrary            =  DLib
+#      __dlib_file_descriptor     =  0
+#      __dlib_full_locale_support =  0
+#      __dlib_version             =  6
+#
+###############################################################################
+
+D:\Inesh_wisun\Wisun_Node_App 1\Wisun_Node_App\gecko_sdk_4.4.5\util\third_party\mbedtls\library\psa_crypto_aead.c
+      1          /*
+      2           *  PSA AEAD entry points
+      3           */
+      4          /*
+      5           *  Copyright The Mbed TLS Contributors
+      6           *  SPDX-License-Identifier: Apache-2.0
+      7           *
+      8           *  Licensed under the Apache License, Version 2.0 (the "License"); you may
+      9           *  not use this file except in compliance with the License.
+     10           *  You may obtain a copy of the License at
+     11           *
+     12           *  http://www.apache.org/licenses/LICENSE-2.0
+     13           *
+     14           *  Unless required by applicable law or agreed to in writing, software
+     15           *  distributed under the License is distributed on an "AS IS" BASIS, WITHOUT
+     16           *  WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     17           *  See the License for the specific language governing permissions and
+     18           *  limitations under the License.
+     19           */
+     20          
+     21          #include "common.h"
+     22          
+     23          #if defined(MBEDTLS_PSA_CRYPTO_C)
+     24          
+     25          #include "psa_crypto_aead.h"
+
+   \                                 In section .text, align 2, keep-with-next
+   \   static __vfp uint16_t psa_get_key_type(psa_key_attributes_t const *)
+   \                     psa_get_key_type: (+1)
+   \        0x0   0x8800             LDRH     R0,[R0, #+0]
+   \        0x2   0x4770             BX       LR
+     26          #include "psa_crypto_core.h"
+     27          #include "psa_crypto_cipher.h"
+     28          
+     29          #include <string.h>
+     30          #include "mbedtls/platform.h"
+     31          
+     32          #include "mbedtls/ccm.h"
+     33          #include "mbedtls/chachapoly.h"
+     34          #include "mbedtls/cipher.h"
+     35          #include "mbedtls/gcm.h"
+     36          #include "mbedtls/error.h"
+     37          
+
+   \                                 In section .text, align 2, keep-with-next
+     38          static psa_status_t psa_aead_setup(
+     39              mbedtls_psa_aead_operation_t *operation,
+     40              const psa_key_attributes_t *attributes,
+     41              const uint8_t *key_buffer,
+     42              size_t key_buffer_size,
+     43              psa_algorithm_t alg)
+     44          {
+   \                     psa_aead_setup: (+1)
+   \        0x0   0xE92D 0x4FFE      PUSH     {R1-R11,LR}
+   \        0x4   0x4683             MOV      R11,R0
+   \        0x6   0x000E             MOVS     R6,R1
+   \        0x8   0x0017             MOVS     R7,R2
+   \        0xA   0x4698             MOV      R8,R3
+   \        0xC   0xF8DD 0x9030      LDR      R9,[SP, #+48]
+     45              psa_status_t status = PSA_ERROR_CORRUPTION_DETECTED;
+   \       0x10   0xF07F 0x0A96      MVNS     R10,#+150
+     46              size_t key_bits;
+     47              const mbedtls_cipher_info_t *cipher_info;
+     48              mbedtls_cipher_id_t cipher_id;
+     49          
+     50              (void) key_buffer_size;
+     51          
+     52              key_bits = attributes->core.bits;
+   \       0x14   0x8870             LDRH     R0,[R6, #+2]
+   \       0x16   0x9001             STR      R0,[SP, #+4]
+     53          
+     54              cipher_info = mbedtls_cipher_info_from_psa(alg,
+     55                                                         attributes->core.type, key_bits,
+     56                                                         &cipher_id);
+   \       0x18   0x466B             MOV      R3,SP
+   \       0x1A   0x9A01             LDR      R2,[SP, #+4]
+   \       0x1C   0x8831             LDRH     R1,[R6, #+0]
+   \       0x1E   0x4648             MOV      R0,R9
+   \       0x20   0x.... 0x....      BL       mbedtls_cipher_info_from_psa
+   \       0x24   0x0005             MOVS     R5,R0
+     57              if (cipher_info == NULL) {
+   \       0x26   0x2D00             CMP      R5,#+0
+   \       0x28   0xD102             BNE.N    ??psa_aead_setup_0
+     58                  return PSA_ERROR_NOT_SUPPORTED;
+   \       0x2A   0xF07F 0x0085      MVNS     R0,#+133
+   \       0x2E   0xE041             B.N      ??psa_aead_setup_1
+     59              }
+     60          
+     61              switch (PSA_ALG_AEAD_WITH_SHORTENED_TAG(alg, 0)) {
+   \                     ??psa_aead_setup_0: (+1)
+   \       0x30   0xF439 0x117E      BICS     R1,R9,#0x3F8000
+   \       0x34   0x.... 0x....      LDR.W    R0,??DataTable9
+   \       0x38   0x4281             CMP      R1,R0
+   \       0x3A   0xD12B             BNE.N    ??psa_aead_setup_2
+     62          #if defined(MBEDTLS_PSA_BUILTIN_ALG_CCM)
+     63                  case PSA_ALG_AEAD_WITH_SHORTENED_TAG(PSA_ALG_CCM, 0):
+     64                      operation->alg = PSA_ALG_CCM;
+   \       0x3C   0x.... 0x....      LDR.W    R0,??DataTable9_1
+   \       0x40   0xF8CB 0x0000      STR      R0,[R11, #+0]
+     65                      /* CCM allows the following tag lengths: 4, 6, 8, 10, 12, 14, 16.
+     66                       * The call to mbedtls_ccm_encrypt_and_tag or
+     67                       * mbedtls_ccm_auth_decrypt will validate the tag length. */
+     68                      if (PSA_BLOCK_CIPHER_BLOCK_LENGTH(attributes->core.type) != 16) {
+   \       0x44   0x8830             LDRH     R0,[R6, #+0]
+   \       0x46   0xF410 0x40E0      ANDS     R0,R0,#0x7000
+   \       0x4A   0xF5B0 0x5F00      CMP      R0,#+8192
+   \       0x4E   0xD107             BNE.N    ??psa_aead_setup_3
+   \       0x50   0x2101             MOVS     R1,#+1
+   \       0x52   0x8830             LDRH     R0,[R6, #+0]
+   \       0x54   0xB280             UXTH     R0,R0
+   \       0x56   0x0A00             LSRS     R0,R0,#+8
+   \       0x58   0xF010 0x0007      ANDS     R0,R0,#0x7
+   \       0x5C   0x4081             LSLS     R1,R1,R0
+   \       0x5E   0xE000             B.N      ??psa_aead_setup_4
+   \                     ??psa_aead_setup_3: (+1)
+   \       0x60   0x2100             MOVS     R1,#+0
+   \                     ??psa_aead_setup_4: (+1)
+   \       0x62   0x2910             CMP      R1,#+16
+   \       0x64   0xD002             BEQ.N    ??psa_aead_setup_5
+     69                          return PSA_ERROR_INVALID_ARGUMENT;
+   \       0x66   0xF07F 0x0086      MVNS     R0,#+134
+   \       0x6A   0xE023             B.N      ??psa_aead_setup_1
+     70                      }
+     71          
+     72                      mbedtls_ccm_init(&operation->ctx.ccm);
+   \                     ??psa_aead_setup_5: (+1)
+   \       0x6C   0xF11B 0x0008      ADDS     R0,R11,#+8
+   \       0x70   0x.... 0x....      BL       mbedtls_ccm_init
+     73                      status = mbedtls_to_psa_error(
+     74                          mbedtls_ccm_setkey(&operation->ctx.ccm, cipher_id,
+     75                                             key_buffer, (unsigned int) key_bits));
+   \       0x74   0x9B01             LDR      R3,[SP, #+4]
+   \       0x76   0x003A             MOVS     R2,R7
+   \       0x78   0xF89D 0x1000      LDRB     R1,[SP, #+0]
+   \       0x7C   0xF11B 0x0008      ADDS     R0,R11,#+8
+   \       0x80   0x.... 0x....      BL       mbedtls_ccm_setkey
+   \       0x84   0x.... 0x....      BL       mbedtls_to_psa_error
+   \       0x88   0x0004             MOVS     R4,R0
+     76                      if (status != PSA_SUCCESS) {
+   \       0x8A   0x2C00             CMP      R4,#+0
+   \       0x8C   0xD001             BEQ.N    ??psa_aead_setup_6
+     77                          return status;
+   \       0x8E   0x0020             MOVS     R0,R4
+   \       0x90   0xE010             B.N      ??psa_aead_setup_1
+     78                      }
+     79                      break;
+   \                     ??psa_aead_setup_6: (+1)
+   \       0x92   0xE001             B.N      ??psa_aead_setup_7
+     80          #endif /* MBEDTLS_PSA_BUILTIN_ALG_CCM */
+     81          
+     82          #if defined(MBEDTLS_PSA_BUILTIN_ALG_GCM)
+     83                  case PSA_ALG_AEAD_WITH_SHORTENED_TAG(PSA_ALG_GCM, 0):
+     84                      operation->alg = PSA_ALG_GCM;
+     85                      /* GCM allows the following tag lengths: 4, 8, 12, 13, 14, 15, 16.
+     86                       * The call to mbedtls_gcm_crypt_and_tag or
+     87                       * mbedtls_gcm_auth_decrypt will validate the tag length. */
+     88                      if (PSA_BLOCK_CIPHER_BLOCK_LENGTH(attributes->core.type) != 16) {
+     89                          return PSA_ERROR_INVALID_ARGUMENT;
+     90                      }
+     91          
+     92                      mbedtls_gcm_init(&operation->ctx.gcm);
+     93                      status = mbedtls_to_psa_error(
+     94                          mbedtls_gcm_setkey(&operation->ctx.gcm, cipher_id,
+     95                                             key_buffer, (unsigned int) key_bits));
+     96                      if (status != PSA_SUCCESS) {
+     97                          return status;
+     98                      }
+     99                      break;
+    100          #endif /* MBEDTLS_PSA_BUILTIN_ALG_GCM */
+    101          
+    102          #if defined(MBEDTLS_PSA_BUILTIN_ALG_CHACHA20_POLY1305)
+    103                  case PSA_ALG_AEAD_WITH_SHORTENED_TAG(PSA_ALG_CHACHA20_POLY1305, 0):
+    104                      operation->alg = PSA_ALG_CHACHA20_POLY1305;
+    105                      /* We only support the default tag length. */
+    106                      if (alg != PSA_ALG_CHACHA20_POLY1305) {
+    107                          return PSA_ERROR_NOT_SUPPORTED;
+    108                      }
+    109          
+    110                      mbedtls_chachapoly_init(&operation->ctx.chachapoly);
+    111                      status = mbedtls_to_psa_error(
+    112                          mbedtls_chachapoly_setkey(&operation->ctx.chachapoly,
+    113                                                    key_buffer));
+    114                      if (status != PSA_SUCCESS) {
+    115                          return status;
+    116                      }
+    117                      break;
+    118          #endif /* MBEDTLS_PSA_BUILTIN_ALG_CHACHA20_POLY1305 */
+    119          
+    120                  default:
+    121                      (void) status;
+    122                      (void) key_buffer;
+    123                      status = PSA_ERROR_NOT_SUPPORTED;
+   \                     ??psa_aead_setup_2: (+1)
+   \       0x94   0xF07F 0x0485      MVNS     R4,#+133
+    124              }
+    125          
+    126              if (status == PSA_SUCCESS) {
+   \                     ??psa_aead_setup_7: (+1)
+   \       0x98   0x2C00             CMP      R4,#+0
+   \       0x9A   0xD10A             BNE.N    ??psa_aead_setup_8
+    127                operation->key_type = psa_get_key_type(attributes);
+   \       0x9C   0x0030             MOVS     R0,R6
+   \       0x9E   0x.... 0x....      BL       psa_get_key_type
+   \       0xA2   0xF8AB 0x0004      STRH     R0,[R11, #+4]
+    128          
+    129                operation->tag_length = PSA_ALG_AEAD_GET_TAG_LENGTH(alg);
+   \       0xA6   0x4648             MOV      R0,R9
+   \       0xA8   0x0C00             LSRS     R0,R0,#+16
+   \       0xAA   0xF010 0x003F      ANDS     R0,R0,#0x3F
+   \       0xAE   0xF88B 0x0007      STRB     R0,[R11, #+7]
+    130              }
+    131          
+    132              return status;
+   \                     ??psa_aead_setup_8: (+1)
+   \       0xB2   0x0020             MOVS     R0,R4
+   \                     ??psa_aead_setup_1: (+1)
+   \       0xB4   0xE8BD 0x8FFE      POP      {R1-R11,PC}
+    133          }
+    134          
+
+   \                                 In section .text, align 2, keep-with-next
+    135          psa_status_t mbedtls_psa_aead_encrypt(
+    136              const psa_key_attributes_t *attributes,
+    137              const uint8_t *key_buffer, size_t key_buffer_size,
+    138              psa_algorithm_t alg,
+    139              const uint8_t *nonce, size_t nonce_length,
+    140              const uint8_t *additional_data, size_t additional_data_length,
+    141              const uint8_t *plaintext, size_t plaintext_length,
+    142              uint8_t *ciphertext, size_t ciphertext_size, size_t *ciphertext_length)
+    143          {
+   \                     mbedtls_psa_aead_encrypt: (+1)
+   \        0x0   0xE92D 0x4FF7      PUSH     {R0-R2,R4-R11,LR}
+   \        0x4   0xB0AA             SUB      SP,SP,#+168
+   \        0x6   0x469A             MOV      R10,R3
+   \        0x8   0xF8DD 0x90D8      LDR      R9,[SP, #+216]
+   \        0xC   0x9C37             LDR      R4,[SP, #+220]
+   \        0xE   0x9D3B             LDR      R5,[SP, #+236]
+   \       0x10   0x9E3C             LDR      R6,[SP, #+240]
+   \       0x12   0x9F3D             LDR      R7,[SP, #+244]
+   \       0x14   0xF8DD 0x80F8      LDR      R8,[SP, #+248]
+    144              psa_status_t status = PSA_ERROR_CORRUPTION_DETECTED;
+   \       0x18   0xF07F 0x0096      MVNS     R0,#+150
+   \       0x1C   0x9001             STR      R0,[SP, #+4]
+    145              mbedtls_psa_aead_operation_t operation = MBEDTLS_PSA_AEAD_OPERATION_INIT;
+   \       0x1E   0xA807             ADD      R0,SP,#+28
+   \       0x20   0x218C             MOVS     R1,#+140
+   \       0x22   0x.... 0x....      BL       __aeabi_memclr4
+    146              uint8_t *tag;
+    147          
+    148              status = psa_aead_setup(&operation, attributes, key_buffer,
+    149                                      key_buffer_size, alg);
+   \       0x26   0xF8CD 0xA000      STR      R10,[SP, #+0]
+   \       0x2A   0x9B2C             LDR      R3,[SP, #+176]
+   \       0x2C   0x9A2B             LDR      R2,[SP, #+172]
+   \       0x2E   0x992A             LDR      R1,[SP, #+168]
+   \       0x30   0xA807             ADD      R0,SP,#+28
+   \       0x32   0x.... 0x....      BL       psa_aead_setup
+   \       0x36   0x4683             MOV      R11,R0
+    150          
+    151              if (status != PSA_SUCCESS) {
+   \       0x38   0xF1BB 0x0F00      CMP      R11,#+0
+   \       0x3C   0xD132             BNE.N    ??mbedtls_psa_aead_encrypt_0
+    152                  goto exit;
+    153              }
+    154          
+    155              /* For all currently supported modes, the tag is at the end of the
+    156               * ciphertext. */
+    157              if (ciphertext_size < (plaintext_length + operation.tag_length)) {
+   \                     ??mbedtls_psa_aead_encrypt_1: (+1)
+   \       0x3E   0xF89D 0x0023      LDRB     R0,[SP, #+35]
+   \       0x42   0xFA55 0xF080      UXTAB    R0,R5,R0
+   \       0x46   0x4287             CMP      R7,R0
+   \       0x48   0xD203             BCS.N    ??mbedtls_psa_aead_encrypt_2
+    158                  status = PSA_ERROR_BUFFER_TOO_SMALL;
+   \       0x4A   0xF07F 0x0089      MVNS     R0,#+137
+   \       0x4E   0x4683             MOV      R11,R0
+    159                  goto exit;
+   \       0x50   0xE028             B.N      ??mbedtls_psa_aead_encrypt_0
+    160              }
+    161              tag = ciphertext + plaintext_length;
+   \                     ??mbedtls_psa_aead_encrypt_2: (+1)
+   \       0x52   0xEB06 0x0005      ADD      R0,R6,R5
+   \       0x56   0x9006             STR      R0,[SP, #+24]
+    162          
+    163          #if defined(MBEDTLS_PSA_BUILTIN_ALG_CCM)
+    164              if (operation.alg == PSA_ALG_CCM) {
+   \       0x58   0x9907             LDR      R1,[SP, #+28]
+   \       0x5A   0x....             LDR.N    R0,??DataTable9_1
+   \       0x5C   0x4281             CMP      R1,R0
+   \       0x5E   0xD115             BNE.N    ??mbedtls_psa_aead_encrypt_3
+    165                  status = mbedtls_to_psa_error(
+    166                      mbedtls_ccm_encrypt_and_tag(&operation.ctx.ccm,
+    167                                                  plaintext_length,
+    168                                                  nonce, nonce_length,
+    169                                                  additional_data,
+    170                                                  additional_data_length,
+    171                                                  plaintext, ciphertext,
+    172                                                  tag, operation.tag_length));
+   \       0x60   0xF89D 0x0023      LDRB     R0,[SP, #+35]
+   \       0x64   0x9005             STR      R0,[SP, #+20]
+   \       0x66   0x9806             LDR      R0,[SP, #+24]
+   \       0x68   0x9004             STR      R0,[SP, #+16]
+   \       0x6A   0x9603             STR      R6,[SP, #+12]
+   \       0x6C   0x983A             LDR      R0,[SP, #+232]
+   \       0x6E   0x9002             STR      R0,[SP, #+8]
+   \       0x70   0x9839             LDR      R0,[SP, #+228]
+   \       0x72   0x9001             STR      R0,[SP, #+4]
+   \       0x74   0x9838             LDR      R0,[SP, #+224]
+   \       0x76   0x9000             STR      R0,[SP, #+0]
+   \       0x78   0x0023             MOVS     R3,R4
+   \       0x7A   0x464A             MOV      R2,R9
+   \       0x7C   0x0029             MOVS     R1,R5
+   \       0x7E   0xA809             ADD      R0,SP,#+36
+   \       0x80   0x.... 0x....      BL       mbedtls_ccm_encrypt_and_tag
+   \       0x84   0x.... 0x....      BL       mbedtls_to_psa_error
+   \       0x88   0x4683             MOV      R11,R0
+   \       0x8A   0xE002             B.N      ??mbedtls_psa_aead_encrypt_4
+    173              } else
+    174          #endif /* MBEDTLS_PSA_BUILTIN_ALG_CCM */
+    175          #if defined(MBEDTLS_PSA_BUILTIN_ALG_GCM)
+    176              if (operation.alg == PSA_ALG_GCM) {
+    177                  status = mbedtls_to_psa_error(
+    178                      mbedtls_gcm_crypt_and_tag(&operation.ctx.gcm,
+    179                                                MBEDTLS_GCM_ENCRYPT,
+    180                                                plaintext_length,
+    181                                                nonce, nonce_length,
+    182                                                additional_data, additional_data_length,
+    183                                                plaintext, ciphertext,
+    184                                                operation.tag_length, tag));
+    185              } else
+    186          #endif /* MBEDTLS_PSA_BUILTIN_ALG_GCM */
+    187          #if defined(MBEDTLS_PSA_BUILTIN_ALG_CHACHA20_POLY1305)
+    188              if (operation.alg == PSA_ALG_CHACHA20_POLY1305) {
+    189                  if (operation.tag_length != 16) {
+    190                      status = PSA_ERROR_NOT_SUPPORTED;
+    191                      goto exit;
+    192                  }
+    193                  status = mbedtls_to_psa_error(
+    194                      mbedtls_chachapoly_encrypt_and_tag(&operation.ctx.chachapoly,
+    195                                                         plaintext_length,
+    196                                                         nonce,
+    197                                                         additional_data,
+    198                                                         additional_data_length,
+    199                                                         plaintext,
+    200                                                         ciphertext,
+    201                                                         tag));
+    202              } else
+    203          #endif /* MBEDTLS_PSA_BUILTIN_ALG_CHACHA20_POLY1305 */
+    204              {
+    205                  (void) tag;
+    206                  (void) nonce;
+    207                  (void) nonce_length;
+    208                  (void) additional_data;
+    209                  (void) additional_data_length;
+    210                  (void) plaintext;
+    211                  status = PSA_ERROR_NOT_SUPPORTED;
+   \                     ??mbedtls_psa_aead_encrypt_3: (+1)
+   \       0x8C   0xF07F 0x0085      MVNS     R0,#+133
+   \       0x90   0x4683             MOV      R11,R0
+    212              }
+    213          
+    214              if (status == PSA_SUCCESS) {
+   \                     ??mbedtls_psa_aead_encrypt_4: (+1)
+   \       0x92   0xF1BB 0x0F00      CMP      R11,#+0
+   \       0x96   0xD105             BNE.N    ??mbedtls_psa_aead_encrypt_0
+    215                  *ciphertext_length = plaintext_length + operation.tag_length;
+   \       0x98   0xF89D 0x0023      LDRB     R0,[SP, #+35]
+   \       0x9C   0xFA55 0xF080      UXTAB    R0,R5,R0
+   \       0xA0   0xF8C8 0x0000      STR      R0,[R8, #+0]
+    216              }
+    217          
+    218          exit:
+    219              mbedtls_psa_aead_abort(&operation);
+   \                     ??mbedtls_psa_aead_encrypt_0: (+1)
+   \       0xA4   0xA807             ADD      R0,SP,#+28
+   \       0xA6   0x.... 0x....      BL       mbedtls_psa_aead_abort
+    220          
+    221              return status;
+   \       0xAA   0x4658             MOV      R0,R11
+   \       0xAC   0xB02D             ADD      SP,SP,#+180
+   \       0xAE   0xE8BD 0x8FF0      POP      {R4-R11,PC}
+    222          }
+
+   \                                 In section .rodata, align 4
+   \        0x0   0x0000'0000        DC32 0
+   \        0x4   0x0000             DC16 0
+   \        0x6   0x00 0x00          DC8 0, 0
+   \        0x8   0x0000'0000        DC32 0
+   \        0xC                      DS8 128
+    223          
+    224          /* Locate the tag in a ciphertext buffer containing the encrypted data
+    225           * followed by the tag. Return the length of the part preceding the tag in
+    226           * *plaintext_length. This is the size of the plaintext in modes where
+    227           * the encrypted data has the same size as the plaintext, such as
+    228           * CCM and GCM. */
+
+   \                                 In section .text, align 2, keep-with-next
+    229          static psa_status_t psa_aead_unpadded_locate_tag(size_t tag_length,
+    230                                                           const uint8_t *ciphertext,
+    231                                                           size_t ciphertext_length,
+    232                                                           size_t plaintext_size,
+    233                                                           const uint8_t **p_tag)
+    234          {
+   \                     psa_aead_unpadded_locate_tag: (+1)
+   \        0x0   0xB470             PUSH     {R4-R6}
+   \        0x2   0x0004             MOVS     R4,R0
+   \        0x4   0x9D03             LDR      R5,[SP, #+12]
+    235              size_t payload_length;
+    236              if (tag_length > ciphertext_length) {
+   \        0x6   0x42A2             CMP      R2,R4
+   \        0x8   0xD202             BCS.N    ??psa_aead_unpadded_locate_tag_0
+    237                  return PSA_ERROR_INVALID_ARGUMENT;
+   \        0xA   0xF07F 0x0086      MVNS     R0,#+134
+   \        0xE   0xE009             B.N      ??psa_aead_unpadded_locate_tag_1
+    238              }
+    239              payload_length = ciphertext_length - tag_length;
+   \                     ??psa_aead_unpadded_locate_tag_0: (+1)
+   \       0x10   0x1B16             SUBS     R6,R2,R4
+    240              if (payload_length > plaintext_size) {
+   \       0x12   0x42B3             CMP      R3,R6
+   \       0x14   0xD202             BCS.N    ??psa_aead_unpadded_locate_tag_2
+    241                  return PSA_ERROR_BUFFER_TOO_SMALL;
+   \       0x16   0xF07F 0x0089      MVNS     R0,#+137
+   \       0x1A   0xE003             B.N      ??psa_aead_unpadded_locate_tag_1
+    242              }
+    243              *p_tag = ciphertext + payload_length;
+   \                     ??psa_aead_unpadded_locate_tag_2: (+1)
+   \       0x1C   0xEB01 0x0006      ADD      R0,R1,R6
+   \       0x20   0x6028             STR      R0,[R5, #+0]
+    244              return PSA_SUCCESS;
+   \       0x22   0x2000             MOVS     R0,#+0
+   \                     ??psa_aead_unpadded_locate_tag_1: (+1)
+   \       0x24   0xBC70             POP      {R4-R6}
+   \       0x26   0x4770             BX       LR
+    245          }
+    246          
+
+   \                                 In section .text, align 2, keep-with-next
+    247          psa_status_t mbedtls_psa_aead_decrypt(
+    248              const psa_key_attributes_t *attributes,
+    249              const uint8_t *key_buffer, size_t key_buffer_size,
+    250              psa_algorithm_t alg,
+    251              const uint8_t *nonce, size_t nonce_length,
+    252              const uint8_t *additional_data, size_t additional_data_length,
+    253              const uint8_t *ciphertext, size_t ciphertext_length,
+    254              uint8_t *plaintext, size_t plaintext_size, size_t *plaintext_length)
+    255          {
+   \                     mbedtls_psa_aead_decrypt: (+1)
+   \        0x0   0xE92D 0x4FF7      PUSH     {R0-R2,R4-R11,LR}
+   \        0x4   0xB0AA             SUB      SP,SP,#+168
+   \        0x6   0x469A             MOV      R10,R3
+   \        0x8   0xF8DD 0x90D8      LDR      R9,[SP, #+216]
+   \        0xC   0x9C37             LDR      R4,[SP, #+220]
+   \        0xE   0x9D3A             LDR      R5,[SP, #+232]
+   \       0x10   0x9E3B             LDR      R6,[SP, #+236]
+   \       0x12   0x9F3D             LDR      R7,[SP, #+244]
+   \       0x14   0xF8DD 0x80F8      LDR      R8,[SP, #+248]
+    256              psa_status_t status = PSA_ERROR_CORRUPTION_DETECTED;
+   \       0x18   0xF07F 0x0096      MVNS     R0,#+150
+   \       0x1C   0x9001             STR      R0,[SP, #+4]
+    257              mbedtls_psa_aead_operation_t operation = MBEDTLS_PSA_AEAD_OPERATION_INIT;
+   \       0x1E   0xA807             ADD      R0,SP,#+28
+   \       0x20   0x218C             MOVS     R1,#+140
+   \       0x22   0x.... 0x....      BL       __aeabi_memclr4
+    258              const uint8_t *tag = NULL;
+   \       0x26   0x2000             MOVS     R0,#+0
+   \       0x28   0x9006             STR      R0,[SP, #+24]
+    259          
+    260              status = psa_aead_setup(&operation, attributes, key_buffer,
+    261                                      key_buffer_size, alg);
+   \       0x2A   0xF8CD 0xA000      STR      R10,[SP, #+0]
+   \       0x2E   0x9B2C             LDR      R3,[SP, #+176]
+   \       0x30   0x9A2B             LDR      R2,[SP, #+172]
+   \       0x32   0x992A             LDR      R1,[SP, #+168]
+   \       0x34   0xA807             ADD      R0,SP,#+28
+   \       0x36   0x.... 0x....      BL       psa_aead_setup
+   \       0x3A   0x4683             MOV      R11,R0
+    262          
+    263              if (status != PSA_SUCCESS) {
+   \       0x3C   0xF1BB 0x0F00      CMP      R11,#+0
+   \       0x40   0xD133             BNE.N    ??mbedtls_psa_aead_decrypt_0
+    264                  goto exit;
+    265              }
+    266          
+    267              status = psa_aead_unpadded_locate_tag(operation.tag_length,
+    268                                                    ciphertext, ciphertext_length,
+    269                                                    plaintext_size, &tag);
+   \                     ??mbedtls_psa_aead_decrypt_1: (+1)
+   \       0x42   0xA806             ADD      R0,SP,#+24
+   \       0x44   0x9000             STR      R0,[SP, #+0]
+   \       0x46   0x003B             MOVS     R3,R7
+   \       0x48   0x0032             MOVS     R2,R6
+   \       0x4A   0x0029             MOVS     R1,R5
+   \       0x4C   0xF89D 0x0023      LDRB     R0,[SP, #+35]
+   \       0x50   0x.... 0x....      BL       psa_aead_unpadded_locate_tag
+   \       0x54   0x4683             MOV      R11,R0
+    270              if (status != PSA_SUCCESS) {
+   \       0x56   0xF1BB 0x0F00      CMP      R11,#+0
+   \       0x5A   0xD126             BNE.N    ??mbedtls_psa_aead_decrypt_0
+    271                  goto exit;
+    272              }
+    273          
+    274          #if defined(MBEDTLS_PSA_BUILTIN_ALG_CCM)
+    275              if (operation.alg == PSA_ALG_CCM) {
+   \                     ??mbedtls_psa_aead_decrypt_2: (+1)
+   \       0x5C   0x9907             LDR      R1,[SP, #+28]
+   \       0x5E   0x....             LDR.N    R0,??DataTable9_1
+   \       0x60   0x4281             CMP      R1,R0
+   \       0x62   0xD117             BNE.N    ??mbedtls_psa_aead_decrypt_3
+    276                  status = mbedtls_to_psa_error(
+    277                      mbedtls_ccm_auth_decrypt(&operation.ctx.ccm,
+    278                                               ciphertext_length - operation.tag_length,
+    279                                               nonce, nonce_length,
+    280                                               additional_data,
+    281                                               additional_data_length,
+    282                                               ciphertext, plaintext,
+    283                                               tag, operation.tag_length));
+   \       0x64   0xF89D 0x0023      LDRB     R0,[SP, #+35]
+   \       0x68   0x9005             STR      R0,[SP, #+20]
+   \       0x6A   0x9806             LDR      R0,[SP, #+24]
+   \       0x6C   0x9004             STR      R0,[SP, #+16]
+   \       0x6E   0x983C             LDR      R0,[SP, #+240]
+   \       0x70   0x9003             STR      R0,[SP, #+12]
+   \       0x72   0x9502             STR      R5,[SP, #+8]
+   \       0x74   0x9839             LDR      R0,[SP, #+228]
+   \       0x76   0x9001             STR      R0,[SP, #+4]
+   \       0x78   0x9838             LDR      R0,[SP, #+224]
+   \       0x7A   0x9000             STR      R0,[SP, #+0]
+   \       0x7C   0x0023             MOVS     R3,R4
+   \       0x7E   0x464A             MOV      R2,R9
+   \       0x80   0xF89D 0x1023      LDRB     R1,[SP, #+35]
+   \       0x84   0x1A71             SUBS     R1,R6,R1
+   \       0x86   0xA809             ADD      R0,SP,#+36
+   \       0x88   0x.... 0x....      BL       mbedtls_ccm_auth_decrypt
+   \       0x8C   0x.... 0x....      BL       mbedtls_to_psa_error
+   \       0x90   0x4683             MOV      R11,R0
+   \       0x92   0xE002             B.N      ??mbedtls_psa_aead_decrypt_4
+    284              } else
+    285          #endif /* MBEDTLS_PSA_BUILTIN_ALG_CCM */
+    286          #if defined(MBEDTLS_PSA_BUILTIN_ALG_GCM)
+    287              if (operation.alg == PSA_ALG_GCM) {
+    288                  status = mbedtls_to_psa_error(
+    289                      mbedtls_gcm_auth_decrypt(&operation.ctx.gcm,
+    290                                               ciphertext_length - operation.tag_length,
+    291                                               nonce, nonce_length,
+    292                                               additional_data,
+    293                                               additional_data_length,
+    294                                               tag, operation.tag_length,
+    295                                               ciphertext, plaintext));
+    296              } else
+    297          #endif /* MBEDTLS_PSA_BUILTIN_ALG_GCM */
+    298          #if defined(MBEDTLS_PSA_BUILTIN_ALG_CHACHA20_POLY1305)
+    299              if (operation.alg == PSA_ALG_CHACHA20_POLY1305) {
+    300                  if (operation.tag_length != 16) {
+    301                      status = PSA_ERROR_NOT_SUPPORTED;
+    302                      goto exit;
+    303                  }
+    304                  status = mbedtls_to_psa_error(
+    305                      mbedtls_chachapoly_auth_decrypt(&operation.ctx.chachapoly,
+    306                                                      ciphertext_length - operation.tag_length,
+    307                                                      nonce,
+    308                                                      additional_data,
+    309                                                      additional_data_length,
+    310                                                      tag,
+    311                                                      ciphertext,
+    312                                                      plaintext));
+    313              } else
+    314          #endif /* MBEDTLS_PSA_BUILTIN_ALG_CHACHA20_POLY1305 */
+    315              {
+    316                  (void) nonce;
+    317                  (void) nonce_length;
+    318                  (void) additional_data;
+    319                  (void) additional_data_length;
+    320                  (void) plaintext;
+    321                  status = PSA_ERROR_NOT_SUPPORTED;
+   \                     ??mbedtls_psa_aead_decrypt_3: (+1)
+   \       0x94   0xF07F 0x0085      MVNS     R0,#+133
+   \       0x98   0x4683             MOV      R11,R0
+    322              }
+    323          
+    324              if (status == PSA_SUCCESS) {
+   \                     ??mbedtls_psa_aead_decrypt_4: (+1)
+   \       0x9A   0xF1BB 0x0F00      CMP      R11,#+0
+   \       0x9E   0xD104             BNE.N    ??mbedtls_psa_aead_decrypt_0
+    325                  *plaintext_length = ciphertext_length - operation.tag_length;
+   \       0xA0   0xF89D 0x0023      LDRB     R0,[SP, #+35]
+   \       0xA4   0x1A30             SUBS     R0,R6,R0
+   \       0xA6   0xF8C8 0x0000      STR      R0,[R8, #+0]
+    326              }
+    327          
+    328          exit:
+    329              mbedtls_psa_aead_abort(&operation);
+   \                     ??mbedtls_psa_aead_decrypt_0: (+1)
+   \       0xAA   0xA807             ADD      R0,SP,#+28
+   \       0xAC   0x.... 0x....      BL       mbedtls_psa_aead_abort
+    330          
+    331              if (status == PSA_SUCCESS) {
+   \       0xB0   0xF1BB 0x0F00      CMP      R11,#+0
+   \       0xB4   0xD104             BNE.N    ??mbedtls_psa_aead_decrypt_5
+    332                  *plaintext_length = ciphertext_length - operation.tag_length;
+   \       0xB6   0xF89D 0x0023      LDRB     R0,[SP, #+35]
+   \       0xBA   0x1A30             SUBS     R0,R6,R0
+   \       0xBC   0xF8C8 0x0000      STR      R0,[R8, #+0]
+    333              }
+    334              return status;
+   \                     ??mbedtls_psa_aead_decrypt_5: (+1)
+   \       0xC0   0x4658             MOV      R0,R11
+   \       0xC2   0xB02D             ADD      SP,SP,#+180
+   \       0xC4   0xE8BD 0x8FF0      POP      {R4-R11,PC}
+    335          }
+
+   \                                 In section .rodata, align 4
+   \        0x0   0x0000'0000        DC32 0
+   \        0x4   0x0000             DC16 0
+   \        0x6   0x00 0x00          DC8 0, 0
+   \        0x8   0x0000'0000        DC32 0
+   \        0xC                      DS8 128
+    336          
+    337          /* Set the key and algorithm for a multipart authenticated encryption
+    338           * operation. */
+
+   \                                 In section .text, align 2, keep-with-next
+    339          psa_status_t mbedtls_psa_aead_encrypt_setup(
+    340              mbedtls_psa_aead_operation_t *operation,
+    341              const psa_key_attributes_t *attributes,
+    342              const uint8_t *key_buffer,
+    343              size_t key_buffer_size,
+    344              psa_algorithm_t alg)
+    345          {
+   \                     mbedtls_psa_aead_encrypt_setup: (+1)
+   \        0x0   0xE92D 0x41FC      PUSH     {R2-R8,LR}
+   \        0x4   0x0004             MOVS     R4,R0
+   \        0x6   0x000D             MOVS     R5,R1
+   \        0x8   0x0016             MOVS     R6,R2
+   \        0xA   0x001F             MOVS     R7,R3
+    346              psa_status_t status = PSA_ERROR_CORRUPTION_DETECTED;
+   \        0xC   0xF07F 0x0896      MVNS     R8,#+150
+    347          
+    348              status = psa_aead_setup(operation, attributes, key_buffer,
+    349                                      key_buffer_size, alg);
+   \       0x10   0x9808             LDR      R0,[SP, #+32]
+   \       0x12   0x9000             STR      R0,[SP, #+0]
+   \       0x14   0x003B             MOVS     R3,R7
+   \       0x16   0x0032             MOVS     R2,R6
+   \       0x18   0x0029             MOVS     R1,R5
+   \       0x1A   0x0020             MOVS     R0,R4
+   \       0x1C   0x.... 0x....      BL       psa_aead_setup
+    350          
+    351              if (status == PSA_SUCCESS) {
+   \       0x20   0x2800             CMP      R0,#+0
+   \       0x22   0xD103             BNE.N    ??mbedtls_psa_aead_encrypt_setup_0
+    352                  operation->is_encrypt = 1;
+   \       0x24   0x6861             LDR      R1,[R4, #+4]
+   \       0x26   0xF451 0x3180      ORRS     R1,R1,#0x10000
+   \       0x2A   0x6061             STR      R1,[R4, #+4]
+    353              }
+    354          
+    355              return status;
+   \                     ??mbedtls_psa_aead_encrypt_setup_0: (+1)
+   \       0x2C   0xE8BD 0x81F6      POP      {R1,R2,R4-R8,PC}
+    356          }
+    357          
+    358          /* Set the key and algorithm for a multipart authenticated decryption
+    359           * operation. */
+
+   \                                 In section .text, align 2, keep-with-next
+    360          psa_status_t mbedtls_psa_aead_decrypt_setup(
+    361              mbedtls_psa_aead_operation_t *operation,
+    362              const psa_key_attributes_t *attributes,
+    363              const uint8_t *key_buffer,
+    364              size_t key_buffer_size,
+    365              psa_algorithm_t alg)
+    366          {
+   \                     mbedtls_psa_aead_decrypt_setup: (+1)
+   \        0x0   0xE92D 0x41FC      PUSH     {R2-R8,LR}
+   \        0x4   0x0004             MOVS     R4,R0
+   \        0x6   0x000D             MOVS     R5,R1
+   \        0x8   0x0016             MOVS     R6,R2
+   \        0xA   0x001F             MOVS     R7,R3
+    367              psa_status_t status = PSA_ERROR_CORRUPTION_DETECTED;
+   \        0xC   0xF07F 0x0896      MVNS     R8,#+150
+    368          
+    369              status = psa_aead_setup(operation, attributes, key_buffer,
+    370                                      key_buffer_size, alg);
+   \       0x10   0x9808             LDR      R0,[SP, #+32]
+   \       0x12   0x9000             STR      R0,[SP, #+0]
+   \       0x14   0x003B             MOVS     R3,R7
+   \       0x16   0x0032             MOVS     R2,R6
+   \       0x18   0x0029             MOVS     R1,R5
+   \       0x1A   0x0020             MOVS     R0,R4
+   \       0x1C   0x.... 0x....      BL       psa_aead_setup
+    371          
+    372              if (status == PSA_SUCCESS) {
+   \       0x20   0x2800             CMP      R0,#+0
+   \       0x22   0xD103             BNE.N    ??mbedtls_psa_aead_decrypt_setup_0
+    373                  operation->is_encrypt = 0;
+   \       0x24   0x6861             LDR      R1,[R4, #+4]
+   \       0x26   0xF431 0x3180      BICS     R1,R1,#0x10000
+   \       0x2A   0x6061             STR      R1,[R4, #+4]
+    374              }
+    375          
+    376              return status;
+   \                     ??mbedtls_psa_aead_decrypt_setup_0: (+1)
+   \       0x2C   0xE8BD 0x81F6      POP      {R1,R2,R4-R8,PC}
+    377          }
+    378          
+    379          /* Set a nonce for the multipart AEAD operation*/
+
+   \                                 In section .text, align 2, keep-with-next
+    380          psa_status_t mbedtls_psa_aead_set_nonce(
+    381              mbedtls_psa_aead_operation_t *operation,
+    382              const uint8_t *nonce,
+    383              size_t nonce_length)
+    384          {
+   \                     mbedtls_psa_aead_set_nonce: (+1)
+   \        0x0   0xB5F8             PUSH     {R3-R7,LR}
+   \        0x2   0x0004             MOVS     R4,R0
+   \        0x4   0x000D             MOVS     R5,R1
+   \        0x6   0x0016             MOVS     R6,R2
+    385              psa_status_t status = PSA_ERROR_CORRUPTION_DETECTED;
+   \        0x8   0xF07F 0x0796      MVNS     R7,#+150
+    386          
+    387          #if defined(MBEDTLS_PSA_BUILTIN_ALG_GCM)
+    388              if (operation->alg == PSA_ALG_GCM) {
+    389                  status = mbedtls_to_psa_error(
+    390                      mbedtls_gcm_starts(&operation->ctx.gcm,
+    391                                         operation->is_encrypt ?
+    392                                         MBEDTLS_GCM_ENCRYPT : MBEDTLS_GCM_DECRYPT,
+    393                                         nonce,
+    394                                         nonce_length));
+    395              } else
+    396          #endif /* MBEDTLS_PSA_BUILTIN_ALG_GCM */
+    397          #if defined(MBEDTLS_PSA_BUILTIN_ALG_CCM)
+    398              if (operation->alg == PSA_ALG_CCM) {
+   \        0xC   0x6821             LDR      R1,[R4, #+0]
+   \        0xE   0x....             LDR.N    R0,??DataTable9_1
+   \       0x10   0x4281             CMP      R1,R0
+   \       0x12   0xD10C             BNE.N    ??mbedtls_psa_aead_set_nonce_0
+    399                  status = mbedtls_to_psa_error(
+    400                      mbedtls_ccm_starts(&operation->ctx.ccm,
+    401                                         operation->is_encrypt ?
+    402                                         MBEDTLS_CCM_ENCRYPT : MBEDTLS_CCM_DECRYPT,
+    403                                         nonce,
+    404                                         nonce_length));
+   \       0x14   0x0033             MOVS     R3,R6
+   \       0x16   0x002A             MOVS     R2,R5
+   \       0x18   0x6861             LDR      R1,[R4, #+4]
+   \       0x1A   0x0C09             LSRS     R1,R1,#+16
+   \       0x1C   0xF011 0x0101      ANDS     R1,R1,#0x1
+   \       0x20   0xF114 0x0008      ADDS     R0,R4,#+8
+   \       0x24   0x.... 0x....      BL       mbedtls_ccm_starts
+   \       0x28   0x.... 0x....      BL       mbedtls_to_psa_error
+   \       0x2C   0xE001             B.N      ??mbedtls_psa_aead_set_nonce_1
+    405              } else
+    406          #endif /* MBEDTLS_PSA_BUILTIN_ALG_CCM */
+    407          #if defined(MBEDTLS_PSA_BUILTIN_ALG_CHACHA20_POLY1305)
+    408              if (operation->alg == PSA_ALG_CHACHA20_POLY1305) {
+    409                  /* Note - ChaChaPoly allows an 8 byte nonce, but we would have to
+    410                   * allocate a buffer in the operation, copy the nonce to it and pad
+    411                   * it, so for now check the nonce is 12 bytes, as
+    412                   * mbedtls_chachapoly_starts() assumes it can read 12 bytes from the
+    413                   * passed in buffer. */
+    414                  if (nonce_length != 12) {
+    415                      return PSA_ERROR_INVALID_ARGUMENT;
+    416                  }
+    417          
+    418                  status = mbedtls_to_psa_error(
+    419                      mbedtls_chachapoly_starts(&operation->ctx.chachapoly,
+    420                                                nonce,
+    421                                                operation->is_encrypt ?
+    422                                                MBEDTLS_CHACHAPOLY_ENCRYPT :
+    423                                                MBEDTLS_CHACHAPOLY_DECRYPT));
+    424              } else
+    425          #endif /* MBEDTLS_PSA_BUILTIN_ALG_CHACHA20_POLY1305 */
+    426              {
+    427                  (void) operation;
+    428                  (void) nonce;
+    429                  (void) nonce_length;
+    430          
+    431                  status = PSA_ERROR_NOT_SUPPORTED;
+   \                     ??mbedtls_psa_aead_set_nonce_0: (+1)
+   \       0x2E   0xF07F 0x0085      MVNS     R0,#+133
+    432              }
+    433          
+    434              return status;
+   \                     ??mbedtls_psa_aead_set_nonce_1: (+1)
+   \       0x32   0xBDF2             POP      {R1,R4-R7,PC}
+    435          }
+    436          
+    437          /* Declare the lengths of the message and additional data for AEAD. */
+
+   \                                 In section .text, align 2, keep-with-next
+    438          psa_status_t mbedtls_psa_aead_set_lengths(
+    439              mbedtls_psa_aead_operation_t *operation,
+    440              size_t ad_length,
+    441              size_t plaintext_length)
+    442          {
+   \                     mbedtls_psa_aead_set_lengths: (+1)
+   \        0x0   0xB570             PUSH     {R4-R6,LR}
+   \        0x2   0x0004             MOVS     R4,R0
+   \        0x4   0x000D             MOVS     R5,R1
+   \        0x6   0x0016             MOVS     R6,R2
+    443          #if defined(MBEDTLS_PSA_BUILTIN_ALG_CCM)
+    444              if (operation->alg == PSA_ALG_CCM) {
+   \        0x8   0x6821             LDR      R1,[R4, #+0]
+   \        0xA   0x....             LDR.N    R0,??DataTable9_1
+   \        0xC   0x4281             CMP      R1,R0
+   \        0xE   0xD109             BNE.N    ??mbedtls_psa_aead_set_lengths_0
+    445                  return mbedtls_to_psa_error(
+    446                      mbedtls_ccm_set_lengths(&operation->ctx.ccm,
+    447                                              ad_length,
+    448                                              plaintext_length,
+    449                                              operation->tag_length));
+   \       0x10   0x79E3             LDRB     R3,[R4, #+7]
+   \       0x12   0x0032             MOVS     R2,R6
+   \       0x14   0x0029             MOVS     R1,R5
+   \       0x16   0xF114 0x0008      ADDS     R0,R4,#+8
+   \       0x1A   0x.... 0x....      BL       mbedtls_ccm_set_lengths
+   \       0x1E   0x.... 0x....      BL       mbedtls_to_psa_error
+   \       0x22   0xE000             B.N      ??mbedtls_psa_aead_set_lengths_1
+    450          
+    451              }
+    452          #else /* MBEDTLS_PSA_BUILTIN_ALG_CCM */
+    453              (void) operation;
+    454              (void) ad_length;
+    455              (void) plaintext_length;
+    456          #endif /* MBEDTLS_PSA_BUILTIN_ALG_CCM */
+    457          
+    458              return PSA_SUCCESS;
+   \                     ??mbedtls_psa_aead_set_lengths_0: (+1)
+   \       0x24   0x2000             MOVS     R0,#+0
+   \                     ??mbedtls_psa_aead_set_lengths_1: (+1)
+   \       0x26   0xBD70             POP      {R4-R6,PC}
+    459          }
+    460          
+    461          /* Pass additional data to an active multipart AEAD operation. */
+
+   \                                 In section .text, align 2, keep-with-next
+    462          psa_status_t mbedtls_psa_aead_update_ad(
+    463              mbedtls_psa_aead_operation_t *operation,
+    464              const uint8_t *input,
+    465              size_t input_length)
+    466          {
+   \                     mbedtls_psa_aead_update_ad: (+1)
+   \        0x0   0xB5F8             PUSH     {R3-R7,LR}
+   \        0x2   0x0004             MOVS     R4,R0
+   \        0x4   0x000D             MOVS     R5,R1
+   \        0x6   0x0016             MOVS     R6,R2
+    467              psa_status_t status = PSA_ERROR_CORRUPTION_DETECTED;
+   \        0x8   0xF07F 0x0796      MVNS     R7,#+150
+    468          
+    469          #if defined(MBEDTLS_PSA_BUILTIN_ALG_GCM)
+    470              if (operation->alg == PSA_ALG_GCM) {
+    471                  status = mbedtls_to_psa_error(
+    472                      mbedtls_gcm_update_ad(&operation->ctx.gcm, input, input_length));
+    473              } else
+    474          #endif /* MBEDTLS_PSA_BUILTIN_ALG_GCM */
+    475          #if defined(MBEDTLS_PSA_BUILTIN_ALG_CCM)
+    476              if (operation->alg == PSA_ALG_CCM) {
+   \        0xC   0x6821             LDR      R1,[R4, #+0]
+   \        0xE   0x....             LDR.N    R0,??DataTable9_1
+   \       0x10   0x4281             CMP      R1,R0
+   \       0x12   0xD108             BNE.N    ??mbedtls_psa_aead_update_ad_0
+    477                  status = mbedtls_to_psa_error(
+    478                      mbedtls_ccm_update_ad(&operation->ctx.ccm, input, input_length));
+   \       0x14   0x0032             MOVS     R2,R6
+   \       0x16   0x0029             MOVS     R1,R5
+   \       0x18   0xF114 0x0008      ADDS     R0,R4,#+8
+   \       0x1C   0x.... 0x....      BL       mbedtls_ccm_update_ad
+   \       0x20   0x.... 0x....      BL       mbedtls_to_psa_error
+   \       0x24   0xE001             B.N      ??mbedtls_psa_aead_update_ad_1
+    479              } else
+    480          #endif /* MBEDTLS_PSA_BUILTIN_ALG_CCM */
+    481          #if defined(MBEDTLS_PSA_BUILTIN_ALG_CHACHA20_POLY1305)
+    482              if (operation->alg == PSA_ALG_CHACHA20_POLY1305) {
+    483                  status = mbedtls_to_psa_error(
+    484                      mbedtls_chachapoly_update_aad(&operation->ctx.chachapoly,
+    485                                                    input,
+    486                                                    input_length));
+    487              } else
+    488          #endif /* MBEDTLS_PSA_BUILTIN_ALG_CHACHA20_POLY1305 */
+    489              {
+    490                  (void) operation;
+    491                  (void) input;
+    492                  (void) input_length;
+    493          
+    494                  status = PSA_ERROR_NOT_SUPPORTED;
+   \                     ??mbedtls_psa_aead_update_ad_0: (+1)
+   \       0x26   0xF07F 0x0085      MVNS     R0,#+133
+    495              }
+    496          
+    497              return status;
+   \                     ??mbedtls_psa_aead_update_ad_1: (+1)
+   \       0x2A   0xBDF2             POP      {R1,R4-R7,PC}
+    498          }
+    499          
+    500          /* Encrypt or decrypt a message fragment in an active multipart AEAD
+    501           * operation.*/
+
+   \                                 In section .text, align 2, keep-with-next
+    502          psa_status_t mbedtls_psa_aead_update(
+    503              mbedtls_psa_aead_operation_t *operation,
+    504              const uint8_t *input,
+    505              size_t input_length,
+    506              uint8_t *output,
+    507              size_t output_size,
+    508              size_t *output_length)
+    509          {
+   \                     mbedtls_psa_aead_update: (+1)
+   \        0x0   0xE92D 0x47FF      PUSH     {R0-R10,LR}
+   \        0x4   0x4682             MOV      R10,R0
+   \        0x6   0x000C             MOVS     R4,R1
+   \        0x8   0x0015             MOVS     R5,R2
+   \        0xA   0x001E             MOVS     R6,R3
+   \        0xC   0x9F0C             LDR      R7,[SP, #+48]
+   \        0xE   0xF8DD 0x8034      LDR      R8,[SP, #+52]
+    510              size_t update_output_length;
+    511              psa_status_t status = PSA_ERROR_CORRUPTION_DETECTED;
+   \       0x12   0xF07F 0x0996      MVNS     R9,#+150
+    512          
+    513              update_output_length = input_length;
+   \       0x16   0x9502             STR      R5,[SP, #+8]
+    514          
+    515          #if defined(MBEDTLS_PSA_BUILTIN_ALG_GCM)
+    516              if (operation->alg == PSA_ALG_GCM) {
+    517                  status =  mbedtls_to_psa_error(
+    518                      mbedtls_gcm_update(&operation->ctx.gcm,
+    519                                         input, input_length,
+    520                                         output, output_size,
+    521                                         &update_output_length));
+    522              } else
+    523          #endif /* MBEDTLS_PSA_BUILTIN_ALG_GCM */
+    524          #if defined(MBEDTLS_PSA_BUILTIN_ALG_CCM)
+    525              if (operation->alg == PSA_ALG_CCM) {
+   \       0x18   0xF8DA 0x1000      LDR      R1,[R10, #+0]
+   \       0x1C   0x....             LDR.N    R0,??DataTable9_1
+   \       0x1E   0x4281             CMP      R1,R0
+   \       0x20   0xD111             BNE.N    ??mbedtls_psa_aead_update_0
+    526                  if (output_size < input_length) {
+   \       0x22   0x42AF             CMP      R7,R5
+   \       0x24   0xD202             BCS.N    ??mbedtls_psa_aead_update_1
+    527                      return PSA_ERROR_BUFFER_TOO_SMALL;
+   \       0x26   0xF07F 0x0089      MVNS     R0,#+137
+   \       0x2A   0xE013             B.N      ??mbedtls_psa_aead_update_2
+    528                  }
+    529          
+    530                  status = mbedtls_to_psa_error(
+    531                      mbedtls_ccm_update(&operation->ctx.ccm,
+    532                                         input, input_length,
+    533                                         output, output_size,
+    534                                         &update_output_length));
+   \                     ??mbedtls_psa_aead_update_1: (+1)
+   \       0x2C   0xA802             ADD      R0,SP,#+8
+   \       0x2E   0x9001             STR      R0,[SP, #+4]
+   \       0x30   0x9700             STR      R7,[SP, #+0]
+   \       0x32   0x0033             MOVS     R3,R6
+   \       0x34   0x002A             MOVS     R2,R5
+   \       0x36   0x0021             MOVS     R1,R4
+   \       0x38   0xF11A 0x0008      ADDS     R0,R10,#+8
+   \       0x3C   0x.... 0x....      BL       mbedtls_ccm_update
+   \       0x40   0x.... 0x....      BL       mbedtls_to_psa_error
+   \       0x44   0xE001             B.N      ??mbedtls_psa_aead_update_3
+    535              } else
+    536          #endif /* MBEDTLS_PSA_BUILTIN_ALG_CCM */
+    537          #if defined(MBEDTLS_PSA_BUILTIN_ALG_CHACHA20_POLY1305)
+    538              if (operation->alg == PSA_ALG_CHACHA20_POLY1305) {
+    539                  if (output_size < input_length) {
+    540                      return PSA_ERROR_BUFFER_TOO_SMALL;
+    541                  }
+    542          
+    543                  status = mbedtls_to_psa_error(
+    544                      mbedtls_chachapoly_update(&operation->ctx.chachapoly,
+    545                                                input_length,
+    546                                                input,
+    547                                                output));
+    548              } else
+    549          #endif /* MBEDTLS_PSA_BUILTIN_ALG_CHACHA20_POLY1305 */
+    550              {
+    551                  (void) operation;
+    552                  (void) input;
+    553                  (void) output;
+    554                  (void) output_size;
+    555          
+    556                  status = PSA_ERROR_NOT_SUPPORTED;
+   \                     ??mbedtls_psa_aead_update_0: (+1)
+   \       0x46   0xF07F 0x0085      MVNS     R0,#+133
+    557              }
+    558          
+    559              if (status == PSA_SUCCESS) {
+   \                     ??mbedtls_psa_aead_update_3: (+1)
+   \       0x4A   0x2800             CMP      R0,#+0
+   \       0x4C   0xD102             BNE.N    ??mbedtls_psa_aead_update_4
+    560                  *output_length = update_output_length;
+   \       0x4E   0x9902             LDR      R1,[SP, #+8]
+   \       0x50   0xF8C8 0x1000      STR      R1,[R8, #+0]
+    561              }
+    562          
+    563              return status;
+   \                     ??mbedtls_psa_aead_update_4: (+1)
+   \                     ??mbedtls_psa_aead_update_2: (+1)
+   \       0x54   0xB004             ADD      SP,SP,#+16
+   \       0x56   0xE8BD 0x87F0      POP      {R4-R10,PC}
+    564          }
+    565          
+    566          /* Finish encrypting a message in a multipart AEAD operation. */
+
+   \                                 In section .text, align 2, keep-with-next
+    567          psa_status_t mbedtls_psa_aead_finish(
+    568              mbedtls_psa_aead_operation_t *operation,
+    569              uint8_t *ciphertext,
+    570              size_t ciphertext_size,
+    571              size_t *ciphertext_length,
+    572              uint8_t *tag,
+    573              size_t tag_size,
+    574              size_t *tag_length)
+    575          {
+   \                     mbedtls_psa_aead_finish: (+1)
+   \        0x0   0xE92D 0x4FF2      PUSH     {R1,R4-R11,LR}
+   \        0x4   0x4683             MOV      R11,R0
+   \        0x6   0x0014             MOVS     R4,R2
+   \        0x8   0x001D             MOVS     R5,R3
+   \        0xA   0x9E0A             LDR      R6,[SP, #+40]
+   \        0xC   0x9F0B             LDR      R7,[SP, #+44]
+   \        0xE   0xF8DD 0x8030      LDR      R8,[SP, #+48]
+    576              psa_status_t status = PSA_ERROR_CORRUPTION_DETECTED;
+   \       0x12   0xF07F 0x0996      MVNS     R9,#+150
+    577              size_t finish_output_size = 0;
+   \       0x16   0xF05F 0x0A00      MOVS     R10,#+0
+    578          
+    579              if (tag_size < operation->tag_length) {
+   \       0x1A   0xF89B 0x0007      LDRB     R0,[R11, #+7]
+   \       0x1E   0x4287             CMP      R7,R0
+   \       0x20   0xD202             BCS.N    ??mbedtls_psa_aead_finish_0
+    580                  return PSA_ERROR_BUFFER_TOO_SMALL;
+   \       0x22   0xF07F 0x0089      MVNS     R0,#+137
+   \       0x26   0xE01F             B.N      ??mbedtls_psa_aead_finish_1
+    581              }
+    582          
+    583          #if defined(MBEDTLS_PSA_BUILTIN_ALG_GCM)
+    584              if (operation->alg == PSA_ALG_GCM) {
+    585                  status =  mbedtls_to_psa_error(
+    586                      mbedtls_gcm_finish(&operation->ctx.gcm,
+    587                                         ciphertext, ciphertext_size, ciphertext_length,
+    588                                         tag, operation->tag_length));
+    589              } else
+    590          #endif /* MBEDTLS_PSA_BUILTIN_ALG_GCM */
+    591          #if defined(MBEDTLS_PSA_BUILTIN_ALG_CCM)
+    592              if (operation->alg == PSA_ALG_CCM) {
+   \                     ??mbedtls_psa_aead_finish_0: (+1)
+   \       0x28   0xF8DB 0x1000      LDR      R1,[R11, #+0]
+   \       0x2C   0x....             LDR.N    R0,??DataTable9_1
+   \       0x2E   0x4281             CMP      R1,R0
+   \       0x30   0xD110             BNE.N    ??mbedtls_psa_aead_finish_2
+    593                  /* tag must be big enough to store a tag of size passed into set
+    594                   * lengths. */
+    595                  if (tag_size < operation->tag_length) {
+   \       0x32   0xF89B 0x0007      LDRB     R0,[R11, #+7]
+   \       0x36   0x4287             CMP      R7,R0
+   \       0x38   0xD202             BCS.N    ??mbedtls_psa_aead_finish_3
+    596                      return PSA_ERROR_BUFFER_TOO_SMALL;
+   \       0x3A   0xF07F 0x0089      MVNS     R0,#+137
+   \       0x3E   0xE013             B.N      ??mbedtls_psa_aead_finish_1
+    597                  }
+    598          
+    599                  status = mbedtls_to_psa_error(
+    600                      mbedtls_ccm_finish(&operation->ctx.ccm,
+    601                                         tag, operation->tag_length));
+   \                     ??mbedtls_psa_aead_finish_3: (+1)
+   \       0x40   0xF89B 0x2007      LDRB     R2,[R11, #+7]
+   \       0x44   0x0031             MOVS     R1,R6
+   \       0x46   0xF11B 0x0008      ADDS     R0,R11,#+8
+   \       0x4A   0x.... 0x....      BL       mbedtls_ccm_finish
+   \       0x4E   0x.... 0x....      BL       mbedtls_to_psa_error
+   \       0x52   0xE001             B.N      ??mbedtls_psa_aead_finish_4
+    602              } else
+    603          #endif /* MBEDTLS_PSA_BUILTIN_ALG_CCM */
+    604          #if defined(MBEDTLS_PSA_BUILTIN_ALG_CHACHA20_POLY1305)
+    605              if (operation->alg == PSA_ALG_CHACHA20_POLY1305) {
+    606                  /* Belt and braces. Although the above tag_size check should have
+    607                   * already done this, if we later start supporting smaller tag sizes
+    608                   * for chachapoly, then passing a tag buffer smaller than 16 into here
+    609                   * could cause a buffer overflow, so better safe than sorry. */
+    610                  if (tag_size < 16) {
+    611                      return PSA_ERROR_BUFFER_TOO_SMALL;
+    612                  }
+    613          
+    614                  status = mbedtls_to_psa_error(
+    615                      mbedtls_chachapoly_finish(&operation->ctx.chachapoly,
+    616                                                tag));
+    617              } else
+    618          #endif /* MBEDTLS_PSA_BUILTIN_ALG_CHACHA20_POLY1305 */
+    619              {
+    620                  (void) ciphertext;
+    621                  (void) ciphertext_size;
+    622                  (void) ciphertext_length;
+    623                  (void) tag;
+    624                  (void) tag_size;
+    625                  (void) tag_length;
+    626          
+    627                  status = PSA_ERROR_NOT_SUPPORTED;
+   \                     ??mbedtls_psa_aead_finish_2: (+1)
+   \       0x54   0xF07F 0x0085      MVNS     R0,#+133
+    628              }
+    629          
+    630              if (status == PSA_SUCCESS) {
+   \                     ??mbedtls_psa_aead_finish_4: (+1)
+   \       0x58   0x2800             CMP      R0,#+0
+   \       0x5A   0xD105             BNE.N    ??mbedtls_psa_aead_finish_5
+    631                  /* This will be zero for all supported algorithms currently, but left
+    632                   * here for future support. */
+    633                  *ciphertext_length = finish_output_size;
+   \       0x5C   0xF8C5 0xA000      STR      R10,[R5, #+0]
+    634                  *tag_length = operation->tag_length;
+   \       0x60   0xF89B 0x1007      LDRB     R1,[R11, #+7]
+   \       0x64   0xF8C8 0x1000      STR      R1,[R8, #+0]
+    635              }
+    636          
+    637              return status;
+   \                     ??mbedtls_psa_aead_finish_5: (+1)
+   \                     ??mbedtls_psa_aead_finish_1: (+1)
+   \       0x68   0xE8BD 0x8FF2      POP      {R1,R4-R11,PC}
+    638          }
+    639          
+    640          /* Abort an AEAD operation */
+
+   \                                 In section .text, align 2, keep-with-next
+    641          psa_status_t mbedtls_psa_aead_abort(
+    642              mbedtls_psa_aead_operation_t *operation)
+    643          {
+   \                     mbedtls_psa_aead_abort: (+1)
+   \        0x0   0xB510             PUSH     {R4,LR}
+   \        0x2   0x0004             MOVS     R4,R0
+    644              switch (operation->alg) {
+   \        0x4   0x6821             LDR      R1,[R4, #+0]
+   \        0x6   0x....             LDR.N    R0,??DataTable9_1
+   \        0x8   0x4281             CMP      R1,R0
+   \        0xA   0xD103             BNE.N    ??mbedtls_psa_aead_abort_0
+    645          #if defined(MBEDTLS_PSA_BUILTIN_ALG_CCM)
+    646                  case PSA_ALG_CCM:
+    647                      mbedtls_ccm_free(&operation->ctx.ccm);
+   \        0xC   0xF114 0x0008      ADDS     R0,R4,#+8
+   \       0x10   0x.... 0x....      BL       mbedtls_ccm_free
+    648                      break;
+    649          #endif /* MBEDTLS_PSA_BUILTIN_ALG_CCM */
+    650          #if defined(MBEDTLS_PSA_BUILTIN_ALG_GCM)
+    651                  case PSA_ALG_GCM:
+    652                      mbedtls_gcm_free(&operation->ctx.gcm);
+    653                      break;
+    654          #endif /* MBEDTLS_PSA_BUILTIN_ALG_GCM */
+    655          #if defined(MBEDTLS_PSA_BUILTIN_ALG_CHACHA20_POLY1305)
+    656                  case PSA_ALG_CHACHA20_POLY1305:
+    657                      mbedtls_chachapoly_free(&operation->ctx.chachapoly);
+    658                      break;
+    659          #endif /* MBEDTLS_PSA_BUILTIN_ALG_CHACHA20_POLY1305 */
+    660              }
+    661          
+    662              operation->is_encrypt = 0;
+   \                     ??mbedtls_psa_aead_abort_0: (+1)
+   \       0x14   0x6860             LDR      R0,[R4, #+4]
+   \       0x16   0xF430 0x3080      BICS     R0,R0,#0x10000
+   \       0x1A   0x6060             STR      R0,[R4, #+4]
+    663          
+    664              return PSA_SUCCESS;
+   \       0x1C   0x2000             MOVS     R0,#+0
+   \       0x1E   0xBD10             POP      {R4,PC}
+    665          }
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable9:
+   \        0x0   0x0540'0100        DC32     0x5400100
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable9_1:
+   \        0x0   0x0550'0100        DC32     0x5500100
+    666          
+    667          #endif /* MBEDTLS_PSA_CRYPTO_C */
+
+   Maximum stack usage in bytes:
+
+   .cstack Function
+   ------- --------
+       8   mbedtls_psa_aead_abort
+         8   -> mbedtls_ccm_free
+     216   mbedtls_psa_aead_decrypt
+       216   -> __aeabi_memclr4
+       216   -> mbedtls_ccm_auth_decrypt
+       216   -> mbedtls_psa_aead_abort
+       216   -> mbedtls_to_psa_error
+       216   -> psa_aead_setup
+       216   -> psa_aead_unpadded_locate_tag
+      32   mbedtls_psa_aead_decrypt_setup
+        32   -> psa_aead_setup
+     216   mbedtls_psa_aead_encrypt
+       216   -> __aeabi_memclr4
+       216   -> mbedtls_ccm_encrypt_and_tag
+       216   -> mbedtls_psa_aead_abort
+       216   -> mbedtls_to_psa_error
+       216   -> psa_aead_setup
+      32   mbedtls_psa_aead_encrypt_setup
+        32   -> psa_aead_setup
+      40   mbedtls_psa_aead_finish
+        40   -> mbedtls_ccm_finish
+        40   -> mbedtls_to_psa_error
+      16   mbedtls_psa_aead_set_lengths
+        16   -> mbedtls_ccm_set_lengths
+        16   -> mbedtls_to_psa_error
+      24   mbedtls_psa_aead_set_nonce
+        24   -> mbedtls_ccm_starts
+        24   -> mbedtls_to_psa_error
+      48   mbedtls_psa_aead_update
+        48   -> mbedtls_ccm_update
+        48   -> mbedtls_to_psa_error
+      24   mbedtls_psa_aead_update_ad
+        24   -> mbedtls_ccm_update_ad
+        24   -> mbedtls_to_psa_error
+      48   psa_aead_setup
+        48   -> mbedtls_ccm_init
+        48   -> mbedtls_ccm_setkey
+        48   -> mbedtls_cipher_info_from_psa
+        48   -> mbedtls_to_psa_error
+        48   -> psa_get_key_type
+      12   psa_aead_unpadded_locate_tag
+       0   psa_get_key_type
+
+
+   Section sizes:
+
+   Bytes  Function/Label
+   -----  --------------
+       4  ??DataTable9
+       4  ??DataTable9_1
+     140  ?_0
+     140  ?_1
+      32  mbedtls_psa_aead_abort
+     200  mbedtls_psa_aead_decrypt
+      48  mbedtls_psa_aead_decrypt_setup
+     178  mbedtls_psa_aead_encrypt
+      48  mbedtls_psa_aead_encrypt_setup
+     108  mbedtls_psa_aead_finish
+      40  mbedtls_psa_aead_set_lengths
+      52  mbedtls_psa_aead_set_nonce
+      90  mbedtls_psa_aead_update
+      44  mbedtls_psa_aead_update_ad
+     184  psa_aead_setup
+      40  psa_aead_unpadded_locate_tag
+       4  psa_get_key_type
+
+ 
+   280 bytes in section .rodata
+ 1'076 bytes in section .text
+ 
+ 1'076 bytes of CODE  memory
+   280 bytes of CONST memory
+
+Errors: none
+Warnings: none

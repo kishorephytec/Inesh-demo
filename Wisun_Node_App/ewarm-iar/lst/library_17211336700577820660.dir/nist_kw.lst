@@ -1,0 +1,1936 @@
+###############################################################################
+#
+# IAR ANSI C/C++ Compiler V9.50.2.385/W64 for ARM         29/Mar/2025  15:53:49
+# Copyright 1999-2024 IAR Systems AB.
+#
+#    Cpu mode                     =  thumb
+#    Endian                       =  little
+#    Source file                  =
+#        D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\util\third_party\mbedtls\library\nist_kw.c
+#    Command line                 =
+#        -f "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\ewarm-iar\obj\library_17211336700577820660.dir\nist_kw.o.rsp"
+#        ("D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\util\third_party\mbedtls\library\nist_kw.c"
+#        -D DEBUG_EFM=1 -D EFR32FG28B322F1024IM48=1 -D
+#        configNUM_SDK_THREAD_LOCAL_STORAGE_POINTERS=2 -D
+#        SL_COMPONENT_CATALOG_PRESENT=1 -D
+#        MBEDTLS_CONFIG_FILE=<sl_mbedtls_config.h> -D
+#        MBEDTLS_PSA_CRYPTO_CONFIG_FILE=<psa_crypto_config.h> -D
+#        SL_RAIL_LIB_MULTIPROTOCOL_SUPPORT=0 -D
+#        SL_RAIL_UTIL_PA_CONFIG_HEADER=<sl_rail_util_pa_config.h> -D
+#        RTT_USE_ASM=0 -lC "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\ewarm-iar\lst\library_17211336700577820660.dir"
+#        --diag_suppress Pa050 -o "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\ewarm-iar\obj\library_17211336700577820660.dir"
+#        --no_cse --no_unroll --no_inline --no_code_motion --no_tbaa
+#        --no_clustering --no_scheduling --debug --endian=little
+#        --cpu=Cortex-M33 --cmse --cmse -e --fpu=VFPv5_sp --dlib_config
+#        "C:\Program Files\IAR Systems\Embedded Workbench
+#        9.2\arm\inc\c\DLib_Config_Normal.h" -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\util\third_party\mbedtls\library\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App 1\Wisun_Node_App\config\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App 1\Wisun_Node_App\config\rail\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App 1\Wisun_Node_App\config\wisun\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App 1\Wisun_Node_App\.\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\Device\SiliconLabs\EFR32FG28\Include\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\app\wisun\component\app_project_info\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\common\inc\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\service\cli\inc\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\service\cli\src\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\CMSIS\Core\Include\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\CMSIS\RTOS2\Include\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\service\device_init\inc\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\emdrv\common\inc\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\emlib\inc\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\service\iostream\inc\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\security\sl_component\sl_mbedtls_support\config\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\security\sl_component\sl_mbedtls_support\config\preset\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\security\sl_component\sl_mbedtls_support\inc\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\util\third_party\mbedtls\include\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\util\third_party\mbedtls\library\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\micrium_os\common\source\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\micrium_os\common\include\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\micrium_os\cpu\include\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\micrium_os\ports\source\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\micrium_os\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\micrium_os\kernel\source\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\micrium_os\kernel\include\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\emdrv\nvm3\inc\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\peripheral\inc\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\util\third_party\printf\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\util\third_party\printf\inc\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\security\sl_component\sl_psa_driver\inc\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\radio\rail_lib\common\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\radio\rail_lib\protocol\ble\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\radio\rail_lib\protocol\ieee802154\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\radio\rail_lib\protocol\wmbus\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\radio\rail_lib\protocol\zwave\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\radio\rail_lib\chip\efr32\efr32xg2x\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\radio\rail_lib\protocol\sidewalk\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\radio\rail_lib\plugin\pa-conversions\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\radio\rail_lib\plugin\pa-conversions\efr32xg28\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\radio\rail_lib\plugin\rail_util_pti\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\security\sl_component\se_manager\inc\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\security\sl_component\se_manager\src\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\util\third_party\segger\systemview\SEGGER\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\util\silicon_labs\silabs_core\memory_manager\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\common\toolchain\inc\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\service\system\inc\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\app\wisun\component\app_core\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\app\wisun\component\app_setting\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\app\wisun\component\cli_util\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\app\wisun\component\event_manager\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\app\wisun\component\ns_list\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\app\wisun\component\ping\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\app\wisun\component\trace_util\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\app\wisun\component\trace_util\nanostack\nanostack-libservice\mbed-client-libservice\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\app\wisun\component\udp_client\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\service\sleeptimer\inc\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\protocol\wisun\plugin\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\protocol\wisun\stack\inc\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\protocol\wisun\stack\inc\socket\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App 1\Wisun_Node_App\autogen\\" -On
+#        --use_c++_inline) --dependencies=n "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\ewarm-iar\obj\library_17211336700577820660.dir\nist_kw.o.iar_deps"
+#    Locale                       =  C
+#    List file                    =
+#        D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\ewarm-iar\lst\library_17211336700577820660.dir\nist_kw.lst
+#    Object file                  =
+#        D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\ewarm-iar\obj\library_17211336700577820660.dir\nist_kw.o
+#    Runtime model:                  
+#      __CPP_Runtime              =  1
+#      __SystemLibrary            =  DLib
+#      __dlib_file_descriptor     =  0
+#      __dlib_full_locale_support =  0
+#      __dlib_version             =  6
+#
+###############################################################################
+
+D:\Inesh_wisun\Wisun_Node_App 1\Wisun_Node_App\gecko_sdk_4.4.5\util\third_party\mbedtls\library\nist_kw.c
+      1          /*
+      2           *  Implementation of NIST SP 800-38F key wrapping, supporting KW and KWP modes
+      3           *  only
+      4           *
+      5           *  Copyright The Mbed TLS Contributors
+      6           *  SPDX-License-Identifier: Apache-2.0
+      7           *
+      8           *  Licensed under the Apache License, Version 2.0 (the "License"); you may
+      9           *  not use this file except in compliance with the License.
+     10           *  You may obtain a copy of the License at
+     11           *
+     12           *  http://www.apache.org/licenses/LICENSE-2.0
+     13           *
+     14           *  Unless required by applicable law or agreed to in writing, software
+     15           *  distributed under the License is distributed on an "AS IS" BASIS, WITHOUT
+     16           *  WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     17           *  See the License for the specific language governing permissions and
+     18           *  limitations under the License.
+     19           */
+     20          /*
+     21           * Definition of Key Wrapping:
+     22           * https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-38F.pdf
+     23           * RFC 3394 "Advanced Encryption Standard (AES) Key Wrap Algorithm"
+     24           * RFC 5649 "Advanced Encryption Standard (AES) Key Wrap with Padding Algorithm"
+     25           *
+     26           * Note: RFC 3394 defines different methodology for intermediate operations for
+     27           * the wrapping and unwrapping operation than the definition in NIST SP 800-38F.
+     28           */
+     29          
+     30          #include "common.h"
+
+   \                                 In section .text, align 2
+   \   __vfp uint32_t mbedtls_get_unaligned_uint32(void const *)
+   \                     mbedtls_get_unaligned_uint32: (+1)
+   \        0x0   0xB5F8             PUSH     {R3-R7,LR}
+   \        0x2   0x0007             MOVS     R7,R0
+   \        0x4   0x2404             MOVS     R4,#+4
+   \        0x6   0x003D             MOVS     R5,R7
+   \        0x8   0x466E             MOV      R6,SP
+   \        0xA   0x0022             MOVS     R2,R4
+   \        0xC   0x0029             MOVS     R1,R5
+   \        0xE   0x0030             MOVS     R0,R6
+   \       0x10   0x.... 0x....      BL       __aeabi_memcpy
+   \       0x14   0x9800             LDR      R0,[SP, #+0]
+   \       0x16   0xBDF2             POP      {R1,R4-R7,PC}
+
+   \                                 In section .text, align 2
+   \   __vfp void mbedtls_put_unaligned_uint32(void *, uint32_t)
+   \                     mbedtls_put_unaligned_uint32: (+1)
+   \        0x0   0xB5F2             PUSH     {R1,R4-R7,LR}
+   \        0x2   0x0007             MOVS     R7,R0
+   \        0x4   0x2404             MOVS     R4,#+4
+   \        0x6   0x466D             MOV      R5,SP
+   \        0x8   0x003E             MOVS     R6,R7
+   \        0xA   0x0022             MOVS     R2,R4
+   \        0xC   0x0029             MOVS     R1,R5
+   \        0xE   0x0030             MOVS     R0,R6
+   \       0x10   0x.... 0x....      BL       __aeabi_memcpy
+   \       0x14   0xBDF1             POP      {R0,R4-R7,PC}
+
+   \                                 In section .text, align 2, keep-with-next
+   \   static __vfp uint32_t mbedtls_bswap32(uint32_t)
+   \                     mbedtls_bswap32: (+1)
+   \        0x0   0x0001             MOVS     R1,R0
+   \        0x2   0x0208             LSLS     R0,R1,#+8
+   \        0x4   0xF410 0x007F      ANDS     R0,R0,#0xFF0000
+   \        0x8   0xEA50 0x6001      ORRS     R0,R0,R1, LSL #+24
+   \        0xC   0x000A             MOVS     R2,R1
+   \        0xE   0x0A12             LSRS     R2,R2,#+8
+   \       0x10   0xF412 0x427F      ANDS     R2,R2,#0xFF00
+   \       0x14   0x4310             ORRS     R0,R2,R0
+   \       0x16   0xEA50 0x6011      ORRS     R0,R0,R1, LSR #+24
+   \       0x1A   0x4770             BX       LR
+
+   \                                 In section .rodata, align 2
+   \   static __absolute uint16_t const mbedtls_byte_order_detector
+   \                     mbedtls_byte_order_detector:
+   \        0x0   0x0100             DC16 256
+     31          
+     32          #if defined(MBEDTLS_NIST_KW_C)
+     33          
+     34          #include "mbedtls/nist_kw.h"
+
+   \                                 In section .text, align 2, keep-with-next
+   \   static __vfp size_t mbedtls_cipher_info_get_block_size(mbedtls_cipher_info_t const *)
+   \                     mbedtls_cipher_info_get_block_size: (+1)
+   \        0x0   0x0001             MOVS     R1,R0
+   \        0x2   0x2900             CMP      R1,#+0
+   \        0x4   0xD101             BNE.N    ??mbedtls_cipher_info_get_block_size_0
+   \        0x6   0x2000             MOVS     R0,#+0
+   \        0x8   0xE002             B.N      ??mbedtls_cipher_info_get_block_size_1
+   \                     ??mbedtls_cipher_info_get_block_size_0: (+1)
+   \        0xA   0x7908             LDRB     R0,[R1, #+4]
+   \        0xC   0xF010 0x001F      ANDS     R0,R0,#0x1F
+   \                     ??mbedtls_cipher_info_get_block_size_1: (+1)
+   \       0x10   0x4770             BX       LR
+     35          #include "mbedtls/platform_util.h"
+     36          #include "mbedtls/error.h"
+     37          #include "mbedtls/constant_time.h"
+     38          #include "constant_time_internal.h"
+
+   \                                 In section .text, align 2, keep-with-next
+   \   static __vfp uint32_t mbedtls_ct_compiler_opaque(uint32_t)
+   \                     mbedtls_ct_compiler_opaque: (+1)
+   \        0x0   0x.... 0x....      LDR.W    R1,??DataTable5
+   \        0x4   0x6809             LDR      R1,[R1, #+0]
+   \        0x6   0x4048             EORS     R0,R1,R0
+   \        0x8   0x4770             BX       LR
+
+   \                                 In section .text, align 2, keep-with-next
+   \   static __vfp uint32_t mbedtls_ct_bool(uint32_t)
+   \                     mbedtls_ct_bool: (+1)
+   \        0x0   0xB510             PUSH     {R4,LR}
+   \        0x2   0x0004             MOVS     R4,R0
+   \        0x4   0x0020             MOVS     R0,R4
+   \        0x6   0x.... 0x....      BL       mbedtls_ct_compiler_opaque
+   \        0xA   0x0002             MOVS     R2,R0
+   \        0xC   0x4251             RSBS     R1,R2,#+0
+   \        0xE   0x0010             MOVS     R0,R2
+   \       0x10   0x0840             LSRS     R0,R0,#+1
+   \       0x12   0x4240             RSBS     R0,R0,#+0
+   \       0x14   0x4308             ORRS     R0,R0,R1
+   \       0x16   0x0FC0             LSRS     R0,R0,#+31
+   \       0x18   0x4240             RSBS     R0,R0,#+0
+   \       0x1A   0xBD10             POP      {R4,PC}
+
+   \                                 In section .text, align 2, keep-with-next
+   \   static __vfp uint32_t mbedtls_ct_if(uint32_t, uint32_t, uint32_t)
+   \                     mbedtls_ct_if: (+1)
+   \        0x0   0xB570             PUSH     {R4-R6,LR}
+   \        0x2   0x0006             MOVS     R6,R0
+   \        0x4   0x000C             MOVS     R4,R1
+   \        0x6   0x0015             MOVS     R5,R2
+   \        0x8   0x0030             MOVS     R0,R6
+   \        0xA   0x.... 0x....      BL       mbedtls_ct_compiler_opaque
+   \        0xE   0x43C0             MVNS     R0,R0
+   \       0x10   0x4026             ANDS     R6,R4,R6
+   \       0x12   0x4005             ANDS     R5,R5,R0
+   \       0x14   0x432E             ORRS     R6,R5,R6
+   \       0x16   0x0030             MOVS     R0,R6
+   \       0x18   0xBD70             POP      {R4-R6,PC}
+
+   \                                 In section .text, align 2, keep-with-next
+   \   static __vfp uint32_t mbedtls_ct_uint_lt(uint32_t, uint32_t)
+   \                     mbedtls_ct_uint_lt: (+1)
+   \        0x0   0xE92D 0x43F8      PUSH     {R3-R9,LR}
+   \        0x4   0x4681             MOV      R9,R0
+   \        0x6   0x000C             MOVS     R4,R1
+   \        0x8   0x4648             MOV      R0,R9
+   \        0xA   0x.... 0x....      BL       mbedtls_ct_compiler_opaque
+   \        0xE   0x0005             MOVS     R5,R0
+   \       0x10   0x0020             MOVS     R0,R4
+   \       0x12   0x.... 0x....      BL       mbedtls_ct_compiler_opaque
+   \       0x16   0x0006             MOVS     R6,R0
+   \       0x18   0xEA96 0x0005      EORS     R0,R6,R5
+   \       0x1C   0x0FC0             LSRS     R0,R0,#+31
+   \       0x1E   0x.... 0x....      BL       mbedtls_ct_bool
+   \       0x22   0x0007             MOVS     R7,R0
+   \       0x24   0x1BAA             SUBS     R2,R5,R6
+   \       0x26   0x0031             MOVS     R1,R6
+   \       0x28   0x0038             MOVS     R0,R7
+   \       0x2A   0x.... 0x....      BL       mbedtls_ct_if
+   \       0x2E   0x4680             MOV      R8,R0
+   \       0x30   0xEA5F 0x78D8      LSRS     R8,R8,#+31
+   \       0x34   0x4640             MOV      R0,R8
+   \       0x36   0x.... 0x....      BL       mbedtls_ct_bool
+   \       0x3A   0xE8BD 0x83F2      POP      {R1,R4-R9,PC}
+
+   \                                 In section .text, align 2, keep-with-next
+   \   static __vfp int mbedtls_ct_error_if(uint32_t, int, int)
+   \                     mbedtls_ct_error_if: (+1)
+   \        0x0   0xB570             PUSH     {R4-R6,LR}
+   \        0x2   0x0006             MOVS     R6,R0
+   \        0x4   0x000C             MOVS     R4,R1
+   \        0x6   0x0015             MOVS     R5,R2
+   \        0x8   0x426A             RSBS     R2,R5,#+0
+   \        0xA   0x4261             RSBS     R1,R4,#+0
+   \        0xC   0x0030             MOVS     R0,R6
+   \        0xE   0x.... 0x....      BL       mbedtls_ct_if
+   \       0x12   0x4240             RSBS     R0,R0,#+0
+   \       0x14   0xBD70             POP      {R4-R6,PC}
+
+   \                                 In section .text, align 2, keep-with-next
+   \   static __vfp uint32_t mbedtls_ct_uint_gt(uint32_t, uint32_t)
+   \                     mbedtls_ct_uint_gt: (+1)
+   \        0x0   0xB538             PUSH     {R3-R5,LR}
+   \        0x2   0x0005             MOVS     R5,R0
+   \        0x4   0x000C             MOVS     R4,R1
+   \        0x6   0x0029             MOVS     R1,R5
+   \        0x8   0x0020             MOVS     R0,R4
+   \        0xA   0x.... 0x....      BL       mbedtls_ct_uint_lt
+   \        0xE   0xBD32             POP      {R1,R4,R5,PC}
+     39          
+     40          #include <stdint.h>
+     41          #include <string.h>
+     42          
+     43          #include "mbedtls/platform.h"
+     44          
+     45          #if !defined(MBEDTLS_NIST_KW_ALT)
+     46          
+     47          #define KW_SEMIBLOCK_LENGTH    8
+     48          #define MIN_SEMIBLOCKS_COUNT   3
+     49          
+     50          /*! The 64-bit default integrity check value (ICV) for KW mode. */
+
+   \                                 In section .rodata, align 4
+     51          static const unsigned char NIST_KW_ICV1[] = { 0xA6, 0xA6, 0xA6, 0xA6, 0xA6, 0xA6, 0xA6, 0xA6 };
+   \                     NIST_KW_ICV1:
+   \        0x0   0xA6 0xA6          DC8 166, 166, 166, 166, 166, 166, 166, 166
+   \              0xA6 0xA6    
+   \              0xA6 0xA6    
+   \              0xA6 0xA6
+     52          /*! The 32-bit default integrity check value (ICV) for KWP mode. */
+
+   \                                 In section .rodata, align 4
+     53          static const  unsigned char NIST_KW_ICV2[] = { 0xA6, 0x59, 0x59, 0xA6 };
+   \                     NIST_KW_ICV2:
+   \        0x0   0xA6 0x59          DC8 166, 89, 89, 166
+   \              0x59 0xA6
+     54          
+     55          /*
+     56           * Initialize context
+     57           */
+
+   \                                 In section .text, align 2, keep-with-next
+     58          void mbedtls_nist_kw_init(mbedtls_nist_kw_context *ctx)
+     59          {
+   \                     mbedtls_nist_kw_init: (+1)
+   \        0x0   0xB5F8             PUSH     {R3-R7,LR}
+   \        0x2   0x0007             MOVS     R7,R0
+     60              memset(ctx, 0, sizeof(mbedtls_nist_kw_context));
+   \        0x4   0x2448             MOVS     R4,#+72
+   \        0x6   0x2500             MOVS     R5,#+0
+   \        0x8   0x003E             MOVS     R6,R7
+   \        0xA   0x002A             MOVS     R2,R5
+   \        0xC   0x0021             MOVS     R1,R4
+   \        0xE   0x0030             MOVS     R0,R6
+   \       0x10   0x.... 0x....      BL       __aeabi_memset
+     61          }
+   \       0x14   0xBDF1             POP      {R0,R4-R7,PC}
+     62          
+
+   \                                 In section .text, align 2, keep-with-next
+     63          int mbedtls_nist_kw_setkey(mbedtls_nist_kw_context *ctx,
+     64                                     mbedtls_cipher_id_t cipher,
+     65                                     const unsigned char *key,
+     66                                     unsigned int keybits,
+     67                                     const int is_wrap)
+     68          {
+   \                     mbedtls_nist_kw_setkey: (+1)
+   \        0x0   0xE92D 0x4FF8      PUSH     {R3-R11,LR}
+   \        0x4   0x4683             MOV      R11,R0
+   \        0x6   0x000E             MOVS     R6,R1
+   \        0x8   0x0017             MOVS     R7,R2
+   \        0xA   0x4698             MOV      R8,R3
+   \        0xC   0x9C0A             LDR      R4,[SP, #+40]
+     69              int ret = MBEDTLS_ERR_ERROR_CORRUPTION_DETECTED;
+   \        0xE   0xF07F 0x096D      MVNS     R9,#+109
+     70              const mbedtls_cipher_info_t *cipher_info;
+     71          
+     72              cipher_info = mbedtls_cipher_info_from_values(cipher,
+     73                                                            keybits,
+     74                                                            MBEDTLS_MODE_ECB);
+   \       0x12   0x2201             MOVS     R2,#+1
+   \       0x14   0x4641             MOV      R1,R8
+   \       0x16   0x0030             MOVS     R0,R6
+   \       0x18   0xB2C0             UXTB     R0,R0
+   \       0x1A   0x.... 0x....      BL       mbedtls_cipher_info_from_values
+   \       0x1E   0x0005             MOVS     R5,R0
+     75              if (cipher_info == NULL) {
+   \       0x20   0x2D00             CMP      R5,#+0
+   \       0x22   0xD102             BNE.N    ??mbedtls_nist_kw_setkey_0
+     76                  return MBEDTLS_ERR_CIPHER_BAD_INPUT_DATA;
+   \       0x24   0x.... 0x....      LDR.W    R0,??DataTable5_1
+   \       0x28   0xE02B             B.N      ??mbedtls_nist_kw_setkey_1
+     77              }
+     78          
+     79              if (mbedtls_cipher_info_get_block_size(cipher_info) != 16) {
+   \                     ??mbedtls_nist_kw_setkey_0: (+1)
+   \       0x2A   0x0028             MOVS     R0,R5
+   \       0x2C   0x.... 0x....      BL       mbedtls_cipher_info_get_block_size
+   \       0x30   0x2810             CMP      R0,#+16
+   \       0x32   0xD002             BEQ.N    ??mbedtls_nist_kw_setkey_2
+     80                  return MBEDTLS_ERR_CIPHER_BAD_INPUT_DATA;
+   \       0x34   0x.... 0x....      LDR.W    R0,??DataTable5_1
+   \       0x38   0xE023             B.N      ??mbedtls_nist_kw_setkey_1
+     81              }
+     82          
+     83              /*
+     84               * SP 800-38F currently defines AES cipher as the only block cipher allowed:
+     85               * "For KW and KWP, the underlying block cipher shall be approved, and the
+     86               *  block size shall be 128 bits. Currently, the AES block cipher, with key
+     87               *  lengths of 128, 192, or 256 bits, is the only block cipher that fits
+     88               *  this profile."
+     89               *  Currently we don't support other 128 bit block ciphers for key wrapping,
+     90               *  such as Camellia and Aria.
+     91               */
+     92              if (cipher != MBEDTLS_CIPHER_ID_AES) {
+   \                     ??mbedtls_nist_kw_setkey_2: (+1)
+   \       0x3A   0x0030             MOVS     R0,R6
+   \       0x3C   0xB2C0             UXTB     R0,R0
+   \       0x3E   0x2802             CMP      R0,#+2
+   \       0x40   0xD002             BEQ.N    ??mbedtls_nist_kw_setkey_3
+     93                  return MBEDTLS_ERR_CIPHER_FEATURE_UNAVAILABLE;
+   \       0x42   0x.... 0x....      LDR.W    R0,??DataTable5_2
+   \       0x46   0xE01C             B.N      ??mbedtls_nist_kw_setkey_1
+     94              }
+     95          
+     96              mbedtls_cipher_free(&ctx->cipher_ctx);
+   \                     ??mbedtls_nist_kw_setkey_3: (+1)
+   \       0x48   0x4658             MOV      R0,R11
+   \       0x4A   0x.... 0x....      BL       mbedtls_cipher_free
+     97          
+     98              if ((ret = mbedtls_cipher_setup(&ctx->cipher_ctx, cipher_info)) != 0) {
+   \       0x4E   0x0029             MOVS     R1,R5
+   \       0x50   0x4658             MOV      R0,R11
+   \       0x52   0x.... 0x....      BL       mbedtls_cipher_setup
+   \       0x56   0x4682             MOV      R10,R0
+   \       0x58   0x2800             CMP      R0,#+0
+   \       0x5A   0xD001             BEQ.N    ??mbedtls_nist_kw_setkey_4
+     99                  return ret;
+   \       0x5C   0x4650             MOV      R0,R10
+   \       0x5E   0xE010             B.N      ??mbedtls_nist_kw_setkey_1
+    100              }
+    101          
+    102              if ((ret = mbedtls_cipher_setkey(&ctx->cipher_ctx, key, keybits,
+    103                                               is_wrap ? MBEDTLS_ENCRYPT :
+    104                                               MBEDTLS_DECRYPT)
+    105                   ) != 0) {
+   \                     ??mbedtls_nist_kw_setkey_4: (+1)
+   \       0x60   0x2C00             CMP      R4,#+0
+   \       0x62   0xD001             BEQ.N    ??mbedtls_nist_kw_setkey_5
+   \       0x64   0x2301             MOVS     R3,#+1
+   \       0x66   0xE000             B.N      ??mbedtls_nist_kw_setkey_6
+   \                     ??mbedtls_nist_kw_setkey_5: (+1)
+   \       0x68   0x2300             MOVS     R3,#+0
+   \                     ??mbedtls_nist_kw_setkey_6: (+1)
+   \       0x6A   0xB25B             SXTB     R3,R3
+   \       0x6C   0x4642             MOV      R2,R8
+   \       0x6E   0x0039             MOVS     R1,R7
+   \       0x70   0x4658             MOV      R0,R11
+   \       0x72   0x.... 0x....      BL       mbedtls_cipher_setkey
+   \       0x76   0x0001             MOVS     R1,R0
+   \       0x78   0x2800             CMP      R0,#+0
+   \       0x7A   0xD001             BEQ.N    ??mbedtls_nist_kw_setkey_7
+    106                  return ret;
+   \       0x7C   0x0008             MOVS     R0,R1
+   \       0x7E   0xE000             B.N      ??mbedtls_nist_kw_setkey_1
+    107              }
+    108          
+    109              return 0;
+   \                     ??mbedtls_nist_kw_setkey_7: (+1)
+   \       0x80   0x2000             MOVS     R0,#+0
+   \                     ??mbedtls_nist_kw_setkey_1: (+1)
+   \       0x82   0xE8BD 0x8FF2      POP      {R1,R4-R11,PC}
+    110          }
+    111          
+    112          /*
+    113           * Free context
+    114           */
+
+   \                                 In section .text, align 2, keep-with-next
+    115          void mbedtls_nist_kw_free(mbedtls_nist_kw_context *ctx)
+    116          {
+   \                     mbedtls_nist_kw_free: (+1)
+   \        0x0   0xB510             PUSH     {R4,LR}
+   \        0x2   0x0004             MOVS     R4,R0
+    117              mbedtls_cipher_free(&ctx->cipher_ctx);
+   \        0x4   0x0020             MOVS     R0,R4
+   \        0x6   0x.... 0x....      BL       mbedtls_cipher_free
+    118              mbedtls_platform_zeroize(ctx, sizeof(mbedtls_nist_kw_context));
+   \        0xA   0x2148             MOVS     R1,#+72
+   \        0xC   0x0020             MOVS     R0,R4
+   \        0xE   0x.... 0x....      BL       mbedtls_platform_zeroize
+    119          }
+   \       0x12   0xBD10             POP      {R4,PC}
+    120          
+    121          /*
+    122           * Helper function for Xoring the uint64_t "t" with the encrypted A.
+    123           * Defined in NIST SP 800-38F section 6.1
+    124           */
+
+   \                                 In section .text, align 2, keep-with-next
+    125          static void calc_a_xor_t(unsigned char A[KW_SEMIBLOCK_LENGTH], uint64_t t)
+    126          {
+   \                     calc_a_xor_t: (+1)
+   \        0x0   0xE92D 0x41F0      PUSH     {R4-R8,LR}
+   \        0x4   0x0006             MOVS     R6,R0
+   \        0x6   0x0014             MOVS     R4,R2
+   \        0x8   0x001D             MOVS     R5,R3
+    127              size_t i = 0;
+   \        0xA   0x2000             MOVS     R0,#+0
+    128              for (i = 0; i < sizeof(t); i++) {
+   \        0xC   0x2700             MOVS     R7,#+0
+   \                     ??calc_a_xor_t_0: (+1)
+   \        0xE   0x2F08             CMP      R7,#+8
+   \       0x10   0xD20E             BCS.N    ??calc_a_xor_t_1
+    129                  A[i] ^= (t >> ((sizeof(t) - 1 - i) * 8)) & 0xff;
+   \       0x12   0xF816 0x8007      LDRB     R8,[R6, R7]
+   \       0x16   0x0020             MOVS     R0,R4
+   \       0x18   0x0029             MOVS     R1,R5
+   \       0x1A   0xF1D7 0x0207      RSBS     R2,R7,#+7
+   \       0x1E   0xB2D2             UXTB     R2,R2
+   \       0x20   0x00D2             LSLS     R2,R2,#+3
+   \       0x22   0x.... 0x....      BL       __aeabi_llsr
+   \       0x26   0xEA90 0x0008      EORS     R0,R0,R8
+   \       0x2A   0x55F0             STRB     R0,[R6, R7]
+    130              }
+   \       0x2C   0x1C7F             ADDS     R7,R7,#+1
+   \       0x2E   0xE7EE             B.N      ??calc_a_xor_t_0
+    131          }
+   \                     ??calc_a_xor_t_1: (+1)
+   \       0x30   0xE8BD 0x81F0      POP      {R4-R8,PC}
+    132          
+    133          /*
+    134           * KW-AE as defined in SP 800-38F section 6.2
+    135           * KWP-AE as defined in SP 800-38F section 6.3
+    136           */
+
+   \                                 In section .text, align 2, keep-with-next
+    137          int mbedtls_nist_kw_wrap(mbedtls_nist_kw_context *ctx,
+    138                                   mbedtls_nist_kw_mode_t mode,
+    139                                   const unsigned char *input, size_t in_len,
+    140                                   unsigned char *output, size_t *out_len, size_t out_size)
+    141          {
+   \                     mbedtls_nist_kw_wrap: (+1)
+   \        0x0   0xE92D 0x4FF7      PUSH     {R0-R2,R4-R11,LR}
+   \        0x4   0xB092             SUB      SP,SP,#+72
+   \        0x6   0x001E             MOVS     R6,R3
+   \        0x8   0xF8DD 0x8078      LDR      R8,[SP, #+120]
+    142              int ret = 0;
+   \        0xC   0x2000             MOVS     R0,#+0
+   \        0xE   0x9001             STR      R0,[SP, #+4]
+    143              size_t semiblocks = 0;
+   \       0x10   0x2700             MOVS     R7,#+0
+    144              size_t s;
+    145              size_t olen, padlen = 0;
+   \       0x12   0x2000             MOVS     R0,#+0
+   \       0x14   0x9003             STR      R0,[SP, #+12]
+    146              uint64_t t = 0;
+   \       0x16   0x2400             MOVS     R4,#+0
+   \       0x18   0x2500             MOVS     R5,#+0
+    147              unsigned char outbuff[KW_SEMIBLOCK_LENGTH * 2];
+    148              unsigned char inbuff[KW_SEMIBLOCK_LENGTH * 2];
+    149          
+    150              *out_len = 0;
+   \       0x1A   0x2100             MOVS     R1,#+0
+   \       0x1C   0x981F             LDR      R0,[SP, #+124]
+   \       0x1E   0x6001             STR      R1,[R0, #+0]
+    151              /*
+    152               * Generate the String to work on
+    153               */
+    154              if (mode == MBEDTLS_KW_MODE_KW) {
+   \       0x20   0xF89D 0x004C      LDRB     R0,[SP, #+76]
+   \       0x24   0x2800             CMP      R0,#+0
+   \       0x26   0xD124             BNE.N    ??mbedtls_nist_kw_wrap_0
+    155                  if (out_size < in_len + KW_SEMIBLOCK_LENGTH) {
+   \       0x28   0x9920             LDR      R1,[SP, #+128]
+   \       0x2A   0xF116 0x0008      ADDS     R0,R6,#+8
+   \       0x2E   0x4281             CMP      R1,R0
+   \       0x30   0xD202             BCS.N    ??mbedtls_nist_kw_wrap_1
+    156                      return MBEDTLS_ERR_CIPHER_BAD_INPUT_DATA;
+   \       0x32   0x.... 0x....      LDR.W    R0,??DataTable5_1
+   \       0x36   0xE105             B.N      ??mbedtls_nist_kw_wrap_2
+    157                  }
+    158          
+    159                  /*
+    160                   * According to SP 800-38F Table 1, the plaintext length for KW
+    161                   * must be between 2 to 2^54-1 semiblocks inclusive.
+    162                   */
+    163                  if (in_len < 16 ||
+    164          #if SIZE_MAX > 0x1FFFFFFFFFFFFF8
+    165                      in_len > 0x1FFFFFFFFFFFFF8 ||
+    166          #endif
+    167                      in_len % KW_SEMIBLOCK_LENGTH != 0) {
+   \                     ??mbedtls_nist_kw_wrap_1: (+1)
+   \       0x38   0x2E10             CMP      R6,#+16
+   \       0x3A   0xD302             BCC.N    ??mbedtls_nist_kw_wrap_3
+   \       0x3C   0xF016 0x0F07      TST      R6,#0x7
+   \       0x40   0xD002             BEQ.N    ??mbedtls_nist_kw_wrap_4
+    168                      return MBEDTLS_ERR_CIPHER_BAD_INPUT_DATA;
+   \                     ??mbedtls_nist_kw_wrap_3: (+1)
+   \       0x42   0x.... 0x....      LDR.W    R0,??DataTable5_1
+   \       0x46   0xE0FD             B.N      ??mbedtls_nist_kw_wrap_2
+    169                  }
+    170          
+    171                  memcpy(output, NIST_KW_ICV1, KW_SEMIBLOCK_LENGTH);
+   \                     ??mbedtls_nist_kw_wrap_4: (+1)
+   \       0x48   0xF05F 0x0A08      MOVS     R10,#+8
+   \       0x4C   0x.... 0x....      LDR.W    R9,??DataTable5_3
+   \       0x50   0x46C3             MOV      R11,R8
+   \       0x52   0x4652             MOV      R2,R10
+   \       0x54   0x4649             MOV      R1,R9
+   \       0x56   0x4658             MOV      R0,R11
+   \       0x58   0x.... 0x....      BL       __aeabi_memcpy
+    172                  memmove(output + KW_SEMIBLOCK_LENGTH, input, in_len);
+   \       0x5C   0x9602             STR      R6,[SP, #+8]
+   \       0x5E   0x9814             LDR      R0,[SP, #+80]
+   \       0x60   0x9000             STR      R0,[SP, #+0]
+   \       0x62   0xF118 0x0B08      ADDS     R11,R8,#+8
+   \       0x66   0x9A02             LDR      R2,[SP, #+8]
+   \       0x68   0x9900             LDR      R1,[SP, #+0]
+   \       0x6A   0x4658             MOV      R0,R11
+   \       0x6C   0x.... 0x....      BL       __aeabi_memmove
+    173              } else {
+   \       0x70   0xE049             B.N      ??mbedtls_nist_kw_wrap_5
+    174                  if (in_len % 8 != 0) {
+   \                     ??mbedtls_nist_kw_wrap_0: (+1)
+   \       0x72   0xF016 0x0F07      TST      R6,#0x7
+   \       0x76   0xD004             BEQ.N    ??mbedtls_nist_kw_wrap_6
+    175                      padlen = (8 - (in_len % 8));
+   \       0x78   0xF016 0x0007      ANDS     R0,R6,#0x7
+   \       0x7C   0xF1D0 0x0008      RSBS     R0,R0,#+8
+   \       0x80   0x9003             STR      R0,[SP, #+12]
+    176                  }
+    177          
+    178                  if (out_size < in_len + KW_SEMIBLOCK_LENGTH + padlen) {
+   \                     ??mbedtls_nist_kw_wrap_6: (+1)
+   \       0x82   0x9820             LDR      R0,[SP, #+128]
+   \       0x84   0x9903             LDR      R1,[SP, #+12]
+   \       0x86   0x1989             ADDS     R1,R1,R6
+   \       0x88   0x3108             ADDS     R1,R1,#+8
+   \       0x8A   0x4288             CMP      R0,R1
+   \       0x8C   0xD202             BCS.N    ??mbedtls_nist_kw_wrap_7
+    179                      return MBEDTLS_ERR_CIPHER_BAD_INPUT_DATA;
+   \       0x8E   0x.... 0x....      LDR.W    R0,??DataTable5_1
+   \       0x92   0xE0D7             B.N      ??mbedtls_nist_kw_wrap_2
+    180                  }
+    181          
+    182                  /*
+    183                   * According to SP 800-38F Table 1, the plaintext length for KWP
+    184                   * must be between 1 and 2^32-1 octets inclusive.
+    185                   */
+    186                  if (in_len < 1
+    187          #if SIZE_MAX > 0xFFFFFFFF
+    188                      || in_len > 0xFFFFFFFF
+    189          #endif
+    190                      ) {
+   \                     ??mbedtls_nist_kw_wrap_7: (+1)
+   \       0x94   0x2E00             CMP      R6,#+0
+   \       0x96   0xD102             BNE.N    ??mbedtls_nist_kw_wrap_8
+    191                      return MBEDTLS_ERR_CIPHER_BAD_INPUT_DATA;
+   \       0x98   0x.... 0x....      LDR.W    R0,??DataTable5_1
+   \       0x9C   0xE0D2             B.N      ??mbedtls_nist_kw_wrap_2
+    192                  }
+    193          
+    194                  memcpy(output, NIST_KW_ICV2, KW_SEMIBLOCK_LENGTH / 2);
+   \                     ??mbedtls_nist_kw_wrap_8: (+1)
+   \       0x9E   0xF05F 0x0B04      MOVS     R11,#+4
+   \       0xA2   0x.... 0x....      LDR.W    R9,??DataTable5_4
+   \       0xA6   0x46C2             MOV      R10,R8
+   \       0xA8   0x465A             MOV      R2,R11
+   \       0xAA   0x4649             MOV      R1,R9
+   \       0xAC   0x4650             MOV      R0,R10
+   \       0xAE   0x.... 0x....      BL       __aeabi_memcpy
+    195                  MBEDTLS_PUT_UINT32_BE((in_len & 0xffffffff), output,
+    196                                        KW_SEMIBLOCK_LENGTH / 2);
+   \       0xB2   0x.... 0x....      LDR.W    R0,??DataTable5_5
+   \       0xB6   0x7800             LDRB     R0,[R0, #+0]
+   \       0xB8   0x2801             CMP      R0,#+1
+   \       0xBA   0xD105             BNE.N    ??mbedtls_nist_kw_wrap_9
+   \       0xBC   0x0031             MOVS     R1,R6
+   \       0xBE   0xF118 0x0004      ADDS     R0,R8,#+4
+   \       0xC2   0x.... 0x....      BL       mbedtls_put_unaligned_uint32
+   \       0xC6   0xE007             B.N      ??mbedtls_nist_kw_wrap_10
+   \                     ??mbedtls_nist_kw_wrap_9: (+1)
+   \       0xC8   0x0030             MOVS     R0,R6
+   \       0xCA   0x.... 0x....      BL       mbedtls_bswap32
+   \       0xCE   0x0001             MOVS     R1,R0
+   \       0xD0   0xF118 0x0004      ADDS     R0,R8,#+4
+   \       0xD4   0x.... 0x....      BL       mbedtls_put_unaligned_uint32
+    197          
+    198                  memcpy(output + KW_SEMIBLOCK_LENGTH, input, in_len);
+   \                     ??mbedtls_nist_kw_wrap_10: (+1)
+   \       0xD8   0x9604             STR      R6,[SP, #+16]
+   \       0xDA   0x9814             LDR      R0,[SP, #+80]
+   \       0xDC   0x9002             STR      R0,[SP, #+8]
+   \       0xDE   0xF118 0x0908      ADDS     R9,R8,#+8
+   \       0xE2   0x9A04             LDR      R2,[SP, #+16]
+   \       0xE4   0x9902             LDR      R1,[SP, #+8]
+   \       0xE6   0x4648             MOV      R0,R9
+   \       0xE8   0x.... 0x....      BL       __aeabi_memcpy
+    199                  memset(output + KW_SEMIBLOCK_LENGTH + in_len, 0, padlen);
+   \       0xEC   0x9803             LDR      R0,[SP, #+12]
+   \       0xEE   0x9000             STR      R0,[SP, #+0]
+   \       0xF0   0xF05F 0x0900      MOVS     R9,#+0
+   \       0xF4   0xEB08 0x0006      ADD      R0,R8,R6
+   \       0xF8   0xF110 0x0A08      ADDS     R10,R0,#+8
+   \       0xFC   0x464A             MOV      R2,R9
+   \       0xFE   0x9900             LDR      R1,[SP, #+0]
+   \      0x100   0x4650             MOV      R0,R10
+   \      0x102   0x.... 0x....      BL       __aeabi_memset
+    200              }
+    201              semiblocks = ((in_len + padlen) / KW_SEMIBLOCK_LENGTH) + 1;
+   \                     ??mbedtls_nist_kw_wrap_5: (+1)
+   \      0x106   0x9803             LDR      R0,[SP, #+12]
+   \      0x108   0x1980             ADDS     R0,R0,R6
+   \      0x10A   0x08C0             LSRS     R0,R0,#+3
+   \      0x10C   0x1C40             ADDS     R0,R0,#+1
+   \      0x10E   0x9002             STR      R0,[SP, #+8]
+    202          
+    203              s = 6 * (semiblocks - 1);
+   \      0x110   0x9902             LDR      R1,[SP, #+8]
+   \      0x112   0x1E49             SUBS     R1,R1,#+1
+   \      0x114   0x2006             MOVS     R0,#+6
+   \      0x116   0x4341             MULS     R1,R0,R1
+   \      0x118   0x9108             STR      R1,[SP, #+32]
+    204          
+    205              if (mode == MBEDTLS_KW_MODE_KWP
+    206                  && in_len <= KW_SEMIBLOCK_LENGTH) {
+   \      0x11A   0xF89D 0x004C      LDRB     R0,[SP, #+76]
+   \      0x11E   0x2801             CMP      R0,#+1
+   \      0x120   0xD118             BNE.N    ??mbedtls_nist_kw_wrap_11
+   \      0x122   0x2E09             CMP      R6,#+9
+   \      0x124   0xD216             BCS.N    ??mbedtls_nist_kw_wrap_11
+    207                  memcpy(inbuff, output, 16);
+   \      0x126   0xF05F 0x0910      MOVS     R9,#+16
+   \      0x12A   0x4647             MOV      R7,R8
+   \      0x12C   0xF10D 0x0A24      ADD      R10,SP,#+36
+   \      0x130   0x464A             MOV      R2,R9
+   \      0x132   0x0039             MOVS     R1,R7
+   \      0x134   0x4650             MOV      R0,R10
+   \      0x136   0x.... 0x....      BL       __aeabi_memcpy
+    208                  ret = mbedtls_cipher_update(&ctx->cipher_ctx,
+    209                                              inbuff, 16, output, &olen);
+   \      0x13A   0xA805             ADD      R0,SP,#+20
+   \      0x13C   0x9000             STR      R0,[SP, #+0]
+   \      0x13E   0x4643             MOV      R3,R8
+   \      0x140   0x2210             MOVS     R2,#+16
+   \      0x142   0xA909             ADD      R1,SP,#+36
+   \      0x144   0x9812             LDR      R0,[SP, #+72]
+   \      0x146   0x.... 0x....      BL       mbedtls_cipher_update
+   \      0x14A   0x9001             STR      R0,[SP, #+4]
+    210                  if (ret != 0) {
+   \      0x14C   0x9801             LDR      R0,[SP, #+4]
+   \      0x14E   0x2800             CMP      R0,#+0
+   \      0x150   0xD05E             BEQ.N    ??mbedtls_nist_kw_wrap_12
+    211                      goto cleanup;
+   \      0x152   0xE061             B.N      ??mbedtls_nist_kw_wrap_13
+    212                  }
+    213              } else {
+    214                  unsigned char *R2 = output + KW_SEMIBLOCK_LENGTH;
+   \                     ??mbedtls_nist_kw_wrap_11: (+1)
+   \      0x154   0xF118 0x0708      ADDS     R7,R8,#+8
+    215                  unsigned char *A = output;
+   \      0x158   0xF8CD 0x8010      STR      R8,[SP, #+16]
+    216          
+    217                  /*
+    218                   * Do the wrapping function W, as defined in RFC 3394 section 2.2.1
+    219                   */
+    220                  if (semiblocks < MIN_SEMIBLOCKS_COUNT) {
+   \      0x15C   0x9802             LDR      R0,[SP, #+8]
+   \      0x15E   0x2803             CMP      R0,#+3
+   \      0x160   0xD203             BCS.N    ??mbedtls_nist_kw_wrap_14
+    221                      ret = MBEDTLS_ERR_CIPHER_BAD_INPUT_DATA;
+   \      0x162   0x.... 0x....      LDR.W    R0,??DataTable5_1
+   \      0x166   0x9001             STR      R0,[SP, #+4]
+    222                      goto cleanup;
+   \      0x168   0xE056             B.N      ??mbedtls_nist_kw_wrap_13
+    223                  }
+    224          
+    225                  /* Calculate intermediate values */
+    226                  for (t = 1; t <= s; t++) {
+   \                     ??mbedtls_nist_kw_wrap_14: (+1)
+   \      0x16A   0x2001             MOVS     R0,#+1
+   \      0x16C   0x2100             MOVS     R1,#+0
+   \      0x16E   0x0004             MOVS     R4,R0
+   \      0x170   0x000D             MOVS     R5,R1
+   \                     ??mbedtls_nist_kw_wrap_15: (+1)
+   \      0x172   0x9808             LDR      R0,[SP, #+32]
+   \      0x174   0x2100             MOVS     R1,#+0
+   \      0x176   0x42A9             CMP      R1,R5
+   \      0x178   0xD34A             BCC.N    ??mbedtls_nist_kw_wrap_12
+   \      0x17A   0xD801             BHI.N    ??mbedtls_nist_kw_wrap_16
+   \      0x17C   0x42A0             CMP      R0,R4
+   \      0x17E   0xD347             BCC.N    ??mbedtls_nist_kw_wrap_12
+    227                      memcpy(inbuff, A, KW_SEMIBLOCK_LENGTH);
+   \                     ??mbedtls_nist_kw_wrap_16: (+1)
+   \      0x180   0xF05F 0x0A08      MOVS     R10,#+8
+   \      0x184   0x9804             LDR      R0,[SP, #+16]
+   \      0x186   0x9007             STR      R0,[SP, #+28]
+   \      0x188   0xF10D 0x0924      ADD      R9,SP,#+36
+   \      0x18C   0x4652             MOV      R2,R10
+   \      0x18E   0x9907             LDR      R1,[SP, #+28]
+   \      0x190   0x4648             MOV      R0,R9
+   \      0x192   0x.... 0x....      BL       __aeabi_memcpy
+    228                      memcpy(inbuff + KW_SEMIBLOCK_LENGTH, R2, KW_SEMIBLOCK_LENGTH);
+   \      0x196   0xF05F 0x0908      MOVS     R9,#+8
+   \      0x19A   0x9706             STR      R7,[SP, #+24]
+   \      0x19C   0xF10D 0x0B2C      ADD      R11,SP,#+44
+   \      0x1A0   0x464A             MOV      R2,R9
+   \      0x1A2   0x9906             LDR      R1,[SP, #+24]
+   \      0x1A4   0x4658             MOV      R0,R11
+   \      0x1A6   0x.... 0x....      BL       __aeabi_memcpy
+    229          
+    230                      ret = mbedtls_cipher_update(&ctx->cipher_ctx,
+    231                                                  inbuff, 16, outbuff, &olen);
+   \      0x1AA   0xA805             ADD      R0,SP,#+20
+   \      0x1AC   0x9000             STR      R0,[SP, #+0]
+   \      0x1AE   0xAB0D             ADD      R3,SP,#+52
+   \      0x1B0   0x2210             MOVS     R2,#+16
+   \      0x1B2   0xA909             ADD      R1,SP,#+36
+   \      0x1B4   0x9812             LDR      R0,[SP, #+72]
+   \      0x1B6   0x.... 0x....      BL       mbedtls_cipher_update
+   \      0x1BA   0x9001             STR      R0,[SP, #+4]
+    232                      if (ret != 0) {
+   \      0x1BC   0x9801             LDR      R0,[SP, #+4]
+   \      0x1BE   0x2800             CMP      R0,#+0
+   \      0x1C0   0xD12A             BNE.N    ??mbedtls_nist_kw_wrap_13
+    233                          goto cleanup;
+    234                      }
+    235          
+    236                      memcpy(A, outbuff, KW_SEMIBLOCK_LENGTH);
+   \                     ??mbedtls_nist_kw_wrap_17: (+1)
+   \      0x1C2   0x2008             MOVS     R0,#+8
+   \      0x1C4   0x9006             STR      R0,[SP, #+24]
+   \      0x1C6   0xA80D             ADD      R0,SP,#+52
+   \      0x1C8   0x9000             STR      R0,[SP, #+0]
+   \      0x1CA   0xF8DD 0x9010      LDR      R9,[SP, #+16]
+   \      0x1CE   0x9A06             LDR      R2,[SP, #+24]
+   \      0x1D0   0x9900             LDR      R1,[SP, #+0]
+   \      0x1D2   0x4648             MOV      R0,R9
+   \      0x1D4   0x.... 0x....      BL       __aeabi_memcpy
+    237                      calc_a_xor_t(A, t);
+   \      0x1D8   0x0022             MOVS     R2,R4
+   \      0x1DA   0x002B             MOVS     R3,R5
+   \      0x1DC   0x9804             LDR      R0,[SP, #+16]
+   \      0x1DE   0x.... 0x....      BL       calc_a_xor_t
+    238          
+    239                      memcpy(R2, outbuff + KW_SEMIBLOCK_LENGTH, KW_SEMIBLOCK_LENGTH);
+   \      0x1E2   0xF05F 0x0B08      MOVS     R11,#+8
+   \      0x1E6   0xF10D 0x093C      ADD      R9,SP,#+60
+   \      0x1EA   0x46BA             MOV      R10,R7
+   \      0x1EC   0x465A             MOV      R2,R11
+   \      0x1EE   0x4649             MOV      R1,R9
+   \      0x1F0   0x4650             MOV      R0,R10
+   \      0x1F2   0x.... 0x....      BL       __aeabi_memcpy
+    240                      R2 += KW_SEMIBLOCK_LENGTH;
+   \      0x1F6   0x3708             ADDS     R7,R7,#+8
+    241                      if (R2 >= output + (semiblocks * KW_SEMIBLOCK_LENGTH)) {
+   \      0x1F8   0x9802             LDR      R0,[SP, #+8]
+   \      0x1FA   0xEB08 0x00C0      ADD      R0,R8,R0, LSL #+3
+   \      0x1FE   0x4287             CMP      R7,R0
+   \      0x200   0xD302             BCC.N    ??mbedtls_nist_kw_wrap_18
+    242                          R2 = output + KW_SEMIBLOCK_LENGTH;
+   \      0x202   0xF118 0x0008      ADDS     R0,R8,#+8
+   \      0x206   0x0007             MOVS     R7,R0
+    243                      }
+    244                  }
+   \                     ??mbedtls_nist_kw_wrap_18: (+1)
+   \      0x208   0x1C64             ADDS     R4,R4,#+1
+   \      0x20A   0xF175 0x35FF      SBCS     R5,R5,#+4294967295
+   \      0x20E   0xE7B0             B.N      ??mbedtls_nist_kw_wrap_15
+    245              }
+    246          
+    247              *out_len = semiblocks * KW_SEMIBLOCK_LENGTH;
+   \                     ??mbedtls_nist_kw_wrap_12: (+1)
+   \      0x210   0x9802             LDR      R0,[SP, #+8]
+   \      0x212   0x00C0             LSLS     R0,R0,#+3
+   \      0x214   0x991F             LDR      R1,[SP, #+124]
+   \      0x216   0x6008             STR      R0,[R1, #+0]
+    248          
+    249          cleanup:
+    250          
+    251              if (ret != 0) {
+   \                     ??mbedtls_nist_kw_wrap_13: (+1)
+   \      0x218   0x9801             LDR      R0,[SP, #+4]
+   \      0x21A   0x2800             CMP      R0,#+0
+   \      0x21C   0xD009             BEQ.N    ??mbedtls_nist_kw_wrap_19
+    252                  memset(output, 0, semiblocks * KW_SEMIBLOCK_LENGTH);
+   \      0x21E   0x9802             LDR      R0,[SP, #+8]
+   \      0x220   0x00C7             LSLS     R7,R0,#+3
+   \      0x222   0xF05F 0x0A00      MOVS     R10,#+0
+   \      0x226   0x46C1             MOV      R9,R8
+   \      0x228   0x4652             MOV      R2,R10
+   \      0x22A   0x0039             MOVS     R1,R7
+   \      0x22C   0x4648             MOV      R0,R9
+   \      0x22E   0x.... 0x....      BL       __aeabi_memset
+    253              }
+    254              mbedtls_platform_zeroize(inbuff, KW_SEMIBLOCK_LENGTH * 2);
+   \                     ??mbedtls_nist_kw_wrap_19: (+1)
+   \      0x232   0x2110             MOVS     R1,#+16
+   \      0x234   0xA809             ADD      R0,SP,#+36
+   \      0x236   0x.... 0x....      BL       mbedtls_platform_zeroize
+    255              mbedtls_platform_zeroize(outbuff, KW_SEMIBLOCK_LENGTH * 2);
+   \      0x23A   0x2110             MOVS     R1,#+16
+   \      0x23C   0xA80D             ADD      R0,SP,#+52
+   \      0x23E   0x.... 0x....      BL       mbedtls_platform_zeroize
+    256          
+    257              return ret;
+   \      0x242   0x9801             LDR      R0,[SP, #+4]
+   \                     ??mbedtls_nist_kw_wrap_2: (+1)
+   \      0x244   0xB015             ADD      SP,SP,#+84
+   \      0x246   0xE8BD 0x8FF0      POP      {R4-R11,PC}
+    258          }
+    259          
+    260          /*
+    261           * W-1 function as defined in RFC 3394 section 2.2.2
+    262           * This function assumes the following:
+    263           * 1. Output buffer is at least of size ( semiblocks - 1 ) * KW_SEMIBLOCK_LENGTH.
+    264           * 2. The input buffer is of size semiblocks * KW_SEMIBLOCK_LENGTH.
+    265           * 3. Minimal number of semiblocks is 3.
+    266           * 4. A is a buffer to hold the first semiblock of the input buffer.
+    267           */
+
+   \                                 In section .text, align 2, keep-with-next
+    268          static int unwrap(mbedtls_nist_kw_context *ctx,
+    269                            const unsigned char *input, size_t semiblocks,
+    270                            unsigned char A[KW_SEMIBLOCK_LENGTH],
+    271                            unsigned char *output, size_t *out_len)
+    272          {
+   \                     unwrap: (+1)
+   \        0x0   0xE92D 0x4FFF      PUSH     {R0-R11,LR}
+   \        0x4   0xB08D             SUB      SP,SP,#+52
+    273              int ret = 0;
+   \        0x6   0x2000             MOVS     R0,#+0
+   \        0x8   0x9001             STR      R0,[SP, #+4]
+    274              const size_t s = 6 * (semiblocks - 1);
+   \        0xA   0x990F             LDR      R1,[SP, #+60]
+   \        0xC   0x1E49             SUBS     R1,R1,#+1
+   \        0xE   0x2006             MOVS     R0,#+6
+   \       0x10   0x4341             MULS     R1,R0,R1
+   \       0x12   0x9103             STR      R1,[SP, #+12]
+    275              size_t olen;
+    276              uint64_t t = 0;
+   \       0x14   0x2600             MOVS     R6,#+0
+   \       0x16   0x2700             MOVS     R7,#+0
+    277              unsigned char outbuff[KW_SEMIBLOCK_LENGTH * 2];
+    278              unsigned char inbuff[KW_SEMIBLOCK_LENGTH * 2];
+    279              unsigned char *R = NULL;
+   \       0x18   0xF05F 0x0B00      MOVS     R11,#+0
+    280              *out_len = 0;
+   \       0x1C   0x2100             MOVS     R1,#+0
+   \       0x1E   0x981B             LDR      R0,[SP, #+108]
+   \       0x20   0x6001             STR      R1,[R0, #+0]
+    281          
+    282              if (semiblocks < MIN_SEMIBLOCKS_COUNT) {
+   \       0x22   0x980F             LDR      R0,[SP, #+60]
+   \       0x24   0x2803             CMP      R0,#+3
+   \       0x26   0xD201             BCS.N    ??unwrap_0
+    283                  return MBEDTLS_ERR_CIPHER_BAD_INPUT_DATA;
+   \       0x28   0x....             LDR.N    R0,??DataTable5_1
+   \       0x2A   0xE084             B.N      ??unwrap_1
+    284              }
+    285          
+    286              memcpy(A, input, KW_SEMIBLOCK_LENGTH);
+   \                     ??unwrap_0: (+1)
+   \       0x2C   0xF05F 0x0908      MOVS     R9,#+8
+   \       0x30   0x980E             LDR      R0,[SP, #+56]
+   \       0x32   0x9002             STR      R0,[SP, #+8]
+   \       0x34   0x9C10             LDR      R4,[SP, #+64]
+   \       0x36   0x464A             MOV      R2,R9
+   \       0x38   0x9902             LDR      R1,[SP, #+8]
+   \       0x3A   0x0020             MOVS     R0,R4
+   \       0x3C   0x.... 0x....      BL       __aeabi_memcpy
+    287              memmove(output, input + KW_SEMIBLOCK_LENGTH, (semiblocks - 1) * KW_SEMIBLOCK_LENGTH);
+   \       0x40   0x980F             LDR      R0,[SP, #+60]
+   \       0x42   0x1E40             SUBS     R0,R0,#+1
+   \       0x44   0x00C0             LSLS     R0,R0,#+3
+   \       0x46   0x9000             STR      R0,[SP, #+0]
+   \       0x48   0x980E             LDR      R0,[SP, #+56]
+   \       0x4A   0xF110 0x0A08      ADDS     R10,R0,#+8
+   \       0x4E   0x9C1A             LDR      R4,[SP, #+104]
+   \       0x50   0x9A00             LDR      R2,[SP, #+0]
+   \       0x52   0x4651             MOV      R1,R10
+   \       0x54   0x0020             MOVS     R0,R4
+   \       0x56   0x.... 0x....      BL       __aeabi_memmove
+    288              R = output + (semiblocks - 2) * KW_SEMIBLOCK_LENGTH;
+   \       0x5A   0x981A             LDR      R0,[SP, #+104]
+   \       0x5C   0x990F             LDR      R1,[SP, #+60]
+   \       0x5E   0xEB00 0x00C1      ADD      R0,R0,R1, LSL #+3
+   \       0x62   0xF1B0 0x0810      SUBS     R8,R0,#+16
+    289          
+    290              /* Calculate intermediate values */
+    291              for (t = s; t >= 1; t--) {
+   \       0x66   0x9C03             LDR      R4,[SP, #+12]
+   \       0x68   0x2500             MOVS     R5,#+0
+   \                     ??unwrap_2: (+1)
+   \       0x6A   0x2D00             CMP      R5,#+0
+   \       0x6C   0xD101             BNE.N    ??unwrap_3
+   \       0x6E   0x2C00             CMP      R4,#+0
+   \       0x70   0xD045             BEQ.N    ??unwrap_4
+    292                  calc_a_xor_t(A, t);
+   \                     ??unwrap_3: (+1)
+   \       0x72   0x0022             MOVS     R2,R4
+   \       0x74   0x002B             MOVS     R3,R5
+   \       0x76   0x9810             LDR      R0,[SP, #+64]
+   \       0x78   0x.... 0x....      BL       calc_a_xor_t
+    293          
+    294                  memcpy(inbuff, A, KW_SEMIBLOCK_LENGTH);
+   \       0x7C   0x2608             MOVS     R6,#+8
+   \       0x7E   0x9810             LDR      R0,[SP, #+64]
+   \       0x80   0x9002             STR      R0,[SP, #+8]
+   \       0x82   0xAF05             ADD      R7,SP,#+20
+   \       0x84   0x0032             MOVS     R2,R6
+   \       0x86   0x9902             LDR      R1,[SP, #+8]
+   \       0x88   0x0038             MOVS     R0,R7
+   \       0x8A   0x.... 0x....      BL       __aeabi_memcpy
+    295                  memcpy(inbuff + KW_SEMIBLOCK_LENGTH, R, KW_SEMIBLOCK_LENGTH);
+   \       0x8E   0xF05F 0x0908      MOVS     R9,#+8
+   \       0x92   0x4647             MOV      R7,R8
+   \       0x94   0xF10D 0x0A1C      ADD      R10,SP,#+28
+   \       0x98   0x464A             MOV      R2,R9
+   \       0x9A   0x0039             MOVS     R1,R7
+   \       0x9C   0x4650             MOV      R0,R10
+   \       0x9E   0x.... 0x....      BL       __aeabi_memcpy
+    296          
+    297                  ret = mbedtls_cipher_update(&ctx->cipher_ctx,
+    298                                              inbuff, 16, outbuff, &olen);
+   \       0xA2   0xA804             ADD      R0,SP,#+16
+   \       0xA4   0x9000             STR      R0,[SP, #+0]
+   \       0xA6   0xAB09             ADD      R3,SP,#+36
+   \       0xA8   0x2210             MOVS     R2,#+16
+   \       0xAA   0xA905             ADD      R1,SP,#+20
+   \       0xAC   0x980D             LDR      R0,[SP, #+52]
+   \       0xAE   0x.... 0x....      BL       mbedtls_cipher_update
+   \       0xB2   0x9001             STR      R0,[SP, #+4]
+    299                  if (ret != 0) {
+   \       0xB4   0x9801             LDR      R0,[SP, #+4]
+   \       0xB6   0x2800             CMP      R0,#+0
+   \       0xB8   0xD126             BNE.N    ??unwrap_5
+    300                      goto cleanup;
+    301                  }
+    302          
+    303                  memcpy(A, outbuff, KW_SEMIBLOCK_LENGTH);
+   \                     ??unwrap_6: (+1)
+   \       0xBA   0xF05F 0x0B08      MOVS     R11,#+8
+   \       0xBE   0xAE09             ADD      R6,SP,#+36
+   \       0xC0   0x9F10             LDR      R7,[SP, #+64]
+   \       0xC2   0x465A             MOV      R2,R11
+   \       0xC4   0x0031             MOVS     R1,R6
+   \       0xC6   0x0038             MOVS     R0,R7
+   \       0xC8   0x.... 0x....      BL       __aeabi_memcpy
+    304          
+    305                  /* Set R as LSB64 of outbuff */
+    306                  memcpy(R, outbuff + KW_SEMIBLOCK_LENGTH, KW_SEMIBLOCK_LENGTH);
+   \       0xCC   0x2708             MOVS     R7,#+8
+   \       0xCE   0xF10D 0x092C      ADD      R9,SP,#+44
+   \       0xD2   0x46C2             MOV      R10,R8
+   \       0xD4   0x003A             MOVS     R2,R7
+   \       0xD6   0x4649             MOV      R1,R9
+   \       0xD8   0x4650             MOV      R0,R10
+   \       0xDA   0x.... 0x....      BL       __aeabi_memcpy
+    307          
+    308                  if (R == output) {
+   \       0xDE   0x981A             LDR      R0,[SP, #+104]
+   \       0xE0   0x4580             CMP      R8,R0
+   \       0xE2   0xD106             BNE.N    ??unwrap_7
+    309                      R = output + (semiblocks - 2) * KW_SEMIBLOCK_LENGTH;
+   \       0xE4   0x991A             LDR      R1,[SP, #+104]
+   \       0xE6   0x980F             LDR      R0,[SP, #+60]
+   \       0xE8   0xEB01 0x00C0      ADD      R0,R1,R0, LSL #+3
+   \       0xEC   0x3810             SUBS     R0,R0,#+16
+   \       0xEE   0x4680             MOV      R8,R0
+   \       0xF0   0xE001             B.N      ??unwrap_8
+    310                  } else {
+    311                      R -= KW_SEMIBLOCK_LENGTH;
+   \                     ??unwrap_7: (+1)
+   \       0xF2   0xF1B8 0x0808      SUBS     R8,R8,#+8
+    312                  }
+    313              }
+   \                     ??unwrap_8: (+1)
+   \       0xF6   0x1E64             SUBS     R4,R4,#+1
+   \       0xF8   0xF175 0x0500      SBCS     R5,R5,#+0
+   \       0xFC   0xE7B5             B.N      ??unwrap_2
+    314          
+    315              *out_len = (semiblocks - 1) * KW_SEMIBLOCK_LENGTH;
+   \                     ??unwrap_4: (+1)
+   \       0xFE   0x980F             LDR      R0,[SP, #+60]
+   \      0x100   0x1E40             SUBS     R0,R0,#+1
+   \      0x102   0x00C1             LSLS     R1,R0,#+3
+   \      0x104   0x981B             LDR      R0,[SP, #+108]
+   \      0x106   0x6001             STR      R1,[R0, #+0]
+    316          
+    317          cleanup:
+    318              if (ret != 0) {
+   \                     ??unwrap_5: (+1)
+   \      0x108   0x9801             LDR      R0,[SP, #+4]
+   \      0x10A   0x2800             CMP      R0,#+0
+   \      0x10C   0xD00A             BEQ.N    ??unwrap_9
+    319                  memset(output, 0, (semiblocks - 1) * KW_SEMIBLOCK_LENGTH);
+   \      0x10E   0x980F             LDR      R0,[SP, #+60]
+   \      0x110   0x1E40             SUBS     R0,R0,#+1
+   \      0x112   0xEA5F 0x09C0      LSLS     R9,R0,#+3
+   \      0x116   0x2600             MOVS     R6,#+0
+   \      0x118   0x9F1A             LDR      R7,[SP, #+104]
+   \      0x11A   0x0032             MOVS     R2,R6
+   \      0x11C   0x4649             MOV      R1,R9
+   \      0x11E   0x0038             MOVS     R0,R7
+   \      0x120   0x.... 0x....      BL       __aeabi_memset
+    320              }
+    321              mbedtls_platform_zeroize(inbuff, sizeof(inbuff));
+   \                     ??unwrap_9: (+1)
+   \      0x124   0x2110             MOVS     R1,#+16
+   \      0x126   0xA805             ADD      R0,SP,#+20
+   \      0x128   0x.... 0x....      BL       mbedtls_platform_zeroize
+    322              mbedtls_platform_zeroize(outbuff, sizeof(outbuff));
+   \      0x12C   0x2110             MOVS     R1,#+16
+   \      0x12E   0xA809             ADD      R0,SP,#+36
+   \      0x130   0x.... 0x....      BL       mbedtls_platform_zeroize
+    323          
+    324              return ret;
+   \      0x134   0x9801             LDR      R0,[SP, #+4]
+   \                     ??unwrap_1: (+1)
+   \      0x136   0xB011             ADD      SP,SP,#+68
+   \      0x138   0xE8BD 0x8FF0      POP      {R4-R11,PC}
+    325          }
+    326          
+    327          /*
+    328           * KW-AD as defined in SP 800-38F section 6.2
+    329           * KWP-AD as defined in SP 800-38F section 6.3
+    330           */
+
+   \                                 In section .text, align 2, keep-with-next
+    331          int mbedtls_nist_kw_unwrap(mbedtls_nist_kw_context *ctx,
+    332                                     mbedtls_nist_kw_mode_t mode,
+    333                                     const unsigned char *input, size_t in_len,
+    334                                     unsigned char *output, size_t *out_len, size_t out_size)
+    335          {
+   \                     mbedtls_nist_kw_unwrap: (+1)
+   \        0x0   0xE92D 0x4FF3      PUSH     {R0,R1,R4-R11,LR}
+   \        0x4   0xB08D             SUB      SP,SP,#+52
+   \        0x6   0x4693             MOV      R11,R2
+   \        0x8   0x001D             MOVS     R5,R3
+   \        0xA   0x9E18             LDR      R6,[SP, #+96]
+   \        0xC   0x9F19             LDR      R7,[SP, #+100]
+    336              int ret = 0;
+   \        0xE   0xF05F 0x0800      MOVS     R8,#+0
+    337              size_t olen;
+    338              unsigned char A[KW_SEMIBLOCK_LENGTH];
+    339              int diff;
+    340          
+    341              *out_len = 0;
+   \       0x12   0x2000             MOVS     R0,#+0
+   \       0x14   0x6038             STR      R0,[R7, #+0]
+    342              if (out_size < in_len - KW_SEMIBLOCK_LENGTH) {
+   \       0x16   0x991A             LDR      R1,[SP, #+104]
+   \       0x18   0xF1B5 0x0008      SUBS     R0,R5,#+8
+   \       0x1C   0x4281             CMP      R1,R0
+   \       0x1E   0xD201             BCS.N    ??mbedtls_nist_kw_unwrap_0
+    343                  return MBEDTLS_ERR_CIPHER_BAD_INPUT_DATA;
+   \       0x20   0x....             LDR.N    R0,??DataTable5_1
+   \       0x22   0xE0D4             B.N      ??mbedtls_nist_kw_unwrap_1
+    344              }
+    345          
+    346              if (mode == MBEDTLS_KW_MODE_KW) {
+   \                     ??mbedtls_nist_kw_unwrap_0: (+1)
+   \       0x24   0xF89D 0x0038      LDRB     R0,[SP, #+56]
+   \       0x28   0x2800             CMP      R0,#+0
+   \       0x2A   0xD120             BNE.N    ??mbedtls_nist_kw_unwrap_2
+    347                  /*
+    348                   * According to SP 800-38F Table 1, the ciphertext length for KW
+    349                   * must be between 3 to 2^54 semiblocks inclusive.
+    350                   */
+    351                  if (in_len < 24 ||
+    352          #if SIZE_MAX > 0x200000000000000
+    353                      in_len > 0x200000000000000 ||
+    354          #endif
+    355                      in_len % KW_SEMIBLOCK_LENGTH != 0) {
+   \       0x2C   0x2D18             CMP      R5,#+24
+   \       0x2E   0xD302             BCC.N    ??mbedtls_nist_kw_unwrap_3
+   \       0x30   0xF015 0x0F07      TST      R5,#0x7
+   \       0x34   0xD001             BEQ.N    ??mbedtls_nist_kw_unwrap_4
+    356                      return MBEDTLS_ERR_CIPHER_BAD_INPUT_DATA;
+   \                     ??mbedtls_nist_kw_unwrap_3: (+1)
+   \       0x36   0x....             LDR.N    R0,??DataTable5_1
+   \       0x38   0xE0C9             B.N      ??mbedtls_nist_kw_unwrap_1
+    357                  }
+    358          
+    359                  ret = unwrap(ctx, input, in_len / KW_SEMIBLOCK_LENGTH,
+    360                               A, output, out_len);
+   \                     ??mbedtls_nist_kw_unwrap_4: (+1)
+   \       0x3A   0x9701             STR      R7,[SP, #+4]
+   \       0x3C   0x9600             STR      R6,[SP, #+0]
+   \       0x3E   0xAB03             ADD      R3,SP,#+12
+   \       0x40   0x002A             MOVS     R2,R5
+   \       0x42   0x08D2             LSRS     R2,R2,#+3
+   \       0x44   0x4659             MOV      R1,R11
+   \       0x46   0x980D             LDR      R0,[SP, #+52]
+   \       0x48   0x.... 0x....      BL       unwrap
+   \       0x4C   0x0004             MOVS     R4,R0
+    361                  if (ret != 0) {
+   \       0x4E   0x2C00             CMP      R4,#+0
+   \       0x50   0xF040 0x80A6      BNE.W    ??mbedtls_nist_kw_unwrap_5
+    362                      goto cleanup;
+    363                  }
+    364          
+    365                  /* Check ICV in "constant-time" */
+    366                  diff = mbedtls_ct_memcmp(NIST_KW_ICV1, A, KW_SEMIBLOCK_LENGTH);
+   \                     ??mbedtls_nist_kw_unwrap_6: (+1)
+   \       0x54   0x2208             MOVS     R2,#+8
+   \       0x56   0xA903             ADD      R1,SP,#+12
+   \       0x58   0x....             LDR.N    R0,??DataTable5_3
+   \       0x5A   0x.... 0x....      BL       mbedtls_ct_memcmp
+   \       0x5E   0x9002             STR      R0,[SP, #+8]
+    367          
+    368                  if (diff != 0) {
+   \       0x60   0x9802             LDR      R0,[SP, #+8]
+   \       0x62   0x2800             CMP      R0,#+0
+   \       0x64   0xF000 0x809C      BEQ.W    ??mbedtls_nist_kw_unwrap_5
+    369                      ret = MBEDTLS_ERR_CIPHER_AUTH_FAILED;
+   \       0x68   0x....             LDR.N    R0,??DataTable5_6
+   \       0x6A   0x0004             MOVS     R4,R0
+    370                      goto cleanup;
+   \       0x6C   0xE098             B.N      ??mbedtls_nist_kw_unwrap_5
+    371                  }
+    372          
+    373              } else if (mode == MBEDTLS_KW_MODE_KWP) {
+   \                     ??mbedtls_nist_kw_unwrap_2: (+1)
+   \       0x6E   0xF89D 0x0038      LDRB     R0,[SP, #+56]
+   \       0x72   0x2801             CMP      R0,#+1
+   \       0x74   0xF040 0x8093      BNE.W    ??mbedtls_nist_kw_unwrap_7
+    374                  size_t padlen = 0;
+   \       0x78   0x2000             MOVS     R0,#+0
+   \       0x7A   0x9005             STR      R0,[SP, #+20]
+    375                  uint32_t Plen;
+    376                  /*
+    377                   * According to SP 800-38F Table 1, the ciphertext length for KWP
+    378                   * must be between 2 to 2^29 semiblocks inclusive.
+    379                   */
+    380                  if (in_len < KW_SEMIBLOCK_LENGTH * 2 ||
+    381          #if SIZE_MAX > 0x100000000
+    382                      in_len > 0x100000000 ||
+    383          #endif
+    384                      in_len % KW_SEMIBLOCK_LENGTH != 0) {
+   \       0x7C   0x2D10             CMP      R5,#+16
+   \       0x7E   0xD302             BCC.N    ??mbedtls_nist_kw_unwrap_8
+   \       0x80   0xF015 0x0F07      TST      R5,#0x7
+   \       0x84   0xD001             BEQ.N    ??mbedtls_nist_kw_unwrap_9
+    385                      return MBEDTLS_ERR_CIPHER_BAD_INPUT_DATA;
+   \                     ??mbedtls_nist_kw_unwrap_8: (+1)
+   \       0x86   0x....             LDR.N    R0,??DataTable5_1
+   \       0x88   0xE0A1             B.N      ??mbedtls_nist_kw_unwrap_1
+    386                  }
+    387          
+    388                  if (in_len == KW_SEMIBLOCK_LENGTH * 2) {
+   \                     ??mbedtls_nist_kw_unwrap_9: (+1)
+   \       0x8A   0x2D10             CMP      R5,#+16
+   \       0x8C   0xD126             BNE.N    ??mbedtls_nist_kw_unwrap_10
+    389                      unsigned char outbuff[KW_SEMIBLOCK_LENGTH * 2];
+    390                      ret = mbedtls_cipher_update(&ctx->cipher_ctx,
+    391                                                  input, 16, outbuff, &olen);
+   \       0x8E   0xA806             ADD      R0,SP,#+24
+   \       0x90   0x9000             STR      R0,[SP, #+0]
+   \       0x92   0xAB09             ADD      R3,SP,#+36
+   \       0x94   0x2210             MOVS     R2,#+16
+   \       0x96   0x4659             MOV      R1,R11
+   \       0x98   0x980D             LDR      R0,[SP, #+52]
+   \       0x9A   0x.... 0x....      BL       mbedtls_cipher_update
+   \       0x9E   0x0004             MOVS     R4,R0
+    392                      if (ret != 0) {
+   \       0xA0   0x2C00             CMP      R4,#+0
+   \       0xA2   0xD17D             BNE.N    ??mbedtls_nist_kw_unwrap_5
+    393                          goto cleanup;
+    394                      }
+    395          
+    396                      memcpy(A, outbuff, KW_SEMIBLOCK_LENGTH);
+   \                     ??mbedtls_nist_kw_unwrap_11: (+1)
+   \       0xA4   0x2008             MOVS     R0,#+8
+   \       0xA6   0x9001             STR      R0,[SP, #+4]
+   \       0xA8   0xA809             ADD      R0,SP,#+36
+   \       0xAA   0x9000             STR      R0,[SP, #+0]
+   \       0xAC   0xF10D 0x080C      ADD      R8,SP,#+12
+   \       0xB0   0x9A01             LDR      R2,[SP, #+4]
+   \       0xB2   0x9900             LDR      R1,[SP, #+0]
+   \       0xB4   0x4640             MOV      R0,R8
+   \       0xB6   0x.... 0x....      BL       __aeabi_memcpy
+    397                      memcpy(output, outbuff + KW_SEMIBLOCK_LENGTH, KW_SEMIBLOCK_LENGTH);
+   \       0xBA   0xF05F 0x0A08      MOVS     R10,#+8
+   \       0xBE   0xF10D 0x082C      ADD      R8,SP,#+44
+   \       0xC2   0x46B1             MOV      R9,R6
+   \       0xC4   0x4652             MOV      R2,R10
+   \       0xC6   0x4641             MOV      R1,R8
+   \       0xC8   0x4648             MOV      R0,R9
+   \       0xCA   0x.... 0x....      BL       __aeabi_memcpy
+    398                      mbedtls_platform_zeroize(outbuff, sizeof(outbuff));
+   \       0xCE   0x2110             MOVS     R1,#+16
+   \       0xD0   0xA809             ADD      R0,SP,#+36
+   \       0xD2   0x.... 0x....      BL       mbedtls_platform_zeroize
+    399                      *out_len = KW_SEMIBLOCK_LENGTH;
+   \       0xD6   0x2008             MOVS     R0,#+8
+   \       0xD8   0x6038             STR      R0,[R7, #+0]
+   \       0xDA   0xE00B             B.N      ??mbedtls_nist_kw_unwrap_12
+    400                  } else {
+    401                      /* in_len >=  KW_SEMIBLOCK_LENGTH * 3 */
+    402                      ret = unwrap(ctx, input, in_len / KW_SEMIBLOCK_LENGTH,
+    403                                   A, output, out_len);
+   \                     ??mbedtls_nist_kw_unwrap_10: (+1)
+   \       0xDC   0x9701             STR      R7,[SP, #+4]
+   \       0xDE   0x9600             STR      R6,[SP, #+0]
+   \       0xE0   0xAB03             ADD      R3,SP,#+12
+   \       0xE2   0x002A             MOVS     R2,R5
+   \       0xE4   0x08D2             LSRS     R2,R2,#+3
+   \       0xE6   0x4659             MOV      R1,R11
+   \       0xE8   0x980D             LDR      R0,[SP, #+52]
+   \       0xEA   0x.... 0x....      BL       unwrap
+   \       0xEE   0x0004             MOVS     R4,R0
+    404                      if (ret != 0) {
+   \       0xF0   0x2C00             CMP      R4,#+0
+   \       0xF2   0xD155             BNE.N    ??mbedtls_nist_kw_unwrap_5
+    405                          goto cleanup;
+    406                      }
+    407                  }
+    408          
+    409                  /* Check ICV in "constant-time" */
+    410                  diff = mbedtls_ct_memcmp(NIST_KW_ICV2, A, KW_SEMIBLOCK_LENGTH / 2);
+   \                     ??mbedtls_nist_kw_unwrap_12: (+1)
+   \       0xF4   0x2204             MOVS     R2,#+4
+   \       0xF6   0xA903             ADD      R1,SP,#+12
+   \       0xF8   0x....             LDR.N    R0,??DataTable5_4
+   \       0xFA   0x.... 0x....      BL       mbedtls_ct_memcmp
+   \       0xFE   0x9002             STR      R0,[SP, #+8]
+    411          
+    412                  if (diff != 0) {
+   \      0x100   0x9802             LDR      R0,[SP, #+8]
+   \      0x102   0x2800             CMP      R0,#+0
+   \      0x104   0xD001             BEQ.N    ??mbedtls_nist_kw_unwrap_13
+    413                      ret = MBEDTLS_ERR_CIPHER_AUTH_FAILED;
+   \      0x106   0x....             LDR.N    R0,??DataTable5_6
+   \      0x108   0x0004             MOVS     R4,R0
+    414                  }
+    415          
+    416                  Plen = MBEDTLS_GET_UINT32_BE(A, KW_SEMIBLOCK_LENGTH / 2);
+   \                     ??mbedtls_nist_kw_unwrap_13: (+1)
+   \      0x10A   0x....             LDR.N    R0,??DataTable5_5
+   \      0x10C   0x7800             LDRB     R0,[R0, #+0]
+   \      0x10E   0x2801             CMP      R0,#+1
+   \      0x110   0xD104             BNE.N    ??mbedtls_nist_kw_unwrap_14
+   \      0x112   0xA804             ADD      R0,SP,#+16
+   \      0x114   0x.... 0x....      BL       mbedtls_get_unaligned_uint32
+   \      0x118   0x4680             MOV      R8,R0
+   \      0x11A   0xE005             B.N      ??mbedtls_nist_kw_unwrap_15
+   \                     ??mbedtls_nist_kw_unwrap_14: (+1)
+   \      0x11C   0xA804             ADD      R0,SP,#+16
+   \      0x11E   0x.... 0x....      BL       mbedtls_get_unaligned_uint32
+   \      0x122   0x.... 0x....      BL       mbedtls_bswap32
+   \      0x126   0x4680             MOV      R8,R0
+    417          
+    418                  /*
+    419                   * Plen is the length of the plaintext, when the input is valid.
+    420                   * If Plen is larger than the plaintext and padding, padlen will be
+    421                   * larger than 8, because of the type wrap around.
+    422                   */
+    423                  padlen = in_len - KW_SEMIBLOCK_LENGTH - Plen;
+   \                     ??mbedtls_nist_kw_unwrap_15: (+1)
+   \      0x128   0xF1B5 0x0908      SUBS     R9,R5,#+8
+   \      0x12C   0xEBB9 0x0908      SUBS     R9,R9,R8
+    424                  ret = mbedtls_ct_error_if(mbedtls_ct_uint_gt(padlen, 7),
+    425                                            MBEDTLS_ERR_CIPHER_AUTH_FAILED, ret);
+   \      0x130   0x2107             MOVS     R1,#+7
+   \      0x132   0x4648             MOV      R0,R9
+   \      0x134   0x.... 0x....      BL       mbedtls_ct_uint_gt
+   \      0x138   0x.... 0x....      LDR.W    R10,??DataTable5_6
+   \      0x13C   0x0022             MOVS     R2,R4
+   \      0x13E   0x4651             MOV      R1,R10
+   \      0x140   0x.... 0x....      BL       mbedtls_ct_error_if
+   \      0x144   0x0004             MOVS     R4,R0
+    426                  padlen &= 7;
+   \      0x146   0xF019 0x0907      ANDS     R9,R9,#0x7
+   \      0x14A   0xF8CD 0x9014      STR      R9,[SP, #+20]
+   \      0x14E   0x2108             MOVS     R1,#+8
+   \      0x150   0x2200             MOVS     R2,#+0
+   \      0x152   0xF10D 0x091C      ADD      R9,SP,#+28
+   \      0x156   0x4648             MOV      R0,R9
+   \      0x158   0x.... 0x....      BL       __aeabi_memset
+    427          
+    428                  /* Check padding in "constant-time" */
+    429                  const uint8_t zero[KW_SEMIBLOCK_LENGTH] = { 0 };
+    430                  diff = mbedtls_ct_memcmp_partial(
+    431                      &output[*out_len - KW_SEMIBLOCK_LENGTH], zero,
+    432                      KW_SEMIBLOCK_LENGTH, KW_SEMIBLOCK_LENGTH - padlen, 0);
+   \      0x15C   0x2000             MOVS     R0,#+0
+   \      0x15E   0x9000             STR      R0,[SP, #+0]
+   \      0x160   0x9B05             LDR      R3,[SP, #+20]
+   \      0x162   0xF1D3 0x0308      RSBS     R3,R3,#+8
+   \      0x166   0x2208             MOVS     R2,#+8
+   \      0x168   0xA907             ADD      R1,SP,#+28
+   \      0x16A   0x6838             LDR      R0,[R7, #+0]
+   \      0x16C   0x4430             ADD      R0,R6,R0
+   \      0x16E   0x3808             SUBS     R0,R0,#+8
+   \      0x170   0x.... 0x....      BL       mbedtls_ct_memcmp_partial
+   \      0x174   0x9002             STR      R0,[SP, #+8]
+    433          
+    434                  if (diff != 0) {
+   \      0x176   0x9802             LDR      R0,[SP, #+8]
+   \      0x178   0x2800             CMP      R0,#+0
+   \      0x17A   0xD000             BEQ.N    ??mbedtls_nist_kw_unwrap_16
+    435                      ret = MBEDTLS_ERR_CIPHER_AUTH_FAILED;
+   \      0x17C   0x4654             MOV      R4,R10
+    436                  }
+    437          
+    438                  if (ret != 0) {
+   \                     ??mbedtls_nist_kw_unwrap_16: (+1)
+   \      0x17E   0x2C00             CMP      R4,#+0
+   \      0x180   0xD10E             BNE.N    ??mbedtls_nist_kw_unwrap_5
+    439                      goto cleanup;
+    440                  }
+    441                  memset(output + Plen, 0, padlen);
+   \                     ??mbedtls_nist_kw_unwrap_17: (+1)
+   \      0x182   0x9805             LDR      R0,[SP, #+20]
+   \      0x184   0x9000             STR      R0,[SP, #+0]
+   \      0x186   0xF05F 0x0A00      MOVS     R10,#+0
+   \      0x18A   0xEB06 0x0908      ADD      R9,R6,R8
+   \      0x18E   0x4652             MOV      R2,R10
+   \      0x190   0x9900             LDR      R1,[SP, #+0]
+   \      0x192   0x4648             MOV      R0,R9
+   \      0x194   0x.... 0x....      BL       __aeabi_memset
+    442                  *out_len = Plen;
+   \      0x198   0xF8C7 0x8000      STR      R8,[R7, #+0]
+   \      0x19C   0xE000             B.N      ??mbedtls_nist_kw_unwrap_5
+    443              } else {
+    444                  ret = MBEDTLS_ERR_CIPHER_FEATURE_UNAVAILABLE;
+   \                     ??mbedtls_nist_kw_unwrap_7: (+1)
+   \      0x19E   0x....             LDR.N    R4,??DataTable5_2
+    445                  goto cleanup;
+    446              }
+    447          
+    448          cleanup:
+    449              if (ret != 0) {
+   \                     ??mbedtls_nist_kw_unwrap_5: (+1)
+   \      0x1A0   0x2C00             CMP      R4,#+0
+   \      0x1A2   0xD00B             BEQ.N    ??mbedtls_nist_kw_unwrap_18
+    450                  memset(output, 0, *out_len);
+   \      0x1A4   0xF8D7 0xA000      LDR      R10,[R7, #+0]
+   \      0x1A8   0xF05F 0x0800      MOVS     R8,#+0
+   \      0x1AC   0x46B1             MOV      R9,R6
+   \      0x1AE   0x4642             MOV      R2,R8
+   \      0x1B0   0x4651             MOV      R1,R10
+   \      0x1B2   0x4648             MOV      R0,R9
+   \      0x1B4   0x.... 0x....      BL       __aeabi_memset
+    451                  *out_len = 0;
+   \      0x1B8   0x2000             MOVS     R0,#+0
+   \      0x1BA   0x6038             STR      R0,[R7, #+0]
+    452              }
+    453          
+    454              mbedtls_platform_zeroize(&diff, sizeof(diff));
+   \                     ??mbedtls_nist_kw_unwrap_18: (+1)
+   \      0x1BC   0x2104             MOVS     R1,#+4
+   \      0x1BE   0xA802             ADD      R0,SP,#+8
+   \      0x1C0   0x.... 0x....      BL       mbedtls_platform_zeroize
+    455              mbedtls_platform_zeroize(A, sizeof(A));
+   \      0x1C4   0x2108             MOVS     R1,#+8
+   \      0x1C6   0xA803             ADD      R0,SP,#+12
+   \      0x1C8   0x.... 0x....      BL       mbedtls_platform_zeroize
+    456          
+    457              return ret;
+   \      0x1CC   0x0020             MOVS     R0,R4
+   \                     ??mbedtls_nist_kw_unwrap_1: (+1)
+   \      0x1CE   0xB00F             ADD      SP,SP,#+60
+   \      0x1D0   0xE8BD 0x8FF0      POP      {R4-R11,PC}
+    458          }
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable5:
+   \        0x0   0x....'....        DC32     mbedtls_ct_zero
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable5_1:
+   \        0x0   0xFFFF'9F00        DC32     0xffff9f00
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable5_2:
+   \        0x0   0xFFFF'9F80        DC32     0xffff9f80
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable5_3:
+   \        0x0   0x....'....        DC32     NIST_KW_ICV1
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable5_4:
+   \        0x0   0x....'....        DC32     NIST_KW_ICV2
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable5_5:
+   \        0x0   0x....'....        DC32     mbedtls_byte_order_detector
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable5_6:
+   \        0x0   0xFFFF'9D00        DC32     0xffff9d00
+    459          
+    460          #endif /* !MBEDTLS_NIST_KW_ALT */
+    461          
+    462          #if defined(MBEDTLS_SELF_TEST) && defined(MBEDTLS_AES_C)
+    463          
+    464          /*
+    465           * Test vectors taken from NIST
+    466           * https://csrc.nist.gov/Projects/Cryptographic-Algorithm-Validation-Program/CAVP-TESTING-BLOCK-CIPHER-MODES#KW
+    467           */
+    468          static const unsigned int key_len[] = {
+    469              16,
+    470          #if !defined(MBEDTLS_AES_ONLY_128_BIT_KEY_LENGTH)
+    471              24,
+    472              32
+    473          #endif
+    474          };
+    475          
+    476          static const unsigned char kw_key[][32] = {
+    477              { 0x75, 0x75, 0xda, 0x3a, 0x93, 0x60, 0x7c, 0xc2,
+    478                0xbf, 0xd8, 0xce, 0xc7, 0xaa, 0xdf, 0xd9, 0xa6 },
+    479          #if !defined(MBEDTLS_AES_ONLY_128_BIT_KEY_LENGTH)
+    480              { 0x2d, 0x85, 0x26, 0x08, 0x1d, 0x02, 0xfb, 0x5b,
+    481                0x85, 0xf6, 0x9a, 0xc2, 0x86, 0xec, 0xd5, 0x7d,
+    482                0x40, 0xdf, 0x5d, 0xf3, 0x49, 0x47, 0x44, 0xd3 },
+    483              { 0x11, 0x2a, 0xd4, 0x1b, 0x48, 0x56, 0xc7, 0x25,
+    484                0x4a, 0x98, 0x48, 0xd3, 0x0f, 0xdd, 0x78, 0x33,
+    485                0x5b, 0x03, 0x9a, 0x48, 0xa8, 0x96, 0x2c, 0x4d,
+    486                0x1c, 0xb7, 0x8e, 0xab, 0xd5, 0xda, 0xd7, 0x88 }
+    487          #endif
+    488          };
+    489          
+    490          static const unsigned char kw_msg[][40] = {
+    491              { 0x42, 0x13, 0x6d, 0x3c, 0x38, 0x4a, 0x3e, 0xea,
+    492                0xc9, 0x5a, 0x06, 0x6f, 0xd2, 0x8f, 0xed, 0x3f },
+    493          #if !defined(MBEDTLS_AES_ONLY_128_BIT_KEY_LENGTH)
+    494              { 0x95, 0xc1, 0x1b, 0xf5, 0x35, 0x3a, 0xfe, 0xdb,
+    495                0x98, 0xfd, 0xd6, 0xc8, 0xca, 0x6f, 0xdb, 0x6d,
+    496                0xa5, 0x4b, 0x74, 0xb4, 0x99, 0x0f, 0xdc, 0x45,
+    497                0xc0, 0x9d, 0x15, 0x8f, 0x51, 0xce, 0x62, 0x9d,
+    498                0xe2, 0xaf, 0x26, 0xe3, 0x25, 0x0e, 0x6b, 0x4c },
+    499              { 0x1b, 0x20, 0xbf, 0x19, 0x90, 0xb0, 0x65, 0xd7,
+    500                0x98, 0xe1, 0xb3, 0x22, 0x64, 0xad, 0x50, 0xa8,
+    501                0x74, 0x74, 0x92, 0xba, 0x09, 0xa0, 0x4d, 0xd1 }
+    502          #endif
+    503          };
+    504          
+    505          static const size_t kw_msg_len[] = {
+    506              16,
+    507          #if !defined(MBEDTLS_AES_ONLY_128_BIT_KEY_LENGTH)
+    508              40,
+    509              24
+    510          #endif
+    511          };
+    512          static const size_t kw_out_len[] = {
+    513              24,
+    514          #if !defined(MBEDTLS_AES_ONLY_128_BIT_KEY_LENGTH)
+    515              48,
+    516              32
+    517          #endif
+    518          };
+    519          static const unsigned char kw_res[][48] = {
+    520              { 0x03, 0x1f, 0x6b, 0xd7, 0xe6, 0x1e, 0x64, 0x3d,
+    521                0xf6, 0x85, 0x94, 0x81, 0x6f, 0x64, 0xca, 0xa3,
+    522                0xf5, 0x6f, 0xab, 0xea, 0x25, 0x48, 0xf5, 0xfb },
+    523          #if !defined(MBEDTLS_AES_ONLY_128_BIT_KEY_LENGTH)
+    524              { 0x44, 0x3c, 0x6f, 0x15, 0x09, 0x83, 0x71, 0x91,
+    525                0x3e, 0x5c, 0x81, 0x4c, 0xa1, 0xa0, 0x42, 0xec,
+    526                0x68, 0x2f, 0x7b, 0x13, 0x6d, 0x24, 0x3a, 0x4d,
+    527                0x6c, 0x42, 0x6f, 0xc6, 0x97, 0x15, 0x63, 0xe8,
+    528                0xa1, 0x4a, 0x55, 0x8e, 0x09, 0x64, 0x16, 0x19,
+    529                0xbf, 0x03, 0xfc, 0xaf, 0x90, 0xb1, 0xfc, 0x2d },
+    530              { 0xba, 0x8a, 0x25, 0x9a, 0x47, 0x1b, 0x78, 0x7d,
+    531                0xd5, 0xd5, 0x40, 0xec, 0x25, 0xd4, 0x3d, 0x87,
+    532                0x20, 0x0f, 0xda, 0xdc, 0x6d, 0x1f, 0x05, 0xd9,
+    533                0x16, 0x58, 0x4f, 0xa9, 0xf6, 0xcb, 0xf5, 0x12 }
+    534          #endif
+    535          };
+    536          
+    537          static const unsigned char kwp_key[][32] = {
+    538              { 0x78, 0x65, 0xe2, 0x0f, 0x3c, 0x21, 0x65, 0x9a,
+    539                0xb4, 0x69, 0x0b, 0x62, 0x9c, 0xdf, 0x3c, 0xc4 },
+    540          #if !defined(MBEDTLS_AES_ONLY_128_BIT_KEY_LENGTH)
+    541              { 0xf5, 0xf8, 0x96, 0xa3, 0xbd, 0x2f, 0x4a, 0x98,
+    542                0x23, 0xef, 0x16, 0x2b, 0x00, 0xb8, 0x05, 0xd7,
+    543                0xde, 0x1e, 0xa4, 0x66, 0x26, 0x96, 0xa2, 0x58 },
+    544              { 0x95, 0xda, 0x27, 0x00, 0xca, 0x6f, 0xd9, 0xa5,
+    545                0x25, 0x54, 0xee, 0x2a, 0x8d, 0xf1, 0x38, 0x6f,
+    546                0x5b, 0x94, 0xa1, 0xa6, 0x0e, 0xd8, 0xa4, 0xae,
+    547                0xf6, 0x0a, 0x8d, 0x61, 0xab, 0x5f, 0x22, 0x5a }
+    548          #endif
+    549          };
+    550          
+    551          static const unsigned char kwp_msg[][31] = {
+    552              { 0xbd, 0x68, 0x43, 0xd4, 0x20, 0x37, 0x8d, 0xc8,
+    553                0x96 },
+    554          #if !defined(MBEDTLS_AES_ONLY_128_BIT_KEY_LENGTH)
+    555              { 0x6c, 0xcd, 0xd5, 0x85, 0x18, 0x40, 0x97, 0xeb,
+    556                0xd5, 0xc3, 0xaf, 0x3e, 0x47, 0xd0, 0x2c, 0x19,
+    557                0x14, 0x7b, 0x4d, 0x99, 0x5f, 0x96, 0x43, 0x66,
+    558                0x91, 0x56, 0x75, 0x8c, 0x13, 0x16, 0x8f },
+    559              { 0xd1 }
+    560          #endif
+    561          };
+    562          static const size_t kwp_msg_len[] = {
+    563              9,
+    564          #if !defined(MBEDTLS_AES_ONLY_128_BIT_KEY_LENGTH)
+    565              31,
+    566              1
+    567          #endif
+    568          };
+    569          
+    570          static const unsigned char kwp_res[][48] = {
+    571              { 0x41, 0xec, 0xa9, 0x56, 0xd4, 0xaa, 0x04, 0x7e,
+    572                0xb5, 0xcf, 0x4e, 0xfe, 0x65, 0x96, 0x61, 0xe7,
+    573                0x4d, 0xb6, 0xf8, 0xc5, 0x64, 0xe2, 0x35, 0x00 },
+    574          #if !defined(MBEDTLS_AES_ONLY_128_BIT_KEY_LENGTH)
+    575              { 0x4e, 0x9b, 0xc2, 0xbc, 0xbc, 0x6c, 0x1e, 0x13,
+    576                0xd3, 0x35, 0xbc, 0xc0, 0xf7, 0x73, 0x6a, 0x88,
+    577                0xfa, 0x87, 0x53, 0x66, 0x15, 0xbb, 0x8e, 0x63,
+    578                0x8b, 0xcc, 0x81, 0x66, 0x84, 0x68, 0x17, 0x90,
+    579                0x67, 0xcf, 0xa9, 0x8a, 0x9d, 0x0e, 0x33, 0x26 },
+    580              { 0x06, 0xba, 0x7a, 0xe6, 0xf3, 0x24, 0x8c, 0xfd,
+    581                0xcf, 0x26, 0x75, 0x07, 0xfa, 0x00, 0x1b, 0xc4  }
+    582          #endif
+    583          };
+    584          static const size_t kwp_out_len[] = {
+    585              24,
+    586          #if !defined(MBEDTLS_AES_ONLY_128_BIT_KEY_LENGTH)
+    587              40,
+    588              16
+    589          #endif
+    590          };
+    591          
+    592          int mbedtls_nist_kw_self_test(int verbose)
+    593          {
+    594              mbedtls_nist_kw_context ctx;
+    595              unsigned char out[48];
+    596              size_t olen;
+    597              int i;
+    598              int ret = 0;
+    599              mbedtls_nist_kw_init(&ctx);
+    600          
+    601              /*
+    602               * KW mode
+    603               */
+    604              {
+    605                  static const int num_tests = sizeof(kw_key) / sizeof(*kw_key);
+    606          
+    607                  for (i = 0; i < num_tests; i++) {
+    608                      if (verbose != 0) {
+    609                          mbedtls_printf("  KW-AES-%u ", (unsigned int) key_len[i] * 8);
+    610                      }
+    611          
+    612                      ret = mbedtls_nist_kw_setkey(&ctx, MBEDTLS_CIPHER_ID_AES,
+    613                                                   kw_key[i], key_len[i] * 8, 1);
+    614                      if (ret != 0) {
+    615                          if (verbose != 0) {
+    616                              mbedtls_printf("  KW: setup failed ");
+    617                          }
+    618          
+    619                          goto end;
+    620                      }
+    621          
+    622                      ret = mbedtls_nist_kw_wrap(&ctx, MBEDTLS_KW_MODE_KW, kw_msg[i],
+    623                                                 kw_msg_len[i], out, &olen, sizeof(out));
+    624                      if (ret != 0 || kw_out_len[i] != olen ||
+    625                          memcmp(out, kw_res[i], kw_out_len[i]) != 0) {
+    626                          if (verbose != 0) {
+    627                              mbedtls_printf("failed. ");
+    628                          }
+    629          
+    630                          ret = 1;
+    631                          goto end;
+    632                      }
+    633          
+    634                      if ((ret = mbedtls_nist_kw_setkey(&ctx, MBEDTLS_CIPHER_ID_AES,
+    635                                                        kw_key[i], key_len[i] * 8, 0))
+    636                          != 0) {
+    637                          if (verbose != 0) {
+    638                              mbedtls_printf("  KW: setup failed ");
+    639                          }
+    640          
+    641                          goto end;
+    642                      }
+    643          
+    644                      ret = mbedtls_nist_kw_unwrap(&ctx, MBEDTLS_KW_MODE_KW,
+    645                                                   out, olen, out, &olen, sizeof(out));
+    646          
+    647                      if (ret != 0 || olen != kw_msg_len[i] ||
+    648                          memcmp(out, kw_msg[i], kw_msg_len[i]) != 0) {
+    649                          if (verbose != 0) {
+    650                              mbedtls_printf("failed\n");
+    651                          }
+    652          
+    653                          ret = 1;
+    654                          goto end;
+    655                      }
+    656          
+    657                      if (verbose != 0) {
+    658                          mbedtls_printf(" passed\n");
+    659                      }
+    660                  }
+    661              }
+    662          
+    663              /*
+    664               * KWP mode
+    665               */
+    666              {
+    667                  static const int num_tests = sizeof(kwp_key) / sizeof(*kwp_key);
+    668          
+    669                  for (i = 0; i < num_tests; i++) {
+    670                      olen = sizeof(out);
+    671                      if (verbose != 0) {
+    672                          mbedtls_printf("  KWP-AES-%u ", (unsigned int) key_len[i] * 8);
+    673                      }
+    674          
+    675                      ret = mbedtls_nist_kw_setkey(&ctx, MBEDTLS_CIPHER_ID_AES, kwp_key[i],
+    676                                                   key_len[i] * 8, 1);
+    677                      if (ret  != 0) {
+    678                          if (verbose != 0) {
+    679                              mbedtls_printf("  KWP: setup failed ");
+    680                          }
+    681          
+    682                          goto end;
+    683                      }
+    684                      ret = mbedtls_nist_kw_wrap(&ctx, MBEDTLS_KW_MODE_KWP, kwp_msg[i],
+    685                                                 kwp_msg_len[i], out, &olen, sizeof(out));
+    686          
+    687                      if (ret != 0 || kwp_out_len[i] != olen ||
+    688                          memcmp(out, kwp_res[i], kwp_out_len[i]) != 0) {
+    689                          if (verbose != 0) {
+    690                              mbedtls_printf("failed. ");
+    691                          }
+    692          
+    693                          ret = 1;
+    694                          goto end;
+    695                      }
+    696          
+    697                      if ((ret = mbedtls_nist_kw_setkey(&ctx, MBEDTLS_CIPHER_ID_AES,
+    698                                                        kwp_key[i], key_len[i] * 8, 0))
+    699                          != 0) {
+    700                          if (verbose != 0) {
+    701                              mbedtls_printf("  KWP: setup failed ");
+    702                          }
+    703          
+    704                          goto end;
+    705                      }
+    706          
+    707                      ret = mbedtls_nist_kw_unwrap(&ctx, MBEDTLS_KW_MODE_KWP, out,
+    708                                                   olen, out, &olen, sizeof(out));
+    709          
+    710                      if (ret != 0 || olen != kwp_msg_len[i] ||
+    711                          memcmp(out, kwp_msg[i], kwp_msg_len[i]) != 0) {
+    712                          if (verbose != 0) {
+    713                              mbedtls_printf("failed. ");
+    714                          }
+    715          
+    716                          ret = 1;
+    717                          goto end;
+    718                      }
+    719          
+    720                      if (verbose != 0) {
+    721                          mbedtls_printf(" passed\n");
+    722                      }
+    723                  }
+    724              }
+    725          end:
+    726              mbedtls_nist_kw_free(&ctx);
+    727          
+    728              if (verbose != 0) {
+    729                  mbedtls_printf("\n");
+    730              }
+    731          
+    732              return ret;
+    733          }
+    734          
+    735          #endif /* MBEDTLS_SELF_TEST && MBEDTLS_AES_C */
+    736          
+    737          #endif /* MBEDTLS_NIST_KW_C */
+
+   Maximum stack usage in bytes:
+
+   .cstack Function
+   ------- --------
+      24   calc_a_xor_t
+        24 __aeabi_llsr
+       0   mbedtls_bswap32
+       0   mbedtls_cipher_info_get_block_size
+       8   mbedtls_ct_bool
+         8   -> mbedtls_ct_compiler_opaque
+       0   mbedtls_ct_compiler_opaque
+      16   mbedtls_ct_error_if
+        16   -> mbedtls_ct_if
+      16   mbedtls_ct_if
+        16   -> mbedtls_ct_compiler_opaque
+      16   mbedtls_ct_uint_gt
+        16   -> mbedtls_ct_uint_lt
+      32   mbedtls_ct_uint_lt
+        32   -> mbedtls_ct_bool
+        32   -> mbedtls_ct_compiler_opaque
+        32   -> mbedtls_ct_if
+      24   mbedtls_get_unaligned_uint32
+        24   -> __aeabi_memcpy
+       8   mbedtls_nist_kw_free
+         8   -> mbedtls_cipher_free
+         8   -> mbedtls_platform_zeroize
+      24   mbedtls_nist_kw_init
+        24   -> __aeabi_memset
+      40   mbedtls_nist_kw_setkey
+        40   -> mbedtls_cipher_free
+        40   -> mbedtls_cipher_info_from_values
+        40   -> mbedtls_cipher_info_get_block_size
+        40   -> mbedtls_cipher_setkey
+        40   -> mbedtls_cipher_setup
+      96   mbedtls_nist_kw_unwrap
+        96   -> __aeabi_memcpy
+        96   -> __aeabi_memset
+        96   -> mbedtls_bswap32
+        96   -> mbedtls_cipher_update
+        96   -> mbedtls_ct_error_if
+        96   -> mbedtls_ct_memcmp
+        96   -> mbedtls_ct_memcmp_partial
+        96   -> mbedtls_ct_uint_gt
+        96   -> mbedtls_get_unaligned_uint32
+        96   -> mbedtls_platform_zeroize
+        96   -> unwrap
+     120   mbedtls_nist_kw_wrap
+       120   -> __aeabi_memcpy
+       120   -> __aeabi_memmove
+       120   -> __aeabi_memset
+       120   -> calc_a_xor_t
+       120   -> mbedtls_bswap32
+       120   -> mbedtls_cipher_update
+       120   -> mbedtls_platform_zeroize
+       120   -> mbedtls_put_unaligned_uint32
+      24   mbedtls_put_unaligned_uint32
+        24   -> __aeabi_memcpy
+     104   unwrap
+       104   -> __aeabi_memcpy
+       104   -> __aeabi_memmove
+       104   -> __aeabi_memset
+       104   -> calc_a_xor_t
+       104   -> mbedtls_cipher_update
+       104   -> mbedtls_platform_zeroize
+
+
+   Section sizes:
+
+   Bytes  Function/Label
+   -----  --------------
+       4  ??DataTable5
+       4  ??DataTable5_1
+       4  ??DataTable5_2
+       4  ??DataTable5_3
+       4  ??DataTable5_4
+       4  ??DataTable5_5
+       4  ??DataTable5_6
+       8  NIST_KW_ICV1
+       4  NIST_KW_ICV2
+      52  calc_a_xor_t
+      28  mbedtls_bswap32
+       2  mbedtls_byte_order_detector
+      18  mbedtls_cipher_info_get_block_size
+      28  mbedtls_ct_bool
+      10  mbedtls_ct_compiler_opaque
+      22  mbedtls_ct_error_if
+      26  mbedtls_ct_if
+      16  mbedtls_ct_uint_gt
+      62  mbedtls_ct_uint_lt
+      24  mbedtls_get_unaligned_uint32
+      20  mbedtls_nist_kw_free
+      22  mbedtls_nist_kw_init
+     134  mbedtls_nist_kw_setkey
+     468  mbedtls_nist_kw_unwrap
+     586  mbedtls_nist_kw_wrap
+      22  mbedtls_put_unaligned_uint32
+     316  unwrap
+
+ 
+    14 bytes in section .rodata
+ 1'882 bytes in section .text
+ 
+ 1'836 bytes of CODE  memory (+ 46 bytes shared)
+    14 bytes of CONST memory
+
+Errors: none
+Warnings: none

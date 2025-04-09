@@ -1,0 +1,2215 @@
+###############################################################################
+#
+# IAR ANSI C/C++ Compiler V9.50.2.385/W64 for ARM         27/Nov/2024  12:17:19
+# Copyright 1999-2024 IAR Systems AB.
+#
+#    Cpu mode                     =  thumb
+#    Endian                       =  little
+#    Source file                  =
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\util\third_party\freertos\kernel\timers.c
+#    Command line                 =
+#        -f
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\ewarm-iar\obj\kernel_15789286914859001271.dir\timers.o.rsp
+#        (C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\util\third_party\freertos\kernel\timers.c
+#        -D EFR32FG28B322F1024IM48=1 -D
+#        configNUM_SDK_THREAD_LOCAL_STORAGE_POINTERS=2 -D
+#        SL_COMPONENT_CATALOG_PRESENT=1 -D
+#        MBEDTLS_CONFIG_FILE=<sl_mbedtls_config.h> -D
+#        MBEDTLS_PSA_CRYPTO_CONFIG_FILE=<psa_crypto_config.h> -D
+#        SL_RAIL_LIB_MULTIPROTOCOL_SUPPORT=0 -D
+#        SL_RAIL_UTIL_PA_CONFIG_HEADER=<sl_rail_util_pa_config.h> -D
+#        RTT_USE_ASM=0 -D MBED_CONF_MBED_TRACE_ENABLE=1 -D
+#        MBED_CONF_NANOSTACK_CONFIGURATION=ws_router -D
+#        MBED_TRACE_MAX_LEVEL=TRACE_ACTIVE_LEVEL_ALL -D DEBUG_EFM_USER=1 -D
+#        HAVE_LFN=1 -D HAVE_LFN_PARENT=1 -lC
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\ewarm-iar\lst\kernel_15789286914859001271.dir
+#        --diag_suppress Pa050 -o
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\ewarm-iar\obj\kernel_15789286914859001271.dir
+#        --debug --endian=little --cpu=Cortex-M33 --cmse --cmse -e
+#        --fpu=VFPv5_sp --dlib_config "C:\Program Files\IAR Systems\Embedded
+#        Workbench 9.2\arm\inc\c\DLib_Config_Normal.h" -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\util\third_party\freertos\kernel\
+#        -I C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\autogen\ -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\config\ -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\config\rail\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\Device\SiliconLabs\EFR32FG28\Include\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\common\inc\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\CMSIS\Core\Include\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\CMSIS\RTOS2\Include\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\service\device_init\inc\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\emdrv\dmadrv\inc\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\emdrv\common\inc\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\emlib\inc\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\util\third_party\freertos\cmsis\Include\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\util\third_party\freertos\kernel\include\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\util\third_party\freertos\kernel\portable\IAR\ARM_CM33_NTZ\non_secure\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\service\iostream\inc\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\security\sl_component\sl_mbedtls_support\config\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\security\sl_component\sl_mbedtls_support\config\preset\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\security\sl_component\sl_mbedtls_support\inc\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\util\third_party\mbedtls\include\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\util\third_party\mbedtls\library\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\emdrv\nvm3\inc\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\peripheral\inc\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\security\sl_component\sl_psa_driver\inc\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\radio\rail_lib\common\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\radio\rail_lib\protocol\ble\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\radio\rail_lib\protocol\ieee802154\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\radio\rail_lib\protocol\wmbus\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\radio\rail_lib\protocol\zwave\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\radio\rail_lib\chip\efr32\efr32xg2x\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\radio\rail_lib\protocol\sidewalk\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\radio\rail_lib\plugin\pa-conversions\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\radio\rail_lib\plugin\pa-conversions\efr32xg28\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\radio\rail_lib\plugin\rail_util_pti\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\security\sl_component\se_manager\inc\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\security\sl_component\se_manager\src\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\util\third_party\segger\systemview\SEGGER\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\util\silicon_labs\silabs_core\memory_manager\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\common\toolchain\inc\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\service\system\inc\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\app\wisun\component\ns_list\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\app\wisun\component\trace_util\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\app\wisun\component\trace_util\nanostack\nanostack-libservice\mbed-client-libservice\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\service\sleeptimer\inc\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\protocol\wisun\stack\inc\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\protocol\wisun\app\wisun_rcp\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\protocol\wisun\stack\inc\socket\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\protocol\wisun\stack\src\
+#        -Ohz --use_c++_inline) --dependencies=n
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\ewarm-iar\obj\kernel_15789286914859001271.dir\timers.o.iar_deps
+#    Locale                       =  C
+#    List file                    =
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\ewarm-iar\lst\kernel_15789286914859001271.dir\timers.lst
+#    Object file                  =
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\ewarm-iar\obj\kernel_15789286914859001271.dir\timers.o
+#    Runtime model:                  
+#      __CPP_Runtime              =  1
+#      __SystemLibrary            =  DLib
+#      __dlib_full_locale_support =  0
+#      __dlib_version             =  6
+#
+###############################################################################
+
+C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\util\third_party\freertos\kernel\timers.c
+      1          /***************************************************************************//**
+      2           * # License
+      3           *
+      4           * The licensor of this software is Silicon Laboratories Inc. Your use of this
+      5           * software is governed by the terms of Silicon Labs Master Software License
+      6           * Agreement (MSLA) available at
+      7           * www.silabs.com/about-us/legal/master-software-license-agreement. This
+      8           * software is Third Party Software licensed by Silicon Labs from a third party
+      9           * and is governed by the sections of the MSLA applicable to Third Party
+     10           * Software and the additional terms set forth below.
+     11           *
+     12           ******************************************************************************/
+     13          
+     14          /*
+     15           * FreeRTOS Kernel V10.4.3
+     16           * Copyright (C) 2020 Amazon.com, Inc. or its affiliates.  All Rights Reserved.
+     17           *
+     18           * Permission is hereby granted, free of charge, to any person obtaining a copy of
+     19           * this software and associated documentation files (the "Software"), to deal in
+     20           * the Software without restriction, including without limitation the rights to
+     21           * use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of
+     22           * the Software, and to permit persons to whom the Software is furnished to do so,
+     23           * subject to the following conditions:
+     24           *
+     25           * The above copyright notice and this permission notice shall be included in all
+     26           * copies or substantial portions of the Software.
+     27           *
+     28           * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+     29           * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS
+     30           * FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR
+     31           * COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER
+     32           * IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN
+     33           * CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+     34           *
+     35           * https://www.FreeRTOS.org
+     36           * https://github.com/FreeRTOS
+     37           *
+     38           */
+     39          
+     40          /* Standard includes. */
+     41          #include <stdlib.h>
+     42          
+     43          /* Defining MPU_WRAPPERS_INCLUDED_FROM_API_FILE prevents task.h from redefining
+     44           * all the API functions to use the MPU wrappers.  That should only be done when
+     45           * task.h is included from an application file. */
+     46          #define MPU_WRAPPERS_INCLUDED_FROM_API_FILE
+     47          
+     48          #include "FreeRTOS.h"
+     49          #include "task.h"
+     50          #include "queue.h"
+     51          #include "timers.h"
+     52          
+     53          #if ( INCLUDE_xTimerPendFunctionCall == 1 ) && ( configUSE_TIMERS == 0 )
+     54              #error configUSE_TIMERS must be set to 1 to make the xTimerPendFunctionCall() function available.
+     55          #endif
+     56          
+     57          /* Lint e9021, e961 and e750 are suppressed as a MISRA exception justified
+     58           * because the MPU ports require MPU_WRAPPERS_INCLUDED_FROM_API_FILE to be defined
+     59           * for the header files above, but not in this file, in order to generate the
+     60           * correct privileged Vs unprivileged linkage and placement. */
+     61          #undef MPU_WRAPPERS_INCLUDED_FROM_API_FILE /*lint !e9021 !e961 !e750. */
+     62          
+     63          
+     64          /* This entire source file will be skipped if the application is not configured
+     65           * to include software timer functionality.  This #if is closed at the very bottom
+     66           * of this file.  If you want to include software timer functionality then ensure
+     67           * configUSE_TIMERS is set to 1 in FreeRTOSConfig.h. */
+     68          #if ( configUSE_TIMERS == 1 )
+     69          
+     70          /* Misc definitions. */
+     71              #define tmrNO_DELAY    ( TickType_t ) 0U
+     72          
+     73          /* The name assigned to the timer service task.  This can be overridden by
+     74           * defining trmTIMER_SERVICE_TASK_NAME in FreeRTOSConfig.h. */
+     75              #ifndef configTIMER_SERVICE_TASK_NAME
+     76                  #define configTIMER_SERVICE_TASK_NAME    "Tmr Svc"
+     77              #endif
+     78          
+     79          /* Bit definitions used in the ucStatus member of a timer structure. */
+     80              #define tmrSTATUS_IS_ACTIVE                  ( ( uint8_t ) 0x01 )
+     81              #define tmrSTATUS_IS_STATICALLY_ALLOCATED    ( ( uint8_t ) 0x02 )
+     82              #define tmrSTATUS_IS_AUTORELOAD              ( ( uint8_t ) 0x04 )
+     83          
+     84          /* The definition of the timers themselves. */
+     85              typedef struct tmrTimerControl                  /* The old naming convention is used to prevent breaking kernel aware debuggers. */
+     86              {
+     87                  const char * pcTimerName;                   /*<< Text name.  This is not used by the kernel, it is included simply to make debugging easier. */ /*lint !e971 Unqualified char types are allowed for strings and single characters only. */
+     88                  ListItem_t xTimerListItem;                  /*<< Standard linked list item as used by all kernel features for event management. */
+     89                  TickType_t xTimerPeriodInTicks;             /*<< How quickly and often the timer expires. */
+     90                  void * pvTimerID;                           /*<< An ID to identify the timer.  This allows the timer to be identified when the same callback is used for multiple timers. */
+     91                  TimerCallbackFunction_t pxCallbackFunction; /*<< The function that will be called when the timer expires. */
+     92                  #if ( configUSE_TRACE_FACILITY == 1 )
+     93                      UBaseType_t uxTimerNumber;              /*<< An ID assigned by trace tools such as FreeRTOS+Trace */
+     94                  #endif
+     95                  uint8_t ucStatus;                           /*<< Holds bits to say if the timer was statically allocated or not, and if it is active or not. */
+     96              } xTIMER;
+     97          
+     98          /* The old xTIMER name is maintained above then typedefed to the new Timer_t
+     99           * name below to enable the use of older kernel aware debuggers. */
+    100              typedef xTIMER Timer_t;
+    101          
+    102          /* The definition of messages that can be sent and received on the timer queue.
+    103           * Two types of message can be queued - messages that manipulate a software timer,
+    104           * and messages that request the execution of a non-timer related callback.  The
+    105           * two message types are defined in two separate structures, xTimerParametersType
+    106           * and xCallbackParametersType respectively. */
+    107              typedef struct tmrTimerParameters
+    108              {
+    109                  TickType_t xMessageValue; /*<< An optional value used by a subset of commands, for example, when changing the period of a timer. */
+    110                  Timer_t * pxTimer;        /*<< The timer to which the command will be applied. */
+    111              } TimerParameter_t;
+    112          
+    113          
+    114              typedef struct tmrCallbackParameters
+    115              {
+    116                  PendedFunction_t pxCallbackFunction; /* << The callback function to execute. */
+    117                  void * pvParameter1;                 /* << The value that will be used as the callback functions first parameter. */
+    118                  uint32_t ulParameter2;               /* << The value that will be used as the callback functions second parameter. */
+    119              } CallbackParameters_t;
+    120          
+    121          /* The structure that contains the two message types, along with an identifier
+    122           * that is used to determine which message type is valid. */
+    123              typedef struct tmrTimerQueueMessage
+    124              {
+    125                  BaseType_t xMessageID; /*<< The command being sent to the timer service task. */
+    126                  union
+    127                  {
+    128                      TimerParameter_t xTimerParameters;
+    129          
+    130                      /* Don't include xCallbackParameters if it is not going to be used as
+    131                       * it makes the structure (and therefore the timer queue) larger. */
+    132                      #if ( INCLUDE_xTimerPendFunctionCall == 1 )
+    133                          CallbackParameters_t xCallbackParameters;
+    134                      #endif /* INCLUDE_xTimerPendFunctionCall */
+    135                  } u;
+    136              } DaemonTaskMessage_t;
+    137          
+    138          /*lint -save -e956 A manual analysis and inspection has been used to determine
+    139           * which static variables must be declared volatile. */
+    140          
+    141          /* The list in which active timers are stored.  Timers are referenced in expire
+    142           * time order, with the nearest expiry time at the front of the list.  Only the
+    143           * timer service task is allowed to access these lists.
+    144           * xActiveTimerList1 and xActiveTimerList2 could be at function scope but that
+    145           * breaks some kernel aware debuggers, and debuggers that reply on removing the
+    146           * static qualifier. */
+    147              PRIVILEGED_DATA static List_t xActiveTimerList1;
+    148              PRIVILEGED_DATA static List_t xActiveTimerList2;
+    149              PRIVILEGED_DATA static List_t * pxCurrentTimerList;
+    150              PRIVILEGED_DATA static List_t * pxOverflowTimerList;
+    151          
+    152          /* A queue that is used to send commands to the timer service task. */
+    153              PRIVILEGED_DATA static QueueHandle_t xTimerQueue = NULL;
+    154              PRIVILEGED_DATA static TaskHandle_t xTimerTaskHandle = NULL;
+    155          
+    156          /*lint -restore */
+    157          
+    158          /*-----------------------------------------------------------*/
+    159          
+    160          /*
+    161           * Initialise the infrastructure used by the timer service task if it has not
+    162           * been initialised already.
+    163           */
+    164              static void prvCheckForValidListAndQueue( void ) PRIVILEGED_FUNCTION;
+    165          
+    166          /*
+    167           * The timer service task (daemon).  Timer functionality is controlled by this
+    168           * task.  Other tasks communicate with the timer service task using the
+    169           * xTimerQueue queue.
+    170           */
+    171              static portTASK_FUNCTION_PROTO( prvTimerTask, pvParameters ) PRIVILEGED_FUNCTION;
+    172          
+    173          /*
+    174           * Called by the timer service task to interpret and process a command it
+    175           * received on the timer queue.
+    176           */
+    177              static void prvProcessReceivedCommands( void ) PRIVILEGED_FUNCTION;
+    178          
+    179          /*
+    180           * Insert the timer into either xActiveTimerList1, or xActiveTimerList2,
+    181           * depending on if the expire time causes a timer counter overflow.
+    182           */
+    183              static BaseType_t prvInsertTimerInActiveList( Timer_t * const pxTimer,
+    184                                                            const TickType_t xNextExpiryTime,
+    185                                                            const TickType_t xTimeNow,
+    186                                                            const TickType_t xCommandTime ) PRIVILEGED_FUNCTION;
+    187          
+    188          /*
+    189           * An active timer has reached its expire time.  Reload the timer if it is an
+    190           * auto-reload timer, then call its callback.
+    191           */
+    192              static void prvProcessExpiredTimer( const TickType_t xNextExpireTime,
+    193                                                  const TickType_t xTimeNow ) PRIVILEGED_FUNCTION;
+    194          
+    195          /*
+    196           * The tick count has overflowed.  Switch the timer lists after ensuring the
+    197           * current timer list does not still reference some timers.
+    198           */
+    199              static void prvSwitchTimerLists( void ) PRIVILEGED_FUNCTION;
+    200          
+    201          /*
+    202           * Obtain the current tick count, setting *pxTimerListsWereSwitched to pdTRUE
+    203           * if a tick count overflow occurred since prvSampleTimeNow() was last called.
+    204           */
+    205              static TickType_t prvSampleTimeNow( BaseType_t * const pxTimerListsWereSwitched ) PRIVILEGED_FUNCTION;
+    206          
+    207          /*
+    208           * If the timer list contains any active timers then return the expire time of
+    209           * the timer that will expire first and set *pxListWasEmpty to false.  If the
+    210           * timer list does not contain any timers then return 0 and set *pxListWasEmpty
+    211           * to pdTRUE.
+    212           */
+    213              static TickType_t prvGetNextExpireTime( BaseType_t * const pxListWasEmpty ) PRIVILEGED_FUNCTION;
+    214          
+    215          /*
+    216           * If a timer has expired, process it.  Otherwise, block the timer service task
+    217           * until either a timer does expire or a command is received.
+    218           */
+    219              static void prvProcessTimerOrBlockTask( const TickType_t xNextExpireTime,
+    220                                                      BaseType_t xListWasEmpty ) PRIVILEGED_FUNCTION;
+    221          
+    222          /*
+    223           * Called after a Timer_t structure has been allocated either statically or
+    224           * dynamically to fill in the structure's members.
+    225           */
+    226              static void prvInitialiseNewTimer( const char * const pcTimerName, /*lint !e971 Unqualified char types are allowed for strings and single characters only. */
+    227                                                 const TickType_t xTimerPeriodInTicks,
+    228                                                 const UBaseType_t uxAutoReload,
+    229                                                 void * const pvTimerID,
+    230                                                 TimerCallbackFunction_t pxCallbackFunction,
+    231                                                 Timer_t * pxNewTimer ) PRIVILEGED_FUNCTION;
+    232          /*-----------------------------------------------------------*/
+    233          
+
+   \                                 In section .text, align 2, keep-with-next
+    234              BaseType_t xTimerCreateTimerTask( void )
+    235              {
+   \                     xTimerCreateTimerTask: (+1)
+   \        0x0   0xB538             PUSH     {R3-R5,LR}
+   \        0x2   0xB086             SUB      SP,SP,#+24
+    236                  BaseType_t xReturn = pdFAIL;
+    237          
+    238                  /* This function is called when the scheduler is started if
+    239                   * configUSE_TIMERS is set to 1.  Check that the infrastructure used by the
+    240                   * timer service task has been created/initialised.  If timers have already
+    241                   * been created then the initialisation will already have been performed. */
+    242                  prvCheckForValidListAndQueue();
+   \        0x4   0x.... 0x....      BL       prvCheckForValidListAndQueue
+    243          
+    244                  if( xTimerQueue != NULL )
+   \        0x8   0x.... 0x....      LDR.W    R5,??DataTable12
+   \        0xC   0x68A8             LDR      R0,[R5, #+8]
+   \        0xE   0x2400             MOVS     R4,#+0
+   \       0x10   0xB1B0             CBZ.N    R0,??xTimerCreateTimerTask_0
+    245                  {
+    246                      #if ( configSUPPORT_STATIC_ALLOCATION == 1 )
+    247                          {
+    248                              StaticTask_t * pxTimerTaskTCBBuffer = NULL;
+   \       0x12   0x9405             STR      R4,[SP, #+20]
+    249                              StackType_t * pxTimerTaskStackBuffer = NULL;
+   \       0x14   0x9404             STR      R4,[SP, #+16]
+    250                              uint32_t ulTimerTaskStackSize;
+    251          
+    252                              vApplicationGetTimerTaskMemory( &pxTimerTaskTCBBuffer, &pxTimerTaskStackBuffer, &ulTimerTaskStackSize );
+   \       0x16   0xAA03             ADD      R2,SP,#+12
+   \       0x18   0xA904             ADD      R1,SP,#+16
+   \       0x1A   0xA805             ADD      R0,SP,#+20
+   \       0x1C   0x.... 0x....      BL       vApplicationGetTimerTaskMemory
+    253                              xTimerTaskHandle = xTaskCreateStatic( prvTimerTask,
+    254                                                                    configTIMER_SERVICE_TASK_NAME,
+    255                                                                    ulTimerTaskStackSize,
+    256                                                                    NULL,
+    257                                                                    ( ( UBaseType_t ) configTIMER_TASK_PRIORITY ) | portPRIVILEGE_BIT,
+    258                                                                    pxTimerTaskStackBuffer,
+    259                                                                    pxTimerTaskTCBBuffer );
+   \       0x20   0x9A05             LDR      R2,[SP, #+20]
+   \       0x22   0x9904             LDR      R1,[SP, #+16]
+   \       0x24   0x2028             MOVS     R0,#+40
+   \       0x26   0x9202             STR      R2,[SP, #+8]
+   \       0x28   0x9A03             LDR      R2,[SP, #+12]
+   \       0x2A   0x9101             STR      R1,[SP, #+4]
+   \       0x2C   0x9000             STR      R0,[SP, #+0]
+   \       0x2E   0x2300             MOVS     R3,#+0
+   \       0x30   0x.... 0x....      ADR.W    R1,?_1
+   \       0x34   0x.... 0x....      ADR.W    R0,prvTimerTask
+   \       0x38   0x.... 0x....      BL       xTaskCreateStatic
+    260          
+    261                              if( xTimerTaskHandle != NULL )
+   \       0x3C   0xB938             CBNZ.N   R0,??xTimerCreateTimerTask_1
+   \       0x3E   0x60E8             STR      R0,[R5, #+12]
+   \                     ??xTimerCreateTimerTask_0: (+1)
+   \       0x40   0xF44F 0x718D      MOV      R1,#+282
+   \       0x44   0x.... 0x....      BL       ?Subroutine2
+    262                              {
+    263                                  xReturn = pdPASS;
+    264                              }
+    265                          }
+    266                      #else /* if ( configSUPPORT_STATIC_ALLOCATION == 1 ) */
+    267                          {
+    268                              xReturn = xTaskCreate( prvTimerTask,
+    269                                                     configTIMER_SERVICE_TASK_NAME,
+    270                                                     configTIMER_TASK_STACK_DEPTH,
+    271                                                     NULL,
+    272                                                     ( ( UBaseType_t ) configTIMER_TASK_PRIORITY ) | portPRIVILEGE_BIT,
+    273                                                     &xTimerTaskHandle );
+    274                          }
+    275                      #endif /* configSUPPORT_STATIC_ALLOCATION */
+    276                  }
+    277                  else
+    278                  {
+    279                      mtCOVERAGE_TEST_MARKER();
+    280                  }
+    281          
+    282                  configASSERT( xReturn );
+    283                  return xReturn;
+   \                     ??CrossCallReturnLabel_12: (+1)
+   \       0x48   0x4620             MOV      R0,R4
+   \       0x4A   0xB007             ADD      SP,SP,#+28
+   \       0x4C   0xBD30             POP      {R4,R5,PC}
+   \                     ??xTimerCreateTimerTask_1: (+1)
+   \       0x4E   0x2401             MOVS     R4,#+1
+   \       0x50   0x60E8             STR      R0,[R5, #+12]
+   \       0x52   0xE7F9             B.N      ??CrossCallReturnLabel_12
+    284              }
+
+   \                                 In section .text, align 2, keep-with-next
+   \                     ?Subroutine2: (+1)
+   \        0x0   0x.... 0x....      LDR.W    R0,??DataTable12_1
+   \        0x4   0x.... 0x....      B.W      assertEFM
+    285          /*-----------------------------------------------------------*/
+    286          
+    287              #if ( configSUPPORT_DYNAMIC_ALLOCATION == 1 )
+    288          
+
+   \                                 In section .text, align 2, keep-with-next
+    289                  TimerHandle_t xTimerCreate( const char * const pcTimerName, /*lint !e971 Unqualified char types are allowed for strings and single characters only. */
+    290                                              const TickType_t xTimerPeriodInTicks,
+    291                                              const UBaseType_t uxAutoReload,
+    292                                              void * const pvTimerID,
+    293                                              TimerCallbackFunction_t pxCallbackFunction )
+    294                  {
+   \                     xTimerCreate: (+1)
+   \        0x0   0xE92D 0x41FC      PUSH     {R2-R8,LR}
+   \        0x4   0x4605             MOV      R5,R0
+   \        0x6   0x460E             MOV      R6,R1
+   \        0x8   0x4617             MOV      R7,R2
+   \        0xA   0x4698             MOV      R8,R3
+    295                      Timer_t * pxNewTimer;
+    296          
+    297                      pxNewTimer = ( Timer_t * ) pvPortMalloc( sizeof( Timer_t ) ); /*lint !e9087 !e9079 All values returned by pvPortMalloc() have at least the alignment required by the MCU's stack, and the first member of Timer_t is always a pointer to the timer's mame. */
+   \        0xC   0x202C             MOVS     R0,#+44
+   \        0xE   0x.... 0x....      BL       pvPortMalloc
+   \       0x12   0x0004             MOVS     R4,R0
+    298          
+    299                      if( pxNewTimer != NULL )
+   \       0x14   0xD005             BEQ.N    ??CrossCallReturnLabel_15
+    300                      {
+    301                          /* Status is thus far zero as the timer is not created statically
+    302                           * and has not been started.  The auto-reload bit may get set in
+    303                           * prvInitialiseNewTimer. */
+    304                          pxNewTimer->ucStatus = 0x00;
+   \       0x16   0x2100             MOVS     R1,#+0
+   \       0x18   0xF884 0x1028      STRB     R1,[R4, #+40]
+    305                          prvInitialiseNewTimer( pcTimerName, xTimerPeriodInTicks, uxAutoReload, pvTimerID, pxCallbackFunction, pxNewTimer );
+   \       0x1C   0x9808             LDR      R0,[SP, #+32]
+   \       0x1E   0x.... 0x....      BL       ?Subroutine3
+    306                      }
+    307          
+    308                      return pxNewTimer;
+   \                     ??CrossCallReturnLabel_15: (+1)
+   \       0x22   0x4620             MOV      R0,R4
+   \       0x24   0xE8BD 0x81F6      POP      {R1,R2,R4-R8,PC}
+    309                  }
+
+   \                                 In section .text, align 2, keep-with-next
+   \                     ?Subroutine3: (+1)
+   \        0x0   0x9401             STR      R4,[SP, #+4]
+   \        0x2   0x4643             MOV      R3,R8
+   \        0x4   0x9000             STR      R0,[SP, #+0]
+   \        0x6   0x463A             MOV      R2,R7
+   \        0x8   0x4631             MOV      R1,R6
+   \        0xA   0x4628             MOV      R0,R5
+   \        0xC   0x....             B.N      prvInitialiseNewTimer
+    310          
+    311              #endif /* configSUPPORT_DYNAMIC_ALLOCATION */
+    312          /*-----------------------------------------------------------*/
+    313          
+    314              #if ( configSUPPORT_STATIC_ALLOCATION == 1 )
+    315          
+
+   \                                 In section .text, align 2, keep-with-next
+    316                  TimerHandle_t xTimerCreateStatic( const char * const pcTimerName, /*lint !e971 Unqualified char types are allowed for strings and single characters only. */
+    317                                                    const TickType_t xTimerPeriodInTicks,
+    318                                                    const UBaseType_t uxAutoReload,
+    319                                                    void * const pvTimerID,
+    320                                                    TimerCallbackFunction_t pxCallbackFunction,
+    321                                                    StaticTimer_t * pxTimerBuffer )
+    322                  {
+   \                     xTimerCreateStatic: (+1)
+   \        0x0   0xE92D 0x43FE      PUSH     {R1-R9,LR}
+   \        0x4   0x4605             MOV      R5,R0
+    323                      Timer_t * pxNewTimer;
+    324          
+    325                      #if ( configASSERT_DEFINED == 1 )
+    326                          {
+    327                              /* Sanity check that the size of the structure used to declare a
+    328                               * variable of type StaticTimer_t equals the size of the real timer
+    329                               * structure. */
+    330                              volatile size_t xSize = sizeof( StaticTimer_t );
+   \        0x6   0x202C             MOVS     R0,#+44
+   \        0x8   0x4617             MOV      R7,R2
+   \        0xA   0x9000             STR      R0,[SP, #+0]
+    331                              configASSERT( xSize == sizeof( Timer_t ) );
+   \        0xC   0x9A00             LDR      R2,[SP, #+0]
+   \        0xE   0x460E             MOV      R6,R1
+   \       0x10   0x4698             MOV      R8,R3
+   \       0x12   0x.... 0x....      LDR.W    R9,??DataTable12_1
+   \       0x16   0x2A2C             CMP      R2,#+44
+   \       0x18   0xD004             BEQ.N    ??xTimerCreateStatic_0
+   \       0x1A   0xF240 0x114B      MOVW     R1,#+331
+   \       0x1E   0x4648             MOV      R0,R9
+   \       0x20   0x.... 0x....      BL       assertEFM
+   \                     ??xTimerCreateStatic_0: (+1)
+   \       0x24   0x9C0B             LDR      R4,[SP, #+44]
+    332                              ( void ) xSize; /* Keeps lint quiet when configASSERT() is not defined. */
+   \       0x26   0x9800             LDR      R0,[SP, #+0]
+    333                          }
+    334                      #endif /* configASSERT_DEFINED */
+    335          
+    336                      /* A pointer to a StaticTimer_t structure MUST be provided, use it. */
+    337                      configASSERT( pxTimerBuffer );
+   \       0x28   0xB924             CBNZ.N   R4,??xTimerCreateStatic_1
+   \       0x2A   0xF240 0x1151      MOVW     R1,#+337
+   \       0x2E   0x4648             MOV      R0,R9
+   \       0x30   0x.... 0x....      BL       assertEFM
+    338                      pxNewTimer = ( Timer_t * ) pxTimerBuffer; /*lint !e740 !e9087 StaticTimer_t is a pointer to a Timer_t, so guaranteed to be aligned and sized correctly (checked by an assert()), so this is safe. */
+    339          
+    340                      if( pxNewTimer != NULL )
+   \                     ??xTimerCreateStatic_1: (+1)
+   \       0x34   0xB12C             CBZ.N    R4,??CrossCallReturnLabel_14
+    341                      {
+    342                          /* Timers can be created statically or dynamically so note this
+    343                           * timer was created statically in case it is later deleted.  The
+    344                           * auto-reload bit may get set in prvInitialiseNewTimer(). */
+    345                          pxNewTimer->ucStatus = tmrSTATUS_IS_STATICALLY_ALLOCATED;
+   \       0x36   0x2102             MOVS     R1,#+2
+   \       0x38   0xF884 0x1028      STRB     R1,[R4, #+40]
+    346          
+    347                          prvInitialiseNewTimer( pcTimerName, xTimerPeriodInTicks, uxAutoReload, pvTimerID, pxCallbackFunction, pxNewTimer );
+   \       0x3C   0x980A             LDR      R0,[SP, #+40]
+   \       0x3E   0x.... 0x....      BL       ?Subroutine3
+    348                      }
+    349          
+    350                      return pxNewTimer;
+   \                     ??CrossCallReturnLabel_14: (+1)
+   \       0x42   0x4620             MOV      R0,R4
+   \       0x44   0xE8BD 0x83FE      POP      {R1-R9,PC}
+    351                  }
+    352          
+    353              #endif /* configSUPPORT_STATIC_ALLOCATION */
+    354          /*-----------------------------------------------------------*/
+    355          
+
+   \                                 In section .text, align 2, keep-with-next
+    356              static void prvInitialiseNewTimer( const char * const pcTimerName, /*lint !e971 Unqualified char types are allowed for strings and single characters only. */
+    357                                                 const TickType_t xTimerPeriodInTicks,
+    358                                                 const UBaseType_t uxAutoReload,
+    359                                                 void * const pvTimerID,
+    360                                                 TimerCallbackFunction_t pxCallbackFunction,
+    361                                                 Timer_t * pxNewTimer )
+    362              {
+   \                     prvInitialiseNewTimer: (+1)
+   \        0x0   0xE92D 0x43F8      PUSH     {R3-R9,LR}
+   \        0x4   0x4681             MOV      R9,R0
+   \        0x6   0x000C             MOVS     R4,R1
+   \        0x8   0x4615             MOV      R5,R2
+   \        0xA   0x4698             MOV      R8,R3
+    363                  /* 0 is not a valid value for xTimerPeriodInTicks. */
+    364                  configASSERT( ( xTimerPeriodInTicks > 0 ) );
+   \        0xC   0xD103             BNE.N    ??CrossCallReturnLabel_11
+   \        0xE   0xF44F 0x71B6      MOV      R1,#+364
+   \       0x12   0x.... 0x....      BL       ?Subroutine2
+   \                     ??CrossCallReturnLabel_11: (+1)
+   \       0x16   0x9E09             LDR      R6,[SP, #+36]
+    365          
+    366                  if( pxNewTimer != NULL )
+   \       0x18   0xB196             CBZ.N    R6,??prvInitialiseNewTimer_0
+   \       0x1A   0x9F08             LDR      R7,[SP, #+32]
+    367                  {
+    368                      /* Ensure the infrastructure used by the timer service task has been
+    369                       * created/initialised. */
+    370                      prvCheckForValidListAndQueue();
+   \       0x1C   0x.... 0x....      BL       prvCheckForValidListAndQueue
+    371          
+    372                      /* Initialise the timer structure members using the function
+    373                       * parameters. */
+    374                      pxNewTimer->pcTimerName = pcTimerName;
+   \       0x20   0xF8C6 0x9000      STR      R9,[R6, #+0]
+    375                      pxNewTimer->xTimerPeriodInTicks = xTimerPeriodInTicks;
+   \       0x24   0x61B4             STR      R4,[R6, #+24]
+    376                      pxNewTimer->pvTimerID = pvTimerID;
+   \       0x26   0xF8C6 0x801C      STR      R8,[R6, #+28]
+    377                      pxNewTimer->pxCallbackFunction = pxCallbackFunction;
+   \       0x2A   0x6237             STR      R7,[R6, #+32]
+    378                      vListInitialiseItem( &( pxNewTimer->xTimerListItem ) );
+   \       0x2C   0x1D30             ADDS     R0,R6,#+4
+   \       0x2E   0x.... 0x....      BL       vListInitialiseItem
+    379          
+    380                      if( uxAutoReload != pdFALSE )
+   \       0x32   0xB12D             CBZ.N    R5,??prvInitialiseNewTimer_0
+    381                      {
+    382                          pxNewTimer->ucStatus |= tmrSTATUS_IS_AUTORELOAD;
+   \       0x34   0xF896 0x0028      LDRB     R0,[R6, #+40]
+   \       0x38   0xF040 0x0004      ORR      R0,R0,#0x4
+   \       0x3C   0xF886 0x0028      STRB     R0,[R6, #+40]
+    383                      }
+    384          
+    385                      traceTIMER_CREATE( pxNewTimer );
+    386                  }
+    387              }
+   \                     ??prvInitialiseNewTimer_0: (+1)
+   \       0x40   0xE8BD 0x83F1      POP      {R0,R4-R9,PC}
+    388          /*-----------------------------------------------------------*/
+    389          
+
+   \                                 In section .text, align 2, keep-with-next
+    390              BaseType_t xTimerGenericCommand( TimerHandle_t xTimer,
+    391                                               const BaseType_t xCommandID,
+    392                                               const TickType_t xOptionalValue,
+    393                                               BaseType_t * const pxHigherPriorityTaskWoken,
+    394                                               const TickType_t xTicksToWait )
+    395              {
+   \                     xTimerGenericCommand: (+1)
+   \        0x0   0xE92D 0x43F8      PUSH     {R3-R9,LR}
+   \        0x4   0xB084             SUB      SP,SP,#+16
+   \        0x6   0x0004             MOVS     R4,R0
+   \        0x8   0x460F             MOV      R7,R1
+   \        0xA   0x4616             MOV      R6,R2
+   \        0xC   0x4698             MOV      R8,R3
+    396                  BaseType_t xReturn = pdFAIL;
+   \        0xE   0xF04F 0x0900      MOV      R9,#+0
+    397                  DaemonTaskMessage_t xMessage;
+    398          
+    399                  configASSERT( xTimer );
+   \       0x12   0xD103             BNE.N    ??CrossCallReturnLabel_10
+   \       0x14   0xF240 0x118F      MOVW     R1,#+399
+   \       0x18   0x.... 0x....      BL       ?Subroutine2
+    400          
+    401                  /* Send a message to the timer service task to perform a particular action
+    402                   * on a particular timer definition. */
+    403                  if( xTimerQueue != NULL )
+   \                     ??CrossCallReturnLabel_10: (+1)
+   \       0x1C   0x.... 0x....      LDR.W    R5,??DataTable12
+   \       0x20   0x68A8             LDR      R0,[R5, #+8]
+   \       0x22   0xB1C8             CBZ.N    R0,??xTimerGenericCommand_0
+    404                  {
+    405                      /* Send a command to the timer service task to start the xTimer timer. */
+    406                      xMessage.xMessageID = xCommandID;
+   \       0x24   0x9700             STR      R7,[SP, #+0]
+    407                      xMessage.u.xTimerParameters.xMessageValue = xOptionalValue;
+   \       0x26   0x9601             STR      R6,[SP, #+4]
+    408                      xMessage.u.xTimerParameters.pxTimer = xTimer;
+   \       0x28   0x9402             STR      R4,[SP, #+8]
+    409          
+    410                      if( xCommandID < tmrFIRST_FROM_ISR_COMMAND )
+   \       0x2A   0x2F06             CMP      R7,#+6
+   \       0x2C   0xDA0E             BGE.N    ??xTimerGenericCommand_1
+    411                      {
+    412                          if( xTaskGetSchedulerState() == taskSCHEDULER_RUNNING )
+   \       0x2E   0x.... 0x....      BL       xTaskGetSchedulerState
+   \       0x32   0x2802             CMP      R0,#+2
+   \       0x34   0xD103             BNE.N    ??xTimerGenericCommand_2
+   \       0x36   0x9A0C             LDR      R2,[SP, #+48]
+    413                          {
+    414                              xReturn = xQueueSendToBack( xTimerQueue, &xMessage, xTicksToWait );
+   \       0x38   0x68A8             LDR      R0,[R5, #+8]
+   \       0x3A   0x2300             MOVS     R3,#+0
+   \       0x3C   0xE002             B.N      ??xTimerGenericCommand_3
+    415                          }
+    416                          else
+    417                          {
+    418                              xReturn = xQueueSendToBack( xTimerQueue, &xMessage, tmrNO_DELAY );
+   \                     ??xTimerGenericCommand_2: (+1)
+   \       0x3E   0x68A8             LDR      R0,[R5, #+8]
+   \       0x40   0x2300             MOVS     R3,#+0
+   \       0x42   0x2200             MOVS     R2,#+0
+   \                     ??xTimerGenericCommand_3: (+1)
+   \       0x44   0x4669             MOV      R1,SP
+   \       0x46   0x.... 0x....      BL       xQueueGenericSend
+   \       0x4A   0xE004             B.N      ??xTimerGenericCommand_4
+    419                          }
+    420                      }
+    421                      else
+    422                      {
+    423                          xReturn = xQueueSendToBackFromISR( xTimerQueue, &xMessage, pxHigherPriorityTaskWoken );
+   \                     ??xTimerGenericCommand_1: (+1)
+   \       0x4C   0x2300             MOVS     R3,#+0
+   \       0x4E   0x4642             MOV      R2,R8
+   \       0x50   0x4669             MOV      R1,SP
+   \       0x52   0x.... 0x....      BL       xQueueGenericSendFromISR
+   \                     ??xTimerGenericCommand_4: (+1)
+   \       0x56   0x4681             MOV      R9,R0
+    424                      }
+    425          
+    426                      traceTIMER_COMMAND_SEND( xTimer, xCommandID, xOptionalValue, xReturn );
+    427                  }
+    428                  else
+    429                  {
+    430                      mtCOVERAGE_TEST_MARKER();
+    431                  }
+    432          
+    433                  return xReturn;
+   \                     ??xTimerGenericCommand_0: (+1)
+   \       0x58   0x4648             MOV      R0,R9
+   \       0x5A   0xB005             ADD      SP,SP,#+20
+   \       0x5C   0xE8BD 0x83F0      POP      {R4-R9,PC}
+    434              }
+    435          /*-----------------------------------------------------------*/
+    436          
+
+   \                                 In section .text, align 2, keep-with-next
+    437              TaskHandle_t xTimerGetTimerDaemonTaskHandle( void )
+    438              {
+   \                     xTimerGetTimerDaemonTaskHandle: (+1)
+   \        0x0   0xB510             PUSH     {R4,LR}
+    439                  /* If xTimerGetTimerDaemonTaskHandle() is called before the scheduler has been
+    440                   * started, then xTimerTaskHandle will be NULL. */
+    441                  configASSERT( ( xTimerTaskHandle != NULL ) );
+   \        0x2   0x.... 0x....      LDR.W    R4,??DataTable12
+   \        0x6   0x68E0             LDR      R0,[R4, #+12]
+   \        0x8   0xB918             CBNZ.N   R0,??CrossCallReturnLabel_9
+   \        0xA   0xF240 0x11B9      MOVW     R1,#+441
+   \        0xE   0x.... 0x....      BL       ?Subroutine2
+    442                  return xTimerTaskHandle;
+   \                     ??CrossCallReturnLabel_9: (+1)
+   \       0x12   0x68E0             LDR      R0,[R4, #+12]
+   \       0x14   0xBD10             POP      {R4,PC}
+    443              }
+    444          /*-----------------------------------------------------------*/
+    445          
+
+   \                                 In section .text, align 2, keep-with-next
+    446              TickType_t xTimerGetPeriod( TimerHandle_t xTimer )
+    447              {
+   \                     xTimerGetPeriod: (+1)
+   \        0x0   0xB510             PUSH     {R4,LR}
+   \        0x2   0x0004             MOVS     R4,R0
+    448                  Timer_t * pxTimer = xTimer;
+    449          
+    450                  configASSERT( xTimer );
+   \        0x4   0xD103             BNE.N    ??CrossCallReturnLabel_8
+   \        0x6   0xF44F 0x71E1      MOV      R1,#+450
+   \        0xA   0x.... 0x....      BL       ?Subroutine2
+    451                  return pxTimer->xTimerPeriodInTicks;
+   \                     ??CrossCallReturnLabel_8: (+1)
+   \        0xE   0x69A0             LDR      R0,[R4, #+24]
+   \       0x10   0xBD10             POP      {R4,PC}
+    452              }
+    453          /*-----------------------------------------------------------*/
+    454          
+
+   \                                 In section .text, align 2, keep-with-next
+    455              void vTimerSetReloadMode( TimerHandle_t xTimer,
+    456                                        const UBaseType_t uxAutoReload )
+    457              {
+   \                     vTimerSetReloadMode: (+1)
+   \        0x0   0xB538             PUSH     {R3-R5,LR}
+   \        0x2   0x0004             MOVS     R4,R0
+   \        0x4   0x460D             MOV      R5,R1
+    458                  Timer_t * pxTimer = xTimer;
+    459          
+    460                  configASSERT( xTimer );
+   \        0x6   0xD103             BNE.N    ??CrossCallReturnLabel_7
+   \        0x8   0xF44F 0x71E6      MOV      R1,#+460
+   \        0xC   0x.... 0x....      BL       ?Subroutine2
+    461                  taskENTER_CRITICAL();
+   \                     ??CrossCallReturnLabel_7: (+1)
+   \       0x10   0x.... 0x....      BL       vPortEnterCritical
+    462                  {
+    463                      if( uxAutoReload != pdFALSE )
+   \       0x14   0xF894 0x0028      LDRB     R0,[R4, #+40]
+   \       0x18   0x2D00             CMP      R5,#+0
+   \       0x1A   0xBF14             ITE      NE
+   \       0x1C   0xF040 0x0004      ORRNE    R0,R0,#0x4
+   \       0x20   0xF000 0x00FB      ANDEQ    R0,R0,#0xFB
+    464                      {
+    465                          pxTimer->ucStatus |= tmrSTATUS_IS_AUTORELOAD;
+    466                      }
+    467                      else
+    468                      {
+    469                          pxTimer->ucStatus &= ~tmrSTATUS_IS_AUTORELOAD;
+   \       0x24   0xF884 0x0028      STRB     R0,[R4, #+40]
+    470                      }
+    471                  }
+    472                  taskEXIT_CRITICAL();
+   \       0x28   0x....             B.N      ?Subroutine1
+    473              }
+
+   \                                 In section .text, align 2, keep-with-next
+   \                     ?Subroutine1: (+1)
+   \        0x0   0xE8BD 0x4031      POP      {R0,R4,R5,LR}
+   \        0x4   0x.... 0x....      B.W      vPortExitCritical
+    474          /*-----------------------------------------------------------*/
+    475          
+
+   \                                 In section .text, align 2, keep-with-next
+    476              UBaseType_t uxTimerGetReloadMode( TimerHandle_t xTimer )
+    477              {
+   \                     uxTimerGetReloadMode: (+1)
+   \        0x0   0xB510             PUSH     {R4,LR}
+   \        0x2   0x0004             MOVS     R4,R0
+    478                  Timer_t * pxTimer = xTimer;
+    479                  UBaseType_t uxReturn;
+    480          
+    481                  configASSERT( xTimer );
+   \        0x4   0xD103             BNE.N    ??CrossCallReturnLabel_6
+   \        0x6   0xF240 0x11E1      MOVW     R1,#+481
+   \        0xA   0x.... 0x....      BL       ?Subroutine2
+    482                  taskENTER_CRITICAL();
+   \                     ??CrossCallReturnLabel_6: (+1)
+   \        0xE   0x.... 0x....      BL       vPortEnterCritical
+    483                  {
+    484                      if( ( pxTimer->ucStatus & tmrSTATUS_IS_AUTORELOAD ) == 0 )
+    485                      {
+    486                          /* Not an auto-reload timer. */
+    487                          uxReturn = ( UBaseType_t ) pdFALSE;
+   \       0x12   0xF894 0x4028      LDRB     R4,[R4, #+40]
+    488                      }
+    489                      else
+    490                      {
+    491                          /* Is an auto-reload timer. */
+    492                          uxReturn = ( UBaseType_t ) pdTRUE;
+    493                      }
+    494                  }
+    495                  taskEXIT_CRITICAL();
+   \       0x16   0x.... 0x....      BL       vPortExitCritical
+   \       0x1A   0x08A4             LSRS     R4,R4,#+2
+   \       0x1C   0x....             B.N      ?Subroutine0
+    496          
+    497                  return uxReturn;
+    498              }
+
+   \                                 In section .text, align 2, keep-with-next
+   \                     ?Subroutine0: (+1)
+   \        0x0   0xF004 0x0401      AND      R4,R4,#0x1
+   \        0x4   0x4620             MOV      R0,R4
+   \        0x6   0xBD10             POP      {R4,PC}
+    499          /*-----------------------------------------------------------*/
+    500          
+
+   \                                 In section .text, align 2, keep-with-next
+    501              TickType_t xTimerGetExpiryTime( TimerHandle_t xTimer )
+    502              {
+   \                     xTimerGetExpiryTime: (+1)
+   \        0x0   0xB510             PUSH     {R4,LR}
+   \        0x2   0x0004             MOVS     R4,R0
+    503                  Timer_t * pxTimer = xTimer;
+    504                  TickType_t xReturn;
+    505          
+    506                  configASSERT( xTimer );
+   \        0x4   0xD103             BNE.N    ??CrossCallReturnLabel_5
+   \        0x6   0xF44F 0x71FD      MOV      R1,#+506
+   \        0xA   0x.... 0x....      BL       ?Subroutine2
+    507                  xReturn = listGET_LIST_ITEM_VALUE( &( pxTimer->xTimerListItem ) );
+    508                  return xReturn;
+   \                     ??CrossCallReturnLabel_5: (+1)
+   \        0xE   0x6860             LDR      R0,[R4, #+4]
+   \       0x10   0xBD10             POP      {R4,PC}
+    509              }
+    510          /*-----------------------------------------------------------*/
+    511          
+
+   \                                 In section .text, align 2, keep-with-next
+    512              const char * pcTimerGetName( TimerHandle_t xTimer ) /*lint !e971 Unqualified char types are allowed for strings and single characters only. */
+    513              {
+   \                     pcTimerGetName: (+1)
+   \        0x0   0xB510             PUSH     {R4,LR}
+   \        0x2   0x0004             MOVS     R4,R0
+    514                  Timer_t * pxTimer = xTimer;
+    515          
+    516                  configASSERT( xTimer );
+   \        0x4   0xD103             BNE.N    ??CrossCallReturnLabel_4
+   \        0x6   0xF44F 0x7101      MOV      R1,#+516
+   \        0xA   0x.... 0x....      BL       ?Subroutine2
+    517                  return pxTimer->pcTimerName;
+   \                     ??CrossCallReturnLabel_4: (+1)
+   \        0xE   0x6820             LDR      R0,[R4, #+0]
+   \       0x10   0xBD10             POP      {R4,PC}
+    518              }
+    519          /*-----------------------------------------------------------*/
+    520          
+    521              static void prvProcessExpiredTimer( const TickType_t xNextExpireTime,
+    522                                                  const TickType_t xTimeNow )
+    523              {
+    524                  BaseType_t xResult;
+    525                  Timer_t * const pxTimer = ( Timer_t * ) listGET_OWNER_OF_HEAD_ENTRY( pxCurrentTimerList ); /*lint !e9087 !e9079 void * is used as this macro is used with tasks and co-routines too.  Alignment is known to be fine as the type of the pointer stored and retrieved is the same. */
+    526          
+    527                  /* Remove the timer from the list of active timers.  A check has already
+    528                   * been performed to ensure the list is not empty. */
+    529          
+    530                  ( void ) uxListRemove( &( pxTimer->xTimerListItem ) );
+    531                  traceTIMER_EXPIRED( pxTimer );
+    532          
+    533                  /* If the timer is an auto-reload timer then calculate the next
+    534                   * expiry time and re-insert the timer in the list of active timers. */
+    535                  if( ( pxTimer->ucStatus & tmrSTATUS_IS_AUTORELOAD ) != 0 )
+    536                  {
+    537                      /* The timer is inserted into a list using a time relative to anything
+    538                       * other than the current time.  It will therefore be inserted into the
+    539                       * correct list relative to the time this task thinks it is now. */
+    540                      if( prvInsertTimerInActiveList( pxTimer, ( xNextExpireTime + pxTimer->xTimerPeriodInTicks ), xTimeNow, xNextExpireTime ) != pdFALSE )
+    541                      {
+    542                          /* The timer expired before it was added to the active timer
+    543                           * list.  Reload it now.  */
+    544                          xResult = xTimerGenericCommand( pxTimer, tmrCOMMAND_START_DONT_TRACE, xNextExpireTime, NULL, tmrNO_DELAY );
+    545                          configASSERT( xResult );
+    546                          ( void ) xResult;
+    547                      }
+    548                      else
+    549                      {
+    550                          mtCOVERAGE_TEST_MARKER();
+    551                      }
+    552                  }
+    553                  else
+    554                  {
+    555                      pxTimer->ucStatus &= ~tmrSTATUS_IS_ACTIVE;
+    556                      mtCOVERAGE_TEST_MARKER();
+    557                  }
+    558          
+    559                  /* Call the timer callback. */
+    560                  pxTimer->pxCallbackFunction( ( TimerHandle_t ) pxTimer );
+    561              }
+    562          /*-----------------------------------------------------------*/
+    563          
+
+   \                                 In section .text, align 4, keep-with-next
+    564              static portTASK_FUNCTION( prvTimerTask, pvParameters )
+    565              {
+   \                     prvTimerTask: (+1)
+   \        0x0   0xE92D 0x41F0      PUSH     {R4-R8,LR}
+   \        0x4   0xB086             SUB      SP,SP,#+24
+    566                  TickType_t xNextExpireTime;
+    567                  BaseType_t xListWasEmpty;
+    568          
+    569                  /* Just to avoid compiler warnings. */
+    570                  ( void ) pvParameters;
+   \        0x6   0x.... 0x....      LDR.W    R8,??DataTable12_1
+   \        0xA   0x.... 0x....      LDR.W    R5,??DataTable12
+    571          
+    572                  #if ( configUSE_DAEMON_TASK_STARTUP_HOOK == 1 )
+    573                      {
+    574                          extern void vApplicationDaemonTaskStartupHook( void );
+    575          
+    576                          /* Allow the application writer to execute some code in the context of
+    577                           * this task at the point the task starts executing.  This is useful if the
+    578                           * application includes initialisation code that would benefit from
+    579                           * executing after the scheduler has been started. */
+    580                          vApplicationDaemonTaskStartupHook();
+    581                      }
+    582                  #endif /* configUSE_DAEMON_TASK_STARTUP_HOOK */
+    583          
+    584                  for( ; ; )
+    585                  {
+    586                      /* Query the timers list to see if it contains any timers, and if so,
+    587                       * obtain the time at which the next timer will expire. */
+    588                      xNextExpireTime = prvGetNextExpireTime( &xListWasEmpty );
+   \                     ??prvTimerTask_1: (+1)
+   \        0xE   0x6829             LDR      R1,[R5, #+0]
+   \       0x10   0x6808             LDR      R0,[R1, #+0]
+   \       0x12   0xB910             CBNZ.N   R0,??prvTimerTask_2
+   \       0x14   0x2401             MOVS     R4,#+1
+   \       0x16   0x2700             MOVS     R7,#+0
+   \       0x18   0xE002             B.N      ??prvTimerTask_3
+   \                     ??prvTimerTask_2: (+1)
+   \       0x1A   0x68C8             LDR      R0,[R1, #+12]
+   \       0x1C   0x2400             MOVS     R4,#+0
+   \       0x1E   0x6807             LDR      R7,[R0, #+0]
+    589          
+    590                      /* If a timer has expired, process it.  Otherwise, block this task
+    591                       * until either a timer does expire, or a command is received. */
+    592                      prvProcessTimerOrBlockTask( xNextExpireTime, xListWasEmpty );
+   \                     ??prvTimerTask_3: (+1)
+   \       0x20   0x.... 0x....      BL       vTaskSuspendAll
+   \       0x24   0xA801             ADD      R0,SP,#+4
+   \       0x26   0x.... 0x....      BL       prvSampleTimeNow
+   \       0x2A   0x4606             MOV      R6,R0
+   \       0x2C   0x9801             LDR      R0,[SP, #+4]
+   \       0x2E   0x2800             CMP      R0,#+0
+   \       0x30   0xD13D             BNE.N    ??prvTimerTask_4
+   \       0x32   0xBB64             CBNZ.N   R4,??prvTimerTask_5
+   \       0x34   0x42BE             CMP      R6,R7
+   \       0x36   0xD32F             BCC.N    ??prvTimerTask_6
+   \       0x38   0x.... 0x....      BL       xTaskResumeAll
+   \       0x3C   0x6829             LDR      R1,[R5, #+0]
+   \       0x3E   0x68C8             LDR      R0,[R1, #+12]
+   \       0x40   0x68C4             LDR      R4,[R0, #+12]
+   \       0x42   0x1D20             ADDS     R0,R4,#+4
+   \       0x44   0x.... 0x....      BL       uxListRemove
+   \       0x48   0xF894 0x1028      LDRB     R1,[R4, #+40]
+   \       0x4C   0x0748             LSLS     R0,R1,#+29
+   \       0x4E   0xD516             BPL.N    ??prvTimerTask_7
+   \       0x50   0x69A1             LDR      R1,[R4, #+24]
+   \       0x52   0x463B             MOV      R3,R7
+   \       0x54   0x4632             MOV      R2,R6
+   \       0x56   0x19C9             ADDS     R1,R1,R7
+   \       0x58   0x4620             MOV      R0,R4
+   \       0x5A   0x.... 0x....      BL       prvInsertTimerInActiveList
+   \       0x5E   0xB190             CBZ.N    R0,??prvTimerTask_8
+   \       0x60   0x2000             MOVS     R0,#+0
+   \       0x62   0x9000             STR      R0,[SP, #+0]
+   \       0x64   0x2300             MOVS     R3,#+0
+   \       0x66   0x463A             MOV      R2,R7
+   \       0x68   0x2100             MOVS     R1,#+0
+   \       0x6A   0x4620             MOV      R0,R4
+   \       0x6C   0x.... 0x....      BL       xTimerGenericCommand
+   \       0x70   0xB948             CBNZ.N   R0,??prvTimerTask_8
+   \       0x72   0xF240 0x2121      MOVW     R1,#+545
+   \       0x76   0x4640             MOV      R0,R8
+   \       0x78   0x.... 0x....      BL       assertEFM
+   \       0x7C   0xE003             B.N      ??prvTimerTask_8
+   \                     ??prvTimerTask_7: (+1)
+   \       0x7E   0xF001 0x01FE      AND      R1,R1,#0xFE
+   \       0x82   0xF884 0x1028      STRB     R1,[R4, #+40]
+   \                     ??prvTimerTask_8: (+1)
+   \       0x86   0x6A21             LDR      R1,[R4, #+32]
+   \       0x88   0x4620             MOV      R0,R4
+   \       0x8A   0x4788             BLX      R1
+   \       0x8C   0xE019             B.N      ??prvTimerTask_9
+   \                     ??prvTimerTask_5: (+1)
+   \       0x8E   0x686A             LDR      R2,[R5, #+4]
+   \       0x90   0x6810             LDR      R0,[R2, #+0]
+   \       0x92   0x1E44             SUBS     R4,R0,#+1
+   \       0x94   0x41A4             SBCS     R4,R4,R4
+   \       0x96   0x0FE4             LSRS     R4,R4,#+31
+   \                     ??prvTimerTask_6: (+1)
+   \       0x98   0x68A8             LDR      R0,[R5, #+8]
+   \       0x9A   0x4622             MOV      R2,R4
+   \       0x9C   0x1BB9             SUBS     R1,R7,R6
+   \       0x9E   0x.... 0x....      BL       vQueueWaitForMessageRestricted
+   \       0xA2   0x.... 0x....      BL       xTaskResumeAll
+   \       0xA6   0xB960             CBNZ.N   R0,??prvTimerTask_9
+   \       0xA8   0x.... 0x....      BL       vPortYield
+   \       0xAC   0xE009             B.N      ??prvTimerTask_9
+   \                     ??prvTimerTask_4: (+1)
+   \       0xAE   0x.... 0x....      BL       xTaskResumeAll
+    593          
+    594                      /* Empty the command queue. */
+    595                      prvProcessReceivedCommands();
+   \       0xB2   0xE006             B.N      ??prvTimerTask_9
+   \                     ??prvTimerTask_10: (+1)
+   \       0xB4   0xF894 0x0028      LDRB     R0,[R4, #+40]
+   \       0xB8   0x0781             LSLS     R1,R0,#+30
+   \       0xBA   0xD43F             BMI.N    ??prvTimerTask_11
+   \       0xBC   0x4620             MOV      R0,R4
+   \       0xBE   0x.... 0x....      BL       vPortFree
+   \                     ??prvTimerTask_9: (+1)
+   \       0xC2   0x68A8             LDR      R0,[R5, #+8]
+   \       0xC4   0x2200             MOVS     R2,#+0
+   \       0xC6   0xA902             ADD      R1,SP,#+8
+   \       0xC8   0x.... 0x....      BL       xQueueReceive
+   \       0xCC   0x2800             CMP      R0,#+0
+   \       0xCE   0xD09E             BEQ.N    ??prvTimerTask_1
+   \       0xD0   0x9802             LDR      R0,[SP, #+8]
+   \       0xD2   0x2800             CMP      R0,#+0
+   \       0xD4   0xD503             BPL.N    ??prvTimerTask_12
+   \       0xD6   0x9905             LDR      R1,[SP, #+20]
+   \       0xD8   0x9804             LDR      R0,[SP, #+16]
+   \       0xDA   0x9A03             LDR      R2,[SP, #+12]
+   \       0xDC   0x4790             BLX      R2
+   \                     ??prvTimerTask_12: (+1)
+   \       0xDE   0x9802             LDR      R0,[SP, #+8]
+   \       0xE0   0x2800             CMP      R0,#+0
+   \       0xE2   0xD4EE             BMI.N    ??prvTimerTask_9
+   \       0xE4   0x9C04             LDR      R4,[SP, #+16]
+   \       0xE6   0x6960             LDR      R0,[R4, #+20]
+   \       0xE8   0xB110             CBZ.N    R0,??prvTimerTask_13
+   \       0xEA   0x1D20             ADDS     R0,R4,#+4
+   \       0xEC   0x.... 0x....      BL       uxListRemove
+   \                     ??prvTimerTask_13: (+1)
+   \       0xF0   0xA801             ADD      R0,SP,#+4
+   \       0xF2   0x.... 0x....      BL       prvSampleTimeNow
+   \       0xF6   0x4607             MOV      R7,R0
+   \       0xF8   0x9802             LDR      R0,[SP, #+8]
+   \       0xFA   0x2809             CMP      R0,#+9
+   \       0xFC   0xD8E1             BHI.N    ??prvTimerTask_9
+   \       0xFE   0xE8DF 0xF000      TBB      [PC, R0]
+   \                     ??prvTimerTask_0:
+   \      0x102   0x24 0x24          DC8      0x24,0x24,0x24,0x1D
+   \              0x24 0x1D
+   \      0x106   0x07 0x06          DC8      0x7,0x6,0x24,0x24
+   \              0x24 0x24
+   \      0x10A   0x1D 0x07          DC8      0x1D,0x7
+   \                     ??prvTimerTask_14: (+1)
+   \      0x10C   0xE7D9             B.N      ??prvTimerTask_9
+   \                     ??prvTimerTask_15: (+1)
+   \      0x10E   0xE7D1             B.N      ??prvTimerTask_10
+   \                     ??prvTimerTask_16: (+1)
+   \      0x110   0xF894 0x1028      LDRB     R1,[R4, #+40]
+   \      0x114   0xF041 0x0101      ORR      R1,R1,#0x1
+   \      0x118   0xF884 0x1028      STRB     R1,[R4, #+40]
+   \      0x11C   0x9803             LDR      R0,[SP, #+12]
+   \      0x11E   0x61A0             STR      R0,[R4, #+24]
+   \      0x120   0xB920             CBNZ.N   R0,??prvTimerTask_17
+   \      0x122   0xF44F 0x7157      MOV      R1,#+860
+   \      0x126   0x4640             MOV      R0,R8
+   \      0x128   0x.... 0x....      BL       assertEFM
+   \                     ??prvTimerTask_17: (+1)
+   \      0x12C   0x69A0             LDR      R0,[R4, #+24]
+   \      0x12E   0x463B             MOV      R3,R7
+   \      0x130   0x463A             MOV      R2,R7
+   \      0x132   0x19C1             ADDS     R1,R0,R7
+   \      0x134   0x4620             MOV      R0,R4
+   \      0x136   0x.... 0x....      BL       prvInsertTimerInActiveList
+   \      0x13A   0xE7C2             B.N      ??prvTimerTask_9
+   \                     ??prvTimerTask_11: (+1)
+   \      0x13C   0xF894 0x0028      LDRB     R0,[R4, #+40]
+   \      0x140   0xF000 0x00FE      AND      R0,R0,#0xFE
+   \      0x144   0xF884 0x0028      STRB     R0,[R4, #+40]
+   \      0x148   0xE7BB             B.N      ??prvTimerTask_9
+   \                     ??prvTimerTask_18: (+1)
+   \      0x14A   0xF894 0x0028      LDRB     R0,[R4, #+40]
+   \      0x14E   0x463A             MOV      R2,R7
+   \      0x150   0xF040 0x0001      ORR      R0,R0,#0x1
+   \      0x154   0xF884 0x0028      STRB     R0,[R4, #+40]
+   \      0x158   0x9903             LDR      R1,[SP, #+12]
+   \      0x15A   0x69A0             LDR      R0,[R4, #+24]
+   \      0x15C   0x460B             MOV      R3,R1
+   \      0x15E   0x1841             ADDS     R1,R0,R1
+   \      0x160   0x4620             MOV      R0,R4
+   \      0x162   0x.... 0x....      BL       prvInsertTimerInActiveList
+   \      0x166   0x2800             CMP      R0,#+0
+   \      0x168   0xD0AB             BEQ.N    ??prvTimerTask_9
+   \      0x16A   0x6A21             LDR      R1,[R4, #+32]
+   \      0x16C   0x4620             MOV      R0,R4
+   \      0x16E   0x4788             BLX      R1
+   \      0x170   0xF894 0x0028      LDRB     R0,[R4, #+40]
+   \      0x174   0x0741             LSLS     R1,R0,#+29
+   \      0x176   0xD5A4             BPL.N    ??prvTimerTask_9
+   \      0x178   0x2000             MOVS     R0,#+0
+   \      0x17A   0x9000             STR      R0,[SP, #+0]
+   \      0x17C   0x9A03             LDR      R2,[SP, #+12]
+   \      0x17E   0x69A0             LDR      R0,[R4, #+24]
+   \      0x180   0x2300             MOVS     R3,#+0
+   \      0x182   0x2100             MOVS     R1,#+0
+   \      0x184   0x1882             ADDS     R2,R0,R2
+   \      0x186   0x4620             MOV      R0,R4
+   \      0x188   0x.... 0x....      BL       xTimerGenericCommand
+   \      0x18C   0x2800             CMP      R0,#+0
+   \      0x18E   0xD198             BNE.N    ??prvTimerTask_9
+   \      0x190   0xF240 0x3143      MOVW     R1,#+835
+   \      0x194   0x4640             MOV      R0,R8
+   \      0x196   0x.... 0x....      BL       assertEFM
+   \      0x19A   0xE792             B.N      ??prvTimerTask_9
+    596                  }
+    597              }
+    598          /*-----------------------------------------------------------*/
+    599          
+    600              static void prvProcessTimerOrBlockTask( const TickType_t xNextExpireTime,
+    601                                                      BaseType_t xListWasEmpty )
+    602              {
+    603                  TickType_t xTimeNow;
+    604                  BaseType_t xTimerListsWereSwitched;
+    605          
+    606                  vTaskSuspendAll();
+    607                  {
+    608                      /* Obtain the time now to make an assessment as to whether the timer
+    609                       * has expired or not.  If obtaining the time causes the lists to switch
+    610                       * then don't process this timer as any timers that remained in the list
+    611                       * when the lists were switched will have been processed within the
+    612                       * prvSampleTimeNow() function. */
+    613                      xTimeNow = prvSampleTimeNow( &xTimerListsWereSwitched );
+    614          
+    615                      if( xTimerListsWereSwitched == pdFALSE )
+    616                      {
+    617                          /* The tick count has not overflowed, has the timer expired? */
+    618                          if( ( xListWasEmpty == pdFALSE ) && ( xNextExpireTime <= xTimeNow ) )
+    619                          {
+    620                              ( void ) xTaskResumeAll();
+    621                              prvProcessExpiredTimer( xNextExpireTime, xTimeNow );
+    622                          }
+    623                          else
+    624                          {
+    625                              /* The tick count has not overflowed, and the next expire
+    626                               * time has not been reached yet.  This task should therefore
+    627                               * block to wait for the next expire time or a command to be
+    628                               * received - whichever comes first.  The following line cannot
+    629                               * be reached unless xNextExpireTime > xTimeNow, except in the
+    630                               * case when the current timer list is empty. */
+    631                              if( xListWasEmpty != pdFALSE )
+    632                              {
+    633                                  /* The current timer list is empty - is the overflow list
+    634                                   * also empty? */
+    635                                  xListWasEmpty = listLIST_IS_EMPTY( pxOverflowTimerList );
+    636                              }
+    637          
+    638                              vQueueWaitForMessageRestricted( xTimerQueue, ( xNextExpireTime - xTimeNow ), xListWasEmpty );
+    639          
+    640                              if( xTaskResumeAll() == pdFALSE )
+    641                              {
+    642                                  /* Yield to wait for either a command to arrive, or the
+    643                                   * block time to expire.  If a command arrived between the
+    644                                   * critical section being exited and this yield then the yield
+    645                                   * will not cause the task to block. */
+    646                                  portYIELD_WITHIN_API();
+    647                              }
+    648                              else
+    649                              {
+    650                                  mtCOVERAGE_TEST_MARKER();
+    651                              }
+    652                          }
+    653                      }
+    654                      else
+    655                      {
+    656                          ( void ) xTaskResumeAll();
+    657                      }
+    658                  }
+    659              }
+    660          /*-----------------------------------------------------------*/
+    661          
+    662              static TickType_t prvGetNextExpireTime( BaseType_t * const pxListWasEmpty )
+    663              {
+    664                  TickType_t xNextExpireTime;
+    665          
+    666                  /* Timers are listed in expiry time order, with the head of the list
+    667                   * referencing the task that will expire first.  Obtain the time at which
+    668                   * the timer with the nearest expiry time will expire.  If there are no
+    669                   * active timers then just set the next expire time to 0.  That will cause
+    670                   * this task to unblock when the tick count overflows, at which point the
+    671                   * timer lists will be switched and the next expiry time can be
+    672                   * re-assessed.  */
+    673                  *pxListWasEmpty = listLIST_IS_EMPTY( pxCurrentTimerList );
+    674          
+    675                  if( *pxListWasEmpty == pdFALSE )
+    676                  {
+    677                      xNextExpireTime = listGET_ITEM_VALUE_OF_HEAD_ENTRY( pxCurrentTimerList );
+    678                  }
+    679                  else
+    680                  {
+    681                      /* Ensure the task unblocks when the tick count rolls over. */
+    682                      xNextExpireTime = ( TickType_t ) 0U;
+    683                  }
+    684          
+    685                  return xNextExpireTime;
+    686              }
+    687          /*-----------------------------------------------------------*/
+    688          
+
+   \                                 In section .text, align 2, keep-with-next
+    689              static TickType_t prvSampleTimeNow( BaseType_t * const pxTimerListsWereSwitched )
+    690              {
+   \                     prvSampleTimeNow: (+1)
+   \        0x0   0xE92D 0x41FC      PUSH     {R2-R8,LR}
+   \        0x4   0x4604             MOV      R4,R0
+    691                  TickType_t xTimeNow;
+    692                  PRIVILEGED_DATA static TickType_t xLastTime = ( TickType_t ) 0U; /*lint !e956 Variable is only accessible to one task. */
+    693          
+    694                  xTimeNow = xTaskGetTickCount();
+   \        0x6   0x.... 0x....      BL       xTaskGetTickCount
+   \        0xA   0x4605             MOV      R5,R0
+    695          
+    696                  if( xTimeNow < xLastTime )
+   \        0xC   0x....             LDR.N    R6,??DataTable12
+   \        0xE   0x6930             LDR      R0,[R6, #+16]
+   \       0x10   0x4285             CMP      R5,R0
+   \       0x12   0xD30B             BCC.N    ??prvSampleTimeNow_0
+    697                  {
+    698                      prvSwitchTimerLists();
+    699                      *pxTimerListsWereSwitched = pdTRUE;
+    700                  }
+    701                  else
+    702                  {
+    703                      *pxTimerListsWereSwitched = pdFALSE;
+   \       0x14   0x2000             MOVS     R0,#+0
+    704                  }
+    705          
+    706                  xLastTime = xTimeNow;
+   \                     ??prvSampleTimeNow_1: (+1)
+   \       0x16   0x6135             STR      R5,[R6, #+16]
+    707          
+    708                  return xTimeNow;
+   \       0x18   0x6020             STR      R0,[R4, #+0]
+   \       0x1A   0x4628             MOV      R0,R5
+   \       0x1C   0xE8BD 0x81F6      POP      {R1,R2,R4-R8,PC}
+   \                     ??prvSampleTimeNow_2: (+1)
+   \       0x20   0x6078             STR      R0,[R7, #+4]
+   \       0x22   0x613F             STR      R7,[R7, #+16]
+   \       0x24   0x6830             LDR      R0,[R6, #+0]
+   \       0x26   0x1D39             ADDS     R1,R7,#+4
+   \       0x28   0x.... 0x....      BL       vListInsert
+   \                     ??prvSampleTimeNow_0: (+1)
+   \       0x2C   0x6831             LDR      R1,[R6, #+0]
+   \       0x2E   0x6808             LDR      R0,[R1, #+0]
+   \       0x30   0xB300             CBZ.N    R0,??prvSampleTimeNow_3
+   \       0x32   0x68C8             LDR      R0,[R1, #+12]
+   \       0x34   0x68C7             LDR      R7,[R0, #+12]
+   \       0x36   0xF8D0 0x8000      LDR      R8,[R0, #+0]
+   \       0x3A   0x1D38             ADDS     R0,R7,#+4
+   \       0x3C   0x.... 0x....      BL       uxListRemove
+   \       0x40   0x6A39             LDR      R1,[R7, #+32]
+   \       0x42   0x4638             MOV      R0,R7
+   \       0x44   0x4788             BLX      R1
+   \       0x46   0xF897 0x2028      LDRB     R2,[R7, #+40]
+   \       0x4A   0x0750             LSLS     R0,R2,#+29
+   \       0x4C   0xD5EE             BPL.N    ??prvSampleTimeNow_0
+   \       0x4E   0x69B8             LDR      R0,[R7, #+24]
+   \       0x50   0x4440             ADD      R0,R0,R8
+   \       0x52   0x4580             CMP      R8,R0
+   \       0x54   0xD3E4             BCC.N    ??prvSampleTimeNow_2
+   \       0x56   0x2000             MOVS     R0,#+0
+   \       0x58   0x9000             STR      R0,[SP, #+0]
+   \       0x5A   0x2300             MOVS     R3,#+0
+   \       0x5C   0x4642             MOV      R2,R8
+   \       0x5E   0x2100             MOVS     R1,#+0
+   \       0x60   0x4638             MOV      R0,R7
+   \       0x62   0x.... 0x....      BL       xTimerGenericCommand
+   \       0x66   0x2800             CMP      R0,#+0
+   \       0x68   0xD1E0             BNE.N    ??prvSampleTimeNow_0
+   \       0x6A   0xF240 0x31B6      MOVW     R1,#+950
+   \       0x6E   0x.... 0x....      BL       ?Subroutine2
+   \                     ??CrossCallReturnLabel_13: (+1)
+   \       0x72   0xE7DB             B.N      ??prvSampleTimeNow_0
+   \                     ??prvSampleTimeNow_3: (+1)
+   \       0x74   0x6870             LDR      R0,[R6, #+4]
+   \       0x76   0x6071             STR      R1,[R6, #+4]
+   \       0x78   0x6030             STR      R0,[R6, #+0]
+   \       0x7A   0x2001             MOVS     R0,#+1
+   \       0x7C   0xE7CB             B.N      ??prvSampleTimeNow_1
+    709              }
+    710          /*-----------------------------------------------------------*/
+    711          
+
+   \                                 In section .text, align 2, keep-with-next
+    712              static BaseType_t prvInsertTimerInActiveList( Timer_t * const pxTimer,
+    713                                                            const TickType_t xNextExpiryTime,
+    714                                                            const TickType_t xTimeNow,
+    715                                                            const TickType_t xCommandTime )
+    716              {
+   \                     prvInsertTimerInActiveList: (+1)
+   \        0x0   0xB538             PUSH     {R3-R5,LR}
+    717                  BaseType_t xProcessTimerNow = pdFALSE;
+   \        0x2   0x2400             MOVS     R4,#+0
+    718          
+    719                  listSET_LIST_ITEM_VALUE( &( pxTimer->xTimerListItem ), xNextExpiryTime );
+   \        0x4   0x6041             STR      R1,[R0, #+4]
+    720                  listSET_LIST_ITEM_OWNER( &( pxTimer->xTimerListItem ), pxTimer );
+   \        0x6   0x6100             STR      R0,[R0, #+16]
+    721          
+    722                  if( xNextExpiryTime <= xTimeNow )
+   \        0x8   0x....             LDR.N    R5,??DataTable12
+   \        0xA   0x428A             CMP      R2,R1
+   \        0xC   0xD306             BCC.N    ??prvInsertTimerInActiveList_0
+    723                  {
+    724                      /* Has the expiry time elapsed between the command to start/reset a
+    725                       * timer was issued, and the time the command was processed? */
+    726                      if( ( ( TickType_t ) ( xTimeNow - xCommandTime ) ) >= pxTimer->xTimerPeriodInTicks ) /*lint !e961 MISRA exception as the casts are only redundant for some ports. */
+   \        0xE   0x6981             LDR      R1,[R0, #+24]
+   \       0x10   0x1AD2             SUBS     R2,R2,R3
+   \       0x12   0x428A             CMP      R2,R1
+   \       0x14   0xD206             BCS.N    ??prvInsertTimerInActiveList_1
+    727                      {
+    728                          /* The time between a command being issued and the command being
+    729                           * processed actually exceeds the timers period.  */
+    730                          xProcessTimerNow = pdTRUE;
+    731                      }
+    732                      else
+    733                      {
+    734                          vListInsert( pxOverflowTimerList, &( pxTimer->xTimerListItem ) );
+   \       0x16   0x1D01             ADDS     R1,R0,#+4
+   \       0x18   0x6868             LDR      R0,[R5, #+4]
+   \       0x1A   0xE007             B.N      ??prvInsertTimerInActiveList_2
+    735                      }
+    736                  }
+    737                  else
+    738                  {
+    739                      if( ( xTimeNow < xCommandTime ) && ( xNextExpiryTime >= xCommandTime ) )
+   \                     ??prvInsertTimerInActiveList_0: (+1)
+   \       0x1C   0x429A             CMP      R2,R3
+   \       0x1E   0xD203             BCS.N    ??prvInsertTimerInActiveList_3
+   \       0x20   0x4299             CMP      R1,R3
+   \       0x22   0xD301             BCC.N    ??prvInsertTimerInActiveList_3
+    740                      {
+    741                          /* If, since the command was issued, the tick count has overflowed
+    742                           * but the expiry time has not, then the timer must have already passed
+    743                           * its expiry time and should be processed immediately. */
+    744                          xProcessTimerNow = pdTRUE;
+   \                     ??prvInsertTimerInActiveList_1: (+1)
+   \       0x24   0x2401             MOVS     R4,#+1
+   \       0x26   0xE003             B.N      ??prvInsertTimerInActiveList_4
+    745                      }
+    746                      else
+    747                      {
+    748                          vListInsert( pxCurrentTimerList, &( pxTimer->xTimerListItem ) );
+   \                     ??prvInsertTimerInActiveList_3: (+1)
+   \       0x28   0x1D01             ADDS     R1,R0,#+4
+   \       0x2A   0x6828             LDR      R0,[R5, #+0]
+   \                     ??prvInsertTimerInActiveList_2: (+1)
+   \       0x2C   0x.... 0x....      BL       vListInsert
+    749                      }
+    750                  }
+    751          
+    752                  return xProcessTimerNow;
+   \                     ??prvInsertTimerInActiveList_4: (+1)
+   \       0x30   0x4620             MOV      R0,R4
+   \       0x32   0xBD32             POP      {R1,R4,R5,PC}
+    753              }
+    754          /*-----------------------------------------------------------*/
+    755          
+    756              static void prvProcessReceivedCommands( void )
+    757              {
+    758                  DaemonTaskMessage_t xMessage;
+    759                  Timer_t * pxTimer;
+    760                  BaseType_t xTimerListsWereSwitched, xResult;
+    761                  TickType_t xTimeNow;
+    762          
+    763                  while( xQueueReceive( xTimerQueue, &xMessage, tmrNO_DELAY ) != pdFAIL ) /*lint !e603 xMessage does not have to be initialised as it is passed out, not in, and it is not used unless xQueueReceive() returns pdTRUE. */
+    764                  {
+    765                      #if ( INCLUDE_xTimerPendFunctionCall == 1 )
+    766                          {
+    767                              /* Negative commands are pended function calls rather than timer
+    768                               * commands. */
+    769                              if( xMessage.xMessageID < ( BaseType_t ) 0 )
+    770                              {
+    771                                  const CallbackParameters_t * const pxCallback = &( xMessage.u.xCallbackParameters );
+    772          
+    773                                  /* The timer uses the xCallbackParameters member to request a
+    774                                   * callback be executed.  Check the callback is not NULL. */
+    775                                  configASSERT( pxCallback );
+    776          
+    777                                  /* Call the function. */
+    778                                  pxCallback->pxCallbackFunction( pxCallback->pvParameter1, pxCallback->ulParameter2 );
+    779                              }
+    780                              else
+    781                              {
+    782                                  mtCOVERAGE_TEST_MARKER();
+    783                              }
+    784                          }
+    785                      #endif /* INCLUDE_xTimerPendFunctionCall */
+    786          
+    787                      /* Commands that are positive are timer commands rather than pended
+    788                       * function calls. */
+    789                      if( xMessage.xMessageID >= ( BaseType_t ) 0 )
+    790                      {
+    791                          /* The messages uses the xTimerParameters member to work on a
+    792                           * software timer. */
+    793                          pxTimer = xMessage.u.xTimerParameters.pxTimer;
+    794          
+    795                          if( listIS_CONTAINED_WITHIN( NULL, &( pxTimer->xTimerListItem ) ) == pdFALSE ) /*lint !e961. The cast is only redundant when NULL is passed into the macro. */
+    796                          {
+    797                              /* The timer is in a list, remove it. */
+    798                              ( void ) uxListRemove( &( pxTimer->xTimerListItem ) );
+    799                          }
+    800                          else
+    801                          {
+    802                              mtCOVERAGE_TEST_MARKER();
+    803                          }
+    804          
+    805                          traceTIMER_COMMAND_RECEIVED( pxTimer, xMessage.xMessageID, xMessage.u.xTimerParameters.xMessageValue );
+    806          
+    807                          /* In this case the xTimerListsWereSwitched parameter is not used, but
+    808                           *  it must be present in the function call.  prvSampleTimeNow() must be
+    809                           *  called after the message is received from xTimerQueue so there is no
+    810                           *  possibility of a higher priority task adding a message to the message
+    811                           *  queue with a time that is ahead of the timer daemon task (because it
+    812                           *  pre-empted the timer daemon task after the xTimeNow value was set). */
+    813                          xTimeNow = prvSampleTimeNow( &xTimerListsWereSwitched );
+    814          
+    815                          switch( xMessage.xMessageID )
+    816                          {
+    817                              case tmrCOMMAND_START:
+    818                              case tmrCOMMAND_START_FROM_ISR:
+    819                              case tmrCOMMAND_RESET:
+    820                              case tmrCOMMAND_RESET_FROM_ISR:
+    821                              case tmrCOMMAND_START_DONT_TRACE:
+    822                                  /* Start or restart a timer. */
+    823                                  pxTimer->ucStatus |= tmrSTATUS_IS_ACTIVE;
+    824          
+    825                                  if( prvInsertTimerInActiveList( pxTimer, xMessage.u.xTimerParameters.xMessageValue + pxTimer->xTimerPeriodInTicks, xTimeNow, xMessage.u.xTimerParameters.xMessageValue ) != pdFALSE )
+    826                                  {
+    827                                      /* The timer expired before it was added to the active
+    828                                       * timer list.  Process it now. */
+    829                                      pxTimer->pxCallbackFunction( ( TimerHandle_t ) pxTimer );
+    830                                      traceTIMER_EXPIRED( pxTimer );
+    831          
+    832                                      if( ( pxTimer->ucStatus & tmrSTATUS_IS_AUTORELOAD ) != 0 )
+    833                                      {
+    834                                          xResult = xTimerGenericCommand( pxTimer, tmrCOMMAND_START_DONT_TRACE, xMessage.u.xTimerParameters.xMessageValue + pxTimer->xTimerPeriodInTicks, NULL, tmrNO_DELAY );
+    835                                          configASSERT( xResult );
+    836                                          ( void ) xResult;
+    837                                      }
+    838                                      else
+    839                                      {
+    840                                          mtCOVERAGE_TEST_MARKER();
+    841                                      }
+    842                                  }
+    843                                  else
+    844                                  {
+    845                                      mtCOVERAGE_TEST_MARKER();
+    846                                  }
+    847          
+    848                                  break;
+    849          
+    850                              case tmrCOMMAND_STOP:
+    851                              case tmrCOMMAND_STOP_FROM_ISR:
+    852                                  /* The timer has already been removed from the active list. */
+    853                                  pxTimer->ucStatus &= ~tmrSTATUS_IS_ACTIVE;
+    854                                  break;
+    855          
+    856                              case tmrCOMMAND_CHANGE_PERIOD:
+    857                              case tmrCOMMAND_CHANGE_PERIOD_FROM_ISR:
+    858                                  pxTimer->ucStatus |= tmrSTATUS_IS_ACTIVE;
+    859                                  pxTimer->xTimerPeriodInTicks = xMessage.u.xTimerParameters.xMessageValue;
+    860                                  configASSERT( ( pxTimer->xTimerPeriodInTicks > 0 ) );
+    861          
+    862                                  /* The new period does not really have a reference, and can
+    863                                   * be longer or shorter than the old one.  The command time is
+    864                                   * therefore set to the current time, and as the period cannot
+    865                                   * be zero the next expiry time can only be in the future,
+    866                                   * meaning (unlike for the xTimerStart() case above) there is
+    867                                   * no fail case that needs to be handled here. */
+    868                                  ( void ) prvInsertTimerInActiveList( pxTimer, ( xTimeNow + pxTimer->xTimerPeriodInTicks ), xTimeNow, xTimeNow );
+    869                                  break;
+    870          
+    871                              case tmrCOMMAND_DELETE:
+    872                                  #if ( configSUPPORT_DYNAMIC_ALLOCATION == 1 )
+    873                                      {
+    874                                          /* The timer has already been removed from the active list,
+    875                                           * just free up the memory if the memory was dynamically
+    876                                           * allocated. */
+    877                                          if( ( pxTimer->ucStatus & tmrSTATUS_IS_STATICALLY_ALLOCATED ) == ( uint8_t ) 0 )
+    878                                          {
+    879                                              vPortFree( pxTimer );
+    880                                          }
+    881                                          else
+    882                                          {
+    883                                              pxTimer->ucStatus &= ~tmrSTATUS_IS_ACTIVE;
+    884                                          }
+    885                                      }
+    886                                  #else /* if ( configSUPPORT_DYNAMIC_ALLOCATION == 1 ) */
+    887                                      {
+    888                                          /* If dynamic allocation is not enabled, the memory
+    889                                           * could not have been dynamically allocated. So there is
+    890                                           * no need to free the memory - just mark the timer as
+    891                                           * "not active". */
+    892                                          pxTimer->ucStatus &= ~tmrSTATUS_IS_ACTIVE;
+    893                                      }
+    894                                  #endif /* configSUPPORT_DYNAMIC_ALLOCATION */
+    895                                  break;
+    896          
+    897                              default:
+    898                                  /* Don't expect to get here. */
+    899                                  break;
+    900                          }
+    901                      }
+    902                  }
+    903              }
+    904          /*-----------------------------------------------------------*/
+    905          
+    906              static void prvSwitchTimerLists( void )
+    907              {
+    908                  TickType_t xNextExpireTime, xReloadTime;
+    909                  List_t * pxTemp;
+    910                  Timer_t * pxTimer;
+    911                  BaseType_t xResult;
+    912          
+    913                  /* The tick count has overflowed.  The timer lists must be switched.
+    914                   * If there are any timers still referenced from the current timer list
+    915                   * then they must have expired and should be processed before the lists
+    916                   * are switched. */
+    917                  while( listLIST_IS_EMPTY( pxCurrentTimerList ) == pdFALSE )
+    918                  {
+    919                      xNextExpireTime = listGET_ITEM_VALUE_OF_HEAD_ENTRY( pxCurrentTimerList );
+    920          
+    921                      /* Remove the timer from the list. */
+    922                      pxTimer = ( Timer_t * ) listGET_OWNER_OF_HEAD_ENTRY( pxCurrentTimerList ); /*lint !e9087 !e9079 void * is used as this macro is used with tasks and co-routines too.  Alignment is known to be fine as the type of the pointer stored and retrieved is the same. */
+    923                      ( void ) uxListRemove( &( pxTimer->xTimerListItem ) );
+    924                      traceTIMER_EXPIRED( pxTimer );
+    925          
+    926                      /* Execute its callback, then send a command to restart the timer if
+    927                       * it is an auto-reload timer.  It cannot be restarted here as the lists
+    928                       * have not yet been switched. */
+    929                      pxTimer->pxCallbackFunction( ( TimerHandle_t ) pxTimer );
+    930          
+    931                      if( ( pxTimer->ucStatus & tmrSTATUS_IS_AUTORELOAD ) != 0 )
+    932                      {
+    933                          /* Calculate the reload value, and if the reload value results in
+    934                           * the timer going into the same timer list then it has already expired
+    935                           * and the timer should be re-inserted into the current list so it is
+    936                           * processed again within this loop.  Otherwise a command should be sent
+    937                           * to restart the timer to ensure it is only inserted into a list after
+    938                           * the lists have been swapped. */
+    939                          xReloadTime = ( xNextExpireTime + pxTimer->xTimerPeriodInTicks );
+    940          
+    941                          if( xReloadTime > xNextExpireTime )
+    942                          {
+    943                              listSET_LIST_ITEM_VALUE( &( pxTimer->xTimerListItem ), xReloadTime );
+    944                              listSET_LIST_ITEM_OWNER( &( pxTimer->xTimerListItem ), pxTimer );
+    945                              vListInsert( pxCurrentTimerList, &( pxTimer->xTimerListItem ) );
+    946                          }
+    947                          else
+    948                          {
+    949                              xResult = xTimerGenericCommand( pxTimer, tmrCOMMAND_START_DONT_TRACE, xNextExpireTime, NULL, tmrNO_DELAY );
+    950                              configASSERT( xResult );
+    951                              ( void ) xResult;
+    952                          }
+    953                      }
+    954                      else
+    955                      {
+    956                          mtCOVERAGE_TEST_MARKER();
+    957                      }
+    958                  }
+    959          
+    960                  pxTemp = pxCurrentTimerList;
+    961                  pxCurrentTimerList = pxOverflowTimerList;
+    962                  pxOverflowTimerList = pxTemp;
+    963              }
+    964          /*-----------------------------------------------------------*/
+    965          
+
+   \                                 In section .text, align 4, keep-with-next
+    966              static void prvCheckForValidListAndQueue( void )
+    967              {
+   \                     prvCheckForValidListAndQueue: (+1)
+   \        0x0   0xB51C             PUSH     {R2-R4,LR}
+    968                  /* Check that the list from which active timers are referenced, and the
+    969                   * queue used to communicate with the timer service, have been
+    970                   * initialised. */
+    971                  taskENTER_CRITICAL();
+   \        0x2   0x.... 0x....      BL       vPortEnterCritical
+    972                  {
+    973                      if( xTimerQueue == NULL )
+   \        0x6   0x....             LDR.N    R4,??DataTable12
+   \        0x8   0x68A0             LDR      R0,[R4, #+8]
+   \        0xA   0xB9E0             CBNZ.N   R0,??prvCheckForValidListAndQueue_0
+    974                      {
+    975                          vListInitialise( &xActiveTimerList1 );
+   \        0xC   0xF104 0x0014      ADD      R0,R4,#+20
+   \       0x10   0x.... 0x....      BL       vListInitialise
+    976                          vListInitialise( &xActiveTimerList2 );
+   \       0x14   0xF104 0x0028      ADD      R0,R4,#+40
+   \       0x18   0x.... 0x....      BL       vListInitialise
+    977                          pxCurrentTimerList = &xActiveTimerList1;
+   \       0x1C   0xF104 0x0214      ADD      R2,R4,#+20
+    978                          pxOverflowTimerList = &xActiveTimerList2;
+   \       0x20   0xF104 0x0128      ADD      R1,R4,#+40
+    979          
+    980                          #if ( configSUPPORT_STATIC_ALLOCATION == 1 )
+    981                              {
+    982                                  /* The timer queue is allocated statically in case
+    983                                   * configSUPPORT_DYNAMIC_ALLOCATION is 0. */
+    984                                  PRIVILEGED_DATA static StaticQueue_t xStaticTimerQueue;                                                                          /*lint !e956 Ok to declare in this manner to prevent additional conditional compilation guards in other locations. */
+    985                                  PRIVILEGED_DATA static uint8_t ucStaticTimerQueueStorage[ ( size_t ) configTIMER_QUEUE_LENGTH * sizeof( DaemonTaskMessage_t ) ]; /*lint !e956 Ok to declare in this manner to prevent additional conditional compilation guards in other locations. */
+    986          
+    987                                  xTimerQueue = xQueueCreateStatic( ( UBaseType_t ) configTIMER_QUEUE_LENGTH, ( UBaseType_t ) sizeof( DaemonTaskMessage_t ), &( ucStaticTimerQueueStorage[ 0 ] ), &xStaticTimerQueue );
+   \       0x24   0x2000             MOVS     R0,#+0
+   \       0x26   0x6022             STR      R2,[R4, #+0]
+   \       0x28   0x6061             STR      R1,[R4, #+4]
+   \       0x2A   0x9000             STR      R0,[SP, #+0]
+   \       0x2C   0xF104 0x033C      ADD      R3,R4,#+60
+   \       0x30   0xF104 0x028C      ADD      R2,R4,#+140
+   \       0x34   0x2110             MOVS     R1,#+16
+   \       0x36   0x200A             MOVS     R0,#+10
+   \       0x38   0x.... 0x....      BL       xQueueGenericCreateStatic
+   \       0x3C   0x60A0             STR      R0,[R4, #+8]
+    988                              }
+    989                          #else
+    990                              {
+    991                                  xTimerQueue = xQueueCreate( ( UBaseType_t ) configTIMER_QUEUE_LENGTH, sizeof( DaemonTaskMessage_t ) );
+    992                              }
+    993                          #endif /* if ( configSUPPORT_STATIC_ALLOCATION == 1 ) */
+    994          
+    995                          #if ( configQUEUE_REGISTRY_SIZE > 0 )
+    996                              {
+    997                                  if( xTimerQueue != NULL )
+   \       0x3E   0xB110             CBZ.N    R0,??prvCheckForValidListAndQueue_0
+    998                                  {
+    999                                      vQueueAddToRegistry( xTimerQueue, "TmrQ" );
+   \       0x40   0x....             ADR.N    R1,?_2
+   \       0x42   0x.... 0x....      BL       vQueueAddToRegistry
+   1000                                  }
+   1001                                  else
+   1002                                  {
+   1003                                      mtCOVERAGE_TEST_MARKER();
+   1004                                  }
+   1005                              }
+   1006                          #endif /* configQUEUE_REGISTRY_SIZE */
+   1007                      }
+   1008                      else
+   1009                      {
+   1010                          mtCOVERAGE_TEST_MARKER();
+   1011                      }
+   1012                  }
+   1013                  taskEXIT_CRITICAL();
+   \                     ??prvCheckForValidListAndQueue_0: (+1)
+   \       0x46   0xE8BD 0x4013      POP      {R0,R1,R4,LR}
+   \       0x4A   0x.... 0x....      B.W      vPortExitCritical
+   1014              }
+
+   \                                 In section .bss, align 4
+   \                     pxCurrentTimerList:
+   \        0x0                      DS8 4
+   \        0x4                      DS8 4
+   \        0x8                      DS8 4
+   \        0xC                      DS8 4
+   \       0x10                      DS8 4
+   \       0x14                      DS8 20
+   \       0x28                      DS8 20
+   \       0x3C                      DS8 80
+   \       0x8C                      DS8 160
+   1015          /*-----------------------------------------------------------*/
+   1016          
+
+   \                                 In section .text, align 2, keep-with-next
+   1017              BaseType_t xTimerIsTimerActive( TimerHandle_t xTimer )
+   1018              {
+   \                     xTimerIsTimerActive: (+1)
+   \        0x0   0xB510             PUSH     {R4,LR}
+   \        0x2   0x0004             MOVS     R4,R0
+   1019                  BaseType_t xReturn;
+   1020                  Timer_t * pxTimer = xTimer;
+   1021          
+   1022                  configASSERT( xTimer );
+   \        0x4   0xD103             BNE.N    ??CrossCallReturnLabel_3
+   \        0x6   0xF240 0x31FE      MOVW     R1,#+1022
+   \        0xA   0x.... 0x....      BL       ?Subroutine2
+   1023          
+   1024                  /* Is the timer in the list of active timers? */
+   1025                  taskENTER_CRITICAL();
+   \                     ??CrossCallReturnLabel_3: (+1)
+   \        0xE   0x.... 0x....      BL       vPortEnterCritical
+   1026                  {
+   1027                      if( ( pxTimer->ucStatus & tmrSTATUS_IS_ACTIVE ) == 0 )
+   1028                      {
+   1029                          xReturn = pdFALSE;
+   \       0x12   0xF894 0x4028      LDRB     R4,[R4, #+40]
+   1030                      }
+   1031                      else
+   1032                      {
+   1033                          xReturn = pdTRUE;
+   1034                      }
+   1035                  }
+   1036                  taskEXIT_CRITICAL();
+   \       0x16   0x.... 0x....      BL       vPortExitCritical
+   \       0x1A                      REQUIRE ?Subroutine0
+   \       0x1A                      ;; // Fall through to label ?Subroutine0
+   1037          
+   1038                  return xReturn;
+   1039              } /*lint !e818 Can't be pointer to const due to the typedef. */
+   1040          /*-----------------------------------------------------------*/
+   1041          
+
+   \                                 In section .text, align 2, keep-with-next
+   1042              void * pvTimerGetTimerID( const TimerHandle_t xTimer )
+   1043              {
+   \                     pvTimerGetTimerID: (+1)
+   \        0x0   0xB510             PUSH     {R4,LR}
+   \        0x2   0x0004             MOVS     R4,R0
+   1044                  Timer_t * const pxTimer = xTimer;
+   1045                  void * pvReturn;
+   1046          
+   1047                  configASSERT( xTimer );
+   \        0x4   0xD103             BNE.N    ??CrossCallReturnLabel_2
+   \        0x6   0xF240 0x4117      MOVW     R1,#+1047
+   \        0xA   0x.... 0x....      BL       ?Subroutine2
+   1048          
+   1049                  taskENTER_CRITICAL();
+   \                     ??CrossCallReturnLabel_2: (+1)
+   \        0xE   0x.... 0x....      BL       vPortEnterCritical
+   1050                  {
+   1051                      pvReturn = pxTimer->pvTimerID;
+   \       0x12   0x69E4             LDR      R4,[R4, #+28]
+   1052                  }
+   1053                  taskEXIT_CRITICAL();
+   \       0x14   0x.... 0x....      BL       vPortExitCritical
+   1054          
+   1055                  return pvReturn;
+   \       0x18   0x4620             MOV      R0,R4
+   \       0x1A   0xBD10             POP      {R4,PC}
+   1056              }
+   1057          /*-----------------------------------------------------------*/
+   1058          
+
+   \                                 In section .text, align 2, keep-with-next
+   1059              void vTimerSetTimerID( TimerHandle_t xTimer,
+   1060                                     void * pvNewID )
+   1061              {
+   \                     vTimerSetTimerID: (+1)
+   \        0x0   0xB538             PUSH     {R3-R5,LR}
+   \        0x2   0x0004             MOVS     R4,R0
+   \        0x4   0x460D             MOV      R5,R1
+   1062                  Timer_t * const pxTimer = xTimer;
+   1063          
+   1064                  configASSERT( xTimer );
+   \        0x6   0xD103             BNE.N    ??CrossCallReturnLabel_1
+   \        0x8   0xF44F 0x6185      MOV      R1,#+1064
+   \        0xC   0x.... 0x....      BL       ?Subroutine2
+   1065          
+   1066                  taskENTER_CRITICAL();
+   \                     ??CrossCallReturnLabel_1: (+1)
+   \       0x10   0x.... 0x....      BL       vPortEnterCritical
+   1067                  {
+   1068                      pxTimer->pvTimerID = pvNewID;
+   \       0x14   0x61E5             STR      R5,[R4, #+28]
+   1069                  }
+   1070                  taskEXIT_CRITICAL();
+   \       0x16                      REQUIRE ?Subroutine1
+   \       0x16                      ;; // Fall through to label ?Subroutine1
+   1071              }
+   1072          /*-----------------------------------------------------------*/
+   1073          
+   1074              #if ( INCLUDE_xTimerPendFunctionCall == 1 )
+   1075          
+
+   \                                 In section .text, align 2, keep-with-next
+   1076                  BaseType_t xTimerPendFunctionCallFromISR( PendedFunction_t xFunctionToPend,
+   1077                                                            void * pvParameter1,
+   1078                                                            uint32_t ulParameter2,
+   1079                                                            BaseType_t * pxHigherPriorityTaskWoken )
+   1080                  {
+   \                     xTimerPendFunctionCallFromISR: (+1)
+   \        0x0   0xB538             PUSH     {R3-R5,LR}
+   \        0x2   0xB084             SUB      SP,SP,#+16
+   1081                      DaemonTaskMessage_t xMessage;
+   1082                      BaseType_t xReturn;
+   1083          
+   1084                      /* Complete the message with the function parameters and post it to the
+   1085                       * daemon task. */
+   1086                      xMessage.xMessageID = tmrCOMMAND_EXECUTE_CALLBACK_FROM_ISR;
+   1087                      xMessage.u.xCallbackParameters.pxCallbackFunction = xFunctionToPend;
+   1088                      xMessage.u.xCallbackParameters.pvParameter1 = pvParameter1;
+   1089                      xMessage.u.xCallbackParameters.ulParameter2 = ulParameter2;
+   \        0x4   0x9203             STR      R2,[SP, #+12]
+   \        0x6   0x9001             STR      R0,[SP, #+4]
+   \        0x8   0x461C             MOV      R4,R3
+   1090          
+   1091                      xReturn = xQueueSendFromISR( xTimerQueue, &xMessage, pxHigherPriorityTaskWoken );
+   1092          
+   1093                      tracePEND_FUNC_CALL_FROM_ISR( xFunctionToPend, pvParameter1, ulParameter2, xReturn );
+   1094          
+   1095                      return xReturn;
+   \        0xA   0x4622             MOV      R2,R4
+   \        0xC   0x....             LDR.N    R4,??DataTable12
+   \        0xE   0x68A0             LDR      R0,[R4, #+8]
+   \       0x10   0xF06F 0x0501      MVN      R5,#+1
+   \       0x14   0x9102             STR      R1,[SP, #+8]
+   \       0x16   0x9500             STR      R5,[SP, #+0]
+   \       0x18   0x2300             MOVS     R3,#+0
+   \       0x1A   0x4669             MOV      R1,SP
+   \       0x1C   0x.... 0x....      BL       xQueueGenericSendFromISR
+   \       0x20   0xB005             ADD      SP,SP,#+20
+   \       0x22   0xBD30             POP      {R4,R5,PC}
+   1096                  }
+   1097          
+   1098              #endif /* INCLUDE_xTimerPendFunctionCall */
+   1099          /*-----------------------------------------------------------*/
+   1100          
+   1101              #if ( INCLUDE_xTimerPendFunctionCall == 1 )
+   1102          
+
+   \                                 In section .text, align 2, keep-with-next
+   1103                  BaseType_t xTimerPendFunctionCall( PendedFunction_t xFunctionToPend,
+   1104                                                     void * pvParameter1,
+   1105                                                     uint32_t ulParameter2,
+   1106                                                     TickType_t xTicksToWait )
+   1107                  {
+   \                     xTimerPendFunctionCall: (+1)
+   \        0x0   0xE92D 0x41FF      PUSH     {R0-R8,LR}
+   \        0x4   0x4604             MOV      R4,R0
+   1108                      DaemonTaskMessage_t xMessage;
+   1109                      BaseType_t xReturn;
+   1110          
+   1111                      /* This function can only be called after a timer has been created or
+   1112                       * after the scheduler has been started because, until then, the timer
+   1113                       * queue does not exist. */
+   1114                      configASSERT( xTimerQueue );
+   \        0x6   0x....             LDR.N    R5,??DataTable12
+   \        0x8   0x68A8             LDR      R0,[R5, #+8]
+   \        0xA   0x460F             MOV      R7,R1
+   \        0xC   0x4616             MOV      R6,R2
+   \        0xE   0x4698             MOV      R8,R3
+   \       0x10   0xB918             CBNZ.N   R0,??CrossCallReturnLabel_0
+   \       0x12   0xF240 0x415A      MOVW     R1,#+1114
+   \       0x16   0x.... 0x....      BL       ?Subroutine2
+   1115          
+   1116                      /* Complete the message with the function parameters and post it to the
+   1117                       * daemon task. */
+   1118                      xMessage.xMessageID = tmrCOMMAND_EXECUTE_CALLBACK;
+   \                     ??CrossCallReturnLabel_0: (+1)
+   \       0x1A   0xF04F 0x31FF      MOV      R1,#+4294967295
+   \       0x1E   0x9100             STR      R1,[SP, #+0]
+   1119                      xMessage.u.xCallbackParameters.pxCallbackFunction = xFunctionToPend;
+   \       0x20   0x9401             STR      R4,[SP, #+4]
+   1120                      xMessage.u.xCallbackParameters.pvParameter1 = pvParameter1;
+   1121                      xMessage.u.xCallbackParameters.ulParameter2 = ulParameter2;
+   1122          
+   1123                      xReturn = xQueueSendToBack( xTimerQueue, &xMessage, xTicksToWait );
+   1124          
+   1125                      tracePEND_FUNC_CALL( xFunctionToPend, pvParameter1, ulParameter2, xReturn );
+   1126          
+   1127                      return xReturn;
+   \       0x22   0x68A8             LDR      R0,[R5, #+8]
+   \       0x24   0x9702             STR      R7,[SP, #+8]
+   \       0x26   0x9603             STR      R6,[SP, #+12]
+   \       0x28   0x2300             MOVS     R3,#+0
+   \       0x2A   0x4642             MOV      R2,R8
+   \       0x2C   0x4669             MOV      R1,SP
+   \       0x2E   0x.... 0x....      BL       xQueueGenericSend
+   \       0x32   0xB004             ADD      SP,SP,#+16
+   \       0x34   0xE8BD 0x81F0      POP      {R4-R8,PC}
+   1128                  }
+   1129          
+   1130              #endif /* INCLUDE_xTimerPendFunctionCall */
+   1131          /*-----------------------------------------------------------*/
+   1132          
+   1133              #if ( configUSE_TRACE_FACILITY == 1 )
+   1134          
+
+   \                                 In section .text, align 2, keep-with-next
+   1135                  UBaseType_t uxTimerGetTimerNumber( TimerHandle_t xTimer )
+   1136                  {
+   1137                      return ( ( Timer_t * ) xTimer )->uxTimerNumber;
+   \                     uxTimerGetTimerNumber: (+1)
+   \        0x0   0x6A40             LDR      R0,[R0, #+36]
+   \        0x2   0x4770             BX       LR
+   1138                  }
+   1139          
+   1140              #endif /* configUSE_TRACE_FACILITY */
+   1141          /*-----------------------------------------------------------*/
+   1142          
+   1143              #if ( configUSE_TRACE_FACILITY == 1 )
+   1144          
+
+   \                                 In section .text, align 2, keep-with-next
+   1145                  void vTimerSetTimerNumber( TimerHandle_t xTimer,
+   1146                                             UBaseType_t uxTimerNumber )
+   1147                  {
+   1148                      ( ( Timer_t * ) xTimer )->uxTimerNumber = uxTimerNumber;
+   \                     vTimerSetTimerNumber: (+1)
+   \        0x0   0x6241             STR      R1,[R0, #+36]
+   1149                  }
+   \        0x2   0x4770             BX       LR
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable12:
+   \        0x0   0x....'....        DC32     pxCurrentTimerList
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable12_1:
+   \        0x0   0x....'....        DC32     ?_0
+
+   \                                 In section .rodata, align 4
+   \                     ?_0:
+   \        0x0   0x43 0x3A          DC8 0x43, 0x3A, 0x5C, 0x55, 0x73, 0x65, 0x72, 0x73
+   \              0x5C 0x55    
+   \              0x73 0x65    
+   \              0x72 0x73
+   \        0x8   0x5C 0x44          DC8 0x5C, 0x44, 0x45, 0x4C, 0x4C, 0x5C, 0x53, 0x69
+   \              0x45 0x4C    
+   \              0x4C 0x5C    
+   \              0x53 0x69
+   \       0x10   0x6D 0x70          DC8 0x6D, 0x70, 0x6C, 0x69, 0x63, 0x69, 0x74, 0x79
+   \              0x6C 0x69    
+   \              0x63 0x69    
+   \              0x74 0x79
+   \       0x18   0x53 0x74          DC8 0x53, 0x74, 0x75, 0x64, 0x69, 0x6F, 0x5C, 0x76
+   \              0x75 0x64    
+   \              0x69 0x6F    
+   \              0x5C 0x76
+   \       0x20   0x35 0x5F          DC8 0x35, 0x5F, 0x77, 0x6F, 0x72, 0x6B, 0x73, 0x70
+   \              0x77 0x6F    
+   \              0x72 0x6B    
+   \              0x73 0x70
+   \       0x28   0x61 0x63          DC8 0x61, 0x63, 0x65, 0x5C, 0x77, 0x69, 0x73, 0x75
+   \              0x65 0x5C    
+   \              0x77 0x69    
+   \              0x73 0x75
+   \       0x30   0x6E 0x5F          DC8 0x6E, 0x5F, 0x72, 0x63, 0x70, 0x5F, 0x37, 0x5C
+   \              0x72 0x63    
+   \              0x70 0x5F    
+   \              0x37 0x5C
+   \       0x38   0x67 0x65          DC8 0x67, 0x65, 0x63, 0x6B, 0x6F, 0x5F, 0x73, 0x64
+   \              0x63 0x6B    
+   \              0x6F 0x5F    
+   \              0x73 0x64
+   \       0x40   0x6B 0x5F          DC8 0x6B, 0x5F, 0x34, 0x2E, 0x34, 0x2E, 0x33, 0x5C
+   \              0x34 0x2E    
+   \              0x34 0x2E    
+   \              0x33 0x5C
+   \       0x48   0x75 0x74          DC8 0x75, 0x74, 0x69, 0x6C, 0x5C, 0x74, 0x68, 0x69
+   \              0x69 0x6C    
+   \              0x5C 0x74    
+   \              0x68 0x69
+   \       0x50   0x72 0x64          DC8 0x72, 0x64, 0x5F, 0x70, 0x61, 0x72, 0x74, 0x79
+   \              0x5F 0x70    
+   \              0x61 0x72    
+   \              0x74 0x79
+   \       0x58   0x5C 0x66          DC8 0x5C, 0x66, 0x72, 0x65, 0x65, 0x72, 0x74, 0x6F
+   \              0x72 0x65    
+   \              0x65 0x72    
+   \              0x74 0x6F
+   \       0x60   0x73 0x5C          DC8 0x73, 0x5C, 0x6B, 0x65, 0x72, 0x6E, 0x65, 0x6C
+   \              0x6B 0x65    
+   \              0x72 0x6E    
+   \              0x65 0x6C
+   \       0x68   0x5C 0x74          DC8 0x5C, 0x74, 0x69, 0x6D, 0x65, 0x72, 0x73, 0x2E
+   \              0x69 0x6D    
+   \              0x65 0x72    
+   \              0x73 0x2E
+   \       0x70   0x63 0x00          DC8 0x63, 0
+   \       0x72                      DS8 2
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ?_1:
+   \        0x0   0x54 0x6D          DC8 "Tmr Svc"
+   \              0x72 0x20    
+   \              0x53 0x76    
+   \              0x63 0x00
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ?_2:
+   \        0x0   0x54 0x6D          DC8 "TmrQ"
+   \              0x72 0x51    
+   \              0x00
+   \        0x5                      DS8 3
+   1150          
+   1151              #endif /* configUSE_TRACE_FACILITY */
+   1152          /*-----------------------------------------------------------*/
+   1153          
+   1154          /* This entire source file will be skipped if the application is not configured
+   1155           * to include software timer functionality.  If you want to include software timer
+   1156           * functionality then ensure configUSE_TIMERS is set to 1 in FreeRTOSConfig.h. */
+   1157          #endif /* configUSE_TIMERS == 1 */
+
+   Maximum stack usage in bytes:
+
+   .cstack Function
+   ------- --------
+       8   pcTimerGetName
+         8   -> assertEFM
+      16   prvCheckForValidListAndQueue
+        16   -> vListInitialise
+        16   -> vPortEnterCritical
+         0   -> vPortExitCritical
+        16   -> vQueueAddToRegistry
+        16   -> xQueueGenericCreateStatic
+      32   prvInitialiseNewTimer
+        32   -> assertEFM
+        32   -> prvCheckForValidListAndQueue
+        32   -> vListInitialiseItem
+      16   prvInsertTimerInActiveList
+        16   -> vListInsert
+      32   prvSampleTimeNow
+        32   -- Indirect call
+        32   -> assertEFM
+        32   -> uxListRemove
+        32   -> vListInsert
+        32   -> xTaskGetTickCount
+        32   -> xTimerGenericCommand
+      48   prvTimerTask
+        48   -- Indirect call
+        48   -> assertEFM
+        48   -> prvInsertTimerInActiveList
+        48   -> prvSampleTimeNow
+        48   -> uxListRemove
+        48   -> vPortFree
+        48   -> vPortYield
+        48   -> vQueueWaitForMessageRestricted
+        48   -> vTaskSuspendAll
+        48   -> xQueueReceive
+        48   -> xTaskResumeAll
+        48   -> xTimerGenericCommand
+       8   pvTimerGetTimerID
+         8   -> assertEFM
+         8   -> vPortEnterCritical
+         8   -> vPortExitCritical
+       8   uxTimerGetReloadMode
+         8   -> assertEFM
+         8   -> vPortEnterCritical
+         8   -> vPortExitCritical
+       0   uxTimerGetTimerNumber
+      16   vTimerSetReloadMode
+        16   -> assertEFM
+        16   -> vPortEnterCritical
+         0   -> vPortExitCritical
+      16   vTimerSetTimerID
+        16   -> assertEFM
+        16   -> vPortEnterCritical
+         0   -> vPortExitCritical
+       0   vTimerSetTimerNumber
+      32   xTimerCreate
+        32   -> prvInitialiseNewTimer
+        32   -> pvPortMalloc
+      40   xTimerCreateStatic
+        40   -> assertEFM
+        40   -> prvInitialiseNewTimer
+      40   xTimerCreateTimerTask
+        40   -> assertEFM
+        40   -> prvCheckForValidListAndQueue
+        40   -> vApplicationGetTimerTaskMemory
+        40   -> xTaskCreateStatic
+      48   xTimerGenericCommand
+        48   -> assertEFM
+        48   -> xQueueGenericSend
+        48   -> xQueueGenericSendFromISR
+        48   -> xTaskGetSchedulerState
+       8   xTimerGetExpiryTime
+         8   -> assertEFM
+       8   xTimerGetPeriod
+         8   -> assertEFM
+       8   xTimerGetTimerDaemonTaskHandle
+         8   -> assertEFM
+       8   xTimerIsTimerActive
+         8   -> assertEFM
+         8   -> vPortEnterCritical
+         8   -> vPortExitCritical
+      40   xTimerPendFunctionCall
+        40   -> assertEFM
+        40   -> xQueueGenericSend
+      32   xTimerPendFunctionCallFromISR
+        32   -> xQueueGenericSendFromISR
+
+
+   Section sizes:
+
+   Bytes  Function/Label
+   -----  --------------
+       4  ??DataTable12
+       4  ??DataTable12_1
+       8  ?Subroutine0
+       8  ?Subroutine1
+       8  ?Subroutine2
+      14  ?Subroutine3
+     116  ?_0
+       8  ?_1
+       8  ?_2
+      18  pcTimerGetName
+      78  prvCheckForValidListAndQueue
+      68  prvInitialiseNewTimer
+      52  prvInsertTimerInActiveList
+     126  prvSampleTimeNow
+     412  prvTimerTask
+      28  pvTimerGetTimerID
+     300  pxCurrentTimerList
+          pxOverflowTimerList
+          xTimerQueue
+          xTimerTaskHandle
+          xLastTime
+          xActiveTimerList1
+          xActiveTimerList2
+          xStaticTimerQueue
+          ucStaticTimerQueueStorage
+      30  uxTimerGetReloadMode
+       4  uxTimerGetTimerNumber
+      42  vTimerSetReloadMode
+      22  vTimerSetTimerID
+       4  vTimerSetTimerNumber
+      40  xTimerCreate
+      72  xTimerCreateStatic
+      84  xTimerCreateTimerTask
+      96  xTimerGenericCommand
+      18  xTimerGetExpiryTime
+      18  xTimerGetPeriod
+      22  xTimerGetTimerDaemonTaskHandle
+      26  xTimerIsTimerActive
+      56  xTimerPendFunctionCall
+      36  xTimerPendFunctionCallFromISR
+
+ 
+   300 bytes in section .bss
+   116 bytes in section .rodata
+ 1'414 bytes in section .text
+ 
+ 1'414 bytes of CODE  memory
+   116 bytes of CONST memory
+   300 bytes of DATA  memory
+
+Errors: none
+Warnings: none

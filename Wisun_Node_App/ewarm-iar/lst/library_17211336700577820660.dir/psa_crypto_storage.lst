@@ -1,0 +1,1505 @@
+###############################################################################
+#
+# IAR ANSI C/C++ Compiler V9.50.2.385/W64 for ARM         29/Mar/2025  15:54:01
+# Copyright 1999-2024 IAR Systems AB.
+#
+#    Cpu mode                     =  thumb
+#    Endian                       =  little
+#    Source file                  =
+#        D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\util\third_party\mbedtls\library\psa_crypto_storage.c
+#    Command line                 =
+#        -f "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\ewarm-iar\obj\library_17211336700577820660.dir\psa_crypto_storage.o.rsp"
+#        ("D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\util\third_party\mbedtls\library\psa_crypto_storage.c"
+#        -D DEBUG_EFM=1 -D EFR32FG28B322F1024IM48=1 -D
+#        configNUM_SDK_THREAD_LOCAL_STORAGE_POINTERS=2 -D
+#        SL_COMPONENT_CATALOG_PRESENT=1 -D
+#        MBEDTLS_CONFIG_FILE=<sl_mbedtls_config.h> -D
+#        MBEDTLS_PSA_CRYPTO_CONFIG_FILE=<psa_crypto_config.h> -D
+#        SL_RAIL_LIB_MULTIPROTOCOL_SUPPORT=0 -D
+#        SL_RAIL_UTIL_PA_CONFIG_HEADER=<sl_rail_util_pa_config.h> -D
+#        RTT_USE_ASM=0 -lC "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\ewarm-iar\lst\library_17211336700577820660.dir"
+#        --diag_suppress Pa050 -o "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\ewarm-iar\obj\library_17211336700577820660.dir"
+#        --no_cse --no_unroll --no_inline --no_code_motion --no_tbaa
+#        --no_clustering --no_scheduling --debug --endian=little
+#        --cpu=Cortex-M33 --cmse --cmse -e --fpu=VFPv5_sp --dlib_config
+#        "C:\Program Files\IAR Systems\Embedded Workbench
+#        9.2\arm\inc\c\DLib_Config_Normal.h" -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\util\third_party\mbedtls\library\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App 1\Wisun_Node_App\config\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App 1\Wisun_Node_App\config\rail\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App 1\Wisun_Node_App\config\wisun\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App 1\Wisun_Node_App\.\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\Device\SiliconLabs\EFR32FG28\Include\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\app\wisun\component\app_project_info\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\common\inc\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\service\cli\inc\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\service\cli\src\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\CMSIS\Core\Include\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\CMSIS\RTOS2\Include\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\service\device_init\inc\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\emdrv\common\inc\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\emlib\inc\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\service\iostream\inc\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\security\sl_component\sl_mbedtls_support\config\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\security\sl_component\sl_mbedtls_support\config\preset\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\security\sl_component\sl_mbedtls_support\inc\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\util\third_party\mbedtls\include\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\util\third_party\mbedtls\library\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\micrium_os\common\source\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\micrium_os\common\include\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\micrium_os\cpu\include\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\micrium_os\ports\source\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\micrium_os\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\micrium_os\kernel\source\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\micrium_os\kernel\include\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\emdrv\nvm3\inc\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\peripheral\inc\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\util\third_party\printf\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\util\third_party\printf\inc\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\security\sl_component\sl_psa_driver\inc\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\radio\rail_lib\common\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\radio\rail_lib\protocol\ble\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\radio\rail_lib\protocol\ieee802154\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\radio\rail_lib\protocol\wmbus\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\radio\rail_lib\protocol\zwave\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\radio\rail_lib\chip\efr32\efr32xg2x\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\radio\rail_lib\protocol\sidewalk\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\radio\rail_lib\plugin\pa-conversions\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\radio\rail_lib\plugin\pa-conversions\efr32xg28\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\radio\rail_lib\plugin\rail_util_pti\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\security\sl_component\se_manager\inc\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\security\sl_component\se_manager\src\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\util\third_party\segger\systemview\SEGGER\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\util\silicon_labs\silabs_core\memory_manager\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\common\toolchain\inc\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\service\system\inc\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\app\wisun\component\app_core\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\app\wisun\component\app_setting\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\app\wisun\component\cli_util\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\app\wisun\component\event_manager\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\app\wisun\component\ns_list\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\app\wisun\component\ping\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\app\wisun\component\trace_util\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\app\wisun\component\trace_util\nanostack\nanostack-libservice\mbed-client-libservice\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\app\wisun\component\udp_client\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\service\sleeptimer\inc\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\protocol\wisun\plugin\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\protocol\wisun\stack\inc\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\protocol\wisun\stack\inc\socket\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App 1\Wisun_Node_App\autogen\\" -On
+#        --use_c++_inline) --dependencies=n "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\ewarm-iar\obj\library_17211336700577820660.dir\psa_crypto_storage.o.iar_deps"
+#    Locale                       =  C
+#    List file                    =
+#        D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\ewarm-iar\lst\library_17211336700577820660.dir\psa_crypto_storage.lst
+#    Object file                  =
+#        D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\ewarm-iar\obj\library_17211336700577820660.dir\psa_crypto_storage.o
+#    Runtime model:                  
+#      __CPP_Runtime              =  1
+#      __SystemLibrary            =  DLib
+#      __dlib_file_descriptor     =  0
+#      __dlib_full_locale_support =  0
+#      __dlib_version             =  6
+#
+###############################################################################
+
+D:\Inesh_wisun\Wisun_Node_App 1\Wisun_Node_App\gecko_sdk_4.4.5\util\third_party\mbedtls\library\psa_crypto_storage.c
+      1          /*
+      2           *  PSA persistent key storage
+      3           */
+      4          /*
+      5           *  Copyright The Mbed TLS Contributors
+      6           *  SPDX-License-Identifier: Apache-2.0
+      7           *
+      8           *  Licensed under the Apache License, Version 2.0 (the "License"); you may
+      9           *  not use this file except in compliance with the License.
+     10           *  You may obtain a copy of the License at
+     11           *
+     12           *  http://www.apache.org/licenses/LICENSE-2.0
+     13           *
+     14           *  Unless required by applicable law or agreed to in writing, software
+     15           *  distributed under the License is distributed on an "AS IS" BASIS, WITHOUT
+     16           *  WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     17           *  See the License for the specific language governing permissions and
+     18           *  limitations under the License.
+     19           */
+     20          
+     21          #include "common.h"
+
+   \                                 In section .text, align 2
+   \   __vfp uint16_t mbedtls_get_unaligned_uint16(void const *)
+   \                     mbedtls_get_unaligned_uint16: (+1)
+   \        0x0   0xB5F8             PUSH     {R3-R7,LR}
+   \        0x2   0x0007             MOVS     R7,R0
+   \        0x4   0x2402             MOVS     R4,#+2
+   \        0x6   0x003D             MOVS     R5,R7
+   \        0x8   0x466E             MOV      R6,SP
+   \        0xA   0x0022             MOVS     R2,R4
+   \        0xC   0x0029             MOVS     R1,R5
+   \        0xE   0x0030             MOVS     R0,R6
+   \       0x10   0x.... 0x....      BL       __aeabi_memcpy
+   \       0x14   0xF8BD 0x0000      LDRH     R0,[SP, #+0]
+   \       0x18   0xBDF2             POP      {R1,R4-R7,PC}
+
+   \                                 In section .text, align 2
+   \   __vfp void mbedtls_put_unaligned_uint16(void *, uint16_t)
+   \                     mbedtls_put_unaligned_uint16: (+1)
+   \        0x0   0xB5F2             PUSH     {R1,R4-R7,LR}
+   \        0x2   0x0007             MOVS     R7,R0
+   \        0x4   0x2402             MOVS     R4,#+2
+   \        0x6   0x466D             MOV      R5,SP
+   \        0x8   0x003E             MOVS     R6,R7
+   \        0xA   0x0022             MOVS     R2,R4
+   \        0xC   0x0029             MOVS     R1,R5
+   \        0xE   0x0030             MOVS     R0,R6
+   \       0x10   0x.... 0x....      BL       __aeabi_memcpy
+   \       0x14   0xBDF1             POP      {R0,R4-R7,PC}
+
+   \                                 In section .text, align 2
+   \   __vfp uint32_t mbedtls_get_unaligned_uint32(void const *)
+   \                     mbedtls_get_unaligned_uint32: (+1)
+   \        0x0   0xB5F8             PUSH     {R3-R7,LR}
+   \        0x2   0x0007             MOVS     R7,R0
+   \        0x4   0x2404             MOVS     R4,#+4
+   \        0x6   0x003D             MOVS     R5,R7
+   \        0x8   0x466E             MOV      R6,SP
+   \        0xA   0x0022             MOVS     R2,R4
+   \        0xC   0x0029             MOVS     R1,R5
+   \        0xE   0x0030             MOVS     R0,R6
+   \       0x10   0x.... 0x....      BL       __aeabi_memcpy
+   \       0x14   0x9800             LDR      R0,[SP, #+0]
+   \       0x16   0xBDF2             POP      {R1,R4-R7,PC}
+
+   \                                 In section .text, align 2
+   \   __vfp void mbedtls_put_unaligned_uint32(void *, uint32_t)
+   \                     mbedtls_put_unaligned_uint32: (+1)
+   \        0x0   0xB5F2             PUSH     {R1,R4-R7,LR}
+   \        0x2   0x0007             MOVS     R7,R0
+   \        0x4   0x2404             MOVS     R4,#+4
+   \        0x6   0x466D             MOV      R5,SP
+   \        0x8   0x003E             MOVS     R6,R7
+   \        0xA   0x0022             MOVS     R2,R4
+   \        0xC   0x0029             MOVS     R1,R5
+   \        0xE   0x0030             MOVS     R0,R6
+   \       0x10   0x.... 0x....      BL       __aeabi_memcpy
+   \       0x14   0xBDF1             POP      {R0,R4-R7,PC}
+
+   \                                 In section .text, align 2, keep-with-next
+   \   static __vfp uint16_t mbedtls_bswap16(uint16_t)
+   \                     mbedtls_bswap16: (+1)
+   \        0x0   0x0001             MOVS     R1,R0
+   \        0x2   0x0008             MOVS     R0,R1
+   \        0x4   0xB280             UXTH     R0,R0
+   \        0x6   0x0A00             LSRS     R0,R0,#+8
+   \        0x8   0xEA50 0x2001      ORRS     R0,R0,R1, LSL #+8
+   \        0xC   0xB280             UXTH     R0,R0
+   \        0xE   0x4770             BX       LR
+
+   \                                 In section .text, align 2, keep-with-next
+   \   static __vfp uint32_t mbedtls_bswap32(uint32_t)
+   \                     mbedtls_bswap32: (+1)
+   \        0x0   0x0001             MOVS     R1,R0
+   \        0x2   0x0208             LSLS     R0,R1,#+8
+   \        0x4   0xF410 0x007F      ANDS     R0,R0,#0xFF0000
+   \        0x8   0xEA50 0x6001      ORRS     R0,R0,R1, LSL #+24
+   \        0xC   0x000A             MOVS     R2,R1
+   \        0xE   0x0A12             LSRS     R2,R2,#+8
+   \       0x10   0xF412 0x427F      ANDS     R2,R2,#0xFF00
+   \       0x14   0x4310             ORRS     R0,R2,R0
+   \       0x16   0xEA50 0x6011      ORRS     R0,R0,R1, LSR #+24
+   \       0x1A   0x4770             BX       LR
+
+   \                                 In section .rodata, align 2
+   \   static __absolute uint16_t const mbedtls_byte_order_detector
+   \                     mbedtls_byte_order_detector:
+   \        0x0   0x0100             DC16 256
+     22          
+     23          #if defined(MBEDTLS_PSA_CRYPTO_STORAGE_C)
+     24          
+     25          #include <stdlib.h>
+     26          #include <string.h>
+     27          
+     28          #include "psa/crypto.h"
+     29          #include "psa_crypto_storage.h"
+     30          #include "mbedtls/platform_util.h"
+     31          
+     32          #if defined(MBEDTLS_PSA_ITS_FILE_C)
+     33          #include "psa_crypto_its.h"
+     34          #else /* Native ITS implementation */
+     35          #include "psa/error.h"
+     36          #include "psa/internal_trusted_storage.h"
+     37          #endif
+     38          
+     39          #include "mbedtls/platform.h"
+     40          
+     41          
+     42          
+     43          /****************************************************************/
+     44          /* Key storage */
+     45          /****************************************************************/
+     46          
+     47          /* Determine a file name (ITS file identifier) for the given key identifier.
+     48           * The file name must be distinct from any file that is used for a purpose
+     49           * other than storing a key. Currently, the only such file is the random seed
+     50           * file whose name is PSA_CRYPTO_ITS_RANDOM_SEED_UID and whose value is
+     51           * 0xFFFFFF52. */
+
+   \                                 In section .text, align 2, keep-with-next
+     52          static psa_storage_uid_t psa_its_identifier_of_slot(mbedtls_svc_key_id_t key)
+     53          {
+     54          #if defined(MBEDTLS_PSA_CRYPTO_KEY_ID_ENCODES_OWNER)
+     55              /* Encode the owner in the upper 32 bits. This means that if
+     56               * owner values are nonzero (as they are on a PSA platform),
+     57               * no key file will ever have a value less than 0x100000000, so
+     58               * the whole range 0..0xffffffff is available for non-key files. */
+     59              uint32_t unsigned_owner_id = MBEDTLS_SVC_KEY_ID_GET_OWNER_ID(key);
+     60              return ((uint64_t) unsigned_owner_id << 32) |
+     61                     MBEDTLS_SVC_KEY_ID_GET_KEY_ID(key);
+     62          #else
+     63              /* Use the key id directly as a file name.
+     64               * psa_is_key_id_valid() in psa_crypto_slot_management.c
+     65               * is responsible for ensuring that key identifiers do not have a
+     66               * value that is reserved for non-key files. */
+     67              return key;
+   \                     psa_its_identifier_of_slot: (+1)
+   \        0x0   0x2100             MOVS     R1,#+0
+   \        0x2   0x4770             BX       LR
+     68          #endif
+     69          }
+     70          
+     71          /**
+     72           * \brief Load persistent data for the given key slot number.
+     73           *
+     74           * This function reads data from a storage backend and returns the data in a
+     75           * buffer.
+     76           *
+     77           * \param key               Persistent identifier of the key to be loaded. This
+     78           *                          should be an occupied storage location.
+     79           * \param[out] data         Buffer where the data is to be written.
+     80           * \param data_size         Size of the \c data buffer in bytes.
+     81           *
+     82           * \retval #PSA_SUCCESS \emptydescription
+     83           * \retval #PSA_ERROR_DATA_INVALID \emptydescription
+     84           * \retval #PSA_ERROR_DATA_CORRUPT \emptydescription
+     85           * \retval #PSA_ERROR_STORAGE_FAILURE \emptydescription
+     86           * \retval #PSA_ERROR_DOES_NOT_EXIST \emptydescription
+     87           */
+
+   \                                 In section .text, align 2, keep-with-next
+     88          static psa_status_t psa_crypto_storage_load(
+     89              const mbedtls_svc_key_id_t key, uint8_t *data, size_t data_size)
+     90          {
+   \                     psa_crypto_storage_load: (+1)
+   \        0x0   0xE92D 0x43F0      PUSH     {R4-R9,LR}
+   \        0x4   0xB085             SUB      SP,SP,#+20
+   \        0x6   0x4681             MOV      R9,R0
+   \        0x8   0x000F             MOVS     R7,R1
+   \        0xA   0x4690             MOV      R8,R2
+     91              psa_status_t status;
+     92              psa_storage_uid_t data_identifier = psa_its_identifier_of_slot(key);
+   \        0xC   0x4648             MOV      R0,R9
+   \        0xE   0x.... 0x....      BL       psa_its_identifier_of_slot
+   \       0x12   0x0004             MOVS     R4,R0
+   \       0x14   0x000D             MOVS     R5,R1
+     93              struct psa_storage_info_t data_identifier_info;
+     94              size_t data_length = 0;
+   \       0x16   0x2000             MOVS     R0,#+0
+   \       0x18   0x9002             STR      R0,[SP, #+8]
+     95          
+     96              status = psa_its_get_info(data_identifier, &data_identifier_info);
+   \       0x1A   0xAA03             ADD      R2,SP,#+12
+   \       0x1C   0x0020             MOVS     R0,R4
+   \       0x1E   0x0029             MOVS     R1,R5
+   \       0x20   0x.... 0x....      BL       psa_its_get_info
+   \       0x24   0x0006             MOVS     R6,R0
+     97              if (status  != PSA_SUCCESS) {
+   \       0x26   0x2E00             CMP      R6,#+0
+   \       0x28   0xD001             BEQ.N    ??psa_crypto_storage_load_0
+     98                  return status;
+   \       0x2A   0x0030             MOVS     R0,R6
+   \       0x2C   0xE010             B.N      ??psa_crypto_storage_load_1
+     99              }
+    100          
+    101              status = psa_its_get(data_identifier, 0, (uint32_t) data_size, data, &data_length);
+   \                     ??psa_crypto_storage_load_0: (+1)
+   \       0x2E   0xA802             ADD      R0,SP,#+8
+   \       0x30   0x9001             STR      R0,[SP, #+4]
+   \       0x32   0x9700             STR      R7,[SP, #+0]
+   \       0x34   0x4643             MOV      R3,R8
+   \       0x36   0x2200             MOVS     R2,#+0
+   \       0x38   0x0020             MOVS     R0,R4
+   \       0x3A   0x0029             MOVS     R1,R5
+   \       0x3C   0x.... 0x....      BL       psa_its_get
+   \       0x40   0x0001             MOVS     R1,R0
+    102              if (data_size  != data_length) {
+   \       0x42   0x9802             LDR      R0,[SP, #+8]
+   \       0x44   0x4580             CMP      R8,R0
+   \       0x46   0xD002             BEQ.N    ??psa_crypto_storage_load_2
+    103                  return PSA_ERROR_DATA_INVALID;
+   \       0x48   0xF07F 0x0098      MVNS     R0,#+152
+   \       0x4C   0xE000             B.N      ??psa_crypto_storage_load_1
+    104              }
+    105          
+    106              return status;
+   \                     ??psa_crypto_storage_load_2: (+1)
+   \       0x4E   0x0008             MOVS     R0,R1
+   \                     ??psa_crypto_storage_load_1: (+1)
+   \       0x50   0xB005             ADD      SP,SP,#+20
+   \       0x52   0xE8BD 0x83F0      POP      {R4-R9,PC}
+    107          }
+    108          
+
+   \                                 In section .text, align 2, keep-with-next
+    109          int psa_is_key_present_in_storage(const mbedtls_svc_key_id_t key)
+    110          {
+   \                     psa_is_key_present_in_storage: (+1)
+   \        0x0   0xB57C             PUSH     {R2-R6,LR}
+   \        0x2   0x0006             MOVS     R6,R0
+    111              psa_status_t ret;
+    112              psa_storage_uid_t data_identifier = psa_its_identifier_of_slot(key);
+   \        0x4   0x0030             MOVS     R0,R6
+   \        0x6   0x.... 0x....      BL       psa_its_identifier_of_slot
+   \        0xA   0x0004             MOVS     R4,R0
+   \        0xC   0x000D             MOVS     R5,R1
+    113              struct psa_storage_info_t data_identifier_info;
+    114          
+    115              ret = psa_its_get_info(data_identifier, &data_identifier_info);
+   \        0xE   0x466A             MOV      R2,SP
+   \       0x10   0x0020             MOVS     R0,R4
+   \       0x12   0x0029             MOVS     R1,R5
+   \       0x14   0x.... 0x....      BL       psa_its_get_info
+   \       0x18   0x0001             MOVS     R1,R0
+    116          
+    117              if (ret == PSA_ERROR_DOES_NOT_EXIST) {
+   \       0x1A   0xF111 0x0F8C      CMN      R1,#+140
+   \       0x1E   0xD101             BNE.N    ??psa_is_key_present_in_storage_0
+    118                  return 0;
+   \       0x20   0x2000             MOVS     R0,#+0
+   \       0x22   0xE000             B.N      ??psa_is_key_present_in_storage_1
+    119              }
+    120              return 1;
+   \                     ??psa_is_key_present_in_storage_0: (+1)
+   \       0x24   0x2001             MOVS     R0,#+1
+   \                     ??psa_is_key_present_in_storage_1: (+1)
+   \       0x26   0xBD76             POP      {R1,R2,R4-R6,PC}
+    121          }
+    122          
+    123          /**
+    124           * \brief Store persistent data for the given key slot number.
+    125           *
+    126           * This function stores the given data buffer to a persistent storage.
+    127           *
+    128           * \param key           Persistent identifier of the key to be stored. This
+    129           *                      should be an unoccupied storage location.
+    130           * \param[in] data      Buffer containing the data to be stored.
+    131           * \param data_length   The number of bytes
+    132           *                      that make up the data.
+    133           *
+    134           * \retval #PSA_SUCCESS \emptydescription
+    135           * \retval #PSA_ERROR_INSUFFICIENT_STORAGE \emptydescription
+    136           * \retval #PSA_ERROR_ALREADY_EXISTS \emptydescription
+    137           * \retval #PSA_ERROR_STORAGE_FAILURE \emptydescription
+    138           * \retval #PSA_ERROR_DATA_INVALID \emptydescription
+    139           */
+
+   \                                 In section .text, align 2, keep-with-next
+    140          static psa_status_t psa_crypto_storage_store(const mbedtls_svc_key_id_t key,
+    141                                                       const uint8_t *data,
+    142                                                       size_t data_length)
+    143          {
+   \                     psa_crypto_storage_store: (+1)
+   \        0x0   0xE92D 0x47FF      PUSH     {R0-R10,LR}
+   \        0x4   0x4681             MOV      R9,R0
+   \        0x6   0x468A             MOV      R10,R1
+   \        0x8   0x4690             MOV      R8,R2
+    144              psa_status_t status;
+    145              psa_storage_uid_t data_identifier = psa_its_identifier_of_slot(key);
+   \        0xA   0x4648             MOV      R0,R9
+   \        0xC   0x.... 0x....      BL       psa_its_identifier_of_slot
+   \       0x10   0x0004             MOVS     R4,R0
+   \       0x12   0x000D             MOVS     R5,R1
+    146              struct psa_storage_info_t data_identifier_info;
+    147          
+    148              if (psa_is_key_present_in_storage(key) == 1) {
+   \       0x14   0x4648             MOV      R0,R9
+   \       0x16   0x.... 0x....      BL       psa_is_key_present_in_storage
+   \       0x1A   0x2801             CMP      R0,#+1
+   \       0x1C   0xD102             BNE.N    ??psa_crypto_storage_store_0
+    149                  return PSA_ERROR_ALREADY_EXISTS;
+   \       0x1E   0xF07F 0x008A      MVNS     R0,#+138
+   \       0x22   0xE022             B.N      ??psa_crypto_storage_store_1
+    150              }
+    151          
+    152              status = psa_its_set(data_identifier, (uint32_t) data_length, data, 0);
+   \                     ??psa_crypto_storage_store_0: (+1)
+   \       0x24   0x2000             MOVS     R0,#+0
+   \       0x26   0x9000             STR      R0,[SP, #+0]
+   \       0x28   0x4653             MOV      R3,R10
+   \       0x2A   0x4642             MOV      R2,R8
+   \       0x2C   0x0020             MOVS     R0,R4
+   \       0x2E   0x0029             MOVS     R1,R5
+   \       0x30   0x.... 0x....      BL       psa_its_set
+   \       0x34   0x0007             MOVS     R7,R0
+    153              if (status != PSA_SUCCESS) {
+   \       0x36   0x2F00             CMP      R7,#+0
+   \       0x38   0xD002             BEQ.N    ??psa_crypto_storage_store_2
+    154                  return PSA_ERROR_DATA_INVALID;
+   \       0x3A   0xF07F 0x0098      MVNS     R0,#+152
+   \       0x3E   0xE014             B.N      ??psa_crypto_storage_store_1
+    155              }
+    156          
+    157              status = psa_its_get_info(data_identifier, &data_identifier_info);
+   \                     ??psa_crypto_storage_store_2: (+1)
+   \       0x40   0xAA01             ADD      R2,SP,#+4
+   \       0x42   0x0020             MOVS     R0,R4
+   \       0x44   0x0029             MOVS     R1,R5
+   \       0x46   0x.... 0x....      BL       psa_its_get_info
+   \       0x4A   0x0006             MOVS     R6,R0
+    158              if (status != PSA_SUCCESS) {
+   \       0x4C   0x2E00             CMP      R6,#+0
+   \       0x4E   0xD105             BNE.N    ??psa_crypto_storage_store_3
+    159                  goto exit;
+    160              }
+    161          
+    162              if (data_identifier_info.size != data_length) {
+   \                     ??psa_crypto_storage_store_4: (+1)
+   \       0x50   0x9801             LDR      R0,[SP, #+4]
+   \       0x52   0x4540             CMP      R0,R8
+   \       0x54   0xD002             BEQ.N    ??psa_crypto_storage_store_3
+    163                  status = PSA_ERROR_DATA_INVALID;
+   \       0x56   0xF07F 0x0098      MVNS     R0,#+152
+   \       0x5A   0x0006             MOVS     R6,R0
+    164                  goto exit;
+    165              }
+    166          
+    167          exit:
+    168              if (status != PSA_SUCCESS) {
+   \                     ??psa_crypto_storage_store_3: (+1)
+   \       0x5C   0x2E00             CMP      R6,#+0
+   \       0x5E   0xD003             BEQ.N    ??psa_crypto_storage_store_5
+    169                  /* Remove the file in case we managed to create it but something
+    170                   * went wrong. It's ok if the file doesn't exist. If the file exists
+    171                   * but the removal fails, we're already reporting an error so there's
+    172                   * nothing else we can do. */
+    173                  (void) psa_its_remove(data_identifier);
+   \       0x60   0x0020             MOVS     R0,R4
+   \       0x62   0x0029             MOVS     R1,R5
+   \       0x64   0x.... 0x....      BL       psa_its_remove
+    174              }
+    175              return status;
+   \                     ??psa_crypto_storage_store_5: (+1)
+   \       0x68   0x0030             MOVS     R0,R6
+   \                     ??psa_crypto_storage_store_1: (+1)
+   \       0x6A   0xB004             ADD      SP,SP,#+16
+   \       0x6C   0xE8BD 0x87F0      POP      {R4-R10,PC}
+    176          }
+    177          
+
+   \                                 In section .text, align 2, keep-with-next
+    178          psa_status_t psa_destroy_persistent_key(const mbedtls_svc_key_id_t key)
+    179          {
+   \                     psa_destroy_persistent_key: (+1)
+   \        0x0   0xE92D 0x41FC      PUSH     {R2-R8,LR}
+   \        0x4   0x0006             MOVS     R6,R0
+    180              psa_status_t ret;
+    181              psa_storage_uid_t data_identifier = psa_its_identifier_of_slot(key);
+   \        0x6   0x0030             MOVS     R0,R6
+   \        0x8   0x.... 0x....      BL       psa_its_identifier_of_slot
+   \        0xC   0x0004             MOVS     R4,R0
+   \        0xE   0x000D             MOVS     R5,R1
+    182              struct psa_storage_info_t data_identifier_info;
+    183          
+    184              ret = psa_its_get_info(data_identifier, &data_identifier_info);
+   \       0x10   0x466A             MOV      R2,SP
+   \       0x12   0x0020             MOVS     R0,R4
+   \       0x14   0x0029             MOVS     R1,R5
+   \       0x16   0x.... 0x....      BL       psa_its_get_info
+   \       0x1A   0x0007             MOVS     R7,R0
+    185              if (ret == PSA_ERROR_DOES_NOT_EXIST) {
+   \       0x1C   0xF07F 0x088B      MVNS     R8,#+139
+   \       0x20   0x4547             CMP      R7,R8
+   \       0x22   0xD101             BNE.N    ??psa_destroy_persistent_key_0
+    186                  return PSA_SUCCESS;
+   \       0x24   0x2000             MOVS     R0,#+0
+   \       0x26   0xE014             B.N      ??psa_destroy_persistent_key_1
+    187              }
+    188          
+    189              if (psa_its_remove(data_identifier) != PSA_SUCCESS) {
+   \                     ??psa_destroy_persistent_key_0: (+1)
+   \       0x28   0x0020             MOVS     R0,R4
+   \       0x2A   0x0029             MOVS     R1,R5
+   \       0x2C   0x.... 0x....      BL       psa_its_remove
+   \       0x30   0x2800             CMP      R0,#+0
+   \       0x32   0xD002             BEQ.N    ??psa_destroy_persistent_key_2
+    190                  return PSA_ERROR_DATA_INVALID;
+   \       0x34   0xF07F 0x0098      MVNS     R0,#+152
+   \       0x38   0xE00B             B.N      ??psa_destroy_persistent_key_1
+    191              }
+    192          
+    193              ret = psa_its_get_info(data_identifier, &data_identifier_info);
+   \                     ??psa_destroy_persistent_key_2: (+1)
+   \       0x3A   0x466A             MOV      R2,SP
+   \       0x3C   0x0020             MOVS     R0,R4
+   \       0x3E   0x0029             MOVS     R1,R5
+   \       0x40   0x.... 0x....      BL       psa_its_get_info
+   \       0x44   0x0001             MOVS     R1,R0
+    194              if (ret != PSA_ERROR_DOES_NOT_EXIST) {
+   \       0x46   0x4541             CMP      R1,R8
+   \       0x48   0xD002             BEQ.N    ??psa_destroy_persistent_key_3
+    195                  return PSA_ERROR_DATA_INVALID;
+   \       0x4A   0xF07F 0x0098      MVNS     R0,#+152
+   \       0x4E   0xE000             B.N      ??psa_destroy_persistent_key_1
+    196              }
+    197          
+    198              return PSA_SUCCESS;
+   \                     ??psa_destroy_persistent_key_3: (+1)
+   \       0x50   0x2000             MOVS     R0,#+0
+   \                     ??psa_destroy_persistent_key_1: (+1)
+   \       0x52   0xE8BD 0x81F6      POP      {R1,R2,R4-R8,PC}
+    199          }
+    200          
+    201          /**
+    202           * \brief Get data length for given key slot number.
+    203           *
+    204           * \param key               Persistent identifier whose stored data length
+    205           *                          is to be obtained.
+    206           * \param[out] data_length  The number of bytes that make up the data.
+    207           *
+    208           * \retval #PSA_SUCCESS \emptydescription
+    209           * \retval #PSA_ERROR_STORAGE_FAILURE \emptydescription
+    210           * \retval #PSA_ERROR_DOES_NOT_EXIST \emptydescription
+    211           * \retval #PSA_ERROR_DATA_CORRUPT \emptydescription
+    212           */
+
+   \                                 In section .text, align 2, keep-with-next
+    213          static psa_status_t psa_crypto_storage_get_data_length(
+    214              const mbedtls_svc_key_id_t key,
+    215              size_t *data_length)
+    216          {
+   \                     psa_crypto_storage_get_data_length: (+1)
+   \        0x0   0xB5FE             PUSH     {R1-R7,LR}
+   \        0x2   0x0006             MOVS     R6,R0
+   \        0x4   0x000F             MOVS     R7,R1
+    217              psa_status_t status;
+    218              psa_storage_uid_t data_identifier = psa_its_identifier_of_slot(key);
+   \        0x6   0x0030             MOVS     R0,R6
+   \        0x8   0x.... 0x....      BL       psa_its_identifier_of_slot
+   \        0xC   0x0004             MOVS     R4,R0
+   \        0xE   0x000D             MOVS     R5,R1
+    219              struct psa_storage_info_t data_identifier_info;
+    220          
+    221              status = psa_its_get_info(data_identifier, &data_identifier_info);
+   \       0x10   0x466A             MOV      R2,SP
+   \       0x12   0x0020             MOVS     R0,R4
+   \       0x14   0x0029             MOVS     R1,R5
+   \       0x16   0x.... 0x....      BL       psa_its_get_info
+   \       0x1A   0x0001             MOVS     R1,R0
+    222              if (status != PSA_SUCCESS) {
+   \       0x1C   0x2900             CMP      R1,#+0
+   \       0x1E   0xD001             BEQ.N    ??psa_crypto_storage_get_data_length_0
+    223                  return status;
+   \       0x20   0x0008             MOVS     R0,R1
+   \       0x22   0xE002             B.N      ??psa_crypto_storage_get_data_length_1
+    224              }
+    225          
+    226              *data_length = (size_t) data_identifier_info.size;
+   \                     ??psa_crypto_storage_get_data_length_0: (+1)
+   \       0x24   0x9800             LDR      R0,[SP, #+0]
+   \       0x26   0x6038             STR      R0,[R7, #+0]
+    227          
+    228              return PSA_SUCCESS;
+   \       0x28   0x2000             MOVS     R0,#+0
+   \                     ??psa_crypto_storage_get_data_length_1: (+1)
+   \       0x2A   0xBDFE             POP      {R1-R7,PC}
+    229          }
+    230          
+    231          /**
+    232           * Persistent key storage magic header.
+    233           */
+    234          #define PSA_KEY_STORAGE_MAGIC_HEADER "PSA\0KEY"
+    235          #define PSA_KEY_STORAGE_MAGIC_HEADER_LENGTH (sizeof(PSA_KEY_STORAGE_MAGIC_HEADER))
+    236          
+    237          typedef struct {
+    238              uint8_t magic[PSA_KEY_STORAGE_MAGIC_HEADER_LENGTH];
+    239              uint8_t version[4];
+    240              uint8_t lifetime[sizeof(psa_key_lifetime_t)];
+    241              uint8_t type[2];
+    242              uint8_t bits[2];
+    243              uint8_t policy[sizeof(psa_key_policy_t)];
+    244              uint8_t data_len[4];
+    245              uint8_t key_data[];
+    246          } psa_persistent_key_storage_format;
+    247          
+
+   \                                 In section .text, align 2, keep-with-next
+    248          void psa_format_key_data_for_storage(const uint8_t *data,
+    249                                               const size_t data_length,
+    250                                               const psa_core_key_attributes_t *attr,
+    251                                               uint8_t *storage_data)
+    252          {
+   \                     psa_format_key_data_for_storage: (+1)
+   \        0x0   0xE92D 0x4FF8      PUSH     {R3-R11,LR}
+   \        0x4   0x4681             MOV      R9,R0
+   \        0x6   0x000C             MOVS     R4,R1
+   \        0x8   0x0015             MOVS     R5,R2
+   \        0xA   0x001E             MOVS     R6,R3
+    253              psa_persistent_key_storage_format *storage_format =
+    254                  (psa_persistent_key_storage_format *) storage_data;
+   \        0xC   0x0037             MOVS     R7,R6
+    255          
+    256              memcpy(storage_format->magic, PSA_KEY_STORAGE_MAGIC_HEADER,
+    257                     PSA_KEY_STORAGE_MAGIC_HEADER_LENGTH);
+   \        0xE   0xF05F 0x0B08      MOVS     R11,#+8
+   \       0x12   0x.... 0x....      LDR.W    R10,??DataTable3
+   \       0x16   0x46B8             MOV      R8,R7
+   \       0x18   0x465A             MOV      R2,R11
+   \       0x1A   0x4651             MOV      R1,R10
+   \       0x1C   0x4640             MOV      R0,R8
+   \       0x1E   0x.... 0x....      BL       __aeabi_memcpy
+    258              MBEDTLS_PUT_UINT32_LE(0, storage_format->version, 0);
+   \       0x22   0x.... 0x....      LDR.W    R8,??DataTable3_1
+   \       0x26   0xF898 0x0000      LDRB     R0,[R8, #+0]
+   \       0x2A   0x2801             CMP      R0,#+1
+   \       0x2C   0xD108             BNE.N    ??psa_format_key_data_for_storage_0
+   \       0x2E   0x2000             MOVS     R0,#+0
+   \       0x30   0x.... 0x....      BL       mbedtls_bswap32
+   \       0x34   0x0001             MOVS     R1,R0
+   \       0x36   0xF117 0x0008      ADDS     R0,R7,#+8
+   \       0x3A   0x.... 0x....      BL       mbedtls_put_unaligned_uint32
+   \       0x3E   0xE004             B.N      ??psa_format_key_data_for_storage_1
+   \                     ??psa_format_key_data_for_storage_0: (+1)
+   \       0x40   0x2100             MOVS     R1,#+0
+   \       0x42   0xF117 0x0008      ADDS     R0,R7,#+8
+   \       0x46   0x.... 0x....      BL       mbedtls_put_unaligned_uint32
+    259              MBEDTLS_PUT_UINT32_LE(attr->lifetime, storage_format->lifetime, 0);
+   \                     ??psa_format_key_data_for_storage_1: (+1)
+   \       0x4A   0xF898 0x0000      LDRB     R0,[R8, #+0]
+   \       0x4E   0x2801             CMP      R0,#+1
+   \       0x50   0xD108             BNE.N    ??psa_format_key_data_for_storage_2
+   \       0x52   0x6868             LDR      R0,[R5, #+4]
+   \       0x54   0x.... 0x....      BL       mbedtls_bswap32
+   \       0x58   0x0001             MOVS     R1,R0
+   \       0x5A   0xF117 0x000C      ADDS     R0,R7,#+12
+   \       0x5E   0x.... 0x....      BL       mbedtls_put_unaligned_uint32
+   \       0x62   0xE004             B.N      ??psa_format_key_data_for_storage_3
+   \                     ??psa_format_key_data_for_storage_2: (+1)
+   \       0x64   0x6869             LDR      R1,[R5, #+4]
+   \       0x66   0xF117 0x000C      ADDS     R0,R7,#+12
+   \       0x6A   0x.... 0x....      BL       mbedtls_put_unaligned_uint32
+    260              MBEDTLS_PUT_UINT16_LE((uint16_t) attr->type, storage_format->type, 0);
+   \                     ??psa_format_key_data_for_storage_3: (+1)
+   \       0x6E   0xF898 0x0000      LDRB     R0,[R8, #+0]
+   \       0x72   0x2801             CMP      R0,#+1
+   \       0x74   0xD109             BNE.N    ??psa_format_key_data_for_storage_4
+   \       0x76   0x8828             LDRH     R0,[R5, #+0]
+   \       0x78   0x.... 0x....      BL       mbedtls_bswap16
+   \       0x7C   0x0001             MOVS     R1,R0
+   \       0x7E   0xB289             UXTH     R1,R1
+   \       0x80   0xF117 0x0010      ADDS     R0,R7,#+16
+   \       0x84   0x.... 0x....      BL       mbedtls_put_unaligned_uint16
+   \       0x88   0xE004             B.N      ??psa_format_key_data_for_storage_5
+   \                     ??psa_format_key_data_for_storage_4: (+1)
+   \       0x8A   0x8829             LDRH     R1,[R5, #+0]
+   \       0x8C   0xF117 0x0010      ADDS     R0,R7,#+16
+   \       0x90   0x.... 0x....      BL       mbedtls_put_unaligned_uint16
+    261              MBEDTLS_PUT_UINT16_LE((uint16_t) attr->bits, storage_format->bits, 0);
+   \                     ??psa_format_key_data_for_storage_5: (+1)
+   \       0x94   0xF898 0x0000      LDRB     R0,[R8, #+0]
+   \       0x98   0x2801             CMP      R0,#+1
+   \       0x9A   0xD109             BNE.N    ??psa_format_key_data_for_storage_6
+   \       0x9C   0x8868             LDRH     R0,[R5, #+2]
+   \       0x9E   0x.... 0x....      BL       mbedtls_bswap16
+   \       0xA2   0x0001             MOVS     R1,R0
+   \       0xA4   0xB289             UXTH     R1,R1
+   \       0xA6   0xF117 0x0012      ADDS     R0,R7,#+18
+   \       0xAA   0x.... 0x....      BL       mbedtls_put_unaligned_uint16
+   \       0xAE   0xE004             B.N      ??psa_format_key_data_for_storage_7
+   \                     ??psa_format_key_data_for_storage_6: (+1)
+   \       0xB0   0x8869             LDRH     R1,[R5, #+2]
+   \       0xB2   0xF117 0x0012      ADDS     R0,R7,#+18
+   \       0xB6   0x.... 0x....      BL       mbedtls_put_unaligned_uint16
+    262              MBEDTLS_PUT_UINT32_LE(attr->policy.usage, storage_format->policy, 0);
+   \                     ??psa_format_key_data_for_storage_7: (+1)
+   \       0xBA   0xF898 0x0000      LDRB     R0,[R8, #+0]
+   \       0xBE   0x2801             CMP      R0,#+1
+   \       0xC0   0xD108             BNE.N    ??psa_format_key_data_for_storage_8
+   \       0xC2   0x68E8             LDR      R0,[R5, #+12]
+   \       0xC4   0x.... 0x....      BL       mbedtls_bswap32
+   \       0xC8   0x0001             MOVS     R1,R0
+   \       0xCA   0xF117 0x0014      ADDS     R0,R7,#+20
+   \       0xCE   0x.... 0x....      BL       mbedtls_put_unaligned_uint32
+   \       0xD2   0xE004             B.N      ??psa_format_key_data_for_storage_9
+   \                     ??psa_format_key_data_for_storage_8: (+1)
+   \       0xD4   0x68E9             LDR      R1,[R5, #+12]
+   \       0xD6   0xF117 0x0014      ADDS     R0,R7,#+20
+   \       0xDA   0x.... 0x....      BL       mbedtls_put_unaligned_uint32
+    263              MBEDTLS_PUT_UINT32_LE(attr->policy.alg, storage_format->policy, sizeof(uint32_t));
+   \                     ??psa_format_key_data_for_storage_9: (+1)
+   \       0xDE   0xF898 0x0000      LDRB     R0,[R8, #+0]
+   \       0xE2   0x2801             CMP      R0,#+1
+   \       0xE4   0xD108             BNE.N    ??psa_format_key_data_for_storage_10
+   \       0xE6   0x6928             LDR      R0,[R5, #+16]
+   \       0xE8   0x.... 0x....      BL       mbedtls_bswap32
+   \       0xEC   0x0001             MOVS     R1,R0
+   \       0xEE   0xF117 0x0018      ADDS     R0,R7,#+24
+   \       0xF2   0x.... 0x....      BL       mbedtls_put_unaligned_uint32
+   \       0xF6   0xE004             B.N      ??psa_format_key_data_for_storage_11
+   \                     ??psa_format_key_data_for_storage_10: (+1)
+   \       0xF8   0x6929             LDR      R1,[R5, #+16]
+   \       0xFA   0xF117 0x0018      ADDS     R0,R7,#+24
+   \       0xFE   0x.... 0x....      BL       mbedtls_put_unaligned_uint32
+    264              MBEDTLS_PUT_UINT32_LE(attr->policy.alg2, storage_format->policy, 2 * sizeof(uint32_t));
+   \                     ??psa_format_key_data_for_storage_11: (+1)
+   \      0x102   0xF898 0x0000      LDRB     R0,[R8, #+0]
+   \      0x106   0x2801             CMP      R0,#+1
+   \      0x108   0xD108             BNE.N    ??psa_format_key_data_for_storage_12
+   \      0x10A   0x6968             LDR      R0,[R5, #+20]
+   \      0x10C   0x.... 0x....      BL       mbedtls_bswap32
+   \      0x110   0x0001             MOVS     R1,R0
+   \      0x112   0xF117 0x001C      ADDS     R0,R7,#+28
+   \      0x116   0x.... 0x....      BL       mbedtls_put_unaligned_uint32
+   \      0x11A   0xE004             B.N      ??psa_format_key_data_for_storage_13
+   \                     ??psa_format_key_data_for_storage_12: (+1)
+   \      0x11C   0x6969             LDR      R1,[R5, #+20]
+   \      0x11E   0xF117 0x001C      ADDS     R0,R7,#+28
+   \      0x122   0x.... 0x....      BL       mbedtls_put_unaligned_uint32
+    265              MBEDTLS_PUT_UINT32_LE(data_length, storage_format->data_len, 0);
+   \                     ??psa_format_key_data_for_storage_13: (+1)
+   \      0x126   0xF898 0x0000      LDRB     R0,[R8, #+0]
+   \      0x12A   0x2801             CMP      R0,#+1
+   \      0x12C   0xD108             BNE.N    ??psa_format_key_data_for_storage_14
+   \      0x12E   0x0020             MOVS     R0,R4
+   \      0x130   0x.... 0x....      BL       mbedtls_bswap32
+   \      0x134   0x0001             MOVS     R1,R0
+   \      0x136   0xF117 0x0020      ADDS     R0,R7,#+32
+   \      0x13A   0x.... 0x....      BL       mbedtls_put_unaligned_uint32
+   \      0x13E   0xE004             B.N      ??psa_format_key_data_for_storage_15
+   \                     ??psa_format_key_data_for_storage_14: (+1)
+   \      0x140   0x0021             MOVS     R1,R4
+   \      0x142   0xF117 0x0020      ADDS     R0,R7,#+32
+   \      0x146   0x.... 0x....      BL       mbedtls_put_unaligned_uint32
+    266              memcpy(storage_format->key_data, data, data_length);
+   \                     ??psa_format_key_data_for_storage_15: (+1)
+   \      0x14A   0x46A3             MOV      R11,R4
+   \      0x14C   0x46C8             MOV      R8,R9
+   \      0x14E   0xF117 0x0A24      ADDS     R10,R7,#+36
+   \      0x152   0x465A             MOV      R2,R11
+   \      0x154   0x4641             MOV      R1,R8
+   \      0x156   0x4650             MOV      R0,R10
+   \      0x158   0x.... 0x....      BL       __aeabi_memcpy
+    267          }
+   \      0x15C   0xE8BD 0x8FF1      POP      {R0,R4-R11,PC}
+    268          
+
+   \                                 In section .text, align 2, keep-with-next
+    269          static psa_status_t check_magic_header(const uint8_t *data)
+    270          {
+   \                     check_magic_header: (+1)
+   \        0x0   0xB510             PUSH     {R4,LR}
+   \        0x2   0x0004             MOVS     R4,R0
+    271              if (memcmp(data, PSA_KEY_STORAGE_MAGIC_HEADER,
+    272                         PSA_KEY_STORAGE_MAGIC_HEADER_LENGTH) != 0) {
+   \        0x4   0x2208             MOVS     R2,#+8
+   \        0x6   0x....             LDR.N    R1,??DataTable3
+   \        0x8   0x0020             MOVS     R0,R4
+   \        0xA   0x.... 0x....      BL       memcmp
+   \        0xE   0x2800             CMP      R0,#+0
+   \       0x10   0xD002             BEQ.N    ??check_magic_header_0
+    273                  return PSA_ERROR_DATA_INVALID;
+   \       0x12   0xF07F 0x0098      MVNS     R0,#+152
+   \       0x16   0xE000             B.N      ??check_magic_header_1
+    274              }
+    275              return PSA_SUCCESS;
+   \                     ??check_magic_header_0: (+1)
+   \       0x18   0x2000             MOVS     R0,#+0
+   \                     ??check_magic_header_1: (+1)
+   \       0x1A   0xBD10             POP      {R4,PC}
+    276          }
+    277          
+
+   \                                 In section .text, align 2, keep-with-next
+    278          psa_status_t psa_parse_key_data_from_storage(const uint8_t *storage_data,
+    279                                                       size_t storage_data_length,
+    280                                                       uint8_t **key_data,
+    281                                                       size_t *key_data_length,
+    282                                                       psa_core_key_attributes_t *attr)
+    283          {
+   \                     psa_parse_key_data_from_storage: (+1)
+   \        0x0   0xE92D 0x4FF3      PUSH     {R0,R1,R4-R11,LR}
+   \        0x4   0xB083             SUB      SP,SP,#+12
+   \        0x6   0x4692             MOV      R10,R2
+   \        0x8   0x001E             MOVS     R6,R3
+   \        0xA   0x9F0E             LDR      R7,[SP, #+56]
+    284              psa_status_t status;
+    285              const psa_persistent_key_storage_format *storage_format =
+    286                  (const psa_persistent_key_storage_format *) storage_data;
+   \        0xC   0xF8DD 0x800C      LDR      R8,[SP, #+12]
+    287              uint32_t version;
+    288          
+    289              if (storage_data_length < sizeof(*storage_format)) {
+   \       0x10   0x9804             LDR      R0,[SP, #+16]
+   \       0x12   0x2824             CMP      R0,#+36
+   \       0x14   0xD202             BCS.N    ??psa_parse_key_data_from_storage_0
+    290                  return PSA_ERROR_DATA_INVALID;
+   \       0x16   0xF07F 0x0098      MVNS     R0,#+152
+   \       0x1A   0xE0BE             B.N      ??psa_parse_key_data_from_storage_1
+    291              }
+    292          
+    293              status = check_magic_header(storage_data);
+   \                     ??psa_parse_key_data_from_storage_0: (+1)
+   \       0x1C   0x9803             LDR      R0,[SP, #+12]
+   \       0x1E   0x.... 0x....      BL       check_magic_header
+   \       0x22   0x0004             MOVS     R4,R0
+    294              if (status != PSA_SUCCESS) {
+   \       0x24   0x2C00             CMP      R4,#+0
+   \       0x26   0xD001             BEQ.N    ??psa_parse_key_data_from_storage_2
+    295                  return status;
+   \       0x28   0x0020             MOVS     R0,R4
+   \       0x2A   0xE0B6             B.N      ??psa_parse_key_data_from_storage_1
+    296              }
+    297          
+    298              version = MBEDTLS_GET_UINT32_LE(storage_format->version, 0);
+   \                     ??psa_parse_key_data_from_storage_2: (+1)
+   \       0x2C   0x.... 0x....      LDR.W    R9,??DataTable3_1
+   \       0x30   0xF899 0x0000      LDRB     R0,[R9, #+0]
+   \       0x34   0x2801             CMP      R0,#+1
+   \       0x36   0xD107             BNE.N    ??psa_parse_key_data_from_storage_3
+   \       0x38   0xF118 0x0008      ADDS     R0,R8,#+8
+   \       0x3C   0x.... 0x....      BL       mbedtls_get_unaligned_uint32
+   \       0x40   0x.... 0x....      BL       mbedtls_bswap32
+   \       0x44   0x0005             MOVS     R5,R0
+   \       0x46   0xE004             B.N      ??psa_parse_key_data_from_storage_4
+   \                     ??psa_parse_key_data_from_storage_3: (+1)
+   \       0x48   0xF118 0x0008      ADDS     R0,R8,#+8
+   \       0x4C   0x.... 0x....      BL       mbedtls_get_unaligned_uint32
+   \       0x50   0x0005             MOVS     R5,R0
+    299              if (version != 0) {
+   \                     ??psa_parse_key_data_from_storage_4: (+1)
+   \       0x52   0x2D00             CMP      R5,#+0
+   \       0x54   0xD002             BEQ.N    ??psa_parse_key_data_from_storage_5
+    300                  return PSA_ERROR_DATA_INVALID;
+   \       0x56   0xF07F 0x0098      MVNS     R0,#+152
+   \       0x5A   0xE09E             B.N      ??psa_parse_key_data_from_storage_1
+    301              }
+    302          
+    303              *key_data_length = MBEDTLS_GET_UINT32_LE(storage_format->data_len, 0);
+   \                     ??psa_parse_key_data_from_storage_5: (+1)
+   \       0x5C   0xF899 0x0000      LDRB     R0,[R9, #+0]
+   \       0x60   0x2801             CMP      R0,#+1
+   \       0x62   0xD106             BNE.N    ??psa_parse_key_data_from_storage_6
+   \       0x64   0xF118 0x0020      ADDS     R0,R8,#+32
+   \       0x68   0x.... 0x....      BL       mbedtls_get_unaligned_uint32
+   \       0x6C   0x.... 0x....      BL       mbedtls_bswap32
+   \       0x70   0xE003             B.N      ??psa_parse_key_data_from_storage_7
+   \                     ??psa_parse_key_data_from_storage_6: (+1)
+   \       0x72   0xF118 0x0020      ADDS     R0,R8,#+32
+   \       0x76   0x.... 0x....      BL       mbedtls_get_unaligned_uint32
+   \                     ??psa_parse_key_data_from_storage_7: (+1)
+   \       0x7A   0x6030             STR      R0,[R6, #+0]
+    304              if (*key_data_length > (storage_data_length - sizeof(*storage_format)) ||
+    305                  *key_data_length > PSA_CRYPTO_MAX_STORAGE_SIZE) {
+   \       0x7C   0x9804             LDR      R0,[SP, #+16]
+   \       0x7E   0x3824             SUBS     R0,R0,#+36
+   \       0x80   0x6831             LDR      R1,[R6, #+0]
+   \       0x82   0x4288             CMP      R0,R1
+   \       0x84   0xD303             BCC.N    ??psa_parse_key_data_from_storage_8
+   \       0x86   0x6830             LDR      R0,[R6, #+0]
+   \       0x88   0xF5B0 0x5F00      CMP      R0,#+8192
+   \       0x8C   0xD302             BCC.N    ??psa_parse_key_data_from_storage_9
+    306                  return PSA_ERROR_DATA_INVALID;
+   \                     ??psa_parse_key_data_from_storage_8: (+1)
+   \       0x8E   0xF07F 0x0098      MVNS     R0,#+152
+   \       0x92   0xE082             B.N      ??psa_parse_key_data_from_storage_1
+    307              }
+    308          
+    309              if (*key_data_length == 0) {
+   \                     ??psa_parse_key_data_from_storage_9: (+1)
+   \       0x94   0x6830             LDR      R0,[R6, #+0]
+   \       0x96   0x2800             CMP      R0,#+0
+   \       0x98   0xD103             BNE.N    ??psa_parse_key_data_from_storage_10
+    310                  *key_data = NULL;
+   \       0x9A   0x2000             MOVS     R0,#+0
+   \       0x9C   0xF8CA 0x0000      STR      R0,[R10, #+0]
+   \       0xA0   0xE018             B.N      ??psa_parse_key_data_from_storage_11
+    311              } else {
+    312                  *key_data = mbedtls_calloc(1, *key_data_length);
+   \                     ??psa_parse_key_data_from_storage_10: (+1)
+   \       0xA2   0x6831             LDR      R1,[R6, #+0]
+   \       0xA4   0x2001             MOVS     R0,#+1
+   \       0xA6   0x.... 0x....      BL       sl_calloc
+   \       0xAA   0xF8CA 0x0000      STR      R0,[R10, #+0]
+    313                  if (*key_data == NULL) {
+   \       0xAE   0xF8DA 0x0000      LDR      R0,[R10, #+0]
+   \       0xB2   0x2800             CMP      R0,#+0
+   \       0xB4   0xD102             BNE.N    ??psa_parse_key_data_from_storage_12
+    314                      return PSA_ERROR_INSUFFICIENT_MEMORY;
+   \       0xB6   0xF07F 0x008C      MVNS     R0,#+140
+   \       0xBA   0xE06E             B.N      ??psa_parse_key_data_from_storage_1
+    315                  }
+    316                  memcpy(*key_data, storage_format->key_data, *key_data_length);
+   \                     ??psa_parse_key_data_from_storage_12: (+1)
+   \       0xBC   0x6830             LDR      R0,[R6, #+0]
+   \       0xBE   0x9001             STR      R0,[SP, #+4]
+   \       0xC0   0xF118 0x0024      ADDS     R0,R8,#+36
+   \       0xC4   0x9000             STR      R0,[SP, #+0]
+   \       0xC6   0xF8DA 0xB000      LDR      R11,[R10, #+0]
+   \       0xCA   0x9A01             LDR      R2,[SP, #+4]
+   \       0xCC   0x9900             LDR      R1,[SP, #+0]
+   \       0xCE   0x4658             MOV      R0,R11
+   \       0xD0   0x.... 0x....      BL       __aeabi_memcpy
+    317              }
+    318          
+    319              attr->lifetime = MBEDTLS_GET_UINT32_LE(storage_format->lifetime, 0);
+   \                     ??psa_parse_key_data_from_storage_11: (+1)
+   \       0xD4   0xF899 0x0000      LDRB     R0,[R9, #+0]
+   \       0xD8   0x2801             CMP      R0,#+1
+   \       0xDA   0xD106             BNE.N    ??psa_parse_key_data_from_storage_13
+   \       0xDC   0xF118 0x000C      ADDS     R0,R8,#+12
+   \       0xE0   0x.... 0x....      BL       mbedtls_get_unaligned_uint32
+   \       0xE4   0x.... 0x....      BL       mbedtls_bswap32
+   \       0xE8   0xE003             B.N      ??psa_parse_key_data_from_storage_14
+   \                     ??psa_parse_key_data_from_storage_13: (+1)
+   \       0xEA   0xF118 0x000C      ADDS     R0,R8,#+12
+   \       0xEE   0x.... 0x....      BL       mbedtls_get_unaligned_uint32
+   \                     ??psa_parse_key_data_from_storage_14: (+1)
+   \       0xF2   0x6078             STR      R0,[R7, #+4]
+    320              attr->type = MBEDTLS_GET_UINT16_LE(storage_format->type, 0);
+   \       0xF4   0xF899 0x0000      LDRB     R0,[R9, #+0]
+   \       0xF8   0x2801             CMP      R0,#+1
+   \       0xFA   0xD107             BNE.N    ??psa_parse_key_data_from_storage_15
+   \       0xFC   0xF118 0x0010      ADDS     R0,R8,#+16
+   \      0x100   0x.... 0x....      BL       mbedtls_get_unaligned_uint16
+   \      0x104   0xB280             UXTH     R0,R0
+   \      0x106   0x.... 0x....      BL       mbedtls_bswap16
+   \      0x10A   0xE003             B.N      ??psa_parse_key_data_from_storage_16
+   \                     ??psa_parse_key_data_from_storage_15: (+1)
+   \      0x10C   0xF118 0x0010      ADDS     R0,R8,#+16
+   \      0x110   0x.... 0x....      BL       mbedtls_get_unaligned_uint16
+   \                     ??psa_parse_key_data_from_storage_16: (+1)
+   \      0x114   0x8038             STRH     R0,[R7, #+0]
+    321              attr->bits = MBEDTLS_GET_UINT16_LE(storage_format->bits, 0);
+   \      0x116   0xF899 0x0000      LDRB     R0,[R9, #+0]
+   \      0x11A   0x2801             CMP      R0,#+1
+   \      0x11C   0xD107             BNE.N    ??psa_parse_key_data_from_storage_17
+   \      0x11E   0xF118 0x0012      ADDS     R0,R8,#+18
+   \      0x122   0x.... 0x....      BL       mbedtls_get_unaligned_uint16
+   \      0x126   0xB280             UXTH     R0,R0
+   \      0x128   0x.... 0x....      BL       mbedtls_bswap16
+   \      0x12C   0xE003             B.N      ??psa_parse_key_data_from_storage_18
+   \                     ??psa_parse_key_data_from_storage_17: (+1)
+   \      0x12E   0xF118 0x0012      ADDS     R0,R8,#+18
+   \      0x132   0x.... 0x....      BL       mbedtls_get_unaligned_uint16
+   \                     ??psa_parse_key_data_from_storage_18: (+1)
+   \      0x136   0x8078             STRH     R0,[R7, #+2]
+    322              attr->policy.usage = MBEDTLS_GET_UINT32_LE(storage_format->policy, 0);
+   \      0x138   0xF899 0x0000      LDRB     R0,[R9, #+0]
+   \      0x13C   0x2801             CMP      R0,#+1
+   \      0x13E   0xD106             BNE.N    ??psa_parse_key_data_from_storage_19
+   \      0x140   0xF118 0x0014      ADDS     R0,R8,#+20
+   \      0x144   0x.... 0x....      BL       mbedtls_get_unaligned_uint32
+   \      0x148   0x.... 0x....      BL       mbedtls_bswap32
+   \      0x14C   0xE003             B.N      ??psa_parse_key_data_from_storage_20
+   \                     ??psa_parse_key_data_from_storage_19: (+1)
+   \      0x14E   0xF118 0x0014      ADDS     R0,R8,#+20
+   \      0x152   0x.... 0x....      BL       mbedtls_get_unaligned_uint32
+   \                     ??psa_parse_key_data_from_storage_20: (+1)
+   \      0x156   0x60F8             STR      R0,[R7, #+12]
+    323              attr->policy.alg = MBEDTLS_GET_UINT32_LE(storage_format->policy, sizeof(uint32_t));
+   \      0x158   0xF899 0x0000      LDRB     R0,[R9, #+0]
+   \      0x15C   0x2801             CMP      R0,#+1
+   \      0x15E   0xD106             BNE.N    ??psa_parse_key_data_from_storage_21
+   \      0x160   0xF118 0x0018      ADDS     R0,R8,#+24
+   \      0x164   0x.... 0x....      BL       mbedtls_get_unaligned_uint32
+   \      0x168   0x.... 0x....      BL       mbedtls_bswap32
+   \      0x16C   0xE003             B.N      ??psa_parse_key_data_from_storage_22
+   \                     ??psa_parse_key_data_from_storage_21: (+1)
+   \      0x16E   0xF118 0x0018      ADDS     R0,R8,#+24
+   \      0x172   0x.... 0x....      BL       mbedtls_get_unaligned_uint32
+   \                     ??psa_parse_key_data_from_storage_22: (+1)
+   \      0x176   0x6138             STR      R0,[R7, #+16]
+    324              attr->policy.alg2 = MBEDTLS_GET_UINT32_LE(storage_format->policy, 2 * sizeof(uint32_t));
+   \      0x178   0xF899 0x0000      LDRB     R0,[R9, #+0]
+   \      0x17C   0x2801             CMP      R0,#+1
+   \      0x17E   0xD106             BNE.N    ??psa_parse_key_data_from_storage_23
+   \      0x180   0xF118 0x001C      ADDS     R0,R8,#+28
+   \      0x184   0x.... 0x....      BL       mbedtls_get_unaligned_uint32
+   \      0x188   0x.... 0x....      BL       mbedtls_bswap32
+   \      0x18C   0xE003             B.N      ??psa_parse_key_data_from_storage_24
+   \                     ??psa_parse_key_data_from_storage_23: (+1)
+   \      0x18E   0xF118 0x001C      ADDS     R0,R8,#+28
+   \      0x192   0x.... 0x....      BL       mbedtls_get_unaligned_uint32
+   \                     ??psa_parse_key_data_from_storage_24: (+1)
+   \      0x196   0x6178             STR      R0,[R7, #+20]
+    325          
+    326              return PSA_SUCCESS;
+   \      0x198   0x2000             MOVS     R0,#+0
+   \                     ??psa_parse_key_data_from_storage_1: (+1)
+   \      0x19A   0xB005             ADD      SP,SP,#+20
+   \      0x19C   0xE8BD 0x8FF0      POP      {R4-R11,PC}
+    327          }
+    328          
+
+   \                                 In section .text, align 2, keep-with-next
+    329          psa_status_t psa_save_persistent_key(const psa_core_key_attributes_t *attr,
+    330                                               const uint8_t *data,
+    331                                               const size_t data_length)
+    332          {
+   \                     psa_save_persistent_key: (+1)
+   \        0x0   0xE92D 0x43F8      PUSH     {R3-R9,LR}
+   \        0x4   0x4681             MOV      R9,R0
+   \        0x6   0x000C             MOVS     R4,R1
+   \        0x8   0x0015             MOVS     R5,R2
+    333              size_t storage_data_length;
+    334              uint8_t *storage_data;
+    335              psa_status_t status;
+    336          
+    337              /* All keys saved to persistent storage always have a key context */
+    338              if (data == NULL || data_length == 0) {
+   \        0xA   0x2C00             CMP      R4,#+0
+   \        0xC   0xD001             BEQ.N    ??psa_save_persistent_key_0
+   \        0xE   0x2D00             CMP      R5,#+0
+   \       0x10   0xD102             BNE.N    ??psa_save_persistent_key_1
+    339                  return PSA_ERROR_INVALID_ARGUMENT;
+   \                     ??psa_save_persistent_key_0: (+1)
+   \       0x12   0xF07F 0x0086      MVNS     R0,#+134
+   \       0x16   0xE023             B.N      ??psa_save_persistent_key_2
+    340              }
+    341          
+    342              if (data_length > PSA_CRYPTO_MAX_STORAGE_SIZE) {
+   \                     ??psa_save_persistent_key_1: (+1)
+   \       0x18   0xF5B5 0x5F00      CMP      R5,#+8192
+   \       0x1C   0xD302             BCC.N    ??psa_save_persistent_key_3
+    343                  return PSA_ERROR_INSUFFICIENT_STORAGE;
+   \       0x1E   0xF07F 0x008D      MVNS     R0,#+141
+   \       0x22   0xE01D             B.N      ??psa_save_persistent_key_2
+    344              }
+    345              storage_data_length = data_length + sizeof(psa_persistent_key_storage_format);
+   \                     ??psa_save_persistent_key_3: (+1)
+   \       0x24   0xF115 0x0724      ADDS     R7,R5,#+36
+    346          
+    347              storage_data = mbedtls_calloc(1, storage_data_length);
+   \       0x28   0x0039             MOVS     R1,R7
+   \       0x2A   0x2001             MOVS     R0,#+1
+   \       0x2C   0x.... 0x....      BL       sl_calloc
+   \       0x30   0x0006             MOVS     R6,R0
+    348              if (storage_data == NULL) {
+   \       0x32   0x2E00             CMP      R6,#+0
+   \       0x34   0xD102             BNE.N    ??psa_save_persistent_key_4
+    349                  return PSA_ERROR_INSUFFICIENT_MEMORY;
+   \       0x36   0xF07F 0x008C      MVNS     R0,#+140
+   \       0x3A   0xE011             B.N      ??psa_save_persistent_key_2
+    350              }
+    351          
+    352              psa_format_key_data_for_storage(data, data_length, attr, storage_data);
+   \                     ??psa_save_persistent_key_4: (+1)
+   \       0x3C   0x0033             MOVS     R3,R6
+   \       0x3E   0x464A             MOV      R2,R9
+   \       0x40   0x0029             MOVS     R1,R5
+   \       0x42   0x0020             MOVS     R0,R4
+   \       0x44   0x.... 0x....      BL       psa_format_key_data_for_storage
+    353          
+    354              status = psa_crypto_storage_store(attr->id,
+    355                                                storage_data, storage_data_length);
+   \       0x48   0x003A             MOVS     R2,R7
+   \       0x4A   0x0031             MOVS     R1,R6
+   \       0x4C   0xF8D9 0x0008      LDR      R0,[R9, #+8]
+   \       0x50   0x.... 0x....      BL       psa_crypto_storage_store
+   \       0x54   0x4680             MOV      R8,R0
+    356          
+    357              mbedtls_zeroize_and_free(storage_data, storage_data_length);
+   \       0x56   0x0039             MOVS     R1,R7
+   \       0x58   0x0030             MOVS     R0,R6
+   \       0x5A   0x.... 0x....      BL       mbedtls_zeroize_and_free
+    358          
+    359              return status;
+   \       0x5E   0x4640             MOV      R0,R8
+   \                     ??psa_save_persistent_key_2: (+1)
+   \       0x60   0xE8BD 0x83F2      POP      {R1,R4-R9,PC}
+    360          }
+    361          
+
+   \                                 In section .text, align 2, keep-with-next
+    362          void psa_free_persistent_key_data(uint8_t *key_data, size_t key_data_length)
+    363          {
+   \                     psa_free_persistent_key_data: (+1)
+   \        0x0   0xB538             PUSH     {R3-R5,LR}
+   \        0x2   0x0005             MOVS     R5,R0
+   \        0x4   0x000C             MOVS     R4,R1
+    364              mbedtls_zeroize_and_free(key_data, key_data_length);
+   \        0x6   0x0021             MOVS     R1,R4
+   \        0x8   0x0028             MOVS     R0,R5
+   \        0xA   0x.... 0x....      BL       mbedtls_zeroize_and_free
+    365          }
+   \        0xE   0xBD31             POP      {R0,R4,R5,PC}
+    366          
+
+   \                                 In section .text, align 2, keep-with-next
+    367          psa_status_t psa_load_persistent_key(psa_core_key_attributes_t *attr,
+    368                                               uint8_t **data,
+    369                                               size_t *data_length)
+    370          {
+   \                     psa_load_persistent_key: (+1)
+   \        0x0   0xE92D 0x47FC      PUSH     {R2-R10,LR}
+   \        0x4   0x4682             MOV      R10,R0
+   \        0x6   0x000F             MOVS     R7,R1
+   \        0x8   0x4690             MOV      R8,R2
+    371              psa_status_t status = PSA_SUCCESS;
+   \        0xA   0x2400             MOVS     R4,#+0
+    372              uint8_t *loaded_data;
+    373              size_t storage_data_length = 0;
+   \        0xC   0x2000             MOVS     R0,#+0
+   \        0xE   0x9001             STR      R0,[SP, #+4]
+    374              mbedtls_svc_key_id_t key = attr->id;
+   \       0x10   0xF8DA 0x9008      LDR      R9,[R10, #+8]
+    375          
+    376              status = psa_crypto_storage_get_data_length(key, &storage_data_length);
+   \       0x14   0xA901             ADD      R1,SP,#+4
+   \       0x16   0x4648             MOV      R0,R9
+   \       0x18   0x.... 0x....      BL       psa_crypto_storage_get_data_length
+   \       0x1C   0x0006             MOVS     R6,R0
+    377              if (status != PSA_SUCCESS) {
+   \       0x1E   0x2E00             CMP      R6,#+0
+   \       0x20   0xD001             BEQ.N    ??psa_load_persistent_key_0
+    378                  return status;
+   \       0x22   0x0030             MOVS     R0,R6
+   \       0x24   0xE02B             B.N      ??psa_load_persistent_key_1
+    379              }
+    380          
+    381              loaded_data = mbedtls_calloc(1, storage_data_length);
+   \                     ??psa_load_persistent_key_0: (+1)
+   \       0x26   0x9901             LDR      R1,[SP, #+4]
+   \       0x28   0x2001             MOVS     R0,#+1
+   \       0x2A   0x.... 0x....      BL       sl_calloc
+   \       0x2E   0x0005             MOVS     R5,R0
+    382          
+    383              if (loaded_data == NULL) {
+   \       0x30   0x2D00             CMP      R5,#+0
+   \       0x32   0xD102             BNE.N    ??psa_load_persistent_key_2
+    384                  return PSA_ERROR_INSUFFICIENT_MEMORY;
+   \       0x34   0xF07F 0x008C      MVNS     R0,#+140
+   \       0x38   0xE021             B.N      ??psa_load_persistent_key_1
+    385              }
+    386          
+    387              status = psa_crypto_storage_load(key, loaded_data, storage_data_length);
+   \                     ??psa_load_persistent_key_2: (+1)
+   \       0x3A   0x9A01             LDR      R2,[SP, #+4]
+   \       0x3C   0x0029             MOVS     R1,R5
+   \       0x3E   0x4648             MOV      R0,R9
+   \       0x40   0x.... 0x....      BL       psa_crypto_storage_load
+   \       0x44   0x0004             MOVS     R4,R0
+    388              if (status != PSA_SUCCESS) {
+   \       0x46   0x2C00             CMP      R4,#+0
+   \       0x48   0xD114             BNE.N    ??psa_load_persistent_key_3
+    389                  goto exit;
+    390              }
+    391          
+    392              status = psa_parse_key_data_from_storage(loaded_data, storage_data_length,
+    393                                                       data, data_length, attr);
+   \                     ??psa_load_persistent_key_4: (+1)
+   \       0x4A   0xF8CD 0xA000      STR      R10,[SP, #+0]
+   \       0x4E   0x4643             MOV      R3,R8
+   \       0x50   0x003A             MOVS     R2,R7
+   \       0x52   0x9901             LDR      R1,[SP, #+4]
+   \       0x54   0x0028             MOVS     R0,R5
+   \       0x56   0x.... 0x....      BL       psa_parse_key_data_from_storage
+   \       0x5A   0x0004             MOVS     R4,R0
+    394          
+    395              /* All keys saved to persistent storage always have a key context */
+    396              if (status == PSA_SUCCESS &&
+    397                  (*data == NULL || *data_length == 0)) {
+   \       0x5C   0x2C00             CMP      R4,#+0
+   \       0x5E   0xD109             BNE.N    ??psa_load_persistent_key_3
+   \       0x60   0x6838             LDR      R0,[R7, #+0]
+   \       0x62   0x2800             CMP      R0,#+0
+   \       0x64   0xD003             BEQ.N    ??psa_load_persistent_key_5
+   \       0x66   0xF8D8 0x0000      LDR      R0,[R8, #+0]
+   \       0x6A   0x2800             CMP      R0,#+0
+   \       0x6C   0xD102             BNE.N    ??psa_load_persistent_key_3
+    398                  status = PSA_ERROR_STORAGE_FAILURE;
+   \                     ??psa_load_persistent_key_5: (+1)
+   \       0x6E   0xF07F 0x0091      MVNS     R0,#+145
+   \       0x72   0x0004             MOVS     R4,R0
+    399              }
+    400          
+    401          exit:
+    402              mbedtls_zeroize_and_free(loaded_data, storage_data_length);
+   \                     ??psa_load_persistent_key_3: (+1)
+   \       0x74   0x9901             LDR      R1,[SP, #+4]
+   \       0x76   0x0028             MOVS     R0,R5
+   \       0x78   0x.... 0x....      BL       mbedtls_zeroize_and_free
+    403              return status;
+   \       0x7C   0x0020             MOVS     R0,R4
+   \                     ??psa_load_persistent_key_1: (+1)
+   \       0x7E   0xE8BD 0x87F6      POP      {R1,R2,R4-R10,PC}
+    404          }
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable3:
+   \        0x0   0x....'....        DC32     ?_0
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable3_1:
+   \        0x0   0x....'....        DC32     mbedtls_byte_order_detector
+
+   \                                 In section .rodata, align 4
+   \                     ?_0:
+   \        0x0   0x50 0x53          DC8 0x50, 0x53, 0x41, 0, 0x4B, 0x45, 0x59, 0
+   \              0x41 0x00    
+   \              0x4B 0x45    
+   \              0x59 0x00
+    405          
+    406          
+    407          
+    408          /****************************************************************/
+    409          /* Transactions */
+    410          /****************************************************************/
+    411          
+    412          #if defined(PSA_CRYPTO_STORAGE_HAS_TRANSACTIONS)
+    413          
+    414          psa_crypto_transaction_t psa_crypto_transaction;
+    415          
+    416          psa_status_t psa_crypto_save_transaction(void)
+    417          {
+    418              struct psa_storage_info_t p_info;
+    419              psa_status_t status;
+    420              status = psa_its_get_info(PSA_CRYPTO_ITS_TRANSACTION_UID, &p_info);
+    421              if (status == PSA_SUCCESS) {
+    422                  /* This shouldn't happen: we're trying to start a transaction while
+    423                   * there is still a transaction that hasn't been replayed. */
+    424                  return PSA_ERROR_CORRUPTION_DETECTED;
+    425              } else if (status != PSA_ERROR_DOES_NOT_EXIST) {
+    426                  return status;
+    427              }
+    428              return psa_its_set(PSA_CRYPTO_ITS_TRANSACTION_UID,
+    429                                 sizeof(psa_crypto_transaction),
+    430                                 &psa_crypto_transaction,
+    431                                 0);
+    432          }
+    433          
+    434          psa_status_t psa_crypto_load_transaction(void)
+    435          {
+    436              psa_status_t status;
+    437              size_t length;
+    438              status = psa_its_get(PSA_CRYPTO_ITS_TRANSACTION_UID, 0,
+    439                                   sizeof(psa_crypto_transaction),
+    440                                   &psa_crypto_transaction, &length);
+    441              if (status != PSA_SUCCESS) {
+    442                  return status;
+    443              }
+    444              if (length != sizeof(psa_crypto_transaction)) {
+    445                  return PSA_ERROR_DATA_INVALID;
+    446              }
+    447              return PSA_SUCCESS;
+    448          }
+    449          
+    450          psa_status_t psa_crypto_stop_transaction(void)
+    451          {
+    452              psa_status_t status = psa_its_remove(PSA_CRYPTO_ITS_TRANSACTION_UID);
+    453              /* Whether or not updating the storage succeeded, the transaction is
+    454               * finished now. It's too late to go back, so zero out the in-memory
+    455               * data. */
+    456              memset(&psa_crypto_transaction, 0, sizeof(psa_crypto_transaction));
+    457              return status;
+    458          }
+    459          
+    460          #endif /* PSA_CRYPTO_STORAGE_HAS_TRANSACTIONS */
+    461          
+    462          
+    463          
+    464          /****************************************************************/
+    465          /* Random generator state */
+    466          /****************************************************************/
+    467          
+    468          #if defined(MBEDTLS_PSA_INJECT_ENTROPY)
+    469          psa_status_t mbedtls_psa_storage_inject_entropy(const unsigned char *seed,
+    470                                                          size_t seed_size)
+    471          {
+    472              psa_status_t status;
+    473              struct psa_storage_info_t p_info;
+    474          
+    475              status = psa_its_get_info(PSA_CRYPTO_ITS_RANDOM_SEED_UID, &p_info);
+    476          
+    477              if (PSA_ERROR_DOES_NOT_EXIST == status) { /* No seed exists */
+    478                  status = psa_its_set(PSA_CRYPTO_ITS_RANDOM_SEED_UID, seed_size, seed, 0);
+    479              } else if (PSA_SUCCESS == status) {
+    480                  /* You should not be here. Seed needs to be injected only once */
+    481                  status = PSA_ERROR_NOT_PERMITTED;
+    482              }
+    483              return status;
+    484          }
+    485          #endif /* MBEDTLS_PSA_INJECT_ENTROPY */
+    486          
+    487          
+    488          
+    489          /****************************************************************/
+    490          /* The end */
+    491          /****************************************************************/
+    492          
+    493          #endif /* MBEDTLS_PSA_CRYPTO_STORAGE_C */
+
+   Maximum stack usage in bytes:
+
+   .cstack Function
+   ------- --------
+       8   check_magic_header
+         8   -> memcmp
+       0   mbedtls_bswap16
+       0   mbedtls_bswap32
+      24   mbedtls_get_unaligned_uint16
+        24   -> __aeabi_memcpy
+      24   mbedtls_get_unaligned_uint32
+        24   -> __aeabi_memcpy
+      24   mbedtls_put_unaligned_uint16
+        24   -> __aeabi_memcpy
+      24   mbedtls_put_unaligned_uint32
+        24   -> __aeabi_memcpy
+      32   psa_crypto_storage_get_data_length
+        32   -> psa_its_get_info
+        32   -> psa_its_identifier_of_slot
+      48   psa_crypto_storage_load
+        48   -> psa_its_get
+        48   -> psa_its_get_info
+        48   -> psa_its_identifier_of_slot
+      48   psa_crypto_storage_store
+        48   -> psa_is_key_present_in_storage
+        48   -> psa_its_get_info
+        48   -> psa_its_identifier_of_slot
+        48   -> psa_its_remove
+        48   -> psa_its_set
+      32   psa_destroy_persistent_key
+        32   -> psa_its_get_info
+        32   -> psa_its_identifier_of_slot
+        32   -> psa_its_remove
+      40   psa_format_key_data_for_storage
+        40   -> __aeabi_memcpy
+        40   -> mbedtls_bswap16
+        40   -> mbedtls_bswap32
+        40   -> mbedtls_put_unaligned_uint16
+        40   -> mbedtls_put_unaligned_uint32
+      16   psa_free_persistent_key_data
+        16   -> mbedtls_zeroize_and_free
+      24   psa_is_key_present_in_storage
+        24   -> psa_its_get_info
+        24   -> psa_its_identifier_of_slot
+       0   psa_its_identifier_of_slot
+      40   psa_load_persistent_key
+        40   -> mbedtls_zeroize_and_free
+        40   -> psa_crypto_storage_get_data_length
+        40   -> psa_crypto_storage_load
+        40   -> psa_parse_key_data_from_storage
+        40   -> sl_calloc
+      56   psa_parse_key_data_from_storage
+        56   -> __aeabi_memcpy
+        56   -> check_magic_header
+        56   -> mbedtls_bswap16
+        56   -> mbedtls_bswap32
+        56   -> mbedtls_get_unaligned_uint16
+        56   -> mbedtls_get_unaligned_uint32
+        56   -> sl_calloc
+      32   psa_save_persistent_key
+        32   -> mbedtls_zeroize_and_free
+        32   -> psa_crypto_storage_store
+        32   -> psa_format_key_data_for_storage
+        32   -> sl_calloc
+
+
+   Section sizes:
+
+   Bytes  Function/Label
+   -----  --------------
+       4  ??DataTable3
+       4  ??DataTable3_1
+       8  ?_0
+      28  check_magic_header
+      16  mbedtls_bswap16
+      28  mbedtls_bswap32
+       2  mbedtls_byte_order_detector
+      26  mbedtls_get_unaligned_uint16
+      24  mbedtls_get_unaligned_uint32
+      22  mbedtls_put_unaligned_uint16
+      22  mbedtls_put_unaligned_uint32
+      44  psa_crypto_storage_get_data_length
+      86  psa_crypto_storage_load
+     112  psa_crypto_storage_store
+      86  psa_destroy_persistent_key
+     352  psa_format_key_data_for_storage
+      16  psa_free_persistent_key_data
+      40  psa_is_key_present_in_storage
+       4  psa_its_identifier_of_slot
+     130  psa_load_persistent_key
+     416  psa_parse_key_data_from_storage
+     100  psa_save_persistent_key
+
+ 
+    10 bytes in section .rodata
+ 1'560 bytes in section .text
+ 
+ 1'466 bytes of CODE  memory (+ 94 bytes shared)
+    10 bytes of CONST memory
+
+Errors: none
+Warnings: none

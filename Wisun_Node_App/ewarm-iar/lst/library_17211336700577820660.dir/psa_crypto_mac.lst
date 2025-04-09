@@ -1,0 +1,1679 @@
+###############################################################################
+#
+# IAR ANSI C/C++ Compiler V9.50.2.385/W64 for ARM         29/Mar/2025  15:54:00
+# Copyright 1999-2024 IAR Systems AB.
+#
+#    Cpu mode                     =  thumb
+#    Endian                       =  little
+#    Source file                  =
+#        D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\util\third_party\mbedtls\library\psa_crypto_mac.c
+#    Command line                 =
+#        -f "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\ewarm-iar\obj\library_17211336700577820660.dir\psa_crypto_mac.o.rsp"
+#        ("D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\util\third_party\mbedtls\library\psa_crypto_mac.c"
+#        -D DEBUG_EFM=1 -D EFR32FG28B322F1024IM48=1 -D
+#        configNUM_SDK_THREAD_LOCAL_STORAGE_POINTERS=2 -D
+#        SL_COMPONENT_CATALOG_PRESENT=1 -D
+#        MBEDTLS_CONFIG_FILE=<sl_mbedtls_config.h> -D
+#        MBEDTLS_PSA_CRYPTO_CONFIG_FILE=<psa_crypto_config.h> -D
+#        SL_RAIL_LIB_MULTIPROTOCOL_SUPPORT=0 -D
+#        SL_RAIL_UTIL_PA_CONFIG_HEADER=<sl_rail_util_pa_config.h> -D
+#        RTT_USE_ASM=0 -lC "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\ewarm-iar\lst\library_17211336700577820660.dir"
+#        --diag_suppress Pa050 -o "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\ewarm-iar\obj\library_17211336700577820660.dir"
+#        --no_cse --no_unroll --no_inline --no_code_motion --no_tbaa
+#        --no_clustering --no_scheduling --debug --endian=little
+#        --cpu=Cortex-M33 --cmse --cmse -e --fpu=VFPv5_sp --dlib_config
+#        "C:\Program Files\IAR Systems\Embedded Workbench
+#        9.2\arm\inc\c\DLib_Config_Normal.h" -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\util\third_party\mbedtls\library\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App 1\Wisun_Node_App\config\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App 1\Wisun_Node_App\config\rail\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App 1\Wisun_Node_App\config\wisun\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App 1\Wisun_Node_App\.\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\Device\SiliconLabs\EFR32FG28\Include\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\app\wisun\component\app_project_info\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\common\inc\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\service\cli\inc\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\service\cli\src\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\CMSIS\Core\Include\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\CMSIS\RTOS2\Include\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\service\device_init\inc\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\emdrv\common\inc\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\emlib\inc\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\service\iostream\inc\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\security\sl_component\sl_mbedtls_support\config\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\security\sl_component\sl_mbedtls_support\config\preset\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\security\sl_component\sl_mbedtls_support\inc\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\util\third_party\mbedtls\include\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\util\third_party\mbedtls\library\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\micrium_os\common\source\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\micrium_os\common\include\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\micrium_os\cpu\include\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\micrium_os\ports\source\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\micrium_os\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\micrium_os\kernel\source\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\micrium_os\kernel\include\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\emdrv\nvm3\inc\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\peripheral\inc\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\util\third_party\printf\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\util\third_party\printf\inc\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\security\sl_component\sl_psa_driver\inc\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\radio\rail_lib\common\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\radio\rail_lib\protocol\ble\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\radio\rail_lib\protocol\ieee802154\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\radio\rail_lib\protocol\wmbus\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\radio\rail_lib\protocol\zwave\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\radio\rail_lib\chip\efr32\efr32xg2x\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\radio\rail_lib\protocol\sidewalk\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\radio\rail_lib\plugin\pa-conversions\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\radio\rail_lib\plugin\pa-conversions\efr32xg28\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\radio\rail_lib\plugin\rail_util_pti\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\security\sl_component\se_manager\inc\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\security\sl_component\se_manager\src\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\util\third_party\segger\systemview\SEGGER\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\util\silicon_labs\silabs_core\memory_manager\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\common\toolchain\inc\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\service\system\inc\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\app\wisun\component\app_core\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\app\wisun\component\app_setting\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\app\wisun\component\cli_util\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\app\wisun\component\event_manager\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\app\wisun\component\ns_list\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\app\wisun\component\ping\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\app\wisun\component\trace_util\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\app\wisun\component\trace_util\nanostack\nanostack-libservice\mbed-client-libservice\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\app\wisun\component\udp_client\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\service\sleeptimer\inc\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\protocol\wisun\plugin\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\protocol\wisun\stack\inc\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\protocol\wisun\stack\inc\socket\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App 1\Wisun_Node_App\autogen\\" -On
+#        --use_c++_inline) --dependencies=n "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\ewarm-iar\obj\library_17211336700577820660.dir\psa_crypto_mac.o.iar_deps"
+#    Locale                       =  C
+#    List file                    =
+#        D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\ewarm-iar\lst\library_17211336700577820660.dir\psa_crypto_mac.lst
+#    Object file                  =
+#        D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\ewarm-iar\obj\library_17211336700577820660.dir\psa_crypto_mac.o
+#    Runtime model:                  
+#      __CPP_Runtime              =  1
+#      __SystemLibrary            =  DLib
+#      __dlib_full_locale_support =  0
+#      __dlib_version             =  6
+#
+###############################################################################
+
+D:\Inesh_wisun\Wisun_Node_App 1\Wisun_Node_App\gecko_sdk_4.4.5\util\third_party\mbedtls\library\psa_crypto_mac.c
+      1          /*
+      2           *  PSA MAC layer on top of Mbed TLS software crypto
+      3           */
+      4          /*
+      5           *  Copyright The Mbed TLS Contributors
+      6           *  SPDX-License-Identifier: Apache-2.0
+      7           *
+      8           *  Licensed under the Apache License, Version 2.0 (the "License"); you may
+      9           *  not use this file except in compliance with the License.
+     10           *  You may obtain a copy of the License at
+     11           *
+     12           *  http://www.apache.org/licenses/LICENSE-2.0
+     13           *
+     14           *  Unless required by applicable law or agreed to in writing, software
+     15           *  distributed under the License is distributed on an "AS IS" BASIS, WITHOUT
+     16           *  WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     17           *  See the License for the specific language governing permissions and
+     18           *  limitations under the License.
+     19           */
+     20          
+     21          #include "common.h"
+     22          
+     23          #if defined(MBEDTLS_PSA_CRYPTO_C)
+     24          
+     25          #include <psa/crypto.h>
+     26          #include "psa_crypto_core.h"
+     27          #include "psa_crypto_cipher.h"
+     28          #include "psa_crypto_mac.h"
+     29          #include <mbedtls/md.h>
+     30          
+     31          #include <mbedtls/error.h>
+     32          #include "mbedtls/constant_time.h"
+     33          #include <string.h>
+     34          
+     35          #if defined(MBEDTLS_PSA_BUILTIN_ALG_HMAC)
+
+   \                                 In section .text, align 2, keep-with-next
+     36          static psa_status_t psa_hmac_abort_internal(
+     37              mbedtls_psa_hmac_operation_t *hmac)
+     38          {
+   \                     psa_hmac_abort_internal: (+1)
+   \        0x0   0xB510             PUSH     {R4,LR}
+   \        0x2   0x0004             MOVS     R4,R0
+     39              mbedtls_platform_zeroize(hmac->opad, sizeof(hmac->opad));
+   \        0x4   0x2140             MOVS     R1,#+64
+   \        0x6   0xF114 0x00E4      ADDS     R0,R4,#+228
+   \        0xA   0x.... 0x....      BL       mbedtls_platform_zeroize
+     40              return psa_hash_abort(&hmac->hash_ctx);
+   \        0xE   0x1D20             ADDS     R0,R4,#+4
+   \       0x10   0x.... 0x....      BL       psa_hash_abort
+   \       0x14   0xBD10             POP      {R4,PC}
+     41          }
+     42          
+
+   \                                 In section .text, align 2, keep-with-next
+     43          static psa_status_t psa_hmac_setup_internal(
+     44              mbedtls_psa_hmac_operation_t *hmac,
+     45              const uint8_t *key,
+     46              size_t key_length,
+     47              psa_algorithm_t hash_alg)
+     48          {
+   \                     psa_hmac_setup_internal: (+1)
+   \        0x0   0xE92D 0x4FF6      PUSH     {R1,R2,R4-R11,LR}
+   \        0x4   0xB093             SUB      SP,SP,#+76
+   \        0x6   0x4681             MOV      R9,R0
+   \        0x8   0x000C             MOVS     R4,R1
+   \        0xA   0x001D             MOVS     R5,R3
+     49              uint8_t ipad[PSA_HMAC_MAX_HASH_BLOCK_SIZE];
+     50              size_t i;
+     51              size_t hash_size = PSA_HASH_LENGTH(hash_alg);
+   \        0xC   0x.... 0x....      LDR.W    R0,??DataTable7
+   \       0x10   0xF005 0x01FF      AND      R1,R5,#0xFF
+   \       0x14   0xF051 0x7100      ORRS     R1,R1,#0x2000000
+   \       0x18   0x4281             CMP      R1,R0
+   \       0x1A   0xD101             BNE.N    ??psa_hmac_setup_internal_0
+   \       0x1C   0x2710             MOVS     R7,#+16
+   \       0x1E   0xE078             B.N      ??psa_hmac_setup_internal_1
+   \                     ??psa_hmac_setup_internal_0: (+1)
+   \       0x20   0xF005 0x02FF      AND      R2,R5,#0xFF
+   \       0x24   0xF052 0x7200      ORRS     R2,R2,#0x2000000
+   \       0x28   0x.... 0x....      LDR.W    R1,??DataTable7_1
+   \       0x2C   0x428A             CMP      R2,R1
+   \       0x2E   0xD101             BNE.N    ??psa_hmac_setup_internal_2
+   \       0x30   0x2714             MOVS     R7,#+20
+   \       0x32   0xE06E             B.N      ??psa_hmac_setup_internal_1
+   \                     ??psa_hmac_setup_internal_2: (+1)
+   \       0x34   0xF005 0x02FF      AND      R2,R5,#0xFF
+   \       0x38   0xF052 0x7200      ORRS     R2,R2,#0x2000000
+   \       0x3C   0x.... 0x....      LDR.W    R1,??DataTable7_2
+   \       0x40   0x428A             CMP      R2,R1
+   \       0x42   0xD101             BNE.N    ??psa_hmac_setup_internal_3
+   \       0x44   0x2714             MOVS     R7,#+20
+   \       0x46   0xE064             B.N      ??psa_hmac_setup_internal_1
+   \                     ??psa_hmac_setup_internal_3: (+1)
+   \       0x48   0xF005 0x02FF      AND      R2,R5,#0xFF
+   \       0x4C   0xF052 0x7200      ORRS     R2,R2,#0x2000000
+   \       0x50   0x.... 0x....      LDR.W    R1,??DataTable7_3
+   \       0x54   0x428A             CMP      R2,R1
+   \       0x56   0xD101             BNE.N    ??psa_hmac_setup_internal_4
+   \       0x58   0x271C             MOVS     R7,#+28
+   \       0x5A   0xE05A             B.N      ??psa_hmac_setup_internal_1
+   \                     ??psa_hmac_setup_internal_4: (+1)
+   \       0x5C   0xF005 0x02FF      AND      R2,R5,#0xFF
+   \       0x60   0xF052 0x7200      ORRS     R2,R2,#0x2000000
+   \       0x64   0x.... 0x....      LDR.W    R1,??DataTable7_4
+   \       0x68   0x428A             CMP      R2,R1
+   \       0x6A   0xD101             BNE.N    ??psa_hmac_setup_internal_5
+   \       0x6C   0x2720             MOVS     R7,#+32
+   \       0x6E   0xE050             B.N      ??psa_hmac_setup_internal_1
+   \                     ??psa_hmac_setup_internal_5: (+1)
+   \       0x70   0xF005 0x02FF      AND      R2,R5,#0xFF
+   \       0x74   0xF052 0x7200      ORRS     R2,R2,#0x2000000
+   \       0x78   0x.... 0x....      LDR.W    R1,??DataTable7_5
+   \       0x7C   0x428A             CMP      R2,R1
+   \       0x7E   0xD101             BNE.N    ??psa_hmac_setup_internal_6
+   \       0x80   0x2730             MOVS     R7,#+48
+   \       0x82   0xE046             B.N      ??psa_hmac_setup_internal_1
+   \                     ??psa_hmac_setup_internal_6: (+1)
+   \       0x84   0xF005 0x02FF      AND      R2,R5,#0xFF
+   \       0x88   0xF052 0x7200      ORRS     R2,R2,#0x2000000
+   \       0x8C   0x.... 0x....      LDR.W    R1,??DataTable7_6
+   \       0x90   0x428A             CMP      R2,R1
+   \       0x92   0xD101             BNE.N    ??psa_hmac_setup_internal_7
+   \       0x94   0x2740             MOVS     R7,#+64
+   \       0x96   0xE03C             B.N      ??psa_hmac_setup_internal_1
+   \                     ??psa_hmac_setup_internal_7: (+1)
+   \       0x98   0xF005 0x02FF      AND      R2,R5,#0xFF
+   \       0x9C   0xF052 0x7200      ORRS     R2,R2,#0x2000000
+   \       0xA0   0x.... 0x....      LDR.W    R1,??DataTable7_7
+   \       0xA4   0x428A             CMP      R2,R1
+   \       0xA6   0xD101             BNE.N    ??psa_hmac_setup_internal_8
+   \       0xA8   0x271C             MOVS     R7,#+28
+   \       0xAA   0xE032             B.N      ??psa_hmac_setup_internal_1
+   \                     ??psa_hmac_setup_internal_8: (+1)
+   \       0xAC   0xF005 0x02FF      AND      R2,R5,#0xFF
+   \       0xB0   0xF052 0x7200      ORRS     R2,R2,#0x2000000
+   \       0xB4   0x.... 0x....      LDR.W    R1,??DataTable7_8
+   \       0xB8   0x428A             CMP      R2,R1
+   \       0xBA   0xD101             BNE.N    ??psa_hmac_setup_internal_9
+   \       0xBC   0x2720             MOVS     R7,#+32
+   \       0xBE   0xE028             B.N      ??psa_hmac_setup_internal_1
+   \                     ??psa_hmac_setup_internal_9: (+1)
+   \       0xC0   0xF005 0x02FF      AND      R2,R5,#0xFF
+   \       0xC4   0xF052 0x7200      ORRS     R2,R2,#0x2000000
+   \       0xC8   0x.... 0x....      LDR.W    R1,??DataTable7_9
+   \       0xCC   0x428A             CMP      R2,R1
+   \       0xCE   0xD101             BNE.N    ??psa_hmac_setup_internal_10
+   \       0xD0   0x271C             MOVS     R7,#+28
+   \       0xD2   0xE01E             B.N      ??psa_hmac_setup_internal_1
+   \                     ??psa_hmac_setup_internal_10: (+1)
+   \       0xD4   0xF005 0x02FF      AND      R2,R5,#0xFF
+   \       0xD8   0xF052 0x7200      ORRS     R2,R2,#0x2000000
+   \       0xDC   0x.... 0x....      LDR.W    R1,??DataTable7_10
+   \       0xE0   0x428A             CMP      R2,R1
+   \       0xE2   0xD101             BNE.N    ??psa_hmac_setup_internal_11
+   \       0xE4   0x2720             MOVS     R7,#+32
+   \       0xE6   0xE014             B.N      ??psa_hmac_setup_internal_1
+   \                     ??psa_hmac_setup_internal_11: (+1)
+   \       0xE8   0xF005 0x02FF      AND      R2,R5,#0xFF
+   \       0xEC   0xF052 0x7200      ORRS     R2,R2,#0x2000000
+   \       0xF0   0x.... 0x....      LDR.W    R1,??DataTable7_11
+   \       0xF4   0x428A             CMP      R2,R1
+   \       0xF6   0xD101             BNE.N    ??psa_hmac_setup_internal_12
+   \       0xF8   0x2730             MOVS     R7,#+48
+   \       0xFA   0xE00A             B.N      ??psa_hmac_setup_internal_1
+   \                     ??psa_hmac_setup_internal_12: (+1)
+   \       0xFC   0xF005 0x02FF      AND      R2,R5,#0xFF
+   \      0x100   0xF052 0x7200      ORRS     R2,R2,#0x2000000
+   \      0x104   0x.... 0x....      LDR.W    R1,??DataTable7_12
+   \      0x108   0x428A             CMP      R2,R1
+   \      0x10A   0xD101             BNE.N    ??psa_hmac_setup_internal_13
+   \      0x10C   0x2740             MOVS     R7,#+64
+   \      0x10E   0xE000             B.N      ??psa_hmac_setup_internal_1
+   \                     ??psa_hmac_setup_internal_13: (+1)
+   \      0x110   0x2700             MOVS     R7,#+0
+     52              size_t block_size = PSA_HASH_BLOCK_LENGTH(hash_alg);
+   \                     ??psa_hmac_setup_internal_1: (+1)
+   \      0x112   0xF005 0x01FF      AND      R1,R5,#0xFF
+   \      0x116   0xF051 0x7100      ORRS     R1,R1,#0x2000000
+   \      0x11A   0x4281             CMP      R1,R0
+   \      0x11C   0xD102             BNE.N    ??psa_hmac_setup_internal_14
+   \      0x11E   0xF05F 0x0840      MOVS     R8,#+64
+   \      0x122   0xE085             B.N      ??psa_hmac_setup_internal_15
+   \                     ??psa_hmac_setup_internal_14: (+1)
+   \      0x124   0xF005 0x01FF      AND      R1,R5,#0xFF
+   \      0x128   0xF051 0x7100      ORRS     R1,R1,#0x2000000
+   \      0x12C   0x.... 0x....      LDR.W    R0,??DataTable7_1
+   \      0x130   0x4281             CMP      R1,R0
+   \      0x132   0xD102             BNE.N    ??psa_hmac_setup_internal_16
+   \      0x134   0xF05F 0x0840      MOVS     R8,#+64
+   \      0x138   0xE07A             B.N      ??psa_hmac_setup_internal_15
+   \                     ??psa_hmac_setup_internal_16: (+1)
+   \      0x13A   0xF005 0x01FF      AND      R1,R5,#0xFF
+   \      0x13E   0xF051 0x7100      ORRS     R1,R1,#0x2000000
+   \      0x142   0x.... 0x....      LDR.W    R0,??DataTable7_2
+   \      0x146   0x4281             CMP      R1,R0
+   \      0x148   0xD102             BNE.N    ??psa_hmac_setup_internal_17
+   \      0x14A   0xF05F 0x0840      MOVS     R8,#+64
+   \      0x14E   0xE06F             B.N      ??psa_hmac_setup_internal_15
+   \                     ??psa_hmac_setup_internal_17: (+1)
+   \      0x150   0xF005 0x01FF      AND      R1,R5,#0xFF
+   \      0x154   0xF051 0x7100      ORRS     R1,R1,#0x2000000
+   \      0x158   0x.... 0x....      LDR.W    R0,??DataTable7_3
+   \      0x15C   0x4281             CMP      R1,R0
+   \      0x15E   0xD102             BNE.N    ??psa_hmac_setup_internal_18
+   \      0x160   0xF05F 0x0840      MOVS     R8,#+64
+   \      0x164   0xE064             B.N      ??psa_hmac_setup_internal_15
+   \                     ??psa_hmac_setup_internal_18: (+1)
+   \      0x166   0xF005 0x01FF      AND      R1,R5,#0xFF
+   \      0x16A   0xF051 0x7100      ORRS     R1,R1,#0x2000000
+   \      0x16E   0x.... 0x....      LDR.W    R0,??DataTable7_4
+   \      0x172   0x4281             CMP      R1,R0
+   \      0x174   0xD102             BNE.N    ??psa_hmac_setup_internal_19
+   \      0x176   0xF05F 0x0840      MOVS     R8,#+64
+   \      0x17A   0xE059             B.N      ??psa_hmac_setup_internal_15
+   \                     ??psa_hmac_setup_internal_19: (+1)
+   \      0x17C   0xF005 0x01FF      AND      R1,R5,#0xFF
+   \      0x180   0xF051 0x7100      ORRS     R1,R1,#0x2000000
+   \      0x184   0x.... 0x....      LDR.W    R0,??DataTable7_5
+   \      0x188   0x4281             CMP      R1,R0
+   \      0x18A   0xD102             BNE.N    ??psa_hmac_setup_internal_20
+   \      0x18C   0xF05F 0x0880      MOVS     R8,#+128
+   \      0x190   0xE04E             B.N      ??psa_hmac_setup_internal_15
+   \                     ??psa_hmac_setup_internal_20: (+1)
+   \      0x192   0xF005 0x01FF      AND      R1,R5,#0xFF
+   \      0x196   0xF051 0x7100      ORRS     R1,R1,#0x2000000
+   \      0x19A   0x.... 0x....      LDR.W    R0,??DataTable7_6
+   \      0x19E   0x4281             CMP      R1,R0
+   \      0x1A0   0xD102             BNE.N    ??psa_hmac_setup_internal_21
+   \      0x1A2   0xF05F 0x0880      MOVS     R8,#+128
+   \      0x1A6   0xE043             B.N      ??psa_hmac_setup_internal_15
+   \                     ??psa_hmac_setup_internal_21: (+1)
+   \      0x1A8   0xF005 0x01FF      AND      R1,R5,#0xFF
+   \      0x1AC   0xF051 0x7100      ORRS     R1,R1,#0x2000000
+   \      0x1B0   0x.... 0x....      LDR.W    R0,??DataTable7_7
+   \      0x1B4   0x4281             CMP      R1,R0
+   \      0x1B6   0xD102             BNE.N    ??psa_hmac_setup_internal_22
+   \      0x1B8   0xF05F 0x0880      MOVS     R8,#+128
+   \      0x1BC   0xE038             B.N      ??psa_hmac_setup_internal_15
+   \                     ??psa_hmac_setup_internal_22: (+1)
+   \      0x1BE   0xF005 0x01FF      AND      R1,R5,#0xFF
+   \      0x1C2   0xF051 0x7100      ORRS     R1,R1,#0x2000000
+   \      0x1C6   0x.... 0x....      LDR.W    R0,??DataTable7_8
+   \      0x1CA   0x4281             CMP      R1,R0
+   \      0x1CC   0xD102             BNE.N    ??psa_hmac_setup_internal_23
+   \      0x1CE   0xF05F 0x0880      MOVS     R8,#+128
+   \      0x1D2   0xE02D             B.N      ??psa_hmac_setup_internal_15
+   \                     ??psa_hmac_setup_internal_23: (+1)
+   \      0x1D4   0xF005 0x01FF      AND      R1,R5,#0xFF
+   \      0x1D8   0xF051 0x7100      ORRS     R1,R1,#0x2000000
+   \      0x1DC   0x.... 0x....      LDR.W    R0,??DataTable7_9
+   \      0x1E0   0x4281             CMP      R1,R0
+   \      0x1E2   0xD102             BNE.N    ??psa_hmac_setup_internal_24
+   \      0x1E4   0xF05F 0x0890      MOVS     R8,#+144
+   \      0x1E8   0xE022             B.N      ??psa_hmac_setup_internal_15
+   \                     ??psa_hmac_setup_internal_24: (+1)
+   \      0x1EA   0xF005 0x01FF      AND      R1,R5,#0xFF
+   \      0x1EE   0xF051 0x7100      ORRS     R1,R1,#0x2000000
+   \      0x1F2   0x.... 0x....      LDR.W    R0,??DataTable7_10
+   \      0x1F6   0x4281             CMP      R1,R0
+   \      0x1F8   0xD102             BNE.N    ??psa_hmac_setup_internal_25
+   \      0x1FA   0xF05F 0x0888      MOVS     R8,#+136
+   \      0x1FE   0xE017             B.N      ??psa_hmac_setup_internal_15
+   \                     ??psa_hmac_setup_internal_25: (+1)
+   \      0x200   0xF005 0x01FF      AND      R1,R5,#0xFF
+   \      0x204   0xF051 0x7100      ORRS     R1,R1,#0x2000000
+   \      0x208   0x.... 0x....      LDR.W    R0,??DataTable7_11
+   \      0x20C   0x4281             CMP      R1,R0
+   \      0x20E   0xD102             BNE.N    ??psa_hmac_setup_internal_26
+   \      0x210   0xF05F 0x0868      MOVS     R8,#+104
+   \      0x214   0xE00C             B.N      ??psa_hmac_setup_internal_15
+   \                     ??psa_hmac_setup_internal_26: (+1)
+   \      0x216   0xF005 0x01FF      AND      R1,R5,#0xFF
+   \      0x21A   0xF051 0x7100      ORRS     R1,R1,#0x2000000
+   \      0x21E   0x.... 0x....      LDR.W    R0,??DataTable7_12
+   \      0x222   0x4281             CMP      R1,R0
+   \      0x224   0xD102             BNE.N    ??psa_hmac_setup_internal_27
+   \      0x226   0xF05F 0x0848      MOVS     R8,#+72
+   \      0x22A   0xE001             B.N      ??psa_hmac_setup_internal_15
+   \                     ??psa_hmac_setup_internal_27: (+1)
+   \      0x22C   0xF05F 0x0800      MOVS     R8,#+0
+     53              psa_status_t status;
+     54          
+     55              hmac->alg = hash_alg;
+   \                     ??psa_hmac_setup_internal_15: (+1)
+   \      0x230   0xF8C9 0x5000      STR      R5,[R9, #+0]
+     56          
+     57              /* Sanity checks on block_size, to guarantee that there won't be a buffer
+     58               * overflow below. This should never trigger if the hash algorithm
+     59               * is implemented correctly. */
+     60              /* The size checks against the ipad and opad buffers cannot be written
+     61               * `block_size > sizeof( ipad ) || block_size > sizeof( hmac->opad )`
+     62               * because that triggers -Wlogical-op on GCC 7.3. */
+     63              if (block_size > sizeof(ipad)) {
+   \      0x234   0xF1B8 0x0F41      CMP      R8,#+65
+   \      0x238   0xD302             BCC.N    ??psa_hmac_setup_internal_28
+     64                  return PSA_ERROR_NOT_SUPPORTED;
+   \      0x23A   0xF07F 0x0085      MVNS     R0,#+133
+   \      0x23E   0xE079             B.N      ??psa_hmac_setup_internal_29
+     65              }
+     66              if (block_size > sizeof(hmac->opad)) {
+   \                     ??psa_hmac_setup_internal_28: (+1)
+   \      0x240   0xF1B8 0x0F41      CMP      R8,#+65
+   \      0x244   0xD302             BCC.N    ??psa_hmac_setup_internal_30
+     67                  return PSA_ERROR_NOT_SUPPORTED;
+   \      0x246   0xF07F 0x0085      MVNS     R0,#+133
+   \      0x24A   0xE073             B.N      ??psa_hmac_setup_internal_29
+     68              }
+     69              if (block_size < hash_size) {
+   \                     ??psa_hmac_setup_internal_30: (+1)
+   \      0x24C   0x45B8             CMP      R8,R7
+   \      0x24E   0xD202             BCS.N    ??psa_hmac_setup_internal_31
+     70                  return PSA_ERROR_NOT_SUPPORTED;
+   \      0x250   0xF07F 0x0085      MVNS     R0,#+133
+   \      0x254   0xE06E             B.N      ??psa_hmac_setup_internal_29
+     71              }
+     72          
+     73              if (key_length > block_size) {
+   \                     ??psa_hmac_setup_internal_31: (+1)
+   \      0x256   0x9814             LDR      R0,[SP, #+80]
+   \      0x258   0x4580             CMP      R8,R0
+   \      0x25A   0xD20E             BCS.N    ??psa_hmac_setup_internal_32
+     74                  status = psa_hash_compute(hash_alg, key, key_length,
+     75                                            ipad, sizeof(ipad), &key_length);
+   \      0x25C   0xA814             ADD      R0,SP,#+80
+   \      0x25E   0x9001             STR      R0,[SP, #+4]
+   \      0x260   0x2040             MOVS     R0,#+64
+   \      0x262   0x9000             STR      R0,[SP, #+0]
+   \      0x264   0xAB03             ADD      R3,SP,#+12
+   \      0x266   0x9A14             LDR      R2,[SP, #+80]
+   \      0x268   0x0021             MOVS     R1,R4
+   \      0x26A   0x0028             MOVS     R0,R5
+   \      0x26C   0x.... 0x....      BL       psa_hash_compute
+   \      0x270   0x9002             STR      R0,[SP, #+8]
+     76                  if (status != PSA_SUCCESS) {
+   \      0x272   0x9802             LDR      R0,[SP, #+8]
+   \      0x274   0x2800             CMP      R0,#+0
+   \      0x276   0xD00D             BEQ.N    ??psa_hmac_setup_internal_33
+     77                      goto cleanup;
+   \      0x278   0xE057             B.N      ??psa_hmac_setup_internal_34
+     78                  }
+     79              }
+     80              /* A 0-length key is not commonly used in HMAC when used as a MAC,
+     81               * but it is permitted. It is common when HMAC is used in HKDF, for
+     82               * example. Don't call `memcpy` in the 0-length because `key` could be
+     83               * an invalid pointer which would make the behavior undefined. */
+     84              else if (key_length != 0) {
+   \                     ??psa_hmac_setup_internal_32: (+1)
+   \      0x27A   0x9814             LDR      R0,[SP, #+80]
+   \      0x27C   0x2800             CMP      R0,#+0
+   \      0x27E   0xD009             BEQ.N    ??psa_hmac_setup_internal_33
+     85                  memcpy(ipad, key, key_length);
+   \      0x280   0x9814             LDR      R0,[SP, #+80]
+   \      0x282   0x9000             STR      R0,[SP, #+0]
+   \      0x284   0x46A2             MOV      R10,R4
+   \      0x286   0xF10D 0x0B0C      ADD      R11,SP,#+12
+   \      0x28A   0x9A00             LDR      R2,[SP, #+0]
+   \      0x28C   0x4651             MOV      R1,R10
+   \      0x28E   0x4658             MOV      R0,R11
+   \      0x290   0x.... 0x....      BL       __aeabi_memcpy
+     86              }
+     87          
+     88              /* ipad contains the key followed by garbage. Xor and fill with 0x36
+     89               * to create the ipad value. */
+     90              for (i = 0; i < key_length; i++) {
+   \                     ??psa_hmac_setup_internal_33: (+1)
+   \      0x294   0xF05F 0x0A00      MOVS     R10,#+0
+   \                     ??psa_hmac_setup_internal_35: (+1)
+   \      0x298   0x9814             LDR      R0,[SP, #+80]
+   \      0x29A   0x4582             CMP      R10,R0
+   \      0x29C   0xD209             BCS.N    ??psa_hmac_setup_internal_36
+     91                  ipad[i] ^= 0x36;
+   \      0x29E   0xA903             ADD      R1,SP,#+12
+   \      0x2A0   0xF811 0x000A      LDRB     R0,[R1, R10]
+   \      0x2A4   0xF090 0x0036      EORS     R0,R0,#0x36
+   \      0x2A8   0xF801 0x000A      STRB     R0,[R1, R10]
+     92              }
+   \      0x2AC   0xF11A 0x0A01      ADDS     R10,R10,#+1
+   \      0x2B0   0xE7F2             B.N      ??psa_hmac_setup_internal_35
+     93              memset(ipad + key_length, 0x36, block_size - key_length);
+   \                     ??psa_hmac_setup_internal_36: (+1)
+   \      0x2B2   0x9814             LDR      R0,[SP, #+80]
+   \      0x2B4   0xEBB8 0x0000      SUBS     R0,R8,R0
+   \      0x2B8   0x9000             STR      R0,[SP, #+0]
+   \      0x2BA   0xF05F 0x0B36      MOVS     R11,#+54
+   \      0x2BE   0xA903             ADD      R1,SP,#+12
+   \      0x2C0   0x9814             LDR      R0,[SP, #+80]
+   \      0x2C2   0xEB01 0x0600      ADD      R6,R1,R0
+   \      0x2C6   0x465A             MOV      R2,R11
+   \      0x2C8   0x9900             LDR      R1,[SP, #+0]
+   \      0x2CA   0x0030             MOVS     R0,R6
+   \      0x2CC   0x.... 0x....      BL       __aeabi_memset
+     94          
+     95              /* Copy the key material from ipad to opad, flipping the requisite bits,
+     96               * and filling the rest of opad with the requisite constant. */
+     97              for (i = 0; i < key_length; i++) {
+   \      0x2D0   0x2600             MOVS     R6,#+0
+   \                     ??psa_hmac_setup_internal_37: (+1)
+   \      0x2D2   0x9814             LDR      R0,[SP, #+80]
+   \      0x2D4   0x4286             CMP      R6,R0
+   \      0x2D6   0xD209             BCS.N    ??psa_hmac_setup_internal_38
+     98                  hmac->opad[i] = ipad[i] ^ 0x36 ^ 0x5C;
+   \      0x2D8   0xA803             ADD      R0,SP,#+12
+   \      0x2DA   0x5D81             LDRB     R1,[R0, R6]
+   \      0x2DC   0xF091 0x016A      EORS     R1,R1,#0x6A
+   \      0x2E0   0xEB09 0x0006      ADD      R0,R9,R6
+   \      0x2E4   0xF880 0x10E4      STRB     R1,[R0, #+228]
+     99              }
+   \      0x2E8   0x1C76             ADDS     R6,R6,#+1
+   \      0x2EA   0xE7F2             B.N      ??psa_hmac_setup_internal_37
+    100              memset(hmac->opad + key_length, 0x5C, block_size - key_length);
+   \                     ??psa_hmac_setup_internal_38: (+1)
+   \      0x2EC   0x9814             LDR      R0,[SP, #+80]
+   \      0x2EE   0xEBB8 0x0000      SUBS     R0,R8,R0
+   \      0x2F2   0x9000             STR      R0,[SP, #+0]
+   \      0x2F4   0xF05F 0x0A5C      MOVS     R10,#+92
+   \      0x2F8   0x9814             LDR      R0,[SP, #+80]
+   \      0x2FA   0x4448             ADD      R0,R9,R0
+   \      0x2FC   0xF110 0x0BE4      ADDS     R11,R0,#+228
+   \      0x300   0x4652             MOV      R2,R10
+   \      0x302   0x9900             LDR      R1,[SP, #+0]
+   \      0x304   0x4658             MOV      R0,R11
+   \      0x306   0x.... 0x....      BL       __aeabi_memset
+    101          
+    102              status = psa_hash_setup(&hmac->hash_ctx, hash_alg);
+   \      0x30A   0x0029             MOVS     R1,R5
+   \      0x30C   0xF119 0x0004      ADDS     R0,R9,#+4
+   \      0x310   0x.... 0x....      BL       psa_hash_setup
+   \      0x314   0x9002             STR      R0,[SP, #+8]
+    103              if (status != PSA_SUCCESS) {
+   \      0x316   0x9802             LDR      R0,[SP, #+8]
+   \      0x318   0x2800             CMP      R0,#+0
+   \      0x31A   0xD106             BNE.N    ??psa_hmac_setup_internal_34
+    104                  goto cleanup;
+    105              }
+    106          
+    107              status = psa_hash_update(&hmac->hash_ctx, ipad, block_size);
+   \                     ??psa_hmac_setup_internal_39: (+1)
+   \      0x31C   0x4642             MOV      R2,R8
+   \      0x31E   0xA903             ADD      R1,SP,#+12
+   \      0x320   0xF119 0x0004      ADDS     R0,R9,#+4
+   \      0x324   0x.... 0x....      BL       psa_hash_update
+   \      0x328   0x9002             STR      R0,[SP, #+8]
+    108          
+    109          cleanup:
+    110              mbedtls_platform_zeroize(ipad, sizeof(ipad));
+   \                     ??psa_hmac_setup_internal_34: (+1)
+   \      0x32A   0x2140             MOVS     R1,#+64
+   \      0x32C   0xA803             ADD      R0,SP,#+12
+   \      0x32E   0x.... 0x....      BL       mbedtls_platform_zeroize
+    111          
+    112              return status;
+   \      0x332   0x9802             LDR      R0,[SP, #+8]
+   \                     ??psa_hmac_setup_internal_29: (+1)
+   \      0x334   0xB015             ADD      SP,SP,#+84
+   \      0x336   0xE8BD 0x8FF0      POP      {R4-R11,PC}
+    113          }
+    114          
+
+   \                                 In section .text, align 2, keep-with-next
+    115          static psa_status_t psa_hmac_update_internal(
+    116              mbedtls_psa_hmac_operation_t *hmac,
+    117              const uint8_t *data,
+    118              size_t data_length)
+    119          {
+   \                     psa_hmac_update_internal: (+1)
+   \        0x0   0xB570             PUSH     {R4-R6,LR}
+   \        0x2   0x0006             MOVS     R6,R0
+   \        0x4   0x000C             MOVS     R4,R1
+   \        0x6   0x0015             MOVS     R5,R2
+    120              return psa_hash_update(&hmac->hash_ctx, data, data_length);
+   \        0x8   0x002A             MOVS     R2,R5
+   \        0xA   0x0021             MOVS     R1,R4
+   \        0xC   0x1D30             ADDS     R0,R6,#+4
+   \        0xE   0x.... 0x....      BL       psa_hash_update
+   \       0x12   0xBD70             POP      {R4-R6,PC}
+    121          }
+    122          
+
+   \                                 In section .text, align 2, keep-with-next
+    123          static psa_status_t psa_hmac_finish_internal(
+    124              mbedtls_psa_hmac_operation_t *hmac,
+    125              uint8_t *mac,
+    126              size_t mac_size)
+    127          {
+   \                     psa_hmac_finish_internal: (+1)
+   \        0x0   0xE92D 0x4FF8      PUSH     {R3-R11,LR}
+   \        0x4   0xB08A             SUB      SP,SP,#+40
+   \        0x6   0x4681             MOV      R9,R0
+   \        0x8   0x000E             MOVS     R6,R1
+   \        0xA   0x0017             MOVS     R7,R2
+    128              uint8_t tmp[PSA_HASH_MAX_SIZE];
+    129              psa_algorithm_t hash_alg = hmac->alg;
+   \        0xC   0xF8D9 0x8000      LDR      R8,[R9, #+0]
+    130              size_t hash_size = 0;
+   \       0x10   0x2000             MOVS     R0,#+0
+   \       0x12   0x9000             STR      R0,[SP, #+0]
+    131              size_t block_size = PSA_HASH_BLOCK_LENGTH(hash_alg);
+   \       0x14   0xF008 0x01FF      AND      R1,R8,#0xFF
+   \       0x18   0xF051 0x7100      ORRS     R1,R1,#0x2000000
+   \       0x1C   0x....             LDR.N    R0,??DataTable7
+   \       0x1E   0x4281             CMP      R1,R0
+   \       0x20   0xD102             BNE.N    ??psa_hmac_finish_internal_0
+   \       0x22   0xF05F 0x0A40      MOVS     R10,#+64
+   \       0x26   0xE079             B.N      ??psa_hmac_finish_internal_1
+   \                     ??psa_hmac_finish_internal_0: (+1)
+   \       0x28   0xF008 0x01FF      AND      R1,R8,#0xFF
+   \       0x2C   0xF051 0x7100      ORRS     R1,R1,#0x2000000
+   \       0x30   0x....             LDR.N    R0,??DataTable7_1
+   \       0x32   0x4281             CMP      R1,R0
+   \       0x34   0xD102             BNE.N    ??psa_hmac_finish_internal_2
+   \       0x36   0xF05F 0x0A40      MOVS     R10,#+64
+   \       0x3A   0xE06F             B.N      ??psa_hmac_finish_internal_1
+   \                     ??psa_hmac_finish_internal_2: (+1)
+   \       0x3C   0xF008 0x01FF      AND      R1,R8,#0xFF
+   \       0x40   0xF051 0x7100      ORRS     R1,R1,#0x2000000
+   \       0x44   0x....             LDR.N    R0,??DataTable7_2
+   \       0x46   0x4281             CMP      R1,R0
+   \       0x48   0xD102             BNE.N    ??psa_hmac_finish_internal_3
+   \       0x4A   0xF05F 0x0A40      MOVS     R10,#+64
+   \       0x4E   0xE065             B.N      ??psa_hmac_finish_internal_1
+   \                     ??psa_hmac_finish_internal_3: (+1)
+   \       0x50   0xF008 0x01FF      AND      R1,R8,#0xFF
+   \       0x54   0xF051 0x7100      ORRS     R1,R1,#0x2000000
+   \       0x58   0x....             LDR.N    R0,??DataTable7_3
+   \       0x5A   0x4281             CMP      R1,R0
+   \       0x5C   0xD102             BNE.N    ??psa_hmac_finish_internal_4
+   \       0x5E   0xF05F 0x0A40      MOVS     R10,#+64
+   \       0x62   0xE05B             B.N      ??psa_hmac_finish_internal_1
+   \                     ??psa_hmac_finish_internal_4: (+1)
+   \       0x64   0xF008 0x01FF      AND      R1,R8,#0xFF
+   \       0x68   0xF051 0x7100      ORRS     R1,R1,#0x2000000
+   \       0x6C   0x....             LDR.N    R0,??DataTable7_4
+   \       0x6E   0x4281             CMP      R1,R0
+   \       0x70   0xD102             BNE.N    ??psa_hmac_finish_internal_5
+   \       0x72   0xF05F 0x0A40      MOVS     R10,#+64
+   \       0x76   0xE051             B.N      ??psa_hmac_finish_internal_1
+   \                     ??psa_hmac_finish_internal_5: (+1)
+   \       0x78   0xF008 0x01FF      AND      R1,R8,#0xFF
+   \       0x7C   0xF051 0x7100      ORRS     R1,R1,#0x2000000
+   \       0x80   0x....             LDR.N    R0,??DataTable7_5
+   \       0x82   0x4281             CMP      R1,R0
+   \       0x84   0xD102             BNE.N    ??psa_hmac_finish_internal_6
+   \       0x86   0xF05F 0x0A80      MOVS     R10,#+128
+   \       0x8A   0xE047             B.N      ??psa_hmac_finish_internal_1
+   \                     ??psa_hmac_finish_internal_6: (+1)
+   \       0x8C   0xF008 0x00FF      AND      R0,R8,#0xFF
+   \       0x90   0xF050 0x7000      ORRS     R0,R0,#0x2000000
+   \       0x94   0x....             LDR.N    R1,??DataTable7_6
+   \       0x96   0x4288             CMP      R0,R1
+   \       0x98   0xD102             BNE.N    ??psa_hmac_finish_internal_7
+   \       0x9A   0xF05F 0x0A80      MOVS     R10,#+128
+   \       0x9E   0xE03D             B.N      ??psa_hmac_finish_internal_1
+   \                     ??psa_hmac_finish_internal_7: (+1)
+   \       0xA0   0xF008 0x01FF      AND      R1,R8,#0xFF
+   \       0xA4   0xF051 0x7100      ORRS     R1,R1,#0x2000000
+   \       0xA8   0x....             LDR.N    R0,??DataTable7_7
+   \       0xAA   0x4281             CMP      R1,R0
+   \       0xAC   0xD102             BNE.N    ??psa_hmac_finish_internal_8
+   \       0xAE   0xF05F 0x0A80      MOVS     R10,#+128
+   \       0xB2   0xE033             B.N      ??psa_hmac_finish_internal_1
+   \                     ??psa_hmac_finish_internal_8: (+1)
+   \       0xB4   0xF008 0x01FF      AND      R1,R8,#0xFF
+   \       0xB8   0xF051 0x7100      ORRS     R1,R1,#0x2000000
+   \       0xBC   0x....             LDR.N    R0,??DataTable7_8
+   \       0xBE   0x4281             CMP      R1,R0
+   \       0xC0   0xD102             BNE.N    ??psa_hmac_finish_internal_9
+   \       0xC2   0xF05F 0x0A80      MOVS     R10,#+128
+   \       0xC6   0xE029             B.N      ??psa_hmac_finish_internal_1
+   \                     ??psa_hmac_finish_internal_9: (+1)
+   \       0xC8   0xF008 0x01FF      AND      R1,R8,#0xFF
+   \       0xCC   0xF051 0x7100      ORRS     R1,R1,#0x2000000
+   \       0xD0   0x....             LDR.N    R0,??DataTable7_9
+   \       0xD2   0x4281             CMP      R1,R0
+   \       0xD4   0xD102             BNE.N    ??psa_hmac_finish_internal_10
+   \       0xD6   0xF05F 0x0A90      MOVS     R10,#+144
+   \       0xDA   0xE01F             B.N      ??psa_hmac_finish_internal_1
+   \                     ??psa_hmac_finish_internal_10: (+1)
+   \       0xDC   0xF008 0x01FF      AND      R1,R8,#0xFF
+   \       0xE0   0xF051 0x7100      ORRS     R1,R1,#0x2000000
+   \       0xE4   0x....             LDR.N    R0,??DataTable7_10
+   \       0xE6   0x4281             CMP      R1,R0
+   \       0xE8   0xD102             BNE.N    ??psa_hmac_finish_internal_11
+   \       0xEA   0xF05F 0x0A88      MOVS     R10,#+136
+   \       0xEE   0xE015             B.N      ??psa_hmac_finish_internal_1
+   \                     ??psa_hmac_finish_internal_11: (+1)
+   \       0xF0   0xF008 0x00FF      AND      R0,R8,#0xFF
+   \       0xF4   0xF050 0x7000      ORRS     R0,R0,#0x2000000
+   \       0xF8   0x....             LDR.N    R1,??DataTable7_11
+   \       0xFA   0x4288             CMP      R0,R1
+   \       0xFC   0xD102             BNE.N    ??psa_hmac_finish_internal_12
+   \       0xFE   0xF05F 0x0A68      MOVS     R10,#+104
+   \      0x102   0xE00B             B.N      ??psa_hmac_finish_internal_1
+   \                     ??psa_hmac_finish_internal_12: (+1)
+   \      0x104   0xF008 0x01FF      AND      R1,R8,#0xFF
+   \      0x108   0xF051 0x7100      ORRS     R1,R1,#0x2000000
+   \      0x10C   0x....             LDR.N    R0,??DataTable7_12
+   \      0x10E   0x4281             CMP      R1,R0
+   \      0x110   0xD102             BNE.N    ??psa_hmac_finish_internal_13
+   \      0x112   0xF05F 0x0A48      MOVS     R10,#+72
+   \      0x116   0xE001             B.N      ??psa_hmac_finish_internal_1
+   \                     ??psa_hmac_finish_internal_13: (+1)
+   \      0x118   0xF05F 0x0A00      MOVS     R10,#+0
+    132              psa_status_t status;
+    133          
+    134              status = psa_hash_finish(&hmac->hash_ctx, tmp, sizeof(tmp), &hash_size);
+   \                     ??psa_hmac_finish_internal_1: (+1)
+   \      0x11C   0x466B             MOV      R3,SP
+   \      0x11E   0x2220             MOVS     R2,#+32
+   \      0x120   0xA902             ADD      R1,SP,#+8
+   \      0x122   0xF119 0x0004      ADDS     R0,R9,#+4
+   \      0x126   0x.... 0x....      BL       psa_hash_finish
+   \      0x12A   0x0005             MOVS     R5,R0
+    135              if (status != PSA_SUCCESS) {
+   \      0x12C   0x2D00             CMP      R5,#+0
+   \      0x12E   0xD001             BEQ.N    ??psa_hmac_finish_internal_14
+    136                  return status;
+   \      0x130   0x0028             MOVS     R0,R5
+   \      0x132   0xE032             B.N      ??psa_hmac_finish_internal_15
+    137              }
+    138              /* From here on, tmp needs to be wiped. */
+    139          
+    140              status = psa_hash_setup(&hmac->hash_ctx, hash_alg);
+   \                     ??psa_hmac_finish_internal_14: (+1)
+   \      0x134   0x4641             MOV      R1,R8
+   \      0x136   0xF119 0x0004      ADDS     R0,R9,#+4
+   \      0x13A   0x.... 0x....      BL       psa_hash_setup
+   \      0x13E   0x0004             MOVS     R4,R0
+    141              if (status != PSA_SUCCESS) {
+   \      0x140   0x2C00             CMP      R4,#+0
+   \      0x142   0xD125             BNE.N    ??psa_hmac_finish_internal_16
+    142                  goto exit;
+    143              }
+    144          
+    145              status = psa_hash_update(&hmac->hash_ctx, hmac->opad, block_size);
+   \                     ??psa_hmac_finish_internal_17: (+1)
+   \      0x144   0x4652             MOV      R2,R10
+   \      0x146   0xF119 0x01E4      ADDS     R1,R9,#+228
+   \      0x14A   0xF119 0x0004      ADDS     R0,R9,#+4
+   \      0x14E   0x.... 0x....      BL       psa_hash_update
+   \      0x152   0x0004             MOVS     R4,R0
+    146              if (status != PSA_SUCCESS) {
+   \      0x154   0x2C00             CMP      R4,#+0
+   \      0x156   0xD11B             BNE.N    ??psa_hmac_finish_internal_16
+    147                  goto exit;
+    148              }
+    149          
+    150              status = psa_hash_update(&hmac->hash_ctx, tmp, hash_size);
+   \                     ??psa_hmac_finish_internal_18: (+1)
+   \      0x158   0x9A00             LDR      R2,[SP, #+0]
+   \      0x15A   0xA902             ADD      R1,SP,#+8
+   \      0x15C   0xF119 0x0004      ADDS     R0,R9,#+4
+   \      0x160   0x.... 0x....      BL       psa_hash_update
+   \      0x164   0x0004             MOVS     R4,R0
+    151              if (status != PSA_SUCCESS) {
+   \      0x166   0x2C00             CMP      R4,#+0
+   \      0x168   0xD112             BNE.N    ??psa_hmac_finish_internal_16
+    152                  goto exit;
+    153              }
+    154          
+    155              status = psa_hash_finish(&hmac->hash_ctx, tmp, sizeof(tmp), &hash_size);
+   \                     ??psa_hmac_finish_internal_19: (+1)
+   \      0x16A   0x466B             MOV      R3,SP
+   \      0x16C   0x2220             MOVS     R2,#+32
+   \      0x16E   0xA902             ADD      R1,SP,#+8
+   \      0x170   0xF119 0x0004      ADDS     R0,R9,#+4
+   \      0x174   0x.... 0x....      BL       psa_hash_finish
+   \      0x178   0x0004             MOVS     R4,R0
+    156              if (status != PSA_SUCCESS) {
+   \      0x17A   0x2C00             CMP      R4,#+0
+   \      0x17C   0xD108             BNE.N    ??psa_hmac_finish_internal_16
+    157                  goto exit;
+    158              }
+    159          
+    160              memcpy(mac, tmp, mac_size);
+   \                     ??psa_hmac_finish_internal_20: (+1)
+   \      0x17E   0x9701             STR      R7,[SP, #+4]
+   \      0x180   0xF10D 0x0B08      ADD      R11,SP,#+8
+   \      0x184   0x0035             MOVS     R5,R6
+   \      0x186   0x9A01             LDR      R2,[SP, #+4]
+   \      0x188   0x4659             MOV      R1,R11
+   \      0x18A   0x0028             MOVS     R0,R5
+   \      0x18C   0x.... 0x....      BL       __aeabi_memcpy
+    161          
+    162          exit:
+    163              mbedtls_platform_zeroize(tmp, hash_size);
+   \                     ??psa_hmac_finish_internal_16: (+1)
+   \      0x190   0x9900             LDR      R1,[SP, #+0]
+   \      0x192   0xA802             ADD      R0,SP,#+8
+   \      0x194   0x.... 0x....      BL       mbedtls_platform_zeroize
+    164              return status;
+   \      0x198   0x0020             MOVS     R0,R4
+   \                     ??psa_hmac_finish_internal_15: (+1)
+   \      0x19A   0xB00B             ADD      SP,SP,#+44
+   \      0x19C   0xE8BD 0x8FF0      POP      {R4-R11,PC}
+    165          }
+    166          #endif /* MBEDTLS_PSA_BUILTIN_ALG_HMAC */
+    167          
+    168          #if defined(MBEDTLS_PSA_BUILTIN_ALG_CMAC)
+    169          static psa_status_t cmac_setup(mbedtls_psa_mac_operation_t *operation,
+    170                                         const psa_key_attributes_t *attributes,
+    171                                         const uint8_t *key_buffer)
+    172          {
+    173              int ret = MBEDTLS_ERR_ERROR_CORRUPTION_DETECTED;
+    174          
+    175          #if defined(PSA_WANT_KEY_TYPE_DES)
+    176              /* Mbed TLS CMAC does not accept 3DES with only two keys, nor does it accept
+    177               * to do CMAC with pure DES, so return NOT_SUPPORTED here. */
+    178              if (psa_get_key_type(attributes) == PSA_KEY_TYPE_DES &&
+    179                  (psa_get_key_bits(attributes) == 64 ||
+    180                   psa_get_key_bits(attributes) == 128)) {
+    181                  return PSA_ERROR_NOT_SUPPORTED;
+    182              }
+    183          #endif
+    184          
+    185              const mbedtls_cipher_info_t *cipher_info =
+    186                  mbedtls_cipher_info_from_psa(
+    187                      PSA_ALG_CMAC,
+    188                      psa_get_key_type(attributes),
+    189                      psa_get_key_bits(attributes),
+    190                      NULL);
+    191          
+    192              if (cipher_info == NULL) {
+    193                  return PSA_ERROR_NOT_SUPPORTED;
+    194              }
+    195          
+    196              ret = mbedtls_cipher_setup(&operation->ctx.cmac, cipher_info);
+    197              if (ret != 0) {
+    198                  goto exit;
+    199              }
+    200          
+    201              ret = mbedtls_cipher_cmac_starts(&operation->ctx.cmac,
+    202                                               key_buffer,
+    203                                               psa_get_key_bits(attributes));
+    204          exit:
+    205              return mbedtls_to_psa_error(ret);
+    206          }
+    207          #endif /* MBEDTLS_PSA_BUILTIN_ALG_CMAC */
+    208          
+    209          #if defined(MBEDTLS_PSA_BUILTIN_ALG_HMAC) || \
+    210              defined(MBEDTLS_PSA_BUILTIN_ALG_CMAC)
+    211          
+    212          /* Initialize this driver's MAC operation structure. Once this function has been
+    213           * called, mbedtls_psa_mac_abort can run and will do the right thing. */
+
+   \                                 In section .text, align 2, keep-with-next
+    214          static psa_status_t mac_init(
+    215              mbedtls_psa_mac_operation_t *operation,
+    216              psa_algorithm_t alg)
+    217          {
+   \                     mac_init: (+1)
+   \        0x0   0xE92D 0x43F8      PUSH     {R3-R9,LR}
+   \        0x4   0x0005             MOVS     R5,R0
+   \        0x6   0x000E             MOVS     R6,R1
+    218              psa_status_t status = PSA_ERROR_CORRUPTION_DETECTED;
+   \        0x8   0xF07F 0x0196      MVNS     R1,#+150
+    219          
+    220              operation->alg = alg;
+   \        0xC   0x602E             STR      R6,[R5, #+0]
+    221          
+    222          #if defined(MBEDTLS_PSA_BUILTIN_ALG_CMAC)
+    223              if (PSA_ALG_FULL_LENGTH_MAC(operation->alg) == PSA_ALG_CMAC) {
+    224                  mbedtls_cipher_init(&operation->ctx.cmac);
+    225                  status = PSA_SUCCESS;
+    226              } else
+    227          #endif /* MBEDTLS_PSA_BUILTIN_ALG_CMAC */
+    228          #if defined(MBEDTLS_PSA_BUILTIN_ALG_HMAC)
+    229              if (PSA_ALG_IS_HMAC(operation->alg)) {
+   \        0xE   0x682A             LDR      R2,[R5, #+0]
+   \       0x10   0x....             LDR.N    R0,??DataTable7_13
+   \       0x12   0x4002             ANDS     R2,R0,R2
+   \       0x14   0xF1B2 0x7F60      CMP      R2,#+58720256
+   \       0x18   0xD103             BNE.N    ??mac_init_0
+    230                  /* We'll set up the hash operation later in psa_hmac_setup_internal. */
+    231                  operation->ctx.hmac.alg = 0;
+   \       0x1A   0x2000             MOVS     R0,#+0
+   \       0x1C   0x6068             STR      R0,[R5, #+4]
+    232                  status = PSA_SUCCESS;
+   \       0x1E   0x2400             MOVS     R4,#+0
+   \       0x20   0xE001             B.N      ??mac_init_1
+    233              } else
+    234          #endif /* MBEDTLS_PSA_BUILTIN_ALG_HMAC */
+    235              {
+    236                  (void) operation;
+    237                  status = PSA_ERROR_NOT_SUPPORTED;
+   \                     ??mac_init_0: (+1)
+   \       0x22   0xF07F 0x0485      MVNS     R4,#+133
+    238              }
+    239          
+    240              if (status != PSA_SUCCESS) {
+   \                     ??mac_init_1: (+1)
+   \       0x26   0x2C00             CMP      R4,#+0
+   \       0x28   0xD008             BEQ.N    ??mac_init_2
+    241                  memset(operation, 0, sizeof(*operation));
+   \       0x2A   0xF44F 0x7994      MOV      R9,#+296
+   \       0x2E   0x2700             MOVS     R7,#+0
+   \       0x30   0x46A8             MOV      R8,R5
+   \       0x32   0x003A             MOVS     R2,R7
+   \       0x34   0x4649             MOV      R1,R9
+   \       0x36   0x4640             MOV      R0,R8
+   \       0x38   0x.... 0x....      BL       __aeabi_memset
+    242              }
+    243              return status;
+   \                     ??mac_init_2: (+1)
+   \       0x3C   0x0020             MOVS     R0,R4
+   \       0x3E   0xE8BD 0x83F2      POP      {R1,R4-R9,PC}
+    244          }
+    245          
+
+   \                                 In section .text, align 2, keep-with-next
+    246          psa_status_t mbedtls_psa_mac_abort(mbedtls_psa_mac_operation_t *operation)
+    247          {
+   \                     mbedtls_psa_mac_abort: (+1)
+   \        0x0   0xB5F8             PUSH     {R3-R7,LR}
+   \        0x2   0x0004             MOVS     R4,R0
+    248              if (operation->alg == 0) {
+   \        0x4   0x6820             LDR      R0,[R4, #+0]
+   \        0x6   0x2800             CMP      R0,#+0
+   \        0x8   0xD101             BNE.N    ??mbedtls_psa_mac_abort_0
+    249                  /* The object has (apparently) been initialized but it is not
+    250                   * in use. It's ok to call abort on such an object, and there's
+    251                   * nothing to do. */
+    252                  return PSA_SUCCESS;
+   \        0xA   0x2000             MOVS     R0,#+0
+   \        0xC   0xE017             B.N      ??mbedtls_psa_mac_abort_1
+    253              } else
+    254          #if defined(MBEDTLS_PSA_BUILTIN_ALG_CMAC)
+    255              if (PSA_ALG_FULL_LENGTH_MAC(operation->alg) == PSA_ALG_CMAC) {
+    256                  mbedtls_cipher_free(&operation->ctx.cmac);
+    257              } else
+    258          #endif /* MBEDTLS_PSA_BUILTIN_ALG_CMAC */
+    259          #if defined(MBEDTLS_PSA_BUILTIN_ALG_HMAC)
+    260              if (PSA_ALG_IS_HMAC(operation->alg)) {
+   \                     ??mbedtls_psa_mac_abort_0: (+1)
+   \        0xE   0x6821             LDR      R1,[R4, #+0]
+   \       0x10   0x....             LDR.N    R0,??DataTable7_13
+   \       0x12   0x4001             ANDS     R1,R0,R1
+   \       0x14   0xF1B1 0x7F60      CMP      R1,#+58720256
+   \       0x18   0xD106             BNE.N    ??mbedtls_psa_mac_abort_2
+    261                  psa_hmac_abort_internal(&operation->ctx.hmac);
+   \       0x1A   0x1D20             ADDS     R0,R4,#+4
+   \       0x1C   0x.... 0x....      BL       psa_hmac_abort_internal
+    262              } else
+    263          #endif /* MBEDTLS_PSA_BUILTIN_ALG_HMAC */
+    264              {
+    265                  /* Sanity check (shouldn't happen: operation->alg should
+    266                   * always have been initialized to a valid value). */
+    267                  goto bad_state;
+    268              }
+    269          
+    270              operation->alg = 0;
+   \       0x20   0x2000             MOVS     R0,#+0
+   \       0x22   0x6020             STR      R0,[R4, #+0]
+    271          
+    272              return PSA_SUCCESS;
+   \       0x24   0x2000             MOVS     R0,#+0
+   \       0x26   0xE00A             B.N      ??mbedtls_psa_mac_abort_1
+    273          
+    274          bad_state:
+    275              /* If abort is called on an uninitialized object, we can't trust
+    276               * anything. Wipe the object in case it contains confidential data.
+    277               * This may result in a memory leak if a pointer gets overwritten,
+    278               * but it's too late to do anything about this. */
+    279              memset(operation, 0, sizeof(*operation));
+   \                     ??mbedtls_psa_mac_abort_2: (+1)
+   \       0x28   0xF44F 0x7794      MOV      R7,#+296
+   \       0x2C   0x2500             MOVS     R5,#+0
+   \       0x2E   0x0026             MOVS     R6,R4
+   \       0x30   0x002A             MOVS     R2,R5
+   \       0x32   0x0039             MOVS     R1,R7
+   \       0x34   0x0030             MOVS     R0,R6
+   \       0x36   0x.... 0x....      BL       __aeabi_memset
+    280              return PSA_ERROR_BAD_STATE;
+   \       0x3A   0xF07F 0x0088      MVNS     R0,#+136
+   \                     ??mbedtls_psa_mac_abort_1: (+1)
+   \       0x3E   0xBDF2             POP      {R1,R4-R7,PC}
+    281          }
+    282          
+
+   \                                 In section .text, align 2, keep-with-next
+    283          static psa_status_t psa_mac_setup(mbedtls_psa_mac_operation_t *operation,
+    284                                            const psa_key_attributes_t *attributes,
+    285                                            const uint8_t *key_buffer,
+    286                                            size_t key_buffer_size,
+    287                                            psa_algorithm_t alg)
+    288          {
+   \                     psa_mac_setup: (+1)
+   \        0x0   0xE92D 0x47F0      PUSH     {R4-R10,LR}
+   \        0x4   0x4682             MOV      R10,R0
+   \        0x6   0x000E             MOVS     R6,R1
+   \        0x8   0x0017             MOVS     R7,R2
+   \        0xA   0x4698             MOV      R8,R3
+   \        0xC   0xF8DD 0x9020      LDR      R9,[SP, #+32]
+    289              psa_status_t status = PSA_ERROR_CORRUPTION_DETECTED;
+   \       0x10   0xF07F 0x0596      MVNS     R5,#+150
+    290          
+    291              /* A context must be freshly initialized before it can be set up. */
+    292              if (operation->alg != 0) {
+   \       0x14   0xF8DA 0x0000      LDR      R0,[R10, #+0]
+   \       0x18   0x2800             CMP      R0,#+0
+   \       0x1A   0xD002             BEQ.N    ??psa_mac_setup_0
+    293                  return PSA_ERROR_BAD_STATE;
+   \       0x1C   0xF07F 0x0088      MVNS     R0,#+136
+   \       0x20   0xE022             B.N      ??psa_mac_setup_1
+    294              }
+    295          
+    296              status = mac_init(operation, alg);
+   \                     ??psa_mac_setup_0: (+1)
+   \       0x22   0x4649             MOV      R1,R9
+   \       0x24   0x4650             MOV      R0,R10
+   \       0x26   0x.... 0x....      BL       mac_init
+   \       0x2A   0x0004             MOVS     R4,R0
+    297              if (status != PSA_SUCCESS) {
+   \       0x2C   0x2C00             CMP      R4,#+0
+   \       0x2E   0xD001             BEQ.N    ??psa_mac_setup_2
+    298                  return status;
+   \       0x30   0x0020             MOVS     R0,R4
+   \       0x32   0xE019             B.N      ??psa_mac_setup_1
+    299              }
+    300          
+    301          #if defined(MBEDTLS_PSA_BUILTIN_ALG_CMAC)
+    302              if (PSA_ALG_FULL_LENGTH_MAC(alg) == PSA_ALG_CMAC) {
+    303                  /* Key buffer size for CMAC is dictated by the key bits set on the
+    304                   * attributes, and previously validated by the core on key import. */
+    305                  (void) key_buffer_size;
+    306                  status = cmac_setup(operation, attributes, key_buffer);
+    307              } else
+    308          #endif /* MBEDTLS_PSA_BUILTIN_ALG_CMAC */
+    309          #if defined(MBEDTLS_PSA_BUILTIN_ALG_HMAC)
+    310              if (PSA_ALG_IS_HMAC(alg)) {
+   \                     ??psa_mac_setup_2: (+1)
+   \       0x34   0x....             LDR.N    R0,??DataTable7_13
+   \       0x36   0xEA10 0x0009      ANDS     R0,R0,R9
+   \       0x3A   0xF1B0 0x7F60      CMP      R0,#+58720256
+   \       0x3E   0xD10B             BNE.N    ??psa_mac_setup_3
+    311                  status = psa_hmac_setup_internal(&operation->ctx.hmac,
+    312                                                   key_buffer,
+    313                                                   key_buffer_size,
+    314                                                   PSA_ALG_HMAC_GET_HASH(alg));
+   \       0x40   0xF009 0x03FF      AND      R3,R9,#0xFF
+   \       0x44   0xF053 0x7300      ORRS     R3,R3,#0x2000000
+   \       0x48   0x4642             MOV      R2,R8
+   \       0x4A   0x0039             MOVS     R1,R7
+   \       0x4C   0xF11A 0x0004      ADDS     R0,R10,#+4
+   \       0x50   0x.... 0x....      BL       psa_hmac_setup_internal
+   \       0x54   0x0005             MOVS     R5,R0
+   \       0x56   0xE001             B.N      ??psa_mac_setup_4
+    315              } else
+    316          #endif /* MBEDTLS_PSA_BUILTIN_ALG_HMAC */
+    317              {
+    318                  (void) attributes;
+    319                  (void) key_buffer;
+    320                  (void) key_buffer_size;
+    321                  status = PSA_ERROR_NOT_SUPPORTED;
+   \                     ??psa_mac_setup_3: (+1)
+   \       0x58   0xF07F 0x0585      MVNS     R5,#+133
+    322              }
+    323          
+    324              if (status != PSA_SUCCESS) {
+   \                     ??psa_mac_setup_4: (+1)
+   \       0x5C   0x2D00             CMP      R5,#+0
+   \       0x5E   0xD002             BEQ.N    ??psa_mac_setup_5
+    325                  mbedtls_psa_mac_abort(operation);
+   \       0x60   0x4650             MOV      R0,R10
+   \       0x62   0x.... 0x....      BL       mbedtls_psa_mac_abort
+    326              }
+    327          
+    328              return status;
+   \                     ??psa_mac_setup_5: (+1)
+   \       0x66   0x0028             MOVS     R0,R5
+   \                     ??psa_mac_setup_1: (+1)
+   \       0x68   0xE8BD 0x87F0      POP      {R4-R10,PC}
+    329          }
+    330          
+
+   \                                 In section .text, align 2, keep-with-next
+    331          psa_status_t mbedtls_psa_mac_sign_setup(
+    332              mbedtls_psa_mac_operation_t *operation,
+    333              const psa_key_attributes_t *attributes,
+    334              const uint8_t *key_buffer,
+    335              size_t key_buffer_size,
+    336              psa_algorithm_t alg)
+    337          {
+   \                     mbedtls_psa_mac_sign_setup: (+1)
+   \        0x0   0xB5F8             PUSH     {R3-R7,LR}
+   \        0x2   0x0004             MOVS     R4,R0
+   \        0x4   0x000D             MOVS     R5,R1
+   \        0x6   0x0016             MOVS     R6,R2
+   \        0x8   0x001F             MOVS     R7,R3
+    338              return psa_mac_setup(operation, attributes,
+    339                                   key_buffer, key_buffer_size, alg);
+   \        0xA   0x9806             LDR      R0,[SP, #+24]
+   \        0xC   0x9000             STR      R0,[SP, #+0]
+   \        0xE   0x003B             MOVS     R3,R7
+   \       0x10   0x0032             MOVS     R2,R6
+   \       0x12   0x0029             MOVS     R1,R5
+   \       0x14   0x0020             MOVS     R0,R4
+   \       0x16   0x.... 0x....      BL       psa_mac_setup
+   \       0x1A   0xBDF2             POP      {R1,R4-R7,PC}
+    340          }
+    341          
+
+   \                                 In section .text, align 2, keep-with-next
+    342          psa_status_t mbedtls_psa_mac_verify_setup(
+    343              mbedtls_psa_mac_operation_t *operation,
+    344              const psa_key_attributes_t *attributes,
+    345              const uint8_t *key_buffer,
+    346              size_t key_buffer_size,
+    347              psa_algorithm_t alg)
+    348          {
+   \                     mbedtls_psa_mac_verify_setup: (+1)
+   \        0x0   0xB5F8             PUSH     {R3-R7,LR}
+   \        0x2   0x0004             MOVS     R4,R0
+   \        0x4   0x000D             MOVS     R5,R1
+   \        0x6   0x0016             MOVS     R6,R2
+   \        0x8   0x001F             MOVS     R7,R3
+    349              return psa_mac_setup(operation, attributes,
+    350                                   key_buffer, key_buffer_size, alg);
+   \        0xA   0x9806             LDR      R0,[SP, #+24]
+   \        0xC   0x9000             STR      R0,[SP, #+0]
+   \        0xE   0x003B             MOVS     R3,R7
+   \       0x10   0x0032             MOVS     R2,R6
+   \       0x12   0x0029             MOVS     R1,R5
+   \       0x14   0x0020             MOVS     R0,R4
+   \       0x16   0x.... 0x....      BL       psa_mac_setup
+   \       0x1A   0xBDF2             POP      {R1,R4-R7,PC}
+    351          }
+    352          
+
+   \                                 In section .text, align 2, keep-with-next
+    353          psa_status_t mbedtls_psa_mac_update(
+    354              mbedtls_psa_mac_operation_t *operation,
+    355              const uint8_t *input,
+    356              size_t input_length)
+    357          {
+   \                     mbedtls_psa_mac_update: (+1)
+   \        0x0   0xB570             PUSH     {R4-R6,LR}
+   \        0x2   0x0004             MOVS     R4,R0
+   \        0x4   0x000D             MOVS     R5,R1
+   \        0x6   0x0016             MOVS     R6,R2
+    358              if (operation->alg == 0) {
+   \        0x8   0x6820             LDR      R0,[R4, #+0]
+   \        0xA   0x2800             CMP      R0,#+0
+   \        0xC   0xD102             BNE.N    ??mbedtls_psa_mac_update_0
+    359                  return PSA_ERROR_BAD_STATE;
+   \        0xE   0xF07F 0x0088      MVNS     R0,#+136
+   \       0x12   0xE00D             B.N      ??mbedtls_psa_mac_update_1
+    360              }
+    361          
+    362          #if defined(MBEDTLS_PSA_BUILTIN_ALG_CMAC)
+    363              if (PSA_ALG_FULL_LENGTH_MAC(operation->alg) == PSA_ALG_CMAC) {
+    364                  return mbedtls_to_psa_error(
+    365                      mbedtls_cipher_cmac_update(&operation->ctx.cmac,
+    366                                                 input, input_length));
+    367              } else
+    368          #endif /* MBEDTLS_PSA_BUILTIN_ALG_CMAC */
+    369          #if defined(MBEDTLS_PSA_BUILTIN_ALG_HMAC)
+    370              if (PSA_ALG_IS_HMAC(operation->alg)) {
+   \                     ??mbedtls_psa_mac_update_0: (+1)
+   \       0x14   0x6821             LDR      R1,[R4, #+0]
+   \       0x16   0x....             LDR.N    R0,??DataTable7_13
+   \       0x18   0x4001             ANDS     R1,R0,R1
+   \       0x1A   0xF1B1 0x7F60      CMP      R1,#+58720256
+   \       0x1E   0xD105             BNE.N    ??mbedtls_psa_mac_update_2
+    371                  return psa_hmac_update_internal(&operation->ctx.hmac,
+    372                                                  input, input_length);
+   \       0x20   0x0032             MOVS     R2,R6
+   \       0x22   0x0029             MOVS     R1,R5
+   \       0x24   0x1D20             ADDS     R0,R4,#+4
+   \       0x26   0x.... 0x....      BL       psa_hmac_update_internal
+   \       0x2A   0xE001             B.N      ??mbedtls_psa_mac_update_1
+    373              } else
+    374          #endif /* MBEDTLS_PSA_BUILTIN_ALG_HMAC */
+    375              {
+    376                  /* This shouldn't happen if `operation` was initialized by
+    377                   * a setup function. */
+    378                  (void) input;
+    379                  (void) input_length;
+    380                  return PSA_ERROR_BAD_STATE;
+   \                     ??mbedtls_psa_mac_update_2: (+1)
+   \       0x2C   0xF07F 0x0088      MVNS     R0,#+136
+   \                     ??mbedtls_psa_mac_update_1: (+1)
+   \       0x30   0xBD70             POP      {R4-R6,PC}
+    381              }
+    382          }
+    383          
+
+   \                                 In section .text, align 2, keep-with-next
+    384          static psa_status_t psa_mac_finish_internal(
+    385              mbedtls_psa_mac_operation_t *operation,
+    386              uint8_t *mac, size_t mac_size)
+    387          {
+   \                     psa_mac_finish_internal: (+1)
+   \        0x0   0xB570             PUSH     {R4-R6,LR}
+   \        0x2   0x0004             MOVS     R4,R0
+   \        0x4   0x000D             MOVS     R5,R1
+   \        0x6   0x0016             MOVS     R6,R2
+    388          #if defined(MBEDTLS_PSA_BUILTIN_ALG_CMAC)
+    389              if (PSA_ALG_FULL_LENGTH_MAC(operation->alg) == PSA_ALG_CMAC) {
+    390                  uint8_t tmp[PSA_BLOCK_CIPHER_BLOCK_MAX_SIZE];
+    391                  int ret = mbedtls_cipher_cmac_finish(&operation->ctx.cmac, tmp);
+    392                  if (ret == 0) {
+    393                      memcpy(mac, tmp, mac_size);
+    394                  }
+    395                  mbedtls_platform_zeroize(tmp, sizeof(tmp));
+    396                  return mbedtls_to_psa_error(ret);
+    397              } else
+    398          #endif /* MBEDTLS_PSA_BUILTIN_ALG_CMAC */
+    399          #if defined(MBEDTLS_PSA_BUILTIN_ALG_HMAC)
+    400              if (PSA_ALG_IS_HMAC(operation->alg)) {
+   \        0x8   0x6821             LDR      R1,[R4, #+0]
+   \        0xA   0x....             LDR.N    R0,??DataTable7_13
+   \        0xC   0x4001             ANDS     R1,R0,R1
+   \        0xE   0xF1B1 0x7F60      CMP      R1,#+58720256
+   \       0x12   0xD105             BNE.N    ??psa_mac_finish_internal_0
+    401                  return psa_hmac_finish_internal(&operation->ctx.hmac,
+    402                                                  mac, mac_size);
+   \       0x14   0x0032             MOVS     R2,R6
+   \       0x16   0x0029             MOVS     R1,R5
+   \       0x18   0x1D20             ADDS     R0,R4,#+4
+   \       0x1A   0x.... 0x....      BL       psa_hmac_finish_internal
+   \       0x1E   0xE001             B.N      ??psa_mac_finish_internal_1
+    403              } else
+    404          #endif /* MBEDTLS_PSA_BUILTIN_ALG_HMAC */
+    405              {
+    406                  /* This shouldn't happen if `operation` was initialized by
+    407                   * a setup function. */
+    408                  (void) operation;
+    409                  (void) mac;
+    410                  (void) mac_size;
+    411                  return PSA_ERROR_BAD_STATE;
+   \                     ??psa_mac_finish_internal_0: (+1)
+   \       0x20   0xF07F 0x0088      MVNS     R0,#+136
+   \                     ??psa_mac_finish_internal_1: (+1)
+   \       0x24   0xBD70             POP      {R4-R6,PC}
+    412              }
+    413          }
+    414          
+
+   \                                 In section .text, align 2, keep-with-next
+    415          psa_status_t mbedtls_psa_mac_sign_finish(
+    416              mbedtls_psa_mac_operation_t *operation,
+    417              uint8_t *mac,
+    418              size_t mac_size,
+    419              size_t *mac_length)
+    420          {
+   \                     mbedtls_psa_mac_sign_finish: (+1)
+   \        0x0   0xE92D 0x41F0      PUSH     {R4-R8,LR}
+   \        0x4   0x4680             MOV      R8,R0
+   \        0x6   0x000C             MOVS     R4,R1
+   \        0x8   0x0015             MOVS     R5,R2
+   \        0xA   0x001E             MOVS     R6,R3
+    421              psa_status_t status = PSA_ERROR_CORRUPTION_DETECTED;
+   \        0xC   0xF07F 0x0796      MVNS     R7,#+150
+    422          
+    423              if (operation->alg == 0) {
+   \       0x10   0xF8D8 0x0000      LDR      R0,[R8, #+0]
+   \       0x14   0x2800             CMP      R0,#+0
+   \       0x16   0xD102             BNE.N    ??mbedtls_psa_mac_sign_finish_0
+    424                  return PSA_ERROR_BAD_STATE;
+   \       0x18   0xF07F 0x0088      MVNS     R0,#+136
+   \       0x1C   0xE007             B.N      ??mbedtls_psa_mac_sign_finish_1
+    425              }
+    426          
+    427              status = psa_mac_finish_internal(operation, mac, mac_size);
+   \                     ??mbedtls_psa_mac_sign_finish_0: (+1)
+   \       0x1E   0x002A             MOVS     R2,R5
+   \       0x20   0x0021             MOVS     R1,R4
+   \       0x22   0x4640             MOV      R0,R8
+   \       0x24   0x.... 0x....      BL       psa_mac_finish_internal
+    428              if (status == PSA_SUCCESS) {
+   \       0x28   0x2800             CMP      R0,#+0
+   \       0x2A   0xD100             BNE.N    ??mbedtls_psa_mac_sign_finish_2
+    429                  *mac_length = mac_size;
+   \       0x2C   0x6035             STR      R5,[R6, #+0]
+    430              }
+    431          
+    432              return status;
+   \                     ??mbedtls_psa_mac_sign_finish_2: (+1)
+   \                     ??mbedtls_psa_mac_sign_finish_1: (+1)
+   \       0x2E   0xE8BD 0x81F0      POP      {R4-R8,PC}
+    433          }
+    434          
+
+   \                                 In section .text, align 2, keep-with-next
+    435          psa_status_t mbedtls_psa_mac_verify_finish(
+    436              mbedtls_psa_mac_operation_t *operation,
+    437              const uint8_t *mac,
+    438              size_t mac_length)
+    439          {
+   \                     mbedtls_psa_mac_verify_finish: (+1)
+   \        0x0   0xE92D 0x41F0      PUSH     {R4-R8,LR}
+   \        0x4   0xB088             SUB      SP,SP,#+32
+   \        0x6   0x0005             MOVS     R5,R0
+   \        0x8   0x000E             MOVS     R6,R1
+   \        0xA   0x0017             MOVS     R7,R2
+    440              uint8_t actual_mac[PSA_MAC_MAX_SIZE];
+    441              psa_status_t status = PSA_ERROR_CORRUPTION_DETECTED;
+   \        0xC   0xF07F 0x0896      MVNS     R8,#+150
+    442          
+    443              if (operation->alg == 0) {
+   \       0x10   0x6828             LDR      R0,[R5, #+0]
+   \       0x12   0x2800             CMP      R0,#+0
+   \       0x14   0xD102             BNE.N    ??mbedtls_psa_mac_verify_finish_0
+    444                  return PSA_ERROR_BAD_STATE;
+   \       0x16   0xF07F 0x0088      MVNS     R0,#+136
+   \       0x1A   0xE01B             B.N      ??mbedtls_psa_mac_verify_finish_1
+    445              }
+    446          
+    447              /* Consistency check: requested MAC length fits our local buffer */
+    448              if (mac_length > sizeof(actual_mac)) {
+   \                     ??mbedtls_psa_mac_verify_finish_0: (+1)
+   \       0x1C   0x2F21             CMP      R7,#+33
+   \       0x1E   0xD302             BCC.N    ??mbedtls_psa_mac_verify_finish_2
+    449                  return PSA_ERROR_INVALID_ARGUMENT;
+   \       0x20   0xF07F 0x0086      MVNS     R0,#+134
+   \       0x24   0xE016             B.N      ??mbedtls_psa_mac_verify_finish_1
+    450              }
+    451          
+    452              status = psa_mac_finish_internal(operation, actual_mac, mac_length);
+   \                     ??mbedtls_psa_mac_verify_finish_2: (+1)
+   \       0x26   0x003A             MOVS     R2,R7
+   \       0x28   0x4669             MOV      R1,SP
+   \       0x2A   0x0028             MOVS     R0,R5
+   \       0x2C   0x.... 0x....      BL       psa_mac_finish_internal
+   \       0x30   0x0004             MOVS     R4,R0
+    453              if (status != PSA_SUCCESS) {
+   \       0x32   0x2C00             CMP      R4,#+0
+   \       0x34   0xD109             BNE.N    ??mbedtls_psa_mac_verify_finish_3
+    454                  goto cleanup;
+    455              }
+    456          
+    457              if (mbedtls_ct_memcmp(mac, actual_mac, mac_length) != 0) {
+   \                     ??mbedtls_psa_mac_verify_finish_4: (+1)
+   \       0x36   0x003A             MOVS     R2,R7
+   \       0x38   0x4669             MOV      R1,SP
+   \       0x3A   0x0030             MOVS     R0,R6
+   \       0x3C   0x.... 0x....      BL       mbedtls_ct_memcmp
+   \       0x40   0x2800             CMP      R0,#+0
+   \       0x42   0xD002             BEQ.N    ??mbedtls_psa_mac_verify_finish_3
+    458                  status = PSA_ERROR_INVALID_SIGNATURE;
+   \       0x44   0xF07F 0x0094      MVNS     R0,#+148
+   \       0x48   0x0004             MOVS     R4,R0
+    459              }
+    460          
+    461          cleanup:
+    462              mbedtls_platform_zeroize(actual_mac, sizeof(actual_mac));
+   \                     ??mbedtls_psa_mac_verify_finish_3: (+1)
+   \       0x4A   0x2120             MOVS     R1,#+32
+   \       0x4C   0x4668             MOV      R0,SP
+   \       0x4E   0x.... 0x....      BL       mbedtls_platform_zeroize
+    463          
+    464              return status;
+   \       0x52   0x0020             MOVS     R0,R4
+   \                     ??mbedtls_psa_mac_verify_finish_1: (+1)
+   \       0x54   0xB008             ADD      SP,SP,#+32
+   \       0x56   0xE8BD 0x81F0      POP      {R4-R8,PC}
+    465          }
+    466          
+
+   \                                 In section .text, align 2, keep-with-next
+    467          psa_status_t mbedtls_psa_mac_compute(
+    468              const psa_key_attributes_t *attributes,
+    469              const uint8_t *key_buffer,
+    470              size_t key_buffer_size,
+    471              psa_algorithm_t alg,
+    472              const uint8_t *input,
+    473              size_t input_length,
+    474              uint8_t *mac,
+    475              size_t mac_size,
+    476              size_t *mac_length)
+    477          {
+   \                     mbedtls_psa_mac_compute: (+1)
+   \        0x0   0xE92D 0x4FF3      PUSH     {R0,R1,R4-R11,LR}
+   \        0x4   0xB0CD             SUB      SP,SP,#+308
+   \        0x6   0x4692             MOV      R10,R2
+   \        0x8   0x4699             MOV      R9,R3
+   \        0xA   0x9D58             LDR      R5,[SP, #+352]
+   \        0xC   0x9C59             LDR      R4,[SP, #+356]
+   \        0xE   0x9E5A             LDR      R6,[SP, #+360]
+   \       0x10   0x9F5B             LDR      R7,[SP, #+364]
+   \       0x12   0xF8DD 0x8170      LDR      R8,[SP, #+368]
+    478              psa_status_t status = PSA_ERROR_CORRUPTION_DETECTED;
+   \       0x16   0xF07F 0x0096      MVNS     R0,#+150
+   \       0x1A   0x9001             STR      R0,[SP, #+4]
+    479              mbedtls_psa_mac_operation_t operation = MBEDTLS_PSA_MAC_OPERATION_INIT;
+   \       0x1C   0xA802             ADD      R0,SP,#+8
+   \       0x1E   0xF44F 0x7194      MOV      R1,#+296
+   \       0x22   0x.... 0x....      BL       __aeabi_memclr4
+    480          
+    481              status = psa_mac_setup(&operation,
+    482                                     attributes, key_buffer, key_buffer_size,
+    483                                     alg);
+   \       0x26   0xF8CD 0x9000      STR      R9,[SP, #+0]
+   \       0x2A   0x4653             MOV      R3,R10
+   \       0x2C   0x9A4E             LDR      R2,[SP, #+312]
+   \       0x2E   0x994D             LDR      R1,[SP, #+308]
+   \       0x30   0xA802             ADD      R0,SP,#+8
+   \       0x32   0x.... 0x....      BL       psa_mac_setup
+   \       0x36   0x4683             MOV      R11,R0
+    484              if (status != PSA_SUCCESS) {
+   \       0x38   0xF1BB 0x0F00      CMP      R11,#+0
+   \       0x3C   0xD115             BNE.N    ??mbedtls_psa_mac_compute_0
+    485                  goto exit;
+    486              }
+    487          
+    488              if (input_length > 0) {
+   \                     ??mbedtls_psa_mac_compute_1: (+1)
+   \       0x3E   0x2C00             CMP      R4,#+0
+   \       0x40   0xD008             BEQ.N    ??mbedtls_psa_mac_compute_2
+    489                  status = mbedtls_psa_mac_update(&operation, input, input_length);
+   \       0x42   0x0022             MOVS     R2,R4
+   \       0x44   0x0029             MOVS     R1,R5
+   \       0x46   0xA802             ADD      R0,SP,#+8
+   \       0x48   0x.... 0x....      BL       mbedtls_psa_mac_update
+   \       0x4C   0x4683             MOV      R11,R0
+    490                  if (status != PSA_SUCCESS) {
+   \       0x4E   0xF1BB 0x0F00      CMP      R11,#+0
+   \       0x52   0xD10A             BNE.N    ??mbedtls_psa_mac_compute_0
+    491                      goto exit;
+    492                  }
+    493              }
+    494          
+    495              status = psa_mac_finish_internal(&operation, mac, mac_size);
+   \                     ??mbedtls_psa_mac_compute_2: (+1)
+   \       0x54   0x003A             MOVS     R2,R7
+   \       0x56   0x0031             MOVS     R1,R6
+   \       0x58   0xA802             ADD      R0,SP,#+8
+   \       0x5A   0x.... 0x....      BL       psa_mac_finish_internal
+   \       0x5E   0x4683             MOV      R11,R0
+    496              if (status == PSA_SUCCESS) {
+   \       0x60   0xF1BB 0x0F00      CMP      R11,#+0
+   \       0x64   0xD101             BNE.N    ??mbedtls_psa_mac_compute_0
+    497                  *mac_length = mac_size;
+   \       0x66   0xF8C8 0x7000      STR      R7,[R8, #+0]
+    498              }
+    499          
+    500          exit:
+    501              mbedtls_psa_mac_abort(&operation);
+   \                     ??mbedtls_psa_mac_compute_0: (+1)
+   \       0x6A   0xA802             ADD      R0,SP,#+8
+   \       0x6C   0x.... 0x....      BL       mbedtls_psa_mac_abort
+    502          
+    503              return status;
+   \       0x70   0x4658             MOV      R0,R11
+   \       0x72   0xB04F             ADD      SP,SP,#+316
+   \       0x74   0xE8BD 0x8FF0      POP      {R4-R11,PC}
+    504          }
+
+   \                                 In section .rodata, align 4
+   \        0x0   0x0000'0000        DC32 0, 0
+   \              0x0000'0000
+   \        0x8                      DS8 288
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable7:
+   \        0x0   0x0200'0003        DC32     0x2000003
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable7_1:
+   \        0x0   0x0200'0004        DC32     0x2000004
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable7_2:
+   \        0x0   0x0200'0005        DC32     0x2000005
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable7_3:
+   \        0x0   0x0200'0008        DC32     0x2000008
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable7_4:
+   \        0x0   0x0200'0009        DC32     0x2000009
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable7_5:
+   \        0x0   0x0200'000A        DC32     0x200000a
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable7_6:
+   \        0x0   0x0200'000B        DC32     0x200000b
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable7_7:
+   \        0x0   0x0200'000C        DC32     0x200000c
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable7_8:
+   \        0x0   0x0200'000D        DC32     0x200000d
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable7_9:
+   \        0x0   0x0200'0010        DC32     0x2000010
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable7_10:
+   \        0x0   0x0200'0011        DC32     0x2000011
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable7_11:
+   \        0x0   0x0200'0012        DC32     0x2000012
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable7_12:
+   \        0x0   0x0200'0013        DC32     0x2000013
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable7_13:
+   \        0x0   0x7FC0'0000        DC32     0x7fc00000
+    505          
+    506          #endif /* MBEDTLS_PSA_BUILTIN_ALG_HMAC || MBEDTLS_PSA_BUILTIN_ALG_CMAC */
+    507          
+    508          #endif /* MBEDTLS_PSA_CRYPTO_C */
+
+   Maximum stack usage in bytes:
+
+   .cstack Function
+   ------- --------
+      32   mac_init
+        32   -> __aeabi_memset
+      24   mbedtls_psa_mac_abort
+        24   -> __aeabi_memset
+        24   -> psa_hmac_abort_internal
+     352   mbedtls_psa_mac_compute
+       352   -> __aeabi_memclr4
+       352   -> mbedtls_psa_mac_abort
+       352   -> mbedtls_psa_mac_update
+       352   -> psa_mac_finish_internal
+       352   -> psa_mac_setup
+      24   mbedtls_psa_mac_sign_finish
+        24   -> psa_mac_finish_internal
+      24   mbedtls_psa_mac_sign_setup
+        24   -> psa_mac_setup
+      16   mbedtls_psa_mac_update
+        16   -> psa_hmac_update_internal
+      56   mbedtls_psa_mac_verify_finish
+        56   -> mbedtls_ct_memcmp
+        56   -> mbedtls_platform_zeroize
+        56   -> psa_mac_finish_internal
+      24   mbedtls_psa_mac_verify_setup
+        24   -> psa_mac_setup
+       8   psa_hmac_abort_internal
+         8   -> mbedtls_platform_zeroize
+         8   -> psa_hash_abort
+      80   psa_hmac_finish_internal
+        80   -> __aeabi_memcpy
+        80   -> mbedtls_platform_zeroize
+        80   -> psa_hash_finish
+        80   -> psa_hash_setup
+        80   -> psa_hash_update
+     120   psa_hmac_setup_internal
+       120   -> __aeabi_memcpy
+       120   -> __aeabi_memset
+       120   -> mbedtls_platform_zeroize
+       120   -> psa_hash_compute
+       120   -> psa_hash_setup
+       120   -> psa_hash_update
+      16   psa_hmac_update_internal
+        16   -> psa_hash_update
+      16   psa_mac_finish_internal
+        16   -> psa_hmac_finish_internal
+      32   psa_mac_setup
+        32   -> mac_init
+        32   -> mbedtls_psa_mac_abort
+        32   -> psa_hmac_setup_internal
+
+
+   Section sizes:
+
+   Bytes  Function/Label
+   -----  --------------
+       4  ??DataTable7
+       4  ??DataTable7_1
+       4  ??DataTable7_10
+       4  ??DataTable7_11
+       4  ??DataTable7_12
+       4  ??DataTable7_13
+       4  ??DataTable7_2
+       4  ??DataTable7_3
+       4  ??DataTable7_4
+       4  ??DataTable7_5
+       4  ??DataTable7_6
+       4  ??DataTable7_7
+       4  ??DataTable7_8
+       4  ??DataTable7_9
+     296  ?_0
+      66  mac_init
+      64  mbedtls_psa_mac_abort
+     120  mbedtls_psa_mac_compute
+      50  mbedtls_psa_mac_sign_finish
+      28  mbedtls_psa_mac_sign_setup
+      50  mbedtls_psa_mac_update
+      90  mbedtls_psa_mac_verify_finish
+      28  mbedtls_psa_mac_verify_setup
+      22  psa_hmac_abort_internal
+     416  psa_hmac_finish_internal
+     826  psa_hmac_setup_internal
+      20  psa_hmac_update_internal
+      38  psa_mac_finish_internal
+     108  psa_mac_setup
+
+ 
+   296 bytes in section .rodata
+ 1'982 bytes in section .text
+ 
+ 1'982 bytes of CODE  memory
+   296 bytes of CONST memory
+
+Errors: none
+Warnings: none

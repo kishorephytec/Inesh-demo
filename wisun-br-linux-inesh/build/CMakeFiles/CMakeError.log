@@ -1,0 +1,43 @@
+Determining if the include file sl_cpc.h exists failed with the following output:
+Change Dir: /home/debian/wisun-br-linux-inesh/build/CMakeFiles/CMakeScratch/TryCompile-fyZxfR
+
+Run Build Command(s):/usr/bin/ninja cmTC_6fd2e && [1/2] Building C object CMakeFiles/cmTC_6fd2e.dir/CheckIncludeFile.c.o
+FAILED: CMakeFiles/cmTC_6fd2e.dir/CheckIncludeFile.c.o 
+/usr/bin/cc    -o CMakeFiles/cmTC_6fd2e.dir/CheckIncludeFile.c.o -c /home/debian/wisun-br-linux-inesh/build/CMakeFiles/CMakeScratch/TryCompile-fyZxfR/CheckIncludeFile.c
+/home/debian/wisun-br-linux-inesh/build/CMakeFiles/CMakeScratch/TryCompile-fyZxfR/CheckIncludeFile.c:1:10: fatal error: sl_cpc.h: No such file or directory
+    1 | #include <sl_cpc.h>
+      |          ^~~~~~~~~~
+compilation terminated.
+ninja: build stopped: subcommand failed.
+
+
+
+Determining if the strlcpy exist failed with the following output:
+Change Dir: /home/debian/wisun-br-linux-inesh/build/CMakeFiles/CMakeScratch/TryCompile-UPRdru
+
+Run Build Command(s):/usr/bin/ninja cmTC_333ce && [1/2] Building C object CMakeFiles/cmTC_333ce.dir/CheckSymbolExists.c.o
+FAILED: CMakeFiles/cmTC_333ce.dir/CheckSymbolExists.c.o 
+/usr/bin/cc    -o CMakeFiles/cmTC_333ce.dir/CheckSymbolExists.c.o -c /home/debian/wisun-br-linux-inesh/build/CMakeFiles/CMakeScratch/TryCompile-UPRdru/CheckSymbolExists.c
+/home/debian/wisun-br-linux-inesh/build/CMakeFiles/CMakeScratch/TryCompile-UPRdru/CheckSymbolExists.c: In function 'main':
+/home/debian/wisun-br-linux-inesh/build/CMakeFiles/CMakeScratch/TryCompile-UPRdru/CheckSymbolExists.c:8:19: error: 'strlcpy' undeclared (first use in this function); did you mean 'strncpy'?
+    8 |   return ((int*)(&strlcpy))[argc];
+      |                   ^~~~~~~
+      |                   strncpy
+/home/debian/wisun-br-linux-inesh/build/CMakeFiles/CMakeScratch/TryCompile-UPRdru/CheckSymbolExists.c:8:19: note: each undeclared identifier is reported only once for each function it appears in
+ninja: build stopped: subcommand failed.
+
+
+File CheckSymbolExists.c:
+/* */
+#include <string.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef strlcpy
+  return ((int*)(&strlcpy))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}

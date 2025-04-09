@@ -1,0 +1,2535 @@
+###############################################################################
+#
+# IAR ANSI C/C++ Compiler V9.50.2.385/W64 for ARM         29/Mar/2025  15:54:03
+# Copyright 1999-2024 IAR Systems AB.
+#
+#    Cpu mode                     =  thumb
+#    Endian                       =  little
+#    Source file                  =
+#        D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\util\third_party\mbedtls\library\x509_crl.c
+#    Command line                 =
+#        -f "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\ewarm-iar\obj\library_17211336700577820660.dir\x509_crl.o.rsp"
+#        ("D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\util\third_party\mbedtls\library\x509_crl.c"
+#        -D DEBUG_EFM=1 -D EFR32FG28B322F1024IM48=1 -D
+#        configNUM_SDK_THREAD_LOCAL_STORAGE_POINTERS=2 -D
+#        SL_COMPONENT_CATALOG_PRESENT=1 -D
+#        MBEDTLS_CONFIG_FILE=<sl_mbedtls_config.h> -D
+#        MBEDTLS_PSA_CRYPTO_CONFIG_FILE=<psa_crypto_config.h> -D
+#        SL_RAIL_LIB_MULTIPROTOCOL_SUPPORT=0 -D
+#        SL_RAIL_UTIL_PA_CONFIG_HEADER=<sl_rail_util_pa_config.h> -D
+#        RTT_USE_ASM=0 -lC "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\ewarm-iar\lst\library_17211336700577820660.dir"
+#        --diag_suppress Pa050 -o "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\ewarm-iar\obj\library_17211336700577820660.dir"
+#        --no_cse --no_unroll --no_inline --no_code_motion --no_tbaa
+#        --no_clustering --no_scheduling --debug --endian=little
+#        --cpu=Cortex-M33 --cmse --cmse -e --fpu=VFPv5_sp --dlib_config
+#        "C:\Program Files\IAR Systems\Embedded Workbench
+#        9.2\arm\inc\c\DLib_Config_Normal.h" -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\util\third_party\mbedtls\library\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App 1\Wisun_Node_App\config\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App 1\Wisun_Node_App\config\rail\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App 1\Wisun_Node_App\config\wisun\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App 1\Wisun_Node_App\.\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\Device\SiliconLabs\EFR32FG28\Include\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\app\wisun\component\app_project_info\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\common\inc\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\service\cli\inc\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\service\cli\src\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\CMSIS\Core\Include\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\CMSIS\RTOS2\Include\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\service\device_init\inc\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\emdrv\common\inc\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\emlib\inc\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\service\iostream\inc\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\security\sl_component\sl_mbedtls_support\config\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\security\sl_component\sl_mbedtls_support\config\preset\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\security\sl_component\sl_mbedtls_support\inc\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\util\third_party\mbedtls\include\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\util\third_party\mbedtls\library\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\micrium_os\common\source\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\micrium_os\common\include\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\micrium_os\cpu\include\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\micrium_os\ports\source\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\micrium_os\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\micrium_os\kernel\source\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\micrium_os\kernel\include\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\emdrv\nvm3\inc\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\peripheral\inc\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\util\third_party\printf\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\util\third_party\printf\inc\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\security\sl_component\sl_psa_driver\inc\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\radio\rail_lib\common\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\radio\rail_lib\protocol\ble\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\radio\rail_lib\protocol\ieee802154\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\radio\rail_lib\protocol\wmbus\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\radio\rail_lib\protocol\zwave\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\radio\rail_lib\chip\efr32\efr32xg2x\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\radio\rail_lib\protocol\sidewalk\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\radio\rail_lib\plugin\pa-conversions\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\radio\rail_lib\plugin\pa-conversions\efr32xg28\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\radio\rail_lib\plugin\rail_util_pti\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\security\sl_component\se_manager\inc\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\security\sl_component\se_manager\src\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\util\third_party\segger\systemview\SEGGER\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\util\silicon_labs\silabs_core\memory_manager\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\common\toolchain\inc\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\service\system\inc\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\app\wisun\component\app_core\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\app\wisun\component\app_setting\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\app\wisun\component\cli_util\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\app\wisun\component\event_manager\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\app\wisun\component\ns_list\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\app\wisun\component\ping\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\app\wisun\component\trace_util\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\app\wisun\component\trace_util\nanostack\nanostack-libservice\mbed-client-libservice\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\app\wisun\component\udp_client\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\service\sleeptimer\inc\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\protocol\wisun\plugin\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\protocol\wisun\stack\inc\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\protocol\wisun\stack\inc\socket\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App 1\Wisun_Node_App\autogen\\" -On
+#        --use_c++_inline) --dependencies=n "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\ewarm-iar\obj\library_17211336700577820660.dir\x509_crl.o.iar_deps"
+#    Locale                       =  C
+#    List file                    =
+#        D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\ewarm-iar\lst\library_17211336700577820660.dir\x509_crl.lst
+#    Object file                  =
+#        D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\ewarm-iar\obj\library_17211336700577820660.dir\x509_crl.o
+#    Runtime model:                  
+#      __CPP_Runtime              =  1
+#      __SystemLibrary            =  DLib
+#      __dlib_file_descriptor     =  0
+#      __dlib_full_locale_support =  0
+#      __dlib_version             =  6
+#      __iar_require _Printf      =  flags,widths
+#
+###############################################################################
+
+D:\Inesh_wisun\Wisun_Node_App 1\Wisun_Node_App\gecko_sdk_4.4.5\util\third_party\mbedtls\library\x509_crl.c
+      1          /*
+      2           *  X.509 Certificate Revocation List (CRL) parsing
+      3           *
+      4           *  Copyright The Mbed TLS Contributors
+      5           *  SPDX-License-Identifier: Apache-2.0
+      6           *
+      7           *  Licensed under the Apache License, Version 2.0 (the "License"); you may
+      8           *  not use this file except in compliance with the License.
+      9           *  You may obtain a copy of the License at
+     10           *
+     11           *  http://www.apache.org/licenses/LICENSE-2.0
+     12           *
+     13           *  Unless required by applicable law or agreed to in writing, software
+     14           *  distributed under the License is distributed on an "AS IS" BASIS, WITHOUT
+     15           *  WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     16           *  See the License for the specific language governing permissions and
+     17           *  limitations under the License.
+     18           */
+     19          /*
+     20           *  The ITU-T X.509 standard defines a certificate format for PKI.
+     21           *
+     22           *  http://www.ietf.org/rfc/rfc5280.txt (Certificates and CRLs)
+     23           *  http://www.ietf.org/rfc/rfc3279.txt (Alg IDs for CRLs)
+     24           *  http://www.ietf.org/rfc/rfc2986.txt (CSRs, aka PKCS#10)
+     25           *
+     26           *  http://www.itu.int/ITU-T/studygroups/com17/languages/X.680-0207.pdf
+     27           *  http://www.itu.int/ITU-T/studygroups/com17/languages/X.690-0207.pdf
+     28           */
+     29          
+     30          #include "common.h"
+     31          
+     32          #if defined(MBEDTLS_X509_CRL_PARSE_C)
+     33          
+     34          #include "mbedtls/x509_crl.h"
+     35          #include "mbedtls/error.h"
+
+   \                                 In section .text, align 2, keep-with-next
+   \   static __vfp int mbedtls_error_add(int, int, char const *, int)
+   \                     mbedtls_error_add: (+1)
+   \        0x0   0x1808             ADDS     R0,R1,R0
+   \        0x2   0x4770             BX       LR
+     36          #include "mbedtls/oid.h"
+     37          #include "mbedtls/platform_util.h"
+     38          
+     39          #include <string.h>
+     40          
+     41          #if defined(MBEDTLS_PEM_PARSE_C)
+     42          #include "mbedtls/pem.h"
+     43          #endif
+     44          
+     45          #include "mbedtls/platform.h"
+     46          
+     47          #if defined(MBEDTLS_HAVE_TIME)
+     48          #if defined(_WIN32) && !defined(EFIX64) && !defined(EFI32)
+     49          #include <windows.h>
+     50          #else
+     51          #include <time.h>
+     52          #endif
+     53          #endif
+     54          
+     55          #if defined(MBEDTLS_FS_IO) || defined(EFIX64) || defined(EFI32)
+     56          #include <stdio.h>
+     57          #endif
+     58          
+     59          /*
+     60           *  Version  ::=  INTEGER  {  v1(0), v2(1)  }
+     61           */
+
+   \                                 In section .text, align 2, keep-with-next
+     62          static int x509_crl_get_version(unsigned char **p,
+     63                                          const unsigned char *end,
+     64                                          int *ver)
+     65          {
+   \                     x509_crl_get_version: (+1)
+   \        0x0   0xE92D 0x41F0      PUSH     {R4-R8,LR}
+   \        0x4   0x0004             MOVS     R4,R0
+   \        0x6   0x000D             MOVS     R5,R1
+   \        0x8   0x0016             MOVS     R6,R2
+     66              int ret = MBEDTLS_ERR_ERROR_CORRUPTION_DETECTED;
+   \        0xA   0xF07F 0x086D      MVNS     R8,#+109
+     67          
+     68              if ((ret = mbedtls_asn1_get_int(p, end, ver)) != 0) {
+   \        0xE   0x0032             MOVS     R2,R6
+   \       0x10   0x0029             MOVS     R1,R5
+   \       0x12   0x0020             MOVS     R0,R4
+   \       0x14   0x.... 0x....      BL       mbedtls_asn1_get_int
+   \       0x18   0x0007             MOVS     R7,R0
+   \       0x1A   0x2800             CMP      R0,#+0
+   \       0x1C   0xD00F             BEQ.N    ??x509_crl_get_version_0
+     69                  if (ret == MBEDTLS_ERR_ASN1_UNEXPECTED_TAG) {
+   \       0x1E   0xF117 0x0F62      CMN      R7,#+98
+   \       0x22   0xD103             BNE.N    ??x509_crl_get_version_1
+     70                      *ver = 0;
+   \       0x24   0x2000             MOVS     R0,#+0
+   \       0x26   0x6030             STR      R0,[R6, #+0]
+     71                      return 0;
+   \       0x28   0x2000             MOVS     R0,#+0
+   \       0x2A   0xE009             B.N      ??x509_crl_get_version_2
+     72                  }
+     73          
+     74                  return MBEDTLS_ERROR_ADD(MBEDTLS_ERR_X509_INVALID_VERSION, ret);
+   \                     ??x509_crl_get_version_1: (+1)
+   \       0x2C   0x234A             MOVS     R3,#+74
+   \       0x2E   0x.... 0x....      LDR.W    R2,??DataTable7
+   \       0x32   0x0039             MOVS     R1,R7
+   \       0x34   0x.... 0x....      LDR.W    R0,??DataTable7_1
+   \       0x38   0x.... 0x....      BL       mbedtls_error_add
+   \       0x3C   0xE000             B.N      ??x509_crl_get_version_2
+     75              }
+     76          
+     77              return 0;
+   \                     ??x509_crl_get_version_0: (+1)
+   \       0x3E   0x2000             MOVS     R0,#+0
+   \                     ??x509_crl_get_version_2: (+1)
+   \       0x40   0xE8BD 0x81F0      POP      {R4-R8,PC}
+     78          }
+     79          
+     80          /*
+     81           * X.509 CRL v2 extensions
+     82           *
+     83           * We currently don't parse any extension's content, but we do check that the
+     84           * list of extensions is well-formed and abort on critical extensions (that
+     85           * are unsupported as we don't support any extension so far)
+     86           */
+
+   \                                 In section .text, align 2, keep-with-next
+     87          static int x509_get_crl_ext(unsigned char **p,
+     88                                      const unsigned char *end,
+     89                                      mbedtls_x509_buf *ext)
+     90          {
+   \                     x509_get_crl_ext: (+1)
+   \        0x0   0xE92D 0x43FE      PUSH     {R1-R9,LR}
+   \        0x4   0x0004             MOVS     R4,R0
+   \        0x6   0x4688             MOV      R8,R1
+   \        0x8   0x0015             MOVS     R5,R2
+     91              int ret = MBEDTLS_ERR_ERROR_CORRUPTION_DETECTED;
+   \        0xA   0xF07F 0x066D      MVNS     R6,#+109
+     92          
+     93              if (*p == end) {
+   \        0xE   0x6820             LDR      R0,[R4, #+0]
+   \       0x10   0x4540             CMP      R0,R8
+   \       0x12   0xD101             BNE.N    ??x509_get_crl_ext_0
+     94                  return 0;
+   \       0x14   0x2000             MOVS     R0,#+0
+   \       0x16   0xE091             B.N      ??x509_get_crl_ext_1
+     95              }
+     96          
+     97              /*
+     98               * crlExtensions           [0]  EXPLICIT Extensions OPTIONAL
+     99               *                              -- if present, version MUST be v2
+    100               */
+    101              if ((ret = mbedtls_x509_get_ext(p, end, ext, 0)) != 0) {
+   \                     ??x509_get_crl_ext_0: (+1)
+   \       0x18   0x2300             MOVS     R3,#+0
+   \       0x1A   0x002A             MOVS     R2,R5
+   \       0x1C   0x4641             MOV      R1,R8
+   \       0x1E   0x0020             MOVS     R0,R4
+   \       0x20   0x.... 0x....      BL       mbedtls_x509_get_ext
+   \       0x24   0x4681             MOV      R9,R0
+   \       0x26   0x2800             CMP      R0,#+0
+   \       0x28   0xD001             BEQ.N    ??x509_get_crl_ext_2
+    102                  return ret;
+   \       0x2A   0x4648             MOV      R0,R9
+   \       0x2C   0xE086             B.N      ??x509_get_crl_ext_1
+    103              }
+    104          
+    105              end = ext->p + ext->len;
+   \                     ??x509_get_crl_ext_2: (+1)
+   \       0x2E   0x68A9             LDR      R1,[R5, #+8]
+   \       0x30   0x6868             LDR      R0,[R5, #+4]
+   \       0x32   0xEB01 0x0600      ADD      R6,R1,R0
+    106          
+    107              while (*p < end) {
+   \                     ??x509_get_crl_ext_3: (+1)
+   \       0x36   0x6820             LDR      R0,[R4, #+0]
+   \       0x38   0x42B0             CMP      R0,R6
+   \       0x3A   0xD271             BCS.N    ??x509_get_crl_ext_4
+    108                  /*
+    109                   * Extension  ::=  SEQUENCE  {
+    110                   *      extnID      OBJECT IDENTIFIER,
+    111                   *      critical    BOOLEAN DEFAULT FALSE,
+    112                   *      extnValue   OCTET STRING  }
+    113                   */
+    114                  int is_critical = 0;
+   \       0x3C   0x2000             MOVS     R0,#+0
+   \       0x3E   0x9001             STR      R0,[SP, #+4]
+    115                  const unsigned char *end_ext_data;
+    116                  size_t len;
+    117          
+    118                  /* Get enclosing sequence tag */
+    119                  if ((ret = mbedtls_asn1_get_tag(p, end, &len,
+    120                                                  MBEDTLS_ASN1_CONSTRUCTED | MBEDTLS_ASN1_SEQUENCE)) != 0) {
+   \       0x40   0x2330             MOVS     R3,#+48
+   \       0x42   0x466A             MOV      R2,SP
+   \       0x44   0x0031             MOVS     R1,R6
+   \       0x46   0x0020             MOVS     R0,R4
+   \       0x48   0x.... 0x....      BL       mbedtls_asn1_get_tag
+   \       0x4C   0x4680             MOV      R8,R0
+   \       0x4E   0x2800             CMP      R0,#+0
+   \       0x50   0xD008             BEQ.N    ??x509_get_crl_ext_5
+    121                      return MBEDTLS_ERROR_ADD(MBEDTLS_ERR_X509_INVALID_EXTENSIONS, ret);
+   \       0x52   0x2379             MOVS     R3,#+121
+   \       0x54   0x.... 0x....      LDR.W    R2,??DataTable7
+   \       0x58   0x4641             MOV      R1,R8
+   \       0x5A   0x.... 0x....      LDR.W    R0,??DataTable7_3
+   \       0x5E   0x.... 0x....      BL       mbedtls_error_add
+   \       0x62   0xE06B             B.N      ??x509_get_crl_ext_1
+    122                  }
+    123          
+    124                  end_ext_data = *p + len;
+   \                     ??x509_get_crl_ext_5: (+1)
+   \       0x64   0x6821             LDR      R1,[R4, #+0]
+   \       0x66   0x9800             LDR      R0,[SP, #+0]
+   \       0x68   0xEB01 0x0700      ADD      R7,R1,R0
+    125          
+    126                  /* Get OID (currently ignored) */
+    127                  if ((ret = mbedtls_asn1_get_tag(p, end_ext_data, &len,
+    128                                                  MBEDTLS_ASN1_OID)) != 0) {
+   \       0x6C   0x2306             MOVS     R3,#+6
+   \       0x6E   0x466A             MOV      R2,SP
+   \       0x70   0x0039             MOVS     R1,R7
+   \       0x72   0x0020             MOVS     R0,R4
+   \       0x74   0x.... 0x....      BL       mbedtls_asn1_get_tag
+   \       0x78   0x4681             MOV      R9,R0
+   \       0x7A   0x2800             CMP      R0,#+0
+   \       0x7C   0xD008             BEQ.N    ??x509_get_crl_ext_6
+    129                      return MBEDTLS_ERROR_ADD(MBEDTLS_ERR_X509_INVALID_EXTENSIONS, ret);
+   \       0x7E   0x2381             MOVS     R3,#+129
+   \       0x80   0x.... 0x....      LDR.W    R2,??DataTable7
+   \       0x84   0x4649             MOV      R1,R9
+   \       0x86   0x.... 0x....      LDR.W    R0,??DataTable7_3
+   \       0x8A   0x.... 0x....      BL       mbedtls_error_add
+   \       0x8E   0xE055             B.N      ??x509_get_crl_ext_1
+    130                  }
+    131                  *p += len;
+   \                     ??x509_get_crl_ext_6: (+1)
+   \       0x90   0x6821             LDR      R1,[R4, #+0]
+   \       0x92   0x9800             LDR      R0,[SP, #+0]
+   \       0x94   0x4408             ADD      R0,R1,R0
+   \       0x96   0x6020             STR      R0,[R4, #+0]
+    132          
+    133                  /* Get optional critical */
+    134                  if ((ret = mbedtls_asn1_get_bool(p, end_ext_data,
+    135                                                   &is_critical)) != 0 &&
+    136                      (ret != MBEDTLS_ERR_ASN1_UNEXPECTED_TAG)) {
+   \       0x98   0xAA01             ADD      R2,SP,#+4
+   \       0x9A   0x0039             MOVS     R1,R7
+   \       0x9C   0x0020             MOVS     R0,R4
+   \       0x9E   0x.... 0x....      BL       mbedtls_asn1_get_bool
+   \       0xA2   0x4680             MOV      R8,R0
+   \       0xA4   0x2800             CMP      R0,#+0
+   \       0xA6   0xD00B             BEQ.N    ??x509_get_crl_ext_7
+   \       0xA8   0xF118 0x0F62      CMN      R8,#+98
+   \       0xAC   0xD008             BEQ.N    ??x509_get_crl_ext_7
+    137                      return MBEDTLS_ERROR_ADD(MBEDTLS_ERR_X509_INVALID_EXTENSIONS, ret);
+   \       0xAE   0x2389             MOVS     R3,#+137
+   \       0xB0   0x.... 0x....      LDR.W    R2,??DataTable7
+   \       0xB4   0x4641             MOV      R1,R8
+   \       0xB6   0x.... 0x....      LDR.W    R0,??DataTable7_3
+   \       0xBA   0x.... 0x....      BL       mbedtls_error_add
+   \       0xBE   0xE03D             B.N      ??x509_get_crl_ext_1
+    138                  }
+    139          
+    140                  /* Data should be octet string type */
+    141                  if ((ret = mbedtls_asn1_get_tag(p, end_ext_data, &len,
+    142                                                  MBEDTLS_ASN1_OCTET_STRING)) != 0) {
+   \                     ??x509_get_crl_ext_7: (+1)
+   \       0xC0   0x2304             MOVS     R3,#+4
+   \       0xC2   0x466A             MOV      R2,SP
+   \       0xC4   0x0039             MOVS     R1,R7
+   \       0xC6   0x0020             MOVS     R0,R4
+   \       0xC8   0x.... 0x....      BL       mbedtls_asn1_get_tag
+   \       0xCC   0x4681             MOV      R9,R0
+   \       0xCE   0x2800             CMP      R0,#+0
+   \       0xD0   0xD008             BEQ.N    ??x509_get_crl_ext_8
+    143                      return MBEDTLS_ERROR_ADD(MBEDTLS_ERR_X509_INVALID_EXTENSIONS, ret);
+   \       0xD2   0x238F             MOVS     R3,#+143
+   \       0xD4   0x.... 0x....      LDR.W    R2,??DataTable7
+   \       0xD8   0x4649             MOV      R1,R9
+   \       0xDA   0x.... 0x....      LDR.W    R0,??DataTable7_3
+   \       0xDE   0x.... 0x....      BL       mbedtls_error_add
+   \       0xE2   0xE02B             B.N      ??x509_get_crl_ext_1
+    144                  }
+    145          
+    146                  /* Ignore data so far and just check its length */
+    147                  *p += len;
+   \                     ??x509_get_crl_ext_8: (+1)
+   \       0xE4   0x6821             LDR      R1,[R4, #+0]
+   \       0xE6   0x9800             LDR      R0,[SP, #+0]
+   \       0xE8   0x4408             ADD      R0,R1,R0
+   \       0xEA   0x6020             STR      R0,[R4, #+0]
+    148                  if (*p != end_ext_data) {
+   \       0xEC   0x6820             LDR      R0,[R4, #+0]
+   \       0xEE   0x42B8             CMP      R0,R7
+   \       0xF0   0xD009             BEQ.N    ??x509_get_crl_ext_9
+    149                      return MBEDTLS_ERROR_ADD(MBEDTLS_ERR_X509_INVALID_EXTENSIONS,
+    150                                               MBEDTLS_ERR_ASN1_LENGTH_MISMATCH);
+   \       0xF2   0x2396             MOVS     R3,#+150
+   \       0xF4   0x.... 0x....      LDR.W    R2,??DataTable7
+   \       0xF8   0xF07F 0x0165      MVNS     R1,#+101
+   \       0xFC   0x.... 0x....      LDR.W    R0,??DataTable7_3
+   \      0x100   0x.... 0x....      BL       mbedtls_error_add
+   \      0x104   0xE01A             B.N      ??x509_get_crl_ext_1
+    151                  }
+    152          
+    153                  /* Abort on (unsupported) critical extensions */
+    154                  if (is_critical) {
+   \                     ??x509_get_crl_ext_9: (+1)
+   \      0x106   0x9801             LDR      R0,[SP, #+4]
+   \      0x108   0x2800             CMP      R0,#+0
+   \      0x10A   0xD094             BEQ.N    ??x509_get_crl_ext_3
+    155                      return MBEDTLS_ERROR_ADD(MBEDTLS_ERR_X509_INVALID_EXTENSIONS,
+    156                                               MBEDTLS_ERR_ASN1_UNEXPECTED_TAG);
+   \      0x10C   0x239C             MOVS     R3,#+156
+   \      0x10E   0x.... 0x....      LDR.W    R2,??DataTable7
+   \      0x112   0xF07F 0x0161      MVNS     R1,#+97
+   \      0x116   0x.... 0x....      LDR.W    R0,??DataTable7_3
+   \      0x11A   0x.... 0x....      BL       mbedtls_error_add
+   \      0x11E   0xE00D             B.N      ??x509_get_crl_ext_1
+    157                  }
+    158              }
+    159          
+    160              if (*p != end) {
+   \                     ??x509_get_crl_ext_4: (+1)
+   \      0x120   0x6820             LDR      R0,[R4, #+0]
+   \      0x122   0x42B0             CMP      R0,R6
+   \      0x124   0xD009             BEQ.N    ??x509_get_crl_ext_10
+    161                  return MBEDTLS_ERROR_ADD(MBEDTLS_ERR_X509_INVALID_EXTENSIONS,
+    162                                           MBEDTLS_ERR_ASN1_LENGTH_MISMATCH);
+   \      0x126   0x23A2             MOVS     R3,#+162
+   \      0x128   0x.... 0x....      LDR.W    R2,??DataTable7
+   \      0x12C   0xF07F 0x0165      MVNS     R1,#+101
+   \      0x130   0x.... 0x....      LDR.W    R0,??DataTable7_3
+   \      0x134   0x.... 0x....      BL       mbedtls_error_add
+   \      0x138   0xE000             B.N      ??x509_get_crl_ext_1
+    163              }
+    164          
+    165              return 0;
+   \                     ??x509_get_crl_ext_10: (+1)
+   \      0x13A   0x2000             MOVS     R0,#+0
+   \                     ??x509_get_crl_ext_1: (+1)
+   \      0x13C   0xE8BD 0x83FE      POP      {R1-R9,PC}
+    166          }
+    167          
+    168          /*
+    169           * X.509 CRL v2 entry extensions (no extensions parsed yet.)
+    170           */
+
+   \                                 In section .text, align 2, keep-with-next
+    171          static int x509_get_crl_entry_ext(unsigned char **p,
+    172                                            const unsigned char *end,
+    173                                            mbedtls_x509_buf *ext)
+    174          {
+   \                     x509_get_crl_entry_ext: (+1)
+   \        0x0   0xE92D 0x41FC      PUSH     {R2-R8,LR}
+   \        0x4   0x0004             MOVS     R4,R0
+   \        0x6   0x000E             MOVS     R6,R1
+   \        0x8   0x0015             MOVS     R5,R2
+    175              int ret = MBEDTLS_ERR_ERROR_CORRUPTION_DETECTED;
+   \        0xA   0xF07F 0x086D      MVNS     R8,#+109
+    176              size_t len = 0;
+   \        0xE   0x2000             MOVS     R0,#+0
+   \       0x10   0x9000             STR      R0,[SP, #+0]
+    177          
+    178              /* OPTIONAL */
+    179              if (end <= *p) {
+   \       0x12   0x6820             LDR      R0,[R4, #+0]
+   \       0x14   0x42B0             CMP      R0,R6
+   \       0x16   0xD301             BCC.N    ??x509_get_crl_entry_ext_0
+    180                  return 0;
+   \       0x18   0x2000             MOVS     R0,#+0
+   \       0x1A   0xE058             B.N      ??x509_get_crl_entry_ext_1
+    181              }
+    182          
+    183              ext->tag = **p;
+   \                     ??x509_get_crl_entry_ext_0: (+1)
+   \       0x1C   0x6820             LDR      R0,[R4, #+0]
+   \       0x1E   0x7800             LDRB     R0,[R0, #+0]
+   \       0x20   0x6028             STR      R0,[R5, #+0]
+    184              ext->p = *p;
+   \       0x22   0x6820             LDR      R0,[R4, #+0]
+   \       0x24   0x60A8             STR      R0,[R5, #+8]
+    185          
+    186              /*
+    187               * Get CRL-entry extension sequence header
+    188               * crlEntryExtensions      Extensions OPTIONAL  -- if present, MUST be v2
+    189               */
+    190              if ((ret = mbedtls_asn1_get_tag(p, end, &ext->len,
+    191                                              MBEDTLS_ASN1_CONSTRUCTED | MBEDTLS_ASN1_SEQUENCE)) != 0) {
+   \       0x26   0x2330             MOVS     R3,#+48
+   \       0x28   0x1D2A             ADDS     R2,R5,#+4
+   \       0x2A   0x0031             MOVS     R1,R6
+   \       0x2C   0x0020             MOVS     R0,R4
+   \       0x2E   0x.... 0x....      BL       mbedtls_asn1_get_tag
+   \       0x32   0x0007             MOVS     R7,R0
+   \       0x34   0x2800             CMP      R0,#+0
+   \       0x36   0xD00F             BEQ.N    ??x509_get_crl_entry_ext_2
+    192                  if (ret == MBEDTLS_ERR_ASN1_UNEXPECTED_TAG) {
+   \       0x38   0xF117 0x0F62      CMN      R7,#+98
+   \       0x3C   0xD103             BNE.N    ??x509_get_crl_entry_ext_3
+    193                      ext->p = NULL;
+   \       0x3E   0x2000             MOVS     R0,#+0
+   \       0x40   0x60A8             STR      R0,[R5, #+8]
+    194                      return 0;
+   \       0x42   0x2000             MOVS     R0,#+0
+   \       0x44   0xE043             B.N      ??x509_get_crl_entry_ext_1
+    195                  }
+    196                  return MBEDTLS_ERROR_ADD(MBEDTLS_ERR_X509_INVALID_EXTENSIONS, ret);
+   \                     ??x509_get_crl_entry_ext_3: (+1)
+   \       0x46   0x23C4             MOVS     R3,#+196
+   \       0x48   0x.... 0x....      LDR.W    R2,??DataTable7
+   \       0x4C   0x0039             MOVS     R1,R7
+   \       0x4E   0x.... 0x....      LDR.W    R0,??DataTable7_3
+   \       0x52   0x.... 0x....      BL       mbedtls_error_add
+   \       0x56   0xE03A             B.N      ??x509_get_crl_entry_ext_1
+    197              }
+    198          
+    199              end = *p + ext->len;
+   \                     ??x509_get_crl_entry_ext_2: (+1)
+   \       0x58   0x6821             LDR      R1,[R4, #+0]
+   \       0x5A   0x6868             LDR      R0,[R5, #+4]
+   \       0x5C   0xEB01 0x0800      ADD      R8,R1,R0
+    200          
+    201              if (end != *p + ext->len) {
+   \       0x60   0x6821             LDR      R1,[R4, #+0]
+   \       0x62   0x6868             LDR      R0,[R5, #+4]
+   \       0x64   0x4408             ADD      R0,R1,R0
+   \       0x66   0x4580             CMP      R8,R0
+   \       0x68   0xD009             BEQ.N    ??x509_get_crl_entry_ext_4
+    202                  return MBEDTLS_ERROR_ADD(MBEDTLS_ERR_X509_INVALID_EXTENSIONS,
+    203                                           MBEDTLS_ERR_ASN1_LENGTH_MISMATCH);
+   \       0x6A   0x23CB             MOVS     R3,#+203
+   \       0x6C   0x.... 0x....      LDR.W    R2,??DataTable7
+   \       0x70   0xF07F 0x0165      MVNS     R1,#+101
+   \       0x74   0x.... 0x....      LDR.W    R0,??DataTable7_3
+   \       0x78   0x.... 0x....      BL       mbedtls_error_add
+   \       0x7C   0xE027             B.N      ??x509_get_crl_entry_ext_1
+    204              }
+    205          
+    206              while (*p < end) {
+   \                     ??x509_get_crl_entry_ext_4: (+1)
+   \       0x7E   0x6820             LDR      R0,[R4, #+0]
+   \       0x80   0x4540             CMP      R0,R8
+   \       0x82   0xD216             BCS.N    ??x509_get_crl_entry_ext_5
+    207                  if ((ret = mbedtls_asn1_get_tag(p, end, &len,
+    208                                                  MBEDTLS_ASN1_CONSTRUCTED | MBEDTLS_ASN1_SEQUENCE)) != 0) {
+   \       0x84   0x2330             MOVS     R3,#+48
+   \       0x86   0x466A             MOV      R2,SP
+   \       0x88   0x4641             MOV      R1,R8
+   \       0x8A   0x0020             MOVS     R0,R4
+   \       0x8C   0x.... 0x....      BL       mbedtls_asn1_get_tag
+   \       0x90   0x0007             MOVS     R7,R0
+   \       0x92   0x2800             CMP      R0,#+0
+   \       0x94   0xD008             BEQ.N    ??x509_get_crl_entry_ext_6
+    209                      return MBEDTLS_ERROR_ADD(MBEDTLS_ERR_X509_INVALID_EXTENSIONS, ret);
+   \       0x96   0x23D1             MOVS     R3,#+209
+   \       0x98   0x.... 0x....      LDR.W    R2,??DataTable7
+   \       0x9C   0x0039             MOVS     R1,R7
+   \       0x9E   0x.... 0x....      LDR.W    R0,??DataTable7_3
+   \       0xA2   0x.... 0x....      BL       mbedtls_error_add
+   \       0xA6   0xE012             B.N      ??x509_get_crl_entry_ext_1
+    210                  }
+    211          
+    212                  *p += len;
+   \                     ??x509_get_crl_entry_ext_6: (+1)
+   \       0xA8   0x6821             LDR      R1,[R4, #+0]
+   \       0xAA   0x9800             LDR      R0,[SP, #+0]
+   \       0xAC   0x4408             ADD      R0,R1,R0
+   \       0xAE   0x6020             STR      R0,[R4, #+0]
+   \       0xB0   0xE7E5             B.N      ??x509_get_crl_entry_ext_4
+    213              }
+    214          
+    215              if (*p != end) {
+   \                     ??x509_get_crl_entry_ext_5: (+1)
+   \       0xB2   0x6820             LDR      R0,[R4, #+0]
+   \       0xB4   0x4540             CMP      R0,R8
+   \       0xB6   0xD009             BEQ.N    ??x509_get_crl_entry_ext_7
+    216                  return MBEDTLS_ERROR_ADD(MBEDTLS_ERR_X509_INVALID_EXTENSIONS,
+    217                                           MBEDTLS_ERR_ASN1_LENGTH_MISMATCH);
+   \       0xB8   0x23D9             MOVS     R3,#+217
+   \       0xBA   0x.... 0x....      LDR.W    R2,??DataTable7
+   \       0xBE   0xF07F 0x0165      MVNS     R1,#+101
+   \       0xC2   0x.... 0x....      LDR.W    R0,??DataTable7_3
+   \       0xC6   0x.... 0x....      BL       mbedtls_error_add
+   \       0xCA   0xE000             B.N      ??x509_get_crl_entry_ext_1
+    218              }
+    219          
+    220              return 0;
+   \                     ??x509_get_crl_entry_ext_7: (+1)
+   \       0xCC   0x2000             MOVS     R0,#+0
+   \                     ??x509_get_crl_entry_ext_1: (+1)
+   \       0xCE   0xE8BD 0x81F6      POP      {R1,R2,R4-R8,PC}
+    221          }
+    222          
+    223          /*
+    224           * X.509 CRL Entries
+    225           */
+
+   \                                 In section .text, align 2, keep-with-next
+    226          static int x509_get_entries(unsigned char **p,
+    227                                      const unsigned char *end,
+    228                                      mbedtls_x509_crl_entry *entry)
+    229          {
+   \                     x509_get_entries: (+1)
+   \        0x0   0xE92D 0x47FC      PUSH     {R2-R10,LR}
+   \        0x4   0x4681             MOV      R9,R0
+   \        0x6   0x000F             MOVS     R7,R1
+   \        0x8   0x0014             MOVS     R4,R2
+    230              int ret = MBEDTLS_ERR_ERROR_CORRUPTION_DETECTED;
+   \        0xA   0xF07F 0x066D      MVNS     R6,#+109
+    231              size_t entry_len;
+    232              mbedtls_x509_crl_entry *cur_entry = entry;
+   \        0xE   0x0025             MOVS     R5,R4
+    233          
+    234              if (*p == end) {
+   \       0x10   0xF8D9 0x0000      LDR      R0,[R9, #+0]
+   \       0x14   0x42B8             CMP      R0,R7
+   \       0x16   0xD101             BNE.N    ??x509_get_entries_0
+    235                  return 0;
+   \       0x18   0x2000             MOVS     R0,#+0
+   \       0x1A   0xE064             B.N      ??x509_get_entries_1
+    236              }
+    237          
+    238              if ((ret = mbedtls_asn1_get_tag(p, end, &entry_len,
+    239                                              MBEDTLS_ASN1_SEQUENCE | MBEDTLS_ASN1_CONSTRUCTED)) != 0) {
+   \                     ??x509_get_entries_0: (+1)
+   \       0x1C   0x2330             MOVS     R3,#+48
+   \       0x1E   0xAA01             ADD      R2,SP,#+4
+   \       0x20   0x0039             MOVS     R1,R7
+   \       0x22   0x4648             MOV      R0,R9
+   \       0x24   0x.... 0x....      BL       mbedtls_asn1_get_tag
+   \       0x28   0x4682             MOV      R10,R0
+   \       0x2A   0x2800             CMP      R0,#+0
+   \       0x2C   0xD006             BEQ.N    ??x509_get_entries_2
+    240                  if (ret == MBEDTLS_ERR_ASN1_UNEXPECTED_TAG) {
+   \       0x2E   0xF11A 0x0F62      CMN      R10,#+98
+   \       0x32   0xD101             BNE.N    ??x509_get_entries_3
+    241                      return 0;
+   \       0x34   0x2000             MOVS     R0,#+0
+   \       0x36   0xE056             B.N      ??x509_get_entries_1
+    242                  }
+    243          
+    244                  return ret;
+   \                     ??x509_get_entries_3: (+1)
+   \       0x38   0x4650             MOV      R0,R10
+   \       0x3A   0xE054             B.N      ??x509_get_entries_1
+    245              }
+    246          
+    247              end = *p + entry_len;
+   \                     ??x509_get_entries_2: (+1)
+   \       0x3C   0xF8D9 0x1000      LDR      R1,[R9, #+0]
+   \       0x40   0x9801             LDR      R0,[SP, #+4]
+   \       0x42   0xEB01 0x0600      ADD      R6,R1,R0
+    248          
+    249              while (*p < end) {
+   \                     ??x509_get_entries_4: (+1)
+   \       0x46   0xF8D9 0x0000      LDR      R0,[R9, #+0]
+   \       0x4A   0x42B0             CMP      R0,R6
+   \       0x4C   0xD24A             BCS.N    ??x509_get_entries_5
+    250                  size_t len2;
+    251                  const unsigned char *end2;
+    252          
+    253                  cur_entry->raw.tag = **p;
+   \       0x4E   0xF8D9 0x0000      LDR      R0,[R9, #+0]
+   \       0x52   0x7800             LDRB     R0,[R0, #+0]
+   \       0x54   0x6028             STR      R0,[R5, #+0]
+    254                  if ((ret = mbedtls_asn1_get_tag(p, end, &len2,
+    255                                                  MBEDTLS_ASN1_SEQUENCE | MBEDTLS_ASN1_CONSTRUCTED)) != 0) {
+   \       0x56   0x2330             MOVS     R3,#+48
+   \       0x58   0x466A             MOV      R2,SP
+   \       0x5A   0x0031             MOVS     R1,R6
+   \       0x5C   0x4648             MOV      R0,R9
+   \       0x5E   0x.... 0x....      BL       mbedtls_asn1_get_tag
+   \       0x62   0x4680             MOV      R8,R0
+   \       0x64   0x2800             CMP      R0,#+0
+   \       0x66   0xD001             BEQ.N    ??x509_get_entries_6
+    256                      return ret;
+   \       0x68   0x4640             MOV      R0,R8
+   \       0x6A   0xE03C             B.N      ??x509_get_entries_1
+    257                  }
+    258          
+    259                  cur_entry->raw.p = *p;
+   \                     ??x509_get_entries_6: (+1)
+   \       0x6C   0xF8D9 0x0000      LDR      R0,[R9, #+0]
+   \       0x70   0x60A8             STR      R0,[R5, #+8]
+    260                  cur_entry->raw.len = len2;
+   \       0x72   0x9800             LDR      R0,[SP, #+0]
+   \       0x74   0x6068             STR      R0,[R5, #+4]
+    261                  end2 = *p + len2;
+   \       0x76   0xF8D9 0x1000      LDR      R1,[R9, #+0]
+   \       0x7A   0x9800             LDR      R0,[SP, #+0]
+   \       0x7C   0xEB01 0x0700      ADD      R7,R1,R0
+    262          
+    263                  if ((ret = mbedtls_x509_get_serial(p, end2, &cur_entry->serial)) != 0) {
+   \       0x80   0xF115 0x020C      ADDS     R2,R5,#+12
+   \       0x84   0x0039             MOVS     R1,R7
+   \       0x86   0x4648             MOV      R0,R9
+   \       0x88   0x.... 0x....      BL       mbedtls_x509_get_serial
+   \       0x8C   0x4682             MOV      R10,R0
+   \       0x8E   0x2800             CMP      R0,#+0
+   \       0x90   0xD001             BEQ.N    ??x509_get_entries_7
+    264                      return ret;
+   \       0x92   0x4650             MOV      R0,R10
+   \       0x94   0xE027             B.N      ??x509_get_entries_1
+    265                  }
+    266          
+    267                  if ((ret = mbedtls_x509_get_time(p, end2,
+    268                                                   &cur_entry->revocation_date)) != 0) {
+   \                     ??x509_get_entries_7: (+1)
+   \       0x96   0xF115 0x0218      ADDS     R2,R5,#+24
+   \       0x9A   0x0039             MOVS     R1,R7
+   \       0x9C   0x4648             MOV      R0,R9
+   \       0x9E   0x.... 0x....      BL       mbedtls_x509_get_time
+   \       0xA2   0x4680             MOV      R8,R0
+   \       0xA4   0x2800             CMP      R0,#+0
+   \       0xA6   0xD001             BEQ.N    ??x509_get_entries_8
+    269                      return ret;
+   \       0xA8   0x4640             MOV      R0,R8
+   \       0xAA   0xE01C             B.N      ??x509_get_entries_1
+    270                  }
+    271          
+    272                  if ((ret = x509_get_crl_entry_ext(p, end2,
+    273                                                    &cur_entry->entry_ext)) != 0) {
+   \                     ??x509_get_entries_8: (+1)
+   \       0xAC   0xF115 0x0230      ADDS     R2,R5,#+48
+   \       0xB0   0x0039             MOVS     R1,R7
+   \       0xB2   0x4648             MOV      R0,R9
+   \       0xB4   0x.... 0x....      BL       x509_get_crl_entry_ext
+   \       0xB8   0x4682             MOV      R10,R0
+   \       0xBA   0x2800             CMP      R0,#+0
+   \       0xBC   0xD001             BEQ.N    ??x509_get_entries_9
+    274                      return ret;
+   \       0xBE   0x4650             MOV      R0,R10
+   \       0xC0   0xE011             B.N      ??x509_get_entries_1
+    275                  }
+    276          
+    277                  if (*p < end) {
+   \                     ??x509_get_entries_9: (+1)
+   \       0xC2   0xF8D9 0x0000      LDR      R0,[R9, #+0]
+   \       0xC6   0x42B0             CMP      R0,R6
+   \       0xC8   0xD2BD             BCS.N    ??x509_get_entries_4
+    278                      cur_entry->next = mbedtls_calloc(1, sizeof(mbedtls_x509_crl_entry));
+   \       0xCA   0x2140             MOVS     R1,#+64
+   \       0xCC   0x2001             MOVS     R0,#+1
+   \       0xCE   0x.... 0x....      BL       sl_calloc
+   \       0xD2   0x63E8             STR      R0,[R5, #+60]
+    279          
+    280                      if (cur_entry->next == NULL) {
+   \       0xD4   0x6BE8             LDR      R0,[R5, #+60]
+   \       0xD6   0x2800             CMP      R0,#+0
+   \       0xD8   0xD102             BNE.N    ??x509_get_entries_10
+    281                          return MBEDTLS_ERR_X509_ALLOC_FAILED;
+   \       0xDA   0x.... 0x....      LDR.W    R0,??DataTable7_4
+   \       0xDE   0xE002             B.N      ??x509_get_entries_1
+    282                      }
+    283          
+    284                      cur_entry = cur_entry->next;
+   \                     ??x509_get_entries_10: (+1)
+   \       0xE0   0x6BED             LDR      R5,[R5, #+60]
+   \       0xE2   0xE7B0             B.N      ??x509_get_entries_4
+    285                  }
+    286              }
+    287          
+    288              return 0;
+   \                     ??x509_get_entries_5: (+1)
+   \       0xE4   0x2000             MOVS     R0,#+0
+   \                     ??x509_get_entries_1: (+1)
+   \       0xE6   0xE8BD 0x87F6      POP      {R1,R2,R4-R10,PC}
+    289          }
+    290          
+    291          /*
+    292           * Parse one  CRLs in DER format and append it to the chained list
+    293           */
+
+   \                                 In section .text, align 2, keep-with-next
+    294          int mbedtls_x509_crl_parse_der(mbedtls_x509_crl *chain,
+    295                                         const unsigned char *buf, size_t buflen)
+    296          {
+   \                     mbedtls_x509_crl_parse_der: (+1)
+   \        0x0   0xE92D 0x4FF1      PUSH     {R0,R4-R11,LR}
+   \        0x4   0xB090             SUB      SP,SP,#+64
+   \        0x6   0x000C             MOVS     R4,R1
+   \        0x8   0x0015             MOVS     R5,R2
+    297              int ret = MBEDTLS_ERR_ERROR_CORRUPTION_DETECTED;
+   \        0xA   0xF07F 0x006D      MVNS     R0,#+109
+   \        0xE   0x900E             STR      R0,[SP, #+56]
+    298              size_t len;
+    299              unsigned char *p = NULL, *end = NULL;
+   \       0x10   0x2000             MOVS     R0,#+0
+   \       0x12   0x9001             STR      R0,[SP, #+4]
+   \       0x14   0x2000             MOVS     R0,#+0
+   \       0x16   0x900D             STR      R0,[SP, #+52]
+    300              mbedtls_x509_buf sig_params1, sig_params2, sig_oid2;
+    301              mbedtls_x509_crl *crl = chain;
+   \       0x18   0x9E10             LDR      R6,[SP, #+64]
+    302          
+    303              /*
+    304               * Check for valid input
+    305               */
+    306              if (crl == NULL || buf == NULL) {
+   \       0x1A   0x2E00             CMP      R6,#+0
+   \       0x1C   0xD001             BEQ.N    ??mbedtls_x509_crl_parse_der_0
+   \       0x1E   0x2C00             CMP      R4,#+0
+   \       0x20   0xD102             BNE.N    ??mbedtls_x509_crl_parse_der_1
+    307                  return MBEDTLS_ERR_X509_BAD_INPUT_DATA;
+   \                     ??mbedtls_x509_crl_parse_der_0: (+1)
+   \       0x22   0x.... 0x....      LDR.W    R0,??DataTable7_5
+   \       0x26   0xE1C2             B.N      ??mbedtls_x509_crl_parse_der_2
+    308              }
+    309          
+    310              memset(&sig_params1, 0, sizeof(mbedtls_x509_buf));
+   \                     ??mbedtls_x509_crl_parse_der_1: (+1)
+   \       0x28   0x200C             MOVS     R0,#+12
+   \       0x2A   0x9006             STR      R0,[SP, #+24]
+   \       0x2C   0x2000             MOVS     R0,#+0
+   \       0x2E   0x9000             STR      R0,[SP, #+0]
+   \       0x30   0xAF03             ADD      R7,SP,#+12
+   \       0x32   0x9A00             LDR      R2,[SP, #+0]
+   \       0x34   0x9906             LDR      R1,[SP, #+24]
+   \       0x36   0x0038             MOVS     R0,R7
+   \       0x38   0x.... 0x....      BL       __aeabi_memset
+    311              memset(&sig_params2, 0, sizeof(mbedtls_x509_buf));
+   \       0x3C   0xF05F 0x0B0C      MOVS     R11,#+12
+   \       0x40   0x2700             MOVS     R7,#+0
+   \       0x42   0xF10D 0x0828      ADD      R8,SP,#+40
+   \       0x46   0x003A             MOVS     R2,R7
+   \       0x48   0x4659             MOV      R1,R11
+   \       0x4A   0x4640             MOV      R0,R8
+   \       0x4C   0x.... 0x....      BL       __aeabi_memset
+    312              memset(&sig_oid2, 0, sizeof(mbedtls_x509_buf));
+   \       0x50   0xF05F 0x080C      MOVS     R8,#+12
+   \       0x54   0xF05F 0x0900      MOVS     R9,#+0
+   \       0x58   0xF10D 0x0A1C      ADD      R10,SP,#+28
+   \       0x5C   0x464A             MOV      R2,R9
+   \       0x5E   0x4641             MOV      R1,R8
+   \       0x60   0x4650             MOV      R0,R10
+   \       0x62   0x.... 0x....      BL       __aeabi_memset
+    313          
+    314              /*
+    315               * Add new CRL on the end of the chain if needed.
+    316               */
+    317              while (crl->version != 0 && crl->next != NULL) {
+   \                     ??mbedtls_x509_crl_parse_der_3: (+1)
+   \       0x66   0x69B0             LDR      R0,[R6, #+24]
+   \       0x68   0x2800             CMP      R0,#+0
+   \       0x6A   0xD006             BEQ.N    ??mbedtls_x509_crl_parse_der_4
+   \       0x6C   0xF8D6 0x00F0      LDR      R0,[R6, #+240]
+   \       0x70   0x2800             CMP      R0,#+0
+   \       0x72   0xD002             BEQ.N    ??mbedtls_x509_crl_parse_der_4
+    318                  crl = crl->next;
+   \       0x74   0xF8D6 0x60F0      LDR      R6,[R6, #+240]
+   \       0x78   0xE7F5             B.N      ??mbedtls_x509_crl_parse_der_3
+    319              }
+    320          
+    321              if (crl->version != 0 && crl->next == NULL) {
+   \                     ??mbedtls_x509_crl_parse_der_4: (+1)
+   \       0x7A   0x69B0             LDR      R0,[R6, #+24]
+   \       0x7C   0x2800             CMP      R0,#+0
+   \       0x7E   0xD019             BEQ.N    ??mbedtls_x509_crl_parse_der_5
+   \       0x80   0xF8D6 0x00F0      LDR      R0,[R6, #+240]
+   \       0x84   0x2800             CMP      R0,#+0
+   \       0x86   0xD115             BNE.N    ??mbedtls_x509_crl_parse_der_5
+    322                  crl->next = mbedtls_calloc(1, sizeof(mbedtls_x509_crl));
+   \       0x88   0x21F4             MOVS     R1,#+244
+   \       0x8A   0x2001             MOVS     R0,#+1
+   \       0x8C   0x.... 0x....      BL       sl_calloc
+   \       0x90   0xF8C6 0x00F0      STR      R0,[R6, #+240]
+    323          
+    324                  if (crl->next == NULL) {
+   \       0x94   0xF8D6 0x00F0      LDR      R0,[R6, #+240]
+   \       0x98   0x2800             CMP      R0,#+0
+   \       0x9A   0xD105             BNE.N    ??mbedtls_x509_crl_parse_der_6
+    325                      mbedtls_x509_crl_free(crl);
+   \       0x9C   0x0030             MOVS     R0,R6
+   \       0x9E   0x.... 0x....      BL       mbedtls_x509_crl_free
+    326                      return MBEDTLS_ERR_X509_ALLOC_FAILED;
+   \       0xA2   0x.... 0x....      LDR.W    R0,??DataTable7_4
+   \       0xA6   0xE182             B.N      ??mbedtls_x509_crl_parse_der_2
+    327                  }
+    328          
+    329                  mbedtls_x509_crl_init(crl->next);
+   \                     ??mbedtls_x509_crl_parse_der_6: (+1)
+   \       0xA8   0xF8D6 0x00F0      LDR      R0,[R6, #+240]
+   \       0xAC   0x.... 0x....      BL       mbedtls_x509_crl_init
+    330                  crl = crl->next;
+   \       0xB0   0xF8D6 0x60F0      LDR      R6,[R6, #+240]
+    331              }
+    332          
+    333              /*
+    334               * Copy raw DER-encoded CRL
+    335               */
+    336              if (buflen == 0) {
+   \                     ??mbedtls_x509_crl_parse_der_5: (+1)
+   \       0xB4   0x2D00             CMP      R5,#+0
+   \       0xB6   0xD102             BNE.N    ??mbedtls_x509_crl_parse_der_7
+    337                  return MBEDTLS_ERR_X509_INVALID_FORMAT;
+   \       0xB8   0x.... 0x....      LDR.W    R0,??DataTable7_6
+   \       0xBC   0xE177             B.N      ??mbedtls_x509_crl_parse_der_2
+    338              }
+    339          
+    340              p = mbedtls_calloc(1, buflen);
+   \                     ??mbedtls_x509_crl_parse_der_7: (+1)
+   \       0xBE   0x0029             MOVS     R1,R5
+   \       0xC0   0x2001             MOVS     R0,#+1
+   \       0xC2   0x.... 0x....      BL       sl_calloc
+   \       0xC6   0x9001             STR      R0,[SP, #+4]
+    341              if (p == NULL) {
+   \       0xC8   0x9801             LDR      R0,[SP, #+4]
+   \       0xCA   0x2800             CMP      R0,#+0
+   \       0xCC   0xD102             BNE.N    ??mbedtls_x509_crl_parse_der_8
+    342                  return MBEDTLS_ERR_X509_ALLOC_FAILED;
+   \       0xCE   0x.... 0x....      LDR.W    R0,??DataTable7_4
+   \       0xD2   0xE16C             B.N      ??mbedtls_x509_crl_parse_der_2
+    343              }
+    344          
+    345              memcpy(p, buf, buflen);
+   \                     ??mbedtls_x509_crl_parse_der_8: (+1)
+   \       0xD4   0x46A9             MOV      R9,R5
+   \       0xD6   0x46A0             MOV      R8,R4
+   \       0xD8   0x9F01             LDR      R7,[SP, #+4]
+   \       0xDA   0x464A             MOV      R2,R9
+   \       0xDC   0x4641             MOV      R1,R8
+   \       0xDE   0x0038             MOVS     R0,R7
+   \       0xE0   0x.... 0x....      BL       __aeabi_memcpy
+    346          
+    347              crl->raw.p = p;
+   \       0xE4   0x9801             LDR      R0,[SP, #+4]
+   \       0xE6   0x60B0             STR      R0,[R6, #+8]
+    348              crl->raw.len = buflen;
+   \       0xE8   0x6075             STR      R5,[R6, #+4]
+    349          
+    350              end = p + buflen;
+   \       0xEA   0x9801             LDR      R0,[SP, #+4]
+   \       0xEC   0xEB00 0x0A05      ADD      R10,R0,R5
+    351          
+    352              /*
+    353               * CertificateList  ::=  SEQUENCE  {
+    354               *      tbsCertList          TBSCertList,
+    355               *      signatureAlgorithm   AlgorithmIdentifier,
+    356               *      signatureValue       BIT STRING  }
+    357               */
+    358              if ((ret = mbedtls_asn1_get_tag(&p, end, &len,
+    359                                              MBEDTLS_ASN1_CONSTRUCTED | MBEDTLS_ASN1_SEQUENCE)) != 0) {
+   \       0xF0   0x2330             MOVS     R3,#+48
+   \       0xF2   0xAA02             ADD      R2,SP,#+8
+   \       0xF4   0x4651             MOV      R1,R10
+   \       0xF6   0xA801             ADD      R0,SP,#+4
+   \       0xF8   0x.... 0x....      BL       mbedtls_asn1_get_tag
+   \       0xFC   0x0007             MOVS     R7,R0
+   \       0xFE   0x2800             CMP      R0,#+0
+   \      0x100   0xD005             BEQ.N    ??mbedtls_x509_crl_parse_der_9
+    360                  mbedtls_x509_crl_free(crl);
+   \      0x102   0x0030             MOVS     R0,R6
+   \      0x104   0x.... 0x....      BL       mbedtls_x509_crl_free
+    361                  return MBEDTLS_ERR_X509_INVALID_FORMAT;
+   \      0x108   0x.... 0x....      LDR.W    R0,??DataTable7_6
+   \      0x10C   0xE14F             B.N      ??mbedtls_x509_crl_parse_der_2
+    362              }
+    363          
+    364              if (len != (size_t) (end - p)) {
+   \                     ??mbedtls_x509_crl_parse_der_9: (+1)
+   \      0x10E   0x9802             LDR      R0,[SP, #+8]
+   \      0x110   0x9901             LDR      R1,[SP, #+4]
+   \      0x112   0xEBBA 0x0101      SUBS     R1,R10,R1
+   \      0x116   0x4288             CMP      R0,R1
+   \      0x118   0xD00D             BEQ.N    ??mbedtls_x509_crl_parse_der_10
+    365                  mbedtls_x509_crl_free(crl);
+   \      0x11A   0x0030             MOVS     R0,R6
+   \      0x11C   0x.... 0x....      BL       mbedtls_x509_crl_free
+    366                  return MBEDTLS_ERROR_ADD(MBEDTLS_ERR_X509_INVALID_FORMAT,
+    367                                           MBEDTLS_ERR_ASN1_LENGTH_MISMATCH);
+   \      0x120   0xF240 0x136F      MOVW     R3,#+367
+   \      0x124   0x.... 0x....      LDR.W    R2,??DataTable7
+   \      0x128   0xF07F 0x0165      MVNS     R1,#+101
+   \      0x12C   0x.... 0x....      LDR.W    R0,??DataTable7_6
+   \      0x130   0x.... 0x....      BL       mbedtls_error_add
+   \      0x134   0xE13B             B.N      ??mbedtls_x509_crl_parse_der_2
+    368              }
+    369          
+    370              /*
+    371               * TBSCertList  ::=  SEQUENCE  {
+    372               */
+    373              crl->tbs.p = p;
+   \                     ??mbedtls_x509_crl_parse_der_10: (+1)
+   \      0x136   0x9801             LDR      R0,[SP, #+4]
+   \      0x138   0x6170             STR      R0,[R6, #+20]
+    374          
+    375              if ((ret = mbedtls_asn1_get_tag(&p, end, &len,
+    376                                              MBEDTLS_ASN1_CONSTRUCTED | MBEDTLS_ASN1_SEQUENCE)) != 0) {
+   \      0x13A   0x2330             MOVS     R3,#+48
+   \      0x13C   0xAA02             ADD      R2,SP,#+8
+   \      0x13E   0x4651             MOV      R1,R10
+   \      0x140   0xA801             ADD      R0,SP,#+4
+   \      0x142   0x.... 0x....      BL       mbedtls_asn1_get_tag
+   \      0x146   0x4681             MOV      R9,R0
+   \      0x148   0x2800             CMP      R0,#+0
+   \      0x14A   0xD00C             BEQ.N    ??mbedtls_x509_crl_parse_der_11
+    377                  mbedtls_x509_crl_free(crl);
+   \      0x14C   0x0030             MOVS     R0,R6
+   \      0x14E   0x.... 0x....      BL       mbedtls_x509_crl_free
+    378                  return MBEDTLS_ERROR_ADD(MBEDTLS_ERR_X509_INVALID_FORMAT, ret);
+   \      0x152   0xF44F 0x73BD      MOV      R3,#+378
+   \      0x156   0x.... 0x....      LDR.W    R2,??DataTable7
+   \      0x15A   0x4649             MOV      R1,R9
+   \      0x15C   0x.... 0x....      LDR.W    R0,??DataTable7_6
+   \      0x160   0x.... 0x....      BL       mbedtls_error_add
+   \      0x164   0xE123             B.N      ??mbedtls_x509_crl_parse_der_2
+    379              }
+    380          
+    381              end = p + len;
+   \                     ??mbedtls_x509_crl_parse_der_11: (+1)
+   \      0x166   0x9801             LDR      R0,[SP, #+4]
+   \      0x168   0x9902             LDR      R1,[SP, #+8]
+   \      0x16A   0xEB00 0x0701      ADD      R7,R0,R1
+    382              crl->tbs.len = end - crl->tbs.p;
+   \      0x16E   0x6970             LDR      R0,[R6, #+20]
+   \      0x170   0x1A38             SUBS     R0,R7,R0
+   \      0x172   0x6130             STR      R0,[R6, #+16]
+    383          
+    384              /*
+    385               * Version  ::=  INTEGER  OPTIONAL {  v1(0), v2(1)  }
+    386               *               -- if present, MUST be v2
+    387               *
+    388               * signature            AlgorithmIdentifier
+    389               */
+    390              if ((ret = x509_crl_get_version(&p, end, &crl->version)) != 0 ||
+    391                  (ret = mbedtls_x509_get_alg(&p, end, &crl->sig_oid, &sig_params1)) != 0) {
+   \      0x174   0xF116 0x0218      ADDS     R2,R6,#+24
+   \      0x178   0x0039             MOVS     R1,R7
+   \      0x17A   0xA801             ADD      R0,SP,#+4
+   \      0x17C   0x.... 0x....      BL       x509_crl_get_version
+   \      0x180   0x4680             MOV      R8,R0
+   \      0x182   0x2800             CMP      R0,#+0
+   \      0x184   0xD109             BNE.N    ??mbedtls_x509_crl_parse_der_12
+   \      0x186   0xAB03             ADD      R3,SP,#+12
+   \      0x188   0xF116 0x021C      ADDS     R2,R6,#+28
+   \      0x18C   0x0039             MOVS     R1,R7
+   \      0x18E   0xA801             ADD      R0,SP,#+4
+   \      0x190   0x.... 0x....      BL       mbedtls_x509_get_alg
+   \      0x194   0x4680             MOV      R8,R0
+   \      0x196   0x2800             CMP      R0,#+0
+   \      0x198   0xD004             BEQ.N    ??mbedtls_x509_crl_parse_der_13
+    392                  mbedtls_x509_crl_free(crl);
+   \                     ??mbedtls_x509_crl_parse_der_12: (+1)
+   \      0x19A   0x0030             MOVS     R0,R6
+   \      0x19C   0x.... 0x....      BL       mbedtls_x509_crl_free
+    393                  return ret;
+   \      0x1A0   0x4640             MOV      R0,R8
+   \      0x1A2   0xE104             B.N      ??mbedtls_x509_crl_parse_der_2
+    394              }
+    395          
+    396              if (crl->version < 0 || crl->version > 1) {
+   \                     ??mbedtls_x509_crl_parse_der_13: (+1)
+   \      0x1A4   0x69B0             LDR      R0,[R6, #+24]
+   \      0x1A6   0x2800             CMP      R0,#+0
+   \      0x1A8   0xD402             BMI.N    ??mbedtls_x509_crl_parse_der_14
+   \      0x1AA   0x69B0             LDR      R0,[R6, #+24]
+   \      0x1AC   0x2802             CMP      R0,#+2
+   \      0x1AE   0xDB05             BLT.N    ??mbedtls_x509_crl_parse_der_15
+    397                  mbedtls_x509_crl_free(crl);
+   \                     ??mbedtls_x509_crl_parse_der_14: (+1)
+   \      0x1B0   0x0030             MOVS     R0,R6
+   \      0x1B2   0x.... 0x....      BL       mbedtls_x509_crl_free
+    398                  return MBEDTLS_ERR_X509_UNKNOWN_VERSION;
+   \      0x1B6   0x.... 0x....      LDR.W    R0,??DataTable7_7
+   \      0x1BA   0xE0F8             B.N      ??mbedtls_x509_crl_parse_der_2
+    399              }
+    400          
+    401              crl->version++;
+   \                     ??mbedtls_x509_crl_parse_der_15: (+1)
+   \      0x1BC   0x69B0             LDR      R0,[R6, #+24]
+   \      0x1BE   0x1C40             ADDS     R0,R0,#+1
+   \      0x1C0   0x61B0             STR      R0,[R6, #+24]
+    402          
+    403              if ((ret = mbedtls_x509_get_sig_alg(&crl->sig_oid, &sig_params1,
+    404                                                  &crl->sig_md, &crl->sig_pk,
+    405                                                  &crl->sig_opts)) != 0) {
+   \      0x1C2   0xF116 0x00EC      ADDS     R0,R6,#+236
+   \      0x1C6   0x9000             STR      R0,[SP, #+0]
+   \      0x1C8   0xF116 0x03E9      ADDS     R3,R6,#+233
+   \      0x1CC   0xF116 0x02E8      ADDS     R2,R6,#+232
+   \      0x1D0   0xA903             ADD      R1,SP,#+12
+   \      0x1D2   0xF116 0x001C      ADDS     R0,R6,#+28
+   \      0x1D6   0x.... 0x....      BL       mbedtls_x509_get_sig_alg
+   \      0x1DA   0x4681             MOV      R9,R0
+   \      0x1DC   0x2800             CMP      R0,#+0
+   \      0x1DE   0xD005             BEQ.N    ??mbedtls_x509_crl_parse_der_16
+    406                  mbedtls_x509_crl_free(crl);
+   \      0x1E0   0x0030             MOVS     R0,R6
+   \      0x1E2   0x.... 0x....      BL       mbedtls_x509_crl_free
+    407                  return MBEDTLS_ERR_X509_UNKNOWN_SIG_ALG;
+   \      0x1E6   0x.... 0x....      LDR.W    R0,??DataTable7_8
+   \      0x1EA   0xE0E0             B.N      ??mbedtls_x509_crl_parse_der_2
+    408              }
+    409          
+    410              /*
+    411               * issuer               Name
+    412               */
+    413              crl->issuer_raw.p = p;
+   \                     ??mbedtls_x509_crl_parse_der_16: (+1)
+   \      0x1EC   0x9801             LDR      R0,[SP, #+4]
+   \      0x1EE   0x6330             STR      R0,[R6, #+48]
+    414          
+    415              if ((ret = mbedtls_asn1_get_tag(&p, end, &len,
+    416                                              MBEDTLS_ASN1_CONSTRUCTED | MBEDTLS_ASN1_SEQUENCE)) != 0) {
+   \      0x1F0   0x2330             MOVS     R3,#+48
+   \      0x1F2   0xAA02             ADD      R2,SP,#+8
+   \      0x1F4   0x0039             MOVS     R1,R7
+   \      0x1F6   0xA801             ADD      R0,SP,#+4
+   \      0x1F8   0x.... 0x....      BL       mbedtls_asn1_get_tag
+   \      0x1FC   0x4680             MOV      R8,R0
+   \      0x1FE   0x2800             CMP      R0,#+0
+   \      0x200   0xD00C             BEQ.N    ??mbedtls_x509_crl_parse_der_17
+    417                  mbedtls_x509_crl_free(crl);
+   \      0x202   0x0030             MOVS     R0,R6
+   \      0x204   0x.... 0x....      BL       mbedtls_x509_crl_free
+    418                  return MBEDTLS_ERROR_ADD(MBEDTLS_ERR_X509_INVALID_FORMAT, ret);
+   \      0x208   0xF44F 0x73D1      MOV      R3,#+418
+   \      0x20C   0x.... 0x....      LDR.W    R2,??DataTable7
+   \      0x210   0x4641             MOV      R1,R8
+   \      0x212   0x.... 0x....      LDR.W    R0,??DataTable7_6
+   \      0x216   0x.... 0x....      BL       mbedtls_error_add
+   \      0x21A   0xE0C8             B.N      ??mbedtls_x509_crl_parse_der_2
+    419              }
+    420          
+    421              if ((ret = mbedtls_x509_get_name(&p, p + len, &crl->issuer)) != 0) {
+   \                     ??mbedtls_x509_crl_parse_der_17: (+1)
+   \      0x21C   0xF116 0x0234      ADDS     R2,R6,#+52
+   \      0x220   0x9801             LDR      R0,[SP, #+4]
+   \      0x222   0x9902             LDR      R1,[SP, #+8]
+   \      0x224   0x4401             ADD      R1,R0,R1
+   \      0x226   0xA801             ADD      R0,SP,#+4
+   \      0x228   0x.... 0x....      BL       mbedtls_x509_get_name
+   \      0x22C   0x4681             MOV      R9,R0
+   \      0x22E   0x2800             CMP      R0,#+0
+   \      0x230   0xD004             BEQ.N    ??mbedtls_x509_crl_parse_der_18
+    422                  mbedtls_x509_crl_free(crl);
+   \      0x232   0x0030             MOVS     R0,R6
+   \      0x234   0x.... 0x....      BL       mbedtls_x509_crl_free
+    423                  return ret;
+   \      0x238   0x4648             MOV      R0,R9
+   \      0x23A   0xE0B8             B.N      ??mbedtls_x509_crl_parse_der_2
+    424              }
+    425          
+    426              crl->issuer_raw.len = p - crl->issuer_raw.p;
+   \                     ??mbedtls_x509_crl_parse_der_18: (+1)
+   \      0x23C   0x9901             LDR      R1,[SP, #+4]
+   \      0x23E   0x6B30             LDR      R0,[R6, #+48]
+   \      0x240   0x1A09             SUBS     R1,R1,R0
+   \      0x242   0x62F1             STR      R1,[R6, #+44]
+    427          
+    428              /*
+    429               * thisUpdate          Time
+    430               * nextUpdate          Time OPTIONAL
+    431               */
+    432              if ((ret = mbedtls_x509_get_time(&p, end, &crl->this_update)) != 0) {
+   \      0x244   0xF116 0x0254      ADDS     R2,R6,#+84
+   \      0x248   0x0039             MOVS     R1,R7
+   \      0x24A   0xA801             ADD      R0,SP,#+4
+   \      0x24C   0x.... 0x....      BL       mbedtls_x509_get_time
+   \      0x250   0x4680             MOV      R8,R0
+   \      0x252   0x2800             CMP      R0,#+0
+   \      0x254   0xD004             BEQ.N    ??mbedtls_x509_crl_parse_der_19
+    433                  mbedtls_x509_crl_free(crl);
+   \      0x256   0x0030             MOVS     R0,R6
+   \      0x258   0x.... 0x....      BL       mbedtls_x509_crl_free
+    434                  return ret;
+   \      0x25C   0x4640             MOV      R0,R8
+   \      0x25E   0xE0A6             B.N      ??mbedtls_x509_crl_parse_der_2
+    435              }
+    436          
+    437              if ((ret = mbedtls_x509_get_time(&p, end, &crl->next_update)) != 0) {
+   \                     ??mbedtls_x509_crl_parse_der_19: (+1)
+   \      0x260   0xF116 0x026C      ADDS     R2,R6,#+108
+   \      0x264   0x0039             MOVS     R1,R7
+   \      0x266   0xA801             ADD      R0,SP,#+4
+   \      0x268   0x.... 0x....      BL       mbedtls_x509_get_time
+   \      0x26C   0x4681             MOV      R9,R0
+   \      0x26E   0x2800             CMP      R0,#+0
+   \      0x270   0xD01C             BEQ.N    ??mbedtls_x509_crl_parse_der_20
+    438                  if (ret != (MBEDTLS_ERROR_ADD(MBEDTLS_ERR_X509_INVALID_DATE,
+    439                                                MBEDTLS_ERR_ASN1_UNEXPECTED_TAG)) &&
+    440                      ret != (MBEDTLS_ERROR_ADD(MBEDTLS_ERR_X509_INVALID_DATE,
+    441                                                MBEDTLS_ERR_ASN1_OUT_OF_DATA))) {
+   \      0x272   0x.... 0x....      LDR.W    R10,??DataTable7_9
+   \      0x276   0x.... 0x....      LDR.W    R8,??DataTable7
+   \      0x27A   0xF240 0x13B7      MOVW     R3,#+439
+   \      0x27E   0x4642             MOV      R2,R8
+   \      0x280   0xF07F 0x0161      MVNS     R1,#+97
+   \      0x284   0x4650             MOV      R0,R10
+   \      0x286   0x.... 0x....      BL       mbedtls_error_add
+   \      0x28A   0x4581             CMP      R9,R0
+   \      0x28C   0xD00E             BEQ.N    ??mbedtls_x509_crl_parse_der_20
+   \      0x28E   0xF240 0x13B9      MOVW     R3,#+441
+   \      0x292   0x4642             MOV      R2,R8
+   \      0x294   0xF07F 0x015F      MVNS     R1,#+95
+   \      0x298   0x4650             MOV      R0,R10
+   \      0x29A   0x.... 0x....      BL       mbedtls_error_add
+   \      0x29E   0x4581             CMP      R9,R0
+   \      0x2A0   0xD004             BEQ.N    ??mbedtls_x509_crl_parse_der_20
+    442                      mbedtls_x509_crl_free(crl);
+   \      0x2A2   0x0030             MOVS     R0,R6
+   \      0x2A4   0x.... 0x....      BL       mbedtls_x509_crl_free
+    443                      return ret;
+   \      0x2A8   0x4648             MOV      R0,R9
+   \      0x2AA   0xE080             B.N      ??mbedtls_x509_crl_parse_der_2
+    444                  }
+    445              }
+    446          
+    447              /*
+    448               * revokedCertificates    SEQUENCE OF SEQUENCE   {
+    449               *      userCertificate        CertificateSerialNumber,
+    450               *      revocationDate         Time,
+    451               *      crlEntryExtensions     Extensions OPTIONAL
+    452               *                                   -- if present, MUST be v2
+    453               *                        } OPTIONAL
+    454               */
+    455              if ((ret = x509_get_entries(&p, end, &crl->entry)) != 0) {
+   \                     ??mbedtls_x509_crl_parse_der_20: (+1)
+   \      0x2AC   0xF116 0x0284      ADDS     R2,R6,#+132
+   \      0x2B0   0x0039             MOVS     R1,R7
+   \      0x2B2   0xA801             ADD      R0,SP,#+4
+   \      0x2B4   0x.... 0x....      BL       x509_get_entries
+   \      0x2B8   0x4680             MOV      R8,R0
+   \      0x2BA   0x2800             CMP      R0,#+0
+   \      0x2BC   0xD004             BEQ.N    ??mbedtls_x509_crl_parse_der_21
+    456                  mbedtls_x509_crl_free(crl);
+   \      0x2BE   0x0030             MOVS     R0,R6
+   \      0x2C0   0x.... 0x....      BL       mbedtls_x509_crl_free
+    457                  return ret;
+   \      0x2C4   0x4640             MOV      R0,R8
+   \      0x2C6   0xE072             B.N      ??mbedtls_x509_crl_parse_der_2
+    458              }
+    459          
+    460              /*
+    461               * crlExtensions          EXPLICIT Extensions OPTIONAL
+    462               *                              -- if present, MUST be v2
+    463               */
+    464              if (crl->version == 2) {
+   \                     ??mbedtls_x509_crl_parse_der_21: (+1)
+   \      0x2C8   0x69B0             LDR      R0,[R6, #+24]
+   \      0x2CA   0x2802             CMP      R0,#+2
+   \      0x2CC   0xD10E             BNE.N    ??mbedtls_x509_crl_parse_der_22
+    465                  ret = x509_get_crl_ext(&p, end, &crl->crl_ext);
+   \      0x2CE   0xF116 0x02C4      ADDS     R2,R6,#+196
+   \      0x2D2   0x0039             MOVS     R1,R7
+   \      0x2D4   0xA801             ADD      R0,SP,#+4
+   \      0x2D6   0x.... 0x....      BL       x509_get_crl_ext
+   \      0x2DA   0x4680             MOV      R8,R0
+    466          
+    467                  if (ret != 0) {
+   \      0x2DC   0xF1B8 0x0F00      CMP      R8,#+0
+   \      0x2E0   0xD004             BEQ.N    ??mbedtls_x509_crl_parse_der_22
+    468                      mbedtls_x509_crl_free(crl);
+   \      0x2E2   0x0030             MOVS     R0,R6
+   \      0x2E4   0x.... 0x....      BL       mbedtls_x509_crl_free
+    469                      return ret;
+   \      0x2E8   0x4640             MOV      R0,R8
+   \      0x2EA   0xE060             B.N      ??mbedtls_x509_crl_parse_der_2
+    470                  }
+    471              }
+    472          
+    473              if (p != end) {
+   \                     ??mbedtls_x509_crl_parse_der_22: (+1)
+   \      0x2EC   0x9801             LDR      R0,[SP, #+4]
+   \      0x2EE   0x42B8             CMP      R0,R7
+   \      0x2F0   0xD00D             BEQ.N    ??mbedtls_x509_crl_parse_der_23
+    474                  mbedtls_x509_crl_free(crl);
+   \      0x2F2   0x0030             MOVS     R0,R6
+   \      0x2F4   0x.... 0x....      BL       mbedtls_x509_crl_free
+    475                  return MBEDTLS_ERROR_ADD(MBEDTLS_ERR_X509_INVALID_FORMAT,
+    476                                           MBEDTLS_ERR_ASN1_LENGTH_MISMATCH);
+   \      0x2F8   0xF44F 0x73EE      MOV      R3,#+476
+   \      0x2FC   0x.... 0x....      LDR.W    R2,??DataTable7
+   \      0x300   0xF07F 0x0165      MVNS     R1,#+101
+   \      0x304   0x.... 0x....      LDR.W    R0,??DataTable7_6
+   \      0x308   0x.... 0x....      BL       mbedtls_error_add
+   \      0x30C   0xE04F             B.N      ??mbedtls_x509_crl_parse_der_2
+    477              }
+    478          
+    479              end = crl->raw.p + crl->raw.len;
+   \                     ??mbedtls_x509_crl_parse_der_23: (+1)
+   \      0x30E   0x68B0             LDR      R0,[R6, #+8]
+   \      0x310   0x6871             LDR      R1,[R6, #+4]
+   \      0x312   0xEB00 0x0A01      ADD      R10,R0,R1
+    480          
+    481              /*
+    482               *  signatureAlgorithm   AlgorithmIdentifier,
+    483               *  signatureValue       BIT STRING
+    484               */
+    485              if ((ret = mbedtls_x509_get_alg(&p, end, &sig_oid2, &sig_params2)) != 0) {
+   \      0x316   0xAB0A             ADD      R3,SP,#+40
+   \      0x318   0xAA07             ADD      R2,SP,#+28
+   \      0x31A   0x4651             MOV      R1,R10
+   \      0x31C   0xA801             ADD      R0,SP,#+4
+   \      0x31E   0x.... 0x....      BL       mbedtls_x509_get_alg
+   \      0x322   0x4681             MOV      R9,R0
+   \      0x324   0x2800             CMP      R0,#+0
+   \      0x326   0xD004             BEQ.N    ??mbedtls_x509_crl_parse_der_24
+    486                  mbedtls_x509_crl_free(crl);
+   \      0x328   0x0030             MOVS     R0,R6
+   \      0x32A   0x.... 0x....      BL       mbedtls_x509_crl_free
+    487                  return ret;
+   \      0x32E   0x4648             MOV      R0,R9
+   \      0x330   0xE03D             B.N      ??mbedtls_x509_crl_parse_der_2
+    488              }
+    489          
+    490              if (crl->sig_oid.len != sig_oid2.len ||
+    491                  memcmp(crl->sig_oid.p, sig_oid2.p, crl->sig_oid.len) != 0 ||
+    492                  sig_params1.len != sig_params2.len ||
+    493                  (sig_params1.len != 0 &&
+    494                   memcmp(sig_params1.p, sig_params2.p, sig_params1.len) != 0)) {
+   \                     ??mbedtls_x509_crl_parse_der_24: (+1)
+   \      0x332   0x6A30             LDR      R0,[R6, #+32]
+   \      0x334   0x9908             LDR      R1,[SP, #+32]
+   \      0x336   0x4288             CMP      R0,R1
+   \      0x338   0xD114             BNE.N    ??mbedtls_x509_crl_parse_der_25
+   \      0x33A   0x6A32             LDR      R2,[R6, #+32]
+   \      0x33C   0x9909             LDR      R1,[SP, #+36]
+   \      0x33E   0x6A70             LDR      R0,[R6, #+36]
+   \      0x340   0x.... 0x....      BL       memcmp
+   \      0x344   0x2800             CMP      R0,#+0
+   \      0x346   0xD10D             BNE.N    ??mbedtls_x509_crl_parse_der_25
+   \      0x348   0x9804             LDR      R0,[SP, #+16]
+   \      0x34A   0x990B             LDR      R1,[SP, #+44]
+   \      0x34C   0x4288             CMP      R0,R1
+   \      0x34E   0xD109             BNE.N    ??mbedtls_x509_crl_parse_der_25
+   \      0x350   0x9804             LDR      R0,[SP, #+16]
+   \      0x352   0x2800             CMP      R0,#+0
+   \      0x354   0xD00C             BEQ.N    ??mbedtls_x509_crl_parse_der_26
+   \      0x356   0x9A04             LDR      R2,[SP, #+16]
+   \      0x358   0x990C             LDR      R1,[SP, #+48]
+   \      0x35A   0x9805             LDR      R0,[SP, #+20]
+   \      0x35C   0x.... 0x....      BL       memcmp
+   \      0x360   0x2800             CMP      R0,#+0
+   \      0x362   0xD005             BEQ.N    ??mbedtls_x509_crl_parse_der_26
+    495                  mbedtls_x509_crl_free(crl);
+   \                     ??mbedtls_x509_crl_parse_der_25: (+1)
+   \      0x364   0x0030             MOVS     R0,R6
+   \      0x366   0x.... 0x....      BL       mbedtls_x509_crl_free
+    496                  return MBEDTLS_ERR_X509_SIG_MISMATCH;
+   \      0x36A   0x.... 0x....      LDR.W    R0,??DataTable7_10
+   \      0x36E   0xE01E             B.N      ??mbedtls_x509_crl_parse_der_2
+    497              }
+    498          
+    499              if ((ret = mbedtls_x509_get_sig(&p, end, &crl->sig)) != 0) {
+   \                     ??mbedtls_x509_crl_parse_der_26: (+1)
+   \      0x370   0xF116 0x02DC      ADDS     R2,R6,#+220
+   \      0x374   0x4651             MOV      R1,R10
+   \      0x376   0xA801             ADD      R0,SP,#+4
+   \      0x378   0x.... 0x....      BL       mbedtls_x509_get_sig
+   \      0x37C   0x0007             MOVS     R7,R0
+   \      0x37E   0x2800             CMP      R0,#+0
+   \      0x380   0xD004             BEQ.N    ??mbedtls_x509_crl_parse_der_27
+    500                  mbedtls_x509_crl_free(crl);
+   \      0x382   0x0030             MOVS     R0,R6
+   \      0x384   0x.... 0x....      BL       mbedtls_x509_crl_free
+    501                  return ret;
+   \      0x388   0x0038             MOVS     R0,R7
+   \      0x38A   0xE010             B.N      ??mbedtls_x509_crl_parse_der_2
+    502              }
+    503          
+    504              if (p != end) {
+   \                     ??mbedtls_x509_crl_parse_der_27: (+1)
+   \      0x38C   0x9801             LDR      R0,[SP, #+4]
+   \      0x38E   0x4550             CMP      R0,R10
+   \      0x390   0xD00C             BEQ.N    ??mbedtls_x509_crl_parse_der_28
+    505                  mbedtls_x509_crl_free(crl);
+   \      0x392   0x0030             MOVS     R0,R6
+   \      0x394   0x.... 0x....      BL       mbedtls_x509_crl_free
+    506                  return MBEDTLS_ERROR_ADD(MBEDTLS_ERR_X509_INVALID_FORMAT,
+    507                                           MBEDTLS_ERR_ASN1_LENGTH_MISMATCH);
+   \      0x398   0xF240 0x13FB      MOVW     R3,#+507
+   \      0x39C   0x....             LDR.N    R2,??DataTable7
+   \      0x39E   0xF07F 0x0165      MVNS     R1,#+101
+   \      0x3A2   0x.... 0x....      LDR.W    R0,??DataTable7_6
+   \      0x3A6   0x.... 0x....      BL       mbedtls_error_add
+   \      0x3AA   0xE000             B.N      ??mbedtls_x509_crl_parse_der_2
+    508              }
+    509          
+    510              return 0;
+   \                     ??mbedtls_x509_crl_parse_der_28: (+1)
+   \      0x3AC   0x2000             MOVS     R0,#+0
+   \                     ??mbedtls_x509_crl_parse_der_2: (+1)
+   \      0x3AE   0xB011             ADD      SP,SP,#+68
+   \      0x3B0   0xE8BD 0x8FF0      POP      {R4-R11,PC}
+    511          }
+    512          
+    513          /*
+    514           * Parse one or more CRLs and add them to the chained list
+    515           */
+
+   \                                 In section .text, align 2, keep-with-next
+    516          int mbedtls_x509_crl_parse(mbedtls_x509_crl *chain, const unsigned char *buf, size_t buflen)
+    517          {
+   \                     mbedtls_x509_crl_parse: (+1)
+   \        0x0   0xE92D 0x41F8      PUSH     {R3-R8,LR}
+   \        0x4   0xB087             SUB      SP,SP,#+28
+   \        0x6   0x0007             MOVS     R7,R0
+   \        0x8   0x4688             MOV      R8,R1
+   \        0xA   0x0016             MOVS     R6,R2
+    518          #if defined(MBEDTLS_PEM_PARSE_C)
+    519              int ret = MBEDTLS_ERR_ERROR_CORRUPTION_DETECTED;
+   \        0xC   0xF07F 0x056D      MVNS     R5,#+109
+    520              size_t use_len = 0;
+   \       0x10   0x2000             MOVS     R0,#+0
+   \       0x12   0x9003             STR      R0,[SP, #+12]
+    521              mbedtls_pem_context pem;
+    522              int is_pem = 0;
+   \       0x14   0x2400             MOVS     R4,#+0
+    523          
+    524              if (chain == NULL || buf == NULL) {
+   \       0x16   0x2F00             CMP      R7,#+0
+   \       0x18   0xD002             BEQ.N    ??mbedtls_x509_crl_parse_0
+   \       0x1A   0xF1B8 0x0F00      CMP      R8,#+0
+   \       0x1E   0xD101             BNE.N    ??mbedtls_x509_crl_parse_1
+    525                  return MBEDTLS_ERR_X509_BAD_INPUT_DATA;
+   \                     ??mbedtls_x509_crl_parse_0: (+1)
+   \       0x20   0x....             LDR.N    R0,??DataTable7_5
+   \       0x22   0xE046             B.N      ??mbedtls_x509_crl_parse_2
+    526              }
+    527          
+    528              do {
+    529                  mbedtls_pem_init(&pem);
+   \                     ??mbedtls_x509_crl_parse_1: (+1)
+   \       0x24   0xA804             ADD      R0,SP,#+16
+   \       0x26   0x.... 0x....      BL       mbedtls_pem_init
+    530          
+    531                  // Avoid calling mbedtls_pem_read_buffer() on non-null-terminated
+    532                  // string
+    533                  if (buflen == 0 || buf[buflen - 1] != '\0') {
+   \       0x2A   0x2E00             CMP      R6,#+0
+   \       0x2C   0xD005             BEQ.N    ??mbedtls_x509_crl_parse_3
+   \       0x2E   0xEB08 0x0006      ADD      R0,R8,R6
+   \       0x32   0xF810 0x0C01      LDRB     R0,[R0, #-1]
+   \       0x36   0x2800             CMP      R0,#+0
+   \       0x38   0xD002             BEQ.N    ??mbedtls_x509_crl_parse_4
+    534                      ret = MBEDTLS_ERR_PEM_NO_HEADER_FOOTER_PRESENT;
+   \                     ??mbedtls_x509_crl_parse_3: (+1)
+   \       0x3A   0x....             LDR.N    R0,??DataTable7_11
+   \       0x3C   0x0005             MOVS     R5,R0
+   \       0x3E   0xE00C             B.N      ??mbedtls_x509_crl_parse_5
+    535                  } else {
+    536                      ret = mbedtls_pem_read_buffer(&pem,
+    537                                                    "-----BEGIN X509 CRL-----",
+    538                                                    "-----END X509 CRL-----",
+    539                                                    buf, NULL, 0, &use_len);
+   \                     ??mbedtls_x509_crl_parse_4: (+1)
+   \       0x40   0xA803             ADD      R0,SP,#+12
+   \       0x42   0x9002             STR      R0,[SP, #+8]
+   \       0x44   0x2000             MOVS     R0,#+0
+   \       0x46   0x9001             STR      R0,[SP, #+4]
+   \       0x48   0x2000             MOVS     R0,#+0
+   \       0x4A   0x9000             STR      R0,[SP, #+0]
+   \       0x4C   0x4643             MOV      R3,R8
+   \       0x4E   0x....             LDR.N    R2,??DataTable7_12
+   \       0x50   0x....             LDR.N    R1,??DataTable7_13
+   \       0x52   0xA804             ADD      R0,SP,#+16
+   \       0x54   0x.... 0x....      BL       mbedtls_pem_read_buffer
+   \       0x58   0x0005             MOVS     R5,R0
+    540                  }
+    541          
+    542                  if (ret == 0) {
+   \                     ??mbedtls_x509_crl_parse_5: (+1)
+   \       0x5A   0x2D00             CMP      R5,#+0
+   \       0x5C   0xD112             BNE.N    ??mbedtls_x509_crl_parse_6
+    543                      /*
+    544                       * Was PEM encoded
+    545                       */
+    546                      is_pem = 1;
+   \       0x5E   0x2001             MOVS     R0,#+1
+   \       0x60   0x0004             MOVS     R4,R0
+    547          
+    548                      buflen -= use_len;
+   \       0x62   0x9803             LDR      R0,[SP, #+12]
+   \       0x64   0x1A36             SUBS     R6,R6,R0
+    549                      buf += use_len;
+   \       0x66   0x9803             LDR      R0,[SP, #+12]
+   \       0x68   0x4480             ADD      R8,R8,R0
+    550          
+    551                      if ((ret = mbedtls_x509_crl_parse_der(chain,
+    552                                                            pem.buf, pem.buflen)) != 0) {
+   \       0x6A   0x9A05             LDR      R2,[SP, #+20]
+   \       0x6C   0x9904             LDR      R1,[SP, #+16]
+   \       0x6E   0x0038             MOVS     R0,R7
+   \       0x70   0x.... 0x....      BL       mbedtls_x509_crl_parse_der
+   \       0x74   0x0005             MOVS     R5,R0
+   \       0x76   0x2800             CMP      R0,#+0
+   \       0x78   0xD00B             BEQ.N    ??mbedtls_x509_crl_parse_7
+    553                          mbedtls_pem_free(&pem);
+   \       0x7A   0xA804             ADD      R0,SP,#+16
+   \       0x7C   0x.... 0x....      BL       mbedtls_pem_free
+    554                          return ret;
+   \       0x80   0x0028             MOVS     R0,R5
+   \       0x82   0xE016             B.N      ??mbedtls_x509_crl_parse_2
+    555                      }
+    556                  } else if (is_pem) {
+   \                     ??mbedtls_x509_crl_parse_6: (+1)
+   \       0x84   0x2C00             CMP      R4,#+0
+   \       0x86   0xD004             BEQ.N    ??mbedtls_x509_crl_parse_7
+    557                      mbedtls_pem_free(&pem);
+   \       0x88   0xA804             ADD      R0,SP,#+16
+   \       0x8A   0x.... 0x....      BL       mbedtls_pem_free
+    558                      return ret;
+   \       0x8E   0x0028             MOVS     R0,R5
+   \       0x90   0xE00F             B.N      ??mbedtls_x509_crl_parse_2
+    559                  }
+    560          
+    561                  mbedtls_pem_free(&pem);
+   \                     ??mbedtls_x509_crl_parse_7: (+1)
+   \       0x92   0xA804             ADD      R0,SP,#+16
+   \       0x94   0x.... 0x....      BL       mbedtls_pem_free
+    562              }
+    563              /* In the PEM case, buflen is 1 at the end, for the terminated NULL byte.
+    564               * And a valid CRL cannot be less than 1 byte anyway. */
+    565              while (is_pem && buflen > 1);
+   \       0x98   0x2C00             CMP      R4,#+0
+   \       0x9A   0xD001             BEQ.N    ??mbedtls_x509_crl_parse_8
+   \       0x9C   0x2E02             CMP      R6,#+2
+   \       0x9E   0xD2C1             BCS.N    ??mbedtls_x509_crl_parse_1
+    566          
+    567              if (is_pem) {
+   \                     ??mbedtls_x509_crl_parse_8: (+1)
+   \       0xA0   0x2C00             CMP      R4,#+0
+   \       0xA2   0xD001             BEQ.N    ??mbedtls_x509_crl_parse_9
+    568                  return 0;
+   \       0xA4   0x2000             MOVS     R0,#+0
+   \       0xA6   0xE004             B.N      ??mbedtls_x509_crl_parse_2
+    569              } else
+    570          #endif /* MBEDTLS_PEM_PARSE_C */
+    571              return mbedtls_x509_crl_parse_der(chain, buf, buflen);
+   \                     ??mbedtls_x509_crl_parse_9: (+1)
+   \       0xA8   0x0032             MOVS     R2,R6
+   \       0xAA   0x4641             MOV      R1,R8
+   \       0xAC   0x0038             MOVS     R0,R7
+   \       0xAE   0x.... 0x....      BL       mbedtls_x509_crl_parse_der
+   \                     ??mbedtls_x509_crl_parse_2: (+1)
+   \       0xB2   0xB008             ADD      SP,SP,#+32
+   \       0xB4   0xE8BD 0x81F0      POP      {R4-R8,PC}
+    572          }
+    573          
+    574          #if defined(MBEDTLS_FS_IO)
+    575          /*
+    576           * Load one or more CRLs and add them to the chained list
+    577           */
+    578          int mbedtls_x509_crl_parse_file(mbedtls_x509_crl *chain, const char *path)
+    579          {
+    580              int ret = MBEDTLS_ERR_ERROR_CORRUPTION_DETECTED;
+    581              size_t n;
+    582              unsigned char *buf;
+    583          
+    584              if ((ret = mbedtls_pk_load_file(path, &buf, &n)) != 0) {
+    585                  return ret;
+    586              }
+    587          
+    588              ret = mbedtls_x509_crl_parse(chain, buf, n);
+    589          
+    590              mbedtls_zeroize_and_free(buf, n);
+    591          
+    592              return ret;
+    593          }
+    594          #endif /* MBEDTLS_FS_IO */
+    595          
+    596          #if !defined(MBEDTLS_X509_REMOVE_INFO)
+    597          /*
+    598           * Return an informational string about the certificate.
+    599           */
+    600          #define BEFORE_COLON    14
+    601          #define BC              "14"
+    602          /*
+    603           * Return an informational string about the CRL.
+    604           */
+
+   \                                 In section .text, align 2, keep-with-next
+    605          int mbedtls_x509_crl_info(char *buf, size_t size, const char *prefix,
+    606                                    const mbedtls_x509_crl *crl)
+    607          {
+   \                     mbedtls_x509_crl_info: (+1)
+   \        0x0   0xE92D 0x4FF1      PUSH     {R0,R4-R11,LR}
+   \        0x4   0xB086             SUB      SP,SP,#+24
+   \        0x6   0x468A             MOV      R10,R1
+   \        0x8   0x0016             MOVS     R6,R2
+   \        0xA   0x001F             MOVS     R7,R3
+    608              int ret = MBEDTLS_ERR_ERROR_CORRUPTION_DETECTED;
+   \        0xC   0xF07F 0x086D      MVNS     R8,#+109
+    609              size_t n;
+    610              char *p;
+    611              const mbedtls_x509_crl_entry *entry;
+    612          
+    613              p = buf;
+   \       0x10   0x9C06             LDR      R4,[SP, #+24]
+    614              n = size;
+   \       0x12   0x4655             MOV      R5,R10
+    615          
+    616              ret = mbedtls_snprintf(p, n, "%sCRL version   : %d",
+    617                                     prefix, crl->version);
+   \       0x14   0x69B8             LDR      R0,[R7, #+24]
+   \       0x16   0x9000             STR      R0,[SP, #+0]
+   \       0x18   0x0033             MOVS     R3,R6
+   \       0x1A   0x....             LDR.N    R2,??DataTable7_14
+   \       0x1C   0x0029             MOVS     R1,R5
+   \       0x1E   0x0020             MOVS     R0,R4
+   \       0x20   0x.... 0x....      BL       snprintf
+   \       0x24   0x4681             MOV      R9,R0
+    618              MBEDTLS_X509_SAFE_SNPRINTF;
+   \       0x26   0xF1B9 0x0F00      CMP      R9,#+0
+   \       0x2A   0xD401             BMI.N    ??mbedtls_x509_crl_info_0
+   \       0x2C   0x45A9             CMP      R9,R5
+   \       0x2E   0xD301             BCC.N    ??mbedtls_x509_crl_info_1
+   \                     ??mbedtls_x509_crl_info_0: (+1)
+   \       0x30   0x....             LDR.N    R0,??DataTable7_15
+   \       0x32   0xE0F8             B.N      ??mbedtls_x509_crl_info_2
+   \                     ??mbedtls_x509_crl_info_1: (+1)
+   \       0x34   0xEBB5 0x0509      SUBS     R5,R5,R9
+   \       0x38   0x444C             ADD      R4,R4,R9
+    619          
+    620              ret = mbedtls_snprintf(p, n, "\n%sissuer name   : ", prefix);
+   \       0x3A   0x0033             MOVS     R3,R6
+   \       0x3C   0x....             LDR.N    R2,??DataTable7_16
+   \       0x3E   0x0029             MOVS     R1,R5
+   \       0x40   0x0020             MOVS     R0,R4
+   \       0x42   0x.... 0x....      BL       snprintf
+   \       0x46   0x4680             MOV      R8,R0
+    621              MBEDTLS_X509_SAFE_SNPRINTF;
+   \       0x48   0xF1B8 0x0F00      CMP      R8,#+0
+   \       0x4C   0xD401             BMI.N    ??mbedtls_x509_crl_info_3
+   \       0x4E   0x45A8             CMP      R8,R5
+   \       0x50   0xD301             BCC.N    ??mbedtls_x509_crl_info_4
+   \                     ??mbedtls_x509_crl_info_3: (+1)
+   \       0x52   0x....             LDR.N    R0,??DataTable7_15
+   \       0x54   0xE0E7             B.N      ??mbedtls_x509_crl_info_2
+   \                     ??mbedtls_x509_crl_info_4: (+1)
+   \       0x56   0xEBB5 0x0508      SUBS     R5,R5,R8
+   \       0x5A   0x4444             ADD      R4,R4,R8
+    622              ret = mbedtls_x509_dn_gets(p, n, &crl->issuer);
+   \       0x5C   0xF117 0x0234      ADDS     R2,R7,#+52
+   \       0x60   0x0029             MOVS     R1,R5
+   \       0x62   0x0020             MOVS     R0,R4
+   \       0x64   0x.... 0x....      BL       mbedtls_x509_dn_gets
+   \       0x68   0x4681             MOV      R9,R0
+    623              MBEDTLS_X509_SAFE_SNPRINTF;
+   \       0x6A   0xF1B9 0x0F00      CMP      R9,#+0
+   \       0x6E   0xD401             BMI.N    ??mbedtls_x509_crl_info_5
+   \       0x70   0x45A9             CMP      R9,R5
+   \       0x72   0xD301             BCC.N    ??mbedtls_x509_crl_info_6
+   \                     ??mbedtls_x509_crl_info_5: (+1)
+   \       0x74   0x....             LDR.N    R0,??DataTable7_15
+   \       0x76   0xE0D6             B.N      ??mbedtls_x509_crl_info_2
+   \                     ??mbedtls_x509_crl_info_6: (+1)
+   \       0x78   0xEBB5 0x0509      SUBS     R5,R5,R9
+   \       0x7C   0x444C             ADD      R4,R4,R9
+    624          
+    625              ret = mbedtls_snprintf(p, n, "\n%sthis update   : " \
+    626                                           "%04d-%02d-%02d %02d:%02d:%02d", prefix,
+    627                                     crl->this_update.year, crl->this_update.mon,
+    628                                     crl->this_update.day,  crl->this_update.hour,
+    629                                     crl->this_update.min,  crl->this_update.sec);
+   \       0x7E   0x6EB8             LDR      R0,[R7, #+104]
+   \       0x80   0x9005             STR      R0,[SP, #+20]
+   \       0x82   0x6E78             LDR      R0,[R7, #+100]
+   \       0x84   0x9004             STR      R0,[SP, #+16]
+   \       0x86   0x6E38             LDR      R0,[R7, #+96]
+   \       0x88   0x9003             STR      R0,[SP, #+12]
+   \       0x8A   0x6DF8             LDR      R0,[R7, #+92]
+   \       0x8C   0x9002             STR      R0,[SP, #+8]
+   \       0x8E   0x6DB8             LDR      R0,[R7, #+88]
+   \       0x90   0x9001             STR      R0,[SP, #+4]
+   \       0x92   0x6D78             LDR      R0,[R7, #+84]
+   \       0x94   0x9000             STR      R0,[SP, #+0]
+   \       0x96   0x0033             MOVS     R3,R6
+   \       0x98   0x....             LDR.N    R2,??DataTable7_17
+   \       0x9A   0x0029             MOVS     R1,R5
+   \       0x9C   0x0020             MOVS     R0,R4
+   \       0x9E   0x.... 0x....      BL       snprintf
+   \       0xA2   0x4680             MOV      R8,R0
+    630              MBEDTLS_X509_SAFE_SNPRINTF;
+   \       0xA4   0xF1B8 0x0F00      CMP      R8,#+0
+   \       0xA8   0xD401             BMI.N    ??mbedtls_x509_crl_info_7
+   \       0xAA   0x45A8             CMP      R8,R5
+   \       0xAC   0xD301             BCC.N    ??mbedtls_x509_crl_info_8
+   \                     ??mbedtls_x509_crl_info_7: (+1)
+   \       0xAE   0x....             LDR.N    R0,??DataTable7_15
+   \       0xB0   0xE0B9             B.N      ??mbedtls_x509_crl_info_2
+   \                     ??mbedtls_x509_crl_info_8: (+1)
+   \       0xB2   0xEBB5 0x0508      SUBS     R5,R5,R8
+   \       0xB6   0x4444             ADD      R4,R4,R8
+    631          
+    632              ret = mbedtls_snprintf(p, n, "\n%snext update   : " \
+    633                                           "%04d-%02d-%02d %02d:%02d:%02d", prefix,
+    634                                     crl->next_update.year, crl->next_update.mon,
+    635                                     crl->next_update.day,  crl->next_update.hour,
+    636                                     crl->next_update.min,  crl->next_update.sec);
+   \       0xB8   0xF8D7 0x0080      LDR      R0,[R7, #+128]
+   \       0xBC   0x9005             STR      R0,[SP, #+20]
+   \       0xBE   0x6FF8             LDR      R0,[R7, #+124]
+   \       0xC0   0x9004             STR      R0,[SP, #+16]
+   \       0xC2   0x6FB8             LDR      R0,[R7, #+120]
+   \       0xC4   0x9003             STR      R0,[SP, #+12]
+   \       0xC6   0x6F78             LDR      R0,[R7, #+116]
+   \       0xC8   0x9002             STR      R0,[SP, #+8]
+   \       0xCA   0x6F38             LDR      R0,[R7, #+112]
+   \       0xCC   0x9001             STR      R0,[SP, #+4]
+   \       0xCE   0x6EF8             LDR      R0,[R7, #+108]
+   \       0xD0   0x9000             STR      R0,[SP, #+0]
+   \       0xD2   0x0033             MOVS     R3,R6
+   \       0xD4   0x....             LDR.N    R2,??DataTable7_18
+   \       0xD6   0x0029             MOVS     R1,R5
+   \       0xD8   0x0020             MOVS     R0,R4
+   \       0xDA   0x.... 0x....      BL       snprintf
+   \       0xDE   0x4681             MOV      R9,R0
+    637              MBEDTLS_X509_SAFE_SNPRINTF;
+   \       0xE0   0xF1B9 0x0F00      CMP      R9,#+0
+   \       0xE4   0xD401             BMI.N    ??mbedtls_x509_crl_info_9
+   \       0xE6   0x45A9             CMP      R9,R5
+   \       0xE8   0xD301             BCC.N    ??mbedtls_x509_crl_info_10
+   \                     ??mbedtls_x509_crl_info_9: (+1)
+   \       0xEA   0x....             LDR.N    R0,??DataTable7_15
+   \       0xEC   0xE09B             B.N      ??mbedtls_x509_crl_info_2
+   \                     ??mbedtls_x509_crl_info_10: (+1)
+   \       0xEE   0xEBB5 0x0509      SUBS     R5,R5,R9
+   \       0xF2   0xEB04 0x0809      ADD      R8,R4,R9
+    638          
+    639              entry = &crl->entry;
+   \       0xF6   0xF117 0x0484      ADDS     R4,R7,#+132
+    640          
+    641              ret = mbedtls_snprintf(p, n, "\n%sRevoked certificates:",
+    642                                     prefix);
+   \       0xFA   0x0033             MOVS     R3,R6
+   \       0xFC   0x....             LDR.N    R2,??DataTable7_19
+   \       0xFE   0x0029             MOVS     R1,R5
+   \      0x100   0x4640             MOV      R0,R8
+   \      0x102   0x.... 0x....      BL       snprintf
+   \      0x106   0x4683             MOV      R11,R0
+    643              MBEDTLS_X509_SAFE_SNPRINTF;
+   \      0x108   0xF1BB 0x0F00      CMP      R11,#+0
+   \      0x10C   0xD401             BMI.N    ??mbedtls_x509_crl_info_11
+   \      0x10E   0x45AB             CMP      R11,R5
+   \      0x110   0xD301             BCC.N    ??mbedtls_x509_crl_info_12
+   \                     ??mbedtls_x509_crl_info_11: (+1)
+   \      0x112   0x....             LDR.N    R0,??DataTable7_15
+   \      0x114   0xE087             B.N      ??mbedtls_x509_crl_info_2
+   \                     ??mbedtls_x509_crl_info_12: (+1)
+   \      0x116   0xEBB5 0x050B      SUBS     R5,R5,R11
+   \      0x11A   0x44D8             ADD      R8,R8,R11
+    644          
+    645              while (entry != NULL && entry->raw.len != 0) {
+   \                     ??mbedtls_x509_crl_info_13: (+1)
+   \      0x11C   0x2C00             CMP      R4,#+0
+   \      0x11E   0xD044             BEQ.N    ??mbedtls_x509_crl_info_14
+   \      0x120   0x6860             LDR      R0,[R4, #+4]
+   \      0x122   0x2800             CMP      R0,#+0
+   \      0x124   0xD041             BEQ.N    ??mbedtls_x509_crl_info_14
+    646                  ret = mbedtls_snprintf(p, n, "\n%sserial number: ",
+    647                                         prefix);
+   \      0x126   0x0033             MOVS     R3,R6
+   \      0x128   0x....             LDR.N    R2,??DataTable7_20
+   \      0x12A   0x0029             MOVS     R1,R5
+   \      0x12C   0x4640             MOV      R0,R8
+   \      0x12E   0x.... 0x....      BL       snprintf
+   \      0x132   0x4681             MOV      R9,R0
+    648                  MBEDTLS_X509_SAFE_SNPRINTF;
+   \      0x134   0xF1B9 0x0F00      CMP      R9,#+0
+   \      0x138   0xD401             BMI.N    ??mbedtls_x509_crl_info_15
+   \      0x13A   0x45A9             CMP      R9,R5
+   \      0x13C   0xD301             BCC.N    ??mbedtls_x509_crl_info_16
+   \                     ??mbedtls_x509_crl_info_15: (+1)
+   \      0x13E   0x....             LDR.N    R0,??DataTable7_15
+   \      0x140   0xE071             B.N      ??mbedtls_x509_crl_info_2
+   \                     ??mbedtls_x509_crl_info_16: (+1)
+   \      0x142   0xEBB5 0x0509      SUBS     R5,R5,R9
+   \      0x146   0xEB08 0x0B09      ADD      R11,R8,R9
+    649          
+    650                  ret = mbedtls_x509_serial_gets(p, n, &entry->serial);
+   \      0x14A   0xF114 0x020C      ADDS     R2,R4,#+12
+   \      0x14E   0x0029             MOVS     R1,R5
+   \      0x150   0x4658             MOV      R0,R11
+   \      0x152   0x.... 0x....      BL       mbedtls_x509_serial_gets
+   \      0x156   0x4680             MOV      R8,R0
+    651                  MBEDTLS_X509_SAFE_SNPRINTF;
+   \      0x158   0xF1B8 0x0F00      CMP      R8,#+0
+   \      0x15C   0xD401             BMI.N    ??mbedtls_x509_crl_info_17
+   \      0x15E   0x45A8             CMP      R8,R5
+   \      0x160   0xD301             BCC.N    ??mbedtls_x509_crl_info_18
+   \                     ??mbedtls_x509_crl_info_17: (+1)
+   \      0x162   0x....             LDR.N    R0,??DataTable7_15
+   \      0x164   0xE05F             B.N      ??mbedtls_x509_crl_info_2
+   \                     ??mbedtls_x509_crl_info_18: (+1)
+   \      0x166   0xEBB5 0x0508      SUBS     R5,R5,R8
+   \      0x16A   0xEB0B 0x0908      ADD      R9,R11,R8
+    652          
+    653                  ret = mbedtls_snprintf(p, n, " revocation date: " \
+    654                                               "%04d-%02d-%02d %02d:%02d:%02d",
+    655                                         entry->revocation_date.year, entry->revocation_date.mon,
+    656                                         entry->revocation_date.day,  entry->revocation_date.hour,
+    657                                         entry->revocation_date.min,  entry->revocation_date.sec);
+   \      0x16E   0x6AE0             LDR      R0,[R4, #+44]
+   \      0x170   0x9004             STR      R0,[SP, #+16]
+   \      0x172   0x6AA0             LDR      R0,[R4, #+40]
+   \      0x174   0x9003             STR      R0,[SP, #+12]
+   \      0x176   0x6A60             LDR      R0,[R4, #+36]
+   \      0x178   0x9002             STR      R0,[SP, #+8]
+   \      0x17A   0x6A20             LDR      R0,[R4, #+32]
+   \      0x17C   0x9001             STR      R0,[SP, #+4]
+   \      0x17E   0x69E0             LDR      R0,[R4, #+28]
+   \      0x180   0x9000             STR      R0,[SP, #+0]
+   \      0x182   0x69A3             LDR      R3,[R4, #+24]
+   \      0x184   0x....             LDR.N    R2,??DataTable7_21
+   \      0x186   0x0029             MOVS     R1,R5
+   \      0x188   0x4648             MOV      R0,R9
+   \      0x18A   0x.... 0x....      BL       snprintf
+   \      0x18E   0x4683             MOV      R11,R0
+    658                  MBEDTLS_X509_SAFE_SNPRINTF;
+   \      0x190   0xF1BB 0x0F00      CMP      R11,#+0
+   \      0x194   0xD401             BMI.N    ??mbedtls_x509_crl_info_19
+   \      0x196   0x45AB             CMP      R11,R5
+   \      0x198   0xD301             BCC.N    ??mbedtls_x509_crl_info_20
+   \                     ??mbedtls_x509_crl_info_19: (+1)
+   \      0x19A   0x....             LDR.N    R0,??DataTable7_15
+   \      0x19C   0xE043             B.N      ??mbedtls_x509_crl_info_2
+   \                     ??mbedtls_x509_crl_info_20: (+1)
+   \      0x19E   0xEBB5 0x050B      SUBS     R5,R5,R11
+   \      0x1A2   0xEB09 0x080B      ADD      R8,R9,R11
+    659          
+    660                  entry = entry->next;
+   \      0x1A6   0x6BE4             LDR      R4,[R4, #+60]
+   \      0x1A8   0xE7B8             B.N      ??mbedtls_x509_crl_info_13
+    661              }
+    662          
+    663              ret = mbedtls_snprintf(p, n, "\n%ssigned using  : ", prefix);
+   \                     ??mbedtls_x509_crl_info_14: (+1)
+   \      0x1AA   0x0033             MOVS     R3,R6
+   \      0x1AC   0x....             LDR.N    R2,??DataTable7_22
+   \      0x1AE   0x0029             MOVS     R1,R5
+   \      0x1B0   0x4640             MOV      R0,R8
+   \      0x1B2   0x.... 0x....      BL       snprintf
+   \      0x1B6   0x4681             MOV      R9,R0
+    664              MBEDTLS_X509_SAFE_SNPRINTF;
+   \      0x1B8   0xF1B9 0x0F00      CMP      R9,#+0
+   \      0x1BC   0xD401             BMI.N    ??mbedtls_x509_crl_info_21
+   \      0x1BE   0x45A9             CMP      R9,R5
+   \      0x1C0   0xD301             BCC.N    ??mbedtls_x509_crl_info_22
+   \                     ??mbedtls_x509_crl_info_21: (+1)
+   \      0x1C2   0x....             LDR.N    R0,??DataTable7_15
+   \      0x1C4   0xE02F             B.N      ??mbedtls_x509_crl_info_2
+   \                     ??mbedtls_x509_crl_info_22: (+1)
+   \      0x1C6   0xEBB5 0x0509      SUBS     R5,R5,R9
+   \      0x1CA   0xEB08 0x0B09      ADD      R11,R8,R9
+    665          
+    666              ret = mbedtls_x509_sig_alg_gets(p, n, &crl->sig_oid, crl->sig_pk, crl->sig_md,
+    667                                              crl->sig_opts);
+   \      0x1CE   0xF8D7 0x00EC      LDR      R0,[R7, #+236]
+   \      0x1D2   0x9001             STR      R0,[SP, #+4]
+   \      0x1D4   0xF897 0x00E8      LDRB     R0,[R7, #+232]
+   \      0x1D8   0x9000             STR      R0,[SP, #+0]
+   \      0x1DA   0xF897 0x30E9      LDRB     R3,[R7, #+233]
+   \      0x1DE   0xF117 0x021C      ADDS     R2,R7,#+28
+   \      0x1E2   0x0029             MOVS     R1,R5
+   \      0x1E4   0x4658             MOV      R0,R11
+   \      0x1E6   0x.... 0x....      BL       mbedtls_x509_sig_alg_gets
+   \      0x1EA   0x4680             MOV      R8,R0
+    668              MBEDTLS_X509_SAFE_SNPRINTF;
+   \      0x1EC   0xF1B8 0x0F00      CMP      R8,#+0
+   \      0x1F0   0xD401             BMI.N    ??mbedtls_x509_crl_info_23
+   \      0x1F2   0x45A8             CMP      R8,R5
+   \      0x1F4   0xD301             BCC.N    ??mbedtls_x509_crl_info_24
+   \                     ??mbedtls_x509_crl_info_23: (+1)
+   \      0x1F6   0x....             LDR.N    R0,??DataTable7_15
+   \      0x1F8   0xE015             B.N      ??mbedtls_x509_crl_info_2
+   \                     ??mbedtls_x509_crl_info_24: (+1)
+   \      0x1FA   0xEBB5 0x0508      SUBS     R5,R5,R8
+   \      0x1FE   0xEB0B 0x0908      ADD      R9,R11,R8
+    669          
+    670              ret = mbedtls_snprintf(p, n, "\n");
+   \      0x202   0x....             ADR.N    R2,??DataTable7_2
+   \      0x204   0x0029             MOVS     R1,R5
+   \      0x206   0x4648             MOV      R0,R9
+   \      0x208   0x.... 0x....      BL       snprintf
+   \      0x20C   0x0001             MOVS     R1,R0
+    671              MBEDTLS_X509_SAFE_SNPRINTF;
+   \      0x20E   0x2900             CMP      R1,#+0
+   \      0x210   0xD401             BMI.N    ??mbedtls_x509_crl_info_25
+   \      0x212   0x42A9             CMP      R1,R5
+   \      0x214   0xD301             BCC.N    ??mbedtls_x509_crl_info_26
+   \                     ??mbedtls_x509_crl_info_25: (+1)
+   \      0x216   0x....             LDR.N    R0,??DataTable7_15
+   \      0x218   0xE005             B.N      ??mbedtls_x509_crl_info_2
+   \                     ??mbedtls_x509_crl_info_26: (+1)
+   \      0x21A   0x1A6D             SUBS     R5,R5,R1
+   \      0x21C   0xEB09 0x0201      ADD      R2,R9,R1
+    672          
+    673              return (int) (size - n);
+   \      0x220   0xEBBA 0x0A05      SUBS     R10,R10,R5
+   \      0x224   0x4650             MOV      R0,R10
+   \                     ??mbedtls_x509_crl_info_2: (+1)
+   \      0x226   0xB007             ADD      SP,SP,#+28
+   \      0x228   0xE8BD 0x8FF0      POP      {R4-R11,PC}
+    674          }
+    675          #endif /* MBEDTLS_X509_REMOVE_INFO */
+    676          
+    677          /*
+    678           * Initialize a CRL chain
+    679           */
+
+   \                                 In section .text, align 2, keep-with-next
+    680          void mbedtls_x509_crl_init(mbedtls_x509_crl *crl)
+    681          {
+   \                     mbedtls_x509_crl_init: (+1)
+   \        0x0   0xB5F8             PUSH     {R3-R7,LR}
+   \        0x2   0x0007             MOVS     R7,R0
+    682              memset(crl, 0, sizeof(mbedtls_x509_crl));
+   \        0x4   0x24F4             MOVS     R4,#+244
+   \        0x6   0x2500             MOVS     R5,#+0
+   \        0x8   0x003E             MOVS     R6,R7
+   \        0xA   0x002A             MOVS     R2,R5
+   \        0xC   0x0021             MOVS     R1,R4
+   \        0xE   0x0030             MOVS     R0,R6
+   \       0x10   0x.... 0x....      BL       __aeabi_memset
+    683          }
+   \       0x14   0xBDF1             POP      {R0,R4-R7,PC}
+    684          
+    685          /*
+    686           * Unallocate all CRL data
+    687           */
+
+   \                                 In section .text, align 2, keep-with-next
+    688          void mbedtls_x509_crl_free(mbedtls_x509_crl *crl)
+    689          {
+   \                     mbedtls_x509_crl_free: (+1)
+   \        0x0   0xE92D 0x41F0      PUSH     {R4-R8,LR}
+   \        0x4   0x4680             MOV      R8,R0
+    690              mbedtls_x509_crl *crl_cur = crl;
+   \        0x6   0x4645             MOV      R5,R8
+    691              mbedtls_x509_crl *crl_prv;
+    692              mbedtls_x509_crl_entry *entry_cur;
+    693              mbedtls_x509_crl_entry *entry_prv;
+    694          
+    695              while (crl_cur != NULL) {
+   \                     ??mbedtls_x509_crl_free_0: (+1)
+   \        0x8   0x2D00             CMP      R5,#+0
+   \        0xA   0xD022             BEQ.N    ??mbedtls_x509_crl_free_1
+    696          #if defined(MBEDTLS_X509_RSASSA_PSS_SUPPORT)
+    697                  mbedtls_free(crl_cur->sig_opts);
+    698          #endif
+    699          
+    700                  mbedtls_asn1_free_named_data_list_shallow(crl_cur->issuer.next);
+   \        0xC   0x6CE8             LDR      R0,[R5, #+76]
+   \        0xE   0x.... 0x....      BL       mbedtls_asn1_free_named_data_list_shallow
+    701          
+    702                  entry_cur = crl_cur->entry.next;
+   \       0x12   0xF8D5 0x00C0      LDR      R0,[R5, #+192]
+   \       0x16   0x0004             MOVS     R4,R0
+    703                  while (entry_cur != NULL) {
+   \                     ??mbedtls_x509_crl_free_2: (+1)
+   \       0x18   0x2C00             CMP      R4,#+0
+   \       0x1A   0xD006             BEQ.N    ??mbedtls_x509_crl_free_3
+    704                      entry_prv = entry_cur;
+   \       0x1C   0x0027             MOVS     R7,R4
+    705                      entry_cur = entry_cur->next;
+   \       0x1E   0x6BE4             LDR      R4,[R4, #+60]
+    706                      mbedtls_zeroize_and_free(entry_prv,
+    707                                               sizeof(mbedtls_x509_crl_entry));
+   \       0x20   0x2140             MOVS     R1,#+64
+   \       0x22   0x0038             MOVS     R0,R7
+   \       0x24   0x.... 0x....      BL       mbedtls_zeroize_and_free
+   \       0x28   0xE7F6             B.N      ??mbedtls_x509_crl_free_2
+    708                  }
+    709          
+    710                  if (crl_cur->raw.p != NULL) {
+   \                     ??mbedtls_x509_crl_free_3: (+1)
+   \       0x2A   0x68A8             LDR      R0,[R5, #+8]
+   \       0x2C   0x2800             CMP      R0,#+0
+   \       0x2E   0xD003             BEQ.N    ??mbedtls_x509_crl_free_4
+    711                      mbedtls_zeroize_and_free(crl_cur->raw.p, crl_cur->raw.len);
+   \       0x30   0x6869             LDR      R1,[R5, #+4]
+   \       0x32   0x68A8             LDR      R0,[R5, #+8]
+   \       0x34   0x.... 0x....      BL       mbedtls_zeroize_and_free
+    712                  }
+    713          
+    714                  crl_prv = crl_cur;
+   \                     ??mbedtls_x509_crl_free_4: (+1)
+   \       0x38   0x002E             MOVS     R6,R5
+    715                  crl_cur = crl_cur->next;
+   \       0x3A   0xF8D5 0x50F0      LDR      R5,[R5, #+240]
+    716          
+    717                  mbedtls_platform_zeroize(crl_prv, sizeof(mbedtls_x509_crl));
+   \       0x3E   0x21F4             MOVS     R1,#+244
+   \       0x40   0x0030             MOVS     R0,R6
+   \       0x42   0x.... 0x....      BL       mbedtls_platform_zeroize
+    718                  if (crl_prv != crl) {
+   \       0x46   0x4546             CMP      R6,R8
+   \       0x48   0xD0DE             BEQ.N    ??mbedtls_x509_crl_free_0
+    719                      mbedtls_free(crl_prv);
+   \       0x4A   0x0030             MOVS     R0,R6
+   \       0x4C   0x.... 0x....      BL       sl_free
+   \       0x50   0xE7DA             B.N      ??mbedtls_x509_crl_free_0
+    720                  }
+    721              }
+    722          }
+   \                     ??mbedtls_x509_crl_free_1: (+1)
+   \       0x52   0xE8BD 0x81F0      POP      {R4-R8,PC}
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable7:
+   \        0x0   0x....'....        DC32     ?_0
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable7_1:
+   \        0x0   0xFFFF'DE00        DC32     0xffffde00
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable7_2:
+   \        0x0   0x0A 0x00          DC8      "\n",0x0,0x0   
+   \              0x00 0x00
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable7_3:
+   \        0x0   0xFFFF'DB00        DC32     0xffffdb00
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable7_4:
+   \        0x0   0xFFFF'D780        DC32     0xffffd780
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable7_5:
+   \        0x0   0xFFFF'D800        DC32     0xffffd800
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable7_6:
+   \        0x0   0xFFFF'DE80        DC32     0xffffde80
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable7_7:
+   \        0x0   0xFFFF'DA80        DC32     0xffffda80
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable7_8:
+   \        0x0   0xFFFF'DA00        DC32     0xffffda00
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable7_9:
+   \        0x0   0xFFFF'DC00        DC32     0xffffdc00
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable7_10:
+   \        0x0   0xFFFF'D980        DC32     0xffffd980
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable7_11:
+   \        0x0   0xFFFF'EF80        DC32     0xffffef80
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable7_12:
+   \        0x0   0x....'....        DC32     ?_2
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable7_13:
+   \        0x0   0x....'....        DC32     ?_1
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable7_14:
+   \        0x0   0x....'....        DC32     ?_3
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable7_15:
+   \        0x0   0xFFFF'D680        DC32     0xffffd680
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable7_16:
+   \        0x0   0x....'....        DC32     ?_4
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable7_17:
+   \        0x0   0x....'....        DC32     ?_5
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable7_18:
+   \        0x0   0x....'....        DC32     ?_6
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable7_19:
+   \        0x0   0x....'....        DC32     ?_7
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable7_20:
+   \        0x0   0x....'....        DC32     ?_8
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable7_21:
+   \        0x0   0x....'....        DC32     ?_9
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable7_22:
+   \        0x0   0x....'....        DC32     ?_10
+
+   \                                 In section .rodata, align 4
+   \                     ?_0:
+   \        0x0   0x44 0x3A          DC8 0x44, 0x3A, 0x5C, 0x49, 0x6E, 0x65, 0x73, 0x68
+   \              0x5C 0x49    
+   \              0x6E 0x65    
+   \              0x73 0x68
+   \        0x8   0x5F 0x77          DC8 0x5F, 0x77, 0x69, 0x73, 0x75, 0x6E, 0x5C, 0x57
+   \              0x69 0x73    
+   \              0x75 0x6E    
+   \              0x5C 0x57
+   \       0x10   0x69 0x73          DC8 0x69, 0x73, 0x75, 0x6E, 0x5F, 0x4E, 0x6F, 0x64
+   \              0x75 0x6E    
+   \              0x5F 0x4E    
+   \              0x6F 0x64
+   \       0x18   0x65 0x5F          DC8 0x65, 0x5F, 0x41, 0x70, 0x70, 0x20, 0x31, 0x5C
+   \              0x41 0x70    
+   \              0x70 0x20    
+   \              0x31 0x5C
+   \       0x20   0x57 0x69          DC8 0x57, 0x69, 0x73, 0x75, 0x6E, 0x5F, 0x4E, 0x6F
+   \              0x73 0x75    
+   \              0x6E 0x5F    
+   \              0x4E 0x6F
+   \       0x28   0x64 0x65          DC8 0x64, 0x65, 0x5F, 0x41, 0x70, 0x70, 0x5C, 0x67
+   \              0x5F 0x41    
+   \              0x70 0x70    
+   \              0x5C 0x67
+   \       0x30   0x65 0x63          DC8 0x65, 0x63, 0x6B, 0x6F, 0x5F, 0x73, 0x64, 0x6B
+   \              0x6B 0x6F    
+   \              0x5F 0x73    
+   \              0x64 0x6B
+   \       0x38   0x5F 0x34          DC8 0x5F, 0x34, 0x2E, 0x34, 0x2E, 0x35, 0x5C, 0x75
+   \              0x2E 0x34    
+   \              0x2E 0x35    
+   \              0x5C 0x75
+   \       0x40   0x74 0x69          DC8 0x74, 0x69, 0x6C, 0x5C, 0x74, 0x68, 0x69, 0x72
+   \              0x6C 0x5C    
+   \              0x74 0x68    
+   \              0x69 0x72
+   \       0x48   0x64 0x5F          DC8 0x64, 0x5F, 0x70, 0x61, 0x72, 0x74, 0x79, 0x5C
+   \              0x70 0x61    
+   \              0x72 0x74    
+   \              0x79 0x5C
+   \       0x50   0x6D 0x62          DC8 0x6D, 0x62, 0x65, 0x64, 0x74, 0x6C, 0x73, 0x5C
+   \              0x65 0x64    
+   \              0x74 0x6C    
+   \              0x73 0x5C
+   \       0x58   0x6C 0x69          DC8 0x6C, 0x69, 0x62, 0x72, 0x61, 0x72, 0x79, 0x5C
+   \              0x62 0x72    
+   \              0x61 0x72    
+   \              0x79 0x5C
+   \       0x60   0x78 0x35          DC8 0x78, 0x35, 0x30, 0x39, 0x5F, 0x63, 0x72, 0x6C
+   \              0x30 0x39    
+   \              0x5F 0x63    
+   \              0x72 0x6C
+   \       0x68   0x2E 0x63          DC8 0x2E, 0x63, 0
+   \              0x00
+   \       0x6B                      DS8 1
+
+   \                                 In section .rodata, align 4
+   \                     ?_1:
+   \        0x0   0x2D 0x2D          DC8 "-----BEGIN X509 CRL-----"
+   \              0x2D 0x2D    
+   \              0x2D 0x42    
+   \              0x45 0x47    
+   \              0x49 0x4E    
+   \              0x20 0x58    
+   \              0x35 0x30    
+   \              0x39 0x20    
+   \              0x43 0x52    
+   \              0x4C 0x2D    
+   \              0x2D 0x2D    
+   \              0x2D 0x2D    
+   \              0x00
+   \       0x19                      DS8 3
+
+   \                                 In section .rodata, align 4
+   \                     ?_2:
+   \        0x0   0x2D 0x2D          DC8 "-----END X509 CRL-----"
+   \              0x2D 0x2D    
+   \              0x2D 0x45    
+   \              0x4E 0x44    
+   \              0x20 0x58    
+   \              0x35 0x30    
+   \              0x39 0x20    
+   \              0x43 0x52    
+   \              0x4C 0x2D    
+   \              0x2D 0x2D    
+   \              0x2D 0x2D    
+   \              0x00
+   \       0x17                      DS8 1
+
+   \                                 In section .rodata, align 4
+   \                     ?_3:
+   \        0x0   0x25 0x73          DC8 "%sCRL version   : %d"
+   \              0x43 0x52    
+   \              0x4C 0x20    
+   \              0x76 0x65    
+   \              0x72 0x73    
+   \              0x69 0x6F    
+   \              0x6E 0x20    
+   \              0x20 0x20    
+   \              0x3A 0x20    
+   \              0x25 0x64    
+   \              0x00
+   \       0x15                      DS8 3
+
+   \                                 In section .rodata, align 4
+   \                     ?_4:
+   \        0x0   0x0A 0x25          DC8 "\012%sissuer name   : "
+   \              0x73 0x69    
+   \              0x73 0x73    
+   \              0x75 0x65    
+   \              0x72 0x20    
+   \              0x6E 0x61    
+   \              0x6D 0x65    
+   \              0x20 0x20    
+   \              0x20 0x3A    
+   \              0x20 0x00
+
+   \                                 In section .rodata, align 4
+   \                     ?_5:
+   \        0x0   0x0A 0x25          DC8 "\012%sthis update   : %04d-%02d-%02d %02d:%02d:%02d"
+   \              0x73 0x74    
+   \              0x68 0x69    
+   \              0x73 0x20    
+   \              0x75 0x70    
+   \              0x64 0x61    
+   \              0x74 0x65    
+   \              0x20 0x20    
+   \              0x20 0x3A    
+   \              0x20 0x25    
+   \              0x30 0x34    
+   \              0x64 0x2D    
+   \              0x25 0x30    
+   \              0x32 0x64    
+   \              0x2D 0x25    
+   \              0x30 0x32    
+   \              0x64 0x20    
+   \              0x25 0x30    
+   \              0x32 0x64    
+   \              0x3A 0x25    
+   \              0x30 0x32    
+   \              0x64 0x3A    
+   \              0x25 0x30    
+   \              0x32 0x64    
+   \              0x00
+   \       0x31                      DS8 3
+
+   \                                 In section .rodata, align 4
+   \                     ?_6:
+   \        0x0   0x0A 0x25          DC8 "\012%snext update   : %04d-%02d-%02d %02d:%02d:%02d"
+   \              0x73 0x6E    
+   \              0x65 0x78    
+   \              0x74 0x20    
+   \              0x75 0x70    
+   \              0x64 0x61    
+   \              0x74 0x65    
+   \              0x20 0x20    
+   \              0x20 0x3A    
+   \              0x20 0x25    
+   \              0x30 0x34    
+   \              0x64 0x2D    
+   \              0x25 0x30    
+   \              0x32 0x64    
+   \              0x2D 0x25    
+   \              0x30 0x32    
+   \              0x64 0x20    
+   \              0x25 0x30    
+   \              0x32 0x64    
+   \              0x3A 0x25    
+   \              0x30 0x32    
+   \              0x64 0x3A    
+   \              0x25 0x30    
+   \              0x32 0x64    
+   \              0x00
+   \       0x31                      DS8 3
+
+   \                                 In section .rodata, align 4
+   \                     ?_7:
+   \        0x0   0x0A 0x25          DC8 "\012%sRevoked certificates:"
+   \              0x73 0x52    
+   \              0x65 0x76    
+   \              0x6F 0x6B    
+   \              0x65 0x64    
+   \              0x20 0x63    
+   \              0x65 0x72    
+   \              0x74 0x69    
+   \              0x66 0x69    
+   \              0x63 0x61    
+   \              0x74 0x65    
+   \              0x73 0x3A    
+   \              0x00
+   \       0x19                      DS8 3
+
+   \                                 In section .rodata, align 4
+   \                     ?_8:
+   \        0x0   0x0A 0x25          DC8 "\012%sserial number: "
+   \              0x73 0x73    
+   \              0x65 0x72    
+   \              0x69 0x61    
+   \              0x6C 0x20    
+   \              0x6E 0x75    
+   \              0x6D 0x62    
+   \              0x65 0x72    
+   \              0x3A 0x20    
+   \              0x00
+   \       0x13                      DS8 1
+
+   \                                 In section .rodata, align 4
+   \                     ?_9:
+   \        0x0   0x20 0x72          DC8 " revocation date: %04d-%02d-%02d %02d:%02d:%02d"
+   \              0x65 0x76    
+   \              0x6F 0x63    
+   \              0x61 0x74    
+   \              0x69 0x6F    
+   \              0x6E 0x20    
+   \              0x64 0x61    
+   \              0x74 0x65    
+   \              0x3A 0x20    
+   \              0x25 0x30    
+   \              0x34 0x64    
+   \              0x2D 0x25    
+   \              0x30 0x32    
+   \              0x64 0x2D    
+   \              0x25 0x30    
+   \              0x32 0x64    
+   \              0x20 0x25    
+   \              0x30 0x32    
+   \              0x64 0x3A    
+   \              0x25 0x30    
+   \              0x32 0x64    
+   \              0x3A 0x25    
+   \              0x30 0x32    
+   \              0x64 0x00
+
+   \                                 In section .rodata, align 4
+   \                     ?_10:
+   \        0x0   0x0A 0x25          DC8 "\012%ssigned using  : "
+   \              0x73 0x73    
+   \              0x69 0x67    
+   \              0x6E 0x65    
+   \              0x64 0x20    
+   \              0x75 0x73    
+   \              0x69 0x6E    
+   \              0x67 0x20    
+   \              0x20 0x3A    
+   \              0x20 0x00
+
+   \                                 In section .rodata, align 2
+   \        0x0   0x0A 0x00          DC8 "\012"
+    723          
+    724          #endif /* MBEDTLS_X509_CRL_PARSE_C */
+
+   Maximum stack usage in bytes:
+
+   .cstack Function
+   ------- --------
+       0   mbedtls_error_add
+      24   mbedtls_x509_crl_free
+        24   -> mbedtls_asn1_free_named_data_list_shallow
+        24   -> mbedtls_platform_zeroize
+        24   -> mbedtls_zeroize_and_free
+        24   -> sl_free
+      64   mbedtls_x509_crl_info
+        64   -> mbedtls_x509_dn_gets
+        64   -> mbedtls_x509_serial_gets
+        64   -> mbedtls_x509_sig_alg_gets
+        64   -> snprintf
+      24   mbedtls_x509_crl_init
+        24   -> __aeabi_memset
+      56   mbedtls_x509_crl_parse
+        56   -> mbedtls_pem_free
+        56   -> mbedtls_pem_init
+        56   -> mbedtls_pem_read_buffer
+        56   -> mbedtls_x509_crl_parse_der
+     104   mbedtls_x509_crl_parse_der
+       104   -> __aeabi_memcpy
+       104   -> __aeabi_memset
+       104   -> mbedtls_asn1_get_tag
+       104   -> mbedtls_error_add
+       104   -> mbedtls_x509_crl_free
+       104   -> mbedtls_x509_crl_init
+       104   -> mbedtls_x509_get_alg
+       104   -> mbedtls_x509_get_name
+       104   -> mbedtls_x509_get_sig
+       104   -> mbedtls_x509_get_sig_alg
+       104   -> mbedtls_x509_get_time
+       104   -> memcmp
+       104   -> sl_calloc
+       104   -> x509_crl_get_version
+       104   -> x509_get_crl_ext
+       104   -> x509_get_entries
+      24   x509_crl_get_version
+        24   -> mbedtls_asn1_get_int
+        24   -> mbedtls_error_add
+      32   x509_get_crl_entry_ext
+        32   -> mbedtls_asn1_get_tag
+        32   -> mbedtls_error_add
+      40   x509_get_crl_ext
+        40   -> mbedtls_asn1_get_bool
+        40   -> mbedtls_asn1_get_tag
+        40   -> mbedtls_error_add
+        40   -> mbedtls_x509_get_ext
+      40   x509_get_entries
+        40   -> mbedtls_asn1_get_tag
+        40   -> mbedtls_x509_get_serial
+        40   -> mbedtls_x509_get_time
+        40   -> sl_calloc
+        40   -> x509_get_crl_entry_ext
+
+
+   Section sizes:
+
+   Bytes  Function/Label
+   -----  --------------
+       4  ??DataTable7
+       4  ??DataTable7_1
+       4  ??DataTable7_10
+       4  ??DataTable7_11
+       4  ??DataTable7_12
+       4  ??DataTable7_13
+       4  ??DataTable7_14
+       4  ??DataTable7_15
+       4  ??DataTable7_16
+       4  ??DataTable7_17
+       4  ??DataTable7_18
+       4  ??DataTable7_19
+       4  ??DataTable7_2
+       4  ??DataTable7_20
+       4  ??DataTable7_21
+       4  ??DataTable7_22
+       4  ??DataTable7_3
+       4  ??DataTable7_4
+       4  ??DataTable7_5
+       4  ??DataTable7_6
+       4  ??DataTable7_7
+       4  ??DataTable7_8
+       4  ??DataTable7_9
+     108  ?_0
+      28  ?_1
+      20  ?_10
+       2  ?_11
+      24  ?_2
+      24  ?_3
+      20  ?_4
+      52  ?_5
+      52  ?_6
+      28  ?_7
+      20  ?_8
+      48  ?_9
+       4  mbedtls_error_add
+      86  mbedtls_x509_crl_free
+     556  mbedtls_x509_crl_info
+      22  mbedtls_x509_crl_init
+     184  mbedtls_x509_crl_parse
+     948  mbedtls_x509_crl_parse_der
+      68  x509_crl_get_version
+     210  x509_get_crl_entry_ext
+     320  x509_get_crl_ext
+     234  x509_get_entries
+
+ 
+   426 bytes in section .rodata
+ 2'724 bytes in section .text
+ 
+ 2'724 bytes of CODE  memory
+   426 bytes of CONST memory
+
+Errors: none
+Warnings: none

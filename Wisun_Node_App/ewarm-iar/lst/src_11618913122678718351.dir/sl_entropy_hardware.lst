@@ -1,0 +1,409 @@
+###############################################################################
+#
+# IAR ANSI C/C++ Compiler V9.50.2.385/W64 for ARM         29/Mar/2025  15:53:12
+# Copyright 1999-2024 IAR Systems AB.
+#
+#    Cpu mode          =  thumb
+#    Endian            =  little
+#    Source file       =
+#        D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\security\sl_component\sl_mbedtls_support\src\sl_entropy_hardware.c
+#    Command line      =
+#        -f "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\ewarm-iar\obj\src_11618913122678718351.dir\sl_entropy_hardware.o.rsp"
+#        ("D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\security\sl_component\sl_mbedtls_support\src\sl_entropy_hardware.c"
+#        -D DEBUG_EFM=1 -D EFR32FG28B322F1024IM48=1 -D
+#        configNUM_SDK_THREAD_LOCAL_STORAGE_POINTERS=2 -D
+#        SL_COMPONENT_CATALOG_PRESENT=1 -D
+#        MBEDTLS_CONFIG_FILE=<sl_mbedtls_config.h> -D
+#        MBEDTLS_PSA_CRYPTO_CONFIG_FILE=<psa_crypto_config.h> -D
+#        SL_RAIL_LIB_MULTIPROTOCOL_SUPPORT=0 -D
+#        SL_RAIL_UTIL_PA_CONFIG_HEADER=<sl_rail_util_pa_config.h> -D
+#        RTT_USE_ASM=0 -lC "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\ewarm-iar\lst\src_11618913122678718351.dir"
+#        --diag_suppress Pa050 -o "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\ewarm-iar\obj\src_11618913122678718351.dir" --no_cse
+#        --no_unroll --no_inline --no_code_motion --no_tbaa --no_clustering
+#        --no_scheduling --debug --endian=little --cpu=Cortex-M33 --cmse --cmse
+#        -e --fpu=VFPv5_sp --dlib_config "C:\Program Files\IAR Systems\Embedded
+#        Workbench 9.2\arm\inc\c\DLib_Config_Normal.h" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\security\sl_component\sl_mbedtls_support\src\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App 1\Wisun_Node_App\config\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App 1\Wisun_Node_App\config\rail\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App 1\Wisun_Node_App\config\wisun\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App 1\Wisun_Node_App\.\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\Device\SiliconLabs\EFR32FG28\Include\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\app\wisun\component\app_project_info\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\common\inc\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\service\cli\inc\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\service\cli\src\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\CMSIS\Core\Include\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\CMSIS\RTOS2\Include\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\service\device_init\inc\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\emdrv\common\inc\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\emlib\inc\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\service\iostream\inc\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\security\sl_component\sl_mbedtls_support\config\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\security\sl_component\sl_mbedtls_support\config\preset\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\security\sl_component\sl_mbedtls_support\inc\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\util\third_party\mbedtls\include\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\util\third_party\mbedtls\library\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\micrium_os\common\source\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\micrium_os\common\include\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\micrium_os\cpu\include\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\micrium_os\ports\source\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\micrium_os\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\micrium_os\kernel\source\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\micrium_os\kernel\include\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\emdrv\nvm3\inc\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\peripheral\inc\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\util\third_party\printf\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\util\third_party\printf\inc\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\security\sl_component\sl_psa_driver\inc\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\radio\rail_lib\common\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\radio\rail_lib\protocol\ble\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\radio\rail_lib\protocol\ieee802154\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\radio\rail_lib\protocol\wmbus\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\radio\rail_lib\protocol\zwave\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\radio\rail_lib\chip\efr32\efr32xg2x\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\radio\rail_lib\protocol\sidewalk\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\radio\rail_lib\plugin\pa-conversions\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\radio\rail_lib\plugin\pa-conversions\efr32xg28\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\radio\rail_lib\plugin\rail_util_pti\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\security\sl_component\se_manager\inc\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\security\sl_component\se_manager\src\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\util\third_party\segger\systemview\SEGGER\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\util\silicon_labs\silabs_core\memory_manager\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\common\toolchain\inc\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\service\system\inc\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\app\wisun\component\app_core\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\app\wisun\component\app_setting\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\app\wisun\component\cli_util\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\app\wisun\component\event_manager\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\app\wisun\component\ns_list\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\app\wisun\component\ping\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\app\wisun\component\trace_util\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\app\wisun\component\trace_util\nanostack\nanostack-libservice\mbed-client-libservice\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\app\wisun\component\udp_client\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\service\sleeptimer\inc\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\protocol\wisun\plugin\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\protocol\wisun\stack\inc\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\protocol\wisun\stack\inc\socket\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App 1\Wisun_Node_App\autogen\\" -On
+#        --use_c++_inline) --dependencies=n "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\ewarm-iar\obj\src_11618913122678718351.dir\sl_entropy_hardware.o.iar_deps"
+#    Locale            =  C
+#    List file         =
+#        D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\ewarm-iar\lst\src_11618913122678718351.dir\sl_entropy_hardware.lst
+#    Object file       =
+#        D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\ewarm-iar\obj\src_11618913122678718351.dir\sl_entropy_hardware.o
+#    Runtime model:       
+#      __CPP_Runtime   =  1
+#      __SystemLibrary =  DLib
+#      __dlib_version  =  6
+#
+###############################################################################
+
+D:\Inesh_wisun\Wisun_Node_App 1\Wisun_Node_App\gecko_sdk_4.4.5\platform\security\sl_component\sl_mbedtls_support\src\sl_entropy_hardware.c
+      1          /***************************************************************************//**
+      2           * @file
+      3           * @brief Entropy driver for Silicon Labs devices.
+      4           *******************************************************************************
+      5           * # License
+      6           * <b>Copyright 2020 Silicon Laboratories Inc. www.silabs.com</b>
+      7           *******************************************************************************
+      8           *
+      9           * SPDX-License-Identifier: Zlib
+     10           *
+     11           * The licensor of this software is Silicon Laboratories Inc.
+     12           *
+     13           * This software is provided 'as-is', without any express or implied
+     14           * warranty. In no event will the authors be held liable for any damages
+     15           * arising from the use of this software.
+     16           *
+     17           * Permission is granted to anyone to use this software for any purpose,
+     18           * including commercial applications, and to alter it and redistribute it
+     19           * freely, subject to the following restrictions:
+     20           *
+     21           * 1. The origin of this software must not be misrepresented; you must not
+     22           *    claim that you wrote the original software. If you use this software
+     23           *    in a product, an acknowledgment in the product documentation would be
+     24           *    appreciated but is not required.
+     25           * 2. Altered source versions must be plainly marked as such, and must not be
+     26           *    misrepresented as being the original software.
+     27           * 3. This notice may not be removed or altered from any source distribution.
+     28           *
+     29           ******************************************************************************/
+     30          
+     31          // -------------------------------------
+     32          // Includes
+     33          
+     34          #include <mbedtls/build_info.h>
+     35          
+     36          #if defined(MBEDTLS_ENTROPY_HARDWARE_ALT)
+     37          #include "entropy_poll.h"
+     38          #include "psa/crypto.h"
+     39          
+     40          #include "em_device.h"
+     41          
+     42          #if defined(MBEDTLS_TRNG_PRESENT) \
+     43            || defined(SEMAILBOX_PRESENT)   \
+     44            || defined(CRYPTOACC_PRESENT)
+     45          #define SLI_ENTROPY_HAVE_TRNG
+     46          #if !defined(MBEDTLS_PSA_CRYPTO_EXTERNAL_RNG)
+     47          /* If PSA is not configured with external RNG, do a forward declaration of the
+     48           * external RNG function here to allow us to call it for entropy as well. */
+     49          psa_status_t mbedtls_psa_external_get_random(
+     50            void *context,
+     51            uint8_t *output, size_t output_size, size_t *output_length);
+     52          #endif
+     53          #endif
+     54          
+     55          #if !defined(MBEDTLS_ERR_ENTROPY_SOURCE_FAILED)
+     56          /* Repeat declaration of MBEDTLS_ERR_ENTROPY_SOURCE_FAILED since the full entropy.h
+     57           * header is not always a clean include. I.e. when mbedtls_hardware_poll is used
+     58           * without having the full entropy module (with collector) present, the header will
+     59           * potentially complain about missing a SHA256/SHA512 context structure definition. */
+     60          #define MBEDTLS_ERR_ENTROPY_SOURCE_FAILED -0x003C
+     61          #endif
+     62          
+     63          /* For devices with an active TRNG errata, we need to rely on a different
+     64           * source of entropy. */
+     65          #if defined(_SILICON_LABS_GECKO_INTERNAL_SDID_89) \
+     66            || defined(_SILICON_LABS_GECKO_INTERNAL_SDID_95)
+     67            #define SLI_ENTROPY_REQUIRE_FALLBACK
+     68          #endif
+     69          
+     70          #if defined(_SILICON_LABS_GECKO_INTERNAL_SDID_89)
+     71          #include "em_system.h"    // SYSTEM_ChipRevisionGet()
+     72          #endif
+     73          
+     74          // -------------------------------------
+     75          // Local function definitions
+     76          
+     77          // Include radio entropy fallback if present & required
+     78          #if defined(MBEDTLS_ENTROPY_RAIL_PRESENT) \
+     79            && (!defined(SLI_ENTROPY_HAVE_TRNG) || defined(SLI_ENTROPY_REQUIRE_FALLBACK))
+     80          #include "rail.h"
+     81          static int rail_get_random(unsigned char *output,
+     82                                     size_t len,
+     83                                     size_t *out_len)
+     84          {
+     85            uint16_t rail_entropy_request_len;
+     86            if (len > UINT16_MAX) {
+     87              rail_entropy_request_len = UINT16_MAX;
+     88            } else {
+     89              rail_entropy_request_len = (uint16_t)len;
+     90            }
+     91          
+     92            *out_len = (size_t)RAIL_GetRadioEntropy(RAIL_EFR32_HANDLE,
+     93                                                    (uint8_t *)output,
+     94                                                    rail_entropy_request_len);
+     95            return 0;
+     96          }
+     97          #endif // radio fallback
+     98          
+     99          #if defined(MBEDTLS_ENTROPY_ADC_C) \
+    100            && (!defined(SLI_ENTROPY_HAVE_TRNG) || defined(SLI_ENTROPY_REQUIRE_FALLBACK))
+    101          #if !defined(MBEDTLS_ENTROPY_ADC_INSTANCE)
+    102          #define MBEDTLS_ENTROPY_ADC_INSTANCE 0
+    103          #endif
+    104          
+    105          #include "sl_entropy_adc.h"
+    106          static int adc_get_random(unsigned char *output,
+    107                                    size_t len,
+    108                                    size_t *out_len)
+    109          {
+    110            mbedtls_entropy_adc_context adc_ctx;
+    111            int ret = -1;
+    112          
+    113            mbedtls_entropy_adc_init(&adc_ctx);
+    114            ret = mbedtls_entropy_adc_set_instance(&adc_ctx, MBEDTLS_ENTROPY_ADC_INSTANCE);
+    115            if (ret < 0) {
+    116              goto exit;
+    117            }
+    118          
+    119            ret = mbedtls_entropy_adc_poll(&adc_ctx, output, len, out_len);
+    120          
+    121            exit:
+    122            mbedtls_entropy_adc_free(&adc_ctx);
+    123            return ret;
+    124          }
+    125          #endif // ADC fallback
+    126          
+    127          #if (defined(MBEDTLS_ENTROPY_RAIL_PRESENT) || defined(MBEDTLS_ENTROPY_ADC_C)) \
+    128            && (!defined(SLI_ENTROPY_HAVE_TRNG) || defined(SLI_ENTROPY_REQUIRE_FALLBACK))
+    129          static int rail_adc_entropy(unsigned char *output,
+    130                                      size_t len,
+    131                                      size_t *olen)
+    132          {
+    133            (void) output;
+    134            (void) len;
+    135            (void) olen;
+    136          
+    137            *olen = 0;
+    138            int ret = MBEDTLS_ERR_ENTROPY_SOURCE_FAILED;
+    139            #if defined(MBEDTLS_ENTROPY_RAIL_PRESENT)
+    140            ret = rail_get_random(output, len, olen);
+    141            if (*olen > 0 && ret == 0) {
+    142              // Return if we actually gathered something
+    143              // Otherwise, fallback to the ADC source if it is available.
+    144              return ret;
+    145            }
+    146            #endif // MBEDTLS_ENTROPY_RAIL_PRESENT
+    147            #if defined(MBEDTLS_ENTROPY_ADC_C)
+    148            ret = adc_get_random(output, len, olen);
+    149            #endif // MBEDTLS_ENTROPY_ADC_C
+    150            return ret;
+    151          }
+    152          #endif // RAIL and ADC entropy
+    153          
+    154          // -------------------------------------
+    155          // Global function definitions
+    156          
+
+   \                                 In section .text, align 2, keep-with-next
+    157          int mbedtls_hardware_poll(void *data,
+    158                                    unsigned char *output,
+    159                                    size_t len,
+    160                                    size_t *olen)
+    161          {
+   \                     mbedtls_hardware_poll: (+1)
+   \        0x0   0xB5F8             PUSH     {R3-R7,LR}
+   \        0x2   0x0007             MOVS     R7,R0
+   \        0x4   0x000C             MOVS     R4,R1
+   \        0x6   0x0015             MOVS     R5,R2
+   \        0x8   0x001E             MOVS     R6,R3
+    162            (void)data;
+    163          
+    164          #if defined(_SILICON_LABS_GECKO_INTERNAL_SDID_89)
+    165            // TRNG entropy on EFR32xG13 is under errata on revisions < A3
+    166            SYSTEM_ChipRevision_TypeDef rev;
+    167            SYSTEM_ChipRevisionGet(&rev);
+    168          
+    169            if ((rev.major == 1) && (rev.minor < 3)) {
+    170              // On affected revisions, fall back to radio (prefered) or ADC entropy
+    171              return rail_adc_entropy(output, len, olen);
+    172            }
+    173          #elif defined(SLI_ENTROPY_REQUIRE_FALLBACK)
+    174            // Other devices for which this symbol is defined have TRNG erratas requiring
+    175            // fallback to other sources for all revisions.
+    176            return rail_adc_entropy(output, len, olen);
+    177          #endif
+    178          
+    179          #if !defined(SLI_ENTROPY_REQUIRE_FALLBACK) \
+    180            || defined(_SILICON_LABS_GECKO_INTERNAL_SDID_89)
+    181            // Devices not requiring fallback (or fell through here because the active
+    182            // errata does not apply to the ICs revision) use a TRNG when available, but
+    183            // can also use the radio or ADC when no TRNG is present.
+    184            #if defined(SLI_ENTROPY_HAVE_TRNG)
+    185            psa_status_t status = mbedtls_psa_external_get_random(data, output, len, olen);
+   \        0xA   0x0033             MOVS     R3,R6
+   \        0xC   0x002A             MOVS     R2,R5
+   \        0xE   0x0021             MOVS     R1,R4
+   \       0x10   0x0038             MOVS     R0,R7
+   \       0x12   0x.... 0x....      BL       mbedtls_psa_external_get_random
+   \       0x16   0x0001             MOVS     R1,R0
+    186            if (status == PSA_SUCCESS) {
+   \       0x18   0x2900             CMP      R1,#+0
+   \       0x1A   0xD101             BNE.N    ??mbedtls_hardware_poll_0
+    187              return 0;
+   \       0x1C   0x2000             MOVS     R0,#+0
+   \       0x1E   0xE001             B.N      ??mbedtls_hardware_poll_1
+    188            } else {
+    189              return MBEDTLS_ERR_ENTROPY_SOURCE_FAILED;
+   \                     ??mbedtls_hardware_poll_0: (+1)
+   \       0x20   0xF07F 0x003B      MVNS     R0,#+59
+   \                     ??mbedtls_hardware_poll_1: (+1)
+   \       0x24   0xBDF2             POP      {R1,R4-R7,PC}
+    190            }
+    191            #else // SLI_ENTROPY_HAVE_TRNG
+    192            return rail_adc_entropy(output, len, olen);
+    193            #endif // SLI_ENTROPY_HAVE_TRNG
+    194          #endif
+    195          }
+    196          
+    197          #endif // MBEDTLS_ENTROPY_HARDWARE_ALT
+
+   Maximum stack usage in bytes:
+
+   .cstack Function
+   ------- --------
+      24   mbedtls_hardware_poll
+        24   -> mbedtls_psa_external_get_random
+
+
+   Section sizes:
+
+   Bytes  Function/Label
+   -----  --------------
+      38  mbedtls_hardware_poll
+
+ 
+ 38 bytes in section .text
+ 
+ 38 bytes of CODE memory
+
+Errors: none
+Warnings: none

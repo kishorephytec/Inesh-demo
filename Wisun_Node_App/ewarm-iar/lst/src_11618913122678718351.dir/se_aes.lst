@@ -1,0 +1,1563 @@
+###############################################################################
+#
+# IAR ANSI C/C++ Compiler V9.50.2.385/W64 for ARM         29/Mar/2025  15:53:11
+# Copyright 1999-2024 IAR Systems AB.
+#
+#    Cpu mode                     =  thumb
+#    Endian                       =  little
+#    Source file                  =
+#        D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\security\sl_component\sl_mbedtls_support\src\se_aes.c
+#    Command line                 =
+#        -f "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\ewarm-iar\obj\src_11618913122678718351.dir\se_aes.o.rsp"
+#        ("D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\security\sl_component\sl_mbedtls_support\src\se_aes.c"
+#        -D DEBUG_EFM=1 -D EFR32FG28B322F1024IM48=1 -D
+#        configNUM_SDK_THREAD_LOCAL_STORAGE_POINTERS=2 -D
+#        SL_COMPONENT_CATALOG_PRESENT=1 -D
+#        MBEDTLS_CONFIG_FILE=<sl_mbedtls_config.h> -D
+#        MBEDTLS_PSA_CRYPTO_CONFIG_FILE=<psa_crypto_config.h> -D
+#        SL_RAIL_LIB_MULTIPROTOCOL_SUPPORT=0 -D
+#        SL_RAIL_UTIL_PA_CONFIG_HEADER=<sl_rail_util_pa_config.h> -D
+#        RTT_USE_ASM=0 -lC "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\ewarm-iar\lst\src_11618913122678718351.dir"
+#        --diag_suppress Pa050 -o "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\ewarm-iar\obj\src_11618913122678718351.dir" --no_cse
+#        --no_unroll --no_inline --no_code_motion --no_tbaa --no_clustering
+#        --no_scheduling --debug --endian=little --cpu=Cortex-M33 --cmse --cmse
+#        -e --fpu=VFPv5_sp --dlib_config "C:\Program Files\IAR Systems\Embedded
+#        Workbench 9.2\arm\inc\c\DLib_Config_Normal.h" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\security\sl_component\sl_mbedtls_support\src\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App 1\Wisun_Node_App\config\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App 1\Wisun_Node_App\config\rail\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App 1\Wisun_Node_App\config\wisun\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App 1\Wisun_Node_App\.\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\Device\SiliconLabs\EFR32FG28\Include\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\app\wisun\component\app_project_info\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\common\inc\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\service\cli\inc\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\service\cli\src\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\CMSIS\Core\Include\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\CMSIS\RTOS2\Include\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\service\device_init\inc\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\emdrv\common\inc\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\emlib\inc\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\service\iostream\inc\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\security\sl_component\sl_mbedtls_support\config\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\security\sl_component\sl_mbedtls_support\config\preset\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\security\sl_component\sl_mbedtls_support\inc\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\util\third_party\mbedtls\include\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\util\third_party\mbedtls\library\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\micrium_os\common\source\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\micrium_os\common\include\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\micrium_os\cpu\include\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\micrium_os\ports\source\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\micrium_os\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\micrium_os\kernel\source\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\micrium_os\kernel\include\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\emdrv\nvm3\inc\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\peripheral\inc\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\util\third_party\printf\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\util\third_party\printf\inc\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\security\sl_component\sl_psa_driver\inc\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\radio\rail_lib\common\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\radio\rail_lib\protocol\ble\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\radio\rail_lib\protocol\ieee802154\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\radio\rail_lib\protocol\wmbus\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\radio\rail_lib\protocol\zwave\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\radio\rail_lib\chip\efr32\efr32xg2x\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\radio\rail_lib\protocol\sidewalk\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\radio\rail_lib\plugin\pa-conversions\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\radio\rail_lib\plugin\pa-conversions\efr32xg28\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\radio\rail_lib\plugin\rail_util_pti\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\security\sl_component\se_manager\inc\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\security\sl_component\se_manager\src\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\util\third_party\segger\systemview\SEGGER\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\util\silicon_labs\silabs_core\memory_manager\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\common\toolchain\inc\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\service\system\inc\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\app\wisun\component\app_core\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\app\wisun\component\app_setting\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\app\wisun\component\cli_util\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\app\wisun\component\event_manager\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\app\wisun\component\ns_list\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\app\wisun\component\ping\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\app\wisun\component\trace_util\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\app\wisun\component\trace_util\nanostack\nanostack-libservice\mbed-client-libservice\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\app\wisun\component\udp_client\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\service\sleeptimer\inc\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\protocol\wisun\plugin\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\protocol\wisun\stack\inc\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\protocol\wisun\stack\inc\socket\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App 1\Wisun_Node_App\autogen\\" -On
+#        --use_c++_inline) --dependencies=n "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\ewarm-iar\obj\src_11618913122678718351.dir\se_aes.o.iar_deps"
+#    Locale                       =  C
+#    List file                    =
+#        D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\ewarm-iar\lst\src_11618913122678718351.dir\se_aes.lst
+#    Object file                  =
+#        D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\ewarm-iar\obj\src_11618913122678718351.dir\se_aes.o
+#    Runtime model:                  
+#      __CPP_Runtime              =  1
+#      __SystemLibrary            =  DLib
+#      __dlib_file_descriptor     =  0
+#      __dlib_full_locale_support =  0
+#      __dlib_version             =  6
+#
+###############################################################################
+
+D:\Inesh_wisun\Wisun_Node_App 1\Wisun_Node_App\gecko_sdk_4.4.5\platform\security\sl_component\sl_mbedtls_support\src\se_aes.c
+      1          /***************************************************************************//**
+      2           * @file
+      3           * @brief AES abstraction based on Secure Engine
+      4           *******************************************************************************
+      5           * # License
+      6           * <b>Copyright 2020 Silicon Laboratories Inc. www.silabs.com</b>
+      7           *******************************************************************************
+      8           *
+      9           * SPDX-License-Identifier: Zlib
+     10           *
+     11           * The licensor of this software is Silicon Laboratories Inc.
+     12           *
+     13           * This software is provided 'as-is', without any express or implied
+     14           * warranty. In no event will the authors be held liable for any damages
+     15           * arising from the use of this software.
+     16           *
+     17           * Permission is granted to anyone to use this software for any purpose,
+     18           * including commercial applications, and to alter it and redistribute it
+     19           * freely, subject to the following restrictions:
+     20           *
+     21           * 1. The origin of this software must not be misrepresented; you must not
+     22           *    claim that you wrote the original software. If you use this software
+     23           *    in a product, an acknowledgment in the product documentation would be
+     24           *    appreciated but is not required.
+     25           * 2. Altered source versions must be plainly marked as such, and must not be
+     26           *    misrepresented as being the original software.
+     27           * 3. This notice may not be removed or altered from any source distribution.
+     28           *
+     29           ******************************************************************************/
+     30          
+     31          /*
+     32           * This file includes alternative plugin implementations of various
+     33           * functions in aes.c using the Secure Engine accelerator incorporated
+     34           * in Series-2 devices with Secure Engine from Silicon Laboratories.
+     35           */
+     36          
+     37          /**
+     38           *  The AES block cipher was designed by Vincent Rijmen and Joan Daemen.
+     39           *
+     40           *  http://csrc.nist.gov/encryption/aes/rijndael/Rijndael.pdf
+     41           *  http://csrc.nist.gov/publications/fips/fips197/fips-197.pdf
+     42           */
+     43          
+     44          #include <mbedtls/build_info.h>
+
+   \                                 In section .text, align 2, keep-with-next
+   \   static __vfp bool SE_isCommandCompleted(void)
+   \                     SE_isCommandCompleted: (+1)
+   \        0x0   0x....             LDR.N    R0,??DataTable3
+   \        0x2   0x6800             LDR      R0,[R0, #+0]
+   \        0x4   0x0D00             LSRS     R0,R0,#+20
+   \        0x6   0xF010 0x0001      ANDS     R0,R0,#0x1
+   \        0xA   0x4770             BX       LR
+
+   \                                 In section .text, align 2, keep-with-next
+   \   static __vfp uint32_t SE_readCommandResponse(void)
+   \                     SE_readCommandResponse: (+1)
+   \        0x0   0xB580             PUSH     {R7,LR}
+   \        0x2   0x.... 0x....      BL       SE_waitCommandCompletion
+   \        0x6   0x....             LDR.N    R0,??DataTable3_1
+   \        0x8   0x6800             LDR      R0,[R0, #+0]
+   \        0xA   0xF410 0x2070      ANDS     R0,R0,#0xF0000
+   \        0xE   0xBD02             POP      {R1,PC}
+
+   \                                 In section .text, align 2, keep-with-next
+   \   static __vfp void SE_waitCommandCompletion(void)
+   \                     SE_waitCommandCompletion: (+1)
+   \        0x0   0xB580             PUSH     {R7,LR}
+   \                     ??SE_waitCommandCompletion_0: (+1)
+   \        0x2   0x.... 0x....      BL       SE_isCommandCompleted
+   \        0x6   0x2800             CMP      R0,#+0
+   \        0x8   0xD0FB             BEQ.N    ??SE_waitCommandCompletion_0
+   \        0xA   0xBD01             POP      {R0,PC}
+     45          
+     46          #if defined(MBEDTLS_AES_C)
+     47          #if defined(MBEDTLS_AES_ALT)
+     48          
+     49          #include "em_device.h"
+     50          
+     51          #if defined(SEMAILBOX_PRESENT)
+     52          
+     53          #include "em_se.h"
+     54          #include "se_management.h"
+
+   \                                 In section .text, align 2, keep-with-next
+   \   static __vfp int se_management_acquire(void)
+   \                     se_management_acquire: (+1)
+   \        0x0   0xB580             PUSH     {R7,LR}
+   \        0x2   0x.... 0x....      BL       sli_se_lock_acquire
+   \        0x6   0x2800             CMP      R0,#+0
+   \        0x8   0xD101             BNE.N    ??se_management_acquire_0
+   \        0xA   0x2000             MOVS     R0,#+0
+   \        0xC   0xE001             B.N      ??se_management_acquire_1
+   \                     ??se_management_acquire_0: (+1)
+   \        0xE   0xF05F 0x30FF      MOVS     R0,#+4294967295
+   \                     ??se_management_acquire_1: (+1)
+   \       0x12   0xBD02             POP      {R1,PC}
+
+   \                                 In section .text, align 2, keep-with-next
+   \   static __vfp int se_management_release(void)
+   \                     se_management_release: (+1)
+   \        0x0   0xB580             PUSH     {R7,LR}
+   \        0x2   0x.... 0x....      BL       sli_se_lock_release
+   \        0x6   0x2800             CMP      R0,#+0
+   \        0x8   0xD101             BNE.N    ??se_management_release_0
+   \        0xA   0x2000             MOVS     R0,#+0
+   \        0xC   0xE001             B.N      ??se_management_release_1
+   \                     ??se_management_release_0: (+1)
+   \        0xE   0xF05F 0x30FF      MOVS     R0,#+4294967295
+   \                     ??se_management_release_1: (+1)
+   \       0x12   0xBD02             POP      {R1,PC}
+     55          #include "mbedtls/aes.h"
+     56          #include "mbedtls/platform.h"
+     57          #include "mbedtls/platform_util.h"
+     58          #include "mbedtls/error.h"
+     59          #include <string.h>
+     60          
+     61          /* Parameter validation macros based on platform_util.h */
+     62          #define AES_VALIDATE_RET(cond) \
+     63            MBEDTLS_INTERNAL_VALIDATE_RET(cond, MBEDTLS_ERR_AES_BAD_INPUT_DATA)
+     64          #define AES_VALIDATE(cond) \
+     65            MBEDTLS_INTERNAL_VALIDATE(cond)
+     66          
+     67          /*
+     68           * Initialize AES context
+     69           */
+
+   \                                 In section .text, align 2, keep-with-next
+     70          void mbedtls_aes_init(mbedtls_aes_context *ctx)
+     71          {
+   \                     mbedtls_aes_init: (+1)
+   \        0x0   0xB5F8             PUSH     {R3-R7,LR}
+   \        0x2   0x0007             MOVS     R7,R0
+     72            AES_VALIDATE(ctx != NULL);
+     73          
+     74            memset(ctx, 0, sizeof(mbedtls_aes_context) );
+   \        0x4   0x2424             MOVS     R4,#+36
+   \        0x6   0x2500             MOVS     R5,#+0
+   \        0x8   0x003E             MOVS     R6,R7
+   \        0xA   0x002A             MOVS     R2,R5
+   \        0xC   0x0021             MOVS     R1,R4
+   \        0xE   0x0030             MOVS     R0,R6
+   \       0x10   0x.... 0x....      BL       __aeabi_memset
+     75          }
+   \       0x14   0xBDF1             POP      {R0,R4-R7,PC}
+     76          
+     77          /*
+     78           * Clear AES context
+     79           */
+
+   \                                 In section .text, align 2, keep-with-next
+     80          void mbedtls_aes_free(mbedtls_aes_context *ctx)
+     81          {
+   \                     mbedtls_aes_free: (+1)
+   \        0x0   0xB5F8             PUSH     {R3-R7,LR}
+   \        0x2   0x0004             MOVS     R4,R0
+     82            if ( ctx == NULL ) {
+   \        0x4   0x2C00             CMP      R4,#+0
+   \        0x6   0xD007             BEQ.N    ??mbedtls_aes_free_0
+     83              return;
+     84            }
+     85          
+     86            memset(ctx, 0, sizeof(mbedtls_aes_context) );
+   \                     ??mbedtls_aes_free_1: (+1)
+   \        0x8   0x2724             MOVS     R7,#+36
+   \        0xA   0x2500             MOVS     R5,#+0
+   \        0xC   0x0026             MOVS     R6,R4
+   \        0xE   0x002A             MOVS     R2,R5
+   \       0x10   0x0039             MOVS     R1,R7
+   \       0x12   0x0030             MOVS     R0,R6
+   \       0x14   0x.... 0x....      BL       __aeabi_memset
+     87          }
+   \                     ??mbedtls_aes_free_0: (+1)
+   \       0x18   0xBDF1             POP      {R0,R4-R7,PC}
+     88          
+     89          #if defined(MBEDTLS_CIPHER_MODE_XTS)
+     90          void mbedtls_aes_xts_init(mbedtls_aes_xts_context *ctx)
+     91          {
+     92            AES_VALIDATE(ctx != NULL);
+     93          
+     94            mbedtls_aes_init(&ctx->crypt);
+     95            mbedtls_aes_init(&ctx->tweak);
+     96          }
+     97          
+     98          void mbedtls_aes_xts_free(mbedtls_aes_xts_context *ctx)
+     99          {
+    100            if ( ctx == NULL ) {
+    101              return;
+    102            }
+    103          
+    104            mbedtls_aes_free(&ctx->crypt);
+    105            mbedtls_aes_free(&ctx->tweak);
+    106          }
+    107          
+    108          static int mbedtls_aes_xts_decode_keys(const unsigned char *key,
+    109                                                 unsigned int keybits,
+    110                                                 const unsigned char **key1,
+    111                                                 unsigned int *key1bits,
+    112                                                 const unsigned char **key2,
+    113                                                 unsigned int *key2bits)
+    114          {
+    115            const unsigned int half_keybits = keybits / 2;
+    116            const unsigned int half_keybytes = half_keybits / 8;
+    117          
+    118            switch ( keybits ) {
+    119              case 256: break;
+    120              case 512: break;
+    121              default: return(MBEDTLS_ERR_AES_INVALID_KEY_LENGTH);
+    122            }
+    123          
+    124            *key1bits = half_keybits;
+    125            *key2bits = half_keybits;
+    126            *key1 = &key[0];
+    127            *key2 = &key[half_keybytes];
+    128          
+    129            return 0;
+    130          }
+    131          
+    132          int mbedtls_aes_xts_setkey_enc(mbedtls_aes_xts_context *ctx,
+    133                                         const unsigned char *key,
+    134                                         unsigned int keybits)
+    135          {
+    136            int ret;
+    137            const unsigned char *key1 = NULL;
+    138            const unsigned char *key2 = NULL;
+    139            unsigned int key1bits = 0;
+    140            unsigned int key2bits = 0;
+    141          
+    142            AES_VALIDATE_RET(ctx != NULL);
+    143            AES_VALIDATE_RET(key != NULL);
+    144          
+    145            ret = mbedtls_aes_xts_decode_keys(key, keybits, &key1, &key1bits,
+    146                                              &key2, &key2bits);
+    147            if ( ret != 0 ) {
+    148              return(ret);
+    149            }
+    150          
+    151            /* Set the tweak key. Always set tweak key for the encryption mode. */
+    152            ret = mbedtls_aes_setkey_enc(&ctx->tweak, key2, key2bits);
+    153            if ( ret != 0 ) {
+    154              return(ret);
+    155            }
+    156          
+    157            /* Set crypt key for encryption. */
+    158            return mbedtls_aes_setkey_enc(&ctx->crypt, key1, key1bits);
+    159          }
+    160          
+    161          int mbedtls_aes_xts_setkey_dec(mbedtls_aes_xts_context *ctx,
+    162                                         const unsigned char *key,
+    163                                         unsigned int keybits)
+    164          {
+    165            int ret;
+    166            const unsigned char *key1 = NULL;
+    167            const unsigned char *key2 = NULL;
+    168            unsigned int key1bits = 0;
+    169            unsigned int key2bits = 0;
+    170          
+    171            if (ctx == NULL || key == NULL) {
+    172              return MBEDTLS_ERR_AES_BAD_INPUT_DATA;
+    173            }
+    174          
+    175            ret = mbedtls_aes_xts_decode_keys(key, keybits, &key1, &key1bits,
+    176                                              &key2, &key2bits);
+    177            if ( ret != 0 ) {
+    178              return(ret);
+    179            }
+    180          
+    181            /* Set the tweak key. Always set tweak key for encryption. */
+    182            ret = mbedtls_aes_setkey_enc(&ctx->tweak, key2, key2bits);
+    183            if ( ret != 0 ) {
+    184              return(ret);
+    185            }
+    186          
+    187            /* Set crypt key for decryption. */
+    188            return mbedtls_aes_setkey_dec(&ctx->crypt, key1, key1bits);
+    189          }
+    190          
+    191          /* Endianess with 64 bits values */
+    192          #ifndef GET_UINT64_LE
+    193          #define GET_UINT64_LE(n, b, i)               \
+    194            {                                          \
+    195              (n) = ( (uint64_t) (b)[(i) + 7] << 56)   \
+    196                    | ( (uint64_t) (b)[(i) + 6] << 48) \
+    197                    | ( (uint64_t) (b)[(i) + 5] << 40) \
+    198                    | ( (uint64_t) (b)[(i) + 4] << 32) \
+    199                    | ( (uint64_t) (b)[(i) + 3] << 24) \
+    200                    | ( (uint64_t) (b)[(i) + 2] << 16) \
+    201                    | ( (uint64_t) (b)[(i) + 1] <<  8) \
+    202                    | ( (uint64_t) (b)[(i)]);          \
+    203            }
+    204          #endif
+    205          
+    206          #ifndef PUT_UINT64_LE
+    207          #define PUT_UINT64_LE(n, b, i)                   \
+    208            {                                              \
+    209              (b)[(i) + 7] = (unsigned char) ( (n) >> 56); \
+    210              (b)[(i) + 6] = (unsigned char) ( (n) >> 48); \
+    211              (b)[(i) + 5] = (unsigned char) ( (n) >> 40); \
+    212              (b)[(i) + 4] = (unsigned char) ( (n) >> 32); \
+    213              (b)[(i) + 3] = (unsigned char) ( (n) >> 24); \
+    214              (b)[(i) + 2] = (unsigned char) ( (n) >> 16); \
+    215              (b)[(i) + 1] = (unsigned char) ( (n) >>  8); \
+    216              (b)[(i)] = (unsigned char) ( (n)       );    \
+    217            }
+    218          #endif
+    219          
+    220          /*
+    221           * GF(2^128) multiplication function
+    222           *
+    223           * This function multiplies a field element by x in the polynomial field
+    224           * representation. It uses 64-bit word operations to gain speed but compensates
+    225           * for machine endianess and hence works correctly on both big and little
+    226           * endian machines.
+    227           */
+    228          static void mbedtls_gf128mul_x_ble(unsigned char r[16],
+    229                                             const unsigned char x[16])
+    230          {
+    231            uint64_t a, b, ra, rb;
+    232          
+    233            GET_UINT64_LE(a, x, 0);
+    234            GET_UINT64_LE(b, x, 8);
+    235          
+    236            ra = (a << 1)  ^ 0x0087 >> (8 - ( (b >> 63) << 3) );
+    237            rb = (a >> 63) | (b << 1);
+    238          
+    239            PUT_UINT64_LE(ra, r, 0);
+    240            PUT_UINT64_LE(rb, r, 8);
+    241          }
+    242          
+    243          /*
+    244           * AES-XTS buffer encryption/decryption
+    245           */
+    246          int mbedtls_aes_crypt_xts(mbedtls_aes_xts_context *ctx,
+    247                                    int mode,
+    248                                    size_t length,
+    249                                    const unsigned char data_unit[16],
+    250                                    const unsigned char *input,
+    251                                    unsigned char *output)
+    252          {
+    253            int ret;
+    254            size_t blocks = length / 16;
+    255            size_t leftover = length % 16;
+    256            unsigned char tweak[16];
+    257            unsigned char prev_tweak[16];
+    258            unsigned char tmp[16];
+    259          
+    260            AES_VALIDATE_RET(ctx != NULL);
+    261            AES_VALIDATE_RET(data_unit != NULL);
+    262            AES_VALIDATE_RET(input != NULL);
+    263            AES_VALIDATE_RET(output != NULL);
+    264          
+    265            if ((mode != MBEDTLS_AES_ENCRYPT) && (mode != MBEDTLS_AES_DECRYPT)) {
+    266              return MBEDTLS_ERR_AES_BAD_INPUT_DATA;
+    267            }
+    268          
+    269            /* Data units must be at least 16 bytes long. */
+    270            if ( length < 16 ) {
+    271              return MBEDTLS_ERR_AES_INVALID_INPUT_LENGTH;
+    272            }
+    273          
+    274            /* NIST SP 800-38E disallows data units larger than 2**20 blocks. */
+    275            if ( length > (1 << 20) * 16 ) {
+    276              return MBEDTLS_ERR_AES_INVALID_INPUT_LENGTH;
+    277            }
+    278          
+    279            /* Compute the tweak. */
+    280            ret = mbedtls_aes_crypt_ecb(&ctx->tweak, MBEDTLS_AES_ENCRYPT,
+    281                                        data_unit, tweak);
+    282            if ( ret != 0 ) {
+    283              return(ret);
+    284            }
+    285          
+    286            while ( blocks-- ) {
+    287              size_t i;
+    288          
+    289              if ( leftover && (mode == MBEDTLS_AES_DECRYPT) && blocks == 0 ) {
+    290                /* We are on the last block in a decrypt operation that has
+    291                 * leftover bytes, so we need to use the next tweak for this block,
+    292                 * and this tweak for the lefover bytes. Save the current tweak for
+    293                 * the leftovers and then update the current tweak for use on this,
+    294                 * the last full block. */
+    295                memcpy(prev_tweak, tweak, sizeof(tweak) );
+    296                mbedtls_gf128mul_x_ble(tweak, tweak);
+    297              }
+    298          
+    299              for ( i = 0; i < 16; i++ ) {
+    300                tmp[i] = input[i] ^ tweak[i];
+    301              }
+    302          
+    303              ret = mbedtls_aes_crypt_ecb(&ctx->crypt, mode, tmp, tmp);
+    304              if ( ret != 0 ) {
+    305                return(ret);
+    306              }
+    307          
+    308              for ( i = 0; i < 16; i++ ) {
+    309                output[i] = tmp[i] ^ tweak[i];
+    310              }
+    311          
+    312              /* Update the tweak for the next block. */
+    313              mbedtls_gf128mul_x_ble(tweak, tweak);
+    314          
+    315              output += 16;
+    316              input += 16;
+    317            }
+    318          
+    319            if ( leftover ) {
+    320              /* If we are on the leftover bytes in a decrypt operation, we need to
+    321              * use the previous tweak for these bytes (as saved in prev_tweak). */
+    322              unsigned char *t = mode == MBEDTLS_AES_DECRYPT ? prev_tweak : tweak;
+    323          
+    324              /* We are now on the final part of the data unit, which doesn't divide
+    325               * evenly by 16. It's time for ciphertext stealing. */
+    326              size_t i;
+    327              unsigned char *prev_output = output - 16;
+    328          
+    329              /* Copy ciphertext bytes from the previous block to our output for each
+    330               * byte of cyphertext we won't steal. At the same time, copy the
+    331               * remainder of the input for this final round (since the loop bounds
+    332               * are the same). */
+    333              for ( i = 0; i < leftover; i++ ) {
+    334                output[i] = prev_output[i];
+    335                tmp[i] = input[i] ^ t[i];
+    336              }
+    337          
+    338              /* Copy ciphertext bytes from the previous block for input in this
+    339               * round. */
+    340              for (; i < 16; i++ ) {
+    341                tmp[i] = prev_output[i] ^ t[i];
+    342              }
+    343          
+    344              ret = mbedtls_aes_crypt_ecb(&ctx->crypt, mode, tmp, tmp);
+    345              if ( ret != 0 ) {
+    346                return ret;
+    347              }
+    348          
+    349              /* Write the result back to the previous block, overriding the previous
+    350               * output we copied. */
+    351              for ( i = 0; i < 16; i++ ) {
+    352                prev_output[i] = tmp[i] ^ t[i];
+    353              }
+    354            }
+    355          
+    356            return(0);
+    357          }
+    358          
+    359          #endif /* MBEDTLS_CIPHER_MODE_XTS */
+    360          
+    361          /*
+    362           * AES key schedule (encryption)
+    363           */
+
+   \                                 In section .text, align 2, keep-with-next
+    364          int mbedtls_aes_setkey_enc(mbedtls_aes_context *ctx,
+    365                                     const unsigned char *key,
+    366                                     unsigned int keybits)
+    367          {
+   \                     mbedtls_aes_setkey_enc: (+1)
+   \        0x0   0xE92D 0x43F8      PUSH     {R3-R9,LR}
+   \        0x4   0x0004             MOVS     R4,R0
+   \        0x6   0x000D             MOVS     R5,R1
+   \        0x8   0x0016             MOVS     R6,R2
+    368            AES_VALIDATE_RET(ctx != NULL);
+    369            AES_VALIDATE_RET(key != NULL);
+    370          
+    371            memset(ctx, 0, sizeof(mbedtls_aes_context) );
+   \        0xA   0xF05F 0x0924      MOVS     R9,#+36
+   \        0xE   0x2700             MOVS     R7,#+0
+   \       0x10   0x46A0             MOV      R8,R4
+   \       0x12   0x003A             MOVS     R2,R7
+   \       0x14   0x4649             MOV      R1,R9
+   \       0x16   0x4640             MOV      R0,R8
+   \       0x18   0x.... 0x....      BL       __aeabi_memset
+    372          
+    373            if ( (128UL != keybits) && (192UL != keybits) && (256UL != keybits) ) {
+   \       0x1C   0x2E80             CMP      R6,#+128
+   \       0x1E   0xD007             BEQ.N    ??mbedtls_aes_setkey_enc_0
+   \       0x20   0x2EC0             CMP      R6,#+192
+   \       0x22   0xD005             BEQ.N    ??mbedtls_aes_setkey_enc_0
+   \       0x24   0xF5B6 0x7F80      CMP      R6,#+256
+   \       0x28   0xD002             BEQ.N    ??mbedtls_aes_setkey_enc_0
+    374              // Unsupported key size
+    375              return MBEDTLS_ERR_AES_INVALID_KEY_LENGTH;
+   \       0x2A   0xF07F 0x001F      MVNS     R0,#+31
+   \       0x2E   0xE00C             B.N      ??mbedtls_aes_setkey_enc_1
+    376            }
+    377          
+    378            ctx->keybits = keybits;
+   \                     ??mbedtls_aes_setkey_enc_0: (+1)
+   \       0x30   0x6026             STR      R6,[R4, #+0]
+    379            memcpy(ctx->key, key, keybits / 8);
+   \       0x32   0x46B1             MOV      R9,R6
+   \       0x34   0xEA5F 0x09D9      LSRS     R9,R9,#+3
+   \       0x38   0x002F             MOVS     R7,R5
+   \       0x3A   0xF114 0x0804      ADDS     R8,R4,#+4
+   \       0x3E   0x464A             MOV      R2,R9
+   \       0x40   0x0039             MOVS     R1,R7
+   \       0x42   0x4640             MOV      R0,R8
+   \       0x44   0x.... 0x....      BL       __aeabi_memcpy
+    380          
+    381            return 0;
+   \       0x48   0x2000             MOVS     R0,#+0
+   \                     ??mbedtls_aes_setkey_enc_1: (+1)
+   \       0x4A   0xE8BD 0x83F2      POP      {R1,R4-R9,PC}
+    382          }
+    383          
+    384          /*
+    385           * AES key schedule (decryption)
+    386           */
+
+   \                                 In section .text, align 2, keep-with-next
+    387          int mbedtls_aes_setkey_dec(mbedtls_aes_context *ctx,
+    388                                     const unsigned char *key,
+    389                                     unsigned int keybits)
+    390          {
+   \                     mbedtls_aes_setkey_dec: (+1)
+   \        0x0   0xB570             PUSH     {R4-R6,LR}
+   \        0x2   0x0006             MOVS     R6,R0
+   \        0x4   0x000C             MOVS     R4,R1
+   \        0x6   0x0015             MOVS     R5,R2
+    391            AES_VALIDATE_RET(ctx != NULL);
+    392            AES_VALIDATE_RET(key != NULL);
+    393          
+    394            return mbedtls_aes_setkey_enc(ctx, key, keybits);
+   \        0x8   0x002A             MOVS     R2,R5
+   \        0xA   0x0021             MOVS     R1,R4
+   \        0xC   0x0030             MOVS     R0,R6
+   \        0xE   0x.... 0x....      BL       mbedtls_aes_setkey_enc
+   \       0x12   0xBD70             POP      {R4-R6,PC}
+    395          }
+    396          
+    397          /*
+    398           * AES-ECB block encryption/decryption
+    399           */
+
+   \                                 In section .text, align 2, keep-with-next
+    400          int mbedtls_aes_crypt_ecb(mbedtls_aes_context *ctx,
+    401                                    int mode,
+    402                                    const unsigned char input[16],
+    403                                    unsigned char output[16])
+    404          {
+   \                     mbedtls_aes_crypt_ecb: (+1)
+   \        0x0   0xE92D 0x43F0      PUSH     {R4-R9,LR}
+   \        0x4   0xB091             SUB      SP,SP,#+68
+   \        0x6   0x4681             MOV      R9,R0
+   \        0x8   0x000C             MOVS     R4,R1
+   \        0xA   0x0017             MOVS     R7,R2
+   \        0xC   0x4698             MOV      R8,R3
+    405            SE_Response_t command_status;
+    406          
+    407            AES_VALIDATE_RET(ctx != NULL);
+    408            AES_VALIDATE_RET(input != NULL);
+    409            AES_VALIDATE_RET(output != NULL);
+    410          
+    411            if ((mode != MBEDTLS_AES_ENCRYPT) && (mode != MBEDTLS_AES_DECRYPT)) {
+   \        0xE   0x2C01             CMP      R4,#+1
+   \       0x10   0xD004             BEQ.N    ??mbedtls_aes_crypt_ecb_0
+   \       0x12   0x2C00             CMP      R4,#+0
+   \       0x14   0xD002             BEQ.N    ??mbedtls_aes_crypt_ecb_0
+    412              return MBEDTLS_ERR_AES_BAD_INPUT_DATA;
+   \       0x16   0xF07F 0x0020      MVNS     R0,#+32
+   \       0x1A   0xE064             B.N      ??mbedtls_aes_crypt_ecb_1
+    413            }
+    414          
+    415            if ( ctx->keybits != 128UL && ctx->keybits != 192UL && ctx->keybits != 256UL) {
+   \                     ??mbedtls_aes_crypt_ecb_0: (+1)
+   \       0x1C   0xF8D9 0x0000      LDR      R0,[R9, #+0]
+   \       0x20   0x2880             CMP      R0,#+128
+   \       0x22   0xD00B             BEQ.N    ??mbedtls_aes_crypt_ecb_2
+   \       0x24   0xF8D9 0x0000      LDR      R0,[R9, #+0]
+   \       0x28   0x28C0             CMP      R0,#+192
+   \       0x2A   0xD007             BEQ.N    ??mbedtls_aes_crypt_ecb_2
+   \       0x2C   0xF8D9 0x0000      LDR      R0,[R9, #+0]
+   \       0x30   0xF5B0 0x7F80      CMP      R0,#+256
+   \       0x34   0xD002             BEQ.N    ??mbedtls_aes_crypt_ecb_2
+    416              return MBEDTLS_ERR_PLATFORM_FEATURE_UNSUPPORTED;
+   \       0x36   0xF07F 0x0071      MVNS     R0,#+113
+   \       0x3A   0xE054             B.N      ??mbedtls_aes_crypt_ecb_1
+    417            }
+    418          
+    419            SE_Command_t command = SE_COMMAND_DEFAULT((mode == MBEDTLS_AES_ENCRYPT ? SE_COMMAND_AES_ENCRYPT : SE_COMMAND_AES_DECRYPT) | SE_COMMAND_OPTION_MODE_ECB | SE_COMMAND_OPTION_CONTEXT_WHOLE);
+   \                     ??mbedtls_aes_crypt_ecb_2: (+1)
+   \       0x3C   0xA809             ADD      R0,SP,#+36
+   \       0x3E   0x2120             MOVS     R1,#+32
+   \       0x40   0x.... 0x....      BL       __aeabi_memclr4
+   \       0x44   0x2C01             CMP      R4,#+1
+   \       0x46   0xD102             BNE.N    ??mbedtls_aes_crypt_ecb_3
+   \       0x48   0xF05F 0x6080      MOVS     R0,#+67108864
+   \       0x4C   0xE000             B.N      ??mbedtls_aes_crypt_ecb_4
+   \                     ??mbedtls_aes_crypt_ecb_3: (+1)
+   \       0x4E   0x....             LDR.N    R0,??DataTable3_2
+   \                     ??mbedtls_aes_crypt_ecb_4: (+1)
+   \       0x50   0xF450 0x7080      ORRS     R0,R0,#0x100
+   \       0x54   0x9009             STR      R0,[SP, #+36]
+    420            SE_DataTransfer_t key = SE_DATATRANSFER_DEFAULT(ctx->key, (ctx->keybits / 8));
+   \       0x56   0x466D             MOV      R5,SP
+   \       0x58   0x....             LDR.N    R0,??DataTable3_3
+   \       0x5A   0xE890 0x000E      LDM      R0,{R1-R3}
+   \       0x5E   0xE885 0x000E      STM      R5,{R1-R3}
+   \       0x62   0xF119 0x0004      ADDS     R0,R9,#+4
+   \       0x66   0x9000             STR      R0,[SP, #+0]
+   \       0x68   0xF8D9 0x0000      LDR      R0,[R9, #+0]
+   \       0x6C   0x08C0             LSRS     R0,R0,#+3
+   \       0x6E   0xF050 0x5000      ORRS     R0,R0,#0x20000000
+   \       0x72   0x9002             STR      R0,[SP, #+8]
+    421            SE_DataTransfer_t in = SE_DATATRANSFER_DEFAULT((void*)input, 16);
+   \       0x74   0xAD06             ADD      R5,SP,#+24
+   \       0x76   0x....             LDR.N    R0,??DataTable3_4
+   \       0x78   0xE890 0x000E      LDM      R0,{R1-R3}
+   \       0x7C   0xE885 0x000E      STM      R5,{R1-R3}
+   \       0x80   0x9706             STR      R7,[SP, #+24]
+    422            SE_DataTransfer_t out = SE_DATATRANSFER_DEFAULT(output, 16);
+   \       0x82   0xAD03             ADD      R5,SP,#+12
+   \       0x84   0x....             LDR.N    R0,??DataTable3_5
+   \       0x86   0xE890 0x000E      LDM      R0,{R1-R3}
+   \       0x8A   0xE885 0x000E      STM      R5,{R1-R3}
+   \       0x8E   0xF8CD 0x800C      STR      R8,[SP, #+12]
+    423          
+    424            SE_addDataInput(&command, &key);
+   \       0x92   0x4669             MOV      R1,SP
+   \       0x94   0xA809             ADD      R0,SP,#+36
+   \       0x96   0x.... 0x....      BL       SE_addDataInput
+    425            SE_addDataInput(&command, &in);
+   \       0x9A   0xA906             ADD      R1,SP,#+24
+   \       0x9C   0xA809             ADD      R0,SP,#+36
+   \       0x9E   0x.... 0x....      BL       SE_addDataInput
+    426            SE_addDataOutput(&command, &out);
+   \       0xA2   0xA903             ADD      R1,SP,#+12
+   \       0xA4   0xA809             ADD      R0,SP,#+36
+   \       0xA6   0x.... 0x....      BL       SE_addDataOutput
+    427            SE_addParameter(&command, (ctx->keybits / 8));
+   \       0xAA   0xF8D9 0x1000      LDR      R1,[R9, #+0]
+   \       0xAE   0x08C9             LSRS     R1,R1,#+3
+   \       0xB0   0xA809             ADD      R0,SP,#+36
+   \       0xB2   0x.... 0x....      BL       SE_addParameter
+    428            SE_addParameter(&command, 16);
+   \       0xB6   0x2110             MOVS     R1,#+16
+   \       0xB8   0xA809             ADD      R0,SP,#+36
+   \       0xBA   0x.... 0x....      BL       SE_addParameter
+    429          
+    430            int status = se_management_acquire();
+   \       0xBE   0x.... 0x....      BL       se_management_acquire
+   \       0xC2   0x0005             MOVS     R5,R0
+    431            if (status != 0) {
+   \       0xC4   0x2D00             CMP      R5,#+0
+   \       0xC6   0xD001             BEQ.N    ??mbedtls_aes_crypt_ecb_5
+    432              return status;
+   \       0xC8   0x0028             MOVS     R0,R5
+   \       0xCA   0xE00C             B.N      ??mbedtls_aes_crypt_ecb_1
+    433            }
+    434          
+    435            SE_executeCommand(&command);
+   \                     ??mbedtls_aes_crypt_ecb_5: (+1)
+   \       0xCC   0xA809             ADD      R0,SP,#+36
+   \       0xCE   0x.... 0x....      BL       SE_executeCommand
+    436            command_status = SE_readCommandResponse();
+   \       0xD2   0x.... 0x....      BL       SE_readCommandResponse
+   \       0xD6   0x0006             MOVS     R6,R0
+    437          
+    438            se_management_release();
+   \       0xD8   0x.... 0x....      BL       se_management_release
+    439          
+    440            if ( command_status == SE_RESPONSE_OK ) {
+   \       0xDC   0x2E00             CMP      R6,#+0
+   \       0xDE   0xD101             BNE.N    ??mbedtls_aes_crypt_ecb_6
+    441              return 0;
+   \       0xE0   0x2000             MOVS     R0,#+0
+   \       0xE2   0xE000             B.N      ??mbedtls_aes_crypt_ecb_1
+    442            } else {
+    443              return (int)command_status;
+   \                     ??mbedtls_aes_crypt_ecb_6: (+1)
+   \       0xE4   0x0030             MOVS     R0,R6
+   \                     ??mbedtls_aes_crypt_ecb_1: (+1)
+   \       0xE6   0xB011             ADD      SP,SP,#+68
+   \       0xE8   0xE8BD 0x83F0      POP      {R4-R9,PC}
+    444            }
+    445          }
+
+   \                                 In section .rodata, align 4
+   \        0x0   0x0000'0000        DC32 0, 0x0, 0x0, 0, 0, 0, 0, 0
+   \              0x0000'0000  
+   \              0x0000'0000  
+   \              0x0000'0000  
+   \              0x0000'0000  
+   \              0x0000'0000  
+   \              0x0000'0000  
+   \              0x0000'0000
+
+   \                                 In section .rodata, align 4
+   \                     ?_1:
+   \        0x0   0x0000'0000        DC32 0x0, 0x1, 0
+   \              0x0000'0001  
+   \              0x0000'0000
+
+   \                                 In section .rodata, align 4
+   \                     ?_2:
+   \        0x0   0x0000'0000        DC32 0x0, 0x1, 536'870'928
+   \              0x0000'0001  
+   \              0x2000'0010
+
+   \                                 In section .rodata, align 4
+   \                     ?_3:
+   \        0x0   0x0000'0000        DC32 0x0, 0x1, 536'870'928
+   \              0x0000'0001  
+   \              0x2000'0010
+    446          
+    447          #if defined(MBEDTLS_CIPHER_MODE_CBC)
+    448          
+    449          /*
+    450           * AES-CBC buffer encryption/decryption
+    451           */
+
+   \                                 In section .text, align 2, keep-with-next
+    452          int mbedtls_aes_crypt_cbc(mbedtls_aes_context *ctx,
+    453                                    int mode,
+    454                                    size_t length,
+    455                                    unsigned char iv[16],
+    456                                    const unsigned char *input,
+    457                                    unsigned char *output)
+    458          {
+   \                     mbedtls_aes_crypt_cbc: (+1)
+   \        0x0   0xE92D 0x43F0      PUSH     {R4-R9,LR}
+   \        0x4   0xB097             SUB      SP,SP,#+92
+   \        0x6   0x4681             MOV      R9,R0
+   \        0x8   0x000C             MOVS     R4,R1
+   \        0xA   0x0017             MOVS     R7,R2
+   \        0xC   0x4698             MOV      R8,R3
+    459            SE_Response_t command_status;
+    460          
+    461            AES_VALIDATE_RET(ctx != NULL);
+    462            AES_VALIDATE_RET(iv != NULL);
+    463            AES_VALIDATE_RET(input != NULL);
+    464            AES_VALIDATE_RET(output != NULL);
+    465          
+    466            if ((mode != MBEDTLS_AES_ENCRYPT) && (mode != MBEDTLS_AES_DECRYPT)) {
+   \        0xE   0x2C01             CMP      R4,#+1
+   \       0x10   0xD004             BEQ.N    ??mbedtls_aes_crypt_cbc_0
+   \       0x12   0x2C00             CMP      R4,#+0
+   \       0x14   0xD002             BEQ.N    ??mbedtls_aes_crypt_cbc_0
+    467              return MBEDTLS_ERR_AES_BAD_INPUT_DATA;
+   \       0x16   0xF07F 0x0020      MVNS     R0,#+32
+   \       0x1A   0xE08A             B.N      ??mbedtls_aes_crypt_cbc_1
+    468            }
+    469          
+    470            // Input length must be a multiple of 16 bytes which is the AES block
+    471            // length.
+    472            if ( length & 0xf ) {
+   \                     ??mbedtls_aes_crypt_cbc_0: (+1)
+   \       0x1C   0xF017 0x0F0F      TST      R7,#0xF
+   \       0x20   0xD002             BEQ.N    ??mbedtls_aes_crypt_cbc_2
+    473              return MBEDTLS_ERR_AES_INVALID_INPUT_LENGTH;
+   \       0x22   0xF07F 0x0021      MVNS     R0,#+33
+   \       0x26   0xE084             B.N      ??mbedtls_aes_crypt_cbc_1
+    474            }
+    475          
+    476            if ( ctx->keybits != 128UL && ctx->keybits != 192UL && ctx->keybits != 256UL) {
+   \                     ??mbedtls_aes_crypt_cbc_2: (+1)
+   \       0x28   0xF8D9 0x0000      LDR      R0,[R9, #+0]
+   \       0x2C   0x2880             CMP      R0,#+128
+   \       0x2E   0xD00B             BEQ.N    ??mbedtls_aes_crypt_cbc_3
+   \       0x30   0xF8D9 0x0000      LDR      R0,[R9, #+0]
+   \       0x34   0x28C0             CMP      R0,#+192
+   \       0x36   0xD007             BEQ.N    ??mbedtls_aes_crypt_cbc_3
+   \       0x38   0xF8D9 0x0000      LDR      R0,[R9, #+0]
+   \       0x3C   0xF5B0 0x7F80      CMP      R0,#+256
+   \       0x40   0xD002             BEQ.N    ??mbedtls_aes_crypt_cbc_3
+    477              return MBEDTLS_ERR_AES_INVALID_KEY_LENGTH;
+   \       0x42   0xF07F 0x001F      MVNS     R0,#+31
+   \       0x46   0xE074             B.N      ??mbedtls_aes_crypt_cbc_1
+    478            }
+    479          
+    480            SE_Command_t command = SE_COMMAND_DEFAULT((mode == MBEDTLS_AES_ENCRYPT ? SE_COMMAND_AES_ENCRYPT : SE_COMMAND_AES_DECRYPT) | SE_COMMAND_OPTION_MODE_CBC | SE_COMMAND_OPTION_CONTEXT_ADD);
+   \                     ??mbedtls_aes_crypt_cbc_3: (+1)
+   \       0x48   0xA80F             ADD      R0,SP,#+60
+   \       0x4A   0x2120             MOVS     R1,#+32
+   \       0x4C   0x.... 0x....      BL       __aeabi_memclr4
+   \       0x50   0x2C01             CMP      R4,#+1
+   \       0x52   0xD102             BNE.N    ??mbedtls_aes_crypt_cbc_4
+   \       0x54   0xF05F 0x6180      MOVS     R1,#+67108864
+   \       0x58   0xE000             B.N      ??mbedtls_aes_crypt_cbc_5
+   \                     ??mbedtls_aes_crypt_cbc_4: (+1)
+   \       0x5A   0x....             LDR.N    R1,??DataTable3_2
+   \                     ??mbedtls_aes_crypt_cbc_5: (+1)
+   \       0x5C   0xF240 0x2003      MOVW     R0,#+515
+   \       0x60   0x4301             ORRS     R1,R0,R1
+   \       0x62   0x910F             STR      R1,[SP, #+60]
+    481            SE_DataTransfer_t key = SE_DATATRANSFER_DEFAULT(ctx->key, (ctx->keybits / 8));
+   \       0x64   0xAD06             ADD      R5,SP,#+24
+   \       0x66   0x....             LDR.N    R0,??DataTable3_6
+   \       0x68   0xE890 0x000E      LDM      R0,{R1-R3}
+   \       0x6C   0xE885 0x000E      STM      R5,{R1-R3}
+   \       0x70   0xF119 0x0004      ADDS     R0,R9,#+4
+   \       0x74   0x9006             STR      R0,[SP, #+24]
+   \       0x76   0xF8D9 0x0000      LDR      R0,[R9, #+0]
+   \       0x7A   0x08C0             LSRS     R0,R0,#+3
+   \       0x7C   0xF050 0x5000      ORRS     R0,R0,#0x20000000
+   \       0x80   0x9008             STR      R0,[SP, #+32]
+    482            SE_DataTransfer_t iv_in = SE_DATATRANSFER_DEFAULT(iv, 16);
+   \       0x82   0xAD0C             ADD      R5,SP,#+48
+   \       0x84   0x....             LDR.N    R0,??DataTable3_7
+   \       0x86   0xE890 0x000E      LDM      R0,{R1-R3}
+   \       0x8A   0xE885 0x000E      STM      R5,{R1-R3}
+   \       0x8E   0xF8CD 0x8030      STR      R8,[SP, #+48]
+    483            SE_DataTransfer_t iv_out = SE_DATATRANSFER_DEFAULT(iv, 16);
+   \       0x92   0xAB09             ADD      R3,SP,#+36
+   \       0x94   0x....             LDR.N    R0,??DataTable3_8
+   \       0x96   0xE890 0x0026      LDM      R0,{R1,R2,R5}
+   \       0x9A   0xE883 0x0026      STM      R3,{R1,R2,R5}
+   \       0x9E   0xF8CD 0x8024      STR      R8,[SP, #+36]
+    484            SE_DataTransfer_t in = SE_DATATRANSFER_DEFAULT((void*)input, length);
+   \       0xA2   0xAB03             ADD      R3,SP,#+12
+   \       0xA4   0x....             LDR.N    R0,??DataTable3_9
+   \       0xA6   0xE890 0x0026      LDM      R0,{R1,R2,R5}
+   \       0xAA   0xE883 0x0026      STM      R3,{R1,R2,R5}
+   \       0xAE   0x981E             LDR      R0,[SP, #+120]
+   \       0xB0   0x9003             STR      R0,[SP, #+12]
+   \       0xB2   0xF057 0x5000      ORRS     R0,R7,#0x20000000
+   \       0xB6   0x9005             STR      R0,[SP, #+20]
+    485            SE_DataTransfer_t out = SE_DATATRANSFER_DEFAULT(output, length);
+   \       0xB8   0x466D             MOV      R5,SP
+   \       0xBA   0x....             LDR.N    R0,??DataTable3_10
+   \       0xBC   0xE890 0x000E      LDM      R0,{R1-R3}
+   \       0xC0   0xE885 0x000E      STM      R5,{R1-R3}
+   \       0xC4   0x981F             LDR      R0,[SP, #+124]
+   \       0xC6   0x9000             STR      R0,[SP, #+0]
+   \       0xC8   0xF057 0x5000      ORRS     R0,R7,#0x20000000
+   \       0xCC   0x9002             STR      R0,[SP, #+8]
+    486          
+    487            SE_addDataInput(&command, &key);
+   \       0xCE   0xA906             ADD      R1,SP,#+24
+   \       0xD0   0xA80F             ADD      R0,SP,#+60
+   \       0xD2   0x.... 0x....      BL       SE_addDataInput
+    488            SE_addDataInput(&command, &iv_in);
+   \       0xD6   0xA90C             ADD      R1,SP,#+48
+   \       0xD8   0xA80F             ADD      R0,SP,#+60
+   \       0xDA   0x.... 0x....      BL       SE_addDataInput
+    489            SE_addDataInput(&command, &in);
+   \       0xDE   0xA903             ADD      R1,SP,#+12
+   \       0xE0   0xA80F             ADD      R0,SP,#+60
+   \       0xE2   0x.... 0x....      BL       SE_addDataInput
+    490            SE_addDataOutput(&command, &out);
+   \       0xE6   0x4669             MOV      R1,SP
+   \       0xE8   0xA80F             ADD      R0,SP,#+60
+   \       0xEA   0x.... 0x....      BL       SE_addDataOutput
+    491            SE_addDataOutput(&command, &iv_out);
+   \       0xEE   0xA909             ADD      R1,SP,#+36
+   \       0xF0   0xA80F             ADD      R0,SP,#+60
+   \       0xF2   0x.... 0x....      BL       SE_addDataOutput
+    492            SE_addParameter(&command, (ctx->keybits / 8));
+   \       0xF6   0xF8D9 0x1000      LDR      R1,[R9, #+0]
+   \       0xFA   0x08C9             LSRS     R1,R1,#+3
+   \       0xFC   0xA80F             ADD      R0,SP,#+60
+   \       0xFE   0x.... 0x....      BL       SE_addParameter
+    493            SE_addParameter(&command, length);
+   \      0x102   0x0039             MOVS     R1,R7
+   \      0x104   0xA80F             ADD      R0,SP,#+60
+   \      0x106   0x.... 0x....      BL       SE_addParameter
+    494          
+    495            int status = se_management_acquire();
+   \      0x10A   0x.... 0x....      BL       se_management_acquire
+   \      0x10E   0x0005             MOVS     R5,R0
+    496            if (status != 0) {
+   \      0x110   0x2D00             CMP      R5,#+0
+   \      0x112   0xD001             BEQ.N    ??mbedtls_aes_crypt_cbc_6
+    497              return status;
+   \      0x114   0x0028             MOVS     R0,R5
+   \      0x116   0xE00C             B.N      ??mbedtls_aes_crypt_cbc_1
+    498            }
+    499          
+    500            SE_executeCommand(&command);
+   \                     ??mbedtls_aes_crypt_cbc_6: (+1)
+   \      0x118   0xA80F             ADD      R0,SP,#+60
+   \      0x11A   0x.... 0x....      BL       SE_executeCommand
+    501            command_status = SE_readCommandResponse();
+   \      0x11E   0x.... 0x....      BL       SE_readCommandResponse
+   \      0x122   0x0006             MOVS     R6,R0
+    502          
+    503            se_management_release();
+   \      0x124   0x.... 0x....      BL       se_management_release
+    504          
+    505            if ( command_status == SE_RESPONSE_OK ) {
+   \      0x128   0x2E00             CMP      R6,#+0
+   \      0x12A   0xD101             BNE.N    ??mbedtls_aes_crypt_cbc_7
+    506              return 0;
+   \      0x12C   0x2000             MOVS     R0,#+0
+   \      0x12E   0xE000             B.N      ??mbedtls_aes_crypt_cbc_1
+    507            } else {
+    508              return (int)command_status;
+   \                     ??mbedtls_aes_crypt_cbc_7: (+1)
+   \      0x130   0x0030             MOVS     R0,R6
+   \                     ??mbedtls_aes_crypt_cbc_1: (+1)
+   \      0x132   0xB017             ADD      SP,SP,#+92
+   \      0x134   0xE8BD 0x83F0      POP      {R4-R9,PC}
+    509            }
+    510          }
+
+   \                                 In section .rodata, align 4
+   \        0x0   0x0000'0000        DC32 0, 0x0, 0x0, 0, 0, 0, 0, 0
+   \              0x0000'0000  
+   \              0x0000'0000  
+   \              0x0000'0000  
+   \              0x0000'0000  
+   \              0x0000'0000  
+   \              0x0000'0000  
+   \              0x0000'0000
+
+   \                                 In section .rodata, align 4
+   \                     ?_5:
+   \        0x0   0x0000'0000        DC32 0x0, 0x1, 0
+   \              0x0000'0001  
+   \              0x0000'0000
+
+   \                                 In section .rodata, align 4
+   \                     ?_6:
+   \        0x0   0x0000'0000        DC32 0x0, 0x1, 536'870'928
+   \              0x0000'0001  
+   \              0x2000'0010
+
+   \                                 In section .rodata, align 4
+   \                     ?_7:
+   \        0x0   0x0000'0000        DC32 0x0, 0x1, 536'870'928
+   \              0x0000'0001  
+   \              0x2000'0010
+
+   \                                 In section .rodata, align 4
+   \                     ?_8:
+   \        0x0   0x0000'0000        DC32 0x0, 0x1, 0
+   \              0x0000'0001  
+   \              0x0000'0000
+
+   \                                 In section .rodata, align 4
+   \                     ?_9:
+   \        0x0   0x0000'0000        DC32 0x0, 0x1, 0
+   \              0x0000'0001  
+   \              0x0000'0000
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable3:
+   \        0x0   0x4C00'0044        DC32     0x4c000044
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable3_1:
+   \        0x0   0x4C00'0054        DC32     0x4c000054
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable3_2:
+   \        0x0   0x0401'0000        DC32     0x4010000
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable3_3:
+   \        0x0   0x....'....        DC32     ?_1
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable3_4:
+   \        0x0   0x....'....        DC32     ?_2
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable3_5:
+   \        0x0   0x....'....        DC32     ?_3
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable3_6:
+   \        0x0   0x....'....        DC32     ?_5
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable3_7:
+   \        0x0   0x....'....        DC32     ?_6
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable3_8:
+   \        0x0   0x....'....        DC32     ?_7
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable3_9:
+   \        0x0   0x....'....        DC32     ?_8
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable3_10:
+   \        0x0   0x....'....        DC32     ?_9
+    511          #endif /* MBEDTLS_CIPHER_MODE_CBC */
+    512          
+    513          #if defined(MBEDTLS_CIPHER_MODE_CFB)
+    514          /*
+    515           * AES-CFB128 buffer encryption/decryption
+    516           */
+    517          int mbedtls_aes_crypt_cfb128(mbedtls_aes_context *ctx,
+    518                                       int mode,
+    519                                       size_t length,
+    520                                       size_t *iv_off,
+    521                                       unsigned char iv[16],
+    522                                       const unsigned char *input,
+    523                                       unsigned char *output)
+    524          {
+    525            size_t n = iv_off ? *iv_off : 0;
+    526            size_t processed = 0;
+    527            SE_Response_t command_status = SE_RESPONSE_OK;
+    528          
+    529            AES_VALIDATE_RET(ctx != NULL);
+    530            AES_VALIDATE_RET(iv_off != NULL);
+    531            AES_VALIDATE_RET(iv != NULL);
+    532            AES_VALIDATE_RET(input != NULL);
+    533            AES_VALIDATE_RET(output != NULL);
+    534          
+    535            if ((mode != MBEDTLS_AES_ENCRYPT) && (mode != MBEDTLS_AES_DECRYPT)) {
+    536              return MBEDTLS_ERR_AES_BAD_INPUT_DATA;
+    537            }
+    538          
+    539            if ( n > 15 ) {
+    540              return MBEDTLS_ERR_AES_BAD_INPUT_DATA;
+    541            }
+    542          
+    543            if ( ctx->keybits != 128UL && ctx->keybits != 192UL && ctx->keybits != 256UL) {
+    544              return MBEDTLS_ERR_AES_INVALID_KEY_LENGTH;
+    545            }
+    546          
+    547            while ( processed < length ) {
+    548              if ( n > 0 ) {
+    549                /* start by filling up the IV */
+    550                if ( mode == MBEDTLS_AES_ENCRYPT ) {
+    551                  iv[n] = output[processed] = (unsigned char)(iv[n] ^ input[processed]);
+    552                } else {
+    553                  int c = input[processed];
+    554                  output[processed] = (unsigned char)(c ^ iv[n]);
+    555                  iv[n] = (unsigned char) c;
+    556                }
+    557                n = (n + 1) & 0x0F;
+    558                processed++;
+    559              } else {
+    560                /* process one ore more blocks of data */
+    561                size_t iterations = (length - processed) / 16;
+    562          
+    563                if ( iterations > 0 ) {
+    564                  SE_Command_t command = SE_COMMAND_DEFAULT((mode == MBEDTLS_AES_ENCRYPT ? SE_COMMAND_AES_ENCRYPT : SE_COMMAND_AES_DECRYPT) | SE_COMMAND_OPTION_MODE_CFB | SE_COMMAND_OPTION_CONTEXT_ADD);
+    565                  SE_DataTransfer_t key = SE_DATATRANSFER_DEFAULT(ctx->key, (ctx->keybits / 8));
+    566                  SE_DataTransfer_t iv_in = SE_DATATRANSFER_DEFAULT(iv, 16);
+    567                  SE_DataTransfer_t iv_out = SE_DATATRANSFER_DEFAULT(iv, 16);
+    568                  SE_DataTransfer_t in = SE_DATATRANSFER_DEFAULT((void*)&input[processed], iterations * 16);
+    569                  SE_DataTransfer_t out = SE_DATATRANSFER_DEFAULT(&output[processed], iterations * 16);
+    570          
+    571                  SE_addDataInput(&command, &key);
+    572                  SE_addDataInput(&command, &iv_in);
+    573                  SE_addDataInput(&command, &in);
+    574                  SE_addDataOutput(&command, &out);
+    575                  SE_addDataOutput(&command, &iv_out);
+    576                  SE_addParameter(&command, (ctx->keybits / 8));
+    577                  SE_addParameter(&command, iterations * 16);
+    578          
+    579                  int status = se_management_acquire();
+    580                  if (status != 0) {
+    581                    return status;
+    582                  }
+    583          
+    584                  SE_executeCommand(&command);
+    585                  command_status = SE_readCommandResponse();
+    586          
+    587                  se_management_release();
+    588                  processed += iterations * 16;
+    589                }
+    590          
+    591                if ( command_status != SE_RESPONSE_OK ) {
+    592                  goto exit;
+    593                }
+    594          
+    595                while ( length - processed > 0 ) {
+    596                  if ( n == 0 ) {
+    597                    // Need to update the IV but don't have a full block of input to pass to the SE
+    598                    int status = mbedtls_aes_crypt_ecb(ctx, MBEDTLS_AES_ENCRYPT, iv, iv);
+    599                    if (status != 0) {
+    600                      return status;
+    601                    }
+    602                  }
+    603                  /* Save remainder to iv */
+    604                  if ( mode == MBEDTLS_AES_ENCRYPT ) {
+    605                    iv[n] = output[processed] = (unsigned char)(iv[n] ^ input[processed]);
+    606                  } else {
+    607                    int c = input[processed];
+    608                    output[processed] = (unsigned char)(c ^ iv[n]);
+    609                    iv[n] = (unsigned char) c;
+    610                  }
+    611                  n = (n + 1) & 0x0F;
+    612                  processed++;
+    613                }
+    614              }
+    615            }
+    616          
+    617            if ( iv_off ) {
+    618              *iv_off = n;
+    619            }
+    620          
+    621            exit:
+    622            if ( command_status == SE_RESPONSE_OK ) {
+    623              return 0;
+    624            } else {
+    625              return (int)command_status;
+    626            }
+    627          }
+    628          
+    629          /*
+    630           * AES-CFB8 buffer encryption/decryption
+    631           */
+    632          int mbedtls_aes_crypt_cfb8(mbedtls_aes_context *ctx,
+    633                                     int mode,
+    634                                     size_t length,
+    635                                     unsigned char iv[16],
+    636                                     const unsigned char *input,
+    637                                     unsigned char *output)
+    638          {
+    639            unsigned char c;
+    640            unsigned char ov[17];
+    641            int ret = 0;
+    642          
+    643            AES_VALIDATE_RET(ctx != NULL);
+    644            AES_VALIDATE_RET(iv != NULL);
+    645            AES_VALIDATE_RET(input != NULL);
+    646            AES_VALIDATE_RET(output != NULL);
+    647          
+    648            if ((mode != MBEDTLS_AES_ENCRYPT) && (mode != MBEDTLS_AES_DECRYPT)) {
+    649              return MBEDTLS_ERR_AES_BAD_INPUT_DATA;
+    650            }
+    651          
+    652            if ( ctx->keybits != 128UL && ctx->keybits != 192UL && ctx->keybits != 256UL) {
+    653              return MBEDTLS_ERR_AES_INVALID_KEY_LENGTH;
+    654            }
+    655          
+    656            while ( length-- ) {
+    657              memcpy(ov, iv, 16);
+    658              if ( (ret = mbedtls_aes_crypt_ecb(ctx, MBEDTLS_AES_ENCRYPT, iv, iv) ) != 0 ) {
+    659                return ret;
+    660              }
+    661          
+    662              if ( mode == MBEDTLS_AES_DECRYPT ) {
+    663                ov[16] = *input;
+    664              }
+    665          
+    666              c = *output++ = (unsigned char)(iv[0] ^ *input++);
+    667          
+    668              if ( mode == MBEDTLS_AES_ENCRYPT ) {
+    669                ov[16] = c;
+    670              }
+    671          
+    672              memcpy(iv, ov + 1, 16);
+    673            }
+    674          
+    675            return ret;
+    676          }
+    677          #endif /*MBEDTLS_CIPHER_MODE_CFB */
+    678          
+    679          #if defined(MBEDTLS_CIPHER_MODE_CTR)
+    680          /*
+    681           * AES-CTR buffer encryption/decryption
+    682           */
+    683          int mbedtls_aes_crypt_ctr(mbedtls_aes_context *ctx,
+    684                                    size_t length,
+    685                                    size_t *nc_off,
+    686                                    unsigned char nonce_counter[16],
+    687                                    unsigned char stream_block[16],
+    688                                    const unsigned char *input,
+    689                                    unsigned char *output)
+    690          {
+    691            size_t n = nc_off ? *nc_off : 0;
+    692            size_t processed = 0;
+    693            SE_Response_t command_status = SE_RESPONSE_OK;
+    694          
+    695            AES_VALIDATE_RET(ctx != NULL);
+    696            AES_VALIDATE_RET(nc_off != NULL);
+    697            AES_VALIDATE_RET(nonce_counter != NULL);
+    698            AES_VALIDATE_RET(stream_block != NULL);
+    699            AES_VALIDATE_RET(input != NULL);
+    700            AES_VALIDATE_RET(output != NULL);
+    701          
+    702            if ( ctx->keybits != 128UL && ctx->keybits != 192UL && ctx->keybits != 256UL) {
+    703              return MBEDTLS_ERR_AES_INVALID_KEY_LENGTH;
+    704            }
+    705          
+    706            while ( processed < length ) {
+    707              if ( n > 0 ) {
+    708                /* start by filling up the IV */
+    709                output[processed] = (unsigned char)(input[processed] ^ stream_block[n]);
+    710                n = (n + 1) & 0x0F;
+    711                processed++;
+    712              } else {
+    713                /* process one or more blocks of data */
+    714                size_t iterations = (length - processed) / 16;
+    715          
+    716                if ( iterations > 0 ) {
+    717                  SE_Command_t command = SE_COMMAND_DEFAULT(SE_COMMAND_AES_ENCRYPT | SE_COMMAND_OPTION_MODE_CTR | SE_COMMAND_OPTION_CONTEXT_ADD);
+    718                  SE_DataTransfer_t key = SE_DATATRANSFER_DEFAULT(ctx->key, (ctx->keybits / 8));
+    719                  SE_DataTransfer_t iv_in = SE_DATATRANSFER_DEFAULT(nonce_counter, 16);
+    720                  SE_DataTransfer_t iv_out = SE_DATATRANSFER_DEFAULT(nonce_counter, 16);
+    721                  SE_DataTransfer_t in = SE_DATATRANSFER_DEFAULT((void*)&input[processed], iterations * 16);
+    722                  SE_DataTransfer_t out = SE_DATATRANSFER_DEFAULT(&output[processed], iterations * 16);
+    723          
+    724                  SE_addDataInput(&command, &key);
+    725                  SE_addDataInput(&command, &iv_in);
+    726                  SE_addDataInput(&command, &in);
+    727                  SE_addDataOutput(&command, &out);
+    728                  SE_addDataOutput(&command, &iv_out);
+    729                  SE_addParameter(&command, (ctx->keybits / 8));
+    730                  SE_addParameter(&command, iterations * 16);
+    731          
+    732                  int status = se_management_acquire();
+    733                  if (status != 0) {
+    734                    return status;
+    735                  }
+    736          
+    737                  SE_executeCommand(&command);
+    738                  command_status = SE_readCommandResponse();
+    739          
+    740                  se_management_release();
+    741                  processed += iterations * 16;
+    742                }
+    743          
+    744                if ( command_status != SE_RESPONSE_OK ) {
+    745                  goto exit;
+    746                }
+    747          
+    748                while ( length - processed > 0 ) {
+    749                  if ( n == 0 ) {
+    750                    // Get a new stream block
+    751                    int status = mbedtls_aes_crypt_ecb(ctx,
+    752                                                       MBEDTLS_AES_ENCRYPT,
+    753                                                       nonce_counter,
+    754                                                       stream_block);
+    755                    if (status != 0) {
+    756                      return status;
+    757                    }
+    758                    // increment nonce counter...
+    759                    for (size_t i = 0; i < 16; i++) {
+    760                      nonce_counter[15 - i] = nonce_counter[15 - i] + 1;
+    761                      if ( nonce_counter[15 - i] != 0 ) {
+    762                        break;
+    763                      }
+    764                    }
+    765                  }
+    766                  /* Save remainder to iv */
+    767                  output[processed] = (unsigned char)(input[processed] ^ stream_block[n]);
+    768                  n = (n + 1) & 0x0F;
+    769                  processed++;
+    770                }
+    771              }
+    772            }
+    773          
+    774            if ( nc_off ) {
+    775              *nc_off = n;
+    776            }
+    777          
+    778            exit:
+    779            if ( command_status == SE_RESPONSE_OK ) {
+    780              return 0;
+    781            } else {
+    782              return (int)command_status;
+    783            }
+    784          }
+    785          #endif /* MBEDTLS_CIPHER_MODE_CTR */
+    786          
+    787          #if defined(MBEDTLS_CIPHER_MODE_OFB)
+    788          /*
+    789           * AES-OFB (Output Feedback Mode) buffer encryption/decryption
+    790           */
+    791          int mbedtls_aes_crypt_ofb(mbedtls_aes_context *ctx,
+    792                                    size_t length,
+    793                                    size_t *iv_off,
+    794                                    unsigned char iv[16],
+    795                                    const unsigned char *input,
+    796                                    unsigned char *output)
+    797          {
+    798            int ret = 0;
+    799            size_t n;
+    800          
+    801            AES_VALIDATE_RET(ctx != NULL);
+    802            AES_VALIDATE_RET(iv_off != NULL);
+    803            AES_VALIDATE_RET(iv != NULL);
+    804            AES_VALIDATE_RET(input != NULL);
+    805            AES_VALIDATE_RET(output != NULL);
+    806          
+    807            n = *iv_off;
+    808          
+    809            if ( n > 15 ) {
+    810              return(MBEDTLS_ERR_AES_BAD_INPUT_DATA);
+    811            }
+    812          
+    813            while ( length-- ) {
+    814              if ( n == 0 ) {
+    815                ret = mbedtls_aes_crypt_ecb(ctx, MBEDTLS_AES_ENCRYPT, iv, iv);
+    816                if ( ret != 0 ) {
+    817                  goto exit;
+    818                }
+    819              }
+    820              *output++ =  *input++ ^ iv[n];
+    821          
+    822              n = (n + 1) & 0x0F;
+    823            }
+    824          
+    825            *iv_off = n;
+    826          
+    827            exit:
+    828            return(ret);
+    829          }
+    830          #endif /* MBEDTLS_CIPHER_MODE_OFB */
+    831          
+    832          #endif /* SEMAILBOX_PRESENT */
+    833          
+    834          #endif /* MBEDTLS_AES_ALT */
+    835          
+    836          #endif /* MBEDTLS_AES_C */
+
+   Maximum stack usage in bytes:
+
+   .cstack Function
+   ------- --------
+       0   SE_isCommandCompleted
+       8   SE_readCommandResponse
+         8   -> SE_waitCommandCompletion
+       8   SE_waitCommandCompletion
+         8   -> SE_isCommandCompleted
+     120   mbedtls_aes_crypt_cbc
+       120   -> SE_addDataInput
+       120   -> SE_addDataOutput
+       120   -> SE_addParameter
+       120   -> SE_executeCommand
+       120   -> SE_readCommandResponse
+       120   -> __aeabi_memclr4
+       120   -> se_management_acquire
+       120   -> se_management_release
+      96   mbedtls_aes_crypt_ecb
+        96   -> SE_addDataInput
+        96   -> SE_addDataOutput
+        96   -> SE_addParameter
+        96   -> SE_executeCommand
+        96   -> SE_readCommandResponse
+        96   -> __aeabi_memclr4
+        96   -> se_management_acquire
+        96   -> se_management_release
+      24   mbedtls_aes_free
+        24   -> __aeabi_memset
+      24   mbedtls_aes_init
+        24   -> __aeabi_memset
+      16   mbedtls_aes_setkey_dec
+        16   -> mbedtls_aes_setkey_enc
+      32   mbedtls_aes_setkey_enc
+        32   -> __aeabi_memcpy
+        32   -> __aeabi_memset
+       8   se_management_acquire
+         8   -> sli_se_lock_acquire
+       8   se_management_release
+         8   -> sli_se_lock_release
+
+
+   Section sizes:
+
+   Bytes  Function/Label
+   -----  --------------
+       4  ??DataTable3
+       4  ??DataTable3_1
+       4  ??DataTable3_10
+       4  ??DataTable3_2
+       4  ??DataTable3_3
+       4  ??DataTable3_4
+       4  ??DataTable3_5
+       4  ??DataTable3_6
+       4  ??DataTable3_7
+       4  ??DataTable3_8
+       4  ??DataTable3_9
+      32  ?_0
+      12  ?_1
+      12  ?_2
+      12  ?_3
+      32  ?_4
+      12  ?_5
+      12  ?_6
+      12  ?_7
+      12  ?_8
+      12  ?_9
+      12  SE_isCommandCompleted
+      16  SE_readCommandResponse
+      12  SE_waitCommandCompletion
+     312  mbedtls_aes_crypt_cbc
+     236  mbedtls_aes_crypt_ecb
+      26  mbedtls_aes_free
+      22  mbedtls_aes_init
+      20  mbedtls_aes_setkey_dec
+      78  mbedtls_aes_setkey_enc
+      20  se_management_acquire
+      20  se_management_release
+
+ 
+ 160 bytes in section .rodata
+ 818 bytes in section .text
+ 
+ 818 bytes of CODE  memory
+ 160 bytes of CONST memory
+
+Errors: none
+Warnings: none

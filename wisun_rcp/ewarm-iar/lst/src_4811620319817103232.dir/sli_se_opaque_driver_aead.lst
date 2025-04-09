@@ -1,0 +1,680 @@
+###############################################################################
+#
+# IAR ANSI C/C++ Compiler V9.50.2.385/W64 for ARM         27/Nov/2024  12:17:04
+# Copyright 1999-2024 IAR Systems AB.
+#
+#    Cpu mode          =  thumb
+#    Endian            =  little
+#    Source file       =
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\security\sl_component\sl_psa_driver\src\sli_se_opaque_driver_aead.c
+#    Command line      =
+#        -f
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\ewarm-iar\obj\src_4811620319817103232.dir\sli_se_opaque_driver_aead.o.rsp
+#        (C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\security\sl_component\sl_psa_driver\src\sli_se_opaque_driver_aead.c
+#        -D EFR32FG28B322F1024IM48=1 -D
+#        configNUM_SDK_THREAD_LOCAL_STORAGE_POINTERS=2 -D
+#        SL_COMPONENT_CATALOG_PRESENT=1 -D
+#        MBEDTLS_CONFIG_FILE=<sl_mbedtls_config.h> -D
+#        MBEDTLS_PSA_CRYPTO_CONFIG_FILE=<psa_crypto_config.h> -D
+#        SL_RAIL_LIB_MULTIPROTOCOL_SUPPORT=0 -D
+#        SL_RAIL_UTIL_PA_CONFIG_HEADER=<sl_rail_util_pa_config.h> -D
+#        RTT_USE_ASM=0 -D MBED_CONF_MBED_TRACE_ENABLE=1 -D
+#        MBED_CONF_NANOSTACK_CONFIGURATION=ws_router -D
+#        MBED_TRACE_MAX_LEVEL=TRACE_ACTIVE_LEVEL_ALL -D DEBUG_EFM_USER=1 -D
+#        HAVE_LFN=1 -D HAVE_LFN_PARENT=1 -lC
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\ewarm-iar\lst\src_4811620319817103232.dir
+#        --diag_suppress Pa050 -o
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\ewarm-iar\obj\src_4811620319817103232.dir
+#        --debug --endian=little --cpu=Cortex-M33 --cmse --cmse -e
+#        --fpu=VFPv5_sp --dlib_config "C:\Program Files\IAR Systems\Embedded
+#        Workbench 9.2\arm\inc\c\DLib_Config_Normal.h" -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\security\sl_component\sl_psa_driver\src\
+#        -I C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\autogen\ -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\config\ -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\config\rail\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\Device\SiliconLabs\EFR32FG28\Include\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\common\inc\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\CMSIS\Core\Include\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\CMSIS\RTOS2\Include\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\service\device_init\inc\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\emdrv\dmadrv\inc\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\emdrv\common\inc\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\emlib\inc\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\util\third_party\freertos\cmsis\Include\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\util\third_party\freertos\kernel\include\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\util\third_party\freertos\kernel\portable\IAR\ARM_CM33_NTZ\non_secure\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\service\iostream\inc\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\security\sl_component\sl_mbedtls_support\config\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\security\sl_component\sl_mbedtls_support\config\preset\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\security\sl_component\sl_mbedtls_support\inc\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\util\third_party\mbedtls\include\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\util\third_party\mbedtls\library\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\emdrv\nvm3\inc\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\peripheral\inc\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\security\sl_component\sl_psa_driver\inc\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\radio\rail_lib\common\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\radio\rail_lib\protocol\ble\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\radio\rail_lib\protocol\ieee802154\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\radio\rail_lib\protocol\wmbus\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\radio\rail_lib\protocol\zwave\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\radio\rail_lib\chip\efr32\efr32xg2x\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\radio\rail_lib\protocol\sidewalk\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\radio\rail_lib\plugin\pa-conversions\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\radio\rail_lib\plugin\pa-conversions\efr32xg28\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\radio\rail_lib\plugin\rail_util_pti\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\security\sl_component\se_manager\inc\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\security\sl_component\se_manager\src\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\util\third_party\segger\systemview\SEGGER\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\util\silicon_labs\silabs_core\memory_manager\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\common\toolchain\inc\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\service\system\inc\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\app\wisun\component\ns_list\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\app\wisun\component\trace_util\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\app\wisun\component\trace_util\nanostack\nanostack-libservice\mbed-client-libservice\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\service\sleeptimer\inc\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\protocol\wisun\stack\inc\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\protocol\wisun\app\wisun_rcp\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\protocol\wisun\stack\inc\socket\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\protocol\wisun\stack\src\
+#        -Ohz --use_c++_inline) --dependencies=n
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\ewarm-iar\obj\src_4811620319817103232.dir\sli_se_opaque_driver_aead.o.iar_deps
+#    Locale            =  C
+#    List file         =
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\ewarm-iar\lst\src_4811620319817103232.dir\sli_se_opaque_driver_aead.lst
+#    Object file       =
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\ewarm-iar\obj\src_4811620319817103232.dir\sli_se_opaque_driver_aead.o
+#    Runtime model:       
+#      __CPP_Runtime   =  1
+#      __SystemLibrary =  DLib
+#      __dlib_version  =  6
+#
+###############################################################################
+
+C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\security\sl_component\sl_psa_driver\src\sli_se_opaque_driver_aead.c
+      1          /***************************************************************************//**
+      2           * @file
+      3           * @brief Silicon Labs PSA Crypto Opaque Driver AEAD functions.
+      4           *******************************************************************************
+      5           * # License
+      6           * <b>Copyright 2020 Silicon Laboratories Inc. www.silabs.com</b>
+      7           *******************************************************************************
+      8           *
+      9           * SPDX-License-Identifier: Zlib
+     10           *
+     11           * The licensor of this software is Silicon Laboratories Inc.
+     12           *
+     13           * This software is provided 'as-is', without any express or implied
+     14           * warranty. In no event will the authors be held liable for any damages
+     15           * arising from the use of this software.
+     16           *
+     17           * Permission is granted to anyone to use this software for any purpose,
+     18           * including commercial applications, and to alter it and redistribute it
+     19           * freely, subject to the following restrictions:
+     20           *
+     21           * 1. The origin of this software must not be misrepresented; you must not
+     22           *    claim that you wrote the original software. If you use this software
+     23           *    in a product, an acknowledgment in the product documentation would be
+     24           *    appreciated but is not required.
+     25           * 2. Altered source versions must be plainly marked as such, and must not be
+     26           *    misrepresented as being the original software.
+     27           * 3. This notice may not be removed or altered from any source distribution.
+     28           *
+     29           ******************************************************************************/
+     30          
+     31          #include "sli_psa_driver_features.h"
+     32          
+     33          #if defined(SLI_MBEDTLS_DEVICE_HSE) && defined(SLI_PSA_DRIVER_FEATURE_OPAQUE_KEYS)
+     34          
+     35          #include "psa/crypto.h"
+     36          
+     37          #include "sli_se_opaque_types.h"
+     38          #include "sli_se_opaque_functions.h"
+     39          
+     40          #include <string.h>
+     41          
+     42          // -----------------------------------------------------------------------------
+     43          // Single-shot driver entry points
+     44          
+
+   \                                 In section .text, align 2, keep-with-next
+     45          psa_status_t sli_se_opaque_aead_encrypt(const psa_key_attributes_t *attributes,
+     46                                                  const uint8_t *key_buffer,
+     47                                                  size_t key_buffer_size,
+     48                                                  psa_algorithm_t alg,
+     49                                                  const uint8_t *nonce,
+     50                                                  size_t nonce_length,
+     51                                                  const uint8_t *additional_data,
+     52                                                  size_t additional_data_length,
+     53                                                  const uint8_t *plaintext,
+     54                                                  size_t plaintext_length,
+     55                                                  uint8_t *ciphertext,
+     56                                                  size_t ciphertext_size,
+     57                                                  size_t *ciphertext_length)
+     58          {
+   \                     sli_se_opaque_aead_encrypt: (+1)
+   \        0x0   0xB530             PUSH     {R4,R5,LR}
+   \        0x2   0xB089             SUB      SP,SP,#+36
+     59            return sli_se_driver_aead_encrypt(attributes,
+     60                                              key_buffer,
+     61                                              key_buffer_size,
+     62                                              alg,
+     63                                              nonce,
+     64                                              nonce_length,
+     65                                              additional_data,
+     66                                              additional_data_length,
+     67                                              plaintext,
+     68                                              plaintext_length,
+     69                                              ciphertext,
+     70                                              ciphertext_size,
+     71                                              ciphertext_length);
+   \        0x4   0x.... 0x....      BL       ?Subroutine2
+   \                     ??CrossCallReturnLabel_0: (+1)
+   \        0x8   0x.... 0x....      BL       sli_se_driver_aead_encrypt
+   \        0xC   0xB009             ADD      SP,SP,#+36
+   \        0xE   0xBD30             POP      {R4,R5,PC}
+     72          }
+
+   \                                 In section .text, align 2, keep-with-next
+   \                     ?Subroutine2: (+1)
+   \        0x0   0x9C14             LDR      R4,[SP, #+80]
+   \        0x2   0x9D13             LDR      R5,[SP, #+76]
+   \        0x4   0x9408             STR      R4,[SP, #+32]
+   \        0x6   0x9C12             LDR      R4,[SP, #+72]
+   \        0x8   0x9507             STR      R5,[SP, #+28]
+   \        0xA   0x9D11             LDR      R5,[SP, #+68]
+   \        0xC   0x9406             STR      R4,[SP, #+24]
+   \        0xE   0x9C10             LDR      R4,[SP, #+64]
+   \       0x10   0x9505             STR      R5,[SP, #+20]
+   \       0x12   0x9D0F             LDR      R5,[SP, #+60]
+   \       0x14   0x9404             STR      R4,[SP, #+16]
+   \       0x16   0x9C0E             LDR      R4,[SP, #+56]
+   \       0x18   0x9503             STR      R5,[SP, #+12]
+   \       0x1A   0x9D0D             LDR      R5,[SP, #+52]
+   \       0x1C   0x9402             STR      R4,[SP, #+8]
+   \       0x1E   0x9C0C             LDR      R4,[SP, #+48]
+   \       0x20   0x9501             STR      R5,[SP, #+4]
+   \       0x22   0x9400             STR      R4,[SP, #+0]
+   \       0x24   0x4770             BX       LR
+     73          
+
+   \                                 In section .text, align 2, keep-with-next
+     74          psa_status_t sli_se_opaque_aead_decrypt(const psa_key_attributes_t *attributes,
+     75                                                  const uint8_t *key_buffer,
+     76                                                  size_t key_buffer_size,
+     77                                                  psa_algorithm_t alg,
+     78                                                  const uint8_t *nonce,
+     79                                                  size_t nonce_length,
+     80                                                  const uint8_t *additional_data,
+     81                                                  size_t additional_data_length,
+     82                                                  const uint8_t *ciphertext,
+     83                                                  size_t ciphertext_length,
+     84                                                  uint8_t *plaintext,
+     85                                                  size_t plaintext_size,
+     86                                                  size_t *plaintext_length)
+     87          {
+   \                     sli_se_opaque_aead_decrypt: (+1)
+   \        0x0   0xB530             PUSH     {R4,R5,LR}
+   \        0x2   0xB089             SUB      SP,SP,#+36
+     88            return sli_se_driver_aead_decrypt(attributes,
+     89                                              key_buffer,
+     90                                              key_buffer_size,
+     91                                              alg,
+     92                                              nonce,
+     93                                              nonce_length,
+     94                                              additional_data,
+     95                                              additional_data_length,
+     96                                              ciphertext,
+     97                                              ciphertext_length,
+     98                                              plaintext,
+     99                                              plaintext_size,
+    100                                              plaintext_length);
+   \        0x4   0x.... 0x....      BL       ?Subroutine2
+   \                     ??CrossCallReturnLabel_1: (+1)
+   \        0x8   0x.... 0x....      BL       sli_se_driver_aead_decrypt
+   \        0xC   0xB009             ADD      SP,SP,#+36
+   \        0xE   0xBD30             POP      {R4,R5,PC}
+    101          }
+    102          
+    103          // -----------------------------------------------------------------------------
+    104          // Multi-part driver entry points
+    105          
+
+   \                                 In section .text, align 2, keep-with-next
+    106          psa_status_t sli_se_opaque_aead_encrypt_setup(
+    107            sli_se_opaque_aead_operation_t *operation,
+    108            const psa_key_attributes_t *attributes,
+    109            const uint8_t *key_buffer,
+    110            size_t key_buffer_size,
+    111            psa_algorithm_t alg)
+    112          {
+   \                     sli_se_opaque_aead_encrypt_setup: (+1)
+   \        0x0   0xB5F0             PUSH     {R4-R7,LR}
+   \        0x2   0xB085             SUB      SP,SP,#+20
+   \        0x4   0x0004             MOVS     R4,R0
+   \        0x6   0x460D             MOV      R5,R1
+   \        0x8   0x4616             MOV      R6,R2
+   \        0xA   0x461F             MOV      R7,R3
+    113            if (operation == NULL) {
+   \        0xC   0xBF08             IT       EQ
+   \        0xE   0xF06F 0x0086      MVNEQ    R0,#+134
+    114              return PSA_ERROR_INVALID_ARGUMENT;
+   \       0x12   0xD009             BEQ.N    ??CrossCallReturnLabel_3
+    115            }
+    116          
+    117            // Start by resetting context
+    118            memset(operation, 0, sizeof(*operation));
+   \       0x14   0x21C0             MOVS     R1,#+192
+   \       0x16   0x.... 0x....      BL       __aeabi_memclr4
+    119          
+    120            // Setup generic context struct
+    121            return sli_se_driver_aead_encrypt_decrypt_setup(&(operation->operation),
+    122                                                            attributes,
+    123                                                            key_buffer,
+    124                                                            key_buffer_size,
+    125                                                            alg,
+    126                                                            SL_SE_ENCRYPT,
+    127                                                            operation->key,
+    128                                                            sizeof(operation->key),
+    129                                                            SLI_SE_WRAPPED_KEY_OVERHEAD);
+   \       0x1A   0x201C             MOVS     R0,#+28
+   \       0x1C   0x9004             STR      R0,[SP, #+16]
+   \       0x1E   0x980A             LDR      R0,[SP, #+40]
+   \       0x20   0x223C             MOVS     R2,#+60
+   \       0x22   0x2100             MOVS     R1,#+0
+   \       0x24   0x.... 0x....      BL       ?Subroutine3
+   \                     ??CrossCallReturnLabel_3: (+1)
+   \       0x28   0xB005             ADD      SP,SP,#+20
+   \       0x2A   0xBDF0             POP      {R4-R7,PC}
+    130          }
+
+   \                                 In section .text, align 2, keep-with-next
+   \                     ?Subroutine3: (+1)
+   \        0x0   0x9203             STR      R2,[SP, #+12]
+   \        0x2   0x9101             STR      R1,[SP, #+4]
+   \        0x4   0x9000             STR      R0,[SP, #+0]
+   \        0x6   0x9402             STR      R4,[SP, #+8]
+   \        0x8   0x463B             MOV      R3,R7
+   \        0xA   0x4632             MOV      R2,R6
+   \        0xC   0x4629             MOV      R1,R5
+   \        0xE   0xF104 0x0040      ADD      R0,R4,#+64
+   \       0x12   0x.... 0x....      B.W      sli_se_driver_aead_encrypt_decrypt_setup
+    131          
+
+   \                                 In section .text, align 2, keep-with-next
+    132          psa_status_t sli_se_opaque_aead_decrypt_setup(
+    133            sli_se_opaque_aead_operation_t *operation,
+    134            const psa_key_attributes_t *attributes,
+    135            const uint8_t *key_buffer,
+    136            size_t key_buffer_size,
+    137            psa_algorithm_t alg)
+    138          {
+   \                     sli_se_opaque_aead_decrypt_setup: (+1)
+   \        0x0   0xB5F0             PUSH     {R4-R7,LR}
+   \        0x2   0xB085             SUB      SP,SP,#+20
+   \        0x4   0x0004             MOVS     R4,R0
+   \        0x6   0x460D             MOV      R5,R1
+   \        0x8   0x4616             MOV      R6,R2
+   \        0xA   0x461F             MOV      R7,R3
+    139            if (operation == NULL) {
+   \        0xC   0xBF08             IT       EQ
+   \        0xE   0xF06F 0x0086      MVNEQ    R0,#+134
+    140              return PSA_ERROR_INVALID_ARGUMENT;
+   \       0x12   0xD009             BEQ.N    ??CrossCallReturnLabel_2
+    141            }
+    142          
+    143            // Start by resetting context
+    144            memset(operation, 0, sizeof(*operation));
+   \       0x14   0x21C0             MOVS     R1,#+192
+   \       0x16   0x.... 0x....      BL       __aeabi_memclr4
+    145          
+    146            // Setup generic context struct
+    147            return sli_se_driver_aead_encrypt_decrypt_setup(&(operation->operation),
+    148                                                            attributes,
+    149                                                            key_buffer,
+    150                                                            key_buffer_size,
+    151                                                            alg,
+    152                                                            SL_SE_DECRYPT,
+    153                                                            operation->key,
+    154                                                            sizeof(operation->key),
+    155                                                            SLI_SE_WRAPPED_KEY_OVERHEAD);
+   \       0x1A   0x201C             MOVS     R0,#+28
+   \       0x1C   0x9004             STR      R0,[SP, #+16]
+   \       0x1E   0x980A             LDR      R0,[SP, #+40]
+   \       0x20   0x223C             MOVS     R2,#+60
+   \       0x22   0x2101             MOVS     R1,#+1
+   \       0x24   0x.... 0x....      BL       ?Subroutine3
+   \                     ??CrossCallReturnLabel_2: (+1)
+   \       0x28   0xB005             ADD      SP,SP,#+20
+   \       0x2A   0xBDF0             POP      {R4-R7,PC}
+    156          }
+    157          
+
+   \                                 In section .text, align 2, keep-with-next
+    158          psa_status_t sli_se_opaque_aead_set_nonce(
+    159            sli_se_opaque_aead_operation_t *operation,
+    160            const uint8_t *nonce,
+    161            size_t nonce_size)
+    162          {
+    163            if (operation == NULL) {
+   \                     sli_se_opaque_aead_set_nonce: (+1)
+   \        0x0   0x2800             CMP      R0,#+0
+   \        0x2   0xBF1C             ITT      NE
+    164              return PSA_ERROR_INVALID_ARGUMENT;
+    165            }
+    166          
+    167            return sli_se_driver_aead_set_nonce(&(operation->operation),
+    168                                                nonce,
+    169                                                nonce_size);
+   \        0x4   0x3040             ADDNE    R0,R0,#+64
+   \        0x6   0x.... 0x....      BNE.W    sli_se_driver_aead_set_nonce
+   \        0xA   0x....             B.N      ?Subroutine0
+    170          }
+
+   \                                 In section .text, align 2, keep-with-next
+   \                     ?Subroutine0: (+1)
+   \        0x0   0xF06F 0x0086      MVN      R0,#+134
+   \        0x4   0x4770             BX       LR
+    171          
+
+   \                                 In section .text, align 2, keep-with-next
+    172          psa_status_t sli_se_opaque_aead_set_lengths(
+    173            sli_se_opaque_aead_operation_t *operation,
+    174            size_t ad_length,
+    175            size_t plaintext_length)
+    176          {
+    177            if (operation == NULL) {
+   \                     sli_se_opaque_aead_set_lengths: (+1)
+   \        0x0   0x2800             CMP      R0,#+0
+   \        0x2   0xBF1C             ITT      NE
+    178              return PSA_ERROR_INVALID_ARGUMENT;
+    179            }
+    180          
+    181            return sli_se_driver_aead_set_lengths(&(operation->operation),
+    182                                                  ad_length,
+    183                                                  plaintext_length);
+   \        0x4   0x3040             ADDNE    R0,R0,#+64
+   \        0x6   0x.... 0x....      BNE.W    sli_se_driver_aead_set_lengths
+   \        0xA                      REQUIRE ?Subroutine0
+   \        0xA                      ;; // Fall through to label ?Subroutine0
+    184          }
+    185          
+
+   \                                 In section .text, align 2, keep-with-next
+    186          psa_status_t sli_se_opaque_aead_update_ad(
+    187            sli_se_opaque_aead_operation_t *operation,
+    188            const uint8_t *input,
+    189            size_t input_length)
+    190          {
+   \                     sli_se_opaque_aead_update_ad: (+1)
+   \        0x0   0x4613             MOV      R3,R2
+    191            if (operation == NULL) {
+   \        0x2   0xB900             CBNZ.N   R0,??sli_se_opaque_aead_update_ad_0
+    192              return PSA_ERROR_INVALID_ARGUMENT;
+   \        0x4   0x....             B.N      ?Subroutine0
+    193            }
+    194          
+    195            return sli_se_driver_aead_update_ad(&(operation->operation),
+    196                                                operation->key,
+    197                                                input,
+    198                                                input_length);
+   \                     ??sli_se_opaque_aead_update_ad_0: (+1)
+   \        0x6   0x460A             MOV      R2,R1
+   \        0x8   0x4601             MOV      R1,R0
+   \        0xA   0x3040             ADDS     R0,R0,#+64
+   \        0xC   0x.... 0x....      B.W      sli_se_driver_aead_update_ad
+    199          }
+    200          
+
+   \                                 In section .text, align 2, keep-with-next
+    201          psa_status_t sli_se_opaque_aead_update(
+    202            sli_se_opaque_aead_operation_t *operation,
+    203            const uint8_t *input,
+    204            size_t input_length,
+    205            uint8_t *output,
+    206            size_t output_size,
+    207            size_t *output_length)
+    208          {
+   \                     sli_se_opaque_aead_update: (+1)
+   \        0x0   0xB53E             PUSH     {R1-R5,LR}
+    209            if (operation == NULL) {
+   \        0x2   0xB900             CBNZ.N   R0,??sli_se_opaque_aead_update_0
+    210              return PSA_ERROR_INVALID_ARGUMENT;
+   \        0x4   0x....             B.N      ?Subroutine1
+    211            }
+    212          
+    213            return sli_se_driver_aead_update(&(operation->operation),
+    214                                             operation->key,
+    215                                             input,
+    216                                             input_length,
+    217                                             output,
+    218                                             output_size,
+    219                                             output_length);
+   \                     ??sli_se_opaque_aead_update_0: (+1)
+   \        0x6   0x.... 0x....      BL       ?Subroutine4
+   \                     ??CrossCallReturnLabel_4: (+1)
+   \        0xA   0x.... 0x....      BL       sli_se_driver_aead_update
+   \        0xE   0xBD3E             POP      {R1-R5,PC}
+    220          }
+
+   \                                 In section .text, align 2, keep-with-next
+   \                     ?Subroutine4: (+1)
+   \        0x0   0x9300             STR      R3,[SP, #+0]
+   \        0x2   0x9D07             LDR      R5,[SP, #+28]
+   \        0x4   0x9C06             LDR      R4,[SP, #+24]
+   \                     ??Subroutine4_0: (+1)
+   \        0x6   0x4613             MOV      R3,R2
+   \        0x8   0x460A             MOV      R2,R1
+   \        0xA   0x4601             MOV      R1,R0
+   \        0xC   0x9502             STR      R5,[SP, #+8]
+   \        0xE   0x9401             STR      R4,[SP, #+4]
+   \       0x10   0x3040             ADDS     R0,R0,#+64
+   \       0x12   0x4770             BX       LR
+
+   \                                 In section .text, align 2, keep-with-next
+   \                     ?Subroutine1: (+1)
+   \        0x0   0xF06F 0x0086      MVN      R0,#+134
+   \        0x4   0xBD3E             POP      {R1-R5,PC}
+    221          
+
+   \                                 In section .text, align 2, keep-with-next
+    222          psa_status_t sli_se_opaque_aead_finish(
+    223            sli_se_opaque_aead_operation_t *operation,
+    224            uint8_t *ciphertext,
+    225            size_t ciphertext_size,
+    226            size_t *ciphertext_length,
+    227            uint8_t *tag,
+    228            size_t tag_size,
+    229            size_t *tag_length)
+    230          {
+   \                     sli_se_opaque_aead_finish: (+1)
+   \        0x0   0xB538             PUSH     {R3-R5,LR}
+   \        0x2   0xB084             SUB      SP,SP,#+16
+    231            if (operation == NULL) {
+   \        0x4   0xB910             CBNZ.N   R0,??sli_se_opaque_aead_finish_0
+    232              return PSA_ERROR_INVALID_ARGUMENT;
+   \        0x6   0xF06F 0x0086      MVN      R0,#+134
+   \        0xA   0xE008             B.N      ??sli_se_opaque_aead_finish_1
+    233            }
+    234          
+    235            return sli_se_driver_aead_finish(&(operation->operation),
+    236                                             operation->key,
+    237                                             ciphertext,
+    238                                             ciphertext_size,
+    239                                             ciphertext_length,
+    240                                             tag,
+    241                                             tag_size,
+    242                                             tag_length);
+   \                     ??sli_se_opaque_aead_finish_0: (+1)
+   \        0xC   0x9C0A             LDR      R4,[SP, #+40]
+   \        0xE   0x9300             STR      R3,[SP, #+0]
+   \       0x10   0x9D09             LDR      R5,[SP, #+36]
+   \       0x12   0x9403             STR      R4,[SP, #+12]
+   \       0x14   0x9C08             LDR      R4,[SP, #+32]
+   \       0x16   0x.... 0x....      BL       ??Subroutine4_0
+   \                     ??CrossCallReturnLabel_5: (+1)
+   \       0x1A   0x.... 0x....      BL       sli_se_driver_aead_finish
+   \                     ??sli_se_opaque_aead_finish_1: (+1)
+   \       0x1E   0xB005             ADD      SP,SP,#+20
+   \       0x20   0xBD30             POP      {R4,R5,PC}
+    243          }
+    244          
+
+   \                                 In section .text, align 2, keep-with-next
+    245          psa_status_t sli_se_opaque_aead_verify(
+    246            sli_se_opaque_aead_operation_t *operation,
+    247            uint8_t *plaintext,
+    248            size_t plaintext_size,
+    249            size_t *plaintext_length,
+    250            const uint8_t *tag,
+    251            size_t tag_length)
+    252          {
+   \                     sli_se_opaque_aead_verify: (+1)
+   \        0x0   0xB53E             PUSH     {R1-R5,LR}
+    253            if (operation == NULL) {
+   \        0x2   0xB900             CBNZ.N   R0,??sli_se_opaque_aead_verify_0
+    254              return PSA_ERROR_INVALID_ARGUMENT;
+   \        0x4   0x....             B.N      ?Subroutine1
+    255            }
+    256          
+    257            return sli_se_driver_aead_verify(&(operation->operation),
+    258                                             operation->key,
+    259                                             plaintext,
+    260                                             plaintext_size,
+    261                                             plaintext_length,
+    262                                             tag,
+    263                                             tag_length);
+   \                     ??sli_se_opaque_aead_verify_0: (+1)
+   \        0x6   0x.... 0x....      BL       ?Subroutine4
+   \                     ??CrossCallReturnLabel_6: (+1)
+   \        0xA   0x.... 0x....      BL       sli_se_driver_aead_verify
+   \        0xE   0xBD3E             POP      {R1-R5,PC}
+    264          }
+    265          
+
+   \                                 In section .text, align 2, keep-with-next
+    266          psa_status_t sli_se_opaque_aead_abort(
+    267            sli_se_opaque_aead_operation_t *operation)
+    268          {
+   \                     sli_se_opaque_aead_abort: (+1)
+   \        0x0   0xB580             PUSH     {R7,LR}
+    269            // No state is ever left in HW, so zeroing context should do the trick
+    270            if (operation == NULL) {
+   \        0x2   0xB910             CBNZ.N   R0,??sli_se_opaque_aead_abort_0
+    271              return PSA_ERROR_INVALID_ARGUMENT;
+   \        0x4   0xF06F 0x0086      MVN      R0,#+134
+   \        0x8   0xBD02             POP      {R1,PC}
+    272            }
+    273          
+    274            memset(operation, 0, sizeof(*operation));
+   \                     ??sli_se_opaque_aead_abort_0: (+1)
+   \        0xA   0x21C0             MOVS     R1,#+192
+   \        0xC   0x.... 0x....      BL       __aeabi_memclr4
+    275            return PSA_SUCCESS;
+   \       0x10   0x2000             MOVS     R0,#+0
+   \       0x12   0xBD02             POP      {R1,PC}
+    276          }
+    277          
+    278          #endif // SLI_MBEDTLS_DEVICE_HSE && SLI_PSA_DRIVER_FEATURE_OPAQUE_KEYS
+
+   Maximum stack usage in bytes:
+
+   .cstack Function
+   ------- --------
+       8   sli_se_opaque_aead_abort
+         8   -> __aeabi_memclr4
+      48   sli_se_opaque_aead_decrypt
+        48   -> sli_se_driver_aead_decrypt
+      40   sli_se_opaque_aead_decrypt_setup
+        40   -> __aeabi_memclr4
+        40   -> sli_se_driver_aead_encrypt_decrypt_setup
+      48   sli_se_opaque_aead_encrypt
+        48   -> sli_se_driver_aead_encrypt
+      40   sli_se_opaque_aead_encrypt_setup
+        40   -> __aeabi_memclr4
+        40   -> sli_se_driver_aead_encrypt_decrypt_setup
+      32   sli_se_opaque_aead_finish
+        32   -> sli_se_driver_aead_finish
+       0   sli_se_opaque_aead_set_lengths
+         0   -> sli_se_driver_aead_set_lengths
+       0   sli_se_opaque_aead_set_nonce
+         0   -> sli_se_driver_aead_set_nonce
+      24   sli_se_opaque_aead_update
+        24   -> sli_se_driver_aead_update
+       0   sli_se_opaque_aead_update_ad
+         0   -> sli_se_driver_aead_update_ad
+      24   sli_se_opaque_aead_verify
+        24   -> sli_se_driver_aead_verify
+
+
+   Section sizes:
+
+   Bytes  Function/Label
+   -----  --------------
+       6  ?Subroutine0
+       6  ?Subroutine1
+      38  ?Subroutine2
+      22  ?Subroutine3
+      20  ?Subroutine4
+      20  sli_se_opaque_aead_abort
+      16  sli_se_opaque_aead_decrypt
+      44  sli_se_opaque_aead_decrypt_setup
+      16  sli_se_opaque_aead_encrypt
+      44  sli_se_opaque_aead_encrypt_setup
+      34  sli_se_opaque_aead_finish
+      10  sli_se_opaque_aead_set_lengths
+      12  sli_se_opaque_aead_set_nonce
+      16  sli_se_opaque_aead_update
+      16  sli_se_opaque_aead_update_ad
+      16  sli_se_opaque_aead_verify
+
+ 
+ 336 bytes in section .text
+ 
+ 336 bytes of CODE memory
+
+Errors: none
+Warnings: none

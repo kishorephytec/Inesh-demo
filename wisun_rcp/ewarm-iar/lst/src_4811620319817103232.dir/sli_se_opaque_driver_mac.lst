@@ -1,0 +1,885 @@
+###############################################################################
+#
+# IAR ANSI C/C++ Compiler V9.50.2.385/W64 for ARM         27/Nov/2024  12:17:08
+# Copyright 1999-2024 IAR Systems AB.
+#
+#    Cpu mode          =  thumb
+#    Endian            =  little
+#    Source file       =
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\security\sl_component\sl_psa_driver\src\sli_se_opaque_driver_mac.c
+#    Command line      =
+#        -f
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\ewarm-iar\obj\src_4811620319817103232.dir\sli_se_opaque_driver_mac.o.rsp
+#        (C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\security\sl_component\sl_psa_driver\src\sli_se_opaque_driver_mac.c
+#        -D EFR32FG28B322F1024IM48=1 -D
+#        configNUM_SDK_THREAD_LOCAL_STORAGE_POINTERS=2 -D
+#        SL_COMPONENT_CATALOG_PRESENT=1 -D
+#        MBEDTLS_CONFIG_FILE=<sl_mbedtls_config.h> -D
+#        MBEDTLS_PSA_CRYPTO_CONFIG_FILE=<psa_crypto_config.h> -D
+#        SL_RAIL_LIB_MULTIPROTOCOL_SUPPORT=0 -D
+#        SL_RAIL_UTIL_PA_CONFIG_HEADER=<sl_rail_util_pa_config.h> -D
+#        RTT_USE_ASM=0 -D MBED_CONF_MBED_TRACE_ENABLE=1 -D
+#        MBED_CONF_NANOSTACK_CONFIGURATION=ws_router -D
+#        MBED_TRACE_MAX_LEVEL=TRACE_ACTIVE_LEVEL_ALL -D DEBUG_EFM_USER=1 -D
+#        HAVE_LFN=1 -D HAVE_LFN_PARENT=1 -lC
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\ewarm-iar\lst\src_4811620319817103232.dir
+#        --diag_suppress Pa050 -o
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\ewarm-iar\obj\src_4811620319817103232.dir
+#        --debug --endian=little --cpu=Cortex-M33 --cmse --cmse -e
+#        --fpu=VFPv5_sp --dlib_config "C:\Program Files\IAR Systems\Embedded
+#        Workbench 9.2\arm\inc\c\DLib_Config_Normal.h" -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\security\sl_component\sl_psa_driver\src\
+#        -I C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\autogen\ -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\config\ -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\config\rail\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\Device\SiliconLabs\EFR32FG28\Include\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\common\inc\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\CMSIS\Core\Include\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\CMSIS\RTOS2\Include\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\service\device_init\inc\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\emdrv\dmadrv\inc\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\emdrv\common\inc\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\emlib\inc\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\util\third_party\freertos\cmsis\Include\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\util\third_party\freertos\kernel\include\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\util\third_party\freertos\kernel\portable\IAR\ARM_CM33_NTZ\non_secure\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\service\iostream\inc\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\security\sl_component\sl_mbedtls_support\config\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\security\sl_component\sl_mbedtls_support\config\preset\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\security\sl_component\sl_mbedtls_support\inc\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\util\third_party\mbedtls\include\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\util\third_party\mbedtls\library\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\emdrv\nvm3\inc\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\peripheral\inc\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\security\sl_component\sl_psa_driver\inc\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\radio\rail_lib\common\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\radio\rail_lib\protocol\ble\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\radio\rail_lib\protocol\ieee802154\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\radio\rail_lib\protocol\wmbus\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\radio\rail_lib\protocol\zwave\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\radio\rail_lib\chip\efr32\efr32xg2x\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\radio\rail_lib\protocol\sidewalk\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\radio\rail_lib\plugin\pa-conversions\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\radio\rail_lib\plugin\pa-conversions\efr32xg28\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\radio\rail_lib\plugin\rail_util_pti\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\security\sl_component\se_manager\inc\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\security\sl_component\se_manager\src\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\util\third_party\segger\systemview\SEGGER\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\util\silicon_labs\silabs_core\memory_manager\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\common\toolchain\inc\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\service\system\inc\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\app\wisun\component\ns_list\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\app\wisun\component\trace_util\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\app\wisun\component\trace_util\nanostack\nanostack-libservice\mbed-client-libservice\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\service\sleeptimer\inc\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\protocol\wisun\stack\inc\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\protocol\wisun\app\wisun_rcp\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\protocol\wisun\stack\inc\socket\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\protocol\wisun\stack\src\
+#        -Ohz --use_c++_inline) --dependencies=n
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\ewarm-iar\obj\src_4811620319817103232.dir\sli_se_opaque_driver_mac.o.iar_deps
+#    Locale            =  C
+#    List file         =
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\ewarm-iar\lst\src_4811620319817103232.dir\sli_se_opaque_driver_mac.lst
+#    Object file       =
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\ewarm-iar\obj\src_4811620319817103232.dir\sli_se_opaque_driver_mac.o
+#    Runtime model:       
+#      __CPP_Runtime   =  1
+#      __SystemLibrary =  DLib
+#      __dlib_version  =  6
+#
+###############################################################################
+
+C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\security\sl_component\sl_psa_driver\src\sli_se_opaque_driver_mac.c
+      1          /***************************************************************************//**
+      2           * @file
+      3           * @brief Silicon Labs PSA Crypto Opaque Driver Mac functions.
+      4           *******************************************************************************
+      5           * # License
+      6           * <b>Copyright 2020 Silicon Laboratories Inc. www.silabs.com</b>
+      7           *******************************************************************************
+      8           *
+      9           * SPDX-License-Identifier: Zlib
+     10           *
+     11           * The licensor of this software is Silicon Laboratories Inc.
+     12           *
+     13           * This software is provided 'as-is', without any express or implied
+     14           * warranty. In no event will the authors be held liable for any damages
+     15           * arising from the use of this software.
+     16           *
+     17           * Permission is granted to anyone to use this software for any purpose,
+     18           * including commercial applications, and to alter it and redistribute it
+     19           * freely, subject to the following restrictions:
+     20           *
+     21           * 1. The origin of this software must not be misrepresented; you must not
+     22           *    claim that you wrote the original software. If you use this software
+     23           *    in a product, an acknowledgment in the product documentation would be
+     24           *    appreciated but is not required.
+     25           * 2. Altered source versions must be plainly marked as such, and must not be
+     26           *    misrepresented as being the original software.
+     27           * 3. This notice may not be removed or altered from any source distribution.
+     28           *
+     29           ******************************************************************************/
+     30          
+     31          #include "sli_psa_driver_features.h"
+     32          
+     33          #if defined(SLI_MBEDTLS_DEVICE_HSE) && defined(SLI_PSA_DRIVER_FEATURE_OPAQUE_KEYS)
+     34          
+     35          #include "psa/crypto.h"
+     36          
+     37          #include "sli_se_driver_key_management.h"
+     38          #include "sli_se_opaque_types.h"
+     39          #include "sli_se_opaque_functions.h"
+     40          #include "sli_se_manager_internal.h"
+     41          #include "sli_psa_driver_common.h"
+     42          
+     43          #include <string.h>
+     44          
+     45          //------------------------------------------------------------------------------
+     46          // Single-shot driver entry points
+     47          
+
+   \                                 In section .text, align 2, keep-with-next
+     48          psa_status_t sli_se_opaque_mac_compute(const psa_key_attributes_t *attributes,
+     49                                                 const uint8_t *key_buffer,
+     50                                                 size_t key_buffer_size,
+     51                                                 psa_algorithm_t alg,
+     52                                                 const uint8_t *input,
+     53                                                 size_t input_length,
+     54                                                 uint8_t *mac,
+     55                                                 size_t mac_size,
+     56                                                 size_t *mac_length)
+     57          {
+   \                     sli_se_opaque_mac_compute: (+1)
+   \        0x0   0xB5F0             PUSH     {R4-R7,LR}
+   \        0x2   0xB08B             SUB      SP,SP,#+44
+   \        0x4   0x4605             MOV      R5,R0
+   \        0x6   0x000E             MOVS     R6,R1
+   \        0x8   0x4614             MOV      R4,R2
+   \        0xA   0x461F             MOV      R7,R3
+     58            #if defined(SLI_PSA_DRIVER_FEATURE_MAC)
+     59          
+     60            if (key_buffer == NULL
+     61                || attributes == NULL) {
+   \        0xC   0xBF14             ITE      NE
+   \        0xE   0x2D00             CMPNE    R5,#+0
+   \       0x10   0xF06F 0x0086      MVNEQ    R0,#+134
+     62              return PSA_ERROR_INVALID_ARGUMENT;
+   \       0x14   0xD016             BEQ.N    ??sli_se_opaque_mac_compute_0
+     63            }
+     64          
+     65            // Ephemeral contexts
+     66            sl_se_key_descriptor_t key_desc = { 0 };
+   \       0x16   0xA803             ADD      R0,SP,#+12
+   \       0x18   0x2120             MOVS     R1,#+32
+   \       0x1A   0x.... 0x....      BL       __aeabi_memclr4
+     67            psa_status_t psa_status = sli_se_key_desc_from_input(attributes,
+     68                                                                 key_buffer,
+     69                                                                 key_buffer_size,
+     70                                                                 &key_desc);
+   \       0x1E   0xAB03             ADD      R3,SP,#+12
+   \       0x20   0x4622             MOV      R2,R4
+   \       0x22   0x4631             MOV      R1,R6
+   \       0x24   0x4628             MOV      R0,R5
+   \       0x26   0x.... 0x....      BL       sli_se_key_desc_from_input
+     71            if (psa_status != PSA_SUCCESS) {
+   \       0x2A   0xB958             CBNZ.N   R0,??sli_se_opaque_mac_compute_0
+     72              return psa_status;
+     73            }
+     74          
+     75            return sli_se_driver_mac_compute(&key_desc,
+     76                                             alg,
+     77                                             input,
+     78                                             input_length,
+     79                                             mac,
+     80                                             mac_size,
+     81                                             mac_length);
+   \       0x2C   0x9814             LDR      R0,[SP, #+80]
+   \       0x2E   0x9913             LDR      R1,[SP, #+76]
+   \       0x30   0x9B11             LDR      R3,[SP, #+68]
+   \       0x32   0x9002             STR      R0,[SP, #+8]
+   \       0x34   0x9812             LDR      R0,[SP, #+72]
+   \       0x36   0x9A10             LDR      R2,[SP, #+64]
+   \       0x38   0x9101             STR      R1,[SP, #+4]
+   \       0x3A   0x9000             STR      R0,[SP, #+0]
+   \       0x3C   0x4639             MOV      R1,R7
+   \       0x3E   0xA803             ADD      R0,SP,#+12
+   \       0x40   0x.... 0x....      BL       sli_se_driver_mac_compute
+   \                     ??sli_se_opaque_mac_compute_0: (+1)
+   \       0x44   0xB00B             ADD      SP,SP,#+44
+   \       0x46   0xBDF0             POP      {R4-R7,PC}
+     82          
+     83            #else // SLI_PSA_DRIVER_FEATURE_MAC
+     84          
+     85            (void)attributes;
+     86            (void)key_buffer;
+     87            (void)key_buffer_size;
+     88            (void)alg;
+     89            (void)input;
+     90            (void)input_length;
+     91            (void)mac;
+     92            (void)mac_size;
+     93            (void)mac_length;
+     94          
+     95            return PSA_ERROR_NOT_SUPPORTED;
+     96          
+     97            #endif // SLI_PSA_DRIVER_FEATURE_MAC
+     98          }
+
+   \                                 In section .rodata, align 4, keep-with-next
+   \                     ?_0:
+   \        0x0   0x0000'0000        DC32 0
+   \        0x4                      DS8 28
+     99          
+    100          //------------------------------------------------------------------------------
+    101          // Multi-part driver entry points
+    102          
+
+   \                                 In section .text, align 2, keep-with-next
+    103          psa_status_t sli_se_opaque_mac_sign_setup(
+    104            sli_se_opaque_mac_operation_t *operation,
+    105            const psa_key_attributes_t *attributes,
+    106            const uint8_t *key_buffer,
+    107            size_t key_buffer_size,
+    108            psa_algorithm_t alg)
+    109          {
+   \                     sli_se_opaque_mac_sign_setup: (+1)
+   \        0x0   0xE92D 0x47FC      PUSH     {R2-R10,LR}
+   \        0x4   0x0004             MOVS     R4,R0
+   \        0x6   0x460D             MOV      R5,R1
+   \        0x8   0x4616             MOV      R6,R2
+   \        0xA   0x469A             MOV      R10,R3
+    110            #if defined(SLI_PSA_DRIVER_FEATURE_MAC_MULTIPART)
+    111          
+    112            if (operation == NULL
+    113                || attributes == NULL
+    114                || key_buffer == NULL) {
+   \        0xC   0xF06F 0x0986      MVN      R9,#+134
+   \       0x10   0xBF1C             ITT      NE
+   \       0x12   0x2D00             CMPNE    R5,#+0
+   \       0x14   0x2E00             CMPNE    R6,#+0
+   \       0x16   0xD033             BEQ.N    ??sli_se_opaque_mac_sign_setup_0
+   \       0x18   0x9F0A             LDR      R7,[SP, #+40]
+    115              return PSA_ERROR_INVALID_ARGUMENT;
+    116            }
+    117          
+    118            psa_status_t psa_status;
+    119          
+    120            // start by resetting context
+    121            memset(operation, 0, sizeof(*operation));
+   \       0x1A   0x21B8             MOVS     R1,#+184
+   \       0x1C   0x.... 0x....      BL       __aeabi_memclr4
+    122          
+    123            // Add support for one-shot HMAC through the multipart interface
+    124            #if defined(SLI_PSA_DRIVER_FEATURE_HMAC)
+    125            if (PSA_ALG_IS_HMAC(alg)) {
+   \       0x20   0x.... 0x....      LDR.W    R8,??DataTable4
+   \       0x24   0xEA08 0x0007      AND      R0,R8,R7
+   \       0x28   0xF1B0 0x7F60      CMP      R0,#+58720256
+   \       0x2C   0xD112             BNE.N    ??sli_se_opaque_mac_sign_setup_1
+    126              // SE does not support multipart HMAC. Construct it from hashing instead.
+    127              // Check key type and output size
+    128              if (psa_get_key_type(attributes) != PSA_KEY_TYPE_HMAC) {
+   \       0x2E   0x8829             LDRH     R1,[R5, #+0]
+   \       0x30   0xF5B1 0x5F88      CMP      R1,#+4352
+   \       0x34   0xD124             BNE.N    ??sli_se_opaque_mac_sign_setup_0
+    129                // For HMAC, key type is strictly enforced
+    130                return PSA_ERROR_INVALID_ARGUMENT;
+    131              }
+    132          
+    133              size_t output_size = 0;
+   \       0x36   0x2000             MOVS     R0,#+0
+   \       0x38   0x9000             STR      R0,[SP, #+0]
+    134              sl_se_hash_type_t hash = sli_se_hash_type_from_psa_hmac_alg(alg,
+    135                                                                          &output_size);
+    136              if (hash == SL_SE_HASH_NONE) {
+   \       0x3A   0x4669             MOV      R1,SP
+   \       0x3C   0x4638             MOV      R0,R7
+   \       0x3E   0x.... 0x....      BL       sli_se_hash_type_from_psa_hmac_alg
+   \       0x42   0xB110             CBZ.N    R0,??sli_se_opaque_mac_sign_setup_2
+    137                return PSA_ERROR_NOT_SUPPORTED;
+    138              }
+    139          
+    140              if (output_size > sizeof(operation->operation.ctx.hmac.hmac_result)) {
+   \       0x44   0x9800             LDR      R0,[SP, #+0]
+   \       0x46   0x2821             CMP      R0,#+33
+   \       0x48   0xD302             BCC.N    ??sli_se_opaque_mac_sign_setup_3
+    141                return PSA_ERROR_NOT_SUPPORTED;
+   \                     ??sli_se_opaque_mac_sign_setup_2: (+1)
+   \       0x4A   0xF06F 0x0085      MVN      R0,#+133
+   \       0x4E   0xE022             B.N      ??sli_se_opaque_mac_sign_setup_4
+    142              }
+    143          
+    144              operation->operation.alg = alg;
+   \                     ??sli_se_opaque_mac_sign_setup_3: (+1)
+   \       0x50   0xF8C4 0x7080      STR      R7,[R4, #+128]
+    145            }
+    146            #endif   // SLI_PSA_DRIVER_FEATURE_HMAC
+    147          
+    148            #if defined(SLI_PSA_DRIVER_FEATURE_HMAC) \
+    149            && (defined(SLI_PSA_DRIVER_FEATURE_CMAC) \
+    150            || defined(SLI_PSA_DRIVER_FEATURE_CBC_MAC))
+    151            else
+    152            #endif
+    153          
+    154            #if defined(SLI_PSA_DRIVER_FEATURE_CMAC) || defined(SLI_PSA_DRIVER_FEATURE_CBC_MAC)
+    155            {
+    156              psa_status = sli_se_driver_mac_sign_setup(&(operation->operation),
+    157                                                        attributes,
+    158                                                        alg);
+    159              if (psa_status != PSA_SUCCESS) {
+    160                return psa_status;
+    161              }
+    162            }
+    163            #endif   // SLI_PSA_DRIVER_FEATURE_CMAC || SLI_PSA_DRIVER_FEATURE_CBC_MAC
+    164          
+    165            psa_status = sli_se_key_desc_from_input(attributes,
+    166                                                    key_buffer,
+    167                                                    key_buffer_size,
+    168                                                    &(operation->key_desc));
+   \                     ??sli_se_opaque_mac_sign_setup_1: (+1)
+   \       0x54   0x4623             MOV      R3,R4
+   \       0x56   0x4652             MOV      R2,R10
+   \       0x58   0x4631             MOV      R1,R6
+   \       0x5A   0x4628             MOV      R0,R5
+   \       0x5C   0x.... 0x....      BL       sli_se_key_desc_from_input
+    169            if (psa_status != PSA_SUCCESS) {
+   \       0x60   0xB9C8             CBNZ.N   R0,??sli_se_opaque_mac_sign_setup_4
+    170              return psa_status;
+    171            }
+    172          
+    173            size_t padding = 0;
+    174            operation->key_len = psa_get_key_bits(attributes) / 8;
+   \       0x62   0x886A             LDRH     R2,[R5, #+2]
+    175          
+    176            #if defined(SLI_SE_KEY_PADDING_REQUIRED)
+    177            padding = sli_se_get_padding(operation->key_len);
+    178            #endif
+    179          
+    180            #if defined(SLI_PSA_DRIVER_FEATURE_HMAC)
+    181            if (PSA_ALG_IS_HMAC(alg)) {
+   \       0x64   0xEA08 0x0707      AND      R7,R8,R7
+   \       0x68   0x08D2             LSRS     R2,R2,#+3
+   \       0x6A   0x67E2             STR      R2,[R4, #+124]
+   \       0x6C   0xF1B7 0x7F60      CMP      R7,#+58720256
+   \       0x70   0xD102             BNE.N    ??sli_se_opaque_mac_sign_setup_5
+    182              if ((operation->key_len < sizeof(uint32_t))
+    183                  || ((operation->key_len + padding)
+    184                      > (sizeof(operation->key) - SLI_SE_WRAPPED_KEY_OVERHEAD))) {
+   \       0x72   0x1F10             SUBS     R0,R2,#+4
+   \       0x74   0x283D             CMP      R0,#+61
+   \       0x76   0xD203             BCS.N    ??sli_se_opaque_mac_sign_setup_0
+    185                return PSA_ERROR_INVALID_ARGUMENT;
+    186              }
+    187            }
+    188            #endif   // SLI_PSA_DRIVER_FEATURE_HMAC
+    189          
+    190            #if defined(SLI_PSA_DRIVER_FEATURE_HMAC) \
+    191            && (defined(SLI_PSA_DRIVER_FEATURE_CMAC) \
+    192            || defined(SLI_PSA_DRIVER_FEATURE_CBC_MAC))
+    193            else
+    194            #endif
+    195          
+    196            #if defined(SLI_PSA_DRIVER_FEATURE_CMAC) || defined(SLI_PSA_DRIVER_FEATURE_CBC_MAC)
+    197            {
+    198              switch (operation->key_len) {
+    199                case 16:     // Fallthrough
+    200                case 24:     // Fallthrough
+    201                case 32:
+    202                  break;
+    203                default:
+    204                  return PSA_ERROR_INVALID_ARGUMENT;
+    205              }
+    206            }
+    207            #endif   // SLI_PSA_DRIVER_FEATURE_CMAC || SLI_PSA_DRIVER_FEATURE_CBC_MAC
+    208          
+    209            if (operation->key_desc.storage.location.buffer.size
+    210                < (SLI_SE_WRAPPED_KEY_OVERHEAD + operation->key_len + padding)) {
+   \                     ??sli_se_opaque_mac_sign_setup_5: (+1)
+   \       0x78   0x6960             LDR      R0,[R4, #+20]
+   \       0x7A   0x321C             ADDS     R2,R2,#+28
+   \       0x7C   0x4290             CMP      R0,R2
+   \       0x7E   0xD201             BCS.N    ??sli_se_opaque_mac_sign_setup_6
+    211              return PSA_ERROR_INVALID_ARGUMENT;
+   \                     ??sli_se_opaque_mac_sign_setup_0: (+1)
+   \       0x80   0x4648             MOV      R0,R9
+   \       0x82   0xE008             B.N      ??sli_se_opaque_mac_sign_setup_4
+    212            }
+    213          
+    214            memcpy(operation->key,
+    215                   operation->key_desc.storage.location.buffer.pointer,
+    216                   SLI_SE_WRAPPED_KEY_OVERHEAD + operation->key_len + padding);
+   \                     ??sli_se_opaque_mac_sign_setup_6: (+1)
+   \       0x84   0x6921             LDR      R1,[R4, #+16]
+   \       0x86   0xF104 0x0020      ADD      R0,R4,#+32
+   \       0x8A   0x.... 0x....      BL       __aeabi_memcpy
+    217          
+    218            // Point key_descriptor at internal copy of key
+    219            operation->key_desc.storage.location.buffer.pointer = operation->key;
+   \       0x8E   0xF104 0x0020      ADD      R0,R4,#+32
+   \       0x92   0x6120             STR      R0,[R4, #+16]
+    220          
+    221            return PSA_SUCCESS;
+   \       0x94   0x2000             MOVS     R0,#+0
+   \                     ??sli_se_opaque_mac_sign_setup_4: (+1)
+   \       0x96   0xE8BD 0x87F6      POP      {R1,R2,R4-R10,PC}
+    222          
+    223            #else // SLI_PSA_DRIVER_FEATURE_MAC_MULTIPART
+    224          
+    225            (void)operation;
+    226            (void)attributes;
+    227            (void)key_buffer;
+    228            (void)key_buffer_size;
+    229            (void)alg;
+    230          
+    231            return PSA_ERROR_NOT_SUPPORTED;
+    232          
+    233            #endif
+    234          }
+    235          
+
+   \                                 In section .text, align 2, keep-with-next
+    236          psa_status_t sli_se_opaque_mac_verify_setup(
+    237            sli_se_opaque_mac_operation_t *operation,
+    238            const psa_key_attributes_t *attributes,
+    239            const uint8_t *key_buffer,
+    240            size_t key_buffer_size,
+    241            psa_algorithm_t alg)
+    242          {
+   \                     sli_se_opaque_mac_verify_setup: (+1)
+   \        0x0   0xB51C             PUSH     {R2-R4,LR}
+    243            // Since the PSA Crypto core exposes the verify functionality of the drivers
+    244            // without actually implementing the fallback to 'sign' when the driver
+    245            // doesn't support verify, we need to do this ourselves for the time being.
+    246            return sli_se_opaque_mac_sign_setup(operation,
+    247                                                attributes,
+    248                                                key_buffer,
+    249                                                key_buffer_size,
+    250                                                alg);
+   \        0x2   0x9C04             LDR      R4,[SP, #+16]
+   \        0x4   0x9400             STR      R4,[SP, #+0]
+   \        0x6   0x.... 0x....      BL       sli_se_opaque_mac_sign_setup
+   \        0xA   0xBD16             POP      {R1,R2,R4,PC}
+    251          }
+    252          
+
+   \                                 In section .text, align 2, keep-with-next
+    253          psa_status_t sli_se_opaque_mac_update(sli_se_opaque_mac_operation_t *operation,
+    254                                                const uint8_t *input,
+    255                                                size_t input_length)
+    256          {
+   \                     sli_se_opaque_mac_update: (+1)
+   \        0x0   0xB57F             PUSH     {R0-R6,LR}
+   \        0x2   0x4613             MOV      R3,R2
+    257            #if defined(SLI_PSA_DRIVER_FEATURE_MAC_MULTIPART)
+    258          
+    259            if (operation == NULL
+    260                || (input == NULL && input_length > 0)) {
+   \        0x4   0xB108             CBZ.N    R0,??sli_se_opaque_mac_update_0
+   \        0x6   0xB919             CBNZ.N   R1,??sli_se_opaque_mac_update_1
+   \        0x8   0xB113             CBZ.N    R3,??sli_se_opaque_mac_update_1
+    261              return PSA_ERROR_INVALID_ARGUMENT;
+   \                     ??sli_se_opaque_mac_update_0: (+1)
+   \        0xA   0xF06F 0x0086      MVN      R0,#+134
+   \        0xE   0xE01B             B.N      ??sli_se_opaque_mac_update_2
+    262            }
+    263          
+    264            #if defined(SLI_PSA_DRIVER_FEATURE_HMAC)
+    265            if (PSA_ALG_IS_HMAC(operation->operation.alg)) {
+   \                     ??sli_se_opaque_mac_update_1: (+1)
+   \       0x10   0xF100 0x0580      ADD      R5,R0,#+128
+   \       0x14   0x682C             LDR      R4,[R5, #+0]
+   \       0x16   0x....             LDR.N    R2,??DataTable4
+   \       0x18   0x4022             ANDS     R2,R2,R4
+   \       0x1A   0xF1B2 0x7F60      CMP      R2,#+58720256
+   \       0x1E   0xD111             BNE.N    ??sli_se_opaque_mac_update_3
+    266              if ( operation->operation.ctx.hmac.hmac_len > 0 ) {
+   \       0x20   0x6A6A             LDR      R2,[R5, #+36]
+   \       0x22   0xB112             CBZ.N    R2,??sli_se_opaque_mac_update_4
+    267                return PSA_ERROR_BAD_STATE;
+   \       0x24   0xF06F 0x0088      MVN      R0,#+136
+   \       0x28   0xE00E             B.N      ??sli_se_opaque_mac_update_2
+    268              }
+    269          
+    270              return sli_se_driver_mac_compute(
+    271                &(operation->key_desc),
+    272                operation->operation.alg,
+    273                input,
+    274                input_length,
+    275                operation->operation.ctx.hmac.hmac_result,
+    276                sizeof(operation->operation.ctx.hmac.hmac_result),
+    277                &operation->operation.ctx.hmac.hmac_len);
+   \                     ??sli_se_opaque_mac_update_4: (+1)
+   \       0x2A   0xF100 0x0284      ADD      R2,R0,#+132
+   \       0x2E   0x9200             STR      R2,[SP, #+0]
+   \       0x30   0xF100 0x06A4      ADD      R6,R0,#+164
+   \       0x34   0x2520             MOVS     R5,#+32
+   \       0x36   0x460A             MOV      R2,R1
+   \       0x38   0x9602             STR      R6,[SP, #+8]
+   \       0x3A   0x9501             STR      R5,[SP, #+4]
+   \       0x3C   0x4621             MOV      R1,R4
+   \       0x3E   0x.... 0x....      BL       sli_se_driver_mac_compute
+   \       0x42   0xE001             B.N      ??sli_se_opaque_mac_update_2
+    278            }
+    279            #endif   // SLI_PSA_DRIVER_FEATURE_HMAC
+    280          
+    281            #if defined(SLI_PSA_DRIVER_FEATURE_CMAC) || defined(SLI_PSA_DRIVER_FEATURE_CBC_MAC)
+    282            return sli_se_driver_mac_update(&(operation->operation),
+    283                                            &(operation->key_desc),
+    284                                            input,
+    285                                            input_length);
+    286            #else
+    287            return PSA_ERROR_NOT_SUPPORTED;
+   \                     ??sli_se_opaque_mac_update_3: (+1)
+   \       0x44   0xF06F 0x0085      MVN      R0,#+133
+   \                     ??sli_se_opaque_mac_update_2: (+1)
+   \       0x48   0xB004             ADD      SP,SP,#+16
+   \       0x4A   0xBD70             POP      {R4-R6,PC}
+    288            #endif
+    289          
+    290            #else // SLI_PSA_DRIVER_FEATURE_MAC_MULTIPART
+    291          
+    292            (void)operation;
+    293            (void)input;
+    294            (void)input_length;
+    295          
+    296            return PSA_ERROR_NOT_SUPPORTED;
+    297          
+    298            #endif // SLI_PSA_DRIVER_FEATURE_MAC_MULTIPART
+    299          }
+    300          
+
+   \                                 In section .text, align 2, keep-with-next
+    301          psa_status_t sli_se_opaque_mac_sign_finish(
+    302            sli_se_opaque_mac_operation_t *operation,
+    303            uint8_t *mac,
+    304            size_t mac_size,
+    305            size_t *mac_length)
+    306          {
+   \                     sli_se_opaque_mac_sign_finish: (+1)
+   \        0x0   0xB570             PUSH     {R4-R6,LR}
+   \        0x2   0x460C             MOV      R4,R1
+   \        0x4   0x461D             MOV      R5,R3
+    307            #if defined(SLI_PSA_DRIVER_FEATURE_MAC_MULTIPART)
+    308          
+    309            if (operation == NULL
+    310                || mac == NULL
+    311                || mac_size == 0
+    312                || mac_length == NULL) {
+   \        0x6   0x2800             CMP      R0,#+0
+   \        0x8   0xBF18             IT       NE
+   \        0xA   0x2C00             CMPNE    R4,#+0
+   \        0xC   0xD003             BEQ.N    ??sli_se_opaque_mac_sign_finish_0
+   \        0xE   0x2A00             CMP      R2,#+0
+   \       0x10   0xBF18             IT       NE
+   \       0x12   0x2D00             CMPNE    R5,#+0
+   \       0x14   0xD102             BNE.N    ??sli_se_opaque_mac_sign_finish_1
+    313              return PSA_ERROR_INVALID_ARGUMENT;
+   \                     ??sli_se_opaque_mac_sign_finish_0: (+1)
+   \       0x16   0xF06F 0x0086      MVN      R0,#+134
+   \       0x1A   0xBD70             POP      {R4-R6,PC}
+    314            }
+    315          
+    316            #if defined(SLI_PSA_DRIVER_FEATURE_HMAC)
+    317            if (PSA_ALG_IS_HMAC(operation->operation.alg)) {
+   \                     ??sli_se_opaque_mac_sign_finish_1: (+1)
+   \       0x1C   0xF100 0x0680      ADD      R6,R0,#+128
+   \       0x20   0x6833             LDR      R3,[R6, #+0]
+   \       0x22   0x....             LDR.N    R1,??DataTable4
+   \       0x24   0x400B             ANDS     R3,R1,R3
+   \       0x26   0xF1B3 0x7F60      CMP      R3,#+58720256
+   \       0x2A   0xD113             BNE.N    ??sli_se_opaque_mac_sign_finish_2
+    318              if ( operation->operation.ctx.hmac.hmac_len == 0 ) {
+   \       0x2C   0x6A71             LDR      R1,[R6, #+36]
+   \       0x2E   0xB911             CBNZ.N   R1,??sli_se_opaque_mac_sign_finish_3
+    319                return PSA_ERROR_BAD_STATE;
+   \       0x30   0xF06F 0x0088      MVN      R0,#+136
+   \       0x34   0xBD70             POP      {R4-R6,PC}
+    320              }
+    321          
+    322              if ( mac_size < operation->operation.ctx.hmac.hmac_len ) {
+   \                     ??sli_se_opaque_mac_sign_finish_3: (+1)
+   \       0x36   0x428A             CMP      R2,R1
+   \       0x38   0xD202             BCS.N    ??sli_se_opaque_mac_sign_finish_4
+    323                return PSA_ERROR_BUFFER_TOO_SMALL;
+   \       0x3A   0xF06F 0x0089      MVN      R0,#+137
+   \       0x3E   0xBD70             POP      {R4-R6,PC}
+    324              }
+    325          
+    326              memcpy(mac,
+    327                     operation->operation.ctx.hmac.hmac_result,
+    328                     operation->operation.ctx.hmac.hmac_len);
+   \                     ??sli_se_opaque_mac_sign_finish_4: (+1)
+   \       0x40   0x460A             MOV      R2,R1
+   \       0x42   0xF100 0x0184      ADD      R1,R0,#+132
+   \       0x46   0x4620             MOV      R0,R4
+   \       0x48   0x.... 0x....      BL       __aeabi_memcpy
+    329              *mac_length = operation->operation.ctx.hmac.hmac_len;
+   \       0x4C   0x6A70             LDR      R0,[R6, #+36]
+   \       0x4E   0x6028             STR      R0,[R5, #+0]
+    330          
+    331              return PSA_SUCCESS;
+   \       0x50   0x2000             MOVS     R0,#+0
+   \       0x52   0xBD70             POP      {R4-R6,PC}
+    332            }
+    333            #endif   // SLI_PSA_DRIVER_FEATURE_HMAC
+    334          
+    335            #if defined(SLI_PSA_DRIVER_FEATURE_CMAC) || defined(SLI_PSA_DRIVER_FEATURE_CBC_MAC)
+    336            return sli_se_driver_mac_sign_finish(&(operation->operation),
+    337                                                 &(operation->key_desc),
+    338                                                 mac,
+    339                                                 mac_size,
+    340                                                 mac_length);
+    341            #else
+    342            return PSA_ERROR_NOT_SUPPORTED;
+   \                     ??sli_se_opaque_mac_sign_finish_2: (+1)
+   \       0x54   0xF06F 0x0085      MVN      R0,#+133
+   \       0x58   0xBD70             POP      {R4-R6,PC}
+    343            #endif   // SLI_PSA_DRIVER_FEATURE_CMAC || SLI_PSA_DRIVER_FEATURE_CBC_MAC
+    344          
+    345            #else // SLI_PSA_DRIVER_FEATURE_MAC_MULTIPART
+    346          
+    347            (void)operation;
+    348            (void)mac;
+    349            (void)mac_size;
+    350            (void)mac_length;
+    351          
+    352            return PSA_ERROR_NOT_SUPPORTED;
+    353          
+    354            #endif // SLI_PSA_DRIVER_FEATURE_MAC_MULTIPART
+    355          }
+    356          
+
+   \                                 In section .text, align 2, keep-with-next
+    357          psa_status_t sli_se_opaque_mac_verify_finish(
+    358            sli_se_opaque_mac_operation_t *operation,
+    359            const uint8_t *mac,
+    360            size_t mac_length)
+    361          {
+   \                     sli_se_opaque_mac_verify_finish: (+1)
+   \        0x0   0xB5F0             PUSH     {R4-R7,LR}
+   \        0x2   0xB089             SUB      SP,SP,#+36
+   \        0x4   0x4606             MOV      R6,R0
+   \        0x6   0x460C             MOV      R4,R1
+   \        0x8   0x4615             MOV      R5,R2
+   \        0xA   0x2120             MOVS     R1,#+32
+   \        0xC   0x2200             MOVS     R2,#+0
+   \        0xE   0xA801             ADD      R0,SP,#+4
+   \       0x10   0x.... 0x....      BL       __aeabi_memset
+    362            #if defined(SLI_PSA_DRIVER_FEATURE_MAC_MULTIPART)
+    363          
+    364            // Since the PSA Crypto core exposes the verify functionality of the drivers
+    365            // without actually implementing the fallback to 'sign' when the driver
+    366            // doesn't support verify, we need to do this ourselves for the time being.
+    367            uint8_t calculated_mac[PSA_MAC_MAX_SIZE] = { 0 };
+    368            size_t calculated_length = PSA_MAC_MAX_SIZE;
+   \       0x14   0x2120             MOVS     R1,#+32
+   \       0x16   0x9100             STR      R1,[SP, #+0]
+    369          
+    370            psa_status_t status = sli_se_opaque_mac_sign_finish(operation,
+    371                                                                calculated_mac,
+    372                                                                sizeof(calculated_mac),
+    373                                                                &calculated_length);
+   \       0x18   0x466B             MOV      R3,SP
+   \       0x1A   0x2220             MOVS     R2,#+32
+   \       0x1C   0xA901             ADD      R1,SP,#+4
+   \       0x1E   0x4630             MOV      R0,R6
+   \       0x20   0x.... 0x....      BL       sli_se_opaque_mac_sign_finish
+    374            if (status != PSA_SUCCESS) {
+   \       0x24   0xB9E0             CBNZ.N   R0,??sli_se_opaque_mac_verify_finish_0
+    375              return status;
+    376            }
+    377          
+    378            if (mac_length > sizeof(calculated_mac)) {
+   \       0x26   0x2D20             CMP      R5,#+32
+   \       0x28   0xBF88             IT       HI
+   \       0x2A   0xF06F 0x0086      MVNHI    R0,#+134
+    379              return PSA_ERROR_INVALID_ARGUMENT;
+   \       0x2E   0xD817             BHI.N    ??sli_se_opaque_mac_verify_finish_0
+    380            }
+    381          
+    382            if (sli_psa_safer_memcmp(mac, calculated_mac, mac_length) != 0) {
+   \       0x30   0x2100             MOVS     R1,#+0
+   \       0x32   0x2200             MOVS     R2,#+0
+   \       0x34   0xAE01             ADD      R6,SP,#+4
+   \       0x36   0xE004             B.N      ??sli_se_opaque_mac_verify_finish_1
+   \                     ??sli_se_opaque_mac_verify_finish_2: (+1)
+   \       0x38   0x5CA7             LDRB     R7,[R4, R2]
+   \       0x3A   0x5CB3             LDRB     R3,[R6, R2]
+   \       0x3C   0x1C52             ADDS     R2,R2,#+1
+   \       0x3E   0x405F             EORS     R7,R3,R7
+   \       0x40   0x4339             ORRS     R1,R7,R1
+   \                     ??sli_se_opaque_mac_verify_finish_1: (+1)
+   \       0x42   0x42AA             CMP      R2,R5
+   \       0x44   0xD3F8             BCC.N    ??sli_se_opaque_mac_verify_finish_2
+   \       0x46   0xB109             CBZ.N    R1,??sli_se_opaque_mac_verify_finish_3
+    383              status = PSA_ERROR_INVALID_SIGNATURE;
+   \       0x48   0xF06F 0x0094      MVN      R0,#+148
+    384            } else {
+    385              status = PSA_SUCCESS;
+    386            }
+    387          
+    388            sli_psa_zeroize(calculated_mac, sizeof(calculated_mac));
+   \                     ??sli_se_opaque_mac_verify_finish_3: (+1)
+   \       0x4C   0x2220             MOVS     R2,#+32
+   \       0x4E   0xAB01             ADD      R3,SP,#+4
+   \       0x50   0xE002             B.N      ??sli_se_opaque_mac_verify_finish_4
+   \                     ??sli_se_opaque_mac_verify_finish_5: (+1)
+   \       0x52   0x2100             MOVS     R1,#+0
+   \       0x54   0xF803 0x1B01      STRB     R1,[R3], #+1
+   \                     ??sli_se_opaque_mac_verify_finish_4: (+1)
+   \       0x58   0x4611             MOV      R1,R2
+   \       0x5A   0x1E4A             SUBS     R2,R1,#+1
+   \       0x5C   0x2900             CMP      R1,#+0
+   \       0x5E   0xD1F8             BNE.N    ??sli_se_opaque_mac_verify_finish_5
+    389          
+    390            return status;
+   \                     ??sli_se_opaque_mac_verify_finish_0: (+1)
+   \       0x60   0xB009             ADD      SP,SP,#+36
+   \       0x62   0xBDF0             POP      {R4-R7,PC}
+    391          
+    392            #else // SLI_PSA_DRIVER_FEATURE_MAC_MULTIPART
+    393          
+    394            (void)operation;
+    395            (void)mac;
+    396            (void)mac_length;
+    397          
+    398            return PSA_ERROR_NOT_SUPPORTED;
+    399          
+    400            #endif // SLI_PSA_DRIVER_FEATURE_MAC_MULTIPART
+    401          }
+    402          
+
+   \                                 In section .text, align 2, keep-with-next
+    403          psa_status_t sli_se_opaque_mac_abort(sli_se_opaque_mac_operation_t *operation)
+    404          {
+   \                     sli_se_opaque_mac_abort: (+1)
+   \        0x0   0xB580             PUSH     {R7,LR}
+    405            #if defined(SLI_PSA_DRIVER_FEATURE_MAC_MULTIPART)
+    406          
+    407            // There's no state in hardware that we need to preserve, so zeroing out the
+    408            // context suffices.
+    409            if (operation == NULL) {
+   \        0x2   0xB910             CBNZ.N   R0,??sli_se_opaque_mac_abort_0
+    410              return PSA_ERROR_INVALID_ARGUMENT;
+   \        0x4   0xF06F 0x0086      MVN      R0,#+134
+   \        0x8   0xBD02             POP      {R1,PC}
+    411            }
+    412          
+    413            memset(operation, 0, sizeof(*operation));
+   \                     ??sli_se_opaque_mac_abort_0: (+1)
+   \        0xA   0x21B8             MOVS     R1,#+184
+   \        0xC   0x.... 0x....      BL       __aeabi_memclr4
+    414          
+    415            return PSA_SUCCESS;
+   \       0x10   0x2000             MOVS     R0,#+0
+   \       0x12   0xBD02             POP      {R1,PC}
+    416          
+    417            #else // SLI_PSA_DRIVER_FEATURE_MAC_MULTIPART
+    418          
+    419            (void)operation;
+    420          
+    421            return PSA_ERROR_NOT_SUPPORTED;
+    422          
+    423            #endif // SLI_PSA_DRIVER_FEATURE_MAC_MULTIPART
+    424          }
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable4:
+   \        0x0   0x7FC0'0000        DC32     0x7fc00000
+    425          
+    426          #endif // SLI_MBEDTLS_DEVICE_HSE && SLI_PSA_DRIVER_FEATURE_OPAQUE_KEYS
+
+   Maximum stack usage in bytes:
+
+   .cstack Function
+   ------- --------
+       8   sli_se_opaque_mac_abort
+         8   -> __aeabi_memclr4
+      64   sli_se_opaque_mac_compute
+        64   -> __aeabi_memclr4
+        64   -> sli_se_driver_mac_compute
+        64   -> sli_se_key_desc_from_input
+      16   sli_se_opaque_mac_sign_finish
+        16   -> __aeabi_memcpy
+      40   sli_se_opaque_mac_sign_setup
+        40   -> __aeabi_memclr4
+        40   -> __aeabi_memcpy
+        40   -> sli_se_hash_type_from_psa_hmac_alg
+        40   -> sli_se_key_desc_from_input
+      32   sli_se_opaque_mac_update
+        32   -> sli_se_driver_mac_compute
+      56   sli_se_opaque_mac_verify_finish
+        56   -> __aeabi_memset
+        56   -> sli_se_opaque_mac_sign_finish
+      16   sli_se_opaque_mac_verify_setup
+        16   -> sli_se_opaque_mac_sign_setup
+
+
+   Section sizes:
+
+   Bytes  Function/Label
+   -----  --------------
+       4  ??DataTable4
+      32  ?_0
+      20  sli_se_opaque_mac_abort
+      72  sli_se_opaque_mac_compute
+      90  sli_se_opaque_mac_sign_finish
+     154  sli_se_opaque_mac_sign_setup
+      76  sli_se_opaque_mac_update
+     100  sli_se_opaque_mac_verify_finish
+      12  sli_se_opaque_mac_verify_setup
+
+ 
+  32 bytes in section .rodata
+ 528 bytes in section .text
+ 
+ 528 bytes of CODE  memory
+  32 bytes of CONST memory
+
+Errors: none
+Warnings: none

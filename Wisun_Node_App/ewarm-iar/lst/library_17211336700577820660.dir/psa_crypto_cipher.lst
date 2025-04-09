@@ -1,0 +1,1548 @@
+###############################################################################
+#
+# IAR ANSI C/C++ Compiler V9.50.2.385/W64 for ARM         29/Mar/2025  15:53:58
+# Copyright 1999-2024 IAR Systems AB.
+#
+#    Cpu mode                     =  thumb
+#    Endian                       =  little
+#    Source file                  =
+#        D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\util\third_party\mbedtls\library\psa_crypto_cipher.c
+#    Command line                 =
+#        -f "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\ewarm-iar\obj\library_17211336700577820660.dir\psa_crypto_cipher.o.rsp"
+#        ("D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\util\third_party\mbedtls\library\psa_crypto_cipher.c"
+#        -D DEBUG_EFM=1 -D EFR32FG28B322F1024IM48=1 -D
+#        configNUM_SDK_THREAD_LOCAL_STORAGE_POINTERS=2 -D
+#        SL_COMPONENT_CATALOG_PRESENT=1 -D
+#        MBEDTLS_CONFIG_FILE=<sl_mbedtls_config.h> -D
+#        MBEDTLS_PSA_CRYPTO_CONFIG_FILE=<psa_crypto_config.h> -D
+#        SL_RAIL_LIB_MULTIPROTOCOL_SUPPORT=0 -D
+#        SL_RAIL_UTIL_PA_CONFIG_HEADER=<sl_rail_util_pa_config.h> -D
+#        RTT_USE_ASM=0 -lC "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\ewarm-iar\lst\library_17211336700577820660.dir"
+#        --diag_suppress Pa050 -o "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\ewarm-iar\obj\library_17211336700577820660.dir"
+#        --no_cse --no_unroll --no_inline --no_code_motion --no_tbaa
+#        --no_clustering --no_scheduling --debug --endian=little
+#        --cpu=Cortex-M33 --cmse --cmse -e --fpu=VFPv5_sp --dlib_config
+#        "C:\Program Files\IAR Systems\Embedded Workbench
+#        9.2\arm\inc\c\DLib_Config_Normal.h" -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\util\third_party\mbedtls\library\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App 1\Wisun_Node_App\config\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App 1\Wisun_Node_App\config\rail\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App 1\Wisun_Node_App\config\wisun\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App 1\Wisun_Node_App\.\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\Device\SiliconLabs\EFR32FG28\Include\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\app\wisun\component\app_project_info\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\common\inc\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\service\cli\inc\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\service\cli\src\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\CMSIS\Core\Include\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\CMSIS\RTOS2\Include\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\service\device_init\inc\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\emdrv\common\inc\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\emlib\inc\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\service\iostream\inc\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\security\sl_component\sl_mbedtls_support\config\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\security\sl_component\sl_mbedtls_support\config\preset\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\security\sl_component\sl_mbedtls_support\inc\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\util\third_party\mbedtls\include\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\util\third_party\mbedtls\library\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\micrium_os\common\source\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\micrium_os\common\include\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\micrium_os\cpu\include\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\micrium_os\ports\source\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\micrium_os\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\micrium_os\kernel\source\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\micrium_os\kernel\include\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\emdrv\nvm3\inc\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\peripheral\inc\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\util\third_party\printf\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\util\third_party\printf\inc\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\security\sl_component\sl_psa_driver\inc\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\radio\rail_lib\common\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\radio\rail_lib\protocol\ble\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\radio\rail_lib\protocol\ieee802154\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\radio\rail_lib\protocol\wmbus\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\radio\rail_lib\protocol\zwave\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\radio\rail_lib\chip\efr32\efr32xg2x\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\radio\rail_lib\protocol\sidewalk\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\radio\rail_lib\plugin\pa-conversions\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\radio\rail_lib\plugin\pa-conversions\efr32xg28\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\radio\rail_lib\plugin\rail_util_pti\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\security\sl_component\se_manager\inc\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\security\sl_component\se_manager\src\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\util\third_party\segger\systemview\SEGGER\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\util\silicon_labs\silabs_core\memory_manager\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\common\toolchain\inc\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\service\system\inc\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\app\wisun\component\app_core\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\app\wisun\component\app_setting\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\app\wisun\component\cli_util\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\app\wisun\component\event_manager\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\app\wisun\component\ns_list\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\app\wisun\component\ping\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\app\wisun\component\trace_util\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\app\wisun\component\trace_util\nanostack\nanostack-libservice\mbed-client-libservice\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\app\wisun\component\udp_client\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\service\sleeptimer\inc\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\protocol\wisun\plugin\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\protocol\wisun\stack\inc\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\protocol\wisun\stack\inc\socket\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App 1\Wisun_Node_App\autogen\\" -On
+#        --use_c++_inline) --dependencies=n "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\ewarm-iar\obj\library_17211336700577820660.dir\psa_crypto_cipher.o.iar_deps"
+#    Locale                       =  C
+#    List file                    =
+#        D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\ewarm-iar\lst\library_17211336700577820660.dir\psa_crypto_cipher.lst
+#    Object file                  =
+#        D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\ewarm-iar\obj\library_17211336700577820660.dir\psa_crypto_cipher.o
+#    Runtime model:                  
+#      __CPP_Runtime              =  1
+#      __SystemLibrary            =  DLib
+#      __dlib_full_locale_support =  0
+#      __dlib_version             =  6
+#
+###############################################################################
+
+D:\Inesh_wisun\Wisun_Node_App 1\Wisun_Node_App\gecko_sdk_4.4.5\util\third_party\mbedtls\library\psa_crypto_cipher.c
+      1          /*
+      2           *  PSA cipher driver entry points
+      3           */
+      4          /*
+      5           *  Copyright The Mbed TLS Contributors
+      6           *  SPDX-License-Identifier: Apache-2.0
+      7           *
+      8           *  Licensed under the Apache License, Version 2.0 (the "License"); you may
+      9           *  not use this file except in compliance with the License.
+     10           *  You may obtain a copy of the License at
+     11           *
+     12           *  http://www.apache.org/licenses/LICENSE-2.0
+     13           *
+     14           *  Unless required by applicable law or agreed to in writing, software
+     15           *  distributed under the License is distributed on an "AS IS" BASIS, WITHOUT
+     16           *  WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     17           *  See the License for the specific language governing permissions and
+     18           *  limitations under the License.
+     19           */
+     20          
+     21          #include "common.h"
+
+   \                                 In section .text, align 2, keep-with-next
+   \   static __vfp unsigned char *mbedtls_buffer_offset(unsigned char *, size_t)
+   \                     mbedtls_buffer_offset: (+1)
+   \        0x0   0x2800             CMP      R0,#+0
+   \        0x2   0xD101             BNE.N    ??mbedtls_buffer_offset_0
+   \        0x4   0x2000             MOVS     R0,#+0
+   \        0x6   0xE000             B.N      ??mbedtls_buffer_offset_1
+   \                     ??mbedtls_buffer_offset_0: (+1)
+   \        0x8   0x4408             ADD      R0,R0,R1
+   \                     ??mbedtls_buffer_offset_1: (+1)
+   \        0xA   0x4770             BX       LR
+
+   \                                 In section .text, align 2, keep-with-next
+   \   static __vfp unsigned char const *mbedtls_buffer_offset_const(unsigned char const *, size_t)
+   \                     mbedtls_buffer_offset_const: (+1)
+   \        0x0   0x2800             CMP      R0,#+0
+   \        0x2   0xD101             BNE.N    ??mbedtls_buffer_offset_const_0
+   \        0x4   0x2000             MOVS     R0,#+0
+   \        0x6   0xE000             B.N      ??mbedtls_buffer_offset_const_1
+   \                     ??mbedtls_buffer_offset_const_0: (+1)
+   \        0x8   0x4408             ADD      R0,R0,R1
+   \                     ??mbedtls_buffer_offset_const_1: (+1)
+   \        0xA   0x4770             BX       LR
+     22          
+     23          #if defined(MBEDTLS_PSA_CRYPTO_C)
+     24          
+     25          #include "psa_crypto_cipher.h"
+     26          #include "psa_crypto_core.h"
+     27          #include "psa_crypto_random_impl.h"
+     28          
+     29          #include "mbedtls/cipher.h"
+     30          #include "mbedtls/error.h"
+     31          
+     32          #include <string.h>
+     33          
+
+   \                                 In section .text, align 2, keep-with-next
+     34          const mbedtls_cipher_info_t *mbedtls_cipher_info_from_psa(
+     35              psa_algorithm_t alg,
+     36              psa_key_type_t key_type,
+     37              size_t key_bits,
+     38              mbedtls_cipher_id_t *cipher_id)
+     39          {
+   \                     mbedtls_cipher_info_from_psa: (+1)
+   \        0x0   0xE92D 0x43F8      PUSH     {R3-R9,LR}
+   \        0x4   0x0007             MOVS     R7,R0
+   \        0x6   0x000D             MOVS     R5,R1
+   \        0x8   0x0016             MOVS     R6,R2
+   \        0xA   0x001C             MOVS     R4,R3
+     40          #if defined(MBEDTLS_PSA_BUILTIN_KEY_TYPE_AES) || \
+     41              defined(MBEDTLS_PSA_BUILTIN_KEY_TYPE_ARIA) || \
+     42              defined(MBEDTLS_PSA_BUILTIN_KEY_TYPE_DES) || \
+     43              defined(MBEDTLS_PSA_BUILTIN_KEY_TYPE_CAMELLIA) || \
+     44              defined(MBEDTLS_PSA_BUILTIN_KEY_TYPE_CHACHA20)
+     45          
+     46              mbedtls_cipher_mode_t mode;
+     47              mbedtls_cipher_id_t cipher_id_tmp;
+     48          
+     49              if (PSA_ALG_IS_AEAD(alg)) {
+   \        0xC   0xF017 0x40FE      ANDS     R0,R7,#0x7F000000
+   \       0x10   0xF1B0 0x6FA0      CMP      R0,#+83886080
+   \       0x14   0xD101             BNE.N    ??mbedtls_cipher_info_from_psa_0
+     50                  alg = PSA_ALG_AEAD_WITH_SHORTENED_TAG(alg, 0);
+   \       0x16   0xF437 0x177E      BICS     R7,R7,#0x3F8000
+     51              }
+     52          
+     53              if (PSA_ALG_IS_CIPHER(alg) || PSA_ALG_IS_AEAD(alg)) {
+   \                     ??mbedtls_cipher_info_from_psa_0: (+1)
+   \       0x1A   0xF017 0x40FE      ANDS     R0,R7,#0x7F000000
+   \       0x1E   0xF1B0 0x6F80      CMP      R0,#+67108864
+   \       0x22   0xD004             BEQ.N    ??mbedtls_cipher_info_from_psa_1
+   \       0x24   0xF017 0x40FE      ANDS     R0,R7,#0x7F000000
+   \       0x28   0xF1B0 0x6FA0      CMP      R0,#+83886080
+   \       0x2C   0xD111             BNE.N    ??mbedtls_cipher_info_from_psa_2
+     54                  switch (alg) {
+   \                     ??mbedtls_cipher_info_from_psa_1: (+1)
+   \       0x2E   0x0039             MOVS     R1,R7
+   \       0x30   0x.... 0x....      LDR.W    R0,??DataTable3
+   \       0x34   0x4281             CMP      R1,R0
+   \       0x36   0xD004             BEQ.N    ??mbedtls_cipher_info_from_psa_3
+   \       0x38   0x.... 0x....      LDR.W    R0,??DataTable3_1
+   \       0x3C   0x4281             CMP      R1,R0
+   \       0x3E   0xD003             BEQ.N    ??mbedtls_cipher_info_from_psa_4
+   \       0x40   0xE005             B.N      ??mbedtls_cipher_info_from_psa_5
+     55          #if defined(MBEDTLS_PSA_BUILTIN_ALG_STREAM_CIPHER)
+     56                      case PSA_ALG_STREAM_CIPHER:
+     57                          mode = MBEDTLS_MODE_STREAM;
+     58                          break;
+     59          #endif
+     60          #if defined(MBEDTLS_PSA_BUILTIN_ALG_CTR)
+     61                      case PSA_ALG_CTR:
+     62                          mode = MBEDTLS_MODE_CTR;
+     63                          break;
+     64          #endif
+     65          #if defined(MBEDTLS_PSA_BUILTIN_ALG_CFB)
+     66                      case PSA_ALG_CFB:
+     67                          mode = MBEDTLS_MODE_CFB;
+     68                          break;
+     69          #endif
+     70          #if defined(MBEDTLS_PSA_BUILTIN_ALG_OFB)
+     71                      case PSA_ALG_OFB:
+     72                          mode = MBEDTLS_MODE_OFB;
+     73                          break;
+     74          #endif
+     75          #if defined(MBEDTLS_PSA_BUILTIN_ALG_ECB_NO_PADDING)
+     76                      case PSA_ALG_ECB_NO_PADDING:
+     77                          mode = MBEDTLS_MODE_ECB;
+     78                          break;
+     79          #endif
+     80          #if defined(MBEDTLS_PSA_BUILTIN_ALG_CBC_NO_PADDING)
+     81                      case PSA_ALG_CBC_NO_PADDING:
+     82                          mode = MBEDTLS_MODE_CBC;
+   \                     ??mbedtls_cipher_info_from_psa_3: (+1)
+   \       0x42   0xF05F 0x0802      MOVS     R8,#+2
+     83                          break;
+   \       0x46   0xE00C             B.N      ??mbedtls_cipher_info_from_psa_6
+     84          #endif
+     85          #if defined(MBEDTLS_PSA_BUILTIN_ALG_CBC_PKCS7)
+     86                      case PSA_ALG_CBC_PKCS7:
+     87                          mode = MBEDTLS_MODE_CBC;
+     88                          break;
+     89          #endif
+     90          #if defined(MBEDTLS_PSA_BUILTIN_ALG_CCM_STAR_NO_TAG)
+     91                      case PSA_ALG_CCM_STAR_NO_TAG:
+     92                          mode = MBEDTLS_MODE_CCM_STAR_NO_TAG;
+     93                          break;
+     94          #endif
+     95          #if defined(MBEDTLS_PSA_BUILTIN_ALG_CCM)
+     96                      case PSA_ALG_AEAD_WITH_SHORTENED_TAG(PSA_ALG_CCM, 0):
+     97                          mode = MBEDTLS_MODE_CCM;
+   \                     ??mbedtls_cipher_info_from_psa_4: (+1)
+   \       0x48   0xF05F 0x0808      MOVS     R8,#+8
+     98                          break;
+   \       0x4C   0xE009             B.N      ??mbedtls_cipher_info_from_psa_6
+     99          #endif
+    100          #if defined(MBEDTLS_PSA_BUILTIN_ALG_GCM)
+    101                      case PSA_ALG_AEAD_WITH_SHORTENED_TAG(PSA_ALG_GCM, 0):
+    102                          mode = MBEDTLS_MODE_GCM;
+    103                          break;
+    104          #endif
+    105          #if defined(MBEDTLS_PSA_BUILTIN_ALG_CHACHA20_POLY1305)
+    106                      case PSA_ALG_AEAD_WITH_SHORTENED_TAG(PSA_ALG_CHACHA20_POLY1305, 0):
+    107                          mode = MBEDTLS_MODE_CHACHAPOLY;
+    108                          break;
+    109          #endif
+    110                      default:
+    111                          return NULL;
+   \                     ??mbedtls_cipher_info_from_psa_5: (+1)
+   \       0x4E   0x2000             MOVS     R0,#+0
+   \       0x50   0xE01C             B.N      ??mbedtls_cipher_info_from_psa_7
+    112                  }
+    113              } else if (alg == PSA_ALG_CMAC) {
+   \                     ??mbedtls_cipher_info_from_psa_2: (+1)
+   \       0x52   0x....             LDR.N    R0,??DataTable3_2
+   \       0x54   0x4287             CMP      R7,R0
+   \       0x56   0xD102             BNE.N    ??mbedtls_cipher_info_from_psa_8
+    114                  mode = MBEDTLS_MODE_ECB;
+   \       0x58   0xF05F 0x0801      MOVS     R8,#+1
+   \       0x5C   0xE001             B.N      ??mbedtls_cipher_info_from_psa_6
+    115              } else {
+    116                  return NULL;
+   \                     ??mbedtls_cipher_info_from_psa_8: (+1)
+   \       0x5E   0x2000             MOVS     R0,#+0
+   \       0x60   0xE014             B.N      ??mbedtls_cipher_info_from_psa_7
+    117              }
+    118          
+    119              switch (key_type) {
+   \                     ??mbedtls_cipher_info_from_psa_6: (+1)
+   \       0x62   0x0028             MOVS     R0,R5
+   \       0x64   0xB280             UXTH     R0,R0
+   \       0x66   0xF5B0 0x5F10      CMP      R0,#+9216
+   \       0x6A   0xD104             BNE.N    ??mbedtls_cipher_info_from_psa_9
+    120          #if defined(MBEDTLS_PSA_BUILTIN_KEY_TYPE_AES)
+    121                  case PSA_KEY_TYPE_AES:
+    122                      cipher_id_tmp = MBEDTLS_CIPHER_ID_AES;
+   \       0x6C   0xF05F 0x0902      MOVS     R9,#+2
+    123                      break;
+    124          #endif
+    125          #if defined(MBEDTLS_PSA_BUILTIN_KEY_TYPE_ARIA)
+    126                  case PSA_KEY_TYPE_ARIA:
+    127                      cipher_id_tmp = MBEDTLS_CIPHER_ID_ARIA;
+    128                      break;
+    129          #endif
+    130          #if defined(MBEDTLS_PSA_BUILTIN_KEY_TYPE_DES)
+    131                  case PSA_KEY_TYPE_DES:
+    132                      /* key_bits is 64 for Single-DES, 128 for two-key Triple-DES,
+    133                       * and 192 for three-key Triple-DES. */
+    134                      if (key_bits == 64) {
+    135                          cipher_id_tmp = MBEDTLS_CIPHER_ID_DES;
+    136                      } else {
+    137                          cipher_id_tmp = MBEDTLS_CIPHER_ID_3DES;
+    138                      }
+    139                      /* mbedtls doesn't recognize two-key Triple-DES as an algorithm,
+    140                       * but two-key Triple-DES is functionally three-key Triple-DES
+    141                       * with K1=K3, so that's how we present it to mbedtls. */
+    142                      if (key_bits == 128) {
+    143                          key_bits = 192;
+    144                      }
+    145                      break;
+    146          #endif
+    147          #if defined(MBEDTLS_PSA_BUILTIN_KEY_TYPE_CAMELLIA)
+    148                  case PSA_KEY_TYPE_CAMELLIA:
+    149                      cipher_id_tmp = MBEDTLS_CIPHER_ID_CAMELLIA;
+    150                      break;
+    151          #endif
+    152          #if defined(MBEDTLS_PSA_BUILTIN_KEY_TYPE_CHACHA20)
+    153                  case PSA_KEY_TYPE_CHACHA20:
+    154                      cipher_id_tmp = MBEDTLS_CIPHER_ID_CHACHA20;
+    155                      break;
+    156          #endif
+    157                  default:
+    158                      return NULL;
+    159              }
+    160              if (cipher_id != NULL) {
+   \       0x70   0x2C00             CMP      R4,#+0
+   \       0x72   0xD004             BEQ.N    ??mbedtls_cipher_info_from_psa_10
+   \       0x74   0xE001             B.N      ??mbedtls_cipher_info_from_psa_11
+   \                     ??mbedtls_cipher_info_from_psa_9: (+1)
+   \       0x76   0x2000             MOVS     R0,#+0
+   \       0x78   0xE008             B.N      ??mbedtls_cipher_info_from_psa_7
+    161                  *cipher_id = cipher_id_tmp;
+   \                     ??mbedtls_cipher_info_from_psa_11: (+1)
+   \       0x7A   0xF884 0x9000      STRB     R9,[R4, #+0]
+    162              }
+    163          
+    164              return mbedtls_cipher_info_from_values(cipher_id_tmp,
+    165                                                     (int) key_bits, mode);
+   \                     ??mbedtls_cipher_info_from_psa_10: (+1)
+   \       0x7E   0x4642             MOV      R2,R8
+   \       0x80   0xB2D2             UXTB     R2,R2
+   \       0x82   0x0031             MOVS     R1,R6
+   \       0x84   0x4648             MOV      R0,R9
+   \       0x86   0xB2C0             UXTB     R0,R0
+   \       0x88   0x.... 0x....      BL       mbedtls_cipher_info_from_values
+   \                     ??mbedtls_cipher_info_from_psa_7: (+1)
+   \       0x8C   0xE8BD 0x83F2      POP      {R1,R4-R9,PC}
+    166          #else
+    167              (void) alg;
+    168              (void) key_type;
+    169              (void) key_bits;
+    170              (void) cipher_id;
+    171          
+    172              return NULL;
+    173          #endif
+    174          }
+    175          
+    176          #if defined(MBEDTLS_PSA_BUILTIN_CIPHER)
+    177          
+
+   \                                 In section .text, align 2, keep-with-next
+    178          static psa_status_t psa_cipher_setup(
+    179              mbedtls_psa_cipher_operation_t *operation,
+    180              const psa_key_attributes_t *attributes,
+    181              const uint8_t *key_buffer, size_t key_buffer_size,
+    182              psa_algorithm_t alg,
+    183              mbedtls_operation_t cipher_operation)
+    184          {
+   \                     psa_cipher_setup: (+1)
+   \        0x0   0xE92D 0x4FFE      PUSH     {R1-R11,LR}
+   \        0x4   0x4683             MOV      R11,R0
+   \        0x6   0x000E             MOVS     R6,R1
+   \        0x8   0x0017             MOVS     R7,R2
+   \        0xA   0xF8DD 0x8030      LDR      R8,[SP, #+48]
+   \        0xE   0xF99D 0x9034      LDRSB    R9,[SP, #+52]
+    185              int ret = 0;
+   \       0x12   0x2000             MOVS     R0,#+0
+   \       0x14   0x9001             STR      R0,[SP, #+4]
+    186              size_t key_bits;
+    187              const mbedtls_cipher_info_t *cipher_info = NULL;
+   \       0x16   0x2400             MOVS     R4,#+0
+    188              psa_key_type_t key_type = attributes->core.type;
+   \       0x18   0xF8B6 0xA000      LDRH     R10,[R6, #+0]
+    189          
+    190              (void) key_buffer_size;
+    191          
+    192              mbedtls_cipher_init(&operation->ctx.cipher);
+   \       0x1C   0xF11B 0x0008      ADDS     R0,R11,#+8
+   \       0x20   0x.... 0x....      BL       mbedtls_cipher_init
+    193          
+    194              operation->alg = alg;
+   \       0x24   0xF8CB 0x8000      STR      R8,[R11, #+0]
+    195              key_bits = attributes->core.bits;
+   \       0x28   0x8870             LDRH     R0,[R6, #+2]
+   \       0x2A   0x9000             STR      R0,[SP, #+0]
+    196              cipher_info = mbedtls_cipher_info_from_psa(alg, key_type,
+    197                                                         key_bits, NULL);
+   \       0x2C   0x2300             MOVS     R3,#+0
+   \       0x2E   0x9A00             LDR      R2,[SP, #+0]
+   \       0x30   0x4651             MOV      R1,R10
+   \       0x32   0xB289             UXTH     R1,R1
+   \       0x34   0x4640             MOV      R0,R8
+   \       0x36   0x.... 0x....      BL       mbedtls_cipher_info_from_psa
+   \       0x3A   0x0005             MOVS     R5,R0
+    198              if (cipher_info == NULL) {
+   \       0x3C   0x2D00             CMP      R5,#+0
+   \       0x3E   0xD102             BNE.N    ??psa_cipher_setup_0
+    199                  return PSA_ERROR_NOT_SUPPORTED;
+   \       0x40   0xF07F 0x0085      MVNS     R0,#+133
+   \       0x44   0xE091             B.N      ??psa_cipher_setup_1
+    200              }
+    201          
+    202              ret = mbedtls_cipher_setup(&operation->ctx.cipher, cipher_info);
+   \                     ??psa_cipher_setup_0: (+1)
+   \       0x46   0x0029             MOVS     R1,R5
+   \       0x48   0xF11B 0x0008      ADDS     R0,R11,#+8
+   \       0x4C   0x.... 0x....      BL       mbedtls_cipher_setup
+   \       0x50   0x0004             MOVS     R4,R0
+    203              if (ret != 0) {
+   \       0x52   0x2C00             CMP      R4,#+0
+   \       0x54   0xF040 0x8086      BNE.W    ??psa_cipher_setup_2
+    204                  goto exit;
+    205              }
+    206          
+    207          #if defined(MBEDTLS_PSA_BUILTIN_KEY_TYPE_DES)
+    208              if (key_type == PSA_KEY_TYPE_DES && key_bits == 128) {
+    209                  /* Two-key Triple-DES is 3-key Triple-DES with K1=K3 */
+    210                  uint8_t keys[24];
+    211                  memcpy(keys, key_buffer, 16);
+    212                  memcpy(keys + 16, key_buffer, 8);
+    213                  ret = mbedtls_cipher_setkey(&operation->ctx.cipher,
+    214                                              keys,
+    215                                              192, cipher_operation);
+    216              } else
+    217          #endif
+    218              {
+    219                  ret = mbedtls_cipher_setkey(&operation->ctx.cipher, key_buffer,
+    220                                              (int) key_bits, cipher_operation);
+   \                     ??psa_cipher_setup_3: (+1)
+   \       0x58   0x464B             MOV      R3,R9
+   \       0x5A   0xB25B             SXTB     R3,R3
+   \       0x5C   0x9A00             LDR      R2,[SP, #+0]
+   \       0x5E   0x0039             MOVS     R1,R7
+   \       0x60   0xF11B 0x0008      ADDS     R0,R11,#+8
+   \       0x64   0x.... 0x....      BL       mbedtls_cipher_setkey
+   \       0x68   0x0004             MOVS     R4,R0
+    221              }
+    222              if (ret != 0) {
+   \       0x6A   0x2C00             CMP      R4,#+0
+   \       0x6C   0xD17A             BNE.N    ??psa_cipher_setup_2
+    223                  goto exit;
+    224              }
+    225          
+    226          #if defined(MBEDTLS_PSA_BUILTIN_ALG_CBC_NO_PADDING) || \
+    227              defined(MBEDTLS_PSA_BUILTIN_ALG_CBC_PKCS7)
+    228              switch (alg) {
+   \                     ??psa_cipher_setup_4: (+1)
+   \       0x6E   0x4641             MOV      R1,R8
+   \       0x70   0x....             LDR.N    R0,??DataTable3
+   \       0x72   0x4281             CMP      R1,R0
+   \       0x74   0xD003             BEQ.N    ??psa_cipher_setup_5
+   \       0x76   0x....             LDR.N    R0,??DataTable3_3
+   \       0x78   0x4281             CMP      R1,R0
+   \       0x7A   0xD007             BEQ.N    ??psa_cipher_setup_6
+   \       0x7C   0xE00D             B.N      ??psa_cipher_setup_7
+    229                  case PSA_ALG_CBC_NO_PADDING:
+    230                      ret = mbedtls_cipher_set_padding_mode(&operation->ctx.cipher,
+    231                                                            MBEDTLS_PADDING_NONE);
+   \                     ??psa_cipher_setup_5: (+1)
+   \       0x7E   0x2104             MOVS     R1,#+4
+   \       0x80   0xF11B 0x0008      ADDS     R0,R11,#+8
+   \       0x84   0x.... 0x....      BL       mbedtls_cipher_set_padding_mode
+   \       0x88   0x0004             MOVS     R4,R0
+    232                      break;
+   \       0x8A   0xE008             B.N      ??psa_cipher_setup_8
+    233                  case PSA_ALG_CBC_PKCS7:
+    234                      ret = mbedtls_cipher_set_padding_mode(&operation->ctx.cipher,
+    235                                                            MBEDTLS_PADDING_PKCS7);
+   \                     ??psa_cipher_setup_6: (+1)
+   \       0x8C   0x2100             MOVS     R1,#+0
+   \       0x8E   0xF11B 0x0008      ADDS     R0,R11,#+8
+   \       0x92   0x.... 0x....      BL       mbedtls_cipher_set_padding_mode
+   \       0x96   0x0004             MOVS     R4,R0
+    236                      break;
+   \       0x98   0xE001             B.N      ??psa_cipher_setup_8
+    237                  default:
+    238                      /* The algorithm doesn't involve padding. */
+    239                      ret = 0;
+   \                     ??psa_cipher_setup_7: (+1)
+   \       0x9A   0x2000             MOVS     R0,#+0
+   \       0x9C   0x0004             MOVS     R4,R0
+    240                      break;
+    241              }
+    242              if (ret != 0) {
+   \                     ??psa_cipher_setup_8: (+1)
+   \       0x9E   0x2C00             CMP      R4,#+0
+   \       0xA0   0xD160             BNE.N    ??psa_cipher_setup_2
+    243                  goto exit;
+    244              }
+    245          #endif /* MBEDTLS_PSA_BUILTIN_ALG_CBC_NO_PADDING ||
+    246                    MBEDTLS_PSA_BUILTIN_ALG_CBC_PKCS7 */
+    247          
+    248              operation->block_length = (PSA_ALG_IS_STREAM_CIPHER(alg) ? 1 :
+    249                                         PSA_BLOCK_CIPHER_BLOCK_LENGTH(key_type));
+   \                     ??psa_cipher_setup_9: (+1)
+   \       0xA2   0xF018 0x40FF      ANDS     R0,R8,#0x7F800000
+   \       0xA6   0xF1B0 0x6F90      CMP      R0,#+75497472
+   \       0xAA   0xD101             BNE.N    ??psa_cipher_setup_10
+   \       0xAC   0x2101             MOVS     R1,#+1
+   \       0xAE   0xE00F             B.N      ??psa_cipher_setup_11
+   \                     ??psa_cipher_setup_10: (+1)
+   \       0xB0   0x4650             MOV      R0,R10
+   \       0xB2   0xB280             UXTH     R0,R0
+   \       0xB4   0xF410 0x40E0      ANDS     R0,R0,#0x7000
+   \       0xB8   0xF5B0 0x5F00      CMP      R0,#+8192
+   \       0xBC   0xD107             BNE.N    ??psa_cipher_setup_12
+   \       0xBE   0x2101             MOVS     R1,#+1
+   \       0xC0   0x4650             MOV      R0,R10
+   \       0xC2   0xB280             UXTH     R0,R0
+   \       0xC4   0x0A00             LSRS     R0,R0,#+8
+   \       0xC6   0xF010 0x0007      ANDS     R0,R0,#0x7
+   \       0xCA   0x4081             LSLS     R1,R1,R0
+   \       0xCC   0xE000             B.N      ??psa_cipher_setup_11
+   \                     ??psa_cipher_setup_12: (+1)
+   \       0xCE   0x2100             MOVS     R1,#+0
+   \                     ??psa_cipher_setup_11: (+1)
+   \       0xD0   0xF88B 0x1005      STRB     R1,[R11, #+5]
+    250              operation->iv_length = PSA_CIPHER_IV_LENGTH(key_type, alg);
+   \       0xD4   0x4650             MOV      R0,R10
+   \       0xD6   0xB280             UXTH     R0,R0
+   \       0xD8   0xF410 0x40E0      ANDS     R0,R0,#0x7000
+   \       0xDC   0xF5B0 0x5F00      CMP      R0,#+8192
+   \       0xE0   0xD107             BNE.N    ??psa_cipher_setup_13
+   \       0xE2   0x2101             MOVS     R1,#+1
+   \       0xE4   0x4650             MOV      R0,R10
+   \       0xE6   0xB280             UXTH     R0,R0
+   \       0xE8   0x0A00             LSRS     R0,R0,#+8
+   \       0xEA   0xF010 0x0007      ANDS     R0,R0,#0x7
+   \       0xEE   0x4081             LSLS     R1,R1,R0
+   \       0xF0   0xE000             B.N      ??psa_cipher_setup_14
+   \                     ??psa_cipher_setup_13: (+1)
+   \       0xF2   0x2100             MOVS     R1,#+0
+   \                     ??psa_cipher_setup_14: (+1)
+   \       0xF4   0x2902             CMP      R1,#+2
+   \       0xF6   0xD322             BCC.N    ??psa_cipher_setup_15
+   \       0xF8   0x....             LDR.N    R0,??DataTable3_4
+   \       0xFA   0x4580             CMP      R8,R0
+   \       0xFC   0xD00E             BEQ.N    ??psa_cipher_setup_16
+   \       0xFE   0x....             LDR.N    R0,??DataTable3_5
+   \      0x100   0x4580             CMP      R8,R0
+   \      0x102   0xD00B             BEQ.N    ??psa_cipher_setup_16
+   \      0x104   0x....             LDR.N    R0,??DataTable3_6
+   \      0x106   0x4580             CMP      R8,R0
+   \      0x108   0xD008             BEQ.N    ??psa_cipher_setup_16
+   \      0x10A   0x....             LDR.N    R0,??DataTable3_7
+   \      0x10C   0x4580             CMP      R8,R0
+   \      0x10E   0xD005             BEQ.N    ??psa_cipher_setup_16
+   \      0x110   0x....             LDR.N    R0,??DataTable3
+   \      0x112   0x4580             CMP      R8,R0
+   \      0x114   0xD002             BEQ.N    ??psa_cipher_setup_16
+   \      0x116   0x....             LDR.N    R0,??DataTable3_3
+   \      0x118   0x4580             CMP      R8,R0
+   \      0x11A   0xD110             BNE.N    ??psa_cipher_setup_15
+   \                     ??psa_cipher_setup_16: (+1)
+   \      0x11C   0x4650             MOV      R0,R10
+   \      0x11E   0xB280             UXTH     R0,R0
+   \      0x120   0xF410 0x40E0      ANDS     R0,R0,#0x7000
+   \      0x124   0xF5B0 0x5F00      CMP      R0,#+8192
+   \      0x128   0xD107             BNE.N    ??psa_cipher_setup_17
+   \      0x12A   0x2101             MOVS     R1,#+1
+   \      0x12C   0x4650             MOV      R0,R10
+   \      0x12E   0xB280             UXTH     R0,R0
+   \      0x130   0x0A00             LSRS     R0,R0,#+8
+   \      0x132   0xF010 0x0007      ANDS     R0,R0,#0x7
+   \      0x136   0x4081             LSLS     R1,R1,R0
+   \      0x138   0xE012             B.N      ??psa_cipher_setup_18
+   \                     ??psa_cipher_setup_17: (+1)
+   \      0x13A   0x2100             MOVS     R1,#+0
+   \      0x13C   0xE010             B.N      ??psa_cipher_setup_18
+   \                     ??psa_cipher_setup_15: (+1)
+   \      0x13E   0x4651             MOV      R1,R10
+   \      0x140   0xF242 0x0004      MOVW     R0,#+8196
+   \      0x144   0xB289             UXTH     R1,R1
+   \      0x146   0x4281             CMP      R1,R0
+   \      0x148   0xD104             BNE.N    ??psa_cipher_setup_19
+   \      0x14A   0x....             LDR.N    R0,??DataTable3_8
+   \      0x14C   0x4580             CMP      R8,R0
+   \      0x14E   0xD101             BNE.N    ??psa_cipher_setup_19
+   \      0x150   0x210C             MOVS     R1,#+12
+   \      0x152   0xE005             B.N      ??psa_cipher_setup_20
+   \                     ??psa_cipher_setup_19: (+1)
+   \      0x154   0x....             LDR.N    R0,??DataTable3_9
+   \      0x156   0x4580             CMP      R8,R0
+   \      0x158   0xD101             BNE.N    ??psa_cipher_setup_21
+   \      0x15A   0x210D             MOVS     R1,#+13
+   \      0x15C   0xE000             B.N      ??psa_cipher_setup_20
+   \                     ??psa_cipher_setup_21: (+1)
+   \      0x15E   0x2100             MOVS     R1,#+0
+   \                     ??psa_cipher_setup_20: (+1)
+   \                     ??psa_cipher_setup_18: (+1)
+   \      0x160   0xF88B 0x1004      STRB     R1,[R11, #+4]
+    251          
+    252          exit:
+    253              return mbedtls_to_psa_error(ret);
+   \                     ??psa_cipher_setup_2: (+1)
+   \      0x164   0x0020             MOVS     R0,R4
+   \      0x166   0x.... 0x....      BL       mbedtls_to_psa_error
+   \                     ??psa_cipher_setup_1: (+1)
+   \      0x16A   0xE8BD 0x8FFE      POP      {R1-R11,PC}
+    254          }
+    255          
+
+   \                                 In section .text, align 2, keep-with-next
+    256          psa_status_t mbedtls_psa_cipher_encrypt_setup(
+    257              mbedtls_psa_cipher_operation_t *operation,
+    258              const psa_key_attributes_t *attributes,
+    259              const uint8_t *key_buffer, size_t key_buffer_size,
+    260              psa_algorithm_t alg)
+    261          {
+   \                     mbedtls_psa_cipher_encrypt_setup: (+1)
+   \        0x0   0xB5FE             PUSH     {R1-R7,LR}
+   \        0x2   0x0004             MOVS     R4,R0
+   \        0x4   0x000D             MOVS     R5,R1
+   \        0x6   0x0016             MOVS     R6,R2
+   \        0x8   0x001F             MOVS     R7,R3
+    262              return psa_cipher_setup(operation, attributes,
+    263                                      key_buffer, key_buffer_size,
+    264                                      alg, MBEDTLS_ENCRYPT);
+   \        0xA   0x2001             MOVS     R0,#+1
+   \        0xC   0x9001             STR      R0,[SP, #+4]
+   \        0xE   0x9808             LDR      R0,[SP, #+32]
+   \       0x10   0x9000             STR      R0,[SP, #+0]
+   \       0x12   0x003B             MOVS     R3,R7
+   \       0x14   0x0032             MOVS     R2,R6
+   \       0x16   0x0029             MOVS     R1,R5
+   \       0x18   0x0020             MOVS     R0,R4
+   \       0x1A   0x.... 0x....      BL       psa_cipher_setup
+   \       0x1E   0xBDFE             POP      {R1-R7,PC}
+    265          }
+    266          
+
+   \                                 In section .text, align 2, keep-with-next
+    267          psa_status_t mbedtls_psa_cipher_decrypt_setup(
+    268              mbedtls_psa_cipher_operation_t *operation,
+    269              const psa_key_attributes_t *attributes,
+    270              const uint8_t *key_buffer, size_t key_buffer_size,
+    271              psa_algorithm_t alg)
+    272          {
+   \                     mbedtls_psa_cipher_decrypt_setup: (+1)
+   \        0x0   0xB5FE             PUSH     {R1-R7,LR}
+   \        0x2   0x0004             MOVS     R4,R0
+   \        0x4   0x000D             MOVS     R5,R1
+   \        0x6   0x0016             MOVS     R6,R2
+   \        0x8   0x001F             MOVS     R7,R3
+    273              return psa_cipher_setup(operation, attributes,
+    274                                      key_buffer, key_buffer_size,
+    275                                      alg, MBEDTLS_DECRYPT);
+   \        0xA   0x2000             MOVS     R0,#+0
+   \        0xC   0x9001             STR      R0,[SP, #+4]
+   \        0xE   0x9808             LDR      R0,[SP, #+32]
+   \       0x10   0x9000             STR      R0,[SP, #+0]
+   \       0x12   0x003B             MOVS     R3,R7
+   \       0x14   0x0032             MOVS     R2,R6
+   \       0x16   0x0029             MOVS     R1,R5
+   \       0x18   0x0020             MOVS     R0,R4
+   \       0x1A   0x.... 0x....      BL       psa_cipher_setup
+   \       0x1E   0xBDFE             POP      {R1-R7,PC}
+    276          }
+    277          
+
+   \                                 In section .text, align 2, keep-with-next
+    278          psa_status_t mbedtls_psa_cipher_set_iv(
+    279              mbedtls_psa_cipher_operation_t *operation,
+    280              const uint8_t *iv, size_t iv_length)
+    281          {
+   \                     mbedtls_psa_cipher_set_iv: (+1)
+   \        0x0   0xB570             PUSH     {R4-R6,LR}
+   \        0x2   0x0004             MOVS     R4,R0
+   \        0x4   0x000D             MOVS     R5,R1
+   \        0x6   0x0016             MOVS     R6,R2
+    282              if (iv_length != operation->iv_length) {
+   \        0x8   0x7920             LDRB     R0,[R4, #+4]
+   \        0xA   0x4286             CMP      R6,R0
+   \        0xC   0xD002             BEQ.N    ??mbedtls_psa_cipher_set_iv_0
+    283                  return PSA_ERROR_INVALID_ARGUMENT;
+   \        0xE   0xF07F 0x0086      MVNS     R0,#+134
+   \       0x12   0xE007             B.N      ??mbedtls_psa_cipher_set_iv_1
+    284              }
+    285          
+    286              return mbedtls_to_psa_error(
+    287                  mbedtls_cipher_set_iv(&operation->ctx.cipher,
+    288                                        iv, iv_length));
+   \                     ??mbedtls_psa_cipher_set_iv_0: (+1)
+   \       0x14   0x0032             MOVS     R2,R6
+   \       0x16   0x0029             MOVS     R1,R5
+   \       0x18   0xF114 0x0008      ADDS     R0,R4,#+8
+   \       0x1C   0x.... 0x....      BL       mbedtls_cipher_set_iv
+   \       0x20   0x.... 0x....      BL       mbedtls_to_psa_error
+   \                     ??mbedtls_psa_cipher_set_iv_1: (+1)
+   \       0x24   0xBD70             POP      {R4-R6,PC}
+    289          }
+    290          
+    291          #if defined(MBEDTLS_PSA_BUILTIN_ALG_ECB_NO_PADDING)
+    292          /** Process input for which the algorithm is set to ECB mode.
+    293           *
+    294           * This requires manual processing, since the PSA API is defined as being
+    295           * able to process arbitrary-length calls to psa_cipher_update() with ECB mode,
+    296           * but the underlying mbedtls_cipher_update only takes full blocks.
+    297           *
+    298           * \param ctx           The mbedtls cipher context to use. It must have been
+    299           *                      set up for ECB.
+    300           * \param[in] input     The input plaintext or ciphertext to process.
+    301           * \param input_length  The number of bytes to process from \p input.
+    302           *                      This does not need to be aligned to a block boundary.
+    303           *                      If there is a partial block at the end of the input,
+    304           *                      it is stored in \p ctx for future processing.
+    305           * \param output        The buffer where the output is written. It must be
+    306           *                      at least `BS * floor((p + input_length) / BS)` bytes
+    307           *                      long, where `p` is the number of bytes in the
+    308           *                      unprocessed partial block in \p ctx (with
+    309           *                      `0 <= p <= BS - 1`) and `BS` is the block size.
+    310           * \param output_length On success, the number of bytes written to \p output.
+    311           *                      \c 0 on error.
+    312           *
+    313           * \return #PSA_SUCCESS or an error from a hardware accelerator
+    314           */
+    315          static psa_status_t psa_cipher_update_ecb(
+    316              mbedtls_cipher_context_t *ctx,
+    317              const uint8_t *input,
+    318              size_t input_length,
+    319              uint8_t *output,
+    320              size_t *output_length)
+    321          {
+    322              psa_status_t status = PSA_ERROR_CORRUPTION_DETECTED;
+    323              size_t block_size = mbedtls_cipher_info_get_block_size(ctx->cipher_info);
+    324              size_t internal_output_length = 0;
+    325              *output_length = 0;
+    326          
+    327              if (input_length == 0) {
+    328                  status = PSA_SUCCESS;
+    329                  goto exit;
+    330              }
+    331          
+    332              if (ctx->unprocessed_len > 0) {
+    333                  /* Fill up to block size, and run the block if there's a full one. */
+    334                  size_t bytes_to_copy = block_size - ctx->unprocessed_len;
+    335          
+    336                  if (input_length < bytes_to_copy) {
+    337                      bytes_to_copy = input_length;
+    338                  }
+    339          
+    340                  memcpy(&(ctx->unprocessed_data[ctx->unprocessed_len]),
+    341                         input, bytes_to_copy);
+    342                  input_length -= bytes_to_copy;
+    343                  input += bytes_to_copy;
+    344                  ctx->unprocessed_len += bytes_to_copy;
+    345          
+    346                  if (ctx->unprocessed_len == block_size) {
+    347                      status = mbedtls_to_psa_error(
+    348                          mbedtls_cipher_update(ctx,
+    349                                                ctx->unprocessed_data,
+    350                                                block_size,
+    351                                                output, &internal_output_length));
+    352          
+    353                      if (status != PSA_SUCCESS) {
+    354                          goto exit;
+    355                      }
+    356          
+    357                      output += internal_output_length;
+    358                      *output_length += internal_output_length;
+    359                      ctx->unprocessed_len = 0;
+    360                  }
+    361              }
+    362          
+    363              while (input_length >= block_size) {
+    364                  /* Run all full blocks we have, one by one */
+    365                  status = mbedtls_to_psa_error(
+    366                      mbedtls_cipher_update(ctx, input,
+    367                                            block_size,
+    368                                            output, &internal_output_length));
+    369          
+    370                  if (status != PSA_SUCCESS) {
+    371                      goto exit;
+    372                  }
+    373          
+    374                  input_length -= block_size;
+    375                  input += block_size;
+    376          
+    377                  output += internal_output_length;
+    378                  *output_length += internal_output_length;
+    379              }
+    380          
+    381              if (input_length > 0) {
+    382                  /* Save unprocessed bytes for later processing */
+    383                  memcpy(&(ctx->unprocessed_data[ctx->unprocessed_len]),
+    384                         input, input_length);
+    385                  ctx->unprocessed_len += input_length;
+    386              }
+    387          
+    388              status = PSA_SUCCESS;
+    389          
+    390          exit:
+    391              return status;
+    392          }
+    393          #endif /* MBEDTLS_PSA_BUILTIN_ALG_ECB_NO_PADDING */
+    394          
+
+   \                                 In section .text, align 2, keep-with-next
+    395          psa_status_t mbedtls_psa_cipher_update(
+    396              mbedtls_psa_cipher_operation_t *operation,
+    397              const uint8_t *input, size_t input_length,
+    398              uint8_t *output, size_t output_size, size_t *output_length)
+    399          {
+   \                     mbedtls_psa_cipher_update: (+1)
+   \        0x0   0xE92D 0x4FFE      PUSH     {R1-R11,LR}
+   \        0x4   0x4683             MOV      R11,R0
+   \        0x6   0x000C             MOVS     R4,R1
+   \        0x8   0x0015             MOVS     R5,R2
+   \        0xA   0x001E             MOVS     R6,R3
+   \        0xC   0x9F0C             LDR      R7,[SP, #+48]
+   \        0xE   0xF8DD 0x8034      LDR      R8,[SP, #+52]
+    400              psa_status_t status = PSA_ERROR_CORRUPTION_DETECTED;
+   \       0x12   0xF07F 0x0996      MVNS     R9,#+150
+   \       0x16   0xF8CD 0x9004      STR      R9,[SP, #+4]
+    401              size_t expected_output_size;
+    402          
+    403              if (!PSA_ALG_IS_STREAM_CIPHER(operation->alg)) {
+   \       0x1A   0xF8DB 0x0000      LDR      R0,[R11, #+0]
+   \       0x1E   0xF010 0x40FF      ANDS     R0,R0,#0x7F800000
+   \       0x22   0xF1B0 0x6F90      CMP      R0,#+75497472
+   \       0x26   0xD00B             BEQ.N    ??mbedtls_psa_cipher_update_0
+    404                  /* Take the unprocessed partial block left over from previous
+    405                   * update calls, if any, plus the input to this call. Remove
+    406                   * the last partial block, if any. You get the data that will be
+    407                   * output in this call. */
+    408                  expected_output_size =
+    409                      (operation->ctx.cipher.unprocessed_len + input_length)
+    410                      / operation->block_length * operation->block_length;
+   \       0x28   0xF8DB 0x102C      LDR      R1,[R11, #+44]
+   \       0x2C   0x1869             ADDS     R1,R5,R1
+   \       0x2E   0xF89B 0x0005      LDRB     R0,[R11, #+5]
+   \       0x32   0xFBB1 0xF0F0      UDIV     R0,R1,R0
+   \       0x36   0xF89B 0xA005      LDRB     R10,[R11, #+5]
+   \       0x3A   0xFB0A 0xFA00      MUL      R10,R10,R0
+   \       0x3E   0xE000             B.N      ??mbedtls_psa_cipher_update_1
+    411              } else {
+    412                  expected_output_size = input_length;
+   \                     ??mbedtls_psa_cipher_update_0: (+1)
+   \       0x40   0x46AA             MOV      R10,R5
+    413              }
+    414          
+    415              if (output_size < expected_output_size) {
+   \                     ??mbedtls_psa_cipher_update_1: (+1)
+   \       0x42   0x4557             CMP      R7,R10
+   \       0x44   0xD202             BCS.N    ??mbedtls_psa_cipher_update_2
+    416                  return PSA_ERROR_BUFFER_TOO_SMALL;
+   \       0x46   0xF07F 0x0089      MVNS     R0,#+137
+   \       0x4A   0xE012             B.N      ??mbedtls_psa_cipher_update_3
+    417              }
+    418          
+    419          #if defined(MBEDTLS_PSA_BUILTIN_ALG_ECB_NO_PADDING)
+    420              if (operation->alg == PSA_ALG_ECB_NO_PADDING) {
+    421                  /* mbedtls_cipher_update has an API inconsistency: it will only
+    422                   * process a single block at a time in ECB mode. Abstract away that
+    423                   * inconsistency here to match the PSA API behaviour. */
+    424                  status = psa_cipher_update_ecb(&operation->ctx.cipher,
+    425                                                 input,
+    426                                                 input_length,
+    427                                                 output,
+    428                                                 output_length);
+    429              } else
+    430          #endif /* MBEDTLS_PSA_BUILTIN_ALG_ECB_NO_PADDING */
+    431              {
+    432                  status = mbedtls_to_psa_error(
+    433                      mbedtls_cipher_update(&operation->ctx.cipher, input,
+    434                                            input_length, output, output_length));
+   \                     ??mbedtls_psa_cipher_update_2: (+1)
+   \       0x4C   0xF8CD 0x8000      STR      R8,[SP, #+0]
+   \       0x50   0x0033             MOVS     R3,R6
+   \       0x52   0x002A             MOVS     R2,R5
+   \       0x54   0x0021             MOVS     R1,R4
+   \       0x56   0xF11B 0x0008      ADDS     R0,R11,#+8
+   \       0x5A   0x.... 0x....      BL       mbedtls_cipher_update
+   \       0x5E   0x.... 0x....      BL       mbedtls_to_psa_error
+   \       0x62   0x0001             MOVS     R1,R0
+    435          
+    436                  if (*output_length > output_size) {
+   \       0x64   0xF8D8 0x0000      LDR      R0,[R8, #+0]
+   \       0x68   0x4287             CMP      R7,R0
+   \       0x6A   0xD201             BCS.N    ??mbedtls_psa_cipher_update_4
+    437                      return PSA_ERROR_CORRUPTION_DETECTED;
+   \       0x6C   0x4648             MOV      R0,R9
+   \       0x6E   0xE000             B.N      ??mbedtls_psa_cipher_update_3
+    438                  }
+    439              }
+    440          
+    441              return status;
+   \                     ??mbedtls_psa_cipher_update_4: (+1)
+   \       0x70   0x0008             MOVS     R0,R1
+   \                     ??mbedtls_psa_cipher_update_3: (+1)
+   \       0x72   0xE8BD 0x8FFE      POP      {R1-R11,PC}
+    442          }
+    443          
+
+   \                                 In section .text, align 2, keep-with-next
+    444          psa_status_t mbedtls_psa_cipher_finish(
+    445              mbedtls_psa_cipher_operation_t *operation,
+    446              uint8_t *output, size_t output_size, size_t *output_length)
+    447          {
+   \                     mbedtls_psa_cipher_finish: (+1)
+   \        0x0   0xE92D 0x4FF8      PUSH     {R3-R11,LR}
+   \        0x4   0xB084             SUB      SP,SP,#+16
+   \        0x6   0x4680             MOV      R8,R0
+   \        0x8   0x000D             MOVS     R5,R1
+   \        0xA   0x0016             MOVS     R6,R2
+   \        0xC   0x001F             MOVS     R7,R3
+    448              psa_status_t status = PSA_ERROR_GENERIC_ERROR;
+   \        0xE   0xF07F 0x0983      MVNS     R9,#+131
+    449              uint8_t temp_output_buffer[MBEDTLS_MAX_BLOCK_LENGTH];
+    450          
+    451              if (operation->ctx.cipher.unprocessed_len != 0) {
+   \       0x12   0xF8D8 0x002C      LDR      R0,[R8, #+44]
+   \       0x16   0x2800             CMP      R0,#+0
+   \       0x18   0xD00C             BEQ.N    ??mbedtls_psa_cipher_finish_0
+    452                  if (operation->alg == PSA_ALG_ECB_NO_PADDING ||
+    453                      operation->alg == PSA_ALG_CBC_NO_PADDING) {
+   \       0x1A   0xF8D8 0x1000      LDR      R1,[R8, #+0]
+   \       0x1E   0x....             LDR.N    R0,??DataTable3_10
+   \       0x20   0x4281             CMP      R1,R0
+   \       0x22   0xD004             BEQ.N    ??mbedtls_psa_cipher_finish_1
+   \       0x24   0xF8D8 0x1000      LDR      R1,[R8, #+0]
+   \       0x28   0x....             LDR.N    R0,??DataTable3
+   \       0x2A   0x4281             CMP      R1,R0
+   \       0x2C   0xD102             BNE.N    ??mbedtls_psa_cipher_finish_0
+    454                      status = PSA_ERROR_INVALID_ARGUMENT;
+   \                     ??mbedtls_psa_cipher_finish_1: (+1)
+   \       0x2E   0xF07F 0x0486      MVNS     R4,#+134
+    455                      goto exit;
+   \       0x32   0xE01D             B.N      ??mbedtls_psa_cipher_finish_2
+    456                  }
+    457              }
+    458          
+    459              status = mbedtls_to_psa_error(
+    460                  mbedtls_cipher_finish(&operation->ctx.cipher,
+    461                                        temp_output_buffer,
+    462                                        output_length));
+   \                     ??mbedtls_psa_cipher_finish_0: (+1)
+   \       0x34   0x003A             MOVS     R2,R7
+   \       0x36   0x4669             MOV      R1,SP
+   \       0x38   0xF118 0x0008      ADDS     R0,R8,#+8
+   \       0x3C   0x.... 0x....      BL       mbedtls_cipher_finish
+   \       0x40   0x.... 0x....      BL       mbedtls_to_psa_error
+   \       0x44   0x0004             MOVS     R4,R0
+    463              if (status != PSA_SUCCESS) {
+   \       0x46   0x2C00             CMP      R4,#+0
+   \       0x48   0xD112             BNE.N    ??mbedtls_psa_cipher_finish_2
+    464                  goto exit;
+    465              }
+    466          
+    467              if (*output_length == 0) {
+   \                     ??mbedtls_psa_cipher_finish_3: (+1)
+   \       0x4A   0x6838             LDR      R0,[R7, #+0]
+   \       0x4C   0x2800             CMP      R0,#+0
+   \       0x4E   0xD00F             BEQ.N    ??mbedtls_psa_cipher_finish_2
+    468                  ; /* Nothing to copy. Note that output may be NULL in this case. */
+    469              } else if (output_size >= *output_length) {
+   \       0x50   0x6838             LDR      R0,[R7, #+0]
+   \       0x52   0x4286             CMP      R6,R0
+   \       0x54   0xD309             BCC.N    ??mbedtls_psa_cipher_finish_4
+    470                  memcpy(output, temp_output_buffer, *output_length);
+   \       0x56   0xF8D7 0xB000      LDR      R11,[R7, #+0]
+   \       0x5A   0x46E9             MOV      R9,SP
+   \       0x5C   0x46AA             MOV      R10,R5
+   \       0x5E   0x465A             MOV      R2,R11
+   \       0x60   0x4649             MOV      R1,R9
+   \       0x62   0x4650             MOV      R0,R10
+   \       0x64   0x.... 0x....      BL       __aeabi_memcpy
+    471              } else {
+   \       0x68   0xE002             B.N      ??mbedtls_psa_cipher_finish_2
+    472                  status = PSA_ERROR_BUFFER_TOO_SMALL;
+   \                     ??mbedtls_psa_cipher_finish_4: (+1)
+   \       0x6A   0xF07F 0x0089      MVNS     R0,#+137
+   \       0x6E   0x0004             MOVS     R4,R0
+    473              }
+    474          
+    475          exit:
+    476              mbedtls_platform_zeroize(temp_output_buffer,
+    477                                       sizeof(temp_output_buffer));
+   \                     ??mbedtls_psa_cipher_finish_2: (+1)
+   \       0x70   0x2110             MOVS     R1,#+16
+   \       0x72   0x4668             MOV      R0,SP
+   \       0x74   0x.... 0x....      BL       mbedtls_platform_zeroize
+    478          
+    479              return status;
+   \       0x78   0x0020             MOVS     R0,R4
+   \       0x7A   0xB005             ADD      SP,SP,#+20
+   \       0x7C   0xE8BD 0x8FF0      POP      {R4-R11,PC}
+    480          }
+    481          
+
+   \                                 In section .text, align 2, keep-with-next
+    482          psa_status_t mbedtls_psa_cipher_abort(
+    483              mbedtls_psa_cipher_operation_t *operation)
+    484          {
+   \                     mbedtls_psa_cipher_abort: (+1)
+   \        0x0   0xB510             PUSH     {R4,LR}
+   \        0x2   0x0004             MOVS     R4,R0
+    485              /* Sanity check (shouldn't happen: operation->alg should
+    486               * always have been initialized to a valid value). */
+    487              if (!PSA_ALG_IS_CIPHER(operation->alg)) {
+   \        0x4   0x6820             LDR      R0,[R4, #+0]
+   \        0x6   0xF010 0x40FE      ANDS     R0,R0,#0x7F000000
+   \        0xA   0xF1B0 0x6F80      CMP      R0,#+67108864
+   \        0xE   0xD002             BEQ.N    ??mbedtls_psa_cipher_abort_0
+    488                  return PSA_ERROR_BAD_STATE;
+   \       0x10   0xF07F 0x0088      MVNS     R0,#+136
+   \       0x14   0xE004             B.N      ??mbedtls_psa_cipher_abort_1
+    489              }
+    490          
+    491              mbedtls_cipher_free(&operation->ctx.cipher);
+   \                     ??mbedtls_psa_cipher_abort_0: (+1)
+   \       0x16   0xF114 0x0008      ADDS     R0,R4,#+8
+   \       0x1A   0x.... 0x....      BL       mbedtls_cipher_free
+    492          
+    493              return PSA_SUCCESS;
+   \       0x1E   0x2000             MOVS     R0,#+0
+   \                     ??mbedtls_psa_cipher_abort_1: (+1)
+   \       0x20   0xBD10             POP      {R4,PC}
+    494          }
+    495          
+
+   \                                 In section .text, align 2, keep-with-next
+    496          psa_status_t mbedtls_psa_cipher_encrypt(
+    497              const psa_key_attributes_t *attributes,
+    498              const uint8_t *key_buffer,
+    499              size_t key_buffer_size,
+    500              psa_algorithm_t alg,
+    501              const uint8_t *iv,
+    502              size_t iv_length,
+    503              const uint8_t *input,
+    504              size_t input_length,
+    505              uint8_t *output,
+    506              size_t output_size,
+    507              size_t *output_length)
+    508          {
+   \                     mbedtls_psa_cipher_encrypt: (+1)
+   \        0x0   0xE92D 0x4FFF      PUSH     {R0-R11,LR}
+   \        0x4   0xB099             SUB      SP,SP,#+100
+   \        0x6   0xF8DD 0xA098      LDR      R10,[SP, #+152]
+   \        0xA   0x9C27             LDR      R4,[SP, #+156]
+   \        0xC   0xF8DD 0x90A0      LDR      R9,[SP, #+160]
+   \       0x10   0x9D29             LDR      R5,[SP, #+164]
+   \       0x12   0x9E2A             LDR      R6,[SP, #+168]
+   \       0x14   0x9F2B             LDR      R7,[SP, #+172]
+   \       0x16   0xF8DD 0x80B0      LDR      R8,[SP, #+176]
+    509              psa_status_t status = PSA_ERROR_CORRUPTION_DETECTED;
+   \       0x1A   0xF07F 0x0096      MVNS     R0,#+150
+   \       0x1E   0x9001             STR      R0,[SP, #+4]
+    510              mbedtls_psa_cipher_operation_t operation = MBEDTLS_PSA_CIPHER_OPERATION_INIT;
+   \       0x20   0xA804             ADD      R0,SP,#+16
+   \       0x22   0x2150             MOVS     R1,#+80
+   \       0x24   0x.... 0x....      BL       __aeabi_memclr4
+    511              size_t update_output_length, finish_output_length;
+    512          
+    513              status = mbedtls_psa_cipher_encrypt_setup(&operation, attributes,
+    514                                                        key_buffer, key_buffer_size,
+    515                                                        alg);
+   \       0x28   0x981C             LDR      R0,[SP, #+112]
+   \       0x2A   0x9000             STR      R0,[SP, #+0]
+   \       0x2C   0x9B1B             LDR      R3,[SP, #+108]
+   \       0x2E   0x9A1A             LDR      R2,[SP, #+104]
+   \       0x30   0x9919             LDR      R1,[SP, #+100]
+   \       0x32   0xA804             ADD      R0,SP,#+16
+   \       0x34   0x.... 0x....      BL       mbedtls_psa_cipher_encrypt_setup
+   \       0x38   0x4683             MOV      R11,R0
+    516              if (status != PSA_SUCCESS) {
+   \       0x3A   0xF1BB 0x0F00      CMP      R11,#+0
+   \       0x3E   0xD12B             BNE.N    ??mbedtls_psa_cipher_encrypt_0
+    517                  goto exit;
+    518              }
+    519          
+    520              if (iv_length > 0) {
+   \                     ??mbedtls_psa_cipher_encrypt_1: (+1)
+   \       0x40   0x2C00             CMP      R4,#+0
+   \       0x42   0xD008             BEQ.N    ??mbedtls_psa_cipher_encrypt_2
+    521                  status = mbedtls_psa_cipher_set_iv(&operation, iv, iv_length);
+   \       0x44   0x0022             MOVS     R2,R4
+   \       0x46   0x4651             MOV      R1,R10
+   \       0x48   0xA804             ADD      R0,SP,#+16
+   \       0x4A   0x.... 0x....      BL       mbedtls_psa_cipher_set_iv
+   \       0x4E   0x4683             MOV      R11,R0
+    522                  if (status != PSA_SUCCESS) {
+   \       0x50   0xF1BB 0x0F00      CMP      R11,#+0
+   \       0x54   0xD120             BNE.N    ??mbedtls_psa_cipher_encrypt_0
+    523                      goto exit;
+    524                  }
+    525              }
+    526          
+    527              status = mbedtls_psa_cipher_update(&operation, input, input_length,
+    528                                                 output, output_size,
+    529                                                 &update_output_length);
+   \                     ??mbedtls_psa_cipher_encrypt_2: (+1)
+   \       0x56   0xA802             ADD      R0,SP,#+8
+   \       0x58   0x9001             STR      R0,[SP, #+4]
+   \       0x5A   0x9700             STR      R7,[SP, #+0]
+   \       0x5C   0x0033             MOVS     R3,R6
+   \       0x5E   0x002A             MOVS     R2,R5
+   \       0x60   0x4649             MOV      R1,R9
+   \       0x62   0xA804             ADD      R0,SP,#+16
+   \       0x64   0x.... 0x....      BL       mbedtls_psa_cipher_update
+   \       0x68   0x4683             MOV      R11,R0
+    530              if (status != PSA_SUCCESS) {
+   \       0x6A   0xF1BB 0x0F00      CMP      R11,#+0
+   \       0x6E   0xD113             BNE.N    ??mbedtls_psa_cipher_encrypt_0
+    531                  goto exit;
+    532              }
+    533          
+    534              status = mbedtls_psa_cipher_finish(
+    535                  &operation,
+    536                  mbedtls_buffer_offset(output, update_output_length),
+    537                  output_size - update_output_length, &finish_output_length);
+   \                     ??mbedtls_psa_cipher_encrypt_3: (+1)
+   \       0x70   0x9902             LDR      R1,[SP, #+8]
+   \       0x72   0x0030             MOVS     R0,R6
+   \       0x74   0x.... 0x....      BL       mbedtls_buffer_offset
+   \       0x78   0xAB03             ADD      R3,SP,#+12
+   \       0x7A   0x9A02             LDR      R2,[SP, #+8]
+   \       0x7C   0x1ABA             SUBS     R2,R7,R2
+   \       0x7E   0x0001             MOVS     R1,R0
+   \       0x80   0xA804             ADD      R0,SP,#+16
+   \       0x82   0x.... 0x....      BL       mbedtls_psa_cipher_finish
+   \       0x86   0x4683             MOV      R11,R0
+    538              if (status != PSA_SUCCESS) {
+   \       0x88   0xF1BB 0x0F00      CMP      R11,#+0
+   \       0x8C   0xD104             BNE.N    ??mbedtls_psa_cipher_encrypt_0
+    539                  goto exit;
+    540              }
+    541          
+    542              *output_length = update_output_length + finish_output_length;
+   \                     ??mbedtls_psa_cipher_encrypt_4: (+1)
+   \       0x8E   0x9902             LDR      R1,[SP, #+8]
+   \       0x90   0x9803             LDR      R0,[SP, #+12]
+   \       0x92   0x1841             ADDS     R1,R0,R1
+   \       0x94   0xF8C8 0x1000      STR      R1,[R8, #+0]
+    543          
+    544          exit:
+    545              if (status == PSA_SUCCESS) {
+   \                     ??mbedtls_psa_cipher_encrypt_0: (+1)
+   \       0x98   0xF1BB 0x0F00      CMP      R11,#+0
+   \       0x9C   0xD104             BNE.N    ??mbedtls_psa_cipher_encrypt_5
+    546                  status = mbedtls_psa_cipher_abort(&operation);
+   \       0x9E   0xA804             ADD      R0,SP,#+16
+   \       0xA0   0x.... 0x....      BL       mbedtls_psa_cipher_abort
+   \       0xA4   0x4683             MOV      R11,R0
+   \       0xA6   0xE002             B.N      ??mbedtls_psa_cipher_encrypt_6
+    547              } else {
+    548                  mbedtls_psa_cipher_abort(&operation);
+   \                     ??mbedtls_psa_cipher_encrypt_5: (+1)
+   \       0xA8   0xA804             ADD      R0,SP,#+16
+   \       0xAA   0x.... 0x....      BL       mbedtls_psa_cipher_abort
+    549              }
+    550          
+    551              return status;
+   \                     ??mbedtls_psa_cipher_encrypt_6: (+1)
+   \       0xAE   0x4658             MOV      R0,R11
+   \       0xB0   0xB01D             ADD      SP,SP,#+116
+   \       0xB2   0xE8BD 0x8FF0      POP      {R4-R11,PC}
+    552          }
+
+   \                                 In section .rodata, align 4
+   \        0x0   0x0000'0000        DC32 0
+   \        0x4   0x00 0x00          DC8 0, 0
+   \        0x6                      DS8 2
+   \        0x8   0x0000'0000        DC32 0
+   \        0xC                      DS8 68
+    553          
+
+   \                                 In section .text, align 2, keep-with-next
+    554          psa_status_t mbedtls_psa_cipher_decrypt(
+    555              const psa_key_attributes_t *attributes,
+    556              const uint8_t *key_buffer,
+    557              size_t key_buffer_size,
+    558              psa_algorithm_t alg,
+    559              const uint8_t *input,
+    560              size_t input_length,
+    561              uint8_t *output,
+    562              size_t output_size,
+    563              size_t *output_length)
+    564          {
+   \                     mbedtls_psa_cipher_decrypt: (+1)
+   \        0x0   0xE92D 0x4FF3      PUSH     {R0,R1,R4-R11,LR}
+   \        0x4   0xB099             SUB      SP,SP,#+100
+   \        0x6   0x4692             MOV      R10,R2
+   \        0x8   0x4699             MOV      R9,R3
+   \        0xA   0x9C24             LDR      R4,[SP, #+144]
+   \        0xC   0x9D25             LDR      R5,[SP, #+148]
+   \        0xE   0x9E26             LDR      R6,[SP, #+152]
+   \       0x10   0x9F27             LDR      R7,[SP, #+156]
+   \       0x12   0xF8DD 0x80A0      LDR      R8,[SP, #+160]
+    565              psa_status_t status = PSA_ERROR_CORRUPTION_DETECTED;
+   \       0x16   0xF07F 0x0096      MVNS     R0,#+150
+   \       0x1A   0x9001             STR      R0,[SP, #+4]
+    566              mbedtls_psa_cipher_operation_t operation = MBEDTLS_PSA_CIPHER_OPERATION_INIT;
+   \       0x1C   0xA804             ADD      R0,SP,#+16
+   \       0x1E   0x2150             MOVS     R1,#+80
+   \       0x20   0x.... 0x....      BL       __aeabi_memclr4
+    567              size_t olength, accumulated_length;
+    568          
+    569              status = mbedtls_psa_cipher_decrypt_setup(&operation, attributes,
+    570                                                        key_buffer, key_buffer_size,
+    571                                                        alg);
+   \       0x24   0xF8CD 0x9000      STR      R9,[SP, #+0]
+   \       0x28   0x4653             MOV      R3,R10
+   \       0x2A   0x9A1A             LDR      R2,[SP, #+104]
+   \       0x2C   0x9919             LDR      R1,[SP, #+100]
+   \       0x2E   0xA804             ADD      R0,SP,#+16
+   \       0x30   0x.... 0x....      BL       mbedtls_psa_cipher_decrypt_setup
+   \       0x34   0x4683             MOV      R11,R0
+    572              if (status != PSA_SUCCESS) {
+   \       0x36   0xF1BB 0x0F00      CMP      R11,#+0
+   \       0x3A   0xD137             BNE.N    ??mbedtls_psa_cipher_decrypt_0
+    573                  goto exit;
+    574              }
+    575          
+    576              if (operation.iv_length > 0) {
+   \                     ??mbedtls_psa_cipher_decrypt_1: (+1)
+   \       0x3C   0xF89D 0x0014      LDRB     R0,[SP, #+20]
+   \       0x40   0x2800             CMP      R0,#+0
+   \       0x42   0xD009             BEQ.N    ??mbedtls_psa_cipher_decrypt_2
+    577                  status = mbedtls_psa_cipher_set_iv(&operation,
+    578                                                     input, operation.iv_length);
+   \       0x44   0xF89D 0x2014      LDRB     R2,[SP, #+20]
+   \       0x48   0x0021             MOVS     R1,R4
+   \       0x4A   0xA804             ADD      R0,SP,#+16
+   \       0x4C   0x.... 0x....      BL       mbedtls_psa_cipher_set_iv
+   \       0x50   0x4683             MOV      R11,R0
+    579                  if (status != PSA_SUCCESS) {
+   \       0x52   0xF1BB 0x0F00      CMP      R11,#+0
+   \       0x56   0xD129             BNE.N    ??mbedtls_psa_cipher_decrypt_0
+    580                      goto exit;
+    581                  }
+    582              }
+    583          
+    584              status = mbedtls_psa_cipher_update(
+    585                  &operation,
+    586                  mbedtls_buffer_offset_const(input, operation.iv_length),
+    587                  input_length - operation.iv_length,
+    588                  output, output_size, &olength);
+   \                     ??mbedtls_psa_cipher_decrypt_2: (+1)
+   \       0x58   0xF89D 0x1014      LDRB     R1,[SP, #+20]
+   \       0x5C   0x0020             MOVS     R0,R4
+   \       0x5E   0x.... 0x....      BL       mbedtls_buffer_offset_const
+   \       0x62   0xA903             ADD      R1,SP,#+12
+   \       0x64   0x9101             STR      R1,[SP, #+4]
+   \       0x66   0x9700             STR      R7,[SP, #+0]
+   \       0x68   0x0033             MOVS     R3,R6
+   \       0x6A   0xF89D 0x2014      LDRB     R2,[SP, #+20]
+   \       0x6E   0x1AAA             SUBS     R2,R5,R2
+   \       0x70   0x0001             MOVS     R1,R0
+   \       0x72   0xA804             ADD      R0,SP,#+16
+   \       0x74   0x.... 0x....      BL       mbedtls_psa_cipher_update
+   \       0x78   0x4683             MOV      R11,R0
+    589              if (status != PSA_SUCCESS) {
+   \       0x7A   0xF1BB 0x0F00      CMP      R11,#+0
+   \       0x7E   0xD115             BNE.N    ??mbedtls_psa_cipher_decrypt_0
+    590                  goto exit;
+    591              }
+    592          
+    593              accumulated_length = olength;
+   \                     ??mbedtls_psa_cipher_decrypt_3: (+1)
+   \       0x80   0x9803             LDR      R0,[SP, #+12]
+   \       0x82   0x9002             STR      R0,[SP, #+8]
+    594          
+    595              status = mbedtls_psa_cipher_finish(
+    596                  &operation,
+    597                  mbedtls_buffer_offset(output, accumulated_length),
+    598                  output_size - accumulated_length, &olength);
+   \       0x84   0x9902             LDR      R1,[SP, #+8]
+   \       0x86   0x0030             MOVS     R0,R6
+   \       0x88   0x.... 0x....      BL       mbedtls_buffer_offset
+   \       0x8C   0xAB03             ADD      R3,SP,#+12
+   \       0x8E   0x9A02             LDR      R2,[SP, #+8]
+   \       0x90   0x1ABA             SUBS     R2,R7,R2
+   \       0x92   0x0001             MOVS     R1,R0
+   \       0x94   0xA804             ADD      R0,SP,#+16
+   \       0x96   0x.... 0x....      BL       mbedtls_psa_cipher_finish
+   \       0x9A   0x4683             MOV      R11,R0
+    599              if (status != PSA_SUCCESS) {
+   \       0x9C   0xF1BB 0x0F00      CMP      R11,#+0
+   \       0xA0   0xD104             BNE.N    ??mbedtls_psa_cipher_decrypt_0
+    600                  goto exit;
+    601              }
+    602          
+    603              *output_length = accumulated_length + olength;
+   \                     ??mbedtls_psa_cipher_decrypt_4: (+1)
+   \       0xA2   0x9902             LDR      R1,[SP, #+8]
+   \       0xA4   0x9803             LDR      R0,[SP, #+12]
+   \       0xA6   0x1841             ADDS     R1,R0,R1
+   \       0xA8   0xF8C8 0x1000      STR      R1,[R8, #+0]
+    604          
+    605          exit:
+    606              if (status == PSA_SUCCESS) {
+   \                     ??mbedtls_psa_cipher_decrypt_0: (+1)
+   \       0xAC   0xF1BB 0x0F00      CMP      R11,#+0
+   \       0xB0   0xD104             BNE.N    ??mbedtls_psa_cipher_decrypt_5
+    607                  status = mbedtls_psa_cipher_abort(&operation);
+   \       0xB2   0xA804             ADD      R0,SP,#+16
+   \       0xB4   0x.... 0x....      BL       mbedtls_psa_cipher_abort
+   \       0xB8   0x4683             MOV      R11,R0
+   \       0xBA   0xE002             B.N      ??mbedtls_psa_cipher_decrypt_6
+    608              } else {
+    609                  mbedtls_psa_cipher_abort(&operation);
+   \                     ??mbedtls_psa_cipher_decrypt_5: (+1)
+   \       0xBC   0xA804             ADD      R0,SP,#+16
+   \       0xBE   0x.... 0x....      BL       mbedtls_psa_cipher_abort
+    610              }
+    611          
+    612              return status;
+   \                     ??mbedtls_psa_cipher_decrypt_6: (+1)
+   \       0xC2   0x4658             MOV      R0,R11
+   \       0xC4   0xB01B             ADD      SP,SP,#+108
+   \       0xC6   0xE8BD 0x8FF0      POP      {R4-R11,PC}
+    613          }
+
+   \                                 In section .rodata, align 4
+   \        0x0   0x0000'0000        DC32 0
+   \        0x4   0x00 0x00          DC8 0, 0
+   \        0x6                      DS8 2
+   \        0x8   0x0000'0000        DC32 0
+   \        0xC                      DS8 68
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable3:
+   \        0x0   0x0440'4000        DC32     0x4404000
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable3_1:
+   \        0x0   0x0540'0100        DC32     0x5400100
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable3_2:
+   \        0x0   0x03C0'0200        DC32     0x3c00200
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable3_3:
+   \        0x0   0x0440'4100        DC32     0x4404100
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable3_4:
+   \        0x0   0x04C0'1000        DC32     0x4c01000
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable3_5:
+   \        0x0   0x04C0'1100        DC32     0x4c01100
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable3_6:
+   \        0x0   0x04C0'1200        DC32     0x4c01200
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable3_7:
+   \        0x0   0x0440'FF00        DC32     0x440ff00
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable3_8:
+   \        0x0   0x0480'0100        DC32     0x4800100
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable3_9:
+   \        0x0   0x04C0'1300        DC32     0x4c01300
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable3_10:
+   \        0x0   0x0440'4400        DC32     0x4404400
+    614          #endif /* MBEDTLS_PSA_BUILTIN_CIPHER */
+    615          
+    616          #endif /* MBEDTLS_PSA_CRYPTO_C */
+
+   Maximum stack usage in bytes:
+
+   .cstack Function
+   ------- --------
+       0   mbedtls_buffer_offset
+       0   mbedtls_buffer_offset_const
+      32   mbedtls_cipher_info_from_psa
+        32   -> mbedtls_cipher_info_from_values
+       8   mbedtls_psa_cipher_abort
+         8   -> mbedtls_cipher_free
+     144   mbedtls_psa_cipher_decrypt
+       144   -> __aeabi_memclr4
+       144   -> mbedtls_buffer_offset
+       144   -> mbedtls_buffer_offset_const
+       144   -> mbedtls_psa_cipher_abort
+       144   -> mbedtls_psa_cipher_decrypt_setup
+       144   -> mbedtls_psa_cipher_finish
+       144   -> mbedtls_psa_cipher_set_iv
+       144   -> mbedtls_psa_cipher_update
+      32   mbedtls_psa_cipher_decrypt_setup
+        32   -> psa_cipher_setup
+     152   mbedtls_psa_cipher_encrypt
+       152   -> __aeabi_memclr4
+       152   -> mbedtls_buffer_offset
+       152   -> mbedtls_psa_cipher_abort
+       152   -> mbedtls_psa_cipher_encrypt_setup
+       152   -> mbedtls_psa_cipher_finish
+       152   -> mbedtls_psa_cipher_set_iv
+       152   -> mbedtls_psa_cipher_update
+      32   mbedtls_psa_cipher_encrypt_setup
+        32   -> psa_cipher_setup
+      56   mbedtls_psa_cipher_finish
+        56   -> __aeabi_memcpy
+        56   -> mbedtls_cipher_finish
+        56   -> mbedtls_platform_zeroize
+        56   -> mbedtls_to_psa_error
+      16   mbedtls_psa_cipher_set_iv
+        16   -> mbedtls_cipher_set_iv
+        16   -> mbedtls_to_psa_error
+      48   mbedtls_psa_cipher_update
+        48   -> mbedtls_cipher_update
+        48   -> mbedtls_to_psa_error
+      48   psa_cipher_setup
+        48   -> mbedtls_cipher_info_from_psa
+        48   -> mbedtls_cipher_init
+        48   -> mbedtls_cipher_set_padding_mode
+        48   -> mbedtls_cipher_setkey
+        48   -> mbedtls_cipher_setup
+        48   -> mbedtls_to_psa_error
+
+
+   Section sizes:
+
+   Bytes  Function/Label
+   -----  --------------
+       4  ??DataTable3
+       4  ??DataTable3_1
+       4  ??DataTable3_10
+       4  ??DataTable3_2
+       4  ??DataTable3_3
+       4  ??DataTable3_4
+       4  ??DataTable3_5
+       4  ??DataTable3_6
+       4  ??DataTable3_7
+       4  ??DataTable3_8
+       4  ??DataTable3_9
+      80  ?_0
+      80  ?_1
+      12  mbedtls_buffer_offset
+      12  mbedtls_buffer_offset_const
+     144  mbedtls_cipher_info_from_psa
+      34  mbedtls_psa_cipher_abort
+     202  mbedtls_psa_cipher_decrypt
+      32  mbedtls_psa_cipher_decrypt_setup
+     182  mbedtls_psa_cipher_encrypt
+      32  mbedtls_psa_cipher_encrypt_setup
+     128  mbedtls_psa_cipher_finish
+      38  mbedtls_psa_cipher_set_iv
+     118  mbedtls_psa_cipher_update
+     366  psa_cipher_setup
+
+ 
+   160 bytes in section .rodata
+ 1'344 bytes in section .text
+ 
+ 1'344 bytes of CODE  memory
+   160 bytes of CONST memory
+
+Errors: none
+Warnings: none

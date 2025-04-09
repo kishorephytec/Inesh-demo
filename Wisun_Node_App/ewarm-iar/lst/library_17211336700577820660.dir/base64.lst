@@ -1,0 +1,993 @@
+###############################################################################
+#
+# IAR ANSI C/C++ Compiler V9.50.2.385/W64 for ARM         29/Mar/2025  15:53:40
+# Copyright 1999-2024 IAR Systems AB.
+#
+#    Cpu mode                     =  thumb
+#    Endian                       =  little
+#    Source file                  =
+#        D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\util\third_party\mbedtls\library\base64.c
+#    Command line                 =
+#        -f "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\ewarm-iar\obj\library_17211336700577820660.dir\base64.o.rsp"
+#        ("D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\util\third_party\mbedtls\library\base64.c"
+#        -D DEBUG_EFM=1 -D EFR32FG28B322F1024IM48=1 -D
+#        configNUM_SDK_THREAD_LOCAL_STORAGE_POINTERS=2 -D
+#        SL_COMPONENT_CATALOG_PRESENT=1 -D
+#        MBEDTLS_CONFIG_FILE=<sl_mbedtls_config.h> -D
+#        MBEDTLS_PSA_CRYPTO_CONFIG_FILE=<psa_crypto_config.h> -D
+#        SL_RAIL_LIB_MULTIPROTOCOL_SUPPORT=0 -D
+#        SL_RAIL_UTIL_PA_CONFIG_HEADER=<sl_rail_util_pa_config.h> -D
+#        RTT_USE_ASM=0 -lC "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\ewarm-iar\lst\library_17211336700577820660.dir"
+#        --diag_suppress Pa050 -o "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\ewarm-iar\obj\library_17211336700577820660.dir"
+#        --no_cse --no_unroll --no_inline --no_code_motion --no_tbaa
+#        --no_clustering --no_scheduling --debug --endian=little
+#        --cpu=Cortex-M33 --cmse --cmse -e --fpu=VFPv5_sp --dlib_config
+#        "C:\Program Files\IAR Systems\Embedded Workbench
+#        9.2\arm\inc\c\DLib_Config_Normal.h" -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\util\third_party\mbedtls\library\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App 1\Wisun_Node_App\config\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App 1\Wisun_Node_App\config\rail\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App 1\Wisun_Node_App\config\wisun\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App 1\Wisun_Node_App\.\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\Device\SiliconLabs\EFR32FG28\Include\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\app\wisun\component\app_project_info\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\common\inc\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\service\cli\inc\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\service\cli\src\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\CMSIS\Core\Include\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\CMSIS\RTOS2\Include\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\service\device_init\inc\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\emdrv\common\inc\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\emlib\inc\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\service\iostream\inc\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\security\sl_component\sl_mbedtls_support\config\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\security\sl_component\sl_mbedtls_support\config\preset\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\security\sl_component\sl_mbedtls_support\inc\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\util\third_party\mbedtls\include\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\util\third_party\mbedtls\library\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\micrium_os\common\source\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\micrium_os\common\include\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\micrium_os\cpu\include\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\micrium_os\ports\source\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\micrium_os\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\micrium_os\kernel\source\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\micrium_os\kernel\include\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\emdrv\nvm3\inc\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\peripheral\inc\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\util\third_party\printf\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\util\third_party\printf\inc\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\security\sl_component\sl_psa_driver\inc\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\radio\rail_lib\common\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\radio\rail_lib\protocol\ble\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\radio\rail_lib\protocol\ieee802154\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\radio\rail_lib\protocol\wmbus\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\radio\rail_lib\protocol\zwave\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\radio\rail_lib\chip\efr32\efr32xg2x\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\radio\rail_lib\protocol\sidewalk\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\radio\rail_lib\plugin\pa-conversions\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\radio\rail_lib\plugin\pa-conversions\efr32xg28\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\radio\rail_lib\plugin\rail_util_pti\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\security\sl_component\se_manager\inc\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\security\sl_component\se_manager\src\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\util\third_party\segger\systemview\SEGGER\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\util\silicon_labs\silabs_core\memory_manager\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\common\toolchain\inc\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\service\system\inc\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\app\wisun\component\app_core\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\app\wisun\component\app_setting\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\app\wisun\component\cli_util\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\app\wisun\component\event_manager\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\app\wisun\component\ns_list\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\app\wisun\component\ping\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\app\wisun\component\trace_util\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\app\wisun\component\trace_util\nanostack\nanostack-libservice\mbed-client-libservice\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\app\wisun\component\udp_client\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\service\sleeptimer\inc\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\protocol\wisun\plugin\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\protocol\wisun\stack\inc\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\protocol\wisun\stack\inc\socket\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App 1\Wisun_Node_App\autogen\\" -On
+#        --use_c++_inline) --dependencies=n "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\ewarm-iar\obj\library_17211336700577820660.dir\base64.o.iar_deps"
+#    Locale                       =  C
+#    List file                    =
+#        D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\ewarm-iar\lst\library_17211336700577820660.dir\base64.lst
+#    Object file                  =
+#        D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\ewarm-iar\obj\library_17211336700577820660.dir\base64.o
+#    Runtime model:                  
+#      __CPP_Runtime              =  1
+#      __SystemLibrary            =  DLib
+#      __dlib_full_locale_support =  0
+#      __dlib_version             =  6
+#
+###############################################################################
+
+D:\Inesh_wisun\Wisun_Node_App 1\Wisun_Node_App\gecko_sdk_4.4.5\util\third_party\mbedtls\library\base64.c
+      1          /*
+      2           *  RFC 1521 base64 encoding/decoding
+      3           *
+      4           *  Copyright The Mbed TLS Contributors
+      5           *  SPDX-License-Identifier: Apache-2.0
+      6           *
+      7           *  Licensed under the Apache License, Version 2.0 (the "License"); you may
+      8           *  not use this file except in compliance with the License.
+      9           *  You may obtain a copy of the License at
+     10           *
+     11           *  http://www.apache.org/licenses/LICENSE-2.0
+     12           *
+     13           *  Unless required by applicable law or agreed to in writing, software
+     14           *  distributed under the License is distributed on an "AS IS" BASIS, WITHOUT
+     15           *  WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     16           *  See the License for the specific language governing permissions and
+     17           *  limitations under the License.
+     18           */
+     19          
+     20          #include <limits.h>
+     21          
+     22          #include "common.h"
+     23          
+     24          #if defined(MBEDTLS_BASE64_C)
+     25          
+     26          #include "mbedtls/base64.h"
+     27          #include "base64_internal.h"
+     28          #include "constant_time_internal.h"
+
+   \                                 In section .text, align 2, keep-with-next
+   \   static __vfp uint32_t mbedtls_ct_compiler_opaque(uint32_t)
+   \                     mbedtls_ct_compiler_opaque: (+1)
+   \        0x0   0x....             LDR.N    R1,??DataTable0
+   \        0x2   0x6809             LDR      R1,[R1, #+0]
+   \        0x4   0x4048             EORS     R0,R1,R0
+   \        0x6   0x4770             BX       LR
+
+   \                                 In section .text, align 2, keep-with-next
+   \   static __vfp unsigned char mbedtls_ct_uchar_in_range_if(unsigned char, unsigned char, unsigned char, unsigned char)
+   \                     mbedtls_ct_uchar_in_range_if: (+1)
+   \        0x0   0xE92D 0x41F0      PUSH     {R4-R8,LR}
+   \        0x4   0x4680             MOV      R8,R0
+   \        0x6   0x000C             MOVS     R4,R1
+   \        0x8   0x0015             MOVS     R5,R2
+   \        0xA   0x001E             MOVS     R6,R3
+   \        0xC   0x0028             MOVS     R0,R5
+   \        0xE   0xB2C0             UXTB     R0,R0
+   \       0x10   0x.... 0x....      BL       mbedtls_ct_compiler_opaque
+   \       0x14   0x0007             MOVS     R7,R0
+   \       0x16   0x0030             MOVS     R0,R6
+   \       0x18   0xB2C0             UXTB     R0,R0
+   \       0x1A   0x.... 0x....      BL       mbedtls_ct_compiler_opaque
+   \       0x1E   0x003A             MOVS     R2,R7
+   \       0x20   0xB2D2             UXTB     R2,R2
+   \       0x22   0x4641             MOV      R1,R8
+   \       0x24   0xB2C9             UXTB     R1,R1
+   \       0x26   0x1A52             SUBS     R2,R2,R1
+   \       0x28   0x0A12             LSRS     R2,R2,#+8
+   \       0x2A   0x0023             MOVS     R3,R4
+   \       0x2C   0xB2DB             UXTB     R3,R3
+   \       0x2E   0x0039             MOVS     R1,R7
+   \       0x30   0xB2C9             UXTB     R1,R1
+   \       0x32   0x1A5B             SUBS     R3,R3,R1
+   \       0x34   0x0A1B             LSRS     R3,R3,#+8
+   \       0x36   0x431A             ORRS     R2,R3,R2
+   \       0x38   0x4390             BICS     R0,R0,R2
+   \       0x3A   0xB2C0             UXTB     R0,R0
+   \       0x3C   0xE8BD 0x81F0      POP      {R4-R8,PC}
+     29          
+     30          #include <stdint.h>
+     31          
+     32          #if defined(MBEDTLS_SELF_TEST)
+     33          #include <string.h>
+     34          #include "mbedtls/platform.h"
+     35          #endif /* MBEDTLS_SELF_TEST */
+     36          
+
+   \                                 In section .text, align 2, keep-with-next
+     37          MBEDTLS_STATIC_TESTABLE
+     38          unsigned char mbedtls_ct_base64_enc_char(unsigned char value)
+     39          {
+   \                     mbedtls_ct_base64_enc_char: (+1)
+   \        0x0   0xE92D 0x43F8      PUSH     {R3-R9,LR}
+   \        0x4   0x4681             MOV      R9,R0
+     40              unsigned char digit = 0;
+   \        0x6   0x2400             MOVS     R4,#+0
+     41              /* For each range of values, if value is in that range, mask digit with
+     42               * the corresponding value. Since value can only be in a single range,
+     43               * only at most one masking will change digit. */
+     44              digit |= mbedtls_ct_uchar_in_range_if(0, 25, value, 'A' + value);
+   \        0x8   0xF119 0x0341      ADDS     R3,R9,#+65
+   \        0xC   0xB2DB             UXTB     R3,R3
+   \        0xE   0x464A             MOV      R2,R9
+   \       0x10   0xB2D2             UXTB     R2,R2
+   \       0x12   0x2119             MOVS     R1,#+25
+   \       0x14   0x2000             MOVS     R0,#+0
+   \       0x16   0x.... 0x....      BL       mbedtls_ct_uchar_in_range_if
+   \       0x1A   0x0005             MOVS     R5,R0
+   \       0x1C   0x4325             ORRS     R5,R5,R4
+     45              digit |= mbedtls_ct_uchar_in_range_if(26, 51, value, 'a' + value - 26);
+   \       0x1E   0xF119 0x0347      ADDS     R3,R9,#+71
+   \       0x22   0xB2DB             UXTB     R3,R3
+   \       0x24   0x464A             MOV      R2,R9
+   \       0x26   0xB2D2             UXTB     R2,R2
+   \       0x28   0x2133             MOVS     R1,#+51
+   \       0x2A   0x201A             MOVS     R0,#+26
+   \       0x2C   0x.... 0x....      BL       mbedtls_ct_uchar_in_range_if
+   \       0x30   0x0006             MOVS     R6,R0
+   \       0x32   0x432E             ORRS     R6,R6,R5
+     46              digit |= mbedtls_ct_uchar_in_range_if(52, 61, value, '0' + value - 52);
+   \       0x34   0xF1B9 0x0304      SUBS     R3,R9,#+4
+   \       0x38   0xB2DB             UXTB     R3,R3
+   \       0x3A   0x464A             MOV      R2,R9
+   \       0x3C   0xB2D2             UXTB     R2,R2
+   \       0x3E   0x213D             MOVS     R1,#+61
+   \       0x40   0x2034             MOVS     R0,#+52
+   \       0x42   0x.... 0x....      BL       mbedtls_ct_uchar_in_range_if
+   \       0x46   0x0007             MOVS     R7,R0
+   \       0x48   0x4337             ORRS     R7,R7,R6
+     47              digit |= mbedtls_ct_uchar_in_range_if(62, 62, value, '+');
+   \       0x4A   0x232B             MOVS     R3,#+43
+   \       0x4C   0x464A             MOV      R2,R9
+   \       0x4E   0xB2D2             UXTB     R2,R2
+   \       0x50   0x213E             MOVS     R1,#+62
+   \       0x52   0x203E             MOVS     R0,#+62
+   \       0x54   0x.... 0x....      BL       mbedtls_ct_uchar_in_range_if
+   \       0x58   0x4680             MOV      R8,R0
+   \       0x5A   0xEA58 0x0807      ORRS     R8,R8,R7
+     48              digit |= mbedtls_ct_uchar_in_range_if(63, 63, value, '/');
+   \       0x5E   0x232F             MOVS     R3,#+47
+   \       0x60   0x464A             MOV      R2,R9
+   \       0x62   0xB2D2             UXTB     R2,R2
+   \       0x64   0x213F             MOVS     R1,#+63
+   \       0x66   0x203F             MOVS     R0,#+63
+   \       0x68   0x.... 0x....      BL       mbedtls_ct_uchar_in_range_if
+   \       0x6C   0xEA50 0x0008      ORRS     R0,R0,R8
+     49              return digit;
+   \       0x70   0xB2C0             UXTB     R0,R0
+   \       0x72   0xE8BD 0x83F2      POP      {R1,R4-R9,PC}
+     50          }
+     51          
+
+   \                                 In section .text, align 2, keep-with-next
+     52          MBEDTLS_STATIC_TESTABLE
+     53          signed char mbedtls_ct_base64_dec_value(unsigned char c)
+     54          {
+   \                     mbedtls_ct_base64_dec_value: (+1)
+   \        0x0   0xE92D 0x43F8      PUSH     {R3-R9,LR}
+   \        0x4   0x4681             MOV      R9,R0
+     55              unsigned char val = 0;
+   \        0x6   0x2400             MOVS     R4,#+0
+     56              /* For each range of digits, if c is in that range, mask val with
+     57               * the corresponding value. Since c can only be in a single range,
+     58               * only at most one masking will change val. Set val to one plus
+     59               * the desired value so that it stays 0 if c is in none of the ranges. */
+     60              val |= mbedtls_ct_uchar_in_range_if('A', 'Z', c, c - 'A' +  0 + 1);
+   \        0x8   0xF1B9 0x0340      SUBS     R3,R9,#+64
+   \        0xC   0xB2DB             UXTB     R3,R3
+   \        0xE   0x464A             MOV      R2,R9
+   \       0x10   0xB2D2             UXTB     R2,R2
+   \       0x12   0x215A             MOVS     R1,#+90
+   \       0x14   0x2041             MOVS     R0,#+65
+   \       0x16   0x.... 0x....      BL       mbedtls_ct_uchar_in_range_if
+   \       0x1A   0x0005             MOVS     R5,R0
+   \       0x1C   0x4325             ORRS     R5,R5,R4
+     61              val |= mbedtls_ct_uchar_in_range_if('a', 'z', c, c - 'a' + 26 + 1);
+   \       0x1E   0xF1B9 0x0346      SUBS     R3,R9,#+70
+   \       0x22   0xB2DB             UXTB     R3,R3
+   \       0x24   0x464A             MOV      R2,R9
+   \       0x26   0xB2D2             UXTB     R2,R2
+   \       0x28   0x217A             MOVS     R1,#+122
+   \       0x2A   0x2061             MOVS     R0,#+97
+   \       0x2C   0x.... 0x....      BL       mbedtls_ct_uchar_in_range_if
+   \       0x30   0x0006             MOVS     R6,R0
+   \       0x32   0x432E             ORRS     R6,R6,R5
+     62              val |= mbedtls_ct_uchar_in_range_if('0', '9', c, c - '0' + 52 + 1);
+   \       0x34   0xF119 0x0305      ADDS     R3,R9,#+5
+   \       0x38   0xB2DB             UXTB     R3,R3
+   \       0x3A   0x464A             MOV      R2,R9
+   \       0x3C   0xB2D2             UXTB     R2,R2
+   \       0x3E   0x2139             MOVS     R1,#+57
+   \       0x40   0x2030             MOVS     R0,#+48
+   \       0x42   0x.... 0x....      BL       mbedtls_ct_uchar_in_range_if
+   \       0x46   0x0007             MOVS     R7,R0
+   \       0x48   0x4337             ORRS     R7,R7,R6
+     63              val |= mbedtls_ct_uchar_in_range_if('+', '+', c, c - '+' + 62 + 1);
+   \       0x4A   0xF119 0x0314      ADDS     R3,R9,#+20
+   \       0x4E   0xB2DB             UXTB     R3,R3
+   \       0x50   0x464A             MOV      R2,R9
+   \       0x52   0xB2D2             UXTB     R2,R2
+   \       0x54   0x212B             MOVS     R1,#+43
+   \       0x56   0x202B             MOVS     R0,#+43
+   \       0x58   0x.... 0x....      BL       mbedtls_ct_uchar_in_range_if
+   \       0x5C   0x4680             MOV      R8,R0
+   \       0x5E   0xEA58 0x0807      ORRS     R8,R8,R7
+     64              val |= mbedtls_ct_uchar_in_range_if('/', '/', c, c - '/' + 63 + 1);
+   \       0x62   0xF119 0x0311      ADDS     R3,R9,#+17
+   \       0x66   0xB2DB             UXTB     R3,R3
+   \       0x68   0x464A             MOV      R2,R9
+   \       0x6A   0xB2D2             UXTB     R2,R2
+   \       0x6C   0x212F             MOVS     R1,#+47
+   \       0x6E   0x202F             MOVS     R0,#+47
+   \       0x70   0x.... 0x....      BL       mbedtls_ct_uchar_in_range_if
+   \       0x74   0xEA50 0x0008      ORRS     R0,R0,R8
+     65              /* At this point, val is 0 if c is an invalid digit and v+1 if c is
+     66               * a digit with the value v. */
+     67              return val - 1;
+   \       0x78   0x1E40             SUBS     R0,R0,#+1
+   \       0x7A   0xB240             SXTB     R0,R0
+   \       0x7C   0xE8BD 0x83F2      POP      {R1,R4-R9,PC}
+     68          }
+     69          
+     70          /*
+     71           * Encode a buffer into base64 format
+     72           */
+
+   \                                 In section .text, align 2, keep-with-next
+     73          int mbedtls_base64_encode(unsigned char *dst, size_t dlen, size_t *olen,
+     74                                    const unsigned char *src, size_t slen)
+     75          {
+   \                     mbedtls_base64_encode: (+1)
+   \        0x0   0xE92D 0x4FF2      PUSH     {R1,R4-R11,LR}
+   \        0x4   0xB082             SUB      SP,SP,#+8
+   \        0x6   0x0004             MOVS     R4,R0
+   \        0x8   0x4692             MOV      R10,R2
+   \        0xA   0x469B             MOV      R11,R3
+   \        0xC   0x9D0C             LDR      R5,[SP, #+48]
+     76              size_t i, n;
+     77              int C1, C2, C3;
+     78              unsigned char *p;
+     79          
+     80              if (slen == 0) {
+   \        0xE   0x2D00             CMP      R5,#+0
+   \       0x10   0xD104             BNE.N    ??mbedtls_base64_encode_0
+     81                  *olen = 0;
+   \       0x12   0x2000             MOVS     R0,#+0
+   \       0x14   0xF8CA 0x0000      STR      R0,[R10, #+0]
+     82                  return 0;
+   \       0x18   0x2000             MOVS     R0,#+0
+   \       0x1A   0xE0B1             B.N      ??mbedtls_base64_encode_1
+     83              }
+     84          
+     85              n = slen / 3 + (slen % 3 != 0);
+   \                     ??mbedtls_base64_encode_0: (+1)
+   \       0x1C   0x2003             MOVS     R0,#+3
+   \       0x1E   0xFBB5 0xF1F0      UDIV     R1,R5,R0
+   \       0x22   0xFB00 0x5011      MLS      R0,R0,R1,R5
+   \       0x26   0x2800             CMP      R0,#+0
+   \       0x28   0xD001             BEQ.N    ??mbedtls_base64_encode_2
+   \       0x2A   0x2001             MOVS     R0,#+1
+   \       0x2C   0xE000             B.N      ??mbedtls_base64_encode_3
+   \                     ??mbedtls_base64_encode_2: (+1)
+   \       0x2E   0x2000             MOVS     R0,#+0
+   \                     ??mbedtls_base64_encode_3: (+1)
+   \       0x30   0x2103             MOVS     R1,#+3
+   \       0x32   0xFBB5 0xF1F1      UDIV     R1,R5,R1
+   \       0x36   0xFA51 0xF180      UXTAB    R1,R1,R0
+     86          
+     87              if (n > (SIZE_MAX - 1) / 4) {
+   \       0x3A   0xF1B1 0x4F80      CMP      R1,#+1073741824
+   \       0x3E   0xD306             BCC.N    ??mbedtls_base64_encode_4
+     88                  *olen = SIZE_MAX;
+   \       0x40   0xF05F 0x30FF      MOVS     R0,#+4294967295
+   \       0x44   0xF8CA 0x0000      STR      R0,[R10, #+0]
+     89                  return MBEDTLS_ERR_BASE64_BUFFER_TOO_SMALL;
+   \       0x48   0xF07F 0x0029      MVNS     R0,#+41
+   \       0x4C   0xE098             B.N      ??mbedtls_base64_encode_1
+     90              }
+     91          
+     92              n *= 4;
+   \                     ??mbedtls_base64_encode_4: (+1)
+   \       0x4E   0x0089             LSLS     R1,R1,#+2
+     93          
+     94              if ((dlen < n + 1) || (NULL == dst)) {
+   \       0x50   0x9A02             LDR      R2,[SP, #+8]
+   \       0x52   0x1C48             ADDS     R0,R1,#+1
+   \       0x54   0x4282             CMP      R2,R0
+   \       0x56   0xD301             BCC.N    ??mbedtls_base64_encode_5
+   \       0x58   0x2C00             CMP      R4,#+0
+   \       0x5A   0xD105             BNE.N    ??mbedtls_base64_encode_6
+     95                  *olen = n + 1;
+   \                     ??mbedtls_base64_encode_5: (+1)
+   \       0x5C   0x1C48             ADDS     R0,R1,#+1
+   \       0x5E   0xF8CA 0x0000      STR      R0,[R10, #+0]
+     96                  return MBEDTLS_ERR_BASE64_BUFFER_TOO_SMALL;
+   \       0x62   0xF07F 0x0029      MVNS     R0,#+41
+   \       0x66   0xE08B             B.N      ??mbedtls_base64_encode_1
+     97              }
+     98          
+     99              n = (slen / 3) * 3;
+   \                     ??mbedtls_base64_encode_6: (+1)
+   \       0x68   0x2003             MOVS     R0,#+3
+   \       0x6A   0xFBB5 0xF2F0      UDIV     R2,R5,R0
+   \       0x6E   0x2003             MOVS     R0,#+3
+   \       0x70   0x4342             MULS     R2,R0,R2
+   \       0x72   0x9201             STR      R2,[SP, #+4]
+    100          
+    101              for (i = 0, p = dst; i < n; i += 3) {
+   \       0x74   0xF05F 0x0800      MOVS     R8,#+0
+   \       0x78   0x46A1             MOV      R9,R4
+   \                     ??mbedtls_base64_encode_7: (+1)
+   \       0x7A   0x9801             LDR      R0,[SP, #+4]
+   \       0x7C   0x4580             CMP      R8,R0
+   \       0x7E   0xD239             BCS.N    ??mbedtls_base64_encode_8
+    102                  C1 = *src++;
+   \       0x80   0xF89B 0x0000      LDRB     R0,[R11, #+0]
+   \       0x84   0x0006             MOVS     R6,R0
+   \       0x86   0xF11B 0x0101      ADDS     R1,R11,#+1
+    103                  C2 = *src++;
+   \       0x8A   0x7808             LDRB     R0,[R1, #+0]
+   \       0x8C   0x0007             MOVS     R7,R0
+   \       0x8E   0x1C49             ADDS     R1,R1,#+1
+    104                  C3 = *src++;
+   \       0x90   0x7808             LDRB     R0,[R1, #+0]
+   \       0x92   0x9000             STR      R0,[SP, #+0]
+   \       0x94   0xF111 0x0B01      ADDS     R11,R1,#+1
+    105          
+    106                  *p++ = mbedtls_ct_base64_enc_char((C1 >> 2) & 0x3F);
+   \       0x98   0x0030             MOVS     R0,R6
+   \       0x9A   0xF3C0 0x0085      UBFX     R0,R0,#+2,#+6
+   \       0x9E   0xB2C0             UXTB     R0,R0
+   \       0xA0   0x.... 0x....      BL       mbedtls_ct_base64_enc_char
+   \       0xA4   0xF889 0x0000      STRB     R0,[R9, #+0]
+   \       0xA8   0xF119 0x0901      ADDS     R9,R9,#+1
+    107                  *p++ = mbedtls_ct_base64_enc_char((((C1 &  3) << 4) + (C2 >> 4))
+    108                                                    & 0x3F);
+   \       0xAC   0x0038             MOVS     R0,R7
+   \       0xAE   0x1100             ASRS     R0,R0,#+4
+   \       0xB0   0xEB10 0x1006      ADDS     R0,R0,R6, LSL #+4
+   \       0xB4   0xF010 0x003F      ANDS     R0,R0,#0x3F
+   \       0xB8   0x.... 0x....      BL       mbedtls_ct_base64_enc_char
+   \       0xBC   0xF889 0x0000      STRB     R0,[R9, #+0]
+   \       0xC0   0xF119 0x0901      ADDS     R9,R9,#+1
+    109                  *p++ = mbedtls_ct_base64_enc_char((((C2 & 15) << 2) + (C3 >> 6))
+    110                                                    & 0x3F);
+   \       0xC4   0x9800             LDR      R0,[SP, #+0]
+   \       0xC6   0x1180             ASRS     R0,R0,#+6
+   \       0xC8   0xEB10 0x0087      ADDS     R0,R0,R7, LSL #+2
+   \       0xCC   0xF010 0x003F      ANDS     R0,R0,#0x3F
+   \       0xD0   0x.... 0x....      BL       mbedtls_ct_base64_enc_char
+   \       0xD4   0xF889 0x0000      STRB     R0,[R9, #+0]
+   \       0xD8   0xF119 0x0901      ADDS     R9,R9,#+1
+    111                  *p++ = mbedtls_ct_base64_enc_char(C3 & 0x3F);
+   \       0xDC   0x9800             LDR      R0,[SP, #+0]
+   \       0xDE   0xF010 0x003F      ANDS     R0,R0,#0x3F
+   \       0xE2   0x.... 0x....      BL       mbedtls_ct_base64_enc_char
+   \       0xE6   0xF889 0x0000      STRB     R0,[R9, #+0]
+   \       0xEA   0xF119 0x0901      ADDS     R9,R9,#+1
+    112              }
+   \       0xEE   0xF118 0x0803      ADDS     R8,R8,#+3
+   \       0xF2   0xE7C2             B.N      ??mbedtls_base64_encode_7
+    113          
+    114              if (i < slen) {
+   \                     ??mbedtls_base64_encode_8: (+1)
+   \       0xF4   0x45A8             CMP      R8,R5
+   \       0xF6   0xD23B             BCS.N    ??mbedtls_base64_encode_9
+    115                  C1 = *src++;
+   \       0xF8   0xF89B 0x0000      LDRB     R0,[R11, #+0]
+   \       0xFC   0x0006             MOVS     R6,R0
+   \       0xFE   0xF11B 0x0B01      ADDS     R11,R11,#+1
+    116                  C2 = ((i + 1) < slen) ? *src++ : 0;
+   \      0x102   0xF118 0x0001      ADDS     R0,R8,#+1
+   \      0x106   0x42A8             CMP      R0,R5
+   \      0x108   0xD204             BCS.N    ??mbedtls_base64_encode_10
+   \      0x10A   0xF89B 0x7000      LDRB     R7,[R11, #+0]
+   \      0x10E   0xF11B 0x0B01      ADDS     R11,R11,#+1
+   \      0x112   0xE000             B.N      ??mbedtls_base64_encode_11
+   \                     ??mbedtls_base64_encode_10: (+1)
+   \      0x114   0x2700             MOVS     R7,#+0
+    117          
+    118                  *p++ = mbedtls_ct_base64_enc_char((C1 >> 2) & 0x3F);
+   \                     ??mbedtls_base64_encode_11: (+1)
+   \      0x116   0x0030             MOVS     R0,R6
+   \      0x118   0xF3C0 0x0085      UBFX     R0,R0,#+2,#+6
+   \      0x11C   0xB2C0             UXTB     R0,R0
+   \      0x11E   0x.... 0x....      BL       mbedtls_ct_base64_enc_char
+   \      0x122   0xF889 0x0000      STRB     R0,[R9, #+0]
+   \      0x126   0xF119 0x0901      ADDS     R9,R9,#+1
+    119                  *p++ = mbedtls_ct_base64_enc_char((((C1 & 3) << 4) + (C2 >> 4))
+    120                                                    & 0x3F);
+   \      0x12A   0x0038             MOVS     R0,R7
+   \      0x12C   0x1100             ASRS     R0,R0,#+4
+   \      0x12E   0xEB10 0x1006      ADDS     R0,R0,R6, LSL #+4
+   \      0x132   0xF010 0x003F      ANDS     R0,R0,#0x3F
+   \      0x136   0x.... 0x....      BL       mbedtls_ct_base64_enc_char
+   \      0x13A   0xF889 0x0000      STRB     R0,[R9, #+0]
+   \      0x13E   0xF119 0x0901      ADDS     R9,R9,#+1
+    121          
+    122                  if ((i + 1) < slen) {
+   \      0x142   0xF118 0x0001      ADDS     R0,R8,#+1
+   \      0x146   0x42A8             CMP      R0,R5
+   \      0x148   0xD209             BCS.N    ??mbedtls_base64_encode_12
+    123                      *p++ = mbedtls_ct_base64_enc_char(((C2 & 15) << 2) & 0x3F);
+   \      0x14A   0x00B8             LSLS     R0,R7,#+2
+   \      0x14C   0xF010 0x003F      ANDS     R0,R0,#0x3F
+   \      0x150   0x.... 0x....      BL       mbedtls_ct_base64_enc_char
+   \      0x154   0xF889 0x0000      STRB     R0,[R9, #+0]
+   \      0x158   0xF119 0x0101      ADDS     R1,R9,#+1
+   \      0x15C   0xE004             B.N      ??mbedtls_base64_encode_13
+    124                  } else {
+    125                      *p++ = '=';
+   \                     ??mbedtls_base64_encode_12: (+1)
+   \      0x15E   0x203D             MOVS     R0,#+61
+   \      0x160   0xF889 0x0000      STRB     R0,[R9, #+0]
+   \      0x164   0xF119 0x0101      ADDS     R1,R9,#+1
+    126                  }
+    127          
+    128                  *p++ = '=';
+   \                     ??mbedtls_base64_encode_13: (+1)
+   \      0x168   0x203D             MOVS     R0,#+61
+   \      0x16A   0x7008             STRB     R0,[R1, #+0]
+   \      0x16C   0xF111 0x0901      ADDS     R9,R1,#+1
+    129              }
+    130          
+    131              *olen = p - dst;
+   \                     ??mbedtls_base64_encode_9: (+1)
+   \      0x170   0xEBB9 0x0004      SUBS     R0,R9,R4
+   \      0x174   0xF8CA 0x0000      STR      R0,[R10, #+0]
+    132              *p = 0;
+   \      0x178   0x2000             MOVS     R0,#+0
+   \      0x17A   0xF889 0x0000      STRB     R0,[R9, #+0]
+    133          
+    134              return 0;
+   \      0x17E   0x2000             MOVS     R0,#+0
+   \                     ??mbedtls_base64_encode_1: (+1)
+   \      0x180   0xE8BD 0x8FFE      POP      {R1-R11,PC}
+    135          }
+    136          
+    137          /*
+    138           * Decode a base64-formatted buffer
+    139           */
+
+   \                                 In section .text, align 2, keep-with-next
+    140          int mbedtls_base64_decode(unsigned char *dst, size_t dlen, size_t *olen,
+    141                                    const unsigned char *src, size_t slen)
+    142          {
+   \                     mbedtls_base64_decode: (+1)
+   \        0x0   0xE92D 0x4FF7      PUSH     {R0-R2,R4-R11,LR}
+   \        0x4   0xB082             SUB      SP,SP,#+8
+   \        0x6   0x4699             MOV      R9,R3
+   \        0x8   0x9F0E             LDR      R7,[SP, #+56]
+    143              size_t i; /* index in source */
+    144              size_t n; /* number of digits or trailing = in source */
+    145              uint32_t x; /* value accumulator */
+    146              unsigned accumulated_digits = 0;
+   \        0xA   0xF05F 0x0800      MOVS     R8,#+0
+    147              unsigned equals = 0;
+   \        0xE   0x2400             MOVS     R4,#+0
+    148              int spaces_present = 0;
+   \       0x10   0x2000             MOVS     R0,#+0
+   \       0x12   0x9000             STR      R0,[SP, #+0]
+    149              unsigned char *p;
+    150          
+    151              /* First pass: check for validity and get output length */
+    152              for (i = n = 0; i < slen; i++) {
+   \       0x14   0x2600             MOVS     R6,#+0
+   \       0x16   0x0035             MOVS     R5,R6
+   \                     ??mbedtls_base64_decode_0: (+1)
+   \       0x18   0x42BD             CMP      R5,R7
+   \       0x1A   0xD245             BCS.N    ??mbedtls_base64_decode_1
+    153                  /* Skip spaces before checking for EOL */
+    154                  spaces_present = 0;
+   \       0x1C   0x2000             MOVS     R0,#+0
+   \       0x1E   0x9000             STR      R0,[SP, #+0]
+    155                  while (i < slen && src[i] == ' ') {
+   \                     ??mbedtls_base64_decode_2: (+1)
+   \       0x20   0x42BD             CMP      R5,R7
+   \       0x22   0xD207             BCS.N    ??mbedtls_base64_decode_3
+   \       0x24   0xF819 0x0005      LDRB     R0,[R9, R5]
+   \       0x28   0x2820             CMP      R0,#+32
+   \       0x2A   0xD103             BNE.N    ??mbedtls_base64_decode_3
+    156                      ++i;
+   \       0x2C   0x1C6D             ADDS     R5,R5,#+1
+    157                      spaces_present = 1;
+   \       0x2E   0x2001             MOVS     R0,#+1
+   \       0x30   0x9000             STR      R0,[SP, #+0]
+   \       0x32   0xE7F5             B.N      ??mbedtls_base64_decode_2
+    158                  }
+    159          
+    160                  /* Spaces at end of buffer are OK */
+    161                  if (i == slen) {
+   \                     ??mbedtls_base64_decode_3: (+1)
+   \       0x34   0x42BD             CMP      R5,R7
+   \       0x36   0xD037             BEQ.N    ??mbedtls_base64_decode_1
+    162                      break;
+    163                  }
+    164          
+    165                  if ((slen - i) >= 2 &&
+    166                      src[i] == '\r' && src[i + 1] == '\n') {
+   \                     ??mbedtls_base64_decode_4: (+1)
+   \       0x38   0x1B78             SUBS     R0,R7,R5
+   \       0x3A   0x2802             CMP      R0,#+2
+   \       0x3C   0xD308             BCC.N    ??mbedtls_base64_decode_5
+   \       0x3E   0xF819 0x0005      LDRB     R0,[R9, R5]
+   \       0x42   0x280D             CMP      R0,#+13
+   \       0x44   0xD104             BNE.N    ??mbedtls_base64_decode_5
+   \       0x46   0xEB09 0x0005      ADD      R0,R9,R5
+   \       0x4A   0x7840             LDRB     R0,[R0, #+1]
+   \       0x4C   0x280A             CMP      R0,#+10
+   \       0x4E   0xD029             BEQ.N    ??mbedtls_base64_decode_6
+    167                      continue;
+    168                  }
+    169          
+    170                  if (src[i] == '\n') {
+   \                     ??mbedtls_base64_decode_5: (+1)
+   \       0x50   0xF819 0x0005      LDRB     R0,[R9, R5]
+   \       0x54   0x280A             CMP      R0,#+10
+   \       0x56   0xD025             BEQ.N    ??mbedtls_base64_decode_6
+    171                      continue;
+    172                  }
+    173          
+    174                  /* Space inside a line is an error */
+    175                  if (spaces_present) {
+   \                     ??mbedtls_base64_decode_7: (+1)
+   \       0x58   0x9800             LDR      R0,[SP, #+0]
+   \       0x5A   0x2800             CMP      R0,#+0
+   \       0x5C   0xD002             BEQ.N    ??mbedtls_base64_decode_8
+    176                      return MBEDTLS_ERR_BASE64_INVALID_CHARACTER;
+   \       0x5E   0xF07F 0x002B      MVNS     R0,#+43
+   \       0x62   0xE089             B.N      ??mbedtls_base64_decode_9
+    177                  }
+    178          
+    179                  if (src[i] > 127) {
+   \                     ??mbedtls_base64_decode_8: (+1)
+   \       0x64   0xF819 0x0005      LDRB     R0,[R9, R5]
+   \       0x68   0x2880             CMP      R0,#+128
+   \       0x6A   0xDB02             BLT.N    ??mbedtls_base64_decode_10
+    180                      return MBEDTLS_ERR_BASE64_INVALID_CHARACTER;
+   \       0x6C   0xF07F 0x002B      MVNS     R0,#+43
+   \       0x70   0xE082             B.N      ??mbedtls_base64_decode_9
+    181                  }
+    182          
+    183                  if (src[i] == '=') {
+   \                     ??mbedtls_base64_decode_10: (+1)
+   \       0x72   0xF819 0x0005      LDRB     R0,[R9, R5]
+   \       0x76   0x283D             CMP      R0,#+61
+   \       0x78   0xD105             BNE.N    ??mbedtls_base64_decode_11
+    184                      if (++equals > 2) {
+   \       0x7A   0x1C64             ADDS     R4,R4,#+1
+   \       0x7C   0x2C03             CMP      R4,#+3
+   \       0x7E   0xD310             BCC.N    ??mbedtls_base64_decode_12
+    185                          return MBEDTLS_ERR_BASE64_INVALID_CHARACTER;
+   \       0x80   0xF07F 0x002B      MVNS     R0,#+43
+   \       0x84   0xE078             B.N      ??mbedtls_base64_decode_9
+    186                      }
+    187                  } else {
+    188                      if (equals != 0) {
+   \                     ??mbedtls_base64_decode_11: (+1)
+   \       0x86   0x2C00             CMP      R4,#+0
+   \       0x88   0xD002             BEQ.N    ??mbedtls_base64_decode_13
+    189                          return MBEDTLS_ERR_BASE64_INVALID_CHARACTER;
+   \       0x8A   0xF07F 0x002B      MVNS     R0,#+43
+   \       0x8E   0xE073             B.N      ??mbedtls_base64_decode_9
+    190                      }
+    191                      if (mbedtls_ct_base64_dec_value(src[i]) < 0) {
+   \                     ??mbedtls_base64_decode_13: (+1)
+   \       0x90   0xF819 0x0005      LDRB     R0,[R9, R5]
+   \       0x94   0x.... 0x....      BL       mbedtls_ct_base64_dec_value
+   \       0x98   0x2800             CMP      R0,#+0
+   \       0x9A   0xD502             BPL.N    ??mbedtls_base64_decode_12
+    192                          return MBEDTLS_ERR_BASE64_INVALID_CHARACTER;
+   \       0x9C   0xF07F 0x002B      MVNS     R0,#+43
+   \       0xA0   0xE06A             B.N      ??mbedtls_base64_decode_9
+    193                      }
+    194                  }
+    195                  n++;
+   \                     ??mbedtls_base64_decode_12: (+1)
+   \       0xA2   0x1C76             ADDS     R6,R6,#+1
+    196              }
+   \                     ??mbedtls_base64_decode_6: (+1)
+   \       0xA4   0x1C6D             ADDS     R5,R5,#+1
+   \       0xA6   0xE7B7             B.N      ??mbedtls_base64_decode_0
+    197          
+    198              if (n == 0) {
+   \                     ??mbedtls_base64_decode_1: (+1)
+   \       0xA8   0x2E00             CMP      R6,#+0
+   \       0xAA   0xD104             BNE.N    ??mbedtls_base64_decode_14
+    199                  *olen = 0;
+   \       0xAC   0x2000             MOVS     R0,#+0
+   \       0xAE   0x9904             LDR      R1,[SP, #+16]
+   \       0xB0   0x6008             STR      R0,[R1, #+0]
+    200                  return 0;
+   \       0xB2   0x2000             MOVS     R0,#+0
+   \       0xB4   0xE060             B.N      ??mbedtls_base64_decode_9
+    201              }
+    202          
+    203              /* The following expression is to calculate the following formula without
+    204               * risk of integer overflow in n:
+    205               *     n = ( ( n * 6 ) + 7 ) >> 3;
+    206               */
+    207              n = (6 * (n >> 3)) + ((6 * (n & 0x7) + 7) >> 3);
+   \                     ??mbedtls_base64_decode_14: (+1)
+   \       0xB6   0x2106             MOVS     R1,#+6
+   \       0xB8   0x0030             MOVS     R0,R6
+   \       0xBA   0x08C0             LSRS     R0,R0,#+3
+   \       0xBC   0xF016 0x0607      ANDS     R6,R6,#0x7
+   \       0xC0   0x434E             MULS     R6,R1,R6
+   \       0xC2   0x1DF6             ADDS     R6,R6,#+7
+   \       0xC4   0x08F6             LSRS     R6,R6,#+3
+   \       0xC6   0xFB01 0x6600      MLA      R6,R1,R0,R6
+    208              n -= equals;
+   \       0xCA   0x1B36             SUBS     R6,R6,R4
+   \       0xCC   0x9601             STR      R6,[SP, #+4]
+    209          
+    210              if (dst == NULL || dlen < n) {
+   \       0xCE   0x9802             LDR      R0,[SP, #+8]
+   \       0xD0   0x2800             CMP      R0,#+0
+   \       0xD2   0xD003             BEQ.N    ??mbedtls_base64_decode_15
+   \       0xD4   0x9803             LDR      R0,[SP, #+12]
+   \       0xD6   0x9901             LDR      R1,[SP, #+4]
+   \       0xD8   0x4288             CMP      R0,R1
+   \       0xDA   0xD205             BCS.N    ??mbedtls_base64_decode_16
+    211                  *olen = n;
+   \                     ??mbedtls_base64_decode_15: (+1)
+   \       0xDC   0x9801             LDR      R0,[SP, #+4]
+   \       0xDE   0x9904             LDR      R1,[SP, #+16]
+   \       0xE0   0x6008             STR      R0,[R1, #+0]
+    212                  return MBEDTLS_ERR_BASE64_BUFFER_TOO_SMALL;
+   \       0xE2   0xF07F 0x0029      MVNS     R0,#+41
+   \       0xE6   0xE047             B.N      ??mbedtls_base64_decode_9
+    213              }
+    214          
+    215              equals = 0;
+   \                     ??mbedtls_base64_decode_16: (+1)
+   \       0xE8   0x2600             MOVS     R6,#+0
+    216              for (x = 0, p = dst; i > 0; i--, src++) {
+   \       0xEA   0xF05F 0x0B00      MOVS     R11,#+0
+   \       0xEE   0xF8DD 0xA008      LDR      R10,[SP, #+8]
+   \                     ??mbedtls_base64_decode_17: (+1)
+   \       0xF2   0x2D00             CMP      R5,#+0
+   \       0xF4   0xD03A             BEQ.N    ??mbedtls_base64_decode_18
+    217                  if (*src == '\r' || *src == '\n' || *src == ' ') {
+   \       0xF6   0xF899 0x0000      LDRB     R0,[R9, #+0]
+   \       0xFA   0x280D             CMP      R0,#+13
+   \       0xFC   0xD007             BEQ.N    ??mbedtls_base64_decode_19
+   \       0xFE   0xF899 0x0000      LDRB     R0,[R9, #+0]
+   \      0x102   0x280A             CMP      R0,#+10
+   \      0x104   0xD003             BEQ.N    ??mbedtls_base64_decode_19
+   \      0x106   0xF899 0x0000      LDRB     R0,[R9, #+0]
+   \      0x10A   0x2820             CMP      R0,#+32
+   \      0x10C   0xD100             BNE.N    ??mbedtls_base64_decode_20
+    218                      continue;
+   \                     ??mbedtls_base64_decode_19: (+1)
+   \      0x10E   0xE029             B.N      ??mbedtls_base64_decode_21
+    219                  }
+    220          
+    221                  x = x << 6;
+   \                     ??mbedtls_base64_decode_20: (+1)
+   \      0x110   0xEA5F 0x1B8B      LSLS     R11,R11,#+6
+    222                  if (*src == '=') {
+   \      0x114   0xF899 0x0000      LDRB     R0,[R9, #+0]
+   \      0x118   0x283D             CMP      R0,#+61
+   \      0x11A   0xD101             BNE.N    ??mbedtls_base64_decode_22
+    223                      ++equals;
+   \      0x11C   0x1C76             ADDS     R6,R6,#+1
+   \      0x11E   0xE006             B.N      ??mbedtls_base64_decode_23
+    224                  } else {
+    225                      x |= mbedtls_ct_base64_dec_value(*src);
+   \                     ??mbedtls_base64_decode_22: (+1)
+   \      0x120   0xF899 0x0000      LDRB     R0,[R9, #+0]
+   \      0x124   0x.... 0x....      BL       mbedtls_ct_base64_dec_value
+   \      0x128   0xEA50 0x000B      ORRS     R0,R0,R11
+   \      0x12C   0x4683             MOV      R11,R0
+    226                  }
+    227          
+    228                  if (++accumulated_digits == 4) {
+   \                     ??mbedtls_base64_decode_23: (+1)
+   \      0x12E   0xF118 0x0801      ADDS     R8,R8,#+1
+   \      0x132   0xF1B8 0x0F04      CMP      R8,#+4
+   \      0x136   0xD115             BNE.N    ??mbedtls_base64_decode_21
+    229                      accumulated_digits = 0;
+   \      0x138   0x2000             MOVS     R0,#+0
+   \      0x13A   0x4680             MOV      R8,R0
+    230                      *p++ = MBEDTLS_BYTE_2(x);
+   \      0x13C   0x4658             MOV      R0,R11
+   \      0x13E   0x0C00             LSRS     R0,R0,#+16
+   \      0x140   0xF88A 0x0000      STRB     R0,[R10, #+0]
+   \      0x144   0xF11A 0x0A01      ADDS     R10,R10,#+1
+    231                      if (equals <= 1) {
+   \      0x148   0x2E02             CMP      R6,#+2
+   \      0x14A   0xD205             BCS.N    ??mbedtls_base64_decode_24
+    232                          *p++ = MBEDTLS_BYTE_1(x);
+   \      0x14C   0x4658             MOV      R0,R11
+   \      0x14E   0x0A00             LSRS     R0,R0,#+8
+   \      0x150   0xF88A 0x0000      STRB     R0,[R10, #+0]
+   \      0x154   0xF11A 0x0A01      ADDS     R10,R10,#+1
+    233                      }
+    234                      if (equals <= 0) {
+   \                     ??mbedtls_base64_decode_24: (+1)
+   \      0x158   0x2E00             CMP      R6,#+0
+   \      0x15A   0xD103             BNE.N    ??mbedtls_base64_decode_21
+    235                          *p++ = MBEDTLS_BYTE_0(x);
+   \      0x15C   0xF88A 0xB000      STRB     R11,[R10, #+0]
+   \      0x160   0xF11A 0x0A01      ADDS     R10,R10,#+1
+    236                      }
+    237                  }
+    238              }
+   \                     ??mbedtls_base64_decode_21: (+1)
+   \      0x164   0x1E6D             SUBS     R5,R5,#+1
+   \      0x166   0xF119 0x0901      ADDS     R9,R9,#+1
+   \      0x16A   0xE7C2             B.N      ??mbedtls_base64_decode_17
+    239          
+    240              *olen = p - dst;
+   \                     ??mbedtls_base64_decode_18: (+1)
+   \      0x16C   0x9802             LDR      R0,[SP, #+8]
+   \      0x16E   0xEBBA 0x0000      SUBS     R0,R10,R0
+   \      0x172   0x9904             LDR      R1,[SP, #+16]
+   \      0x174   0x6008             STR      R0,[R1, #+0]
+    241          
+    242              return 0;
+   \      0x176   0x2000             MOVS     R0,#+0
+   \                     ??mbedtls_base64_decode_9: (+1)
+   \      0x178   0xB005             ADD      SP,SP,#+20
+   \      0x17A   0xE8BD 0x8FF0      POP      {R4-R11,PC}
+    243          }
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable0:
+   \        0x0   0x....'....        DC32     mbedtls_ct_zero
+    244          
+    245          #if defined(MBEDTLS_SELF_TEST)
+    246          
+    247          static const unsigned char base64_test_dec[64] =
+    248          {
+    249              0x24, 0x48, 0x6E, 0x56, 0x87, 0x62, 0x5A, 0xBD,
+    250              0xBF, 0x17, 0xD9, 0xA2, 0xC4, 0x17, 0x1A, 0x01,
+    251              0x94, 0xED, 0x8F, 0x1E, 0x11, 0xB3, 0xD7, 0x09,
+    252              0x0C, 0xB6, 0xE9, 0x10, 0x6F, 0x22, 0xEE, 0x13,
+    253              0xCA, 0xB3, 0x07, 0x05, 0x76, 0xC9, 0xFA, 0x31,
+    254              0x6C, 0x08, 0x34, 0xFF, 0x8D, 0xC2, 0x6C, 0x38,
+    255              0x00, 0x43, 0xE9, 0x54, 0x97, 0xAF, 0x50, 0x4B,
+    256              0xD1, 0x41, 0xBA, 0x95, 0x31, 0x5A, 0x0B, 0x97
+    257          };
+    258          
+    259          static const unsigned char base64_test_enc[] =
+    260              "JEhuVodiWr2/F9mixBcaAZTtjx4Rs9cJDLbpEG8i7hPK"
+    261              "swcFdsn6MWwINP+Nwmw4AEPpVJevUEvRQbqVMVoLlw==";
+    262          
+    263          /*
+    264           * Checkup routine
+    265           */
+    266          int mbedtls_base64_self_test(int verbose)
+    267          {
+    268              size_t len;
+    269              const unsigned char *src;
+    270              unsigned char buffer[128];
+    271          
+    272              if (verbose != 0) {
+    273                  mbedtls_printf("  Base64 encoding test: ");
+    274              }
+    275          
+    276              src = base64_test_dec;
+    277          
+    278              if (mbedtls_base64_encode(buffer, sizeof(buffer), &len, src, 64) != 0 ||
+    279                  memcmp(base64_test_enc, buffer, 88) != 0) {
+    280                  if (verbose != 0) {
+    281                      mbedtls_printf("failed\n");
+    282                  }
+    283          
+    284                  return 1;
+    285              }
+    286          
+    287              if (verbose != 0) {
+    288                  mbedtls_printf("passed\n  Base64 decoding test: ");
+    289              }
+    290          
+    291              src = base64_test_enc;
+    292          
+    293              if (mbedtls_base64_decode(buffer, sizeof(buffer), &len, src, 88) != 0 ||
+    294                  memcmp(base64_test_dec, buffer, 64) != 0) {
+    295                  if (verbose != 0) {
+    296                      mbedtls_printf("failed\n");
+    297                  }
+    298          
+    299                  return 1;
+    300              }
+    301          
+    302              if (verbose != 0) {
+    303                  mbedtls_printf("passed\n\n");
+    304              }
+    305          
+    306              return 0;
+    307          }
+    308          
+    309          #endif /* MBEDTLS_SELF_TEST */
+    310          
+    311          #endif /* MBEDTLS_BASE64_C */
+
+   Maximum stack usage in bytes:
+
+   .cstack Function
+   ------- --------
+      56   mbedtls_base64_decode
+        56   -> mbedtls_ct_base64_dec_value
+      48   mbedtls_base64_encode
+        48   -> mbedtls_ct_base64_enc_char
+      32   mbedtls_ct_base64_dec_value
+        32   -> mbedtls_ct_uchar_in_range_if
+      32   mbedtls_ct_base64_enc_char
+        32   -> mbedtls_ct_uchar_in_range_if
+       0   mbedtls_ct_compiler_opaque
+      24   mbedtls_ct_uchar_in_range_if
+        24   -> mbedtls_ct_compiler_opaque
+
+
+   Section sizes:
+
+   Bytes  Function/Label
+   -----  --------------
+       4  ??DataTable0
+     382  mbedtls_base64_decode
+     388  mbedtls_base64_encode
+     128  mbedtls_ct_base64_dec_value
+     118  mbedtls_ct_base64_enc_char
+       8  mbedtls_ct_compiler_opaque
+      64  mbedtls_ct_uchar_in_range_if
+
+ 
+ 1'092 bytes in section .text
+ 
+ 1'092 bytes of CODE memory
+
+Errors: none
+Warnings: none

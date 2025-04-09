@@ -1,0 +1,417 @@
+###############################################################################
+#
+# IAR ANSI C/C++ Compiler V9.50.2.385/W64 for ARM         29/Mar/2025  15:53:05
+# Copyright 1999-2024 IAR Systems AB.
+#
+#    Cpu mode          =  thumb
+#    Endian            =  little
+#    Source file       =
+#        D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\security\sl_component\sl_psa_driver\src\sli_psa_trng.c
+#    Command line      =
+#        -f "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\ewarm-iar\obj\src_1701372114642889758.dir\sli_psa_trng.o.rsp"
+#        ("D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\security\sl_component\sl_psa_driver\src\sli_psa_trng.c"
+#        -D DEBUG_EFM=1 -D EFR32FG28B322F1024IM48=1 -D
+#        configNUM_SDK_THREAD_LOCAL_STORAGE_POINTERS=2 -D
+#        SL_COMPONENT_CATALOG_PRESENT=1 -D
+#        MBEDTLS_CONFIG_FILE=<sl_mbedtls_config.h> -D
+#        MBEDTLS_PSA_CRYPTO_CONFIG_FILE=<psa_crypto_config.h> -D
+#        SL_RAIL_LIB_MULTIPROTOCOL_SUPPORT=0 -D
+#        SL_RAIL_UTIL_PA_CONFIG_HEADER=<sl_rail_util_pa_config.h> -D
+#        RTT_USE_ASM=0 -lC "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\ewarm-iar\lst\src_1701372114642889758.dir"
+#        --diag_suppress Pa050 -o "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\ewarm-iar\obj\src_1701372114642889758.dir" --no_cse
+#        --no_unroll --no_inline --no_code_motion --no_tbaa --no_clustering
+#        --no_scheduling --debug --endian=little --cpu=Cortex-M33 --cmse --cmse
+#        -e --fpu=VFPv5_sp --dlib_config "C:\Program Files\IAR Systems\Embedded
+#        Workbench 9.2\arm\inc\c\DLib_Config_Normal.h" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\security\sl_component\sl_psa_driver\src\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App 1\Wisun_Node_App\config\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App 1\Wisun_Node_App\config\rail\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App 1\Wisun_Node_App\config\wisun\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App 1\Wisun_Node_App\.\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\Device\SiliconLabs\EFR32FG28\Include\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\app\wisun\component\app_project_info\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\common\inc\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\service\cli\inc\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\service\cli\src\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\CMSIS\Core\Include\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\CMSIS\RTOS2\Include\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\service\device_init\inc\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\emdrv\common\inc\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\emlib\inc\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\service\iostream\inc\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\security\sl_component\sl_mbedtls_support\config\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\security\sl_component\sl_mbedtls_support\config\preset\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\security\sl_component\sl_mbedtls_support\inc\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\util\third_party\mbedtls\include\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\util\third_party\mbedtls\library\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\micrium_os\common\source\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\micrium_os\common\include\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\micrium_os\cpu\include\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\micrium_os\ports\source\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\micrium_os\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\micrium_os\kernel\source\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\micrium_os\kernel\include\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\emdrv\nvm3\inc\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\peripheral\inc\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\util\third_party\printf\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\util\third_party\printf\inc\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\security\sl_component\sl_psa_driver\inc\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\radio\rail_lib\common\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\radio\rail_lib\protocol\ble\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\radio\rail_lib\protocol\ieee802154\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\radio\rail_lib\protocol\wmbus\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\radio\rail_lib\protocol\zwave\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\radio\rail_lib\chip\efr32\efr32xg2x\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\radio\rail_lib\protocol\sidewalk\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\radio\rail_lib\plugin\pa-conversions\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\radio\rail_lib\plugin\pa-conversions\efr32xg28\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\radio\rail_lib\plugin\rail_util_pti\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\security\sl_component\se_manager\inc\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\security\sl_component\se_manager\src\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\util\third_party\segger\systemview\SEGGER\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\util\silicon_labs\silabs_core\memory_manager\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\common\toolchain\inc\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\service\system\inc\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\app\wisun\component\app_core\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\app\wisun\component\app_setting\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\app\wisun\component\cli_util\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\app\wisun\component\event_manager\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\app\wisun\component\ns_list\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\app\wisun\component\ping\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\app\wisun\component\trace_util\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\app\wisun\component\trace_util\nanostack\nanostack-libservice\mbed-client-libservice\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\app\wisun\component\udp_client\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\service\sleeptimer\inc\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\protocol\wisun\plugin\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\protocol\wisun\stack\inc\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\protocol\wisun\stack\inc\socket\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App 1\Wisun_Node_App\autogen\\" -On
+#        --use_c++_inline) --dependencies=n "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\ewarm-iar\obj\src_1701372114642889758.dir\sli_psa_trng.o.iar_deps"
+#    Locale            =  C
+#    List file         =
+#        D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\ewarm-iar\lst\src_1701372114642889758.dir\sli_psa_trng.lst
+#    Object file       =
+#        D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\ewarm-iar\obj\src_1701372114642889758.dir\sli_psa_trng.o
+#    Runtime model:       
+#      __CPP_Runtime   =  1
+#      __SystemLibrary =  DLib
+#      __dlib_version  =  6
+#
+###############################################################################
+
+D:\Inesh_wisun\Wisun_Node_App 1\Wisun_Node_App\gecko_sdk_4.4.5\platform\security\sl_component\sl_psa_driver\src\sli_psa_trng.c
+      1          /***************************************************************************//**
+      2           * @file
+      3           * @brief Default PSA TRNG hook for Silicon Labs devices.
+      4           *******************************************************************************
+      5           * # License
+      6           * <b>Copyright 2020 Silicon Laboratories Inc. www.silabs.com</b>
+      7           *******************************************************************************
+      8           *
+      9           * SPDX-License-Identifier: Zlib
+     10           *
+     11           * The licensor of this software is Silicon Laboratories Inc.
+     12           *
+     13           * This software is provided 'as-is', without any express or implied
+     14           * warranty. In no event will the authors be held liable for any damages
+     15           * arising from the use of this software.
+     16           *
+     17           * Permission is granted to anyone to use this software for any purpose,
+     18           * including commercial applications, and to alter it and redistribute it
+     19           * freely, subject to the following restrictions:
+     20           *
+     21           * 1. The origin of this software must not be misrepresented; you must not
+     22           *    claim that you wrote the original software. If you use this software
+     23           *    in a product, an acknowledgment in the product documentation would be
+     24           *    appreciated but is not required.
+     25           * 2. Altered source versions must be plainly marked as such, and must not be
+     26           *    misrepresented as being the original software.
+     27           * 3. This notice may not be removed or altered from any source distribution.
+     28           *
+     29           ******************************************************************************/
+     30          
+     31          #include "sli_psa_driver_features.h"
+     32          
+     33          #if defined(MBEDTLS_PSA_CRYPTO_EXTERNAL_RNG) || defined(MBEDTLS_ENTROPY_HARDWARE_ALT)
+     34          
+     35          #include "psa/crypto.h"
+     36          #include "psa/crypto_extra.h"
+     37          #include "psa/crypto_platform.h"
+     38          
+     39          #if defined(SLI_MBEDTLS_DEVICE_HSE)
+     40            #include "sl_se_manager.h"
+     41            #include "sl_se_manager_entropy.h"
+     42          #elif defined(SLI_MBEDTLS_DEVICE_VSE)
+     43            #include "sli_cryptoacc_driver_trng.h"
+     44          #elif defined(SLI_MBEDTLS_DEVICE_S1) && defined(SLI_PSA_DRIVER_FEATURE_TRNG)
+     45            #include "sli_crypto_driver_trng.h"
+     46          #elif defined(SLI_TRNG_DEVICE_SI91X)
+     47            #include "sl_si91x_psa_trng.h"
+     48          #endif
+     49          
+     50          // -----------------------------------------------------------------------------
+     51          // Typedefs
+     52          
+     53          #if !defined(MBEDTLS_PSA_CRYPTO_EXTERNAL_RNG)
+     54          typedef void mbedtls_psa_external_random_context_t;
+     55          #endif
+     56          
+     57          // -----------------------------------------------------------------------------
+     58          // Static functions
+     59          
+     60          #if defined(SLI_MBEDTLS_DEVICE_HSE)
+     61          
+
+   \                                 In section .text, align 2, keep-with-next
+     62          static psa_status_t se_get_random(unsigned char *output,
+     63                                            size_t len,
+     64                                            size_t *out_len)
+     65          {
+   \                     se_get_random: (+1)
+   \        0x0   0xE92D 0x41F8      PUSH     {R3-R8,LR}
+   \        0x4   0xB089             SUB      SP,SP,#+36
+   \        0x6   0x0006             MOVS     R6,R0
+   \        0x8   0x000F             MOVS     R7,R1
+   \        0xA   0x4690             MOV      R8,R2
+     66            sl_status_t ret;
+     67            sl_se_command_context_t cmd_ctx;
+     68          
+     69            // Initialize the SE manager.
+     70            ret = sl_se_init();
+   \        0xC   0x.... 0x....      BL       sl_se_init
+   \       0x10   0x0005             MOVS     R5,R0
+     71            if (ret != SL_STATUS_OK) {
+   \       0x12   0x2D00             CMP      R5,#+0
+   \       0x14   0xD002             BEQ.N    ??se_get_random_0
+     72              return PSA_ERROR_HARDWARE_FAILURE;
+   \       0x16   0xF07F 0x0092      MVNS     R0,#+146
+   \       0x1A   0xE019             B.N      ??se_get_random_1
+     73            }
+     74          
+     75            // Initialize command context
+     76            ret = sl_se_init_command_context(&cmd_ctx);
+   \                     ??se_get_random_0: (+1)
+   \       0x1C   0x4668             MOV      R0,SP
+   \       0x1E   0x.... 0x....      BL       sl_se_init_command_context
+   \       0x22   0x0004             MOVS     R4,R0
+     77            if (ret != SL_STATUS_OK) {
+   \       0x24   0x2C00             CMP      R4,#+0
+   \       0x26   0xD002             BEQ.N    ??se_get_random_2
+     78              return PSA_ERROR_HARDWARE_FAILURE;
+   \       0x28   0xF07F 0x0092      MVNS     R0,#+146
+   \       0x2C   0xE010             B.N      ??se_get_random_1
+     79            }
+     80          
+     81            // Get entropy
+     82            ret = sl_se_get_random(&cmd_ctx, output, len);
+   \                     ??se_get_random_2: (+1)
+   \       0x2E   0x003A             MOVS     R2,R7
+   \       0x30   0x0031             MOVS     R1,R6
+   \       0x32   0x4668             MOV      R0,SP
+   \       0x34   0x.... 0x....      BL       sl_se_get_random
+   \       0x38   0x0001             MOVS     R1,R0
+     83          
+     84            if (ret == SL_STATUS_OK) {
+   \       0x3A   0x2900             CMP      R1,#+0
+   \       0x3C   0xD103             BNE.N    ??se_get_random_3
+     85              *out_len = len;
+   \       0x3E   0xF8C8 0x7000      STR      R7,[R8, #+0]
+     86              return PSA_SUCCESS;
+   \       0x42   0x2000             MOVS     R0,#+0
+   \       0x44   0xE004             B.N      ??se_get_random_1
+     87            }
+     88          
+     89            *out_len = 0;
+   \                     ??se_get_random_3: (+1)
+   \       0x46   0x2000             MOVS     R0,#+0
+   \       0x48   0xF8C8 0x0000      STR      R0,[R8, #+0]
+     90            return PSA_ERROR_HARDWARE_FAILURE;
+   \       0x4C   0xF07F 0x0092      MVNS     R0,#+146
+   \                     ??se_get_random_1: (+1)
+   \       0x50   0xB00A             ADD      SP,SP,#+40
+   \       0x52   0xE8BD 0x81F0      POP      {R4-R8,PC}
+     91          }
+     92          
+     93          #endif // SLI_MBEDTLS_DEVICE_HSE
+     94          
+     95          // -----------------------------------------------------------------------------
+     96          // Global entry points
+     97          
+
+   \                                 In section .text, align 2, keep-with-next
+     98          psa_status_t mbedtls_psa_external_get_random(
+     99            mbedtls_psa_external_random_context_t *context,
+    100            uint8_t *output,
+    101            size_t output_size,
+    102            size_t *output_length)
+    103          {
+   \                     mbedtls_psa_external_get_random: (+1)
+   \        0x0   0xE92D 0x41F0      PUSH     {R4-R8,LR}
+   \        0x4   0x0004             MOVS     R4,R0
+   \        0x6   0x000D             MOVS     R5,R1
+   \        0x8   0x0016             MOVS     R6,R2
+   \        0xA   0x001F             MOVS     R7,R3
+    104            (void)context;
+    105          
+    106            #if defined(SLI_PSA_DRIVER_FEATURE_TRNG)
+    107          
+    108            psa_status_t entropy_status = PSA_ERROR_CORRUPTION_DETECTED;
+   \        0xC   0xF07F 0x0896      MVNS     R8,#+150
+    109            *output_length = 0;
+   \       0x10   0x2000             MOVS     R0,#+0
+   \       0x12   0x6038             STR      R0,[R7, #+0]
+    110          
+    111            #if defined(SLI_MBEDTLS_DEVICE_HSE)
+    112          
+    113            entropy_status = se_get_random(output,
+    114                                           output_size,
+    115                                           output_length);
+   \       0x14   0x003A             MOVS     R2,R7
+   \       0x16   0x0031             MOVS     R1,R6
+   \       0x18   0x0028             MOVS     R0,R5
+   \       0x1A   0x.... 0x....      BL       se_get_random
+    116          
+    117            #elif defined(SLI_MBEDTLS_DEVICE_VSE)
+    118          
+    119            entropy_status = sli_cryptoacc_trng_get_random(output, output_size);
+    120            if (entropy_status == PSA_SUCCESS) {
+    121              *output_length = output_size;
+    122            }
+    123          
+    124            #else
+    125          
+    126            size_t entropy_max_retries = 5;
+    127            while (entropy_max_retries > 0 && entropy_status != PSA_SUCCESS) {
+    128              size_t offset = *output_length;
+    129          
+    130              // Read random bytes
+    131              #if defined(SLI_MBEDTLS_DEVICE_S1)
+    132              entropy_status = sli_crypto_trng_get_random(&output[offset],
+    133                                                          output_size - offset,
+    134                                                          output_length);
+    135              #elif defined(SLI_TRNG_DEVICE_SI91X)
+    136              entropy_status = sl_si91x_psa_get_random(&output[offset],
+    137                                                       output_size - offset,
+    138                                                       output_length);
+    139              #endif
+    140          
+    141              *output_length += offset;
+    142          
+    143              if (*output_length >= output_size) {
+    144                entropy_status = PSA_SUCCESS;
+    145              }
+    146          
+    147              // Consume a retry before going through another loop
+    148              entropy_max_retries--;
+    149            }
+    150          
+    151            #endif
+    152          
+    153            return entropy_status;
+   \       0x1E   0xE8BD 0x81F0      POP      {R4-R8,PC}
+    154          
+    155            #else // SLI_PSA_DRIVER_FEATURE_TRNG
+    156          
+    157            (void) output;
+    158            (void) output_size;
+    159            (void) output_length;
+    160          
+    161            return PSA_ERROR_HARDWARE_FAILURE;
+    162          
+    163            #endif // SLI_PSA_DRIVER_FEATURE_TRNG
+    164          }
+    165          
+    166          #endif // MBEDTLS_PSA_CRYPTO_EXTERNAL_RNG || MBEDTLS_ENTROPY_HARDWARE_ALT
+
+   Maximum stack usage in bytes:
+
+   .cstack Function
+   ------- --------
+      24   mbedtls_psa_external_get_random
+        24   -> se_get_random
+      64   se_get_random
+        64   -> sl_se_get_random
+        64   -> sl_se_init
+        64   -> sl_se_init_command_context
+
+
+   Section sizes:
+
+   Bytes  Function/Label
+   -----  --------------
+      34  mbedtls_psa_external_get_random
+      86  se_get_random
+
+ 
+ 120 bytes in section .text
+ 
+ 120 bytes of CODE memory
+
+Errors: none
+Warnings: none

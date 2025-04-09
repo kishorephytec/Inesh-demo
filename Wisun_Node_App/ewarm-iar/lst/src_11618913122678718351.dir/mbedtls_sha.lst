@@ -1,0 +1,775 @@
+###############################################################################
+#
+# IAR ANSI C/C++ Compiler V9.50.2.385/W64 for ARM         29/Mar/2025  15:53:11
+# Copyright 1999-2024 IAR Systems AB.
+#
+#    Cpu mode                     =  thumb
+#    Endian                       =  little
+#    Source file                  =
+#        D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\security\sl_component\sl_mbedtls_support\src\mbedtls_sha.c
+#    Command line                 =
+#        -f "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\ewarm-iar\obj\src_11618913122678718351.dir\mbedtls_sha.o.rsp"
+#        ("D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\security\sl_component\sl_mbedtls_support\src\mbedtls_sha.c"
+#        -D DEBUG_EFM=1 -D EFR32FG28B322F1024IM48=1 -D
+#        configNUM_SDK_THREAD_LOCAL_STORAGE_POINTERS=2 -D
+#        SL_COMPONENT_CATALOG_PRESENT=1 -D
+#        MBEDTLS_CONFIG_FILE=<sl_mbedtls_config.h> -D
+#        MBEDTLS_PSA_CRYPTO_CONFIG_FILE=<psa_crypto_config.h> -D
+#        SL_RAIL_LIB_MULTIPROTOCOL_SUPPORT=0 -D
+#        SL_RAIL_UTIL_PA_CONFIG_HEADER=<sl_rail_util_pa_config.h> -D
+#        RTT_USE_ASM=0 -lC "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\ewarm-iar\lst\src_11618913122678718351.dir"
+#        --diag_suppress Pa050 -o "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\ewarm-iar\obj\src_11618913122678718351.dir" --no_cse
+#        --no_unroll --no_inline --no_code_motion --no_tbaa --no_clustering
+#        --no_scheduling --debug --endian=little --cpu=Cortex-M33 --cmse --cmse
+#        -e --fpu=VFPv5_sp --dlib_config "C:\Program Files\IAR Systems\Embedded
+#        Workbench 9.2\arm\inc\c\DLib_Config_Normal.h" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\security\sl_component\sl_mbedtls_support\src\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App 1\Wisun_Node_App\config\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App 1\Wisun_Node_App\config\rail\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App 1\Wisun_Node_App\config\wisun\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App 1\Wisun_Node_App\.\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\Device\SiliconLabs\EFR32FG28\Include\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\app\wisun\component\app_project_info\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\common\inc\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\service\cli\inc\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\service\cli\src\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\CMSIS\Core\Include\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\CMSIS\RTOS2\Include\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\service\device_init\inc\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\emdrv\common\inc\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\emlib\inc\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\service\iostream\inc\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\security\sl_component\sl_mbedtls_support\config\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\security\sl_component\sl_mbedtls_support\config\preset\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\security\sl_component\sl_mbedtls_support\inc\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\util\third_party\mbedtls\include\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\util\third_party\mbedtls\library\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\micrium_os\common\source\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\micrium_os\common\include\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\micrium_os\cpu\include\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\micrium_os\ports\source\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\micrium_os\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\micrium_os\kernel\source\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\micrium_os\kernel\include\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\emdrv\nvm3\inc\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\peripheral\inc\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\util\third_party\printf\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\util\third_party\printf\inc\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\security\sl_component\sl_psa_driver\inc\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\radio\rail_lib\common\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\radio\rail_lib\protocol\ble\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\radio\rail_lib\protocol\ieee802154\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\radio\rail_lib\protocol\wmbus\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\radio\rail_lib\protocol\zwave\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\radio\rail_lib\chip\efr32\efr32xg2x\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\radio\rail_lib\protocol\sidewalk\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\radio\rail_lib\plugin\pa-conversions\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\radio\rail_lib\plugin\pa-conversions\efr32xg28\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\radio\rail_lib\plugin\rail_util_pti\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\security\sl_component\se_manager\inc\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\security\sl_component\se_manager\src\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\util\third_party\segger\systemview\SEGGER\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\util\silicon_labs\silabs_core\memory_manager\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\common\toolchain\inc\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\service\system\inc\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\app\wisun\component\app_core\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\app\wisun\component\app_setting\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\app\wisun\component\cli_util\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\app\wisun\component\event_manager\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\app\wisun\component\ns_list\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\app\wisun\component\ping\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\app\wisun\component\trace_util\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\app\wisun\component\trace_util\nanostack\nanostack-libservice\mbed-client-libservice\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\app\wisun\component\udp_client\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\service\sleeptimer\inc\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\protocol\wisun\plugin\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\protocol\wisun\stack\inc\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\protocol\wisun\stack\inc\socket\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App 1\Wisun_Node_App\autogen\\" -On
+#        --use_c++_inline) --dependencies=n "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\ewarm-iar\obj\src_11618913122678718351.dir\mbedtls_sha.o.iar_deps"
+#    Locale                       =  C
+#    List file                    =
+#        D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\ewarm-iar\lst\src_11618913122678718351.dir\mbedtls_sha.lst
+#    Object file                  =
+#        D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\ewarm-iar\obj\src_11618913122678718351.dir\mbedtls_sha.o
+#    Runtime model:                  
+#      __CPP_Runtime              =  1
+#      __SystemLibrary            =  DLib
+#      __dlib_file_descriptor     =  0
+#      __dlib_full_locale_support =  0
+#      __dlib_version             =  6
+#
+###############################################################################
+
+D:\Inesh_wisun\Wisun_Node_App 1\Wisun_Node_App\gecko_sdk_4.4.5\platform\security\sl_component\sl_mbedtls_support\src\mbedtls_sha.c
+      1          /***************************************************************************//**
+      2           * @file
+      3           * @brief SHA-1, SHA-256 and SHA-512 mbedTLS plugin on top of PSA accelerators.
+      4           *******************************************************************************
+      5           * # License
+      6           * <b>Copyright 2020 Silicon Laboratories Inc. www.silabs.com</b>
+      7           *******************************************************************************
+      8           *
+      9           * SPDX-License-Identifier: Zlib
+     10           *
+     11           * The licensor of this software is Silicon Laboratories Inc.
+     12           *
+     13           * This software is provided 'as-is', without any express or implied
+     14           * warranty. In no event will the authors be held liable for any damages
+     15           * arising from the use of this software.
+     16           *
+     17           * Permission is granted to anyone to use this software for any purpose,
+     18           * including commercial applications, and to alter it and redistribute it
+     19           * freely, subject to the following restrictions:
+     20           *
+     21           * 1. The origin of this software must not be misrepresented; you must not
+     22           *    claim that you wrote the original software. If you use this software
+     23           *    in a product, an acknowledgment in the product documentation would be
+     24           *    appreciated but is not required.
+     25           * 2. Altered source versions must be plainly marked as such, and must not be
+     26           *    misrepresented as being the original software.
+     27           * 3. This notice may not be removed or altered from any source distribution.
+     28           *
+     29           ******************************************************************************/
+     30          
+     31          /**
+     32           * This file includes an alternative implementation of the SHA functionality in
+     33           * mbed TLS' APIs, using the accelerators incorporated in devices from Silicon Labs.
+     34           *
+     35           * This alternative implementation calls the PSA Crypto drivers provided
+     36           * by Silicon Labs. For details on these drivers, see \ref sl_psa_drivers.
+     37           */
+     38          
+     39          #include <mbedtls/build_info.h>
+     40          
+     41          #if (defined(MBEDTLS_SHA256_ALT) && defined(MBEDTLS_SHA256_C)) \
+     42            || (defined(MBEDTLS_SHA1_ALT) && defined(MBEDTLS_SHA1_C))    \
+     43            || (defined(MBEDTLS_SHA512_ALT) && defined(MBEDTLS_SHA512_C))
+     44          
+     45          #include "em_device.h"
+     46          
+     47          #if defined(SEMAILBOX_PRESENT)
+     48          #include "sli_se_transparent_functions.h"
+     49          #define HASH_IMPLEMENTATION_PRESENT
+     50          #define HASH_SETUP_FCT      sli_se_transparent_hash_setup
+     51          #define HASH_UPDATE_FCT     sli_se_transparent_hash_update
+     52          #define HASH_FINISH_FCT     sli_se_transparent_hash_finish
+     53          #define HASH_ABORT_FCT      sli_se_transparent_hash_abort
+     54          #define HASH_ONESHOT_FCT    sli_se_transparent_hash_compute
+     55          #elif defined(CRYPTO_PRESENT)
+     56          #include "sli_crypto_transparent_functions.h"
+     57          #define HASH_IMPLEMENTATION_PRESENT
+     58          #define HASH_SETUP_FCT      sli_crypto_transparent_hash_setup
+     59          #define HASH_UPDATE_FCT     sli_crypto_transparent_hash_update
+     60          #define HASH_FINISH_FCT     sli_crypto_transparent_hash_finish
+     61          #define HASH_ABORT_FCT      sli_crypto_transparent_hash_abort
+     62          #define HASH_ONESHOT_FCT    sli_crypto_transparent_hash_compute
+     63          #elif defined(CRYPTOACC_PRESENT)
+     64          #include "sli_cryptoacc_transparent_functions.h"
+     65          #define HASH_IMPLEMENTATION_PRESENT
+     66          #define HASH_SETUP_FCT      sli_cryptoacc_transparent_hash_setup
+     67          #define HASH_UPDATE_FCT     sli_cryptoacc_transparent_hash_update
+     68          #define HASH_FINISH_FCT     sli_cryptoacc_transparent_hash_finish
+     69          #define HASH_ABORT_FCT      sli_cryptoacc_transparent_hash_abort
+     70          #define HASH_ONESHOT_FCT    sli_cryptoacc_transparent_hash_compute
+     71          #endif
+     72          
+     73          #include "mbedtls/error.h"
+     74          #include "mbedtls/platform.h"
+     75          #include "mbedtls/platform_util.h"
+     76          
+     77          #if defined(MBEDTLS_SHA1_ALT) && defined(MBEDTLS_SHA1_C)
+     78          #include "mbedtls/sha1.h"
+     79          #define SHA1_VALIDATE_RET(cond) \
+     80            MBEDTLS_INTERNAL_VALIDATE_RET(cond, MBEDTLS_ERR_SHA1_BAD_INPUT_DATA)
+     81          #define SHA1_VALIDATE(cond)  MBEDTLS_INTERNAL_VALIDATE(cond)
+     82          #endif /* SHA1 acceleration active */
+     83          
+     84          #if defined(MBEDTLS_SHA256_ALT) && defined(MBEDTLS_SHA256_C)
+     85          #include "mbedtls/sha256.h"
+     86          #define SHA256_VALIDATE_RET(cond) \
+     87            MBEDTLS_INTERNAL_VALIDATE_RET(cond, MBEDTLS_ERR_SHA256_BAD_INPUT_DATA)
+     88          #define SHA256_VALIDATE(cond)  MBEDTLS_INTERNAL_VALIDATE(cond)
+     89          #endif /* SHA256 acceleration active */
+     90          
+     91          #if defined(MBEDTLS_SHA512_ALT) && defined(MBEDTLS_SHA512_C)
+     92          #include "mbedtls/sha512.h"
+     93          #define SHA512_VALIDATE_RET(cond) \
+     94            MBEDTLS_INTERNAL_VALIDATE_RET(cond, MBEDTLS_ERR_SHA512_BAD_INPUT_DATA)
+     95          #define SHA512_VALIDATE(cond)  MBEDTLS_INTERNAL_VALIDATE(cond)
+     96          #endif /* SHA512 acceleration active */
+     97          
+     98          #if defined(HASH_IMPLEMENTATION_PRESENT)
+
+   \                                 In section .text, align 2, keep-with-next
+     99          static int psa_status_to_mbedtls(psa_status_t status, psa_algorithm_t alg)
+    100          {
+   \                     psa_status_to_mbedtls: (+1)
+   \        0x0   0x0002             MOVS     R2,R0
+    101            switch ( status ) {
+   \        0x2   0x0013             MOVS     R3,R2
+   \        0x4   0x2B00             CMP      R3,#+0
+   \        0x6   0xD008             BEQ.N    ??psa_status_to_mbedtls_0
+   \        0x8   0xF07F 0x0092      MVNS     R0,#+146
+   \        0xC   0x1A1B             SUBS     R3,R3,R0
+   \        0xE   0xD006             BEQ.N    ??psa_status_to_mbedtls_1
+   \       0x10   0x3B0C             SUBS     R3,R3,#+12
+   \       0x12   0xD00A             BEQ.N    ??psa_status_to_mbedtls_2
+   \       0x14   0x1E5B             SUBS     R3,R3,#+1
+   \       0x16   0xD005             BEQ.N    ??psa_status_to_mbedtls_3
+   \       0x18   0xE017             B.N      ??psa_status_to_mbedtls_4
+    102              case PSA_SUCCESS:
+    103                return 0;
+   \                     ??psa_status_to_mbedtls_0: (+1)
+   \       0x1A   0x2000             MOVS     R0,#+0
+   \       0x1C   0xE017             B.N      ??psa_status_to_mbedtls_5
+    104              case PSA_ERROR_HARDWARE_FAILURE:
+    105                return MBEDTLS_ERR_PLATFORM_HW_ACCEL_FAILED;
+   \                     ??psa_status_to_mbedtls_1: (+1)
+   \       0x1E   0xF07F 0x006F      MVNS     R0,#+111
+   \       0x22   0xE014             B.N      ??psa_status_to_mbedtls_5
+    106              case PSA_ERROR_NOT_SUPPORTED:
+    107                return MBEDTLS_ERR_PLATFORM_FEATURE_UNSUPPORTED;
+   \                     ??psa_status_to_mbedtls_3: (+1)
+   \       0x24   0xF07F 0x0071      MVNS     R0,#+113
+   \       0x28   0xE011             B.N      ??psa_status_to_mbedtls_5
+    108              case PSA_ERROR_INVALID_ARGUMENT:
+    109                switch ( alg ) {
+   \                     ??psa_status_to_mbedtls_2: (+1)
+   \       0x2A   0x000B             MOVS     R3,R1
+   \       0x2C   0x....             LDR.N    R0,??DataTable8
+   \       0x2E   0x1A1B             SUBS     R3,R3,R0
+   \       0x30   0xD002             BEQ.N    ??psa_status_to_mbedtls_6
+   \       0x32   0x1F1B             SUBS     R3,R3,#+4
+   \       0x34   0xD003             BEQ.N    ??psa_status_to_mbedtls_7
+   \       0x36   0xE005             B.N      ??psa_status_to_mbedtls_8
+    110          #if defined(MBEDTLS_SHA1_ALT) && defined(MBEDTLS_SHA1_C)
+    111                  case PSA_ALG_SHA_1:
+    112                    return MBEDTLS_ERR_SHA1_BAD_INPUT_DATA;
+   \                     ??psa_status_to_mbedtls_6: (+1)
+   \       0x38   0xF07F 0x0072      MVNS     R0,#+114
+   \       0x3C   0xE007             B.N      ??psa_status_to_mbedtls_5
+    113          #endif
+    114          #if defined(MBEDTLS_SHA256_ALT) && defined(MBEDTLS_SHA256_C)
+    115                  case PSA_ALG_SHA_256:
+    116                    return MBEDTLS_ERR_SHA256_BAD_INPUT_DATA;
+   \                     ??psa_status_to_mbedtls_7: (+1)
+   \       0x3E   0xF07F 0x0073      MVNS     R0,#+115
+   \       0x42   0xE004             B.N      ??psa_status_to_mbedtls_5
+    117          #endif
+    118          #if defined(MBEDTLS_SHA512_ALT) && defined(MBEDTLS_SHA512_C)
+    119                  case PSA_ALG_SHA_512:
+    120                    return MBEDTLS_ERR_SHA512_BAD_INPUT_DATA;
+    121          #endif
+    122                  default:
+    123                    return MBEDTLS_ERR_ERROR_CORRUPTION_DETECTED;
+   \                     ??psa_status_to_mbedtls_8: (+1)
+   \       0x44   0xF07F 0x006D      MVNS     R0,#+109
+   \       0x48   0xE001             B.N      ??psa_status_to_mbedtls_5
+    124                }
+    125              default:
+    126                return MBEDTLS_ERR_ERROR_GENERIC_ERROR;
+   \                     ??psa_status_to_mbedtls_4: (+1)
+   \       0x4A   0xF05F 0x30FF      MOVS     R0,#+4294967295
+   \                     ??psa_status_to_mbedtls_5: (+1)
+   \       0x4E   0x4770             BX       LR
+    127            }
+    128          }
+    129          
+    130          #if defined(MBEDTLS_SHA512_ALT) && (defined(MBEDTLS_SHA384_C) || defined(MBEDTLS_SHA512_C))
+    131          
+    132          void mbedtls_sha512_init(mbedtls_sha512_context *ctx)
+    133          {
+    134            SHA512_VALIDATE(ctx != NULL);
+    135          
+    136            HASH_ABORT_FCT(ctx);
+    137          }
+    138          
+    139          void mbedtls_sha512_free(mbedtls_sha512_context *ctx)
+    140          {
+    141            HASH_ABORT_FCT(ctx);
+    142          }
+    143          
+    144          void mbedtls_sha512_clone(mbedtls_sha512_context *dst,
+    145                                    const mbedtls_sha512_context *src)
+    146          {
+    147            MBEDTLS_INTERNAL_VALIDATE(dst != NULL);
+    148            MBEDTLS_INTERNAL_VALIDATE(src != NULL);
+    149          
+    150            *dst = *src;
+    151          }
+    152          
+    153          int mbedtls_sha512_starts(mbedtls_sha512_context *ctx, int is384)
+    154          {
+    155            if (is384 > 1) {
+    156              return MBEDTLS_ERR_SHA512_BAD_INPUT_DATA;
+    157            }
+    158          
+    159            return psa_status_to_mbedtls(HASH_SETUP_FCT(ctx, is384 ? PSA_ALG_SHA_384 : PSA_ALG_SHA_512), PSA_ALG_SHA_512);
+    160          }
+    161          
+    162          int mbedtls_sha512_update(mbedtls_sha512_context *ctx, const unsigned char *input,
+    163                                    size_t ilen)
+    164          {
+    165            return psa_status_to_mbedtls(HASH_UPDATE_FCT(ctx, input, ilen), PSA_ALG_SHA_512);
+    166          }
+    167          
+    168          int mbedtls_internal_sha512_process(mbedtls_sha512_context *ctx, const unsigned char data[128])
+    169          {
+    170            return psa_status_to_mbedtls(HASH_UPDATE_FCT(ctx, data, 128), PSA_ALG_SHA_512);
+    171          }
+    172          
+    173          int mbedtls_sha512_finish(mbedtls_sha512_context *ctx, unsigned char *output)
+    174          {
+    175            size_t out_length = 0;
+    176            return psa_status_to_mbedtls(HASH_FINISH_FCT(ctx, output, 64, &out_length), PSA_ALG_SHA_512);
+    177          }
+    178          #endif /* SHA512 acceleration active */
+    179          
+    180          #if defined(MBEDTLS_SHA256_ALT) && (defined(MBEDTLS_SHA256_C) || defined(MBEDTLS_SHA224_C))
+
+   \                                 In section .text, align 2, keep-with-next
+    181          void mbedtls_sha256_init(mbedtls_sha256_context *ctx)
+    182          {
+   \                     mbedtls_sha256_init: (+1)
+   \        0x0   0xB510             PUSH     {R4,LR}
+   \        0x2   0x0004             MOVS     R4,R0
+    183            SHA256_VALIDATE(ctx != NULL);
+    184          
+    185            HASH_ABORT_FCT((void *)ctx);
+   \        0x4   0x0020             MOVS     R0,R4
+   \        0x6   0x.... 0x....      BL       sli_se_transparent_hash_abort
+    186          }
+   \        0xA   0xBD10             POP      {R4,PC}
+    187          
+
+   \                                 In section .text, align 2, keep-with-next
+    188          void mbedtls_sha256_free(mbedtls_sha256_context *ctx)
+    189          {
+   \                     mbedtls_sha256_free: (+1)
+   \        0x0   0xB510             PUSH     {R4,LR}
+   \        0x2   0x0004             MOVS     R4,R0
+    190            HASH_ABORT_FCT((void *)ctx);
+   \        0x4   0x0020             MOVS     R0,R4
+   \        0x6   0x.... 0x....      BL       sli_se_transparent_hash_abort
+    191          }
+   \        0xA   0xBD10             POP      {R4,PC}
+    192          
+
+   \                                 In section .text, align 2, keep-with-next
+    193          void mbedtls_sha256_clone(mbedtls_sha256_context *dst,
+    194                                    const mbedtls_sha256_context *src)
+    195          {
+   \                     mbedtls_sha256_clone: (+1)
+   \        0x0   0xB538             PUSH     {R3-R5,LR}
+   \        0x2   0x0005             MOVS     R5,R0
+   \        0x4   0x000C             MOVS     R4,R1
+    196            MBEDTLS_INTERNAL_VALIDATE(dst != NULL);
+    197            MBEDTLS_INTERNAL_VALIDATE(src != NULL);
+    198          
+    199            *dst = *src;
+   \        0x6   0x0028             MOVS     R0,R5
+   \        0x8   0x0021             MOVS     R1,R4
+   \        0xA   0x22D8             MOVS     R2,#+216
+   \        0xC   0x.... 0x....      BL       __aeabi_memcpy4
+    200          }
+   \       0x10   0xBD31             POP      {R0,R4,R5,PC}
+    201          
+
+   \                                 In section .text, align 2, keep-with-next
+    202          int mbedtls_sha256_starts(mbedtls_sha256_context *ctx, int is224)
+    203          {
+   \                     mbedtls_sha256_starts: (+1)
+   \        0x0   0xB538             PUSH     {R3-R5,LR}
+   \        0x2   0x0005             MOVS     R5,R0
+   \        0x4   0x000C             MOVS     R4,R1
+    204            SHA256_VALIDATE_RET(ctx != NULL);
+    205            SHA256_VALIDATE_RET(is224 == 0 || is224 == 1);
+    206          
+    207            if (is224 > 1) {
+   \        0x6   0x2C02             CMP      R4,#+2
+   \        0x8   0xDB02             BLT.N    ??mbedtls_sha256_starts_0
+    208              return MBEDTLS_ERR_SHA256_BAD_INPUT_DATA;
+   \        0xA   0xF07F 0x0073      MVNS     R0,#+115
+   \        0xE   0xE00A             B.N      ??mbedtls_sha256_starts_1
+    209            }
+    210          
+    211            return psa_status_to_mbedtls(HASH_SETUP_FCT((void *)ctx, is224 ? PSA_ALG_SHA_224 : PSA_ALG_SHA_256), PSA_ALG_SHA_256);
+   \                     ??mbedtls_sha256_starts_0: (+1)
+   \       0x10   0x2C00             CMP      R4,#+0
+   \       0x12   0xD001             BEQ.N    ??mbedtls_sha256_starts_2
+   \       0x14   0x....             LDR.N    R1,??DataTable8_1
+   \       0x16   0xE000             B.N      ??mbedtls_sha256_starts_3
+   \                     ??mbedtls_sha256_starts_2: (+1)
+   \       0x18   0x....             LDR.N    R1,??DataTable8_2
+   \                     ??mbedtls_sha256_starts_3: (+1)
+   \       0x1A   0x0028             MOVS     R0,R5
+   \       0x1C   0x.... 0x....      BL       sli_se_transparent_hash_setup
+   \       0x20   0x....             LDR.N    R1,??DataTable8_2
+   \       0x22   0x.... 0x....      BL       psa_status_to_mbedtls
+   \                     ??mbedtls_sha256_starts_1: (+1)
+   \       0x26   0xBD32             POP      {R1,R4,R5,PC}
+    212          }
+    213          
+
+   \                                 In section .text, align 2, keep-with-next
+    214          int mbedtls_sha256_update(mbedtls_sha256_context *ctx, const unsigned char *input,
+    215                                    size_t ilen)
+    216          {
+   \                     mbedtls_sha256_update: (+1)
+   \        0x0   0xB570             PUSH     {R4-R6,LR}
+   \        0x2   0x0006             MOVS     R6,R0
+   \        0x4   0x000C             MOVS     R4,R1
+   \        0x6   0x0015             MOVS     R5,R2
+    217            SHA256_VALIDATE_RET(ctx != NULL);
+    218            SHA256_VALIDATE_RET(ilen == 0 || input != NULL);
+    219          
+    220            return psa_status_to_mbedtls(HASH_UPDATE_FCT((void *)ctx, input, ilen), PSA_ALG_SHA_256);
+   \        0x8   0x002A             MOVS     R2,R5
+   \        0xA   0x0021             MOVS     R1,R4
+   \        0xC   0x0030             MOVS     R0,R6
+   \        0xE   0x.... 0x....      BL       sli_se_transparent_hash_update
+   \       0x12   0x....             LDR.N    R1,??DataTable8_2
+   \       0x14   0x.... 0x....      BL       psa_status_to_mbedtls
+   \       0x18   0xBD70             POP      {R4-R6,PC}
+    221          }
+    222          
+
+   \                                 In section .text, align 2, keep-with-next
+    223          int mbedtls_internal_sha256_process(mbedtls_sha256_context *ctx, const unsigned char data[64])
+    224          {
+   \                     mbedtls_internal_sha256_process: (+1)
+   \        0x0   0xB538             PUSH     {R3-R5,LR}
+   \        0x2   0x0005             MOVS     R5,R0
+   \        0x4   0x000C             MOVS     R4,R1
+    225            SHA256_VALIDATE_RET(ctx != NULL);
+    226            SHA256_VALIDATE_RET((const unsigned char *)data != NULL);
+    227          
+    228            return psa_status_to_mbedtls(HASH_UPDATE_FCT((void *)ctx, data, 64), PSA_ALG_SHA_256);
+   \        0x6   0x2240             MOVS     R2,#+64
+   \        0x8   0x0021             MOVS     R1,R4
+   \        0xA   0x0028             MOVS     R0,R5
+   \        0xC   0x.... 0x....      BL       sli_se_transparent_hash_update
+   \       0x10   0x....             LDR.N    R1,??DataTable8_2
+   \       0x12   0x.... 0x....      BL       psa_status_to_mbedtls
+   \       0x16   0xBD32             POP      {R1,R4,R5,PC}
+    229          }
+    230          
+
+   \                                 In section .text, align 2, keep-with-next
+    231          int mbedtls_sha256_finish(mbedtls_sha256_context *ctx, unsigned char *output)
+    232          {
+   \                     mbedtls_sha256_finish: (+1)
+   \        0x0   0xB538             PUSH     {R3-R5,LR}
+   \        0x2   0x0004             MOVS     R4,R0
+   \        0x4   0x000D             MOVS     R5,R1
+    233            SHA256_VALIDATE_RET(ctx != NULL);
+    234            SHA256_VALIDATE_RET((unsigned char *)output != NULL);
+    235          
+    236            size_t out_length = 0;
+   \        0x6   0x2000             MOVS     R0,#+0
+   \        0x8   0x9000             STR      R0,[SP, #+0]
+    237            return psa_status_to_mbedtls(HASH_FINISH_FCT((void *)ctx, output, 32, &out_length), PSA_ALG_SHA_256);
+   \        0xA   0x466B             MOV      R3,SP
+   \        0xC   0x2220             MOVS     R2,#+32
+   \        0xE   0x0029             MOVS     R1,R5
+   \       0x10   0x0020             MOVS     R0,R4
+   \       0x12   0x.... 0x....      BL       sli_se_transparent_hash_finish
+   \       0x16   0x....             LDR.N    R1,??DataTable8_2
+   \       0x18   0x.... 0x....      BL       psa_status_to_mbedtls
+   \       0x1C   0xBD32             POP      {R1,R4,R5,PC}
+    238          }
+    239          #endif /* SHA256 acceleration active */
+    240          
+    241          #if defined(MBEDTLS_SHA1_ALT) && defined(MBEDTLS_SHA1_C)
+    242          
+
+   \                                 In section .text, align 2, keep-with-next
+    243          void mbedtls_sha1_init(mbedtls_sha1_context *ctx)
+    244          {
+   \                     mbedtls_sha1_init: (+1)
+   \        0x0   0xB510             PUSH     {R4,LR}
+   \        0x2   0x0004             MOVS     R4,R0
+    245            SHA1_VALIDATE(ctx != NULL);
+    246          
+    247            HASH_ABORT_FCT((void *)ctx);
+   \        0x4   0x0020             MOVS     R0,R4
+   \        0x6   0x.... 0x....      BL       sli_se_transparent_hash_abort
+    248          }
+   \        0xA   0xBD10             POP      {R4,PC}
+    249          
+
+   \                                 In section .text, align 2, keep-with-next
+    250          void mbedtls_sha1_free(mbedtls_sha1_context *ctx)
+    251          {
+   \                     mbedtls_sha1_free: (+1)
+   \        0x0   0xB510             PUSH     {R4,LR}
+   \        0x2   0x0004             MOVS     R4,R0
+    252            HASH_ABORT_FCT((void *)ctx);
+   \        0x4   0x0020             MOVS     R0,R4
+   \        0x6   0x.... 0x....      BL       sli_se_transparent_hash_abort
+    253          }
+   \        0xA   0xBD10             POP      {R4,PC}
+    254          
+
+   \                                 In section .text, align 2, keep-with-next
+    255          void mbedtls_sha1_clone(mbedtls_sha1_context *dst,
+    256                                  const mbedtls_sha1_context *src)
+    257          {
+   \                     mbedtls_sha1_clone: (+1)
+   \        0x0   0xB538             PUSH     {R3-R5,LR}
+   \        0x2   0x0005             MOVS     R5,R0
+   \        0x4   0x000C             MOVS     R4,R1
+    258            MBEDTLS_INTERNAL_VALIDATE(dst != NULL);
+    259            MBEDTLS_INTERNAL_VALIDATE(src != NULL);
+    260          
+    261            *dst = *src;
+   \        0x6   0x0028             MOVS     R0,R5
+   \        0x8   0x0021             MOVS     R1,R4
+   \        0xA   0x22D8             MOVS     R2,#+216
+   \        0xC   0x.... 0x....      BL       __aeabi_memcpy4
+    262          }
+   \       0x10   0xBD31             POP      {R0,R4,R5,PC}
+    263          
+
+   \                                 In section .text, align 2, keep-with-next
+    264          int mbedtls_sha1_starts(mbedtls_sha1_context *ctx)
+    265          {
+   \                     mbedtls_sha1_starts: (+1)
+   \        0x0   0xB538             PUSH     {R3-R5,LR}
+   \        0x2   0x0005             MOVS     R5,R0
+    266            SHA1_VALIDATE_RET(ctx != NULL);
+    267          
+    268            return psa_status_to_mbedtls(HASH_SETUP_FCT((void *)ctx, PSA_ALG_SHA_1), PSA_ALG_SHA_1);
+   \        0x4   0x....             LDR.N    R4,??DataTable8
+   \        0x6   0x0021             MOVS     R1,R4
+   \        0x8   0x0028             MOVS     R0,R5
+   \        0xA   0x.... 0x....      BL       sli_se_transparent_hash_setup
+   \        0xE   0x0021             MOVS     R1,R4
+   \       0x10   0x.... 0x....      BL       psa_status_to_mbedtls
+   \       0x14   0xBD32             POP      {R1,R4,R5,PC}
+    269          }
+    270          
+
+   \                                 In section .text, align 2, keep-with-next
+    271          int mbedtls_sha1_update(mbedtls_sha1_context *ctx, const unsigned char *input, size_t ilen)
+    272          {
+   \                     mbedtls_sha1_update: (+1)
+   \        0x0   0xB570             PUSH     {R4-R6,LR}
+   \        0x2   0x0006             MOVS     R6,R0
+   \        0x4   0x000C             MOVS     R4,R1
+   \        0x6   0x0015             MOVS     R5,R2
+    273            SHA1_VALIDATE_RET(ctx != NULL);
+    274            SHA1_VALIDATE_RET(ilen == 0 || input != NULL);
+    275          
+    276            return psa_status_to_mbedtls(HASH_UPDATE_FCT((void *)ctx, input, ilen), PSA_ALG_SHA_1);
+   \        0x8   0x002A             MOVS     R2,R5
+   \        0xA   0x0021             MOVS     R1,R4
+   \        0xC   0x0030             MOVS     R0,R6
+   \        0xE   0x.... 0x....      BL       sli_se_transparent_hash_update
+   \       0x12   0x....             LDR.N    R1,??DataTable8
+   \       0x14   0x.... 0x....      BL       psa_status_to_mbedtls
+   \       0x18   0xBD70             POP      {R4-R6,PC}
+    277          }
+    278          
+
+   \                                 In section .text, align 2, keep-with-next
+    279          int mbedtls_internal_sha1_process(mbedtls_sha1_context *ctx, const unsigned char data[64])
+    280          {
+   \                     mbedtls_internal_sha1_process: (+1)
+   \        0x0   0xB538             PUSH     {R3-R5,LR}
+   \        0x2   0x0005             MOVS     R5,R0
+   \        0x4   0x000C             MOVS     R4,R1
+    281            SHA1_VALIDATE_RET(ctx != NULL);
+    282            SHA1_VALIDATE_RET((const unsigned char *)data != NULL);
+    283          
+    284            return psa_status_to_mbedtls(HASH_UPDATE_FCT((void *)ctx, data, 64), PSA_ALG_SHA_1);
+   \        0x6   0x2240             MOVS     R2,#+64
+   \        0x8   0x0021             MOVS     R1,R4
+   \        0xA   0x0028             MOVS     R0,R5
+   \        0xC   0x.... 0x....      BL       sli_se_transparent_hash_update
+   \       0x10   0x....             LDR.N    R1,??DataTable8
+   \       0x12   0x.... 0x....      BL       psa_status_to_mbedtls
+   \       0x16   0xBD32             POP      {R1,R4,R5,PC}
+    285          }
+    286          
+
+   \                                 In section .text, align 2, keep-with-next
+    287          int mbedtls_sha1_finish(mbedtls_sha1_context *ctx, unsigned char output[20])
+    288          {
+   \                     mbedtls_sha1_finish: (+1)
+   \        0x0   0xB538             PUSH     {R3-R5,LR}
+   \        0x2   0x0004             MOVS     R4,R0
+   \        0x4   0x000D             MOVS     R5,R1
+    289            SHA1_VALIDATE_RET(ctx != NULL);
+    290            SHA1_VALIDATE_RET((unsigned char *)output != NULL);
+    291          
+    292            size_t out_length = 0;
+   \        0x6   0x2000             MOVS     R0,#+0
+   \        0x8   0x9000             STR      R0,[SP, #+0]
+    293            return psa_status_to_mbedtls(HASH_FINISH_FCT((void *)ctx, output, 20, &out_length), PSA_ALG_SHA_1);
+   \        0xA   0x466B             MOV      R3,SP
+   \        0xC   0x2214             MOVS     R2,#+20
+   \        0xE   0x0029             MOVS     R1,R5
+   \       0x10   0x0020             MOVS     R0,R4
+   \       0x12   0x.... 0x....      BL       sli_se_transparent_hash_finish
+   \       0x16   0x....             LDR.N    R1,??DataTable8
+   \       0x18   0x.... 0x....      BL       psa_status_to_mbedtls
+   \       0x1C   0xBD32             POP      {R1,R4,R5,PC}
+    294          }
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable8:
+   \        0x0   0x0200'0005        DC32     0x2000005
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable8_1:
+   \        0x0   0x0200'0008        DC32     0x2000008
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable8_2:
+   \        0x0   0x0200'0009        DC32     0x2000009
+    295          #endif /* SHA1 acceleration active */
+    296          
+    297          #endif /* HASH_IMPLEMENTATION_PRESENT */
+    298          #endif /* (SHA1 or SHA256 or SHA512) acceleration active */
+
+   Maximum stack usage in bytes:
+
+   .cstack Function
+   ------- --------
+      16   mbedtls_internal_sha1_process
+        16   -> psa_status_to_mbedtls
+        16   -> sli_se_transparent_hash_update
+      16   mbedtls_internal_sha256_process
+        16   -> psa_status_to_mbedtls
+        16   -> sli_se_transparent_hash_update
+      16   mbedtls_sha1_clone
+        16   -> __aeabi_memcpy4
+      16   mbedtls_sha1_finish
+        16   -> psa_status_to_mbedtls
+        16   -> sli_se_transparent_hash_finish
+       8   mbedtls_sha1_free
+         8   -> sli_se_transparent_hash_abort
+       8   mbedtls_sha1_init
+         8   -> sli_se_transparent_hash_abort
+      16   mbedtls_sha1_starts
+        16   -> psa_status_to_mbedtls
+        16   -> sli_se_transparent_hash_setup
+      16   mbedtls_sha1_update
+        16   -> psa_status_to_mbedtls
+        16   -> sli_se_transparent_hash_update
+      16   mbedtls_sha256_clone
+        16   -> __aeabi_memcpy4
+      16   mbedtls_sha256_finish
+        16   -> psa_status_to_mbedtls
+        16   -> sli_se_transparent_hash_finish
+       8   mbedtls_sha256_free
+         8   -> sli_se_transparent_hash_abort
+       8   mbedtls_sha256_init
+         8   -> sli_se_transparent_hash_abort
+      16   mbedtls_sha256_starts
+        16   -> psa_status_to_mbedtls
+        16   -> sli_se_transparent_hash_setup
+      16   mbedtls_sha256_update
+        16   -> psa_status_to_mbedtls
+        16   -> sli_se_transparent_hash_update
+       0   psa_status_to_mbedtls
+
+
+   Section sizes:
+
+   Bytes  Function/Label
+   -----  --------------
+       4  ??DataTable8
+       4  ??DataTable8_1
+       4  ??DataTable8_2
+      24  mbedtls_internal_sha1_process
+      24  mbedtls_internal_sha256_process
+      18  mbedtls_sha1_clone
+      30  mbedtls_sha1_finish
+      12  mbedtls_sha1_free
+      12  mbedtls_sha1_init
+      22  mbedtls_sha1_starts
+      26  mbedtls_sha1_update
+      18  mbedtls_sha256_clone
+      30  mbedtls_sha256_finish
+      12  mbedtls_sha256_free
+      12  mbedtls_sha256_init
+      40  mbedtls_sha256_starts
+      26  mbedtls_sha256_update
+      80  psa_status_to_mbedtls
+
+ 
+ 398 bytes in section .text
+ 
+ 398 bytes of CODE memory
+
+Errors: none
+Warnings: none

@@ -1,0 +1,572 @@
+###############################################################################
+#
+# IAR ANSI C/C++ Compiler V9.50.2.385/W64 for ARM         27/Nov/2024  12:18:00
+# Copyright 1999-2024 IAR Systems AB.
+#
+#    Cpu mode                     =  thumb
+#    Endian                       =  little
+#    Source file                  =
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\util\third_party\mbedtls\library\x509write.c
+#    Command line                 =
+#        -f
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\ewarm-iar\obj\library_11823079944874003547.dir\x509write.o.rsp
+#        (C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\util\third_party\mbedtls\library\x509write.c
+#        -D EFR32FG28B322F1024IM48=1 -D
+#        configNUM_SDK_THREAD_LOCAL_STORAGE_POINTERS=2 -D
+#        SL_COMPONENT_CATALOG_PRESENT=1 -D
+#        MBEDTLS_CONFIG_FILE=<sl_mbedtls_config.h> -D
+#        MBEDTLS_PSA_CRYPTO_CONFIG_FILE=<psa_crypto_config.h> -D
+#        SL_RAIL_LIB_MULTIPROTOCOL_SUPPORT=0 -D
+#        SL_RAIL_UTIL_PA_CONFIG_HEADER=<sl_rail_util_pa_config.h> -D
+#        RTT_USE_ASM=0 -D MBED_CONF_MBED_TRACE_ENABLE=1 -D
+#        MBED_CONF_NANOSTACK_CONFIGURATION=ws_router -D
+#        MBED_TRACE_MAX_LEVEL=TRACE_ACTIVE_LEVEL_ALL -D DEBUG_EFM_USER=1 -D
+#        HAVE_LFN=1 -D HAVE_LFN_PARENT=1 -lC
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\ewarm-iar\lst\library_11823079944874003547.dir
+#        --diag_suppress Pa050 -o
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\ewarm-iar\obj\library_11823079944874003547.dir
+#        --debug --endian=little --cpu=Cortex-M33 --cmse --cmse -e
+#        --fpu=VFPv5_sp --dlib_config "C:\Program Files\IAR Systems\Embedded
+#        Workbench 9.2\arm\inc\c\DLib_Config_Normal.h" -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\util\third_party\mbedtls\library\
+#        -I C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\autogen\ -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\config\ -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\config\rail\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\Device\SiliconLabs\EFR32FG28\Include\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\common\inc\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\CMSIS\Core\Include\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\CMSIS\RTOS2\Include\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\service\device_init\inc\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\emdrv\dmadrv\inc\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\emdrv\common\inc\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\emlib\inc\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\util\third_party\freertos\cmsis\Include\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\util\third_party\freertos\kernel\include\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\util\third_party\freertos\kernel\portable\IAR\ARM_CM33_NTZ\non_secure\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\service\iostream\inc\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\security\sl_component\sl_mbedtls_support\config\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\security\sl_component\sl_mbedtls_support\config\preset\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\security\sl_component\sl_mbedtls_support\inc\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\util\third_party\mbedtls\include\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\util\third_party\mbedtls\library\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\emdrv\nvm3\inc\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\peripheral\inc\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\security\sl_component\sl_psa_driver\inc\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\radio\rail_lib\common\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\radio\rail_lib\protocol\ble\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\radio\rail_lib\protocol\ieee802154\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\radio\rail_lib\protocol\wmbus\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\radio\rail_lib\protocol\zwave\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\radio\rail_lib\chip\efr32\efr32xg2x\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\radio\rail_lib\protocol\sidewalk\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\radio\rail_lib\plugin\pa-conversions\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\radio\rail_lib\plugin\pa-conversions\efr32xg28\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\radio\rail_lib\plugin\rail_util_pti\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\security\sl_component\se_manager\inc\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\security\sl_component\se_manager\src\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\util\third_party\segger\systemview\SEGGER\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\util\silicon_labs\silabs_core\memory_manager\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\common\toolchain\inc\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\service\system\inc\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\app\wisun\component\ns_list\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\app\wisun\component\trace_util\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\app\wisun\component\trace_util\nanostack\nanostack-libservice\mbed-client-libservice\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\service\sleeptimer\inc\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\protocol\wisun\stack\inc\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\protocol\wisun\app\wisun_rcp\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\protocol\wisun\stack\inc\socket\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\protocol\wisun\stack\src\
+#        -Ohz --use_c++_inline) --dependencies=n
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\ewarm-iar\obj\library_11823079944874003547.dir\x509write.o.iar_deps
+#    Locale                       =  C
+#    List file                    =
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\ewarm-iar\lst\library_11823079944874003547.dir\x509write.lst
+#    Object file                  =
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\ewarm-iar\obj\library_11823079944874003547.dir\x509write.o
+#    Runtime model:                  
+#      __CPP_Runtime              =  1
+#      __SystemLibrary            =  DLib
+#      __dlib_file_descriptor     =  0
+#      __dlib_full_locale_support =  0
+#      __dlib_version             =  6
+#
+###############################################################################
+
+C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\util\third_party\mbedtls\library\x509write.c
+      1          /*
+      2           *  X.509 internal, common functions for writing
+      3           *
+      4           *  Copyright The Mbed TLS Contributors
+      5           *  SPDX-License-Identifier: Apache-2.0
+      6           *
+      7           *  Licensed under the Apache License, Version 2.0 (the "License"); you may
+      8           *  not use this file except in compliance with the License.
+      9           *  You may obtain a copy of the License at
+     10           *
+     11           *  http://www.apache.org/licenses/LICENSE-2.0
+     12           *
+     13           *  Unless required by applicable law or agreed to in writing, software
+     14           *  distributed under the License is distributed on an "AS IS" BASIS, WITHOUT
+     15           *  WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     16           *  See the License for the specific language governing permissions and
+     17           *  limitations under the License.
+     18           */
+     19          #include "common.h"
+     20          #if defined(MBEDTLS_X509_CSR_WRITE_C) || defined(MBEDTLS_X509_CRT_WRITE_C)
+     21          
+     22          #include "mbedtls/x509_crt.h"
+     23          #include "mbedtls/asn1write.h"
+     24          #include "mbedtls/error.h"
+     25          #include "mbedtls/oid.h"
+     26          #include "mbedtls/platform.h"
+     27          #include "mbedtls/platform_util.h"
+     28          #include "mbedtls/md.h"
+     29          
+     30          #include <string.h>
+     31          #include <stdint.h>
+     32          
+     33          #if defined(MBEDTLS_PEM_WRITE_C)
+     34          #include "mbedtls/pem.h"
+     35          #endif /* MBEDTLS_PEM_WRITE_C */
+     36          
+     37          #if defined(MBEDTLS_USE_PSA_CRYPTO)
+     38          #include "psa/crypto.h"
+     39          #include "mbedtls/psa_util.h"
+     40          #include "md_psa.h"
+     41          #endif /* MBEDTLS_USE_PSA_CRYPTO */
+     42          
+     43          #define CHECK_OVERFLOW_ADD(a, b) \
+     44              do                         \
+     45              {                           \
+     46                  if (a > SIZE_MAX - (b)) \
+     47                  { \
+     48                      return MBEDTLS_ERR_X509_BAD_INPUT_DATA; \
+     49                  }                            \
+     50                  a += b; \
+     51              } while (0)
+     52          
+
+   \                                 In section .text, align 2, keep-with-next
+     53          int mbedtls_x509_write_set_san_common(mbedtls_asn1_named_data **extensions,
+     54                                                const mbedtls_x509_san_list *san_list)
+     55          {
+   \                     mbedtls_x509_write_set_san_common: (+1)
+   \        0x0   0xE92D 0x47FF      PUSH     {R0-R10,LR}
+   \        0x4   0x4680             MOV      R8,R0
+   \        0x6   0x460C             MOV      R4,R1
+     56              int ret = 0;
+     57              const mbedtls_x509_san_list *cur;
+     58              unsigned char *buf;
+     59              unsigned char *p;
+     60              size_t len;
+     61              size_t buflen = 0;
+   \        0x8   0x2700             MOVS     R7,#+0
+     62          
+     63              /* Determine the maximum size of the SubjectAltName list */
+     64              for (cur = san_list; cur != NULL; cur = cur->next) {
+   \        0xA   0xF06F 0x0204      MVN      R2,#+4
+   \        0xE   0xE018             B.N      ??mbedtls_x509_write_set_san_common_0
+     65                  /* Calculate size of the required buffer */
+     66                  switch (cur->node.type) {
+     67                      case MBEDTLS_X509_SAN_DNS_NAME:
+     68                      case MBEDTLS_X509_SAN_UNIFORM_RESOURCE_IDENTIFIER:
+     69                      case MBEDTLS_X509_SAN_IP_ADDRESS:
+     70                      case MBEDTLS_X509_SAN_RFC822_NAME:
+     71                          /* length of value for each name entry,
+     72                           * maximum 4 bytes for the length field,
+     73                           * 1 byte for the tag/type.
+     74                           */
+     75                          CHECK_OVERFLOW_ADD(buflen, cur->node.san.unstructured_name.len);
+     76                          CHECK_OVERFLOW_ADD(buflen, 4 + 1);
+     77                          break;
+     78                      case MBEDTLS_X509_SAN_DIRECTORY_NAME:
+     79                      {
+     80                          const mbedtls_asn1_named_data *chunk = &cur->node.san.directory_name;
+     81                          while (chunk != NULL) {
+     82                              // Max 4 bytes for length, +1 for tag,
+     83                              // additional 4 max for length, +1 for tag.
+     84                              // See x509_write_name for more information.
+     85                              CHECK_OVERFLOW_ADD(buflen, 4 + 1 + 4 + 1);
+   \                     ??mbedtls_x509_write_set_san_common_1: (+1)
+   \       0x10   0xF117 0x0F0A      CMN      R7,#+10
+   \       0x14   0xD239             BCS.N    ??mbedtls_x509_write_set_san_common_2
+     86                              CHECK_OVERFLOW_ADD(buflen, chunk->oid.len);
+   \       0x16   0x6845             LDR      R5,[R0, #+4]
+   \       0x18   0xF04F 0x33FF      MOV      R3,#+4294967295
+   \       0x1C   0x370A             ADDS     R7,R7,#+10
+   \       0x1E   0x1B5B             SUBS     R3,R3,R5
+   \       0x20   0x42BB             CMP      R3,R7
+   \       0x22   0xD332             BCC.N    ??mbedtls_x509_write_set_san_common_2
+   \       0x24   0x19ED             ADDS     R5,R5,R7
+     87                              CHECK_OVERFLOW_ADD(buflen, chunk->val.len);
+   \       0x26   0x6907             LDR      R7,[R0, #+16]
+   \       0x28   0xF04F 0x33FF      MOV      R3,#+4294967295
+   \       0x2C   0x1BDB             SUBS     R3,R3,R7
+   \       0x2E   0x42AB             CMP      R3,R5
+   \       0x30   0xD32B             BCC.N    ??mbedtls_x509_write_set_san_common_2
+   \       0x32   0x197F             ADDS     R7,R7,R5
+     88                              chunk = chunk->next;
+   \       0x34   0x6980             LDR      R0,[R0, #+24]
+     89                          }
+   \                     ??mbedtls_x509_write_set_san_common_3: (+1)
+   \       0x36   0x2800             CMP      R0,#+0
+   \       0x38   0xD1EA             BNE.N    ??mbedtls_x509_write_set_san_common_1
+     90                          CHECK_OVERFLOW_ADD(buflen, 4 + 1);
+   \       0x3A   0x4297             CMP      R7,R2
+   \       0x3C   0xD225             BCS.N    ??mbedtls_x509_write_set_san_common_2
+   \                     ??mbedtls_x509_write_set_san_common_4: (+1)
+   \       0x3E   0x1D7F             ADDS     R7,R7,#+5
+     91                          break;
+   \       0x40   0x6A89             LDR      R1,[R1, #+40]
+   \                     ??mbedtls_x509_write_set_san_common_0: (+1)
+   \       0x42   0xB1B1             CBZ.N    R1,??mbedtls_x509_write_set_san_common_5
+   \       0x44   0x680B             LDR      R3,[R1, #+0]
+   \       0x46   0x1E5B             SUBS     R3,R3,#+1
+   \       0x48   0x2B01             CMP      R3,#+1
+   \       0x4A   0xD904             BLS.N    ??mbedtls_x509_write_set_san_common_6
+   \       0x4C   0x1EDB             SUBS     R3,R3,#+3
+   \       0x4E   0xD00C             BEQ.N    ??mbedtls_x509_write_set_san_common_7
+   \       0x50   0x1E9B             SUBS     R3,R3,#+2
+   \       0x52   0x2B01             CMP      R3,#+1
+   \       0x54   0xD80B             BHI.N    ??mbedtls_x509_write_set_san_common_8
+   \                     ??mbedtls_x509_write_set_san_common_6: (+1)
+   \       0x56   0x688B             LDR      R3,[R1, #+8]
+   \       0x58   0xF04F 0x30FF      MOV      R0,#+4294967295
+   \       0x5C   0x1AC0             SUBS     R0,R0,R3
+   \       0x5E   0x42B8             CMP      R0,R7
+   \       0x60   0xD313             BCC.N    ??mbedtls_x509_write_set_san_common_2
+   \       0x62   0x19DF             ADDS     R7,R3,R7
+   \       0x64   0x4297             CMP      R7,R2
+   \       0x66   0xD3EA             BCC.N    ??mbedtls_x509_write_set_san_common_4
+   \       0x68   0xE00F             B.N      ??mbedtls_x509_write_set_san_common_2
+   \                     ??mbedtls_x509_write_set_san_common_7: (+1)
+   \       0x6A   0x1D08             ADDS     R0,R1,#+4
+   \       0x6C   0xE7E3             B.N      ??mbedtls_x509_write_set_san_common_3
+     92                      }
+     93                      default:
+     94                          /* Not supported - return. */
+     95                          return MBEDTLS_ERR_X509_FEATURE_UNAVAILABLE;
+   \                     ??mbedtls_x509_write_set_san_common_8: (+1)
+   \       0x6E   0x....             LDR.N    R0,??DataTable1_1
+   \       0x70   0xE05B             B.N      ??mbedtls_x509_write_set_san_common_9
+     96                  }
+     97              }
+     98          
+     99              /* Add the extra length field and tag */
+    100              CHECK_OVERFLOW_ADD(buflen, 4 + 1);
+   \                     ??mbedtls_x509_write_set_san_common_5: (+1)
+   \       0x72   0x4297             CMP      R7,R2
+   \       0x74   0xD209             BCS.N    ??mbedtls_x509_write_set_san_common_2
+   \       0x76   0x1D7F             ADDS     R7,R7,#+5
+    101          
+    102              /* Allocate buffer */
+    103              buf = mbedtls_calloc(1, buflen);
+   \       0x78   0x4639             MOV      R1,R7
+   \       0x7A   0x2001             MOVS     R0,#+1
+   \       0x7C   0x.... 0x....      BL       sl_calloc
+   \       0x80   0x0005             MOVS     R5,R0
+    104              if (buf == NULL) {
+   \       0x82   0xD104             BNE.N    ??mbedtls_x509_write_set_san_common_10
+    105                  return MBEDTLS_ERR_ASN1_ALLOC_FAILED;
+   \       0x84   0xF06F 0x0069      MVN      R0,#+105
+   \       0x88   0xE04F             B.N      ??mbedtls_x509_write_set_san_common_9
+    106              }
+   \                     ??mbedtls_x509_write_set_san_common_2: (+1)
+   \       0x8A   0x....             LDR.N    R0,??DataTable1_2
+   \       0x8C   0xE04D             B.N      ??mbedtls_x509_write_set_san_common_9
+    107              p = buf + buflen;
+   \                     ??mbedtls_x509_write_set_san_common_10: (+1)
+   \       0x8E   0x442F             ADD      R7,R5,R7
+   \       0x90   0x9702             STR      R7,[SP, #+8]
+    108          
+    109              /* Write ASN.1-based structure */
+    110              cur = san_list;
+    111              len = 0;
+   \       0x92   0x2600             MOVS     R6,#+0
+   \       0x94   0xE000             B.N      ??mbedtls_x509_write_set_san_common_11
+    112              while (cur != NULL) {
+    113                  size_t single_san_len = 0;
+    114                  switch (cur->node.type) {
+    115                      case MBEDTLS_X509_SAN_DNS_NAME:
+    116                      case MBEDTLS_X509_SAN_RFC822_NAME:
+    117                      case MBEDTLS_X509_SAN_UNIFORM_RESOURCE_IDENTIFIER:
+    118                      case MBEDTLS_X509_SAN_IP_ADDRESS:
+    119                      {
+    120                          const unsigned char *unstructured_name =
+    121                              (const unsigned char *) cur->node.san.unstructured_name.p;
+    122                          size_t unstructured_name_len = cur->node.san.unstructured_name.len;
+    123          
+    124                          MBEDTLS_ASN1_CHK_CLEANUP_ADD(single_san_len,
+    125                                                       mbedtls_asn1_write_raw_buffer(
+    126                                                           &p, buf,
+    127                                                           unstructured_name, unstructured_name_len));
+    128                          MBEDTLS_ASN1_CHK_CLEANUP_ADD(single_san_len, mbedtls_asn1_write_len(
+    129                                                           &p, buf, unstructured_name_len));
+    130                          MBEDTLS_ASN1_CHK_CLEANUP_ADD(single_san_len,
+    131                                                       mbedtls_asn1_write_tag(
+    132                                                           &p, buf,
+    133                                                           MBEDTLS_ASN1_CONTEXT_SPECIFIC | cur->node.type));
+    134                      }
+    135                      break;
+    136                      case MBEDTLS_X509_SAN_DIRECTORY_NAME:
+    137                          MBEDTLS_ASN1_CHK_CLEANUP_ADD(single_san_len,
+    138                                                       mbedtls_x509_write_names(&p, buf,
+    139                                                                                (mbedtls_asn1_named_data *) &
+    140                                                                                cur->node
+    141                                                                                .san.directory_name));
+    142                          MBEDTLS_ASN1_CHK_CLEANUP_ADD(single_san_len,
+    143                                                       mbedtls_asn1_write_len(&p, buf, single_san_len));
+    144                          MBEDTLS_ASN1_CHK_CLEANUP_ADD(single_san_len,
+    145                                                       mbedtls_asn1_write_tag(&p, buf,
+    146                                                                              MBEDTLS_ASN1_CONTEXT_SPECIFIC |
+    147                                                                              MBEDTLS_ASN1_CONSTRUCTED |
+    148                                                                              MBEDTLS_X509_SAN_DIRECTORY_NAME));
+    149                          break;
+    150                      default:
+    151                          /* Error out on an unsupported SAN */
+    152                          ret = MBEDTLS_ERR_X509_FEATURE_UNAVAILABLE;
+    153                          goto cleanup;
+    154                  }
+    155                  cur = cur->next;
+    156                  /* check for overflow */
+    157                  if (len > SIZE_MAX - single_san_len) {
+    158                      ret = MBEDTLS_ERR_X509_BAD_INPUT_DATA;
+    159                      goto cleanup;
+    160                  }
+    161                  len += single_san_len;
+   \                     ??mbedtls_x509_write_set_san_common_12: (+1)
+   \       0x96   0x4456             ADD      R6,R10,R6
+   \                     ??mbedtls_x509_write_set_san_common_11: (+1)
+   \       0x98   0x2C00             CMP      R4,#+0
+   \       0x9A   0xD04B             BEQ.N    ??mbedtls_x509_write_set_san_common_13
+   \       0x9C   0x6821             LDR      R1,[R4, #+0]
+   \       0x9E   0x1E49             SUBS     R1,R1,#+1
+   \       0xA0   0x2901             CMP      R1,#+1
+   \       0xA2   0xD904             BLS.N    ??mbedtls_x509_write_set_san_common_14
+   \       0xA4   0x1EC9             SUBS     R1,R1,#+3
+   \       0xA6   0xD01D             BEQ.N    ??mbedtls_x509_write_set_san_common_15
+   \       0xA8   0x1E89             SUBS     R1,R1,#+2
+   \       0xAA   0x2901             CMP      R1,#+1
+   \       0xAC   0xD840             BHI.N    ??mbedtls_x509_write_set_san_common_16
+   \                     ??mbedtls_x509_write_set_san_common_14: (+1)
+   \       0xAE   0xF8D4 0x9008      LDR      R9,[R4, #+8]
+   \       0xB2   0x68E2             LDR      R2,[R4, #+12]
+   \       0xB4   0x4629             MOV      R1,R5
+   \       0xB6   0x464B             MOV      R3,R9
+   \       0xB8   0xA802             ADD      R0,SP,#+8
+   \       0xBA   0x.... 0x....      BL       mbedtls_asn1_write_raw_buffer
+   \       0xBE   0x2800             CMP      R0,#+0
+   \       0xC0   0xD42E             BMI.N    ??mbedtls_x509_write_set_san_common_17
+   \       0xC2   0x4682             MOV      R10,R0
+   \       0xC4   0x.... 0x....      BL       ?Subroutine0
+   \                     ??CrossCallReturnLabel_2: (+1)
+   \       0xC8   0x2800             CMP      R0,#+0
+   \       0xCA   0xD429             BMI.N    ??mbedtls_x509_write_set_san_common_17
+   \       0xCC   0x6822             LDR      R2,[R4, #+0]
+   \       0xCE   0x4482             ADD      R10,R0,R10
+   \       0xD0   0x4629             MOV      R1,R5
+   \       0xD2   0xF042 0x0280      ORR      R2,R2,#0x80
+   \       0xD6   0xB2D2             UXTB     R2,R2
+   \       0xD8   0xA802             ADD      R0,SP,#+8
+   \       0xDA   0x.... 0x....      BL       mbedtls_asn1_write_tag
+   \       0xDE   0x2800             CMP      R0,#+0
+   \       0xE0   0xD515             BPL.N    ??mbedtls_x509_write_set_san_common_18
+   \       0xE2   0xE01D             B.N      ??mbedtls_x509_write_set_san_common_17
+   \                     ??mbedtls_x509_write_set_san_common_15: (+1)
+   \       0xE4   0x1D22             ADDS     R2,R4,#+4
+   \       0xE6   0x4629             MOV      R1,R5
+   \       0xE8   0xA802             ADD      R0,SP,#+8
+   \       0xEA   0x.... 0x....      BL       mbedtls_x509_write_names
+   \       0xEE   0x2800             CMP      R0,#+0
+   \       0xF0   0xD416             BMI.N    ??mbedtls_x509_write_set_san_common_17
+   \       0xF2   0x4681             MOV      R9,R0
+   \       0xF4   0x.... 0x....      BL       ?Subroutine0
+   \                     ??CrossCallReturnLabel_1: (+1)
+   \       0xF8   0x2800             CMP      R0,#+0
+   \       0xFA   0xD411             BMI.N    ??mbedtls_x509_write_set_san_common_17
+   \       0xFC   0xEB00 0x0A09      ADD      R10,R0,R9
+   \      0x100   0x22A4             MOVS     R2,#+164
+   \      0x102   0x4629             MOV      R1,R5
+   \      0x104   0xA802             ADD      R0,SP,#+8
+   \      0x106   0x.... 0x....      BL       mbedtls_asn1_write_tag
+   \      0x10A   0x2800             CMP      R0,#+0
+   \      0x10C   0xD408             BMI.N    ??mbedtls_x509_write_set_san_common_17
+   \                     ??mbedtls_x509_write_set_san_common_18: (+1)
+   \      0x10E   0x4482             ADD      R10,R0,R10
+   \      0x110   0xF04F 0x30FF      MOV      R0,#+4294967295
+   \      0x114   0xEBA0 0x000A      SUB      R0,R0,R10
+   \      0x118   0x6AA4             LDR      R4,[R4, #+40]
+   \      0x11A   0x42B0             CMP      R0,R6
+   \      0x11C   0xD2BB             BCS.N    ??mbedtls_x509_write_set_san_common_12
+   \      0x11E   0x....             LDR.N    R0,??DataTable1_2
+   \                     ??mbedtls_x509_write_set_san_common_17: (+1)
+   \      0x120   0x4604             MOV      R4,R0
+    162              }
+    163          
+    164              MBEDTLS_ASN1_CHK_CLEANUP_ADD(len, mbedtls_asn1_write_len(&p, buf, len));
+    165              MBEDTLS_ASN1_CHK_CLEANUP_ADD(len,
+    166                                           mbedtls_asn1_write_tag(&p, buf,
+    167                                                                  MBEDTLS_ASN1_CONSTRUCTED |
+    168                                                                  MBEDTLS_ASN1_SEQUENCE));
+    169          
+    170              ret = mbedtls_x509_set_extension(extensions,
+    171                                               MBEDTLS_OID_SUBJECT_ALT_NAME,
+    172                                               MBEDTLS_OID_SIZE(MBEDTLS_OID_SUBJECT_ALT_NAME),
+    173                                               0,
+    174                                               buf + buflen - len, len);
+    175          
+    176              /* If we exceeded the allocated buffer it means that maximum size of the SubjectAltName list
+    177               * was incorrectly calculated and memory is corrupted. */
+    178              if (p < buf) {
+    179                  ret = MBEDTLS_ERR_ASN1_LENGTH_MISMATCH;
+    180              }
+    181          cleanup:
+    182              mbedtls_free(buf);
+   \                     ??mbedtls_x509_write_set_san_common_19: (+1)
+   \      0x122   0x4628             MOV      R0,R5
+   \      0x124   0x.... 0x....      BL       sl_free
+    183              return ret;
+   \      0x128   0x4620             MOV      R0,R4
+   \                     ??mbedtls_x509_write_set_san_common_9: (+1)
+   \      0x12A   0xB004             ADD      SP,SP,#+16
+   \      0x12C   0xE8BD 0x87F0      POP      {R4-R10,PC}
+   \                     ??mbedtls_x509_write_set_san_common_16: (+1)
+   \      0x130   0x....             LDR.N    R0,??DataTable1_1
+   \      0x132   0xE7F5             B.N      ??mbedtls_x509_write_set_san_common_17
+   \                     ??mbedtls_x509_write_set_san_common_13: (+1)
+   \      0x134   0x4632             MOV      R2,R6
+   \      0x136   0x.... 0x....      BL       ??Subroutine0_0
+   \                     ??CrossCallReturnLabel_0: (+1)
+   \      0x13A   0x0004             MOVS     R4,R0
+   \      0x13C   0xD4F1             BMI.N    ??mbedtls_x509_write_set_san_common_19
+   \      0x13E   0x2230             MOVS     R2,#+48
+   \      0x140   0x4629             MOV      R1,R5
+   \      0x142   0xA802             ADD      R0,SP,#+8
+   \      0x144   0x19A6             ADDS     R6,R4,R6
+   \      0x146   0x.... 0x....      BL       mbedtls_asn1_write_tag
+   \      0x14A   0x0004             MOVS     R4,R0
+   \      0x14C   0xD4E9             BMI.N    ??mbedtls_x509_write_set_san_common_19
+   \      0x14E   0x19A6             ADDS     R6,R4,R6
+   \      0x150   0x9601             STR      R6,[SP, #+4]
+   \      0x152   0x4276             RSBS     R6,R6,#+0
+   \      0x154   0x19B9             ADDS     R1,R7,R6
+   \      0x156   0x9100             STR      R1,[SP, #+0]
+   \      0x158   0x4640             MOV      R0,R8
+   \      0x15A   0x2300             MOVS     R3,#+0
+   \      0x15C   0x2203             MOVS     R2,#+3
+   \      0x15E   0x....             ADR.N    R1,??DataTable1
+   \      0x160   0x.... 0x....      BL       mbedtls_x509_set_extension
+   \      0x164   0x4604             MOV      R4,R0
+   \      0x166   0x9802             LDR      R0,[SP, #+8]
+   \      0x168   0x42A8             CMP      R0,R5
+   \      0x16A   0xD2DA             BCS.N    ??mbedtls_x509_write_set_san_common_19
+   \      0x16C   0xF06F 0x0465      MVN      R4,#+101
+   \      0x170   0xE7D7             B.N      ??mbedtls_x509_write_set_san_common_19
+    184          }
+
+   \                                 In section .text, align 2, keep-with-next
+   \                     ?Subroutine0: (+1)
+   \        0x0   0x464A             MOV      R2,R9
+   \                     ??Subroutine0_0: (+1)
+   \        0x2   0x4629             MOV      R1,R5
+   \        0x4   0xA802             ADD      R0,SP,#+8
+   \        0x6   0x.... 0x....      B.W      mbedtls_asn1_write_len
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable1:
+   \        0x0   0x55 0x1D          DC8      "U\035\021"    
+   \              0x11 0x00
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable1_1:
+   \        0x0   0xFFFF'DF80        DC32     0xffffdf80
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable1_2:
+   \        0x0   0xFFFF'D800        DC32     0xffffd800
+
+   \                                 In section .rodata, align 4, keep-with-next
+   \                     ?_0:
+   \        0x0   0x55 0x1D          DC8 "U\035\021"
+   \              0x11 0x00
+    185          
+    186          #endif /* MBEDTLS_X509_CSR_WRITE_C || MBEDTLS_X509_CRT_WRITE_C */
+
+   Maximum stack usage in bytes:
+
+   .cstack Function
+   ------- --------
+      48   mbedtls_x509_write_set_san_common
+        48   -> mbedtls_asn1_write_len
+        48   -> mbedtls_asn1_write_raw_buffer
+        48   -> mbedtls_asn1_write_tag
+        48   -> mbedtls_x509_set_extension
+        48   -> mbedtls_x509_write_names
+        48   -> sl_calloc
+        48   -> sl_free
+
+
+   Section sizes:
+
+   Bytes  Function/Label
+   -----  --------------
+       4  ??DataTable1
+       4  ??DataTable1_1
+       4  ??DataTable1_2
+      10  ?Subroutine0
+       4  ?_0
+     370  mbedtls_x509_write_set_san_common
+
+ 
+   4 bytes in section .rodata
+ 392 bytes in section .text
+ 
+ 392 bytes of CODE  memory
+   4 bytes of CONST memory
+
+Errors: none
+Warnings: none

@@ -1,0 +1,687 @@
+###############################################################################
+#
+# IAR ANSI C/C++ Compiler V9.50.2.385/W64 for ARM         27/Nov/2024  12:17:42
+# Copyright 1999-2024 IAR Systems AB.
+#
+#    Cpu mode                     =  thumb
+#    Endian                       =  little
+#    Source file                  =
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\util\third_party\mbedtls\library\sha1.c
+#    Command line                 =
+#        -f
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\ewarm-iar\obj\library_11823079944874003547.dir\sha1.o.rsp
+#        (C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\util\third_party\mbedtls\library\sha1.c
+#        -D EFR32FG28B322F1024IM48=1 -D
+#        configNUM_SDK_THREAD_LOCAL_STORAGE_POINTERS=2 -D
+#        SL_COMPONENT_CATALOG_PRESENT=1 -D
+#        MBEDTLS_CONFIG_FILE=<sl_mbedtls_config.h> -D
+#        MBEDTLS_PSA_CRYPTO_CONFIG_FILE=<psa_crypto_config.h> -D
+#        SL_RAIL_LIB_MULTIPROTOCOL_SUPPORT=0 -D
+#        SL_RAIL_UTIL_PA_CONFIG_HEADER=<sl_rail_util_pa_config.h> -D
+#        RTT_USE_ASM=0 -D MBED_CONF_MBED_TRACE_ENABLE=1 -D
+#        MBED_CONF_NANOSTACK_CONFIGURATION=ws_router -D
+#        MBED_TRACE_MAX_LEVEL=TRACE_ACTIVE_LEVEL_ALL -D DEBUG_EFM_USER=1 -D
+#        HAVE_LFN=1 -D HAVE_LFN_PARENT=1 -lC
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\ewarm-iar\lst\library_11823079944874003547.dir
+#        --diag_suppress Pa050 -o
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\ewarm-iar\obj\library_11823079944874003547.dir
+#        --debug --endian=little --cpu=Cortex-M33 --cmse --cmse -e
+#        --fpu=VFPv5_sp --dlib_config "C:\Program Files\IAR Systems\Embedded
+#        Workbench 9.2\arm\inc\c\DLib_Config_Normal.h" -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\util\third_party\mbedtls\library\
+#        -I C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\autogen\ -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\config\ -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\config\rail\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\Device\SiliconLabs\EFR32FG28\Include\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\common\inc\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\CMSIS\Core\Include\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\CMSIS\RTOS2\Include\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\service\device_init\inc\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\emdrv\dmadrv\inc\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\emdrv\common\inc\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\emlib\inc\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\util\third_party\freertos\cmsis\Include\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\util\third_party\freertos\kernel\include\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\util\third_party\freertos\kernel\portable\IAR\ARM_CM33_NTZ\non_secure\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\service\iostream\inc\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\security\sl_component\sl_mbedtls_support\config\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\security\sl_component\sl_mbedtls_support\config\preset\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\security\sl_component\sl_mbedtls_support\inc\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\util\third_party\mbedtls\include\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\util\third_party\mbedtls\library\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\emdrv\nvm3\inc\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\peripheral\inc\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\security\sl_component\sl_psa_driver\inc\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\radio\rail_lib\common\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\radio\rail_lib\protocol\ble\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\radio\rail_lib\protocol\ieee802154\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\radio\rail_lib\protocol\wmbus\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\radio\rail_lib\protocol\zwave\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\radio\rail_lib\chip\efr32\efr32xg2x\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\radio\rail_lib\protocol\sidewalk\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\radio\rail_lib\plugin\pa-conversions\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\radio\rail_lib\plugin\pa-conversions\efr32xg28\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\radio\rail_lib\plugin\rail_util_pti\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\security\sl_component\se_manager\inc\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\security\sl_component\se_manager\src\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\util\third_party\segger\systemview\SEGGER\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\util\silicon_labs\silabs_core\memory_manager\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\common\toolchain\inc\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\service\system\inc\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\app\wisun\component\ns_list\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\app\wisun\component\trace_util\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\app\wisun\component\trace_util\nanostack\nanostack-libservice\mbed-client-libservice\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\service\sleeptimer\inc\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\protocol\wisun\stack\inc\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\protocol\wisun\app\wisun_rcp\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\protocol\wisun\stack\inc\socket\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\protocol\wisun\stack\src\
+#        -Ohz --use_c++_inline) --dependencies=n
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\ewarm-iar\obj\library_11823079944874003547.dir\sha1.o.iar_deps
+#    Locale                       =  C
+#    List file                    =
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\ewarm-iar\lst\library_11823079944874003547.dir\sha1.lst
+#    Object file                  =
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\ewarm-iar\obj\library_11823079944874003547.dir\sha1.o
+#    Runtime model:                  
+#      __CPP_Runtime              =  1
+#      __SystemLibrary            =  DLib
+#      __dlib_file_descriptor     =  0
+#      __dlib_full_locale_support =  0
+#      __dlib_version             =  6
+#
+###############################################################################
+
+C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\util\third_party\mbedtls\library\sha1.c
+      1          /*
+      2           *  FIPS-180-1 compliant SHA-1 implementation
+      3           *
+      4           *  Copyright The Mbed TLS Contributors
+      5           *  SPDX-License-Identifier: Apache-2.0
+      6           *
+      7           *  Licensed under the Apache License, Version 2.0 (the "License"); you may
+      8           *  not use this file except in compliance with the License.
+      9           *  You may obtain a copy of the License at
+     10           *
+     11           *  http://www.apache.org/licenses/LICENSE-2.0
+     12           *
+     13           *  Unless required by applicable law or agreed to in writing, software
+     14           *  distributed under the License is distributed on an "AS IS" BASIS, WITHOUT
+     15           *  WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     16           *  See the License for the specific language governing permissions and
+     17           *  limitations under the License.
+     18           */
+     19          /*
+     20           *  The SHA-1 standard was published by NIST in 1993.
+     21           *
+     22           *  http://www.itl.nist.gov/fipspubs/fip180-1.htm
+     23           */
+     24          
+     25          #include "common.h"
+     26          
+     27          #if defined(MBEDTLS_SHA1_C)
+     28          
+     29          #include "mbedtls/sha1.h"
+     30          #include "mbedtls/platform_util.h"
+     31          #include "mbedtls/error.h"
+     32          
+     33          #include <string.h>
+     34          
+     35          #include "mbedtls/platform.h"
+     36          
+     37          #if !defined(MBEDTLS_SHA1_ALT)
+     38          
+     39          void mbedtls_sha1_init(mbedtls_sha1_context *ctx)
+     40          {
+     41              memset(ctx, 0, sizeof(mbedtls_sha1_context));
+     42          }
+     43          
+     44          void mbedtls_sha1_free(mbedtls_sha1_context *ctx)
+     45          {
+     46              if (ctx == NULL) {
+     47                  return;
+     48              }
+     49          
+     50              mbedtls_platform_zeroize(ctx, sizeof(mbedtls_sha1_context));
+     51          }
+     52          
+     53          void mbedtls_sha1_clone(mbedtls_sha1_context *dst,
+     54                                  const mbedtls_sha1_context *src)
+     55          {
+     56              *dst = *src;
+     57          }
+     58          
+     59          /*
+     60           * SHA-1 context setup
+     61           */
+     62          int mbedtls_sha1_starts(mbedtls_sha1_context *ctx)
+     63          {
+     64              ctx->total[0] = 0;
+     65              ctx->total[1] = 0;
+     66          
+     67              ctx->state[0] = 0x67452301;
+     68              ctx->state[1] = 0xEFCDAB89;
+     69              ctx->state[2] = 0x98BADCFE;
+     70              ctx->state[3] = 0x10325476;
+     71              ctx->state[4] = 0xC3D2E1F0;
+     72          
+     73              return 0;
+     74          }
+     75          
+     76          #if !defined(MBEDTLS_SHA1_PROCESS_ALT)
+     77          int mbedtls_internal_sha1_process(mbedtls_sha1_context *ctx,
+     78                                            const unsigned char data[64])
+     79          {
+     80              struct {
+     81                  uint32_t temp, W[16], A, B, C, D, E;
+     82              } local;
+     83          
+     84              local.W[0] = MBEDTLS_GET_UINT32_BE(data,  0);
+     85              local.W[1] = MBEDTLS_GET_UINT32_BE(data,  4);
+     86              local.W[2] = MBEDTLS_GET_UINT32_BE(data,  8);
+     87              local.W[3] = MBEDTLS_GET_UINT32_BE(data, 12);
+     88              local.W[4] = MBEDTLS_GET_UINT32_BE(data, 16);
+     89              local.W[5] = MBEDTLS_GET_UINT32_BE(data, 20);
+     90              local.W[6] = MBEDTLS_GET_UINT32_BE(data, 24);
+     91              local.W[7] = MBEDTLS_GET_UINT32_BE(data, 28);
+     92              local.W[8] = MBEDTLS_GET_UINT32_BE(data, 32);
+     93              local.W[9] = MBEDTLS_GET_UINT32_BE(data, 36);
+     94              local.W[10] = MBEDTLS_GET_UINT32_BE(data, 40);
+     95              local.W[11] = MBEDTLS_GET_UINT32_BE(data, 44);
+     96              local.W[12] = MBEDTLS_GET_UINT32_BE(data, 48);
+     97              local.W[13] = MBEDTLS_GET_UINT32_BE(data, 52);
+     98              local.W[14] = MBEDTLS_GET_UINT32_BE(data, 56);
+     99              local.W[15] = MBEDTLS_GET_UINT32_BE(data, 60);
+    100          
+    101          #define S(x, n) (((x) << (n)) | (((x) & 0xFFFFFFFF) >> (32 - (n))))
+    102          
+    103          #define R(t)                                                    \
+    104              (                                                           \
+    105                  local.temp = local.W[((t) -  3) & 0x0F] ^             \
+    106                               local.W[((t) -  8) & 0x0F] ^             \
+    107                               local.W[((t) - 14) & 0x0F] ^             \
+    108                               local.W[(t)        & 0x0F],              \
+    109                  (local.W[(t) & 0x0F] = S(local.temp, 1))               \
+    110              )
+    111          
+    112          #define P(a, b, c, d, e, x)                                          \
+    113              do                                                          \
+    114              {                                                           \
+    115                  (e) += S((a), 5) + F((b), (c), (d)) + K + (x);             \
+    116                  (b) = S((b), 30);                                        \
+    117              } while (0)
+    118          
+    119              local.A = ctx->state[0];
+    120              local.B = ctx->state[1];
+    121              local.C = ctx->state[2];
+    122              local.D = ctx->state[3];
+    123              local.E = ctx->state[4];
+    124          
+    125          #define F(x, y, z) ((z) ^ ((x) & ((y) ^ (z))))
+    126          #define K 0x5A827999
+    127          
+    128              P(local.A, local.B, local.C, local.D, local.E, local.W[0]);
+    129              P(local.E, local.A, local.B, local.C, local.D, local.W[1]);
+    130              P(local.D, local.E, local.A, local.B, local.C, local.W[2]);
+    131              P(local.C, local.D, local.E, local.A, local.B, local.W[3]);
+    132              P(local.B, local.C, local.D, local.E, local.A, local.W[4]);
+    133              P(local.A, local.B, local.C, local.D, local.E, local.W[5]);
+    134              P(local.E, local.A, local.B, local.C, local.D, local.W[6]);
+    135              P(local.D, local.E, local.A, local.B, local.C, local.W[7]);
+    136              P(local.C, local.D, local.E, local.A, local.B, local.W[8]);
+    137              P(local.B, local.C, local.D, local.E, local.A, local.W[9]);
+    138              P(local.A, local.B, local.C, local.D, local.E, local.W[10]);
+    139              P(local.E, local.A, local.B, local.C, local.D, local.W[11]);
+    140              P(local.D, local.E, local.A, local.B, local.C, local.W[12]);
+    141              P(local.C, local.D, local.E, local.A, local.B, local.W[13]);
+    142              P(local.B, local.C, local.D, local.E, local.A, local.W[14]);
+    143              P(local.A, local.B, local.C, local.D, local.E, local.W[15]);
+    144              P(local.E, local.A, local.B, local.C, local.D, R(16));
+    145              P(local.D, local.E, local.A, local.B, local.C, R(17));
+    146              P(local.C, local.D, local.E, local.A, local.B, R(18));
+    147              P(local.B, local.C, local.D, local.E, local.A, R(19));
+    148          
+    149          #undef K
+    150          #undef F
+    151          
+    152          #define F(x, y, z) ((x) ^ (y) ^ (z))
+    153          #define K 0x6ED9EBA1
+    154          
+    155              P(local.A, local.B, local.C, local.D, local.E, R(20));
+    156              P(local.E, local.A, local.B, local.C, local.D, R(21));
+    157              P(local.D, local.E, local.A, local.B, local.C, R(22));
+    158              P(local.C, local.D, local.E, local.A, local.B, R(23));
+    159              P(local.B, local.C, local.D, local.E, local.A, R(24));
+    160              P(local.A, local.B, local.C, local.D, local.E, R(25));
+    161              P(local.E, local.A, local.B, local.C, local.D, R(26));
+    162              P(local.D, local.E, local.A, local.B, local.C, R(27));
+    163              P(local.C, local.D, local.E, local.A, local.B, R(28));
+    164              P(local.B, local.C, local.D, local.E, local.A, R(29));
+    165              P(local.A, local.B, local.C, local.D, local.E, R(30));
+    166              P(local.E, local.A, local.B, local.C, local.D, R(31));
+    167              P(local.D, local.E, local.A, local.B, local.C, R(32));
+    168              P(local.C, local.D, local.E, local.A, local.B, R(33));
+    169              P(local.B, local.C, local.D, local.E, local.A, R(34));
+    170              P(local.A, local.B, local.C, local.D, local.E, R(35));
+    171              P(local.E, local.A, local.B, local.C, local.D, R(36));
+    172              P(local.D, local.E, local.A, local.B, local.C, R(37));
+    173              P(local.C, local.D, local.E, local.A, local.B, R(38));
+    174              P(local.B, local.C, local.D, local.E, local.A, R(39));
+    175          
+    176          #undef K
+    177          #undef F
+    178          
+    179          #define F(x, y, z) (((x) & (y)) | ((z) & ((x) | (y))))
+    180          #define K 0x8F1BBCDC
+    181          
+    182              P(local.A, local.B, local.C, local.D, local.E, R(40));
+    183              P(local.E, local.A, local.B, local.C, local.D, R(41));
+    184              P(local.D, local.E, local.A, local.B, local.C, R(42));
+    185              P(local.C, local.D, local.E, local.A, local.B, R(43));
+    186              P(local.B, local.C, local.D, local.E, local.A, R(44));
+    187              P(local.A, local.B, local.C, local.D, local.E, R(45));
+    188              P(local.E, local.A, local.B, local.C, local.D, R(46));
+    189              P(local.D, local.E, local.A, local.B, local.C, R(47));
+    190              P(local.C, local.D, local.E, local.A, local.B, R(48));
+    191              P(local.B, local.C, local.D, local.E, local.A, R(49));
+    192              P(local.A, local.B, local.C, local.D, local.E, R(50));
+    193              P(local.E, local.A, local.B, local.C, local.D, R(51));
+    194              P(local.D, local.E, local.A, local.B, local.C, R(52));
+    195              P(local.C, local.D, local.E, local.A, local.B, R(53));
+    196              P(local.B, local.C, local.D, local.E, local.A, R(54));
+    197              P(local.A, local.B, local.C, local.D, local.E, R(55));
+    198              P(local.E, local.A, local.B, local.C, local.D, R(56));
+    199              P(local.D, local.E, local.A, local.B, local.C, R(57));
+    200              P(local.C, local.D, local.E, local.A, local.B, R(58));
+    201              P(local.B, local.C, local.D, local.E, local.A, R(59));
+    202          
+    203          #undef K
+    204          #undef F
+    205          
+    206          #define F(x, y, z) ((x) ^ (y) ^ (z))
+    207          #define K 0xCA62C1D6
+    208          
+    209              P(local.A, local.B, local.C, local.D, local.E, R(60));
+    210              P(local.E, local.A, local.B, local.C, local.D, R(61));
+    211              P(local.D, local.E, local.A, local.B, local.C, R(62));
+    212              P(local.C, local.D, local.E, local.A, local.B, R(63));
+    213              P(local.B, local.C, local.D, local.E, local.A, R(64));
+    214              P(local.A, local.B, local.C, local.D, local.E, R(65));
+    215              P(local.E, local.A, local.B, local.C, local.D, R(66));
+    216              P(local.D, local.E, local.A, local.B, local.C, R(67));
+    217              P(local.C, local.D, local.E, local.A, local.B, R(68));
+    218              P(local.B, local.C, local.D, local.E, local.A, R(69));
+    219              P(local.A, local.B, local.C, local.D, local.E, R(70));
+    220              P(local.E, local.A, local.B, local.C, local.D, R(71));
+    221              P(local.D, local.E, local.A, local.B, local.C, R(72));
+    222              P(local.C, local.D, local.E, local.A, local.B, R(73));
+    223              P(local.B, local.C, local.D, local.E, local.A, R(74));
+    224              P(local.A, local.B, local.C, local.D, local.E, R(75));
+    225              P(local.E, local.A, local.B, local.C, local.D, R(76));
+    226              P(local.D, local.E, local.A, local.B, local.C, R(77));
+    227              P(local.C, local.D, local.E, local.A, local.B, R(78));
+    228              P(local.B, local.C, local.D, local.E, local.A, R(79));
+    229          
+    230          #undef K
+    231          #undef F
+    232          
+    233              ctx->state[0] += local.A;
+    234              ctx->state[1] += local.B;
+    235              ctx->state[2] += local.C;
+    236              ctx->state[3] += local.D;
+    237              ctx->state[4] += local.E;
+    238          
+    239              /* Zeroise buffers and variables to clear sensitive data from memory. */
+    240              mbedtls_platform_zeroize(&local, sizeof(local));
+    241          
+    242              return 0;
+    243          }
+    244          
+    245          #endif /* !MBEDTLS_SHA1_PROCESS_ALT */
+    246          
+    247          /*
+    248           * SHA-1 process buffer
+    249           */
+    250          int mbedtls_sha1_update(mbedtls_sha1_context *ctx,
+    251                                  const unsigned char *input,
+    252                                  size_t ilen)
+    253          {
+    254              int ret = MBEDTLS_ERR_ERROR_CORRUPTION_DETECTED;
+    255              size_t fill;
+    256              uint32_t left;
+    257          
+    258              if (ilen == 0) {
+    259                  return 0;
+    260              }
+    261          
+    262              left = ctx->total[0] & 0x3F;
+    263              fill = 64 - left;
+    264          
+    265              ctx->total[0] += (uint32_t) ilen;
+    266              ctx->total[0] &= 0xFFFFFFFF;
+    267          
+    268              if (ctx->total[0] < (uint32_t) ilen) {
+    269                  ctx->total[1]++;
+    270              }
+    271          
+    272              if (left && ilen >= fill) {
+    273                  memcpy((void *) (ctx->buffer + left), input, fill);
+    274          
+    275                  if ((ret = mbedtls_internal_sha1_process(ctx, ctx->buffer)) != 0) {
+    276                      return ret;
+    277                  }
+    278          
+    279                  input += fill;
+    280                  ilen  -= fill;
+    281                  left = 0;
+    282              }
+    283          
+    284              while (ilen >= 64) {
+    285                  if ((ret = mbedtls_internal_sha1_process(ctx, input)) != 0) {
+    286                      return ret;
+    287                  }
+    288          
+    289                  input += 64;
+    290                  ilen  -= 64;
+    291              }
+    292          
+    293              if (ilen > 0) {
+    294                  memcpy((void *) (ctx->buffer + left), input, ilen);
+    295              }
+    296          
+    297              return 0;
+    298          }
+    299          
+    300          /*
+    301           * SHA-1 final digest
+    302           */
+    303          int mbedtls_sha1_finish(mbedtls_sha1_context *ctx,
+    304                                  unsigned char output[20])
+    305          {
+    306              int ret = MBEDTLS_ERR_ERROR_CORRUPTION_DETECTED;
+    307              uint32_t used;
+    308              uint32_t high, low;
+    309          
+    310              /*
+    311               * Add padding: 0x80 then 0x00 until 8 bytes remain for the length
+    312               */
+    313              used = ctx->total[0] & 0x3F;
+    314          
+    315              ctx->buffer[used++] = 0x80;
+    316          
+    317              if (used <= 56) {
+    318                  /* Enough room for padding + length in current block */
+    319                  memset(ctx->buffer + used, 0, 56 - used);
+    320              } else {
+    321                  /* We'll need an extra block */
+    322                  memset(ctx->buffer + used, 0, 64 - used);
+    323          
+    324                  if ((ret = mbedtls_internal_sha1_process(ctx, ctx->buffer)) != 0) {
+    325                      goto exit;
+    326                  }
+    327          
+    328                  memset(ctx->buffer, 0, 56);
+    329              }
+    330          
+    331              /*
+    332               * Add message length
+    333               */
+    334              high = (ctx->total[0] >> 29)
+    335                     | (ctx->total[1] <<  3);
+    336              low  = (ctx->total[0] <<  3);
+    337          
+    338              MBEDTLS_PUT_UINT32_BE(high, ctx->buffer, 56);
+    339              MBEDTLS_PUT_UINT32_BE(low,  ctx->buffer, 60);
+    340          
+    341              if ((ret = mbedtls_internal_sha1_process(ctx, ctx->buffer)) != 0) {
+    342                  goto exit;
+    343              }
+    344          
+    345              /*
+    346               * Output final state
+    347               */
+    348              MBEDTLS_PUT_UINT32_BE(ctx->state[0], output,  0);
+    349              MBEDTLS_PUT_UINT32_BE(ctx->state[1], output,  4);
+    350              MBEDTLS_PUT_UINT32_BE(ctx->state[2], output,  8);
+    351              MBEDTLS_PUT_UINT32_BE(ctx->state[3], output, 12);
+    352              MBEDTLS_PUT_UINT32_BE(ctx->state[4], output, 16);
+    353          
+    354              ret = 0;
+    355          
+    356          exit:
+    357              mbedtls_sha1_free(ctx);
+    358              return ret;
+    359          }
+    360          
+    361          #endif /* !MBEDTLS_SHA1_ALT */
+    362          
+    363          /*
+    364           * output = SHA-1( input buffer )
+    365           */
+
+   \                                 In section .text, align 2, keep-with-next
+    366          int mbedtls_sha1(const unsigned char *input,
+    367                           size_t ilen,
+    368                           unsigned char output[20])
+    369          {
+   \                     mbedtls_sha1: (+1)
+   \        0x0   0xB5F8             PUSH     {R3-R7,LR}
+   \        0x2   0xB0B6             SUB      SP,SP,#+216
+   \        0x4   0x4607             MOV      R7,R0
+   \        0x6   0x460D             MOV      R5,R1
+   \        0x8   0x4616             MOV      R6,R2
+    370              int ret = MBEDTLS_ERR_ERROR_CORRUPTION_DETECTED;
+    371              mbedtls_sha1_context ctx;
+    372          
+    373              mbedtls_sha1_init(&ctx);
+   \        0xA   0x4668             MOV      R0,SP
+   \        0xC   0x.... 0x....      BL       mbedtls_sha1_init
+    374          
+    375              if ((ret = mbedtls_sha1_starts(&ctx)) != 0) {
+   \       0x10   0x4668             MOV      R0,SP
+   \       0x12   0x.... 0x....      BL       mbedtls_sha1_starts
+   \       0x16   0x0004             MOVS     R4,R0
+   \       0x18   0xD10B             BNE.N    ??mbedtls_sha1_0
+    376                  goto exit;
+    377              }
+    378          
+    379              if ((ret = mbedtls_sha1_update(&ctx, input, ilen)) != 0) {
+   \       0x1A   0x462A             MOV      R2,R5
+   \       0x1C   0x4639             MOV      R1,R7
+   \       0x1E   0x4668             MOV      R0,SP
+   \       0x20   0x.... 0x....      BL       mbedtls_sha1_update
+   \       0x24   0x0004             MOVS     R4,R0
+   \       0x26   0xD104             BNE.N    ??mbedtls_sha1_0
+    380                  goto exit;
+    381              }
+    382          
+    383              if ((ret = mbedtls_sha1_finish(&ctx, output)) != 0) {
+   \       0x28   0x4631             MOV      R1,R6
+   \       0x2A   0x4668             MOV      R0,SP
+   \       0x2C   0x.... 0x....      BL       mbedtls_sha1_finish
+   \       0x30   0x4604             MOV      R4,R0
+    384                  goto exit;
+    385              }
+    386          
+    387          exit:
+    388              mbedtls_sha1_free(&ctx);
+   \                     ??mbedtls_sha1_0: (+1)
+   \       0x32   0x4668             MOV      R0,SP
+   \       0x34   0x.... 0x....      BL       mbedtls_sha1_free
+    389              return ret;
+   \       0x38   0x4620             MOV      R0,R4
+   \       0x3A   0xB037             ADD      SP,SP,#+220
+   \       0x3C   0xBDF0             POP      {R4-R7,PC}
+    390          }
+    391          
+    392          #if defined(MBEDTLS_SELF_TEST)
+    393          /*
+    394           * FIPS-180-1 test vectors
+    395           */
+    396          static const unsigned char sha1_test_buf[3][57] =
+    397          {
+    398              { "abc" },
+    399              { "abcdbcdecdefdefgefghfghighijhijkijkljklmklmnlmnomnopnopq" },
+    400              { "" }
+    401          };
+    402          
+    403          static const size_t sha1_test_buflen[3] =
+    404          {
+    405              3, 56, 1000
+    406          };
+    407          
+    408          static const unsigned char sha1_test_sum[3][20] =
+    409          {
+    410              { 0xA9, 0x99, 0x3E, 0x36, 0x47, 0x06, 0x81, 0x6A, 0xBA, 0x3E,
+    411                0x25, 0x71, 0x78, 0x50, 0xC2, 0x6C, 0x9C, 0xD0, 0xD8, 0x9D },
+    412              { 0x84, 0x98, 0x3E, 0x44, 0x1C, 0x3B, 0xD2, 0x6E, 0xBA, 0xAE,
+    413                0x4A, 0xA1, 0xF9, 0x51, 0x29, 0xE5, 0xE5, 0x46, 0x70, 0xF1 },
+    414              { 0x34, 0xAA, 0x97, 0x3C, 0xD4, 0xC4, 0xDA, 0xA4, 0xF6, 0x1E,
+    415                0xEB, 0x2B, 0xDB, 0xAD, 0x27, 0x31, 0x65, 0x34, 0x01, 0x6F }
+    416          };
+    417          
+    418          /*
+    419           * Checkup routine
+    420           */
+    421          int mbedtls_sha1_self_test(int verbose)
+    422          {
+    423              int i, j, buflen, ret = 0;
+    424              unsigned char buf[1024];
+    425              unsigned char sha1sum[20];
+    426              mbedtls_sha1_context ctx;
+    427          
+    428              mbedtls_sha1_init(&ctx);
+    429          
+    430              /*
+    431               * SHA-1
+    432               */
+    433              for (i = 0; i < 3; i++) {
+    434                  if (verbose != 0) {
+    435                      mbedtls_printf("  SHA-1 test #%d: ", i + 1);
+    436                  }
+    437          
+    438                  if ((ret = mbedtls_sha1_starts(&ctx)) != 0) {
+    439                      goto fail;
+    440                  }
+    441          
+    442                  if (i == 2) {
+    443                      memset(buf, 'a', buflen = 1000);
+    444          
+    445                      for (j = 0; j < 1000; j++) {
+    446                          ret = mbedtls_sha1_update(&ctx, buf, buflen);
+    447                          if (ret != 0) {
+    448                              goto fail;
+    449                          }
+    450                      }
+    451                  } else {
+    452                      ret = mbedtls_sha1_update(&ctx, sha1_test_buf[i],
+    453                                                sha1_test_buflen[i]);
+    454                      if (ret != 0) {
+    455                          goto fail;
+    456                      }
+    457                  }
+    458          
+    459                  if ((ret = mbedtls_sha1_finish(&ctx, sha1sum)) != 0) {
+    460                      goto fail;
+    461                  }
+    462          
+    463                  if (memcmp(sha1sum, sha1_test_sum[i], 20) != 0) {
+    464                      ret = 1;
+    465                      goto fail;
+    466                  }
+    467          
+    468                  if (verbose != 0) {
+    469                      mbedtls_printf("passed\n");
+    470                  }
+    471              }
+    472          
+    473              if (verbose != 0) {
+    474                  mbedtls_printf("\n");
+    475              }
+    476          
+    477              goto exit;
+    478          
+    479          fail:
+    480              if (verbose != 0) {
+    481                  mbedtls_printf("failed\n");
+    482              }
+    483          
+    484          exit:
+    485              mbedtls_sha1_free(&ctx);
+    486          
+    487              return ret;
+    488          }
+    489          
+    490          #endif /* MBEDTLS_SELF_TEST */
+    491          
+    492          #endif /* MBEDTLS_SHA1_C */
+
+   Maximum stack usage in bytes:
+
+   .cstack Function
+   ------- --------
+     240   mbedtls_sha1
+       240   -> mbedtls_sha1_finish
+       240   -> mbedtls_sha1_free
+       240   -> mbedtls_sha1_init
+       240   -> mbedtls_sha1_starts
+       240   -> mbedtls_sha1_update
+
+
+   Section sizes:
+
+   Bytes  Function/Label
+   -----  --------------
+      62  mbedtls_sha1
+
+ 
+ 62 bytes in section .text
+ 
+ 62 bytes of CODE memory
+
+Errors: none
+Warnings: none

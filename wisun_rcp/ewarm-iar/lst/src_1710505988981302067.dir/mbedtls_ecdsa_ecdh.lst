@@ -1,0 +1,1282 @@
+###############################################################################
+#
+# IAR ANSI C/C++ Compiler V9.50.2.385/W64 for ARM         27/Nov/2024  12:16:57
+# Copyright 1999-2024 IAR Systems AB.
+#
+#    Cpu mode          =  thumb
+#    Endian            =  little
+#    Source file       =
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\security\sl_component\sl_mbedtls_support\src\mbedtls_ecdsa_ecdh.c
+#    Command line      =
+#        -f
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\ewarm-iar\obj\src_1710505988981302067.dir\mbedtls_ecdsa_ecdh.o.rsp
+#        (C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\security\sl_component\sl_mbedtls_support\src\mbedtls_ecdsa_ecdh.c
+#        -D EFR32FG28B322F1024IM48=1 -D
+#        configNUM_SDK_THREAD_LOCAL_STORAGE_POINTERS=2 -D
+#        SL_COMPONENT_CATALOG_PRESENT=1 -D
+#        MBEDTLS_CONFIG_FILE=<sl_mbedtls_config.h> -D
+#        MBEDTLS_PSA_CRYPTO_CONFIG_FILE=<psa_crypto_config.h> -D
+#        SL_RAIL_LIB_MULTIPROTOCOL_SUPPORT=0 -D
+#        SL_RAIL_UTIL_PA_CONFIG_HEADER=<sl_rail_util_pa_config.h> -D
+#        RTT_USE_ASM=0 -D MBED_CONF_MBED_TRACE_ENABLE=1 -D
+#        MBED_CONF_NANOSTACK_CONFIGURATION=ws_router -D
+#        MBED_TRACE_MAX_LEVEL=TRACE_ACTIVE_LEVEL_ALL -D DEBUG_EFM_USER=1 -D
+#        HAVE_LFN=1 -D HAVE_LFN_PARENT=1 -lC
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\ewarm-iar\lst\src_1710505988981302067.dir
+#        --diag_suppress Pa050 -o
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\ewarm-iar\obj\src_1710505988981302067.dir
+#        --debug --endian=little --cpu=Cortex-M33 --cmse --cmse -e
+#        --fpu=VFPv5_sp --dlib_config "C:\Program Files\IAR Systems\Embedded
+#        Workbench 9.2\arm\inc\c\DLib_Config_Normal.h" -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\security\sl_component\sl_mbedtls_support\src\
+#        -I C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\autogen\ -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\config\ -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\config\rail\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\Device\SiliconLabs\EFR32FG28\Include\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\common\inc\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\CMSIS\Core\Include\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\CMSIS\RTOS2\Include\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\service\device_init\inc\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\emdrv\dmadrv\inc\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\emdrv\common\inc\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\emlib\inc\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\util\third_party\freertos\cmsis\Include\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\util\third_party\freertos\kernel\include\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\util\third_party\freertos\kernel\portable\IAR\ARM_CM33_NTZ\non_secure\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\service\iostream\inc\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\security\sl_component\sl_mbedtls_support\config\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\security\sl_component\sl_mbedtls_support\config\preset\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\security\sl_component\sl_mbedtls_support\inc\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\util\third_party\mbedtls\include\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\util\third_party\mbedtls\library\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\emdrv\nvm3\inc\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\peripheral\inc\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\security\sl_component\sl_psa_driver\inc\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\radio\rail_lib\common\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\radio\rail_lib\protocol\ble\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\radio\rail_lib\protocol\ieee802154\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\radio\rail_lib\protocol\wmbus\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\radio\rail_lib\protocol\zwave\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\radio\rail_lib\chip\efr32\efr32xg2x\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\radio\rail_lib\protocol\sidewalk\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\radio\rail_lib\plugin\pa-conversions\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\radio\rail_lib\plugin\pa-conversions\efr32xg28\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\radio\rail_lib\plugin\rail_util_pti\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\security\sl_component\se_manager\inc\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\security\sl_component\se_manager\src\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\util\third_party\segger\systemview\SEGGER\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\util\silicon_labs\silabs_core\memory_manager\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\common\toolchain\inc\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\service\system\inc\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\app\wisun\component\ns_list\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\app\wisun\component\trace_util\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\app\wisun\component\trace_util\nanostack\nanostack-libservice\mbed-client-libservice\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\service\sleeptimer\inc\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\protocol\wisun\stack\inc\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\protocol\wisun\app\wisun_rcp\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\protocol\wisun\stack\inc\socket\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\protocol\wisun\stack\src\
+#        -Ohz --use_c++_inline) --dependencies=n
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\ewarm-iar\obj\src_1710505988981302067.dir\mbedtls_ecdsa_ecdh.o.iar_deps
+#    Locale            =  C
+#    List file         =
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\ewarm-iar\lst\src_1710505988981302067.dir\mbedtls_ecdsa_ecdh.lst
+#    Object file       =
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\ewarm-iar\obj\src_1710505988981302067.dir\mbedtls_ecdsa_ecdh.o
+#    Runtime model:       
+#      __CPP_Runtime   =  1
+#      __SystemLibrary =  DLib
+#      __dlib_version  =  6
+#
+###############################################################################
+
+C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\security\sl_component\sl_mbedtls_support\src\mbedtls_ecdsa_ecdh.c
+      1          /***************************************************************************//**
+      2           * @file
+      3           * @brief mbed TLS elliptic curve operations accelerated by PSA crypto drivers
+      4           *******************************************************************************
+      5           * # License
+      6           * <b>Copyright 2020 Silicon Laboratories Inc. www.silabs.com</b>
+      7           *******************************************************************************
+      8           *
+      9           * SPDX-License-Identifier: Zlib
+     10           *
+     11           * The licensor of this software is Silicon Laboratories Inc.
+     12           *
+     13           * This software is provided 'as-is', without any express or implied
+     14           * warranty. In no event will the authors be held liable for any damages
+     15           * arising from the use of this software.
+     16           *
+     17           * Permission is granted to anyone to use this software for any purpose,
+     18           * including commercial applications, and to alter it and redistribute it
+     19           * freely, subject to the following restrictions:
+     20           *
+     21           * 1. The origin of this software must not be misrepresented; you must not
+     22           *    claim that you wrote the original software. If you use this software
+     23           *    in a product, an acknowledgment in the product documentation would be
+     24           *    appreciated but is not required.
+     25           * 2. Altered source versions must be plainly marked as such, and must not be
+     26           *    misrepresented as being the original software.
+     27           * 3. This notice may not be removed or altered from any source distribution.
+     28           *
+     29           ******************************************************************************/
+     30          
+     31          /**
+     32           * This file includes an alternative implementation of high-level ECDSA and ECDH
+     33           * functions from the mbed TLS API, using the relevant accelerators incorporated
+     34           * in devices from Silicon Labs.
+     35           *
+     36           * For Series-1 devices with a CRYPTO peripheral, see crypto_ecp.c.
+     37           *
+     38           * This alternative implementation calls the PSA Crypto drivers provided
+     39           * by Silicon Labs. For details on these drivers, see \ref sl_psa_drivers.
+     40           */
+     41          
+     42          #include <mbedtls/build_info.h>
+     43          
+     44          #if defined(MBEDTLS_ECP_C)
+     45          
+     46          #if defined(MBEDTLS_ECDH_GEN_PUBLIC_ALT)      \
+     47            || defined(MBEDTLS_ECDH_COMPUTE_SHARED_ALT) \
+     48            || defined(MBEDTLS_ECDSA_GENKEY_ALT)        \
+     49            || defined(MBEDTLS_ECDSA_VERIFY_ALT)        \
+     50            || defined(MBEDTLS_ECDSA_SIGN_ALT)
+     51          
+     52          #include "em_device.h"
+     53          
+     54          #if defined(SEMAILBOX_PRESENT)
+     55          #include "sli_se_transparent_functions.h"
+     56          #define ECC_IMPLEMENTATION_PRESENT
+     57          #define ECC_KEYGEN_FCT      sli_se_transparent_generate_key
+     58          #define ECC_PUBKEY_FCT      sli_se_transparent_export_public_key
+     59          #define ECDSA_SIGN_FCT      sli_se_transparent_sign_hash
+     60          #define ECDSA_VERIFY_FCT    sli_se_transparent_verify_hash
+     61          #define ECDH_DERIVE_FCT     sli_se_transparent_key_agreement
+     62          #elif defined(CRYPTOACC_PRESENT)
+     63          #include "sli_cryptoacc_transparent_functions.h"
+     64          #define ECC_IMPLEMENTATION_PRESENT
+     65          #define ECC_KEYGEN_FCT      sli_cryptoacc_transparent_generate_key
+     66          #define ECC_PUBKEY_FCT      sli_cryptoacc_transparent_export_public_key
+     67          #define ECDSA_SIGN_FCT      sli_cryptoacc_transparent_sign_hash
+     68          #define ECDSA_VERIFY_FCT    sli_cryptoacc_transparent_verify_hash
+     69          #define ECDH_DERIVE_FCT     sli_cryptoacc_transparent_key_agreement
+     70          #endif
+     71          
+     72          #include "mbedtls/ecdh.h"
+     73          #include "mbedtls/ecdsa.h"
+     74          #include "mbedtls/platform_util.h"
+     75          #include "mbedtls/bignum.h"
+     76          #include "mbedtls/error.h"
+     77          #include "psa/crypto.h"
+
+   \                                 In section .text, align 2, keep-with-next
+   \   static __vfp void psa_set_key_usage_flags(psa_key_attributes_t *, uint32_t)
+   \                     psa_set_key_usage_flags: (+1)
+   \        0x0   0x04CA             LSLS     R2,R1,#+19
+   \        0x2   0xBF48             IT       MI
+   \        0x4   0xF441 0x6180      ORRMI    R1,R1,#0x400
+   \        0x8   0x048A             LSLS     R2,R1,#+18
+   \        0xA   0xBF48             IT       MI
+   \        0xC   0xF441 0x6100      ORRMI    R1,R1,#0x800
+   \       0x10   0x60C1             STR      R1,[R0, #+12]
+   \       0x12   0x4770             BX       LR
+     78          
+     79          // Parameter validation macros based on platform_util.h
+     80          #define ECDH_VALIDATE_RET(cond) \
+     81            MBEDTLS_INTERNAL_VALIDATE_RET(cond, MBEDTLS_ERR_ECP_BAD_INPUT_DATA)
+     82          #define ECDH_VALIDATE(cond) \
+     83            MBEDTLS_INTERNAL_VALIDATE(cond)
+     84          
+     85          #define ECDSA_VALIDATE_RET(cond) \
+     86            MBEDTLS_INTERNAL_VALIDATE_RET(cond, MBEDTLS_ERR_ECP_BAD_INPUT_DATA)
+     87          #define ECDSA_VALIDATE(cond) \
+     88            MBEDTLS_INTERNAL_VALIDATE(cond)
+     89          
+     90          #if defined(ECC_IMPLEMENTATION_PRESENT)
+
+   \                                 In section .text, align 2, keep-with-next
+     91          static int psa_status_to_mbedtls(psa_status_t status)
+     92          {
+     93            switch ( status ) {
+   \                     psa_status_to_mbedtls: (+1)
+   \        0x0   0xB188             CBZ.N    R0,??psa_status_to_mbedtls_0
+   \        0x2   0xF06F 0x0194      MVN      R1,#+148
+   \        0x6   0x1A40             SUBS     R0,R0,R1
+   \        0x8   0xD004             BEQ.N    ??psa_status_to_mbedtls_1
+   \        0xA   0x1E80             SUBS     R0,R0,#+2
+   \        0xC   0xD005             BEQ.N    ??psa_status_to_mbedtls_2
+   \        0xE   0x380D             SUBS     R0,R0,#+13
+   \       0x10   0xD006             BEQ.N    ??psa_status_to_mbedtls_3
+   \       0x12   0xE006             B.N      ??psa_status_to_mbedtls_4
+     94              case PSA_SUCCESS:
+     95                return 0;
+     96              case PSA_ERROR_INVALID_SIGNATURE:
+     97                return MBEDTLS_ERR_ECP_VERIFY_FAILED;
+   \                     ??psa_status_to_mbedtls_1: (+1)
+   \       0x14   0x.... 0x....      LDR.W    R0,??DataTable6
+   \       0x18   0x4770             BX       LR
+     98              case PSA_ERROR_HARDWARE_FAILURE:
+     99                return MBEDTLS_ERR_PLATFORM_HW_ACCEL_FAILED;
+   \                     ??psa_status_to_mbedtls_2: (+1)
+   \       0x1A   0xF06F 0x006F      MVN      R0,#+111
+   \       0x1E   0x4770             BX       LR
+    100              case PSA_ERROR_NOT_SUPPORTED:
+    101                return MBEDTLS_ERR_PLATFORM_FEATURE_UNSUPPORTED;
+   \                     ??psa_status_to_mbedtls_3: (+1)
+   \       0x20   0x....             B.N      ?Subroutine0
+    102              default:
+    103                return MBEDTLS_ERR_ERROR_GENERIC_ERROR;
+   \                     ??psa_status_to_mbedtls_4: (+1)
+   \       0x22   0xF04F 0x30FF      MOV      R0,#+4294967295
+   \                     ??psa_status_to_mbedtls_0: (+1)
+   \       0x26   0x4770             BX       LR
+    104            }
+    105          }
+
+   \                                 In section .text, align 2, keep-with-next
+   \                     ?Subroutine0: (+1)
+   \        0x0   0xF06F 0x0071      MVN      R0,#+113
+   \        0x4   0x4770             BX       LR
+    106          
+
+   \                                 In section .text, align 2, keep-with-next
+    107          static int mbedtls_grp_to_psa_attr(mbedtls_ecp_group_id id,
+    108                                             psa_key_attributes_t *attr)
+    109          {
+    110            switch (id) {
+   \                     mbedtls_grp_to_psa_attr: (+1)
+   \        0x0   0xF247 0x1212      MOVW     R2,#+28946
+   \        0x4   0x2801             CMP      R0,#+1
+   \        0x6   0xD008             BEQ.N    ??mbedtls_grp_to_psa_attr_0
+   \        0x8   0x2803             CMP      R0,#+3
+   \        0xA   0xD00B             BEQ.N    ??mbedtls_grp_to_psa_attr_1
+   \        0xC   0x2804             CMP      R0,#+4
+   \        0xE   0xD00C             BEQ.N    ??mbedtls_grp_to_psa_attr_2
+   \       0x10   0x2805             CMP      R0,#+5
+   \       0x12   0xD00D             BEQ.N    ??mbedtls_grp_to_psa_attr_3
+   \       0x14   0x2809             CMP      R0,#+9
+   \       0x16   0xD00E             BEQ.N    ??mbedtls_grp_to_psa_attr_4
+   \       0x18   0xE011             B.N      ??mbedtls_grp_to_psa_attr_5
+    111              case MBEDTLS_ECP_DP_SECP192R1:
+    112                attr->MBEDTLS_PRIVATE(core).MBEDTLS_PRIVATE(type) = PSA_KEY_TYPE_ECC_KEY_PAIR(PSA_ECC_FAMILY_SECP_R1);
+    113                psa_set_key_bits(attr, 192);
+   \                     ??mbedtls_grp_to_psa_attr_0: (+1)
+   \       0x1A   0x20C0             MOVS     R0,#+192
+    114                break;
+    115          #if defined(CRYPTOACC_PRESENT)
+    116              case MBEDTLS_ECP_DP_SECP224R1:
+    117                attr->MBEDTLS_PRIVATE(core).MBEDTLS_PRIVATE(type) = PSA_KEY_TYPE_ECC_KEY_PAIR(PSA_ECC_FAMILY_SECP_R1);
+    118                psa_set_key_bits(attr, 224);
+    119                break;
+    120              case MBEDTLS_ECP_DP_SECP256K1:
+    121                attr->MBEDTLS_PRIVATE(core).MBEDTLS_PRIVATE(type) = PSA_KEY_TYPE_ECC_KEY_PAIR(PSA_ECC_FAMILY_SECP_K1);
+    122                psa_set_key_bits(attr, 256);
+    123                break;
+    124          #endif
+    125              case MBEDTLS_ECP_DP_SECP256R1:
+    126                attr->MBEDTLS_PRIVATE(core).MBEDTLS_PRIVATE(type) = PSA_KEY_TYPE_ECC_KEY_PAIR(PSA_ECC_FAMILY_SECP_R1);
+    127                psa_set_key_bits(attr, 256);
+    128                break;
+    129              case MBEDTLS_ECP_DP_SECP384R1:
+    130                attr->MBEDTLS_PRIVATE(core).MBEDTLS_PRIVATE(type) = PSA_KEY_TYPE_ECC_KEY_PAIR(PSA_ECC_FAMILY_SECP_R1);
+    131                psa_set_key_bits(attr, 384);
+    132                break;
+    133              case MBEDTLS_ECP_DP_SECP521R1:
+    134                attr->MBEDTLS_PRIVATE(core).MBEDTLS_PRIVATE(type) = PSA_KEY_TYPE_ECC_KEY_PAIR(PSA_ECC_FAMILY_SECP_R1);
+    135                psa_set_key_bits(attr, 521);
+    136                break;
+    137              case MBEDTLS_ECP_DP_CURVE25519:
+    138                attr->MBEDTLS_PRIVATE(core).MBEDTLS_PRIVATE(type) = PSA_KEY_TYPE_ECC_KEY_PAIR(PSA_ECC_FAMILY_MONTGOMERY);
+    139                psa_set_key_bits(attr, 255);
+    140                break;
+    141              default:
+    142                return MBEDTLS_ERR_PLATFORM_FEATURE_UNSUPPORTED;
+    143            }
+    144            return PSA_SUCCESS;
+   \                     ??mbedtls_grp_to_psa_attr_6: (+1)
+   \       0x1C   0x8048             STRH     R0,[R1, #+2]
+   \       0x1E   0x800A             STRH     R2,[R1, #+0]
+   \       0x20   0x2000             MOVS     R0,#+0
+   \       0x22   0x4770             BX       LR
+   \                     ??mbedtls_grp_to_psa_attr_1: (+1)
+   \       0x24   0xF44F 0x7080      MOV      R0,#+256
+   \       0x28   0xE7F8             B.N      ??mbedtls_grp_to_psa_attr_6
+   \                     ??mbedtls_grp_to_psa_attr_2: (+1)
+   \       0x2A   0xF44F 0x70C0      MOV      R0,#+384
+   \       0x2E   0xE7F5             B.N      ??mbedtls_grp_to_psa_attr_6
+   \                     ??mbedtls_grp_to_psa_attr_3: (+1)
+   \       0x30   0xF240 0x2009      MOVW     R0,#+521
+   \       0x34   0xE7F2             B.N      ??mbedtls_grp_to_psa_attr_6
+   \                     ??mbedtls_grp_to_psa_attr_4: (+1)
+   \       0x36   0xF247 0x1241      MOVW     R2,#+28993
+   \       0x3A   0x20FF             MOVS     R0,#+255
+   \       0x3C   0xE7EE             B.N      ??mbedtls_grp_to_psa_attr_6
+   \                     ??mbedtls_grp_to_psa_attr_5: (+1)
+   \       0x3E                      REQUIRE ?Subroutine0
+   \       0x3E                      ;; // Fall through to label ?Subroutine0
+    145          }
+    146          #if defined(MBEDTLS_ECDH_GEN_PUBLIC_ALT) \
+    147            || defined(MBEDTLS_ECDSA_GENKEY_ALT)
+
+   \                                 In section .text, align 2, keep-with-next
+    148          static int ecc_keygen(mbedtls_ecp_group *grp, mbedtls_mpi *d, mbedtls_ecp_point *Q)
+    149          {
+   \                     ecc_keygen: (+1)
+   \        0x0   0xB5F0             PUSH     {R4-R7,LR}
+   \        0x2   0xB09D             SUB      SP,SP,#+116
+   \        0x4   0x4604             MOV      R4,R0
+   \        0x6   0x460E             MOV      R6,R1
+   \        0x8   0x4615             MOV      R5,R2
+    150            psa_key_attributes_t attr = PSA_KEY_ATTRIBUTES_INIT;
+   \        0xA   0xA814             ADD      R0,SP,#+80
+   \        0xC   0x.... 0x....      BL       ??Subroutine1_0
+   \                     ??CrossCallReturnLabel_0: (+1)
+   \       0x10   0x2141             MOVS     R1,#+65
+   \       0x12   0x2200             MOVS     R2,#+0
+   \       0x14   0xA803             ADD      R0,SP,#+12
+   \       0x16   0x.... 0x....      BL       __aeabi_memset
+    151            uint8_t keybuf[((((MBEDTLS_ECP_MAX_BYTES) +3) / 4) * 4) * 2 + 1u] = { 0 };
+    152          
+    153            psa_status_t status = psa_status_to_mbedtls(
+    154              mbedtls_grp_to_psa_attr(grp->id, &attr) );
+   \       0x1A   0x7820             LDRB     R0,[R4, #+0]
+   \       0x1C   0xA914             ADD      R1,SP,#+80
+   \       0x1E   0x.... 0x....      BL       mbedtls_grp_to_psa_attr
+   \       0x22   0x.... 0x....      BL       psa_status_to_mbedtls
+   \       0x26   0x0004             MOVS     R4,R0
+    155            if ( status != PSA_SUCCESS ) {
+   \       0x28   0xD153             BNE.N    ??ecc_keygen_0
+    156              return status;
+    157            }
+    158          
+    159            size_t keybytes;
+    160            status = psa_status_to_mbedtls(
+    161              ECC_KEYGEN_FCT(&attr,
+    162                             keybuf,
+    163                             sizeof(keybuf),
+    164                             &keybytes) );
+   \       0x2A   0xAB02             ADD      R3,SP,#+8
+   \       0x2C   0x2241             MOVS     R2,#+65
+   \       0x2E   0xA903             ADD      R1,SP,#+12
+   \       0x30   0xA814             ADD      R0,SP,#+80
+   \       0x32   0x.... 0x....      BL       sli_se_transparent_generate_key
+   \       0x36   0x.... 0x....      BL       psa_status_to_mbedtls
+   \       0x3A   0x0004             MOVS     R4,R0
+    165          
+    166            if ( status != PSA_SUCCESS ) {
+   \       0x3C   0xD149             BNE.N    ??ecc_keygen_0
+    167              return status;
+    168            }
+    169          
+    170            if (PSA_KEY_TYPE_ECC_GET_FAMILY(psa_get_key_type(&attr)) == PSA_ECC_FAMILY_MONTGOMERY) {
+   \       0x3E   0xF8BD 0x0050      LDRH     R0,[SP, #+80]
+   \       0x42   0x.... 0x....      LDR.W    R7,??DataTable6_1
+   \       0x46   0x4038             ANDS     R0,R7,R0
+   \       0x48   0xF5B0 0x4F82      CMP      R0,#+16640
+   \       0x4C   0xBF02             ITTT     EQ
+   \       0x4E   0xF8BD 0x0050      LDRHEQ   R0,[SP, #+80]
+   \       0x52   0xB2C0             UXTBEQ   R0,R0
+   \       0x54   0x2841             CMPEQ    R0,#+65
+   \       0x56   0xD105             BNE.N    ??ecc_keygen_1
+    171              mbedtls_mpi_read_binary_le(d, keybuf, keybytes);
+   \       0x58   0x9A02             LDR      R2,[SP, #+8]
+   \       0x5A   0xA903             ADD      R1,SP,#+12
+   \       0x5C   0x4630             MOV      R0,R6
+   \       0x5E   0x.... 0x....      BL       mbedtls_mpi_read_binary_le
+   \       0x62   0xE004             B.N      ??ecc_keygen_2
+    172            } else {
+    173              mbedtls_mpi_read_binary(d, keybuf, keybytes);
+   \                     ??ecc_keygen_1: (+1)
+   \       0x64   0x9A02             LDR      R2,[SP, #+8]
+   \       0x66   0xA903             ADD      R1,SP,#+12
+   \       0x68   0x4630             MOV      R0,R6
+   \       0x6A   0x.... 0x....      BL       mbedtls_mpi_read_binary
+    174            }
+    175          
+    176            status = psa_status_to_mbedtls(
+    177              ECC_PUBKEY_FCT(&attr,
+    178                             keybuf,
+    179                             keybytes,
+    180                             keybuf,
+    181                             sizeof(keybuf),
+    182                             &keybytes) );
+   \                     ??ecc_keygen_2: (+1)
+   \       0x6E   0xA902             ADD      R1,SP,#+8
+   \       0x70   0x2041             MOVS     R0,#+65
+   \       0x72   0x9A02             LDR      R2,[SP, #+8]
+   \       0x74   0x9101             STR      R1,[SP, #+4]
+   \       0x76   0x9000             STR      R0,[SP, #+0]
+   \       0x78   0xAB03             ADD      R3,SP,#+12
+   \       0x7A   0xA903             ADD      R1,SP,#+12
+   \       0x7C   0xA814             ADD      R0,SP,#+80
+   \       0x7E   0x.... 0x....      BL       sli_se_transparent_export_public_key
+   \       0x82   0x.... 0x....      BL       psa_status_to_mbedtls
+   \       0x86   0x0004             MOVS     R4,R0
+    183          
+    184            if ( status != PSA_SUCCESS ) {
+   \       0x88   0xD123             BNE.N    ??ecc_keygen_0
+    185              return status;
+    186            }
+    187          
+    188            if ( PSA_KEY_TYPE_ECC_GET_FAMILY(psa_get_key_type(&attr)) == PSA_ECC_FAMILY_MONTGOMERY ) {
+   \       0x8A   0xF8BD 0x0050      LDRH     R0,[SP, #+80]
+   \       0x8E   0x4007             ANDS     R7,R7,R0
+   \       0x90   0xF5B7 0x4F82      CMP      R7,#+16640
+   \       0x94   0xBF04             ITT      EQ
+   \       0x96   0xB2C0             UXTBEQ   R0,R0
+   \       0x98   0x2841             CMPEQ    R0,#+65
+   \       0x9A   0xD105             BNE.N    ??ecc_keygen_3
+    189              mbedtls_mpi_read_binary_le(&Q->MBEDTLS_PRIVATE(X), keybuf, keybytes);
+   \       0x9C   0x9A02             LDR      R2,[SP, #+8]
+   \       0x9E   0xA903             ADD      R1,SP,#+12
+   \       0xA0   0x4628             MOV      R0,R5
+   \       0xA2   0x.... 0x....      BL       mbedtls_mpi_read_binary_le
+   \       0xA6   0xE014             B.N      ??ecc_keygen_0
+    190            } else {
+    191              // The first byte is used to store uncompressed representation byte.
+    192              mbedtls_mpi_read_binary(&Q->MBEDTLS_PRIVATE(X), keybuf + 1u, keybytes / 2);
+   \                     ??ecc_keygen_3: (+1)
+   \       0xA8   0x9A02             LDR      R2,[SP, #+8]
+   \       0xAA   0xF10D 0x010D      ADD      R1,SP,#+13
+   \       0xAE   0x4628             MOV      R0,R5
+   \       0xB0   0x0852             LSRS     R2,R2,#+1
+   \       0xB2   0x.... 0x....      BL       mbedtls_mpi_read_binary
+    193              mbedtls_mpi_read_binary(&Q->MBEDTLS_PRIVATE(Y), keybuf + keybytes / 2 + 1u, keybytes / 2);
+   \       0xB6   0x9A02             LDR      R2,[SP, #+8]
+   \       0xB8   0xF10D 0x000D      ADD      R0,SP,#+13
+   \       0xBC   0x0852             LSRS     R2,R2,#+1
+   \       0xBE   0x1881             ADDS     R1,R0,R2
+   \       0xC0   0xF105 0x0008      ADD      R0,R5,#+8
+   \       0xC4   0x.... 0x....      BL       mbedtls_mpi_read_binary
+    194              mbedtls_mpi_lset(&Q->MBEDTLS_PRIVATE(Z), 1);
+   \       0xC8   0x2101             MOVS     R1,#+1
+   \       0xCA   0xF105 0x0010      ADD      R0,R5,#+16
+   \       0xCE   0x.... 0x....      BL       mbedtls_mpi_lset
+    195            }
+    196          
+    197            return status;
+   \                     ??ecc_keygen_0: (+1)
+   \       0xD2   0x4620             MOV      R0,R4
+   \       0xD4   0xB01D             ADD      SP,SP,#+116
+   \       0xD6   0xBDF0             POP      {R4-R7,PC}
+    198          }
+
+   \                                 In section .text, align 2, keep-with-next
+   \                     ?Subroutine1: (+1)
+   \        0x0   0xA806             ADD      R0,SP,#+24
+   \                     ??Subroutine1_0: (+1)
+   \        0x2   0x2124             MOVS     R1,#+36
+   \        0x4   0x.... 0x....      B.W      __aeabi_memclr4
+
+   \                                 In section .rodata, align 4
+   \        0x0   0x0000 0x0000      DC16 0, 0
+   \        0x4   0x0000'0000        DC32 0, 0, 0, 0, 0
+   \              0x0000'0000  
+   \              0x0000'0000  
+   \              0x0000'0000  
+   \              0x0000'0000
+   \       0x18   0x0000             DC16 0
+   \       0x1A                      DS8 2
+   \       0x1C   0x0000'0000        DC32 0x0, 0
+   \              0x0000'0000
+    199          #endif /* #if defined(MBEDTLS_ECDH_GEN_PUBLIC_ALT)
+    200                 || defined(MBEDTLS_ECDSA_GENKEY_ALT) */
+    201          
+    202          #if defined(MBEDTLS_ECDSA_GENKEY_ALT)
+    203          /*
+    204           * Generate key pair
+    205           */
+
+   \                                 In section .text, align 2, keep-with-next
+    206          int mbedtls_ecdsa_genkey(mbedtls_ecdsa_context *ctx, mbedtls_ecp_group_id gid,
+    207                                   int (*f_rng)(void *, unsigned char *, size_t), void *p_rng)
+    208          {
+   \                     mbedtls_ecdsa_genkey: (+1)
+   \        0x0   0xB510             PUSH     {R4,LR}
+   \        0x2   0x4604             MOV      R4,R0
+    209            /* PSA uses internal entropy */
+    210            (void)f_rng;
+    211            (void)p_rng;
+    212          
+    213            ECDSA_VALIDATE_RET(ctx   != NULL);
+    214            ECDSA_VALIDATE_RET(f_rng != NULL);
+    215          
+    216            mbedtls_ecp_group_load(&ctx->MBEDTLS_PRIVATE(grp), gid);
+   \        0x4   0x.... 0x....      BL       mbedtls_ecp_group_load
+    217          
+    218            return ecc_keygen(&ctx->MBEDTLS_PRIVATE(grp), &ctx->MBEDTLS_PRIVATE(d), &ctx->MBEDTLS_PRIVATE(Q));
+   \        0x8   0xF104 0x0268      ADD      R2,R4,#+104
+   \        0xC   0xF104 0x0160      ADD      R1,R4,#+96
+   \       0x10   0x4620             MOV      R0,R4
+   \       0x12   0xE8BD 0x4010      POP      {R4,LR}
+   \       0x16   0x....             B.N      ecc_keygen
+    219          }
+    220          #endif /* MBEDTLS_ECDSA_GENKEY_ALT */
+    221          
+    222          #if defined(MBEDTLS_ECDSA_SIGN_ALT)
+
+   \                                 In section .text, align 2, keep-with-next
+    223          int mbedtls_ecdsa_sign(mbedtls_ecp_group *grp, mbedtls_mpi *r, mbedtls_mpi *s,
+    224                                 const mbedtls_mpi *d, const unsigned char *buf, size_t blen,
+    225                                 int (*f_rng)(void *, unsigned char *, size_t), void *p_rng)
+    226          {
+   \                     mbedtls_ecdsa_sign: (+1)
+   \        0x0   0xB5F0             PUSH     {R4-R7,LR}
+   \        0x2   0xB09F             SUB      SP,SP,#+124
+   \        0x4   0x4607             MOV      R7,R0
+   \        0x6   0x460D             MOV      R5,R1
+   \        0x8   0x4614             MOV      R4,R2
+   \        0xA   0x461E             MOV      R6,R3
+    227            /* PSA uses internal entropy */
+    228            (void)f_rng;
+    229            (void)p_rng;
+    230          
+    231            ECDSA_VALIDATE_RET(grp   != NULL);
+    232            ECDSA_VALIDATE_RET(r     != NULL);
+    233            ECDSA_VALIDATE_RET(s     != NULL);
+    234            ECDSA_VALIDATE_RET(d     != NULL);
+    235            ECDSA_VALIDATE_RET(f_rng != NULL);
+    236            ECDSA_VALIDATE_RET(buf   != NULL || blen == 0);
+    237          
+    238            psa_key_attributes_t attr = PSA_KEY_ATTRIBUTES_INIT;
+   \        0xC   0x.... 0x....      BL       ?Subroutine1
+   \                     ??CrossCallReturnLabel_1: (+1)
+   \       0x10   0x2140             MOVS     R1,#+64
+   \       0x12   0x2200             MOVS     R2,#+0
+   \       0x14   0xA80F             ADD      R0,SP,#+60
+   \       0x16   0x.... 0x....      BL       __aeabi_memset
+    239            uint8_t key_signature_buf[((((MBEDTLS_ECP_MAX_BYTES) +3) / 4) * 4) * 2] = { 0 };
+    240          
+    241            psa_status_t status = psa_status_to_mbedtls(
+    242              mbedtls_grp_to_psa_attr(grp->id, &attr));
+   \       0x1A   0x7838             LDRB     R0,[R7, #+0]
+   \       0x1C   0xA906             ADD      R1,SP,#+24
+   \       0x1E   0x.... 0x....      BL       mbedtls_grp_to_psa_attr
+   \       0x22   0xB178             CBZ.N    R0,??mbedtls_ecdsa_sign_0
+   \       0x24   0x.... 0x....      BL       ?Subroutine2
+   \                     ??CrossCallReturnLabel_4: (+1)
+   \       0x28   0xD00A             BEQ.N    ??mbedtls_ecdsa_sign_1
+   \       0x2A   0x1E80             SUBS     R0,R0,#+2
+   \       0x2C   0xD005             BEQ.N    ??mbedtls_ecdsa_sign_2
+   \       0x2E   0x380D             SUBS     R0,R0,#+13
+   \       0x30   0xD11A             BNE.N    ??mbedtls_ecdsa_sign_3
+   \                     ??mbedtls_ecdsa_sign_4: (+1)
+   \       0x32   0xF06F 0x0071      MVN      R0,#+113
+    243            if ( status != PSA_SUCCESS ) {
+    244              return status;
+    245            }
+    246            psa_set_key_usage_flags(&attr, PSA_KEY_USAGE_SIGN_HASH);
+    247          
+    248            if (PSA_KEY_TYPE_ECC_GET_FAMILY(psa_get_key_type(&attr)) == PSA_ECC_FAMILY_MONTGOMERY) {
+    249              return PSA_ERROR_NOT_SUPPORTED;
+    250            }
+    251          
+    252            size_t keybytes = PSA_BITS_TO_BYTES(psa_get_key_bits(&attr));
+    253          
+    254            // Make sure d is in range 1..n-1
+    255            if ((mbedtls_mpi_cmp_int(d, 1) < 0) || (mbedtls_mpi_cmp_mpi(d, &grp->N) >= 0)) {
+    256              return MBEDTLS_ERR_ECP_INVALID_KEY;
+    257            }
+    258          
+    259            mbedtls_mpi_write_binary(d, key_signature_buf, keybytes);
+    260          
+    261            status = psa_status_to_mbedtls(
+    262              ECDSA_SIGN_FCT(&attr,
+    263                             key_signature_buf,
+    264                             keybytes,
+    265                             PSA_ALG_ECDSA_ANY,
+    266                             buf,
+    267                             blen,
+    268                             key_signature_buf,
+    269                             sizeof(key_signature_buf),
+    270                             &keybytes) );
+    271          
+    272            if ( status != PSA_SUCCESS ) {
+    273              return status;
+   \                     ??mbedtls_ecdsa_sign_5: (+1)
+   \       0x36   0xB01F             ADD      SP,SP,#+124
+   \       0x38   0xBDF0             POP      {R4-R7,PC}
+    274            }
+   \                     ??mbedtls_ecdsa_sign_2: (+1)
+   \       0x3A   0xF06F 0x006F      MVN      R0,#+111
+   \       0x3E   0xE7FA             B.N      ??mbedtls_ecdsa_sign_5
+   \                     ??mbedtls_ecdsa_sign_1: (+1)
+   \       0x40   0x....             LDR.N    R0,??DataTable6
+   \       0x42   0xE7F8             B.N      ??mbedtls_ecdsa_sign_5
+   \                     ??mbedtls_ecdsa_sign_0: (+1)
+   \       0x44   0xF44F 0x5180      MOV      R1,#+4096
+   \       0x48   0xA806             ADD      R0,SP,#+24
+   \       0x4A   0x.... 0x....      BL       psa_set_key_usage_flags
+   \       0x4E   0xF8BD 0x1018      LDRH     R1,[SP, #+24]
+   \       0x52   0x.... 0x....      BL       ?Subroutine3
+   \                     ??CrossCallReturnLabel_10: (+1)
+   \       0x56   0xBF02             ITTT     EQ
+   \       0x58   0xF8BD 0x0018      LDRHEQ   R0,[SP, #+24]
+   \       0x5C   0xB2C0             UXTBEQ   R0,R0
+   \       0x5E   0x2841             CMPEQ    R0,#+65
+   \       0x60   0xD105             BNE.N    ??mbedtls_ecdsa_sign_6
+   \       0x62   0xF06F 0x0085      MVN      R0,#+133
+   \       0x66   0xE7E6             B.N      ??mbedtls_ecdsa_sign_5
+   \                     ??mbedtls_ecdsa_sign_3: (+1)
+   \       0x68   0xF04F 0x30FF      MOV      R0,#+4294967295
+   \       0x6C   0xE7E3             B.N      ??mbedtls_ecdsa_sign_5
+   \                     ??mbedtls_ecdsa_sign_6: (+1)
+   \       0x6E   0xF8BD 0x001A      LDRH     R0,[SP, #+26]
+   \       0x72   0x2101             MOVS     R1,#+1
+   \       0x74   0x1DC0             ADDS     R0,R0,#+7
+   \       0x76   0x08C0             LSRS     R0,R0,#+3
+   \       0x78   0x9005             STR      R0,[SP, #+20]
+   \       0x7A   0x4630             MOV      R0,R6
+   \       0x7C   0x.... 0x....      BL       mbedtls_mpi_cmp_int
+   \       0x80   0x2800             CMP      R0,#+0
+   \       0x82   0xD406             BMI.N    ??mbedtls_ecdsa_sign_7
+   \       0x84   0xF107 0x0134      ADD      R1,R7,#+52
+   \       0x88   0x4630             MOV      R0,R6
+   \       0x8A   0x.... 0x....      BL       mbedtls_mpi_cmp_mpi
+   \       0x8E   0x2800             CMP      R0,#+0
+   \       0x90   0xD401             BMI.N    ??mbedtls_ecdsa_sign_8
+   \                     ??mbedtls_ecdsa_sign_7: (+1)
+   \       0x92   0x....             LDR.N    R0,??DataTable6_2
+   \       0x94   0xE7CF             B.N      ??mbedtls_ecdsa_sign_5
+   \                     ??mbedtls_ecdsa_sign_8: (+1)
+   \       0x96   0x9A05             LDR      R2,[SP, #+20]
+   \       0x98   0xA90F             ADD      R1,SP,#+60
+   \       0x9A   0x4630             MOV      R0,R6
+   \       0x9C   0x.... 0x....      BL       mbedtls_mpi_write_binary
+   \       0xA0   0xA905             ADD      R1,SP,#+20
+   \       0xA2   0xA80F             ADD      R0,SP,#+60
+   \       0xA4   0x9104             STR      R1,[SP, #+16]
+   \       0xA6   0x9002             STR      R0,[SP, #+8]
+   \       0xA8   0x2240             MOVS     R2,#+64
+   \       0xAA   0x9925             LDR      R1,[SP, #+148]
+   \       0xAC   0x9824             LDR      R0,[SP, #+144]
+   \       0xAE   0x9203             STR      R2,[SP, #+12]
+   \       0xB0   0x9A05             LDR      R2,[SP, #+20]
+   \       0xB2   0x9101             STR      R1,[SP, #+4]
+   \       0xB4   0x9000             STR      R0,[SP, #+0]
+   \       0xB6   0xF04F 0x2306      MOV      R3,#+100664832
+   \       0xBA   0xA90F             ADD      R1,SP,#+60
+   \       0xBC   0xA806             ADD      R0,SP,#+24
+   \       0xBE   0x.... 0x....      BL       sli_se_transparent_sign_hash
+   \       0xC2   0xB138             CBZ.N    R0,??mbedtls_ecdsa_sign_9
+   \       0xC4   0x.... 0x....      BL       ?Subroutine2
+   \                     ??CrossCallReturnLabel_5: (+1)
+   \       0xC8   0xD0BA             BEQ.N    ??mbedtls_ecdsa_sign_1
+   \       0xCA   0x1E80             SUBS     R0,R0,#+2
+   \       0xCC   0xD0B5             BEQ.N    ??mbedtls_ecdsa_sign_2
+   \       0xCE   0x380D             SUBS     R0,R0,#+13
+   \       0xD0   0xD0AF             BEQ.N    ??mbedtls_ecdsa_sign_4
+   \       0xD2   0xE7C9             B.N      ??mbedtls_ecdsa_sign_3
+    275          
+    276            mbedtls_mpi_read_binary(r, key_signature_buf, keybytes / 2);
+   \                     ??mbedtls_ecdsa_sign_9: (+1)
+   \       0xD4   0x9A05             LDR      R2,[SP, #+20]
+   \       0xD6   0xA90F             ADD      R1,SP,#+60
+   \       0xD8   0x4628             MOV      R0,R5
+   \       0xDA   0x0852             LSRS     R2,R2,#+1
+   \       0xDC   0x.... 0x....      BL       mbedtls_mpi_read_binary
+    277            mbedtls_mpi_read_binary(s, key_signature_buf + (keybytes / 2), keybytes / 2);
+   \       0xE0   0x9A05             LDR      R2,[SP, #+20]
+   \       0xE2   0xA80F             ADD      R0,SP,#+60
+   \       0xE4   0x0852             LSRS     R2,R2,#+1
+   \       0xE6   0x1881             ADDS     R1,R0,R2
+   \       0xE8   0x4620             MOV      R0,R4
+   \       0xEA   0x.... 0x....      BL       mbedtls_mpi_read_binary
+    278          
+    279            return status;
+   \       0xEE   0x2000             MOVS     R0,#+0
+   \       0xF0   0xE7A1             B.N      ??mbedtls_ecdsa_sign_5
+    280          }
+
+   \                                 In section .text, align 2, keep-with-next
+   \                     ?Subroutine3: (+1)
+   \        0x0   0x....             LDR.N    R0,??DataTable6_1
+   \        0x2   0x4001             ANDS     R1,R0,R1
+   \        0x4   0xF5B1 0x4F82      CMP      R1,#+16640
+   \        0x8   0x4770             BX       LR
+
+   \                                 In section .text, align 2, keep-with-next
+   \                     ?Subroutine2: (+1)
+   \        0x0   0xF06F 0x0194      MVN      R1,#+148
+   \        0x4   0x1A40             SUBS     R0,R0,R1
+   \        0x6   0x4770             BX       LR
+
+   \                                 In section .rodata, align 4
+   \        0x0   0x0000 0x0000      DC16 0, 0
+   \        0x4   0x0000'0000        DC32 0, 0, 0, 0, 0
+   \              0x0000'0000  
+   \              0x0000'0000  
+   \              0x0000'0000  
+   \              0x0000'0000
+   \       0x18   0x0000             DC16 0
+   \       0x1A                      DS8 2
+   \       0x1C   0x0000'0000        DC32 0x0, 0
+   \              0x0000'0000
+    281          #endif /* MBEDTLS_ECDSA_SIGN_ALT */
+    282          
+    283          #if defined(MBEDTLS_ECDSA_VERIFY_ALT)
+
+   \                                 In section .text, align 2, keep-with-next
+    284          int mbedtls_ecdsa_verify(mbedtls_ecp_group *grp,
+    285                                   const unsigned char *buf, size_t blen,
+    286                                   const mbedtls_ecp_point *Q, const mbedtls_mpi *r, const mbedtls_mpi *s)
+    287          {
+   \                     mbedtls_ecdsa_verify: (+1)
+   \        0x0   0xE92D 0x4FF0      PUSH     {R4-R11,LR}
+   \        0x4   0xB0AF             SUB      SP,SP,#+188
+   \        0x6   0x4605             MOV      R5,R0
+   \        0x8   0x460E             MOV      R6,R1
+   \        0xA   0x4617             MOV      R7,R2
+   \        0xC   0x4698             MOV      R8,R3
+    288            ECDSA_VALIDATE_RET(grp != NULL);
+    289            ECDSA_VALIDATE_RET(Q   != NULL);
+    290            ECDSA_VALIDATE_RET(r   != NULL);
+    291            ECDSA_VALIDATE_RET(s   != NULL);
+    292            ECDSA_VALIDATE_RET(buf != NULL || blen == 0);
+   \        0xE   0x2141             MOVS     R1,#+65
+   \       0x10   0x2200             MOVS     R2,#+0
+   \       0x12   0xA81E             ADD      R0,SP,#+120
+   \       0x14   0x.... 0x....      BL       __aeabi_memset
+   \       0x18   0x2140             MOVS     R1,#+64
+   \       0x1A   0x2200             MOVS     R2,#+0
+   \       0x1C   0xA80E             ADD      R0,SP,#+56
+   \       0x1E   0x.... 0x....      BL       __aeabi_memset
+    293          
+    294            uint8_t pub[((((MBEDTLS_ECP_MAX_BYTES) +3) / 4) * 4) * 2 + 1] = { 0 };
+    295            uint8_t signature[((((MBEDTLS_ECP_MAX_BYTES) +3) / 4) * 4) * 2] = { 0 };
+    296            psa_key_attributes_t attr = PSA_KEY_ATTRIBUTES_INIT;
+   \       0x22   0xA805             ADD      R0,SP,#+20
+   \       0x24   0x.... 0x....      BL       ??Subroutine1_0
+    297          
+    298            psa_status_t status = psa_status_to_mbedtls(
+    299              mbedtls_grp_to_psa_attr(grp->id, &attr) );
+   \                     ??CrossCallReturnLabel_2: (+1)
+   \       0x28   0x7828             LDRB     R0,[R5, #+0]
+   \       0x2A   0xA905             ADD      R1,SP,#+20
+   \       0x2C   0xF04F 0x3BFF      MOV      R11,#+4294967295
+   \       0x30   0x....             LDR.N    R4,??DataTable6
+   \       0x32   0xF06F 0x096F      MVN      R9,#+111
+   \       0x36   0xF06F 0x0A71      MVN      R10,#+113
+   \       0x3A   0x.... 0x....      BL       mbedtls_grp_to_psa_attr
+   \       0x3E   0xB138             CBZ.N    R0,??mbedtls_ecdsa_verify_0
+   \       0x40   0x.... 0x....      BL       ?Subroutine2
+   \                     ??CrossCallReturnLabel_6: (+1)
+   \       0x44   0xD05C             BEQ.N    ??mbedtls_ecdsa_verify_1
+   \       0x46   0x1E80             SUBS     R0,R0,#+2
+   \       0x48   0xD058             BEQ.N    ??mbedtls_ecdsa_verify_2
+   \       0x4A   0x380D             SUBS     R0,R0,#+13
+   \       0x4C   0xD15A             BNE.N    ??mbedtls_ecdsa_verify_3
+   \       0x4E   0xE053             B.N      ??mbedtls_ecdsa_verify_4
+    300            if ( status != PSA_SUCCESS ) {
+    301              return status;
+    302            }
+    303            psa_set_key_usage_flags(&attr, PSA_KEY_USAGE_VERIFY_HASH);
+   \                     ??mbedtls_ecdsa_verify_0: (+1)
+   \       0x50   0xF44F 0x5100      MOV      R1,#+8192
+   \       0x54   0xA805             ADD      R0,SP,#+20
+   \       0x56   0x.... 0x....      BL       psa_set_key_usage_flags
+    304          
+    305            if (PSA_KEY_TYPE_ECC_GET_FAMILY(psa_get_key_type(&attr)) == PSA_ECC_FAMILY_MONTGOMERY) {
+   \       0x5A   0xF8BD 0x1014      LDRH     R1,[SP, #+20]
+   \       0x5E   0x.... 0x....      BL       ?Subroutine3
+   \                     ??CrossCallReturnLabel_11: (+1)
+   \       0x62   0xD107             BNE.N    ??mbedtls_ecdsa_verify_5
+   \       0x64   0xF8BD 0x0014      LDRH     R0,[SP, #+20]
+   \       0x68   0xB2C0             UXTB     R0,R0
+   \       0x6A   0x2841             CMP      R0,#+65
+   \       0x6C   0xD105             BNE.N    ??mbedtls_ecdsa_verify_6
+    306              return PSA_ERROR_NOT_SUPPORTED;
+   \       0x6E   0xF06F 0x0085      MVN      R0,#+133
+   \       0x72   0xE048             B.N      ??mbedtls_ecdsa_verify_7
+    307            }
+    308          
+    309            attr.MBEDTLS_PRIVATE(core).MBEDTLS_PRIVATE(type) =
+    310              PSA_KEY_TYPE_ECC_PUBLIC_KEY(PSA_KEY_TYPE_ECC_GET_FAMILY(psa_get_key_type(&attr)));
+   \                     ??mbedtls_ecdsa_verify_5: (+1)
+   \       0x74   0xF44F 0x4282      MOV      R2,#+16640
+   \       0x78   0xE004             B.N      ??mbedtls_ecdsa_verify_8
+   \                     ??mbedtls_ecdsa_verify_6: (+1)
+   \       0x7A   0xF8BD 0x2014      LDRH     R2,[SP, #+20]
+   \       0x7E   0xB2D2             UXTB     R2,R2
+   \       0x80   0xF442 0x4282      ORR      R2,R2,#0x4100
+   \                     ??mbedtls_ecdsa_verify_8: (+1)
+   \       0x84   0x9D39             LDR      R5,[SP, #+228]
+   \       0x86   0x9704             STR      R7,[SP, #+16]
+    311          
+    312            size_t keybytes = PSA_BITS_TO_BYTES(psa_get_key_bits(&attr));
+   \       0x88   0xF8BD 0x7016      LDRH     R7,[SP, #+22]
+   \       0x8C   0x9838             LDR      R0,[SP, #+224]
+   \       0x8E   0xF8AD 0x2014      STRH     R2,[SP, #+20]
+   \       0x92   0x1DFF             ADDS     R7,R7,#+7
+   \       0x94   0x08FF             LSRS     R7,R7,#+3
+    313          
+    314            /* pull out signature info from mbedtls structures */
+    315            mbedtls_mpi_write_binary(r, signature, keybytes);
+   \       0x96   0x463A             MOV      R2,R7
+   \       0x98   0xA90E             ADD      R1,SP,#+56
+   \       0x9A   0x.... 0x....      BL       mbedtls_mpi_write_binary
+    316            mbedtls_mpi_write_binary(s, &signature[keybytes], keybytes);
+   \       0x9E   0xA80E             ADD      R0,SP,#+56
+   \       0xA0   0x19C1             ADDS     R1,R0,R7
+   \       0xA2   0x463A             MOV      R2,R7
+   \       0xA4   0x4628             MOV      R0,R5
+   \       0xA6   0x.... 0x....      BL       mbedtls_mpi_write_binary
+    317          
+    318            pub[0] = 0x04; // Uncompressed public key
+   \       0xAA   0x2104             MOVS     R1,#+4
+   \       0xAC   0xF88D 0x1078      STRB     R1,[SP, #+120]
+    319            mbedtls_mpi_write_binary(&Q->MBEDTLS_PRIVATE(X), &pub[1u], keybytes);
+   \       0xB0   0x463A             MOV      R2,R7
+   \       0xB2   0xF10D 0x0179      ADD      R1,SP,#+121
+   \       0xB6   0x4640             MOV      R0,R8
+   \       0xB8   0x.... 0x....      BL       mbedtls_mpi_write_binary
+    320            mbedtls_mpi_write_binary(&Q->MBEDTLS_PRIVATE(Y), &pub[keybytes + 1u], keybytes);
+   \       0xBC   0xF10D 0x0079      ADD      R0,SP,#+121
+   \       0xC0   0x19C1             ADDS     R1,R0,R7
+   \       0xC2   0x463A             MOV      R2,R7
+   \       0xC4   0xF108 0x0008      ADD      R0,R8,#+8
+   \       0xC8   0x.... 0x....      BL       mbedtls_mpi_write_binary
+    321          
+    322            return psa_status_to_mbedtls(
+    323              ECDSA_VERIFY_FCT(&attr,
+    324                               pub,
+    325                               keybytes * 2 + 1u,
+    326                               PSA_ALG_ECDSA_ANY,
+    327                               buf,
+    328                               blen,
+    329                               signature,
+    330                               keybytes * 2) );
+   \       0xCC   0x9804             LDR      R0,[SP, #+16]
+   \       0xCE   0xA90E             ADD      R1,SP,#+56
+   \       0xD0   0x007F             LSLS     R7,R7,#+1
+   \       0xD2   0x9102             STR      R1,[SP, #+8]
+   \       0xD4   0x9001             STR      R0,[SP, #+4]
+   \       0xD6   0x9703             STR      R7,[SP, #+12]
+   \       0xD8   0x9600             STR      R6,[SP, #+0]
+   \       0xDA   0xF04F 0x2306      MOV      R3,#+100664832
+   \       0xDE   0x1C7A             ADDS     R2,R7,#+1
+   \       0xE0   0xA91E             ADD      R1,SP,#+120
+   \       0xE2   0xA805             ADD      R0,SP,#+20
+   \       0xE4   0x.... 0x....      BL       sli_se_transparent_verify_hash
+   \       0xE8   0xB168             CBZ.N    R0,??mbedtls_ecdsa_verify_7
+   \       0xEA   0x.... 0x....      BL       ?Subroutine2
+   \                     ??CrossCallReturnLabel_7: (+1)
+   \       0xEE   0xD007             BEQ.N    ??mbedtls_ecdsa_verify_1
+   \       0xF0   0x1E80             SUBS     R0,R0,#+2
+   \       0xF2   0xD003             BEQ.N    ??mbedtls_ecdsa_verify_2
+   \       0xF4   0x380D             SUBS     R0,R0,#+13
+   \       0xF6   0xD105             BNE.N    ??mbedtls_ecdsa_verify_3
+   \                     ??mbedtls_ecdsa_verify_4: (+1)
+   \       0xF8   0x4650             MOV      R0,R10
+   \       0xFA   0xE004             B.N      ??mbedtls_ecdsa_verify_7
+   \                     ??mbedtls_ecdsa_verify_2: (+1)
+   \       0xFC   0x4648             MOV      R0,R9
+   \       0xFE   0xE002             B.N      ??mbedtls_ecdsa_verify_7
+   \                     ??mbedtls_ecdsa_verify_1: (+1)
+   \      0x100   0x4620             MOV      R0,R4
+   \      0x102   0xE000             B.N      ??mbedtls_ecdsa_verify_7
+   \                     ??mbedtls_ecdsa_verify_3: (+1)
+   \      0x104   0x4658             MOV      R0,R11
+   \                     ??mbedtls_ecdsa_verify_7: (+1)
+   \      0x106   0xB02F             ADD      SP,SP,#+188
+   \      0x108   0xE8BD 0x8FF0      POP      {R4-R11,PC}
+    331          }
+
+   \                                 In section .rodata, align 4
+   \        0x0   0x0000 0x0000      DC16 0, 0
+   \        0x4   0x0000'0000        DC32 0, 0, 0, 0, 0
+   \              0x0000'0000  
+   \              0x0000'0000  
+   \              0x0000'0000  
+   \              0x0000'0000
+   \       0x18   0x0000             DC16 0
+   \       0x1A                      DS8 2
+   \       0x1C   0x0000'0000        DC32 0x0, 0
+   \              0x0000'0000
+    332          #endif /* MBEDTLS_ECDSA_VERIFY_ALT */
+    333          
+    334          #if defined(MBEDTLS_ECDH_GEN_PUBLIC_ALT)
+
+   \                                 In section .text, align 2, keep-with-next
+    335          int mbedtls_ecdh_gen_public(mbedtls_ecp_group *grp, mbedtls_mpi *d, mbedtls_ecp_point *Q,
+    336                                      int (*f_rng)(void *, unsigned char *, size_t),
+    337                                      void *p_rng)
+    338          {
+    339            /* PSA uses internal entropy */
+    340            (void)f_rng;
+    341            (void)p_rng;
+    342          
+    343            ECDH_VALIDATE_RET(grp != NULL);
+    344            ECDH_VALIDATE_RET(d != NULL);
+    345            ECDH_VALIDATE_RET(Q != NULL);
+    346            ECDH_VALIDATE_RET(f_rng != NULL);
+    347          
+    348            return ecc_keygen(grp, d, Q);
+   \                     mbedtls_ecdh_gen_public: (+1)
+   \        0x0   0x....             B.N      ecc_keygen
+    349          }
+    350          #endif /* #if defined(MBEDTLS_ECDH_GEN_PUBLIC_ALT) */
+    351          
+    352          #if defined(MBEDTLS_ECDH_COMPUTE_SHARED_ALT)
+
+   \                                 In section .text, align 2, keep-with-next
+    353          int mbedtls_ecdh_compute_shared(mbedtls_ecp_group *grp, mbedtls_mpi *z,
+    354                                          const mbedtls_ecp_point *Q, const mbedtls_mpi *d,
+    355                                          int (*f_rng)(void *, unsigned char *, size_t),
+    356                                          void *p_rng)
+    357          {
+   \                     mbedtls_ecdh_compute_shared: (+1)
+   \        0x0   0xE92D 0x43F8      PUSH     {R3-R9,LR}
+   \        0x4   0xB0B0             SUB      SP,SP,#+192
+   \        0x6   0x4607             MOV      R7,R0
+   \        0x8   0x460C             MOV      R4,R1
+   \        0xA   0x4691             MOV      R9,R2
+   \        0xC   0x4698             MOV      R8,R3
+    358            /* PSA uses internal entropy */
+    359            (void)f_rng;
+    360            (void)p_rng;
+    361          
+    362            ECDH_VALIDATE_RET(grp != NULL);
+    363            ECDH_VALIDATE_RET(Q != NULL);
+    364            ECDH_VALIDATE_RET(d != NULL);
+    365            ECDH_VALIDATE_RET(z != NULL);
+   \        0xE   0x2141             MOVS     R1,#+65
+   \       0x10   0x2200             MOVS     R2,#+0
+   \       0x12   0xA80F             ADD      R0,SP,#+60
+   \       0x14   0x.... 0x....      BL       __aeabi_memset
+   \       0x18   0x2140             MOVS     R1,#+64
+   \       0x1A   0x2200             MOVS     R2,#+0
+   \       0x1C   0xA820             ADD      R0,SP,#+128
+   \       0x1E   0x.... 0x....      BL       __aeabi_memset
+    366          
+    367            uint8_t pub[((((MBEDTLS_ECP_MAX_BYTES) +3) / 4) * 4) * 2 + 1u] = { 0 };
+    368            uint8_t priv[((((MBEDTLS_ECP_MAX_BYTES) +3) / 4) * 4) * 2] = { 0 };
+    369            psa_key_attributes_t attr = PSA_KEY_ATTRIBUTES_INIT;
+   \       0x22   0x.... 0x....      BL       ?Subroutine1
+    370          
+    371            psa_status_t status = psa_status_to_mbedtls(
+    372              mbedtls_grp_to_psa_attr(grp->id, &attr) );
+   \                     ??CrossCallReturnLabel_3: (+1)
+   \       0x26   0x7838             LDRB     R0,[R7, #+0]
+   \       0x28   0xA906             ADD      R1,SP,#+24
+   \       0x2A   0x.... 0x....      BL       mbedtls_grp_to_psa_attr
+   \       0x2E   0xB170             CBZ.N    R0,??mbedtls_ecdh_compute_shared_0
+   \       0x30   0x.... 0x....      BL       ?Subroutine2
+   \                     ??CrossCallReturnLabel_8: (+1)
+   \       0x34   0xD009             BEQ.N    ??mbedtls_ecdh_compute_shared_1
+   \       0x36   0x1E80             SUBS     R0,R0,#+2
+   \       0x38   0xD004             BEQ.N    ??mbedtls_ecdh_compute_shared_2
+   \       0x3A   0x380D             SUBS     R0,R0,#+13
+   \       0x3C   0xD129             BNE.N    ??mbedtls_ecdh_compute_shared_3
+   \                     ??mbedtls_ecdh_compute_shared_4: (+1)
+   \       0x3E   0xF06F 0x0571      MVN      R5,#+113
+   \       0x42   0xE06D             B.N      ??mbedtls_ecdh_compute_shared_5
+   \                     ??mbedtls_ecdh_compute_shared_2: (+1)
+   \       0x44   0xF06F 0x056F      MVN      R5,#+111
+   \       0x48   0xE06A             B.N      ??mbedtls_ecdh_compute_shared_5
+   \                     ??mbedtls_ecdh_compute_shared_1: (+1)
+   \       0x4A   0x....             LDR.N    R5,??DataTable6
+   \       0x4C   0xE068             B.N      ??mbedtls_ecdh_compute_shared_5
+    373            if ( status != PSA_SUCCESS ) {
+    374              return status;
+    375            }
+    376            psa_set_key_usage_flags(&attr, PSA_KEY_USAGE_DERIVE);
+   \                     ??mbedtls_ecdh_compute_shared_0: (+1)
+   \       0x4E   0xF44F 0x4180      MOV      R1,#+16384
+   \       0x52   0xA806             ADD      R0,SP,#+24
+   \       0x54   0x.... 0x....      BL       psa_set_key_usage_flags
+    377          
+    378            size_t keylen = PSA_BITS_TO_BYTES(psa_get_key_bits(&attr));
+   \       0x58   0xF8BD 0x601A      LDRH     R6,[SP, #+26]
+    379            size_t publen;
+    380          
+    381            /* pull out key info from mbedtls structures */
+    382            if (PSA_KEY_TYPE_ECC_GET_FAMILY(psa_get_key_type(&attr)) == PSA_ECC_FAMILY_MONTGOMERY) {
+   \       0x5C   0xF8BD 0x1018      LDRH     R1,[SP, #+24]
+   \       0x60   0x....             LDR.N    R7,??DataTable6_1
+   \       0x62   0x1DF6             ADDS     R6,R6,#+7
+   \       0x64   0x2500             MOVS     R5,#+0
+   \       0x66   0x08F6             LSRS     R6,R6,#+3
+   \       0x68   0x4039             ANDS     R1,R7,R1
+   \       0x6A   0x4640             MOV      R0,R8
+   \       0x6C   0xF5B1 0x4F82      CMP      R1,#+16640
+   \       0x70   0xBF02             ITTT     EQ
+   \       0x72   0xF8BD 0x1018      LDRHEQ   R1,[SP, #+24]
+   \       0x76   0xB2C9             UXTBEQ   R1,R1
+   \       0x78   0x2941             CMPEQ    R1,#+65
+   \       0x7A   0xD10D             BNE.N    ??mbedtls_ecdh_compute_shared_6
+    383              publen = keylen;
+   \       0x7C   0x9605             STR      R6,[SP, #+20]
+    384              mbedtls_mpi_write_binary_le(d, priv, keylen);
+   \       0x7E   0x4632             MOV      R2,R6
+   \       0x80   0xA920             ADD      R1,SP,#+128
+   \       0x82   0x.... 0x....      BL       mbedtls_mpi_write_binary_le
+    385              mbedtls_mpi_write_binary_le(&Q->MBEDTLS_PRIVATE(X), pub, keylen);
+   \       0x86   0x4632             MOV      R2,R6
+   \       0x88   0xA90F             ADD      R1,SP,#+60
+   \       0x8A   0x4648             MOV      R0,R9
+   \       0x8C   0x.... 0x....      BL       mbedtls_mpi_write_binary_le
+   \       0x90   0xE01A             B.N      ??mbedtls_ecdh_compute_shared_7
+    386            } else {
+   \                     ??mbedtls_ecdh_compute_shared_3: (+1)
+   \       0x92   0xF04F 0x35FF      MOV      R5,#+4294967295
+   \       0x96   0xE043             B.N      ??mbedtls_ecdh_compute_shared_5
+    387              publen = 2 * keylen + 1u;
+   \                     ??mbedtls_ecdh_compute_shared_6: (+1)
+   \       0x98   0x0071             LSLS     R1,R6,#+1
+   \       0x9A   0x1C49             ADDS     R1,R1,#+1
+   \       0x9C   0x9105             STR      R1,[SP, #+20]
+    388              mbedtls_mpi_write_binary(d, priv, keylen);
+   \       0x9E   0x4632             MOV      R2,R6
+   \       0xA0   0xA920             ADD      R1,SP,#+128
+   \       0xA2   0x.... 0x....      BL       mbedtls_mpi_write_binary
+    389              pub[0] = 0x04; // uncompressed public key
+   \       0xA6   0x2004             MOVS     R0,#+4
+   \       0xA8   0xF88D 0x003C      STRB     R0,[SP, #+60]
+    390              mbedtls_mpi_write_binary(&Q->MBEDTLS_PRIVATE(X), pub + 1u, keylen);
+   \       0xAC   0x4632             MOV      R2,R6
+   \       0xAE   0xF10D 0x013D      ADD      R1,SP,#+61
+   \       0xB2   0x4648             MOV      R0,R9
+   \       0xB4   0x.... 0x....      BL       mbedtls_mpi_write_binary
+    391              mbedtls_mpi_write_binary(&Q->MBEDTLS_PRIVATE(Y), pub + keylen + 1u, keylen);
+   \       0xB8   0xF10D 0x003D      ADD      R0,SP,#+61
+   \       0xBC   0x1981             ADDS     R1,R0,R6
+   \       0xBE   0x4632             MOV      R2,R6
+   \       0xC0   0xF109 0x0008      ADD      R0,R9,#+8
+   \       0xC4   0x.... 0x....      BL       mbedtls_mpi_write_binary
+    392            }
+    393          
+    394            status = psa_status_to_mbedtls(
+    395              ECDH_DERIVE_FCT(PSA_ALG_ECDH,
+    396                              &attr,
+    397                              priv,
+    398                              keylen,
+    399                              pub,
+    400                              publen,
+    401                              pub,
+    402                              sizeof(pub),
+    403                              &publen) );
+   \                     ??mbedtls_ecdh_compute_shared_7: (+1)
+   \       0xC8   0xA905             ADD      R1,SP,#+20
+   \       0xCA   0x9104             STR      R1,[SP, #+16]
+   \       0xCC   0x2041             MOVS     R0,#+65
+   \       0xCE   0x9905             LDR      R1,[SP, #+20]
+   \       0xD0   0x9003             STR      R0,[SP, #+12]
+   \       0xD2   0xAA0F             ADD      R2,SP,#+60
+   \       0xD4   0xA80F             ADD      R0,SP,#+60
+   \       0xD6   0x9202             STR      R2,[SP, #+8]
+   \       0xD8   0x9101             STR      R1,[SP, #+4]
+   \       0xDA   0x9000             STR      R0,[SP, #+0]
+   \       0xDC   0x4633             MOV      R3,R6
+   \       0xDE   0xAA20             ADD      R2,SP,#+128
+   \       0xE0   0xA906             ADD      R1,SP,#+24
+   \       0xE2   0x....             LDR.N    R0,??DataTable6_3
+   \       0xE4   0x.... 0x....      BL       sli_se_transparent_key_agreement
+   \       0xE8   0xB138             CBZ.N    R0,??mbedtls_ecdh_compute_shared_8
+   \       0xEA   0x.... 0x....      BL       ?Subroutine2
+   \                     ??CrossCallReturnLabel_9: (+1)
+   \       0xEE   0xD0AC             BEQ.N    ??mbedtls_ecdh_compute_shared_1
+   \       0xF0   0x1E80             SUBS     R0,R0,#+2
+   \       0xF2   0xD0A7             BEQ.N    ??mbedtls_ecdh_compute_shared_2
+   \       0xF4   0x380D             SUBS     R0,R0,#+13
+   \       0xF6   0xD0A2             BEQ.N    ??mbedtls_ecdh_compute_shared_4
+   \       0xF8   0xE7CB             B.N      ??mbedtls_ecdh_compute_shared_3
+    404          
+    405            if ( status != PSA_SUCCESS ) {
+    406              return status;
+    407            }
+    408          
+    409            if (PSA_KEY_TYPE_ECC_GET_FAMILY(psa_get_key_type(&attr)) == PSA_ECC_FAMILY_MONTGOMERY) {
+   \                     ??mbedtls_ecdh_compute_shared_8: (+1)
+   \       0xFA   0xF8BD 0x1018      LDRH     R1,[SP, #+24]
+   \       0xFE   0x4620             MOV      R0,R4
+   \      0x100   0x400F             ANDS     R7,R7,R1
+   \      0x102   0xF5B7 0x4F82      CMP      R7,#+16640
+   \      0x106   0xBF04             ITT      EQ
+   \      0x108   0xB2C9             UXTBEQ   R1,R1
+   \      0x10A   0x2941             CMPEQ    R1,#+65
+   \      0x10C   0xD104             BNE.N    ??mbedtls_ecdh_compute_shared_9
+    410              mbedtls_mpi_read_binary_le(z, pub, publen);
+   \      0x10E   0x9A05             LDR      R2,[SP, #+20]
+   \      0x110   0xA90F             ADD      R1,SP,#+60
+   \      0x112   0x.... 0x....      BL       mbedtls_mpi_read_binary_le
+   \      0x116   0xE003             B.N      ??mbedtls_ecdh_compute_shared_5
+    411            } else {
+    412              mbedtls_mpi_read_binary(z, pub, publen);
+   \                     ??mbedtls_ecdh_compute_shared_9: (+1)
+   \      0x118   0x9A05             LDR      R2,[SP, #+20]
+   \      0x11A   0xA90F             ADD      R1,SP,#+60
+   \      0x11C   0x.... 0x....      BL       mbedtls_mpi_read_binary
+    413            }
+    414            return status;
+   \                     ??mbedtls_ecdh_compute_shared_5: (+1)
+   \      0x120   0x4628             MOV      R0,R5
+   \      0x122   0xB031             ADD      SP,SP,#+196
+   \      0x124   0xE8BD 0x83F0      POP      {R4-R9,PC}
+    415          }
+
+   \                                 In section .rodata, align 4
+   \        0x0   0x0000 0x0000      DC16 0, 0
+   \        0x4   0x0000'0000        DC32 0, 0, 0, 0, 0
+   \              0x0000'0000  
+   \              0x0000'0000  
+   \              0x0000'0000  
+   \              0x0000'0000
+   \       0x18   0x0000             DC16 0
+   \       0x1A                      DS8 2
+   \       0x1C   0x0000'0000        DC32 0x0, 0
+   \              0x0000'0000
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable6:
+   \        0x0   0xFFFF'B200        DC32     0xffffb200
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable6_1:
+   \        0x0   0xFFFF'CF00        DC32     0xffffcf00
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable6_2:
+   \        0x0   0xFFFF'B380        DC32     0xffffb380
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable6_3:
+   \        0x0   0x0902'0000        DC32     0x9020000
+    416          #endif /* #if defined(MBEDTLS_ECDH_COMPUTE_SHARED_ALT) */
+    417          
+    418          #endif /* ECC_IMPLEMENTATION_PRESENT */
+    419          
+    420          #endif /* #if defined(MBEDTLS_ECDH_GEN_PUBLIC_ALT) || defined(MBEDTLS_ECDH_COMPUTE_SHARED_ALT) */
+    421          
+    422          #endif /* #if defined(MBEDTLS_ECP_C) */
+
+   Maximum stack usage in bytes:
+
+   .cstack Function
+   ------- --------
+     136   ecc_keygen
+       136   -> __aeabi_memclr4
+       136   -> __aeabi_memset
+       136   -> mbedtls_grp_to_psa_attr
+       136   -> mbedtls_mpi_lset
+       136   -> mbedtls_mpi_read_binary
+       136   -> mbedtls_mpi_read_binary_le
+       136   -> psa_status_to_mbedtls
+       136   -> sli_se_transparent_export_public_key
+       136   -> sli_se_transparent_generate_key
+     224   mbedtls_ecdh_compute_shared
+       224   -> __aeabi_memclr4
+       224   -> __aeabi_memset
+       224   -> mbedtls_grp_to_psa_attr
+       224   -> mbedtls_mpi_read_binary
+       224   -> mbedtls_mpi_read_binary_le
+       224   -> mbedtls_mpi_write_binary
+       224   -> mbedtls_mpi_write_binary_le
+       224   -> psa_set_key_usage_flags
+       224   -> sli_se_transparent_key_agreement
+       0   mbedtls_ecdh_gen_public
+         0   -> ecc_keygen
+       8   mbedtls_ecdsa_genkey
+         0   -> ecc_keygen
+         8   -> mbedtls_ecp_group_load
+     144   mbedtls_ecdsa_sign
+       144   -> __aeabi_memclr4
+       144   -> __aeabi_memset
+       144   -> mbedtls_grp_to_psa_attr
+       144   -> mbedtls_mpi_cmp_int
+       144   -> mbedtls_mpi_cmp_mpi
+       144   -> mbedtls_mpi_read_binary
+       144   -> mbedtls_mpi_write_binary
+       144   -> psa_set_key_usage_flags
+       144   -> sli_se_transparent_sign_hash
+     224   mbedtls_ecdsa_verify
+       224   -> __aeabi_memclr4
+       224   -> __aeabi_memset
+       224   -> mbedtls_grp_to_psa_attr
+       224   -> mbedtls_mpi_write_binary
+       224   -> psa_set_key_usage_flags
+       224   -> sli_se_transparent_verify_hash
+       0   mbedtls_grp_to_psa_attr
+       0   psa_set_key_usage_flags
+       0   psa_status_to_mbedtls
+
+
+   Section sizes:
+
+   Bytes  Function/Label
+   -----  --------------
+       4  ??DataTable6
+       4  ??DataTable6_1
+       4  ??DataTable6_2
+       4  ??DataTable6_3
+       6  ?Subroutine0
+       8  ?Subroutine1
+       8  ?Subroutine2
+      10  ?Subroutine3
+      36  ?_0
+      36  ?_1
+      36  ?_2
+      36  ?_3
+     216  ecc_keygen
+     296  mbedtls_ecdh_compute_shared
+       2  mbedtls_ecdh_gen_public
+      24  mbedtls_ecdsa_genkey
+     242  mbedtls_ecdsa_sign
+     268  mbedtls_ecdsa_verify
+      62  mbedtls_grp_to_psa_attr
+      20  psa_set_key_usage_flags
+      40  psa_status_to_mbedtls
+
+ 
+   144 bytes in section .rodata
+ 1'218 bytes in section .text
+ 
+ 1'218 bytes of CODE  memory
+   144 bytes of CONST memory
+
+Errors: none
+Warnings: none

@@ -1,0 +1,979 @@
+###############################################################################
+#
+# IAR ANSI C/C++ Compiler V9.50.2.385/W64 for ARM         29/Mar/2025  15:53:37
+# Copyright 1999-2024 IAR Systems AB.
+#
+#    Cpu mode          =  thumb
+#    Endian            =  little
+#    Source file       =
+#        D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\protocol\wisun\plugin\sl_wisun_legacy_socket_wrapper.c
+#    Command line      =
+#        -f "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\ewarm-iar\obj\plugin_8411017123112486588.dir\sl_wisun_legacy_socket_wrapper.o.rsp"
+#        ("D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\protocol\wisun\plugin\sl_wisun_legacy_socket_wrapper.c"
+#        -D DEBUG_EFM=1 -D EFR32FG28B322F1024IM48=1 -D
+#        configNUM_SDK_THREAD_LOCAL_STORAGE_POINTERS=2 -D
+#        SL_COMPONENT_CATALOG_PRESENT=1 -D
+#        MBEDTLS_CONFIG_FILE=<sl_mbedtls_config.h> -D
+#        MBEDTLS_PSA_CRYPTO_CONFIG_FILE=<psa_crypto_config.h> -D
+#        SL_RAIL_LIB_MULTIPROTOCOL_SUPPORT=0 -D
+#        SL_RAIL_UTIL_PA_CONFIG_HEADER=<sl_rail_util_pa_config.h> -D
+#        RTT_USE_ASM=0 -lC "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\ewarm-iar\lst\plugin_8411017123112486588.dir"
+#        --diag_suppress Pa050 -o "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\ewarm-iar\obj\plugin_8411017123112486588.dir"
+#        --no_cse --no_unroll --no_inline --no_code_motion --no_tbaa
+#        --no_clustering --no_scheduling --debug --endian=little
+#        --cpu=Cortex-M33 --cmse --cmse -e --fpu=VFPv5_sp --dlib_config
+#        "C:\Program Files\IAR Systems\Embedded Workbench
+#        9.2\arm\inc\c\DLib_Config_Normal.h" -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\protocol\wisun\plugin\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App 1\Wisun_Node_App\config\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App 1\Wisun_Node_App\config\rail\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App 1\Wisun_Node_App\config\wisun\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App 1\Wisun_Node_App\.\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\Device\SiliconLabs\EFR32FG28\Include\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\app\wisun\component\app_project_info\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\common\inc\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\service\cli\inc\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\service\cli\src\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\CMSIS\Core\Include\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\CMSIS\RTOS2\Include\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\service\device_init\inc\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\emdrv\common\inc\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\emlib\inc\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\service\iostream\inc\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\security\sl_component\sl_mbedtls_support\config\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\security\sl_component\sl_mbedtls_support\config\preset\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\security\sl_component\sl_mbedtls_support\inc\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\util\third_party\mbedtls\include\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\util\third_party\mbedtls\library\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\micrium_os\common\source\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\micrium_os\common\include\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\micrium_os\cpu\include\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\micrium_os\ports\source\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\micrium_os\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\micrium_os\kernel\source\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\micrium_os\kernel\include\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\emdrv\nvm3\inc\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\peripheral\inc\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\util\third_party\printf\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\util\third_party\printf\inc\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\security\sl_component\sl_psa_driver\inc\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\radio\rail_lib\common\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\radio\rail_lib\protocol\ble\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\radio\rail_lib\protocol\ieee802154\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\radio\rail_lib\protocol\wmbus\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\radio\rail_lib\protocol\zwave\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\radio\rail_lib\chip\efr32\efr32xg2x\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\radio\rail_lib\protocol\sidewalk\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\radio\rail_lib\plugin\pa-conversions\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\radio\rail_lib\plugin\pa-conversions\efr32xg28\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\radio\rail_lib\plugin\rail_util_pti\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\security\sl_component\se_manager\inc\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\security\sl_component\se_manager\src\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\util\third_party\segger\systemview\SEGGER\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\util\silicon_labs\silabs_core\memory_manager\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\common\toolchain\inc\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\service\system\inc\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\app\wisun\component\app_core\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\app\wisun\component\app_setting\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\app\wisun\component\cli_util\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\app\wisun\component\event_manager\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\app\wisun\component\ns_list\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\app\wisun\component\ping\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\app\wisun\component\trace_util\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\app\wisun\component\trace_util\nanostack\nanostack-libservice\mbed-client-libservice\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\app\wisun\component\udp_client\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\service\sleeptimer\inc\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\protocol\wisun\plugin\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\protocol\wisun\stack\inc\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\protocol\wisun\stack\inc\socket\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App 1\Wisun_Node_App\autogen\\" -On
+#        --use_c++_inline) --dependencies=n "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\ewarm-iar\obj\plugin_8411017123112486588.dir\sl_wisun_legacy_socket_wrapper.o.iar_deps"
+#    Locale            =  C
+#    List file         =
+#        D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\ewarm-iar\lst\plugin_8411017123112486588.dir\sl_wisun_legacy_socket_wrapper.lst
+#    Object file       =
+#        D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\ewarm-iar\obj\plugin_8411017123112486588.dir\sl_wisun_legacy_socket_wrapper.o
+#    Runtime model:       
+#      __CPP_Runtime   =  1
+#      __SystemLibrary =  DLib
+#      __dlib_version  =  6
+#
+###############################################################################
+
+D:\Inesh_wisun\Wisun_Node_App 1\Wisun_Node_App\gecko_sdk_4.4.5\protocol\wisun\plugin\sl_wisun_legacy_socket_wrapper.c
+      1          #include <string.h>
+      2          #include "sl_wisun_api.h"
+      3          #include "sl_wisun_legacy_socket_wrapper.h"
+      4          
+      5          #define CHECK_STATUS(retval) \
+      6            ((retval == SOCKET_RETVAL_ERROR) ? SL_STATUS_FAIL : SL_STATUS_OK)
+      7          
+      8          typedef union {
+      9            int32_t data;
+     10            sl_wisun_ip_address_t ip_addr;
+     11          } sockopt_data_t;
+     12          
+
+   \                                 In section .text, align 2, keep-with-next
+     13          sl_status_t sl_wisun_open_socket(sl_wisun_socket_protocol_t protocol,
+     14                                           sl_wisun_socket_id_t *socket_id)
+     15          {
+   \                     sl_wisun_open_socket: (+1)
+   \        0x0   0xE92D 0x41F0      PUSH     {R4-R8,LR}
+   \        0x4   0x0004             MOVS     R4,R0
+   \        0x6   0x000D             MOVS     R5,R1
+     16            int32_t socket_type;
+     17          
+     18            sl_status_t status = SL_STATUS_FAIL;
+   \        0x8   0x2701             MOVS     R7,#+1
+     19            int32_t socket_retval = SOCKET_RETVAL_ERROR;
+   \        0xA   0xF05F 0x38FF      MOVS     R8,#+4294967295
+     20          
+     21            switch (protocol) {
+   \        0xE   0x0020             MOVS     R0,R4
+   \       0x10   0xB2C0             UXTB     R0,R0
+   \       0x12   0x2800             CMP      R0,#+0
+   \       0x14   0xD003             BEQ.N    ??sl_wisun_open_socket_0
+   \       0x16   0x2802             CMP      R0,#+2
+   \       0x18   0xD007             BEQ.N    ??sl_wisun_open_socket_1
+   \       0x1A   0xD303             BCC.N    ??sl_wisun_open_socket_2
+   \       0x1C   0xE008             B.N      ??sl_wisun_open_socket_3
+     22              case SL_WISUN_SOCKET_PROTOCOL_UDP:
+     23                socket_type = SOCK_DGRAM;
+   \                     ??sl_wisun_open_socket_0: (+1)
+   \       0x1E   0x2002             MOVS     R0,#+2
+   \       0x20   0x0006             MOVS     R6,R0
+     24                break;
+   \       0x22   0xE006             B.N      ??sl_wisun_open_socket_4
+     25              case SL_WISUN_SOCKET_PROTOCOL_TCP:
+     26                socket_type = SOCK_STREAM;
+   \                     ??sl_wisun_open_socket_2: (+1)
+   \       0x24   0x2001             MOVS     R0,#+1
+   \       0x26   0x0006             MOVS     R6,R0
+     27                break;
+   \       0x28   0xE003             B.N      ??sl_wisun_open_socket_4
+     28              case SL_WISUN_SOCKET_PROTOCOL_ICMP:
+     29                socket_type = SOCK_RAW;
+   \                     ??sl_wisun_open_socket_1: (+1)
+   \       0x2A   0x2003             MOVS     R0,#+3
+   \       0x2C   0x0006             MOVS     R6,R0
+     30                break;
+   \       0x2E   0xE000             B.N      ??sl_wisun_open_socket_4
+     31              default:
+     32                goto error_handler;
+   \                     ??sl_wisun_open_socket_3: (+1)
+   \       0x30   0xE00D             B.N      ??sl_wisun_open_socket_5
+     33                break;
+     34            }
+     35          
+     36            socket_retval = socket(AF_INET6, socket_type | SOCK_NONBLOCK, IPPROTO_IP);
+   \                     ??sl_wisun_open_socket_4: (+1)
+   \       0x32   0x2200             MOVS     R2,#+0
+   \       0x34   0xF456 0x3180      ORRS     R1,R6,#0x10000
+   \       0x38   0x2000             MOVS     R0,#+0
+   \       0x3A   0x.... 0x....      BL       socket
+   \       0x3E   0x4680             MOV      R8,R0
+     37            if (socket_retval >= 0) {
+   \       0x40   0xF1B8 0x0F00      CMP      R8,#+0
+   \       0x44   0xD403             BMI.N    ??sl_wisun_open_socket_5
+     38              *socket_id = socket_retval;
+   \       0x46   0xF8C5 0x8000      STR      R8,[R5, #+0]
+     39              status = SL_STATUS_OK;
+   \       0x4A   0x2000             MOVS     R0,#+0
+   \       0x4C   0x0007             MOVS     R7,R0
+     40            }
+     41          
+     42            error_handler:
+     43          
+     44            return status;
+   \                     ??sl_wisun_open_socket_5: (+1)
+   \       0x4E   0x0038             MOVS     R0,R7
+   \       0x50   0xE8BD 0x81F0      POP      {R4-R8,PC}
+     45          }
+     46          
+
+   \                                 In section .text, align 2, keep-with-next
+     47          sl_status_t sl_wisun_close_socket(sl_wisun_socket_id_t socket_id)
+     48          {
+   \                     sl_wisun_close_socket: (+1)
+   \        0x0   0xB510             PUSH     {R4,LR}
+   \        0x2   0x0004             MOVS     R4,R0
+     49            sl_status_t status = (sl_close(socket_id) == SOCKET_RETVAL_OK) ? SL_STATUS_OK : SL_STATUS_FAIL;
+   \        0x4   0x0020             MOVS     R0,R4
+   \        0x6   0x.... 0x....      BL       sl_close
+   \        0xA   0x2800             CMP      R0,#+0
+   \        0xC   0xD101             BNE.N    ??sl_wisun_close_socket_0
+   \        0xE   0x2000             MOVS     R0,#+0
+   \       0x10   0xE000             B.N      ??sl_wisun_close_socket_1
+   \                     ??sl_wisun_close_socket_0: (+1)
+   \       0x12   0x2001             MOVS     R0,#+1
+     50            return status;
+   \                     ??sl_wisun_close_socket_1: (+1)
+   \       0x14   0xBD10             POP      {R4,PC}
+     51          }
+     52          
+
+   \                                 In section .text, align 2, keep-with-next
+     53          sl_status_t sl_wisun_sendto_on_socket(sl_wisun_socket_id_t socket_id,
+     54                                                const sl_wisun_ip_address_t *remote_address,
+     55                                                uint16_t remote_port,
+     56                                                uint16_t data_length,
+     57                                                const uint8_t *data)
+     58          {
+   \                     sl_wisun_sendto_on_socket: (+1)
+   \        0x0   0xE92D 0x4FF8      PUSH     {R3-R11,LR}
+   \        0x4   0xB08A             SUB      SP,SP,#+40
+   \        0x6   0x4682             MOV      R10,R0
+   \        0x8   0x000C             MOVS     R4,R1
+   \        0xA   0x0015             MOVS     R5,R2
+   \        0xC   0x001E             MOVS     R6,R3
+   \        0xE   0x9F14             LDR      R7,[SP, #+80]
+     59            int32_t socket_retval = SOCKET_RETVAL_ERROR;
+   \       0x10   0xF05F 0x38FF      MOVS     R8,#+4294967295
+     60            sockaddr_in6_t dest_addr;
+     61            dest_addr.sin6_family    = AF_INET6;
+   \       0x14   0x2000             MOVS     R0,#+0
+   \       0x16   0xF8AD 0x000C      STRH     R0,[SP, #+12]
+     62            dest_addr.sin6_port      = remote_port;
+   \       0x1A   0xF8AD 0x500E      STRH     R5,[SP, #+14]
+     63            dest_addr.sin6_flowinfo  = 0;
+   \       0x1E   0x2000             MOVS     R0,#+0
+   \       0x20   0x9004             STR      R0,[SP, #+16]
+     64            dest_addr.sin6_scope_id  = 0;
+   \       0x22   0x2000             MOVS     R0,#+0
+   \       0x24   0x9009             STR      R0,[SP, #+36]
+     65            memcpy(&dest_addr.sin6_addr.address, &remote_address->address, IPV6_ADDR_SIZE);
+   \       0x26   0xF05F 0x0910      MOVS     R9,#+16
+   \       0x2A   0x9402             STR      R4,[SP, #+8]
+   \       0x2C   0xF10D 0x0B14      ADD      R11,SP,#+20
+   \       0x30   0x464A             MOV      R2,R9
+   \       0x32   0x9902             LDR      R1,[SP, #+8]
+   \       0x34   0x4658             MOV      R0,R11
+   \       0x36   0x.... 0x....      BL       __aeabi_memcpy
+     66          
+     67            socket_retval = sendto(socket_id,
+     68                                   (const void *)data,
+     69                                   data_length,
+     70                                   0, //flags
+     71                                   (const struct sockaddr *)&dest_addr,
+     72                                   sizeof(sockaddr_in6_t));
+   \       0x3A   0x201C             MOVS     R0,#+28
+   \       0x3C   0x9001             STR      R0,[SP, #+4]
+   \       0x3E   0xA803             ADD      R0,SP,#+12
+   \       0x40   0x9000             STR      R0,[SP, #+0]
+   \       0x42   0x2300             MOVS     R3,#+0
+   \       0x44   0x0032             MOVS     R2,R6
+   \       0x46   0xB292             UXTH     R2,R2
+   \       0x48   0x0039             MOVS     R1,R7
+   \       0x4A   0x4650             MOV      R0,R10
+   \       0x4C   0x.... 0x....      BL       sendto
+     73          
+     74            return CHECK_STATUS(socket_retval);
+   \       0x50   0xF110 0x0F01      CMN      R0,#+1
+   \       0x54   0xD101             BNE.N    ??sl_wisun_sendto_on_socket_0
+   \       0x56   0x2001             MOVS     R0,#+1
+   \       0x58   0xE000             B.N      ??sl_wisun_sendto_on_socket_1
+   \                     ??sl_wisun_sendto_on_socket_0: (+1)
+   \       0x5A   0x2000             MOVS     R0,#+0
+   \                     ??sl_wisun_sendto_on_socket_1: (+1)
+   \       0x5C   0xB00B             ADD      SP,SP,#+44
+   \       0x5E   0xE8BD 0x8FF0      POP      {R4-R11,PC}
+     75          }
+     76          
+
+   \                                 In section .text, align 2, keep-with-next
+     77          sl_status_t sl_wisun_listen_on_socket(sl_wisun_socket_id_t socket_id)
+     78          {
+   \                     sl_wisun_listen_on_socket: (+1)
+   \        0x0   0xB510             PUSH     {R4,LR}
+   \        0x2   0x0004             MOVS     R4,R0
+     79            int32_t socket_retval = listen(socket_id, 0);
+   \        0x4   0x2100             MOVS     R1,#+0
+   \        0x6   0x0020             MOVS     R0,R4
+   \        0x8   0x.... 0x....      BL       listen
+     80            return CHECK_STATUS(socket_retval);
+   \        0xC   0xF110 0x0F01      CMN      R0,#+1
+   \       0x10   0xD101             BNE.N    ??sl_wisun_listen_on_socket_0
+   \       0x12   0x2001             MOVS     R0,#+1
+   \       0x14   0xE000             B.N      ??sl_wisun_listen_on_socket_1
+   \                     ??sl_wisun_listen_on_socket_0: (+1)
+   \       0x16   0x2000             MOVS     R0,#+0
+   \                     ??sl_wisun_listen_on_socket_1: (+1)
+   \       0x18   0xBD10             POP      {R4,PC}
+     81          }
+     82          
+
+   \                                 In section .text, align 2, keep-with-next
+     83          sl_status_t sl_wisun_accept_on_socket(sl_wisun_socket_id_t socket_id,
+     84                                                sl_wisun_socket_id_t *remote_socket_id,
+     85                                                sl_wisun_ip_address_t *remote_address,
+     86                                                uint16_t *remote_port)
+     87          {
+   \                     sl_wisun_accept_on_socket: (+1)
+   \        0x0   0xE92D 0x43F8      PUSH     {R3-R9,LR}
+   \        0x4   0xB088             SUB      SP,SP,#+32
+   \        0x6   0x0004             MOVS     R4,R0
+   \        0x8   0x000D             MOVS     R5,R1
+   \        0xA   0x0016             MOVS     R6,R2
+   \        0xC   0x001F             MOVS     R7,R3
+     88            sockaddr_in6_t remote_addr;
+     89          
+     90            sl_status_t status = SL_STATUS_FAIL;
+   \        0xE   0xF05F 0x0801      MOVS     R8,#+1
+     91            socklen_t optlen = sizeof(sockaddr_in6_t);
+   \       0x12   0x201C             MOVS     R0,#+28
+   \       0x14   0x9000             STR      R0,[SP, #+0]
+     92          
+     93            int32_t socket_retval = accept(socket_id, (struct sockaddr *)&remote_addr, &optlen);
+   \       0x16   0x466A             MOV      R2,SP
+   \       0x18   0xA901             ADD      R1,SP,#+4
+   \       0x1A   0x0020             MOVS     R0,R4
+   \       0x1C   0x.... 0x....      BL       accept
+   \       0x20   0x4681             MOV      R9,R0
+     94            if (socket_retval != SOCKET_INVALID_ID) {
+   \       0x22   0xF119 0x0F01      CMN      R9,#+1
+   \       0x26   0xD00B             BEQ.N    ??sl_wisun_accept_on_socket_0
+     95              *remote_socket_id = socket_retval;
+   \       0x28   0xF8C5 0x9000      STR      R9,[R5, #+0]
+     96              *remote_address   = remote_addr.sin6_addr;
+   \       0x2C   0x0030             MOVS     R0,R6
+   \       0x2E   0xA903             ADD      R1,SP,#+12
+   \       0x30   0x2210             MOVS     R2,#+16
+   \       0x32   0x.... 0x....      BL       __aeabi_memcpy
+     97              *remote_port      = remote_addr.sin6_port;
+   \       0x36   0xF8BD 0x0006      LDRH     R0,[SP, #+6]
+   \       0x3A   0x8038             STRH     R0,[R7, #+0]
+     98              status            = SL_STATUS_OK;
+   \       0x3C   0x2000             MOVS     R0,#+0
+   \       0x3E   0x4680             MOV      R8,R0
+     99            }
+    100            return status;
+   \                     ??sl_wisun_accept_on_socket_0: (+1)
+   \       0x40   0x4640             MOV      R0,R8
+   \       0x42   0xB009             ADD      SP,SP,#+36
+   \       0x44   0xE8BD 0x83F0      POP      {R4-R9,PC}
+    101          }
+    102          
+
+   \                                 In section .text, align 2, keep-with-next
+    103          sl_status_t sl_wisun_connect_socket(sl_wisun_socket_id_t socket_id,
+    104                                              const sl_wisun_ip_address_t *remote_address,
+    105                                              uint16_t remote_port)
+    106          {
+   \                     sl_wisun_connect_socket: (+1)
+   \        0x0   0xE92D 0x47F8      PUSH     {R3-R10,LR}
+   \        0x4   0xB087             SUB      SP,SP,#+28
+   \        0x6   0x0007             MOVS     R7,R0
+   \        0x8   0x000C             MOVS     R4,R1
+   \        0xA   0x0015             MOVS     R5,R2
+    107            sockaddr_in6_t addr;
+    108            int32_t socket_retval = SOCKET_RETVAL_ERROR;
+   \        0xC   0xF05F 0x36FF      MOVS     R6,#+4294967295
+    109          
+    110            addr.sin6_family   = AF_INET6;
+   \       0x10   0x2000             MOVS     R0,#+0
+   \       0x12   0xF8AD 0x0000      STRH     R0,[SP, #+0]
+    111            addr.sin6_port     = remote_port;
+   \       0x16   0xF8AD 0x5002      STRH     R5,[SP, #+2]
+    112            addr.sin6_flowinfo = 0;
+   \       0x1A   0x2000             MOVS     R0,#+0
+   \       0x1C   0x9001             STR      R0,[SP, #+4]
+    113            addr.sin6_scope_id = 0;
+   \       0x1E   0x2000             MOVS     R0,#+0
+   \       0x20   0x9006             STR      R0,[SP, #+24]
+    114            memcpy(&addr.sin6_addr.address, &remote_address->address, IPV6_ADDR_SIZE);
+   \       0x22   0xF05F 0x0810      MOVS     R8,#+16
+   \       0x26   0x46A1             MOV      R9,R4
+   \       0x28   0xF10D 0x0A08      ADD      R10,SP,#+8
+   \       0x2C   0x4642             MOV      R2,R8
+   \       0x2E   0x4649             MOV      R1,R9
+   \       0x30   0x4650             MOV      R0,R10
+   \       0x32   0x.... 0x....      BL       __aeabi_memcpy
+    115          
+    116            socket_retval = connect(socket_id, (const struct sockaddr *)&addr, sizeof(sockaddr_in6_t));
+   \       0x36   0x221C             MOVS     R2,#+28
+   \       0x38   0x4669             MOV      R1,SP
+   \       0x3A   0x0038             MOVS     R0,R7
+   \       0x3C   0x.... 0x....      BL       connect
+    117            return CHECK_STATUS(socket_retval);
+   \       0x40   0xF110 0x0F01      CMN      R0,#+1
+   \       0x44   0xD101             BNE.N    ??sl_wisun_connect_socket_0
+   \       0x46   0x2001             MOVS     R0,#+1
+   \       0x48   0xE000             B.N      ??sl_wisun_connect_socket_1
+   \                     ??sl_wisun_connect_socket_0: (+1)
+   \       0x4A   0x2000             MOVS     R0,#+0
+   \                     ??sl_wisun_connect_socket_1: (+1)
+   \       0x4C   0xB008             ADD      SP,SP,#+32
+   \       0x4E   0xE8BD 0x87F0      POP      {R4-R10,PC}
+    118          }
+    119          
+
+   \                                 In section .text, align 2, keep-with-next
+    120          sl_status_t sl_wisun_bind_socket(sl_wisun_socket_id_t socket_id,
+    121                                           const sl_wisun_ip_address_t *local_address,
+    122                                           uint16_t local_port)
+    123          {
+   \                     sl_wisun_bind_socket: (+1)
+   \        0x0   0xE92D 0x47F8      PUSH     {R3-R10,LR}
+   \        0x4   0xB087             SUB      SP,SP,#+28
+   \        0x6   0x0007             MOVS     R7,R0
+   \        0x8   0x000C             MOVS     R4,R1
+   \        0xA   0x0015             MOVS     R5,R2
+    124            sockaddr_in6_t addr;
+    125            int32_t socket_retval = SOCKET_RETVAL_ERROR;
+   \        0xC   0xF05F 0x36FF      MOVS     R6,#+4294967295
+    126          
+    127            addr.sin6_family   = AF_INET6;
+   \       0x10   0x2000             MOVS     R0,#+0
+   \       0x12   0xF8AD 0x0000      STRH     R0,[SP, #+0]
+    128            addr.sin6_flowinfo = 0;
+   \       0x16   0x2000             MOVS     R0,#+0
+   \       0x18   0x9001             STR      R0,[SP, #+4]
+    129            addr.sin6_port     = local_port;
+   \       0x1A   0xF8AD 0x5002      STRH     R5,[SP, #+2]
+    130            addr.sin6_scope_id = 0;
+   \       0x1E   0x2000             MOVS     R0,#+0
+   \       0x20   0x9006             STR      R0,[SP, #+24]
+    131            memcpy(&addr.sin6_addr.address, &local_address->address, IPV6_ADDR_SIZE);
+   \       0x22   0xF05F 0x0810      MOVS     R8,#+16
+   \       0x26   0x46A1             MOV      R9,R4
+   \       0x28   0xF10D 0x0A08      ADD      R10,SP,#+8
+   \       0x2C   0x4642             MOV      R2,R8
+   \       0x2E   0x4649             MOV      R1,R9
+   \       0x30   0x4650             MOV      R0,R10
+   \       0x32   0x.... 0x....      BL       __aeabi_memcpy
+    132          
+    133            socket_retval = bind(socket_id, (const struct sockaddr *)&addr, sizeof(sockaddr_in6_t));
+   \       0x36   0x221C             MOVS     R2,#+28
+   \       0x38   0x4669             MOV      R1,SP
+   \       0x3A   0x0038             MOVS     R0,R7
+   \       0x3C   0x.... 0x....      BL       bind
+    134            return CHECK_STATUS(socket_retval);
+   \       0x40   0xF110 0x0F01      CMN      R0,#+1
+   \       0x44   0xD101             BNE.N    ??sl_wisun_bind_socket_0
+   \       0x46   0x2001             MOVS     R0,#+1
+   \       0x48   0xE000             B.N      ??sl_wisun_bind_socket_1
+   \                     ??sl_wisun_bind_socket_0: (+1)
+   \       0x4A   0x2000             MOVS     R0,#+0
+   \                     ??sl_wisun_bind_socket_1: (+1)
+   \       0x4C   0xB008             ADD      SP,SP,#+32
+   \       0x4E   0xE8BD 0x87F0      POP      {R4-R10,PC}
+    135          }
+    136          
+
+   \                                 In section .text, align 2, keep-with-next
+    137          sl_status_t sl_wisun_send_on_socket(sl_wisun_socket_id_t socket_id,
+    138                                              uint16_t data_length,
+    139                                              const uint8_t *data)
+    140          {
+   \                     sl_wisun_send_on_socket: (+1)
+   \        0x0   0xB570             PUSH     {R4-R6,LR}
+   \        0x2   0x0006             MOVS     R6,R0
+   \        0x4   0x000C             MOVS     R4,R1
+   \        0x6   0x0015             MOVS     R5,R2
+    141            int32_t socket_retval = send(socket_id, (const void *)data, data_length, 0);
+   \        0x8   0x2300             MOVS     R3,#+0
+   \        0xA   0x0022             MOVS     R2,R4
+   \        0xC   0xB292             UXTH     R2,R2
+   \        0xE   0x0029             MOVS     R1,R5
+   \       0x10   0x0030             MOVS     R0,R6
+   \       0x12   0x.... 0x....      BL       send
+    142            return CHECK_STATUS(socket_retval);
+   \       0x16   0xF110 0x0F01      CMN      R0,#+1
+   \       0x1A   0xD101             BNE.N    ??sl_wisun_send_on_socket_0
+   \       0x1C   0x2001             MOVS     R0,#+1
+   \       0x1E   0xE000             B.N      ??sl_wisun_send_on_socket_1
+   \                     ??sl_wisun_send_on_socket_0: (+1)
+   \       0x20   0x2000             MOVS     R0,#+0
+   \                     ??sl_wisun_send_on_socket_1: (+1)
+   \       0x22   0xBD70             POP      {R4-R6,PC}
+    143          }
+    144          
+
+   \                                 In section .text, align 2, keep-with-next
+    145          sl_status_t sl_wisun_receive_on_socket(sl_wisun_socket_id_t socket_id,
+    146                                                 sl_wisun_ip_address_t *remote_address,
+    147                                                 uint16_t *remote_port,
+    148                                                 uint16_t *data_length,
+    149                                                 uint8_t *data)
+    150          {
+   \                     sl_wisun_receive_on_socket: (+1)
+   \        0x0   0xE92D 0x4FF1      PUSH     {R0,R4-R11,LR}
+   \        0x4   0xB08C             SUB      SP,SP,#+48
+   \        0x6   0x000C             MOVS     R4,R1
+   \        0x8   0x4691             MOV      R9,R2
+   \        0xA   0x001D             MOVS     R5,R3
+   \        0xC   0x9E16             LDR      R6,[SP, #+88]
+    151            sockaddr_in6_t addr;
+    152            sockaddr_in6_t *addr_ptr;
+    153          
+    154            socklen_t addrlen     = sizeof(sockaddr_in6_t);
+   \        0xE   0x201C             MOVS     R0,#+28
+   \       0x10   0x9002             STR      R0,[SP, #+8]
+    155            sl_status_t status    = SL_STATUS_FAIL;
+   \       0x12   0x2701             MOVS     R7,#+1
+    156            int32_t socket_retval = SOCKET_RETVAL_ERROR;
+   \       0x14   0xF05F 0x30FF      MOVS     R0,#+4294967295
+   \       0x18   0x9003             STR      R0,[SP, #+12]
+    157          
+    158            if (remote_address) {
+   \       0x1A   0x2C00             CMP      R4,#+0
+   \       0x1C   0xD017             BEQ.N    ??sl_wisun_receive_on_socket_0
+    159              addr_ptr           = &addr;
+   \       0x1E   0xF10D 0x0810      ADD      R8,SP,#+16
+    160              addr.sin6_family   = AF_INET6;
+   \       0x22   0x2000             MOVS     R0,#+0
+   \       0x24   0xF8AD 0x0010      STRH     R0,[SP, #+16]
+    161              addr.sin6_port     = *remote_port;
+   \       0x28   0xF8B9 0x0000      LDRH     R0,[R9, #+0]
+   \       0x2C   0xF8AD 0x0012      STRH     R0,[SP, #+18]
+    162              addr.sin6_flowinfo = 0;
+   \       0x30   0x2000             MOVS     R0,#+0
+   \       0x32   0x9005             STR      R0,[SP, #+20]
+    163              addr.sin6_scope_id = 0;
+   \       0x34   0x2000             MOVS     R0,#+0
+   \       0x36   0x900A             STR      R0,[SP, #+40]
+    164              memcpy(&addr.sin6_addr.address, &remote_address->address, IPV6_ADDR_SIZE);
+   \       0x38   0xF05F 0x0A10      MOVS     R10,#+16
+   \       0x3C   0x9400             STR      R4,[SP, #+0]
+   \       0x3E   0xF10D 0x0B18      ADD      R11,SP,#+24
+   \       0x42   0x4652             MOV      R2,R10
+   \       0x44   0x9900             LDR      R1,[SP, #+0]
+   \       0x46   0x4658             MOV      R0,R11
+   \       0x48   0x.... 0x....      BL       __aeabi_memcpy
+    165            } else {
+   \       0x4C   0xE001             B.N      ??sl_wisun_receive_on_socket_1
+    166              addr_ptr = NULL;
+   \                     ??sl_wisun_receive_on_socket_0: (+1)
+   \       0x4E   0xF05F 0x0800      MOVS     R8,#+0
+    167            }
+    168          
+    169            socket_retval = recvfrom(socket_id,
+    170                                     (void *)data,
+    171                                     *(uint32_t *) data_length,
+    172                                     0,
+    173                                     (struct sockaddr *) addr_ptr,
+    174                                     &addrlen);
+   \                     ??sl_wisun_receive_on_socket_1: (+1)
+   \       0x52   0xA802             ADD      R0,SP,#+8
+   \       0x54   0x9001             STR      R0,[SP, #+4]
+   \       0x56   0xF8CD 0x8000      STR      R8,[SP, #+0]
+   \       0x5A   0x2300             MOVS     R3,#+0
+   \       0x5C   0x682A             LDR      R2,[R5, #+0]
+   \       0x5E   0x0031             MOVS     R1,R6
+   \       0x60   0x980C             LDR      R0,[SP, #+48]
+   \       0x62   0x.... 0x....      BL       recvfrom
+   \       0x66   0x4682             MOV      R10,R0
+    175          
+    176            if (socket_retval != SOCKET_RETVAL_ERROR) {
+   \       0x68   0xF11A 0x0F01      CMN      R10,#+1
+   \       0x6C   0xD00A             BEQ.N    ??sl_wisun_receive_on_socket_2
+    177              *remote_address = addr.sin6_addr;
+   \       0x6E   0x0020             MOVS     R0,R4
+   \       0x70   0xA906             ADD      R1,SP,#+24
+   \       0x72   0x2210             MOVS     R2,#+16
+   \       0x74   0x.... 0x....      BL       __aeabi_memcpy
+    178              *remote_port    = addr.sin6_port;
+   \       0x78   0xF8BD 0x0012      LDRH     R0,[SP, #+18]
+   \       0x7C   0xF8A9 0x0000      STRH     R0,[R9, #+0]
+    179              status          = SL_STATUS_OK;
+   \       0x80   0x2000             MOVS     R0,#+0
+   \       0x82   0x0007             MOVS     R7,R0
+    180            }
+    181            return status;
+   \                     ??sl_wisun_receive_on_socket_2: (+1)
+   \       0x84   0x0038             MOVS     R0,R7
+   \       0x86   0xB00D             ADD      SP,SP,#+52
+   \       0x88   0xE8BD 0x8FF0      POP      {R4-R11,PC}
+    182          }
+    183          
+
+   \                                 In section .text, align 2, keep-with-next
+    184          sl_status_t sl_wisun_set_socket_option(sl_wisun_socket_id_t socket_id,
+    185                                                 sl_wisun_socket_option_t option,
+    186                                                 const sl_wisun_socket_option_data_t *option_data)
+    187          {
+   \                     sl_wisun_set_socket_option: (+1)
+   \        0x0   0xE92D 0x47F0      PUSH     {R4-R10,LR}
+   \        0x4   0xB086             SUB      SP,SP,#+24
+   \        0x6   0x0006             MOVS     R6,R0
+   \        0x8   0x000C             MOVS     R4,R1
+   \        0xA   0x0015             MOVS     R5,R2
+    188            int32_t socket_retval;
+    189            int32_t level;
+    190            int32_t optname;
+    191            const void *optval;
+    192            socklen_t optlen;
+    193            sl_wisun_socket_option_data_t sockopt_data;
+    194          
+    195            switch (option) {
+   \        0xC   0x0020             MOVS     R0,R4
+   \        0xE   0xB2C0             UXTB     R0,R0
+   \       0x10   0x2800             CMP      R0,#+0
+   \       0x12   0xD008             BEQ.N    ??sl_wisun_set_socket_option_0
+   \       0x14   0x2802             CMP      R0,#+2
+   \       0x16   0xD028             BEQ.N    ??sl_wisun_set_socket_option_1
+   \       0x18   0xD30F             BCC.N    ??sl_wisun_set_socket_option_2
+   \       0x1A   0x2804             CMP      R0,#+4
+   \       0x1C   0xD039             BEQ.N    ??sl_wisun_set_socket_option_3
+   \       0x1E   0xD32E             BCC.N    ??sl_wisun_set_socket_option_4
+   \       0x20   0x2805             CMP      R0,#+5
+   \       0x22   0xD041             BEQ.N    ??sl_wisun_set_socket_option_5
+   \       0x24   0xE04B             B.N      ??sl_wisun_set_socket_option_6
+    196              case SL_WISUN_SOCKET_OPTION_EVENT_MODE:
+    197                sockopt_data.value = option_data->event_mode.mode;
+   \                     ??sl_wisun_set_socket_option_0: (+1)
+   \       0x26   0x6828             LDR      R0,[R5, #+0]
+   \       0x28   0x9001             STR      R0,[SP, #+4]
+    198                level   = APP_LEVEL_SOCKET;
+   \       0x2A   0xF05F 0x0A01      MOVS     R10,#+1
+    199                optname = SOCKET_EVENT_MODE;
+   \       0x2E   0x270A             MOVS     R7,#+10
+    200                optval = &sockopt_data.value;
+                                ^
+Warning[Pa039]: use of address of unaligned structure member
+   \       0x30   0xF10D 0x0804      ADD      R8,SP,#+4
+    201                optlen = sizeof(uint32_t);
+   \       0x34   0xF05F 0x0904      MOVS     R9,#+4
+    202                break;
+   \       0x38   0xE043             B.N      ??sl_wisun_set_socket_option_7
+    203              case SL_WISUN_SOCKET_OPTION_MULTICAST_GROUP:
+    204                switch (option_data->multicast_group.action) {
+   \                     ??sl_wisun_set_socket_option_2: (+1)
+   \       0x3A   0x6828             LDR      R0,[R5, #+0]
+   \       0x3C   0x2800             CMP      R0,#+0
+   \       0x3E   0xD002             BEQ.N    ??sl_wisun_set_socket_option_8
+   \       0x40   0x2801             CMP      R0,#+1
+   \       0x42   0xD002             BEQ.N    ??sl_wisun_set_socket_option_9
+   \       0x44   0xE003             B.N      ??sl_wisun_set_socket_option_10
+    205                  case SL_WISUN_MULTICAST_GROUP_ACTION_JOIN:
+    206                    optname = IPV6_JOIN_GROUP;
+   \                     ??sl_wisun_set_socket_option_8: (+1)
+   \       0x46   0x270F             MOVS     R7,#+15
+    207                    break;
+   \       0x48   0xE003             B.N      ??sl_wisun_set_socket_option_11
+    208                  case SL_WISUN_SOCKET_EVENT_MODE_POLLING:
+    209                    optname = IPV6_LEAVE_GROUP;
+   \                     ??sl_wisun_set_socket_option_9: (+1)
+   \       0x4A   0x2710             MOVS     R7,#+16
+    210                    break;
+   \       0x4C   0xE001             B.N      ??sl_wisun_set_socket_option_11
+    211                  default:
+    212                    // Unknown action
+    213                    return SL_STATUS_INVALID_TYPE;
+   \                     ??sl_wisun_set_socket_option_10: (+1)
+   \       0x4E   0x2026             MOVS     R0,#+38
+   \       0x50   0xE045             B.N      ??sl_wisun_set_socket_option_12
+    214                    break;
+    215                }
+    216                sockopt_data.ipv6_address = option_data->multicast_group.address;
+   \                     ??sl_wisun_set_socket_option_11: (+1)
+   \       0x52   0xA801             ADD      R0,SP,#+4
+   \       0x54   0x1D29             ADDS     R1,R5,#+4
+   \       0x56   0x2210             MOVS     R2,#+16
+   \       0x58   0x.... 0x....      BL       __aeabi_memcpy
+    217                level = IPPROTO_IPV6;
+   \       0x5C   0xF05F 0x0A29      MOVS     R10,#+41
+    218                optval  = (const void *) &sockopt_data.ipv6_address;
+   \       0x60   0xF10D 0x0804      ADD      R8,SP,#+4
+    219                optlen  = sizeof(sl_wisun_ip_address_t);
+   \       0x64   0xF05F 0x0910      MOVS     R9,#+16
+    220                break;
+   \       0x68   0xE02B             B.N      ??sl_wisun_set_socket_option_7
+    221              case SL_WISUN_SOCKET_OPTION_SEND_BUFFER_LIMIT:
+    222                sockopt_data.value = option_data->send_buffer_limit.limit;
+   \                     ??sl_wisun_set_socket_option_1: (+1)
+   \       0x6A   0x6828             LDR      R0,[R5, #+0]
+   \       0x6C   0x9001             STR      R0,[SP, #+4]
+    223                level   = SOL_SOCKET;
+   \       0x6E   0xF05F 0x0A00      MOVS     R10,#+0
+    224                optname = SO_SNDBUF;
+   \       0x72   0x2702             MOVS     R7,#+2
+    225                optval  = (const void *) &sockopt_data.value;
+                                                ^
+Warning[Pa039]: use of address of unaligned structure member
+   \       0x74   0xF10D 0x0804      ADD      R8,SP,#+4
+    226                optlen  = sizeof(int32_t);
+   \       0x78   0xF05F 0x0904      MOVS     R9,#+4
+    227                break;
+   \       0x7C   0xE021             B.N      ??sl_wisun_set_socket_option_7
+    228              case SL_WISUN_SOCKET_OPTION_EDFE_MODE:
+    229                sockopt_data.value = option_data->edfe_mode.mode;
+   \                     ??sl_wisun_set_socket_option_4: (+1)
+   \       0x7E   0x6828             LDR      R0,[R5, #+0]
+   \       0x80   0x9001             STR      R0,[SP, #+4]
+    230                level   = IPPROTO_IPV6;
+   \       0x82   0xF05F 0x0A29      MOVS     R10,#+41
+    231                optname = SOCKET_EDFE_MODE;
+   \       0x86   0x27FB             MOVS     R7,#+251
+    232                optval  = (const void *) &sockopt_data.value;
+                                                ^
+Warning[Pa039]: use of address of unaligned structure member
+   \       0x88   0xF10D 0x0804      ADD      R8,SP,#+4
+    233                optlen  = sizeof(uint32_t);
+   \       0x8C   0xF05F 0x0904      MOVS     R9,#+4
+    234                break;
+   \       0x90   0xE017             B.N      ??sl_wisun_set_socket_option_7
+    235              case SL_WISUN_SOCKET_OPTION_UNICAST_HOP_LIMIT:
+    236                sockopt_data.value = option_data->unicast_hop_limit.hop_limit;
+   \                     ??sl_wisun_set_socket_option_3: (+1)
+   \       0x92   0xF9B5 0x0000      LDRSH    R0,[R5, #+0]
+   \       0x96   0x9001             STR      R0,[SP, #+4]
+    237                level   = IPPROTO_IPV6;
+   \       0x98   0xF05F 0x0A29      MOVS     R10,#+41
+    238                optname = IPV6_UNICAST_HOPS;
+   \       0x9C   0x2702             MOVS     R7,#+2
+    239                optval  = (const void *) &sockopt_data.value;
+                                                ^
+Warning[Pa039]: use of address of unaligned structure member
+   \       0x9E   0xF10D 0x0804      ADD      R8,SP,#+4
+    240                optlen  = sizeof(int16_t);
+   \       0xA2   0xF05F 0x0902      MOVS     R9,#+2
+    241                break;
+   \       0xA6   0xE00C             B.N      ??sl_wisun_set_socket_option_7
+    242              case SL_WISUN_SOCKET_OPTION_MULTICAST_HOP_LIMIT:
+    243                sockopt_data.value = option_data->unicast_hop_limit.hop_limit;
+   \                     ??sl_wisun_set_socket_option_5: (+1)
+   \       0xA8   0xF9B5 0x0000      LDRSH    R0,[R5, #+0]
+   \       0xAC   0x9001             STR      R0,[SP, #+4]
+    244                level   = IPPROTO_IPV6;
+   \       0xAE   0xF05F 0x0A29      MOVS     R10,#+41
+    245                optname = IPV6_UNICAST_HOPS;
+   \       0xB2   0x2702             MOVS     R7,#+2
+    246                optval  = (const void *) &sockopt_data.value;
+                                                ^
+Warning[Pa039]: use of address of unaligned structure member
+   \       0xB4   0xF10D 0x0804      ADD      R8,SP,#+4
+    247                optlen  = sizeof(int16_t);
+   \       0xB8   0xF05F 0x0902      MOVS     R9,#+2
+    248                break;
+   \       0xBC   0xE001             B.N      ??sl_wisun_set_socket_option_7
+    249              default:
+    250                return SL_STATUS_INVALID_TYPE;
+   \                     ??sl_wisun_set_socket_option_6: (+1)
+   \       0xBE   0x2026             MOVS     R0,#+38
+   \       0xC0   0xE00D             B.N      ??sl_wisun_set_socket_option_12
+    251                break;
+    252            }
+    253            socket_retval = setsockopt(socket_id, level, optname, optval, optlen);
+   \                     ??sl_wisun_set_socket_option_7: (+1)
+   \       0xC2   0xF8CD 0x9000      STR      R9,[SP, #+0]
+   \       0xC6   0x4643             MOV      R3,R8
+   \       0xC8   0x003A             MOVS     R2,R7
+   \       0xCA   0x4651             MOV      R1,R10
+   \       0xCC   0x0030             MOVS     R0,R6
+   \       0xCE   0x.... 0x....      BL       setsockopt
+    254          
+    255            return CHECK_STATUS(socket_retval);
+   \       0xD2   0xF110 0x0F01      CMN      R0,#+1
+   \       0xD6   0xD101             BNE.N    ??sl_wisun_set_socket_option_13
+   \       0xD8   0x2001             MOVS     R0,#+1
+   \       0xDA   0xE000             B.N      ??sl_wisun_set_socket_option_14
+   \                     ??sl_wisun_set_socket_option_13: (+1)
+   \       0xDC   0x2000             MOVS     R0,#+0
+   \                     ??sl_wisun_set_socket_option_14: (+1)
+   \                     ??sl_wisun_set_socket_option_12: (+1)
+   \       0xDE   0xB006             ADD      SP,SP,#+24
+   \       0xE0   0xE8BD 0x87F0      POP      {R4-R10,PC}
+    256          }
+    257          
+
+   \                                 In section .text, align 2, keep-with-next
+    258          sl_status_t sl_wisun_get_socket_option(sl_wisun_socket_id_t socket_id,
+    259                                                 sl_wisun_socket_option_t option,
+    260                                                 sl_wisun_socket_option_data_t *option_data)
+    261          {
+   \                     sl_wisun_get_socket_option: (+1)
+   \        0x0   0xE92D 0x4FF0      PUSH     {R4-R11,LR}
+   \        0x4   0xB087             SUB      SP,SP,#+28
+   \        0x6   0x4683             MOV      R11,R0
+   \        0x8   0x000C             MOVS     R4,R1
+   \        0xA   0x0015             MOVS     R5,R2
+    262            int32_t socket_retval;
+    263            int32_t level;
+    264            int32_t optname;
+    265            void *optval;
+    266            socklen_t optlen;
+    267            sl_wisun_socket_option_data_t sockopt_data;
+    268          
+    269            sl_status_t status = SL_STATUS_INVALID_TYPE;
+   \        0xC   0xF05F 0x0A26      MOVS     R10,#+38
+    270          
+    271            if (option == SL_WISUN_SOCKET_OPTION_SEND_BUFFER_LIMIT) {
+   \       0x10   0x0020             MOVS     R0,R4
+   \       0x12   0xB2C0             UXTB     R0,R0
+   \       0x14   0x2802             CMP      R0,#+2
+   \       0x16   0xD11C             BNE.N    ??sl_wisun_get_socket_option_0
+    272              level   = SOL_SOCKET;
+   \       0x18   0x2000             MOVS     R0,#+0
+   \       0x1A   0x0007             MOVS     R7,R0
+    273              optname = SO_SNDBUF;
+   \       0x1C   0x2002             MOVS     R0,#+2
+   \       0x1E   0x4680             MOV      R8,R0
+    274              sockopt_data.value = 0;
+   \       0x20   0x2000             MOVS     R0,#+0
+   \       0x22   0x9002             STR      R0,[SP, #+8]
+    275              optval  = (void *) &sockopt_data.value;
+                                        ^
+Warning[Pa039]: use of address of unaligned structure member
+   \       0x24   0xA802             ADD      R0,SP,#+8
+   \       0x26   0x4681             MOV      R9,R0
+    276              optlen  = sizeof(uint32_t);
+   \       0x28   0x2004             MOVS     R0,#+4
+   \       0x2A   0x9001             STR      R0,[SP, #+4]
+    277          
+    278              socket_retval = getsockopt(socket_id, level, optname, optval, &optlen);
+   \       0x2C   0xA801             ADD      R0,SP,#+4
+   \       0x2E   0x9000             STR      R0,[SP, #+0]
+   \       0x30   0x464B             MOV      R3,R9
+   \       0x32   0x4642             MOV      R2,R8
+   \       0x34   0x0039             MOVS     R1,R7
+   \       0x36   0x4658             MOV      R0,R11
+   \       0x38   0x.... 0x....      BL       getsockopt
+   \       0x3C   0x0006             MOVS     R6,R0
+    279              if (socket_retval != SOCKET_RETVAL_ERROR) {
+   \       0x3E   0xF116 0x0F01      CMN      R6,#+1
+   \       0x42   0xD004             BEQ.N    ??sl_wisun_get_socket_option_1
+    280                option_data->send_buffer_limit.limit = sockopt_data.value;
+   \       0x44   0x9802             LDR      R0,[SP, #+8]
+   \       0x46   0x6028             STR      R0,[R5, #+0]
+    281                status = SL_STATUS_OK;
+   \       0x48   0x2000             MOVS     R0,#+0
+   \       0x4A   0x4682             MOV      R10,R0
+   \       0x4C   0xE001             B.N      ??sl_wisun_get_socket_option_0
+    282              } else {
+    283                status = SL_STATUS_FAIL;
+   \                     ??sl_wisun_get_socket_option_1: (+1)
+   \       0x4E   0x2001             MOVS     R0,#+1
+   \       0x50   0x4682             MOV      R10,R0
+    284              }
+    285            }
+    286            return status;
+   \                     ??sl_wisun_get_socket_option_0: (+1)
+   \       0x52   0x4650             MOV      R0,R10
+   \       0x54   0xB007             ADD      SP,SP,#+28
+   \       0x56   0xE8BD 0x8FF0      POP      {R4-R11,PC}
+    287          }
+
+   Maximum stack usage in bytes:
+
+   .cstack Function
+   ------- --------
+      64   sl_wisun_accept_on_socket
+        64   -> __aeabi_memcpy
+        64   -> accept
+      64   sl_wisun_bind_socket
+        64   -> __aeabi_memcpy
+        64   -> bind
+       8   sl_wisun_close_socket
+         8   -> sl_close
+      64   sl_wisun_connect_socket
+        64   -> __aeabi_memcpy
+        64   -> connect
+      64   sl_wisun_get_socket_option
+        64   -> getsockopt
+       8   sl_wisun_listen_on_socket
+         8   -> listen
+      24   sl_wisun_open_socket
+        24   -> socket
+      88   sl_wisun_receive_on_socket
+        88   -> __aeabi_memcpy
+        88   -> recvfrom
+      16   sl_wisun_send_on_socket
+        16   -> send
+      80   sl_wisun_sendto_on_socket
+        80   -> __aeabi_memcpy
+        80   -> sendto
+      56   sl_wisun_set_socket_option
+        56   -> __aeabi_memcpy
+        56   -> setsockopt
+
+
+   Section sizes:
+
+   Bytes  Function/Label
+   -----  --------------
+      72  sl_wisun_accept_on_socket
+      82  sl_wisun_bind_socket
+      22  sl_wisun_close_socket
+      82  sl_wisun_connect_socket
+      90  sl_wisun_get_socket_option
+      26  sl_wisun_listen_on_socket
+      84  sl_wisun_open_socket
+     140  sl_wisun_receive_on_socket
+      36  sl_wisun_send_on_socket
+      98  sl_wisun_sendto_on_socket
+     228  sl_wisun_set_socket_option
+
+ 
+ 960 bytes in section .text
+ 
+ 960 bytes of CODE memory
+
+Errors: none
+Warnings: 6

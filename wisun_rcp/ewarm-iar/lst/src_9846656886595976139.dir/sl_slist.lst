@@ -1,0 +1,569 @@
+###############################################################################
+#
+# IAR ANSI C/C++ Compiler V9.50.2.385/W64 for ARM         27/Nov/2024  12:17:50
+# Copyright 1999-2024 IAR Systems AB.
+#
+#    Cpu mode                     =  thumb
+#    Endian                       =  little
+#    Source file                  =
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\common\src\sl_slist.c
+#    Command line                 =
+#        -f
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\ewarm-iar\obj\src_9846656886595976139.dir\sl_slist.o.rsp
+#        (C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\common\src\sl_slist.c
+#        -D EFR32FG28B322F1024IM48=1 -D
+#        configNUM_SDK_THREAD_LOCAL_STORAGE_POINTERS=2 -D
+#        SL_COMPONENT_CATALOG_PRESENT=1 -D
+#        MBEDTLS_CONFIG_FILE=<sl_mbedtls_config.h> -D
+#        MBEDTLS_PSA_CRYPTO_CONFIG_FILE=<psa_crypto_config.h> -D
+#        SL_RAIL_LIB_MULTIPROTOCOL_SUPPORT=0 -D
+#        SL_RAIL_UTIL_PA_CONFIG_HEADER=<sl_rail_util_pa_config.h> -D
+#        RTT_USE_ASM=0 -D MBED_CONF_MBED_TRACE_ENABLE=1 -D
+#        MBED_CONF_NANOSTACK_CONFIGURATION=ws_router -D
+#        MBED_TRACE_MAX_LEVEL=TRACE_ACTIVE_LEVEL_ALL -D DEBUG_EFM_USER=1 -D
+#        HAVE_LFN=1 -D HAVE_LFN_PARENT=1 -lC
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\ewarm-iar\lst\src_9846656886595976139.dir
+#        --diag_suppress Pa050 -o
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\ewarm-iar\obj\src_9846656886595976139.dir
+#        --debug --endian=little --cpu=Cortex-M33 --cmse --cmse -e
+#        --fpu=VFPv5_sp --dlib_config "C:\Program Files\IAR Systems\Embedded
+#        Workbench 9.2\arm\inc\c\DLib_Config_Normal.h" -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\common\src\
+#        -I C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\autogen\ -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\config\ -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\config\rail\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\Device\SiliconLabs\EFR32FG28\Include\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\common\inc\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\CMSIS\Core\Include\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\CMSIS\RTOS2\Include\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\service\device_init\inc\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\emdrv\dmadrv\inc\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\emdrv\common\inc\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\emlib\inc\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\util\third_party\freertos\cmsis\Include\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\util\third_party\freertos\kernel\include\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\util\third_party\freertos\kernel\portable\IAR\ARM_CM33_NTZ\non_secure\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\service\iostream\inc\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\security\sl_component\sl_mbedtls_support\config\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\security\sl_component\sl_mbedtls_support\config\preset\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\security\sl_component\sl_mbedtls_support\inc\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\util\third_party\mbedtls\include\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\util\third_party\mbedtls\library\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\emdrv\nvm3\inc\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\peripheral\inc\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\security\sl_component\sl_psa_driver\inc\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\radio\rail_lib\common\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\radio\rail_lib\protocol\ble\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\radio\rail_lib\protocol\ieee802154\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\radio\rail_lib\protocol\wmbus\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\radio\rail_lib\protocol\zwave\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\radio\rail_lib\chip\efr32\efr32xg2x\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\radio\rail_lib\protocol\sidewalk\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\radio\rail_lib\plugin\pa-conversions\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\radio\rail_lib\plugin\pa-conversions\efr32xg28\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\radio\rail_lib\plugin\rail_util_pti\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\security\sl_component\se_manager\inc\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\security\sl_component\se_manager\src\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\util\third_party\segger\systemview\SEGGER\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\util\silicon_labs\silabs_core\memory_manager\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\common\toolchain\inc\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\service\system\inc\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\app\wisun\component\ns_list\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\app\wisun\component\trace_util\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\app\wisun\component\trace_util\nanostack\nanostack-libservice\mbed-client-libservice\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\service\sleeptimer\inc\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\protocol\wisun\stack\inc\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\protocol\wisun\app\wisun_rcp\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\protocol\wisun\stack\inc\socket\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\protocol\wisun\stack\src\
+#        -Ohz --use_c++_inline) --dependencies=n
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\ewarm-iar\obj\src_9846656886595976139.dir\sl_slist.o.iar_deps
+#    Locale                       =  C
+#    List file                    =
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\ewarm-iar\lst\src_9846656886595976139.dir\sl_slist.lst
+#    Object file                  =
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\ewarm-iar\obj\src_9846656886595976139.dir\sl_slist.o
+#    Runtime model:                  
+#      __CPP_Runtime              =  1
+#      __SystemLibrary            =  DLib
+#      __dlib_full_locale_support =  0
+#      __dlib_version             =  6
+#
+###############################################################################
+
+C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\common\src\sl_slist.c
+      1          /***************************************************************************//**
+      2           * @file
+      3           * @brief Single Link List
+      4           *******************************************************************************
+      5           * # License
+      6           * <b>Copyright 2019 Silicon Laboratories Inc. www.silabs.com</b>
+      7           *******************************************************************************
+      8           *
+      9           * SPDX-License-Identifier: Zlib
+     10           *
+     11           * The licensor of this software is Silicon Laboratories Inc.
+     12           *
+     13           * This software is provided 'as-is', without any express or implied
+     14           * warranty. In no event will the authors be held liable for any damages
+     15           * arising from the use of this software.
+     16           *
+     17           * Permission is granted to anyone to use this software for any purpose,
+     18           * including commercial applications, and to alter it and redistribute it
+     19           * freely, subject to the following restrictions:
+     20           *
+     21           * 1. The origin of this software must not be misrepresented; you must not
+     22           *    claim that you wrote the original software. If you use this software
+     23           *    in a product, an acknowledgment in the product documentation would be
+     24           *    appreciated but is not required.
+     25           * 2. Altered source versions must be plainly marked as such, and must not be
+     26           *    misrepresented as being the original software.
+     27           * 3. This notice may not be removed or altered from any source distribution.
+     28           *
+     29           ******************************************************************************/
+     30          
+     31          #include "sl_assert.h"
+     32          #include "sl_slist.h"
+     33          #include <stdbool.h>
+     34          #include <stdlib.h>
+     35          #include <stdint.h>
+     36          
+     37          /*******************************************************************************
+     38           **************************   GLOBAL FUNCTIONS   *******************************
+     39           ******************************************************************************/
+     40          
+     41          /***************************************************************************//**
+     42           * Initializes a singly-linked list.
+     43           ******************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+     44          void sl_slist_init(sl_slist_node_t **head)
+     45          {
+     46            *head = 0;
+   \                     sl_slist_init: (+1)
+   \        0x0   0x2100             MOVS     R1,#+0
+   \        0x2   0x6001             STR      R1,[R0, #+0]
+     47          }
+   \        0x4   0x4770             BX       LR
+     48          
+     49          /***************************************************************************//**
+     50           * Add given item at beginning of list.
+     51           ******************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+     52          void sl_slist_push(sl_slist_node_t **head,
+     53                             sl_slist_node_t *item)
+     54          {
+   \                     sl_slist_push: (+1)
+   \        0x0   0xB538             PUSH     {R3-R5,LR}
+   \        0x2   0x4604             MOV      R4,R0
+   \        0x4   0x000D             MOVS     R5,R1
+     55            EFM_ASSERT((item != NULL) && (head != NULL));
+   \        0x6   0xBF18             IT       NE
+   \        0x8   0x2C00             CMPNE    R4,#+0
+   \        0xA   0xD102             BNE.N    ??CrossCallReturnLabel_4
+   \        0xC   0x2137             MOVS     R1,#+55
+   \        0xE   0x.... 0x....      BL       ?Subroutine0
+     56          
+     57            item->node = *head;
+   \                     ??CrossCallReturnLabel_4: (+1)
+   \       0x12   0x6821             LDR      R1,[R4, #+0]
+   \       0x14   0x6029             STR      R1,[R5, #+0]
+     58            *head = item;
+   \       0x16   0x6025             STR      R5,[R4, #+0]
+     59          }
+   \       0x18   0xBD31             POP      {R0,R4,R5,PC}
+
+   \                                 In section .text, align 2, keep-with-next
+   \                     ?Subroutine0: (+1)
+   \        0x0   0x....             LDR.N    R0,??DataTable2
+   \        0x2   0x.... 0x....      B.W      assertEFM
+     60          
+     61          /***************************************************************************//**
+     62           * Add item at end of list.
+     63           ******************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+     64          void sl_slist_push_back(sl_slist_node_t **head,
+     65                                  sl_slist_node_t *item)
+     66          {
+   \                     sl_slist_push_back: (+1)
+   \        0x0   0xB538             PUSH     {R3-R5,LR}
+   \        0x2   0x000C             MOVS     R4,R1
+     67            sl_slist_node_t **node_ptr = head;
+   \        0x4   0x4605             MOV      R5,R0
+     68          
+     69            EFM_ASSERT((item != NULL) && (head != NULL));
+   \        0x6   0xBF18             IT       NE
+   \        0x8   0x2800             CMPNE    R0,#+0
+   \        0xA   0xD104             BNE.N    ??sl_slist_push_back_0
+   \        0xC   0x2145             MOVS     R1,#+69
+   \        0xE   0x.... 0x....      BL       ?Subroutine0
+   \                     ??CrossCallReturnLabel_3: (+1)
+   \       0x12   0xE000             B.N      ??sl_slist_push_back_0
+     70          
+     71            while (*node_ptr != NULL) {
+     72              node_ptr = &((*node_ptr)->node);
+   \                     ??sl_slist_push_back_1: (+1)
+   \       0x14   0x4605             MOV      R5,R0
+     73            }
+   \                     ??sl_slist_push_back_0: (+1)
+   \       0x16   0x6828             LDR      R0,[R5, #+0]
+   \       0x18   0x2800             CMP      R0,#+0
+   \       0x1A   0xD1FB             BNE.N    ??sl_slist_push_back_1
+     74          
+     75            item->node = NULL;
+   \       0x1C   0x6020             STR      R0,[R4, #+0]
+     76            *node_ptr = item;
+   \       0x1E   0x602C             STR      R4,[R5, #+0]
+     77          }
+   \       0x20   0xBD31             POP      {R0,R4,R5,PC}
+     78          
+     79          /***************************************************************************//**
+     80           * Removes and returns first element of list.
+     81           ******************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+     82          sl_slist_node_t *sl_slist_pop(sl_slist_node_t **head)
+     83          {
+   \                     sl_slist_pop: (+1)
+   \        0x0   0xB510             PUSH     {R4,LR}
+   \        0x2   0x0004             MOVS     R4,R0
+     84            sl_slist_node_t *item;
+     85          
+     86            EFM_ASSERT(head != NULL);
+   \        0x4   0xD102             BNE.N    ??CrossCallReturnLabel_2
+   \        0x6   0x2156             MOVS     R1,#+86
+   \        0x8   0x.... 0x....      BL       ?Subroutine0
+     87          
+     88            item = *head;
+   \                     ??CrossCallReturnLabel_2: (+1)
+   \        0xC   0x6820             LDR      R0,[R4, #+0]
+     89            if (item == NULL) {
+   \        0xE   0xB118             CBZ.N    R0,??sl_slist_pop_0
+     90              return (NULL);
+     91            }
+     92          
+     93            *head = item->node;
+   \       0x10   0x6801             LDR      R1,[R0, #+0]
+     94          
+     95            item->node = NULL;
+   \       0x12   0x2200             MOVS     R2,#+0
+   \       0x14   0x6021             STR      R1,[R4, #+0]
+   \       0x16   0x6002             STR      R2,[R0, #+0]
+     96          
+     97            return (item);
+   \                     ??sl_slist_pop_0: (+1)
+   \       0x18   0xBD10             POP      {R4,PC}
+     98          }
+     99          
+    100          /***************************************************************************//**
+    101           * Insert item after given item.
+    102           ******************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+    103          void sl_slist_insert(sl_slist_node_t *item,
+    104                               sl_slist_node_t *pos)
+    105          {
+   \                     sl_slist_insert: (+1)
+   \        0x0   0xB538             PUSH     {R3-R5,LR}
+   \        0x2   0x0004             MOVS     R4,R0
+   \        0x4   0x460D             MOV      R5,R1
+    106            EFM_ASSERT((item != NULL) && (pos != NULL));
+   \        0x6   0xBF18             IT       NE
+   \        0x8   0x2D00             CMPNE    R5,#+0
+   \        0xA   0xD102             BNE.N    ??CrossCallReturnLabel_1
+   \        0xC   0x216A             MOVS     R1,#+106
+   \        0xE   0x.... 0x....      BL       ?Subroutine0
+    107          
+    108            item->node = pos->node;
+   \                     ??CrossCallReturnLabel_1: (+1)
+   \       0x12   0x6829             LDR      R1,[R5, #+0]
+   \       0x14   0x6021             STR      R1,[R4, #+0]
+    109            pos->node = item;
+   \       0x16   0x602C             STR      R4,[R5, #+0]
+    110          }
+   \       0x18   0xBD31             POP      {R0,R4,R5,PC}
+    111          
+    112          /***************************************************************************//**
+    113           * Remove item from list.
+    114           ******************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+    115          void sl_slist_remove(sl_slist_node_t **head,
+    116                               sl_slist_node_t *item)
+    117          {
+   \                     sl_slist_remove: (+1)
+   \        0x0   0xB570             PUSH     {R4-R6,LR}
+   \        0x2   0x4604             MOV      R4,R0
+   \        0x4   0x000D             MOVS     R5,R1
+    118            sl_slist_node_t **node_ptr;
+    119          
+    120            EFM_ASSERT((item != NULL) && (head != NULL));
+   \        0x6   0x....             LDR.N    R6,??DataTable2
+   \        0x8   0xBF18             IT       NE
+   \        0xA   0x2C00             CMPNE    R4,#+0
+   \        0xC   0xD105             BNE.N    ??sl_slist_remove_0
+   \        0xE   0x2178             MOVS     R1,#+120
+   \       0x10   0x4630             MOV      R0,R6
+   \       0x12   0x.... 0x....      BL       assertEFM
+    121          
+    122            for (node_ptr = head; *node_ptr != NULL; node_ptr = &((*node_ptr)->node)) {
+   \       0x16   0xE000             B.N      ??sl_slist_remove_0
+   \                     ??sl_slist_remove_1: (+1)
+   \       0x18   0x4604             MOV      R4,R0
+   \                     ??sl_slist_remove_0: (+1)
+   \       0x1A   0x6820             LDR      R0,[R4, #+0]
+   \       0x1C   0xB120             CBZ.N    R0,??sl_slist_remove_2
+    123              if (*node_ptr == item) {
+   \       0x1E   0x42A8             CMP      R0,R5
+   \       0x20   0xD1FA             BNE.N    ??sl_slist_remove_1
+    124                *node_ptr = item->node;
+   \       0x22   0x6828             LDR      R0,[R5, #+0]
+   \       0x24   0x6020             STR      R0,[R4, #+0]
+    125                return;
+   \       0x26   0xBD70             POP      {R4-R6,PC}
+    126              }
+    127            }
+    128          
+    129            EFM_ASSERT(node_ptr != NULL);
+   \                     ??sl_slist_remove_2: (+1)
+   \       0x28   0xB92C             CBNZ.N   R4,??sl_slist_remove_3
+   \       0x2A   0x4630             MOV      R0,R6
+   \       0x2C   0x2181             MOVS     R1,#+129
+   \       0x2E   0xE8BD 0x4070      POP      {R4-R6,LR}
+   \       0x32   0x.... 0x....      B.W      assertEFM
+    130          }
+   \                     ??sl_slist_remove_3: (+1)
+   \       0x36   0xBD70             POP      {R4-R6,PC}
+    131          
+    132          /***************************************************************************//**
+    133           * Sorts list items.
+    134           ******************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+    135          void sl_slist_sort(sl_slist_node_t **head,
+    136                             bool (*cmp_fnct)(sl_slist_node_t *item_l,
+    137                                              sl_slist_node_t *item_r))
+    138          {
+   \                     sl_slist_sort: (+1)
+   \        0x0   0xE92D 0x41F0      PUSH     {R4-R8,LR}
+   \        0x4   0x0005             MOVS     R5,R0
+   \        0x6   0x4688             MOV      R8,R1
+    139            bool  swapped;
+    140            sl_slist_node_t **pp_item_l;
+    141          
+    142            EFM_ASSERT((head != NULL) && (cmp_fnct != NULL));
+   \        0x8   0xBF18             IT       NE
+   \        0xA   0xEA5F 0x0008      MOVSNE   R0,R8
+   \        0xE   0xD102             BNE.N    ??CrossCallReturnLabel_0
+   \       0x10   0x218E             MOVS     R1,#+142
+   \       0x12   0x.... 0x....      BL       ?Subroutine0
+    143          
+    144            do {
+    145              swapped = false;
+   \                     ??CrossCallReturnLabel_0: (+1)
+   \       0x16   0x2600             MOVS     R6,#+0
+    146          
+    147              pp_item_l = head;
+   \       0x18   0x462F             MOV      R7,R5
+   \       0x1A   0xE007             B.N      ??sl_slist_sort_0
+    148              // Loop until end of list is found.
+    149              while ((*pp_item_l != NULL) && ((*pp_item_l)->node != NULL)) {
+    150                sl_slist_node_t *p_item_r = (*pp_item_l)->node;
+    151                bool  ordered;
+    152          
+    153                // Call provided compare fnct.
+    154                ordered = cmp_fnct(*pp_item_l, p_item_r);
+    155                if (ordered == false) {
+    156                  // If order is not correct, swap items.
+    157                  sl_slist_node_t *p_tmp = p_item_r->node;
+    158          
+    159                  // Swap the two items.
+    160                  p_item_r->node = *pp_item_l;
+   \                     ??sl_slist_sort_1: (+1)
+   \       0x1C   0x683A             LDR      R2,[R7, #+0]
+   \       0x1E   0x6820             LDR      R0,[R4, #+0]
+    161                  (*pp_item_l)->node = p_tmp;
+    162                  *pp_item_l = p_item_r;
+    163                  pp_item_l = &(p_item_r->node);
+    164                  // Indicate a swap has been done.
+    165                  swapped = true;
+   \       0x20   0x2601             MOVS     R6,#+1
+   \       0x22   0x6022             STR      R2,[R4, #+0]
+   \       0x24   0x6839             LDR      R1,[R7, #+0]
+   \       0x26   0x6008             STR      R0,[R1, #+0]
+   \       0x28   0x603C             STR      R4,[R7, #+0]
+   \       0x2A   0x4627             MOV      R7,R4
+    166                } else {
+   \                     ??sl_slist_sort_0: (+1)
+   \       0x2C   0x6838             LDR      R0,[R7, #+0]
+   \       0x2E   0xB138             CBZ.N    R0,??sl_slist_sort_2
+   \       0x30   0x6804             LDR      R4,[R0, #+0]
+   \       0x32   0xB12C             CBZ.N    R4,??sl_slist_sort_2
+   \       0x34   0x4621             MOV      R1,R4
+   \       0x36   0x47C0             BLX      R8
+   \       0x38   0x2800             CMP      R0,#+0
+   \       0x3A   0xD0EF             BEQ.N    ??sl_slist_sort_1
+    167                  pp_item_l = &((*pp_item_l)->node);
+   \       0x3C   0x683F             LDR      R7,[R7, #+0]
+   \       0x3E   0xE7F5             B.N      ??sl_slist_sort_0
+    168                }
+    169              }
+    170              // Re-loop until no items have been swapped.
+    171            } while (swapped == true);
+   \                     ??sl_slist_sort_2: (+1)
+   \       0x40   0x2E00             CMP      R6,#+0
+   \       0x42   0xD1E8             BNE.N    ??CrossCallReturnLabel_0
+    172          }
+   \       0x44   0xE8BD 0x81F0      POP      {R4-R8,PC}
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable2:
+   \        0x0   0x....'....        DC32     ?_0
+
+   \                                 In section .rodata, align 4
+   \                     ?_0:
+   \        0x0   0x43 0x3A          DC8 0x43, 0x3A, 0x5C, 0x55, 0x73, 0x65, 0x72, 0x73
+   \              0x5C 0x55    
+   \              0x73 0x65    
+   \              0x72 0x73
+   \        0x8   0x5C 0x44          DC8 0x5C, 0x44, 0x45, 0x4C, 0x4C, 0x5C, 0x53, 0x69
+   \              0x45 0x4C    
+   \              0x4C 0x5C    
+   \              0x53 0x69
+   \       0x10   0x6D 0x70          DC8 0x6D, 0x70, 0x6C, 0x69, 0x63, 0x69, 0x74, 0x79
+   \              0x6C 0x69    
+   \              0x63 0x69    
+   \              0x74 0x79
+   \       0x18   0x53 0x74          DC8 0x53, 0x74, 0x75, 0x64, 0x69, 0x6F, 0x5C, 0x76
+   \              0x75 0x64    
+   \              0x69 0x6F    
+   \              0x5C 0x76
+   \       0x20   0x35 0x5F          DC8 0x35, 0x5F, 0x77, 0x6F, 0x72, 0x6B, 0x73, 0x70
+   \              0x77 0x6F    
+   \              0x72 0x6B    
+   \              0x73 0x70
+   \       0x28   0x61 0x63          DC8 0x61, 0x63, 0x65, 0x5C, 0x77, 0x69, 0x73, 0x75
+   \              0x65 0x5C    
+   \              0x77 0x69    
+   \              0x73 0x75
+   \       0x30   0x6E 0x5F          DC8 0x6E, 0x5F, 0x72, 0x63, 0x70, 0x5F, 0x37, 0x5C
+   \              0x72 0x63    
+   \              0x70 0x5F    
+   \              0x37 0x5C
+   \       0x38   0x67 0x65          DC8 0x67, 0x65, 0x63, 0x6B, 0x6F, 0x5F, 0x73, 0x64
+   \              0x63 0x6B    
+   \              0x6F 0x5F    
+   \              0x73 0x64
+   \       0x40   0x6B 0x5F          DC8 0x6B, 0x5F, 0x34, 0x2E, 0x34, 0x2E, 0x33, 0x5C
+   \              0x34 0x2E    
+   \              0x34 0x2E    
+   \              0x33 0x5C
+   \       0x48   0x70 0x6C          DC8 0x70, 0x6C, 0x61, 0x74, 0x66, 0x6F, 0x72, 0x6D
+   \              0x61 0x74    
+   \              0x66 0x6F    
+   \              0x72 0x6D
+   \       0x50   0x5C 0x63          DC8 0x5C, 0x63, 0x6F, 0x6D, 0x6D, 0x6F, 0x6E, 0x5C
+   \              0x6F 0x6D    
+   \              0x6D 0x6F    
+   \              0x6E 0x5C
+   \       0x58   0x73 0x72          DC8 0x73, 0x72, 0x63, 0x5C, 0x73, 0x6C, 0x5F, 0x73
+   \              0x63 0x5C    
+   \              0x73 0x6C    
+   \              0x5F 0x73
+   \       0x60   0x6C 0x69          DC8 0x6C, 0x69, 0x73, 0x74, 0x2E, 0x63, 0
+   \              0x73 0x74    
+   \              0x2E 0x63    
+   \              0x00
+   \       0x67                      DS8 1
+
+   Maximum stack usage in bytes:
+
+   .cstack Function
+   ------- --------
+       0   sl_slist_init
+      16   sl_slist_insert
+        16   -> assertEFM
+       8   sl_slist_pop
+         8   -> assertEFM
+      16   sl_slist_push
+        16   -> assertEFM
+      16   sl_slist_push_back
+        16   -> assertEFM
+      16   sl_slist_remove
+         0   -> assertEFM
+        16   -> assertEFM
+      24   sl_slist_sort
+        24   -- Indirect call
+        24   -> assertEFM
+
+
+   Section sizes:
+
+   Bytes  Function/Label
+   -----  --------------
+       4  ??DataTable2
+       6  ?Subroutine0
+     104  ?_0
+       6  sl_slist_init
+      26  sl_slist_insert
+      26  sl_slist_pop
+      26  sl_slist_push
+      34  sl_slist_push_back
+      56  sl_slist_remove
+      72  sl_slist_sort
+
+ 
+ 104 bytes in section .rodata
+ 256 bytes in section .text
+ 
+ 256 bytes of CODE  memory
+ 104 bytes of CONST memory
+
+Errors: none
+Warnings: none

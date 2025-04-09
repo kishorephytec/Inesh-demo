@@ -1,0 +1,508 @@
+###############################################################################
+#
+# IAR ANSI C/C++ Compiler V9.50.2.385/W64 for ARM         27/Nov/2024  12:17:15
+# Copyright 1999-2024 IAR Systems AB.
+#
+#    Cpu mode          =  thumb
+#    Endian            =  little
+#    Source file       =
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\service\sleeptimer\src\sl_sleeptimer_hal_timer.c
+#    Command line      =
+#        -f
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\ewarm-iar\obj\src_8827520470567122158.dir\sl_sleeptimer_hal_timer.o.rsp
+#        (C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\service\sleeptimer\src\sl_sleeptimer_hal_timer.c
+#        -D EFR32FG28B322F1024IM48=1 -D
+#        configNUM_SDK_THREAD_LOCAL_STORAGE_POINTERS=2 -D
+#        SL_COMPONENT_CATALOG_PRESENT=1 -D
+#        MBEDTLS_CONFIG_FILE=<sl_mbedtls_config.h> -D
+#        MBEDTLS_PSA_CRYPTO_CONFIG_FILE=<psa_crypto_config.h> -D
+#        SL_RAIL_LIB_MULTIPROTOCOL_SUPPORT=0 -D
+#        SL_RAIL_UTIL_PA_CONFIG_HEADER=<sl_rail_util_pa_config.h> -D
+#        RTT_USE_ASM=0 -D MBED_CONF_MBED_TRACE_ENABLE=1 -D
+#        MBED_CONF_NANOSTACK_CONFIGURATION=ws_router -D
+#        MBED_TRACE_MAX_LEVEL=TRACE_ACTIVE_LEVEL_ALL -D DEBUG_EFM_USER=1 -D
+#        HAVE_LFN=1 -D HAVE_LFN_PARENT=1 -lC
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\ewarm-iar\lst\src_8827520470567122158.dir
+#        --diag_suppress Pa050 -o
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\ewarm-iar\obj\src_8827520470567122158.dir
+#        --debug --endian=little --cpu=Cortex-M33 --cmse --cmse -e
+#        --fpu=VFPv5_sp --dlib_config "C:\Program Files\IAR Systems\Embedded
+#        Workbench 9.2\arm\inc\c\DLib_Config_Normal.h" -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\service\sleeptimer\src\
+#        -I C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\autogen\ -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\config\ -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\config\rail\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\Device\SiliconLabs\EFR32FG28\Include\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\common\inc\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\CMSIS\Core\Include\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\CMSIS\RTOS2\Include\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\service\device_init\inc\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\emdrv\dmadrv\inc\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\emdrv\common\inc\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\emlib\inc\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\util\third_party\freertos\cmsis\Include\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\util\third_party\freertos\kernel\include\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\util\third_party\freertos\kernel\portable\IAR\ARM_CM33_NTZ\non_secure\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\service\iostream\inc\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\security\sl_component\sl_mbedtls_support\config\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\security\sl_component\sl_mbedtls_support\config\preset\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\security\sl_component\sl_mbedtls_support\inc\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\util\third_party\mbedtls\include\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\util\third_party\mbedtls\library\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\emdrv\nvm3\inc\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\peripheral\inc\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\security\sl_component\sl_psa_driver\inc\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\radio\rail_lib\common\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\radio\rail_lib\protocol\ble\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\radio\rail_lib\protocol\ieee802154\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\radio\rail_lib\protocol\wmbus\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\radio\rail_lib\protocol\zwave\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\radio\rail_lib\chip\efr32\efr32xg2x\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\radio\rail_lib\protocol\sidewalk\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\radio\rail_lib\plugin\pa-conversions\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\radio\rail_lib\plugin\pa-conversions\efr32xg28\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\radio\rail_lib\plugin\rail_util_pti\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\security\sl_component\se_manager\inc\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\security\sl_component\se_manager\src\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\util\third_party\segger\systemview\SEGGER\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\util\silicon_labs\silabs_core\memory_manager\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\common\toolchain\inc\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\service\system\inc\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\app\wisun\component\ns_list\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\app\wisun\component\trace_util\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\app\wisun\component\trace_util\nanostack\nanostack-libservice\mbed-client-libservice\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\service\sleeptimer\inc\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\protocol\wisun\stack\inc\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\protocol\wisun\app\wisun_rcp\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\protocol\wisun\stack\inc\socket\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\protocol\wisun\stack\src\
+#        -Ohz --use_c++_inline) --dependencies=n
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\ewarm-iar\obj\src_8827520470567122158.dir\sl_sleeptimer_hal_timer.o.iar_deps
+#    Locale            =  C
+#    List file         =
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\ewarm-iar\lst\src_8827520470567122158.dir\sl_sleeptimer_hal_timer.lst
+#    Object file       =
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\ewarm-iar\obj\src_8827520470567122158.dir\sl_sleeptimer_hal_timer.o
+#    Runtime model:       
+#      __CPP_Runtime   =  1
+#      __SystemLibrary =  DLib
+#      __dlib_version  =  6
+#
+###############################################################################
+
+C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\service\sleeptimer\src\sl_sleeptimer_hal_timer.c
+      1          /***************************************************************************//**
+      2           * @file
+      3           * @brief SLEEPTIMER hardware abstraction implementation for WTIMER/TIMER.
+      4           *******************************************************************************
+      5           * # License
+      6           * <b>Copyright 2022 Silicon Laboratories Inc. www.silabs.com</b>
+      7           *******************************************************************************
+      8           *
+      9           * SPDX-License-Identifier: Zlib
+     10           *
+     11           * The licensor of this software is Silicon Laboratories Inc.
+     12           *
+     13           * This software is provided 'as-is', without any express or implied
+     14           * warranty. In no event will the authors be held liable for any damages
+     15           * arising from the use of this software.
+     16           *
+     17           * Permission is granted to anyone to use this software for any purpose,
+     18           * including commercial applications, and to alter it and redistribute it
+     19           * freely, subject to the following restrictions:
+     20           *
+     21           * 1. The origin of this software must not be misrepresented; you must not
+     22           *    claim that you wrote the original software. If you use this software
+     23           *    in a product, an acknowledgment in the product documentation would be
+     24           *    appreciated but is not required.
+     25           * 2. Altered source versions must be plainly marked as such, and must not be
+     26           *    misrepresented as being the original software.
+     27           * 3. This notice may not be removed or altered from any source distribution.
+     28           *
+     29           ******************************************************************************/
+     30          
+     31          #include "em_timer.h"
+     32          #include "sl_sleeptimer.h"
+     33          #include "sli_sleeptimer_hal.h"
+     34          #include "em_core.h"
+     35          #include "em_cmu.h"
+     36          
+     37          #if defined(SL_CATALOG_POWER_MANAGER_PRESENT)
+     38          #include "sl_power_manager.h"
+     39          #endif
+     40          
+     41          #if (SL_SLEEPTIMER_PERIPHERAL == SL_SLEEPTIMER_PERIPHERAL_TIMER) \
+     42            || (SL_SLEEPTIMER_PERIPHERAL == SL_SLEEPTIMER_PERIPHERAL_WTIMER)
+     43          
+     44          // Minimum difference between current count value and what the comparator of the timer can be set to.
+     45          // 1 tick is added to the minimum diff for the algorithm of compensation for the IRQ handler that
+     46          // triggers when CNT == compare_value + 1. For more details refer to sleeptimer_hal_set_compare() function's header.
+     47          #define SLEEPTIMER_COMPARE_MIN_DIFF  (1 + 1)
+     48          
+     49          // Macros used to constructs WTIMER/TIMER instance
+     50          #define _CONCAT_TWO_TOKENS(token_1, token_2)                     token_1 ## token_2
+     51          #define _CONCAT_THREE_TOKENS(token_1, token_2, token_3)          token_1 ## token_2 ## token_3
+     52          #define CONCAT_TWO_TOKENS(token_1, token_2)                      _CONCAT_TWO_TOKENS(token_1, token_2)
+     53          #define CONCAT_THREE_TOKENS(token_1, token_2, token_3)           _CONCAT_THREE_TOKENS(token_1, token_2, token_3)
+     54          
+     55          #if (SL_SLEEPTIMER_PERIPHERAL == SL_SLEEPTIMER_PERIPHERAL_WTIMER)
+     56          #if defined(WTIMER_PRESENT)                        \
+     57            && (SL_SLEEPTIMER_TIMER_INSTANCE < WTIMER_COUNT) \
+     58            && (_WTIMER_CNT_MASK == 0xFFFFFFFFUL)
+     59            #define SLEEPTIMER_TIMER_INSTANCE    CONCAT_TWO_TOKENS(WTIMER, SL_SLEEPTIMER_TIMER_INSTANCE)
+     60            #define SLEEPTIMER_TIMER_CHANNEL     0
+     61            #define SLEEPTIMER_TIMER_IRQ         CONCAT_THREE_TOKENS(WTIMER, SL_SLEEPTIMER_TIMER_INSTANCE, _IRQn)
+     62            #define SLEEPTIMER_TIMER_IRQHandler  CONCAT_THREE_TOKENS(WTIMER, SL_SLEEPTIMER_TIMER_INSTANCE, _IRQHandler)
+     63            #define SLEEPTIMER_TIMER_IEN_COMPARE WTIMER_IEN_CC0
+     64            #define SLEEPTIMER_TIMER_CLK         CONCAT_TWO_TOKENS(cmuClock_WTIMER, SL_SLEEPTIMER_TIMER_INSTANCE)
+     65            #define SLEEPTIMER_TIMER_TOP_MAX     _WTIMER_TOP_MASK
+     66            #define SLEEPTIMER_TMR_WIDTH         _WTIMER_CNT_MASK
+     67          #else
+     68            #define TIMER_UNSUPORTED
+     69          #endif
+     70          
+     71          #elif (SL_SLEEPTIMER_PERIPHERAL == SL_SLEEPTIMER_PERIPHERAL_TIMER) \
+     72            && (_SILICON_LABS_32B_SERIES > 1)
+     73          #if defined(TIMER_PRESENT)                        \
+     74            && (SL_SLEEPTIMER_TIMER_INSTANCE < TIMER_COUNT) \
+     75            && (TIMER_CNTWIDTH(SL_SLEEPTIMER_TIMER_INSTANCE) == 0x20)
+     76            #define SLEEPTIMER_TIMER_INSTANCE    TIMER(SL_SLEEPTIMER_TIMER_INSTANCE)
+     77            #define SLEEPTIMER_TIMER_CHANNEL     0
+     78            #define SLEEPTIMER_TIMER_IRQ         CONCAT_THREE_TOKENS(TIMER, SL_SLEEPTIMER_TIMER_INSTANCE, _IRQn)
+     79            #define SLEEPTIMER_TIMER_IRQHandler  CONCAT_THREE_TOKENS(TIMER, SL_SLEEPTIMER_TIMER_INSTANCE, _IRQHandler)
+     80            #define SLEEPTIMER_TIMER_IEN_COMPARE TIMER_IEN_CC0
+     81            #define SLEEPTIMER_TIMER_CLK         CONCAT_TWO_TOKENS(cmuClock_TIMER, SL_SLEEPTIMER_TIMER_INSTANCE)
+     82            #define SLEEPTIMER_TIMER_TOP_MAX     _TIMER_TOP_MASK
+     83            #define SLEEPTIMER_TMR_WIDTH         _TIMER_CNT_MASK
+     84          #else
+     85            #define TIMER_UNSUPORTED
+     86          #endif
+     87          
+     88          #else
+     89            #define TIMER_UNSUPORTED
+     90          #endif
+     91          
+     92          #if defined(TIMER_UNSUPORTED)
+     93          #error "The WTIMER/TIMER peripheral instance or channel is not supported. It must be a valid 32-bits size instance."
+     94          #endif
+     95          static bool comp_int_disabled = true;
+     96          
+     97          __STATIC_INLINE uint32_t get_time_diff(uint32_t a,
+     98                                                 uint32_t b);
+     99          
+    100          /******************************************************************************
+    101           * Initializes TIMER sleep timer.
+    102           *****************************************************************************/
+    103          void sleeptimer_hal_init_timer(void)
+    104          {
+    105            TIMER_Init_TypeDef init_config = TIMER_INIT_DEFAULT;
+    106            TIMER_InitCC_TypeDef init_config_cc = TIMER_INITCC_DEFAULT;
+    107          
+    108            CMU_ClockEnable(SLEEPTIMER_TIMER_CLK, true);
+    109          
+    110            init_config_cc.mode = timerCCModeCompare;
+    111            TIMER_InitCC(SLEEPTIMER_TIMER_INSTANCE, SLEEPTIMER_TIMER_CHANNEL, &init_config_cc);
+    112            TIMER_TopSet(SLEEPTIMER_TIMER_INSTANCE, SLEEPTIMER_TIMER_TOP_MAX);
+    113          
+    114          #if (SL_SLEEPTIMER_DEBUGRUN == 1)
+    115            init_config.debugRun = true;
+    116          #endif
+    117          
+    118            //
+    119            init_config.prescale = timerPrescale1024;
+    120          
+    121            TIMER_Init(SLEEPTIMER_TIMER_INSTANCE, &init_config);
+    122          #if defined(TIMER_STATUS_SYNCBUSY)
+    123            TIMER_SyncWait(SLEEPTIMER_TIMER_INSTANCE);
+    124          #endif
+    125          
+    126            TIMER_IntDisable(SLEEPTIMER_TIMER_INSTANCE, _TIMER_IEN_MASK);
+    127            TIMER_IntClear(SLEEPTIMER_TIMER_INSTANCE, _TIMER_IEN_MASK);
+    128          
+    129            TIMER_CompareSet(SLEEPTIMER_TIMER_INSTANCE, SLEEPTIMER_TIMER_CHANNEL, 0UL);
+    130          
+    131            NVIC_ClearPendingIRQ(SLEEPTIMER_TIMER_IRQ);
+    132            NVIC_EnableIRQ(SLEEPTIMER_TIMER_IRQ);
+    133          }
+    134          
+    135          /******************************************************************************
+    136           * Gets TIMER counter value.
+    137           *****************************************************************************/
+    138          uint32_t sleeptimer_hal_get_counter(void)
+    139          {
+    140            return TIMER_CounterGet(SLEEPTIMER_TIMER_INSTANCE);
+    141          }
+    142          
+    143          /******************************************************************************
+    144           * Gets TIMER compare value.
+    145           *****************************************************************************/
+    146          uint32_t sleeptimer_hal_get_compare(void)
+    147          {
+    148            return TIMER_CaptureGet(SLEEPTIMER_TIMER_INSTANCE, SLEEPTIMER_TIMER_CHANNEL);
+    149          }
+    150          
+    151          /******************************************************************************
+    152           * Sets TIMER compare value.
+    153           *
+    154           * @note Compare match value is set to the requested value - 1. This is done
+    155           * to compensate for the fact that the TIMER compare match interrupt always
+    156           * triggers at the end of the requested ticks and that the IRQ handler is
+    157           * executed when current tick count == compare_value + 1.
+    158           *****************************************************************************/
+    159          void sleeptimer_hal_set_compare(uint32_t value)
+    160          {
+    161            CORE_DECLARE_IRQ_STATE;
+    162            uint32_t counter;
+    163            uint32_t compare;
+    164            uint32_t compare_value = value;
+    165          
+    166            CORE_ENTER_CRITICAL();
+    167            counter = sleeptimer_hal_get_counter();
+    168            compare = sleeptimer_hal_get_compare();
+    169          
+    170            if (((TIMER_IntGet(SLEEPTIMER_TIMER_INSTANCE) & SLEEPTIMER_TIMER_IEN_COMPARE) != 0)
+    171                || get_time_diff(compare, counter) > SLEEPTIMER_COMPARE_MIN_DIFF
+    172                || compare == counter) {
+    173              // Add margin if necessary
+    174              if (get_time_diff(compare_value, counter) < SLEEPTIMER_COMPARE_MIN_DIFF) {
+    175                compare_value = counter + SLEEPTIMER_COMPARE_MIN_DIFF;
+    176              }
+    177              compare_value %= SLEEPTIMER_TMR_WIDTH;
+    178          
+    179              TIMER_CompareSet(SLEEPTIMER_TIMER_INSTANCE, SLEEPTIMER_TIMER_CHANNEL, compare_value - 1);
+    180              sleeptimer_hal_enable_int(SLEEPTIMER_EVENT_COMP);
+    181              comp_int_disabled = false;
+    182            }
+    183            CORE_EXIT_CRITICAL();
+    184          }
+    185          
+    186          /******************************************************************************
+    187           * Enables TIMER interrupts.
+    188           *****************************************************************************/
+    189          void sleeptimer_hal_enable_int(uint8_t local_flag)
+    190          {
+    191            uint32_t timer_ien = 0UL;
+    192          
+    193            if (local_flag & SLEEPTIMER_EVENT_OF) {
+    194              timer_ien |= TIMER_IEN_OF;
+    195            }
+    196          
+    197            if (local_flag & SLEEPTIMER_EVENT_COMP) {
+    198              if (comp_int_disabled == true) {
+    199                TIMER_IntClear(SLEEPTIMER_TIMER_INSTANCE, SLEEPTIMER_TIMER_IEN_COMPARE);
+    200                comp_int_disabled = false;
+    201              }
+    202              timer_ien |= SLEEPTIMER_TIMER_IEN_COMPARE;
+    203            }
+    204          
+    205            TIMER_IntEnable(SLEEPTIMER_TIMER_INSTANCE, timer_ien);
+    206          }
+    207          
+    208          /******************************************************************************
+    209           * Disables TIMER interrupts.
+    210           *****************************************************************************/
+    211          void sleeptimer_hal_disable_int(uint8_t local_flag)
+    212          {
+    213            uint32_t timer_int_dis = 0UL;
+    214          
+    215            if (local_flag & SLEEPTIMER_EVENT_OF) {
+    216              timer_int_dis |= TIMER_IEN_OF;
+    217            }
+    218          
+    219            if (local_flag & SLEEPTIMER_EVENT_COMP) {
+    220              timer_int_dis |= SLEEPTIMER_TIMER_IEN_COMPARE;
+    221          
+    222              comp_int_disabled = true;
+    223            }
+    224          
+    225            TIMER_IntDisable(SLEEPTIMER_TIMER_INSTANCE, timer_int_dis);
+    226          }
+    227          
+    228          /*******************************************************************************
+    229           * Hardware Abstraction Layer to set timer interrupts.
+    230           ******************************************************************************/
+    231          void sleeptimer_hal_set_int(uint8_t local_flag)
+    232          {
+    233            if (local_flag & SLEEPTIMER_EVENT_COMP) {
+    234              TIMER_IntSet(SLEEPTIMER_TIMER_INSTANCE, SLEEPTIMER_TIMER_IEN_COMPARE);
+    235            }
+    236          }
+    237          
+    238          /******************************************************************************
+    239           * Gets status of specified interrupt.
+    240           *
+    241           * Note: This function must be called with interrupts disabled.
+    242           *****************************************************************************/
+    243          bool sli_sleeptimer_hal_is_int_status_set(uint8_t local_flag)
+    244          {
+    245            bool int_is_set = false;
+    246            uint32_t irq_flag = TIMER_IntGet(SLEEPTIMER_TIMER_INSTANCE);
+    247          
+    248            switch (local_flag) {
+    249              case SLEEPTIMER_EVENT_COMP:
+    250                int_is_set = ((irq_flag & SLEEPTIMER_TIMER_IEN_COMPARE) == SLEEPTIMER_TIMER_IEN_COMPARE);
+    251                break;
+    252          
+    253              case SLEEPTIMER_EVENT_OF:
+    254                int_is_set = ((irq_flag & TIMER_IEN_OF) == TIMER_IEN_OF);
+    255                break;
+    256          
+    257              default:
+    258                break;
+    259            }
+    260          
+    261            return int_is_set;
+    262          }
+    263          
+    264          /*******************************************************************************
+    265           * TIMER interrupt handler.
+    266           ******************************************************************************/
+    267          void SLEEPTIMER_TIMER_IRQHandler(void)
+    268          {
+    269            CORE_DECLARE_IRQ_STATE;
+    270            uint8_t local_flag = 0;
+    271            uint32_t irq_flag;
+    272          
+    273            CORE_ENTER_ATOMIC();
+    274            irq_flag = TIMER_IntGet(SLEEPTIMER_TIMER_INSTANCE);
+    275          
+    276            if (irq_flag & TIMER_IEN_OF) {
+    277              local_flag |= SLEEPTIMER_EVENT_OF;
+    278            }
+    279          
+    280            if (irq_flag & SLEEPTIMER_TIMER_IEN_COMPARE) {
+    281              local_flag |= SLEEPTIMER_EVENT_COMP;
+    282            }
+    283            TIMER_IntClear(SLEEPTIMER_TIMER_INSTANCE, irq_flag & (TIMER_IEN_OF | SLEEPTIMER_TIMER_IEN_COMPARE));
+    284          
+    285            process_timer_irq(local_flag);
+    286          
+    287            CORE_EXIT_ATOMIC();
+    288          }
+    289          
+    290          /*******************************************************************************
+    291           * Gets TIMER timer frequency.
+    292           ******************************************************************************/
+    293          uint32_t sleeptimer_hal_get_timer_frequency(void)
+    294          {
+    295            // Returns source frequency divided by max prescaler value 1024.
+    296            return (CMU_ClockFreqGet(SLEEPTIMER_TIMER_CLK) >> 10UL);
+    297          }
+    298          
+    299          /*******************************************************************************
+    300           * Computes difference between two times taking into account timer wrap-around.
+    301           *
+    302           * @param a Time.
+    303           * @param b Time to substract from a.
+    304           *
+    305           * @return Time difference.
+    306           ******************************************************************************/
+    307          __STATIC_INLINE uint32_t get_time_diff(uint32_t a,
+    308                                                 uint32_t b)
+    309          {
+    310            return (a - b);
+    311          }
+    312          
+    313          /*******************************************************************************
+    314           * @brief
+    315           *   Gets the precision (in PPM) of the sleeptimer's clock.
+    316           *
+    317           * @return
+    318           *   Clock accuracy, in PPM.
+    319           *
+    320           ******************************************************************************/
+    321          uint16_t sleeptimer_hal_get_clock_accuracy(void)
+    322          {
+    323          #if defined(WTIMER_PRESENT)
+    324            return CMU_HF_ClockPrecisionGet(cmuClock_HF);
+    325          #else
+    326            return CMU_HF_ClockPrecisionGet(SLEEPTIMER_TIMER_CLK);
+    327          #endif
+    328          }
+    329          
+    330          /*******************************************************************************
+    331           * Hardware Abstraction Layer to get the capture channel value.
+    332           *
+    333           * @return Capture value.
+    334           ******************************************************************************/
+    335          uint32_t sleeptimer_hal_get_capture(void)
+    336          {
+    337            // Invalid for TIMER peripheral
+    338            EFM_ASSERT(0);
+    339            return 0;
+    340          }
+    341          
+    342          /*******************************************************************************
+    343           * Hardware Abstraction Layer to reset PRS signal triggered by the associated
+    344           * peripheral.
+    345           ******************************************************************************/
+    346          void sleeptimer_hal_reset_prs_signal(void)
+    347          {
+    348            // Invalid for TIMER peripheral
+    349            EFM_ASSERT(0);
+    350          }
+    351          
+    352          /***************************************************************************//**
+    353           * Set lowest energy mode based on a project's configurations and clock source
+    354           *
+    355           * @note Lowest possible energy mode for WTIMER and TIMER peripheral is EM1.
+    356           ******************************************************************************/
+    357          #if defined(SL_CATALOG_POWER_MANAGER_PRESENT)
+    358          void sli_sleeptimer_set_pm_em_requirement(void)
+    359          {
+    360            sl_power_manager_add_em_requirement(SL_POWER_MANAGER_EM1);
+    361          }
+    362          #endif
+    363          #endif
+
+
+ 
+ 
+ 0 bytes of memory
+
+Errors: none
+Warnings: none

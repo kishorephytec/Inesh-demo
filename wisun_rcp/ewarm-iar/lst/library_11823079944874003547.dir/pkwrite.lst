@@ -1,0 +1,1840 @@
+###############################################################################
+#
+# IAR ANSI C/C++ Compiler V9.50.2.385/W64 for ARM         27/Nov/2024  12:17:33
+# Copyright 1999-2024 IAR Systems AB.
+#
+#    Cpu mode                     =  thumb
+#    Endian                       =  little
+#    Source file                  =
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\util\third_party\mbedtls\library\pkwrite.c
+#    Command line                 =
+#        -f
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\ewarm-iar\obj\library_11823079944874003547.dir\pkwrite.o.rsp
+#        (C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\util\third_party\mbedtls\library\pkwrite.c
+#        -D EFR32FG28B322F1024IM48=1 -D
+#        configNUM_SDK_THREAD_LOCAL_STORAGE_POINTERS=2 -D
+#        SL_COMPONENT_CATALOG_PRESENT=1 -D
+#        MBEDTLS_CONFIG_FILE=<sl_mbedtls_config.h> -D
+#        MBEDTLS_PSA_CRYPTO_CONFIG_FILE=<psa_crypto_config.h> -D
+#        SL_RAIL_LIB_MULTIPROTOCOL_SUPPORT=0 -D
+#        SL_RAIL_UTIL_PA_CONFIG_HEADER=<sl_rail_util_pa_config.h> -D
+#        RTT_USE_ASM=0 -D MBED_CONF_MBED_TRACE_ENABLE=1 -D
+#        MBED_CONF_NANOSTACK_CONFIGURATION=ws_router -D
+#        MBED_TRACE_MAX_LEVEL=TRACE_ACTIVE_LEVEL_ALL -D DEBUG_EFM_USER=1 -D
+#        HAVE_LFN=1 -D HAVE_LFN_PARENT=1 -lC
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\ewarm-iar\lst\library_11823079944874003547.dir
+#        --diag_suppress Pa050 -o
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\ewarm-iar\obj\library_11823079944874003547.dir
+#        --debug --endian=little --cpu=Cortex-M33 --cmse --cmse -e
+#        --fpu=VFPv5_sp --dlib_config "C:\Program Files\IAR Systems\Embedded
+#        Workbench 9.2\arm\inc\c\DLib_Config_Normal.h" -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\util\third_party\mbedtls\library\
+#        -I C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\autogen\ -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\config\ -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\config\rail\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\Device\SiliconLabs\EFR32FG28\Include\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\common\inc\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\CMSIS\Core\Include\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\CMSIS\RTOS2\Include\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\service\device_init\inc\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\emdrv\dmadrv\inc\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\emdrv\common\inc\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\emlib\inc\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\util\third_party\freertos\cmsis\Include\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\util\third_party\freertos\kernel\include\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\util\third_party\freertos\kernel\portable\IAR\ARM_CM33_NTZ\non_secure\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\service\iostream\inc\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\security\sl_component\sl_mbedtls_support\config\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\security\sl_component\sl_mbedtls_support\config\preset\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\security\sl_component\sl_mbedtls_support\inc\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\util\third_party\mbedtls\include\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\util\third_party\mbedtls\library\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\emdrv\nvm3\inc\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\peripheral\inc\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\security\sl_component\sl_psa_driver\inc\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\radio\rail_lib\common\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\radio\rail_lib\protocol\ble\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\radio\rail_lib\protocol\ieee802154\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\radio\rail_lib\protocol\wmbus\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\radio\rail_lib\protocol\zwave\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\radio\rail_lib\chip\efr32\efr32xg2x\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\radio\rail_lib\protocol\sidewalk\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\radio\rail_lib\plugin\pa-conversions\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\radio\rail_lib\plugin\pa-conversions\efr32xg28\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\radio\rail_lib\plugin\rail_util_pti\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\security\sl_component\se_manager\inc\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\security\sl_component\se_manager\src\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\util\third_party\segger\systemview\SEGGER\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\util\silicon_labs\silabs_core\memory_manager\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\common\toolchain\inc\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\service\system\inc\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\app\wisun\component\ns_list\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\app\wisun\component\trace_util\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\app\wisun\component\trace_util\nanostack\nanostack-libservice\mbed-client-libservice\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\service\sleeptimer\inc\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\protocol\wisun\stack\inc\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\protocol\wisun\app\wisun_rcp\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\protocol\wisun\stack\inc\socket\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\protocol\wisun\stack\src\
+#        -Ohz --use_c++_inline) --dependencies=n
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\ewarm-iar\obj\library_11823079944874003547.dir\pkwrite.o.iar_deps
+#    Locale                       =  C
+#    List file                    =
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\ewarm-iar\lst\library_11823079944874003547.dir\pkwrite.lst
+#    Object file                  =
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\ewarm-iar\obj\library_11823079944874003547.dir\pkwrite.o
+#    Runtime model:                  
+#      __CPP_Runtime              =  1
+#      __SystemLibrary            =  DLib
+#      __dlib_file_descriptor     =  0
+#      __dlib_full_locale_support =  0
+#      __dlib_version             =  6
+#
+###############################################################################
+
+C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\util\third_party\mbedtls\library\pkwrite.c
+      1          /*
+      2           *  Public Key layer for writing key files and structures
+      3           *
+      4           *  Copyright The Mbed TLS Contributors
+      5           *  SPDX-License-Identifier: Apache-2.0
+      6           *
+      7           *  Licensed under the Apache License, Version 2.0 (the "License"); you may
+      8           *  not use this file except in compliance with the License.
+      9           *  You may obtain a copy of the License at
+     10           *
+     11           *  http://www.apache.org/licenses/LICENSE-2.0
+     12           *
+     13           *  Unless required by applicable law or agreed to in writing, software
+     14           *  distributed under the License is distributed on an "AS IS" BASIS, WITHOUT
+     15           *  WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     16           *  See the License for the specific language governing permissions and
+     17           *  limitations under the License.
+     18           */
+     19          
+     20          #include "common.h"
+     21          
+     22          #if defined(MBEDTLS_PK_WRITE_C)
+     23          
+     24          #include "mbedtls/pk.h"
+     25          #include "mbedtls/asn1write.h"
+     26          #include "mbedtls/oid.h"
+     27          #include "mbedtls/platform_util.h"
+     28          #include "mbedtls/error.h"
+     29          #include "pk_internal.h"
+
+   \                                 In section .text, align 2, keep-with-next
+   \   static __vfp enum <unnamed>#124 mbedtls_pk_get_group_id(mbedtls_pk_context const *)
+   \                     mbedtls_pk_get_group_id: (+1)
+   \        0x0   0xB510             PUSH     {R4,LR}
+   \        0x2   0xB0A8             SUB      SP,SP,#+160
+   \        0x4   0x4604             MOV      R4,R0
+   \        0x6   0x.... 0x....      BL       mbedtls_pk_get_type
+   \        0xA   0x2807             CMP      R0,#+7
+   \        0xC   0x4668             MOV      R0,SP
+   \        0xE   0xD11A             BNE.N    ??mbedtls_pk_get_group_id_0
+   \       0x10   0x2124             MOVS     R1,#+36
+   \       0x12   0x.... 0x....      BL       __aeabi_memclr4
+   \       0x16   0x68A0             LDR      R0,[R4, #+8]
+   \       0x18   0x4669             MOV      R1,SP
+   \       0x1A   0x.... 0x....      BL       psa_get_key_attributes
+   \       0x1E   0xB108             CBZ.N    R0,??mbedtls_pk_get_group_id_1
+   \       0x20   0x2000             MOVS     R0,#+0
+   \       0x22   0xE01E             B.N      ??mbedtls_pk_get_group_id_2
+   \                     ??mbedtls_pk_get_group_id_1: (+1)
+   \       0x24   0xF8BD 0x0000      LDRH     R0,[SP, #+0]
+   \       0x28   0x.... 0x....      BL       ?Subroutine2
+   \                     ??CrossCallReturnLabel_8: (+1)
+   \       0x2C   0xBF18             IT       NE
+   \       0x2E   0x2000             MOVNE    R0,#+0
+   \       0x30   0xF8BD 0x1002      LDRH     R1,[SP, #+2]
+   \       0x34   0x2200             MOVS     R2,#+0
+   \       0x36   0xB2C0             UXTB     R0,R0
+   \       0x38   0x.... 0x....      BL       mbedtls_ecc_group_of_psa
+   \       0x3C   0x4604             MOV      R4,R0
+   \       0x3E   0x4668             MOV      R0,SP
+   \       0x40   0x.... 0x....      BL       psa_reset_key_attributes
+   \       0x44   0xE00C             B.N      ??mbedtls_pk_get_group_id_3
+   \                     ??mbedtls_pk_get_group_id_0: (+1)
+   \       0x46   0x4621             MOV      R1,R4
+   \       0x48   0x22A0             MOVS     R2,#+160
+   \       0x4A   0x.... 0x....      BL       __aeabi_memcpy4
+   \       0x4E   0x4668             MOV      R0,SP
+   \       0x50   0x.... 0x....      BL       mbedtls_pk_get_type
+   \       0x54   0x1E80             SUBS     R0,R0,#+2
+   \       0x56   0x2802             CMP      R0,#+2
+   \       0x58   0xBF94             ITE      LS
+   \       0x5A   0x9801             LDRLS    R0,[SP, #+4]
+   \       0x5C   0x2000             MOVHI    R0,#+0
+   \       0x5E   0x7804             LDRB     R4,[R0, #+0]
+   \                     ??mbedtls_pk_get_group_id_3: (+1)
+   \       0x60   0x4620             MOV      R0,R4
+   \                     ??mbedtls_pk_get_group_id_2: (+1)
+   \       0x62   0xB028             ADD      SP,SP,#+160
+   \       0x64   0xBD10             POP      {R4,PC}
+
+   \                                 In section .text, align 2, keep-with-next
+   \                     ?Subroutine2: (+1)
+   \        0x0   0x....             LDR.N    R1,??DataTable11_2
+   \        0x2   0x4001             ANDS     R1,R1,R0
+   \        0x4   0xF5B1 0x4F82      CMP      R1,#+16640
+   \        0x8   0x4770             BX       LR
+
+   \                                 In section .rodata, align 4
+   \        0x0   0x0000 0x0000      DC16 0, 0
+   \        0x4   0x0000'0000        DC32 0, 0, 0, 0, 0
+   \              0x0000'0000  
+   \              0x0000'0000  
+   \              0x0000'0000  
+   \              0x0000'0000
+   \       0x18   0x0000             DC16 0
+   \       0x1A                      DS8 2
+   \       0x1C   0x0000'0000        DC32 0x0, 0
+   \              0x0000'0000
+     30          
+     31          #include <string.h>
+     32          
+     33          #if defined(MBEDTLS_RSA_C)
+     34          #include "mbedtls/rsa.h"
+     35          #endif
+     36          #if defined(MBEDTLS_ECP_C)
+     37          #include "mbedtls/bignum.h"
+     38          #include "mbedtls/ecp.h"
+     39          #include "mbedtls/platform_util.h"
+     40          #endif
+     41          #if defined(MBEDTLS_PK_HAVE_ECC_KEYS)
+     42          #include "pk_internal.h"
+     43          #endif
+     44          #if defined(MBEDTLS_RSA_C) || defined(MBEDTLS_PK_HAVE_ECC_KEYS)
+     45          #include "pkwrite.h"
+     46          #endif
+     47          #if defined(MBEDTLS_ECDSA_C)
+     48          #include "mbedtls/ecdsa.h"
+     49          #endif
+     50          #if defined(MBEDTLS_PEM_WRITE_C)
+     51          #include "mbedtls/pem.h"
+     52          #endif
+     53          
+     54          #if defined(MBEDTLS_USE_PSA_CRYPTO)
+     55          #include "psa/crypto.h"
+     56          #include "psa_util_internal.h"
+     57          #endif
+     58          #include "mbedtls/platform.h"
+     59          
+     60          /* Helper for Montgomery curves */
+     61          #if defined(MBEDTLS_PK_HAVE_ECC_KEYS)
+     62          #if defined(MBEDTLS_PK_HAVE_RFC8410_CURVES)
+     63          static inline int mbedtls_pk_is_rfc8410(const mbedtls_pk_context *pk)
+     64          {
+     65              mbedtls_ecp_group_id id = mbedtls_pk_get_group_id(pk);
+     66          
+     67          #if defined(MBEDTLS_ECP_HAVE_CURVE25519)
+     68              if (id == MBEDTLS_ECP_DP_CURVE25519) {
+     69                  return 1;
+     70              }
+     71          #endif
+     72          #if defined(MBEDTLS_ECP_HAVE_CURVE448)
+     73              if (id == MBEDTLS_ECP_DP_CURVE448) {
+     74                  return 1;
+     75              }
+     76          #endif
+     77              return 0;
+     78          }
+     79          
+     80          #if defined(MBEDTLS_USE_PSA_CRYPTO) && defined(MBEDTLS_PEM_WRITE_C)
+     81          /* It is assumed that the input key is opaque */
+     82          static psa_ecc_family_t pk_get_opaque_ec_family(const mbedtls_pk_context *pk)
+     83          {
+     84              psa_ecc_family_t ec_family = 0;
+     85              psa_key_attributes_t key_attrs = PSA_KEY_ATTRIBUTES_INIT;
+     86          
+     87              if (psa_get_key_attributes(pk->priv_id, &key_attrs) != PSA_SUCCESS) {
+     88                  return 0;
+     89              }
+     90              ec_family = PSA_KEY_TYPE_ECC_GET_FAMILY(psa_get_key_type(&key_attrs));
+     91              psa_reset_key_attributes(&key_attrs);
+     92          
+     93              return ec_family;
+     94          }
+     95          #endif /* MBETLS_USE_PSA_CRYPTO && MBEDTLS_PEM_WRITE_C */
+     96          #endif /* MBEDTLS_PK_HAVE_RFC8410_CURVES */
+     97          #endif /* MBEDTLS_PK_HAVE_ECC_KEYS */
+     98          
+     99          #if defined(MBEDTLS_USE_PSA_CRYPTO)
+    100          /* It is assumed that the input key is opaque */
+
+   \                                 In section .text, align 2, keep-with-next
+    101          static psa_key_type_t pk_get_opaque_key_type(const mbedtls_pk_context *pk)
+    102          {
+   \                     pk_get_opaque_key_type: (+1)
+   \        0x0   0xB518             PUSH     {R3,R4,LR}
+   \        0x2   0xB089             SUB      SP,SP,#+36
+   \        0x4   0x4604             MOV      R4,R0
+    103              psa_key_attributes_t opaque_attrs = PSA_KEY_ATTRIBUTES_INIT;
+   \        0x6   0x4668             MOV      R0,SP
+   \        0x8   0x2124             MOVS     R1,#+36
+   \        0xA   0x.... 0x....      BL       __aeabi_memclr4
+    104              psa_key_type_t opaque_key_type;
+    105          
+    106              if (psa_get_key_attributes(pk->priv_id, &opaque_attrs) != PSA_SUCCESS) {
+   \        0xE   0x68A0             LDR      R0,[R4, #+8]
+   \       0x10   0x4669             MOV      R1,SP
+   \       0x12   0x.... 0x....      BL       psa_get_key_attributes
+   \       0x16   0xB108             CBZ.N    R0,??pk_get_opaque_key_type_0
+    107                  return 0;
+   \       0x18   0x2000             MOVS     R0,#+0
+   \       0x1A   0xE005             B.N      ??pk_get_opaque_key_type_1
+    108              }
+    109              opaque_key_type = psa_get_key_type(&opaque_attrs);
+   \                     ??pk_get_opaque_key_type_0: (+1)
+   \       0x1C   0xF8BD 0x4000      LDRH     R4,[SP, #+0]
+    110              psa_reset_key_attributes(&opaque_attrs);
+   \       0x20   0x4668             MOV      R0,SP
+   \       0x22   0x.... 0x....      BL       psa_reset_key_attributes
+    111          
+    112              return opaque_key_type;
+   \       0x26   0x4620             MOV      R0,R4
+   \                     ??pk_get_opaque_key_type_1: (+1)
+   \       0x28   0xB00A             ADD      SP,SP,#+40
+   \       0x2A   0xBD10             POP      {R4,PC}
+    113          }
+
+   \                                 In section .rodata, align 4
+   \        0x0   0x0000 0x0000      DC16 0, 0
+   \        0x4   0x0000'0000        DC32 0, 0, 0, 0, 0
+   \              0x0000'0000  
+   \              0x0000'0000  
+   \              0x0000'0000  
+   \              0x0000'0000
+   \       0x18   0x0000             DC16 0
+   \       0x1A                      DS8 2
+   \       0x1C   0x0000'0000        DC32 0x0, 0
+   \              0x0000'0000
+    114          #endif /* MBETLS_USE_PSA_CRYPTO */
+    115          
+    116          #if defined(MBEDTLS_RSA_C)
+    117          /*
+    118           *  RSAPublicKey ::= SEQUENCE {
+    119           *      modulus           INTEGER,  -- n
+    120           *      publicExponent    INTEGER   -- e
+    121           *  }
+    122           */
+    123          static int pk_write_rsa_pubkey(unsigned char **p, unsigned char *start,
+    124                                         const mbedtls_pk_context *pk)
+    125          {
+    126              int ret = MBEDTLS_ERR_ERROR_CORRUPTION_DETECTED;
+    127              size_t len = 0;
+    128              mbedtls_mpi T;
+    129              mbedtls_rsa_context *rsa = mbedtls_pk_rsa(*pk);
+    130          
+    131              mbedtls_mpi_init(&T);
+    132          
+    133              /* Export E */
+    134              if ((ret = mbedtls_rsa_export(rsa, NULL, NULL, NULL, NULL, &T)) != 0 ||
+    135                  (ret = mbedtls_asn1_write_mpi(p, start, &T)) < 0) {
+    136                  goto end_of_export;
+    137              }
+    138              len += ret;
+    139          
+    140              /* Export N */
+    141              if ((ret = mbedtls_rsa_export(rsa, &T, NULL, NULL, NULL, NULL)) != 0 ||
+    142                  (ret = mbedtls_asn1_write_mpi(p, start, &T)) < 0) {
+    143                  goto end_of_export;
+    144              }
+    145              len += ret;
+    146          
+    147          end_of_export:
+    148          
+    149              mbedtls_mpi_free(&T);
+    150              if (ret < 0) {
+    151                  return ret;
+    152              }
+    153          
+    154              MBEDTLS_ASN1_CHK_ADD(len, mbedtls_asn1_write_len(p, start, len));
+    155              MBEDTLS_ASN1_CHK_ADD(len, mbedtls_asn1_write_tag(p, start, MBEDTLS_ASN1_CONSTRUCTED |
+    156                                                               MBEDTLS_ASN1_SEQUENCE));
+    157          
+    158              return (int) len;
+    159          }
+    160          #endif /* MBEDTLS_RSA_C */
+    161          
+    162          #if defined(MBEDTLS_PK_HAVE_ECC_KEYS)
+    163          #if defined(MBEDTLS_PK_USE_PSA_EC_DATA)
+    164          static int pk_write_ec_pubkey(unsigned char **p, unsigned char *start,
+    165                                        const mbedtls_pk_context *pk)
+    166          {
+    167              size_t len = 0;
+    168              uint8_t buf[PSA_EXPORT_PUBLIC_KEY_MAX_SIZE];
+    169          
+    170              if (mbedtls_pk_get_type(pk) == MBEDTLS_PK_OPAQUE) {
+    171                  if (psa_export_public_key(pk->priv_id, buf, sizeof(buf), &len) != PSA_SUCCESS) {
+    172                      return MBEDTLS_ERR_PK_BAD_INPUT_DATA;
+    173                  }
+    174              } else {
+    175                  len = pk->pub_raw_len;
+    176                  memcpy(buf, pk->pub_raw, len);
+    177              }
+    178          
+    179              if (*p < start || (size_t) (*p - start) < len) {
+    180                  return MBEDTLS_ERR_ASN1_BUF_TOO_SMALL;
+    181              }
+    182          
+    183              *p -= len;
+    184              memcpy(*p, buf, len);
+    185          
+    186              return (int) len;
+    187          }
+    188          #else /* MBEDTLS_PK_USE_PSA_EC_DATA */
+
+   \                                 In section .text, align 2, keep-with-next
+    189          static int pk_write_ec_pubkey(unsigned char **p, unsigned char *start,
+    190                                        const mbedtls_pk_context *pk)
+    191          {
+   \                     pk_write_ec_pubkey: (+1)
+   \        0x0   0xB5F8             PUSH     {R3-R7,LR}
+   \        0x2   0xB0BC             SUB      SP,SP,#+240
+   \        0x4   0x4604             MOV      R4,R0
+   \        0x6   0x460D             MOV      R5,R1
+   \        0x8   0x4616             MOV      R6,R2
+    192              size_t len = 0;
+   \        0xA   0x2700             MOVS     R7,#+0
+   \        0xC   0x9702             STR      R7,[SP, #+8]
+    193          #if defined(MBEDTLS_USE_PSA_CRYPTO)
+    194              uint8_t buf[PSA_EXPORT_PUBLIC_KEY_MAX_SIZE];
+    195          #else
+    196              unsigned char buf[MBEDTLS_ECP_MAX_PT_LEN];
+    197          #endif /* MBEDTLS_USE_PSA_CRYPTO */
+    198              mbedtls_ecp_keypair *ec = mbedtls_pk_ec(*pk);
+   \        0xE   0xA803             ADD      R0,SP,#+12
+   \       0x10   0x4631             MOV      R1,R6
+   \       0x12   0x22A0             MOVS     R2,#+160
+   \       0x14   0x.... 0x....      BL       __aeabi_memcpy4
+   \       0x18   0xA803             ADD      R0,SP,#+12
+   \       0x1A   0x.... 0x....      BL       mbedtls_pk_get_type
+   \       0x1E   0x1E80             SUBS     R0,R0,#+2
+   \       0x20   0x2802             CMP      R0,#+2
+   \       0x22   0xBF98             IT       LS
+   \       0x24   0x9F04             LDRLS    R7,[SP, #+16]
+    199              int ret = MBEDTLS_ERR_ERROR_CORRUPTION_DETECTED;
+    200          
+    201          #if defined(MBEDTLS_USE_PSA_CRYPTO)
+    202              if (mbedtls_pk_get_type(pk) == MBEDTLS_PK_OPAQUE) {
+   \       0x26   0x4630             MOV      R0,R6
+   \       0x28   0x.... 0x....      BL       mbedtls_pk_get_type
+   \       0x2C   0x2807             CMP      R0,#+7
+   \       0x2E   0xD10E             BNE.N    ??pk_write_ec_pubkey_0
+    203                  if (psa_export_public_key(pk->priv_id, buf, sizeof(buf), &len) != PSA_SUCCESS) {
+   \       0x30   0x68B0             LDR      R0,[R6, #+8]
+   \       0x32   0xAB02             ADD      R3,SP,#+8
+   \       0x34   0x2241             MOVS     R2,#+65
+   \       0x36   0xA92B             ADD      R1,SP,#+172
+   \       0x38   0x.... 0x....      BL       psa_export_public_key
+   \       0x3C   0xB110             CBZ.N    R0,??pk_write_ec_pubkey_1
+    204                      return MBEDTLS_ERR_PK_BAD_INPUT_DATA;
+   \       0x3E   0x.... 0x....      LDR.W    R0,??DataTable11
+   \       0x42   0xE021             B.N      ??pk_write_ec_pubkey_2
+    205                  }
+    206                  *p -= len;
+    207                  memcpy(*p, buf, len);
+   \                     ??pk_write_ec_pubkey_1: (+1)
+   \       0x44   0x9802             LDR      R0,[SP, #+8]
+   \       0x46   0x6821             LDR      R1,[R4, #+0]
+   \       0x48   0x4240             RSBS     R0,R0,#+0
+   \       0x4A   0x4408             ADD      R0,R1,R0
+   \       0x4C   0xE016             B.N      ??pk_write_ec_pubkey_3
+    208                  return (int) len;
+    209              } else
+    210          #endif /* MBEDTLS_USE_PSA_CRYPTO */
+    211              {
+    212                  if ((ret = mbedtls_ecp_point_write_binary(&ec->grp, &ec->Q,
+    213                                                            MBEDTLS_ECP_PF_UNCOMPRESSED,
+    214                                                            &len, buf, sizeof(buf))) != 0) {
+   \                     ??pk_write_ec_pubkey_0: (+1)
+   \       0x4E   0x2141             MOVS     R1,#+65
+   \       0x50   0xA82B             ADD      R0,SP,#+172
+   \       0x52   0x9101             STR      R1,[SP, #+4]
+   \       0x54   0x9000             STR      R0,[SP, #+0]
+   \       0x56   0xAB02             ADD      R3,SP,#+8
+   \       0x58   0x2200             MOVS     R2,#+0
+   \       0x5A   0xF107 0x0168      ADD      R1,R7,#+104
+   \       0x5E   0x4638             MOV      R0,R7
+   \       0x60   0x.... 0x....      BL       mbedtls_ecp_point_write_binary
+   \       0x64   0xB980             CBNZ.N   R0,??pk_write_ec_pubkey_2
+    215                      return ret;
+    216                  }
+    217              }
+    218          
+    219              if (*p < start || (size_t) (*p - start) < len) {
+   \       0x66   0x6820             LDR      R0,[R4, #+0]
+   \       0x68   0x42A8             CMP      R0,R5
+   \       0x6A   0xBF23             ITTTE    CS
+   \       0x6C   0x1B45             SUBCS    R5,R0,R5
+   \       0x6E   0x9902             LDRCS    R1,[SP, #+8]
+   \       0x70   0x428D             CMPCS    R5,R1
+   \       0x72   0xF06F 0x006B      MVNCC    R0,#+107
+    220                  return MBEDTLS_ERR_ASN1_BUF_TOO_SMALL;
+   \       0x76   0xD307             BCC.N    ??pk_write_ec_pubkey_2
+    221              }
+    222          
+    223              *p -= len;
+    224              memcpy(*p, buf, len);
+   \       0x78   0x4249             RSBS     R1,R1,#+0
+   \       0x7A   0x4408             ADD      R0,R0,R1
+   \                     ??pk_write_ec_pubkey_3: (+1)
+   \       0x7C   0x6020             STR      R0,[R4, #+0]
+   \       0x7E   0x9A02             LDR      R2,[SP, #+8]
+   \       0x80   0xA92B             ADD      R1,SP,#+172
+   \       0x82   0x.... 0x....      BL       __aeabi_memcpy
+    225          
+    226              return (int) len;
+   \       0x86   0x9802             LDR      R0,[SP, #+8]
+   \                     ??pk_write_ec_pubkey_2: (+1)
+   \       0x88   0xB03D             ADD      SP,SP,#+244
+   \       0x8A   0xBDF0             POP      {R4-R7,PC}
+    227          }
+    228          #endif /* MBEDTLS_PK_USE_PSA_EC_DATA */
+    229          
+    230          /*
+    231           * ECParameters ::= CHOICE {
+    232           *   namedCurve         OBJECT IDENTIFIER
+    233           * }
+    234           */
+
+   \                                 In section .text, align 2, keep-with-next
+    235          static int pk_write_ec_param(unsigned char **p, unsigned char *start,
+    236                                       mbedtls_ecp_group_id grp_id)
+    237          {
+   \                     pk_write_ec_param: (+1)
+   \        0x0   0xB53E             PUSH     {R1-R5,LR}
+   \        0x2   0x4605             MOV      R5,R0
+   \        0x4   0x460C             MOV      R4,R1
+   \        0x6   0x4610             MOV      R0,R2
+    238              int ret = MBEDTLS_ERR_ERROR_CORRUPTION_DETECTED;
+    239              size_t len = 0;
+    240              const char *oid;
+    241              size_t oid_len;
+    242          
+    243              if ((ret = mbedtls_oid_get_oid_by_ec_grp(grp_id, &oid, &oid_len)) != 0) {
+   \        0x8   0x466A             MOV      R2,SP
+   \        0xA   0xA901             ADD      R1,SP,#+4
+   \        0xC   0x.... 0x....      BL       mbedtls_oid_get_oid_by_ec_grp
+   \       0x10   0xB928             CBNZ.N   R0,??pk_write_ec_param_0
+    244                  return ret;
+    245              }
+    246          
+    247              MBEDTLS_ASN1_CHK_ADD(len, mbedtls_asn1_write_oid(p, start, oid, oid_len));
+   \       0x12   0x9B00             LDR      R3,[SP, #+0]
+   \       0x14   0x9A01             LDR      R2,[SP, #+4]
+   \       0x16   0x4621             MOV      R1,R4
+   \       0x18   0x4628             MOV      R0,R5
+   \       0x1A   0x.... 0x....      BL       mbedtls_asn1_write_oid
+    248          
+    249              return (int) len;
+   \                     ??pk_write_ec_param_0: (+1)
+   \       0x1E   0xBD3E             POP      {R1-R5,PC}
+    250          }
+    251          
+    252          /*
+    253           * privateKey  OCTET STRING -- always of length ceil(log2(n)/8)
+    254           */
+    255          #if defined(MBEDTLS_PK_USE_PSA_EC_DATA)
+    256          static int pk_write_ec_private(unsigned char **p, unsigned char *start,
+    257                                         const mbedtls_pk_context *pk)
+    258          {
+    259              size_t byte_length;
+    260              int ret = MBEDTLS_ERR_ERROR_CORRUPTION_DETECTED;
+    261              unsigned char tmp[MBEDTLS_PSA_MAX_EC_KEY_PAIR_LENGTH];
+    262              psa_status_t status;
+    263          
+    264              if (mbedtls_pk_get_type(pk) == MBEDTLS_PK_OPAQUE) {
+    265                  status = psa_export_key(pk->priv_id, tmp, sizeof(tmp), &byte_length);
+    266                  if (status != PSA_SUCCESS) {
+    267                      ret = PSA_PK_ECDSA_TO_MBEDTLS_ERR(status);
+    268                      return ret;
+    269                  }
+    270              } else {
+    271                  status = psa_export_key(pk->priv_id, tmp, sizeof(tmp), &byte_length);
+    272                  if (status != PSA_SUCCESS) {
+    273                      ret = PSA_PK_ECDSA_TO_MBEDTLS_ERR(status);
+    274                      goto exit;
+    275                  }
+    276              }
+    277          
+    278              ret = mbedtls_asn1_write_octet_string(p, start, tmp, byte_length);
+    279          exit:
+    280              mbedtls_platform_zeroize(tmp, sizeof(tmp));
+    281              return ret;
+    282          }
+    283          #else /* MBEDTLS_PK_USE_PSA_EC_DATA */
+    284          static int pk_write_ec_private(unsigned char **p, unsigned char *start,
+    285                                         const mbedtls_pk_context *pk)
+    286          {
+    287              size_t byte_length;
+    288              int ret = MBEDTLS_ERR_ERROR_CORRUPTION_DETECTED;
+    289          #if defined(MBEDTLS_USE_PSA_CRYPTO)
+    290              unsigned char tmp[MBEDTLS_PSA_MAX_EC_KEY_PAIR_LENGTH];
+    291              psa_status_t status;
+    292          #else
+    293              unsigned char tmp[MBEDTLS_ECP_MAX_BYTES];
+    294          #endif /* MBEDTLS_USE_PSA_CRYPTO */
+    295          
+    296          #if defined(MBEDTLS_USE_PSA_CRYPTO)
+    297              if (mbedtls_pk_get_type(pk) == MBEDTLS_PK_OPAQUE) {
+    298                  status = psa_export_key(pk->priv_id, tmp, sizeof(tmp), &byte_length);
+    299                  if (status != PSA_SUCCESS) {
+    300                      ret = PSA_PK_ECDSA_TO_MBEDTLS_ERR(status);
+    301                      return ret;
+    302                  }
+    303              } else
+    304          #endif /* MBEDTLS_USE_PSA_CRYPTO */
+    305              {
+    306                  mbedtls_ecp_keypair *ec = mbedtls_pk_ec_rw(*pk);
+    307                  byte_length = (ec->grp.pbits + 7) / 8;
+    308          
+    309                  ret = mbedtls_ecp_write_key(ec, tmp, byte_length);
+    310                  if (ret != 0) {
+    311                      goto exit;
+    312                  }
+    313              }
+    314              ret = mbedtls_asn1_write_octet_string(p, start, tmp, byte_length);
+    315          exit:
+    316              mbedtls_platform_zeroize(tmp, sizeof(tmp));
+    317              return ret;
+    318          }
+    319          #endif /* MBEDTLS_PK_USE_PSA_EC_DATA */
+    320          #endif /* MBEDTLS_PK_HAVE_ECC_KEYS */
+    321          
+    322          #if defined(MBEDTLS_USE_PSA_CRYPTO)
+    323          static int pk_write_opaque_pubkey(unsigned char **p, unsigned char *start,
+    324                                            const mbedtls_pk_context *pk)
+    325          {
+    326              size_t buffer_size;
+    327              size_t len = 0;
+    328          
+    329              if (*p < start) {
+    330                  return MBEDTLS_ERR_PK_BAD_INPUT_DATA;
+    331              }
+    332          
+    333              buffer_size = (size_t) (*p - start);
+    334              if (psa_export_public_key(pk->priv_id, start, buffer_size,
+    335                                        &len) != PSA_SUCCESS) {
+    336                  return MBEDTLS_ERR_PK_BAD_INPUT_DATA;
+    337              }
+    338          
+    339              *p -= len;
+    340              memmove(*p, start, len);
+    341          
+    342              return (int) len;
+    343          }
+    344          #endif /* MBEDTLS_USE_PSA_CRYPTO */
+    345          
+
+   \                                 In section .text, align 2, keep-with-next
+    346          int mbedtls_pk_write_pubkey(unsigned char **p, unsigned char *start,
+    347                                      const mbedtls_pk_context *key)
+    348          {
+   \                     mbedtls_pk_write_pubkey: (+1)
+   \        0x0   0xB57C             PUSH     {R2-R6,LR}
+   \        0x2   0x4604             MOV      R4,R0
+   \        0x4   0x4616             MOV      R6,R2
+   \        0x6   0x460D             MOV      R5,R1
+    349              int ret = MBEDTLS_ERR_ERROR_CORRUPTION_DETECTED;
+    350              size_t len = 0;
+    351          
+    352          #if defined(MBEDTLS_RSA_C)
+    353              if (mbedtls_pk_get_type(key) == MBEDTLS_PK_RSA) {
+    354                  MBEDTLS_ASN1_CHK_ADD(len, pk_write_rsa_pubkey(p, start, key));
+    355              } else
+    356          #endif
+    357          #if defined(MBEDTLS_PK_HAVE_ECC_KEYS)
+    358              if (mbedtls_pk_get_type(key) == MBEDTLS_PK_ECKEY) {
+   \        0x8   0x4630             MOV      R0,R6
+   \        0xA   0x.... 0x....      BL       mbedtls_pk_get_type
+   \        0xE   0x2802             CMP      R0,#+2
+   \       0x10   0xD105             BNE.N    ??mbedtls_pk_write_pubkey_0
+    359                  MBEDTLS_ASN1_CHK_ADD(len, pk_write_ec_pubkey(p, start, key));
+   \       0x12   0x4632             MOV      R2,R6
+   \       0x14   0x4629             MOV      R1,R5
+   \       0x16   0x4620             MOV      R0,R4
+   \       0x18   0x.... 0x....      BL       pk_write_ec_pubkey
+    360              } else
+    361          #endif
+    362          #if defined(MBEDTLS_USE_PSA_CRYPTO)
+    363              if (mbedtls_pk_get_type(key) == MBEDTLS_PK_OPAQUE) {
+    364                  MBEDTLS_ASN1_CHK_ADD(len, pk_write_opaque_pubkey(p, start, key));
+    365              } else
+    366          #endif /* MBEDTLS_USE_PSA_CRYPTO */
+    367              return MBEDTLS_ERR_PK_FEATURE_UNAVAILABLE;
+    368          
+    369              return (int) len;
+   \       0x1C   0xBD76             POP      {R1,R2,R4-R6,PC}
+   \                     ??mbedtls_pk_write_pubkey_0: (+1)
+   \       0x1E   0x4630             MOV      R0,R6
+   \       0x20   0x.... 0x....      BL       mbedtls_pk_get_type
+   \       0x24   0x2807             CMP      R0,#+7
+   \       0x26   0xD119             BNE.N    ??mbedtls_pk_write_pubkey_1
+   \       0x28   0x2000             MOVS     R0,#+0
+   \       0x2A   0x9000             STR      R0,[SP, #+0]
+   \       0x2C   0x6822             LDR      R2,[R4, #+0]
+   \       0x2E   0x42AA             CMP      R2,R5
+   \       0x30   0xD306             BCC.N    ??mbedtls_pk_write_pubkey_2
+   \       0x32   0x68B0             LDR      R0,[R6, #+8]
+   \       0x34   0x466B             MOV      R3,SP
+   \       0x36   0x1B52             SUBS     R2,R2,R5
+   \       0x38   0x4629             MOV      R1,R5
+   \       0x3A   0x.... 0x....      BL       psa_export_public_key
+   \       0x3E   0xB110             CBZ.N    R0,??mbedtls_pk_write_pubkey_3
+   \                     ??mbedtls_pk_write_pubkey_2: (+1)
+   \       0x40   0x.... 0x....      LDR.W    R0,??DataTable11
+   \       0x44   0xBD76             POP      {R1,R2,R4-R6,PC}
+   \                     ??mbedtls_pk_write_pubkey_3: (+1)
+   \       0x46   0x9800             LDR      R0,[SP, #+0]
+   \       0x48   0x6821             LDR      R1,[R4, #+0]
+   \       0x4A   0x4240             RSBS     R0,R0,#+0
+   \       0x4C   0x4408             ADD      R0,R1,R0
+   \       0x4E   0x6020             STR      R0,[R4, #+0]
+   \       0x50   0x9A00             LDR      R2,[SP, #+0]
+   \       0x52   0x4629             MOV      R1,R5
+   \       0x54   0x.... 0x....      BL       __aeabi_memmove
+   \       0x58   0x9800             LDR      R0,[SP, #+0]
+   \       0x5A   0xBD76             POP      {R1,R2,R4-R6,PC}
+   \                     ??mbedtls_pk_write_pubkey_1: (+1)
+   \       0x5C   0x.... 0x....      LDR.W    R0,??DataTable11_1
+   \       0x60   0xBD76             POP      {R1,R2,R4-R6,PC}
+    370          }
+    371          
+
+   \                                 In section .text, align 2, keep-with-next
+    372          int mbedtls_pk_write_pubkey_der(const mbedtls_pk_context *key, unsigned char *buf, size_t size)
+    373          {
+   \                     mbedtls_pk_write_pubkey_der: (+1)
+   \        0x0   0xE92D 0x43F0      PUSH     {R4-R9,LR}
+   \        0x4   0xB085             SUB      SP,SP,#+20
+    374              int ret = MBEDTLS_ERR_ERROR_CORRUPTION_DETECTED;
+    375              unsigned char *c;
+    376              int has_par = 1;
+    377              size_t len = 0, par_len = 0, oid_len = 0;
+   \        0x6   0x2500             MOVS     R5,#+0
+   \        0x8   0x4680             MOV      R8,R0
+   \        0xA   0x2601             MOVS     R6,#+1
+   \        0xC   0x9503             STR      R5,[SP, #+12]
+    378              mbedtls_pk_type_t pk_type;
+    379          #if defined(MBEDTLS_PK_HAVE_ECC_KEYS)
+    380              mbedtls_ecp_group_id ec_grp_id = MBEDTLS_ECP_DP_NONE;
+    381          #endif
+    382              const char *oid = NULL;
+   \        0xE   0x9504             STR      R5,[SP, #+16]
+    383          
+    384              if (size == 0) {
+   \       0x10   0xB162             CBZ.N    R2,??mbedtls_pk_write_pubkey_der_0
+   \       0x12   0x460C             MOV      R4,R1
+    385                  return MBEDTLS_ERR_ASN1_BUF_TOO_SMALL;
+    386              }
+    387          
+    388              c = buf + size;
+   \       0x14   0x18A0             ADDS     R0,R4,R2
+   \       0x16   0x9002             STR      R0,[SP, #+8]
+    389          
+    390              MBEDTLS_ASN1_CHK_ADD(len, mbedtls_pk_write_pubkey(&c, buf, key));
+   \       0x18   0x4642             MOV      R2,R8
+   \       0x1A   0xA802             ADD      R0,SP,#+8
+   \       0x1C   0x.... 0x....      BL       mbedtls_pk_write_pubkey
+   \       0x20   0x0001             MOVS     R1,R0
+   \       0x22   0xD46F             BMI.N    ??mbedtls_pk_write_pubkey_der_1
+    391          
+    392              if (c - buf < 1) {
+   \       0x24   0x9802             LDR      R0,[SP, #+8]
+   \       0x26   0x1B00             SUBS     R0,R0,R4
+   \       0x28   0x2800             CMP      R0,#+0
+   \       0x2A   0xDC02             BGT.N    ??mbedtls_pk_write_pubkey_der_2
+    393                  return MBEDTLS_ERR_ASN1_BUF_TOO_SMALL;
+   \                     ??mbedtls_pk_write_pubkey_der_0: (+1)
+   \       0x2C   0xF06F 0x006B      MVN      R0,#+107
+   \       0x30   0xE068             B.N      ??mbedtls_pk_write_pubkey_der_1
+    394              }
+    395          
+    396              /*
+    397               *  SubjectPublicKeyInfo  ::=  SEQUENCE  {
+    398               *       algorithm            AlgorithmIdentifier,
+    399               *       subjectPublicKey     BIT STRING }
+    400               */
+    401              *--c = 0;
+   \                     ??mbedtls_pk_write_pubkey_der_2: (+1)
+   \       0x32   0x9802             LDR      R0,[SP, #+8]
+    402              len += 1;
+   \       0x34   0xF101 0x0901      ADD      R9,R1,#+1
+    403          
+    404              MBEDTLS_ASN1_CHK_ADD(len, mbedtls_asn1_write_len(&c, buf, len));
+   \       0x38   0x464A             MOV      R2,R9
+   \       0x3A   0x1E40             SUBS     R0,R0,#+1
+   \       0x3C   0x9002             STR      R0,[SP, #+8]
+   \       0x3E   0x7005             STRB     R5,[R0, #+0]
+   \       0x40   0x4621             MOV      R1,R4
+   \       0x42   0xA802             ADD      R0,SP,#+8
+   \       0x44   0x.... 0x....      BL       mbedtls_asn1_write_len
+   \       0x48   0x4607             MOV      R7,R0
+   \       0x4A   0x2F00             CMP      R7,#+0
+   \       0x4C   0xD45A             BMI.N    ??mbedtls_pk_write_pubkey_der_1
+    405              MBEDTLS_ASN1_CHK_ADD(len, mbedtls_asn1_write_tag(&c, buf, MBEDTLS_ASN1_BIT_STRING));
+   \       0x4E   0x2203             MOVS     R2,#+3
+   \       0x50   0x4621             MOV      R1,R4
+   \       0x52   0xA802             ADD      R0,SP,#+8
+   \       0x54   0x.... 0x....      BL       mbedtls_asn1_write_tag
+   \       0x58   0x2800             CMP      R0,#+0
+   \       0x5A   0xD453             BMI.N    ??mbedtls_pk_write_pubkey_der_1
+   \       0x5C   0x44B9             ADD      R9,R7,R9
+   \       0x5E   0x4481             ADD      R9,R0,R9
+    406          
+    407              pk_type = mbedtls_pk_get_type(key);
+   \       0x60   0x.... 0x....      BL       ?Subroutine4
+   \                     ??CrossCallReturnLabel_16: (+1)
+   \       0x64   0x4607             MOV      R7,R0
+    408          #if defined(MBEDTLS_PK_HAVE_ECC_KEYS)
+    409              if (pk_type == MBEDTLS_PK_ECKEY) {
+   \       0x66   0x2802             CMP      R0,#+2
+   \       0x68   0xD10A             BNE.N    ??mbedtls_pk_write_pubkey_der_3
+    410                  ec_grp_id = mbedtls_pk_get_group_id(key);
+   \                     ??mbedtls_pk_write_pubkey_der_4: (+1)
+   \       0x6A   0x4640             MOV      R0,R8
+   \       0x6C   0x.... 0x....      BL       mbedtls_pk_get_group_id
+   \       0x70   0x4680             MOV      R8,R0
+    411              }
+    412          #endif /* MBEDTLS_PK_HAVE_ECC_KEYS */
+    413          #if defined(MBEDTLS_USE_PSA_CRYPTO)
+    414              if (pk_type == MBEDTLS_PK_OPAQUE) {
+    415                  psa_key_type_t opaque_key_type = pk_get_opaque_key_type(key);
+    416          #if defined(MBEDTLS_PK_HAVE_ECC_KEYS)
+    417                  if (PSA_KEY_TYPE_IS_ECC(opaque_key_type)) {
+    418                      pk_type = MBEDTLS_PK_ECKEY;
+    419                      ec_grp_id = mbedtls_pk_get_group_id(key);
+    420                  } else
+    421          #endif /* MBEDTLS_PK_HAVE_ECC_KEYS */
+    422                  if (PSA_KEY_TYPE_IS_RSA(opaque_key_type)) {
+    423                      /* The rest of the function works as for legacy RSA contexts. */
+    424                      pk_type = MBEDTLS_PK_RSA;
+    425                  }
+    426              }
+    427              /* `pk_type` will have been changed to non-opaque by here if this function can handle it */
+    428              if (pk_type == MBEDTLS_PK_OPAQUE) {
+    429                  return MBEDTLS_ERR_PK_FEATURE_UNAVAILABLE;
+    430              }
+    431          #endif /* MBEDTLS_USE_PSA_CRYPTO */
+    432          
+    433          #if defined(MBEDTLS_PK_HAVE_ECC_KEYS)
+    434              if (pk_type == MBEDTLS_PK_ECKEY) {
+    435                  /* Some groups have their own AlgorithmIdentifier OID, others are handled
+    436                   * by mbedtls_oid_get_oid_by_pk_alg() below */
+    437                  ret = mbedtls_oid_get_oid_by_ec_grp_algid(ec_grp_id, &oid, &oid_len);
+   \       0x72   0xAA03             ADD      R2,SP,#+12
+   \       0x74   0xA904             ADD      R1,SP,#+16
+   \       0x76   0x.... 0x....      BL       mbedtls_oid_get_oid_by_ec_grp_algid
+    438          
+    439                  if (ret == 0) {
+   \       0x7A   0xB9E8             CBNZ.N   R0,??mbedtls_pk_write_pubkey_der_5
+    440                      /* Currently, none of the supported algorithms that have their own
+    441                       * AlgorithmIdentifier OID have any parameters */
+    442                      has_par = 0;
+   \       0x7C   0x2600             MOVS     R6,#+0
+   \       0x7E   0xE010             B.N      ??mbedtls_pk_write_pubkey_der_6
+    443                  } else if (ret == MBEDTLS_ERR_OID_NOT_FOUND) {
+   \                     ??mbedtls_pk_write_pubkey_der_3: (+1)
+   \       0x80   0x2807             CMP      R0,#+7
+   \       0x82   0xD10E             BNE.N    ??mbedtls_pk_write_pubkey_der_6
+   \       0x84   0x4640             MOV      R0,R8
+   \       0x86   0x.... 0x....      BL       pk_get_opaque_key_type
+   \       0x8A   0x.... 0x....      BL       ?Subroutine2
+   \                     ??CrossCallReturnLabel_9: (+1)
+   \       0x8E   0xBF08             IT       EQ
+   \       0x90   0x2702             MOVEQ    R7,#+2
+   \       0x92   0xD0EA             BEQ.N    ??mbedtls_pk_write_pubkey_der_4
+   \       0x94   0xF420 0x5040      BIC      R0,R0,#0x3000
+   \       0x98   0xF244 0x0101      MOVW     R1,#+16385
+   \       0x9C   0x4288             CMP      R0,R1
+   \       0x9E   0xD109             BNE.N    ??mbedtls_pk_write_pubkey_der_7
+   \       0xA0   0x2701             MOVS     R7,#+1
+    444                      MBEDTLS_ASN1_CHK_ADD(par_len, pk_write_ec_param(&c, buf, ec_grp_id));
+    445                  } else {
+    446                      return ret;
+    447                  }
+    448              }
+    449          #endif /* MBEDTLS_PK_HAVE_ECC_KEYS */
+    450          
+    451              if (oid_len == 0) {
+   \                     ??mbedtls_pk_write_pubkey_der_6: (+1)
+   \       0xA2   0x9803             LDR      R0,[SP, #+12]
+   \       0xA4   0xB998             CBNZ.N   R0,??mbedtls_pk_write_pubkey_der_8
+    452                  if ((ret = mbedtls_oid_get_oid_by_pk_alg(pk_type, &oid,
+    453                                                           &oid_len)) != 0) {
+   \       0xA6   0xAA03             ADD      R2,SP,#+12
+   \       0xA8   0xA904             ADD      R1,SP,#+16
+   \       0xAA   0x4638             MOV      R0,R7
+   \       0xAC   0x.... 0x....      BL       mbedtls_oid_get_oid_by_pk_alg
+   \       0xB0   0xB168             CBZ.N    R0,??mbedtls_pk_write_pubkey_der_8
+    454                      return ret;
+   \       0xB2   0xE027             B.N      ??mbedtls_pk_write_pubkey_der_1
+    455                  }
+    456              }
+   \                     ??mbedtls_pk_write_pubkey_der_7: (+1)
+   \       0xB4   0x....             LDR.N    R0,??DataTable11_1
+   \       0xB6   0xE025             B.N      ??mbedtls_pk_write_pubkey_der_1
+   \                     ??mbedtls_pk_write_pubkey_der_5: (+1)
+   \       0xB8   0xF110 0x0F2E      CMN      R0,#+46
+   \       0xBC   0xD122             BNE.N    ??mbedtls_pk_write_pubkey_der_1
+   \       0xBE   0x4642             MOV      R2,R8
+   \       0xC0   0x4621             MOV      R1,R4
+   \       0xC2   0xA802             ADD      R0,SP,#+8
+   \       0xC4   0x.... 0x....      BL       pk_write_ec_param
+   \       0xC8   0x0005             MOVS     R5,R0
+   \       0xCA   0xD5EA             BPL.N    ??mbedtls_pk_write_pubkey_der_6
+   \       0xCC   0xE01A             B.N      ??mbedtls_pk_write_pubkey_der_1
+    457          
+    458              MBEDTLS_ASN1_CHK_ADD(len, mbedtls_asn1_write_algorithm_identifier_ext(&c, buf, oid, oid_len,
+    459                                                                                    par_len, has_par));
+   \                     ??mbedtls_pk_write_pubkey_der_8: (+1)
+   \       0xCE   0x9B03             LDR      R3,[SP, #+12]
+   \       0xD0   0x9A04             LDR      R2,[SP, #+16]
+   \       0xD2   0x9601             STR      R6,[SP, #+4]
+   \       0xD4   0x9500             STR      R5,[SP, #+0]
+   \       0xD6   0x4621             MOV      R1,R4
+   \       0xD8   0xA802             ADD      R0,SP,#+8
+   \       0xDA   0x.... 0x....      BL       mbedtls_asn1_write_algorithm_identifier_ext
+   \       0xDE   0x2800             CMP      R0,#+0
+   \       0xE0   0xD410             BMI.N    ??mbedtls_pk_write_pubkey_der_1
+   \       0xE2   0x4481             ADD      R9,R0,R9
+    460          
+    461              MBEDTLS_ASN1_CHK_ADD(len, mbedtls_asn1_write_len(&c, buf, len));
+   \       0xE4   0x464A             MOV      R2,R9
+   \       0xE6   0x4621             MOV      R1,R4
+   \       0xE8   0xA802             ADD      R0,SP,#+8
+   \       0xEA   0x.... 0x....      BL       mbedtls_asn1_write_len
+   \       0xEE   0x0005             MOVS     R5,R0
+   \       0xF0   0xD408             BMI.N    ??mbedtls_pk_write_pubkey_der_1
+    462              MBEDTLS_ASN1_CHK_ADD(len, mbedtls_asn1_write_tag(&c, buf, MBEDTLS_ASN1_CONSTRUCTED |
+    463                                                               MBEDTLS_ASN1_SEQUENCE));
+   \       0xF2   0x2230             MOVS     R2,#+48
+   \       0xF4   0x4621             MOV      R1,R4
+   \       0xF6   0xA802             ADD      R0,SP,#+8
+   \       0xF8   0x.... 0x....      BL       mbedtls_asn1_write_tag
+   \       0xFC   0x2800             CMP      R0,#+0
+   \       0xFE   0xBF5C             ITT      PL
+   \      0x100   0x44A9             ADDPL    R9,R5,R9
+   \      0x102   0x4448             ADDPL    R0,R0,R9
+    464          
+    465              return (int) len;
+   \                     ??mbedtls_pk_write_pubkey_der_1: (+1)
+   \      0x104   0xB005             ADD      SP,SP,#+20
+   \      0x106   0xE8BD 0x83F0      POP      {R4-R9,PC}
+    466          }
+
+   \                                 In section .text, align 2, keep-with-next
+   \                     ?Subroutine4: (+1)
+   \        0x0   0x4640             MOV      R0,R8
+   \        0x2   0x.... 0x....      B.W      mbedtls_pk_get_type
+    467          
+    468          #if defined(MBEDTLS_PK_HAVE_ECC_KEYS)
+    469          #if defined(MBEDTLS_PK_HAVE_RFC8410_CURVES)
+    470          /*
+    471           * RFC8410 section 7
+    472           *
+    473           * OneAsymmetricKey ::= SEQUENCE {
+    474           *    version Version,
+    475           *    privateKeyAlgorithm PrivateKeyAlgorithmIdentifier,
+    476           *    privateKey PrivateKey,
+    477           *    attributes [0] IMPLICIT Attributes OPTIONAL,
+    478           *    ...,
+    479           *    [[2: publicKey [1] IMPLICIT PublicKey OPTIONAL ]],
+    480           *    ...
+    481           * }
+    482           * ...
+    483           * CurvePrivateKey ::= OCTET STRING
+    484           */
+    485          static int pk_write_ec_rfc8410_der(unsigned char **p, unsigned char *buf,
+    486                                             const mbedtls_pk_context *pk)
+    487          {
+    488              int ret = MBEDTLS_ERR_ERROR_CORRUPTION_DETECTED;
+    489              size_t len = 0;
+    490              size_t oid_len = 0;
+    491              const char *oid;
+    492              mbedtls_ecp_group_id grp_id;
+    493          
+    494              /* privateKey */
+    495              MBEDTLS_ASN1_CHK_ADD(len, pk_write_ec_private(p, buf, pk));
+    496              MBEDTLS_ASN1_CHK_ADD(len, mbedtls_asn1_write_len(p, buf, len));
+    497              MBEDTLS_ASN1_CHK_ADD(len, mbedtls_asn1_write_tag(p, buf, MBEDTLS_ASN1_OCTET_STRING));
+    498          
+    499              grp_id = mbedtls_pk_get_group_id(pk);
+    500              /* privateKeyAlgorithm */
+    501              if ((ret = mbedtls_oid_get_oid_by_ec_grp_algid(grp_id, &oid, &oid_len)) != 0) {
+    502                  return ret;
+    503              }
+    504              MBEDTLS_ASN1_CHK_ADD(len,
+    505                                   mbedtls_asn1_write_algorithm_identifier_ext(p, buf, oid, oid_len, 0, 0));
+    506          
+    507              /* version */
+    508              MBEDTLS_ASN1_CHK_ADD(len, mbedtls_asn1_write_int(p, buf, 0));
+    509          
+    510              MBEDTLS_ASN1_CHK_ADD(len, mbedtls_asn1_write_len(p, buf, len));
+    511              MBEDTLS_ASN1_CHK_ADD(len, mbedtls_asn1_write_tag(p, buf, MBEDTLS_ASN1_CONSTRUCTED |
+    512                                                               MBEDTLS_ASN1_SEQUENCE));
+    513          
+    514              return (int) len;
+    515          }
+    516          #endif /* MBEDTLS_PK_HAVE_RFC8410_CURVES */
+    517          
+    518          /*
+    519           * RFC 5915, or SEC1 Appendix C.4
+    520           *
+    521           * ECPrivateKey ::= SEQUENCE {
+    522           *      version        INTEGER { ecPrivkeyVer1(1) } (ecPrivkeyVer1),
+    523           *      privateKey     OCTET STRING,
+    524           *      parameters [0] ECParameters {{ NamedCurve }} OPTIONAL,
+    525           *      publicKey  [1] BIT STRING OPTIONAL
+    526           *    }
+    527           */
+    528          static int pk_write_ec_der(unsigned char **p, unsigned char *buf,
+    529                                     const mbedtls_pk_context *pk)
+    530          {
+    531              size_t len = 0;
+    532              int ret;
+    533              size_t pub_len = 0, par_len = 0;
+    534              mbedtls_ecp_group_id grp_id;
+    535          
+    536              /* publicKey */
+    537              MBEDTLS_ASN1_CHK_ADD(pub_len, pk_write_ec_pubkey(p, buf, pk));
+    538          
+    539              if (*p - buf < 1) {
+    540                  return MBEDTLS_ERR_ASN1_BUF_TOO_SMALL;
+    541              }
+    542              (*p)--;
+    543              **p = 0;
+    544              pub_len += 1;
+    545          
+    546              MBEDTLS_ASN1_CHK_ADD(pub_len, mbedtls_asn1_write_len(p, buf, pub_len));
+    547              MBEDTLS_ASN1_CHK_ADD(pub_len, mbedtls_asn1_write_tag(p, buf, MBEDTLS_ASN1_BIT_STRING));
+    548          
+    549              MBEDTLS_ASN1_CHK_ADD(pub_len, mbedtls_asn1_write_len(p, buf, pub_len));
+    550              MBEDTLS_ASN1_CHK_ADD(pub_len, mbedtls_asn1_write_tag(p, buf,
+    551                                                                   MBEDTLS_ASN1_CONTEXT_SPECIFIC |
+    552                                                                   MBEDTLS_ASN1_CONSTRUCTED | 1));
+    553              len += pub_len;
+    554          
+    555              /* parameters */
+    556              grp_id = mbedtls_pk_get_group_id(pk);
+    557              MBEDTLS_ASN1_CHK_ADD(par_len, pk_write_ec_param(p, buf, grp_id));
+    558              MBEDTLS_ASN1_CHK_ADD(par_len, mbedtls_asn1_write_len(p, buf, par_len));
+    559              MBEDTLS_ASN1_CHK_ADD(par_len, mbedtls_asn1_write_tag(p, buf,
+    560                                                                   MBEDTLS_ASN1_CONTEXT_SPECIFIC |
+    561                                                                   MBEDTLS_ASN1_CONSTRUCTED | 0));
+    562              len += par_len;
+    563          
+    564              /* privateKey */
+    565              MBEDTLS_ASN1_CHK_ADD(len, pk_write_ec_private(p, buf, pk));
+    566          
+    567              /* version */
+    568              MBEDTLS_ASN1_CHK_ADD(len, mbedtls_asn1_write_int(p, buf, 1));
+    569          
+    570              MBEDTLS_ASN1_CHK_ADD(len, mbedtls_asn1_write_len(p, buf, len));
+    571              MBEDTLS_ASN1_CHK_ADD(len, mbedtls_asn1_write_tag(p, buf, MBEDTLS_ASN1_CONSTRUCTED |
+    572                                                               MBEDTLS_ASN1_SEQUENCE));
+    573          
+    574              return (int) len;
+    575          }
+    576          #endif /* MBEDTLS_PK_HAVE_ECC_KEYS */
+    577          
+    578          #if defined(MBEDTLS_RSA_C)
+    579          static int pk_write_rsa_der(unsigned char **p, unsigned char *buf,
+    580                                      const mbedtls_pk_context *pk)
+    581          {
+    582              size_t len = 0;
+    583              int ret;
+    584          
+    585          #if defined(MBEDTLS_USE_PSA_CRYPTO)
+    586              if (mbedtls_pk_get_type(pk) == MBEDTLS_PK_OPAQUE) {
+    587                  uint8_t tmp[PSA_EXPORT_KEY_PAIR_MAX_SIZE];
+    588                  size_t tmp_len = 0;
+    589          
+    590                  if (psa_export_key(pk->priv_id, tmp, sizeof(tmp), &tmp_len) != PSA_SUCCESS) {
+    591                      return MBEDTLS_ERR_PK_BAD_INPUT_DATA;
+    592                  }
+    593                  *p -= tmp_len;
+    594                  memcpy(*p, tmp, tmp_len);
+    595                  len += tmp_len;
+    596                  mbedtls_platform_zeroize(tmp, sizeof(tmp));
+    597              } else
+    598          #endif /* MBEDTLS_USE_PSA_CRYPTO */
+    599              {
+    600                  mbedtls_mpi T; /* Temporary holding the exported parameters */
+    601                  mbedtls_rsa_context *rsa = mbedtls_pk_rsa(*pk);
+    602          
+    603                  /*
+    604                   * Export the parameters one after another to avoid simultaneous copies.
+    605                   */
+    606          
+    607                  mbedtls_mpi_init(&T);
+    608          
+    609                  /* Export QP */
+    610                  if ((ret = mbedtls_rsa_export_crt(rsa, NULL, NULL, &T)) != 0 ||
+    611                      (ret = mbedtls_asn1_write_mpi(p, buf, &T)) < 0) {
+    612                      goto end_of_export;
+    613                  }
+    614                  len += ret;
+    615          
+    616                  /* Export DQ */
+    617                  if ((ret = mbedtls_rsa_export_crt(rsa, NULL, &T, NULL)) != 0 ||
+    618                      (ret = mbedtls_asn1_write_mpi(p, buf, &T)) < 0) {
+    619                      goto end_of_export;
+    620                  }
+    621                  len += ret;
+    622          
+    623                  /* Export DP */
+    624                  if ((ret = mbedtls_rsa_export_crt(rsa, &T, NULL, NULL)) != 0 ||
+    625                      (ret = mbedtls_asn1_write_mpi(p, buf, &T)) < 0) {
+    626                      goto end_of_export;
+    627                  }
+    628                  len += ret;
+    629          
+    630                  /* Export Q */
+    631                  if ((ret = mbedtls_rsa_export(rsa, NULL, NULL,
+    632                                                &T, NULL, NULL)) != 0 ||
+    633                      (ret = mbedtls_asn1_write_mpi(p, buf, &T)) < 0) {
+    634                      goto end_of_export;
+    635                  }
+    636                  len += ret;
+    637          
+    638                  /* Export P */
+    639                  if ((ret = mbedtls_rsa_export(rsa, NULL, &T,
+    640                                                NULL, NULL, NULL)) != 0 ||
+    641                      (ret = mbedtls_asn1_write_mpi(p, buf, &T)) < 0) {
+    642                      goto end_of_export;
+    643                  }
+    644                  len += ret;
+    645          
+    646                  /* Export D */
+    647                  if ((ret = mbedtls_rsa_export(rsa, NULL, NULL,
+    648                                                NULL, &T, NULL)) != 0 ||
+    649                      (ret = mbedtls_asn1_write_mpi(p, buf, &T)) < 0) {
+    650                      goto end_of_export;
+    651                  }
+    652                  len += ret;
+    653          
+    654                  /* Export E */
+    655                  if ((ret = mbedtls_rsa_export(rsa, NULL, NULL,
+    656                                                NULL, NULL, &T)) != 0 ||
+    657                      (ret = mbedtls_asn1_write_mpi(p, buf, &T)) < 0) {
+    658                      goto end_of_export;
+    659                  }
+    660                  len += ret;
+    661          
+    662                  /* Export N */
+    663                  if ((ret = mbedtls_rsa_export(rsa, &T, NULL,
+    664                                                NULL, NULL, NULL)) != 0 ||
+    665                      (ret = mbedtls_asn1_write_mpi(p, buf, &T)) < 0) {
+    666                      goto end_of_export;
+    667                  }
+    668                  len += ret;
+    669          
+    670          end_of_export:
+    671          
+    672                  mbedtls_mpi_free(&T);
+    673                  if (ret < 0) {
+    674                      return ret;
+    675                  }
+    676          
+    677                  MBEDTLS_ASN1_CHK_ADD(len, mbedtls_asn1_write_int(p, buf, 0));
+    678                  MBEDTLS_ASN1_CHK_ADD(len, mbedtls_asn1_write_len(p, buf, len));
+    679                  MBEDTLS_ASN1_CHK_ADD(len, mbedtls_asn1_write_tag(p,
+    680                                                                   buf, MBEDTLS_ASN1_CONSTRUCTED |
+    681                                                                   MBEDTLS_ASN1_SEQUENCE));
+    682              }
+    683          
+    684              return (int) len;
+    685          }
+    686          #endif /* MBEDTLS_RSA_C */
+    687          
+
+   \                                 In section .text, align 2, keep-with-next
+    688          int mbedtls_pk_write_key_der(const mbedtls_pk_context *key, unsigned char *buf, size_t size)
+    689          {
+   \                     mbedtls_pk_write_key_der: (+1)
+   \        0x0   0xE92D 0x43F8      PUSH     {R3-R9,LR}
+    690              unsigned char *c;
+    691          #if defined(MBEDTLS_RSA_C)
+    692              int is_rsa_opaque = 0;
+    693          #endif /* MBEDTLS_RSA_C */
+    694          #if defined(MBEDTLS_PK_HAVE_ECC_KEYS)
+    695              int is_ec_opaque = 0;
+   \        0x4   0x2500             MOVS     R5,#+0
+   \        0x6   0xB0B2             SUB      SP,SP,#+200
+    696          #endif /* MBEDTLS_PK_HAVE_ECC_KEYS */
+    697          #if defined(MBEDTLS_USE_PSA_CRYPTO)
+    698              psa_key_type_t opaque_key_type;
+    699          #endif /* MBEDTLS_USE_PSA_CRYPTO */
+    700          
+    701              if (size == 0) {
+   \        0x8   0xF06F 0x046B      MVN      R4,#+107
+   \        0xC   0x2A00             CMP      R2,#+0
+   \        0xE   0xF000 0x80A9      BEQ.W    ??mbedtls_pk_write_key_der_0
+   \       0x12   0x460E             MOV      R6,R1
+   \       0x14   0x4680             MOV      R8,R0
+    702                  return MBEDTLS_ERR_ASN1_BUF_TOO_SMALL;
+    703              }
+    704          
+    705              c = buf + size;
+   \       0x16   0x18B0             ADDS     R0,R6,R2
+   \       0x18   0x9000             STR      R0,[SP, #+0]
+    706          
+    707          #if defined(MBEDTLS_USE_PSA_CRYPTO)
+    708              if (mbedtls_pk_get_type(key) == MBEDTLS_PK_OPAQUE) {
+   \       0x1A   0x.... 0x....      BL       ?Subroutine4
+   \                     ??CrossCallReturnLabel_15: (+1)
+   \       0x1E   0x2807             CMP      R0,#+7
+   \       0x20   0xD106             BNE.N    ??mbedtls_pk_write_key_der_1
+    709                  opaque_key_type = pk_get_opaque_key_type(key);
+    710          #if defined(MBEDTLS_RSA_C)
+    711                  is_rsa_opaque = PSA_KEY_TYPE_IS_RSA(opaque_key_type);
+    712          #endif /* MBEDTLS_RSA_C */
+    713          #if defined(MBEDTLS_PK_HAVE_ECC_KEYS)
+    714                  is_ec_opaque = PSA_KEY_TYPE_IS_ECC(opaque_key_type);
+   \       0x22   0x4640             MOV      R0,R8
+   \       0x24   0x.... 0x....      BL       pk_get_opaque_key_type
+   \       0x28   0x.... 0x....      BL       ?Subroutine3
+    715          #endif /* MBEDTLS_PK_HAVE_ECC_KEYS */
+    716              }
+   \                     ??CrossCallReturnLabel_10: (+1)
+   \       0x2C   0xBF08             IT       EQ
+   \       0x2E   0x2501             MOVEQ    R5,#+1
+    717          #endif /* MBEDTLS_USE_PSA_CRYPTO */
+    718          
+    719          #if defined(MBEDTLS_RSA_C)
+    720              if ((mbedtls_pk_get_type(key) == MBEDTLS_PK_RSA) || is_rsa_opaque) {
+    721                  return pk_write_rsa_der(&c, buf, key);
+    722              } else
+    723          #endif /* MBEDTLS_RSA_C */
+    724          #if defined(MBEDTLS_PK_HAVE_ECC_KEYS)
+    725              if ((mbedtls_pk_get_type(key) == MBEDTLS_PK_ECKEY) || is_ec_opaque) {
+   \                     ??mbedtls_pk_write_key_der_1: (+1)
+   \       0x30   0x.... 0x....      BL       ?Subroutine4
+   \                     ??CrossCallReturnLabel_14: (+1)
+   \       0x34   0x2802             CMP      R0,#+2
+   \       0x36   0xD002             BEQ.N    ??mbedtls_pk_write_key_der_2
+   \       0x38   0x2D00             CMP      R5,#+0
+   \       0x3A   0xF000 0x8095      BEQ.W    ??mbedtls_pk_write_key_der_3
+    726          #if defined(MBEDTLS_PK_HAVE_RFC8410_CURVES)
+    727                  if (mbedtls_pk_is_rfc8410(key)) {
+    728                      return pk_write_ec_rfc8410_der(&c, buf, key);
+    729                  }
+    730          #endif /* MBEDTLS_PK_HAVE_RFC8410_CURVES */
+    731                  return pk_write_ec_der(&c, buf, key);
+   \                     ??mbedtls_pk_write_key_der_2: (+1)
+   \       0x3E   0x4642             MOV      R2,R8
+   \       0x40   0x4631             MOV      R1,R6
+   \       0x42   0x4668             MOV      R0,SP
+   \       0x44   0x.... 0x....      BL       pk_write_ec_pubkey
+   \       0x48   0x0005             MOVS     R5,R0
+   \       0x4A   0xD418             BMI.N    ??mbedtls_pk_write_key_der_4
+   \       0x4C   0x9800             LDR      R0,[SP, #+0]
+   \       0x4E   0x1B80             SUBS     R0,R0,R6
+   \       0x50   0x2800             CMP      R0,#+0
+   \       0x52   0xDD76             BLE.N    ??mbedtls_pk_write_key_der_5
+   \       0x54   0x9A00             LDR      R2,[SP, #+0]
+   \       0x56   0x2100             MOVS     R1,#+0
+   \       0x58   0x1C6D             ADDS     R5,R5,#+1
+   \       0x5A   0x1E50             SUBS     R0,R2,#+1
+   \       0x5C   0x9000             STR      R0,[SP, #+0]
+   \       0x5E   0x7001             STRB     R1,[R0, #+0]
+   \       0x60   0x.... 0x....      BL       ?Subroutine0
+   \                     ??CrossCallReturnLabel_3: (+1)
+   \       0x64   0x0004             MOVS     R4,R0
+   \       0x66   0xD47D             BMI.N    ??mbedtls_pk_write_key_der_0
+   \       0x68   0x2203             MOVS     R2,#+3
+   \       0x6A   0x.... 0x....      BL       ?Subroutine1
+   \                     ??CrossCallReturnLabel_7: (+1)
+   \       0x6E   0x2800             CMP      R0,#+0
+   \       0x70   0xD466             BMI.N    ??mbedtls_pk_write_key_der_6
+   \       0x72   0x1964             ADDS     R4,R4,R5
+   \       0x74   0x1904             ADDS     R4,R0,R4
+   \       0x76   0x4622             MOV      R2,R4
+   \       0x78   0x.... 0x....      BL       ??Subroutine0_0
+   \                     ??CrossCallReturnLabel_1: (+1)
+   \       0x7C   0x0005             MOVS     R5,R0
+   \                     ??mbedtls_pk_write_key_der_4: (+1)
+   \       0x7E   0xD468             BMI.N    ??mbedtls_pk_write_key_der_7
+   \       0x80   0x22A1             MOVS     R2,#+161
+   \       0x82   0x.... 0x....      BL       ?Subroutine1
+   \                     ??CrossCallReturnLabel_6: (+1)
+   \       0x86   0x2800             CMP      R0,#+0
+   \       0x88   0xD45A             BMI.N    ??mbedtls_pk_write_key_der_6
+   \       0x8A   0x192C             ADDS     R4,R5,R4
+   \       0x8C   0x1907             ADDS     R7,R0,R4
+   \       0x8E   0x4640             MOV      R0,R8
+   \       0x90   0x.... 0x....      BL       mbedtls_pk_get_group_id
+   \       0x94   0x4602             MOV      R2,R0
+   \       0x96   0x4631             MOV      R1,R6
+   \       0x98   0x4668             MOV      R0,SP
+   \       0x9A   0x.... 0x....      BL       pk_write_ec_param
+   \       0x9E   0x0005             MOVS     R5,R0
+   \       0xA0   0xD457             BMI.N    ??mbedtls_pk_write_key_der_7
+   \       0xA2   0x.... 0x....      BL       ?Subroutine0
+   \                     ??CrossCallReturnLabel_2: (+1)
+   \       0xA6   0x4681             MOV      R9,R0
+   \       0xA8   0xF1B9 0x0F00      CMP      R9,#+0
+   \       0xAC   0xBF48             IT       MI
+   \       0xAE   0x464C             MOVMI    R4,R9
+   \       0xB0   0xD458             BMI.N    ??mbedtls_pk_write_key_der_0
+   \       0xB2   0x22A0             MOVS     R2,#+160
+   \       0xB4   0x.... 0x....      BL       ?Subroutine1
+   \                     ??CrossCallReturnLabel_5: (+1)
+   \       0xB8   0x0004             MOVS     R4,R0
+   \       0xBA   0xD453             BMI.N    ??mbedtls_pk_write_key_der_0
+   \       0xBC   0x19EF             ADDS     R7,R5,R7
+   \       0xBE   0x444F             ADD      R7,R9,R7
+   \       0xC0   0x4640             MOV      R0,R8
+   \       0xC2   0x19E7             ADDS     R7,R4,R7
+   \       0xC4   0x.... 0x....      BL       mbedtls_pk_get_type
+   \       0xC8   0x2807             CMP      R0,#+7
+   \       0xCA   0xD10E             BNE.N    ??mbedtls_pk_write_key_der_8
+   \       0xCC   0xF8D8 0x0008      LDR      R0,[R8, #+8]
+   \       0xD0   0xAB01             ADD      R3,SP,#+4
+   \       0xD2   0x2220             MOVS     R2,#+32
+   \       0xD4   0xA902             ADD      R1,SP,#+8
+   \       0xD6   0x.... 0x....      BL       psa_export_key
+   \       0xDA   0xB1E8             CBZ.N    R0,??mbedtls_pk_write_key_der_9
+   \       0xDC   0x....             LDR.N    R3,??DataTable11_3
+   \       0xDE   0x2207             MOVS     R2,#+7
+   \       0xE0   0x....             LDR.N    R1,??DataTable11_4
+   \       0xE2   0x.... 0x....      BL       psa_status_to_mbedtls
+   \       0xE6   0x4604             MOV      R4,R0
+   \       0xE8   0xE021             B.N      ??mbedtls_pk_write_key_der_10
+   \                     ??mbedtls_pk_write_key_der_8: (+1)
+   \       0xEA   0xA80A             ADD      R0,SP,#+40
+   \       0xEC   0x4641             MOV      R1,R8
+   \       0xEE   0x22A0             MOVS     R2,#+160
+   \       0xF0   0x.... 0x....      BL       __aeabi_memcpy4
+   \       0xF4   0xA80A             ADD      R0,SP,#+40
+   \       0xF6   0x.... 0x....      BL       mbedtls_pk_get_type
+   \       0xFA   0x1E80             SUBS     R0,R0,#+2
+   \       0xFC   0x2802             CMP      R0,#+2
+   \       0xFE   0xBF94             ITE      LS
+   \      0x100   0x980B             LDRLS    R0,[SP, #+44]
+   \      0x102   0x2000             MOVHI    R0,#+0
+   \      0x104   0x6BC1             LDR      R1,[R0, #+60]
+   \      0x106   0x1DC9             ADDS     R1,R1,#+7
+   \      0x108   0x08C9             LSRS     R1,R1,#+3
+   \      0x10A   0x9101             STR      R1,[SP, #+4]
+   \      0x10C   0x460A             MOV      R2,R1
+   \      0x10E   0xA902             ADD      R1,SP,#+8
+   \      0x110   0x.... 0x....      BL       mbedtls_ecp_write_key
+   \      0x114   0x0004             MOVS     R4,R0
+   \      0x116   0xD106             BNE.N    ??mbedtls_pk_write_key_der_11
+   \                     ??mbedtls_pk_write_key_der_9: (+1)
+   \      0x118   0x9B01             LDR      R3,[SP, #+4]
+   \      0x11A   0xAA02             ADD      R2,SP,#+8
+   \      0x11C   0x4631             MOV      R1,R6
+   \      0x11E   0x4668             MOV      R0,SP
+   \      0x120   0x.... 0x....      BL       mbedtls_asn1_write_octet_string
+   \      0x124   0x4604             MOV      R4,R0
+   \                     ??mbedtls_pk_write_key_der_11: (+1)
+   \      0x126   0x2120             MOVS     R1,#+32
+   \      0x128   0xA802             ADD      R0,SP,#+8
+   \      0x12A   0x.... 0x....      BL       mbedtls_platform_zeroize
+   \                     ??mbedtls_pk_write_key_der_10: (+1)
+   \      0x12E   0x2C00             CMP      R4,#+0
+   \      0x130   0xD418             BMI.N    ??mbedtls_pk_write_key_der_0
+   \      0x132   0x2201             MOVS     R2,#+1
+   \      0x134   0x4631             MOV      R1,R6
+   \      0x136   0x4668             MOV      R0,SP
+   \      0x138   0x.... 0x....      BL       mbedtls_asn1_write_int
+   \      0x13C   0x2800             CMP      R0,#+0
+   \      0x13E   0xD501             BPL.N    ??mbedtls_pk_write_key_der_12
+   \                     ??mbedtls_pk_write_key_der_6: (+1)
+   \      0x140   0x4604             MOV      R4,R0
+   \                     ??mbedtls_pk_write_key_der_5: (+1)
+   \      0x142   0xE00F             B.N      ??mbedtls_pk_write_key_der_0
+   \                     ??mbedtls_pk_write_key_der_12: (+1)
+   \      0x144   0x19E7             ADDS     R7,R4,R7
+   \      0x146   0x19C7             ADDS     R7,R0,R7
+   \      0x148   0x463A             MOV      R2,R7
+   \      0x14A   0x.... 0x....      BL       ??Subroutine0_0
+   \                     ??CrossCallReturnLabel_0: (+1)
+   \      0x14E   0x0005             MOVS     R5,R0
+   \      0x150   0xD501             BPL.N    ??mbedtls_pk_write_key_der_13
+   \                     ??mbedtls_pk_write_key_der_7: (+1)
+   \      0x152   0x462C             MOV      R4,R5
+   \      0x154   0xE006             B.N      ??mbedtls_pk_write_key_der_0
+   \                     ??mbedtls_pk_write_key_der_13: (+1)
+   \      0x156   0x2230             MOVS     R2,#+48
+   \      0x158   0x.... 0x....      BL       ?Subroutine1
+   \                     ??CrossCallReturnLabel_4: (+1)
+   \      0x15C   0x0004             MOVS     R4,R0
+   \      0x15E   0xBF5C             ITT      PL
+   \      0x160   0x19EF             ADDPL    R7,R5,R7
+   \      0x162   0x19E4             ADDPL    R4,R4,R7
+    732              } else
+   \                     ??mbedtls_pk_write_key_der_0: (+1)
+   \      0x164   0x4620             MOV      R0,R4
+   \      0x166   0xE000             B.N      ??mbedtls_pk_write_key_der_14
+    733          #endif /* MBEDTLS_PK_HAVE_ECC_KEYS */
+    734              return MBEDTLS_ERR_PK_FEATURE_UNAVAILABLE;
+   \                     ??mbedtls_pk_write_key_der_3: (+1)
+   \      0x168   0x....             LDR.N    R0,??DataTable11_1
+   \                     ??mbedtls_pk_write_key_der_14: (+1)
+   \      0x16A   0xB033             ADD      SP,SP,#+204
+   \      0x16C   0xE8BD 0x83F0      POP      {R4-R9,PC}
+    735          }
+
+   \                                 In section .text, align 2, keep-with-next
+   \                     ?Subroutine3: (+1)
+   \        0x0   0x....             LDR.N    R1,??DataTable11_2
+   \        0x2   0x4008             ANDS     R0,R1,R0
+   \        0x4   0xF5B0 0x4F82      CMP      R0,#+16640
+   \        0x8   0x4770             BX       LR
+    736          
+    737          #if defined(MBEDTLS_PEM_WRITE_C)
+    738          
+    739          #define PEM_BEGIN_PUBLIC_KEY    "-----BEGIN PUBLIC KEY-----\n"
+    740          #define PEM_END_PUBLIC_KEY      "-----END PUBLIC KEY-----\n"
+    741          
+    742          #define PEM_BEGIN_PRIVATE_KEY_RSA   "-----BEGIN RSA PRIVATE KEY-----\n"
+    743          #define PEM_END_PRIVATE_KEY_RSA     "-----END RSA PRIVATE KEY-----\n"
+    744          #define PEM_BEGIN_PRIVATE_KEY_EC    "-----BEGIN EC PRIVATE KEY-----\n"
+    745          #define PEM_END_PRIVATE_KEY_EC      "-----END EC PRIVATE KEY-----\n"
+    746          #define PEM_BEGIN_PRIVATE_KEY_PKCS8 "-----BEGIN PRIVATE KEY-----\n"
+    747          #define PEM_END_PRIVATE_KEY_PKCS8   "-----END PRIVATE KEY-----\n"
+    748          
+    749          #define PUB_DER_MAX_BYTES                                                   \
+    750              (MBEDTLS_PK_RSA_PUB_DER_MAX_BYTES > MBEDTLS_PK_ECP_PUB_DER_MAX_BYTES ? \
+    751               MBEDTLS_PK_RSA_PUB_DER_MAX_BYTES : MBEDTLS_PK_ECP_PUB_DER_MAX_BYTES)
+    752          #define PRV_DER_MAX_BYTES                                                   \
+    753              (MBEDTLS_PK_RSA_PRV_DER_MAX_BYTES > MBEDTLS_PK_ECP_PRV_DER_MAX_BYTES ? \
+    754               MBEDTLS_PK_RSA_PRV_DER_MAX_BYTES : MBEDTLS_PK_ECP_PRV_DER_MAX_BYTES)
+    755          
+
+   \                                 In section .text, align 4, keep-with-next
+    756          int mbedtls_pk_write_pubkey_pem(const mbedtls_pk_context *key, unsigned char *buf, size_t size)
+    757          {
+   \                     mbedtls_pk_write_pubkey_pem: (+1)
+   \        0x0   0xB538             PUSH     {R3-R5,LR}
+   \        0x2   0xB09C             SUB      SP,SP,#+112
+   \        0x4   0x460C             MOV      R4,R1
+   \        0x6   0x4615             MOV      R5,R2
+    758              int ret = MBEDTLS_ERR_ERROR_CORRUPTION_DETECTED;
+    759              unsigned char output_buf[PUB_DER_MAX_BYTES];
+    760              size_t olen = 0;
+   \        0x8   0x2300             MOVS     R3,#+0
+   \        0xA   0x9303             STR      R3,[SP, #+12]
+    761          
+    762              if ((ret = mbedtls_pk_write_pubkey_der(key, output_buf,
+    763                                                     sizeof(output_buf))) < 0) {
+   \        0xC   0x225E             MOVS     R2,#+94
+   \        0xE   0xA904             ADD      R1,SP,#+16
+   \       0x10   0x.... 0x....      BL       mbedtls_pk_write_pubkey_der
+   \       0x14   0x2800             CMP      R0,#+0
+   \       0x16   0xD40E             BMI.N    ??mbedtls_pk_write_pubkey_pem_0
+    764                  return ret;
+    765              }
+    766          
+    767              if ((ret = mbedtls_pem_write_buffer(PEM_BEGIN_PUBLIC_KEY, PEM_END_PUBLIC_KEY,
+    768                                                  output_buf + sizeof(output_buf) - ret,
+    769                                                  ret, buf, size, &olen)) != 0) {
+    770                  return ret;
+   \       0x18   0x4603             MOV      R3,R0
+   \       0x1A   0xAA04             ADD      R2,SP,#+16
+   \       0x1C   0x4240             RSBS     R0,R0,#+0
+   \       0x1E   0xA903             ADD      R1,SP,#+12
+   \       0x20   0x4410             ADD      R0,R2,R0
+   \       0x22   0x9102             STR      R1,[SP, #+8]
+   \       0x24   0xF100 0x025E      ADD      R2,R0,#+94
+   \       0x28   0x9501             STR      R5,[SP, #+4]
+   \       0x2A   0x9400             STR      R4,[SP, #+0]
+   \       0x2C   0x.... 0x....      ADR.W    R1,?_3
+   \       0x30   0x....             ADR.N    R0,?_2
+   \       0x32   0x.... 0x....      BL       mbedtls_pem_write_buffer
+   \                     ??mbedtls_pk_write_pubkey_pem_0: (+1)
+   \       0x36   0xB01D             ADD      SP,SP,#+116
+   \       0x38   0xBD30             POP      {R4,R5,PC}
+    771              }
+    772          
+    773              return 0;
+    774          }
+    775          
+
+   \                                 In section .text, align 4, keep-with-next
+    776          int mbedtls_pk_write_key_pem(const mbedtls_pk_context *key, unsigned char *buf, size_t size)
+    777          {
+   \                     mbedtls_pk_write_key_pem: (+1)
+   \        0x0   0xE92D 0x41F0      PUSH     {R4-R8,LR}
+   \        0x4   0x4680             MOV      R8,R0
+   \        0x6   0xB0A4             SUB      SP,SP,#+144
+    778              int ret = MBEDTLS_ERR_ERROR_CORRUPTION_DETECTED;
+    779              unsigned char output_buf[PRV_DER_MAX_BYTES];
+    780              const char *begin, *end;
+    781              size_t olen = 0;
+   \        0x8   0x2000             MOVS     R0,#+0
+   \        0xA   0x460E             MOV      R6,R1
+   \        0xC   0x4617             MOV      R7,R2
+   \        0xE   0x9003             STR      R0,[SP, #+12]
+    782          #if defined(MBEDTLS_PK_HAVE_ECC_KEYS)
+    783              int is_ec_opaque = 0;
+    784          #if defined(MBEDTLS_PK_HAVE_RFC8410_CURVES)
+    785              int is_montgomery_opaque = 0;
+    786          #endif /* MBEDTLS_PK_HAVE_RFC8410_CURVES */
+    787          #endif /* MBEDTLS_PK_HAVE_ECC_KEYS */
+    788          #if defined(MBEDTLS_RSA_C)
+    789              int is_rsa_opaque = 0;
+    790          #endif
+    791          
+    792              if ((ret = mbedtls_pk_write_key_der(key, output_buf, sizeof(output_buf))) < 0) {
+   \       0x10   0x227D             MOVS     R2,#+125
+   \       0x12   0xA904             ADD      R1,SP,#+16
+   \       0x14   0x4640             MOV      R0,R8
+   \       0x16   0x.... 0x....      BL       mbedtls_pk_write_key_der
+   \       0x1A   0x2400             MOVS     R4,#+0
+   \       0x1C   0x4605             MOV      R5,R0
+   \       0x1E   0x2D00             CMP      R5,#+0
+   \       0x20   0xD421             BMI.N    ??mbedtls_pk_write_key_pem_0
+    793                  return ret;
+    794              }
+    795          
+    796          #if defined(MBEDTLS_USE_PSA_CRYPTO)
+    797              if (mbedtls_pk_get_type(key) == MBEDTLS_PK_OPAQUE) {
+   \       0x22   0x.... 0x....      BL       ?Subroutine4
+   \                     ??CrossCallReturnLabel_13: (+1)
+   \       0x26   0x2807             CMP      R0,#+7
+   \       0x28   0xD106             BNE.N    ??mbedtls_pk_write_key_pem_1
+    798                  psa_key_type_t opaque_key_type = pk_get_opaque_key_type(key);
+    799          
+    800          #if defined(MBEDTLS_RSA_C)
+    801                  is_rsa_opaque = PSA_KEY_TYPE_IS_RSA(opaque_key_type);
+    802          #endif
+    803          #if defined(MBEDTLS_PK_HAVE_ECC_KEYS)
+    804                  is_ec_opaque = PSA_KEY_TYPE_IS_ECC(opaque_key_type);
+   \       0x2A   0x4640             MOV      R0,R8
+   \       0x2C   0x.... 0x....      BL       pk_get_opaque_key_type
+   \       0x30   0x.... 0x....      BL       ?Subroutine3
+    805          #if defined(MBEDTLS_PK_HAVE_RFC8410_CURVES)
+    806                  if (pk_get_opaque_ec_family(key) == PSA_ECC_FAMILY_MONTGOMERY) {
+    807                      is_montgomery_opaque = 1;
+    808                  }
+    809          #endif /* MBEDTLS_PK_HAVE_RFC8410_CURVES */
+    810          #endif /* MBEDTLS_PK_HAVE_ECC_KEYS */
+    811              }
+   \                     ??CrossCallReturnLabel_11: (+1)
+   \       0x34   0xBF08             IT       EQ
+   \       0x36   0x2401             MOVEQ    R4,#+1
+    812          #endif /* MBEDTLS_USE_PSA_CRYPTO */
+    813          
+    814          #if defined(MBEDTLS_RSA_C)
+    815              if ((mbedtls_pk_get_type(key) == MBEDTLS_PK_RSA) || is_rsa_opaque) {
+    816                  begin = PEM_BEGIN_PRIVATE_KEY_RSA;
+    817                  end = PEM_END_PRIVATE_KEY_RSA;
+    818              } else
+    819          #endif
+    820          #if defined(MBEDTLS_PK_HAVE_ECC_KEYS)
+    821              if ((mbedtls_pk_get_type(key) == MBEDTLS_PK_ECKEY) || is_ec_opaque) {
+   \                     ??mbedtls_pk_write_key_pem_1: (+1)
+   \       0x38   0x.... 0x....      BL       ?Subroutine4
+   \                     ??CrossCallReturnLabel_12: (+1)
+   \       0x3C   0x2802             CMP      R0,#+2
+   \       0x3E   0xD000             BEQ.N    ??mbedtls_pk_write_key_pem_2
+   \       0x40   0xB184             CBZ.N    R4,??mbedtls_pk_write_key_pem_3
+    822          #if defined(MBEDTLS_PK_HAVE_RFC8410_CURVES)
+    823                  if (is_montgomery_opaque ||
+    824                      ((mbedtls_pk_get_type(key) == MBEDTLS_PK_ECKEY) &&
+    825                       (mbedtls_pk_is_rfc8410(key)))) {
+    826                      begin = PEM_BEGIN_PRIVATE_KEY_PKCS8;
+    827                      end = PEM_END_PRIVATE_KEY_PKCS8;
+    828                  } else
+    829          #endif /* MBEDTLS_PK_HAVE_RFC8410_CURVES */
+    830                  {
+    831                      begin = PEM_BEGIN_PRIVATE_KEY_EC;
+    832                      end = PEM_END_PRIVATE_KEY_EC;
+    833                  }
+    834              } else
+    835          #endif /* MBEDTLS_PK_HAVE_ECC_KEYS */
+    836              return MBEDTLS_ERR_PK_FEATURE_UNAVAILABLE;
+    837          
+    838              if ((ret = mbedtls_pem_write_buffer(begin, end,
+    839                                                  output_buf + sizeof(output_buf) - ret,
+    840                                                  ret, buf, size, &olen)) != 0) {
+    841                  return ret;
+   \                     ??mbedtls_pk_write_key_pem_2: (+1)
+   \       0x42   0x462B             MOV      R3,R5
+   \       0x44   0xA904             ADD      R1,SP,#+16
+   \       0x46   0x426D             RSBS     R5,R5,#+0
+   \       0x48   0xA803             ADD      R0,SP,#+12
+   \       0x4A   0x1949             ADDS     R1,R1,R5
+   \       0x4C   0x9002             STR      R0,[SP, #+8]
+   \       0x4E   0xF101 0x027D      ADD      R2,R1,#+125
+   \       0x52   0x9701             STR      R7,[SP, #+4]
+   \       0x54   0xF8CD 0x6000      STR.W    R6,[SP, #+0]
+   \       0x58   0x.... 0x....      ADR.W    R1,?_5
+   \       0x5C   0x....             ADR.N    R0,?_4
+   \       0x5E   0x.... 0x....      BL       mbedtls_pem_write_buffer
+   \       0x62   0xE000             B.N      ??mbedtls_pk_write_key_pem_0
+   \                     ??mbedtls_pk_write_key_pem_3: (+1)
+   \       0x64   0x....             LDR.N    R0,??DataTable11_1
+   \                     ??mbedtls_pk_write_key_pem_0: (+1)
+   \       0x66   0xB024             ADD      SP,SP,#+144
+   \       0x68   0xE8BD 0x81F0      POP      {R4-R8,PC}
+    842              }
+    843          
+    844              return 0;
+    845          }
+
+   \                                 In section .text, align 2, keep-with-next
+   \                     ?Subroutine1: (+1)
+   \        0x0   0x4631             MOV      R1,R6
+   \        0x2   0x4668             MOV      R0,SP
+   \        0x4   0x.... 0x....      B.W      mbedtls_asn1_write_tag
+
+   \                                 In section .text, align 2, keep-with-next
+   \                     ?Subroutine0: (+1)
+   \        0x0   0x462A             MOV      R2,R5
+   \                     ??Subroutine0_0: (+1)
+   \        0x2   0x4631             MOV      R1,R6
+   \        0x4   0x4668             MOV      R0,SP
+   \        0x6   0x.... 0x....      B.W      mbedtls_asn1_write_len
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable11:
+   \        0x0   0xFFFF'C180        DC32     0xffffc180
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable11_1:
+   \        0x0   0xFFFF'C680        DC32     0xffffc680
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable11_2:
+   \        0x0   0xFFFF'CF00        DC32     0xffffcf00
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable11_3:
+   \        0x0   0x....'....        DC32     psa_pk_status_to_mbedtls
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable11_4:
+   \        0x0   0x....'....        DC32     psa_to_pk_ecdsa_errors
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ?_2:
+   \        0x0   0x2D 0x2D          DC8 "-----BEGIN PUBLIC KEY-----\012"
+   \              0x2D 0x2D    
+   \              0x2D 0x42    
+   \              0x45 0x47    
+   \              0x49 0x4E    
+   \              0x20 0x50    
+   \              0x55 0x42    
+   \              0x4C 0x49    
+   \              0x43 0x20    
+   \              0x4B 0x45    
+   \              0x59 0x2D    
+   \              0x2D 0x2D    
+   \              0x2D 0x2D    
+   \              0x0A 0x00
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ?_3:
+   \        0x0   0x2D 0x2D          DC8 "-----END PUBLIC KEY-----\012"
+   \              0x2D 0x2D    
+   \              0x2D 0x45    
+   \              0x4E 0x44    
+   \              0x20 0x50    
+   \              0x55 0x42    
+   \              0x4C 0x49    
+   \              0x43 0x20    
+   \              0x4B 0x45    
+   \              0x59 0x2D    
+   \              0x2D 0x2D    
+   \              0x2D 0x2D    
+   \              0x0A 0x00
+   \       0x1A                      DS8 2
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ?_4:
+   \        0x0   0x2D 0x2D          DC8 "-----BEGIN EC PRIVATE KEY-----\012"
+   \              0x2D 0x2D    
+   \              0x2D 0x42    
+   \              0x45 0x47    
+   \              0x49 0x4E    
+   \              0x20 0x45    
+   \              0x43 0x20    
+   \              0x50 0x52    
+   \              0x49 0x56    
+   \              0x41 0x54    
+   \              0x45 0x20    
+   \              0x4B 0x45    
+   \              0x59 0x2D    
+   \              0x2D 0x2D    
+   \              0x2D 0x2D    
+   \              0x0A 0x00
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ?_5:
+   \        0x0   0x2D 0x2D          DC8 "-----END EC PRIVATE KEY-----\012"
+   \              0x2D 0x2D    
+   \              0x2D 0x45    
+   \              0x4E 0x44    
+   \              0x20 0x45    
+   \              0x43 0x20    
+   \              0x50 0x52    
+   \              0x49 0x56    
+   \              0x41 0x54    
+   \              0x45 0x20    
+   \              0x4B 0x45    
+   \              0x59 0x2D    
+   \              0x2D 0x2D    
+   \              0x2D 0x2D    
+   \              0x0A 0x00
+   \       0x1E                      DS8 2
+    846          #endif /* MBEDTLS_PEM_WRITE_C */
+    847          
+    848          #endif /* MBEDTLS_PK_WRITE_C */
+
+   Maximum stack usage in bytes:
+
+   .cstack Function
+   ------- --------
+     168   mbedtls_pk_get_group_id
+       168   -> __aeabi_memclr4
+       168   -> __aeabi_memcpy4
+       168   -> mbedtls_ecc_group_of_psa
+       168   -> mbedtls_pk_get_type
+       168   -> psa_get_key_attributes
+       168   -> psa_reset_key_attributes
+     232   mbedtls_pk_write_key_der
+       232   -> __aeabi_memcpy4
+       232   -> mbedtls_asn1_write_int
+       232   -> mbedtls_asn1_write_len
+       232   -> mbedtls_asn1_write_octet_string
+       232   -> mbedtls_asn1_write_tag
+       232   -> mbedtls_ecp_write_key
+       232   -> mbedtls_pk_get_group_id
+       232   -> mbedtls_pk_get_type
+       232   -> mbedtls_platform_zeroize
+       232   -> pk_get_opaque_key_type
+       232   -> pk_write_ec_param
+       232   -> pk_write_ec_pubkey
+       232   -> psa_export_key
+       232   -> psa_status_to_mbedtls
+     168   mbedtls_pk_write_key_pem
+       168   -> mbedtls_pem_write_buffer
+       168   -> mbedtls_pk_get_type
+       168   -> mbedtls_pk_write_key_der
+       168   -> pk_get_opaque_key_type
+      24   mbedtls_pk_write_pubkey
+        24   -> __aeabi_memmove
+        24   -> mbedtls_pk_get_type
+        24   -> pk_write_ec_pubkey
+        24   -> psa_export_public_key
+      48   mbedtls_pk_write_pubkey_der
+        48   -> mbedtls_asn1_write_algorithm_identifier_ext
+        48   -> mbedtls_asn1_write_len
+        48   -> mbedtls_asn1_write_tag
+        48   -> mbedtls_oid_get_oid_by_ec_grp_algid
+        48   -> mbedtls_oid_get_oid_by_pk_alg
+        48   -> mbedtls_pk_get_group_id
+        48   -> mbedtls_pk_get_type
+        48   -> mbedtls_pk_write_pubkey
+        48   -> pk_get_opaque_key_type
+        48   -> pk_write_ec_param
+     128   mbedtls_pk_write_pubkey_pem
+       128   -> mbedtls_pem_write_buffer
+       128   -> mbedtls_pk_write_pubkey_der
+      48   pk_get_opaque_key_type
+        48   -> __aeabi_memclr4
+        48   -> psa_get_key_attributes
+        48   -> psa_reset_key_attributes
+      24   pk_write_ec_param
+        24   -> mbedtls_asn1_write_oid
+        24   -> mbedtls_oid_get_oid_by_ec_grp
+     264   pk_write_ec_pubkey
+       264   -> __aeabi_memcpy
+       264   -> __aeabi_memcpy4
+       264   -> mbedtls_ecp_point_write_binary
+       264   -> mbedtls_pk_get_type
+       264   -> psa_export_public_key
+
+
+   Section sizes:
+
+   Bytes  Function/Label
+   -----  --------------
+       4  ??DataTable11
+       4  ??DataTable11_1
+       4  ??DataTable11_2
+       4  ??DataTable11_3
+       4  ??DataTable11_4
+      10  ?Subroutine0
+       8  ?Subroutine1
+      10  ?Subroutine2
+      10  ?Subroutine3
+       6  ?Subroutine4
+      36  ?_0
+      36  ?_1
+      28  ?_2
+      28  ?_3
+      32  ?_4
+      32  ?_5
+     102  mbedtls_pk_get_group_id
+     368  mbedtls_pk_write_key_der
+     108  mbedtls_pk_write_key_pem
+      98  mbedtls_pk_write_pubkey
+     266  mbedtls_pk_write_pubkey_der
+      58  mbedtls_pk_write_pubkey_pem
+      44  pk_get_opaque_key_type
+      32  pk_write_ec_param
+     140  pk_write_ec_pubkey
+
+ 
+    72 bytes in section .rodata
+ 1'400 bytes in section .text
+ 
+ 1'400 bytes of CODE  memory
+    72 bytes of CONST memory
+
+Errors: none
+Warnings: none

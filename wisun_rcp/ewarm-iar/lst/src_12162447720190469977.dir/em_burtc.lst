@@ -1,0 +1,952 @@
+###############################################################################
+#
+# IAR ANSI C/C++ Compiler V9.50.2.385/W64 for ARM         27/Nov/2024  12:17:53
+# Copyright 1999-2024 IAR Systems AB.
+#
+#    Cpu mode          =  thumb
+#    Endian            =  little
+#    Source file       =
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\emlib\src\em_burtc.c
+#    Command line      =
+#        -f
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\ewarm-iar\obj\src_12162447720190469977.dir\em_burtc.o.rsp
+#        (C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\emlib\src\em_burtc.c
+#        -D EFR32FG28B322F1024IM48=1 -D
+#        configNUM_SDK_THREAD_LOCAL_STORAGE_POINTERS=2 -D
+#        SL_COMPONENT_CATALOG_PRESENT=1 -D
+#        MBEDTLS_CONFIG_FILE=<sl_mbedtls_config.h> -D
+#        MBEDTLS_PSA_CRYPTO_CONFIG_FILE=<psa_crypto_config.h> -D
+#        SL_RAIL_LIB_MULTIPROTOCOL_SUPPORT=0 -D
+#        SL_RAIL_UTIL_PA_CONFIG_HEADER=<sl_rail_util_pa_config.h> -D
+#        RTT_USE_ASM=0 -D MBED_CONF_MBED_TRACE_ENABLE=1 -D
+#        MBED_CONF_NANOSTACK_CONFIGURATION=ws_router -D
+#        MBED_TRACE_MAX_LEVEL=TRACE_ACTIVE_LEVEL_ALL -D DEBUG_EFM_USER=1 -D
+#        HAVE_LFN=1 -D HAVE_LFN_PARENT=1 -lC
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\ewarm-iar\lst\src_12162447720190469977.dir
+#        --diag_suppress Pa050 -o
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\ewarm-iar\obj\src_12162447720190469977.dir
+#        --debug --endian=little --cpu=Cortex-M33 --cmse --cmse -e
+#        --fpu=VFPv5_sp --dlib_config "C:\Program Files\IAR Systems\Embedded
+#        Workbench 9.2\arm\inc\c\DLib_Config_Normal.h" -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\emlib\src\
+#        -I C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\autogen\ -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\config\ -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\config\rail\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\Device\SiliconLabs\EFR32FG28\Include\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\common\inc\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\CMSIS\Core\Include\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\CMSIS\RTOS2\Include\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\service\device_init\inc\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\emdrv\dmadrv\inc\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\emdrv\common\inc\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\emlib\inc\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\util\third_party\freertos\cmsis\Include\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\util\third_party\freertos\kernel\include\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\util\third_party\freertos\kernel\portable\IAR\ARM_CM33_NTZ\non_secure\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\service\iostream\inc\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\security\sl_component\sl_mbedtls_support\config\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\security\sl_component\sl_mbedtls_support\config\preset\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\security\sl_component\sl_mbedtls_support\inc\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\util\third_party\mbedtls\include\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\util\third_party\mbedtls\library\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\emdrv\nvm3\inc\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\peripheral\inc\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\security\sl_component\sl_psa_driver\inc\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\radio\rail_lib\common\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\radio\rail_lib\protocol\ble\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\radio\rail_lib\protocol\ieee802154\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\radio\rail_lib\protocol\wmbus\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\radio\rail_lib\protocol\zwave\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\radio\rail_lib\chip\efr32\efr32xg2x\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\radio\rail_lib\protocol\sidewalk\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\radio\rail_lib\plugin\pa-conversions\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\radio\rail_lib\plugin\pa-conversions\efr32xg28\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\radio\rail_lib\plugin\rail_util_pti\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\security\sl_component\se_manager\inc\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\security\sl_component\se_manager\src\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\util\third_party\segger\systemview\SEGGER\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\util\silicon_labs\silabs_core\memory_manager\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\common\toolchain\inc\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\service\system\inc\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\app\wisun\component\ns_list\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\app\wisun\component\trace_util\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\app\wisun\component\trace_util\nanostack\nanostack-libservice\mbed-client-libservice\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\service\sleeptimer\inc\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\protocol\wisun\stack\inc\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\protocol\wisun\app\wisun_rcp\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\protocol\wisun\stack\inc\socket\
+#        -I
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\protocol\wisun\stack\src\
+#        -Ohz --use_c++_inline) --dependencies=n
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\ewarm-iar\obj\src_12162447720190469977.dir\em_burtc.o.iar_deps
+#    Locale            =  C
+#    List file         =
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\ewarm-iar\lst\src_12162447720190469977.dir\em_burtc.lst
+#    Object file       =
+#        C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\ewarm-iar\obj\src_12162447720190469977.dir\em_burtc.o
+#    Runtime model:       
+#      __CPP_Runtime   =  1
+#      __SystemLibrary =  DLib
+#      __dlib_version  =  6
+#
+###############################################################################
+
+C:\Users\DELL\SimplicityStudio\v5_workspace\wisun_rcp_7\gecko_sdk_4.4.3\platform\emlib\src\em_burtc.c
+      1          /***************************************************************************//**
+      2           * @file
+      3           * @brief Backup Real Time Counter (BURTC) Peripheral API
+      4           *******************************************************************************
+      5           * # License
+      6           * <b>Copyright 2018 Silicon Laboratories Inc. www.silabs.com</b>
+      7           *******************************************************************************
+      8           *
+      9           * SPDX-License-Identifier: Zlib
+     10           *
+     11           * The licensor of this software is Silicon Laboratories Inc.
+     12           *
+     13           * This software is provided 'as-is', without any express or implied
+     14           * warranty. In no event will the authors be held liable for any damages
+     15           * arising from the use of this software.
+     16           *
+     17           * Permission is granted to anyone to use this software for any purpose,
+     18           * including commercial applications, and to alter it and redistribute it
+     19           * freely, subject to the following restrictions:
+     20           *
+     21           * 1. The origin of this software must not be misrepresented; you must not
+     22           *    claim that you wrote the original software. If you use this software
+     23           *    in a product, an acknowledgment in the product documentation would be
+     24           *    appreciated but is not required.
+     25           * 2. Altered source versions must be plainly marked as such, and must not be
+     26           *    misrepresented as being the original software.
+     27           * 3. This notice may not be removed or altered from any source distribution.
+     28           *
+     29           ******************************************************************************/
+     30          
+     31          #include "em_burtc.h"
+
+   \                                 In section .text, align 2, keep-with-next
+   \   static __vfp void BURTC_SyncWait(void)
+   \                     BURTC_SyncWait: (+1)
+   \        0x0   0x....             LDR.N    R1,??DataTable8
+   \                     ??BURTC_SyncWait_0: (+1)
+   \        0x2   0x6808             LDR      R0,[R1, #+0]
+   \        0x4   0x2800             CMP      R0,#+0
+   \        0x6   0xBF1C             ITT      NE
+   \        0x8   0x6A48             LDRNE    R0,[R1, #+36]
+   \        0xA   0x2800             CMPNE    R0,#+0
+   \        0xC   0xD1F9             BNE.N    ??BURTC_SyncWait_0
+   \        0xE   0x4770             BX       LR
+
+   \                                 In section .text, align 2, keep-with-next
+   \   static __vfp void BURTC_Start(void)
+   \                     BURTC_Start: (+1)
+   \        0x0   0xB580             PUSH     {R7,LR}
+   \        0x2   0x.... 0x....      BL       BURTC_SyncWait
+   \        0x6   0x2101             MOVS     R1,#+1
+   \        0x8   0x....             B.N      ?Subroutine0
+
+   \                                 In section .text, align 2, keep-with-next
+   \                     ?Subroutine0: (+1)
+   \        0x0   0x....             LDR.N    R0,??DataTable8_1
+   \        0x2   0x6001             STR      R1,[R0, #+0]
+   \        0x4   0xBD01             POP      {R0,PC}
+
+   \                                 In section .text, align 2, keep-with-next
+   \   static __vfp void BURTC_Stop(void)
+   \                     BURTC_Stop: (+1)
+   \        0x0   0xB580             PUSH     {R7,LR}
+   \        0x2   0x.... 0x....      BL       BURTC_SyncWait
+   \        0x6   0x2102             MOVS     R1,#+2
+   \        0x8                      REQUIRE ?Subroutine0
+   \        0x8                      ;; // Fall through to label ?Subroutine0
+     32          #if defined(BURTC_PRESENT)
+     33          
+     34          /***************************************************************************//**
+     35           * @addtogroup burtc BURTC - Backup RTC
+     36           * @brief Backup Real Time Counter (BURTC) Peripheral API
+     37           * @details
+     38           *  This module contains functions to control the BURTC peripheral of Silicon
+     39           *  Labs 32-bit MCUs. The Backup Real Time Counter allows timekeeping in all
+     40           *  energy modes. The Backup RTC is also available when the system is in backup
+     41           *  mode.
+     42           * @{
+     43           ******************************************************************************/
+     44          
+     45          /*******************************************************************************
+     46           *******************************   DEFINES   ***********************************
+     47           ******************************************************************************/
+     48          
+     49          /*******************************************************************************
+     50           **************************   LOCAL FUNCTIONS   ********************************
+     51           ******************************************************************************/
+     52          
+     53          /** @cond DO_NOT_INCLUDE_WITH_DOXYGEN */
+     54          /***************************************************************************//**
+     55           * @brief Convert dividend to a prescaler logarithmic value. Only works for even
+     56           *        numbers equal to 2^n.
+     57           * @param[in] div Unscaled dividend,
+     58           * @return Base 2 logarithm of input, as used by fixed prescalers.
+     59           ******************************************************************************/
+     60          __STATIC_INLINE uint32_t divToLog2(uint32_t div)
+     61          {
+     62            uint32_t log2;
+     63          
+     64            /* Prescaler accepts an argument of 128 or less, valid values being 2^n. */
+     65            EFM_ASSERT((div > 0UL) && (div <= 32768UL));
+     66          
+     67            /* Count leading zeroes and "reverse" result, Cortex-M3 intrinsic. */
+     68            log2 = (31UL - __CLZ(div));
+     69          
+     70            return log2;
+     71          }
+     72          
+     73          /***************************************************************************//**
+     74           * @brief
+     75           *   Wait for an ongoing sync of register(s) to low frequency domain to complete.
+     76           *
+     77           * @param[in] mask
+     78           *   A bitmask corresponding to SYNCBUSY register defined bits, indicating
+     79           *   registers that must complete any ongoing synchronization.
+     80           ******************************************************************************/
+     81          __STATIC_INLINE void regSync(uint32_t mask)
+     82          {
+     83          #if defined(_BURTC_FREEZE_MASK)
+     84            /* Avoid deadlock if modifying the same register twice when freeze mode is
+     85               activated or when a clock is not selected for the BURTC. If a clock is
+     86               not selected, then the sync is done once the clock source is set. */
+     87            if ((BURTC->FREEZE & BURTC_FREEZE_REGFREEZE)
+     88                || ((BURTC->CTRL & _BURTC_CTRL_CLKSEL_MASK) == BURTC_CTRL_CLKSEL_NONE)
+     89                || ((BURTC->CTRL & _BURTC_CTRL_RSTEN_MASK) == BURTC_CTRL_RSTEN)) {
+     90              return;
+     91            }
+     92          #endif
+     93          
+     94            /* Wait for any pending previous write operation to complete */
+     95            /* in low frequency domain. This is only required for the Gecko Family. */
+     96            while ((BURTC->SYNCBUSY & mask) != 0U) {
+     97            }
+     98          }
+     99          /** @endcond */
+    100          
+    101          /*******************************************************************************
+    102           **************************   GLOBAL FUNCTIONS   *******************************
+    103           ******************************************************************************/
+    104          
+    105          /***************************************************************************//**
+    106           * @brief Initialize BURTC.
+    107           *
+    108           * @details
+    109           *    Configures the BURTC peripheral.
+    110           *
+    111           * @note
+    112           *   Before initialization, BURTC module must first be enabled by clearing the
+    113           *   reset bit in the RMU, i.e.,
+    114           * @verbatim
+    115           *   RMU_ResetControl(rmuResetBU, rmuResetModeClear);
+    116           * @endverbatim
+    117           *   Compare channel 0 must be configured outside this function, before
+    118           *   initialization if enable is set to true. The counter will always be reset.
+    119           *
+    120           * @param[in] burtcInit
+    121           *   A pointer to the BURTC initialization structure.
+    122           ******************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+    123          void BURTC_Init(const BURTC_Init_TypeDef *burtcInit)
+    124          {
+   \                     BURTC_Init: (+1)
+   \        0x0   0xB538             PUSH     {R3-R5,LR}
+   \        0x2   0x4605             MOV      R5,R0
+    125          #if defined(_SILICON_LABS_32B_SERIES_0)
+    126            uint32_t ctrl;
+    127            uint32_t presc;
+    128          
+    129            /* Check initializer structure integrity. */
+    130            EFM_ASSERT(burtcInit != (BURTC_Init_TypeDef *) 0);
+    131            /* Clock divider must be between 1 and 128, really on the form 2^n. */
+    132            EFM_ASSERT((burtcInit->clkDiv >= 1) && (burtcInit->clkDiv <= 128));
+    133          
+    134            /* Ignored compare bits during low power operation must be less than 7. */
+    135            /* Note! Giant Gecko revision C errata, do NOT use LPCOMP=7. */
+    136            EFM_ASSERT(burtcInit->lowPowerComp <= 6);
+    137            /* You cannot enable the BURTC if mode is set to disabled. */
+    138            EFM_ASSERT((burtcInit->enable == false)
+    139                       || ((burtcInit->enable == true)
+    140                           && (burtcInit->mode != burtcModeDisable)));
+    141            /* Low power mode is only available with LFRCO or LFXO as clock source. */
+    142            EFM_ASSERT((burtcInit->clkSel != burtcClkSelULFRCO)
+    143                       || ((burtcInit->clkSel == burtcClkSelULFRCO)
+    144                           && (burtcInit->lowPowerMode == burtcLPDisable)));
+    145          
+    146            /* Calculate a prescaler value from the clock divider input. */
+    147            /* Note! If clock select (clkSel) is ULFRCO, a clock divisor (clkDiv) of
+    148               value 1 will select a 2 kHz ULFRCO clock, while any other value will
+    149               select a 1 kHz ULFRCO clock source. */
+    150            presc = divToLog2(burtcInit->clkDiv);
+    151          
+    152            /* Make sure all registers are updated simultaneously. */
+    153            if (burtcInit->enable) {
+    154              BURTC_FreezeEnable(true);
+    155            }
+    156          
+    157            /* Modification of LPMODE register requires sync with potential ongoing
+    158             * register updates in LF domain. */
+    159            regSync(BURTC_SYNCBUSY_LPMODE);
+    160          
+    161            /* Configure low power mode. */
+    162            BURTC->LPMODE = (uint32_t) (burtcInit->lowPowerMode);
+    163          
+    164            /* New configuration. */
+    165            ctrl = (BURTC_CTRL_RSTEN
+    166                    | (burtcInit->mode)
+    167                    | (burtcInit->debugRun << _BURTC_CTRL_DEBUGRUN_SHIFT)
+    168                    | (burtcInit->compare0Top << _BURTC_CTRL_COMP0TOP_SHIFT)
+    169                    | (burtcInit->lowPowerComp << _BURTC_CTRL_LPCOMP_SHIFT)
+    170                    | (presc << _BURTC_CTRL_PRESC_SHIFT)
+    171                    | (burtcInit->clkSel)
+    172                    | (burtcInit->timeStamp << _BURTC_CTRL_BUMODETSEN_SHIFT));
+    173          
+    174            /* Clear interrupts. */
+    175            BURTC_IntClear(0xFFFFFFFF);
+    176          
+    177            /* Set the new configuration. */
+    178            BURTC->CTRL = ctrl;
+    179          
+    180            /* Enable BURTC and counter. */
+    181            if (burtcInit->enable) {
+    182              /* To enable BURTC counter, disable reset. */
+    183              BURTC_Enable(true);
+    184          
+    185              /* Clear freeze. */
+    186              BURTC_FreezeEnable(false);
+    187            }
+    188          #elif defined(_SILICON_LABS_32B_SERIES_2)
+    189            uint32_t presc;
+    190          
+    191            presc = divToLog2(burtcInit->clkDiv);
+   \        0x4   0x686C             LDR      R4,[R5, #+4]
+   \        0x6   0xB11C             CBZ.N    R4,??BURTC_Init_0
+   \        0x8   0xF248 0x0201      MOVW     R2,#+32769
+   \        0xC   0x4294             CMP      R4,R2
+   \        0xE   0xD302             BCC.N    ??CrossCallReturnLabel_2
+   \                     ??BURTC_Init_0: (+1)
+   \       0x10   0x2141             MOVS     R1,#+65
+   \       0x12   0x.... 0x....      BL       ?Subroutine1
+    192          
+    193            if (BURTC->EN != 0U) {
+   \                     ??CrossCallReturnLabel_2: (+1)
+   \       0x16   0x....             LDR.N    R2,??DataTable8
+   \       0x18   0x6811             LDR      R1,[R2, #+0]
+   \       0x1A   0xFAB4 0xF384      CLZ      R3,R4
+   \       0x1E   0xF1C3 0x031F      RSB      R3,R3,#+31
+   \       0x22   0xB129             CBZ.N    R1,??BURTC_Init_1
+   \                     ??BURTC_Init_2: (+1)
+   \       0x24   0x6810             LDR      R0,[R2, #+0]
+   \       0x26   0x2800             CMP      R0,#+0
+   \       0x28   0xBF1C             ITT      NE
+   \       0x2A   0x6A50             LDRNE    R0,[R2, #+36]
+   \       0x2C   0x2800             CMPNE    R0,#+0
+   \       0x2E   0xD1F9             BNE.N    ??BURTC_Init_2
+    194              BURTC_SyncWait();
+    195            }
+    196            BURTC->EN_CLR = BURTC_EN_EN;
+   \                     ??BURTC_Init_1: (+1)
+   \       0x30   0x2101             MOVS     R1,#+1
+   \       0x32   0x....             LDR.N    R0,??DataTable8_2
+   \       0x34   0x6001             STR      R1,[R0, #+0]
+    197          #if defined(_BURTC_SYNCBUSY_EN_MASK)
+    198            regSync(BURTC_SYNCBUSY_EN);
+    199          #elif defined(_BURTC_EN_DISABLING_MASK)
+    200            while (BURTC->EN & _BURTC_EN_DISABLING_MASK) {
+   \                     ??BURTC_Init_3: (+1)
+   \       0x36   0x6814             LDR      R4,[R2, #+0]
+   \       0x38   0x07A1             LSLS     R1,R4,#+30
+   \       0x3A   0xD4FC             BMI.N    ??BURTC_Init_3
+    201              /* Wait for disabling to finish */
+    202            }
+    203          #endif
+    204          
+    205            BURTC->CFG = (presc << _BURTC_CFG_CNTPRESC_SHIFT)
+    206                         | ((burtcInit->compare0Top ? 1UL : 0UL) << _BURTC_CFG_COMPTOP_SHIFT)
+    207                         | ((burtcInit->debugRun ? 1UL : 0UL) << _BURTC_CFG_DEBUGRUN_SHIFT);
+   \       0x3C   0x7A28             LDRB     R0,[R5, #+8]
+   \       0x3E   0xB100             CBZ.N    R0,??BURTC_Init_4
+   \       0x40   0x2002             MOVS     R0,#+2
+   \                     ??BURTC_Init_4: (+1)
+   \       0x42   0x7869             LDRB     R1,[R5, #+1]
+   \       0x44   0xB101             CBZ.N    R1,??BURTC_Init_5
+   \       0x46   0x2101             MOVS     R1,#+1
+   \                     ??BURTC_Init_5: (+1)
+   \       0x48   0xEA40 0x1003      ORR      R0,R0,R3, LSL #+4
+   \       0x4C   0x4308             ORRS     R0,R1,R0
+   \       0x4E   0x6050             STR      R0,[R2, #+4]
+    208            BURTC->EM4WUEN = ((burtcInit->em4comp ? 1UL : 0UL) << _BURTC_EM4WUEN_COMPEM4WUEN_SHIFT)
+    209                             | ((burtcInit->em4overflow ? 1UL : 0UL) << _BURTC_EM4WUEN_OFEM4WUEN_SHIFT);
+   \       0x50   0x7A68             LDRB     R0,[R5, #+9]
+   \       0x52   0x2800             CMP      R0,#+0
+   \       0x54   0xBF14             ITE      NE
+   \       0x56   0x2102             MOVNE    R1,#+2
+   \       0x58   0x2100             MOVEQ    R1,#+0
+   \       0x5A   0x7AA8             LDRB     R0,[R5, #+10]
+   \       0x5C   0xB108             CBZ.N    R0,??BURTC_Init_6
+   \       0x5E   0xF041 0x0101      ORR      R1,R1,#0x1
+   \                     ??BURTC_Init_6: (+1)
+   \       0x62   0x6211             STR      R1,[R2, #+32]
+    210            BURTC->EN_SET = BURTC_EN_EN;
+   \       0x64   0x2201             MOVS     R2,#+1
+   \       0x66   0x....             LDR.N    R1,??DataTable8_3
+   \       0x68   0x600A             STR      R2,[R1, #+0]
+    211            if (burtcInit->start) {
+   \       0x6A   0x7828             LDRB     R0,[R5, #+0]
+   \       0x6C   0xB110             CBZ.N    R0,??BURTC_Init_7
+    212              BURTC_Start();
+   \       0x6E   0xE8BD 0x4031      POP      {R0,R4,R5,LR}
+   \       0x72   0x....             B.N      BURTC_Start
+    213            }
+    214          #endif
+    215          }
+   \                     ??BURTC_Init_7: (+1)
+   \       0x74   0xBD31             POP      {R0,R4,R5,PC}
+    216          
+    217          #if defined(_SILICON_LABS_32B_SERIES_2)
+    218          /***************************************************************************//**
+    219           * @brief
+    220           *   Enable or Disable BURTC peripheral.
+    221           *
+    222           * @param[in] enable
+    223           *   true to enable, false to disable.
+    224           ******************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+    225          void BURTC_Enable(bool enable)
+    226          {
+   \                     BURTC_Enable: (+1)
+   \        0x0   0xB510             PUSH     {R4,LR}
+   \        0x2   0x4601             MOV      R1,R0
+    227          #if defined(_BURTC_SYNCBUSY_EN_MASK)
+    228            regSync(BURTC_SYNCBUSY_EN);
+    229          #endif
+    230          
+    231            if ((BURTC->EN == 0U) && !enable) {
+   \        0x4   0x....             LDR.N    R4,??DataTable8
+   \        0x6   0x6820             LDR      R0,[R4, #+0]
+   \        0x8   0xB908             CBNZ.N   R0,??BURTC_Enable_0
+   \        0xA   0x0008             MOVS     R0,R1
+   \        0xC   0xD01A             BEQ.N    ??BURTC_Enable_1
+    232              /* Trying to disable BURTC when it's already disabled */
+    233              return;
+    234            }
+    235          
+    236            if (BURTC->EN != 0U) {
+   \                     ??BURTC_Enable_0: (+1)
+   \        0xE   0x6822             LDR      R2,[R4, #+0]
+   \       0x10   0xB12A             CBZ.N    R2,??BURTC_Enable_2
+   \                     ??BURTC_Enable_3: (+1)
+   \       0x12   0x6820             LDR      R0,[R4, #+0]
+   \       0x14   0x2800             CMP      R0,#+0
+   \       0x16   0xBF1C             ITT      NE
+   \       0x18   0x6A60             LDRNE    R0,[R4, #+36]
+   \       0x1A   0x2800             CMPNE    R0,#+0
+   \       0x1C   0xD1F9             BNE.N    ??BURTC_Enable_3
+    237              /* Modifying the enable bit while synchronization is active will BusFault */
+    238              BURTC_SyncWait();
+    239            }
+    240          
+    241            if (enable) {
+   \                     ??BURTC_Enable_2: (+1)
+   \       0x1E   0xB119             CBZ.N    R1,??BURTC_Enable_4
+    242              BURTC->EN_SET = BURTC_EN_EN;
+   \       0x20   0x2101             MOVS     R1,#+1
+   \       0x22   0x....             LDR.N    R0,??DataTable8_3
+   \       0x24   0x6001             STR      R1,[R0, #+0]
+   \       0x26   0xBD10             POP      {R4,PC}
+    243            } else {
+    244              BURTC_Stop();
+   \                     ??BURTC_Enable_4: (+1)
+   \       0x28   0x.... 0x....      BL       BURTC_Stop
+    245              BURTC_SyncWait(); /* Wait for the stop to synchronize */
+   \                     ??BURTC_Enable_5: (+1)
+   \       0x2C   0x6820             LDR      R0,[R4, #+0]
+   \       0x2E   0x2800             CMP      R0,#+0
+   \       0x30   0xBF1C             ITT      NE
+   \       0x32   0x6A60             LDRNE    R0,[R4, #+36]
+   \       0x34   0x2800             CMPNE    R0,#+0
+   \       0x36   0xD1F9             BNE.N    ??BURTC_Enable_5
+    246              BURTC->EN_CLR = BURTC_EN_EN;
+   \       0x38   0x2101             MOVS     R1,#+1
+   \       0x3A   0x....             LDR.N    R0,??DataTable8_2
+   \       0x3C   0x6001             STR      R1,[R0, #+0]
+    247          #if defined(_BURTC_SYNCBUSY_EN_MASK)
+    248              regSync(BURTC_SYNCBUSY_EN);
+    249          #elif defined(_BURTC_EN_DISABLING_MASK)
+    250              while (BURTC->EN & _BURTC_EN_DISABLING_MASK) {
+   \                     ??BURTC_Enable_6: (+1)
+   \       0x3E   0x6822             LDR      R2,[R4, #+0]
+   \       0x40   0x0790             LSLS     R0,R2,#+30
+   \       0x42   0xD4FC             BMI.N    ??BURTC_Enable_6
+    251                /* Wait for disabling to finish */
+    252              }
+    253          #endif
+    254            }
+    255          }
+   \                     ??BURTC_Enable_1: (+1)
+   \       0x44   0xBD10             POP      {R4,PC}
+    256          #elif defined(_SILICON_LABS_32B_SERIES_0)
+    257          /***************************************************************************//**
+    258           * @brief
+    259           *   Enable or Disable BURTC peripheral reset and start counter
+    260           * @param[in] enable
+    261           *   If true; asserts reset to BURTC, halts counter, if false; deassert reset
+    262           ******************************************************************************/
+    263          void BURTC_Enable(bool enable)
+    264          {
+    265            /* Note! If mode is disabled, BURTC counter will not start */
+    266            EFM_ASSERT(((enable == true)
+    267                        && ((BURTC->CTRL & _BURTC_CTRL_MODE_MASK)
+    268                            != BURTC_CTRL_MODE_DISABLE))
+    269                       || (enable == false));
+    270            BUS_RegBitWrite(&BURTC->CTRL, _BURTC_CTRL_RSTEN_SHIFT, (uint32_t) !enable);
+    271          }
+    272          #endif
+    273          
+    274          /***************************************************************************//**
+    275           * @brief Set BURTC compare channel.
+    276           *
+    277           * @param[in] comp Compare the channel index, must be 0 for current devices.
+    278           *
+    279           * @param[in] value New compare value.
+    280           ******************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+    281          void BURTC_CompareSet(unsigned int comp, uint32_t value)
+    282          {
+   \                     BURTC_CompareSet: (+1)
+   \        0x0   0xB510             PUSH     {R4,LR}
+   \        0x2   0x460C             MOV      R4,R1
+    283            (void) comp;  /* Unused parameter when EFM_ASSERT is undefined. */
+    284          
+    285            EFM_ASSERT(comp == 0U);
+   \        0x4   0xB118             CBZ.N    R0,??CrossCallReturnLabel_1
+   \        0x6   0xF240 0x111D      MOVW     R1,#+285
+   \        0xA   0x.... 0x....      BL       ?Subroutine1
+   \                     ??CrossCallReturnLabel_1: (+1)
+   \        0xE   0x....             LDR.N    R0,??DataTable8_4
+   \       0x10   0x6802             LDR      R2,[R0, #+0]
+   \       0x12   0x06D1             LSLS     R1,R2,#+27
+   \       0x14   0xD4FB             BMI.N    ??CrossCallReturnLabel_1
+    286          
+    287          #if defined(_BURTC_COMP0_MASK)
+    288            /* Modification of COMP0 register requires sync with potential ongoing
+    289             * register updates in LF domain. */
+    290            regSync(BURTC_SYNCBUSY_COMP0);
+    291          
+    292            /* Configure compare channel 0/. */
+    293            BURTC->COMP0 = value;
+    294          #else
+    295            /* Wait for last potential write to complete. */
+    296            regSync(BURTC_SYNCBUSY_COMP);
+    297          
+    298            /* Configure compare channel 0 */
+    299            BURTC->COMP = value;
+   \       0x16   0x6084             STR      R4,[R0, #+8]
+    300            regSync(BURTC_SYNCBUSY_COMP);
+   \                     ??BURTC_CompareSet_0: (+1)
+   \       0x18   0x6802             LDR      R2,[R0, #+0]
+   \       0x1A   0x06D1             LSLS     R1,R2,#+27
+   \       0x1C   0xD4FC             BMI.N    ??BURTC_CompareSet_0
+    301          #endif
+    302          }
+   \       0x1E   0xBD10             POP      {R4,PC}
+
+   \                                 In section .text, align 2, keep-with-next
+   \                     ?Subroutine1: (+1)
+   \        0x0   0x....             LDR.N    R0,??DataTable8_5
+   \        0x2   0x.... 0x....      B.W      assertEFM
+    303          
+    304          /***************************************************************************//**
+    305           * @brief Get the BURTC compare value.
+    306           *
+    307           * @param[in] comp Compare the channel index value, must be 0 for Giant/Leopard Gecko.
+    308           *
+    309           * @return The currently configured value for this compare channel.
+    310           ******************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+    311          uint32_t BURTC_CompareGet(unsigned int comp)
+    312          {
+   \                     BURTC_CompareGet: (+1)
+   \        0x0   0xB580             PUSH     {R7,LR}
+    313            (void) comp;  /* Unused parameter when EFM_ASSERT is undefined. */
+    314          
+    315            EFM_ASSERT(comp == 0U);
+   \        0x2   0xB118             CBZ.N    R0,??CrossCallReturnLabel_0
+   \        0x4   0xF240 0x113B      MOVW     R1,#+315
+   \        0x8   0x.... 0x....      BL       ?Subroutine1
+    316          #if defined(_BURTC_COMP0_MASK)
+    317            return BURTC->COMP0;
+    318          #else
+    319            return BURTC->COMP;
+   \                     ??CrossCallReturnLabel_0: (+1)
+   \        0xC   0x....             LDR.N    R1,??DataTable8_6
+   \        0xE   0x6808             LDR      R0,[R1, #+0]
+   \       0x10   0xBD02             POP      {R1,PC}
+    320          #endif
+    321          }
+    322          
+    323          /***************************************************************************//**
+    324           * @brief Reset counter
+    325           ******************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+    326          void BURTC_CounterReset(void)
+    327          {
+   \                     BURTC_CounterReset: (+1)
+   \        0x0   0xB580             PUSH     {R7,LR}
+    328          #if defined(_BURTC_CTRL_MASK)
+    329            /* Set and clear reset bit */
+    330            BUS_RegBitWrite(&BURTC->CTRL, _BURTC_CTRL_RSTEN_SHIFT, 1U);
+    331            BUS_RegBitWrite(&BURTC->CTRL, _BURTC_CTRL_RSTEN_SHIFT, 0U);
+    332          #else
+    333            BURTC_Stop();
+   \        0x2   0x.... 0x....      BL       BURTC_Stop
+    334            BURTC->CNT = 0U;
+   \        0x6   0x2100             MOVS     R1,#+0
+   \        0x8   0x....             LDR.N    R0,??DataTable8_7
+   \        0xA   0x6001             STR      R1,[R0, #+0]
+    335            BURTC_Start();
+   \        0xC   0xE8BD 0x4001      POP      {R0,LR}
+   \       0x10   0x....             B.N      BURTC_Start
+    336          #endif
+    337          }
+    338          
+    339          /***************************************************************************//**
+    340           * @brief
+    341           *   Restore BURTC to reset state.
+    342           * @note
+    343           *   Before accessing the BURTC, BURSTEN in RMU->CTRL must be cleared.
+    344           *   LOCK will not be reset to default value, as this will disable access
+    345           *   to core BURTC registers.
+    346           ******************************************************************************/
+
+   \                                 In section .text, align 2, keep-with-next
+    347          void BURTC_Reset(void)
+    348          {
+   \                     BURTC_Reset: (+1)
+   \        0x0   0xB510             PUSH     {R4,LR}
+    349          #if defined(_SILICON_LABS_32B_SERIES_0)
+    350            bool buResetState;
+    351          
+    352            /* Read reset state, set reset, and restore state. */
+    353            buResetState = BUS_RegBitRead(&RMU->CTRL, _RMU_CTRL_BURSTEN_SHIFT);
+    354            BUS_RegBitWrite(&RMU->CTRL, _RMU_CTRL_BURSTEN_SHIFT, 1);
+    355            BUS_RegBitWrite(&RMU->CTRL, _RMU_CTRL_BURSTEN_SHIFT, buResetState);
+    356          #elif defined(_SILICON_LABS_32B_SERIES_2)
+    357            if (BURTC->EN != 0U) {
+   \        0x2   0x....             LDR.N    R4,??DataTable8
+   \        0x4   0x6821             LDR      R1,[R4, #+0]
+   \        0x6   0xB129             CBZ.N    R1,??BURTC_Reset_0
+   \                     ??BURTC_Reset_1: (+1)
+   \        0x8   0x6820             LDR      R0,[R4, #+0]
+   \        0xA   0x2800             CMP      R0,#+0
+   \        0xC   0xBF1C             ITT      NE
+   \        0xE   0x6A60             LDRNE    R0,[R4, #+36]
+   \       0x10   0x2800             CMPNE    R0,#+0
+   \       0x12   0xD1F9             BNE.N    ??BURTC_Reset_1
+    358              BURTC_SyncWait();
+    359            }
+    360            BURTC->EN_SET = BURTC_EN_EN;
+   \                     ??BURTC_Reset_0: (+1)
+   \       0x14   0x2101             MOVS     R1,#+1
+   \       0x16   0x....             LDR.N    R0,??DataTable8_3
+   \       0x18   0x6001             STR      R1,[R0, #+0]
+    361            BURTC_Stop();
+   \       0x1A   0x.... 0x....      BL       BURTC_Stop
+    362            BURTC->CNT     = 0x0;
+   \       0x1E   0x2200             MOVS     R2,#+0
+   \       0x20   0x61E2             STR      R2,[R4, #+28]
+    363            BURTC->PRECNT  = 0x0;
+   \       0x22   0x2100             MOVS     R1,#+0
+   \       0x24   0x61A1             STR      R1,[R4, #+24]
+    364            BURTC->COMP    = 0x0;
+   \       0x26   0x2000             MOVS     R0,#+0
+   \       0x28   0x62E0             STR      R0,[R4, #+44]
+    365            BURTC->EM4WUEN = _BURTC_EM4WUEN_RESETVALUE;
+   \       0x2A   0x6221             STR      R1,[R4, #+32]
+    366            BURTC->IEN     = _BURTC_IEN_RESETVALUE;
+   \       0x2C   0x6160             STR      R0,[R4, #+20]
+    367            BURTC->IF_CLR  = _BURTC_IF_MASK;
+   \       0x2E   0x....             LDR.N    R1,??DataTable8_2
+   \       0x30   0x2203             MOVS     R2,#+3
+   \       0x32   0x610A             STR      R2,[R1, #+16]
+    368            /* Wait for all values to synchronize. BusFaults can happen if we don't
+    369             * do this before the enable bit is cleared. */
+    370            BURTC_SyncWait();
+   \                     ??BURTC_Reset_2: (+1)
+   \       0x34   0x6820             LDR      R0,[R4, #+0]
+   \       0x36   0x2800             CMP      R0,#+0
+   \       0x38   0xBF1C             ITT      NE
+   \       0x3A   0x6A60             LDRNE    R0,[R4, #+36]
+   \       0x3C   0x2800             CMPNE    R0,#+0
+   \       0x3E   0xD1F9             BNE.N    ??BURTC_Reset_2
+    371            BURTC->EN_CLR  = BURTC_EN_EN;
+   \       0x40   0x2201             MOVS     R2,#+1
+   \       0x42   0x600A             STR      R2,[R1, #+0]
+    372          #if defined(_BURTC_SYNCBUSY_EN_MASK)
+    373            while (BURTC->SYNCBUSY != 0U) {
+    374              // Wait for the EN=0 to synchronize
+    375            }
+    376          #elif defined(_BURTC_EN_DISABLING_MASK)
+    377            while (BURTC->EN & _BURTC_EN_DISABLING_MASK) {
+   \                     ??BURTC_Reset_3: (+1)
+   \       0x44   0x6820             LDR      R0,[R4, #+0]
+   \       0x46   0x0781             LSLS     R1,R0,#+30
+   \       0x48   0xD4FC             BMI.N    ??BURTC_Reset_3
+    378              /* Wait for disabling to finish */
+    379            }
+    380          #endif
+    381            BURTC->CFG = _BURTC_CFG_RESETVALUE;
+   \       0x4A   0x2000             MOVS     R0,#+0
+   \       0x4C   0x6060             STR      R0,[R4, #+4]
+    382          #endif
+    383          }
+   \       0x4E   0xBD10             POP      {R4,PC}
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable8:
+   \        0x0   0x5006'4004        DC32     0x50064004
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable8_1:
+   \        0x0   0x5006'400C        DC32     0x5006400c
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable8_2:
+   \        0x0   0x5006'6004        DC32     0x50066004
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable8_3:
+   \        0x0   0x5006'5004        DC32     0x50065004
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable8_4:
+   \        0x0   0x5006'4028        DC32     0x50064028
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable8_5:
+   \        0x0   0x....'....        DC32     ?_0
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable8_6:
+   \        0x0   0x5006'4030        DC32     0x50064030
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable8_7:
+   \        0x0   0x5006'4020        DC32     0x50064020
+
+   \                                 In section .rodata, align 4
+   \                     ?_0:
+   \        0x0   0x43 0x3A          DC8 0x43, 0x3A, 0x5C, 0x55, 0x73, 0x65, 0x72, 0x73
+   \              0x5C 0x55    
+   \              0x73 0x65    
+   \              0x72 0x73
+   \        0x8   0x5C 0x44          DC8 0x5C, 0x44, 0x45, 0x4C, 0x4C, 0x5C, 0x53, 0x69
+   \              0x45 0x4C    
+   \              0x4C 0x5C    
+   \              0x53 0x69
+   \       0x10   0x6D 0x70          DC8 0x6D, 0x70, 0x6C, 0x69, 0x63, 0x69, 0x74, 0x79
+   \              0x6C 0x69    
+   \              0x63 0x69    
+   \              0x74 0x79
+   \       0x18   0x53 0x74          DC8 0x53, 0x74, 0x75, 0x64, 0x69, 0x6F, 0x5C, 0x76
+   \              0x75 0x64    
+   \              0x69 0x6F    
+   \              0x5C 0x76
+   \       0x20   0x35 0x5F          DC8 0x35, 0x5F, 0x77, 0x6F, 0x72, 0x6B, 0x73, 0x70
+   \              0x77 0x6F    
+   \              0x72 0x6B    
+   \              0x73 0x70
+   \       0x28   0x61 0x63          DC8 0x61, 0x63, 0x65, 0x5C, 0x77, 0x69, 0x73, 0x75
+   \              0x65 0x5C    
+   \              0x77 0x69    
+   \              0x73 0x75
+   \       0x30   0x6E 0x5F          DC8 0x6E, 0x5F, 0x72, 0x63, 0x70, 0x5F, 0x37, 0x5C
+   \              0x72 0x63    
+   \              0x70 0x5F    
+   \              0x37 0x5C
+   \       0x38   0x67 0x65          DC8 0x67, 0x65, 0x63, 0x6B, 0x6F, 0x5F, 0x73, 0x64
+   \              0x63 0x6B    
+   \              0x6F 0x5F    
+   \              0x73 0x64
+   \       0x40   0x6B 0x5F          DC8 0x6B, 0x5F, 0x34, 0x2E, 0x34, 0x2E, 0x33, 0x5C
+   \              0x34 0x2E    
+   \              0x34 0x2E    
+   \              0x33 0x5C
+   \       0x48   0x70 0x6C          DC8 0x70, 0x6C, 0x61, 0x74, 0x66, 0x6F, 0x72, 0x6D
+   \              0x61 0x74    
+   \              0x66 0x6F    
+   \              0x72 0x6D
+   \       0x50   0x5C 0x65          DC8 0x5C, 0x65, 0x6D, 0x6C, 0x69, 0x62, 0x5C, 0x73
+   \              0x6D 0x6C    
+   \              0x69 0x62    
+   \              0x5C 0x73
+   \       0x58   0x72 0x63          DC8 0x72, 0x63, 0x5C, 0x65, 0x6D, 0x5F, 0x62, 0x75
+   \              0x5C 0x65    
+   \              0x6D 0x5F    
+   \              0x62 0x75
+   \       0x60   0x72 0x74          DC8 0x72, 0x74, 0x63, 0x2E, 0x63, 0
+   \              0x63 0x2E    
+   \              0x63 0x00
+   \       0x66                      DS8 2
+    384          
+    385          #if defined(_BURTC_CTRL_MASK)
+    386          /***************************************************************************//**
+    387           * @brief
+    388           *   Get the clock frequency of the BURTC.
+    389           *
+    390           * @return
+    391           *   The current frequency in Hz.
+    392           ******************************************************************************/
+    393          uint32_t BURTC_ClockFreqGet(void)
+    394          {
+    395            uint32_t clkSel;
+    396            uint32_t clkDiv;
+    397            uint32_t frequency;
+    398          
+    399            clkSel = BURTC->CTRL & _BURTC_CTRL_CLKSEL_MASK;
+    400            clkDiv = (BURTC->CTRL & _BURTC_CTRL_PRESC_MASK) >> _BURTC_CTRL_PRESC_SHIFT;
+    401          
+    402            switch (clkSel) {
+    403              /** Ultra-low frequency (1 kHz) clock. */
+    404              case BURTC_CTRL_CLKSEL_ULFRCO:
+    405                if (_BURTC_CTRL_PRESC_DIV1 == clkDiv) {
+    406                  frequency = 2000;     /* 2 kHz when clock divisor is 1. */
+    407                } else {
+    408                  frequency = SystemULFRCOClockGet();  /* 1 kHz when divisor is different
+    409                                                          from 1. */
+    410                }
+    411                break;
+    412          
+    413              /** Low-frequency RC oscillator. */
+    414              case BURTC_CTRL_CLKSEL_LFRCO:
+    415                frequency = SystemLFRCOClockGet() / (1 << clkDiv); /* freq=32768/2^clkDiv */
+    416                break;
+    417          
+    418              /** Low-frequency crystal oscillator. */
+    419              case BURTC_CTRL_CLKSEL_LFXO:
+    420                frequency = SystemLFXOClockGet() / (1 << clkDiv); /* freq=32768/2^clkDiv */
+    421                break;
+    422          
+    423              default:
+    424                /* No clock selected for BURTC. */
+    425                frequency = 0;
+    426            }
+    427            return frequency;
+    428          }
+    429          #endif
+    430          
+    431          /** @} (end addtogroup burtc) */
+    432          
+    433          #endif /* BURTC_PRESENT */
+
+   Maximum stack usage in bytes:
+
+   .cstack Function
+   ------- --------
+       8   BURTC_CompareGet
+         8   -> assertEFM
+       8   BURTC_CompareSet
+         8   -> assertEFM
+       8   BURTC_CounterReset
+         0   -> BURTC_Start
+         8   -> BURTC_Stop
+       8   BURTC_Enable
+         8   -> BURTC_Stop
+      16   BURTC_Init
+         0   -> BURTC_Start
+        16   -> assertEFM
+       8   BURTC_Reset
+         8   -> BURTC_Stop
+       8   BURTC_Start
+         8   -> BURTC_SyncWait
+       8   BURTC_Stop
+         8   -> BURTC_SyncWait
+       0   BURTC_SyncWait
+
+
+   Section sizes:
+
+   Bytes  Function/Label
+   -----  --------------
+       4  ??DataTable8
+       4  ??DataTable8_1
+       4  ??DataTable8_2
+       4  ??DataTable8_3
+       4  ??DataTable8_4
+       4  ??DataTable8_5
+       4  ??DataTable8_6
+       4  ??DataTable8_7
+       6  ?Subroutine0
+       6  ?Subroutine1
+     104  ?_0
+      18  BURTC_CompareGet
+      32  BURTC_CompareSet
+      18  BURTC_CounterReset
+      70  BURTC_Enable
+     118  BURTC_Init
+      80  BURTC_Reset
+      10  BURTC_Start
+       8  BURTC_Stop
+      16  BURTC_SyncWait
+
+ 
+ 104 bytes in section .rodata
+ 414 bytes in section .text
+ 
+ 414 bytes of CODE  memory
+ 104 bytes of CONST memory
+
+Errors: none
+Warnings: none

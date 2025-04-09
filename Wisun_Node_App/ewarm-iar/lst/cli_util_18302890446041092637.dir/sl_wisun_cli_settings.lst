@@ -1,0 +1,2086 @@
+###############################################################################
+#
+# IAR ANSI C/C++ Compiler V9.50.2.385/W64 for ARM         29/Mar/2025  15:53:14
+# Copyright 1999-2024 IAR Systems AB.
+#
+#    Cpu mode                     =  thumb
+#    Endian                       =  little
+#    Source file                  =
+#        D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\app\wisun\component\cli_util\sl_wisun_cli_settings.c
+#    Command line                 =
+#        -f "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\ewarm-iar\obj\cli_util_18302890446041092637.dir\sl_wisun_cli_settings.o.rsp"
+#        ("D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\app\wisun\component\cli_util\sl_wisun_cli_settings.c"
+#        -D DEBUG_EFM=1 -D EFR32FG28B322F1024IM48=1 -D
+#        configNUM_SDK_THREAD_LOCAL_STORAGE_POINTERS=2 -D
+#        SL_COMPONENT_CATALOG_PRESENT=1 -D
+#        MBEDTLS_CONFIG_FILE=<sl_mbedtls_config.h> -D
+#        MBEDTLS_PSA_CRYPTO_CONFIG_FILE=<psa_crypto_config.h> -D
+#        SL_RAIL_LIB_MULTIPROTOCOL_SUPPORT=0 -D
+#        SL_RAIL_UTIL_PA_CONFIG_HEADER=<sl_rail_util_pa_config.h> -D
+#        RTT_USE_ASM=0 -lC "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\ewarm-iar\lst\cli_util_18302890446041092637.dir"
+#        --diag_suppress Pa050 -o "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\ewarm-iar\obj\cli_util_18302890446041092637.dir"
+#        --no_cse --no_unroll --no_inline --no_code_motion --no_tbaa
+#        --no_clustering --no_scheduling --debug --endian=little
+#        --cpu=Cortex-M33 --cmse --cmse -e --fpu=VFPv5_sp --dlib_config
+#        "C:\Program Files\IAR Systems\Embedded Workbench
+#        9.2\arm\inc\c\DLib_Config_Normal.h" -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\app\wisun\component\cli_util\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App 1\Wisun_Node_App\config\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App 1\Wisun_Node_App\config\rail\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App 1\Wisun_Node_App\config\wisun\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App 1\Wisun_Node_App\.\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\Device\SiliconLabs\EFR32FG28\Include\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\app\wisun\component\app_project_info\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\common\inc\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\service\cli\inc\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\service\cli\src\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\CMSIS\Core\Include\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\CMSIS\RTOS2\Include\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\service\device_init\inc\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\emdrv\common\inc\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\emlib\inc\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\service\iostream\inc\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\security\sl_component\sl_mbedtls_support\config\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\security\sl_component\sl_mbedtls_support\config\preset\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\security\sl_component\sl_mbedtls_support\inc\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\util\third_party\mbedtls\include\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\util\third_party\mbedtls\library\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\micrium_os\common\source\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\micrium_os\common\include\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\micrium_os\cpu\include\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\micrium_os\ports\source\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\micrium_os\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\micrium_os\kernel\source\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\micrium_os\kernel\include\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\emdrv\nvm3\inc\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\peripheral\inc\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\util\third_party\printf\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\util\third_party\printf\inc\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\security\sl_component\sl_psa_driver\inc\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\radio\rail_lib\common\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\radio\rail_lib\protocol\ble\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\radio\rail_lib\protocol\ieee802154\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\radio\rail_lib\protocol\wmbus\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\radio\rail_lib\protocol\zwave\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\radio\rail_lib\chip\efr32\efr32xg2x\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\radio\rail_lib\protocol\sidewalk\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\radio\rail_lib\plugin\pa-conversions\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\radio\rail_lib\plugin\pa-conversions\efr32xg28\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\radio\rail_lib\plugin\rail_util_pti\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\security\sl_component\se_manager\inc\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\security\sl_component\se_manager\src\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\util\third_party\segger\systemview\SEGGER\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\util\silicon_labs\silabs_core\memory_manager\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\common\toolchain\inc\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\service\system\inc\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\app\wisun\component\app_core\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\app\wisun\component\app_setting\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\app\wisun\component\cli_util\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\app\wisun\component\event_manager\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\app\wisun\component\ns_list\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\app\wisun\component\ping\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\app\wisun\component\trace_util\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\app\wisun\component\trace_util\nanostack\nanostack-libservice\mbed-client-libservice\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\app\wisun\component\udp_client\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\service\sleeptimer\inc\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\protocol\wisun\plugin\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\protocol\wisun\stack\inc\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\protocol\wisun\stack\inc\socket\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App 1\Wisun_Node_App\autogen\\" -On
+#        --use_c++_inline) --dependencies=n "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\ewarm-iar\obj\cli_util_18302890446041092637.dir\sl_wisun_cli_settings.o.iar_deps"
+#    Locale                       =  C
+#    List file                    =
+#        D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\ewarm-iar\lst\cli_util_18302890446041092637.dir\sl_wisun_cli_settings.lst
+#    Object file                  =
+#        D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\ewarm-iar\obj\cli_util_18302890446041092637.dir\sl_wisun_cli_settings.o
+#    Runtime model:                  
+#      __CPP_Runtime              =  1
+#      __SystemLibrary            =  DLib
+#      __dlib_file_descriptor     =  0
+#      __dlib_full_locale_support =  0
+#      __dlib_version             =  6
+#      __iar_require _Printf         
+#
+###############################################################################
+
+D:\Inesh_wisun\Wisun_Node_App 1\Wisun_Node_App\gecko_sdk_4.4.5\app\wisun\component\cli_util\sl_wisun_cli_settings.c
+      1          /***************************************************************************//**
+      2           * @file
+      3           * @brief Application commandline settings
+      4           *******************************************************************************
+      5           * # License
+      6           * <b>Copyright 2021 Silicon Laboratories Inc. www.silabs.com</b>
+      7           *******************************************************************************
+      8           *
+      9           * SPDX-License-Identifier: Zlib
+     10           *
+     11           * The licensor of this software is Silicon Laboratories Inc.
+     12           *
+     13           * This software is provided 'as-is', without any express or implied
+     14           * warranty. In no event will the authors be held liable for any damages
+     15           * arising from the use of this software.
+     16           *
+     17           * Permission is granted to anyone to use this software for any purpose,
+     18           * including commercial applications, and to alter it and redistribute it
+     19           * freely, subject to the following restrictions:
+     20           *
+     21           * 1. The origin of this software must not be misrepresented; you must not
+     22           *    claim that you wrote the original software. If you use this software
+     23           *    in a product, an acknowledgment in the product documentation would be
+     24           *    appreciated but is not required.
+     25           * 2. Altered source versions must be plainly marked as such, and must not be
+     26           *    misrepresented as being the original software.
+     27           * 3. This notice may not be removed or altered from any source distribution.
+     28           *
+     29           ******************************************************************************/
+     30          
+     31          // -----------------------------------------------------------------------------
+     32          //                                   Includes
+     33          // -----------------------------------------------------------------------------
+     34          
+     35          #include "sl_wisun_cli_settings.h"
+
+   \                                 In section .text, align 2, keep-with-next
+   \   static __vfp uint8_t sl_wisun_ip6tos(void const *, char *)
+   \                     sl_wisun_ip6tos: (+1)
+   \        0x0   0xB538             PUSH     {R3-R5,LR}
+   \        0x2   0x0005             MOVS     R5,R0
+   \        0x4   0x000C             MOVS     R4,R1
+   \        0x6   0x0021             MOVS     R1,R4
+   \        0x8   0x0028             MOVS     R0,R5
+   \        0xA   0x.... 0x....      BL       ip6tos
+   \        0xE   0xB2C0             UXTB     R0,R0
+   \       0x10   0xBD32             POP      {R1,R4,R5,PC}
+     36          #include <stdlib.h>
+     37          #include <stdio.h>
+     38          #include <string.h>
+     39          #include "sl_wisun_ip6string.h"
+     40          #include "nvm3.h"
+     41          
+     42          // -----------------------------------------------------------------------------
+     43          //                              Macros and Typedefs
+     44          // -----------------------------------------------------------------------------
+     45          
+     46          /**************************************************************************//**
+     47           * @brief  NVM key base address define
+     48           *****************************************************************************/
+     49          #define APP_SETTINGS_NVM_KEY_BASE    (0x00000000U)
+     50          
+     51          /**************************************************************************//**
+     52           * @brief App settings None value string
+     53           *****************************************************************************/
+     54          #define APP_SETTINGS_NONE_VALUE_STR  "None"
+     55          
+     56          // -----------------------------------------------------------------------------
+     57          //                          Static Function Declarations
+     58          // -----------------------------------------------------------------------------
+     59          
+     60          /**************************************************************************//**
+     61           * @brief Load settings from NVM
+     62           * @details Copy settings from the nvm3 memory to the destination
+     63           * @param[in] settings_domain settings domain
+     64           * @param[in,out] settings destination ptr of settings
+     65           * @param[in] settings_size size of the settings
+     66           * @return sl_status_t SL_STATUS_OK on succes, SL_STATUS_FAIL on error
+     67           *****************************************************************************/
+     68          static sl_status_t app_settings_nvm_load(uint8_t settings_domain,
+     69                                                   void *const settings,
+     70                                                   size_t settings_size);
+     71          
+     72          /**************************************************************************//**
+     73          * @brief Save settings to NVM
+     74          * @details Save the settings into nvm3 memory
+     75          * @param[in] settings_domain settings domain
+     76          * @param[in] settings source settings
+     77          * @param[in] settings_size size of the settings
+     78          * @return sl_status_t SL_STATUS_OK on succes, SL_STATUS_FAIL on error
+     79          ******************************************************************************/
+     80          static sl_status_t app_settings_nvm_save(uint8_t settings_domain,
+     81                                                   const void *const settings,
+     82                                                   size_t settings_size);
+     83          
+     84          /**************************************************************************//**
+     85           * @brief Delete settings from NVM
+     86           * @details Remove settings from nvm3 memory
+     87           * @param[in] settings_domain settings domain
+     88           *****************************************************************************/
+     89          static void app_settings_nvm_delete(uint8_t settings_domain);
+     90          
+     91          /**************************************************************************//**
+     92           * @brief App help print and pad
+     93           * @details Print help informations on 2 columns
+     94           * @param permission Command permission
+     95           * @param entry App settings entry
+     96           *****************************************************************************/
+     97          static void app_help_print_and_pad(const char * permission, const app_settings_entry_t *entry);
+     98          
+     99          // -----------------------------------------------------------------------------
+    100          //                                Global Variables
+    101          // -----------------------------------------------------------------------------
+    102          
+    103          /**************************************************************************//**
+    104           * @brief App settings domain string array (weak implementation)
+    105           *****************************************************************************/
+
+   \                                 In section .data, align 4
+    106          SL_WEAK const char *app_settings_domain_str[] = { "" };
+   \                     app_settings_domain_str:
+   \        0x0   0x....'....        DC32 ?_0
+    107          
+    108          /**************************************************************************//**
+    109           * @brief App settings entries array (weak implementation)
+    110           *****************************************************************************/
+
+   \                                 In section .rodata, align 4
+    111          SL_WEAK const app_settings_entry_t app_settings_entries[] = { 0 };
+   \                     app_settings_entries:
+   \        0x0   0x0000'0000        DC32 0x0
+   \        0x4                      DS8 28
+    112          
+    113          /**************************************************************************//**
+    114           * @brief Saveing settings array (weak implementation)
+    115           *****************************************************************************/
+
+   \                                 In section .bss, align 4
+    116          SL_WEAK const app_saving_item_t *saving_settings[] = { NULL };
+   \                     saving_settings:
+   \        0x0                      DS8 4
+    117          
+    118          // -----------------------------------------------------------------------------
+    119          //                                Static Variables
+    120          // -----------------------------------------------------------------------------
+    121          
+    122          // -----------------------------------------------------------------------------
+    123          //                          Public Function Definitions
+    124          // -----------------------------------------------------------------------------
+    125          
+    126          /* App settings init */
+
+   \                                 In section .text, align 2, keep-with-next
+    127          void app_settings_init(void)
+    128          {
+   \                     app_settings_init: (+1)
+   \        0x0   0xE92D 0x41F0      PUSH     {R4-R8,LR}
+    129            uint8_t index = 0;
+   \        0x4   0x2500             MOVS     R5,#+0
+    130            sl_status_t ret = SL_STATUS_OK;
+   \        0x6   0x2400             MOVS     R4,#+0
+    131          
+    132            while (saving_settings[index]) {
+   \                     ??app_settings_init_0: (+1)
+   \        0x8   0x.... 0x....      LDR.W    R6,??DataTable13_1
+   \        0xC   0x0028             MOVS     R0,R5
+   \        0xE   0xB2C0             UXTB     R0,R0
+   \       0x10   0xF856 0x0020      LDR      R0,[R6, R0, LSL #+2]
+   \       0x14   0x2800             CMP      R0,#+0
+   \       0x16   0xD02E             BEQ.N    ??app_settings_init_1
+    133              ret = app_settings_nvm_load(index,
+    134                                          saving_settings[index]->data,
+    135                                          saving_settings[index]->data_size);
+   \       0x18   0x0028             MOVS     R0,R5
+   \       0x1A   0xB2C0             UXTB     R0,R0
+   \       0x1C   0xF856 0x0020      LDR      R0,[R6, R0, LSL #+2]
+   \       0x20   0x6842             LDR      R2,[R0, #+4]
+   \       0x22   0x0028             MOVS     R0,R5
+   \       0x24   0xB2C0             UXTB     R0,R0
+   \       0x26   0xF856 0x0020      LDR      R0,[R6, R0, LSL #+2]
+   \       0x2A   0x6801             LDR      R1,[R0, #+0]
+   \       0x2C   0x0028             MOVS     R0,R5
+   \       0x2E   0xB2C0             UXTB     R0,R0
+   \       0x30   0x.... 0x....      BL       app_settings_nvm_load
+   \       0x34   0x0004             MOVS     R4,R0
+    136              if (ret != SL_STATUS_OK) {
+   \       0x36   0x2C00             CMP      R4,#+0
+   \       0x38   0xD01B             BEQ.N    ??app_settings_init_2
+    137                if (saving_settings[index]->default_val) {
+   \       0x3A   0x0028             MOVS     R0,R5
+   \       0x3C   0xB2C0             UXTB     R0,R0
+   \       0x3E   0xF856 0x0020      LDR      R0,[R6, R0, LSL #+2]
+   \       0x42   0x6880             LDR      R0,[R0, #+8]
+   \       0x44   0x2800             CMP      R0,#+0
+   \       0x46   0xD014             BEQ.N    ??app_settings_init_2
+    138                  memcpy(saving_settings[index]->data, saving_settings[index]->default_val, saving_settings[index]->data_size);
+   \       0x48   0x0028             MOVS     R0,R5
+   \       0x4A   0xB2C0             UXTB     R0,R0
+   \       0x4C   0xF856 0x0020      LDR      R0,[R6, R0, LSL #+2]
+   \       0x50   0x6847             LDR      R7,[R0, #+4]
+   \       0x52   0x0028             MOVS     R0,R5
+   \       0x54   0xB2C0             UXTB     R0,R0
+   \       0x56   0xF856 0x0020      LDR      R0,[R6, R0, LSL #+2]
+   \       0x5A   0xF8D0 0x8008      LDR      R8,[R0, #+8]
+   \       0x5E   0x0028             MOVS     R0,R5
+   \       0x60   0xB2C0             UXTB     R0,R0
+   \       0x62   0xF856 0x0020      LDR      R0,[R6, R0, LSL #+2]
+   \       0x66   0x6806             LDR      R6,[R0, #+0]
+   \       0x68   0x003A             MOVS     R2,R7
+   \       0x6A   0x4641             MOV      R1,R8
+   \       0x6C   0x0030             MOVS     R0,R6
+   \       0x6E   0x.... 0x....      BL       __aeabi_memcpy
+    139                }
+    140              }
+    141              index++;
+   \                     ??app_settings_init_2: (+1)
+   \       0x72   0x1C6D             ADDS     R5,R5,#+1
+   \       0x74   0xE7C8             B.N      ??app_settings_init_0
+    142            }
+    143          }
+   \                     ??app_settings_init_1: (+1)
+   \       0x76   0xE8BD 0x81F0      POP      {R4-R8,PC}
+    144          
+    145          /* App setinngs save */
+
+   \                                 In section .text, align 2, keep-with-next
+    146          sl_status_t app_settings_save(void)
+    147          {
+   \                     app_settings_save: (+1)
+   \        0x0   0xB538             PUSH     {R3-R5,LR}
+    148            uint8_t index = 0;
+   \        0x2   0x2500             MOVS     R5,#+0
+    149            sl_status_t ret = SL_STATUS_OK;
+   \        0x4   0x2400             MOVS     R4,#+0
+    150          
+    151            while (saving_settings[index]) {
+   \                     ??app_settings_save_0: (+1)
+   \        0x6   0x.... 0x....      LDR.W    R1,??DataTable13_1
+   \        0xA   0x0028             MOVS     R0,R5
+   \        0xC   0xB2C0             UXTB     R0,R0
+   \        0xE   0xF851 0x0020      LDR      R0,[R1, R0, LSL #+2]
+   \       0x12   0x2800             CMP      R0,#+0
+   \       0x14   0xD012             BEQ.N    ??app_settings_save_1
+    152              ret = app_settings_nvm_save(index,
+    153                                          saving_settings[index]->data,
+    154                                          saving_settings[index]->data_size);
+   \       0x16   0x0028             MOVS     R0,R5
+   \       0x18   0xB2C0             UXTB     R0,R0
+   \       0x1A   0xF851 0x0020      LDR      R0,[R1, R0, LSL #+2]
+   \       0x1E   0x6842             LDR      R2,[R0, #+4]
+   \       0x20   0x0028             MOVS     R0,R5
+   \       0x22   0xB2C0             UXTB     R0,R0
+   \       0x24   0xF851 0x0020      LDR      R0,[R1, R0, LSL #+2]
+   \       0x28   0x6801             LDR      R1,[R0, #+0]
+   \       0x2A   0x0028             MOVS     R0,R5
+   \       0x2C   0xB2C0             UXTB     R0,R0
+   \       0x2E   0x.... 0x....      BL       app_settings_nvm_save
+   \       0x32   0x0004             MOVS     R4,R0
+    155              if (ret != SL_STATUS_OK) {
+   \       0x34   0x2C00             CMP      R4,#+0
+   \       0x36   0xD101             BNE.N    ??app_settings_save_1
+    156                break;
+    157              }
+    158              index++;
+   \                     ??app_settings_save_2: (+1)
+   \       0x38   0x1C6D             ADDS     R5,R5,#+1
+   \       0x3A   0xE7E4             B.N      ??app_settings_save_0
+    159            }
+    160          
+    161            return ret;
+   \                     ??app_settings_save_1: (+1)
+   \       0x3C   0x0020             MOVS     R0,R4
+   \       0x3E   0xBD32             POP      {R1,R4,R5,PC}
+    162          }
+    163          
+    164          /* App settings reset */
+
+   \                                 In section .text, align 2, keep-with-next
+    165          void app_settings_reset(void)
+    166          {
+   \                     app_settings_reset: (+1)
+   \        0x0   0xB5F8             PUSH     {R3-R7,LR}
+    167            uint8_t index = 0;
+   \        0x2   0x2400             MOVS     R4,#+0
+    168          
+    169            while (saving_settings[index]) {
+   \                     ??app_settings_reset_0: (+1)
+   \        0x4   0x.... 0x....      LDR.W    R5,??DataTable13_1
+   \        0x8   0x0020             MOVS     R0,R4
+   \        0xA   0xB2C0             UXTB     R0,R0
+   \        0xC   0xF855 0x0020      LDR      R0,[R5, R0, LSL #+2]
+   \       0x10   0x2800             CMP      R0,#+0
+   \       0x12   0xD020             BEQ.N    ??app_settings_reset_1
+    170              app_settings_nvm_delete(index);
+   \       0x14   0x0020             MOVS     R0,R4
+   \       0x16   0xB2C0             UXTB     R0,R0
+   \       0x18   0x.... 0x....      BL       app_settings_nvm_delete
+    171              if (saving_settings[index]->default_val) {
+   \       0x1C   0x0020             MOVS     R0,R4
+   \       0x1E   0xB2C0             UXTB     R0,R0
+   \       0x20   0xF855 0x0020      LDR      R0,[R5, R0, LSL #+2]
+   \       0x24   0x6880             LDR      R0,[R0, #+8]
+   \       0x26   0x2800             CMP      R0,#+0
+   \       0x28   0xD013             BEQ.N    ??app_settings_reset_2
+    172                memcpy(saving_settings[index]->data, saving_settings[index]->default_val, saving_settings[index]->data_size);
+   \       0x2A   0x0020             MOVS     R0,R4
+   \       0x2C   0xB2C0             UXTB     R0,R0
+   \       0x2E   0xF855 0x0020      LDR      R0,[R5, R0, LSL #+2]
+   \       0x32   0x6846             LDR      R6,[R0, #+4]
+   \       0x34   0x0020             MOVS     R0,R4
+   \       0x36   0xB2C0             UXTB     R0,R0
+   \       0x38   0xF855 0x0020      LDR      R0,[R5, R0, LSL #+2]
+   \       0x3C   0x6887             LDR      R7,[R0, #+8]
+   \       0x3E   0x0020             MOVS     R0,R4
+   \       0x40   0xB2C0             UXTB     R0,R0
+   \       0x42   0xF855 0x0020      LDR      R0,[R5, R0, LSL #+2]
+   \       0x46   0x6805             LDR      R5,[R0, #+0]
+   \       0x48   0x0032             MOVS     R2,R6
+   \       0x4A   0x0039             MOVS     R1,R7
+   \       0x4C   0x0028             MOVS     R0,R5
+   \       0x4E   0x.... 0x....      BL       __aeabi_memcpy
+    173              }
+    174              index++;
+   \                     ??app_settings_reset_2: (+1)
+   \       0x52   0x1C64             ADDS     R4,R4,#+1
+   \       0x54   0xE7D6             B.N      ??app_settings_reset_0
+    175            }
+    176          }
+   \                     ??app_settings_reset_1: (+1)
+   \       0x56   0xBDF1             POP      {R0,R4-R7,PC}
+    177          
+    178          /* App settings set */
+
+   \                                 In section .text, align 2, keep-with-next
+    179          sl_status_t app_settings_set(char *const domain_and_key, const char *const value_str)
+    180          {
+   \                     app_settings_set: (+1)
+   \        0x0   0xE92D 0x4FF8      PUSH     {R3-R11,LR}
+   \        0x4   0x0004             MOVS     R4,R0
+   \        0x6   0x000D             MOVS     R5,R1
+    181            const app_settings_entry_t *iter;
+    182            const char *domain = NULL;
+   \        0x8   0xF05F 0x0B00      MOVS     R11,#+0
+    183            char *key = NULL;
+   \        0xC   0xF05F 0x0900      MOVS     R9,#+0
+    184            const char *nested_key = NULL;
+   \       0x10   0xF05F 0x0A00      MOVS     R10,#+0
+    185          
+    186            if (!domain_and_key || !value_str) {
+   \       0x14   0x2C00             CMP      R4,#+0
+   \       0x16   0xD001             BEQ.N    ??app_settings_set_0
+   \       0x18   0x2D00             CMP      R5,#+0
+   \       0x1A   0xD101             BNE.N    ??app_settings_set_1
+    187              return SL_STATUS_INVALID_KEY;
+   \                     ??app_settings_set_0: (+1)
+   \       0x1C   0x2029             MOVS     R0,#+41
+   \       0x1E   0xE04B             B.N      ??app_settings_set_2
+    188            }
+    189          
+    190            key = domain_and_key;
+   \                     ??app_settings_set_1: (+1)
+   \       0x20   0x9400             STR      R4,[SP, #+0]
+    191            domain = strtok(key, ".");
+   \       0x22   0x.... 0x....      ADR.W    R8,??DataTable6
+   \       0x26   0x4641             MOV      R1,R8
+   \       0x28   0x9800             LDR      R0,[SP, #+0]
+   \       0x2A   0x.... 0x....      BL       strtok
+   \       0x2E   0x0006             MOVS     R6,R0
+    192            key = strtok(NULL, ".");
+   \       0x30   0x4641             MOV      R1,R8
+   \       0x32   0x2000             MOVS     R0,#+0
+   \       0x34   0x.... 0x....      BL       strtok
+   \       0x38   0x0007             MOVS     R7,R0
+    193            nested_key = strtok(NULL, ".");
+   \       0x3A   0x4641             MOV      R1,R8
+   \       0x3C   0x2000             MOVS     R0,#+0
+   \       0x3E   0x.... 0x....      BL       strtok
+   \       0x42   0x4680             MOV      R8,R0
+    194          
+    195            if (!domain || !key) {
+   \       0x44   0x2E00             CMP      R6,#+0
+   \       0x46   0xD001             BEQ.N    ??app_settings_set_3
+   \       0x48   0x2F00             CMP      R7,#+0
+   \       0x4A   0xD101             BNE.N    ??app_settings_set_4
+    196              return SL_STATUS_INVALID_KEY;
+   \                     ??app_settings_set_3: (+1)
+   \       0x4C   0x2029             MOVS     R0,#+41
+   \       0x4E   0xE033             B.N      ??app_settings_set_2
+    197            }
+    198          
+    199            iter = app_settings_entries;
+   \                     ??app_settings_set_4: (+1)
+   \       0x50   0x.... 0x....      LDR.W    R9,??DataTable13_2
+    200            while (iter->key) {
+   \                     ??app_settings_set_5: (+1)
+   \       0x54   0xF8D9 0x0000      LDR      R0,[R9, #+0]
+   \       0x58   0x2800             CMP      R0,#+0
+   \       0x5A   0xD02C             BEQ.N    ??app_settings_set_6
+    201              if (!strcmp(domain, app_settings_domain_str[iter->domain])) {
+   \       0x5C   0x.... 0x....      LDR.W    R10,??DataTable13_3
+   \       0x60   0xF899 0x0004      LDRB     R0,[R9, #+4]
+   \       0x64   0xF85A 0x1020      LDR      R1,[R10, R0, LSL #+2]
+   \       0x68   0x0030             MOVS     R0,R6
+   \       0x6A   0x.... 0x....      BL       strcmp
+   \       0x6E   0x2800             CMP      R0,#+0
+   \       0x70   0xD11E             BNE.N    ??app_settings_set_7
+    202                if (!strcmp(iter->key, key)) {
+   \       0x72   0x0039             MOVS     R1,R7
+   \       0x74   0xF8D9 0x0000      LDR      R0,[R9, #+0]
+   \       0x78   0x.... 0x....      BL       strcmp
+   \       0x7C   0x2800             CMP      R0,#+0
+   \       0x7E   0xD117             BNE.N    ??app_settings_set_7
+    203                  if (iter->set_handler) {
+   \       0x80   0xF8D9 0x0014      LDR      R0,[R9, #+20]
+   \       0x84   0x2800             CMP      R0,#+0
+   \       0x86   0xD011             BEQ.N    ??app_settings_set_8
+    204                    printf("%s.%s = %s\r\n", app_settings_domain_str[iter->domain], iter->key, value_str);
+   \       0x88   0x002B             MOVS     R3,R5
+   \       0x8A   0xF8D9 0x2000      LDR      R2,[R9, #+0]
+   \       0x8E   0xF899 0x0004      LDRB     R0,[R9, #+4]
+   \       0x92   0xF85A 0x1020      LDR      R1,[R10, R0, LSL #+2]
+   \       0x96   0x.... 0x....      LDR.W    R0,??DataTable13_4
+   \       0x9A   0x.... 0x....      BL       printf
+    205                    return iter->set_handler(value_str, nested_key, iter);
+   \       0x9E   0x464A             MOV      R2,R9
+   \       0xA0   0x4641             MOV      R1,R8
+   \       0xA2   0x0028             MOVS     R0,R5
+   \       0xA4   0xF8D9 0x3014      LDR      R3,[R9, #+20]
+   \       0xA8   0x4798             BLX      R3
+   \       0xAA   0xE005             B.N      ??app_settings_set_2
+    206                  } else {
+    207                    return SL_STATUS_PERMISSION;
+   \                     ??app_settings_set_8: (+1)
+   \       0xAC   0x2008             MOVS     R0,#+8
+   \       0xAE   0xE003             B.N      ??app_settings_set_2
+    208                  }
+    209                }
+    210              }
+    211              iter++;
+   \                     ??app_settings_set_7: (+1)
+   \       0xB0   0xF119 0x0920      ADDS     R9,R9,#+32
+   \       0xB4   0xE7CE             B.N      ??app_settings_set_5
+    212            }
+    213          
+    214            return SL_STATUS_INVALID_KEY;
+   \                     ??app_settings_set_6: (+1)
+   \       0xB6   0x2029             MOVS     R0,#+41
+   \                     ??app_settings_set_2: (+1)
+   \       0xB8   0xE8BD 0x8FF2      POP      {R1,R4-R11,PC}
+    215          }
+    216          
+    217          /* App settings get */
+
+   \                                 In section .text, align 2, keep-with-next
+    218          sl_status_t app_settings_get(char *const domain_and_key)
+    219          {
+   \                     app_settings_get: (+1)
+   \        0x0   0xE92D 0x4FF8      PUSH     {R3-R11,LR}
+   \        0x4   0xB0A2             SUB      SP,SP,#+136
+   \        0x6   0x4680             MOV      R8,R0
+    220            sl_status_t ret;
+    221            const app_settings_entry_t *iter;
+    222            const char *domain = NULL;
+   \        0x8   0xF05F 0x0B00      MOVS     R11,#+0
+    223            char *key = NULL;
+   \        0xC   0xF05F 0x0900      MOVS     R9,#+0
+    224            const char *nested_key = NULL;
+   \       0x10   0xF05F 0x0A00      MOVS     R10,#+0
+    225            char value_str[APP_SETTINGS_STR_VALUE_LENGTH];
+    226          
+    227            key = domain_and_key;
+   \       0x14   0xF8CD 0x8004      STR      R8,[SP, #+4]
+    228            domain = strtok(key, ".");
+   \       0x18   0x....             ADR.N    R6,??DataTable6
+   \       0x1A   0x0031             MOVS     R1,R6
+   \       0x1C   0x9801             LDR      R0,[SP, #+4]
+   \       0x1E   0x.... 0x....      BL       strtok
+   \       0x22   0x0004             MOVS     R4,R0
+    229            key = strtok(NULL, ".");
+   \       0x24   0x0031             MOVS     R1,R6
+   \       0x26   0x2000             MOVS     R0,#+0
+   \       0x28   0x.... 0x....      BL       strtok
+   \       0x2C   0x0005             MOVS     R5,R0
+    230            nested_key = strtok(NULL, ".");
+   \       0x2E   0x0031             MOVS     R1,R6
+   \       0x30   0x2000             MOVS     R0,#+0
+   \       0x32   0x.... 0x....      BL       strtok
+   \       0x36   0x0006             MOVS     R6,R0
+    231          
+    232            iter = app_settings_entries;
+   \       0x38   0x.... 0x....      LDR.W    R7,??DataTable13_2
+    233            while (iter->key) {
+   \                     ??app_settings_get_0: (+1)
+   \       0x3C   0x6838             LDR      R0,[R7, #+0]
+   \       0x3E   0x2800             CMP      R0,#+0
+   \       0x40   0xD02C             BEQ.N    ??app_settings_get_1
+    234              if (!domain || !strcmp(domain, app_settings_domain_str[iter->domain])) {
+   \       0x42   0x2C00             CMP      R4,#+0
+   \       0x44   0xD009             BEQ.N    ??app_settings_get_2
+   \       0x46   0x.... 0x....      LDR.W    R1,??DataTable13_3
+   \       0x4A   0x7938             LDRB     R0,[R7, #+4]
+   \       0x4C   0xF851 0x1020      LDR      R1,[R1, R0, LSL #+2]
+   \       0x50   0x0020             MOVS     R0,R4
+   \       0x52   0x.... 0x....      BL       strcmp
+   \       0x56   0x2800             CMP      R0,#+0
+   \       0x58   0xD11E             BNE.N    ??app_settings_get_3
+    235                if (!key || !strcmp(iter->key, key)) {
+   \                     ??app_settings_get_2: (+1)
+   \       0x5A   0x2D00             CMP      R5,#+0
+   \       0x5C   0xD005             BEQ.N    ??app_settings_get_4
+   \       0x5E   0x0029             MOVS     R1,R5
+   \       0x60   0x6838             LDR      R0,[R7, #+0]
+   \       0x62   0x.... 0x....      BL       strcmp
+   \       0x66   0x2800             CMP      R0,#+0
+   \       0x68   0xD116             BNE.N    ??app_settings_get_3
+    236                  if (iter->get_handler) {
+   \                     ??app_settings_get_4: (+1)
+   \       0x6A   0x69B8             LDR      R0,[R7, #+24]
+   \       0x6C   0x2800             CMP      R0,#+0
+   \       0x6E   0xD013             BEQ.N    ??app_settings_get_3
+    237                    ret = iter->get_handler(value_str, nested_key, iter);
+   \       0x70   0x003A             MOVS     R2,R7
+   \       0x72   0x0031             MOVS     R1,R6
+   \       0x74   0xA802             ADD      R0,SP,#+8
+   \       0x76   0x69BB             LDR      R3,[R7, #+24]
+   \       0x78   0x4798             BLX      R3
+   \       0x7A   0x9000             STR      R0,[SP, #+0]
+    238                    if (ret == SL_STATUS_OK) {
+   \       0x7C   0x9800             LDR      R0,[SP, #+0]
+   \       0x7E   0x2800             CMP      R0,#+0
+   \       0x80   0xD10A             BNE.N    ??app_settings_get_3
+    239                      printf("%s.%s = %s\r\n", app_settings_domain_str[iter->domain], iter->key, value_str);
+   \       0x82   0xAB02             ADD      R3,SP,#+8
+   \       0x84   0x683A             LDR      R2,[R7, #+0]
+   \       0x86   0x.... 0x....      LDR.W    R1,??DataTable13_3
+   \       0x8A   0x7938             LDRB     R0,[R7, #+4]
+   \       0x8C   0xF851 0x1020      LDR      R1,[R1, R0, LSL #+2]
+   \       0x90   0x.... 0x....      LDR.W    R0,??DataTable13_4
+   \       0x94   0x.... 0x....      BL       printf
+    240                    }
+    241                  }
+    242                }
+    243              }
+    244              iter++;
+   \                     ??app_settings_get_3: (+1)
+   \       0x98   0x3720             ADDS     R7,R7,#+32
+   \       0x9A   0xE7CF             B.N      ??app_settings_get_0
+    245            }
+    246          
+    247            return SL_STATUS_OK;
+   \                     ??app_settings_get_1: (+1)
+   \       0x9C   0x2000             MOVS     R0,#+0
+   \       0x9E   0xB023             ADD      SP,SP,#+140
+   \       0xA0   0xE8BD 0x8FF0      POP      {R4-R11,PC}
+    248          }
+    249          
+    250          /* App settings help */
+
+   \                                 In section .text, align 2, keep-with-next
+    251          sl_status_t app_settings_help(char *const domain_and_key, bool get)
+    252          {
+   \                     app_settings_help: (+1)
+   \        0x0   0xE92D 0x4FF1      PUSH     {R0,R4-R11,LR}
+   \        0x4   0xB086             SUB      SP,SP,#+24
+   \        0x6   0x468B             MOV      R11,R1
+    253            const app_settings_entry_t *iter;
+    254            const char *domain = NULL;
+   \        0x8   0xF05F 0x0A00      MOVS     R10,#+0
+    255            char *key = NULL;
+   \        0xC   0xF05F 0x0900      MOVS     R9,#+0
+    256          
+    257            uint8_t permission_write = 0x01;
+   \       0x10   0x2601             MOVS     R6,#+1
+    258            uint8_t permission_read = 0x02;
+   \       0x12   0x2702             MOVS     R7,#+2
+    259          
+    260            const char *permission_str[] =
+    261            {
+    262              "[??]",
+    263              "[wo]",
+    264              "[ro]",
+    265              "[rw]"
+    266            };
+   \       0x14   0xA801             ADD      R0,SP,#+4
+   \       0x16   0x.... 0x....      LDR.W    R1,??DataTable13_5
+   \       0x1A   0x2210             MOVS     R2,#+16
+   \       0x1C   0x.... 0x....      BL       __aeabi_memcpy4
+    267          
+    268            key = domain_and_key;
+   \       0x20   0x9806             LDR      R0,[SP, #+24]
+   \       0x22   0x9000             STR      R0,[SP, #+0]
+    269            domain = strtok(key, ".");
+   \       0x24   0x....             ADR.N    R5,??DataTable6
+   \       0x26   0x0029             MOVS     R1,R5
+   \       0x28   0x9800             LDR      R0,[SP, #+0]
+   \       0x2A   0x.... 0x....      BL       strtok
+   \       0x2E   0x0004             MOVS     R4,R0
+    270            key = strtok(NULL, ".");
+   \       0x30   0x0029             MOVS     R1,R5
+   \       0x32   0x2000             MOVS     R0,#+0
+   \       0x34   0x.... 0x....      BL       strtok
+   \       0x38   0x0005             MOVS     R5,R0
+    271          
+    272            iter = app_settings_entries;
+   \       0x3A   0x.... 0x....      LDR.W    R8,??DataTable13_2
+    273          
+    274            if (!domain) {
+   \       0x3E   0x2C00             CMP      R4,#+0
+   \       0x40   0xD12E             BNE.N    ??app_settings_help_0
+    275              printf("Help of get and set methods\r\n\r\nAvailable domains :\r\n");
+   \       0x42   0x.... 0x....      LDR.W    R0,??DataTable13_6
+   \       0x46   0x.... 0x....      BL       printf
+    276              uint8_t domains_nb = 0;
+   \       0x4A   0xF05F 0x0900      MOVS     R9,#+0
+    277              while (app_settings_domain_str[domains_nb] != NULL) {
+   \                     ??app_settings_help_1: (+1)
+   \       0x4E   0x.... 0x....      LDR.W    R10,??DataTable13_3
+   \       0x52   0x4648             MOV      R0,R9
+   \       0x54   0xB2C0             UXTB     R0,R0
+   \       0x56   0xF85A 0x0020      LDR      R0,[R10, R0, LSL #+2]
+   \       0x5A   0x2800             CMP      R0,#+0
+   \       0x5C   0xD00A             BEQ.N    ??app_settings_help_2
+    278                printf(" %s\r\n", app_settings_domain_str[domains_nb]);
+   \       0x5E   0x4648             MOV      R0,R9
+   \       0x60   0xB2C0             UXTB     R0,R0
+   \       0x62   0xF85A 0x1020      LDR      R1,[R10, R0, LSL #+2]
+   \       0x66   0x.... 0x....      LDR.W    R0,??DataTable13_7
+   \       0x6A   0x.... 0x....      BL       printf
+    279                domains_nb++;
+   \       0x6E   0xF119 0x0901      ADDS     R9,R9,#+1
+   \       0x72   0xE7EC             B.N      ??app_settings_help_1
+    280              }
+    281              printf("Type '[get or set] domain help'\r\n");
+   \                     ??app_settings_help_2: (+1)
+   \       0x74   0x.... 0x....      LDR.W    R0,??DataTable13_8
+   \       0x78   0x.... 0x....      BL       printf
+    282              printf("\r\neg. 'get %s help' to get the help of %s\r\n    'get %s' for all 'get' commands\r\n",
+    283                     app_settings_domain_str[0], app_settings_domain_str[0], app_settings_domain_str[0]);
+   \       0x7C   0xF8DA 0x3000      LDR      R3,[R10, #+0]
+   \       0x80   0xF8DA 0x2000      LDR      R2,[R10, #+0]
+   \       0x84   0xF8DA 0x1000      LDR      R1,[R10, #+0]
+   \       0x88   0x.... 0x....      LDR.W    R0,??DataTable13_9
+   \       0x8C   0x.... 0x....      BL       printf
+    284              printf("\r\nCommands permissions :\r\n %s : Write Only\r\n %s : Read Only\r\n %s : Read and Write\r\n",
+    285                     permission_str[1], permission_str[2], permission_str[3]);
+   \       0x90   0x9B04             LDR      R3,[SP, #+16]
+   \       0x92   0x9A03             LDR      R2,[SP, #+12]
+   \       0x94   0x9902             LDR      R1,[SP, #+8]
+   \       0x96   0x.... 0x....      LDR.W    R0,??DataTable13_10
+   \       0x9A   0x.... 0x....      BL       printf
+   \       0x9E   0xE04C             B.N      ??app_settings_help_3
+    286            } else if (domain) {
+   \                     ??app_settings_help_0: (+1)
+   \       0xA0   0x2C00             CMP      R4,#+0
+   \       0xA2   0xD04A             BEQ.N    ??app_settings_help_3
+    287              while (iter->key) {
+   \                     ??app_settings_help_4: (+1)
+   \       0xA4   0xF8D8 0x0000      LDR      R0,[R8, #+0]
+   \       0xA8   0x2800             CMP      R0,#+0
+   \       0xAA   0xD046             BEQ.N    ??app_settings_help_3
+    288                if (!domain || !strcmp(domain, app_settings_domain_str[iter->domain])) {
+   \       0xAC   0x2C00             CMP      R4,#+0
+   \       0xAE   0xD00A             BEQ.N    ??app_settings_help_5
+   \       0xB0   0x.... 0x....      LDR.W    R1,??DataTable13_3
+   \       0xB4   0xF898 0x0004      LDRB     R0,[R8, #+4]
+   \       0xB8   0xF851 0x1020      LDR      R1,[R1, R0, LSL #+2]
+   \       0xBC   0x0020             MOVS     R0,R4
+   \       0xBE   0x.... 0x....      BL       strcmp
+   \       0xC2   0x2800             CMP      R0,#+0
+   \       0xC4   0xD136             BNE.N    ??app_settings_help_6
+    289                  if (!key || !strcmp(iter->key, key)) {
+   \                     ??app_settings_help_5: (+1)
+   \       0xC6   0x2D00             CMP      R5,#+0
+   \       0xC8   0xD006             BEQ.N    ??app_settings_help_7
+   \       0xCA   0x0029             MOVS     R1,R5
+   \       0xCC   0xF8D8 0x0000      LDR      R0,[R8, #+0]
+   \       0xD0   0x.... 0x....      BL       strcmp
+   \       0xD4   0x2800             CMP      R0,#+0
+   \       0xD6   0xD12D             BNE.N    ??app_settings_help_6
+    290                    uint8_t permission = 0;
+   \                     ??app_settings_help_7: (+1)
+   \       0xD8   0xF05F 0x0900      MOVS     R9,#+0
+    291                    permission |= (iter->get_handler ? permission_read : 0);
+   \       0xDC   0xF8D8 0x0018      LDR      R0,[R8, #+24]
+   \       0xE0   0x2800             CMP      R0,#+0
+   \       0xE2   0xD002             BEQ.N    ??app_settings_help_8
+   \       0xE4   0x0038             MOVS     R0,R7
+   \       0xE6   0xB2C0             UXTB     R0,R0
+   \       0xE8   0xE000             B.N      ??app_settings_help_9
+   \                     ??app_settings_help_8: (+1)
+   \       0xEA   0x2000             MOVS     R0,#+0
+   \                     ??app_settings_help_9: (+1)
+   \       0xEC   0xEA50 0x0909      ORRS     R9,R0,R9
+    292                    permission |= (iter->set_handler ? permission_write : 0);
+   \       0xF0   0xF8D8 0x0014      LDR      R0,[R8, #+20]
+   \       0xF4   0x2800             CMP      R0,#+0
+   \       0xF6   0xD002             BEQ.N    ??app_settings_help_10
+   \       0xF8   0x0030             MOVS     R0,R6
+   \       0xFA   0xB2C0             UXTB     R0,R0
+   \       0xFC   0xE000             B.N      ??app_settings_help_11
+   \                     ??app_settings_help_10: (+1)
+   \       0xFE   0x2000             MOVS     R0,#+0
+   \                     ??app_settings_help_11: (+1)
+   \      0x100   0xEA50 0x0909      ORRS     R9,R0,R9
+    293                    if ((iter->get_handler && get) || (iter->set_handler && !get)) {
+   \      0x104   0xF8D8 0x0018      LDR      R0,[R8, #+24]
+   \      0x108   0x2800             CMP      R0,#+0
+   \      0x10A   0xD003             BEQ.N    ??app_settings_help_12
+   \      0x10C   0x4658             MOV      R0,R11
+   \      0x10E   0xB2C0             UXTB     R0,R0
+   \      0x110   0x2800             CMP      R0,#+0
+   \      0x112   0xD107             BNE.N    ??app_settings_help_13
+   \                     ??app_settings_help_12: (+1)
+   \      0x114   0xF8D8 0x0014      LDR      R0,[R8, #+20]
+   \      0x118   0x2800             CMP      R0,#+0
+   \      0x11A   0xD00B             BEQ.N    ??app_settings_help_6
+   \      0x11C   0x4658             MOV      R0,R11
+   \      0x11E   0xB2C0             UXTB     R0,R0
+   \      0x120   0x2800             CMP      R0,#+0
+   \      0x122   0xD107             BNE.N    ??app_settings_help_6
+    294                      app_help_print_and_pad(permission_str[permission], iter);
+   \                     ??app_settings_help_13: (+1)
+   \      0x124   0x4641             MOV      R1,R8
+   \      0x126   0xAA01             ADD      R2,SP,#+4
+   \      0x128   0x4648             MOV      R0,R9
+   \      0x12A   0xB2C0             UXTB     R0,R0
+   \      0x12C   0xF852 0x0020      LDR      R0,[R2, R0, LSL #+2]
+   \      0x130   0x.... 0x....      BL       app_help_print_and_pad
+    295                    }
+    296                  }
+    297                }
+    298                iter++;
+   \                     ??app_settings_help_6: (+1)
+   \      0x134   0xF118 0x0820      ADDS     R8,R8,#+32
+   \      0x138   0xE7B4             B.N      ??app_settings_help_4
+    299              }
+    300            }
+    301            return SL_STATUS_OK;
+   \                     ??app_settings_help_3: (+1)
+   \      0x13A   0x2000             MOVS     R0,#+0
+   \      0x13C   0xB007             ADD      SP,SP,#+28
+   \      0x13E   0xE8BD 0x8FF0      POP      {R4-R11,PC}
+    302          }
+
+   \                                 In section .rodata, align 4
+   \                     ?_23:
+   \        0x0   0x....'....        DC32 ?_3, ?_4, ?_5, ?_6
+   \              0x....'....  
+   \              0x....'....  
+   \              0x....'....
+    303          
+    304          /* App help print and pad */
+
+   \                                 In section .text, align 2, keep-with-next
+    305          static void app_help_print_and_pad(const char * permission, const app_settings_entry_t *entry)
+    306          {
+   \                     app_help_print_and_pad: (+1)
+   \        0x0   0xB5F8             PUSH     {R3-R7,LR}
+   \        0x2   0x0004             MOVS     R4,R0
+   \        0x4   0x000D             MOVS     R5,R1
+    307            printf("%s %s.%s", permission, app_settings_domain_str[entry->domain], entry->key);
+   \        0x6   0x....             LDR.N    R6,??DataTable13_3
+   \        0x8   0x682B             LDR      R3,[R5, #+0]
+   \        0xA   0x7928             LDRB     R0,[R5, #+4]
+   \        0xC   0xF856 0x2020      LDR      R2,[R6, R0, LSL #+2]
+   \       0x10   0x0021             MOVS     R1,R4
+   \       0x12   0x....             LDR.N    R0,??DataTable13_11
+   \       0x14   0x.... 0x....      BL       printf
+    308            size_t string_length = strlen(permission) + strlen(app_settings_domain_str[entry->domain]) + strlen(entry->key);
+   \       0x18   0x0020             MOVS     R0,R4
+   \       0x1A   0x.... 0x....      BL       strlen
+   \       0x1E   0x0007             MOVS     R7,R0
+   \       0x20   0x7928             LDRB     R0,[R5, #+4]
+   \       0x22   0xF856 0x0020      LDR      R0,[R6, R0, LSL #+2]
+   \       0x26   0x.... 0x....      BL       strlen
+   \       0x2A   0x19C7             ADDS     R7,R0,R7
+   \       0x2C   0x6828             LDR      R0,[R5, #+0]
+   \       0x2E   0x.... 0x....      BL       strlen
+   \       0x32   0x0006             MOVS     R6,R0
+   \       0x34   0x19F6             ADDS     R6,R6,R7
+    309            for (; string_length < 60; string_length++) {
+   \                     ??app_help_print_and_pad_0: (+1)
+   \       0x36   0x2E3C             CMP      R6,#+60
+   \       0x38   0xD204             BCS.N    ??app_help_print_and_pad_1
+    310              printf(" ");
+   \       0x3A   0x....             ADR.N    R0,??DataTable13
+   \       0x3C   0x.... 0x....      BL       printf
+    311            }
+   \       0x40   0x1C76             ADDS     R6,R6,#+1
+   \       0x42   0xE7F8             B.N      ??app_help_print_and_pad_0
+    312            printf("%s\r\n", entry->description ? entry->description : " ");
+   \                     ??app_help_print_and_pad_1: (+1)
+   \       0x44   0x69E8             LDR      R0,[R5, #+28]
+   \       0x46   0x2800             CMP      R0,#+0
+   \       0x48   0xD001             BEQ.N    ??app_help_print_and_pad_2
+   \       0x4A   0x69E9             LDR      R1,[R5, #+28]
+   \       0x4C   0xE000             B.N      ??app_help_print_and_pad_3
+   \                     ??app_help_print_and_pad_2: (+1)
+   \       0x4E   0x....             ADR.N    R1,??DataTable13
+   \                     ??app_help_print_and_pad_3: (+1)
+   \       0x50   0x....             LDR.N    R0,??DataTable13_12
+   \       0x52   0x.... 0x....      BL       printf
+    313          }
+   \       0x56   0xBDF1             POP      {R0,R4-R7,PC}
+    314          
+    315          /* App settings set string */
+
+   \                                 In section .text, align 2, keep-with-next
+    316          sl_status_t app_settings_set_string(const char *value_str,
+    317                                              const char *key_str,
+    318                                              const app_settings_entry_t *entry)
+    319          {
+   \                     app_settings_set_string: (+1)
+   \        0x0   0xB5F8             PUSH     {R3-R7,LR}
+   \        0x2   0x0004             MOVS     R4,R0
+   \        0x4   0x000D             MOVS     R5,R1
+   \        0x6   0x0016             MOVS     R6,R2
+    320            char * entry_value_str;
+    321            (void)key_str;
+    322          
+    323            entry_value_str = entry->value;
+   \        0x8   0x68B7             LDR      R7,[R6, #+8]
+    324            strncpy(entry_value_str, value_str, entry->value_size - 1);
+   \        0xA   0x7972             LDRB     R2,[R6, #+5]
+   \        0xC   0x1E52             SUBS     R2,R2,#+1
+   \        0xE   0x0021             MOVS     R1,R4
+   \       0x10   0x0038             MOVS     R0,R7
+   \       0x12   0x.... 0x....      BL       strncpy
+    325            entry_value_str[entry->value_size - 1] = '\0';
+   \       0x16   0x2000             MOVS     R0,#+0
+   \       0x18   0x7971             LDRB     R1,[R6, #+5]
+   \       0x1A   0x4439             ADD      R1,R7,R1
+   \       0x1C   0xF801 0x0C01      STRB     R0,[R1, #-1]
+    326            if (strlen(value_str) >= entry->value_size) {
+   \       0x20   0x0020             MOVS     R0,R4
+   \       0x22   0x.... 0x....      BL       strlen
+   \       0x26   0x7971             LDRB     R1,[R6, #+5]
+   \       0x28   0x4288             CMP      R0,R1
+   \       0x2A   0xD308             BCC.N    ??app_settings_set_string_0
+    327              printf("Warning: string is too long for %s.%s, truncated to \"%s\"\r\n",
+    328                     app_settings_domain_str[entry->domain],
+    329                     entry->key,
+    330                     entry_value_str);
+   \       0x2C   0x003B             MOVS     R3,R7
+   \       0x2E   0x6832             LDR      R2,[R6, #+0]
+   \       0x30   0x....             LDR.N    R1,??DataTable13_3
+   \       0x32   0x7930             LDRB     R0,[R6, #+4]
+   \       0x34   0xF851 0x1020      LDR      R1,[R1, R0, LSL #+2]
+   \       0x38   0x....             LDR.N    R0,??DataTable13_13
+   \       0x3A   0x.... 0x....      BL       printf
+    331            }
+    332          
+    333            return SL_STATUS_OK;
+   \                     ??app_settings_set_string_0: (+1)
+   \       0x3E   0x2000             MOVS     R0,#+0
+   \       0x40   0xBDF2             POP      {R1,R4-R7,PC}
+    334          }
+    335          
+    336          /* App settings get string */
+
+   \                                 In section .text, align 2, keep-with-next
+    337          sl_status_t app_settings_get_string(char *value_str,
+    338                                              const char *key_str,
+    339                                              const app_settings_entry_t *entry)
+    340          {
+   \                     app_settings_get_string: (+1)
+   \        0x0   0xB570             PUSH     {R4-R6,LR}
+   \        0x2   0x0006             MOVS     R6,R0
+   \        0x4   0x000C             MOVS     R4,R1
+   \        0x6   0x0015             MOVS     R5,R2
+    341            (void)key_str;
+    342          
+    343            sprintf(value_str, "\"%s\"", (const char *)entry->value);
+   \        0x8   0x68AA             LDR      R2,[R5, #+8]
+   \        0xA   0x....             LDR.N    R1,??DataTable13_14
+   \        0xC   0x0030             MOVS     R0,R6
+   \        0xE   0x.... 0x....      BL       sprintf
+    344          
+    345            return SL_STATUS_OK;
+   \       0x12   0x2000             MOVS     R0,#+0
+   \       0x14   0xBD70             POP      {R4-R6,PC}
+    346          }
+    347          
+    348          /* App settings set integer */
+
+   \                                 In section .text, align 2, keep-with-next
+    349          sl_status_t app_settings_set_integer(const char *value_str,
+    350                                               const char *key_str,
+    351                                               const app_settings_entry_t *entry)
+    352          {
+   \                     app_settings_set_integer: (+1)
+   \        0x0   0xB57C             PUSH     {R2-R6,LR}
+   \        0x2   0x0004             MOVS     R4,R0
+   \        0x4   0x000D             MOVS     R5,R1
+   \        0x6   0x0016             MOVS     R6,R2
+    353            uint32_t value;
+    354            sl_status_t ret;
+    355            (void)key_str;
+    356          
+    357            ret = app_util_get_integer(&value,
+    358                                       value_str,
+    359                                       entry->input_enum_list,
+    360                                       entry->input & APP_SETTINGS_INPUT_FLAG_SIGNED);
+   \        0x8   0x79B3             LDRB     R3,[R6, #+6]
+   \        0xA   0xF013 0x0301      ANDS     R3,R3,#0x1
+   \        0xE   0x68F2             LDR      R2,[R6, #+12]
+   \       0x10   0x0021             MOVS     R1,R4
+   \       0x12   0x4668             MOV      R0,SP
+   \       0x14   0x.... 0x....      BL       app_util_get_integer
+   \       0x18   0x0001             MOVS     R1,R0
+    361            if (ret != SL_STATUS_OK) {
+   \       0x1A   0x2900             CMP      R1,#+0
+   \       0x1C   0xD001             BEQ.N    ??app_settings_set_integer_0
+    362              return SL_STATUS_INVALID_TYPE;
+   \       0x1E   0x2026             MOVS     R0,#+38
+   \       0x20   0xE016             B.N      ??app_settings_set_integer_1
+    363            }
+    364          
+    365            switch (entry->value_size) {
+   \                     ??app_settings_set_integer_0: (+1)
+   \       0x22   0x7970             LDRB     R0,[R6, #+5]
+   \       0x24   0x2801             CMP      R0,#+1
+   \       0x26   0xD004             BEQ.N    ??app_settings_set_integer_2
+   \       0x28   0x2802             CMP      R0,#+2
+   \       0x2A   0xD006             BEQ.N    ??app_settings_set_integer_3
+   \       0x2C   0x2804             CMP      R0,#+4
+   \       0x2E   0xD008             BEQ.N    ??app_settings_set_integer_4
+   \       0x30   0xE00B             B.N      ??app_settings_set_integer_5
+    366              case APP_SETTINGS_VALUE_SIZE_UINT8:
+    367                *((uint8_t *)entry->value) = (uint8_t)value;
+   \                     ??app_settings_set_integer_2: (+1)
+   \       0x32   0x9A00             LDR      R2,[SP, #+0]
+   \       0x34   0x68B0             LDR      R0,[R6, #+8]
+   \       0x36   0x7002             STRB     R2,[R0, #+0]
+    368                break;
+   \       0x38   0xE009             B.N      ??app_settings_set_integer_6
+    369              case APP_SETTINGS_VALUE_SIZE_UINT16:
+    370                *((uint16_t *)entry->value) = (uint16_t)value;
+   \                     ??app_settings_set_integer_3: (+1)
+   \       0x3A   0x9A00             LDR      R2,[SP, #+0]
+   \       0x3C   0x68B0             LDR      R0,[R6, #+8]
+   \       0x3E   0x8002             STRH     R2,[R0, #+0]
+    371                break;
+   \       0x40   0xE005             B.N      ??app_settings_set_integer_6
+    372              case APP_SETTINGS_VALUE_SIZE_UINT32:
+    373                *((uint32_t *)entry->value) = value;
+   \                     ??app_settings_set_integer_4: (+1)
+   \       0x42   0x9A00             LDR      R2,[SP, #+0]
+   \       0x44   0x68B0             LDR      R0,[R6, #+8]
+   \       0x46   0x6002             STR      R2,[R0, #+0]
+    374                break;
+   \       0x48   0xE001             B.N      ??app_settings_set_integer_6
+    375              default:
+    376                // Unsupported integer size
+    377                return SL_STATUS_INVALID_TYPE;
+   \                     ??app_settings_set_integer_5: (+1)
+   \       0x4A   0x2026             MOVS     R0,#+38
+   \       0x4C   0xE000             B.N      ??app_settings_set_integer_1
+    378            }
+    379          
+    380            return SL_STATUS_OK;
+   \                     ??app_settings_set_integer_6: (+1)
+   \       0x4E   0x2000             MOVS     R0,#+0
+   \                     ??app_settings_set_integer_1: (+1)
+   \       0x50   0xBD76             POP      {R1,R2,R4-R6,PC}
+    381          }
+    382          
+    383          /* App settings get integer */
+
+   \                                 In section .text, align 2, keep-with-next
+    384          sl_status_t app_settings_get_integer(char *value_str,
+    385                                               const char *key_str,
+    386                                               const app_settings_entry_t *entry)
+    387          {
+   \                     app_settings_get_integer: (+1)
+   \        0x0   0xE92D 0x41FC      PUSH     {R2-R8,LR}
+   \        0x4   0x0004             MOVS     R4,R0
+   \        0x6   0x000D             MOVS     R5,R1
+   \        0x8   0x0016             MOVS     R6,R2
+    388            uint32_t value;
+    389            uint8_t value_length = 0;
+   \        0xA   0x2700             MOVS     R7,#+0
+    390            (void)key_str;
+    391          
+    392            switch (entry->value_size) {
+   \        0xC   0x7970             LDRB     R0,[R6, #+5]
+   \        0xE   0x2801             CMP      R0,#+1
+   \       0x10   0xD004             BEQ.N    ??app_settings_get_integer_0
+   \       0x12   0x2802             CMP      R0,#+2
+   \       0x14   0xD00E             BEQ.N    ??app_settings_get_integer_1
+   \       0x16   0x2804             CMP      R0,#+4
+   \       0x18   0xD01A             BEQ.N    ??app_settings_get_integer_2
+   \       0x1A   0xE01D             B.N      ??app_settings_get_integer_3
+    393              case APP_SETTINGS_VALUE_SIZE_UINT8:
+    394                value = *((uint8_t *)entry->value);
+   \                     ??app_settings_get_integer_0: (+1)
+   \       0x1C   0x68B0             LDR      R0,[R6, #+8]
+   \       0x1E   0xF890 0x8000      LDRB     R8,[R0, #+0]
+    395                if ((entry->output & APP_SETTINGS_OUTPUT_FLAG_SIGNED)
+    396                    && (value & 0x80)) {
+   \       0x22   0x79F0             LDRB     R0,[R6, #+7]
+   \       0x24   0x07C0             LSLS     R0,R0,#+31
+   \       0x26   0xD504             BPL.N    ??app_settings_get_integer_4
+   \       0x28   0xEA5F 0x6008      LSLS     R0,R8,#+24
+   \       0x2C   0xD501             BPL.N    ??app_settings_get_integer_4
+    397                  value += 0xFFFFFF00;
+   \       0x2E   0xF5B8 0x7880      SUBS     R8,R8,#+256
+    398                }
+    399                break;
+   \                     ??app_settings_get_integer_4: (+1)
+   \       0x32   0xE013             B.N      ??app_settings_get_integer_5
+    400              case APP_SETTINGS_VALUE_SIZE_UINT16:
+    401                value = *((uint16_t *)entry->value);
+   \                     ??app_settings_get_integer_1: (+1)
+   \       0x34   0x68B0             LDR      R0,[R6, #+8]
+   \       0x36   0xF8B0 0x8000      LDRH     R8,[R0, #+0]
+    402                if ((entry->output & APP_SETTINGS_OUTPUT_FLAG_SIGNED)
+    403                    && (value & 0x8000)) {
+   \       0x3A   0x79F0             LDRB     R0,[R6, #+7]
+   \       0x3C   0x07C0             LSLS     R0,R0,#+31
+   \       0x3E   0xD506             BPL.N    ??app_settings_get_integer_6
+   \       0x40   0xEA5F 0x4008      LSLS     R0,R8,#+16
+   \       0x44   0xD503             BPL.N    ??app_settings_get_integer_6
+    404                  value += 0xFFFF0000;
+   \       0x46   0xF108 0x487F      ADD      R8,R8,#+4278190080
+   \       0x4A   0xF518 0x087F      ADDS     R8,R8,#+16711680
+    405                }
+    406                break;
+   \                     ??app_settings_get_integer_6: (+1)
+   \       0x4E   0xE005             B.N      ??app_settings_get_integer_5
+    407              case APP_SETTINGS_VALUE_SIZE_UINT32:
+    408                value = *((uint32_t *)entry->value);
+   \                     ??app_settings_get_integer_2: (+1)
+   \       0x50   0x68B0             LDR      R0,[R6, #+8]
+   \       0x52   0xF8D0 0x8000      LDR      R8,[R0, #+0]
+    409                break;
+   \       0x56   0xE001             B.N      ??app_settings_get_integer_5
+    410              default:
+    411                // Unsupported integer size
+    412                return SL_STATUS_INVALID_TYPE;
+   \                     ??app_settings_get_integer_3: (+1)
+   \       0x58   0x2026             MOVS     R0,#+38
+   \       0x5A   0xE018             B.N      ??app_settings_get_integer_7
+    413            }
+    414          
+    415            if (entry->output & APP_SETTINGS_OUTPUT_FLAG_FIXEDSIZE) {
+   \                     ??app_settings_get_integer_5: (+1)
+   \       0x5C   0x79F0             LDRB     R0,[R6, #+7]
+   \       0x5E   0x0740             LSLS     R0,R0,#+29
+   \       0x60   0xD506             BPL.N    ??app_settings_get_integer_8
+    416              if (entry->output & APP_SETTINGS_OUTPUT_FLAG_HEX) {
+   \       0x62   0x79F0             LDRB     R0,[R6, #+7]
+   \       0x64   0x0780             LSLS     R0,R0,#+30
+   \       0x66   0xD503             BPL.N    ??app_settings_get_integer_8
+    417                value_length = entry->value_size * 2;
+   \       0x68   0x7970             LDRB     R0,[R6, #+5]
+   \       0x6A   0xB2C0             UXTB     R0,R0
+   \       0x6C   0x0040             LSLS     R0,R0,#+1
+   \       0x6E   0x0007             MOVS     R7,R0
+    418              }
+    419            }
+    420          
+    421            return app_util_get_string(value_str,
+    422                                       value,
+    423                                       entry->output_enum_list,
+    424                                       entry->output & APP_SETTINGS_OUTPUT_FLAG_SIGNED,
+    425                                       entry->output & APP_SETTINGS_OUTPUT_FLAG_HEX,
+    426                                       value_length);
+   \                     ??app_settings_get_integer_8: (+1)
+   \       0x70   0x0038             MOVS     R0,R7
+   \       0x72   0xB2C0             UXTB     R0,R0
+   \       0x74   0x9001             STR      R0,[SP, #+4]
+   \       0x76   0x79F0             LDRB     R0,[R6, #+7]
+   \       0x78   0xF010 0x0002      ANDS     R0,R0,#0x2
+   \       0x7C   0x9000             STR      R0,[SP, #+0]
+   \       0x7E   0x79F3             LDRB     R3,[R6, #+7]
+   \       0x80   0xF013 0x0301      ANDS     R3,R3,#0x1
+   \       0x84   0x6932             LDR      R2,[R6, #+16]
+   \       0x86   0x4641             MOV      R1,R8
+   \       0x88   0x0020             MOVS     R0,R4
+   \       0x8A   0x.... 0x....      BL       app_util_get_string
+   \                     ??app_settings_get_integer_7: (+1)
+   \       0x8E   0xE8BD 0x81F6      POP      {R1,R2,R4-R8,PC}
+    427          }
+    428          
+    429          /* App settings get ip address */
+
+   \                                 In section .text, align 2, keep-with-next
+    430          sl_status_t app_settings_get_ip_address(char *value_str,
+    431                                                  const char *key_str,
+    432                                                  const app_settings_entry_t *entry)
+    433          {
+   \                     app_settings_get_ip_address: (+1)
+   \        0x0   0xE92D 0x4FF8      PUSH     {R3-R11,LR}
+   \        0x4   0xB084             SUB      SP,SP,#+16
+   \        0x6   0x4683             MOV      R11,R0
+   \        0x8   0x000D             MOVS     R5,R1
+   \        0xA   0x0016             MOVS     R6,R2
+    434            sl_status_t ret;
+    435            in6_addr_t address;
+    436            sl_wisun_ip_address_type_t address_type = SL_WISUN_IP_ADDRESS_TYPE_GLOBAL;
+   \        0xC   0x2701             MOVS     R7,#+1
+    437            (void)key_str;
+    438          
+    439            if (strcmp("ip_address_global", entry->key) == 0) {
+   \        0xE   0x6831             LDR      R1,[R6, #+0]
+   \       0x10   0x....             LDR.N    R0,??DataTable13_15
+   \       0x12   0x.... 0x....      BL       strcmp
+   \       0x16   0x2800             CMP      R0,#+0
+   \       0x18   0xD102             BNE.N    ??app_settings_get_ip_address_0
+    440              address_type = SL_WISUN_IP_ADDRESS_TYPE_GLOBAL;
+   \       0x1A   0x2001             MOVS     R0,#+1
+   \       0x1C   0x0007             MOVS     R7,R0
+   \       0x1E   0xE022             B.N      ??app_settings_get_ip_address_1
+    441            } else if (strcmp("ip_address_link_local", entry->key) == 0) {
+   \                     ??app_settings_get_ip_address_0: (+1)
+   \       0x20   0x6831             LDR      R1,[R6, #+0]
+   \       0x22   0x....             LDR.N    R0,??DataTable13_16
+   \       0x24   0x.... 0x....      BL       strcmp
+   \       0x28   0x2800             CMP      R0,#+0
+   \       0x2A   0xD102             BNE.N    ??app_settings_get_ip_address_2
+    442              address_type = SL_WISUN_IP_ADDRESS_TYPE_LINK_LOCAL;
+   \       0x2C   0x2000             MOVS     R0,#+0
+   \       0x2E   0x0007             MOVS     R7,R0
+   \       0x30   0xE019             B.N      ??app_settings_get_ip_address_1
+    443            } else if (strcmp("ip_address_border_router", entry->key) == 0) {
+   \                     ??app_settings_get_ip_address_2: (+1)
+   \       0x32   0x6831             LDR      R1,[R6, #+0]
+   \       0x34   0x....             LDR.N    R0,??DataTable13_17
+   \       0x36   0x.... 0x....      BL       strcmp
+   \       0x3A   0x2800             CMP      R0,#+0
+   \       0x3C   0xD102             BNE.N    ??app_settings_get_ip_address_3
+    444              address_type = SL_WISUN_IP_ADDRESS_TYPE_BORDER_ROUTER;
+   \       0x3E   0x2002             MOVS     R0,#+2
+   \       0x40   0x0007             MOVS     R7,R0
+   \       0x42   0xE010             B.N      ??app_settings_get_ip_address_1
+    445            } else if (strcmp("ip_address_primary_parent", entry->key) == 0) {
+   \                     ??app_settings_get_ip_address_3: (+1)
+   \       0x44   0x6831             LDR      R1,[R6, #+0]
+   \       0x46   0x....             LDR.N    R0,??DataTable13_18
+   \       0x48   0x.... 0x....      BL       strcmp
+   \       0x4C   0x2800             CMP      R0,#+0
+   \       0x4E   0xD102             BNE.N    ??app_settings_get_ip_address_4
+    446              address_type = SL_WISUN_IP_ADDRESS_TYPE_PRIMARY_PARENT;
+   \       0x50   0x2003             MOVS     R0,#+3
+   \       0x52   0x0007             MOVS     R7,R0
+   \       0x54   0xE007             B.N      ??app_settings_get_ip_address_1
+    447            } else if (strcmp("ip_address_secondary_parent", entry->key) == 0) {
+   \                     ??app_settings_get_ip_address_4: (+1)
+   \       0x56   0x6831             LDR      R1,[R6, #+0]
+   \       0x58   0x....             LDR.N    R0,??DataTable13_19
+   \       0x5A   0x.... 0x....      BL       strcmp
+   \       0x5E   0x2800             CMP      R0,#+0
+   \       0x60   0xD101             BNE.N    ??app_settings_get_ip_address_1
+    448              address_type = SL_WISUN_IP_ADDRESS_TYPE_SECONDARY_PARENT;
+   \       0x62   0x2004             MOVS     R0,#+4
+   \       0x64   0x0007             MOVS     R7,R0
+    449            } else {
+    450              //do nothing: global ip address is the default
+    451            }
+    452          
+    453            ret = sl_wisun_get_ip_address(address_type, &address);
+   \                     ??app_settings_get_ip_address_1: (+1)
+   \       0x66   0x4669             MOV      R1,SP
+   \       0x68   0x0038             MOVS     R0,R7
+   \       0x6A   0xB2C0             UXTB     R0,R0
+   \       0x6C   0x.... 0x....      BL       sl_wisun_get_ip_address
+   \       0x70   0x0004             MOVS     R4,R0
+    454            if (ret == SL_STATUS_OK) {
+   \       0x72   0x2C00             CMP      R4,#+0
+   \       0x74   0xD104             BNE.N    ??app_settings_get_ip_address_5
+    455              sl_wisun_ip6tos(address.address, value_str);
+   \       0x76   0x4659             MOV      R1,R11
+   \       0x78   0x4668             MOV      R0,SP
+   \       0x7A   0x.... 0x....      BL       sl_wisun_ip6tos
+   \       0x7E   0xE009             B.N      ??app_settings_get_ip_address_6
+    456            } else {
+    457              memcpy(value_str, APP_SETTINGS_NONE_VALUE_STR,
+    458                     strlen(APP_SETTINGS_NONE_VALUE_STR) + 1);
+   \                     ??app_settings_get_ip_address_5: (+1)
+   \       0x80   0xF05F 0x0805      MOVS     R8,#+5
+   \       0x84   0x.... 0x....      LDR.W    R9,??DataTable13_20
+   \       0x88   0x46DA             MOV      R10,R11
+   \       0x8A   0x4642             MOV      R2,R8
+   \       0x8C   0x4649             MOV      R1,R9
+   \       0x8E   0x4650             MOV      R0,R10
+   \       0x90   0x.... 0x....      BL       __aeabi_memcpy
+    459            }
+    460          
+    461            return SL_STATUS_OK;
+   \                     ??app_settings_get_ip_address_6: (+1)
+   \       0x94   0x2000             MOVS     R0,#+0
+   \       0x96   0xB005             ADD      SP,SP,#+20
+   \       0x98   0xE8BD 0x8FF0      POP      {R4-R11,PC}
+    462          }
+    463          
+    464          // -----------------------------------------------------------------------------
+    465          //                          Static Function Definitions
+    466          // -----------------------------------------------------------------------------
+    467          
+    468          /* App settings nvm load */
+
+   \                                 In section .text, align 2, keep-with-next
+    469          static sl_status_t app_settings_nvm_load(uint8_t settings_domain,
+    470                                                   void *const settings,
+    471                                                   size_t settings_size)
+    472          {
+   \                     app_settings_nvm_load: (+1)
+   \        0x0   0xE92D 0x43FE      PUSH     {R1-R9,LR}
+   \        0x4   0x0005             MOVS     R5,R0
+   \        0x6   0x000E             MOVS     R6,R1
+   \        0x8   0x0017             MOVS     R7,R2
+    473            nvm3_ObjectKey_t nvm_key;
+    474            uint32_t nvm_type;
+    475            size_t nvm_size;
+    476            Ecode_t ret;
+    477          
+    478            nvm_key = APP_SETTINGS_NVM_KEY_BASE + settings_domain;
+   \        0xA   0x46A8             MOV      R8,R5
+   \        0xC   0xFA5F 0xF888      UXTB     R8,R8
+    479            ret = nvm3_getObjectInfo(nvm3_defaultHandle,
+    480                                     nvm_key,
+    481                                     &nvm_type,
+    482                                     &nvm_size);
+   \       0x10   0x.... 0x....      LDR.W    R9,??DataTable13_21
+   \       0x14   0x466B             MOV      R3,SP
+   \       0x16   0xAA01             ADD      R2,SP,#+4
+   \       0x18   0x4641             MOV      R1,R8
+   \       0x1A   0xF8D9 0x0000      LDR      R0,[R9, #+0]
+   \       0x1E   0x.... 0x....      BL       nvm3_getObjectInfo
+   \       0x22   0x0004             MOVS     R4,R0
+    483            if (ret != ECODE_NVM3_OK) {
+   \       0x24   0x2C00             CMP      R4,#+0
+   \       0x26   0xD001             BEQ.N    ??app_settings_nvm_load_0
+    484              return SL_STATUS_FAIL;
+   \       0x28   0x2001             MOVS     R0,#+1
+   \       0x2A   0xE011             B.N      ??app_settings_nvm_load_1
+    485            }
+    486          
+    487            if (nvm_size != settings_size) {
+   \                     ??app_settings_nvm_load_0: (+1)
+   \       0x2C   0x9800             LDR      R0,[SP, #+0]
+   \       0x2E   0x42B8             CMP      R0,R7
+   \       0x30   0xD001             BEQ.N    ??app_settings_nvm_load_2
+    488              return SL_STATUS_FAIL;
+   \       0x32   0x2001             MOVS     R0,#+1
+   \       0x34   0xE00C             B.N      ??app_settings_nvm_load_1
+    489            }
+    490          
+    491            ret = nvm3_readData(nvm3_defaultHandle,
+    492                                nvm_key,
+    493                                settings,
+    494                                nvm_size);
+   \                     ??app_settings_nvm_load_2: (+1)
+   \       0x36   0x9B00             LDR      R3,[SP, #+0]
+   \       0x38   0x0032             MOVS     R2,R6
+   \       0x3A   0x4641             MOV      R1,R8
+   \       0x3C   0xF8D9 0x0000      LDR      R0,[R9, #+0]
+   \       0x40   0x.... 0x....      BL       nvm3_readData
+   \       0x44   0x0001             MOVS     R1,R0
+    495            if (ret != ECODE_NVM3_OK) {
+   \       0x46   0x2900             CMP      R1,#+0
+   \       0x48   0xD001             BEQ.N    ??app_settings_nvm_load_3
+    496              return SL_STATUS_FAIL;
+   \       0x4A   0x2001             MOVS     R0,#+1
+   \       0x4C   0xE000             B.N      ??app_settings_nvm_load_1
+    497            }
+    498          
+    499            return SL_STATUS_OK;
+   \                     ??app_settings_nvm_load_3: (+1)
+   \       0x4E   0x2000             MOVS     R0,#+0
+   \                     ??app_settings_nvm_load_1: (+1)
+   \       0x50   0xE8BD 0x83FE      POP      {R1-R9,PC}
+    500          }
+    501          
+    502          /* App settings NVM save */
+
+   \                                 In section .text, align 2, keep-with-next
+    503          static sl_status_t app_settings_nvm_save(uint8_t settings_domain,
+    504                                                   const void *const settings,
+    505                                                   size_t settings_size)
+    506          {
+   \                     app_settings_nvm_save: (+1)
+   \        0x0   0xB5F8             PUSH     {R3-R7,LR}
+   \        0x2   0x0004             MOVS     R4,R0
+   \        0x4   0x000D             MOVS     R5,R1
+   \        0x6   0x0016             MOVS     R6,R2
+    507            nvm3_ObjectKey_t nvm_key;
+    508            Ecode_t ret;
+    509          
+    510            nvm_key = APP_SETTINGS_NVM_KEY_BASE + settings_domain;
+   \        0x8   0x0027             MOVS     R7,R4
+   \        0xA   0xB2FF             UXTB     R7,R7
+    511            ret = nvm3_writeData(nvm3_defaultHandle,
+    512                                 nvm_key,
+    513                                 settings,
+    514                                 settings_size);
+   \        0xC   0x0033             MOVS     R3,R6
+   \        0xE   0x002A             MOVS     R2,R5
+   \       0x10   0x0039             MOVS     R1,R7
+   \       0x12   0x....             LDR.N    R0,??DataTable13_21
+   \       0x14   0x6800             LDR      R0,[R0, #+0]
+   \       0x16   0x.... 0x....      BL       nvm3_writeData
+   \       0x1A   0x0001             MOVS     R1,R0
+    515            if (ret != ECODE_NVM3_OK) {
+   \       0x1C   0x2900             CMP      R1,#+0
+   \       0x1E   0xD001             BEQ.N    ??app_settings_nvm_save_0
+    516              return SL_STATUS_FAIL;
+   \       0x20   0x2001             MOVS     R0,#+1
+   \       0x22   0xE000             B.N      ??app_settings_nvm_save_1
+    517            }
+    518          
+    519            return SL_STATUS_OK;
+   \                     ??app_settings_nvm_save_0: (+1)
+   \       0x24   0x2000             MOVS     R0,#+0
+   \                     ??app_settings_nvm_save_1: (+1)
+   \       0x26   0xBDF2             POP      {R1,R4-R7,PC}
+    520          }
+    521          
+    522          /* App settings NVM delete */
+
+   \                                 In section .text, align 2, keep-with-next
+    523          static void app_settings_nvm_delete(uint8_t settings_domain)
+    524          {
+   \                     app_settings_nvm_delete: (+1)
+   \        0x0   0xB538             PUSH     {R3-R5,LR}
+   \        0x2   0x0004             MOVS     R4,R0
+    525            nvm3_ObjectKey_t nvm_key;
+    526          
+    527            nvm_key = APP_SETTINGS_NVM_KEY_BASE + settings_domain;
+   \        0x4   0x0025             MOVS     R5,R4
+   \        0x6   0xB2ED             UXTB     R5,R5
+    528            (void)nvm3_deleteObject(nvm3_defaultHandle, nvm_key);
+   \        0x8   0x0029             MOVS     R1,R5
+   \        0xA   0x....             LDR.N    R0,??DataTable13_21
+   \        0xC   0x6800             LDR      R0,[R0, #+0]
+   \        0xE   0x.... 0x....      BL       nvm3_deleteObject
+    529          }
+   \       0x12   0xBD31             POP      {R0,R4,R5,PC}
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable6:
+   \        0x0   0x2E 0x00          DC8      ".",0x0,0x0    
+   \              0x00 0x00
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable13:
+   \        0x0   0x20 0x00          DC8      " ",0x0,0x0    
+   \              0x00 0x00
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable13_1:
+   \        0x0   0x....'....        DC32     saving_settings
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable13_2:
+   \        0x0   0x....'....        DC32     app_settings_entries
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable13_3:
+   \        0x0   0x....'....        DC32     app_settings_domain_str
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable13_4:
+   \        0x0   0x....'....        DC32     ?_2
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable13_5:
+   \        0x0   0x....'....        DC32     ?_23
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable13_6:
+   \        0x0   0x....'....        DC32     ?_7
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable13_7:
+   \        0x0   0x....'....        DC32     ?_8
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable13_8:
+   \        0x0   0x....'....        DC32     ?_9
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable13_9:
+   \        0x0   0x....'....        DC32     ?_10
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable13_10:
+   \        0x0   0x....'....        DC32     ?_11
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable13_11:
+   \        0x0   0x....'....        DC32     ?_12
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable13_12:
+   \        0x0   0x....'....        DC32     ?_14
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable13_13:
+   \        0x0   0x....'....        DC32     ?_15
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable13_14:
+   \        0x0   0x....'....        DC32     ?_16
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable13_15:
+   \        0x0   0x....'....        DC32     ?_17
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable13_16:
+   \        0x0   0x....'....        DC32     ?_18
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable13_17:
+   \        0x0   0x....'....        DC32     ?_19
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable13_18:
+   \        0x0   0x....'....        DC32     ?_20
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable13_19:
+   \        0x0   0x....'....        DC32     ?_21
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable13_20:
+   \        0x0   0x....'....        DC32     ?_22
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable13_21:
+   \        0x0   0x....'....        DC32     nvm3_defaultHandle
+
+   \                                 In section .rodata, align 1
+   \                     ?_0:
+   \        0x0   0x00               DC8 ""
+
+   \                                 In section .rodata, align 2
+   \        0x0   0x2E 0x00          DC8 "."
+
+   \                                 In section .rodata, align 4
+   \                     ?_2:
+   \        0x0   0x25 0x73          DC8 "%s.%s = %s\015\012"
+   \              0x2E 0x25    
+   \              0x73 0x20    
+   \              0x3D 0x20    
+   \              0x25 0x73    
+   \              0x0D 0x0A    
+   \              0x00
+   \        0xD                      DS8 3
+
+   \                                 In section .rodata, align 4
+   \                     ?_3:
+   \        0x0   0x5B 0x3F          DC8 "[??]"
+   \              0x3F 0x5D    
+   \              0x00
+   \        0x5                      DS8 3
+
+   \                                 In section .rodata, align 4
+   \                     ?_4:
+   \        0x0   0x5B 0x77          DC8 "[wo]"
+   \              0x6F 0x5D    
+   \              0x00
+   \        0x5                      DS8 3
+
+   \                                 In section .rodata, align 4
+   \                     ?_5:
+   \        0x0   0x5B 0x72          DC8 "[ro]"
+   \              0x6F 0x5D    
+   \              0x00
+   \        0x5                      DS8 3
+
+   \                                 In section .rodata, align 4
+   \                     ?_6:
+   \        0x0   0x5B 0x72          DC8 "[rw]"
+   \              0x77 0x5D    
+   \              0x00
+   \        0x5                      DS8 3
+
+   \                                 In section .rodata, align 4
+   \                     ?_7:
+   \        0x0   0x48 0x65          DC8 0x48, 0x65, 0x6C, 0x70, 0x20, 0x6F, 0x66, 0x20
+   \              0x6C 0x70    
+   \              0x20 0x6F    
+   \              0x66 0x20
+   \        0x8   0x67 0x65          DC8 0x67, 0x65, 0x74, 0x20, 0x61, 0x6E, 0x64, 0x20
+   \              0x74 0x20    
+   \              0x61 0x6E    
+   \              0x64 0x20
+   \       0x10   0x73 0x65          DC8 0x73, 0x65, 0x74, 0x20, 0x6D, 0x65, 0x74, 0x68
+   \              0x74 0x20    
+   \              0x6D 0x65    
+   \              0x74 0x68
+   \       0x18   0x6F 0x64          DC8 0x6F, 0x64, 0x73, 0x0D, 0x0A, 0x0D, 0x0A, 0x41
+   \              0x73 0x0D    
+   \              0x0A 0x0D    
+   \              0x0A 0x41
+   \       0x20   0x76 0x61          DC8 0x76, 0x61, 0x69, 0x6C, 0x61, 0x62, 0x6C, 0x65
+   \              0x69 0x6C    
+   \              0x61 0x62    
+   \              0x6C 0x65
+   \       0x28   0x20 0x64          DC8 0x20, 0x64, 0x6F, 0x6D, 0x61, 0x69, 0x6E, 0x73
+   \              0x6F 0x6D    
+   \              0x61 0x69    
+   \              0x6E 0x73
+   \       0x30   0x20 0x3A          DC8 0x20, 0x3A, 0x0D, 0x0A, 0
+   \              0x0D 0x0A    
+   \              0x00
+   \       0x35                      DS8 3
+
+   \                                 In section .rodata, align 4
+   \                     ?_8:
+   \        0x0   0x20 0x25          DC8 " %s\015\012"
+   \              0x73 0x0D    
+   \              0x0A 0x00
+   \        0x6                      DS8 2
+
+   \                                 In section .rodata, align 4
+   \                     ?_9:
+   \        0x0   0x54 0x79          DC8 "Type '[get or set] domain help'\015\012"
+   \              0x70 0x65    
+   \              0x20 0x27    
+   \              0x5B 0x67    
+   \              0x65 0x74    
+   \              0x20 0x6F    
+   \              0x72 0x20    
+   \              0x73 0x65    
+   \              0x74 0x5D    
+   \              0x20 0x64    
+   \              0x6F 0x6D    
+   \              0x61 0x69    
+   \              0x6E 0x20    
+   \              0x68 0x65    
+   \              0x6C 0x70    
+   \              0x27 0x0D    
+   \              0x0A 0x00
+   \       0x22                      DS8 2
+
+   \                                 In section .rodata, align 4
+   \                     ?_10:
+   \        0x0   0x0D 0x0A          DC8 0x0D, 0x0A, 0x65, 0x67, 0x2E, 0x20, 0x27, 0x67
+   \              0x65 0x67    
+   \              0x2E 0x20    
+   \              0x27 0x67
+   \        0x8   0x65 0x74          DC8 0x65, 0x74, 0x20, 0x25, 0x73, 0x20, 0x68, 0x65
+   \              0x20 0x25    
+   \              0x73 0x20    
+   \              0x68 0x65
+   \       0x10   0x6C 0x70          DC8 0x6C, 0x70, 0x27, 0x20, 0x74, 0x6F, 0x20, 0x67
+   \              0x27 0x20    
+   \              0x74 0x6F    
+   \              0x20 0x67
+   \       0x18   0x65 0x74          DC8 0x65, 0x74, 0x20, 0x74, 0x68, 0x65, 0x20, 0x68
+   \              0x20 0x74    
+   \              0x68 0x65    
+   \              0x20 0x68
+   \       0x20   0x65 0x6C          DC8 0x65, 0x6C, 0x70, 0x20, 0x6F, 0x66, 0x20, 0x25
+   \              0x70 0x20    
+   \              0x6F 0x66    
+   \              0x20 0x25
+   \       0x28   0x73 0x0D          DC8 0x73, 0x0D, 0x0A, 0x20, 0x20, 0x20, 0x20, 0x27
+   \              0x0A 0x20    
+   \              0x20 0x20    
+   \              0x20 0x27
+   \       0x30   0x67 0x65          DC8 0x67, 0x65, 0x74, 0x20, 0x25, 0x73, 0x27, 0x20
+   \              0x74 0x20    
+   \              0x25 0x73    
+   \              0x27 0x20
+   \       0x38   0x66 0x6F          DC8 0x66, 0x6F, 0x72, 0x20, 0x61, 0x6C, 0x6C, 0x20
+   \              0x72 0x20    
+   \              0x61 0x6C    
+   \              0x6C 0x20
+   \       0x40   0x27 0x67          DC8 0x27, 0x67, 0x65, 0x74, 0x27, 0x20, 0x63, 0x6F
+   \              0x65 0x74    
+   \              0x27 0x20    
+   \              0x63 0x6F
+   \       0x48   0x6D 0x6D          DC8 0x6D, 0x6D, 0x61, 0x6E, 0x64, 0x73, 0x0D, 0x0A
+   \              0x61 0x6E    
+   \              0x64 0x73    
+   \              0x0D 0x0A
+   \       0x50   0x00               DC8 0
+   \       0x51                      DS8 3
+
+   \                                 In section .rodata, align 4
+   \                     ?_11:
+   \        0x0   0x0D 0x0A          DC8 0x0D, 0x0A, 0x43, 0x6F, 0x6D, 0x6D, 0x61, 0x6E
+   \              0x43 0x6F    
+   \              0x6D 0x6D    
+   \              0x61 0x6E
+   \        0x8   0x64 0x73          DC8 0x64, 0x73, 0x20, 0x70, 0x65, 0x72, 0x6D, 0x69
+   \              0x20 0x70    
+   \              0x65 0x72    
+   \              0x6D 0x69
+   \       0x10   0x73 0x73          DC8 0x73, 0x73, 0x69, 0x6F, 0x6E, 0x73, 0x20, 0x3A
+   \              0x69 0x6F    
+   \              0x6E 0x73    
+   \              0x20 0x3A
+   \       0x18   0x0D 0x0A          DC8 0x0D, 0x0A, 0x20, 0x25, 0x73, 0x20, 0x3A, 0x20
+   \              0x20 0x25    
+   \              0x73 0x20    
+   \              0x3A 0x20
+   \       0x20   0x57 0x72          DC8 0x57, 0x72, 0x69, 0x74, 0x65, 0x20, 0x4F, 0x6E
+   \              0x69 0x74    
+   \              0x65 0x20    
+   \              0x4F 0x6E
+   \       0x28   0x6C 0x79          DC8 0x6C, 0x79, 0x0D, 0x0A, 0x20, 0x25, 0x73, 0x20
+   \              0x0D 0x0A    
+   \              0x20 0x25    
+   \              0x73 0x20
+   \       0x30   0x3A 0x20          DC8 0x3A, 0x20, 0x52, 0x65, 0x61, 0x64, 0x20, 0x4F
+   \              0x52 0x65    
+   \              0x61 0x64    
+   \              0x20 0x4F
+   \       0x38   0x6E 0x6C          DC8 0x6E, 0x6C, 0x79, 0x0D, 0x0A, 0x20, 0x25, 0x73
+   \              0x79 0x0D    
+   \              0x0A 0x20    
+   \              0x25 0x73
+   \       0x40   0x20 0x3A          DC8 0x20, 0x3A, 0x20, 0x52, 0x65, 0x61, 0x64, 0x20
+   \              0x20 0x52    
+   \              0x65 0x61    
+   \              0x64 0x20
+   \       0x48   0x61 0x6E          DC8 0x61, 0x6E, 0x64, 0x20, 0x57, 0x72, 0x69, 0x74
+   \              0x64 0x20    
+   \              0x57 0x72    
+   \              0x69 0x74
+   \       0x50   0x65 0x0D          DC8 0x65, 0x0D, 0x0A, 0
+   \              0x0A 0x00
+
+   \                                 In section .rodata, align 4
+   \                     ?_12:
+   \        0x0   0x25 0x73          DC8 "%s %s.%s"
+   \              0x20 0x25    
+   \              0x73 0x2E    
+   \              0x25 0x73    
+   \              0x00
+   \        0x9                      DS8 3
+
+   \                                 In section .rodata, align 2
+   \        0x0   0x20 0x00          DC8 " "
+
+   \                                 In section .rodata, align 4
+   \                     ?_14:
+   \        0x0   0x25 0x73          DC8 "%s\015\012"
+   \              0x0D 0x0A    
+   \              0x00
+   \        0x5                      DS8 3
+
+   \                                 In section .rodata, align 4
+   \                     ?_15:
+   \        0x0   0x57 0x61          DC8 0x57, 0x61, 0x72, 0x6E, 0x69, 0x6E, 0x67, 0x3A
+   \              0x72 0x6E    
+   \              0x69 0x6E    
+   \              0x67 0x3A
+   \        0x8   0x20 0x73          DC8 0x20, 0x73, 0x74, 0x72, 0x69, 0x6E, 0x67, 0x20
+   \              0x74 0x72    
+   \              0x69 0x6E    
+   \              0x67 0x20
+   \       0x10   0x69 0x73          DC8 0x69, 0x73, 0x20, 0x74, 0x6F, 0x6F, 0x20, 0x6C
+   \              0x20 0x74    
+   \              0x6F 0x6F    
+   \              0x20 0x6C
+   \       0x18   0x6F 0x6E          DC8 0x6F, 0x6E, 0x67, 0x20, 0x66, 0x6F, 0x72, 0x20
+   \              0x67 0x20    
+   \              0x66 0x6F    
+   \              0x72 0x20
+   \       0x20   0x25 0x73          DC8 0x25, 0x73, 0x2E, 0x25, 0x73, 0x2C, 0x20, 0x74
+   \              0x2E 0x25    
+   \              0x73 0x2C    
+   \              0x20 0x74
+   \       0x28   0x72 0x75          DC8 0x72, 0x75, 0x6E, 0x63, 0x61, 0x74, 0x65, 0x64
+   \              0x6E 0x63    
+   \              0x61 0x74    
+   \              0x65 0x64
+   \       0x30   0x20 0x74          DC8 0x20, 0x74, 0x6F, 0x20, 0x22, 0x25, 0x73, 0x22
+   \              0x6F 0x20    
+   \              0x22 0x25    
+   \              0x73 0x22
+   \       0x38   0x0D 0x0A          DC8 0x0D, 0x0A, 0
+   \              0x00
+   \       0x3B                      DS8 1
+
+   \                                 In section .rodata, align 4
+   \                     ?_16:
+   \        0x0   0x22 0x25          DC8 "\"%s\""
+   \              0x73 0x22    
+   \              0x00
+   \        0x5                      DS8 3
+
+   \                                 In section .rodata, align 4
+   \                     ?_17:
+   \        0x0   0x69 0x70          DC8 "ip_address_global"
+   \              0x5F 0x61    
+   \              0x64 0x64    
+   \              0x72 0x65    
+   \              0x73 0x73    
+   \              0x5F 0x67    
+   \              0x6C 0x6F    
+   \              0x62 0x61    
+   \              0x6C 0x00
+   \       0x12                      DS8 2
+
+   \                                 In section .rodata, align 4
+   \                     ?_18:
+   \        0x0   0x69 0x70          DC8 "ip_address_link_local"
+   \              0x5F 0x61    
+   \              0x64 0x64    
+   \              0x72 0x65    
+   \              0x73 0x73    
+   \              0x5F 0x6C    
+   \              0x69 0x6E    
+   \              0x6B 0x5F    
+   \              0x6C 0x6F    
+   \              0x63 0x61    
+   \              0x6C 0x00
+   \       0x16                      DS8 2
+
+   \                                 In section .rodata, align 4
+   \                     ?_19:
+   \        0x0   0x69 0x70          DC8 "ip_address_border_router"
+   \              0x5F 0x61    
+   \              0x64 0x64    
+   \              0x72 0x65    
+   \              0x73 0x73    
+   \              0x5F 0x62    
+   \              0x6F 0x72    
+   \              0x64 0x65    
+   \              0x72 0x5F    
+   \              0x72 0x6F    
+   \              0x75 0x74    
+   \              0x65 0x72    
+   \              0x00
+   \       0x19                      DS8 3
+
+   \                                 In section .rodata, align 4
+   \                     ?_20:
+   \        0x0   0x69 0x70          DC8 "ip_address_primary_parent"
+   \              0x5F 0x61    
+   \              0x64 0x64    
+   \              0x72 0x65    
+   \              0x73 0x73    
+   \              0x5F 0x70    
+   \              0x72 0x69    
+   \              0x6D 0x61    
+   \              0x72 0x79    
+   \              0x5F 0x70    
+   \              0x61 0x72    
+   \              0x65 0x6E    
+   \              0x74 0x00
+   \       0x1A                      DS8 2
+
+   \                                 In section .rodata, align 4
+   \                     ?_21:
+   \        0x0   0x69 0x70          DC8 "ip_address_secondary_parent"
+   \              0x5F 0x61    
+   \              0x64 0x64    
+   \              0x72 0x65    
+   \              0x73 0x73    
+   \              0x5F 0x73    
+   \              0x65 0x63    
+   \              0x6F 0x6E    
+   \              0x64 0x61    
+   \              0x72 0x79    
+   \              0x5F 0x70    
+   \              0x61 0x72    
+   \              0x65 0x6E    
+   \              0x74 0x00
+
+   \                                 In section .rodata, align 4
+   \                     ?_22:
+   \        0x0   0x4E 0x6F          DC8 "None"
+   \              0x6E 0x65    
+   \              0x00
+   \        0x5                      DS8 3
+
+   Maximum stack usage in bytes:
+
+   .cstack Function
+   ------- --------
+      24   app_help_print_and_pad
+        24   -> printf
+        24   -> strlen
+     176   app_settings_get
+       176   -- Indirect call
+       176   -> printf
+       176   -> strcmp
+       176   -> strtok
+      32   app_settings_get_integer
+        32   -> app_util_get_string
+      56   app_settings_get_ip_address
+        56   -> __aeabi_memcpy
+        56   -> sl_wisun_get_ip_address
+        56   -> sl_wisun_ip6tos
+        56   -> strcmp
+      16   app_settings_get_string
+        16   -> sprintf
+      64   app_settings_help
+        64   -> __aeabi_memcpy4
+        64   -> app_help_print_and_pad
+        64   -> printf
+        64   -> strcmp
+        64   -> strtok
+      24   app_settings_init
+        24   -> __aeabi_memcpy
+        24   -> app_settings_nvm_load
+      16   app_settings_nvm_delete
+        16   -> nvm3_deleteObject
+      40   app_settings_nvm_load
+        40   -> nvm3_getObjectInfo
+        40   -> nvm3_readData
+      24   app_settings_nvm_save
+        24   -> nvm3_writeData
+      24   app_settings_reset
+        24   -> __aeabi_memcpy
+        24   -> app_settings_nvm_delete
+      16   app_settings_save
+        16   -> app_settings_nvm_save
+      40   app_settings_set
+        40   -- Indirect call
+        40   -> printf
+        40   -> strcmp
+        40   -> strtok
+      24   app_settings_set_integer
+        24   -> app_util_get_integer
+      24   app_settings_set_string
+        24   -> printf
+        24   -> strlen
+        24   -> strncpy
+      16   sl_wisun_ip6tos
+        16   -> ip6tos
+
+
+   Section sizes:
+
+   Bytes  Function/Label
+   -----  --------------
+       4  ??DataTable13
+       4  ??DataTable13_1
+       4  ??DataTable13_10
+       4  ??DataTable13_11
+       4  ??DataTable13_12
+       4  ??DataTable13_13
+       4  ??DataTable13_14
+       4  ??DataTable13_15
+       4  ??DataTable13_16
+       4  ??DataTable13_17
+       4  ??DataTable13_18
+       4  ??DataTable13_19
+       4  ??DataTable13_2
+       4  ??DataTable13_20
+       4  ??DataTable13_21
+       4  ??DataTable13_3
+       4  ??DataTable13_4
+       4  ??DataTable13_5
+       4  ??DataTable13_6
+       4  ??DataTable13_7
+       4  ??DataTable13_8
+       4  ??DataTable13_9
+       4  ??DataTable6
+       1  ?_0
+       2  ?_1
+      84  ?_10
+      84  ?_11
+      12  ?_12
+       2  ?_13
+       8  ?_14
+      60  ?_15
+       8  ?_16
+      20  ?_17
+      24  ?_18
+      28  ?_19
+      16  ?_2
+      28  ?_20
+      28  ?_21
+       8  ?_22
+      16  ?_23
+       8  ?_3
+       8  ?_4
+       8  ?_5
+       8  ?_6
+      56  ?_7
+       8  ?_8
+      36  ?_9
+      88  app_help_print_and_pad
+       4  app_settings_domain_str
+      32  app_settings_entries
+     164  app_settings_get
+     146  app_settings_get_integer
+     156  app_settings_get_ip_address
+      22  app_settings_get_string
+     322  app_settings_help
+     122  app_settings_init
+      20  app_settings_nvm_delete
+      84  app_settings_nvm_load
+      40  app_settings_nvm_save
+      88  app_settings_reset
+      64  app_settings_save
+     188  app_settings_set
+      82  app_settings_set_integer
+      66  app_settings_set_string
+       4  saving_settings
+      18  sl_wisun_ip6tos
+
+ 
+     4 bytes in section .bss
+     4 bytes in section .data
+   593 bytes in section .rodata
+ 1'762 bytes in section .text
+ 
+ 1'762 bytes of CODE  memory
+   561 bytes of CONST memory (+ 32 bytes shared)
+     0 bytes of DATA  memory (+  8 bytes shared)
+
+Errors: none
+Warnings: none

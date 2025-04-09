@@ -1,0 +1,761 @@
+###############################################################################
+#
+# IAR ANSI C/C++ Compiler V9.50.2.385/W64 for ARM         29/Mar/2025  15:54:00
+# Copyright 1999-2024 IAR Systems AB.
+#
+#    Cpu mode                     =  thumb
+#    Endian                       =  little
+#    Source file                  =
+#        D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\util\third_party\mbedtls\library\psa_crypto_pake.c
+#    Command line                 =
+#        -f "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\ewarm-iar\obj\library_17211336700577820660.dir\psa_crypto_pake.o.rsp"
+#        ("D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\util\third_party\mbedtls\library\psa_crypto_pake.c"
+#        -D DEBUG_EFM=1 -D EFR32FG28B322F1024IM48=1 -D
+#        configNUM_SDK_THREAD_LOCAL_STORAGE_POINTERS=2 -D
+#        SL_COMPONENT_CATALOG_PRESENT=1 -D
+#        MBEDTLS_CONFIG_FILE=<sl_mbedtls_config.h> -D
+#        MBEDTLS_PSA_CRYPTO_CONFIG_FILE=<psa_crypto_config.h> -D
+#        SL_RAIL_LIB_MULTIPROTOCOL_SUPPORT=0 -D
+#        SL_RAIL_UTIL_PA_CONFIG_HEADER=<sl_rail_util_pa_config.h> -D
+#        RTT_USE_ASM=0 -lC "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\ewarm-iar\lst\library_17211336700577820660.dir"
+#        --diag_suppress Pa050 -o "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\ewarm-iar\obj\library_17211336700577820660.dir"
+#        --no_cse --no_unroll --no_inline --no_code_motion --no_tbaa
+#        --no_clustering --no_scheduling --debug --endian=little
+#        --cpu=Cortex-M33 --cmse --cmse -e --fpu=VFPv5_sp --dlib_config
+#        "C:\Program Files\IAR Systems\Embedded Workbench
+#        9.2\arm\inc\c\DLib_Config_Normal.h" -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\util\third_party\mbedtls\library\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App 1\Wisun_Node_App\config\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App 1\Wisun_Node_App\config\rail\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App 1\Wisun_Node_App\config\wisun\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App 1\Wisun_Node_App\.\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\Device\SiliconLabs\EFR32FG28\Include\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\app\wisun\component\app_project_info\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\common\inc\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\service\cli\inc\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\service\cli\src\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\CMSIS\Core\Include\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\CMSIS\RTOS2\Include\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\service\device_init\inc\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\emdrv\common\inc\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\emlib\inc\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\service\iostream\inc\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\security\sl_component\sl_mbedtls_support\config\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\security\sl_component\sl_mbedtls_support\config\preset\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\security\sl_component\sl_mbedtls_support\inc\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\util\third_party\mbedtls\include\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\util\third_party\mbedtls\library\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\micrium_os\common\source\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\micrium_os\common\include\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\micrium_os\cpu\include\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\micrium_os\ports\source\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\micrium_os\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\micrium_os\kernel\source\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\micrium_os\kernel\include\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\emdrv\nvm3\inc\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\peripheral\inc\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\util\third_party\printf\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\util\third_party\printf\inc\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\security\sl_component\sl_psa_driver\inc\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\radio\rail_lib\common\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\radio\rail_lib\protocol\ble\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\radio\rail_lib\protocol\ieee802154\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\radio\rail_lib\protocol\wmbus\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\radio\rail_lib\protocol\zwave\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\radio\rail_lib\chip\efr32\efr32xg2x\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\radio\rail_lib\protocol\sidewalk\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\radio\rail_lib\plugin\pa-conversions\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\radio\rail_lib\plugin\pa-conversions\efr32xg28\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\radio\rail_lib\plugin\rail_util_pti\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\security\sl_component\se_manager\inc\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\security\sl_component\se_manager\src\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\util\third_party\segger\systemview\SEGGER\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\util\silicon_labs\silabs_core\memory_manager\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\common\toolchain\inc\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\service\system\inc\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\app\wisun\component\app_core\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\app\wisun\component\app_setting\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\app\wisun\component\cli_util\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\app\wisun\component\event_manager\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\app\wisun\component\ns_list\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\app\wisun\component\ping\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\app\wisun\component\trace_util\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\app\wisun\component\trace_util\nanostack\nanostack-libservice\mbed-client-libservice\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\app\wisun\component\udp_client\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\service\sleeptimer\inc\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\protocol\wisun\plugin\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\protocol\wisun\stack\inc\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\protocol\wisun\stack\inc\socket\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App 1\Wisun_Node_App\autogen\\" -On
+#        --use_c++_inline) --dependencies=n "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\ewarm-iar\obj\library_17211336700577820660.dir\psa_crypto_pake.o.iar_deps"
+#    Locale                       =  C
+#    List file                    =
+#        D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\ewarm-iar\lst\library_17211336700577820660.dir\psa_crypto_pake.lst
+#    Object file                  =
+#        D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\ewarm-iar\obj\library_17211336700577820660.dir\psa_crypto_pake.o
+#    Runtime model:                  
+#      __CPP_Runtime              =  1
+#      __SystemLibrary            =  DLib
+#      __dlib_file_descriptor     =  0
+#      __dlib_full_locale_support =  0
+#      __dlib_version             =  6
+#
+###############################################################################
+
+D:\Inesh_wisun\Wisun_Node_App 1\Wisun_Node_App\gecko_sdk_4.4.5\util\third_party\mbedtls\library\psa_crypto_pake.c
+      1          /*
+      2           *  PSA PAKE layer on top of Mbed TLS software crypto
+      3           */
+      4          /*
+      5           *  Copyright The Mbed TLS Contributors
+      6           *  SPDX-License-Identifier: Apache-2.0
+      7           *
+      8           *  Licensed under the Apache License, Version 2.0 (the "License"); you may
+      9           *  not use this file except in compliance with the License.
+     10           *  You may obtain a copy of the License at
+     11           *
+     12           *  http://www.apache.org/licenses/LICENSE-2.0
+     13           *
+     14           *  Unless required by applicable law or agreed to in writing, software
+     15           *  distributed under the License is distributed on an "AS IS" BASIS, WITHOUT
+     16           *  WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     17           *  See the License for the specific language governing permissions and
+     18           *  limitations under the License.
+     19           */
+     20          
+     21          #include "common.h"
+     22          
+     23          #if defined(MBEDTLS_PSA_CRYPTO_C)
+     24          
+     25          #include <psa/crypto.h>
+     26          #include "psa_crypto_core.h"
+     27          #include "psa_crypto_pake.h"
+     28          #include "psa_crypto_slot_management.h"
+     29          
+     30          #include <mbedtls/ecjpake.h>
+     31          #include "psa_util_internal.h"
+     32          
+     33          #include <mbedtls/platform.h>
+     34          #include <mbedtls/error.h>
+     35          #include <string.h>
+     36          
+     37          /*
+     38           * State sequence:
+     39           *
+     40           *   psa_pake_setup()
+     41           *   |
+     42           *   |-- In any order:
+     43           *   |   | psa_pake_set_password_key()
+     44           *   |   | psa_pake_set_user()
+     45           *   |   | psa_pake_set_peer()
+     46           *   |   | psa_pake_set_role()
+     47           *   |
+     48           *   |--- In any order: (First round input before or after first round output)
+     49           *   |   |
+     50           *   |   |------ In Order
+     51           *   |   |       | psa_pake_output(PSA_PAKE_STEP_KEY_SHARE)
+     52           *   |   |       | psa_pake_output(PSA_PAKE_STEP_ZK_PUBLIC)
+     53           *   |   |       | psa_pake_output(PSA_PAKE_STEP_ZK_PROOF)
+     54           *   |   |       | psa_pake_output(PSA_PAKE_STEP_KEY_SHARE)
+     55           *   |   |       | psa_pake_output(PSA_PAKE_STEP_ZK_PUBLIC)
+     56           *   |   |       | psa_pake_output(PSA_PAKE_STEP_ZK_PROOF)
+     57           *   |   |
+     58           *   |   |------ In Order:
+     59           *   |           | psa_pake_input(PSA_PAKE_STEP_KEY_SHARE)
+     60           *   |           | psa_pake_input(PSA_PAKE_STEP_ZK_PUBLIC)
+     61           *   |           | psa_pake_input(PSA_PAKE_STEP_ZK_PROOF)
+     62           *   |           | psa_pake_input(PSA_PAKE_STEP_KEY_SHARE)
+     63           *   |           | psa_pake_input(PSA_PAKE_STEP_ZK_PUBLIC)
+     64           *   |           | psa_pake_input(PSA_PAKE_STEP_ZK_PROOF)
+     65           *   |
+     66           *   |--- In any order: (Second round input before or after second round output)
+     67           *   |   |
+     68           *   |   |------ In Order
+     69           *   |   |       | psa_pake_output(PSA_PAKE_STEP_KEY_SHARE)
+     70           *   |   |       | psa_pake_output(PSA_PAKE_STEP_ZK_PUBLIC)
+     71           *   |   |       | psa_pake_output(PSA_PAKE_STEP_ZK_PROOF)
+     72           *   |   |
+     73           *   |   |------ In Order:
+     74           *   |           | psa_pake_input(PSA_PAKE_STEP_KEY_SHARE)
+     75           *   |           | psa_pake_input(PSA_PAKE_STEP_ZK_PUBLIC)
+     76           *   |           | psa_pake_input(PSA_PAKE_STEP_ZK_PROOF)
+     77           *   |
+     78           *   psa_pake_get_implicit_key()
+     79           *   psa_pake_abort()
+     80           */
+     81          
+     82          /*
+     83           * Possible sequence of calls to implementation:
+     84           *
+     85           * |--- In any order:
+     86           * |   |
+     87           * |   |------ In Order
+     88           * |   |       | mbedtls_psa_pake_output(PSA_JPAKE_X1_STEP_KEY_SHARE)
+     89           * |   |       | mbedtls_psa_pake_output(PSA_JPAKE_X1_STEP_ZK_PUBLIC)
+     90           * |   |       | mbedtls_psa_pake_output(PSA_JPAKE_X1_STEP_ZK_PROOF)
+     91           * |   |       | mbedtls_psa_pake_output(PSA_JPAKE_X2_STEP_KEY_SHARE)
+     92           * |   |       | mbedtls_psa_pake_output(PSA_JPAKE_X2_STEP_ZK_PUBLIC)
+     93           * |   |       | mbedtls_psa_pake_output(PSA_JPAKE_X2_STEP_ZK_PROOF)
+     94           * |   |
+     95           * |   |------ In Order:
+     96           * |           | mbedtls_psa_pake_input(PSA_JPAKE_X1_STEP_KEY_SHARE)
+     97           * |           | mbedtls_psa_pake_input(PSA_JPAKE_X1_STEP_ZK_PUBLIC)
+     98           * |           | mbedtls_psa_pake_input(PSA_JPAKE_X1_STEP_ZK_PROOF)
+     99           * |           | mbedtls_psa_pake_input(PSA_JPAKE_X2_STEP_KEY_SHARE)
+    100           * |           | mbedtls_psa_pake_input(PSA_JPAKE_X2_STEP_ZK_PUBLIC)
+    101           * |           | mbedtls_psa_pake_input(PSA_JPAKE_X2_STEP_ZK_PROOF)
+    102           * |
+    103           * |--- In any order:
+    104           * |   |
+    105           * |   |------ In Order
+    106           * |   |       | mbedtls_psa_pake_output(PSA_JPAKE_X2S_STEP_KEY_SHARE)
+    107           * |   |       | mbedtls_psa_pake_output(PSA_JPAKE_X2S_STEP_ZK_PUBLIC)
+    108           * |   |       | mbedtls_psa_pake_output(PSA_JPAKE_X2S_STEP_ZK_PROOF)
+    109           * |   |
+    110           * |   |------ In Order:
+    111           * |           | mbedtls_psa_pake_input(PSA_JPAKE_X4S_STEP_KEY_SHARE)
+    112           * |           | mbedtls_psa_pake_input(PSA_JPAKE_X4S_STEP_ZK_PUBLIC)
+    113           * |           | mbedtls_psa_pake_input(PSA_JPAKE_X4S_STEP_ZK_PROOF)
+    114           */
+    115          
+    116          #if defined(MBEDTLS_PSA_BUILTIN_ALG_JPAKE)
+    117          static psa_status_t mbedtls_ecjpake_to_psa_error(int ret)
+    118          {
+    119              switch (ret) {
+    120                  case MBEDTLS_ERR_MPI_BAD_INPUT_DATA:
+    121                  case MBEDTLS_ERR_ECP_BAD_INPUT_DATA:
+    122                  case MBEDTLS_ERR_ECP_INVALID_KEY:
+    123                  case MBEDTLS_ERR_ECP_VERIFY_FAILED:
+    124                      return PSA_ERROR_DATA_INVALID;
+    125                  case MBEDTLS_ERR_MPI_BUFFER_TOO_SMALL:
+    126                  case MBEDTLS_ERR_ECP_BUFFER_TOO_SMALL:
+    127                      return PSA_ERROR_BUFFER_TOO_SMALL;
+    128                  case MBEDTLS_ERR_MD_FEATURE_UNAVAILABLE:
+    129                      return PSA_ERROR_NOT_SUPPORTED;
+    130                  case MBEDTLS_ERR_ERROR_CORRUPTION_DETECTED:
+    131                      return PSA_ERROR_CORRUPTION_DETECTED;
+    132                  default:
+    133                      return PSA_ERROR_GENERIC_ERROR;
+    134              }
+    135          }
+    136          #endif
+    137          
+    138          #if defined(MBEDTLS_PSA_BUILTIN_PAKE)
+    139          #if defined(MBEDTLS_PSA_BUILTIN_ALG_JPAKE)
+    140          static psa_status_t psa_pake_ecjpake_setup(mbedtls_psa_pake_operation_t *operation)
+    141          {
+    142              int ret = MBEDTLS_ERR_ERROR_CORRUPTION_DETECTED;
+    143          
+    144              mbedtls_ecjpake_init(&operation->ctx.jpake);
+    145          
+    146              ret = mbedtls_ecjpake_setup(&operation->ctx.jpake,
+    147                                          operation->role,
+    148                                          MBEDTLS_MD_SHA256,
+    149                                          MBEDTLS_ECP_DP_SECP256R1,
+    150                                          operation->password,
+    151                                          operation->password_len);
+    152          
+    153              mbedtls_platform_zeroize(operation->password, operation->password_len);
+    154          
+    155              if (ret != 0) {
+    156                  return mbedtls_ecjpake_to_psa_error(ret);
+    157              }
+    158          
+    159              return PSA_SUCCESS;
+    160          }
+    161          #endif
+    162          
+    163          /* The only two JPAKE user/peer identifiers supported in built-in implementation. */
+    164          static const uint8_t jpake_server_id[] = { 's', 'e', 'r', 'v', 'e', 'r' };
+    165          static const uint8_t jpake_client_id[] = { 'c', 'l', 'i', 'e', 'n', 't' };
+    166          
+    167          psa_status_t mbedtls_psa_pake_setup(mbedtls_psa_pake_operation_t *operation,
+    168                                              const psa_crypto_driver_pake_inputs_t *inputs)
+    169          {
+    170              psa_status_t status = PSA_ERROR_CORRUPTION_DETECTED;
+    171              size_t user_len = 0, peer_len = 0, password_len = 0;
+    172              uint8_t *peer = NULL, *user = NULL;
+    173              size_t actual_user_len = 0, actual_peer_len = 0, actual_password_len = 0;
+    174              psa_pake_cipher_suite_t cipher_suite = psa_pake_cipher_suite_init();
+    175          
+    176              status = psa_crypto_driver_pake_get_password_len(inputs, &password_len);
+    177              if (status != PSA_SUCCESS) {
+    178                  return status;
+    179              }
+    180          
+    181              status = psa_crypto_driver_pake_get_user_len(inputs, &user_len);
+    182              if (status != PSA_SUCCESS) {
+    183                  return status;
+    184              }
+    185          
+    186              status = psa_crypto_driver_pake_get_peer_len(inputs, &peer_len);
+    187              if (status != PSA_SUCCESS) {
+    188                  return status;
+    189              }
+    190          
+    191              status = psa_crypto_driver_pake_get_cipher_suite(inputs, &cipher_suite);
+    192              if (status != PSA_SUCCESS) {
+    193                  return status;
+    194              }
+    195          
+    196              operation->password = mbedtls_calloc(1, password_len);
+    197              if (operation->password == NULL) {
+    198                  status = PSA_ERROR_INSUFFICIENT_MEMORY;
+    199                  goto error;
+    200              }
+    201          
+    202              user = mbedtls_calloc(1, user_len);
+    203              if (user == NULL) {
+    204                  status = PSA_ERROR_INSUFFICIENT_MEMORY;
+    205                  goto error;
+    206              }
+    207          
+    208              peer = mbedtls_calloc(1, peer_len);
+    209              if (peer == NULL) {
+    210                  status = PSA_ERROR_INSUFFICIENT_MEMORY;
+    211                  goto error;
+    212              }
+    213          
+    214              status = psa_crypto_driver_pake_get_password(inputs, operation->password,
+    215                                                           password_len, &actual_password_len);
+    216              if (status != PSA_SUCCESS) {
+    217                  goto error;
+    218              }
+    219          
+    220              status = psa_crypto_driver_pake_get_user(inputs, user,
+    221                                                       user_len, &actual_user_len);
+    222              if (status != PSA_SUCCESS) {
+    223                  goto error;
+    224              }
+    225          
+    226              status = psa_crypto_driver_pake_get_peer(inputs, peer,
+    227                                                       peer_len, &actual_peer_len);
+    228              if (status != PSA_SUCCESS) {
+    229                  goto error;
+    230              }
+    231          
+    232              operation->password_len = actual_password_len;
+    233              operation->alg = cipher_suite.algorithm;
+    234          
+    235          #if defined(MBEDTLS_PSA_BUILTIN_ALG_JPAKE)
+    236              if (cipher_suite.algorithm == PSA_ALG_JPAKE) {
+    237                  if (cipher_suite.type != PSA_PAKE_PRIMITIVE_TYPE_ECC ||
+    238                      cipher_suite.family != PSA_ECC_FAMILY_SECP_R1 ||
+    239                      cipher_suite.bits != 256 ||
+    240                      cipher_suite.hash != PSA_ALG_SHA_256) {
+    241                      status = PSA_ERROR_NOT_SUPPORTED;
+    242                      goto error;
+    243                  }
+    244          
+    245                  const size_t user_peer_len = sizeof(jpake_client_id); // client and server have the same length
+    246                  if (actual_user_len != user_peer_len ||
+    247                      actual_peer_len != user_peer_len) {
+    248                      status = PSA_ERROR_NOT_SUPPORTED;
+    249                      goto error;
+    250                  }
+    251          
+    252                  if (memcmp(user, jpake_client_id, actual_user_len) == 0 &&
+    253                      memcmp(peer, jpake_server_id, actual_peer_len) == 0) {
+    254                      operation->role = MBEDTLS_ECJPAKE_CLIENT;
+    255                  } else
+    256                  if (memcmp(user, jpake_server_id, actual_user_len) == 0 &&
+    257                      memcmp(peer, jpake_client_id, actual_peer_len) == 0) {
+    258                      operation->role = MBEDTLS_ECJPAKE_SERVER;
+    259                  } else {
+    260                      status = PSA_ERROR_NOT_SUPPORTED;
+    261                      goto error;
+    262                  }
+    263          
+    264                  operation->buffer_length = 0;
+    265                  operation->buffer_offset = 0;
+    266          
+    267                  status = psa_pake_ecjpake_setup(operation);
+    268                  if (status != PSA_SUCCESS) {
+    269                      goto error;
+    270                  }
+    271          
+    272                  /* Role has been set, release user/peer buffers. */
+    273                  mbedtls_free(user); mbedtls_free(peer);
+    274          
+    275                  return PSA_SUCCESS;
+    276              } else
+    277          #else
+    278              (void) operation;
+    279              (void) inputs;
+    280          #endif
+    281              { status = PSA_ERROR_NOT_SUPPORTED; }
+    282          
+    283          error:
+    284              mbedtls_free(user); mbedtls_free(peer);
+    285              /* In case of failure of the setup of a multipart operation, the PSA driver interface
+    286               * specifies that the core does not call any other driver entry point thus does not
+    287               * call mbedtls_psa_pake_abort(). Therefore call it here to do the needed clean
+    288               * up like freeing the memory that may have been allocated to store the password.
+    289               */
+    290              mbedtls_psa_pake_abort(operation);
+    291              return status;
+    292          }
+    293          
+    294          static psa_status_t mbedtls_psa_pake_output_internal(
+    295              mbedtls_psa_pake_operation_t *operation,
+    296              psa_crypto_driver_pake_step_t step,
+    297              uint8_t *output,
+    298              size_t output_size,
+    299              size_t *output_length)
+    300          {
+    301              int ret = MBEDTLS_ERR_ERROR_CORRUPTION_DETECTED;
+    302              size_t length;
+    303              (void) step; // Unused parameter
+    304          
+    305          #if defined(MBEDTLS_PSA_BUILTIN_ALG_JPAKE)
+    306              /*
+    307               * The PSA CRYPTO PAKE and MbedTLS JPAKE API have a different
+    308               * handling of output sequencing.
+    309               *
+    310               * The MbedTLS JPAKE API outputs the whole X1+X2 and X2S steps data
+    311               * at once, on the other side the PSA CRYPTO PAKE api requires
+    312               * the KEY_SHARE/ZP_PUBLIC/ZK_PROOF parts of X1, X2 & X2S to be
+    313               * retrieved in sequence.
+    314               *
+    315               * In order to achieve API compatibility, the whole X1+X2 or X2S steps
+    316               * data is stored in an intermediate buffer at first step output call,
+    317               * and data is sliced down by parsing the ECPoint records in order
+    318               * to return the right parts on each step.
+    319               */
+    320              if (operation->alg == PSA_ALG_JPAKE) {
+    321                  /* Initialize & write round on KEY_SHARE sequences */
+    322                  if (step == PSA_JPAKE_X1_STEP_KEY_SHARE) {
+    323                      ret = mbedtls_ecjpake_write_round_one(&operation->ctx.jpake,
+    324                                                            operation->buffer,
+    325                                                            sizeof(operation->buffer),
+    326                                                            &operation->buffer_length,
+    327                                                            mbedtls_psa_get_random,
+    328                                                            MBEDTLS_PSA_RANDOM_STATE);
+    329                      if (ret != 0) {
+    330                          return mbedtls_ecjpake_to_psa_error(ret);
+    331                      }
+    332          
+    333                      operation->buffer_offset = 0;
+    334                  } else if (step == PSA_JPAKE_X2S_STEP_KEY_SHARE) {
+    335                      ret = mbedtls_ecjpake_write_round_two(&operation->ctx.jpake,
+    336                                                            operation->buffer,
+    337                                                            sizeof(operation->buffer),
+    338                                                            &operation->buffer_length,
+    339                                                            mbedtls_psa_get_random,
+    340                                                            MBEDTLS_PSA_RANDOM_STATE);
+    341                      if (ret != 0) {
+    342                          return mbedtls_ecjpake_to_psa_error(ret);
+    343                      }
+    344          
+    345                      operation->buffer_offset = 0;
+    346                  }
+    347          
+    348                  /*
+    349                   * mbedtls_ecjpake_write_round_xxx() outputs thing in the format
+    350                   * defined by draft-cragie-tls-ecjpake-01 section 7. The summary is
+    351                   * that the data for each step is prepended with a length byte, and
+    352                   * then they're concatenated. Additionally, the server's second round
+    353                   * output is prepended with a 3-bytes ECParameters structure.
+    354                   *
+    355                   * In PSA, we output each step separately, and don't prepend the
+    356                   * output with a length byte, even less a curve identifier, as that
+    357                   * information is already available.
+    358                   */
+    359                  if (step == PSA_JPAKE_X2S_STEP_KEY_SHARE &&
+    360                      operation->role == MBEDTLS_ECJPAKE_SERVER) {
+    361                      /* Skip ECParameters, with is 3 bytes (RFC 8422) */
+    362                      operation->buffer_offset += 3;
+    363                  }
+    364          
+    365                  /* Read the length byte then move past it to the data */
+    366                  length = operation->buffer[operation->buffer_offset];
+    367                  operation->buffer_offset += 1;
+    368          
+    369                  if (operation->buffer_offset + length > operation->buffer_length) {
+    370                      return PSA_ERROR_DATA_CORRUPT;
+    371                  }
+    372          
+    373                  if (output_size < length) {
+    374                      return PSA_ERROR_BUFFER_TOO_SMALL;
+    375                  }
+    376          
+    377                  memcpy(output,
+    378                         operation->buffer + operation->buffer_offset,
+    379                         length);
+    380                  *output_length = length;
+    381          
+    382                  operation->buffer_offset += length;
+    383          
+    384                  /* Reset buffer after ZK_PROOF sequence */
+    385                  if ((step == PSA_JPAKE_X2_STEP_ZK_PROOF) ||
+    386                      (step == PSA_JPAKE_X2S_STEP_ZK_PROOF)) {
+    387                      mbedtls_platform_zeroize(operation->buffer, sizeof(operation->buffer));
+    388                      operation->buffer_length = 0;
+    389                      operation->buffer_offset = 0;
+    390                  }
+    391          
+    392                  return PSA_SUCCESS;
+    393              } else
+    394          #else
+    395              (void) step;
+    396              (void) output;
+    397              (void) output_size;
+    398              (void) output_length;
+    399          #endif
+    400              { return PSA_ERROR_NOT_SUPPORTED; }
+    401          }
+    402          
+    403          psa_status_t mbedtls_psa_pake_output(mbedtls_psa_pake_operation_t *operation,
+    404                                               psa_crypto_driver_pake_step_t step,
+    405                                               uint8_t *output,
+    406                                               size_t output_size,
+    407                                               size_t *output_length)
+    408          {
+    409              psa_status_t status = mbedtls_psa_pake_output_internal(
+    410                  operation, step, output, output_size, output_length);
+    411          
+    412              return status;
+    413          }
+    414          
+    415          static psa_status_t mbedtls_psa_pake_input_internal(
+    416              mbedtls_psa_pake_operation_t *operation,
+    417              psa_crypto_driver_pake_step_t step,
+    418              const uint8_t *input,
+    419              size_t input_length)
+    420          {
+    421              int ret = MBEDTLS_ERR_ERROR_CORRUPTION_DETECTED;
+    422              (void) step; // Unused parameter
+    423          
+    424          #if defined(MBEDTLS_PSA_BUILTIN_ALG_JPAKE)
+    425              /*
+    426               * The PSA CRYPTO PAKE and MbedTLS JPAKE API have a different
+    427               * handling of input sequencing.
+    428               *
+    429               * The MbedTLS JPAKE API takes the whole X1+X2 or X4S steps data
+    430               * at once as input, on the other side the PSA CRYPTO PAKE api requires
+    431               * the KEY_SHARE/ZP_PUBLIC/ZK_PROOF parts of X1, X2 & X4S to be
+    432               * given in sequence.
+    433               *
+    434               * In order to achieve API compatibility, each X1+X2 or X4S step data
+    435               * is stored sequentially in an intermediate buffer and given to the
+    436               * MbedTLS JPAKE API on the last step.
+    437               *
+    438               * This causes any input error to be only detected on the last step.
+    439               */
+    440              if (operation->alg == PSA_ALG_JPAKE) {
+    441                  /*
+    442                   * Copy input to local buffer and format it as the Mbed TLS API
+    443                   * expects, i.e. as defined by draft-cragie-tls-ecjpake-01 section 7.
+    444                   * The summary is that the data for each step is prepended with a
+    445                   * length byte, and then they're concatenated. Additionally, the
+    446                   * server's second round output is prepended with a 3-bytes
+    447                   * ECParameters structure - which means we have to prepend that when
+    448                   * we're a client.
+    449                   */
+    450                  if (step == PSA_JPAKE_X4S_STEP_KEY_SHARE &&
+    451                      operation->role == MBEDTLS_ECJPAKE_CLIENT) {
+    452                      /* We only support secp256r1. */
+    453                      /* This is the ECParameters structure defined by RFC 8422. */
+    454                      unsigned char ecparameters[3] = {
+    455                          3, /* named_curve */
+    456                          0, 23 /* secp256r1 */
+    457                      };
+    458          
+    459                      if (operation->buffer_length + sizeof(ecparameters) >
+    460                          sizeof(operation->buffer)) {
+    461                          return PSA_ERROR_BUFFER_TOO_SMALL;
+    462                      }
+    463          
+    464                      memcpy(operation->buffer + operation->buffer_length,
+    465                             ecparameters, sizeof(ecparameters));
+    466                      operation->buffer_length += sizeof(ecparameters);
+    467                  }
+    468          
+    469                  /*
+    470                   * The core checks that input_length is smaller than
+    471                   * PSA_PAKE_INPUT_MAX_SIZE.
+    472                   * Thus no risk of integer overflow here.
+    473                   */
+    474                  if (operation->buffer_length + input_length + 1 > sizeof(operation->buffer)) {
+    475                      return PSA_ERROR_BUFFER_TOO_SMALL;
+    476                  }
+    477          
+    478                  /* Write the length byte */
+    479                  operation->buffer[operation->buffer_length] = (uint8_t) input_length;
+    480                  operation->buffer_length += 1;
+    481          
+    482                  /* Finally copy the data */
+    483                  memcpy(operation->buffer + operation->buffer_length,
+    484                         input, input_length);
+    485                  operation->buffer_length += input_length;
+    486          
+    487                  /* Load buffer at each last round ZK_PROOF */
+    488                  if (step == PSA_JPAKE_X2_STEP_ZK_PROOF) {
+    489                      ret = mbedtls_ecjpake_read_round_one(&operation->ctx.jpake,
+    490                                                           operation->buffer,
+    491                                                           operation->buffer_length);
+    492          
+    493                      mbedtls_platform_zeroize(operation->buffer, sizeof(operation->buffer));
+    494                      operation->buffer_length = 0;
+    495          
+    496                      if (ret != 0) {
+    497                          return mbedtls_ecjpake_to_psa_error(ret);
+    498                      }
+    499                  } else if (step == PSA_JPAKE_X4S_STEP_ZK_PROOF) {
+    500                      ret = mbedtls_ecjpake_read_round_two(&operation->ctx.jpake,
+    501                                                           operation->buffer,
+    502                                                           operation->buffer_length);
+    503          
+    504                      mbedtls_platform_zeroize(operation->buffer, sizeof(operation->buffer));
+    505                      operation->buffer_length = 0;
+    506          
+    507                      if (ret != 0) {
+    508                          return mbedtls_ecjpake_to_psa_error(ret);
+    509                      }
+    510                  }
+    511          
+    512                  return PSA_SUCCESS;
+    513              } else
+    514          #else
+    515              (void) step;
+    516              (void) input;
+    517              (void) input_length;
+    518          #endif
+    519              { return PSA_ERROR_NOT_SUPPORTED; }
+    520          }
+    521          
+    522          psa_status_t mbedtls_psa_pake_input(mbedtls_psa_pake_operation_t *operation,
+    523                                              psa_crypto_driver_pake_step_t step,
+    524                                              const uint8_t *input,
+    525                                              size_t input_length)
+    526          {
+    527              psa_status_t status = mbedtls_psa_pake_input_internal(
+    528                  operation, step, input, input_length);
+    529          
+    530              return status;
+    531          }
+    532          
+    533          psa_status_t mbedtls_psa_pake_get_implicit_key(
+    534              mbedtls_psa_pake_operation_t *operation,
+    535              uint8_t *output, size_t output_size,
+    536              size_t *output_length)
+    537          {
+    538              int ret = MBEDTLS_ERR_ERROR_CORRUPTION_DETECTED;
+    539          
+    540          #if defined(MBEDTLS_PSA_BUILTIN_ALG_JPAKE)
+    541              if (operation->alg == PSA_ALG_JPAKE) {
+    542                  ret = mbedtls_ecjpake_write_shared_key(&operation->ctx.jpake,
+    543                                                         output,
+    544                                                         output_size,
+    545                                                         output_length,
+    546                                                         mbedtls_psa_get_random,
+    547                                                         MBEDTLS_PSA_RANDOM_STATE);
+    548                  if (ret != 0) {
+    549                      return mbedtls_ecjpake_to_psa_error(ret);
+    550                  }
+    551          
+    552                  return PSA_SUCCESS;
+    553              } else
+    554          #else
+    555              (void) output;
+    556          #endif
+    557              { return PSA_ERROR_NOT_SUPPORTED; }
+    558          }
+    559          
+    560          psa_status_t mbedtls_psa_pake_abort(mbedtls_psa_pake_operation_t *operation)
+    561          {
+    562              mbedtls_zeroize_and_free(operation->password, operation->password_len);
+    563              operation->password = NULL;
+    564              operation->password_len = 0;
+    565          
+    566          #if defined(MBEDTLS_PSA_BUILTIN_ALG_JPAKE)
+    567              if (operation->alg == PSA_ALG_JPAKE) {
+    568                  operation->role = MBEDTLS_ECJPAKE_NONE;
+    569                  mbedtls_platform_zeroize(operation->buffer, sizeof(operation->buffer));
+    570                  operation->buffer_length = 0;
+    571                  operation->buffer_offset = 0;
+    572                  mbedtls_ecjpake_free(&operation->ctx.jpake);
+    573              }
+    574          #endif
+    575          
+    576              operation->alg = PSA_ALG_NONE;
+    577          
+    578              return PSA_SUCCESS;
+    579          }
+    580          
+    581          #endif /* MBEDTLS_PSA_BUILTIN_PAKE */
+    582          
+    583          #endif /* MBEDTLS_PSA_CRYPTO_C */
+
+
+ 
+ 
+ 0 bytes of memory
+
+Errors: none
+Warnings: none

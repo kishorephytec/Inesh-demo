@@ -1,0 +1,980 @@
+###############################################################################
+#
+# IAR ANSI C/C++ Compiler V9.50.2.385/W64 for ARM         07/Apr/2025  16:44:51
+# Copyright 1999-2024 IAR Systems AB.
+#
+#    Cpu mode                     =  thumb
+#    Endian                       =  little
+#    Source file                  =
+#        D:\Inesh_wisun\Wisun_Node_App 1\Wisun_Node_App\uart_udp_com.c
+#    Command line                 =
+#        -f "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\ewarm-iar\obj\Simplicity
+#        Configurator_13668623889914588608.dir\uart_udp_com.o.rsp"
+#        ("D:\Inesh_wisun\Wisun_Node_App 1\Wisun_Node_App\uart_udp_com.c" -D
+#        DEBUG_EFM=1 -D EFR32FG28B322F1024IM48=1 -D
+#        configNUM_SDK_THREAD_LOCAL_STORAGE_POINTERS=2 -D
+#        SL_COMPONENT_CATALOG_PRESENT=1 -D
+#        MBEDTLS_CONFIG_FILE=<sl_mbedtls_config.h> -D
+#        MBEDTLS_PSA_CRYPTO_CONFIG_FILE=<psa_crypto_config.h> -D
+#        SL_RAIL_LIB_MULTIPROTOCOL_SUPPORT=0 -D
+#        SL_RAIL_UTIL_PA_CONFIG_HEADER=<sl_rail_util_pa_config.h> -D
+#        RTT_USE_ASM=0 -lC "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\ewarm-iar\lst\Simplicity
+#        Configurator_13668623889914588608.dir" --diag_suppress Pa050 -o
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\ewarm-iar\obj\Simplicity
+#        Configurator_13668623889914588608.dir" --no_cse --no_unroll
+#        --no_inline --no_code_motion --no_tbaa --no_clustering --no_scheduling
+#        --debug --endian=little --cpu=Cortex-M33 --cmse --cmse -e
+#        --fpu=VFPv5_sp --dlib_config "C:\Program Files\IAR Systems\Embedded
+#        Workbench 9.2\arm\inc\c\DLib_Config_Normal.h" -I
+#        "D:\Inesh_wisun\Wisun_Node_App 1\Wisun_Node_App\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App 1\Wisun_Node_App\config\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App 1\Wisun_Node_App\config\rail\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App 1\Wisun_Node_App\config\wisun\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App 1\Wisun_Node_App\.\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\Device\SiliconLabs\EFR32FG28\Include\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\app\wisun\component\app_project_info\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\common\inc\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\service\cli\inc\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\service\cli\src\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\CMSIS\Core\Include\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\CMSIS\RTOS2\Include\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\service\device_init\inc\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\emdrv\common\inc\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\emlib\inc\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\service\iostream\inc\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\security\sl_component\sl_mbedtls_support\config\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\security\sl_component\sl_mbedtls_support\config\preset\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\security\sl_component\sl_mbedtls_support\inc\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\util\third_party\mbedtls\include\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\util\third_party\mbedtls\library\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\micrium_os\common\source\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\micrium_os\common\include\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\micrium_os\cpu\include\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\micrium_os\ports\source\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\micrium_os\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\micrium_os\kernel\source\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\micrium_os\kernel\include\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\emdrv\nvm3\inc\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\peripheral\inc\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\util\third_party\printf\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\util\third_party\printf\inc\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\security\sl_component\sl_psa_driver\inc\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\radio\rail_lib\common\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\radio\rail_lib\protocol\ble\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\radio\rail_lib\protocol\ieee802154\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\radio\rail_lib\protocol\wmbus\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\radio\rail_lib\protocol\zwave\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\radio\rail_lib\chip\efr32\efr32xg2x\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\radio\rail_lib\protocol\sidewalk\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\radio\rail_lib\plugin\pa-conversions\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\radio\rail_lib\plugin\pa-conversions\efr32xg28\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\radio\rail_lib\plugin\rail_util_pti\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\security\sl_component\se_manager\inc\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\security\sl_component\se_manager\src\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\util\third_party\segger\systemview\SEGGER\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\util\silicon_labs\silabs_core\memory_manager\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\common\toolchain\inc\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\service\system\inc\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\app\wisun\component\app_core\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\app\wisun\component\app_setting\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\app\wisun\component\cli_util\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\app\wisun\component\event_manager\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\app\wisun\component\ns_list\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\app\wisun\component\ping\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\app\wisun\component\trace_util\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\app\wisun\component\trace_util\nanostack\nanostack-libservice\mbed-client-libservice\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\app\wisun\component\udp_client\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\service\sleeptimer\inc\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\protocol\wisun\plugin\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\protocol\wisun\stack\inc\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\protocol\wisun\stack\inc\socket\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App 1\Wisun_Node_App\autogen\\" -On
+#        --use_c++_inline) --dependencies=n "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\ewarm-iar\obj\Simplicity
+#        Configurator_13668623889914588608.dir\uart_udp_com.o.iar_deps"
+#    Locale                       =  C
+#    List file                    =
+#        D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\ewarm-iar\lst\Simplicity
+#        Configurator_13668623889914588608.dir\uart_udp_com.lst
+#    Object file                  =
+#        D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\ewarm-iar\obj\Simplicity
+#        Configurator_13668623889914588608.dir\uart_udp_com.o
+#    Runtime model:                  
+#      __CPP_Runtime              =  1
+#      __SystemLibrary            =  DLib
+#      __dlib_file_descriptor     =  0
+#      __dlib_full_locale_support =  0
+#      __dlib_version             =  6
+#      __iar_require _Printf      =  qualifiers
+#
+###############################################################################
+
+D:\Inesh_wisun\Wisun_Node_App 1\Wisun_Node_App\uart_udp_com.c
+      1          /** \file uart_udp_com.c
+      2           *******************************************************************************
+      3           ** \brief  Provides APIs for UART driver
+      4           **
+      5           ** \cond STD_FILE_HEADER
+      6           **
+      7           ** COPYRIGHT(c) 2023-24 Procubed Innovations Pvt Ltd.
+      8           ** All rights reserved.
+      9           **
+     10           ** THIS SOFTWARE IS PROVIDED BY "AS IS" AND ALL WARRANTIES OF ANY KIND,
+     11           ** INCLUDING THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR USE,
+     12           ** ARE EXPRESSLY DISCLAIMED.  THE DEVELOPER SHALL NOT BE LIABLE FOR ANY
+     13           ** DAMAGES WHATSOEVER RESULTING FROM THE USE OF THIS SOFTWARE. THIS SOFTWARE
+     14           ** MAY NOT BE USED IN PRODUCTS INTENDED FOR USE IN IMPLANTATION OR OTHER
+     15           ** DIRECT LIFE SUPPORT APPLICATIONS WHERE MALFUNCTION MAY RESULT IN THE DIRECT
+     16           ** PHYSICAL HARM OR INJURY TO PERSONS. ALL SUCH IS USE IS EXPRESSLY PROHIBITED.
+     17           **
+     18           *******************************************************************************
+     19           **  \endcond
+     20           */
+     21          
+     22          
+     23          /*******************************************************************************
+     24          * File inclusion
+     25          *******************************************************************************/
+     26          #include <stdio.h>
+     27          #include <string.h>
+     28          #include <stdio.h>
+     29          #include <stdlib.h>
+     30          #include <time.h>
+     31          #include <errno.h>
+     32          
+     33          #include "socket/socket.h"
+
+   \                                 In section .text, align 2, keep-with-next
+   \   static __vfp uint16_t htons(uint16_t)
+   \                     htons: (+1)
+   \        0x0   0xB280             UXTH     R0,R0
+   \        0x2   0x4770             BX       LR
+     34          #include "sl_wisun_trace_util.h"
+     35          #include "sl_wisun_app_core.h"
+     36          #include "sl_wisun_app_core_util.h"
+     37          #include "uart_hal.h"
+     38          #include "uart_udp_com.h"
+     39          
+     40          /*
+     41          ** ============================================================================
+     42          ** Private Macro definitions
+     43          ** ============================================================================
+     44          */
+     45          
+     46          /*
+     47          ** ============================================================================
+     48          ** Private Structures, Unions & enums Type Definitions
+     49          ** ============================================================================
+     50          */
+     51          
+     52          
+     53          
+     54          /*
+     55          ** ============================================================================
+     56          ** Private Variable Definitions
+     57          ** ============================================================================
+     58          */
+     59          
+     60          
+     61          /*
+     62          ** ============================================================================
+     63          ** Private Macro definitions
+     64          ** ============================================================================
+     65          */
+     66          
+     67          
+     68          
+     69          
+     70          
+     71          /*
+     72          ** ============================================================================
+     73          ** Private Structures, Unions & enums Type Definitions
+     74          ** ============================================================================
+     75          */
+     76          
+     77          
+     78          
+     79          /*
+     80          ** ============================================================================
+     81          ** Public Variable Definitions
+     82          ** ============================================================================
+     83          */
+     84          
+
+   \                                 In section .bss, align 4
+     85          int udp_socket;
+   \                     udp_socket:
+   \        0x0                      DS8 4
+
+   \                                 In section .bss, align 4
+     86          sl_wisun_app_core_current_addr_t ip;
+   \                     ip:
+   \        0x0                      DS8 80
+     87          extern char remote_ip[35];
+     88          
+     89          extern sl_wisun_mac_address_t mac_address; 
+     90          
+     91          /*
+     92          ** ============================================================================
+     93          ** External Variable Declarations
+     94          ** ============================================================================
+     95          */
+     96          
+     97          
+     98          /*
+     99          ** ============================================================================
+    100          ** Private Function Prototypes
+    101          ** ============================================================================
+    102          */
+    103          void udp_client_read(const int32_t sockid, const uint16_t size);
+    104            /* None */
+    105          
+    106          /*
+    107          ** ============================================================================
+    108          ** Public Function Definitions
+    109          ** ============================================================================
+    110          */
+    111          //Create a sockid
+
+   \                                 In section .text, align 2, keep-with-next
+    112          int udp_client_create(void)
+    113          {
+   \                     udp_client_create: (+1)
+   \        0x0   0xB5F0             PUSH     {R4-R7,LR}
+   \        0x2   0xB087             SUB      SP,SP,#+28
+    114            int32_t sockid = SOCKET_INVALID_ID; // client socket id
+   \        0x4   0xF05F 0x35FF      MOVS     R5,#+4294967295
+    115          
+    116            // create client socket
+    117            sockid = socket(AF_INET6, SOCK_DGRAM | SOCK_NONBLOCK, IPPROTO_IP);
+   \        0x8   0x2200             MOVS     R2,#+0
+   \        0xA   0x....             LDR.N    R1,??DataTable5
+   \        0xC   0x2000             MOVS     R0,#+0
+   \        0xE   0x.... 0x....      BL       socket
+   \       0x12   0x0004             MOVS     R4,R0
+    118          
+    119            if (sockid == SOCKET_INVALID_ID) {
+   \       0x14   0xF114 0x0F01      CMN      R4,#+1
+   \       0x18   0xD106             BNE.N    ??udp_client_create_0
+    120              printf("[Failed to create socket: %ld]\n", sockid);
+   \       0x1A   0x0021             MOVS     R1,R4
+   \       0x1C   0x....             LDR.N    R0,??DataTable5_1
+   \       0x1E   0x.... 0x....      BL       printf
+    121              return -1;
+   \       0x22   0xF05F 0x30FF      MOVS     R0,#+4294967295
+   \       0x26   0xE02A             B.N      ??udp_client_create_1
+    122            } else {
+    123              printf("[Socket created: %ld]\n", sockid);
+   \                     ??udp_client_create_0: (+1)
+   \       0x28   0x0021             MOVS     R1,R4
+   \       0x2A   0x....             LDR.N    R0,??DataTable5_2
+   \       0x2C   0x.... 0x....      BL       printf
+    124            }
+    125            
+    126             struct sockaddr_in6 local_addr;
+    127              memset(&local_addr, 0, sizeof(local_addr));
+   \       0x30   0x251C             MOVS     R5,#+28
+   \       0x32   0x2600             MOVS     R6,#+0
+   \       0x34   0x466F             MOV      R7,SP
+   \       0x36   0x0032             MOVS     R2,R6
+   \       0x38   0x0029             MOVS     R1,R5
+   \       0x3A   0x0038             MOVS     R0,R7
+   \       0x3C   0x.... 0x....      BL       __aeabi_memset
+    128              local_addr.sin6_family = AF_INET6;
+   \       0x40   0x2000             MOVS     R0,#+0
+   \       0x42   0xF8AD 0x0000      STRH     R0,[SP, #+0]
+    129              local_addr.sin6_port = htons(UDP_PORT);  // Bind to specific port
+   \       0x46   0xF240 0x40D2      MOVW     R0,#+1234
+   \       0x4A   0x.... 0x....      BL       htons
+   \       0x4E   0xF8AD 0x0002      STRH     R0,[SP, #+2]
+    130            
+    131           local_addr.sin6_addr = in6addr_any;
+   \       0x52   0xA802             ADD      R0,SP,#+8
+   \       0x54   0x....             LDR.N    R1,??DataTable5_3
+   \       0x56   0x2210             MOVS     R2,#+16
+   \       0x58   0x.... 0x....      BL       __aeabi_memcpy
+    132              // Bind the socket to the address and port
+    133              if (bind(sockid, (struct sockaddr *)&local_addr, sizeof(local_addr)) < 0) {
+   \       0x5C   0x221C             MOVS     R2,#+28
+   \       0x5E   0x4669             MOV      R1,SP
+   \       0x60   0x0020             MOVS     R0,R4
+   \       0x62   0x.... 0x....      BL       bind
+   \       0x66   0x2800             CMP      R0,#+0
+   \       0x68   0xD505             BPL.N    ??udp_client_create_2
+    134                  printf("[Failed to bind socket to port: 1234]\n");
+   \       0x6A   0x....             LDR.N    R0,??DataTable5_4
+   \       0x6C   0x.... 0x....      BL       printf
+    135                  return -1;
+   \       0x70   0xF05F 0x30FF      MOVS     R0,#+4294967295
+   \       0x74   0xE003             B.N      ??udp_client_create_1
+    136              } else {
+    137                  printf("[Socket bound to port: 1234]\n");
+   \                     ??udp_client_create_2: (+1)
+   \       0x76   0x....             LDR.N    R0,??DataTable5_5
+   \       0x78   0x.... 0x....      BL       printf
+    138              }
+    139            
+    140            return sockid;
+   \       0x7C   0x0020             MOVS     R0,R4
+   \                     ??udp_client_create_1: (+1)
+   \       0x7E   0xB007             ADD      SP,SP,#+28
+   \       0x80   0xBDF0             POP      {R4-R7,PC}
+    141          }
+    142          
+    143          #define TIMEOUT_FLAG (1UL << 0)
+    144          extern char remote_ip[35];
+    145          //UDP response
+
+   \                                 In section .text, align 2, keep-with-next
+    146          void udp_response_task(void *argument) {
+   \                     udp_response_task: (+1)
+   \        0x0   0xB570             PUSH     {R4-R6,LR}
+   \        0x2   0x0005             MOVS     R5,R0
+    147          osEventFlagsId_t timeout_event;
+    148              uint32_t timeout = 5000U; // Timeout duration in milliseconds
+   \        0x4   0xF241 0x3688      MOVW     R6,#+5000
+    149                  
+    150              // Create an event flag to manage the timeout
+    151              timeout_event = osEventFlagsNew(NULL);
+   \        0x8   0x2000             MOVS     R0,#+0
+   \        0xA   0x.... 0x....      BL       osEventFlagsNew
+   \        0xE   0x0004             MOVS     R4,R0
+    152              if (timeout_event == NULL) {
+   \       0x10   0x2C00             CMP      R4,#+0
+   \       0x12   0xD103             BNE.N    ??udp_response_task_0
+    153                  printf("Failed to create event flags.\n");
+   \       0x14   0x....             LDR.N    R0,??DataTable5_6
+   \       0x16   0x.... 0x....      BL       printf
+    154                  return;
+   \       0x1A   0xE00C             B.N      ??udp_response_task_1
+    155              }
+    156          
+    157               SL_WISUN_THREAD_LOOP {
+    158          
+    159                  udp_client_read(udp_socket,256);
+   \                     ??udp_response_task_0: (+1)
+   \       0x1C   0xF44F 0x7180      MOV      R1,#+256
+   \       0x20   0x....             LDR.N    R0,??DataTable5_7
+   \       0x22   0x6800             LDR      R0,[R0, #+0]
+   \       0x24   0x.... 0x....      BL       udp_client_read
+    160          
+    161            
+    162            // Wait for the timeout duration
+    163                  osEventFlagsWait(timeout_event, TIMEOUT_FLAG, osFlagsWaitAny, timeout);
+   \       0x28   0x0033             MOVS     R3,R6
+   \       0x2A   0x2200             MOVS     R2,#+0
+   \       0x2C   0x2101             MOVS     R1,#+1
+   \       0x2E   0x0020             MOVS     R0,R4
+   \       0x30   0x.... 0x....      BL       osEventFlagsWait
+   \       0x34   0xE7F2             B.N      ??udp_response_task_0
+    164              }
+   \                     ??udp_response_task_1: (+1)
+   \       0x36   0xBD70             POP      {R4-R6,PC}
+    165              }
+    166          
+    167          
+    168          
+    169          /*
+    170          ** ============================================================================
+    171          ** Private Function Definitions
+    172          ** ============================================================================
+    173          */
+
+   \                                 In section .text, align 2, keep-with-next
+    174          void udp_client_read(const int32_t sockid, const uint16_t size)
+    175          {
+   \                     udp_client_read: (+1)
+   \        0x0   0xB5FE             PUSH     {R1-R7,LR}
+   \        0x2   0x0005             MOVS     R5,R0
+   \        0x4   0x000E             MOVS     R6,R1
+    176            //char *c = (char *) app_wisun_malloc((size + 1) * sizeof(char));
+    177            
+    178            static uint8_t c[256] = { 0U };
+    179            int32_t res;
+    180            static sockaddr_in6_t server_addr;
+    181            socklen_t len = sizeof(server_addr);
+   \        0x6   0x201C             MOVS     R0,#+28
+   \        0x8   0x9002             STR      R0,[SP, #+8]
+    182            // memset(c,0,size);
+    183          
+    184            res = recvfrom(sockid, c, size, 0,
+    185                           (struct sockaddr *)&server_addr, &len);
+   \        0xA   0x....             LDR.N    R7,??DataTable5_8
+   \        0xC   0xA802             ADD      R0,SP,#+8
+   \        0xE   0x9001             STR      R0,[SP, #+4]
+   \       0x10   0x....             LDR.N    R0,??DataTable5_9
+   \       0x12   0x9000             STR      R0,[SP, #+0]
+   \       0x14   0x2300             MOVS     R3,#+0
+   \       0x16   0x0032             MOVS     R2,R6
+   \       0x18   0xB292             UXTH     R2,R2
+   \       0x1A   0x0039             MOVS     R1,R7
+   \       0x1C   0x0028             MOVS     R0,R5
+   \       0x1E   0x.... 0x....      BL       recvfrom
+   \       0x22   0x0004             MOVS     R4,R0
+    186            if (res == SOCKET_RETVAL_ERROR || !res) {
+   \       0x24   0xF114 0x0F01      CMN      R4,#+1
+   \       0x28   0xD001             BEQ.N    ??udp_client_read_0
+   \       0x2A   0x2C00             CMP      R4,#+0
+   \       0x2C   0xD100             BNE.N    ??udp_client_read_1
+    187             // memset(c,0,size);
+    188              return;
+   \                     ??udp_client_read_0: (+1)
+   \       0x2E   0xE009             B.N      ??udp_client_read_2
+    189            }
+    190            
+    191            
+    192            if(res>0){
+   \                     ??udp_client_read_1: (+1)
+   \       0x30   0x2C01             CMP      R4,#+1
+   \       0x32   0xDB07             BLT.N    ??udp_client_read_3
+    193             c[res] = '\0'; 
+   \       0x34   0x2000             MOVS     R0,#+0
+   \       0x36   0x5538             STRB     R0,[R7, R4]
+    194            
+    195            //printf("%s %d\n", c,res);
+    196            
+    197            uart_hal_write((uint8_t*)c,res);
+   \       0x38   0x0020             MOVS     R0,R4
+   \       0x3A   0x0001             MOVS     R1,R0
+   \       0x3C   0xB289             UXTH     R1,R1
+   \       0x3E   0x0038             MOVS     R0,R7
+   \       0x40   0x.... 0x....      BL       uart_hal_write
+    198            }
+    199            
+    200           // app_wisun_free(c);
+    201            
+    202           
+    203          }
+   \                     ??udp_client_read_3: (+1)
+   \                     ??udp_client_read_2: (+1)
+   \       0x44   0xBDF7             POP      {R0-R2,R4-R7,PC}
+
+   \                                 In section .bss, align 4
+   \                     `udp_client_read::c`:
+   \        0x0                      DS8 256
+
+   \                                 In section .bss, align 4
+   \                     `udp_client_read::server_addr`:
+   \        0x0                      DS8 28
+    204          
+    205          /* write to tcp client socket */
+
+   \                                 In section .text, align 2, keep-with-next
+    206          void udp_client_write(const int32_t sockid, const char *remote_ip_address,
+    207                                         const uint16_t remote_port, const char *str, int len)
+    208          {
+   \                     udp_client_write: (+1)
+   \        0x0   0xE92D 0x4FFE      PUSH     {R1-R11,LR}
+   \        0x4   0x4683             MOV      R11,R0
+   \        0x6   0x000C             MOVS     R4,R1
+   \        0x8   0x0016             MOVS     R6,R2
+   \        0xA   0x001D             MOVS     R5,R3
+   \        0xC   0x9F0C             LDR      R7,[SP, #+48]
+    209            int32_t res;
+                           ^
+Warning[Pe177]: variable "res" was declared but never referenced
+    210            static sockaddr_in6_t server_addr;
+    211            if (remote_ip_address == NULL) {
+   \        0xE   0x2C00             CMP      R4,#+0
+   \       0x10   0xD02D             BEQ.N    ??udp_client_write_0
+    212              return;
+    213            }
+    214           
+    215            if (str == NULL) {
+   \                     ??udp_client_write_1: (+1)
+   \       0x12   0x2D00             CMP      R5,#+0
+   \       0x14   0xD02B             BEQ.N    ??udp_client_write_0
+    216              return;
+    217            }
+    218           
+    219            // setting the server address
+    220            server_addr.sin6_family = AF_INET6;
+   \                     ??udp_client_write_2: (+1)
+   \       0x16   0x.... 0x....      LDR.W    R8,??DataTable5_10
+   \       0x1A   0x2000             MOVS     R0,#+0
+   \       0x1C   0xF8A8 0x0000      STRH     R0,[R8, #+0]
+    221            server_addr.sin6_port = remote_port;
+   \       0x20   0xF8A8 0x6002      STRH     R6,[R8, #+2]
+    222            if (inet_pton(AF_INET6, remote_ip_address,
+    223                          &server_addr.sin6_addr) == SOCKET_RETVAL_ERROR) {
+   \       0x24   0xF118 0x0208      ADDS     R2,R8,#+8
+   \       0x28   0x0021             MOVS     R1,R4
+   \       0x2A   0x2000             MOVS     R0,#+0
+   \       0x2C   0x.... 0x....      BL       inet_pton
+   \       0x30   0xF110 0x0F01      CMN      R0,#+1
+   \       0x34   0xD01B             BEQ.N    ??udp_client_write_0
+    224              return;
+    225            }
+    226          
+    227          bool sent = false;
+                      ^
+Warning[Pe550]: variable "sent" was set but never used
+   \                     ??udp_client_write_3: (+1)
+   \       0x36   0xF05F 0x0900      MOVS     R9,#+0
+    228          
+    229          for (int retry = 0; retry < 3; retry++) {
+   \       0x3A   0xF05F 0x0A00      MOVS     R10,#+0
+   \                     ??udp_client_write_4: (+1)
+   \       0x3E   0xF1BA 0x0F03      CMP      R10,#+3
+   \       0x42   0xDA14             BGE.N    ??udp_client_write_5
+    230              if (sendto(sockid, str, len, 0,(const struct sockaddr *) &server_addr, sizeof(server_addr)) >=0) {
+   \       0x44   0x201C             MOVS     R0,#+28
+   \       0x46   0x9001             STR      R0,[SP, #+4]
+   \       0x48   0xF8CD 0x8000      STR      R8,[SP, #+0]
+   \       0x4C   0x2300             MOVS     R3,#+0
+   \       0x4E   0x003A             MOVS     R2,R7
+   \       0x50   0x0029             MOVS     R1,R5
+   \       0x52   0x4658             MOV      R0,R11
+   \       0x54   0x.... 0x....      BL       sendto
+   \       0x58   0x2800             CMP      R0,#+0
+   \       0x5A   0xD402             BMI.N    ??udp_client_write_6
+    231                  sent = true;
+   \       0x5C   0x2001             MOVS     R0,#+1
+   \       0x5E   0x4681             MOV      R9,R0
+    232                  break;
+   \       0x60   0xE005             B.N      ??udp_client_write_5
+    233              } else {
+    234                  osDelay(10);
+   \                     ??udp_client_write_6: (+1)
+   \       0x62   0x200A             MOVS     R0,#+10
+   \       0x64   0x.... 0x....      BL       osDelay
+    235              }
+    236          }
+   \       0x68   0xF11A 0x0A01      ADDS     R10,R10,#+1
+   \       0x6C   0xE7E7             B.N      ??udp_client_write_4
+    237          //  res = sendto(sockid, str, len, 0,
+    238          //               (const struct sockaddr *) &server_addr, sizeof(server_addr));
+    239          //  if (res == SOCKET_RETVAL_ERROR) {
+    240          //    printf("[Failed to send on socket: %ld]\n", sockid);
+    241          //  }
+    242            
+    243          }
+   \                     ??udp_client_write_5: (+1)
+   \                     ??udp_client_write_0: (+1)
+   \       0x6E   0xE8BD 0x8FF7      POP      {R0-R2,R4-R11,PC}
+
+   \                                 In section .bss, align 4
+   \                     `udp_client_write::server_addr`:
+   \        0x0                      DS8 28
+    244          
+    245          // Function to create a buffer packet
+
+   \                                 In section .text, align 2, keep-with-next
+    246          void create_buffer_packet(uint8_t *packet, const uint8_t *data, uint16_t data_length) {
+   \                     create_buffer_packet: (+1)
+   \        0x0   0xE92D 0x4FF8      PUSH     {R3-R11,LR}
+   \        0x4   0x0004             MOVS     R4,R0
+   \        0x6   0x000D             MOVS     R5,R1
+   \        0x8   0x4691             MOV      R9,R2
+    247              if (packet == NULL || data == NULL) {
+   \        0xA   0x2C00             CMP      R4,#+0
+   \        0xC   0xD001             BEQ.N    ??create_buffer_packet_0
+   \        0xE   0x2D00             CMP      R5,#+0
+   \       0x10   0xD103             BNE.N    ??create_buffer_packet_1
+    248                  printf("[Error: Null pointer passed to create_buffer_packet]\n");
+   \                     ??create_buffer_packet_0: (+1)
+   \       0x12   0x....             LDR.N    R0,??DataTable5_11
+   \       0x14   0x.... 0x....      BL       printf
+    249                  return;
+   \       0x18   0xE032             B.N      ??create_buffer_packet_2
+    250              }
+    251          
+    252              uint16_t index = 0;
+   \                     ??create_buffer_packet_1: (+1)
+   \       0x1A   0x2600             MOVS     R6,#+0
+    253          
+    254              // Add identifier (1 byte)
+    255              packet[index++] = 0xC1;
+   \       0x1C   0x21C1             MOVS     R1,#+193
+   \       0x1E   0x0030             MOVS     R0,R6
+   \       0x20   0xB280             UXTH     R0,R0
+   \       0x22   0x5421             STRB     R1,[R4, R0]
+   \       0x24   0x1C76             ADDS     R6,R6,#+1
+    256          
+    257              // Add MAC address (8 bytes)
+    258              memcpy(&packet[index], mac_address.address, 8); // Use the global mac_address variable
+   \       0x26   0x2708             MOVS     R7,#+8
+   \       0x28   0x.... 0x....      LDR.W    R8,??DataTable5_12
+   \       0x2C   0x0030             MOVS     R0,R6
+   \       0x2E   0xB280             UXTH     R0,R0
+   \       0x30   0xEB04 0x0A00      ADD      R10,R4,R0
+   \       0x34   0x003A             MOVS     R2,R7
+   \       0x36   0x4641             MOV      R1,R8
+   \       0x38   0x4650             MOV      R0,R10
+   \       0x3A   0x.... 0x....      BL       __aeabi_memcpy
+    259              index += 8;
+   \       0x3E   0x3608             ADDS     R6,R6,#+8
+    260          
+    261              // Add data length (2 bytes, big-endian format)
+    262              packet[index++] = (data_length >> 8) & 0xFF; // High byte
+   \       0x40   0x4649             MOV      R1,R9
+   \       0x42   0xB289             UXTH     R1,R1
+   \       0x44   0x0A09             LSRS     R1,R1,#+8
+   \       0x46   0x0030             MOVS     R0,R6
+   \       0x48   0xB280             UXTH     R0,R0
+   \       0x4A   0x5421             STRB     R1,[R4, R0]
+   \       0x4C   0x1C76             ADDS     R6,R6,#+1
+    263              packet[index++] = data_length & 0xFF;        // Low byte
+   \       0x4E   0x0030             MOVS     R0,R6
+   \       0x50   0xB280             UXTH     R0,R0
+   \       0x52   0xF804 0x9000      STRB     R9,[R4, R0]
+   \       0x56   0x1C76             ADDS     R6,R6,#+1
+    264          
+    265              // Add data (x bytes)
+    266              memcpy(&packet[index], data, data_length);
+   \       0x58   0x46CA             MOV      R10,R9
+   \       0x5A   0xFA1F 0xFA8A      UXTH     R10,R10
+   \       0x5E   0x9500             STR      R5,[SP, #+0]
+   \       0x60   0x0030             MOVS     R0,R6
+   \       0x62   0xB280             UXTH     R0,R0
+   \       0x64   0xEB04 0x0B00      ADD      R11,R4,R0
+   \       0x68   0x4652             MOV      R2,R10
+   \       0x6A   0x9900             LDR      R1,[SP, #+0]
+   \       0x6C   0x4658             MOV      R0,R11
+   \       0x6E   0x.... 0x....      BL       __aeabi_memcpy
+    267              index += data_length;
+   \       0x72   0xEB19 0x0606      ADDS     R6,R9,R6
+    268          
+    269              // Add end frame (1 byte)
+    270              packet[index++] = 0xFF;
+   \       0x76   0x21FF             MOVS     R1,#+255
+   \       0x78   0x0030             MOVS     R0,R6
+   \       0x7A   0xB280             UXTH     R0,R0
+   \       0x7C   0x5421             STRB     R1,[R4, R0]
+   \       0x7E   0x1C76             ADDS     R6,R6,#+1
+    271          }
+   \                     ??create_buffer_packet_2: (+1)
+   \       0x80   0xE8BD 0x8FF1      POP      {R0,R4-R11,PC}
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable5:
+   \        0x0   0x0001'0002        DC32     0x10002
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable5_1:
+   \        0x0   0x....'....        DC32     ?_0
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable5_2:
+   \        0x0   0x....'....        DC32     ?_1
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable5_3:
+   \        0x0   0x....'....        DC32     in6addr_any
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable5_4:
+   \        0x0   0x....'....        DC32     ?_2
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable5_5:
+   \        0x0   0x....'....        DC32     ?_3
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable5_6:
+   \        0x0   0x....'....        DC32     ?_4
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable5_7:
+   \        0x0   0x....'....        DC32     udp_socket
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable5_8:
+   \        0x0   0x....'....        DC32     `udp_client_read::c`
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable5_9:
+   \        0x0   0x....'....        DC32     `udp_client_read::server_addr`
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable5_10:
+   \        0x0   0x....'....        DC32     `udp_client_write::server_addr`
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable5_11:
+   \        0x0   0x....'....        DC32     ?_5
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable5_12:
+   \        0x0   0x....'....        DC32     mac_address
+
+   \                                 In section .rodata, align 4
+   \                     ?_0:
+   \        0x0   0x5B 0x46          DC8 "[Failed to create socket: %ld]\012"
+   \              0x61 0x69    
+   \              0x6C 0x65    
+   \              0x64 0x20    
+   \              0x74 0x6F    
+   \              0x20 0x63    
+   \              0x72 0x65    
+   \              0x61 0x74    
+   \              0x65 0x20    
+   \              0x73 0x6F    
+   \              0x63 0x6B    
+   \              0x65 0x74    
+   \              0x3A 0x20    
+   \              0x25 0x6C    
+   \              0x64 0x5D    
+   \              0x0A 0x00
+
+   \                                 In section .rodata, align 4
+   \                     ?_1:
+   \        0x0   0x5B 0x53          DC8 "[Socket created: %ld]\012"
+   \              0x6F 0x63    
+   \              0x6B 0x65    
+   \              0x74 0x20    
+   \              0x63 0x72    
+   \              0x65 0x61    
+   \              0x74 0x65    
+   \              0x64 0x3A    
+   \              0x20 0x25    
+   \              0x6C 0x64    
+   \              0x5D 0x0A    
+   \              0x00
+   \       0x17                      DS8 1
+
+   \                                 In section .rodata, align 4
+   \                     ?_2:
+   \        0x0   0x5B 0x46          DC8 "[Failed to bind socket to port: 1234]\012"
+   \              0x61 0x69    
+   \              0x6C 0x65    
+   \              0x64 0x20    
+   \              0x74 0x6F    
+   \              0x20 0x62    
+   \              0x69 0x6E    
+   \              0x64 0x20    
+   \              0x73 0x6F    
+   \              0x63 0x6B    
+   \              0x65 0x74    
+   \              0x20 0x74    
+   \              0x6F 0x20    
+   \              0x70 0x6F    
+   \              0x72 0x74    
+   \              0x3A 0x20    
+   \              0x31 0x32    
+   \              0x33 0x34    
+   \              0x5D 0x0A    
+   \              0x00
+   \       0x27                      DS8 1
+
+   \                                 In section .rodata, align 4
+   \                     ?_3:
+   \        0x0   0x5B 0x53          DC8 "[Socket bound to port: 1234]\012"
+   \              0x6F 0x63    
+   \              0x6B 0x65    
+   \              0x74 0x20    
+   \              0x62 0x6F    
+   \              0x75 0x6E    
+   \              0x64 0x20    
+   \              0x74 0x6F    
+   \              0x20 0x70    
+   \              0x6F 0x72    
+   \              0x74 0x3A    
+   \              0x20 0x31    
+   \              0x32 0x33    
+   \              0x34 0x5D    
+   \              0x0A 0x00
+   \       0x1E                      DS8 2
+
+   \                                 In section .rodata, align 4
+   \                     ?_4:
+   \        0x0   0x46 0x61          DC8 "Failed to create event flags.\012"
+   \              0x69 0x6C    
+   \              0x65 0x64    
+   \              0x20 0x74    
+   \              0x6F 0x20    
+   \              0x63 0x72    
+   \              0x65 0x61    
+   \              0x74 0x65    
+   \              0x20 0x65    
+   \              0x76 0x65    
+   \              0x6E 0x74    
+   \              0x20 0x66    
+   \              0x6C 0x61    
+   \              0x67 0x73    
+   \              0x2E 0x0A    
+   \              0x00
+   \       0x1F                      DS8 1
+
+   \                                 In section .rodata, align 4
+   \                     ?_5:
+   \        0x0   0x5B 0x45          DC8 0x5B, 0x45, 0x72, 0x72, 0x6F, 0x72, 0x3A, 0x20
+   \              0x72 0x72    
+   \              0x6F 0x72    
+   \              0x3A 0x20
+   \        0x8   0x4E 0x75          DC8 0x4E, 0x75, 0x6C, 0x6C, 0x20, 0x70, 0x6F, 0x69
+   \              0x6C 0x6C    
+   \              0x20 0x70    
+   \              0x6F 0x69
+   \       0x10   0x6E 0x74          DC8 0x6E, 0x74, 0x65, 0x72, 0x20, 0x70, 0x61, 0x73
+   \              0x65 0x72    
+   \              0x20 0x70    
+   \              0x61 0x73
+   \       0x18   0x73 0x65          DC8 0x73, 0x65, 0x64, 0x20, 0x74, 0x6F, 0x20, 0x63
+   \              0x64 0x20    
+   \              0x74 0x6F    
+   \              0x20 0x63
+   \       0x20   0x72 0x65          DC8 0x72, 0x65, 0x61, 0x74, 0x65, 0x5F, 0x62, 0x75
+   \              0x61 0x74    
+   \              0x65 0x5F    
+   \              0x62 0x75
+   \       0x28   0x66 0x66          DC8 0x66, 0x66, 0x65, 0x72, 0x5F, 0x70, 0x61, 0x63
+   \              0x65 0x72    
+   \              0x5F 0x70    
+   \              0x61 0x63
+   \       0x30   0x6B 0x65          DC8 0x6B, 0x65, 0x74, 0x5D, 0x0A, 0
+   \              0x74 0x5D    
+   \              0x0A 0x00
+   \       0x36                      DS8 2
+    272          
+    273          
+    274          /*
+    275          ** ============================================================================
+    276          ** Private Function Definitions
+    277          ** ============================================================================
+    278          */
+    279          
+    280          
+    281          /*
+    282          ** ============================================================================
+    283          ** Private Function Definitions
+    284          ** ============================================================================
+    285          */
+
+   Maximum stack usage in bytes:
+
+   .cstack Function
+   ------- --------
+      40   create_buffer_packet
+        40   -> __aeabi_memcpy
+        40   -> printf
+       0   htons
+      48   udp_client_create
+        48   -> __aeabi_memcpy
+        48   -> __aeabi_memset
+        48   -> bind
+        48   -> htons
+        48   -> printf
+        48   -> socket
+      32   udp_client_read
+        32   -> recvfrom
+        32   -> uart_hal_write
+      48   udp_client_write
+        48   -> inet_pton
+        48   -> osDelay
+        48   -> sendto
+      16   udp_response_task
+        16   -> osEventFlagsNew
+        16   -> osEventFlagsWait
+        16   -> printf
+        16   -> udp_client_read
+
+
+   Section sizes:
+
+   Bytes  Function/Label
+   -----  --------------
+       4  ??DataTable5
+       4  ??DataTable5_1
+       4  ??DataTable5_10
+       4  ??DataTable5_11
+       4  ??DataTable5_12
+       4  ??DataTable5_2
+       4  ??DataTable5_3
+       4  ??DataTable5_4
+       4  ??DataTable5_5
+       4  ??DataTable5_6
+       4  ??DataTable5_7
+       4  ??DataTable5_8
+       4  ??DataTable5_9
+      32  ?_0
+      24  ?_1
+      40  ?_2
+      32  ?_3
+      32  ?_4
+      56  ?_5
+     256  c
+     132  create_buffer_packet
+       4  htons
+      80  ip
+      28  server_addr
+      28  server_addr
+     130  udp_client_create
+      70  udp_client_read
+     114  udp_client_write
+      56  udp_response_task
+       4  udp_socket
+
+ 
+ 396 bytes in section .bss
+ 216 bytes in section .rodata
+ 558 bytes in section .text
+ 
+ 558 bytes of CODE  memory
+ 216 bytes of CONST memory
+ 396 bytes of DATA  memory
+
+Errors: none
+Warnings: 2

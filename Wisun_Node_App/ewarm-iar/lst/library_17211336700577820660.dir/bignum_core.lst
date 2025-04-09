@@ -1,0 +1,3066 @@
+###############################################################################
+#
+# IAR ANSI C/C++ Compiler V9.50.2.385/W64 for ARM         29/Mar/2025  15:53:41
+# Copyright 1999-2024 IAR Systems AB.
+#
+#    Cpu mode                     =  thumb
+#    Endian                       =  little
+#    Source file                  =
+#        D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\util\third_party\mbedtls\library\bignum_core.c
+#    Command line                 =
+#        -f "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\ewarm-iar\obj\library_17211336700577820660.dir\bignum_core.o.rsp"
+#        ("D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\util\third_party\mbedtls\library\bignum_core.c"
+#        -D DEBUG_EFM=1 -D EFR32FG28B322F1024IM48=1 -D
+#        configNUM_SDK_THREAD_LOCAL_STORAGE_POINTERS=2 -D
+#        SL_COMPONENT_CATALOG_PRESENT=1 -D
+#        MBEDTLS_CONFIG_FILE=<sl_mbedtls_config.h> -D
+#        MBEDTLS_PSA_CRYPTO_CONFIG_FILE=<psa_crypto_config.h> -D
+#        SL_RAIL_LIB_MULTIPROTOCOL_SUPPORT=0 -D
+#        SL_RAIL_UTIL_PA_CONFIG_HEADER=<sl_rail_util_pa_config.h> -D
+#        RTT_USE_ASM=0 -lC "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\ewarm-iar\lst\library_17211336700577820660.dir"
+#        --diag_suppress Pa050 -o "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\ewarm-iar\obj\library_17211336700577820660.dir"
+#        --no_cse --no_unroll --no_inline --no_code_motion --no_tbaa
+#        --no_clustering --no_scheduling --debug --endian=little
+#        --cpu=Cortex-M33 --cmse --cmse -e --fpu=VFPv5_sp --dlib_config
+#        "C:\Program Files\IAR Systems\Embedded Workbench
+#        9.2\arm\inc\c\DLib_Config_Normal.h" -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\util\third_party\mbedtls\library\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App 1\Wisun_Node_App\config\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App 1\Wisun_Node_App\config\rail\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App 1\Wisun_Node_App\config\wisun\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App 1\Wisun_Node_App\.\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\Device\SiliconLabs\EFR32FG28\Include\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\app\wisun\component\app_project_info\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\common\inc\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\service\cli\inc\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\service\cli\src\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\CMSIS\Core\Include\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\CMSIS\RTOS2\Include\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\service\device_init\inc\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\emdrv\common\inc\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\emlib\inc\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\service\iostream\inc\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\security\sl_component\sl_mbedtls_support\config\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\security\sl_component\sl_mbedtls_support\config\preset\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\security\sl_component\sl_mbedtls_support\inc\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\util\third_party\mbedtls\include\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\util\third_party\mbedtls\library\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\micrium_os\common\source\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\micrium_os\common\include\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\micrium_os\cpu\include\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\micrium_os\ports\source\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\micrium_os\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\micrium_os\kernel\source\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\micrium_os\kernel\include\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\emdrv\nvm3\inc\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\peripheral\inc\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\util\third_party\printf\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\util\third_party\printf\inc\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\security\sl_component\sl_psa_driver\inc\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\radio\rail_lib\common\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\radio\rail_lib\protocol\ble\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\radio\rail_lib\protocol\ieee802154\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\radio\rail_lib\protocol\wmbus\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\radio\rail_lib\protocol\zwave\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\radio\rail_lib\chip\efr32\efr32xg2x\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\radio\rail_lib\protocol\sidewalk\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\radio\rail_lib\plugin\pa-conversions\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\radio\rail_lib\plugin\pa-conversions\efr32xg28\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\radio\rail_lib\plugin\rail_util_pti\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\security\sl_component\se_manager\inc\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\security\sl_component\se_manager\src\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\util\third_party\segger\systemview\SEGGER\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\util\silicon_labs\silabs_core\memory_manager\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\common\toolchain\inc\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\service\system\inc\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\app\wisun\component\app_core\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\app\wisun\component\app_setting\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\app\wisun\component\cli_util\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\app\wisun\component\event_manager\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\app\wisun\component\ns_list\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\app\wisun\component\ping\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\app\wisun\component\trace_util\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\app\wisun\component\trace_util\nanostack\nanostack-libservice\mbed-client-libservice\\"
+#        -I "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\app\wisun\component\udp_client\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\platform\service\sleeptimer\inc\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\protocol\wisun\plugin\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\protocol\wisun\stack\inc\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\gecko_sdk_4.4.5\protocol\wisun\stack\inc\socket\\" -I
+#        "D:\Inesh_wisun\Wisun_Node_App 1\Wisun_Node_App\autogen\\" -On
+#        --use_c++_inline) --dependencies=n "D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\ewarm-iar\obj\library_17211336700577820660.dir\bignum_core.o.iar_deps"
+#    Locale                       =  C
+#    List file                    =
+#        D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\ewarm-iar\lst\library_17211336700577820660.dir\bignum_core.lst
+#    Object file                  =
+#        D:\Inesh_wisun\Wisun_Node_App
+#        1\Wisun_Node_App\ewarm-iar\obj\library_17211336700577820660.dir\bignum_core.o
+#    Runtime model:                  
+#      __CPP_Runtime              =  1
+#      __SystemLibrary            =  DLib
+#      __dlib_file_descriptor     =  0
+#      __dlib_full_locale_support =  0
+#      __dlib_version             =  6
+#
+###############################################################################
+
+D:\Inesh_wisun\Wisun_Node_App 1\Wisun_Node_App\gecko_sdk_4.4.5\util\third_party\mbedtls\library\bignum_core.c
+      1          /*
+      2           *  Core bignum functions
+      3           *
+      4           *  Copyright The Mbed TLS Contributors
+      5           *  SPDX-License-Identifier: Apache-2.0
+      6           *
+      7           *  Licensed under the Apache License, Version 2.0 (the "License"); you may
+      8           *  not use this file except in compliance with the License.
+      9           *  You may obtain a copy of the License at
+     10           *
+     11           *  http://www.apache.org/licenses/LICENSE-2.0
+     12           *
+     13           *  Unless required by applicable law or agreed to in writing, software
+     14           *  distributed under the License is distributed on an "AS IS" BASIS, WITHOUT
+     15           *  WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     16           *  See the License for the specific language governing permissions and
+     17           *  limitations under the License.
+     18           */
+     19          
+     20          #include "common.h"
+
+   \                                 In section .text, align 2, keep-with-next
+   \   static __vfp uint32_t mbedtls_bswap32(uint32_t)
+   \                     mbedtls_bswap32: (+1)
+   \        0x0   0x0001             MOVS     R1,R0
+   \        0x2   0x0208             LSLS     R0,R1,#+8
+   \        0x4   0xF410 0x007F      ANDS     R0,R0,#0xFF0000
+   \        0x8   0xEA50 0x6001      ORRS     R0,R0,R1, LSL #+24
+   \        0xC   0x000A             MOVS     R2,R1
+   \        0xE   0x0A12             LSRS     R2,R2,#+8
+   \       0x10   0xF412 0x427F      ANDS     R2,R2,#0xFF00
+   \       0x14   0x4310             ORRS     R0,R2,R0
+   \       0x16   0xEA50 0x6011      ORRS     R0,R0,R1, LSR #+24
+   \       0x1A   0x4770             BX       LR
+
+   \                                 In section .rodata, align 2
+   \   static __absolute uint16_t const mbedtls_byte_order_detector
+   \                     mbedtls_byte_order_detector:
+   \        0x0   0x0100             DC16 256
+     21          
+     22          #if defined(MBEDTLS_BIGNUM_C)
+     23          
+     24          #include <string.h>
+     25          
+     26          #include "mbedtls/error.h"
+     27          #include "mbedtls/platform_util.h"
+     28          #include "constant_time_internal.h"
+
+   \                                 In section .text, align 2, keep-with-next
+   \   static __vfp uint32_t mbedtls_ct_compiler_opaque(uint32_t)
+   \                     mbedtls_ct_compiler_opaque: (+1)
+   \        0x0   0x....             LDR.N    R1,??DataTable2
+   \        0x2   0x6809             LDR      R1,[R1, #+0]
+   \        0x4   0x4048             EORS     R0,R1,R0
+   \        0x6   0x4770             BX       LR
+
+   \                                 In section .text, align 2, keep-with-next
+   \   static __vfp uint32_t mbedtls_ct_bool(uint32_t)
+   \                     mbedtls_ct_bool: (+1)
+   \        0x0   0xB510             PUSH     {R4,LR}
+   \        0x2   0x0004             MOVS     R4,R0
+   \        0x4   0x0020             MOVS     R0,R4
+   \        0x6   0x.... 0x....      BL       mbedtls_ct_compiler_opaque
+   \        0xA   0x0002             MOVS     R2,R0
+   \        0xC   0x4251             RSBS     R1,R2,#+0
+   \        0xE   0x0010             MOVS     R0,R2
+   \       0x10   0x0840             LSRS     R0,R0,#+1
+   \       0x12   0x4240             RSBS     R0,R0,#+0
+   \       0x14   0x4308             ORRS     R0,R0,R1
+   \       0x16   0x0FC0             LSRS     R0,R0,#+31
+   \       0x18   0x4240             RSBS     R0,R0,#+0
+   \       0x1A   0xBD10             POP      {R4,PC}
+
+   \                                 In section .text, align 2, keep-with-next
+   \   static __vfp uint32_t mbedtls_ct_if(uint32_t, uint32_t, uint32_t)
+   \                     mbedtls_ct_if: (+1)
+   \        0x0   0xB570             PUSH     {R4-R6,LR}
+   \        0x2   0x0006             MOVS     R6,R0
+   \        0x4   0x000C             MOVS     R4,R1
+   \        0x6   0x0015             MOVS     R5,R2
+   \        0x8   0x0030             MOVS     R0,R6
+   \        0xA   0x.... 0x....      BL       mbedtls_ct_compiler_opaque
+   \        0xE   0x43C0             MVNS     R0,R0
+   \       0x10   0x4026             ANDS     R6,R4,R6
+   \       0x12   0x4005             ANDS     R5,R5,R0
+   \       0x14   0x432E             ORRS     R6,R5,R6
+   \       0x16   0x0030             MOVS     R0,R6
+   \       0x18   0xBD70             POP      {R4-R6,PC}
+
+   \                                 In section .text, align 2, keep-with-next
+   \   static __vfp uint32_t mbedtls_ct_uint_lt(uint32_t, uint32_t)
+   \                     mbedtls_ct_uint_lt: (+1)
+   \        0x0   0xE92D 0x43F8      PUSH     {R3-R9,LR}
+   \        0x4   0x4681             MOV      R9,R0
+   \        0x6   0x000C             MOVS     R4,R1
+   \        0x8   0x4648             MOV      R0,R9
+   \        0xA   0x.... 0x....      BL       mbedtls_ct_compiler_opaque
+   \        0xE   0x0005             MOVS     R5,R0
+   \       0x10   0x0020             MOVS     R0,R4
+   \       0x12   0x.... 0x....      BL       mbedtls_ct_compiler_opaque
+   \       0x16   0x0006             MOVS     R6,R0
+   \       0x18   0xEA96 0x0005      EORS     R0,R6,R5
+   \       0x1C   0x0FC0             LSRS     R0,R0,#+31
+   \       0x1E   0x.... 0x....      BL       mbedtls_ct_bool
+   \       0x22   0x0007             MOVS     R7,R0
+   \       0x24   0x1BAA             SUBS     R2,R5,R6
+   \       0x26   0x0031             MOVS     R1,R6
+   \       0x28   0x0038             MOVS     R0,R7
+   \       0x2A   0x.... 0x....      BL       mbedtls_ct_if
+   \       0x2E   0x4680             MOV      R8,R0
+   \       0x30   0xEA5F 0x78D8      LSRS     R8,R8,#+31
+   \       0x34   0x4640             MOV      R0,R8
+   \       0x36   0x.... 0x....      BL       mbedtls_ct_bool
+   \       0x3A   0xE8BD 0x83F2      POP      {R1,R4-R9,PC}
+
+   \                                 In section .text, align 2, keep-with-next
+   \   static __vfp uint32_t mbedtls_ct_uint_ne(uint32_t, uint32_t)
+   \                     mbedtls_ct_uint_ne: (+1)
+   \        0x0   0xB5F8             PUSH     {R3-R7,LR}
+   \        0x2   0x0007             MOVS     R7,R0
+   \        0x4   0x000C             MOVS     R4,R1
+   \        0x6   0x0038             MOVS     R0,R7
+   \        0x8   0x.... 0x....      BL       mbedtls_ct_compiler_opaque
+   \        0xC   0x0005             MOVS     R5,R0
+   \        0xE   0x0020             MOVS     R0,R4
+   \       0x10   0x.... 0x....      BL       mbedtls_ct_compiler_opaque
+   \       0x14   0x0006             MOVS     R6,R0
+   \       0x16   0x406E             EORS     R6,R6,R5
+   \       0x18   0x0030             MOVS     R0,R6
+   \       0x1A   0x.... 0x....      BL       mbedtls_ct_bool
+   \       0x1E   0xBDF2             POP      {R1,R4-R7,PC}
+
+   \                                 In section .text, align 2, keep-with-next
+   \   static __vfp uint32_t mbedtls_ct_mpi_uint_if(uint32_t, uint32_t, uint32_t)
+   \                     mbedtls_ct_mpi_uint_if: (+1)
+   \        0x0   0xB570             PUSH     {R4-R6,LR}
+   \        0x2   0x0006             MOVS     R6,R0
+   \        0x4   0x000C             MOVS     R4,R1
+   \        0x6   0x0015             MOVS     R5,R2
+   \        0x8   0x002A             MOVS     R2,R5
+   \        0xA   0x0021             MOVS     R1,R4
+   \        0xC   0x0030             MOVS     R0,R6
+   \        0xE   0x.... 0x....      BL       mbedtls_ct_if
+   \       0x12   0xBD70             POP      {R4-R6,PC}
+
+   \                                 In section .text, align 2, keep-with-next
+   \   static __vfp uint32_t mbedtls_ct_mpi_uint_if_else_0(uint32_t, uint32_t)
+   \                     mbedtls_ct_mpi_uint_if_else_0: (+1)
+   \        0x0   0x4008             ANDS     R0,R1,R0
+   \        0x2   0x4770             BX       LR
+
+   \                                 In section .text, align 2, keep-with-next
+   \   static __vfp uint32_t mbedtls_ct_uint_eq(uint32_t, uint32_t)
+   \                     mbedtls_ct_uint_eq: (+1)
+   \        0x0   0xB538             PUSH     {R3-R5,LR}
+   \        0x2   0x0005             MOVS     R5,R0
+   \        0x4   0x000C             MOVS     R4,R1
+   \        0x6   0x0021             MOVS     R1,R4
+   \        0x8   0x0028             MOVS     R0,R5
+   \        0xA   0x.... 0x....      BL       mbedtls_ct_uint_ne
+   \        0xE   0x43C0             MVNS     R0,R0
+   \       0x10   0xBD32             POP      {R1,R4,R5,PC}
+
+   \                                 In section .text, align 2, keep-with-next
+   \   static __vfp uint32_t mbedtls_ct_uint_ge(uint32_t, uint32_t)
+   \                     mbedtls_ct_uint_ge: (+1)
+   \        0x0   0xB538             PUSH     {R3-R5,LR}
+   \        0x2   0x0005             MOVS     R5,R0
+   \        0x4   0x000C             MOVS     R4,R1
+   \        0x6   0x0021             MOVS     R1,R4
+   \        0x8   0x0028             MOVS     R0,R5
+   \        0xA   0x.... 0x....      BL       mbedtls_ct_uint_lt
+   \        0xE   0x43C0             MVNS     R0,R0
+   \       0x10   0xBD32             POP      {R1,R4,R5,PC}
+
+   \                                 In section .text, align 2, keep-with-next
+   \   static __vfp uint32_t mbedtls_ct_bool_and(uint32_t, uint32_t)
+   \                     mbedtls_ct_bool_and: (+1)
+   \        0x0   0x4008             ANDS     R0,R1,R0
+   \        0x2   0x4770             BX       LR
+
+   \                                 In section .text, align 2, keep-with-next
+   \   static __vfp uint32_t mbedtls_ct_bool_or(uint32_t, uint32_t)
+   \                     mbedtls_ct_bool_or: (+1)
+   \        0x0   0x4308             ORRS     R0,R1,R0
+   \        0x2   0x4770             BX       LR
+
+   \                                 In section .text, align 2, keep-with-next
+   \   static __vfp uint32_t mbedtls_ct_bool_not(uint32_t)
+   \                     mbedtls_ct_bool_not: (+1)
+   \        0x0   0x43C0             MVNS     R0,R0
+   \        0x2   0x4770             BX       LR
+     29          
+     30          #include "mbedtls/platform.h"
+     31          
+     32          #include "bignum_core.h"
+     33          #include "bn_mul.h"
+     34          #include "constant_time_internal.h"
+     35          
+
+   \                                 In section .text, align 2, keep-with-next
+     36          size_t mbedtls_mpi_core_clz(mbedtls_mpi_uint a)
+     37          {
+   \                     mbedtls_mpi_core_clz: (+1)
+   \        0x0   0x0001             MOVS     R1,R0
+     38          #if defined(__has_builtin)
+     39          #if (MBEDTLS_MPI_UINT_MAX == UINT_MAX) && __has_builtin(__builtin_clz)
+     40              #define core_clz __builtin_clz
+     41          #elif (MBEDTLS_MPI_UINT_MAX == ULONG_MAX) && __has_builtin(__builtin_clzl)
+     42              #define core_clz __builtin_clzl
+     43          #elif (MBEDTLS_MPI_UINT_MAX == ULLONG_MAX) && __has_builtin(__builtin_clzll)
+     44              #define core_clz __builtin_clzll
+     45          #endif
+     46          #endif
+     47          #if defined(core_clz)
+     48              return (size_t) core_clz(a);
+   \        0x2   0xFAB1 0xF081      CLZ      R0,R1
+   \        0x6   0x4770             BX       LR
+     49          #else
+     50              size_t j;
+     51              mbedtls_mpi_uint mask = (mbedtls_mpi_uint) 1 << (biL - 1);
+     52          
+     53              for (j = 0; j < biL; j++) {
+     54                  if (a & mask) {
+     55                      break;
+     56                  }
+     57          
+     58                  mask >>= 1;
+     59              }
+     60          
+     61              return j;
+     62          #endif
+     63          }
+     64          
+
+   \                                 In section .text, align 2, keep-with-next
+     65          size_t mbedtls_mpi_core_bitlen(const mbedtls_mpi_uint *A, size_t A_limbs)
+     66          {
+   \                     mbedtls_mpi_core_bitlen: (+1)
+   \        0x0   0xB570             PUSH     {R4-R6,LR}
+   \        0x2   0x0006             MOVS     R6,R0
+   \        0x4   0x000C             MOVS     R4,R1
+     67              int i;
+     68              size_t j;
+     69          
+     70              for (i = ((int) A_limbs) - 1; i >= 0; i--) {
+   \        0x6   0x1E65             SUBS     R5,R4,#+1
+   \                     ??mbedtls_mpi_core_bitlen_0: (+1)
+   \        0x8   0x2D00             CMP      R5,#+0
+   \        0xA   0xD40E             BMI.N    ??mbedtls_mpi_core_bitlen_1
+     71                  if (A[i] != 0) {
+   \        0xC   0xF856 0x0025      LDR      R0,[R6, R5, LSL #+2]
+   \       0x10   0x2800             CMP      R0,#+0
+   \       0x12   0xD008             BEQ.N    ??mbedtls_mpi_core_bitlen_2
+     72                      j = biL - mbedtls_mpi_core_clz(A[i]);
+   \       0x14   0xF856 0x0025      LDR      R0,[R6, R5, LSL #+2]
+   \       0x18   0x.... 0x....      BL       mbedtls_mpi_core_clz
+   \       0x1C   0xF1D0 0x0020      RSBS     R0,R0,#+32
+     73                      return (i * biL) + j;
+   \       0x20   0xEB10 0x1045      ADDS     R0,R0,R5, LSL #+5
+   \       0x24   0xE002             B.N      ??mbedtls_mpi_core_bitlen_3
+     74                  }
+     75              }
+   \                     ??mbedtls_mpi_core_bitlen_2: (+1)
+   \       0x26   0x1E6D             SUBS     R5,R5,#+1
+   \       0x28   0xE7EE             B.N      ??mbedtls_mpi_core_bitlen_0
+     76          
+     77              return 0;
+   \                     ??mbedtls_mpi_core_bitlen_1: (+1)
+   \       0x2A   0x2000             MOVS     R0,#+0
+   \                     ??mbedtls_mpi_core_bitlen_3: (+1)
+   \       0x2C   0xBD70             POP      {R4-R6,PC}
+     78          }
+     79          
+
+   \                                 In section .text, align 2, keep-with-next
+     80          static mbedtls_mpi_uint mpi_bigendian_to_host(mbedtls_mpi_uint a)
+     81          {
+   \                     mpi_bigendian_to_host: (+1)
+   \        0x0   0xB510             PUSH     {R4,LR}
+   \        0x2   0x0004             MOVS     R4,R0
+     82              if (MBEDTLS_IS_BIG_ENDIAN) {
+   \        0x4   0x....             LDR.N    R0,??DataTable2_1
+   \        0x6   0x7800             LDRB     R0,[R0, #+0]
+   \        0x8   0x2801             CMP      R0,#+1
+   \        0xA   0xD101             BNE.N    ??mpi_bigendian_to_host_0
+     83                  /* Nothing to do on bigendian systems. */
+     84                  return a;
+   \        0xC   0x0020             MOVS     R0,R4
+   \        0xE   0xE002             B.N      ??mpi_bigendian_to_host_1
+     85              } else {
+     86          #if defined(MBEDTLS_HAVE_INT32)
+     87                  return (mbedtls_mpi_uint) MBEDTLS_BSWAP32(a);
+   \                     ??mpi_bigendian_to_host_0: (+1)
+   \       0x10   0x0020             MOVS     R0,R4
+   \       0x12   0x.... 0x....      BL       mbedtls_bswap32
+   \                     ??mpi_bigendian_to_host_1: (+1)
+   \       0x16   0xBD10             POP      {R4,PC}
+     88          #elif defined(MBEDTLS_HAVE_INT64)
+     89                  return (mbedtls_mpi_uint) MBEDTLS_BSWAP64(a);
+     90          #endif
+     91              }
+     92          }
+     93          
+
+   \                                 In section .text, align 2, keep-with-next
+     94          void mbedtls_mpi_core_bigendian_to_host(mbedtls_mpi_uint *A,
+     95                                                  size_t A_limbs)
+     96          {
+   \                     mbedtls_mpi_core_bigendian_to_host: (+1)
+   \        0x0   0xE92D 0x41F0      PUSH     {R4-R8,LR}
+   \        0x4   0x0005             MOVS     R5,R0
+   \        0x6   0x000C             MOVS     R4,R1
+     97              mbedtls_mpi_uint *cur_limb_left;
+     98              mbedtls_mpi_uint *cur_limb_right;
+     99              if (A_limbs == 0) {
+   \        0x8   0x2C00             CMP      R4,#+0
+   \        0xA   0xD015             BEQ.N    ??mbedtls_mpi_core_bigendian_to_host_0
+    100                  return;
+    101              }
+    102          
+    103              /*
+    104               * Traverse limbs and
+    105               * - adapt byte-order in each limb
+    106               * - swap the limbs themselves.
+    107               * For that, simultaneously traverse the limbs from left to right
+    108               * and from right to left, as long as the left index is not bigger
+    109               * than the right index (it's not a problem if limbs is odd and the
+    110               * indices coincide in the last iteration).
+    111               */
+    112              for (cur_limb_left = A, cur_limb_right = A + (A_limbs - 1);
+   \                     ??mbedtls_mpi_core_bigendian_to_host_1: (+1)
+   \        0xC   0x002E             MOVS     R6,R5
+   \        0xE   0xEB05 0x0084      ADD      R0,R5,R4, LSL #+2
+   \       0x12   0xF1B0 0x0804      SUBS     R8,R0,#+4
+    113                   cur_limb_left <= cur_limb_right;
+   \                     ??mbedtls_mpi_core_bigendian_to_host_2: (+1)
+   \       0x16   0x45B0             CMP      R8,R6
+   \       0x18   0xD30E             BCC.N    ??mbedtls_mpi_core_bigendian_to_host_3
+    114                   cur_limb_left++, cur_limb_right--) {
+    115                  mbedtls_mpi_uint tmp;
+    116                  /* Note that if cur_limb_left == cur_limb_right,
+    117                   * this code effectively swaps the bytes only once. */
+    118                  tmp             = mpi_bigendian_to_host(*cur_limb_left);
+   \       0x1A   0x6830             LDR      R0,[R6, #+0]
+   \       0x1C   0x.... 0x....      BL       mpi_bigendian_to_host
+   \       0x20   0x0007             MOVS     R7,R0
+    119                  *cur_limb_left  = mpi_bigendian_to_host(*cur_limb_right);
+   \       0x22   0xF8D8 0x0000      LDR      R0,[R8, #+0]
+   \       0x26   0x.... 0x....      BL       mpi_bigendian_to_host
+   \       0x2A   0x6030             STR      R0,[R6, #+0]
+    120                  *cur_limb_right = tmp;
+   \       0x2C   0xF8C8 0x7000      STR      R7,[R8, #+0]
+    121              }
+   \       0x30   0x1D36             ADDS     R6,R6,#+4
+   \       0x32   0xF1B8 0x0804      SUBS     R8,R8,#+4
+   \       0x36   0xE7EE             B.N      ??mbedtls_mpi_core_bigendian_to_host_2
+    122          }
+   \                     ??mbedtls_mpi_core_bigendian_to_host_3: (+1)
+   \                     ??mbedtls_mpi_core_bigendian_to_host_0: (+1)
+   \       0x38   0xE8BD 0x81F0      POP      {R4-R8,PC}
+    123          
+    124          /* Whether min <= A, in constant time.
+    125           * A_limbs must be at least 1. */
+
+   \                                 In section .text, align 2, keep-with-next
+    126          mbedtls_ct_condition_t mbedtls_mpi_core_uint_le_mpi(mbedtls_mpi_uint min,
+    127                                                              const mbedtls_mpi_uint *A,
+    128                                                              size_t A_limbs)
+    129          {
+   \                     mbedtls_mpi_core_uint_le_mpi: (+1)
+   \        0x0   0xE92D 0x43F8      PUSH     {R3-R9,LR}
+   \        0x4   0x4681             MOV      R9,R0
+   \        0x6   0x000C             MOVS     R4,R1
+   \        0x8   0x0015             MOVS     R5,R2
+    130              /* min <= least significant limb? */
+    131              mbedtls_ct_condition_t min_le_lsl = mbedtls_ct_uint_ge(A[0], min);
+   \        0xA   0x4649             MOV      R1,R9
+   \        0xC   0x6820             LDR      R0,[R4, #+0]
+   \        0xE   0x.... 0x....      BL       mbedtls_ct_uint_ge
+   \       0x12   0x0006             MOVS     R6,R0
+    132          
+    133              /* limbs other than the least significant one are all zero? */
+    134              mbedtls_ct_condition_t msll_mask = MBEDTLS_CT_FALSE;
+   \       0x14   0x2000             MOVS     R0,#+0
+   \       0x16   0x.... 0x....      BL       mbedtls_ct_compiler_opaque
+   \       0x1A   0x0007             MOVS     R7,R0
+    135              for (size_t i = 1; i < A_limbs; i++) {
+   \       0x1C   0xF05F 0x0801      MOVS     R8,#+1
+   \                     ??mbedtls_mpi_core_uint_le_mpi_0: (+1)
+   \       0x20   0x45A8             CMP      R8,R5
+   \       0x22   0xD20B             BCS.N    ??mbedtls_mpi_core_uint_le_mpi_1
+    136                  msll_mask = mbedtls_ct_bool_or(msll_mask, mbedtls_ct_bool(A[i]));
+   \       0x24   0xF854 0x0028      LDR      R0,[R4, R8, LSL #+2]
+   \       0x28   0x.... 0x....      BL       mbedtls_ct_bool
+   \       0x2C   0x0001             MOVS     R1,R0
+   \       0x2E   0x0038             MOVS     R0,R7
+   \       0x30   0x.... 0x....      BL       mbedtls_ct_bool_or
+   \       0x34   0x0007             MOVS     R7,R0
+    137              }
+   \       0x36   0xF118 0x0801      ADDS     R8,R8,#+1
+   \       0x3A   0xE7F1             B.N      ??mbedtls_mpi_core_uint_le_mpi_0
+    138          
+    139              /* min <= A iff the lowest limb of A is >= min or the other limbs
+    140               * are not all zero. */
+    141              return mbedtls_ct_bool_or(msll_mask, min_le_lsl);
+   \                     ??mbedtls_mpi_core_uint_le_mpi_1: (+1)
+   \       0x3C   0x0031             MOVS     R1,R6
+   \       0x3E   0x0038             MOVS     R0,R7
+   \       0x40   0x.... 0x....      BL       mbedtls_ct_bool_or
+   \       0x44   0xE8BD 0x83F2      POP      {R1,R4-R9,PC}
+    142          }
+    143          
+
+   \                                 In section .text, align 2, keep-with-next
+    144          mbedtls_ct_condition_t mbedtls_mpi_core_lt_ct(const mbedtls_mpi_uint *A,
+    145                                                        const mbedtls_mpi_uint *B,
+    146                                                        size_t limbs)
+    147          {
+   \                     mbedtls_mpi_core_lt_ct: (+1)
+   \        0x0   0xE92D 0x4FF4      PUSH     {R2,R4-R11,LR}
+   \        0x4   0x4683             MOV      R11,R0
+   \        0x6   0x000D             MOVS     R5,R1
+    148              mbedtls_ct_condition_t ret = MBEDTLS_CT_FALSE, cond = MBEDTLS_CT_FALSE, done = MBEDTLS_CT_FALSE;
+   \        0x8   0x2000             MOVS     R0,#+0
+   \        0xA   0x.... 0x....      BL       mbedtls_ct_compiler_opaque
+   \        0xE   0x0006             MOVS     R6,R0
+   \       0x10   0x2000             MOVS     R0,#+0
+   \       0x12   0x.... 0x....      BL       mbedtls_ct_compiler_opaque
+   \       0x16   0x0007             MOVS     R7,R0
+   \       0x18   0x2000             MOVS     R0,#+0
+   \       0x1A   0x.... 0x....      BL       mbedtls_ct_compiler_opaque
+   \       0x1E   0x4680             MOV      R8,R0
+    149          
+    150              for (size_t i = limbs; i > 0; i--) {
+   \       0x20   0x9C00             LDR      R4,[SP, #+0]
+   \                     ??mbedtls_mpi_core_lt_ct_0: (+1)
+   \       0x22   0x2C00             CMP      R4,#+0
+   \       0x24   0xD02D             BEQ.N    ??mbedtls_mpi_core_lt_ct_1
+    151                  /*
+    152                   * If B[i - 1] < A[i - 1] then A < B is false and the result must
+    153                   * remain 0.
+    154                   *
+    155                   * Again even if we can make a decision, we just mark the result and
+    156                   * the fact that we are done and continue looping.
+    157                   */
+    158                  cond = mbedtls_ct_uint_lt(B[i - 1], A[i - 1]);
+   \       0x26   0xEB0B 0x0084      ADD      R0,R11,R4, LSL #+2
+   \       0x2A   0xF850 0x1C04      LDR      R1,[R0, #-4]
+   \       0x2E   0xEB05 0x0084      ADD      R0,R5,R4, LSL #+2
+   \       0x32   0xF850 0x0C04      LDR      R0,[R0, #-4]
+   \       0x36   0x.... 0x....      BL       mbedtls_ct_uint_lt
+   \       0x3A   0x4681             MOV      R9,R0
+    159                  done = mbedtls_ct_bool_or(done, cond);
+   \       0x3C   0x4649             MOV      R1,R9
+   \       0x3E   0x4640             MOV      R0,R8
+   \       0x40   0x.... 0x....      BL       mbedtls_ct_bool_or
+   \       0x44   0x4682             MOV      R10,R0
+    160          
+    161                  /*
+    162                   * If A[i - 1] < B[i - 1] then A < B is true.
+    163                   *
+    164                   * Again even if we can make a decision, we just mark the result and
+    165                   * the fact that we are done and continue looping.
+    166                   */
+    167                  cond = mbedtls_ct_uint_lt(A[i - 1], B[i - 1]);
+   \       0x46   0xEB05 0x0084      ADD      R0,R5,R4, LSL #+2
+   \       0x4A   0xF850 0x1C04      LDR      R1,[R0, #-4]
+   \       0x4E   0xEB0B 0x0084      ADD      R0,R11,R4, LSL #+2
+   \       0x52   0xF850 0x0C04      LDR      R0,[R0, #-4]
+   \       0x56   0x.... 0x....      BL       mbedtls_ct_uint_lt
+   \       0x5A   0x0007             MOVS     R7,R0
+    168                  ret  = mbedtls_ct_bool_or(ret, mbedtls_ct_bool_and(cond, mbedtls_ct_bool_not(done)));
+   \       0x5C   0x4650             MOV      R0,R10
+   \       0x5E   0x.... 0x....      BL       mbedtls_ct_bool_not
+   \       0x62   0x0001             MOVS     R1,R0
+   \       0x64   0x0038             MOVS     R0,R7
+   \       0x66   0x.... 0x....      BL       mbedtls_ct_bool_and
+   \       0x6A   0x0001             MOVS     R1,R0
+   \       0x6C   0x0030             MOVS     R0,R6
+   \       0x6E   0x.... 0x....      BL       mbedtls_ct_bool_or
+   \       0x72   0x0006             MOVS     R6,R0
+    169                  done = mbedtls_ct_bool_or(done, cond);
+   \       0x74   0x0039             MOVS     R1,R7
+   \       0x76   0x4650             MOV      R0,R10
+   \       0x78   0x.... 0x....      BL       mbedtls_ct_bool_or
+   \       0x7C   0x4680             MOV      R8,R0
+    170              }
+   \       0x7E   0x1E64             SUBS     R4,R4,#+1
+   \       0x80   0xE7CF             B.N      ??mbedtls_mpi_core_lt_ct_0
+    171          
+    172              /*
+    173               * If all the limbs were equal, then the numbers are equal, A < B is false
+    174               * and leaving the result 0 is correct.
+    175               */
+    176          
+    177              return ret;
+   \                     ??mbedtls_mpi_core_lt_ct_1: (+1)
+   \       0x82   0x0030             MOVS     R0,R6
+   \       0x84   0xE8BD 0x8FF2      POP      {R1,R4-R11,PC}
+    178          }
+    179          
+
+   \                                 In section .text, align 2, keep-with-next
+    180          void mbedtls_mpi_core_cond_assign(mbedtls_mpi_uint *X,
+    181                                            const mbedtls_mpi_uint *A,
+    182                                            size_t limbs,
+    183                                            mbedtls_ct_condition_t assign)
+    184          {
+   \                     mbedtls_mpi_core_cond_assign: (+1)
+   \        0x0   0xE92D 0x41F0      PUSH     {R4-R8,LR}
+   \        0x4   0x4680             MOV      R8,R0
+   \        0x6   0x000C             MOVS     R4,R1
+   \        0x8   0x0015             MOVS     R5,R2
+   \        0xA   0x001E             MOVS     R6,R3
+    185              if (X == A) {
+   \        0xC   0x45A0             CMP      R8,R4
+   \        0xE   0xD00D             BEQ.N    ??mbedtls_mpi_core_cond_assign_0
+    186                  return;
+    187              }
+    188          
+    189              /* This function is very performance-sensitive for RSA. For this reason
+    190               * we have the loop below, instead of calling mbedtls_ct_memcpy_if
+    191               * (this is more optimal since here we don't have to handle the case where
+    192               * we copy awkwardly sized data).
+    193               */
+    194              for (size_t i = 0; i < limbs; i++) {
+   \                     ??mbedtls_mpi_core_cond_assign_1: (+1)
+   \       0x10   0x2700             MOVS     R7,#+0
+   \                     ??mbedtls_mpi_core_cond_assign_2: (+1)
+   \       0x12   0x42AF             CMP      R7,R5
+   \       0x14   0xD20A             BCS.N    ??mbedtls_mpi_core_cond_assign_3
+    195                  X[i] = mbedtls_ct_mpi_uint_if(assign, A[i], X[i]);
+   \       0x16   0xF858 0x2027      LDR      R2,[R8, R7, LSL #+2]
+   \       0x1A   0xF854 0x1027      LDR      R1,[R4, R7, LSL #+2]
+   \       0x1E   0x0030             MOVS     R0,R6
+   \       0x20   0x.... 0x....      BL       mbedtls_ct_mpi_uint_if
+   \       0x24   0xF848 0x0027      STR      R0,[R8, R7, LSL #+2]
+    196              }
+   \       0x28   0x1C7F             ADDS     R7,R7,#+1
+   \       0x2A   0xE7F2             B.N      ??mbedtls_mpi_core_cond_assign_2
+    197          }
+   \                     ??mbedtls_mpi_core_cond_assign_3: (+1)
+   \                     ??mbedtls_mpi_core_cond_assign_0: (+1)
+   \       0x2C   0xE8BD 0x81F0      POP      {R4-R8,PC}
+    198          
+
+   \                                 In section .text, align 2, keep-with-next
+    199          void mbedtls_mpi_core_cond_swap(mbedtls_mpi_uint *X,
+    200                                          mbedtls_mpi_uint *Y,
+    201                                          size_t limbs,
+    202                                          mbedtls_ct_condition_t swap)
+    203          {
+   \                     mbedtls_mpi_core_cond_swap: (+1)
+   \        0x0   0xE92D 0x43F8      PUSH     {R3-R9,LR}
+   \        0x4   0x4681             MOV      R9,R0
+   \        0x6   0x000C             MOVS     R4,R1
+   \        0x8   0x0015             MOVS     R5,R2
+   \        0xA   0x001E             MOVS     R6,R3
+    204              if (X == Y) {
+   \        0xC   0x45A1             CMP      R9,R4
+   \        0xE   0xD017             BEQ.N    ??mbedtls_mpi_core_cond_swap_0
+    205                  return;
+    206              }
+    207          
+    208              for (size_t i = 0; i < limbs; i++) {
+   \                     ??mbedtls_mpi_core_cond_swap_1: (+1)
+   \       0x10   0x2700             MOVS     R7,#+0
+   \                     ??mbedtls_mpi_core_cond_swap_2: (+1)
+   \       0x12   0x42AF             CMP      R7,R5
+   \       0x14   0xD214             BCS.N    ??mbedtls_mpi_core_cond_swap_3
+    209                  mbedtls_mpi_uint tmp = X[i];
+   \       0x16   0xF859 0x8027      LDR      R8,[R9, R7, LSL #+2]
+    210                  X[i] = mbedtls_ct_mpi_uint_if(swap, Y[i], X[i]);
+   \       0x1A   0xF859 0x2027      LDR      R2,[R9, R7, LSL #+2]
+   \       0x1E   0xF854 0x1027      LDR      R1,[R4, R7, LSL #+2]
+   \       0x22   0x0030             MOVS     R0,R6
+   \       0x24   0x.... 0x....      BL       mbedtls_ct_mpi_uint_if
+   \       0x28   0xF849 0x0027      STR      R0,[R9, R7, LSL #+2]
+    211                  Y[i] = mbedtls_ct_mpi_uint_if(swap, tmp, Y[i]);
+   \       0x2C   0xF854 0x2027      LDR      R2,[R4, R7, LSL #+2]
+   \       0x30   0x4641             MOV      R1,R8
+   \       0x32   0x0030             MOVS     R0,R6
+   \       0x34   0x.... 0x....      BL       mbedtls_ct_mpi_uint_if
+   \       0x38   0xF844 0x0027      STR      R0,[R4, R7, LSL #+2]
+    212              }
+   \       0x3C   0x1C7F             ADDS     R7,R7,#+1
+   \       0x3E   0xE7E8             B.N      ??mbedtls_mpi_core_cond_swap_2
+    213          }
+   \                     ??mbedtls_mpi_core_cond_swap_3: (+1)
+   \                     ??mbedtls_mpi_core_cond_swap_0: (+1)
+   \       0x40   0xE8BD 0x83F1      POP      {R0,R4-R9,PC}
+    214          
+
+   \                                 In section .text, align 2, keep-with-next
+    215          int mbedtls_mpi_core_read_le(mbedtls_mpi_uint *X,
+    216                                       size_t X_limbs,
+    217                                       const unsigned char *input,
+    218                                       size_t input_length)
+    219          {
+   \                     mbedtls_mpi_core_read_le: (+1)
+   \        0x0   0xE92D 0x4FF8      PUSH     {R3-R11,LR}
+   \        0x4   0x0004             MOVS     R4,R0
+   \        0x6   0x468B             MOV      R11,R1
+   \        0x8   0x0015             MOVS     R5,R2
+   \        0xA   0x001E             MOVS     R6,R3
+    220              const size_t limbs = CHARS_TO_LIMBS(input_length);
+   \        0xC   0xF016 0x0F03      TST      R6,#0x3
+   \       0x10   0xD001             BEQ.N    ??mbedtls_mpi_core_read_le_0
+   \       0x12   0x2101             MOVS     R1,#+1
+   \       0x14   0xE000             B.N      ??mbedtls_mpi_core_read_le_1
+   \                     ??mbedtls_mpi_core_read_le_0: (+1)
+   \       0x16   0x2100             MOVS     R1,#+0
+   \                     ??mbedtls_mpi_core_read_le_1: (+1)
+   \       0x18   0x0030             MOVS     R0,R6
+   \       0x1A   0x0880             LSRS     R0,R0,#+2
+   \       0x1C   0xFA50 0xF781      UXTAB    R7,R0,R1
+    221          
+    222              if (X_limbs < limbs) {
+   \       0x20   0x45BB             CMP      R11,R7
+   \       0x22   0xD202             BCS.N    ??mbedtls_mpi_core_read_le_2
+    223                  return MBEDTLS_ERR_MPI_BUFFER_TOO_SMALL;
+   \       0x24   0xF07F 0x0007      MVNS     R0,#+7
+   \       0x28   0xE020             B.N      ??mbedtls_mpi_core_read_le_3
+    224              }
+    225          
+    226              if (X != NULL) {
+   \                     ??mbedtls_mpi_core_read_le_2: (+1)
+   \       0x2A   0x2C00             CMP      R4,#+0
+   \       0x2C   0xD01D             BEQ.N    ??mbedtls_mpi_core_read_le_4
+    227                  memset(X, 0, X_limbs * ciL);
+   \       0x2E   0xEA5F 0x088B      LSLS     R8,R11,#+2
+   \       0x32   0xF05F 0x0900      MOVS     R9,#+0
+   \       0x36   0x46A2             MOV      R10,R4
+   \       0x38   0x464A             MOV      R2,R9
+   \       0x3A   0x4641             MOV      R1,R8
+   \       0x3C   0x4650             MOV      R0,R10
+   \       0x3E   0x.... 0x....      BL       __aeabi_memset
+    228          
+    229                  for (size_t i = 0; i < input_length; i++) {
+   \       0x42   0x2000             MOVS     R0,#+0
+   \                     ??mbedtls_mpi_core_read_le_5: (+1)
+   \       0x44   0x42B0             CMP      R0,R6
+   \       0x46   0xD210             BCS.N    ??mbedtls_mpi_core_read_le_4
+    230                      size_t offset = ((i % ciL) << 3);
+   \       0x48   0x00C1             LSLS     R1,R0,#+3
+   \       0x4A   0xF011 0x0118      ANDS     R1,R1,#0x18
+    231                      X[i / ciL] |= ((mbedtls_mpi_uint) input[i]) << offset;
+   \       0x4E   0x0002             MOVS     R2,R0
+   \       0x50   0x0892             LSRS     R2,R2,#+2
+   \       0x52   0xF854 0x3022      LDR      R3,[R4, R2, LSL #+2]
+   \       0x56   0x5C2A             LDRB     R2,[R5, R0]
+   \       0x58   0xFA12 0xF101      LSLS     R1,R2,R1
+   \       0x5C   0x4319             ORRS     R1,R1,R3
+   \       0x5E   0x0002             MOVS     R2,R0
+   \       0x60   0x0892             LSRS     R2,R2,#+2
+   \       0x62   0xF844 0x1022      STR      R1,[R4, R2, LSL #+2]
+    232                  }
+   \       0x66   0x1C40             ADDS     R0,R0,#+1
+   \       0x68   0xE7EC             B.N      ??mbedtls_mpi_core_read_le_5
+    233              }
+    234          
+    235              return 0;
+   \                     ??mbedtls_mpi_core_read_le_4: (+1)
+   \       0x6A   0x2000             MOVS     R0,#+0
+   \                     ??mbedtls_mpi_core_read_le_3: (+1)
+   \       0x6C   0xE8BD 0x8FF2      POP      {R1,R4-R11,PC}
+    236          }
+    237          
+
+   \                                 In section .text, align 2, keep-with-next
+    238          int mbedtls_mpi_core_read_be(mbedtls_mpi_uint *X,
+    239                                       size_t X_limbs,
+    240                                       const unsigned char *input,
+    241                                       size_t input_length)
+    242          {
+   \                     mbedtls_mpi_core_read_be: (+1)
+   \        0x0   0xE92D 0x4FFE      PUSH     {R1-R11,LR}
+   \        0x4   0x0006             MOVS     R6,R0
+   \        0x6   0x000C             MOVS     R4,R1
+   \        0x8   0x0017             MOVS     R7,R2
+   \        0xA   0x001D             MOVS     R5,R3
+    243              const size_t limbs = CHARS_TO_LIMBS(input_length);
+   \        0xC   0xF015 0x0F03      TST      R5,#0x3
+   \       0x10   0xD001             BEQ.N    ??mbedtls_mpi_core_read_be_0
+   \       0x12   0x2101             MOVS     R1,#+1
+   \       0x14   0xE000             B.N      ??mbedtls_mpi_core_read_be_1
+   \                     ??mbedtls_mpi_core_read_be_0: (+1)
+   \       0x16   0x2100             MOVS     R1,#+0
+   \                     ??mbedtls_mpi_core_read_be_1: (+1)
+   \       0x18   0x0028             MOVS     R0,R5
+   \       0x1A   0x0880             LSRS     R0,R0,#+2
+   \       0x1C   0xFA50 0xF881      UXTAB    R8,R0,R1
+    244          
+    245              if (X_limbs < limbs) {
+   \       0x20   0x4544             CMP      R4,R8
+   \       0x22   0xD202             BCS.N    ??mbedtls_mpi_core_read_be_2
+    246                  return MBEDTLS_ERR_MPI_BUFFER_TOO_SMALL;
+   \       0x24   0xF07F 0x0007      MVNS     R0,#+7
+   \       0x28   0xE021             B.N      ??mbedtls_mpi_core_read_be_3
+    247              }
+    248          
+    249              /* If X_limbs is 0, input_length must also be 0 (from previous test).
+    250               * Nothing to do. */
+    251              if (X_limbs == 0) {
+   \                     ??mbedtls_mpi_core_read_be_2: (+1)
+   \       0x2A   0x2C00             CMP      R4,#+0
+   \       0x2C   0xD101             BNE.N    ??mbedtls_mpi_core_read_be_4
+    252                  return 0;
+   \       0x2E   0x2000             MOVS     R0,#+0
+   \       0x30   0xE01D             B.N      ??mbedtls_mpi_core_read_be_3
+    253              }
+    254          
+    255              memset(X, 0, X_limbs * ciL);
+   \                     ??mbedtls_mpi_core_read_be_4: (+1)
+   \       0x32   0xEA5F 0x0B84      LSLS     R11,R4,#+2
+   \       0x36   0xF05F 0x0900      MOVS     R9,#+0
+   \       0x3A   0x46B2             MOV      R10,R6
+   \       0x3C   0x464A             MOV      R2,R9
+   \       0x3E   0x4659             MOV      R1,R11
+   \       0x40   0x4650             MOV      R0,R10
+   \       0x42   0x.... 0x....      BL       __aeabi_memset
+    256          
+    257              /* memcpy() with (NULL, 0) is undefined behaviour */
+    258              if (input_length != 0) {
+   \       0x46   0x2D00             CMP      R5,#+0
+   \       0x48   0xD00C             BEQ.N    ??mbedtls_mpi_core_read_be_5
+    259                  size_t overhead = (X_limbs * ciL) - input_length;
+   \       0x4A   0xEBD5 0x0984      RSBS     R9,R5,R4, LSL #+2
+    260                  unsigned char *Xp = (unsigned char *) X;
+   \       0x4E   0x9601             STR      R6,[SP, #+4]
+    261                  memcpy(Xp + overhead, input, input_length);
+   \       0x50   0x9500             STR      R5,[SP, #+0]
+   \       0x52   0x46BB             MOV      R11,R7
+   \       0x54   0x9801             LDR      R0,[SP, #+4]
+   \       0x56   0xEB00 0x0A09      ADD      R10,R0,R9
+   \       0x5A   0x9A00             LDR      R2,[SP, #+0]
+   \       0x5C   0x4659             MOV      R1,R11
+   \       0x5E   0x4650             MOV      R0,R10
+   \       0x60   0x.... 0x....      BL       __aeabi_memcpy
+    262              }
+    263          
+    264              mbedtls_mpi_core_bigendian_to_host(X, X_limbs);
+   \                     ??mbedtls_mpi_core_read_be_5: (+1)
+   \       0x64   0x0021             MOVS     R1,R4
+   \       0x66   0x0030             MOVS     R0,R6
+   \       0x68   0x.... 0x....      BL       mbedtls_mpi_core_bigendian_to_host
+    265          
+    266              return 0;
+   \       0x6C   0x2000             MOVS     R0,#+0
+   \                     ??mbedtls_mpi_core_read_be_3: (+1)
+   \       0x6E   0xE8BD 0x8FFE      POP      {R1-R11,PC}
+    267          }
+    268          
+
+   \                                 In section .text, align 2, keep-with-next
+    269          int mbedtls_mpi_core_write_le(const mbedtls_mpi_uint *A,
+    270                                        size_t A_limbs,
+    271                                        unsigned char *output,
+    272                                        size_t output_length)
+    273          {
+   \                     mbedtls_mpi_core_write_le: (+1)
+   \        0x0   0xE92D 0x4FF8      PUSH     {R3-R11,LR}
+   \        0x4   0x0004             MOVS     R4,R0
+   \        0x6   0x000D             MOVS     R5,R1
+   \        0x8   0x0016             MOVS     R6,R2
+   \        0xA   0x001F             MOVS     R7,R3
+    274              size_t stored_bytes = A_limbs * ciL;
+   \        0xC   0xEA5F 0x0885      LSLS     R8,R5,#+2
+    275              size_t bytes_to_copy;
+    276          
+    277              if (stored_bytes < output_length) {
+   \       0x10   0x45B8             CMP      R8,R7
+   \       0x12   0xD201             BCS.N    ??mbedtls_mpi_core_write_le_0
+    278                  bytes_to_copy = stored_bytes;
+   \       0x14   0x46C1             MOV      R9,R8
+   \       0x16   0xE013             B.N      ??mbedtls_mpi_core_write_le_1
+    279              } else {
+    280                  bytes_to_copy = output_length;
+   \                     ??mbedtls_mpi_core_write_le_0: (+1)
+   \       0x18   0x46B9             MOV      R9,R7
+    281          
+    282                  /* The output buffer is smaller than the allocated size of A.
+    283                   * However A may fit if its leading bytes are zero. */
+    284                  for (size_t i = bytes_to_copy; i < stored_bytes; i++) {
+   \       0x1A   0x4649             MOV      R1,R9
+   \                     ??mbedtls_mpi_core_write_le_2: (+1)
+   \       0x1C   0x4541             CMP      R1,R8
+   \       0x1E   0xD20F             BCS.N    ??mbedtls_mpi_core_write_le_1
+    285                      if (GET_BYTE(A, i) != 0) {
+   \       0x20   0x0008             MOVS     R0,R1
+   \       0x22   0x0880             LSRS     R0,R0,#+2
+   \       0x24   0xF854 0x0020      LDR      R0,[R4, R0, LSL #+2]
+   \       0x28   0xF011 0x0203      ANDS     R2,R1,#0x3
+   \       0x2C   0xB2D2             UXTB     R2,R2
+   \       0x2E   0x00D2             LSLS     R2,R2,#+3
+   \       0x30   0x40D0             LSRS     R0,R0,R2
+   \       0x32   0x0600             LSLS     R0,R0,#+24
+   \       0x34   0xD002             BEQ.N    ??mbedtls_mpi_core_write_le_3
+    286                          return MBEDTLS_ERR_MPI_BUFFER_TOO_SMALL;
+   \       0x36   0xF07F 0x0007      MVNS     R0,#+7
+   \       0x3A   0xE01F             B.N      ??mbedtls_mpi_core_write_le_4
+    287                      }
+    288                  }
+   \                     ??mbedtls_mpi_core_write_le_3: (+1)
+   \       0x3C   0x1C49             ADDS     R1,R1,#+1
+   \       0x3E   0xE7ED             B.N      ??mbedtls_mpi_core_write_le_2
+    289              }
+    290          
+    291              for (size_t i = 0; i < bytes_to_copy; i++) {
+   \                     ??mbedtls_mpi_core_write_le_1: (+1)
+   \       0x40   0x2000             MOVS     R0,#+0
+   \                     ??mbedtls_mpi_core_write_le_5: (+1)
+   \       0x42   0x4548             CMP      R0,R9
+   \       0x44   0xD20B             BCS.N    ??mbedtls_mpi_core_write_le_6
+    292                  output[i] = GET_BYTE(A, i);
+   \       0x46   0x0001             MOVS     R1,R0
+   \       0x48   0x0889             LSRS     R1,R1,#+2
+   \       0x4A   0xF854 0x1021      LDR      R1,[R4, R1, LSL #+2]
+   \       0x4E   0xF010 0x0203      ANDS     R2,R0,#0x3
+   \       0x52   0xB2D2             UXTB     R2,R2
+   \       0x54   0x00D2             LSLS     R2,R2,#+3
+   \       0x56   0x40D1             LSRS     R1,R1,R2
+   \       0x58   0x5431             STRB     R1,[R6, R0]
+    293              }
+   \       0x5A   0x1C40             ADDS     R0,R0,#+1
+   \       0x5C   0xE7F1             B.N      ??mbedtls_mpi_core_write_le_5
+    294          
+    295              if (stored_bytes < output_length) {
+   \                     ??mbedtls_mpi_core_write_le_6: (+1)
+   \       0x5E   0x45B8             CMP      R8,R7
+   \       0x60   0xD20B             BCS.N    ??mbedtls_mpi_core_write_le_7
+    296                  /* Write trailing 0 bytes */
+    297                  memset(output + stored_bytes, 0, output_length - stored_bytes);
+   \       0x62   0xEBB7 0x0008      SUBS     R0,R7,R8
+   \       0x66   0x9000             STR      R0,[SP, #+0]
+   \       0x68   0xF05F 0x0B00      MOVS     R11,#+0
+   \       0x6C   0xEB06 0x0A08      ADD      R10,R6,R8
+   \       0x70   0x465A             MOV      R2,R11
+   \       0x72   0x9900             LDR      R1,[SP, #+0]
+   \       0x74   0x4650             MOV      R0,R10
+   \       0x76   0x.... 0x....      BL       __aeabi_memset
+    298              }
+    299          
+    300              return 0;
+   \                     ??mbedtls_mpi_core_write_le_7: (+1)
+   \       0x7A   0x2000             MOVS     R0,#+0
+   \                     ??mbedtls_mpi_core_write_le_4: (+1)
+   \       0x7C   0xE8BD 0x8FF2      POP      {R1,R4-R11,PC}
+    301          }
+    302          
+
+   \                                 In section .text, align 2, keep-with-next
+    303          int mbedtls_mpi_core_write_be(const mbedtls_mpi_uint *X,
+    304                                        size_t X_limbs,
+    305                                        unsigned char *output,
+    306                                        size_t output_length)
+    307          {
+   \                     mbedtls_mpi_core_write_be: (+1)
+   \        0x0   0xE92D 0x4FFE      PUSH     {R1-R11,LR}
+   \        0x4   0x4681             MOV      R9,R0
+   \        0x6   0x000C             MOVS     R4,R1
+   \        0x8   0x0015             MOVS     R5,R2
+   \        0xA   0x001E             MOVS     R6,R3
+    308              size_t stored_bytes;
+    309              size_t bytes_to_copy;
+    310              unsigned char *p;
+    311          
+    312              stored_bytes = X_limbs * ciL;
+   \        0xC   0x00A7             LSLS     R7,R4,#+2
+    313          
+    314              if (stored_bytes < output_length) {
+   \        0xE   0x42B7             CMP      R7,R6
+   \       0x10   0xD210             BCS.N    ??mbedtls_mpi_core_write_be_0
+    315                  /* There is enough space in the output buffer. Write initial
+    316                   * null bytes and record the position at which to start
+    317                   * writing the significant bytes. In this case, the execution
+    318                   * trace of this function does not depend on the value of the
+    319                   * number. */
+    320                  bytes_to_copy = stored_bytes;
+   \       0x12   0x46B8             MOV      R8,R7
+    321                  p = output + output_length - stored_bytes;
+   \       0x14   0xEB05 0x0106      ADD      R1,R5,R6
+   \       0x18   0x4278             RSBS     R0,R7,#+0
+   \       0x1A   0x4408             ADD      R0,R1,R0
+   \       0x1C   0x9000             STR      R0,[SP, #+0]
+    322                  memset(output, 0, output_length - stored_bytes);
+   \       0x1E   0x1BF0             SUBS     R0,R6,R7
+   \       0x20   0x9001             STR      R0,[SP, #+4]
+   \       0x22   0xF05F 0x0B00      MOVS     R11,#+0
+   \       0x26   0x46AA             MOV      R10,R5
+   \       0x28   0x465A             MOV      R2,R11
+   \       0x2A   0x9901             LDR      R1,[SP, #+4]
+   \       0x2C   0x4650             MOV      R0,R10
+   \       0x2E   0x.... 0x....      BL       __aeabi_memset
+    323              } else {
+   \       0x32   0xE014             B.N      ??mbedtls_mpi_core_write_be_1
+    324                  /* The output buffer is smaller than the allocated size of X.
+    325                   * However X may fit if its leading bytes are zero. */
+    326                  bytes_to_copy = output_length;
+   \                     ??mbedtls_mpi_core_write_be_0: (+1)
+   \       0x34   0x46B0             MOV      R8,R6
+    327                  p = output;
+   \       0x36   0x9500             STR      R5,[SP, #+0]
+    328                  for (size_t i = bytes_to_copy; i < stored_bytes; i++) {
+   \       0x38   0x4641             MOV      R1,R8
+   \                     ??mbedtls_mpi_core_write_be_2: (+1)
+   \       0x3A   0x42B9             CMP      R1,R7
+   \       0x3C   0xD20F             BCS.N    ??mbedtls_mpi_core_write_be_1
+    329                      if (GET_BYTE(X, i) != 0) {
+   \       0x3E   0x0008             MOVS     R0,R1
+   \       0x40   0x0880             LSRS     R0,R0,#+2
+   \       0x42   0xF859 0x0020      LDR      R0,[R9, R0, LSL #+2]
+   \       0x46   0xF011 0x0203      ANDS     R2,R1,#0x3
+   \       0x4A   0xB2D2             UXTB     R2,R2
+   \       0x4C   0x00D2             LSLS     R2,R2,#+3
+   \       0x4E   0x40D0             LSRS     R0,R0,R2
+   \       0x50   0x0600             LSLS     R0,R0,#+24
+   \       0x52   0xD002             BEQ.N    ??mbedtls_mpi_core_write_be_3
+    330                          return MBEDTLS_ERR_MPI_BUFFER_TOO_SMALL;
+   \       0x54   0xF07F 0x0007      MVNS     R0,#+7
+   \       0x58   0xE016             B.N      ??mbedtls_mpi_core_write_be_4
+    331                      }
+    332                  }
+   \                     ??mbedtls_mpi_core_write_be_3: (+1)
+   \       0x5A   0x1C49             ADDS     R1,R1,#+1
+   \       0x5C   0xE7ED             B.N      ??mbedtls_mpi_core_write_be_2
+    333              }
+    334          
+    335              for (size_t i = 0; i < bytes_to_copy; i++) {
+   \                     ??mbedtls_mpi_core_write_be_1: (+1)
+   \       0x5E   0x2000             MOVS     R0,#+0
+   \                     ??mbedtls_mpi_core_write_be_5: (+1)
+   \       0x60   0x4540             CMP      R0,R8
+   \       0x62   0xD210             BCS.N    ??mbedtls_mpi_core_write_be_6
+    336                  p[bytes_to_copy - i - 1] = GET_BYTE(X, i);
+   \       0x64   0x0001             MOVS     R1,R0
+   \       0x66   0x0889             LSRS     R1,R1,#+2
+   \       0x68   0xF859 0x1021      LDR      R1,[R9, R1, LSL #+2]
+   \       0x6C   0xF010 0x0203      ANDS     R2,R0,#0x3
+   \       0x70   0xB2D2             UXTB     R2,R2
+   \       0x72   0x00D2             LSLS     R2,R2,#+3
+   \       0x74   0x40D1             LSRS     R1,R1,R2
+   \       0x76   0x9B00             LDR      R3,[SP, #+0]
+   \       0x78   0xEBB8 0x0200      SUBS     R2,R8,R0
+   \       0x7C   0x441A             ADD      R2,R3,R2
+   \       0x7E   0xF802 0x1C01      STRB     R1,[R2, #-1]
+    337              }
+   \       0x82   0x1C40             ADDS     R0,R0,#+1
+   \       0x84   0xE7EC             B.N      ??mbedtls_mpi_core_write_be_5
+    338          
+    339              return 0;
+   \                     ??mbedtls_mpi_core_write_be_6: (+1)
+   \       0x86   0x2000             MOVS     R0,#+0
+   \                     ??mbedtls_mpi_core_write_be_4: (+1)
+   \       0x88   0xE8BD 0x8FFE      POP      {R1-R11,PC}
+    340          }
+    341          
+
+   \                                 In section .text, align 2, keep-with-next
+    342          void mbedtls_mpi_core_shift_r(mbedtls_mpi_uint *X, size_t limbs,
+    343                                        size_t count)
+    344          {
+   \                     mbedtls_mpi_core_shift_r: (+1)
+   \        0x0   0xE92D 0x4FFE      PUSH     {R1-R11,LR}
+   \        0x4   0x4682             MOV      R10,R0
+   \        0x6   0x000F             MOVS     R7,R1
+   \        0x8   0x4690             MOV      R8,R2
+    345              size_t i, v0, v1;
+    346              mbedtls_mpi_uint r0 = 0, r1;
+   \        0xA   0xF05F 0x0900      MOVS     R9,#+0
+    347          
+    348              v0 = count /  biL;
+   \        0xE   0x4646             MOV      R6,R8
+   \       0x10   0x0976             LSRS     R6,R6,#+5
+    349              v1 = count & (biL - 1);
+   \       0x12   0xF018 0x051F      ANDS     R5,R8,#0x1F
+    350          
+    351              if (v0 > limbs || (v0 == limbs && v1 > 0)) {
+   \       0x16   0x42B7             CMP      R7,R6
+   \       0x18   0xD303             BCC.N    ??mbedtls_mpi_core_shift_r_0
+   \       0x1A   0x42BE             CMP      R6,R7
+   \       0x1C   0xD10C             BNE.N    ??mbedtls_mpi_core_shift_r_1
+   \       0x1E   0x2D00             CMP      R5,#+0
+   \       0x20   0xD00A             BEQ.N    ??mbedtls_mpi_core_shift_r_1
+    352                  memset(X, 0, limbs * ciL);
+   \                     ??mbedtls_mpi_core_shift_r_0: (+1)
+   \       0x22   0x00B8             LSLS     R0,R7,#+2
+   \       0x24   0x9002             STR      R0,[SP, #+8]
+   \       0x26   0x2000             MOVS     R0,#+0
+   \       0x28   0x9001             STR      R0,[SP, #+4]
+   \       0x2A   0x46D3             MOV      R11,R10
+   \       0x2C   0x9A01             LDR      R2,[SP, #+4]
+   \       0x2E   0x9902             LDR      R1,[SP, #+8]
+   \       0x30   0x4658             MOV      R0,R11
+   \       0x32   0x.... 0x....      BL       __aeabi_memset
+    353                  return;
+   \       0x36   0xE038             B.N      ??mbedtls_mpi_core_shift_r_2
+    354              }
+    355          
+    356              /*
+    357               * shift by count / limb_size
+    358               */
+    359              if (v0 > 0) {
+   \                     ??mbedtls_mpi_core_shift_r_1: (+1)
+   \       0x38   0x2E00             CMP      R6,#+0
+   \       0x3A   0xD012             BEQ.N    ??mbedtls_mpi_core_shift_r_3
+    360                  for (i = 0; i < limbs - v0; i++) {
+   \       0x3C   0x2000             MOVS     R0,#+0
+   \       0x3E   0x0004             MOVS     R4,R0
+   \                     ??mbedtls_mpi_core_shift_r_4: (+1)
+   \       0x40   0x1BB8             SUBS     R0,R7,R6
+   \       0x42   0x4284             CMP      R4,R0
+   \       0x44   0xD206             BCS.N    ??mbedtls_mpi_core_shift_r_5
+    361                      X[i] = X[i + v0];
+   \       0x46   0x1930             ADDS     R0,R6,R4
+   \       0x48   0xF85A 0x0020      LDR      R0,[R10, R0, LSL #+2]
+   \       0x4C   0xF84A 0x0024      STR      R0,[R10, R4, LSL #+2]
+    362                  }
+   \       0x50   0x1C64             ADDS     R4,R4,#+1
+   \       0x52   0xE7F5             B.N      ??mbedtls_mpi_core_shift_r_4
+    363          
+    364                  for (; i < limbs; i++) {
+   \                     ??mbedtls_mpi_core_shift_r_5: (+1)
+   \       0x54   0x42BC             CMP      R4,R7
+   \       0x56   0xD204             BCS.N    ??mbedtls_mpi_core_shift_r_3
+    365                      X[i] = 0;
+   \       0x58   0x2000             MOVS     R0,#+0
+   \       0x5A   0xF84A 0x0024      STR      R0,[R10, R4, LSL #+2]
+    366                  }
+   \       0x5E   0x1C64             ADDS     R4,R4,#+1
+   \       0x60   0xE7F8             B.N      ??mbedtls_mpi_core_shift_r_5
+    367              }
+    368          
+    369              /*
+    370               * shift by count % limb_size
+    371               */
+    372              if (v1 > 0) {
+   \                     ??mbedtls_mpi_core_shift_r_3: (+1)
+   \       0x62   0x2D00             CMP      R5,#+0
+   \       0x64   0xD021             BEQ.N    ??mbedtls_mpi_core_shift_r_6
+    373                  for (i = limbs; i > 0; i--) {
+   \       0x66   0x003C             MOVS     R4,R7
+   \                     ??mbedtls_mpi_core_shift_r_7: (+1)
+   \       0x68   0x2C00             CMP      R4,#+0
+   \       0x6A   0xD01E             BEQ.N    ??mbedtls_mpi_core_shift_r_6
+    374                      r1 = X[i - 1] << (biL - v1);
+   \       0x6C   0xEB0A 0x0084      ADD      R0,R10,R4, LSL #+2
+   \       0x70   0xF850 0x1C04      LDR      R1,[R0, #-4]
+   \       0x74   0xF1D5 0x0020      RSBS     R0,R5,#+32
+   \       0x78   0x4081             LSLS     R1,R1,R0
+   \       0x7A   0x9100             STR      R1,[SP, #+0]
+    375                      X[i - 1] >>= v1;
+   \       0x7C   0xEB0A 0x0084      ADD      R0,R10,R4, LSL #+2
+   \       0x80   0xF850 0x1C04      LDR      R1,[R0, #-4]
+   \       0x84   0x40E9             LSRS     R1,R1,R5
+   \       0x86   0xEB0A 0x0084      ADD      R0,R10,R4, LSL #+2
+   \       0x8A   0xF840 0x1C04      STR      R1,[R0, #-4]
+    376                      X[i - 1] |= r0;
+   \       0x8E   0xEB0A 0x0084      ADD      R0,R10,R4, LSL #+2
+   \       0x92   0xF850 0x1C04      LDR      R1,[R0, #-4]
+   \       0x96   0xEA59 0x0101      ORRS     R1,R9,R1
+   \       0x9A   0xEB0A 0x0084      ADD      R0,R10,R4, LSL #+2
+   \       0x9E   0xF840 0x1C04      STR      R1,[R0, #-4]
+    377                      r0 = r1;
+   \       0xA2   0x9800             LDR      R0,[SP, #+0]
+   \       0xA4   0x4681             MOV      R9,R0
+    378                  }
+   \       0xA6   0x1E64             SUBS     R4,R4,#+1
+   \       0xA8   0xE7DE             B.N      ??mbedtls_mpi_core_shift_r_7
+    379              }
+    380          }
+   \                     ??mbedtls_mpi_core_shift_r_6: (+1)
+   \                     ??mbedtls_mpi_core_shift_r_2: (+1)
+   \       0xAA   0xE8BD 0x8FF7      POP      {R0-R2,R4-R11,PC}
+    381          
+
+   \                                 In section .text, align 2, keep-with-next
+    382          void mbedtls_mpi_core_shift_l(mbedtls_mpi_uint *X, size_t limbs,
+    383                                        size_t count)
+    384          {
+   \                     mbedtls_mpi_core_shift_l: (+1)
+   \        0x0   0xB5F0             PUSH     {R4-R7,LR}
+   \        0x2   0x0003             MOVS     R3,R0
+    385              size_t i, v0, v1;
+    386              mbedtls_mpi_uint r0 = 0, r1;
+   \        0x4   0x2700             MOVS     R7,#+0
+    387          
+    388              v0 = count / (biL);
+   \        0x6   0x0014             MOVS     R4,R2
+   \        0x8   0x0964             LSRS     R4,R4,#+5
+    389              v1 = count & (biL - 1);
+   \        0xA   0xF012 0x051F      ANDS     R5,R2,#0x1F
+    390          
+    391              /*
+    392               * shift by count / limb_size
+    393               */
+    394              if (v0 > 0) {
+   \        0xE   0x2C00             CMP      R4,#+0
+   \       0x10   0xD018             BEQ.N    ??mbedtls_mpi_core_shift_l_0
+    395                  for (i = limbs; i > v0; i--) {
+   \       0x12   0x0008             MOVS     R0,R1
+   \                     ??mbedtls_mpi_core_shift_l_1: (+1)
+   \       0x14   0x4284             CMP      R4,R0
+   \       0x16   0xD20B             BCS.N    ??mbedtls_mpi_core_shift_l_2
+    396                      X[i - 1] = X[i - v0 - 1];
+   \       0x18   0xEBB0 0x0C04      SUBS     R12,R0,R4
+   \       0x1C   0xEB03 0x0C8C      ADD      R12,R3,R12, LSL #+2
+   \       0x20   0xF85C 0xEC04      LDR      LR,[R12, #-4]
+   \       0x24   0xEB03 0x0C80      ADD      R12,R3,R0, LSL #+2
+   \       0x28   0xF84C 0xEC04      STR      LR,[R12, #-4]
+    397                  }
+   \       0x2C   0x1E40             SUBS     R0,R0,#+1
+   \       0x2E   0xE7F1             B.N      ??mbedtls_mpi_core_shift_l_1
+    398          
+    399                  for (; i > 0; i--) {
+   \                     ??mbedtls_mpi_core_shift_l_2: (+1)
+   \       0x30   0x2800             CMP      R0,#+0
+   \       0x32   0xD007             BEQ.N    ??mbedtls_mpi_core_shift_l_0
+    400                      X[i - 1] = 0;
+   \       0x34   0xF05F 0x0E00      MOVS     LR,#+0
+   \       0x38   0xEB03 0x0C80      ADD      R12,R3,R0, LSL #+2
+   \       0x3C   0xF84C 0xEC04      STR      LR,[R12, #-4]
+    401                  }
+   \       0x40   0x1E40             SUBS     R0,R0,#+1
+   \       0x42   0xE7F5             B.N      ??mbedtls_mpi_core_shift_l_2
+    402              }
+    403          
+    404              /*
+    405               * shift by count % limb_size
+    406               */
+    407              if (v1 > 0) {
+   \                     ??mbedtls_mpi_core_shift_l_0: (+1)
+   \       0x44   0x2D00             CMP      R5,#+0
+   \       0x46   0xD018             BEQ.N    ??mbedtls_mpi_core_shift_l_3
+    408                  for (i = v0; i < limbs; i++) {
+   \       0x48   0x0020             MOVS     R0,R4
+   \                     ??mbedtls_mpi_core_shift_l_4: (+1)
+   \       0x4A   0x4288             CMP      R0,R1
+   \       0x4C   0xD215             BCS.N    ??mbedtls_mpi_core_shift_l_3
+    409                      r1 = X[i] >> (biL - v1);
+   \       0x4E   0xF853 0xE020      LDR      LR,[R3, R0, LSL #+2]
+   \       0x52   0xF1D5 0x0C20      RSBS     R12,R5,#+32
+   \       0x56   0xFA3E 0xFE0C      LSRS     LR,LR,R12
+   \       0x5A   0x4676             MOV      R6,LR
+    410                      X[i] <<= v1;
+   \       0x5C   0xF853 0xC020      LDR      R12,[R3, R0, LSL #+2]
+   \       0x60   0xFA1C 0xFC05      LSLS     R12,R12,R5
+   \       0x64   0xF843 0xC020      STR      R12,[R3, R0, LSL #+2]
+    411                      X[i] |= r0;
+   \       0x68   0xF853 0xC020      LDR      R12,[R3, R0, LSL #+2]
+   \       0x6C   0xEA57 0x0C0C      ORRS     R12,R7,R12
+   \       0x70   0xF843 0xC020      STR      R12,[R3, R0, LSL #+2]
+    412                      r0 = r1;
+   \       0x74   0x0037             MOVS     R7,R6
+    413                  }
+   \       0x76   0x1C40             ADDS     R0,R0,#+1
+   \       0x78   0xE7E7             B.N      ??mbedtls_mpi_core_shift_l_4
+    414              }
+    415          }
+   \                     ??mbedtls_mpi_core_shift_l_3: (+1)
+   \       0x7A   0xBDF0             POP      {R4-R7,PC}
+    416          
+
+   \                                 In section .text, align 2, keep-with-next
+    417          mbedtls_mpi_uint mbedtls_mpi_core_add(mbedtls_mpi_uint *X,
+    418                                                const mbedtls_mpi_uint *A,
+    419                                                const mbedtls_mpi_uint *B,
+    420                                                size_t limbs)
+    421          {
+   \                     mbedtls_mpi_core_add: (+1)
+   \        0x0   0xB4F0             PUSH     {R4-R7}
+   \        0x2   0x0005             MOVS     R5,R0
+    422              mbedtls_mpi_uint c = 0;
+   \        0x4   0x2000             MOVS     R0,#+0
+    423          
+    424              for (size_t i = 0; i < limbs; i++) {
+   \        0x6   0x2600             MOVS     R6,#+0
+   \                     ??mbedtls_mpi_core_add_0: (+1)
+   \        0x8   0x429E             CMP      R6,R3
+   \        0xA   0xD217             BCS.N    ??mbedtls_mpi_core_add_1
+    425                  mbedtls_mpi_uint t = c + A[i];
+   \        0xC   0xF851 0x7026      LDR      R7,[R1, R6, LSL #+2]
+   \       0x10   0x183F             ADDS     R7,R7,R0
+    426                  c = (t < A[i]);
+   \       0x12   0xF851 0x4026      LDR      R4,[R1, R6, LSL #+2]
+   \       0x16   0x42A7             CMP      R7,R4
+   \       0x18   0xD201             BCS.N    ??mbedtls_mpi_core_add_2
+   \       0x1A   0x2001             MOVS     R0,#+1
+   \       0x1C   0xE000             B.N      ??mbedtls_mpi_core_add_3
+   \                     ??mbedtls_mpi_core_add_2: (+1)
+   \       0x1E   0x2000             MOVS     R0,#+0
+   \                     ??mbedtls_mpi_core_add_3: (+1)
+   \       0x20   0xB2C0             UXTB     R0,R0
+    427                  t += B[i];
+   \       0x22   0xF852 0x4026      LDR      R4,[R2, R6, LSL #+2]
+   \       0x26   0x19E7             ADDS     R7,R4,R7
+    428                  c += (t < B[i]);
+   \       0x28   0xF852 0x4026      LDR      R4,[R2, R6, LSL #+2]
+   \       0x2C   0x42A7             CMP      R7,R4
+   \       0x2E   0xD201             BCS.N    ??mbedtls_mpi_core_add_4
+   \       0x30   0x1C40             ADDS     R0,R0,#+1
+   \       0x32   0xE7FF             B.N      ??mbedtls_mpi_core_add_5
+    429                  X[i] = t;
+   \                     ??mbedtls_mpi_core_add_4: (+1)
+   \                     ??mbedtls_mpi_core_add_5: (+1)
+   \       0x34   0xF845 0x7026      STR      R7,[R5, R6, LSL #+2]
+    430              }
+   \       0x38   0x1C76             ADDS     R6,R6,#+1
+   \       0x3A   0xE7E5             B.N      ??mbedtls_mpi_core_add_0
+    431          
+    432              return c;
+   \                     ??mbedtls_mpi_core_add_1: (+1)
+   \       0x3C   0xBCF0             POP      {R4-R7}
+   \       0x3E   0x4770             BX       LR
+    433          }
+    434          
+
+   \                                 In section .text, align 2, keep-with-next
+    435          mbedtls_mpi_uint mbedtls_mpi_core_add_if(mbedtls_mpi_uint *X,
+    436                                                   const mbedtls_mpi_uint *A,
+    437                                                   size_t limbs,
+    438                                                   unsigned cond)
+    439          {
+   \                     mbedtls_mpi_core_add_if: (+1)
+   \        0x0   0xE92D 0x47F0      PUSH     {R4-R10,LR}
+   \        0x4   0x4682             MOV      R10,R0
+   \        0x6   0x000C             MOVS     R4,R1
+   \        0x8   0x0015             MOVS     R5,R2
+   \        0xA   0x001E             MOVS     R6,R3
+    440              mbedtls_mpi_uint c = 0;
+   \        0xC   0x2700             MOVS     R7,#+0
+    441          
+    442              mbedtls_ct_condition_t do_add = mbedtls_ct_bool(cond);
+   \        0xE   0x0030             MOVS     R0,R6
+   \       0x10   0x.... 0x....      BL       mbedtls_ct_bool
+   \       0x14   0x4680             MOV      R8,R0
+    443          
+    444              for (size_t i = 0; i < limbs; i++) {
+   \       0x16   0xF05F 0x0900      MOVS     R9,#+0
+   \                     ??mbedtls_mpi_core_add_if_0: (+1)
+   \       0x1A   0x45A9             CMP      R9,R5
+   \       0x1C   0xD219             BCS.N    ??mbedtls_mpi_core_add_if_1
+    445                  mbedtls_mpi_uint add = mbedtls_ct_mpi_uint_if_else_0(do_add, A[i]);
+   \       0x1E   0xF854 0x1029      LDR      R1,[R4, R9, LSL #+2]
+   \       0x22   0x4640             MOV      R0,R8
+   \       0x24   0x.... 0x....      BL       mbedtls_ct_mpi_uint_if_else_0
+    446                  mbedtls_mpi_uint t = c + X[i];
+   \       0x28   0xF85A 0x2029      LDR      R2,[R10, R9, LSL #+2]
+   \       0x2C   0x19D2             ADDS     R2,R2,R7
+    447                  c = (t < X[i]);
+   \       0x2E   0xF85A 0x1029      LDR      R1,[R10, R9, LSL #+2]
+   \       0x32   0x428A             CMP      R2,R1
+   \       0x34   0xD201             BCS.N    ??mbedtls_mpi_core_add_if_2
+   \       0x36   0x2701             MOVS     R7,#+1
+   \       0x38   0xE000             B.N      ??mbedtls_mpi_core_add_if_3
+   \                     ??mbedtls_mpi_core_add_if_2: (+1)
+   \       0x3A   0x2700             MOVS     R7,#+0
+   \                     ??mbedtls_mpi_core_add_if_3: (+1)
+   \       0x3C   0xB2FF             UXTB     R7,R7
+    448                  t += add;
+   \       0x3E   0x1882             ADDS     R2,R0,R2
+    449                  c += (t < add);
+   \       0x40   0x4282             CMP      R2,R0
+   \       0x42   0xD201             BCS.N    ??mbedtls_mpi_core_add_if_4
+   \       0x44   0x1C7F             ADDS     R7,R7,#+1
+   \       0x46   0xE7FF             B.N      ??mbedtls_mpi_core_add_if_5
+    450                  X[i] = t;
+   \                     ??mbedtls_mpi_core_add_if_4: (+1)
+   \                     ??mbedtls_mpi_core_add_if_5: (+1)
+   \       0x48   0xF84A 0x2029      STR      R2,[R10, R9, LSL #+2]
+    451              }
+   \       0x4C   0xF119 0x0901      ADDS     R9,R9,#+1
+   \       0x50   0xE7E3             B.N      ??mbedtls_mpi_core_add_if_0
+    452          
+    453              return c;
+   \                     ??mbedtls_mpi_core_add_if_1: (+1)
+   \       0x52   0x0038             MOVS     R0,R7
+   \       0x54   0xE8BD 0x87F0      POP      {R4-R10,PC}
+    454          }
+    455          
+
+   \                                 In section .text, align 2, keep-with-next
+    456          mbedtls_mpi_uint mbedtls_mpi_core_sub(mbedtls_mpi_uint *X,
+    457                                                const mbedtls_mpi_uint *A,
+    458                                                const mbedtls_mpi_uint *B,
+    459                                                size_t limbs)
+    460          {
+   \                     mbedtls_mpi_core_sub: (+1)
+   \        0x0   0xB4F0             PUSH     {R4-R7}
+   \        0x2   0x0005             MOVS     R5,R0
+    461              mbedtls_mpi_uint c = 0;
+   \        0x4   0x2000             MOVS     R0,#+0
+    462          
+    463              for (size_t i = 0; i < limbs; i++) {
+   \        0x6   0x2600             MOVS     R6,#+0
+   \                     ??mbedtls_mpi_core_sub_0: (+1)
+   \        0x8   0x429E             CMP      R6,R3
+   \        0xA   0xD21C             BCS.N    ??mbedtls_mpi_core_sub_1
+    464                  mbedtls_mpi_uint z = (A[i] < c);
+   \        0xC   0xF851 0x4026      LDR      R4,[R1, R6, LSL #+2]
+   \       0x10   0x4284             CMP      R4,R0
+   \       0x12   0xD201             BCS.N    ??mbedtls_mpi_core_sub_2
+   \       0x14   0x2701             MOVS     R7,#+1
+   \       0x16   0xE000             B.N      ??mbedtls_mpi_core_sub_3
+   \                     ??mbedtls_mpi_core_sub_2: (+1)
+   \       0x18   0x2700             MOVS     R7,#+0
+   \                     ??mbedtls_mpi_core_sub_3: (+1)
+   \       0x1A   0xB2FF             UXTB     R7,R7
+    465                  mbedtls_mpi_uint t = A[i] - c;
+   \       0x1C   0xF851 0xC026      LDR      R12,[R1, R6, LSL #+2]
+   \       0x20   0xEBBC 0x0C00      SUBS     R12,R12,R0
+    466                  c = (t < B[i]) + z;
+   \       0x24   0xF852 0x4026      LDR      R4,[R2, R6, LSL #+2]
+   \       0x28   0x45A4             CMP      R12,R4
+   \       0x2A   0xD201             BCS.N    ??mbedtls_mpi_core_sub_4
+   \       0x2C   0x2001             MOVS     R0,#+1
+   \       0x2E   0xE000             B.N      ??mbedtls_mpi_core_sub_5
+   \                     ??mbedtls_mpi_core_sub_4: (+1)
+   \       0x30   0x2000             MOVS     R0,#+0
+   \                     ??mbedtls_mpi_core_sub_5: (+1)
+   \       0x32   0xFA57 0xF080      UXTAB    R0,R7,R0
+    467                  X[i] = t - B[i];
+   \       0x36   0xF852 0x4026      LDR      R4,[R2, R6, LSL #+2]
+   \       0x3A   0xEBBC 0x0C04      SUBS     R12,R12,R4
+   \       0x3E   0xF845 0xC026      STR      R12,[R5, R6, LSL #+2]
+    468              }
+   \       0x42   0x1C76             ADDS     R6,R6,#+1
+   \       0x44   0xE7E0             B.N      ??mbedtls_mpi_core_sub_0
+    469          
+    470              return c;
+   \                     ??mbedtls_mpi_core_sub_1: (+1)
+   \       0x46   0xBCF0             POP      {R4-R7}
+   \       0x48   0x4770             BX       LR
+    471          }
+    472          
+
+   \                                 In section .text, align 2, keep-with-next
+    473          mbedtls_mpi_uint mbedtls_mpi_core_mla(mbedtls_mpi_uint *d, size_t d_len,
+    474                                                const mbedtls_mpi_uint *s, size_t s_len,
+    475                                                mbedtls_mpi_uint b)
+    476          {
+   \                     mbedtls_mpi_core_mla: (+1)
+   \        0x0   0xE92D 0x4FFB      PUSH     {R0,R1,R3-R11,LR}
+   \        0x4   0xB082             SUB      SP,SP,#+8
+   \        0x6   0x4686             MOV      LR,R0
+   \        0x8   0x4694             MOV      R12,R2
+    477              mbedtls_mpi_uint c = 0; /* carry */
+   \        0xA   0x2700             MOVS     R7,#+0
+    478              /*
+    479               * It is a documented precondition of this function that d_len >= s_len.
+    480               * If that's not the case, we swap these round: this turns what would be
+    481               * a buffer overflow into an incorrect result.
+    482               */
+    483              if (d_len < s_len) {
+   \        0xC   0x9903             LDR      R1,[SP, #+12]
+   \        0xE   0x9804             LDR      R0,[SP, #+16]
+   \       0x10   0x4281             CMP      R1,R0
+   \       0x12   0xD201             BCS.N    ??mbedtls_mpi_core_mla_0
+    484                  s_len = d_len;
+   \       0x14   0x9903             LDR      R1,[SP, #+12]
+   \       0x16   0x9104             STR      R1,[SP, #+16]
+    485              }
+    486              size_t excess_len = d_len - s_len;
+   \                     ??mbedtls_mpi_core_mla_0: (+1)
+   \       0x18   0x9E03             LDR      R6,[SP, #+12]
+   \       0x1A   0x9804             LDR      R0,[SP, #+16]
+   \       0x1C   0x1A36             SUBS     R6,R6,R0
+    487              size_t steps_x8 = s_len / 8;
+   \       0x1E   0x9C04             LDR      R4,[SP, #+16]
+   \       0x20   0x08E4             LSRS     R4,R4,#+3
+    488              size_t steps_x1 = s_len & 7;
+   \       0x22   0x9D04             LDR      R5,[SP, #+16]
+   \       0x24   0xF015 0x0507      ANDS     R5,R5,#0x7
+    489          
+    490              while (steps_x8--) {
+   \                     ??mbedtls_mpi_core_mla_1: (+1)
+   \       0x28   0x0020             MOVS     R0,R4
+   \       0x2A   0x1E44             SUBS     R4,R0,#+1
+   \       0x2C   0x2800             CMP      R0,#+0
+   \       0x2E   0xF000 0x8121      BEQ.W    ??mbedtls_mpi_core_mla_2
+    491                  MULADDC_X8_INIT
+    492                  MULADDC_X8_CORE
+   \       0x32   0xF8DC 0x1000      LDR      R1,[R12, #+0]
+   \       0x36   0x980E             LDR      R0,[SP, #+56]
+   \       0x38   0xFBA0 0x2301      UMULL    R2,R3,R0,R1
+   \       0x3C   0xF11C 0x0904      ADDS     R9,R12,#+4
+   \       0x40   0x4690             MOV      R8,R2
+   \       0x42   0x0019             MOVS     R1,R3
+   \       0x44   0xEB17 0x0808      ADDS     R8,R7,R8
+   \       0x48   0x45B8             CMP      R8,R7
+   \       0x4A   0xD201             BCS.N    ??mbedtls_mpi_core_mla_3
+   \       0x4C   0x1C49             ADDS     R1,R1,#+1
+   \       0x4E   0xE7FF             B.N      ??mbedtls_mpi_core_mla_4
+   \                     ??mbedtls_mpi_core_mla_3: (+1)
+   \                     ??mbedtls_mpi_core_mla_4: (+1)
+   \       0x50   0xF8DE 0x0000      LDR      R0,[LR, #+0]
+   \       0x54   0xEB10 0x0808      ADDS     R8,R0,R8
+   \       0x58   0xF8DE 0x0000      LDR      R0,[LR, #+0]
+   \       0x5C   0x4580             CMP      R8,R0
+   \       0x5E   0xD202             BCS.N    ??mbedtls_mpi_core_mla_5
+   \       0x60   0x1C49             ADDS     R1,R1,#+1
+   \       0x62   0x9101             STR      R1,[SP, #+4]
+   \       0x64   0xE000             B.N      ??mbedtls_mpi_core_mla_6
+   \                     ??mbedtls_mpi_core_mla_5: (+1)
+   \       0x66   0x9101             STR      R1,[SP, #+4]
+   \                     ??mbedtls_mpi_core_mla_6: (+1)
+   \       0x68   0x9801             LDR      R0,[SP, #+4]
+   \       0x6A   0x9000             STR      R0,[SP, #+0]
+   \       0x6C   0xF8CE 0x8000      STR      R8,[LR, #+0]
+   \       0x70   0xF11E 0x0A04      ADDS     R10,LR,#+4
+   \       0x74   0xF8D9 0x1000      LDR      R1,[R9, #+0]
+   \       0x78   0x980E             LDR      R0,[SP, #+56]
+   \       0x7A   0xFBA0 0x0101      UMULL    R0,R1,R0,R1
+   \       0x7E   0xF119 0x0E04      ADDS     LR,R9,#+4
+   \       0x82   0x4681             MOV      R9,R0
+   \       0x84   0x468C             MOV      R12,R1
+   \       0x86   0xF8DD 0xB000      LDR      R11,[SP, #+0]
+   \       0x8A   0xEB1B 0x0909      ADDS     R9,R11,R9
+   \       0x8E   0xF8DD 0xB000      LDR      R11,[SP, #+0]
+   \       0x92   0x45D9             CMP      R9,R11
+   \       0x94   0xD202             BCS.N    ??mbedtls_mpi_core_mla_7
+   \       0x96   0xF11C 0x0C01      ADDS     R12,R12,#+1
+   \       0x9A   0xE7FF             B.N      ??mbedtls_mpi_core_mla_8
+   \                     ??mbedtls_mpi_core_mla_7: (+1)
+   \                     ??mbedtls_mpi_core_mla_8: (+1)
+   \       0x9C   0xF8DA 0x2000      LDR      R2,[R10, #+0]
+   \       0xA0   0xEB12 0x0909      ADDS     R9,R2,R9
+   \       0xA4   0xF8DA 0x2000      LDR      R2,[R10, #+0]
+   \       0xA8   0x4591             CMP      R9,R2
+   \       0xAA   0xD202             BCS.N    ??mbedtls_mpi_core_mla_9
+   \       0xAC   0xF11C 0x0C01      ADDS     R12,R12,#+1
+   \       0xB0   0xE7FF             B.N      ??mbedtls_mpi_core_mla_10
+   \                     ??mbedtls_mpi_core_mla_9: (+1)
+   \                     ??mbedtls_mpi_core_mla_10: (+1)
+   \       0xB2   0xF8CD 0xC000      STR      R12,[SP, #+0]
+   \       0xB6   0xF8CA 0x9000      STR      R9,[R10, #+0]
+   \       0xBA   0xF11A 0x0804      ADDS     R8,R10,#+4
+   \       0xBE   0xF8DE 0x3000      LDR      R3,[LR, #+0]
+   \       0xC2   0x9A0E             LDR      R2,[SP, #+56]
+   \       0xC4   0xFBA2 0x2303      UMULL    R2,R3,R2,R3
+   \       0xC8   0xF11E 0x0E04      ADDS     LR,LR,#+4
+   \       0xCC   0x4692             MOV      R10,R2
+   \       0xCE   0x001F             MOVS     R7,R3
+   \       0xD0   0xF8DD 0xB000      LDR      R11,[SP, #+0]
+   \       0xD4   0xEB1B 0x0A0A      ADDS     R10,R11,R10
+   \       0xD8   0xF8DD 0xB000      LDR      R11,[SP, #+0]
+   \       0xDC   0x45DA             CMP      R10,R11
+   \       0xDE   0xD201             BCS.N    ??mbedtls_mpi_core_mla_11
+   \       0xE0   0x1C7F             ADDS     R7,R7,#+1
+   \       0xE2   0xE7FF             B.N      ??mbedtls_mpi_core_mla_12
+   \                     ??mbedtls_mpi_core_mla_11: (+1)
+   \                     ??mbedtls_mpi_core_mla_12: (+1)
+   \       0xE4   0xF8D8 0x0000      LDR      R0,[R8, #+0]
+   \       0xE8   0xEB10 0x0A0A      ADDS     R10,R0,R10
+   \       0xEC   0x46D1             MOV      R9,R10
+   \       0xEE   0xF8D8 0x0000      LDR      R0,[R8, #+0]
+   \       0xF2   0x4581             CMP      R9,R0
+   \       0xF4   0xD201             BCS.N    ??mbedtls_mpi_core_mla_13
+   \       0xF6   0x1C7F             ADDS     R7,R7,#+1
+   \       0xF8   0xE7FF             B.N      ??mbedtls_mpi_core_mla_14
+   \                     ??mbedtls_mpi_core_mla_13: (+1)
+   \                     ??mbedtls_mpi_core_mla_14: (+1)
+   \       0xFA   0x9700             STR      R7,[SP, #+0]
+   \       0xFC   0xF8C8 0x9000      STR      R9,[R8, #+0]
+   \      0x100   0xF118 0x0804      ADDS     R8,R8,#+4
+   \      0x104   0xF8DE 0x1000      LDR      R1,[LR, #+0]
+   \      0x108   0x980E             LDR      R0,[SP, #+56]
+   \      0x10A   0xFBA0 0x0101      UMULL    R0,R1,R0,R1
+   \      0x10E   0xF11E 0x0E04      ADDS     LR,LR,#+4
+   \      0x112   0x4682             MOV      R10,R0
+   \      0x114   0x468C             MOV      R12,R1
+   \      0x116   0xF8DD 0xB000      LDR      R11,[SP, #+0]
+   \      0x11A   0xEB1B 0x0A0A      ADDS     R10,R11,R10
+   \      0x11E   0xF8DD 0xB000      LDR      R11,[SP, #+0]
+   \      0x122   0x45DA             CMP      R10,R11
+   \      0x124   0xD202             BCS.N    ??mbedtls_mpi_core_mla_15
+   \      0x126   0xF11C 0x0C01      ADDS     R12,R12,#+1
+   \      0x12A   0xE7FF             B.N      ??mbedtls_mpi_core_mla_16
+   \                     ??mbedtls_mpi_core_mla_15: (+1)
+   \                     ??mbedtls_mpi_core_mla_16: (+1)
+   \      0x12C   0xF8D8 0x2000      LDR      R2,[R8, #+0]
+   \      0x130   0xEB12 0x0A0A      ADDS     R10,R2,R10
+   \      0x134   0x46D1             MOV      R9,R10
+   \      0x136   0xF8D8 0x2000      LDR      R2,[R8, #+0]
+   \      0x13A   0x4591             CMP      R9,R2
+   \      0x13C   0xD202             BCS.N    ??mbedtls_mpi_core_mla_17
+   \      0x13E   0xF11C 0x0C01      ADDS     R12,R12,#+1
+   \      0x142   0xE7FF             B.N      ??mbedtls_mpi_core_mla_18
+   \                     ??mbedtls_mpi_core_mla_17: (+1)
+   \                     ??mbedtls_mpi_core_mla_18: (+1)
+   \      0x144   0xF8CD 0xC000      STR      R12,[SP, #+0]
+   \      0x148   0xF8C8 0x9000      STR      R9,[R8, #+0]
+   \      0x14C   0xF118 0x0804      ADDS     R8,R8,#+4
+   \      0x150   0xF8DE 0x2000      LDR      R2,[LR, #+0]
+   \      0x154   0x9B0E             LDR      R3,[SP, #+56]
+   \      0x156   0xFBA3 0x2302      UMULL    R2,R3,R3,R2
+   \      0x15A   0xF11E 0x0E04      ADDS     LR,LR,#+4
+   \      0x15E   0x4692             MOV      R10,R2
+   \      0x160   0x001F             MOVS     R7,R3
+   \      0x162   0xF8DD 0xB000      LDR      R11,[SP, #+0]
+   \      0x166   0xEB1B 0x0A0A      ADDS     R10,R11,R10
+   \      0x16A   0xF8DD 0xB000      LDR      R11,[SP, #+0]
+   \      0x16E   0x45DA             CMP      R10,R11
+   \      0x170   0xD201             BCS.N    ??mbedtls_mpi_core_mla_19
+   \      0x172   0x1C7F             ADDS     R7,R7,#+1
+   \      0x174   0xE7FF             B.N      ??mbedtls_mpi_core_mla_20
+   \                     ??mbedtls_mpi_core_mla_19: (+1)
+   \                     ??mbedtls_mpi_core_mla_20: (+1)
+   \      0x176   0xF8D8 0x0000      LDR      R0,[R8, #+0]
+   \      0x17A   0xEB10 0x0A0A      ADDS     R10,R0,R10
+   \      0x17E   0x46D1             MOV      R9,R10
+   \      0x180   0xF8D8 0x0000      LDR      R0,[R8, #+0]
+   \      0x184   0x4581             CMP      R9,R0
+   \      0x186   0xD201             BCS.N    ??mbedtls_mpi_core_mla_21
+   \      0x188   0x1C7F             ADDS     R7,R7,#+1
+   \      0x18A   0xE7FF             B.N      ??mbedtls_mpi_core_mla_22
+   \                     ??mbedtls_mpi_core_mla_21: (+1)
+   \                     ??mbedtls_mpi_core_mla_22: (+1)
+   \      0x18C   0x9700             STR      R7,[SP, #+0]
+   \      0x18E   0xF8C8 0x9000      STR      R9,[R8, #+0]
+   \      0x192   0xF118 0x0804      ADDS     R8,R8,#+4
+   \      0x196   0xF8DE 0x0000      LDR      R0,[LR, #+0]
+   \      0x19A   0x990E             LDR      R1,[SP, #+56]
+   \      0x19C   0xFBA1 0x0100      UMULL    R0,R1,R1,R0
+   \      0x1A0   0xF11E 0x0E04      ADDS     LR,LR,#+4
+   \      0x1A4   0x4682             MOV      R10,R0
+   \      0x1A6   0x468C             MOV      R12,R1
+   \      0x1A8   0xF8DD 0xB000      LDR      R11,[SP, #+0]
+   \      0x1AC   0xEB1B 0x0A0A      ADDS     R10,R11,R10
+   \      0x1B0   0xF8DD 0xB000      LDR      R11,[SP, #+0]
+   \      0x1B4   0x45DA             CMP      R10,R11
+   \      0x1B6   0xD202             BCS.N    ??mbedtls_mpi_core_mla_23
+   \      0x1B8   0xF11C 0x0C01      ADDS     R12,R12,#+1
+   \      0x1BC   0xE7FF             B.N      ??mbedtls_mpi_core_mla_24
+   \                     ??mbedtls_mpi_core_mla_23: (+1)
+   \                     ??mbedtls_mpi_core_mla_24: (+1)
+   \      0x1BE   0xF8D8 0x2000      LDR      R2,[R8, #+0]
+   \      0x1C2   0xEB12 0x0A0A      ADDS     R10,R2,R10
+   \      0x1C6   0x46D1             MOV      R9,R10
+   \      0x1C8   0xF8D8 0x2000      LDR      R2,[R8, #+0]
+   \      0x1CC   0x4591             CMP      R9,R2
+   \      0x1CE   0xD202             BCS.N    ??mbedtls_mpi_core_mla_25
+   \      0x1D0   0xF11C 0x0C01      ADDS     R12,R12,#+1
+   \      0x1D4   0xE7FF             B.N      ??mbedtls_mpi_core_mla_26
+   \                     ??mbedtls_mpi_core_mla_25: (+1)
+   \                     ??mbedtls_mpi_core_mla_26: (+1)
+   \      0x1D6   0xF8CD 0xC000      STR      R12,[SP, #+0]
+   \      0x1DA   0xF8C8 0x9000      STR      R9,[R8, #+0]
+   \      0x1DE   0xF118 0x0804      ADDS     R8,R8,#+4
+   \      0x1E2   0xF8DE 0x3000      LDR      R3,[LR, #+0]
+   \      0x1E6   0x9A0E             LDR      R2,[SP, #+56]
+   \      0x1E8   0xFBA2 0x2303      UMULL    R2,R3,R2,R3
+   \      0x1EC   0xF11E 0x0704      ADDS     R7,LR,#+4
+   \      0x1F0   0x4692             MOV      R10,R2
+   \      0x1F2   0x469E             MOV      LR,R3
+   \      0x1F4   0xF8DD 0xB000      LDR      R11,[SP, #+0]
+   \      0x1F8   0xEB1B 0x0A0A      ADDS     R10,R11,R10
+   \      0x1FC   0xF8DD 0xB000      LDR      R11,[SP, #+0]
+   \      0x200   0x45DA             CMP      R10,R11
+   \      0x202   0xD202             BCS.N    ??mbedtls_mpi_core_mla_27
+   \      0x204   0xF11E 0x0E01      ADDS     LR,LR,#+1
+   \      0x208   0xE7FF             B.N      ??mbedtls_mpi_core_mla_28
+   \                     ??mbedtls_mpi_core_mla_27: (+1)
+   \                     ??mbedtls_mpi_core_mla_28: (+1)
+   \      0x20A   0xF8D8 0x0000      LDR      R0,[R8, #+0]
+   \      0x20E   0xEB10 0x0A0A      ADDS     R10,R0,R10
+   \      0x212   0xF8D8 0x0000      LDR      R0,[R8, #+0]
+   \      0x216   0x4582             CMP      R10,R0
+   \      0x218   0xD202             BCS.N    ??mbedtls_mpi_core_mla_29
+   \      0x21A   0xF11E 0x0E01      ADDS     LR,LR,#+1
+   \      0x21E   0xE7FF             B.N      ??mbedtls_mpi_core_mla_30
+   \                     ??mbedtls_mpi_core_mla_29: (+1)
+   \                     ??mbedtls_mpi_core_mla_30: (+1)
+   \      0x220   0xF8CD 0xE000      STR      LR,[SP, #+0]
+   \      0x224   0xF8C8 0xA000      STR      R10,[R8, #+0]
+   \      0x228   0xF118 0x0804      ADDS     R8,R8,#+4
+   \      0x22C   0x6839             LDR      R1,[R7, #+0]
+   \      0x22E   0x980E             LDR      R0,[SP, #+56]
+   \      0x230   0xFBA0 0x0101      UMULL    R0,R1,R0,R1
+   \      0x234   0xF117 0x0C04      ADDS     R12,R7,#+4
+   \      0x238   0x4681             MOV      R9,R0
+   \      0x23A   0x000F             MOVS     R7,R1
+   \      0x23C   0xF8DD 0xB000      LDR      R11,[SP, #+0]
+   \      0x240   0xEB1B 0x0909      ADDS     R9,R11,R9
+   \      0x244   0xF8DD 0xB000      LDR      R11,[SP, #+0]
+   \      0x248   0x45D9             CMP      R9,R11
+   \      0x24A   0xD201             BCS.N    ??mbedtls_mpi_core_mla_31
+   \      0x24C   0x1C7F             ADDS     R7,R7,#+1
+   \      0x24E   0xE7FF             B.N      ??mbedtls_mpi_core_mla_32
+   \                     ??mbedtls_mpi_core_mla_31: (+1)
+   \                     ??mbedtls_mpi_core_mla_32: (+1)
+   \      0x250   0xF8D8 0x2000      LDR      R2,[R8, #+0]
+   \      0x254   0xEB12 0x0909      ADDS     R9,R2,R9
+   \      0x258   0xF8D8 0x2000      LDR      R2,[R8, #+0]
+   \      0x25C   0x4591             CMP      R9,R2
+   \      0x25E   0xD202             BCS.N    ??mbedtls_mpi_core_mla_33
+   \      0x260   0x1C7F             ADDS     R7,R7,#+1
+   \      0x262   0x003A             MOVS     R2,R7
+   \      0x264   0xE000             B.N      ??mbedtls_mpi_core_mla_34
+   \                     ??mbedtls_mpi_core_mla_33: (+1)
+   \      0x266   0x003A             MOVS     R2,R7
+   \                     ??mbedtls_mpi_core_mla_34: (+1)
+   \      0x268   0x0017             MOVS     R7,R2
+   \      0x26A   0xF8C8 0x9000      STR      R9,[R8, #+0]
+   \      0x26E   0xF118 0x0E04      ADDS     LR,R8,#+4
+   \      0x272   0xE6D9             B.N      ??mbedtls_mpi_core_mla_1
+    493                      MULADDC_X8_STOP
+    494              }
+    495          
+    496              while (steps_x1--) {
+   \                     ??mbedtls_mpi_core_mla_2: (+1)
+   \      0x274   0x0028             MOVS     R0,R5
+   \      0x276   0x1E45             SUBS     R5,R0,#+1
+   \      0x278   0x2800             CMP      R0,#+0
+   \      0x27A   0xD01E             BEQ.N    ??mbedtls_mpi_core_mla_35
+    497                  MULADDC_X1_INIT
+    498                  MULADDC_X1_CORE
+   \      0x27C   0xF8DC 0x0000      LDR      R0,[R12, #+0]
+   \      0x280   0x990E             LDR      R1,[SP, #+56]
+   \      0x282   0xFBA1 0x0100      UMULL    R0,R1,R1,R0
+   \      0x286   0xF11C 0x0C04      ADDS     R12,R12,#+4
+   \      0x28A   0x4680             MOV      R8,R0
+   \      0x28C   0x000A             MOVS     R2,R1
+   \      0x28E   0xEB17 0x0808      ADDS     R8,R7,R8
+   \      0x292   0x45B8             CMP      R8,R7
+   \      0x294   0xD201             BCS.N    ??mbedtls_mpi_core_mla_36
+   \      0x296   0x1C52             ADDS     R2,R2,#+1
+   \      0x298   0xE7FF             B.N      ??mbedtls_mpi_core_mla_37
+   \                     ??mbedtls_mpi_core_mla_36: (+1)
+   \                     ??mbedtls_mpi_core_mla_37: (+1)
+   \      0x29A   0xF8DE 0x3000      LDR      R3,[LR, #+0]
+   \      0x29E   0xEB13 0x0808      ADDS     R8,R3,R8
+   \      0x2A2   0xF8DE 0x3000      LDR      R3,[LR, #+0]
+   \      0x2A6   0x4598             CMP      R8,R3
+   \      0x2A8   0xD201             BCS.N    ??mbedtls_mpi_core_mla_38
+   \      0x2AA   0x1C52             ADDS     R2,R2,#+1
+   \      0x2AC   0xE7FF             B.N      ??mbedtls_mpi_core_mla_39
+   \                     ??mbedtls_mpi_core_mla_38: (+1)
+   \                     ??mbedtls_mpi_core_mla_39: (+1)
+   \      0x2AE   0x0017             MOVS     R7,R2
+   \      0x2B0   0xF8CE 0x8000      STR      R8,[LR, #+0]
+   \      0x2B4   0xF11E 0x0E04      ADDS     LR,LR,#+4
+   \      0x2B8   0xE7DC             B.N      ??mbedtls_mpi_core_mla_2
+    499                      MULADDC_X1_STOP
+    500              }
+    501          
+    502              while (excess_len--) {
+   \                     ??mbedtls_mpi_core_mla_35: (+1)
+   \      0x2BA   0x0030             MOVS     R0,R6
+   \      0x2BC   0x1E46             SUBS     R6,R0,#+1
+   \      0x2BE   0x2800             CMP      R0,#+0
+   \      0x2C0   0xD00F             BEQ.N    ??mbedtls_mpi_core_mla_40
+    503                  *d += c;
+   \      0x2C2   0xF8DE 0x0000      LDR      R0,[LR, #+0]
+   \      0x2C6   0x1838             ADDS     R0,R7,R0
+   \      0x2C8   0xF8CE 0x0000      STR      R0,[LR, #+0]
+    504                  c = (*d < c);
+   \      0x2CC   0xF8DE 0x0000      LDR      R0,[LR, #+0]
+   \      0x2D0   0x42B8             CMP      R0,R7
+   \      0x2D2   0xD201             BCS.N    ??mbedtls_mpi_core_mla_41
+   \      0x2D4   0x2701             MOVS     R7,#+1
+   \      0x2D6   0xE000             B.N      ??mbedtls_mpi_core_mla_42
+   \                     ??mbedtls_mpi_core_mla_41: (+1)
+   \      0x2D8   0x2700             MOVS     R7,#+0
+   \                     ??mbedtls_mpi_core_mla_42: (+1)
+   \      0x2DA   0xB2FF             UXTB     R7,R7
+    505                  d++;
+   \      0x2DC   0xF11E 0x0E04      ADDS     LR,LR,#+4
+   \      0x2E0   0xE7EB             B.N      ??mbedtls_mpi_core_mla_35
+    506              }
+    507          
+    508              return c;
+   \                     ??mbedtls_mpi_core_mla_40: (+1)
+   \      0x2E2   0x0038             MOVS     R0,R7
+   \      0x2E4   0xB005             ADD      SP,SP,#+20
+   \      0x2E6   0xE8BD 0x8FF0      POP      {R4-R11,PC}
+    509          }
+    510          
+
+   \                                 In section .text, align 2, keep-with-next
+    511          void mbedtls_mpi_core_mul(mbedtls_mpi_uint *X,
+    512                                    const mbedtls_mpi_uint *A, size_t A_limbs,
+    513                                    const mbedtls_mpi_uint *B, size_t B_limbs)
+    514          {
+   \                     mbedtls_mpi_core_mul: (+1)
+   \        0x0   0xE92D 0x4FF8      PUSH     {R3-R11,LR}
+   \        0x4   0x0004             MOVS     R4,R0
+   \        0x6   0x000D             MOVS     R5,R1
+   \        0x8   0x0016             MOVS     R6,R2
+   \        0xA   0x001F             MOVS     R7,R3
+   \        0xC   0xF8DD 0x8028      LDR      R8,[SP, #+40]
+    515              memset(X, 0, (A_limbs + B_limbs) * ciL);
+   \       0x10   0xEB18 0x0006      ADDS     R0,R8,R6
+   \       0x14   0xEA5F 0x0B80      LSLS     R11,R0,#+2
+   \       0x18   0xF05F 0x0A00      MOVS     R10,#+0
+   \       0x1C   0x46A1             MOV      R9,R4
+   \       0x1E   0x4652             MOV      R2,R10
+   \       0x20   0x4659             MOV      R1,R11
+   \       0x22   0x4648             MOV      R0,R9
+   \       0x24   0x.... 0x....      BL       __aeabi_memset
+    516          
+    517              for (size_t i = 0; i < B_limbs; i++) {
+   \       0x28   0xF05F 0x0900      MOVS     R9,#+0
+   \                     ??mbedtls_mpi_core_mul_0: (+1)
+   \       0x2C   0x45C1             CMP      R9,R8
+   \       0x2E   0xD20C             BCS.N    ??mbedtls_mpi_core_mul_1
+    518                  (void) mbedtls_mpi_core_mla(X + i, A_limbs + 1, A, A_limbs, B[i]);
+   \       0x30   0xF857 0x0029      LDR      R0,[R7, R9, LSL #+2]
+   \       0x34   0x9000             STR      R0,[SP, #+0]
+   \       0x36   0x0033             MOVS     R3,R6
+   \       0x38   0x002A             MOVS     R2,R5
+   \       0x3A   0x1C71             ADDS     R1,R6,#+1
+   \       0x3C   0xEB04 0x0089      ADD      R0,R4,R9, LSL #+2
+   \       0x40   0x.... 0x....      BL       mbedtls_mpi_core_mla
+    519              }
+   \       0x44   0xF119 0x0901      ADDS     R9,R9,#+1
+   \       0x48   0xE7F0             B.N      ??mbedtls_mpi_core_mul_0
+    520          }
+   \                     ??mbedtls_mpi_core_mul_1: (+1)
+   \       0x4A   0xE8BD 0x8FF1      POP      {R0,R4-R11,PC}
+    521          
+    522          /*
+    523           * Fast Montgomery initialization (thanks to Tom St Denis).
+    524           */
+
+   \                                 In section .text, align 2, keep-with-next
+    525          mbedtls_mpi_uint mbedtls_mpi_core_montmul_init(const mbedtls_mpi_uint *N)
+    526          {
+   \                     mbedtls_mpi_core_montmul_init: (+1)
+   \        0x0   0x0001             MOVS     R1,R0
+    527              mbedtls_mpi_uint x = N[0];
+   \        0x2   0x6808             LDR      R0,[R1, #+0]
+    528          
+    529              x += ((N[0] + 2) & 4) << 1;
+   \        0x4   0x680A             LDR      R2,[R1, #+0]
+   \        0x6   0x1C92             ADDS     R2,R2,#+2
+   \        0x8   0x0052             LSLS     R2,R2,#+1
+   \        0xA   0xF012 0x0208      ANDS     R2,R2,#0x8
+   \        0xE   0x1810             ADDS     R0,R2,R0
+    530          
+    531              for (unsigned int i = biL; i >= 8; i /= 2) {
+   \       0x10   0x2320             MOVS     R3,#+32
+   \                     ??mbedtls_mpi_core_montmul_init_0: (+1)
+   \       0x12   0x2B08             CMP      R3,#+8
+   \       0x14   0xD306             BCC.N    ??mbedtls_mpi_core_montmul_init_1
+    532                  x *= (2 - (N[0] * x));
+   \       0x16   0x680A             LDR      R2,[R1, #+0]
+   \       0x18   0x4342             MULS     R2,R0,R2
+   \       0x1A   0xF1D2 0x0202      RSBS     R2,R2,#+2
+   \       0x1E   0x4350             MULS     R0,R2,R0
+    533              }
+   \       0x20   0x085B             LSRS     R3,R3,#+1
+   \       0x22   0xE7F6             B.N      ??mbedtls_mpi_core_montmul_init_0
+    534          
+    535              return ~x + 1;
+   \                     ??mbedtls_mpi_core_montmul_init_1: (+1)
+   \       0x24   0x43C0             MVNS     R0,R0
+   \       0x26   0x1C40             ADDS     R0,R0,#+1
+   \       0x28   0x4770             BX       LR
+    536          }
+    537          
+
+   \                                 In section .text, align 2, keep-with-next
+    538          void mbedtls_mpi_core_montmul(mbedtls_mpi_uint *X,
+    539                                        const mbedtls_mpi_uint *A,
+    540                                        const mbedtls_mpi_uint *B,
+    541                                        size_t B_limbs,
+    542                                        const mbedtls_mpi_uint *N,
+    543                                        size_t AN_limbs,
+    544                                        mbedtls_mpi_uint mm,
+    545                                        mbedtls_mpi_uint *T)
+    546          {
+   \                     mbedtls_mpi_core_montmul: (+1)
+   \        0x0   0xE92D 0x4FF3      PUSH     {R0,R1,R4-R11,LR}
+   \        0x4   0xB083             SUB      SP,SP,#+12
+   \        0x6   0x4693             MOV      R11,R2
+   \        0x8   0x001C             MOVS     R4,R3
+   \        0xA   0x9D0E             LDR      R5,[SP, #+56]
+   \        0xC   0x9E0F             LDR      R6,[SP, #+60]
+   \        0xE   0x9F10             LDR      R7,[SP, #+64]
+   \       0x10   0xF8DD 0x8044      LDR      R8,[SP, #+68]
+    547              memset(T, 0, (2 * AN_limbs + 1) * ciL);
+   \       0x14   0x0070             LSLS     R0,R6,#+1
+   \       0x16   0x1C40             ADDS     R0,R0,#+1
+   \       0x18   0x0080             LSLS     R0,R0,#+2
+   \       0x1A   0x9000             STR      R0,[SP, #+0]
+   \       0x1C   0xF05F 0x0A00      MOVS     R10,#+0
+   \       0x20   0x46C1             MOV      R9,R8
+   \       0x22   0x4652             MOV      R2,R10
+   \       0x24   0x9900             LDR      R1,[SP, #+0]
+   \       0x26   0x4648             MOV      R0,R9
+   \       0x28   0x.... 0x....      BL       __aeabi_memset
+    548          
+    549              for (size_t i = 0; i < AN_limbs; i++) {
+   \       0x2C   0xF05F 0x0900      MOVS     R9,#+0
+   \                     ??mbedtls_mpi_core_montmul_0: (+1)
+   \       0x30   0x45B1             CMP      R9,R6
+   \       0x32   0xD221             BCS.N    ??mbedtls_mpi_core_montmul_1
+    550                  /* T = (T + u0*B + u1*N) / 2^biL */
+    551                  mbedtls_mpi_uint u0 = A[i];
+   \       0x34   0x9804             LDR      R0,[SP, #+16]
+   \       0x36   0xF850 0x0029      LDR      R0,[R0, R9, LSL #+2]
+   \       0x3A   0x9001             STR      R0,[SP, #+4]
+    552                  mbedtls_mpi_uint u1 = (T[0] + u0 * B[0]) * mm;
+   \       0x3C   0xF8D8 0xA000      LDR      R10,[R8, #+0]
+   \       0x40   0x9901             LDR      R1,[SP, #+4]
+   \       0x42   0xF8DB 0x0000      LDR      R0,[R11, #+0]
+   \       0x46   0xFB00 0xAA01      MLA      R10,R0,R1,R10
+   \       0x4A   0xFB07 0xFA0A      MUL      R10,R7,R10
+    553          
+    554                  (void) mbedtls_mpi_core_mla(T, AN_limbs + 2, B, B_limbs, u0);
+   \       0x4E   0x9801             LDR      R0,[SP, #+4]
+   \       0x50   0x9000             STR      R0,[SP, #+0]
+   \       0x52   0x0023             MOVS     R3,R4
+   \       0x54   0x465A             MOV      R2,R11
+   \       0x56   0x1CB1             ADDS     R1,R6,#+2
+   \       0x58   0x4640             MOV      R0,R8
+   \       0x5A   0x.... 0x....      BL       mbedtls_mpi_core_mla
+    555                  (void) mbedtls_mpi_core_mla(T, AN_limbs + 2, N, AN_limbs, u1);
+   \       0x5E   0xF8CD 0xA000      STR      R10,[SP, #+0]
+   \       0x62   0x0033             MOVS     R3,R6
+   \       0x64   0x002A             MOVS     R2,R5
+   \       0x66   0x1CB1             ADDS     R1,R6,#+2
+   \       0x68   0x4640             MOV      R0,R8
+   \       0x6A   0x.... 0x....      BL       mbedtls_mpi_core_mla
+    556          
+    557                  T++;
+   \       0x6E   0xF118 0x0804      ADDS     R8,R8,#+4
+    558              }
+   \       0x72   0xF119 0x0901      ADDS     R9,R9,#+1
+   \       0x76   0xE7DB             B.N      ??mbedtls_mpi_core_montmul_0
+    559          
+    560              /*
+    561               * The result we want is (T >= N) ? T - N : T.
+    562               *
+    563               * For better constant-time properties in this function, we always do the
+    564               * subtraction, with the result in X.
+    565               *
+    566               * We also look to see if there was any carry in the final additions in the
+    567               * loop above.
+    568               */
+    569          
+    570              mbedtls_mpi_uint carry  = T[AN_limbs];
+   \                     ??mbedtls_mpi_core_montmul_1: (+1)
+   \       0x78   0xF858 0x9026      LDR      R9,[R8, R6, LSL #+2]
+    571              mbedtls_mpi_uint borrow = mbedtls_mpi_core_sub(X, T, N, AN_limbs);
+   \       0x7C   0x0033             MOVS     R3,R6
+   \       0x7E   0x002A             MOVS     R2,R5
+   \       0x80   0x4641             MOV      R1,R8
+   \       0x82   0x9803             LDR      R0,[SP, #+12]
+   \       0x84   0x.... 0x....      BL       mbedtls_mpi_core_sub
+   \       0x88   0x4682             MOV      R10,R0
+    572          
+    573              /*
+    574               * Using R as the Montgomery radix (auxiliary modulus) i.e. 2^(biL*AN_limbs):
+    575               *
+    576               * T can be in one of 3 ranges:
+    577               *
+    578               * 1) T < N      : (carry, borrow) = (0, 1): we want T
+    579               * 2) N <= T < R : (carry, borrow) = (0, 0): we want X
+    580               * 3) T >= R     : (carry, borrow) = (1, 1): we want X
+    581               *
+    582               * and (carry, borrow) = (1, 0) can't happen.
+    583               *
+    584               * So the correct return value is already in X if (carry ^ borrow) = 0,
+    585               * but is in (the lower AN_limbs limbs of) T if (carry ^ borrow) = 1.
+    586               */
+    587              mbedtls_ct_memcpy_if(mbedtls_ct_bool(carry ^ borrow),
+    588                                   (unsigned char *) X,
+    589                                   (unsigned char *) T,
+    590                                   NULL,
+    591                                   AN_limbs * sizeof(mbedtls_mpi_uint));
+   \       0x8A   0xEA9A 0x0009      EORS     R0,R10,R9
+   \       0x8E   0x.... 0x....      BL       mbedtls_ct_bool
+   \       0x92   0x00B1             LSLS     R1,R6,#+2
+   \       0x94   0x9100             STR      R1,[SP, #+0]
+   \       0x96   0x2300             MOVS     R3,#+0
+   \       0x98   0x4642             MOV      R2,R8
+   \       0x9A   0x9903             LDR      R1,[SP, #+12]
+   \       0x9C   0x.... 0x....      BL       mbedtls_ct_memcpy_if
+    592          }
+   \       0xA0   0xB005             ADD      SP,SP,#+20
+   \       0xA2   0xE8BD 0x8FF0      POP      {R4-R11,PC}
+    593          
+
+   \                                 In section .text, align 2, keep-with-next
+    594          int mbedtls_mpi_core_get_mont_r2_unsafe(mbedtls_mpi *X,
+    595                                                  const mbedtls_mpi *N)
+    596          {
+   \                     mbedtls_mpi_core_get_mont_r2_unsafe: (+1)
+   \        0x0   0xB5F8             PUSH     {R3-R7,LR}
+   \        0x2   0x0006             MOVS     R6,R0
+   \        0x4   0x000C             MOVS     R4,R1
+    597              int ret = MBEDTLS_ERR_ERROR_CORRUPTION_DETECTED;
+   \        0x6   0xF07F 0x076D      MVNS     R7,#+109
+    598          
+    599              MBEDTLS_MPI_CHK(mbedtls_mpi_lset(X, 1));
+   \        0xA   0x2101             MOVS     R1,#+1
+   \        0xC   0x0030             MOVS     R0,R6
+   \        0xE   0x.... 0x....      BL       mbedtls_mpi_lset
+   \       0x12   0x0005             MOVS     R5,R0
+   \       0x14   0x2800             CMP      R0,#+0
+   \       0x16   0xD117             BNE.N    ??mbedtls_mpi_core_get_mont_r2_unsafe_0
+    600              MBEDTLS_MPI_CHK(mbedtls_mpi_shift_l(X, N->n * 2 * biL));
+   \                     ??mbedtls_mpi_core_get_mont_r2_unsafe_1: (+1)
+   \       0x18   0x88E1             LDRH     R1,[R4, #+6]
+   \       0x1A   0x2040             MOVS     R0,#+64
+   \       0x1C   0x4341             MULS     R1,R0,R1
+   \       0x1E   0x0030             MOVS     R0,R6
+   \       0x20   0x.... 0x....      BL       mbedtls_mpi_shift_l
+   \       0x24   0x0005             MOVS     R5,R0
+   \       0x26   0x2800             CMP      R0,#+0
+   \       0x28   0xD10E             BNE.N    ??mbedtls_mpi_core_get_mont_r2_unsafe_0
+    601              MBEDTLS_MPI_CHK(mbedtls_mpi_mod_mpi(X, X, N));
+   \                     ??mbedtls_mpi_core_get_mont_r2_unsafe_2: (+1)
+   \       0x2A   0x0022             MOVS     R2,R4
+   \       0x2C   0x0031             MOVS     R1,R6
+   \       0x2E   0x0030             MOVS     R0,R6
+   \       0x30   0x.... 0x....      BL       mbedtls_mpi_mod_mpi
+   \       0x34   0x0005             MOVS     R5,R0
+   \       0x36   0x2800             CMP      R0,#+0
+   \       0x38   0xD106             BNE.N    ??mbedtls_mpi_core_get_mont_r2_unsafe_0
+    602              MBEDTLS_MPI_CHK(mbedtls_mpi_shrink(X, N->n));
+   \                     ??mbedtls_mpi_core_get_mont_r2_unsafe_3: (+1)
+   \       0x3A   0x88E1             LDRH     R1,[R4, #+6]
+   \       0x3C   0x0030             MOVS     R0,R6
+   \       0x3E   0x.... 0x....      BL       mbedtls_mpi_shrink
+   \       0x42   0x0005             MOVS     R5,R0
+   \       0x44   0x2800             CMP      R0,#+0
+   \       0x46   0xD1FF             BNE.N    ??mbedtls_mpi_core_get_mont_r2_unsafe_0
+    603          
+    604          cleanup:
+    605              return ret;
+   \                     ??mbedtls_mpi_core_get_mont_r2_unsafe_4: (+1)
+   \                     ??mbedtls_mpi_core_get_mont_r2_unsafe_0: (+1)
+   \       0x48   0x0028             MOVS     R0,R5
+   \       0x4A   0xBDF2             POP      {R1,R4-R7,PC}
+    606          }
+    607          
+
+   \                                 In section .text, align 2, keep-with-next
+    608          MBEDTLS_STATIC_TESTABLE
+    609          void mbedtls_mpi_core_ct_uint_table_lookup(mbedtls_mpi_uint *dest,
+    610                                                     const mbedtls_mpi_uint *table,
+    611                                                     size_t limbs,
+    612                                                     size_t count,
+    613                                                     size_t index)
+    614          {
+   \                     mbedtls_mpi_core_ct_uint_table_lookup: (+1)
+   \        0x0   0xE92D 0x47F0      PUSH     {R4-R10,LR}
+   \        0x4   0x4682             MOV      R10,R0
+   \        0x6   0x000C             MOVS     R4,R1
+   \        0x8   0x0015             MOVS     R5,R2
+   \        0xA   0x001E             MOVS     R6,R3
+   \        0xC   0x9F08             LDR      R7,[SP, #+32]
+    615              for (size_t i = 0; i < count; i++, table += limbs) {
+   \        0xE   0xF05F 0x0800      MOVS     R8,#+0
+   \                     ??mbedtls_mpi_core_ct_uint_table_lookup_0: (+1)
+   \       0x12   0x45B0             CMP      R8,R6
+   \       0x14   0xD20F             BCS.N    ??mbedtls_mpi_core_ct_uint_table_lookup_1
+    616                  mbedtls_ct_condition_t assign = mbedtls_ct_uint_eq(i, index);
+   \       0x16   0x0039             MOVS     R1,R7
+   \       0x18   0x4640             MOV      R0,R8
+   \       0x1A   0x.... 0x....      BL       mbedtls_ct_uint_eq
+   \       0x1E   0x4681             MOV      R9,R0
+    617                  mbedtls_mpi_core_cond_assign(dest, table, limbs, assign);
+   \       0x20   0x464B             MOV      R3,R9
+   \       0x22   0x002A             MOVS     R2,R5
+   \       0x24   0x0021             MOVS     R1,R4
+   \       0x26   0x4650             MOV      R0,R10
+   \       0x28   0x.... 0x....      BL       mbedtls_mpi_core_cond_assign
+    618              }
+   \       0x2C   0xF118 0x0801      ADDS     R8,R8,#+1
+   \       0x30   0xEB04 0x0485      ADD      R4,R4,R5, LSL #+2
+   \       0x34   0xE7ED             B.N      ??mbedtls_mpi_core_ct_uint_table_lookup_0
+    619          }
+   \                     ??mbedtls_mpi_core_ct_uint_table_lookup_1: (+1)
+   \       0x36   0xE8BD 0x87F0      POP      {R4-R10,PC}
+    620          
+    621          /* Fill X with n_bytes random bytes.
+    622           * X must already have room for those bytes.
+    623           * The ordering of the bytes returned from the RNG is suitable for
+    624           * deterministic ECDSA (see RFC 6979 §3.3 and the specification of
+    625           * mbedtls_mpi_core_random()).
+    626           */
+
+   \                                 In section .text, align 2, keep-with-next
+    627          int mbedtls_mpi_core_fill_random(
+    628              mbedtls_mpi_uint *X, size_t X_limbs,
+    629              size_t n_bytes,
+    630              int (*f_rng)(void *, unsigned char *, size_t), void *p_rng)
+    631          {
+   \                     mbedtls_mpi_core_fill_random: (+1)
+   \        0x0   0xE92D 0x4FF0      PUSH     {R4-R11,LR}
+   \        0x4   0xB085             SUB      SP,SP,#+20
+   \        0x6   0x4683             MOV      R11,R0
+   \        0x8   0x000C             MOVS     R4,R1
+   \        0xA   0x0015             MOVS     R5,R2
+   \        0xC   0x001E             MOVS     R6,R3
+   \        0xE   0x9F0E             LDR      R7,[SP, #+56]
+    632              int ret = MBEDTLS_ERR_ERROR_CORRUPTION_DETECTED;
+   \       0x10   0xF07F 0x006D      MVNS     R0,#+109
+   \       0x14   0x9004             STR      R0,[SP, #+16]
+    633              const size_t limbs = CHARS_TO_LIMBS(n_bytes);
+   \       0x16   0xF015 0x0F03      TST      R5,#0x3
+   \       0x1A   0xD001             BEQ.N    ??mbedtls_mpi_core_fill_random_0
+   \       0x1C   0x2101             MOVS     R1,#+1
+   \       0x1E   0xE000             B.N      ??mbedtls_mpi_core_fill_random_1
+   \                     ??mbedtls_mpi_core_fill_random_0: (+1)
+   \       0x20   0x2100             MOVS     R1,#+0
+   \                     ??mbedtls_mpi_core_fill_random_1: (+1)
+   \       0x22   0x0028             MOVS     R0,R5
+   \       0x24   0x0880             LSRS     R0,R0,#+2
+   \       0x26   0xFA50 0xF081      UXTAB    R0,R0,R1
+   \       0x2A   0x9000             STR      R0,[SP, #+0]
+    634              const size_t overhead = (limbs * ciL) - n_bytes;
+   \       0x2C   0x9800             LDR      R0,[SP, #+0]
+   \       0x2E   0xEBD5 0x0080      RSBS     R0,R5,R0, LSL #+2
+   \       0x32   0x9001             STR      R0,[SP, #+4]
+    635          
+    636              if (X_limbs < limbs) {
+   \       0x34   0x9800             LDR      R0,[SP, #+0]
+   \       0x36   0x4284             CMP      R4,R0
+   \       0x38   0xD202             BCS.N    ??mbedtls_mpi_core_fill_random_2
+    637                  return MBEDTLS_ERR_MPI_BAD_INPUT_DATA;
+   \       0x3A   0xF07F 0x0003      MVNS     R0,#+3
+   \       0x3E   0xE025             B.N      ??mbedtls_mpi_core_fill_random_3
+    638              }
+    639          
+    640              memset(X, 0, overhead);
+   \                     ??mbedtls_mpi_core_fill_random_2: (+1)
+   \       0x40   0x9801             LDR      R0,[SP, #+4]
+   \       0x42   0x9003             STR      R0,[SP, #+12]
+   \       0x44   0xF05F 0x0800      MOVS     R8,#+0
+   \       0x48   0x46D9             MOV      R9,R11
+   \       0x4A   0x4642             MOV      R2,R8
+   \       0x4C   0x9903             LDR      R1,[SP, #+12]
+   \       0x4E   0x4648             MOV      R0,R9
+   \       0x50   0x.... 0x....      BL       __aeabi_memset
+    641              memset((unsigned char *) X + limbs * ciL, 0, (X_limbs - limbs) * ciL);
+   \       0x54   0x9800             LDR      R0,[SP, #+0]
+   \       0x56   0x1A20             SUBS     R0,R4,R0
+   \       0x58   0x0080             LSLS     R0,R0,#+2
+   \       0x5A   0x9002             STR      R0,[SP, #+8]
+   \       0x5C   0xF05F 0x0900      MOVS     R9,#+0
+   \       0x60   0x9800             LDR      R0,[SP, #+0]
+   \       0x62   0xEB0B 0x0A80      ADD      R10,R11,R0, LSL #+2
+   \       0x66   0x464A             MOV      R2,R9
+   \       0x68   0x9902             LDR      R1,[SP, #+8]
+   \       0x6A   0x4650             MOV      R0,R10
+   \       0x6C   0x.... 0x....      BL       __aeabi_memset
+    642              MBEDTLS_MPI_CHK(f_rng(p_rng, (unsigned char *) X + overhead, n_bytes));
+   \       0x70   0x002A             MOVS     R2,R5
+   \       0x72   0x9801             LDR      R0,[SP, #+4]
+   \       0x74   0xEB0B 0x0100      ADD      R1,R11,R0
+   \       0x78   0x0038             MOVS     R0,R7
+   \       0x7A   0x47B0             BLX      R6
+   \       0x7C   0x4682             MOV      R10,R0
+   \       0x7E   0x2800             CMP      R0,#+0
+   \       0x80   0xD103             BNE.N    ??mbedtls_mpi_core_fill_random_4
+    643              mbedtls_mpi_core_bigendian_to_host(X, limbs);
+   \                     ??mbedtls_mpi_core_fill_random_5: (+1)
+   \       0x82   0x9900             LDR      R1,[SP, #+0]
+   \       0x84   0x4658             MOV      R0,R11
+   \       0x86   0x.... 0x....      BL       mbedtls_mpi_core_bigendian_to_host
+    644          
+    645          cleanup:
+    646              return ret;
+   \                     ??mbedtls_mpi_core_fill_random_4: (+1)
+   \       0x8A   0x4650             MOV      R0,R10
+   \                     ??mbedtls_mpi_core_fill_random_3: (+1)
+   \       0x8C   0xB005             ADD      SP,SP,#+20
+   \       0x8E   0xE8BD 0x8FF0      POP      {R4-R11,PC}
+    647          }
+    648          
+
+   \                                 In section .text, align 2, keep-with-next
+    649          int mbedtls_mpi_core_random(mbedtls_mpi_uint *X,
+    650                                      mbedtls_mpi_uint min,
+    651                                      const mbedtls_mpi_uint *N,
+    652                                      size_t limbs,
+    653                                      int (*f_rng)(void *, unsigned char *, size_t),
+    654                                      void *p_rng)
+    655          {
+   \                     mbedtls_mpi_core_random: (+1)
+   \        0x0   0xE92D 0x4FF7      PUSH     {R0-R2,R4-R11,LR}
+   \        0x4   0x4683             MOV      R11,R0
+   \        0x6   0x001D             MOVS     R5,R3
+    656              mbedtls_ct_condition_t ge_lower = MBEDTLS_CT_TRUE, lt_upper = MBEDTLS_CT_FALSE;
+   \        0x8   0xF05F 0x30FF      MOVS     R0,#+4294967295
+   \        0xC   0x.... 0x....      BL       mbedtls_ct_compiler_opaque
+   \       0x10   0x0006             MOVS     R6,R0
+   \       0x12   0x2000             MOVS     R0,#+0
+   \       0x14   0x.... 0x....      BL       mbedtls_ct_compiler_opaque
+   \       0x18   0x0007             MOVS     R7,R0
+    657              size_t n_bits = mbedtls_mpi_core_bitlen(N, limbs);
+   \       0x1A   0x0029             MOVS     R1,R5
+   \       0x1C   0x9802             LDR      R0,[SP, #+8]
+   \       0x1E   0x.... 0x....      BL       mbedtls_mpi_core_bitlen
+   \       0x22   0x4680             MOV      R8,R0
+    658              size_t n_bytes = (n_bits + 7) / 8;
+   \       0x24   0xF118 0x0907      ADDS     R9,R8,#+7
+   \       0x28   0xEA5F 0x09D9      LSRS     R9,R9,#+3
+    659              int ret = MBEDTLS_ERR_ERROR_CORRUPTION_DETECTED;
+   \       0x2C   0xF07F 0x0A6D      MVNS     R10,#+109
+    660          
+    661              /*
+    662               * When min == 0, each try has at worst a probability 1/2 of failing
+    663               * (the msb has a probability 1/2 of being 0, and then the result will
+    664               * be < N), so after 30 tries failure probability is a most 2**(-30).
+    665               *
+    666               * When N is just below a power of 2, as is the case when generating
+    667               * a random scalar on most elliptic curves, 1 try is enough with
+    668               * overwhelming probability. When N is just above a power of 2,
+    669               * as when generating a random scalar on secp224k1, each try has
+    670               * a probability of failing that is almost 1/2.
+    671               *
+    672               * The probabilities are almost the same if min is nonzero but negligible
+    673               * compared to N. This is always the case when N is crypto-sized, but
+    674               * it's convenient to support small N for testing purposes. When N
+    675               * is small, use a higher repeat count, otherwise the probability of
+    676               * failure is macroscopic.
+    677               */
+    678              int count = (n_bytes > 4 ? 30 : 250);
+   \       0x30   0xF1B9 0x0F05      CMP      R9,#+5
+   \       0x34   0xD301             BCC.N    ??mbedtls_mpi_core_random_0
+   \       0x36   0x241E             MOVS     R4,#+30
+   \       0x38   0xE000             B.N      ??mbedtls_mpi_core_random_1
+   \                     ??mbedtls_mpi_core_random_0: (+1)
+   \       0x3A   0x24FA             MOVS     R4,#+250
+    679          
+    680              /*
+    681               * Match the procedure given in RFC 6979 §3.3 (deterministic ECDSA)
+    682               * when f_rng is a suitably parametrized instance of HMAC_DRBG:
+    683               * - use the same byte ordering;
+    684               * - keep the leftmost n_bits bits of the generated octet string;
+    685               * - try until result is in the desired range.
+    686               * This also avoids any bias, which is especially important for ECDSA.
+    687               */
+    688              do {
+    689                  MBEDTLS_MPI_CHK(mbedtls_mpi_core_fill_random(X, limbs,
+    690                                                               n_bytes,
+    691                                                               f_rng, p_rng));
+   \                     ??mbedtls_mpi_core_random_1: (+1)
+   \       0x3C   0x980D             LDR      R0,[SP, #+52]
+   \       0x3E   0x9000             STR      R0,[SP, #+0]
+   \       0x40   0x9B0C             LDR      R3,[SP, #+48]
+   \       0x42   0x464A             MOV      R2,R9
+   \       0x44   0x0029             MOVS     R1,R5
+   \       0x46   0x4658             MOV      R0,R11
+   \       0x48   0x.... 0x....      BL       mbedtls_mpi_core_fill_random
+   \       0x4C   0x4682             MOV      R10,R0
+   \       0x4E   0x2800             CMP      R0,#+0
+   \       0x50   0xD123             BNE.N    ??mbedtls_mpi_core_random_2
+    692                  mbedtls_mpi_core_shift_r(X, limbs, 8 * n_bytes - n_bits);
+   \                     ??mbedtls_mpi_core_random_3: (+1)
+   \       0x52   0xEBD8 0x02C9      RSBS     R2,R8,R9, LSL #+3
+   \       0x56   0x0029             MOVS     R1,R5
+   \       0x58   0x4658             MOV      R0,R11
+   \       0x5A   0x.... 0x....      BL       mbedtls_mpi_core_shift_r
+    693          
+    694                  if (--count == 0) {
+   \       0x5E   0x1E64             SUBS     R4,R4,#+1
+   \       0x60   0x2C00             CMP      R4,#+0
+   \       0x62   0xD103             BNE.N    ??mbedtls_mpi_core_random_4
+    695                      ret = MBEDTLS_ERR_MPI_NOT_ACCEPTABLE;
+   \       0x64   0xF07F 0x000D      MVNS     R0,#+13
+   \       0x68   0x4682             MOV      R10,R0
+    696                      goto cleanup;
+   \       0x6A   0xE016             B.N      ??mbedtls_mpi_core_random_2
+    697                  }
+    698          
+    699                  ge_lower = mbedtls_mpi_core_uint_le_mpi(min, X, limbs);
+   \                     ??mbedtls_mpi_core_random_4: (+1)
+   \       0x6C   0x002A             MOVS     R2,R5
+   \       0x6E   0x4659             MOV      R1,R11
+   \       0x70   0x9801             LDR      R0,[SP, #+4]
+   \       0x72   0x.... 0x....      BL       mbedtls_mpi_core_uint_le_mpi
+   \       0x76   0x0006             MOVS     R6,R0
+    700                  lt_upper = mbedtls_mpi_core_lt_ct(X, N, limbs);
+   \       0x78   0x002A             MOVS     R2,R5
+   \       0x7A   0x9902             LDR      R1,[SP, #+8]
+   \       0x7C   0x4658             MOV      R0,R11
+   \       0x7E   0x.... 0x....      BL       mbedtls_mpi_core_lt_ct
+   \       0x82   0x0007             MOVS     R7,R0
+    701              } while (mbedtls_ct_bool_and(ge_lower, lt_upper) == MBEDTLS_CT_FALSE);
+   \       0x84   0x0039             MOVS     R1,R7
+   \       0x86   0x0030             MOVS     R0,R6
+   \       0x88   0x.... 0x....      BL       mbedtls_ct_bool_and
+   \       0x8C   0x9000             STR      R0,[SP, #+0]
+   \       0x8E   0x2000             MOVS     R0,#+0
+   \       0x90   0x.... 0x....      BL       mbedtls_ct_compiler_opaque
+   \       0x94   0x9900             LDR      R1,[SP, #+0]
+   \       0x96   0x4281             CMP      R1,R0
+   \       0x98   0xD0D0             BEQ.N    ??mbedtls_mpi_core_random_1
+    702          
+    703          cleanup:
+    704              return ret;
+   \                     ??mbedtls_mpi_core_random_2: (+1)
+   \       0x9A   0x4650             MOV      R0,R10
+   \       0x9C   0xE8BD 0x8FFE      POP      {R1-R11,PC}
+    705          }
+    706          
+
+   \                                 In section .text, align 2, keep-with-next
+    707          static size_t exp_mod_get_window_size(size_t Ebits)
+    708          {
+    709          #if MBEDTLS_MPI_WINDOW_SIZE >= 6
+    710              return (Ebits > 671) ? 6 : (Ebits > 239) ? 5 : (Ebits >  79) ? 4 : 1;
+    711          #elif MBEDTLS_MPI_WINDOW_SIZE == 5
+    712              return (Ebits > 239) ? 5 : (Ebits >  79) ? 4 : 1;
+    713          #elif MBEDTLS_MPI_WINDOW_SIZE > 1
+    714              return (Ebits >  79) ? MBEDTLS_MPI_WINDOW_SIZE : 1;
+   \                     exp_mod_get_window_size: (+1)
+   \        0x0   0x2850             CMP      R0,#+80
+   \        0x2   0xD301             BCC.N    ??exp_mod_get_window_size_0
+   \        0x4   0x2002             MOVS     R0,#+2
+   \        0x6   0xE000             B.N      ??exp_mod_get_window_size_1
+   \                     ??exp_mod_get_window_size_0: (+1)
+   \        0x8   0x2001             MOVS     R0,#+1
+   \                     ??exp_mod_get_window_size_1: (+1)
+   \        0xA   0x4770             BX       LR
+    715          #else
+    716              (void) Ebits;
+    717              return 1;
+    718          #endif
+    719          }
+    720          
+
+   \                                 In section .text, align 2, keep-with-next
+    721          size_t mbedtls_mpi_core_exp_mod_working_limbs(size_t AN_limbs, size_t E_limbs)
+    722          {
+   \                     mbedtls_mpi_core_exp_mod_working_limbs: (+1)
+   \        0x0   0xB570             PUSH     {R4-R6,LR}
+   \        0x2   0x0004             MOVS     R4,R0
+   \        0x4   0x000D             MOVS     R5,R1
+    723              const size_t wsize = exp_mod_get_window_size(E_limbs * biL);
+   \        0x6   0x0168             LSLS     R0,R5,#+5
+   \        0x8   0x.... 0x....      BL       exp_mod_get_window_size
+   \        0xC   0x0006             MOVS     R6,R0
+    724              const size_t welem = ((size_t) 1) << wsize;
+   \        0xE   0x2101             MOVS     R1,#+1
+   \       0x10   0x40B1             LSLS     R1,R1,R6
+    725          
+    726              /* How big does each part of the working memory pool need to be? */
+    727              const size_t table_limbs   = welem * AN_limbs;
+   \       0x12   0xFB04 0xF001      MUL      R0,R4,R1
+    728              const size_t select_limbs  = AN_limbs;
+   \       0x16   0x0022             MOVS     R2,R4
+    729              const size_t temp_limbs    = 2 * AN_limbs + 1;
+   \       0x18   0x0063             LSLS     R3,R4,#+1
+   \       0x1A   0x1C5B             ADDS     R3,R3,#+1
+    730          
+    731              return table_limbs + select_limbs + temp_limbs;
+   \       0x1C   0x1810             ADDS     R0,R2,R0
+   \       0x1E   0x1818             ADDS     R0,R3,R0
+   \       0x20   0xBD70             POP      {R4-R6,PC}
+    732          }
+    733          
+
+   \                                 In section .text, align 2, keep-with-next
+    734          static void exp_mod_precompute_window(const mbedtls_mpi_uint *A,
+    735                                                const mbedtls_mpi_uint *N,
+    736                                                size_t AN_limbs,
+    737                                                mbedtls_mpi_uint mm,
+    738                                                const mbedtls_mpi_uint *RR,
+    739                                                size_t welem,
+    740                                                mbedtls_mpi_uint *Wtable,
+    741                                                mbedtls_mpi_uint *temp)
+    742          {
+   \                     exp_mod_precompute_window: (+1)
+   \        0x0   0xE92D 0x4FF1      PUSH     {R0,R4-R11,LR}
+   \        0x4   0xB088             SUB      SP,SP,#+32
+   \        0x6   0x468B             MOV      R11,R1
+   \        0x8   0x0014             MOVS     R4,R2
+   \        0xA   0x001D             MOVS     R5,R3
+   \        0xC   0x9E13             LDR      R6,[SP, #+76]
+   \        0xE   0x9F14             LDR      R7,[SP, #+80]
+   \       0x10   0xF8DD 0x8054      LDR      R8,[SP, #+84]
+    743              /* W[0] = 1 (in Montgomery presentation) */
+    744              memset(Wtable, 0, AN_limbs * ciL);
+   \       0x14   0x00A0             LSLS     R0,R4,#+2
+   \       0x16   0x9006             STR      R0,[SP, #+24]
+   \       0x18   0xF05F 0x0A00      MOVS     R10,#+0
+   \       0x1C   0x46B9             MOV      R9,R7
+   \       0x1E   0x4652             MOV      R2,R10
+   \       0x20   0x9906             LDR      R1,[SP, #+24]
+   \       0x22   0x4648             MOV      R0,R9
+   \       0x24   0x.... 0x....      BL       __aeabi_memset
+    745              Wtable[0] = 1;
+   \       0x28   0x2001             MOVS     R0,#+1
+   \       0x2A   0x6038             STR      R0,[R7, #+0]
+    746              mbedtls_mpi_core_montmul(Wtable, Wtable, RR, AN_limbs, N, AN_limbs, mm, temp);
+   \       0x2C   0xF8CD 0x800C      STR      R8,[SP, #+12]
+   \       0x30   0x9502             STR      R5,[SP, #+8]
+   \       0x32   0x9401             STR      R4,[SP, #+4]
+   \       0x34   0xF8CD 0xB000      STR      R11,[SP, #+0]
+   \       0x38   0x0023             MOVS     R3,R4
+   \       0x3A   0x9A12             LDR      R2,[SP, #+72]
+   \       0x3C   0x0039             MOVS     R1,R7
+   \       0x3E   0x0038             MOVS     R0,R7
+   \       0x40   0x.... 0x....      BL       mbedtls_mpi_core_montmul
+    747          
+    748              /* W[1] = A (already in Montgomery presentation) */
+    749              mbedtls_mpi_uint *W1 = Wtable + AN_limbs;
+   \       0x44   0xEB07 0x0084      ADD      R0,R7,R4, LSL #+2
+   \       0x48   0x9005             STR      R0,[SP, #+20]
+    750              memcpy(W1, A, AN_limbs * ciL);
+   \       0x4A   0x00A0             LSLS     R0,R4,#+2
+   \       0x4C   0x9001             STR      R0,[SP, #+4]
+   \       0x4E   0x9808             LDR      R0,[SP, #+32]
+   \       0x50   0x9000             STR      R0,[SP, #+0]
+   \       0x52   0xF8DD 0x9014      LDR      R9,[SP, #+20]
+   \       0x56   0x9A01             LDR      R2,[SP, #+4]
+   \       0x58   0x9900             LDR      R1,[SP, #+0]
+   \       0x5A   0x4648             MOV      R0,R9
+   \       0x5C   0x.... 0x....      BL       __aeabi_memcpy
+    751          
+    752              /* W[i+1] = W[i] * W[1], i >= 2 */
+    753              mbedtls_mpi_uint *Wprev = W1;
+   \       0x60   0x9805             LDR      R0,[SP, #+20]
+   \       0x62   0x9004             STR      R0,[SP, #+16]
+    754              for (size_t i = 2; i < welem; i++) {
+   \       0x64   0xF05F 0x0902      MOVS     R9,#+2
+   \                     ??exp_mod_precompute_window_0: (+1)
+   \       0x68   0x45B1             CMP      R9,R6
+   \       0x6A   0xD213             BCS.N    ??exp_mod_precompute_window_1
+    755                  mbedtls_mpi_uint *Wcur = Wprev + AN_limbs;
+   \       0x6C   0x9804             LDR      R0,[SP, #+16]
+   \       0x6E   0xEB00 0x0A84      ADD      R10,R0,R4, LSL #+2
+    756                  mbedtls_mpi_core_montmul(Wcur, Wprev, W1, AN_limbs, N, AN_limbs, mm, temp);
+   \       0x72   0xF8CD 0x800C      STR      R8,[SP, #+12]
+   \       0x76   0x9502             STR      R5,[SP, #+8]
+   \       0x78   0x9401             STR      R4,[SP, #+4]
+   \       0x7A   0xF8CD 0xB000      STR      R11,[SP, #+0]
+   \       0x7E   0x0023             MOVS     R3,R4
+   \       0x80   0x9A05             LDR      R2,[SP, #+20]
+   \       0x82   0x9904             LDR      R1,[SP, #+16]
+   \       0x84   0x4650             MOV      R0,R10
+   \       0x86   0x.... 0x....      BL       mbedtls_mpi_core_montmul
+    757                  Wprev = Wcur;
+   \       0x8A   0xF8CD 0xA010      STR      R10,[SP, #+16]
+    758              }
+   \       0x8E   0xF119 0x0901      ADDS     R9,R9,#+1
+   \       0x92   0xE7E9             B.N      ??exp_mod_precompute_window_0
+    759          }
+   \                     ??exp_mod_precompute_window_1: (+1)
+   \       0x94   0xB009             ADD      SP,SP,#+36
+   \       0x96   0xE8BD 0x8FF0      POP      {R4-R11,PC}
+    760          
+    761          /* Exponentiation: X := A^E mod N.
+    762           *
+    763           * A must already be in Montgomery form.
+    764           *
+    765           * As in other bignum functions, assume that AN_limbs and E_limbs are nonzero.
+    766           *
+    767           * RR must contain 2^{2*biL} mod N.
+    768           *
+    769           * The algorithm is a variant of Left-to-right k-ary exponentiation: HAC 14.82
+    770           * (The difference is that the body in our loop processes a single bit instead
+    771           * of a full window.)
+    772           */
+
+   \                                 In section .text, align 2, keep-with-next
+    773          void mbedtls_mpi_core_exp_mod(mbedtls_mpi_uint *X,
+    774                                        const mbedtls_mpi_uint *A,
+    775                                        const mbedtls_mpi_uint *N,
+    776                                        size_t AN_limbs,
+    777                                        const mbedtls_mpi_uint *E,
+    778                                        size_t E_limbs,
+    779                                        const mbedtls_mpi_uint *RR,
+    780                                        mbedtls_mpi_uint *T)
+    781          {
+   \                     mbedtls_mpi_core_exp_mod: (+1)
+   \        0x0   0xE92D 0x4FF3      PUSH     {R0,R1,R4-R11,LR}
+   \        0x4   0xB08B             SUB      SP,SP,#+44
+   \        0x6   0x4683             MOV      R11,R0
+   \        0x8   0x0015             MOVS     R5,R2
+   \        0xA   0x001E             MOVS     R6,R3
+    782              const size_t wsize = exp_mod_get_window_size(E_limbs * biL);
+   \        0xC   0x9817             LDR      R0,[SP, #+92]
+   \        0xE   0x0140             LSLS     R0,R0,#+5
+   \       0x10   0x.... 0x....      BL       exp_mod_get_window_size
+   \       0x14   0x9008             STR      R0,[SP, #+32]
+    783              const size_t welem = ((size_t) 1) << wsize;
+   \       0x16   0x2101             MOVS     R1,#+1
+   \       0x18   0x9808             LDR      R0,[SP, #+32]
+   \       0x1A   0x4081             LSLS     R1,R1,R0
+   \       0x1C   0x9107             STR      R1,[SP, #+28]
+    784          
+    785              /* This is how we will use the temporary storage T, which must have space
+    786               * for table_limbs, select_limbs and (2 * AN_limbs + 1) for montmul. */
+    787              const size_t table_limbs  = welem * AN_limbs;
+   \       0x1E   0x9807             LDR      R0,[SP, #+28]
+   \       0x20   0x4370             MULS     R0,R6,R0
+   \       0x22   0x900A             STR      R0,[SP, #+40]
+    788              const size_t select_limbs = AN_limbs;
+   \       0x24   0x9609             STR      R6,[SP, #+36]
+    789          
+    790              /* Pointers to specific parts of the temporary working memory pool */
+    791              mbedtls_mpi_uint *const Wtable  = T;
+   \       0x26   0x9819             LDR      R0,[SP, #+100]
+   \       0x28   0x9004             STR      R0,[SP, #+16]
+    792              mbedtls_mpi_uint *const Wselect = Wtable  +  table_limbs;
+   \       0x2A   0x9904             LDR      R1,[SP, #+16]
+   \       0x2C   0x980A             LDR      R0,[SP, #+40]
+   \       0x2E   0xEB01 0x0080      ADD      R0,R1,R0, LSL #+2
+   \       0x32   0x9006             STR      R0,[SP, #+24]
+    793              mbedtls_mpi_uint *const temp    = Wselect + select_limbs;
+   \       0x34   0x9806             LDR      R0,[SP, #+24]
+   \       0x36   0x9909             LDR      R1,[SP, #+36]
+   \       0x38   0xEB00 0x0081      ADD      R0,R0,R1, LSL #+2
+   \       0x3C   0x9005             STR      R0,[SP, #+20]
+    794          
+    795              /*
+    796               * Window precomputation
+    797               */
+    798          
+    799              const mbedtls_mpi_uint mm = mbedtls_mpi_core_montmul_init(N);
+   \       0x3E   0x0028             MOVS     R0,R5
+   \       0x40   0x.... 0x....      BL       mbedtls_mpi_core_montmul_init
+   \       0x44   0x0007             MOVS     R7,R0
+    800          
+    801              /* Set Wtable[i] = A^(2^i) (in Montgomery representation) */
+    802              exp_mod_precompute_window(A, N, AN_limbs,
+    803                                        mm, RR,
+    804                                        welem, Wtable, temp);
+   \       0x46   0x9805             LDR      R0,[SP, #+20]
+   \       0x48   0x9003             STR      R0,[SP, #+12]
+   \       0x4A   0x9804             LDR      R0,[SP, #+16]
+   \       0x4C   0x9002             STR      R0,[SP, #+8]
+   \       0x4E   0x9807             LDR      R0,[SP, #+28]
+   \       0x50   0x9001             STR      R0,[SP, #+4]
+   \       0x52   0x9818             LDR      R0,[SP, #+96]
+   \       0x54   0x9000             STR      R0,[SP, #+0]
+   \       0x56   0x003B             MOVS     R3,R7
+   \       0x58   0x0032             MOVS     R2,R6
+   \       0x5A   0x0029             MOVS     R1,R5
+   \       0x5C   0x980C             LDR      R0,[SP, #+48]
+   \       0x5E   0x.... 0x....      BL       exp_mod_precompute_window
+    805          
+    806              /*
+    807               * Fixed window exponentiation
+    808               */
+    809          
+    810              /* X = 1 (in Montgomery presentation) initially */
+    811              memcpy(X, Wtable, AN_limbs * ciL);
+   \       0x62   0x00B0             LSLS     R0,R6,#+2
+   \       0x64   0x9001             STR      R0,[SP, #+4]
+   \       0x66   0x9804             LDR      R0,[SP, #+16]
+   \       0x68   0x9000             STR      R0,[SP, #+0]
+   \       0x6A   0x465C             MOV      R4,R11
+   \       0x6C   0x9A01             LDR      R2,[SP, #+4]
+   \       0x6E   0x9900             LDR      R1,[SP, #+0]
+   \       0x70   0x0020             MOVS     R0,R4
+   \       0x72   0x.... 0x....      BL       __aeabi_memcpy
+    812          
+    813              /* We'll process the bits of E from most significant
+    814               * (limb_index=E_limbs-1, E_bit_index=biL-1) to least significant
+    815               * (limb_index=0, E_bit_index=0). */
+    816              size_t E_limb_index = E_limbs;
+   \       0x76   0xF8DD 0x805C      LDR      R8,[SP, #+92]
+    817              size_t E_bit_index = 0;
+   \       0x7A   0x2400             MOVS     R4,#+0
+    818              /* At any given time, window contains window_bits bits from E.
+    819               * window_bits can go up to wsize. */
+    820              size_t window_bits = 0;
+   \       0x7C   0xF05F 0x0900      MOVS     R9,#+0
+    821              mbedtls_mpi_uint window = 0;
+   \       0x80   0xF05F 0x0A00      MOVS     R10,#+0
+    822          
+    823              do {
+    824                  /* Square */
+    825                  mbedtls_mpi_core_montmul(X, X, X, AN_limbs, N, AN_limbs, mm, temp);
+   \                     ??mbedtls_mpi_core_exp_mod_0: (+1)
+   \       0x84   0x9805             LDR      R0,[SP, #+20]
+   \       0x86   0x9003             STR      R0,[SP, #+12]
+   \       0x88   0x9702             STR      R7,[SP, #+8]
+   \       0x8A   0x9601             STR      R6,[SP, #+4]
+   \       0x8C   0x9500             STR      R5,[SP, #+0]
+   \       0x8E   0x0033             MOVS     R3,R6
+   \       0x90   0x465A             MOV      R2,R11
+   \       0x92   0x4659             MOV      R1,R11
+   \       0x94   0x4658             MOV      R0,R11
+   \       0x96   0x.... 0x....      BL       mbedtls_mpi_core_montmul
+    826          
+    827                  /* Move to the next bit of the exponent */
+    828                  if (E_bit_index == 0) {
+   \       0x9A   0x2C00             CMP      R4,#+0
+   \       0x9C   0xD104             BNE.N    ??mbedtls_mpi_core_exp_mod_1
+    829                      --E_limb_index;
+   \       0x9E   0xF1B8 0x0801      SUBS     R8,R8,#+1
+    830                      E_bit_index = biL - 1;
+   \       0xA2   0x201F             MOVS     R0,#+31
+   \       0xA4   0x0004             MOVS     R4,R0
+   \       0xA6   0xE000             B.N      ??mbedtls_mpi_core_exp_mod_2
+    831                  } else {
+    832                      --E_bit_index;
+   \                     ??mbedtls_mpi_core_exp_mod_1: (+1)
+   \       0xA8   0x1E64             SUBS     R4,R4,#+1
+    833                  }
+    834                  /* Insert next exponent bit into window */
+    835                  ++window_bits;
+   \                     ??mbedtls_mpi_core_exp_mod_2: (+1)
+   \       0xAA   0xF119 0x0901      ADDS     R9,R9,#+1
+    836                  window <<= 1;
+   \       0xAE   0xEA5F 0x0A4A      LSLS     R10,R10,#+1
+    837                  window |= (E[E_limb_index] >> E_bit_index) & 1;
+   \       0xB2   0x9816             LDR      R0,[SP, #+88]
+   \       0xB4   0xF850 0x0028      LDR      R0,[R0, R8, LSL #+2]
+   \       0xB8   0x40E0             LSRS     R0,R0,R4
+   \       0xBA   0xF010 0x0001      ANDS     R0,R0,#0x1
+   \       0xBE   0xEA50 0x0A0A      ORRS     R10,R0,R10
+    838          
+    839                  /* Clear window if it's full. Also clear the window at the end,
+    840                   * when we've finished processing the exponent. */
+    841                  if (window_bits == wsize ||
+    842                      (E_bit_index == 0 && E_limb_index == 0)) {
+   \       0xC2   0x9808             LDR      R0,[SP, #+32]
+   \       0xC4   0x4581             CMP      R9,R0
+   \       0xC6   0xD003             BEQ.N    ??mbedtls_mpi_core_exp_mod_3
+   \       0xC8   0xEA58 0x0004      ORRS     R0,R8,R4
+   \       0xCC   0x2800             CMP      R0,#+0
+   \       0xCE   0xD116             BNE.N    ??mbedtls_mpi_core_exp_mod_4
+    843                      /* Select Wtable[window] without leaking window through
+    844                       * memory access patterns. */
+    845                      mbedtls_mpi_core_ct_uint_table_lookup(Wselect, Wtable,
+    846                                                            AN_limbs, welem, window);
+   \                     ??mbedtls_mpi_core_exp_mod_3: (+1)
+   \       0xD0   0xF8CD 0xA000      STR      R10,[SP, #+0]
+   \       0xD4   0x9B07             LDR      R3,[SP, #+28]
+   \       0xD6   0x0032             MOVS     R2,R6
+   \       0xD8   0x9904             LDR      R1,[SP, #+16]
+   \       0xDA   0x9806             LDR      R0,[SP, #+24]
+   \       0xDC   0x.... 0x....      BL       mbedtls_mpi_core_ct_uint_table_lookup
+    847                      /* Multiply X by the selected element. */
+    848                      mbedtls_mpi_core_montmul(X, X, Wselect, AN_limbs, N, AN_limbs, mm,
+    849                                               temp);
+   \       0xE0   0x9805             LDR      R0,[SP, #+20]
+   \       0xE2   0x9003             STR      R0,[SP, #+12]
+   \       0xE4   0x9702             STR      R7,[SP, #+8]
+   \       0xE6   0x9601             STR      R6,[SP, #+4]
+   \       0xE8   0x9500             STR      R5,[SP, #+0]
+   \       0xEA   0x0033             MOVS     R3,R6
+   \       0xEC   0x9A06             LDR      R2,[SP, #+24]
+   \       0xEE   0x4659             MOV      R1,R11
+   \       0xF0   0x4658             MOV      R0,R11
+   \       0xF2   0x.... 0x....      BL       mbedtls_mpi_core_montmul
+    850                      window = 0;
+   \       0xF6   0x2000             MOVS     R0,#+0
+   \       0xF8   0x4682             MOV      R10,R0
+    851                      window_bits = 0;
+   \       0xFA   0x2000             MOVS     R0,#+0
+   \       0xFC   0x4681             MOV      R9,R0
+    852                  }
+    853              } while (!(E_bit_index == 0 && E_limb_index == 0));
+   \                     ??mbedtls_mpi_core_exp_mod_4: (+1)
+   \       0xFE   0xEA58 0x0004      ORRS     R0,R8,R4
+   \      0x102   0x2800             CMP      R0,#+0
+   \      0x104   0xD1BE             BNE.N    ??mbedtls_mpi_core_exp_mod_0
+    854          }
+   \      0x106   0xB00D             ADD      SP,SP,#+52
+   \      0x108   0xE8BD 0x8FF0      POP      {R4-R11,PC}
+    855          
+
+   \                                 In section .text, align 2, keep-with-next
+    856          mbedtls_mpi_uint mbedtls_mpi_core_sub_int(mbedtls_mpi_uint *X,
+    857                                                    const mbedtls_mpi_uint *A,
+    858                                                    mbedtls_mpi_uint c,  /* doubles as carry */
+    859                                                    size_t limbs)
+    860          {
+   \                     mbedtls_mpi_core_sub_int: (+1)
+   \        0x0   0xB470             PUSH     {R4-R6}
+   \        0x2   0x0004             MOVS     R4,R0
+    861              for (size_t i = 0; i < limbs; i++) {
+   \        0x4   0x2600             MOVS     R6,#+0
+   \                     ??mbedtls_mpi_core_sub_int_0: (+1)
+   \        0x6   0x429E             CMP      R6,R3
+   \        0x8   0xD20C             BCS.N    ??mbedtls_mpi_core_sub_int_1
+    862                  mbedtls_mpi_uint s = A[i];
+   \        0xA   0xF851 0x0026      LDR      R0,[R1, R6, LSL #+2]
+    863                  mbedtls_mpi_uint t = s - c;
+   \        0xE   0x1A85             SUBS     R5,R0,R2
+    864                  c = (t > s);
+   \       0x10   0x42A8             CMP      R0,R5
+   \       0x12   0xD201             BCS.N    ??mbedtls_mpi_core_sub_int_2
+   \       0x14   0x2201             MOVS     R2,#+1
+   \       0x16   0xE000             B.N      ??mbedtls_mpi_core_sub_int_3
+   \                     ??mbedtls_mpi_core_sub_int_2: (+1)
+   \       0x18   0x2200             MOVS     R2,#+0
+   \                     ??mbedtls_mpi_core_sub_int_3: (+1)
+   \       0x1A   0xB2D2             UXTB     R2,R2
+    865                  X[i] = t;
+   \       0x1C   0xF844 0x5026      STR      R5,[R4, R6, LSL #+2]
+    866              }
+   \       0x20   0x1C76             ADDS     R6,R6,#+1
+   \       0x22   0xE7F0             B.N      ??mbedtls_mpi_core_sub_int_0
+    867          
+    868              return c;
+   \                     ??mbedtls_mpi_core_sub_int_1: (+1)
+   \       0x24   0x0010             MOVS     R0,R2
+   \       0x26   0xBC70             POP      {R4-R6}
+   \       0x28   0x4770             BX       LR
+    869          }
+    870          
+
+   \                                 In section .text, align 2, keep-with-next
+    871          mbedtls_mpi_uint mbedtls_mpi_core_check_zero_ct(const mbedtls_mpi_uint *A,
+    872                                                          size_t limbs)
+    873          {
+   \                     mbedtls_mpi_core_check_zero_ct: (+1)
+   \        0x0   0xB410             PUSH     {R4}
+   \        0x2   0x0004             MOVS     R4,R0
+    874              mbedtls_mpi_uint bits = 0;
+   \        0x4   0x2000             MOVS     R0,#+0
+    875          
+    876              for (size_t i = 0; i < limbs; i++) {
+   \        0x6   0x2300             MOVS     R3,#+0
+   \                     ??mbedtls_mpi_core_check_zero_ct_0: (+1)
+   \        0x8   0x428B             CMP      R3,R1
+   \        0xA   0xD204             BCS.N    ??mbedtls_mpi_core_check_zero_ct_1
+    877                  bits |= A[i];
+   \        0xC   0xF854 0x2023      LDR      R2,[R4, R3, LSL #+2]
+   \       0x10   0x4310             ORRS     R0,R2,R0
+    878              }
+   \       0x12   0x1C5B             ADDS     R3,R3,#+1
+   \       0x14   0xE7F8             B.N      ??mbedtls_mpi_core_check_zero_ct_0
+    879          
+    880              return bits;
+   \                     ??mbedtls_mpi_core_check_zero_ct_1: (+1)
+   \       0x16   0xBC10             POP      {R4}
+   \       0x18   0x4770             BX       LR
+    881          }
+    882          
+
+   \                                 In section .text, align 2, keep-with-next
+    883          void mbedtls_mpi_core_to_mont_rep(mbedtls_mpi_uint *X,
+    884                                            const mbedtls_mpi_uint *A,
+    885                                            const mbedtls_mpi_uint *N,
+    886                                            size_t AN_limbs,
+    887                                            mbedtls_mpi_uint mm,
+    888                                            const mbedtls_mpi_uint *rr,
+    889                                            mbedtls_mpi_uint *T)
+    890          {
+   \                     mbedtls_mpi_core_to_mont_rep: (+1)
+   \        0x0   0xE92D 0x41FF      PUSH     {R0-R8,LR}
+   \        0x4   0x0004             MOVS     R4,R0
+   \        0x6   0x000D             MOVS     R5,R1
+   \        0x8   0x0016             MOVS     R6,R2
+   \        0xA   0x001F             MOVS     R7,R3
+   \        0xC   0xF8DD 0x802C      LDR      R8,[SP, #+44]
+    891              mbedtls_mpi_core_montmul(X, A, rr, AN_limbs, N, AN_limbs, mm, T);
+   \       0x10   0x980C             LDR      R0,[SP, #+48]
+   \       0x12   0x9003             STR      R0,[SP, #+12]
+   \       0x14   0x980A             LDR      R0,[SP, #+40]
+   \       0x16   0x9002             STR      R0,[SP, #+8]
+   \       0x18   0x9701             STR      R7,[SP, #+4]
+   \       0x1A   0x9600             STR      R6,[SP, #+0]
+   \       0x1C   0x003B             MOVS     R3,R7
+   \       0x1E   0x4642             MOV      R2,R8
+   \       0x20   0x0029             MOVS     R1,R5
+   \       0x22   0x0020             MOVS     R0,R4
+   \       0x24   0x.... 0x....      BL       mbedtls_mpi_core_montmul
+    892          }
+   \       0x28   0xE8BD 0x81FF      POP      {R0-R8,PC}
+    893          
+
+   \                                 In section .text, align 2, keep-with-next
+    894          void mbedtls_mpi_core_from_mont_rep(mbedtls_mpi_uint *X,
+    895                                              const mbedtls_mpi_uint *A,
+    896                                              const mbedtls_mpi_uint *N,
+    897                                              size_t AN_limbs,
+    898                                              mbedtls_mpi_uint mm,
+    899                                              mbedtls_mpi_uint *T)
+    900          {
+   \                     mbedtls_mpi_core_from_mont_rep: (+1)
+   \        0x0   0xB5F0             PUSH     {R4-R7,LR}
+   \        0x2   0xB085             SUB      SP,SP,#+20
+   \        0x4   0x0004             MOVS     R4,R0
+   \        0x6   0x000D             MOVS     R5,R1
+   \        0x8   0x0016             MOVS     R6,R2
+   \        0xA   0x001F             MOVS     R7,R3
+    901              const mbedtls_mpi_uint Rinv = 1;    /* 1/R in Mont. rep => 1 */
+   \        0xC   0x2001             MOVS     R0,#+1
+   \        0xE   0x9004             STR      R0,[SP, #+16]
+    902          
+    903              mbedtls_mpi_core_montmul(X, A, &Rinv, 1, N, AN_limbs, mm, T);
+   \       0x10   0x980B             LDR      R0,[SP, #+44]
+   \       0x12   0x9003             STR      R0,[SP, #+12]
+   \       0x14   0x980A             LDR      R0,[SP, #+40]
+   \       0x16   0x9002             STR      R0,[SP, #+8]
+   \       0x18   0x9701             STR      R7,[SP, #+4]
+   \       0x1A   0x9600             STR      R6,[SP, #+0]
+   \       0x1C   0x2301             MOVS     R3,#+1
+   \       0x1E   0xAA04             ADD      R2,SP,#+16
+   \       0x20   0x0029             MOVS     R1,R5
+   \       0x22   0x0020             MOVS     R0,R4
+   \       0x24   0x.... 0x....      BL       mbedtls_mpi_core_montmul
+    904          }
+   \       0x28   0xB005             ADD      SP,SP,#+20
+   \       0x2A   0xBDF0             POP      {R4-R7,PC}
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable2:
+   \        0x0   0x....'....        DC32     mbedtls_ct_zero
+
+   \                                 In section .text, align 4, keep-with-next
+   \                     ??DataTable2_1:
+   \        0x0   0x....'....        DC32     mbedtls_byte_order_detector
+    905          
+    906          #endif /* MBEDTLS_BIGNUM_C */
+
+   Maximum stack usage in bytes:
+
+   .cstack Function
+   ------- --------
+       0   exp_mod_get_window_size
+      72   exp_mod_precompute_window
+        72   -> __aeabi_memcpy
+        72   -> __aeabi_memset
+        72   -> mbedtls_mpi_core_montmul
+       0   mbedtls_bswap32
+       8   mbedtls_ct_bool
+         8   -> mbedtls_ct_compiler_opaque
+       0   mbedtls_ct_bool_and
+       0   mbedtls_ct_bool_not
+       0   mbedtls_ct_bool_or
+       0   mbedtls_ct_compiler_opaque
+      16   mbedtls_ct_if
+        16   -> mbedtls_ct_compiler_opaque
+      16   mbedtls_ct_mpi_uint_if
+        16   -> mbedtls_ct_if
+       0   mbedtls_ct_mpi_uint_if_else_0
+      16   mbedtls_ct_uint_eq
+        16   -> mbedtls_ct_uint_ne
+      16   mbedtls_ct_uint_ge
+        16   -> mbedtls_ct_uint_lt
+      32   mbedtls_ct_uint_lt
+        32   -> mbedtls_ct_bool
+        32   -> mbedtls_ct_compiler_opaque
+        32   -> mbedtls_ct_if
+      24   mbedtls_ct_uint_ne
+        24   -> mbedtls_ct_bool
+        24   -> mbedtls_ct_compiler_opaque
+      16   mbedtls_mpi_core_add
+      32   mbedtls_mpi_core_add_if
+        32   -> mbedtls_ct_bool
+        32   -> mbedtls_ct_mpi_uint_if_else_0
+      24   mbedtls_mpi_core_bigendian_to_host
+        24   -> mpi_bigendian_to_host
+      16   mbedtls_mpi_core_bitlen
+        16   -> mbedtls_mpi_core_clz
+       4   mbedtls_mpi_core_check_zero_ct
+       0   mbedtls_mpi_core_clz
+      24   mbedtls_mpi_core_cond_assign
+        24   -> mbedtls_ct_mpi_uint_if
+      32   mbedtls_mpi_core_cond_swap
+        32   -> mbedtls_ct_mpi_uint_if
+      32   mbedtls_mpi_core_ct_uint_table_lookup
+        32   -> mbedtls_ct_uint_eq
+        32   -> mbedtls_mpi_core_cond_assign
+      88   mbedtls_mpi_core_exp_mod
+        88   -> __aeabi_memcpy
+        88   -> exp_mod_get_window_size
+        88   -> exp_mod_precompute_window
+        88   -> mbedtls_mpi_core_ct_uint_table_lookup
+        88   -> mbedtls_mpi_core_montmul
+        88   -> mbedtls_mpi_core_montmul_init
+      16   mbedtls_mpi_core_exp_mod_working_limbs
+        16   -> exp_mod_get_window_size
+      56   mbedtls_mpi_core_fill_random
+        56   -- Indirect call
+        56   -> __aeabi_memset
+        56   -> mbedtls_mpi_core_bigendian_to_host
+      40   mbedtls_mpi_core_from_mont_rep
+        40   -> mbedtls_mpi_core_montmul
+      24   mbedtls_mpi_core_get_mont_r2_unsafe
+        24   -> mbedtls_mpi_lset
+        24   -> mbedtls_mpi_mod_mpi
+        24   -> mbedtls_mpi_shift_l
+        24   -> mbedtls_mpi_shrink
+      40   mbedtls_mpi_core_lt_ct
+        40   -> mbedtls_ct_bool_and
+        40   -> mbedtls_ct_bool_not
+        40   -> mbedtls_ct_bool_or
+        40   -> mbedtls_ct_compiler_opaque
+        40   -> mbedtls_ct_uint_lt
+      56   mbedtls_mpi_core_mla
+      56   mbedtls_mpi_core_montmul
+        56   -> __aeabi_memset
+        56   -> mbedtls_ct_bool
+        56   -> mbedtls_ct_memcpy_if
+        56   -> mbedtls_mpi_core_mla
+        56   -> mbedtls_mpi_core_sub
+       0   mbedtls_mpi_core_montmul_init
+      40   mbedtls_mpi_core_mul
+        40   -> __aeabi_memset
+        40   -> mbedtls_mpi_core_mla
+      48   mbedtls_mpi_core_random
+        48   -> mbedtls_ct_bool_and
+        48   -> mbedtls_ct_compiler_opaque
+        48   -> mbedtls_mpi_core_bitlen
+        48   -> mbedtls_mpi_core_fill_random
+        48   -> mbedtls_mpi_core_lt_ct
+        48   -> mbedtls_mpi_core_shift_r
+        48   -> mbedtls_mpi_core_uint_le_mpi
+      48   mbedtls_mpi_core_read_be
+        48   -> __aeabi_memcpy
+        48   -> __aeabi_memset
+        48   -> mbedtls_mpi_core_bigendian_to_host
+      40   mbedtls_mpi_core_read_le
+        40   -> __aeabi_memset
+      20   mbedtls_mpi_core_shift_l
+      48   mbedtls_mpi_core_shift_r
+        48   -> __aeabi_memset
+      16   mbedtls_mpi_core_sub
+      12   mbedtls_mpi_core_sub_int
+      40   mbedtls_mpi_core_to_mont_rep
+        40   -> mbedtls_mpi_core_montmul
+      32   mbedtls_mpi_core_uint_le_mpi
+        32   -> mbedtls_ct_bool
+        32   -> mbedtls_ct_bool_or
+        32   -> mbedtls_ct_compiler_opaque
+        32   -> mbedtls_ct_uint_ge
+      48   mbedtls_mpi_core_write_be
+        48   -> __aeabi_memset
+      40   mbedtls_mpi_core_write_le
+        40   -> __aeabi_memset
+       8   mpi_bigendian_to_host
+         8   -> mbedtls_bswap32
+
+
+   Section sizes:
+
+   Bytes  Function/Label
+   -----  --------------
+       4  ??DataTable2
+       4  ??DataTable2_1
+      12  exp_mod_get_window_size
+     154  exp_mod_precompute_window
+      28  mbedtls_bswap32
+       2  mbedtls_byte_order_detector
+      28  mbedtls_ct_bool
+       4  mbedtls_ct_bool_and
+       4  mbedtls_ct_bool_not
+       4  mbedtls_ct_bool_or
+       8  mbedtls_ct_compiler_opaque
+      26  mbedtls_ct_if
+      20  mbedtls_ct_mpi_uint_if
+       4  mbedtls_ct_mpi_uint_if_else_0
+      18  mbedtls_ct_uint_eq
+      18  mbedtls_ct_uint_ge
+      62  mbedtls_ct_uint_lt
+      32  mbedtls_ct_uint_ne
+      64  mbedtls_mpi_core_add
+      88  mbedtls_mpi_core_add_if
+      60  mbedtls_mpi_core_bigendian_to_host
+      46  mbedtls_mpi_core_bitlen
+      26  mbedtls_mpi_core_check_zero_ct
+       8  mbedtls_mpi_core_clz
+      48  mbedtls_mpi_core_cond_assign
+      68  mbedtls_mpi_core_cond_swap
+      58  mbedtls_mpi_core_ct_uint_table_lookup
+     268  mbedtls_mpi_core_exp_mod
+      34  mbedtls_mpi_core_exp_mod_working_limbs
+     146  mbedtls_mpi_core_fill_random
+      44  mbedtls_mpi_core_from_mont_rep
+      76  mbedtls_mpi_core_get_mont_r2_unsafe
+     136  mbedtls_mpi_core_lt_ct
+     746  mbedtls_mpi_core_mla
+     166  mbedtls_mpi_core_montmul
+      42  mbedtls_mpi_core_montmul_init
+      78  mbedtls_mpi_core_mul
+     160  mbedtls_mpi_core_random
+     114  mbedtls_mpi_core_read_be
+     112  mbedtls_mpi_core_read_le
+     124  mbedtls_mpi_core_shift_l
+     174  mbedtls_mpi_core_shift_r
+      74  mbedtls_mpi_core_sub
+      42  mbedtls_mpi_core_sub_int
+      44  mbedtls_mpi_core_to_mont_rep
+      72  mbedtls_mpi_core_uint_le_mpi
+     140  mbedtls_mpi_core_write_be
+     128  mbedtls_mpi_core_write_le
+      24  mpi_bigendian_to_host
+
+ 
+     2 bytes in section .rodata
+ 3'840 bytes in section .text
+ 
+ 3'840 bytes of CODE  memory
+     2 bytes of CONST memory
+
+Errors: none
+Warnings: none
