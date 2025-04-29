@@ -43,65 +43,122 @@ int db_initialize() {
     return 0;
 }
 
+//Store or update meter_id and ip_address
 int db_store_or_update(const char *meter_id, const char *ip_address) {
     sqlite3 *db;
     sqlite3_stmt *stmt;
     int rc;
 
-    // Open the database
+    // Open DB
     rc = sqlite3_open(DB_PATH, &db);
     if (rc != SQLITE_OK) {
-        fprintf(stderr, "Cannot open database: %s\n", sqlite3_errmsg(db));
+        fprintf(stderr, "Cannot open DB: %s\n", sqlite3_errmsg(db));
         return -1;
     }
 
-    // Step 1: Try updating existing meter_id
-    const char *update_sql = "UPDATE meter_ip_mapping SET ip_address = ? WHERE meter_id = ?;";
-    rc = sqlite3_prepare_v2(db, update_sql, -1, &stmt, NULL);
+    // STEP 1: Check if IP exists
+    const char *select_by_ip = "SELECT meter_id FROM meter_ip_mapping WHERE ip_address = ?;";
+    rc = sqlite3_prepare_v2(db, select_by_ip, -1, &stmt, NULL);
     if (rc != SQLITE_OK) {
-        fprintf(stderr, "Failed to prepare update statement: %s\n", sqlite3_errmsg(db));
+        fprintf(stderr, "Prepare failed: %s\n", sqlite3_errmsg(db));
         sqlite3_close(db);
         return -1;
     }
 
     sqlite3_bind_text(stmt, 1, ip_address, -1, SQLITE_TRANSIENT);
-    sqlite3_bind_text(stmt, 2, meter_id, -1, SQLITE_TRANSIENT);
 
     rc = sqlite3_step(stmt);
+    if (rc == SQLITE_ROW) {
+        const char *existing_meter_id = (const char *)sqlite3_column_text(stmt, 0);
+        sqlite3_finalize(stmt);
+
+        if (strcmp(existing_meter_id, meter_id) == 0) {
+            // Match exists, no action needed
+            sqlite3_close(db);
+            return 0;
+        } else {
+            // Conflict: Same IP, different meter_id
+            // First, delete any row with the new meter_id (to avoid UNIQUE constraint failure)
+            const char *delete_conflict = "DELETE FROM meter_ip_mapping WHERE meter_id = ?;";
+            rc = sqlite3_prepare_v2(db, delete_conflict, -1, &stmt, NULL);
+            if (rc == SQLITE_OK) {
+                sqlite3_bind_text(stmt, 1, meter_id, -1, SQLITE_TRANSIENT);
+                sqlite3_step(stmt);
+                sqlite3_finalize(stmt);
+            }
+
+            // Then update meter_id for this IP
+            const char *update_sql = "UPDATE meter_ip_mapping SET meter_id = ? WHERE ip_address = ?;";
+            rc = sqlite3_prepare_v2(db, update_sql, -1, &stmt, NULL);
+            if (rc != SQLITE_OK) {
+                fprintf(stderr, "Failed to prepare UPDATE meter_id: %s\n", sqlite3_errmsg(db));
+                sqlite3_close(db);
+                return -1;
+            }
+
+            sqlite3_bind_text(stmt, 1, meter_id, -1, SQLITE_TRANSIENT);
+            sqlite3_bind_text(stmt, 2, ip_address, -1, SQLITE_TRANSIENT);
+
+            rc = sqlite3_step(stmt);
+            sqlite3_finalize(stmt);
+            sqlite3_close(db);
+
+            if (rc != SQLITE_DONE) {
+                fprintf(stderr, "Failed to update meter_id: %s\n", sqlite3_errmsg(db));
+                return -1;
+            }
+
+            printf("Updated meter_id for IP: %s to %s\n", ip_address, meter_id);
+            return 0;
+        }
+    }
     sqlite3_finalize(stmt);
 
-    if (rc == SQLITE_DONE && sqlite3_changes(db) > 0) {
-        printf("Updated IP for Meter ID: %s\n", meter_id);
-        sqlite3_close(db);
-        return 0;
-    }
-
-    // Step 2: Try updating existing ip_address
-    const char *update_meter_sql = "UPDATE meter_ip_mapping SET meter_id = ? WHERE ip_address = ?;";
-    rc = sqlite3_prepare_v2(db, update_meter_sql, -1, &stmt, NULL);
+    // STEP 2: Check if meter_id exists (but IP doesn't)
+    const char *select_by_meter = "SELECT ip_address FROM meter_ip_mapping WHERE meter_id = ?;";
+    rc = sqlite3_prepare_v2(db, select_by_meter, -1, &stmt, NULL);
     if (rc != SQLITE_OK) {
-        fprintf(stderr, "Failed to prepare update statement: %s\n", sqlite3_errmsg(db));
+        fprintf(stderr, "Prepare failed: %s\n", sqlite3_errmsg(db));
         sqlite3_close(db);
         return -1;
     }
 
     sqlite3_bind_text(stmt, 1, meter_id, -1, SQLITE_TRANSIENT);
-    sqlite3_bind_text(stmt, 2, ip_address, -1, SQLITE_TRANSIENT);
-
     rc = sqlite3_step(stmt);
-    sqlite3_finalize(stmt);
+    if (rc == SQLITE_ROW) {
+        // Meter ID exists, update IP
+        sqlite3_finalize(stmt);
 
-    if (rc == SQLITE_DONE && sqlite3_changes(db) > 0) {
-        printf("Updated Meter ID for IP: %s\n", ip_address);
+        const char *update_ip_sql = "UPDATE meter_ip_mapping SET ip_address = ? WHERE meter_id = ?;";
+        rc = sqlite3_prepare_v2(db, update_ip_sql, -1, &stmt, NULL);
+        if (rc != SQLITE_OK) {
+            fprintf(stderr, "Failed to prepare UPDATE IP: %s\n", sqlite3_errmsg(db));
+            sqlite3_close(db);
+            return -1;
+        }
+
+        sqlite3_bind_text(stmt, 1, ip_address, -1, SQLITE_TRANSIENT);
+        sqlite3_bind_text(stmt, 2, meter_id, -1, SQLITE_TRANSIENT);
+
+        rc = sqlite3_step(stmt);
+        sqlite3_finalize(stmt);
         sqlite3_close(db);
+
+        if (rc != SQLITE_DONE) {
+            fprintf(stderr, "Failed to update IP: %s\n", sqlite3_errmsg(db));
+            return -1;
+        }
+
+        printf("Updated IP for meter_id: %s to %s\n", meter_id, ip_address);
         return 0;
     }
+    sqlite3_finalize(stmt);
 
-    // Step 3: If neither update worked, insert a new row
+    // STEP 3: Neither IP nor meter_id exists — INSERT new
     const char *insert_sql = "INSERT INTO meter_ip_mapping (meter_id, ip_address) VALUES (?, ?);";
     rc = sqlite3_prepare_v2(db, insert_sql, -1, &stmt, NULL);
     if (rc != SQLITE_OK) {
-        fprintf(stderr, "Failed to prepare insert statement: %s\n", sqlite3_errmsg(db));
+        fprintf(stderr, "Prepare failed: %s\n", sqlite3_errmsg(db));
         sqlite3_close(db);
         return -1;
     }
@@ -114,14 +171,13 @@ int db_store_or_update(const char *meter_id, const char *ip_address) {
     sqlite3_close(db);
 
     if (rc != SQLITE_DONE) {
-        fprintf(stderr, "Failed to insert new record: %s\n", sqlite3_errmsg(db));
+        fprintf(stderr, "Insert failed: %s\n", sqlite3_errmsg(db));
         return -1;
     }
 
-    printf("Inserted new Meter ID: %s with IP: %s\n", meter_id, ip_address);
+    printf("Inserted new meter_id: %s with IP: %s\n", meter_id, ip_address);
     return 0;
 }
-
 
 // Function to retrieve the IP address for a given Meter ID
 int db_get_ip_by_meter_id(const char *meter_id, char *ip_address, size_t ip_address_size) {
